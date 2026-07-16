@@ -36,7 +36,7 @@ _Verified against `schema/client_dll.json` (cs2-dumper HEAD, 2026-07-16)._
 
 ### CCSPlayerController_InventoryServices
 
-Reached via `CCSPlayerController + 0x810` → deref pointer.
+Reached via `CCSPlayerController + 0x818` → deref pointer.
 
 ```
 offset  type            field
@@ -155,10 +155,10 @@ uintptr_t lpc = *(uintptr_t*)lpc_ptr;
 if (!lpc) return; // no controller yet
 
 // Read rank
-int rank = *(int*)(lpc + 0x880);
+int rank = *(int*)(lpc + 0x888);
 
 // Get inventory services
-uintptr_t inv = *(uintptr_t*)(lpc + 0x810);
+uintptr_t inv = *(uintptr_t*)(lpc + 0x818);
 if (!inv) return;
 int level = *(int*)(inv + 0x74);
 
@@ -214,7 +214,7 @@ _Сверено против `schema/client_dll.json` (`cs2-dumper` HEAD, 2026-0
 
 ### CCSPlayerController_InventoryServices
 
-Достигается через `CCSPlayerController + 0x810` → deref pointer'а.
+Достигается через `CCSPlayerController + 0x818` → deref pointer'а.
 
 ```
 offset  type            field
@@ -333,10 +333,10 @@ uintptr_t lpc = *(uintptr_t*)lpc_ptr;
 if (!lpc) return; // no controller yet
 
 // Read rank
-int rank = *(int*)(lpc + 0x880);
+int rank = *(int*)(lpc + 0x888);
 
 // Get inventory services
-uintptr_t inv = *(uintptr_t*)(lpc + 0x810);
+uintptr_t inv = *(uintptr_t*)(lpc + 0x818);
 if (!inv) return;
 int level = *(int*)(inv + 0x74);
 
