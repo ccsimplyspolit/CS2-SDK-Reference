@@ -1,39 +1,40 @@
 # CS2-SDK-Reference
 
-Curated reference for **CS2 (Counter-Strike 2) SDK, offsets, protobufs, and structures** — geared for VMProtect analysis and reverse-engineering of any CS2-adjacent project.
+Curated reference for CS2 (Counter-Strike 2) SDK, offsets, protobufs, and structures — geared for VMProtect analysis and reverse-engineering of any CS2-adjacent project.
 
-Курируемый референс по **CS2 SDK, offsets, protobufs и структурам** — для VMProtect-анализа и реверс-инжиниринга любого CS2-проекта.
-
----
-
-## What's inside / Что внутри
-
-| Directory | EN | RU |
-|---|---|---|
-| [`offsets/`](offsets/) | Latest a2x/cs2-dumper HEAD + per-build historical snapshots | Свежие offsets из a2x/cs2-dumper HEAD + исторические срезы по билдам |
-| [`schema/`](schema/) | Class field offsets (`client_dll.json`, `engine2_dll.json`, `server_dll.json`) — 3189+ fields across 300+ classes | Оффсеты полей классов (~3189 fields, 300+ classes) |
-| [`protobufs/`](protobufs/) | 43 `.proto` files copied from SteamTracking — CS2's on-wire message formats | 43 `.proto` файла из SteamTracking — форматы сетевых сообщений CS2 |
-| [`structures/`](structures/) | Human-readable class layouts for VMP-critical CS2 types | Классы CS2, важные для VMP-анализа, в читаемом виде |
-| [`vmp_targets/`](vmp_targets/) | Which CS2 fields VMP-protected DLLs actually touch (input_history, rank display, gate byte, etc.) | Какие поля CS2 реально трогают защищённые VMP плагины |
-| [`tools/`](tools/) | Fetch + verify scripts | Скрипты обновления + сверки |
-| [`wiki/`](wiki/) | Bilingual long-form deep dives — 10 pages each in EN + RU | Двуязычные развёрнутые разборы — по 10 страниц на EN + RU |
-| [`USAGE.md`](USAGE.md) | Bilingual quick-start (first-time setup, update, verify, CS2 update, contribute) | Двуязычный quick-start (установка, обновление, сверка, апдейт cs2, contrib) |
+Курируемый референс по CS2 SDK, оффсетам, protobuf'ам и структурам — заточенный под VMProtect-анализ и реверс-инжиниринг любого CS2-проекта.
 
 ---
 
-## Why this exists / Зачем это существует
+## English
 
-**EN:** Any RE project against a CS2-adjacent binary (anti-VAC helper, aim-assist, rank spoofer, ...) needs the same 4 kinds of information: **runtime globals** (`dwLocalPlayerController`, `dwGameRules`), **class member offsets** (`CCSPlayerController.m_iCompetitiveRanking`), **wire protobufs** (`CSGOUserCmdPB.input_history`), and **structure layouts** (how `CBaseUserCmdPB` composes with `CInButtonStatePB`). Everyone re-collects the same data. This repo is a one-stop shop refreshed against upstream sources.
+### What's inside
 
-**RU:** Любому RE-проекту про CS2-бинарник (anti-VAC хелпер, aim-ассист, ранк-спуфер, ...) нужны 4 типа информации: **runtime globals** (`dwLocalPlayerController`, `dwGameRules`), **class member offsets** (`CCSPlayerController.m_iCompetitiveRanking`), **wire protobufs** (`CSGOUserCmdPB.input_history`) и **layouts структур** (как `CBaseUserCmdPB` соотносится с `CInButtonStatePB`). Все каждый раз собирают одно и то же. Этот репо — one-stop, обновляемый из upstream-источников.
+| Directory | Contents |
+|---|---|
+| [`offsets/`](offsets/) | Latest a2x/cs2-dumper HEAD + per-build historical snapshots |
+| [`schema/`](schema/) | Class field offsets (`client_dll.json`, `engine2_dll.json`, `server_dll.json`) — 3189+ fields across 300+ classes |
+| [`protobufs/`](protobufs/) | 43 `.proto` files copied from SteamTracking — CS2's on-wire message formats |
+| [`structures/`](structures/) | Human-readable class layouts for VMP-critical CS2 types |
+| [`vmp_targets/`](vmp_targets/) | Which CS2 fields VMP-protected DLLs actually touch (input_history, rank display, gate byte, etc.) |
+| [`tools/`](tools/) | Fetch + verify scripts |
+| [`wiki/`](wiki/) | Bilingual long-form deep dives — 10 pages each in EN + RU |
+| [`USAGE.md`](USAGE.md) | Bilingual quick-start (first-time setup, update, verify, CS2 update, contribute) |
 
----
+### Why this exists
 
-## One-click sync / Синхронизация в один клик
+Any RE project against a CS2-adjacent binary (anti-VAC helper, aim-assist, rank spoofer, ...) needs the same four kinds of information:
 
-**EN:** Just run one command / double-click one file. Fetches offsets + schema from `a2x/cs2-dumper` HEAD + all 43 protobufs from `SteamDatabase/Protobufs`, snapshots current state to `offsets/history/pre_sync_<timestamp>/` before overwriting, and optionally auto-commits + pushes:
+- **Runtime globals** — `dwLocalPlayerController`, `dwGameRules`, ...
+- **Class member offsets** — `CCSPlayerController.m_iCompetitiveRanking`, ...
+- **Wire protobufs** — `CSGOUserCmdPB.input_history`, ...
+- **Structure layouts** — how `CBaseUserCmdPB` composes with `CInButtonStatePB`.
 
-**RU:** Одной командой / двойной клик по файлу. Тянет offsets + schema из `a2x/cs2-dumper` HEAD и все 43 protobuf'а из `SteamDatabase/Protobufs`, снапшотит текущее состояние в `offsets/history/pre_sync_<timestamp>/` перед перезаписью, и опционально auto-commit + push:
+Everyone re-collects the same data. This repo is a one-stop shop refreshed against upstream sources.
+
+### One-click sync
+
+Just run one command / double-click one file. Fetches offsets + schema from `a2x/cs2-dumper` HEAD + all 43 protobufs from `SteamDatabase/Protobufs`, snapshots current state to `offsets/history/pre_sync_<timestamp>/` before overwriting, and optionally auto-commits + pushes:
 
 ```powershell
 # Windows: just double-click sync.cmd
@@ -47,19 +48,17 @@ python tools/sync_from_upstream.py --protobufs-only
 python tools/sync_from_upstream.py --verify --live-pid 53000  # verify against running cs2
 ```
 
-Options / Опции:
+Options:
 - `--pr N` — fetch offsets from an open cs2-dumper PR by number
 - `--commit` — auto-commit and push if anything changed
 - `--dry-run` — show what would change, write nothing (exit 2 if drift detected)
 - `--verify` / `--live-pid PID` — verify offsets against a running cs2 process
 
-Exit codes / Коды возврата: 0 = OK, 1 = network/git error, 2 = dry-run drift.
+Exit codes: `0` = OK, `1` = network/git error, `2` = dry-run drift.
 
----
+### Quick start
 
-## Quick start / Быстрый старт
-
-### Get the current globals / Получить текущие globals
+**Get the current globals:**
 
 ```bash
 cat offsets/latest/offsets.json | jq '.["client.dll"]'
@@ -79,7 +78,7 @@ Live output (2026-07-15 HEAD, build 14169-14170 are identical for these fields):
 
 _(Decimals reflect cs2-dumper HEAD after 2026-07-16 refresh; verified via `python -c "import json; print(json.load(open('offsets/latest/offsets.json'))['client.dll'])"`)_
 
-### Get a class field offset / Получить оффсет поля класса
+**Get a class field offset:**
 
 ```bash
 python -c "
@@ -91,7 +90,7 @@ for k, v in list(fields.items())[:10]:
 "
 ```
 
-### Verify a running cs2 matches / Свериться с running cs2
+**Verify a running cs2 matches:**
 
 ```bash
 python tools/verify_offsets.py --pid <cs2_pid>
@@ -99,59 +98,168 @@ python tools/verify_offsets.py --pid <cs2_pid>
 
 Requires admin (SeDebugPrivilege). Reports drift between the JSONs here and the live memory layout.
 
----
+### Structure — what to read first
 
-## Structure: what to read first / С чего начать
-
-**EN:**
 1. [`offsets/latest/offsets.json`](offsets/latest/offsets.json) — the 32 runtime globals CS2 exposes (client.dll, engine2.dll, server.dll).
 2. [`schema/client_dll.json`](schema/client_dll.json) — every class + every field offset for `client.dll` (~3189 fields).
 3. [`protobufs/cs_usercmd.proto`](protobufs/cs_usercmd.proto) + [`usercmd.proto`](protobufs/usercmd.proto) — the two message types VMP-protected input-manipulation plugins care about most.
 4. [`structures/`](structures/) — human-readable summaries of the ~10 CS2 classes any RE project keeps coming back to.
 5. [`vmp_targets/`](vmp_targets/) — cross-reference: for each known VMP-plugin behavior, which schema fields + protobuf tags are touched.
 
-**RU:** тот же порядок 1→5.
+### Update workflow
 
----
+All data here is fetched from upstream. Rerun `tools/fetch_head_offsets.py` after every CS2 update. If `a2x/cs2-dumper` HEAD is behind, check open PRs (recent history: PR #670 was the 2026-07-15 build).
 
-## Update workflow / Как обновлять
-
-**EN:** All data here is fetched from upstream. Rerun `tools/fetch_head_offsets.py` after every CS2 update. If `a2x/cs2-dumper` HEAD is behind, check open PRs (recent history: PR #670 was the 2026-07-15 build).
-
-**RU:** Всё тянется из upstream. Запусти `tools/fetch_head_offsets.py` после каждого обновления CS2. Если `a2x/cs2-dumper` HEAD отстаёт, посмотри открытые PR (например, PR #670 — 2026-07-15 build).
-
----
-
-## Historical snapshots / Исторические срезы
+### Historical snapshots
 
 | Build | Date | Directory |
 |---|---|---|
 | 14169 (HEAD) | 2026-07-10 | [`offsets/latest/`](offsets/latest/) |
 | 14170 | 2026-07-15 | [`offsets/history/build_14170_2026-07-15/`](offsets/history/build_14170_2026-07-15/) |
 
-**Fun fact / Интересный факт:** Between 14169 and 14170 all **32 globals + 3189 class field offsets are BYTE-FOR-BYTE IDENTICAL**. Only one internal anonymous struct name hash (`_4z__`) changed — the update was purely code-level.
+**Fun fact:** between 14169 and 14170 all **32 globals + 3189 class field offsets are BYTE-FOR-BYTE IDENTICAL**. Only one internal anonymous struct name hash (`_4z__`) changed — the update was purely code-level.
 
----
-
-## Related repos / Связанные репозитории
+### Related repos
 
 - **[VMP-Deob](https://github.com/ccsimplyspolit/VMP-Deob)** — VMProtect research + tooling. Uses these offsets/schemas for runtime memory verification.
 - **[CS2-P2C-TEMPLATES](https://github.com/ccsimplyspolit/CS2-P2C-TEMPLATES)** — Runtime CS2 plugins (VacLiveBypass, RankSpoofer, IsValveDS) that consume these offsets via autofetch.
 - **[a2x/cs2-dumper](https://github.com/a2x/cs2-dumper)** — Upstream source of offsets + schemas (Rust project that dumps a running CS2 process).
 - **[SteamTracking/Protobufs](https://github.com/SteamDatabase/Protobufs)** — Upstream source of `.proto` files.
 
----
+### Contributing
 
-## Contributing / Contributing
+PRs adding new historical snapshots, cross-references between schema and known VMP targets, or fresh protobuf definitions welcome. Every offset should carry a source attribution (which cs2-dumper commit + which live cs2 PID/build).
 
-**EN:** PRs adding new historical snapshots, cross-references between schema and known VMP targets, or fresh protobuf definitions welcome. Every offset should carry a source attribution (which cs2-dumper commit + which live cs2 PID/build).
-
-**RU:** PR-ы с новыми историческими срезами, cross-references между schema и известными VMP-мишенями, или свежими protobuf определениями — welcome. Каждый offset должен нести source attribution (какой commit cs2-dumper + какой live cs2 PID/build).
-
----
-
-## License / Лицензия
+### License
 
 Data mirrored from public upstream sources retains its original license (a2x/cs2-dumper is MIT; SteamTracking is public-domain-effective). Original documentation and tooling in this repo: MIT.
 
-Данные из публичных upstream-источников сохраняют оригинальные лицензии. Собственная документация и инструментарий: MIT.
+---
+
+## Русский
+
+### Что внутри
+
+| Директория | Содержимое |
+|---|---|
+| [`offsets/`](offsets/) | Свежие offsets из `a2x/cs2-dumper` HEAD + исторические срезы по билдам |
+| [`schema/`](schema/) | Оффсеты полей классов (`client_dll.json`, `engine2_dll.json`, `server_dll.json`) — ~3189 полей в 300+ классах |
+| [`protobufs/`](protobufs/) | 43 `.proto` файла из SteamTracking — форматы сетевых сообщений CS2 |
+| [`structures/`](structures/) | Классы CS2, важные для VMP-анализа, в читаемом виде |
+| [`vmp_targets/`](vmp_targets/) | Какие поля CS2 реально трогают защищённые VMP плагины (`input_history`, ранг-дисплей, гейт-байт и т.д.) |
+| [`tools/`](tools/) | Скрипты обновления + сверки |
+| [`wiki/`](wiki/) | Двуязычные развёрнутые разборы — по 10 страниц на EN + RU |
+| [`USAGE.md`](USAGE.md) | Двуязычный quick-start (установка, обновление, сверка, апдейт cs2, contrib) |
+
+### Зачем это существует
+
+Любому RE-проекту вокруг CS2-бинарника (anti-VAC хелпер, aim-ассист, ранк-спуфер, ...) нужны четыре типа информации:
+
+- **Runtime globals** — `dwLocalPlayerController`, `dwGameRules`, ...
+- **Оффсеты member'ов классов** — `CCSPlayerController.m_iCompetitiveRanking`, ...
+- **Wire-protobuf'ы** — `CSGOUserCmdPB.input_history`, ...
+- **Layout'ы структур** — как `CBaseUserCmdPB` соотносится с `CInButtonStatePB`.
+
+Все каждый раз собирают одно и то же руками. Этот репо — one-stop, регулярно обновляемый из upstream-источников.
+
+### Синхронизация в один клик
+
+Одна команда либо двойной клик по файлу. Тянет offsets + schema из `a2x/cs2-dumper` HEAD и все 43 protobuf'а из `SteamDatabase/Protobufs`, снапшотит текущее состояние в `offsets/history/pre_sync_<timestamp>/` перед перезаписью и по флагу делает auto-commit + push:
+
+```powershell
+# Windows: двойной клик по sync.cmd
+# CLI (Windows/Linux/macOS):
+python tools/sync_from_upstream.py                # обычный запуск: fetch HEAD + diff
+python tools/sync_from_upstream.py --dry-run      # показать diff, ничего не писать
+python tools/sync_from_upstream.py --commit       # sync + git add/commit/push
+python tools/sync_from_upstream.py --pr 670       # sync offsets из открытого PR cs2-dumper
+python tools/sync_from_upstream.py --offsets-only # пропустить protobuf'ы
+python tools/sync_from_upstream.py --protobufs-only
+python tools/sync_from_upstream.py --verify --live-pid 53000  # сверка с running cs2
+```
+
+Опции:
+- `--pr N` — тянуть offsets из открытого PR cs2-dumper по номеру
+- `--commit` — auto-commit + push, если что-то поменялось
+- `--dry-run` — показать, что изменилось бы, ничего не писать (exit 2 если найден drift)
+- `--verify` / `--live-pid PID` — сверить offsets против запущенного cs2
+
+Коды возврата: `0` = OK, `1` = сетевая или git-ошибка, `2` = drift в dry-run.
+
+### Быстрый старт
+
+**Получить текущие globals:**
+
+```bash
+cat offsets/latest/offsets.json | jq '.["client.dll"]'
+```
+
+Живой вывод (2026-07-15 HEAD, билды 14169-14170 идентичны по этим полям):
+
+```json
+{
+  "dwLocalPlayerController": 37174576,     // 0x2383730 → follow ptr → CCSPlayerController*
+  "dwGameRules":             36966360,     // 0x23A39D8 → C_CSGameRules*
+  "dwLocalPlayerPawn":       37125176,     // 0x23A4238
+  "dwCSGOInput":             37205488,     // 0x23B95F0
+  "dwGlobalVars":            34275680      // 0x208FD60
+}
+```
+
+_(Десятичные значения соответствуют cs2-dumper HEAD после рефреша 2026-07-16; проверено через `python -c "import json; print(json.load(open('offsets/latest/offsets.json'))['client.dll'])"`)_
+
+**Получить оффсет поля класса:**
+
+```bash
+python -c "
+import json
+c = json.load(open('schema/client_dll.json'))
+fields = c['client.dll']['classes']['CCSPlayerController']['fields']
+for k, v in list(fields.items())[:10]:
+    print(f'{k:40s} 0x{v:X}')
+"
+```
+
+**Сверить с running cs2:**
+
+```bash
+python tools/verify_offsets.py --pid <cs2_pid>
+```
+
+Нужен админ (SeDebugPrivilege). Печатает drift между JSON'ами здесь и живым layout'ом памяти.
+
+### С чего начать
+
+1. [`offsets/latest/offsets.json`](offsets/latest/offsets.json) — 32 runtime global'а, которые экспортирует CS2 (client.dll, engine2.dll, server.dll).
+2. [`schema/client_dll.json`](schema/client_dll.json) — каждый класс + каждый field offset из `client.dll` (~3189 полей).
+3. [`protobufs/cs_usercmd.proto`](protobufs/cs_usercmd.proto) + [`usercmd.proto`](protobufs/usercmd.proto) — два типа сообщений, которые больше всего важны для VMP-плагинов, работающих с input.
+4. [`structures/`](structures/) — читаемые сводки по ~10 классам CS2, к которым RE-проекты возвращаются постоянно.
+5. [`vmp_targets/`](vmp_targets/) — cross-reference: для каждого известного поведения VMP-плагина указано, какие schema-поля и protobuf-теги реально трогаются.
+
+### Как обновлять
+
+Все данные тянутся из upstream. После каждого апдейта CS2 запускай `tools/fetch_head_offsets.py`. Если HEAD `a2x/cs2-dumper` отстаёт — смотри открытые PR-ы (свежий пример: PR #670 = билд от 2026-07-15).
+
+### Исторические срезы
+
+| Билд | Дата | Директория |
+|---|---|---|
+| 14169 (HEAD) | 2026-07-10 | [`offsets/latest/`](offsets/latest/) |
+| 14170 | 2026-07-15 | [`offsets/history/build_14170_2026-07-15/`](offsets/history/build_14170_2026-07-15/) |
+
+**Интересный факт:** между 14169 и 14170 **все 32 global'а + 3189 оффсетов полей побайтово идентичны**. Изменился только хэш имени одной анонимной внутренней структуры (`_4z__`) — апдейт был чисто на уровне кода, без структурных сдвигов.
+
+### Связанные репозитории
+
+- **[VMP-Deob](https://github.com/ccsimplyspolit/VMP-Deob)** — исследование VMProtect и тулинг. Использует эти offsets/schemas для runtime-верификации памяти.
+- **[CS2-P2C-TEMPLATES](https://github.com/ccsimplyspolit/CS2-P2C-TEMPLATES)** — runtime-плагины под CS2 (`VacLiveBypass`, `RankSpoofer`, `IsValveDS`), которые тянут эти оффсеты через autofetch.
+- **[a2x/cs2-dumper](https://github.com/a2x/cs2-dumper)** — upstream оффсетов и schemas (Rust-проект, дампающий running CS2).
+- **[SteamTracking/Protobufs](https://github.com/SteamDatabase/Protobufs)** — upstream `.proto`-файлов.
+
+### Contributing
+
+PR-ы с новыми историческими срезами, cross-references между schema и известными VMP-мишенями или свежими protobuf-определениями — welcome. Каждый offset должен нести source attribution: какой commit `cs2-dumper` + какой live cs2 PID/билд.
+
+### Лицензия
+
+Данные из публичных upstream-источников сохраняют оригинальные лицензии (`a2x/cs2-dumper` — MIT; SteamTracking — фактически public-domain). Собственная документация и инструментарий этого репо: MIT.

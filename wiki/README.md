@@ -1,16 +1,14 @@
 # CS2-SDK-Reference wiki
 
-Bilingual deep-dive wiki. The top-level `README.md` and per-folder `README.md`
-files are the quick-scan surface; everything under `wiki/` is the long-form
-material with concrete numbers, examples, and workflow recipes.
+Bilingual deep-dive wiki. The top-level `README.md` and per-folder `README.md` files are the quick-scan surface; everything under `wiki/` is the long-form material with concrete numbers, examples, and workflow recipes.
 
-Двуязычная (EN + RU) deep-dive вики. Верхнеуровневый `README.md` и `README.md`
-в каждой папке — это быстрая справка; всё под `wiki/` — длинные разборы с
-конкретными числами, примерами и рецептами workflow.
+Двуязычная (EN + RU) deep-dive-вики. Верхнеуровневый `README.md` и `README.md` в каждой папке — это быстрая справка; всё под `wiki/` — длинные разборы с конкретными числами, примерами и рецептами workflow.
 
 ---
 
 ## English
+
+### Pages
 
 - [`en/00_index.md`](en/00_index.md) — index / table of contents
 - [`en/01_repo_overview.md`](en/01_repo_overview.md) — what this repo is + upstream sources
@@ -24,7 +22,19 @@ material with concrete numbers, examples, and workflow recipes.
 - [`en/09_ci_recipes.md`](en/09_ci_recipes.md) — GitHub Actions recipes
 - [`en/10_glossary.md`](en/10_glossary.md) — CS2 / VMP / RE terminology
 
+### When to read what
+
+- **"I just want to run this"** → [`../USAGE.md`](../USAGE.md).
+- **"I just need one offset for a script"** → [`../offsets/latest/offsets.json`](../offsets/latest/offsets.json) — machine-readable, no wiki page needed.
+- **"I'm writing a runtime plugin against CS2"** → start with `01_repo_overview`, then `05_structures`, then `06_vmp_targets`.
+- **"CS2 just updated and my hooks broke"** → `07_sync_workflow` → `08_runtime_verification` → `02_offsets_deep_dive`.
+- **"I'm porting FVA / VLB and need to know what hooks what"** → `06_vmp_targets` is the whole point of this repo for you.
+
+---
+
 ## Русский
+
+### Страницы
 
 - [`ru/00_index.md`](ru/00_index.md) — оглавление
 - [`ru/01_обзор_репо.md`](ru/01_обзор_репо.md) — зачем этот репо и откуда данные
@@ -38,26 +48,10 @@ material with concrete numbers, examples, and workflow recipes.
 - [`ru/09_ci_рецепты.md`](ru/09_ci_рецепты.md) — рецепты GitHub Actions
 - [`ru/10_глоссарий.md`](ru/10_глоссарий.md) — терминология CS2 / VMP / RE
 
----
+### Когда что читать
 
-## When to read what / Когда что читать
-
-**"I just want to run this"** → [`../USAGE.md`](../USAGE.md).
-
-**"I just need one offset for a script"** → [`../offsets/latest/offsets.json`](../offsets/latest/offsets.json) — machine-readable, no wiki page needed.
-
-**"I'm writing a runtime plugin against CS2"** → start with `01_repo_overview`, then `05_structures`, then `06_vmp_targets`.
-
-**"CS2 just updated and my hooks broke"** → `07_sync_workflow` → `08_runtime_verification` → `02_offsets_deep_dive`.
-
-**"I'm porting FVA / VLB and need to know what hooks what"** → `06_vmp_targets` is the whole point of this repo for you.
-
-**"Я хочу просто запустить это"** → [`../USAGE.md`](../USAGE.md).
-
-**"Мне нужен один оффсет для скрипта"** → сразу в [`../offsets/latest/offsets.json`](../offsets/latest/offsets.json).
-
-**"Я пишу runtime-плагин под CS2"** → `01_обзор_репо` → `05_структуры` → `06_vmp_мишени`.
-
-**"CS2 обновился, хуки отвалились"** → `07_воркфлоу_sync` → `08_runtime_верификация` → `02_offsets_подробно`.
-
-**"Портирую FVA / VLB, нужно узнать что во что хукает"** → `06_vmp_мишени` — весь репо ради этого.
+- **«Я хочу просто запустить это»** → [`../USAGE.md`](../USAGE.md).
+- **«Мне нужен один оффсет для скрипта»** → сразу в [`../offsets/latest/offsets.json`](../offsets/latest/offsets.json).
+- **«Я пишу runtime-плагин под CS2»** → `01_обзор_репо` → `05_структуры` → `06_vmp_мишени`.
+- **«CS2 обновился, хуки отвалились»** → `07_воркфлоу_sync` → `08_runtime_верификация` → `02_offsets_подробно`.
+- **«Портирую FVA / VLB, нужно узнать что во что хукает»** → `06_vmp_мишени` — весь репо ради этого.
