@@ -19,13 +19,15 @@
 
 | Field | Value | Meaning |
 |---|---|---|
-| `client.dll.dwLocalPlayerController` | `0x237EBA0` | ptr → CCSPlayerController* |
+| `client.dll.dwLocalPlayerController` | `0x2383730` | ptr → CCSPlayerController* |
 | `client.dll.dwLocalPlayerPawn` | `0x23A4238` | ptr → C_CSPlayerPawn* |
 | `client.dll.dwCSGOInput` | `0x23B95F0` | input state ctx |
 | `client.dll.dwGlobalVars` | `0x208FD60` | game-wide vars |
 | `client.dll.dwGameRules` | `0x23A39D8` | ptr → C_CSGameRules* |
 | `engine2.dll.dwNetworkGameClient` | `0x90D4B0` | net client |
 | `engine2.dll.dwNetworkGameClient_signOnState` | `+0x230` | signon state offset |
+
+_Verified against `offsets/latest/offsets.json` (cs2-dumper HEAD, 2026-07-16)._
 
 ---
 

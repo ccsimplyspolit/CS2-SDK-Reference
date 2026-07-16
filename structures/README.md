@@ -12,20 +12,22 @@ Local + remote player controller (a "controller" owns the pawn — a "pawn" is t
 
 ```
 offset  type            field
-0x810   InventoryServices*      m_pInventoryServices
-0x858   char[16]                m_szClan                     // may go through CUtlSymbolLarge intern
-0x880   int32                   m_iCompetitiveRanking        // 0..18 (classic/wingman) or 0..40000 (premier)
-0x884   int32                   m_iCompetitiveWins
-0x888   uint8                   m_iCompetitiveRankType       // 6/7/11 enum
-0x88C   int32                   m_iCompetitiveRankingPredicted_Win
-0x890   int32                   m_iCompetitiveRankingPredicted_Loss
-0x894   int32                   m_iCompetitiveRankingPredicted_Tie
+0x818   InventoryServices*      m_pInventoryServices
+0x860   CUtlSymbolLarge         m_szClan                     // 8-byte handle into intern table (not raw string)
+0x888   int32                   m_iCompetitiveRanking        // 0..18 (classic/wingman) or 0..40000 (premier)
+0x88C   int32                   m_iCompetitiveWins
+0x890   uint8                   m_iCompetitiveRankType       // 6/7/11 enum
+0x894   int32                   m_iCompetitiveRankingPredicted_Win
+0x898   int32                   m_iCompetitiveRankingPredicted_Loss
+0x89C   int32                   m_iCompetitiveRankingPredicted_Tie
 0x914   CHandle<Pawn>           m_hPlayerPawn                // deref to pawn entity
-0x934   int32                   m_iScore                     // in-round
-0x948   int32                   m_iMusicKitID
-0x94C   int32                   m_iMusicKitMVPs
-0x950   int32                   m_iMVPs                      // scoreboard star
+0x93C   int32                   m_iScore                     // in-round
+0x950   int32                   m_iMusicKitID
+0x954   int32                   m_iMusicKitMVPs
+0x958   int32                   m_iMVPs                      // scoreboard star
 ```
+
+_Verified against `schema/client_dll.json` (cs2-dumper HEAD, 2026-07-16)._
 
 **Notes:**
 - `m_szClan` is a `CUtlSymbolLarge` — 8-byte handle into an intern table, NOT a raw string. Direct 16-byte writes may show garbage.

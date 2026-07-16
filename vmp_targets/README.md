@@ -18,8 +18,8 @@
 | **input_history[i].view_angles** | `CSGOInputHistoryEntryPB.view_angles` (proto tag 2) | float3 | FVA Section-J, VLB (`phase_b2.cpp`) | Wrap deltas into (-180,180], echo back — anti-aim |
 | **subtick_moves** | `CBaseUserCmdPB.subtick_moves` (proto tag 18) | repeated | **NOT touched by FVA** (common myth); VLB does not touch either | Widely believed but incorrect — FVA targets input_history instead |
 | **CInButtonStatePB.attack** | `CInButtonStatePB` (proto tag ~3, bit) | flag | FVA (fire gate), VLB (`FVA_GATE_MODE_ATTACK`) | Only fire angles on attack-pressed |
-| **CCSPlayerController.m_iCompetitiveRanking** | `CCSPlayerController + 0x880` | int32 | RankSpooferDriver (Phase 1.5 direct-write) | Local rank spoofing |
-| **CCSPlayerController.m_iCompetitiveWins** | `CCSPlayerController + 0x884` | int32 | RankSpooferDriver | Wins count spoofing |
+| **CCSPlayerController.m_iCompetitiveRanking** | `CCSPlayerController + 0x888` | int32 | RankSpooferDriver (Phase 1.5 direct-write) | Local rank spoofing |
+| **CCSPlayerController.m_iCompetitiveWins** | `CCSPlayerController + 0x88C` | int32 | RankSpooferDriver | Wins count spoofing |
 | **InventoryServices.m_nPersonaDataPublicLevel** | `CCSPlayerController.m_pInventoryServices → +0x74` | int32 | RankSpoofer (v1.14+ profile block) | Steam CS level spoof |
 | **InventoryServices.m_nPersonaDataXpTrailLevel** | `+0x84` | int32 | RankSpoofer | XP trail spoof |
 | **`m_hPlayerPawn`** | `CCSPlayerController + 0x914` | CHandle | FVA (subobj gate via FNV1a `0x737DDDA9E99E0B5D`), VLB | Local pawn resolution |
