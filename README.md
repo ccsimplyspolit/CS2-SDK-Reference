@@ -16,6 +16,8 @@ Curated reference for **CS2 (Counter-Strike 2) SDK, offsets, protobufs, and stru
 | [`structures/`](structures/) | Human-readable class layouts for VMP-critical CS2 types | Классы CS2, важные для VMP-анализа, в читаемом виде |
 | [`vmp_targets/`](vmp_targets/) | Which CS2 fields VMP-protected DLLs actually touch (input_history, rank display, gate byte, etc.) | Какие поля CS2 реально трогают защищённые VMP плагины |
 | [`tools/`](tools/) | Fetch + verify scripts | Скрипты обновления + сверки |
+| [`wiki/`](wiki/) | Bilingual long-form deep dives — 10 pages each in EN + RU | Двуязычные развёрнутые разборы — по 10 страниц на EN + RU |
+| [`USAGE.md`](USAGE.md) | Bilingual quick-start (first-time setup, update, verify, CS2 update, contribute) | Двуязычный quick-start (установка, обновление, сверка, апдейт cs2, contrib) |
 
 ---
 
