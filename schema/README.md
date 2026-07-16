@@ -43,7 +43,7 @@ Structure (each of the 3 files):
 import json
 c = json.load(open('client_dll.json'))
 fields = c['client.dll']['classes']['CCSPlayerController']['fields']
-print(hex(fields['m_iCompetitiveRanking']))  # 0x880
+print(hex(fields['m_iCompetitiveRanking']))  # 0x888
 ```
 
 ### What every RE project needs from here
@@ -113,7 +113,7 @@ Machine-readable дампы member-оффсетов каждого класса 
 import json
 c = json.load(open('client_dll.json'))
 fields = c['client.dll']['classes']['CCSPlayerController']['fields']
-print(hex(fields['m_iCompetitiveRanking']))  # 0x880
+print(hex(fields['m_iCompetitiveRanking']))  # 0x888
 ```
 
 ### Что берёт отсюда любой RE-проект
