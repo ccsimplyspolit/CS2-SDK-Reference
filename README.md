@@ -27,6 +27,34 @@ Curated reference for **CS2 (Counter-Strike 2) SDK, offsets, protobufs, and stru
 
 ---
 
+## One-click sync / Синхронизация в один клик
+
+**EN:** Just run one command / double-click one file. Fetches offsets + schema from `a2x/cs2-dumper` HEAD + all 43 protobufs from `SteamDatabase/Protobufs`, snapshots current state to `offsets/history/pre_sync_<timestamp>/` before overwriting, and optionally auto-commits + pushes:
+
+**RU:** Одной командой / двойной клик по файлу. Тянет offsets + schema из `a2x/cs2-dumper` HEAD и все 43 protobuf'а из `SteamDatabase/Protobufs`, снапшотит текущее состояние в `offsets/history/pre_sync_<timestamp>/` перед перезаписью, и опционально auto-commit + push:
+
+```powershell
+# Windows: just double-click sync.cmd
+# CLI (Windows/Linux/macOS):
+python tools/sync_from_upstream.py                # dry-run intent: fetch HEAD + diff
+python tools/sync_from_upstream.py --dry-run      # show diff without writing
+python tools/sync_from_upstream.py --commit       # sync + git add/commit/push
+python tools/sync_from_upstream.py --pr 670       # sync offsets from an open cs2-dumper PR
+python tools/sync_from_upstream.py --offsets-only # skip protobufs
+python tools/sync_from_upstream.py --protobufs-only
+python tools/sync_from_upstream.py --verify --live-pid 53000  # verify against running cs2
+```
+
+Options / Опции:
+- `--pr N` — fetch offsets from an open cs2-dumper PR by number
+- `--commit` — auto-commit and push if anything changed
+- `--dry-run` — show what would change, write nothing (exit 2 if drift detected)
+- `--verify` / `--live-pid PID` — verify offsets against a running cs2 process
+
+Exit codes / Коды возврата: 0 = OK, 1 = network/git error, 2 = dry-run drift.
+
+---
+
 ## Quick start / Быстрый старт
 
 ### Get the current globals / Получить текущие globals
