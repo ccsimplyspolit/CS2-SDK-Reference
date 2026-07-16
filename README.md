@@ -69,13 +69,15 @@ Live output (2026-07-15 HEAD, build 14169-14170 are identical for these fields):
 
 ```json
 {
-  "dwLocalPlayerController": 36832624,     // 0x2383730 → follow ptr → CCSPlayerController*
-  "dwGameRules":             36966376,     // 0x23A39D8 → C_CSGameRules*
+  "dwLocalPlayerController": 37174576,     // 0x2383730 → follow ptr → CCSPlayerController*
+  "dwGameRules":             36966360,     // 0x23A39D8 → C_CSGameRules*
   "dwLocalPlayerPawn":       37125176,     // 0x23A4238
   "dwCSGOInput":             37205488,     // 0x23B95F0
   "dwGlobalVars":            34275680      // 0x208FD60
 }
 ```
+
+_(Decimals reflect cs2-dumper HEAD after 2026-07-16 refresh; verified via `python -c "import json; print(json.load(open('offsets/latest/offsets.json'))['client.dll'])"`)_
 
 ### Get a class field offset / Получить оффсет поля класса
 
