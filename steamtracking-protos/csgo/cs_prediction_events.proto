@@ -1,0 +1,12 @@
+import "networkbasetypes.proto";
+import "prediction_events.proto";
+
+enum ECSPredictionEvents {
+	CSPE_DamageTag = 1;
+}
+
+message CCSPredictionEvent_DamageTag {
+	optional float flinch_mod_small = 1;
+	optional float flinch_mod_large = 2;
+	optional float friendly_fire_damage_reduction_ratio = 3;
+}

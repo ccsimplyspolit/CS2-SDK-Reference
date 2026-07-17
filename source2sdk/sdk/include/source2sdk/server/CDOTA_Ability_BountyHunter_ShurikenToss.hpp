@@ -1,0 +1,58 @@
+#pragma once
+
+#include "source2sdk/source2gen/source2gen.hpp"
+#include <cstddef>
+#include <cstdint>
+#include "source2sdk/server/CDOTABaseAbility.hpp"
+namespace source2sdk
+{
+    namespace server
+    {
+        struct CBaseEntity;
+    };
+};
+namespace source2sdk
+{
+    namespace server
+    {
+        struct CDOTABaseAbility;
+    };
+};
+
+// /////////////////////////////////////////////////////////////
+// Module: server
+// Created using source2gen - github.com/neverlosecc/source2gen
+// /////////////////////////////////////////////////////////////
+
+namespace source2sdk
+{
+    namespace server
+    {
+        // Registered alignment: 0x8
+        // Alignment: 0x8
+        // Standard-layout class: false
+        // Size: 0x5e8
+        // Has VTable
+        #pragma pack(push, 1)
+        class CDOTA_Ability_BountyHunter_ShurikenToss : public source2sdk::server::CDOTABaseAbility
+        {
+        public:
+            // m_hSourceAbility has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+            // CHandle<source2sdk::server::CDOTABaseAbility> m_hSourceAbility;
+            char m_hSourceAbility[0x4]; // 0x5c0            
+            // m_hSourceCaster has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+            // CHandle<source2sdk::server::CBaseEntity> m_hSourceCaster;
+            char m_hSourceCaster[0x4]; // 0x5c4            
+            // m_hHitEntities has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+            // CUtlVector<CHandle<source2sdk::server::CBaseEntity>> m_hHitEntities;
+            char m_hHitEntities[0x18]; // 0x5c8            
+            bool passthrough_damage; // 0x5e0            
+            uint8_t _pad05e1[0x7];
+        };
+        #pragma pack(pop)
+        
+        // Cannot assert offsets of fields in CDOTA_Ability_BountyHunter_ShurikenToss because it is not a standard-layout class
+        
+        static_assert(sizeof(source2sdk::server::CDOTA_Ability_BountyHunter_ShurikenToss) == 0x5e8);
+    };
+};
