@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CMatchTrackedStatsEntity) == 0x660);
+        // size assertion omitted: CMatchTrackedStatsEntity has no schema binary (size is a guess)
     };
 };

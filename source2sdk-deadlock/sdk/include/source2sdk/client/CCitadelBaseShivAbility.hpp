@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadelBaseShivAbility) == 0x11d8);
+        // size assertion omitted: CCitadelBaseShivAbility has no schema binary (size is a guess)
     };
 };

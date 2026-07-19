@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CSurvivorsPowerUp_KnifeThrow) == 0x730);
+        // size assertion omitted: CSurvivorsPowerUp_KnifeThrow has no schema binary (size is a guess)
     };
 };

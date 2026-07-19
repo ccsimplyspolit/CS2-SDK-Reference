@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CPlayer_AutoaimServices) == 0x48);
+        // size assertion omitted: CPlayer_AutoaimServices has no schema binary (size is a guess)
     };
 };

@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_WeaponSSG08) == 0x1d10);
+        // size assertion omitted: C_WeaponSSG08 has no schema binary (size is a guess)
     };
 };

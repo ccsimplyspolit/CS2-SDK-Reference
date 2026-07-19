@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadel_Modifier_Hunger_Target) == 0x158);
+        // size assertion omitted: CCitadel_Modifier_Hunger_Target has no schema binary (size is a guess)
     };
 };

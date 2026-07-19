@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_DOTA_Ability_Keeper_of_the_Light_SpecialReserve) == 0x6a8);
+        // size assertion omitted: C_DOTA_Ability_Keeper_of_the_Light_SpecialReserve has no schema binary (size is a guess)
     };
 };

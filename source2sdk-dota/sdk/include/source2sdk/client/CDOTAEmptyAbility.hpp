@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CDOTAEmptyAbility) == 0x6a8);
+        // size assertion omitted: CDOTAEmptyAbility has no schema binary (size is a guess)
     };
 };

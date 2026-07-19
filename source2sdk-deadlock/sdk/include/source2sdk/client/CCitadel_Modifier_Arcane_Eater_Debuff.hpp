@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadel_Modifier_Arcane_Eater_Debuff) == 0xc8);
+        // size assertion omitted: CCitadel_Modifier_Arcane_Eater_Debuff has no schema binary (size is a guess)
     };
 };

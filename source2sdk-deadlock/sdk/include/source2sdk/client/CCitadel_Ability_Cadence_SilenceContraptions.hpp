@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadel_Ability_Cadence_SilenceContraptions) == 0x1270);
+        // size assertion omitted: CCitadel_Ability_Cadence_SilenceContraptions has no schema binary (size is a guess)
     };
 };

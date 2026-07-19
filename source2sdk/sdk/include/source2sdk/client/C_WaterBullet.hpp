@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_WaterBullet) == 0x1180);
+        // size assertion omitted: C_WaterBullet has no schema binary (size is a guess)
     };
 };

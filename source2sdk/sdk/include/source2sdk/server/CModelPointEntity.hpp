@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CModelPointEntity) == 0x770);
+        // size assertion omitted: CModelPointEntity has no schema binary (size is a guess)
     };
 };

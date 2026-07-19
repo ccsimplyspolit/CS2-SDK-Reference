@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_Ability_Shotgun_Astro) == 0x1530);
+        // size assertion omitted: CCitadel_Ability_Shotgun_Astro has no schema binary (size is a guess)
     };
 };

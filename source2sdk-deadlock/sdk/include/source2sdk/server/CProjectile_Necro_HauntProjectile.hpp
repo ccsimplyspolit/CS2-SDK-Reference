@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CProjectile_Necro_HauntProjectile) == 0xd08);
+        // size assertion omitted: CProjectile_Necro_HauntProjectile has no schema binary (size is a guess)
     };
 };

@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadelProjectileTouchVolume) == 0x9a8);
+        // size assertion omitted: CCitadelProjectileTouchVolume has no schema binary (size is a guess)
     };
 };

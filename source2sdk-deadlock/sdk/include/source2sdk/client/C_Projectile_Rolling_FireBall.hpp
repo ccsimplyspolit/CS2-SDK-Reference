@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_Projectile_Rolling_FireBall) == 0xad8);
+        // size assertion omitted: C_Projectile_Rolling_FireBall has no schema binary (size is a guess)
     };
 };

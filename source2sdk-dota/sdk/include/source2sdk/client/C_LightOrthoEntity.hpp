@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_LightOrthoEntity) == 0xa90);
+        // size assertion omitted: C_LightOrthoEntity has no schema binary (size is a guess)
     };
 };

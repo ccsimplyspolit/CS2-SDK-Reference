@@ -42,12 +42,10 @@ crashing. **1 type was skipped**; the log names it.
 
 ## Compile status
 
-The `client` module compiles under MSVC (`/std:c++17 /permissive-`) with **1
-known edge-case class** (`dota_minimap_boundary` — an empty entity with a vtable
-whose 0x8 size the compiler rounds up). This is the same category as the
-"template types / misaligned types" limitations `source2gen` documents: a
-handful of classes per game can't be reproduced byte-exactly. Everything else in
-the module compiles clean.
+**All 32 modules compile with 0 errors** under MSVC (`/std:c++17 /permissive-`),
+verified per-module. The one former edge case (`dota_minimap_boundary`, a
+name-only entity with no schema binding whose guessed size can't be asserted) is
+handled: `source2gen` now omits the size assertion for such classes.
 
 ### License
 

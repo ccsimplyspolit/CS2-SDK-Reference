@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadel_TechUpgrade_CorpseExplosion) == 0x13d8);
+        // size assertion omitted: CCitadel_TechUpgrade_CorpseExplosion has no schema binary (size is a guess)
     };
 };

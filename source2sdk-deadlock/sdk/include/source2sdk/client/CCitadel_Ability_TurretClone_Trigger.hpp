@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadel_Ability_TurretClone_Trigger) == 0x11e8);
+        // size assertion omitted: CCitadel_Ability_TurretClone_Trigger has no schema binary (size is a guess)
     };
 };

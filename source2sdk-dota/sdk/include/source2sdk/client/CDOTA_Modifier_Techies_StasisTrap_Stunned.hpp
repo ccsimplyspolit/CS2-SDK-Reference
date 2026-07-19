@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Techies_StasisTrap_Stunned) == 0x1a58);
+        // size assertion omitted: CDOTA_Modifier_Techies_StasisTrap_Stunned has no schema binary (size is a guess)
     };
 };

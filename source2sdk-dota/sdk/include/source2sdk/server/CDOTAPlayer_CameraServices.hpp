@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTAPlayer_CameraServices) == 0x160);
+        // size assertion omitted: CDOTAPlayer_CameraServices has no schema binary (size is a guess)
     };
 };

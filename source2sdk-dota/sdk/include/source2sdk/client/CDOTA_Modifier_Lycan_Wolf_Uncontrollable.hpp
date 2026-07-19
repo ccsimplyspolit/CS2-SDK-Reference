@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Lycan_Wolf_Uncontrollable) == 0x1a58);
+        // size assertion omitted: CDOTA_Modifier_Lycan_Wolf_Uncontrollable has no schema binary (size is a guess)
     };
 };

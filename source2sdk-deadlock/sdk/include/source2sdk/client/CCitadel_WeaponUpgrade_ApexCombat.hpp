@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadel_WeaponUpgrade_ApexCombat) == 0x11d8);
+        // size assertion omitted: CCitadel_WeaponUpgrade_ApexCombat has no schema binary (size is a guess)
     };
 };

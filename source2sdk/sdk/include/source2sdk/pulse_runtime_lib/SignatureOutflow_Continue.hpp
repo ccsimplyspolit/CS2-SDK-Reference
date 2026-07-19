@@ -27,6 +27,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::pulse_runtime_lib::SignatureOutflow_Continue) == 0x48);
+        // size assertion omitted: SignatureOutflow_Continue has no schema binary (size is a guess)
     };
 };

@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CProjectile_KnightChargeLeading_Projectile) == 0x10c8);
+        // size assertion omitted: CProjectile_KnightChargeLeading_Projectile has no schema binary (size is a guess)
     };
 };

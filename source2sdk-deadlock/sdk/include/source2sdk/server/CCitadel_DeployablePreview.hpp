@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_DeployablePreview) == 0xaa0);
+        // size assertion omitted: CCitadel_DeployablePreview has no schema binary (size is a guess)
     };
 };

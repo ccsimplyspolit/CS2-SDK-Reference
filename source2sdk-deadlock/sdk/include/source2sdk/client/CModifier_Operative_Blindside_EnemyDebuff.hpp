@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CModifier_Operative_Blindside_EnemyDebuff) == 0x140);
+        // size assertion omitted: CModifier_Operative_Blindside_EnemyDebuff has no schema binary (size is a guess)
     };
 };

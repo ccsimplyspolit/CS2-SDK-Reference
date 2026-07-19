@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CLightCapsuleEntity) == 0x788);
+        // size assertion omitted: CLightCapsuleEntity has no schema binary (size is a guess)
     };
 };

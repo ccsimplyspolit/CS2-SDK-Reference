@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_Ability_Nian_Tail_Swipe) == 0x588);
+        // size assertion omitted: CDOTA_Ability_Nian_Tail_Swipe has no schema binary (size is a guess)
     };
 };

@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_BaseNPC_Clinkz_Skeleton_Army) == 0x18a0);
+        // size assertion omitted: CDOTA_BaseNPC_Clinkz_Skeleton_Army has no schema binary (size is a guess)
     };
 };

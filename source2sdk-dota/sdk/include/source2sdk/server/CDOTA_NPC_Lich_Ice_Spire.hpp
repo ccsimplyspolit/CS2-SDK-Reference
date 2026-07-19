@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_NPC_Lich_Ice_Spire) == 0x18a0);
+        // size assertion omitted: CDOTA_NPC_Lich_Ice_Spire has no schema binary (size is a guess)
     };
 };

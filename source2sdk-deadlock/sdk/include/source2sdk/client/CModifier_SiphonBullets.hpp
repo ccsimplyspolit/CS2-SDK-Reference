@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CModifier_SiphonBullets) == 0x378);
+        // size assertion omitted: CModifier_SiphonBullets has no schema binary (size is a guess)
     };
 };

@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_Werewolf_UnloadGun) == 0x1478);
+        // size assertion omitted: CCitadel_Werewolf_UnloadGun has no schema binary (size is a guess)
     };
 };

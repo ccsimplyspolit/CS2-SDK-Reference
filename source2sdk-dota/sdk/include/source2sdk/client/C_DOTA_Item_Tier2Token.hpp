@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_DOTA_Item_Tier2Token) == 0x780);
+        // size assertion omitted: C_DOTA_Item_Tier2Token has no schema binary (size is a guess)
     };
 };

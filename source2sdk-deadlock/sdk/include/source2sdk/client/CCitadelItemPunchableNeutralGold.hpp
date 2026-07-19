@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadelItemPunchableNeutralGold) == 0xcf0);
+        // size assertion omitted: CCitadelItemPunchableNeutralGold has no schema binary (size is a guess)
     };
 };

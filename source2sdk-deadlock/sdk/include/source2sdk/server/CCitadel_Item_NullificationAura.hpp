@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_Item_NullificationAura) == 0x1078);
+        // size assertion omitted: CCitadel_Item_NullificationAura has no schema binary (size is a guess)
     };
 };

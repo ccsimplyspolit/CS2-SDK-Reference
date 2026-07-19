@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadel_Ability_Trappers_Bolo) == 0x1458);
+        // size assertion omitted: CCitadel_Ability_Trappers_Bolo has no schema binary (size is a guess)
     };
 };

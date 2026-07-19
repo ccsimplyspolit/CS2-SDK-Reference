@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_DOTA_AncientDecorationProp) == 0xd10);
+        // size assertion omitted: C_DOTA_AncientDecorationProp has no schema binary (size is a guess)
     };
 };

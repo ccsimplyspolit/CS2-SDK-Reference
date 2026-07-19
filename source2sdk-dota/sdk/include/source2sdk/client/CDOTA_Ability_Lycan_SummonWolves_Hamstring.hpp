@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CDOTA_Ability_Lycan_SummonWolves_Hamstring) == 0x6a8);
+        // size assertion omitted: CDOTA_Ability_Lycan_SummonWolves_Hamstring has no schema binary (size is a guess)
     };
 };

@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CHostageRescueZone) == 0x10b0);
+        // size assertion omitted: CHostageRescueZone has no schema binary (size is a guess)
     };
 };

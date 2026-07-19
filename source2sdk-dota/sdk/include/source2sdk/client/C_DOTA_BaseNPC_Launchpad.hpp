@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_DOTA_BaseNPC_Launchpad) == 0x1a20);
+        // size assertion omitted: C_DOTA_BaseNPC_Launchpad has no schema binary (size is a guess)
     };
 };

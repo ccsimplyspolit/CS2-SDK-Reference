@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_Announcer_Base) == 0xba0);
+        // size assertion omitted: CCitadel_Announcer_Base has no schema binary (size is a guess)
     };
 };

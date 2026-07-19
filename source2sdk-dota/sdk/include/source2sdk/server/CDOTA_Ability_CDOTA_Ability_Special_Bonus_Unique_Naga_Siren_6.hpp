@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_Ability_CDOTA_Ability_Special_Bonus_Unique_Naga_Siren_6) == 0x580);
+        // size assertion omitted: CDOTA_Ability_CDOTA_Ability_Special_Bonus_Unique_Naga_Siren_6 has no schema binary (size is a guess)
     };
 };

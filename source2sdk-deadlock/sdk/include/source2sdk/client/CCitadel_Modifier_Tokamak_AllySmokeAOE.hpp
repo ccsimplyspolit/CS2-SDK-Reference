@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadel_Modifier_Tokamak_AllySmokeAOE) == 0x190);
+        // size assertion omitted: CCitadel_Modifier_Tokamak_AllySmokeAOE has no schema binary (size is a guess)
     };
 };

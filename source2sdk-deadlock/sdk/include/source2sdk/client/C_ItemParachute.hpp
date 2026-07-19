@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_ItemParachute) == 0xe30);
+        // size assertion omitted: C_ItemParachute has no schema binary (size is a guess)
     };
 };

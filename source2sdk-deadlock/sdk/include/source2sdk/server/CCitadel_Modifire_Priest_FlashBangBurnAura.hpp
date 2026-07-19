@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_Modifire_Priest_FlashBangBurnAura) == 0x208);
+        // size assertion omitted: CCitadel_Modifire_Priest_FlashBangBurnAura has no schema binary (size is a guess)
     };
 };

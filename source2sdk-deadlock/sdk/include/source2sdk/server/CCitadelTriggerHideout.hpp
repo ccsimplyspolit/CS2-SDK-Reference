@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadelTriggerHideout) == 0x8e0);
+        // size assertion omitted: CCitadelTriggerHideout has no schema binary (size is a guess)
     };
 };

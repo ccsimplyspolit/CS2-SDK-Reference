@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_Item_TechCleave) == 0x1120);
+        // size assertion omitted: CCitadel_Item_TechCleave has no schema binary (size is a guess)
     };
 };

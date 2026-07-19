@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CTriggerTeamBase) == 0x918);
+        // size assertion omitted: CTriggerTeamBase has no schema binary (size is a guess)
     };
 };

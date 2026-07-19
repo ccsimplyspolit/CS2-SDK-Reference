@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::pulse_system::CPulseGraphInstance_TurtleGraphics) == 0x140);
+        // size assertion omitted: CPulseGraphInstance_TurtleGraphics has no schema binary (size is a guess)
     };
 };

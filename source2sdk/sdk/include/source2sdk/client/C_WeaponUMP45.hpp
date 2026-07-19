@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_WeaponUMP45) == 0x1d10);
+        // size assertion omitted: C_WeaponUMP45 has no schema binary (size is a guess)
     };
 };

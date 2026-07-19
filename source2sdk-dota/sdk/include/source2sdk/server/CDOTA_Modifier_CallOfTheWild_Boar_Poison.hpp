@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_CallOfTheWild_Boar_Poison) == 0x1a60);
+        // size assertion omitted: CDOTA_Modifier_CallOfTheWild_Boar_Poison has no schema binary (size is a guess)
     };
 };

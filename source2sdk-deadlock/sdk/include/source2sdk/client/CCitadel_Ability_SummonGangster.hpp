@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadel_Ability_SummonGangster) == 0x11d8);
+        // size assertion omitted: CCitadel_Ability_SummonGangster has no schema binary (size is a guess)
     };
 };

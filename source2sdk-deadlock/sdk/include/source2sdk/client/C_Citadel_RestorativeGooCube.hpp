@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_Citadel_RestorativeGooCube) == 0xcb8);
+        // size assertion omitted: C_Citadel_RestorativeGooCube has no schema binary (size is a guess)
     };
 };

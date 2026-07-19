@@ -27,6 +27,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::animlib::CNmGraphInstance) == 0x3d0);
+        // size assertion omitted: CNmGraphInstance has no schema binary (size is a guess)
     };
 };

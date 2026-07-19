@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_Modifier_SpellShield_Buff) == 0xd0);
+        // size assertion omitted: CCitadel_Modifier_SpellShield_Buff has no schema binary (size is a guess)
     };
 };

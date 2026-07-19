@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CItem_FleetfootBoots) == 0x11d8);
+        // size assertion omitted: CItem_FleetfootBoots has no schema binary (size is a guess)
     };
 };

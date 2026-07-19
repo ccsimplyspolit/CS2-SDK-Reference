@@ -31,6 +31,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCS_PortraitWorldCallbackHandler) == 0x608);
+        // size assertion omitted: CCS_PortraitWorldCallbackHandler has no schema binary (size is a guess)
     };
 };

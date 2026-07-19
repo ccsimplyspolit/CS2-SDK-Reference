@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_Projectile_Airheart_FloatingBomb) == 0xd58);
+        // size assertion omitted: C_Projectile_Airheart_FloatingBomb has no schema binary (size is a guess)
     };
 };

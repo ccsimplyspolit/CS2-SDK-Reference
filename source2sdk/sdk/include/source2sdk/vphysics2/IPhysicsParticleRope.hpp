@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::vphysics2::IPhysicsParticleRope) == 0x8);
+        // size assertion omitted: IPhysicsParticleRope has no schema binary (size is a guess)
     };
 };

@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_Ability_Kunkka_Admirals_Rum) == 0x580);
+        // size assertion omitted: CDOTA_Ability_Kunkka_Admirals_Rum has no schema binary (size is a guess)
     };
 };

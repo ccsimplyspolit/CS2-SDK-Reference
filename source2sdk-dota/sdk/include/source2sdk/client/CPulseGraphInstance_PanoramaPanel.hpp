@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CPulseGraphInstance_PanoramaPanel) == 0x130);
+        // size assertion omitted: CPulseGraphInstance_PanoramaPanel has no schema binary (size is a guess)
     };
 };

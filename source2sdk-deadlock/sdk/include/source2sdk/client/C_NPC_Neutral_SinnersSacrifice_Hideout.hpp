@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_NPC_Neutral_SinnersSacrifice_Hideout) == 0x1c40);
+        // size assertion omitted: C_NPC_Neutral_SinnersSacrifice_Hideout has no schema binary (size is a guess)
     };
 };

@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_UtilityUpgrade_DebuffImmunity) == 0xf78);
+        // size assertion omitted: CCitadel_UtilityUpgrade_DebuffImmunity has no schema binary (size is a guess)
     };
 };

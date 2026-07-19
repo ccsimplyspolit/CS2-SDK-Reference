@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_BossAttackableTrigger) == 0x8f0);
+        // size assertion omitted: CDOTA_BossAttackableTrigger has no schema binary (size is a guess)
     };
 };

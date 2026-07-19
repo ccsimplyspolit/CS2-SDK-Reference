@@ -31,6 +31,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTABaseCustomHeroPickRules) == 0x498);
+        // size assertion omitted: CDOTABaseCustomHeroPickRules has no schema binary (size is a guess)
     };
 };

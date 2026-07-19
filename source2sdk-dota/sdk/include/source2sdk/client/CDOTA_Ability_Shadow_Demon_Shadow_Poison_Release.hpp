@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CDOTA_Ability_Shadow_Demon_Shadow_Poison_Release) == 0x6a8);
+        // size assertion omitted: CDOTA_Ability_Shadow_Demon_Shadow_Poison_Release has no schema binary (size is a guess)
     };
 };

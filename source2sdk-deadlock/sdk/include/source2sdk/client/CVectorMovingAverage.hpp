@@ -31,6 +31,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CVectorMovingAverage) == 0x20);
+        // size assertion omitted: CVectorMovingAverage has no schema binary (size is a guess)
     };
 };

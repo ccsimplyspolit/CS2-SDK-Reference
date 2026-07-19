@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CInfoHeroTestingController) == 0x528);
+        // size assertion omitted: CInfoHeroTestingController has no schema binary (size is a guess)
     };
 };

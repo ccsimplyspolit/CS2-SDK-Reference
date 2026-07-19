@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CModifier_Synth_Barrage_Amp) == 0x150);
+        // size assertion omitted: CModifier_Synth_Barrage_Amp has no schema binary (size is a guess)
     };
 };

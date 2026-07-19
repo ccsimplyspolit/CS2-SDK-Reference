@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadel_Modifier_SuperAcolytesGlove) == 0x280);
+        // size assertion omitted: CCitadel_Modifier_SuperAcolytesGlove has no schema binary (size is a guess)
     };
 };

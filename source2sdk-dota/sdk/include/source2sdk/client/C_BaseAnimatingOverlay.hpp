@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_BaseAnimatingOverlay) == 0xac0);
+        // size assertion omitted: C_BaseAnimatingOverlay has no schema binary (size is a guess)
     };
 };

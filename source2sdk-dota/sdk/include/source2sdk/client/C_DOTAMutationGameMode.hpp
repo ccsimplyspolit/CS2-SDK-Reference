@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_DOTAMutationGameMode) == 0x7d8);
+        // size assertion omitted: C_DOTAMutationGameMode has no schema binary (size is a guess)
     };
 };

@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_Modifier_Bull_Leap_Boosting) == 0xe8);
+        // size assertion omitted: CCitadel_Modifier_Bull_Leap_Boosting has no schema binary (size is a guess)
     };
 };

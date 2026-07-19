@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCSObserver_MovementServices) == 0x258);
+        // size assertion omitted: CCSObserver_MovementServices has no schema binary (size is a guess)
     };
 };

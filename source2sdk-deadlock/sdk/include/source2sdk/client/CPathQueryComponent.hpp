@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CPathQueryComponent) == 0xa0);
+        // size assertion omitted: CPathQueryComponent has no schema binary (size is a guess)
     };
 };

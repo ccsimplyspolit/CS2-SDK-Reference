@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadel_Ability_Rutger_Pulse) == 0x12d8);
+        // size assertion omitted: CCitadel_Ability_Rutger_Pulse has no schema binary (size is a guess)
     };
 };

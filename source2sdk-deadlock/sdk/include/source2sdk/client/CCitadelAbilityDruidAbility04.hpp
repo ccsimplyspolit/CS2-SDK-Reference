@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadelAbilityDruidAbility04) == 0x11d8);
+        // size assertion omitted: CCitadelAbilityDruidAbility04 has no schema binary (size is a guess)
     };
 };

@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_Modifier_LightningBullet) == 0x2d0);
+        // size assertion omitted: CCitadel_Modifier_LightningBullet has no schema binary (size is a guess)
     };
 };

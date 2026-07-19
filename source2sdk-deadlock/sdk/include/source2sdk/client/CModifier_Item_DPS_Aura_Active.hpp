@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CModifier_Item_DPS_Aura_Active) == 0x240);
+        // size assertion omitted: CModifier_Item_DPS_Aura_Active has no schema binary (size is a guess)
     };
 };

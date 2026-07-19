@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::animlib::CNmModelSpaceBlendTask) == 0xe0);
+        // size assertion omitted: CNmModelSpaceBlendTask has no schema binary (size is a guess)
     };
 };

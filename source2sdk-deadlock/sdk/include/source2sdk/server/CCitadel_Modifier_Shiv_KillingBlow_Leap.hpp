@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_Modifier_Shiv_KillingBlow_Leap) == 0x150);
+        // size assertion omitted: CCitadel_Modifier_Shiv_KillingBlow_Leap has no schema binary (size is a guess)
     };
 };

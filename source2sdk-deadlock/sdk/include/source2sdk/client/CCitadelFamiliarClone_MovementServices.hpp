@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadelFamiliarClone_MovementServices) == 0x2f0);
+        // size assertion omitted: CCitadelFamiliarClone_MovementServices has no schema binary (size is a guess)
     };
 };

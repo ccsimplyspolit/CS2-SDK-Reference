@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_Ability_AghsFort_ShadowWaveEffectPotion) == 0x658);
+        // size assertion omitted: CDOTA_Ability_AghsFort_ShadowWaveEffectPotion has no schema binary (size is a guess)
     };
 };

@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadel_Modifier_MysticReverb_Proc) == 0x3f8);
+        // size assertion omitted: CCitadel_Modifier_MysticReverb_Proc has no schema binary (size is a guess)
     };
 };

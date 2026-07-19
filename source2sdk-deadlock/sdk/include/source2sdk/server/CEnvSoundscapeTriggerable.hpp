@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CEnvSoundscapeTriggerable) == 0x530);
+        // size assertion omitted: CEnvSoundscapeTriggerable has no schema binary (size is a guess)
     };
 };

@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_Modifier_Siphon_Bullets_Watcher) == 0x220);
+        // size assertion omitted: CCitadel_Modifier_Siphon_Bullets_Watcher has no schema binary (size is a guess)
     };
 };

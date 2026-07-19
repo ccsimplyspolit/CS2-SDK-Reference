@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_DarkCarnival_Firework) == 0x1a70);
+        // size assertion omitted: CDOTA_Modifier_DarkCarnival_Firework has no schema binary (size is a guess)
     };
 };

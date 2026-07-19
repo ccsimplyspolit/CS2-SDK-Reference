@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_Modifier_Galvanic_Storm_Effect) == 0x430);
+        // size assertion omitted: CCitadel_Modifier_Galvanic_Storm_Effect has no schema binary (size is a guess)
     };
 };

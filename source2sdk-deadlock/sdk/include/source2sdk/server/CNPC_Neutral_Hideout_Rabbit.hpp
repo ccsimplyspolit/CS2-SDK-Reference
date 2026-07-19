@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CNPC_Neutral_Hideout_Rabbit) == 0xca0);
+        // size assertion omitted: CNPC_Neutral_Hideout_Rabbit has no schema binary (size is a guess)
     };
 };

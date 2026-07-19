@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_VerticalMotionController) == 0x10);
+        // size assertion omitted: C_VerticalMotionController has no schema binary (size is a guess)
     };
 };

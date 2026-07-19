@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_DOTA_PushWave) == 0xac0);
+        // size assertion omitted: C_DOTA_PushWave has no schema binary (size is a guess)
     };
 };

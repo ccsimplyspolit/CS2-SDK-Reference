@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CDOTA_Ability_Aghanim_Spear) == 0x6a8);
+        // size assertion omitted: CDOTA_Ability_Aghanim_Spear has no schema binary (size is a guess)
     };
 };

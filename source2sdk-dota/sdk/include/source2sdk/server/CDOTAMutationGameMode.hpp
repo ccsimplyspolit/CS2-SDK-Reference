@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTAMutationGameMode) == 0x7d8);
+        // size assertion omitted: CDOTAMutationGameMode has no schema binary (size is a guess)
     };
 };

@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_Modifier_Necro_StackingDebuff) == 0x458);
+        // size assertion omitted: CCitadel_Modifier_Necro_StackingDebuff has no schema binary (size is a guess)
     };
 };

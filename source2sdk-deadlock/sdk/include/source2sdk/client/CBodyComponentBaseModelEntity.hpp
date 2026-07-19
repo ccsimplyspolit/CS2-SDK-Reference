@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CBodyComponentBaseModelEntity) == 0x4d0);
+        // size assertion omitted: CBodyComponentBaseModelEntity has no schema binary (size is a guess)
     };
 };

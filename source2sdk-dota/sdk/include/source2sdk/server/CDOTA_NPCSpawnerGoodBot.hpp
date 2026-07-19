@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_NPCSpawnerGoodBot) == 0x518);
+        // size assertion omitted: CDOTA_NPCSpawnerGoodBot has no schema binary (size is a guess)
     };
 };

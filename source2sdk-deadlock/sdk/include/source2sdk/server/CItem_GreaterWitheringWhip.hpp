@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CItem_GreaterWitheringWhip) == 0xf78);
+        // size assertion omitted: CItem_GreaterWitheringWhip has no schema binary (size is a guess)
     };
 };

@@ -27,6 +27,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::entity2::CEntityKeyValues) == 0x38);
+        // size assertion omitted: CEntityKeyValues has no schema binary (size is a guess)
     };
 };

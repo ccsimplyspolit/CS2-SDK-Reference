@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCSGameModeRules_Noop) == 0x30);
+        // size assertion omitted: CCSGameModeRules_Noop has no schema binary (size is a guess)
     };
 };

@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Legion_Commander_Duel_DamageBoost) == 0x1a58);
+        // size assertion omitted: CDOTA_Modifier_Legion_Commander_Duel_DamageBoost has no schema binary (size is a guess)
     };
 };

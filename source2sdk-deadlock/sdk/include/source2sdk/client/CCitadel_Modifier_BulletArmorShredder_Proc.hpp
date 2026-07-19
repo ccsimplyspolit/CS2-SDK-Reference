@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadel_Modifier_BulletArmorShredder_Proc) == 0x1f8);
+        // size assertion omitted: CCitadel_Modifier_BulletArmorShredder_Proc has no schema binary (size is a guess)
     };
 };

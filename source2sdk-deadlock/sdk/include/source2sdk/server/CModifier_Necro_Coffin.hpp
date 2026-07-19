@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CModifier_Necro_Coffin) == 0x150);
+        // size assertion omitted: CModifier_Necro_Coffin has no schema binary (size is a guess)
     };
 };

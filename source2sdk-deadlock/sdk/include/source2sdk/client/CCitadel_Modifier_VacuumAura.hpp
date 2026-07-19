@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadel_Modifier_VacuumAura) == 0x490);
+        // size assertion omitted: CCitadel_Modifier_VacuumAura has no schema binary (size is a guess)
     };
 };

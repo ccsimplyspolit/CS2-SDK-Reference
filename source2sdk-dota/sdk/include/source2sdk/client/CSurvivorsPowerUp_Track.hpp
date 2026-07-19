@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CSurvivorsPowerUp_Track) == 0x6f0);
+        // size assertion omitted: CSurvivorsPowerUp_Track has no schema binary (size is a guess)
     };
 };

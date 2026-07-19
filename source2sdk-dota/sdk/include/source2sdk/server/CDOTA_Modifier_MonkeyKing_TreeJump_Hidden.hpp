@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_MonkeyKing_TreeJump_Hidden) == 0x1a58);
+        // size assertion omitted: CDOTA_Modifier_MonkeyKing_TreeJump_Hidden has no schema binary (size is a guess)
     };
 };

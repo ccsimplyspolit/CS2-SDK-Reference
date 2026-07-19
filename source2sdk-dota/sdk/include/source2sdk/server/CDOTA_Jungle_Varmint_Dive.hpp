@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_Jungle_Varmint_Dive) == 0x580);
+        // size assertion omitted: CDOTA_Jungle_Varmint_Dive has no schema binary (size is a guess)
     };
 };

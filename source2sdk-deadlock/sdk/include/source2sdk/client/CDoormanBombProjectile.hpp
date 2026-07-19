@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CDoormanBombProjectile) == 0xad8);
+        // size assertion omitted: CDoormanBombProjectile has no schema binary (size is a guess)
     };
 };

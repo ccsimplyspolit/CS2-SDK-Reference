@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_DOTA_Ability_Invoker_DeafeningBlast_AD) == 0x6c8);
+        // size assertion omitted: C_DOTA_Ability_Invoker_DeafeningBlast_AD has no schema binary (size is a guess)
     };
 };

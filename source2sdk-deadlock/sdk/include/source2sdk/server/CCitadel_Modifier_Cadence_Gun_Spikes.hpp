@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_Modifier_Cadence_Gun_Spikes) == 0x1d8);
+        // size assertion omitted: CCitadel_Modifier_Cadence_Gun_Spikes has no schema binary (size is a guess)
     };
 };

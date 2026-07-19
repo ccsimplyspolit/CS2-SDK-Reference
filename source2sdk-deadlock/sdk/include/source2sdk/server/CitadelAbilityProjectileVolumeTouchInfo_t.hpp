@@ -10,6 +10,13 @@ namespace source2sdk
         struct CBaseEntity;
     };
 };
+namespace source2sdk
+{
+    namespace server
+    {
+        struct CCitadel_Bullet_Base;
+    };
+};
 
 // /////////////////////////////////////////////////////////////
 // Module: server

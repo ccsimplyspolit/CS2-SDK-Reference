@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_InfoTrooperSpawnAPI) == 0x8);
+        // size assertion omitted: CCitadel_InfoTrooperSpawnAPI has no schema binary (size is a guess)
     };
 };

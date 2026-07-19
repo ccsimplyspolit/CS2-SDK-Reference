@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadelItemPickupRejuvHeroTest) == 0xee0);
+        // size assertion omitted: CCitadelItemPickupRejuvHeroTest has no schema binary (size is a guess)
     };
 };

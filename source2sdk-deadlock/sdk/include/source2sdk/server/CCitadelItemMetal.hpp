@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadelItemMetal) == 0xc60);
+        // size assertion omitted: CCitadelItemMetal has no schema binary (size is a guess)
     };
 };

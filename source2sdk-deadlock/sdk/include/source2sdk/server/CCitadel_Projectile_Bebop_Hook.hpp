@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_Projectile_Bebop_Hook) == 0x860);
+        // size assertion omitted: CCitadel_Projectile_Bebop_Hook has no schema binary (size is a guess)
     };
 };

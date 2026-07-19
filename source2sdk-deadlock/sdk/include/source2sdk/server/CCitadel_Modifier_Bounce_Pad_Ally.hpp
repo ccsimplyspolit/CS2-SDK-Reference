@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_Modifier_Bounce_Pad_Ally) == 0x1d0);
+        // size assertion omitted: CCitadel_Modifier_Bounce_Pad_Ally has no schema binary (size is a guess)
     };
 };

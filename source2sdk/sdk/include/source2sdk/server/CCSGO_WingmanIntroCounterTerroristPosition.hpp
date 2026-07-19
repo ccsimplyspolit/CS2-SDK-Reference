@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCSGO_WingmanIntroCounterTerroristPosition) == 0xcc0);
+        // size assertion omitted: CCSGO_WingmanIntroCounterTerroristPosition has no schema binary (size is a guess)
     };
 };

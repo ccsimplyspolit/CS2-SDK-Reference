@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CModifier_Mirage_Tornado_Evasion) == 0x1d0);
+        // size assertion omitted: CModifier_Mirage_Tornado_Evasion has no schema binary (size is a guess)
     };
 };

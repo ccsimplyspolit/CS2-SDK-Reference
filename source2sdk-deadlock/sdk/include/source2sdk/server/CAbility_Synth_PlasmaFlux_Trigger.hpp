@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CAbility_Synth_PlasmaFlux_Trigger) == 0xf80);
+        // size assertion omitted: CAbility_Synth_PlasmaFlux_Trigger has no schema binary (size is a guess)
     };
 };

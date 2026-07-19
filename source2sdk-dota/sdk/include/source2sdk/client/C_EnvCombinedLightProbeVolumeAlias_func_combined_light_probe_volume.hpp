@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_EnvCombinedLightProbeVolumeAlias_func_combined_light_probe_volume) == 0x1738);
+        // size assertion omitted: C_EnvCombinedLightProbeVolumeAlias_func_combined_light_probe_volume has no schema binary (size is a guess)
     };
 };

@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CEnvLightProbeVolumeAPI) == 0x8);
+        // size assertion omitted: CEnvLightProbeVolumeAPI has no schema binary (size is a guess)
     };
 };

@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_Ability_Nevermore_Shadowraze3) == 0x590);
+        // size assertion omitted: CDOTA_Ability_Nevermore_Shadowraze3 has no schema binary (size is a guess)
     };
 };

@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::particleslib::CParticleBindingRealPulse) == 0x138);
+        // size assertion omitted: CParticleBindingRealPulse has no schema binary (size is a guess)
     };
 };

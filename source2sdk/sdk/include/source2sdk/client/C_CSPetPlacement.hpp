@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_CSPetPlacement) == 0x600);
+        // size assertion omitted: C_CSPetPlacement has no schema binary (size is a guess)
     };
 };

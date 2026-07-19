@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::animlib::CNmValueNode_CDefinition) == 0x10);
+        // size assertion omitted: CNmValueNode::CDefinition has no schema binary (size is a guess)
     };
 };

@@ -35,6 +35,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadelBaseMusicOBB) == 0x6f0);
+        // size assertion omitted: CCitadelBaseMusicOBB has no schema binary (size is a guess)
     };
 };

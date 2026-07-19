@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_Ability_Invoker_IceWall_AD) == 0x5d0);
+        // size assertion omitted: CDOTA_Ability_Invoker_IceWall_AD has no schema binary (size is a guess)
     };
 };
