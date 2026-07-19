@@ -1,0 +1,37 @@
+#pragma once
+
+#include "source2sdk/source2gen/source2gen.hpp"
+#include <cstddef>
+#include <cstdint>
+#include "source2sdk/client/CDOTA_Buff.hpp"
+
+// /////////////////////////////////////////////////////////////
+// Module: client
+// Created using source2gen - github.com/neverlosecc/source2gen
+// /////////////////////////////////////////////////////////////
+
+namespace source2sdk
+{
+    namespace client
+    {
+        // Registered alignment: unknown
+        // Alignment: unknown
+        // Standard-layout class: false
+        // Size: 0x1a68
+        // Has VTable
+        #pragma pack(push, 1)
+        class CDOTA_Modifier_Silencer_BrainDrain : public source2sdk::client::CDOTA_Buff
+        {
+        public:
+            float permanent_int_steal_range; // 0x1a58            
+            std::int32_t permanent_int_steal_amount; // 0x1a5c            
+            std::int32_t silenced_bonus_int_steal_amount; // 0x1a60            
+            float damage_pct; // 0x1a64            
+        };
+        #pragma pack(pop)
+        
+        // Cannot assert offsets of fields in CDOTA_Modifier_Silencer_BrainDrain because it is not a standard-layout class
+        
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Silencer_BrainDrain) == 0x1a68);
+    };
+};

@@ -1,0 +1,39 @@
+#pragma once
+
+#include "source2sdk/source2gen/source2gen.hpp"
+#include <cstddef>
+#include <cstdint>
+#include "source2sdk/client/CModifierParams.hpp"
+#include "source2sdk/server/CDOTA_Buff_Item.hpp"
+
+// /////////////////////////////////////////////////////////////
+// Module: server
+// Created using source2gen - github.com/neverlosecc/source2gen
+// /////////////////////////////////////////////////////////////
+
+namespace source2sdk
+{
+    namespace server
+    {
+        // Registered alignment: unknown
+        // Alignment: unknown
+        // Standard-layout class: false
+        // Size: 0x1b58
+        // Has VTable
+        #pragma pack(push, 1)
+        class CDOTA_Modifier_Item_Mirror_Shield : public source2sdk::server::CDOTA_Buff_Item
+        {
+        public:
+            source2sdk::client::CModifierParams m_LastParams; // 0x1a58            
+            std::int32_t all_stats; // 0x1b48            
+            std::int32_t reflect_chance; // 0x1b4c            
+            bool m_bProcSuccessful; // 0x1b50            
+            uint8_t _pad1b51[0x7];
+        };
+        #pragma pack(pop)
+        
+        // Cannot assert offsets of fields in CDOTA_Modifier_Item_Mirror_Shield because it is not a standard-layout class
+        
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Item_Mirror_Shield) == 0x1b58);
+    };
+};

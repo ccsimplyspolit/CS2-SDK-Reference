@@ -1,0 +1,49 @@
+#pragma once
+
+#include "source2sdk/source2gen/source2gen.hpp"
+#include <cstddef>
+#include <cstdint>
+#include "source2sdk/client/CPlayerPawnComponent.hpp"
+#include "source2sdk/client/ObserverMode_t.hpp"
+namespace source2sdk
+{
+    namespace server
+    {
+        struct CBaseEntity;
+    };
+};
+
+// /////////////////////////////////////////////////////////////
+// Module: server
+// Created using source2gen - github.com/neverlosecc/source2gen
+// /////////////////////////////////////////////////////////////
+
+namespace source2sdk
+{
+    namespace server
+    {
+        // Registered alignment: unknown
+        // Alignment: 0x8
+        // Standard-layout class: false
+        // Size: 0x58
+        // Has VTable
+        #pragma pack(push, 1)
+        class CPlayer_ObserverServices : public source2sdk::client::CPlayerPawnComponent
+        {
+        public:
+            std::uint8_t m_iObserverMode; // 0x48            
+            uint8_t _pad0049[0x3]; // 0x49
+            // m_hObserverTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+            // CHandle<source2sdk::server::CBaseEntity> m_hObserverTarget;
+            char m_hObserverTarget[0x4]; // 0x4c            
+            source2sdk::client::ObserverMode_t m_iObserverLastMode; // 0x50            
+            bool m_bForcedObserverMode; // 0x54            
+            uint8_t _pad0055[0x3];
+        };
+        #pragma pack(pop)
+        
+        // Cannot assert offsets of fields in CPlayer_ObserverServices because it is not a standard-layout class
+        
+        static_assert(sizeof(source2sdk::server::CPlayer_ObserverServices) == 0x58);
+    };
+};
