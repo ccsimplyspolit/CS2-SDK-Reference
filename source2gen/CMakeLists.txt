@@ -75,10 +75,12 @@ if(NOT SOURCE2GEN_GAME IN_LIST SOURCE2GEN_SUPPORTED_GAMES)
     message(FATAL_ERROR "source2gen: Invalid value for SOURCE2GEN_GAME: ${SOURCE2GEN_GAME}")
 endif()
 
-# Generating sdk-static
+# Generating sdk-static. Pass the target game so per-game type-size overrides
+# (size-<GAME> in sdk-static.toml) are applied — some placeholder types are a
+# different size in Dota 2 / Deadlock than in CS2.
 find_package(Python3 REQUIRED COMPONENTS Interpreter)
 execute_process(
-    COMMAND ${Python3_EXECUTABLE} ${CMAKE_SOURCE_DIR}/scripts/generate_static.py
+    COMMAND ${Python3_EXECUTABLE} ${CMAKE_SOURCE_DIR}/scripts/generate_static.py --game ${SOURCE2GEN_GAME}
     WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
     RESULT_VARIABLE SDK_STATIC_SCRIPT_RESULT
     OUTPUT_VARIABLE SDK_STATIC_SCRIPT_OUTPUT

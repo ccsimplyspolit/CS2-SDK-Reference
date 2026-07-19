@@ -13,6 +13,7 @@
 #include <string>
 #include <tools/loader/loader.h>
 #include <tools/platform.h>
+#include <regex>
 #include <unordered_map>
 #include <unordered_set>
 #include <utility>
@@ -205,6 +206,30 @@ namespace source2_gen {
         throw std::runtime_error(std::format("Unable to find sdk-static: {}", directories));
     }
 
+    /// The type names sdk-static defines (as `using NAME = char[N];` in the C++
+    /// header, or `typedef char NAME[N];` in the C one). The generator uses this
+    /// to avoid forward-declaring a placeholder type as a conflicting struct.
+    [[nodiscard]]
+    std::unordered_set<std::string> ReadSdkStaticTypeNames(const std::filesystem::path& sdk_static_dir) {
+        std::unordered_set<std::string> names{};
+        static const std::array kHeaders{"include/source2sdk/source2gen/source2gen.hpp",
+                                         "include/source2sdk/source2gen/source2gen.h"};
+        static const std::regex using_re{R"(^\s*using\s+(\w+)\s*=)"};
+        static const std::regex typedef_re{R"(^\s*typedef\s+char\s+(\w+)\s*\[)"};
+        for (const auto& rel : kHeaders) {
+            std::ifstream f{sdk_static_dir / rel};
+            if (!f.is_open())
+                continue;
+            std::string line;
+            while (std::getline(f, line)) {
+                std::smatch m;
+                if (std::regex_search(line, m, using_re) || std::regex_search(line, m, typedef_re))
+                    names.insert(m[1].str());
+            }
+        }
+        return names;
+    }
+
     bool Dump(Options options) try {
         std::locale::global(std::locale(""));
         std::cout.imbue(std::locale());
@@ -261,6 +286,11 @@ namespace source2_gen {
         assert(type_scopes.Count() > 0 && "sdk is outdated");
 
         const std::unordered_map all_modules = CollectModules(std::span{type_scopes.m_pElements, static_cast<std::size_t>(type_scopes.m_Size)});
+
+        // Tell the generator which placeholder types sdk-static already defines,
+        // so it doesn't forward-declare them as structs (which would conflict
+        // with their `char[N]` aliases). Parse the names out of the static header.
+        sdk::SetSdkStaticTypeNames(ReadSdkStaticTypeNames(FindSdkStatic(options)));
 
         sdk::GeneratorCache cache{};
         std::unordered_set<std::filesystem::path> generated_files{};
