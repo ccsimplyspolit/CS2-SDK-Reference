@@ -1,0 +1,33 @@
+#pragma once
+
+#include "source2sdk/source2gen/source2gen.hpp"
+#include <cstddef>
+#include <cstdint>
+#include "source2sdk/client/CCitadelTriggerMultiCapturePoint.hpp"
+
+// /////////////////////////////////////////////////////////////
+// Module: client
+// Created using source2gen - github.com/neverlosecc/source2gen
+// /////////////////////////////////////////////////////////////
+
+namespace source2sdk
+{
+    namespace client
+    {
+        // Registered alignment: 0x8
+        // Alignment: 0x8
+        // Standard-layout class: false
+        // Size: 0xaa0
+        // Has VTable
+        #pragma pack(push, 1)
+        class CCitadel_KothCashIn : public source2sdk::client::CCitadelTriggerMultiCapturePoint
+        {
+        public:
+            // No schema binary for binding
+        };
+        #pragma pack(pop)
+        
+        
+        static_assert(sizeof(source2sdk::client::CCitadel_KothCashIn) == 0xaa0);
+    };
+};
