@@ -168,6 +168,7 @@ All data here is fetched from upstream. Rerun `python tools/sync_from_upstream.p
 - **[CS2-P2C-TEMPLATES](https://github.com/ccsimplyspolit/CS2-P2C-TEMPLATES)** — Runtime CS2 plugins (VacLiveBypass, RankSpoofer, IsValveDS) that consume these offsets via autofetch.
 - **[a2x/cs2-dumper](https://github.com/a2x/cs2-dumper)** — Upstream source of offsets + schemas (Rust project that dumps a running CS2 process).
 - **[SteamTracking/Protobufs](https://github.com/SteamDatabase/Protobufs)** — Upstream source of `.proto` files.
+- **[sezzyaep/CS2-OFFSETS](https://github.com/sezzyaep/CS2-OFFSETS)** — a second dumper (exitscam-dumper), useful for cross-checking. Its schema agrees with this repo byte-for-byte (all 9168 field offsets), but its `dwGameRules` global points into `.rdata` and is wrong — don't copy globals from it blindly.
 - **neverlosecc/source2gen** + **neverlosecc/source2sdk** — the SDK generator and its generated SDKs. **Both are gone (404).** [`source2gen/`](source2gen/) and [`source2sdk/`](source2sdk/) here are what is left of them.
 
 ### Contributing
@@ -343,6 +344,7 @@ Loader резолвит установку, кладёт `bin/win64` игры в
 - **[CS2-P2C-TEMPLATES](https://github.com/ccsimplyspolit/CS2-P2C-TEMPLATES)** — runtime-плагины под CS2 (`VacLiveBypass`, `RankSpoofer`, `IsValveDS`), которые тянут эти оффсеты через autofetch.
 - **[a2x/cs2-dumper](https://github.com/a2x/cs2-dumper)** — upstream оффсетов и schemas (Rust-проект, дампающий running CS2).
 - **[SteamTracking/Protobufs](https://github.com/SteamDatabase/Protobufs)** — upstream `.proto`-файлов.
+- **[sezzyaep/CS2-OFFSETS](https://github.com/sezzyaep/CS2-OFFSETS)** — второй дампер (exitscam-dumper), удобен для кросс-сверки. Его схема совпадает с этим репо побайтово (все 9168 оффсетов полей), но его global `dwGameRules` указывает в `.rdata` и неверен — не копируй globals оттуда вслепую.
 - **neverlosecc/source2gen** + **neverlosecc/source2sdk** — генератор SDK и сгенерированные им SDK. **Оба удалены (404).** [`source2gen/`](source2gen/) и [`source2sdk/`](source2sdk/) здесь — всё, что от них осталось.
 
 ### Contributing

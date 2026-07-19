@@ -32,19 +32,39 @@ python tools\sync_from_upstream.py --commit
 Snapshots current state to `offsets/history/pre_sync_<UTC-timestamp>/`,
 overwrites only files whose SHA-256 changed, prints a per-file diff.
 
-### Verify against running cs2 (1 command)
+### Verify offsets (1 command)
 
-Requires an elevated shell (SeDebugPrivilege) and a running cs2 process.
+Preferred — against the CS2 you have installed. No admin, no running game, no
+contact with the game process:
 
 ```powershell
-# Explicit PID
-python tools\verify_offsets.py --pid 53000
-
-# Or auto-detect + verify in one go
-python tools\sync_from_upstream.py --verify
+python tools\verify_offsets_static.py
 ```
 
-Prints one line per tracked global — MATCH / NULL / DRIFT / UNREADABLE.
+Finds the install through Steam and resolves every offset against the DLLs'
+section tables. Prints where each one lands and exits non-zero on any that
+don't resolve.
+
+Against a running cs2 (reads live memory):
+
+```powershell
+python tools\verify_offsets.py --pid 53000
+python tools\sync_from_upstream.py --verify        # auto-detect PID
+```
+
+Prints one line per tracked global — MATCH / NULL / UNREADABLE. Note: CS2
+strips process handles while anti-cheat protection is active, so this returns
+`ERROR_ACCESS_DENIED` unless the game was launched with
+`-insecure -allow_third_party_software`. Use the static verifier otherwise.
+
+### Verify the docs haven't rotted (1 command)
+
+```powershell
+python tools\verify_docs.py
+```
+
+Checks every offset cited in the READMEs and wiki against the current schema.
+Exits non-zero if any doc offset no longer matches — run it after a sync.
 
 ### Handle a new CS2 update (3 steps)
 
@@ -98,19 +118,40 @@ python tools\sync_from_upstream.py --commit
 переписывает только те файлы, у которых сменился SHA-256, печатает
 per-file diff.
 
-### Сверка с живым cs2 (одной командой)
+### Сверка оффсетов (одной командой)
 
-Нужен elevated shell (SeDebugPrivilege) и запущенный процесс cs2.
+Предпочтительно — с установленным CS2. Без админа, без запущенной игры, без
+касания процесса игры:
 
 ```powershell
-# Явный PID
-python tools\verify_offsets.py --pid 53000
-
-# Или автодетект + verify одной командой
-python tools\sync_from_upstream.py --verify
+python tools\verify_offsets_static.py
 ```
 
-Печатает по одной строке на TRACKED-global — MATCH / NULL / DRIFT / UNREADABLE.
+Находит установку через Steam и резолвит каждый оффсет по таблицам секций DLL.
+Печатает, куда попадает каждый, и выходит с ненулевым кодом, если что-то не
+зарезолвилось.
+
+С живым cs2 (читает память процесса):
+
+```powershell
+python tools\verify_offsets.py --pid 53000
+python tools\sync_from_upstream.py --verify        # автодетект PID
+```
+
+Печатает по строке на tracked-global — MATCH / NULL / UNREADABLE. Учти: пока
+активна защита анти-чита, CS2 срезает доступ к хендлам, и скрипт вернёт
+`ERROR_ACCESS_DENIED`, если игра не запущена с
+`-insecure -allow_third_party_software`. В остальных случаях используй
+статический верификатор.
+
+### Проверить, что доки не протухли (одной командой)
+
+```powershell
+python tools\verify_docs.py
+```
+
+Сверяет каждый оффсет из README и wiki с текущей схемой. Выходит с ненулевым
+кодом, если хоть один оффсет в доках больше не совпадает — гоняй после sync.
 
 ### Разобраться с новым апдейтом CS2 (3 шага)
 

@@ -62,12 +62,12 @@ per-life entity-state (позиция, оружие, HP). Пешку можно 
 `CGlobalVarsBase*` — время игры, frame time, tick count. Любая
 tick-based логика entity читает это.
 
-### `client.dll.dwEntityList` / `dwGameEntitySystem` — `0x2549920`
+### `client.dll.dwEntityList` / `dwGameEntitySystem` — `0x254EE60`
 
 Корень entity-list. Отсюда можно пройти по всем networked-entity в
 мире. В текущих билдах оба символа = одно значение — алиасы.
 
-### `client.dll.dwGlowManager` — `0x23A4008`
+### `client.dll.dwGlowManager` — `0x23A0708`
 
 Registry glow-эффектов. Для VMP-работы почти не важен; ESP-плагинам —
 полезен.
@@ -76,17 +76,17 @@ Registry glow-эффектов. Для VMP-работы почти не важе
 
 `C_Prediction*` — куда упирается client-side prediction.
 
-### `client.dll.dwSensitivity` — `0x23A48A8`
+### `client.dll.dwSensitivity` — `0x23A1228`
 
 `CSensitivity*` — mouse sensitivity + `dwSensitivity_sensitivity`
 (`+0x58`) — тот float, который нужен, если масштабируешь raw-mouse
 дельты.
 
-### `client.dll.dwViewAngles` — `0x23BE578`
+### `client.dll.dwViewAngles` — `0x23B9C78`
 
 Текущие view-angles (pitch/yaw/roll) как `QAngle` — 3-float struct.
 
-### `client.dll.dwViewMatrix` — `0x23A9A80`
+### `client.dll.dwViewMatrix` — `0x23A9340`
 
 4×4 world-to-screen матрица. 16 подряд идущих float; нужна для
 проекции мировых координат в экран (ESP).
@@ -105,7 +105,7 @@ Registry glow-эффектов. Для VMP-работы почти не важе
 - `+0xF8`  (`dwNetworkGameClient_localPlayer`) — слот локального игрока.
 - `+0x240` (`dwNetworkGameClient_maxClients`) — вместимость сервера.
 
-### `engine2.dll.dwBuildNumber` — `0x60F014`
+### `engine2.dll.dwBuildNumber` — `0x60F594`
 
 Билд-номер игры. Читай как `int32` в `engine2.dll + dwBuildNumber` —
 самый быстрый способ узнать в коде, против какого cs2-билда работаешь.
