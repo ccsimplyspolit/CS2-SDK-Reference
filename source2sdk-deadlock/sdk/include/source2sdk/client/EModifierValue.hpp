@@ -24,37 +24,37 @@ namespace source2sdk
             // MPropertyFriendlyName "FrictionPercentage"
             MODIFIER_VALUE_FRICTION_PERCENTAGE = 0x2,
             // MPropertyFriendlyName "BaseVelocity"
-            // MScriptDescription "MoveType GetModifierBaseVelocity"
+            // MScriptDescription "GetModifierBaseVelocity"
             MODIFIER_VALUE_BASE_VELOCITY = 0x3,
             // MPropertyFriendlyName "MoveType"
-            // MScriptDescription "TargetIdentifierOverride GetMoveTypeOverride"
+            // MScriptDescription "GetMoveTypeOverride"
             MODIFIER_VALUE_MOVE_TYPE_OVERRIDE = 0x4,
             // MPropertyFriendlyName "TargetIdentifierOverride"
-            // MScriptDescription " GetTargetIdentifierOverride"
+            // MScriptDescription "GetTargetIdentifierOverride"
             MODIFIER_VALUE_TARGET_IDENTIFIER_OVERRIDE = 0x5,
             // MPropertyFriendlyName "TargetIdentifierOverrideOrientation"
-            // MScriptDescription "GetModifierGravityScale GetTargetIdentifierOverrideOrientation"
+            // MScriptDescription "GetTargetIdentifierOverrideOrientation"
             MODIFIER_VALUE_TARGET_IDENTIFIER_OVERRIDE_ORIENTATION = 0x6,
             MODIFIER_VALUE_INCOMING_DAMAGE_PERCENTAGE = 0x7,
-            // MScriptDescription "BodyGroupChoice GetModifierGravityScale"
+            // MScriptDescription "GetModifierGravityScale"
             MODIFIER_VALUE_GRAVITY_SCALE = 0x8,
             // MPropertyFriendlyName "BodyGroupChoice"
-            // MScriptDescription "Vehicle Top Speed Scale Override GetBodyGroupChoice"
+            // MScriptDescription "GetBodyGroupChoice"
             MODIFIER_VALUE_BODY_GROUP_CHOICE_OVERRIDE = 0x9,
             // MPropertyFriendlyName "Vehicle Top Speed Scale Override"
-            // MScriptDescription "GetAdditionalVelocity GetVehicleTopSpeedScale"
+            // MScriptDescription "GetVehicleTopSpeedScale"
             MODIFIER_VALUE_VEHICLE_TOP_SPEED_SCALE = 0xa,
             MODIFIER_VALUE_OUTGOING_DAMAGE_PERCENTAGE = 0xb,
-            // MScriptDescription "m_Value GetAdditionalVelocity"
+            // MScriptDescription "GetAdditionalVelocity"
             MODIFIER_VALUE_ADDITIONAL_VELOCITY = 0xc,
             // MPropertyFriendlyName "Movement Gait Override"
-            // MScriptDescription "Movement Gait Set Override GetMovementGaitOverride"
+            // MScriptDescription "GetMovementGaitOverride"
             MODIFIER_VALUE_MOVEMENT_GAIT_OVERRIDE = 0xd,
             // MPropertyFriendlyName "Movement Gait Set Override"
             // MScriptDescription "GetMovementGaitSetOverride"
             MODIFIER_VALUE_MOVEMENT_GAIT_SET_OVERRIDE = 0xe,
             // MPropertyFriendlyName "Stance Override"
-            // MScriptDescription "Flat Melee Damage given from boons that will be scaled by all increases and multipliers GetStanceOverride"
+            // MScriptDescription "GetStanceOverride"
             MODIFIER_VALUE_STANCE_OVERRIDE = 0xf,
             // MPropertyDescription "Flat Melee Damage given from boons that will be scaled by all increases and multipliers"
             MODIFIER_VALUE_BASE_MELEE_DAMAGE_FROM_LEVEL = 0x10,
