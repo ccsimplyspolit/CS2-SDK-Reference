@@ -68,7 +68,16 @@ def http_get(url, timeout=20):
 def read_json_bytes(b):
     return json.loads(b.decode('utf-8')) if b else None
 
-def sha256_of(data):  return hashlib.sha256(data).hexdigest() if data else None
+def normalise_eol(data):
+    """Strip CRLF so comparisons see content, not line endings.
+
+    raw.githubusercontent.com always serves LF, while a git checkout with
+    core.autocrlf=true (the Windows default) writes CRLF to disk. Hashing the
+    bytes as-is therefore reports every file as drifted on every run.
+    """
+    return data.replace(b"\r\n", b"\n")
+
+def sha256_of(data):  return hashlib.sha256(normalise_eol(data)).hexdigest() if data else None
 def sha256_of_file(p): return sha256_of(p.read_bytes()) if p.exists() else None
 
 def resolve_pr(pr_num):
