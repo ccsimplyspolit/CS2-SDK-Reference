@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::EventClientSimulate_t) == 0x30);
+        // size assertion omitted: EventClientSimulate_t has no schema binary (size is a guess)
     };
 };

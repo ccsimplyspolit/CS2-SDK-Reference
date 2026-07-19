@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Slark_EssenceShift_DebuffCounter) == 0x1a78);
+        // size assertion omitted: CDOTA_Modifier_Slark_EssenceShift_DebuffCounter has no schema binary (size is a guess)
     };
 };

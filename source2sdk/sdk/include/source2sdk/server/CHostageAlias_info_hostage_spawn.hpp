@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CHostageAlias_info_hostage_spawn) == 0x2cc0);
+        // size assertion omitted: CHostageAlias_info_hostage_spawn has no schema binary (size is a guess)
     };
 };

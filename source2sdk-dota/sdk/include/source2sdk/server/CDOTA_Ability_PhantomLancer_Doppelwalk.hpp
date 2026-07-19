@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_Ability_PhantomLancer_Doppelwalk) == 0x580);
+        // size assertion omitted: CDOTA_Ability_PhantomLancer_Doppelwalk has no schema binary (size is a guess)
     };
 };

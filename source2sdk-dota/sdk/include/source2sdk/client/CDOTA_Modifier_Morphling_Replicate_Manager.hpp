@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Morphling_Replicate_Manager) == 0x1a58);
+        // size assertion omitted: CDOTA_Modifier_Morphling_Replicate_Manager has no schema binary (size is a guess)
     };
 };

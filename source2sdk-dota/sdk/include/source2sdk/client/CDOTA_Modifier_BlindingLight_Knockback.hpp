@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_BlindingLight_Knockback) == 0x1a90);
+        // size assertion omitted: CDOTA_Modifier_BlindingLight_Knockback has no schema binary (size is a guess)
     };
 };

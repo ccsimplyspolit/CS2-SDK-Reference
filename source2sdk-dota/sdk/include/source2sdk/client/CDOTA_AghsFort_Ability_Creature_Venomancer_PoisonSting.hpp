@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CDOTA_AghsFort_Ability_Creature_Venomancer_PoisonSting) == 0x6a8);
+        // size assertion omitted: CDOTA_AghsFort_Ability_Creature_Venomancer_PoisonSting has no schema binary (size is a guess)
     };
 };

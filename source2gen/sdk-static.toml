@@ -298,12 +298,14 @@ size = 0x10
 
 [CAnimGraphTagOptionalRef]
 size = 0x18
+size-DEADLOCK = 0x20
 
 [CPanoramaImageName]
 size = 0x10
 
 [CAnimGraphTagRef]
 size = 0x18
+size-DEADLOCK = 0x20
 
 [CAttachmentNameSymbolWithStorage]
 size = 0x20

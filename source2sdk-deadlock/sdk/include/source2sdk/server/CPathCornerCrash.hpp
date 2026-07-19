@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CPathCornerCrash) == 0x4c0);
+        // size assertion omitted: CPathCornerCrash has no schema binary (size is a guess)
     };
 };

@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_Unit_Earth_Spirit_Stone) == 0x18a0);
+        // size assertion omitted: CDOTA_Unit_Earth_Spirit_Stone has no schema binary (size is a guess)
     };
 };

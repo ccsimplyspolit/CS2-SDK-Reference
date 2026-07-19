@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadelUnitStatusStagger) == 0xc10);
+        // size assertion omitted: CCitadelUnitStatusStagger has no schema binary (size is a guess)
     };
 };

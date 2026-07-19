@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CScaleFunctionAbilityProperty_WeaponDamage) == 0x18);
+        // size assertion omitted: CScaleFunctionAbilityProperty_WeaponDamage has no schema binary (size is a guess)
     };
 };

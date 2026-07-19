@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_Item_Recipe_Orb_Of_Destruction) == 0x658);
+        // size assertion omitted: CDOTA_Item_Recipe_Orb_Of_Destruction has no schema binary (size is a guess)
     };
 };

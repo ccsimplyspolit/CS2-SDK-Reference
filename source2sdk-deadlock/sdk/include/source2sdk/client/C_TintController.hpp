@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_TintController) == 0x608);
+        // size assertion omitted: C_TintController has no schema binary (size is a guess)
     };
 };

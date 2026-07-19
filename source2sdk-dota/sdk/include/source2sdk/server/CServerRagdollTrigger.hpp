@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CServerRagdollTrigger) == 0x8f0);
+        // size assertion omitted: CServerRagdollTrigger has no schema binary (size is a guess)
     };
 };

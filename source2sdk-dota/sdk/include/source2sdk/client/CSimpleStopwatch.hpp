@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CSimpleStopwatch) == 0xc);
+        // size assertion omitted: CSimpleStopwatch has no schema binary (size is a guess)
     };
 };

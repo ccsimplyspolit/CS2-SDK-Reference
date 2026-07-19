@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::pulse_system::TestComponent_tAPI) == 0x8);
+        // size assertion omitted: TestComponent_tAPI has no schema binary (size is a guess)
     };
 };

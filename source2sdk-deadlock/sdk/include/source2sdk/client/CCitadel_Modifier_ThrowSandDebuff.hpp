@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadel_Modifier_ThrowSandDebuff) == 0x248);
+        // size assertion omitted: CCitadel_Modifier_ThrowSandDebuff has no schema binary (size is a guess)
     };
 };

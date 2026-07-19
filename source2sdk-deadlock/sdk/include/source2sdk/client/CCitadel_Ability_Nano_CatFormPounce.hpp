@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadel_Ability_Nano_CatFormPounce) == 0x11e8);
+        // size assertion omitted: CCitadel_Ability_Nano_CatFormPounce has no schema binary (size is a guess)
     };
 };

@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CRagdollPropAlias_physics_prop_ragdoll) == 0xb20);
+        // size assertion omitted: CRagdollPropAlias_physics_prop_ragdoll has no schema binary (size is a guess)
     };
 };

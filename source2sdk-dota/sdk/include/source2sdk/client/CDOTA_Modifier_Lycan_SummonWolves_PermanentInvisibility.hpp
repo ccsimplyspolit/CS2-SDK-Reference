@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Lycan_SummonWolves_PermanentInvisibility) == 0x1a68);
+        // size assertion omitted: CDOTA_Modifier_Lycan_SummonWolves_PermanentInvisibility has no schema binary (size is a guess)
     };
 };

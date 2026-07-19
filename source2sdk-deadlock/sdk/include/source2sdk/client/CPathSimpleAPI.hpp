@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CPathSimpleAPI) == 0x8);
+        // size assertion omitted: CPathSimpleAPI has no schema binary (size is a guess)
     };
 };

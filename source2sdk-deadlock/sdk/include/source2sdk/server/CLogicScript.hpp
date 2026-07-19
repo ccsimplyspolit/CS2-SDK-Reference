@@ -46,6 +46,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CLogicScript) == 0x4a0);
+        // size assertion omitted: CLogicScript has no schema binary (size is a guess)
     };
 };

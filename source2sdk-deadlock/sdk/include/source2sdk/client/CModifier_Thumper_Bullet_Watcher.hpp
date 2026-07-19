@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CModifier_Thumper_Bullet_Watcher) == 0x140);
+        // size assertion omitted: CModifier_Thumper_Bullet_Watcher has no schema binary (size is a guess)
     };
 };

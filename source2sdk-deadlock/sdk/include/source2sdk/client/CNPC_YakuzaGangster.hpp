@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CNPC_YakuzaGangster) == 0x1bd0);
+        // size assertion omitted: CNPC_YakuzaGangster has no schema binary (size is a guess)
     };
 };

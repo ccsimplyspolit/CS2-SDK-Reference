@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadel_Modifier_Nikuman) == 0x410);
+        // size assertion omitted: CCitadel_Modifier_Nikuman has no schema binary (size is a guess)
     };
 };

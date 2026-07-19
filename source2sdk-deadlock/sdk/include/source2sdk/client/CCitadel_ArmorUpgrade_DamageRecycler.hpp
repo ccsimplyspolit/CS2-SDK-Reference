@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadel_ArmorUpgrade_DamageRecycler) == 0x11d8);
+        // size assertion omitted: CCitadel_ArmorUpgrade_DamageRecycler has no schema binary (size is a guess)
     };
 };

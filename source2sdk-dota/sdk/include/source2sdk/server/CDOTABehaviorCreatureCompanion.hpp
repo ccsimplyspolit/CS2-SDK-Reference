@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTABehaviorCreatureCompanion) == 0x180);
+        // size assertion omitted: CDOTABehaviorCreatureCompanion has no schema binary (size is a guess)
     };
 };

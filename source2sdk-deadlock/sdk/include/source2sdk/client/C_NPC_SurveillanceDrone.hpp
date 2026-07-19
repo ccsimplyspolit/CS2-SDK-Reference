@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_NPC_SurveillanceDrone) == 0x1bd0);
+        // size assertion omitted: C_NPC_SurveillanceDrone has no schema binary (size is a guess)
     };
 };

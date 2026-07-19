@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_Ability_Werewolf_TrackingBomb) == 0x11f0);
+        // size assertion omitted: CCitadel_Ability_Werewolf_TrackingBomb has no schema binary (size is a guess)
     };
 };

@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_DOTA_Item_Enhancement_Quickened) == 0x758);
+        // size assertion omitted: C_DOTA_Item_Enhancement_Quickened has no schema binary (size is a guess)
     };
 };

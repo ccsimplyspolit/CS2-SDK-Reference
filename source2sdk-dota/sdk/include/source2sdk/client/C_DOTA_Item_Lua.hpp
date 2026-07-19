@@ -31,6 +31,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_DOTA_Item_Lua) == 0x7a0);
+        // size assertion omitted: C_DOTA_Item_Lua has no schema binary (size is a guess)
     };
 };

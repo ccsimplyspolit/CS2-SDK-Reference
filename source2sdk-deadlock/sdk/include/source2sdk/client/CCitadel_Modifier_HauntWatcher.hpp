@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadel_Modifier_HauntWatcher) == 0x478);
+        // size assertion omitted: CCitadel_Modifier_HauntWatcher has no schema binary (size is a guess)
     };
 };

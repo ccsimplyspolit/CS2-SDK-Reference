@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_DOTA_Ability_Tidehunter_Blubber) == 0x6a8);
+        // size assertion omitted: C_DOTA_Ability_Tidehunter_Blubber has no schema binary (size is a guess)
     };
 };

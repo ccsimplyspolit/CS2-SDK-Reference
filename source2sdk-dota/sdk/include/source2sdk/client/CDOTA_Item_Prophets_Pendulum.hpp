@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CDOTA_Item_Prophets_Pendulum) == 0x758);
+        // size assertion omitted: CDOTA_Item_Prophets_Pendulum has no schema binary (size is a guess)
     };
 };

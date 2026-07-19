@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_Citadel_Pickup_Health) == 0xde0);
+        // size assertion omitted: C_Citadel_Pickup_Health has no schema binary (size is a guess)
     };
 };

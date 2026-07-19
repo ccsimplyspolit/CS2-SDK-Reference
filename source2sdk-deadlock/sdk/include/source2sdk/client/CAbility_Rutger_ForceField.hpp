@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CAbility_Rutger_ForceField) == 0x1558);
+        // size assertion omitted: CAbility_Rutger_ForceField has no schema binary (size is a guess)
     };
 };

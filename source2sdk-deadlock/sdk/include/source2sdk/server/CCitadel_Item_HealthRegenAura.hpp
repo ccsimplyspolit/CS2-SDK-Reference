@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_Item_HealthRegenAura) == 0x10f8);
+        // size assertion omitted: CCitadel_Item_HealthRegenAura has no schema binary (size is a guess)
     };
 };

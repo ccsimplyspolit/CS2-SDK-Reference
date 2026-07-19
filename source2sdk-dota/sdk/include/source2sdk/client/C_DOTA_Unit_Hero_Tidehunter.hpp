@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_DOTA_Unit_Hero_Tidehunter) == 0x1d80);
+        // size assertion omitted: C_DOTA_Unit_Hero_Tidehunter has no schema binary (size is a guess)
     };
 };

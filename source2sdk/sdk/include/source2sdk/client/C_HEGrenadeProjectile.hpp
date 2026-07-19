@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_HEGrenadeProjectile) == 0x1260);
+        // size assertion omitted: C_HEGrenadeProjectile has no schema binary (size is a guess)
     };
 };

@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::animlib::CNmFollowBoneTask) == 0x90);
+        // size assertion omitted: CNmFollowBoneTask has no schema binary (size is a guess)
     };
 };

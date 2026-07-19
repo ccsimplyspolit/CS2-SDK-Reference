@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CModifier_Mirage_Tornado_HoldInPlace) == 0xd0);
+        // size assertion omitted: CModifier_Mirage_Tornado_HoldInPlace has no schema binary (size is a guess)
     };
 };

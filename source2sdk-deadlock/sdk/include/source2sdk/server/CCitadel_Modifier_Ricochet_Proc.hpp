@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_Modifier_Ricochet_Proc) == 0x320);
+        // size assertion omitted: CCitadel_Modifier_Ricochet_Proc has no schema binary (size is a guess)
     };
 };

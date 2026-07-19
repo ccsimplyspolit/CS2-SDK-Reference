@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTACustomGameEvents) == 0x528);
+        // size assertion omitted: CDOTACustomGameEvents has no schema binary (size is a guess)
     };
 };

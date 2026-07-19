@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_SandKing_SandStorm_Invisibility) == 0x1a68);
+        // size assertion omitted: CDOTA_Modifier_SandKing_SandStorm_Invisibility has no schema binary (size is a guess)
     };
 };

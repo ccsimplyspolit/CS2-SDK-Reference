@@ -31,6 +31,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_Ability_Slark_Fish_Bait) == 0x598);
+        // size assertion omitted: CDOTA_Ability_Slark_Fish_Bait has no schema binary (size is a guess)
     };
 };

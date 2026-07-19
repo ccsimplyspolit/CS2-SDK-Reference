@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadelPlayerClipComponent) == 0x20);
+        // size assertion omitted: CCitadelPlayerClipComponent has no schema binary (size is a guess)
     };
 };

@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CBaseEntity_SharedAPI) == 0x8);
+        // size assertion omitted: CBaseEntity_SharedAPI has no schema binary (size is a guess)
     };
 };

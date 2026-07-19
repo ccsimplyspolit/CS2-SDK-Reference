@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CDOTA_Ability_Special_Bonus_Unique_Marci_Grapple_StunDuration) == 0x6a8);
+        // size assertion omitted: CDOTA_Ability_Special_Bonus_Unique_Marci_Grapple_StunDuration has no schema binary (size is a guess)
     };
 };

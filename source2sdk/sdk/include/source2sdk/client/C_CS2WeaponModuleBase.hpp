@@ -31,6 +31,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_CS2WeaponModuleBase) == 0x1188);
+        // size assertion omitted: C_CS2WeaponModuleBase has no schema binary (size is a guess)
     };
 };

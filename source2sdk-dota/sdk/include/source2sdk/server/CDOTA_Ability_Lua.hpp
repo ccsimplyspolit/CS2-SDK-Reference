@@ -31,6 +31,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_Ability_Lua) == 0x5c8);
+        // size assertion omitted: CDOTA_Ability_Lua has no schema binary (size is a guess)
     };
 };

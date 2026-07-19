@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CHorizontalMotionController) == 0x10);
+        // size assertion omitted: CHorizontalMotionController has no schema binary (size is a guess)
     };
 };

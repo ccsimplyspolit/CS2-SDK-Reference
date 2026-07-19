@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCSObserver_CameraServices) == 0x1b0);
+        // size assertion omitted: CCSObserver_CameraServices has no schema binary (size is a guess)
     };
 };

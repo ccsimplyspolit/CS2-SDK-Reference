@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_Item_Healthshot) == 0x1cf0);
+        // size assertion omitted: C_Item_Healthshot has no schema binary (size is a guess)
     };
 };

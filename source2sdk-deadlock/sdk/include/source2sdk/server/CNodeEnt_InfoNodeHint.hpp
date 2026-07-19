@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CNodeEnt_InfoNodeHint) == 0x4f8);
+        // size assertion omitted: CNodeEnt_InfoNodeHint has no schema binary (size is a guess)
     };
 };

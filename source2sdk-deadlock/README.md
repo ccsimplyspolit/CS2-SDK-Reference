@@ -38,13 +38,16 @@ The dump completed with **0 skipped types**.
 
 ## Compile status
 
-The `client` module compiles under MSVC (`/std:c++17 /permissive-`) with **2
-known edge-case classes** (`CCitadelPlayerPawn_GraphController`,
-`CAI_BaseNPCGraphController`). Both hold `CAnimGraphParamRef<T>` fields, which is
-`0x28` bytes in Deadlock but `0x20` in CS2 — and `sdk-static.toml` stores one
-size per type (tuned to CS2). This is the documented "template types" limitation:
-a handful of classes per non-CS2 game can't be reproduced byte-exactly from a
-CS2-tuned static SDK. Everything else in the module compiles clean.
+**All 32 modules compile with 0 errors** under MSVC (`/std:c++17 /permissive-`),
+verified per-module. Two former edge-case categories are now handled in
+`source2gen`:
+
+- **Per-game type sizes** — `CAnimGraphTagRef`/`CAnimGraphTagOptionalRef` are
+  `0x20` in Deadlock but `0x18` in CS2. `sdk-static.toml` now carries
+  `size-DEADLOCK` overrides, and `generate_static.py --game DEADLOCK` applies them.
+- **Forward declarations for undumped pointer types** — e.g.
+  `CCitadel_Bullet_Base*` points at a class that isn't in the dump; the generator
+  now forward-declares such pointee types so the header is self-contained.
 
 ### License
 

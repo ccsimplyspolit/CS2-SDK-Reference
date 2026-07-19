@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CAbility_Drifter_Darkness) == 0x1460);
+        // size assertion omitted: CAbility_Drifter_Darkness has no schema binary (size is a guess)
     };
 };

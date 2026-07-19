@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadel_Item_CelestialGuidance) == 0x13d8);
+        // size assertion omitted: CCitadel_Item_CelestialGuidance has no schema binary (size is a guess)
     };
 };

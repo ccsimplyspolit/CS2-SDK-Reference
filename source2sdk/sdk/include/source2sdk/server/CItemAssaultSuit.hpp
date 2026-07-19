@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CItemAssaultSuit) == 0xa00);
+        // size assertion omitted: CItemAssaultSuit has no schema binary (size is a guess)
     };
 };

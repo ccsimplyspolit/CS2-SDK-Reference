@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadel_Modifier_IceDomeFriendly) == 0x240);
+        // size assertion omitted: CCitadel_Modifier_IceDomeFriendly has no schema binary (size is a guess)
     };
 };

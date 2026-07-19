@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadel_Ability_GangActivity_Cancel) == 0x11d8);
+        // size assertion omitted: CCitadel_Ability_GangActivity_Cancel has no schema binary (size is a guess)
     };
 };

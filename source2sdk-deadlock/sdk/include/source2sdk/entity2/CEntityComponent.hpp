@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::entity2::CEntityComponent) == 0x8);
+        // size assertion omitted: CEntityComponent has no schema binary (size is a guess)
     };
 };

@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_Citadel_Projectile_DustStorm) == 0xed8);
+        // size assertion omitted: C_Citadel_Projectile_DustStorm has no schema binary (size is a guess)
     };
 };

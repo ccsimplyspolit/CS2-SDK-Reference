@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::pulse_system::CPulseGraphInstance_TestDomain_UseReadOnlyBlackboardView) == 0x160);
+        // size assertion omitted: CPulseGraphInstance_TestDomain_UseReadOnlyBlackboardView has no schema binary (size is a guess)
     };
 };

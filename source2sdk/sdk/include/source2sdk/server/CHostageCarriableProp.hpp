@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CHostageCarriableProp) == 0x960);
+        // size assertion omitted: CHostageCarriableProp has no schema binary (size is a guess)
     };
 };

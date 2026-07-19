@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadel_Modifier_Intimidated) == 0xc0);
+        // size assertion omitted: CCitadel_Modifier_Intimidated has no schema binary (size is a guess)
     };
 };

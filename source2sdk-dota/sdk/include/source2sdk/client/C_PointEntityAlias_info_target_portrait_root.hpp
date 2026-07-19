@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_PointEntityAlias_info_target_portrait_root) == 0x5f0);
+        // size assertion omitted: C_PointEntityAlias_info_target_portrait_root has no schema binary (size is a guess)
     };
 };

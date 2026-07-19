@@ -42,6 +42,12 @@ namespace sdk {
     GeneratorResult GenerateTypeScopeSdk(const source2_gen::Options& options, GeneratorCache& cache, std::string_view module_name,
                                          const std::unordered_set<const CSchemaEnumBinding*>& enums,
                                          const std::unordered_set<const CSchemaClassBinding*>& classes);
+
+    /// Register the placeholder type names that sdk-static already defines (e.g.
+    /// KeyValues3, CUtlVector). The generator must not forward-declare these as a
+    /// struct — they are `char[N]` aliases, and a conflicting `struct` declaration
+    /// would break every value use of them. Call before GenerateTypeScopeSdk.
+    void SetSdkStaticTypeNames(std::unordered_set<std::string> names);
 } // namespace sdk
 
 // source2gen - Source2 games SDK generator

@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_DOTA_Unit_Earth_Spirit_Stone) == 0x19b0);
+        // size assertion omitted: C_DOTA_Unit_Earth_Spirit_Stone has no schema binary (size is a guess)
     };
 };

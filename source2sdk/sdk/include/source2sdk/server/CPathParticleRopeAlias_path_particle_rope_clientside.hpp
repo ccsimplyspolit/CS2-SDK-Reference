@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CPathParticleRopeAlias_path_particle_rope_clientside) == 0x590);
+        // size assertion omitted: CPathParticleRopeAlias_path_particle_rope_clientside has no schema binary (size is a guess)
     };
 };

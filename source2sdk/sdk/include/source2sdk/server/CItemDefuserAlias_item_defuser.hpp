@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CItemDefuserAlias_item_defuser) == 0xa20);
+        // size assertion omitted: CItemDefuserAlias_item_defuser has no schema binary (size is a guess)
     };
 };

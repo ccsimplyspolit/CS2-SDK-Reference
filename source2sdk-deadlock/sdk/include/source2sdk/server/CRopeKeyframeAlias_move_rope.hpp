@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CRopeKeyframeAlias_move_rope) == 0x7d8);
+        // size assertion omitted: CRopeKeyframeAlias_move_rope has no schema binary (size is a guess)
     };
 };

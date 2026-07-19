@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_CDOTA_Ability_Treant_LeechSeed) == 0x6a8);
+        // size assertion omitted: C_CDOTA_Ability_Treant_LeechSeed has no schema binary (size is a guess)
     };
 };

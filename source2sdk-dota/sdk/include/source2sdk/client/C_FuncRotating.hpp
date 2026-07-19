@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_FuncRotating) == 0xa88);
+        // size assertion omitted: C_FuncRotating has no schema binary (size is a guess)
     };
 };

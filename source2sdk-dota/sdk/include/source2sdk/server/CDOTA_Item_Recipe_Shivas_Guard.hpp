@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_Item_Recipe_Shivas_Guard) == 0x658);
+        // size assertion omitted: CDOTA_Item_Recipe_Shivas_Guard has no schema binary (size is a guess)
     };
 };

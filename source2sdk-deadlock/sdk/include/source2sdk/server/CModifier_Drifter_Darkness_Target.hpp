@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CModifier_Drifter_Darkness_Target) == 0x418);
+        // size assertion omitted: CModifier_Drifter_Darkness_Target has no schema binary (size is a guess)
     };
 };

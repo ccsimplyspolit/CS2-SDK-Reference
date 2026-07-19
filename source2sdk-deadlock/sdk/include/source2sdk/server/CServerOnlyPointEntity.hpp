@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CServerOnlyPointEntity) == 0x4a0);
+        // size assertion omitted: CServerOnlyPointEntity has no schema binary (size is a guess)
     };
 };

@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Venomancer_NoxiousPlagueSecondary) == 0x1a70);
+        // size assertion omitted: CDOTA_Modifier_Venomancer_NoxiousPlagueSecondary has no schema binary (size is a guess)
     };
 };

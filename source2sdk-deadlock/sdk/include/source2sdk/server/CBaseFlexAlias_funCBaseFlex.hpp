@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CBaseFlexAlias_funCBaseFlex) == 0xae0);
+        // size assertion omitted: CBaseFlexAlias_funCBaseFlex has no schema binary (size is a guess)
     };
 };

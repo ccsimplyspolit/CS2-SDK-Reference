@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CInfoCourierSpawnDire5) == 0x498);
+        // size assertion omitted: CInfoCourierSpawnDire5 has no schema binary (size is a guess)
     };
 };

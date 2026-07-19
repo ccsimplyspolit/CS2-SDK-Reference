@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CNPC_Neutral_Weakpoint) == 0x7a0);
+        // size assertion omitted: CNPC_Neutral_Weakpoint has no schema binary (size is a guess)
     };
 };

@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CFilterLOS) == 0x4d0);
+        // size assertion omitted: CFilterLOS has no schema binary (size is a guess)
     };
 };

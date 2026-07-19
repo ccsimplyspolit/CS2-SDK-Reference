@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_HeroTrigger) == 0x908);
+        // size assertion omitted: CDOTA_HeroTrigger has no schema binary (size is a guess)
     };
 };

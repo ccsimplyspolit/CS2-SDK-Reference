@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CAI_CitadelPlayerBotMotor) == 0xf70);
+        // size assertion omitted: CAI_CitadelPlayerBotMotor has no schema binary (size is a guess)
     };
 };

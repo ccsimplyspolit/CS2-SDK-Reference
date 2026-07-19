@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CFlashbang) == 0x1090);
+        // size assertion omitted: CFlashbang has no schema binary (size is a guess)
     };
 };

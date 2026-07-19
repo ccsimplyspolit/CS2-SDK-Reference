@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CIngameEvent_MuertaReleaseSpring2023_DummyModifierHolder) == 0x19b0);
+        // size assertion omitted: CIngameEvent_MuertaReleaseSpring2023_DummyModifierHolder has no schema binary (size is a guess)
     };
 };

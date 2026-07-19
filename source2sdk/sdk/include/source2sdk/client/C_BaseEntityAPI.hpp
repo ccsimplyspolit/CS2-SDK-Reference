@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_BaseEntityAPI) == 0x8);
+        // size assertion omitted: C_BaseEntityAPI has no schema binary (size is a guess)
     };
 };

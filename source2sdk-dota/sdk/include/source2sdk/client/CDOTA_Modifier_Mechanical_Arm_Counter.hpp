@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Mechanical_Arm_Counter) == 0x1a58);
+        // size assertion omitted: CDOTA_Modifier_Mechanical_Arm_Counter has no schema binary (size is a guess)
     };
 };

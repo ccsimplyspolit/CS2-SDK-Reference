@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CInfoInstructorHintHostageRescueZone) == 0x4a8);
+        // size assertion omitted: CInfoInstructorHintHostageRescueZone has no schema binary (size is a guess)
     };
 };

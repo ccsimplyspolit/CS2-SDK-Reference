@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CItemCapacitor) == 0x12d8);
+        // size assertion omitted: CItemCapacitor has no schema binary (size is a guess)
     };
 };

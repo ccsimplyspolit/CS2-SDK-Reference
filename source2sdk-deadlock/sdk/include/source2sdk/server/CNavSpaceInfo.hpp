@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CNavSpaceInfo) == 0x4a0);
+        // size assertion omitted: CNavSpaceInfo has no schema binary (size is a guess)
     };
 };

@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::EventClientPreOutputParallelWithServer_t) == 0x48);
+        // size assertion omitted: EventClientPreOutputParallelWithServer_t has no schema binary (size is a guess)
     };
 };

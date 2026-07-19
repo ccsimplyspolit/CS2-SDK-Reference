@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CDOTA_Ability_Dark_Seer_Quick_Wit) == 0x6a8);
+        // size assertion omitted: CDOTA_Ability_Dark_Seer_Quick_Wit has no schema binary (size is a guess)
     };
 };

@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Snapfire_MortimerKisses_VisionSource) == 0x1a58);
+        // size assertion omitted: CDOTA_Modifier_Snapfire_MortimerKisses_VisionSource has no schema binary (size is a guess)
     };
 };

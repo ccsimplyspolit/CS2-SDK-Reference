@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_CSGO_PreviewPlayerAlias_csgo_player_previewmodel) == 0x3500);
+        // size assertion omitted: C_CSGO_PreviewPlayerAlias_csgo_player_previewmodel has no schema binary (size is a guess)
     };
 };

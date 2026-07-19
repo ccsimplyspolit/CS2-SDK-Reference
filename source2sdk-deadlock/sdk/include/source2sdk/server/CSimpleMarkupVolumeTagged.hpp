@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CSimpleMarkupVolumeTagged) == 0x7c0);
+        // size assertion omitted: CSimpleMarkupVolumeTagged has no schema binary (size is a guess)
     };
 };

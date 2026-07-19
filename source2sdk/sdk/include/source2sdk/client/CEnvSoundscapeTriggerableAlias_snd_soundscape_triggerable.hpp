@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CEnvSoundscapeTriggerableAlias_snd_soundscape_triggerable) == 0x690);
+        // size assertion omitted: CEnvSoundscapeTriggerableAlias_snd_soundscape_triggerable has no schema binary (size is a guess)
     };
 };

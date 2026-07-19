@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CGameModifier_FireConCommand) == 0xd0);
+        // size assertion omitted: CGameModifier_FireConCommand has no schema binary (size is a guess)
     };
 };

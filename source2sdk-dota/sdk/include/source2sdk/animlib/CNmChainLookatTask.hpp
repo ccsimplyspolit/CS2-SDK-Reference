@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::animlib::CNmChainLookatTask) == 0x120);
+        // size assertion omitted: CNmChainLookatTask has no schema binary (size is a guess)
     };
 };

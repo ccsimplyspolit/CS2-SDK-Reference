@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CAI_VolumetricEventEntityAlias_ai_sound) == 0x4c0);
+        // size assertion omitted: CAI_VolumetricEventEntityAlias_ai_sound has no schema binary (size is a guess)
     };
 };

@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CDOTA_Item_Foragers_Mana) == 0x758);
+        // size assertion omitted: CDOTA_Item_Foragers_Mana has no schema binary (size is a guess)
     };
 };

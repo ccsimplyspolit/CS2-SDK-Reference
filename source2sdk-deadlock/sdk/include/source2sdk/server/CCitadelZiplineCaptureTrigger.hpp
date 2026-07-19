@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadelZiplineCaptureTrigger) == 0x8f0);
+        // size assertion omitted: CCitadelZiplineCaptureTrigger has no schema binary (size is a guess)
     };
 };

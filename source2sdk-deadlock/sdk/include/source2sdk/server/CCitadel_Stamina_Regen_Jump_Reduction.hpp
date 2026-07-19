@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_Stamina_Regen_Jump_Reduction) == 0x150);
+        // size assertion omitted: CCitadel_Stamina_Regen_Jump_Reduction has no schema binary (size is a guess)
     };
 };

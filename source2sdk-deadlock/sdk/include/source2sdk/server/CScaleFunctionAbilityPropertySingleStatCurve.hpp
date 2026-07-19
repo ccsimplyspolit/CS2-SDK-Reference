@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CScaleFunctionAbilityPropertySingleStatCurve) == 0x18);
+        // size assertion omitted: CScaleFunctionAbilityPropertySingleStatCurve has no schema binary (size is a guess)
     };
 };

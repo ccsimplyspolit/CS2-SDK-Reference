@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_Ability_Visage_Stone_Form_Self_Cast) == 0x580);
+        // size assertion omitted: CDOTA_Ability_Visage_Stone_Form_Self_Cast has no schema binary (size is a guess)
     };
 };

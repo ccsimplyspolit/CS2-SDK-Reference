@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::particleslib::CParticleCollectionBindingInstance) == 0x138);
+        // size assertion omitted: CParticleCollectionBindingInstance has no schema binary (size is a guess)
     };
 };

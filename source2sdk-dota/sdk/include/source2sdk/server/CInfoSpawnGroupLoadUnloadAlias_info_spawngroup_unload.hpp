@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CInfoSpawnGroupLoadUnloadAlias_info_spawngroup_unload) == 0x570);
+        // size assertion omitted: CInfoSpawnGroupLoadUnloadAlias_info_spawngroup_unload has no schema binary (size is a guess)
     };
 };

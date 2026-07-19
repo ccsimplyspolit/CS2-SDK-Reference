@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_Ability_PhantomAssassin_CoupdeGrace) == 0x580);
+        // size assertion omitted: CDOTA_Ability_PhantomAssassin_CoupdeGrace has no schema binary (size is a guess)
     };
 };

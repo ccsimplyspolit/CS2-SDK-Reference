@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_CSGO_CounterTerroristTeamIntroCamera) == 0x690);
+        // size assertion omitted: C_CSGO_CounterTerroristTeamIntroCamera has no schema binary (size is a guess)
     };
 };

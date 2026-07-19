@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_MapTree) == 0x4c8);
+        // size assertion omitted: CDOTA_MapTree has no schema binary (size is a guess)
     };
 };

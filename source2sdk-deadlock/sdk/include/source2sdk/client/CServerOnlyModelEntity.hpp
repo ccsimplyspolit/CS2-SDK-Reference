@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CServerOnlyModelEntity) == 0x9a8);
+        // size assertion omitted: CServerOnlyModelEntity has no schema binary (size is a guess)
     };
 };

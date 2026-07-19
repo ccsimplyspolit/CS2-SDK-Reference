@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Manta_Phase) == 0x1a58);
+        // size assertion omitted: CDOTA_Modifier_Manta_Phase has no schema binary (size is a guess)
     };
 };

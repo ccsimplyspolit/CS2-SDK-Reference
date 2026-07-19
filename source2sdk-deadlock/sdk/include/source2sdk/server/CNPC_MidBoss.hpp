@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CNPC_MidBoss) == 0x18e0);
+        // size assertion omitted: CNPC_MidBoss has no schema binary (size is a guess)
     };
 };

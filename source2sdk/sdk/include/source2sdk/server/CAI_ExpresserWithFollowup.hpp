@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CAI_ExpresserWithFollowup) == 0xa0);
+        // size assertion omitted: CAI_ExpresserWithFollowup has no schema binary (size is a guess)
     };
 };

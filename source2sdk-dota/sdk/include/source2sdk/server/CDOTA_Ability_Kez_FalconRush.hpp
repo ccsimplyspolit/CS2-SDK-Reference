@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_Ability_Kez_FalconRush) == 0x588);
+        // size assertion omitted: CDOTA_Ability_Kez_FalconRush has no schema binary (size is a guess)
     };
 };

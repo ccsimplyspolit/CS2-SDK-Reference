@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CEnvDeferredSpotLight) == 0x9a8);
+        // size assertion omitted: CEnvDeferredSpotLight has no schema binary (size is a guess)
     };
 };

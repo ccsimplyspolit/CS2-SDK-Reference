@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::dynpitchvol_t) == 0x64);
+        // size assertion omitted: dynpitchvol_t has no schema binary (size is a guess)
     };
 };

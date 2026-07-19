@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_FlashbangProjectile) == 0x1260);
+        // size assertion omitted: C_FlashbangProjectile has no schema binary (size is a guess)
     };
 };

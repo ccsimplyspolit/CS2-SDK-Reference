@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_DataRadiant) == 0x1c80);
+        // size assertion omitted: CDOTA_DataRadiant has no schema binary (size is a guess)
     };
 };

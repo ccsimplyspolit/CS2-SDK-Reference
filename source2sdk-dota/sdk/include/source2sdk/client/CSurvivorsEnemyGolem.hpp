@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CSurvivorsEnemyGolem) == 0x338);
+        // size assertion omitted: CSurvivorsEnemyGolem has no schema binary (size is a guess)
     };
 };

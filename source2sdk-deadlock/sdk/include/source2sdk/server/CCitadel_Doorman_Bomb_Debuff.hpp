@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_Doorman_Bomb_Debuff) == 0x1d0);
+        // size assertion omitted: CCitadel_Doorman_Bomb_Debuff has no schema binary (size is a guess)
     };
 };

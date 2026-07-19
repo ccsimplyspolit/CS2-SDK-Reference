@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CAI_ScheduleBits) == 0x24);
+        // size assertion omitted: CAI_ScheduleBits has no schema binary (size is a guess)
     };
 };

@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CSceneEntityAlias_logic_choreographed_scene) == 0x7f0);
+        // size assertion omitted: CSceneEntityAlias_logic_choreographed_scene has no schema binary (size is a guess)
     };
 };

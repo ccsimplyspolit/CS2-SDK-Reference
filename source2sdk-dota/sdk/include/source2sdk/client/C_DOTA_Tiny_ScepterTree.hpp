@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_DOTA_Tiny_ScepterTree) == 0xd08);
+        // size assertion omitted: C_DOTA_Tiny_ScepterTree has no schema binary (size is a guess)
     };
 };

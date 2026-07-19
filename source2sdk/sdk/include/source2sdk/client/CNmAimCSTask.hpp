@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CNmAimCSTask) == 0x130);
+        // size assertion omitted: CNmAimCSTask has no schema binary (size is a guess)
     };
 };

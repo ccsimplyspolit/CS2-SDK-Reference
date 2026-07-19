@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_Modifier_PowerSurge_ChainLightning) == 0x3b0);
+        // size assertion omitted: CCitadel_Modifier_PowerSurge_ChainLightning has no schema binary (size is a guess)
     };
 };

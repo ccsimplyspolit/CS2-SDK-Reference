@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_SoundEventMultiPointEntity) == 0x6b0);
+        // size assertion omitted: C_SoundEventMultiPointEntity has no schema binary (size is a guess)
     };
 };

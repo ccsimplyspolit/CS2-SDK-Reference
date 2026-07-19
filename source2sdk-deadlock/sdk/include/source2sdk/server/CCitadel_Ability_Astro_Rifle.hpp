@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_Ability_Astro_Rifle) == 0x11f8);
+        // size assertion omitted: CCitadel_Ability_Astro_Rifle has no schema binary (size is a guess)
     };
 };

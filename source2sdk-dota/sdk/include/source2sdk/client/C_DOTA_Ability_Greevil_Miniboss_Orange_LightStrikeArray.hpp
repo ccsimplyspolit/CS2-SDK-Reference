@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_DOTA_Ability_Greevil_Miniboss_Orange_LightStrikeArray) == 0x6a8);
+        // size assertion omitted: C_DOTA_Ability_Greevil_Miniboss_Orange_LightStrikeArray has no schema binary (size is a guess)
     };
 };

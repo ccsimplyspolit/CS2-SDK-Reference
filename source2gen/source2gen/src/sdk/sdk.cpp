@@ -671,10 +671,30 @@ namespace {
         return !type_name.contains('*');
     }
 
-    /// @return All names used by @p type. Returns multiple names for template
-    /// types.
+    // Type names that sdk-static already defines as `char[N]` aliases. These
+    // must never be forward-declared as a struct — the conflicting declaration
+    // would break value uses of them. Populated from the sdk-static header.
+    std::unordered_set<std::string> g_sdk_static_type_names{};
+
+    // Primitive/builtin type names that must never be forward-declared as a
+    // struct (a `void*`/`char*` pointee decays to one of these).
     [[nodiscard]]
-    std::set<NameLookup> GetRequiredNamesForType(const CSchemaType& type) {
+    bool IsBuiltinTypeName(std::string_view type_name) {
+        static const std::unordered_set<std::string_view> builtins{
+            "void",     "bool",     "char",     "wchar_t",  "short",    "int",      "long",     "float",   "double",
+            "unsigned", "signed",   "int8_t",   "int16_t",  "int32_t",  "int64_t",  "uint8_t",  "uint16_t", "uint32_t",
+            "uint64_t", "size_t",   "ptrdiff_t", "intptr_t", "uintptr_t", "int8",    "int16",    "int32",   "int64",
+            "uint8",    "uint16",   "uint32",   "uint64",   "float32",  "float64",  "std",
+        };
+        return builtins.contains(type_name);
+    }
+
+    /// @return All names used by @p type. Returns multiple names for template
+    /// types. @p fallback_module, if set, is the module a type is forward-declared
+    /// in when it is used only as a pointer but isn't a declared class/enum in
+    /// any loaded scope (e.g. a pointer into a module that wasn't dumped).
+    [[nodiscard]]
+    std::set<NameLookup> GetRequiredNamesForType(const CSchemaType& type, std::optional<std::string_view> fallback_module = std::nullopt) {
         // m_pTypeScope can be nullptr for built-in types
         if (type.m_pTypeScope != nullptr) {
             std::set<NameLookup> result{};
@@ -696,6 +716,17 @@ namespace {
                         (!is_used_in_non_odr_container && IsOdrUse(dirty_type_name)) ? NameSource::include : NameSource::forward_declaration;
 
                     result.emplace(NameLookup{.module = std::move(module.value()), .type_name = std::string{type_name}, .source = source});
+                } else if (fallback_module.has_value() && !IsOdrUse(dirty_type_name) && !type_name.empty() &&
+                           type_name.find(':') == std::string_view::npos && type_name.find('<') == std::string_view::npos &&
+                           !IsBuiltinTypeName(type_name) && !g_sdk_static_type_names.contains(std::string{type_name})) {
+                    // Used only as a pointer and not a declared class/enum in any
+                    // scope — the field emits its bare name, so without a forward
+                    // declaration it is an undefined type. Declare it in the
+                    // referencing class's module; a pointer needs no definition.
+                    // Built-in pointees (void*, char*, ...) are excluded — they
+                    // must not be forward-declared as a struct.
+                    result.emplace(
+                        NameLookup{.module = std::string{*fallback_module}, .type_name = std::string{type_name}, .source = NameSource::forward_declaration});
                 }
 
                 is_used_in_non_odr_container = non_odr_containers.contains(type_name);
@@ -711,8 +742,12 @@ namespace {
     std::set<NameLookup> GetRequiredNamesForClass(const CSchemaClassBinding& class_) {
         std::set<NameLookup> result{};
 
+        // Unresolved pointer types are forward-declared in this class's own
+        // module namespace so their bare name resolves at the use site.
+        const auto self_module = GetModuleOfType(*class_.m_pSchemaType).value();
+
         for (const auto& field : std::span{class_.m_pFields, static_cast<std::size_t>(class_.m_nFieldSize)}) {
-            const auto names = GetRequiredNamesForType(*field.m_pSchemaType);
+            const auto names = GetRequiredNamesForType(*field.m_pSchemaType, self_module);
             result.insert(names.begin(), names.end());
         }
 
@@ -723,7 +758,7 @@ namespace {
             result.insert(includes.begin(), includes.end());
         }
 
-        const auto is_self = [self_module{GetModuleOfType(*class_.m_pSchemaType).value()}, self_type_name{class_.GetName()}](const auto& that) {
+        const auto is_self = [self_module, self_type_name{class_.GetName()}](const auto& that) {
             return (that.module == self_module) && (that.type_name == self_type_name);
         };
 
@@ -1139,7 +1174,12 @@ namespace {
             }
         }
 
-        if (!class_.m_nFieldSize && !class_.m_nStaticMetadataSize)
+        // Name-only registrations (no fields, no metadata) carry no real layout
+        // data — the generator is guessing their size, and an empty such base
+        // gets empty-base-optimized to 0 bytes in a derived class, so a sizeof
+        // assertion on it can't be trusted.
+        const bool has_schema_binding = class_.m_nFieldSize || class_.m_nStaticMetadataSize;
+        if (!has_schema_binding)
             generator.comment("No schema binary for binding");
 
         if (is_struct) {
@@ -1180,7 +1220,11 @@ namespace {
         generator.next_line();
 
         if (options.static_assertions) {
-            generator.static_assert_size(MaybeWithModuleName(generator, *class_.m_pTypeScope, class_.m_pszName), class_size);
+            if (has_schema_binding) {
+                generator.static_assert_size(MaybeWithModuleName(generator, *class_.m_pTypeScope, class_.m_pszName), class_size);
+            } else {
+                generator.comment(std::format("size assertion omitted: {} has no schema binary (size is a guess)", class_.m_pszName));
+            }
         }
     }
 
@@ -1349,6 +1393,10 @@ namespace sdk {
         }
 
         return result;
+    }
+
+    void SetSdkStaticTypeNames(std::unordered_set<std::string> names) {
+        g_sdk_static_type_names = std::move(names);
     }
 } // namespace sdk
 

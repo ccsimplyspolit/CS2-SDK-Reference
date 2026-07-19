@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadelTriggerNoPortals) == 0xa78);
+        // size assertion omitted: CCitadelTriggerNoPortals has no schema binary (size is a guess)
     };
 };

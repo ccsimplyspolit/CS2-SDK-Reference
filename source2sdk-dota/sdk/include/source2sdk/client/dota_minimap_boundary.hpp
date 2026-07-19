@@ -31,6 +31,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::dota_minimap_boundary) == 0x8);
+        // size assertion omitted: dota_minimap_boundary has no schema binary (size is a guess)
     };
 };

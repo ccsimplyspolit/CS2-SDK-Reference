@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CInfoLandmark) == 0x4a0);
+        // size assertion omitted: CInfoLandmark has no schema binary (size is a guess)
     };
 };

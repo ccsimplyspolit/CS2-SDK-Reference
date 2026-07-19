@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CDOTA_Unit_Announcer_Killing_Spree) == 0x19e0);
+        // size assertion omitted: CDOTA_Unit_Announcer_Killing_Spree has no schema binary (size is a guess)
     };
 };

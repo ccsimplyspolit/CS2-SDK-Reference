@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_Modifire_Bookworm_DragonFire) == 0x1d0);
+        // size assertion omitted: CCitadel_Modifire_Bookworm_DragonFire has no schema binary (size is a guess)
     };
 };

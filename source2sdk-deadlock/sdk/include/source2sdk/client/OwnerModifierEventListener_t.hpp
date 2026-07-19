@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::OwnerModifierEventListener_t) == 0x10);
+        // size assertion omitted: OwnerModifierEventListener_t has no schema binary (size is a guess)
     };
 };

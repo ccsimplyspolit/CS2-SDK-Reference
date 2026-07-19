@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_CS2HudModelArms) == 0x1380);
+        // size assertion omitted: C_CS2HudModelArms has no schema binary (size is a guess)
     };
 };

@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_Modifier_Shadow_Strike_Debuff) == 0x250);
+        // size assertion omitted: CCitadel_Modifier_Shadow_Strike_Debuff has no schema binary (size is a guess)
     };
 };

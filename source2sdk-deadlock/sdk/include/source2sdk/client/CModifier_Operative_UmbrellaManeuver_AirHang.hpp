@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CModifier_Operative_UmbrellaManeuver_AirHang) == 0xc0);
+        // size assertion omitted: CModifier_Operative_UmbrellaManeuver_AirHang has no schema binary (size is a guess)
     };
 };

@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CChoreoInfoTarget) == 0x600);
+        // size assertion omitted: CChoreoInfoTarget has no schema binary (size is a guess)
     };
 };

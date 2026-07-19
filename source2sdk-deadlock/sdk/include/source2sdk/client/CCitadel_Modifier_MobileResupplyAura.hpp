@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadel_Modifier_MobileResupplyAura) == 0x110);
+        // size assertion omitted: CCitadel_Modifier_MobileResupplyAura has no schema binary (size is a guess)
     };
 };

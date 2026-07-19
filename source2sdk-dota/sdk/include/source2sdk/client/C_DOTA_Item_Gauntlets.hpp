@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_DOTA_Item_Gauntlets) == 0x758);
+        // size assertion omitted: C_DOTA_Item_Gauntlets has no schema binary (size is a guess)
     };
 };

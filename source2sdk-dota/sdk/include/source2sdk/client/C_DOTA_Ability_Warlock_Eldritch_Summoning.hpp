@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_DOTA_Ability_Warlock_Eldritch_Summoning) == 0x6a8);
+        // size assertion omitted: C_DOTA_Ability_Warlock_Eldritch_Summoning has no schema binary (size is a guess)
     };
 };

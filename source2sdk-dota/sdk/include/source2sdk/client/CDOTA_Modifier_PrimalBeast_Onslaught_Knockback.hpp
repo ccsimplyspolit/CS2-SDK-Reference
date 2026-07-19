@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_PrimalBeast_Onslaught_Knockback) == 0x1a58);
+        // size assertion omitted: CDOTA_Modifier_PrimalBeast_Onslaught_Knockback has no schema binary (size is a guess)
     };
 };

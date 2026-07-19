@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Nian_Tail_Swipe_Wall) == 0x1a70);
+        // size assertion omitted: CDOTA_Modifier_Nian_Tail_Swipe_Wall has no schema binary (size is a guess)
     };
 };

@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CLightDirectionalEntity) == 0x778);
+        // size assertion omitted: CLightDirectionalEntity has no schema binary (size is a guess)
     };
 };

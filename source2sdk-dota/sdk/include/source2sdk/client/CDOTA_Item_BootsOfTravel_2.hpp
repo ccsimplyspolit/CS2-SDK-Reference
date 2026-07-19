@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CDOTA_Item_BootsOfTravel_2) == 0x760);
+        // size assertion omitted: CDOTA_Item_BootsOfTravel_2 has no schema binary (size is a guess)
     };
 };

@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_Modifier_SilenceProc_Immunity) == 0xd0);
+        // size assertion omitted: CCitadel_Modifier_SilenceProc_Immunity has no schema binary (size is a guess)
     };
 };

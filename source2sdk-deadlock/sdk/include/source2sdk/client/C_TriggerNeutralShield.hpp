@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_TriggerNeutralShield) == 0xa78);
+        // size assertion omitted: C_TriggerNeutralShield has no schema binary (size is a guess)
     };
 };

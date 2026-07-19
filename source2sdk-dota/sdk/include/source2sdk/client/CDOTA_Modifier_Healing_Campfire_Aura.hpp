@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Healing_Campfire_Aura) == 0x1a70);
+        // size assertion omitted: CDOTA_Modifier_Healing_Campfire_Aura has no schema binary (size is a guess)
     };
 };

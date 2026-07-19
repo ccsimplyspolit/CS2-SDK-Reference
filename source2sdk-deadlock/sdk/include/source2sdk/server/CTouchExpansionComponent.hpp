@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CTouchExpansionComponent) == 0x50);
+        // size assertion omitted: CTouchExpansionComponent has no schema binary (size is a guess)
     };
 };

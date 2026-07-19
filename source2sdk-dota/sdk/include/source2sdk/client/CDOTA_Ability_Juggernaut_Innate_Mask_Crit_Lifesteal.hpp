@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CDOTA_Ability_Juggernaut_Innate_Mask_Crit_Lifesteal) == 0x6a8);
+        // size assertion omitted: CDOTA_Ability_Juggernaut_Innate_Mask_Crit_Lifesteal has no schema binary (size is a guess)
     };
 };

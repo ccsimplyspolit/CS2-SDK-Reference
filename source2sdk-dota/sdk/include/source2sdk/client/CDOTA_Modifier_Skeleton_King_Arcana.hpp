@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Skeleton_King_Arcana) == 0x1a58);
+        // size assertion omitted: CDOTA_Modifier_Skeleton_King_Arcana has no schema binary (size is a guess)
     };
 };

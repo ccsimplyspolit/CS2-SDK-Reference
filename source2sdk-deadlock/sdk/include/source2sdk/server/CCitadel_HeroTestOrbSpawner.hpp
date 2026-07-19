@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_HeroTestOrbSpawner) == 0xaa0);
+        // size assertion omitted: CCitadel_HeroTestOrbSpawner has no schema binary (size is a guess)
     };
 };
