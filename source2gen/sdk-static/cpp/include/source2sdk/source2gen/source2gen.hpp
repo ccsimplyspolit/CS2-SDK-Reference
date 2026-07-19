@@ -6,6 +6,8 @@
 using BASEPTR = char[0x08];
 // size derived from field layout
 using CAnimGraph2ParamAutoResetOptionalRef = char[0x20];
+// Dota/Deadlock; size from field layout
+using CAnimGraphParamAutoResetRef = char[0x30];
 template <typename>
 using CAnimGraphParamOptionalRef = char[0x20];
 template <typename>
@@ -120,6 +122,8 @@ template <typename Ty>
 // size is a guess that fits both occurrences of this type in CS2
 using CUtlVectorFixedGrowable = char[0x18 + ((sizeof(Ty) < 4) ? 4 : sizeof(Ty))];
 using CUtlVectorSIMDPaddedVector = char[0x18];
+// Dota/Deadlock; size from field layout, consistent across 8 usages
+using CVDataLocalizedToken = char[0x10];
 template <typename>
 using CVariantBase = char[0x10];
 template <typename>
@@ -152,6 +156,8 @@ using Range_t = char[0x08];
 // size derived from field layout; matches Vector centre + float radius
 using RnSphere_t = char[0x10];
 using RotationVector = char[0x0c];
+// Dota/Deadlock; size from field layout
+using SndOpEventGuid_t = char[0x14];
 template <typename>
 using SphereBase_t = char[0x10];
 // size derived from field layout
