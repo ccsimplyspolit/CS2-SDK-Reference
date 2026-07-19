@@ -24,8 +24,8 @@ namespace source2sdk
             k_ESOMsg_CacheSubscribed = 0x18,
             k_ESOMsg_CacheUnsubscribed = 0x19,
             k_ESOMsg_UpdateMultiple = 0x1a,
+            k_ESOMsg_CacheSubscriptionCheck = 0x1b,
             k_ESOMsg_CacheSubscriptionRefresh = 0x1c,
-            k_ESOMsg_CacheSubscribedUpToDate = 0x1d,
         };
     };
 };

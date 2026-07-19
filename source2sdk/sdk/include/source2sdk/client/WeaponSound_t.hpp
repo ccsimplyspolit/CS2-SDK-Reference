@@ -13,7 +13,7 @@ namespace source2sdk
 {
     namespace client
     {
-        // Enumerator count: 18
+        // Enumerator count: 25
         // Alignment: 4
         // Size: 0x4
         enum class WeaponSound_t : std::uint32_t
@@ -35,8 +35,15 @@ namespace source2sdk
             WEAPON_SOUND_REFLECT = 0xe,
             WEAPON_SOUND_SECONDARY_IMPACT = 0xf,
             WEAPON_SOUND_SECONDARY_REFLECT = 0x10,
+            WEAPON_SOUND_RELOAD = 0x11,
+            WEAPON_SOUND_SINGLE_ACCURATE = 0x12,
+            WEAPON_SOUND_ZOOM_IN = 0x13,
+            WEAPON_SOUND_ZOOM_OUT = 0x14,
+            WEAPON_SOUND_MOUSE_PRESSED = 0x15,
+            WEAPON_SOUND_DROP = 0x16,
+            WEAPON_SOUND_RADIO_USE = 0x17,
             // MPropertySuppressEnumerator
-            WEAPON_SOUND_NUM_TYPES = 0x11,
+            WEAPON_SOUND_NUM_TYPES = 0x18,
         };
     };
 };

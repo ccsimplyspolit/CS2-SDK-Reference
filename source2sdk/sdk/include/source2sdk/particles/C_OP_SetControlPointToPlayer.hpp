@@ -4,6 +4,7 @@
 #include <cstddef>
 #include <cstdint>
 #include "source2sdk/particles/CParticleFunctionPreEmission.hpp"
+#include "source2sdk/particles/ParticleEntityPos_t.hpp"
 
 // /////////////////////////////////////////////////////////////
 // Module: particles
@@ -17,8 +18,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x1e0
+        // Size: 0x200
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -26,18 +28,27 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "control point number"
-            std::int32_t m_nCP1; // 0x1c8            
+            std::int32_t m_nCP1; // 0x1e0            
             // metadata: MPropertyFriendlyName "control point offset"
             // metadata: MVectorIsCoordinate
-            Vector m_vecCP1Pos; // 0x1cc            
+            Vector m_vecCP1Pos; // 0x1e4            
             // metadata: MPropertyFriendlyName "use eye orientation"
-            bool m_bOrientToEyes; // 0x1d8            
-            uint8_t _pad01d9[0x7];
+            bool m_bOrientToEyes; // 0x1f0            
+            uint8_t _pad01f1[0x3]; // 0x1f1
+            // metadata: MPropertyFriendlyName "position to get"
+            source2sdk::particles::ParticleEntityPos_t m_nPosition; // 0x1f4            
+            // metadata: MPropertyFriendlyName "flashlight radius CP"
+            // metadata: MPropertySuppressExpr "m_nPosition != PARTICLE_FLASHLIGHT"
+            std::int32_t m_nRadiusCP; // 0x1f8            
+            // metadata: MPropertyFriendlyName "flashlight radius control point component"
+            // metadata: MPropertyAttributeChoiceName "vector_component"
+            // metadata: MPropertySuppressExpr "m_nPosition != PARTICLE_FLASHLIGHT"
+            std::int32_t m_nRadiusCPField; // 0x1fc            
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_OP_SetControlPointToPlayer because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_OP_SetControlPointToPlayer) == 0x1e0);
+        static_assert(sizeof(source2sdk::particles::C_OP_SetControlPointToPlayer) == 0x200);
     };
 };

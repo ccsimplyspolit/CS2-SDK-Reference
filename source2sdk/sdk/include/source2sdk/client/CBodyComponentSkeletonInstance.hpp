@@ -16,24 +16,25 @@ namespace source2sdk
     namespace client
     {
         // Registered alignment: unknown
-        // Alignment: unknown
+        // Alignment: 0x10
         // Standard-layout class: false
-        // Size: 0x590
+        // Size: 0x510
         // Has VTable
+        // Construct allowed
+        // Construct disallowed
         // 
-        // static metadata: MNetworkVarNames "CSkeletonInstance m_skeletonInstance"
+        // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CBodyComponentSkeletonInstance : public source2sdk::client::CBodyComponent
         {
         public:
             uint8_t _pad0078[0x8]; // 0x78
-            // metadata: MNetworkEnable
             source2sdk::client::CSkeletonInstance m_skeletonInstance; // 0x80            
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in CBodyComponentSkeletonInstance because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::client::CBodyComponentSkeletonInstance) == 0x590);
+        static_assert(sizeof(source2sdk::client::CBodyComponentSkeletonInstance) == 0x510);
     };
 };

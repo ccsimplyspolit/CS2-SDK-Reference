@@ -17,16 +17,17 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x4f0
+        // Size: 0x4b8
         // Has VTable
+        // Construct allowed
         #pragma pack(push, 1)
         class CInfoPlayerStart : public source2sdk::server::CPointEntity
         {
         public:
-            bool m_bDisabled; // 0x4e0            
-            bool m_bIsMaster; // 0x4e1            
-            uint8_t _pad04e2[0x6]; // 0x4e2
-            CGlobalSymbol m_pPawnSubclass; // 0x4e8            
+            bool m_bDisabled; // 0x4a8            
+            bool m_bIsMaster; // 0x4a9            
+            uint8_t _pad04aa[0x6]; // 0x4aa
+            CGlobalSymbol m_pPawnSubclass; // 0x4b0            
             
             // Datamap fields:
             // void InputEnable; // 0x0
@@ -37,6 +38,6 @@ namespace source2sdk
         
         // Cannot assert offsets of fields in CInfoPlayerStart because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::server::CInfoPlayerStart) == 0x4f0);
+        static_assert(sizeof(source2sdk::server::CInfoPlayerStart) == 0x4b8);
     };
 };

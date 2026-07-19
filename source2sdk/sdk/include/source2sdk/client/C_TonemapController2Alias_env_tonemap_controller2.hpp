@@ -17,8 +17,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x600
+        // Size: 0x618
         // Has VTable
+        // Construct allowed
         #pragma pack(push, 1)
         class C_TonemapController2Alias_env_tonemap_controller2 : public source2sdk::client::C_TonemapController2
         {
@@ -28,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_TonemapController2Alias_env_tonemap_controller2) == 0x600);
+        static_assert(sizeof(source2sdk::client::C_TonemapController2Alias_env_tonemap_controller2) == 0x618);
     };
 };

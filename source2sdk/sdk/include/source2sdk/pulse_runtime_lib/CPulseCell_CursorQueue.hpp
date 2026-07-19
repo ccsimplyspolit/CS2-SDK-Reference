@@ -17,13 +17,11 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0xa0
+        // Size: 0x130
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
-        // static metadata: MCellForDomain "BaseDomain"
-        // static metadata: MPulseCellMethodBindings
-        // static metadata: MPulseCellOutflowHookInfo "prKæþ"
         // static metadata: MPropertyFriendlyName "Cursor Queue"
         // static metadata: MPropertyDescription "Causes each execution cursor to wait for the completion of all prior cursors that have visited this node. Use this to safely support multiple triggers to areas of the graph that take time to complete."
         // static metadata: MPulseEditorHeaderIcon "tools/images/pulse_editor/cursor_wait_zone.png"
@@ -32,13 +30,13 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyDescription "Any cursors above this count will wait, up to the limit."
-            std::int32_t m_nCursorsAllowedToRunParallel; // 0x98            
-            uint8_t _pad009c[0x4];
+            std::int32_t m_nCursorsAllowedToRunParallel; // 0x128            
+            uint8_t _pad012c[0x4];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in CPulseCell_CursorQueue because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::pulse_runtime_lib::CPulseCell_CursorQueue) == 0xa0);
+        static_assert(sizeof(source2sdk::pulse_runtime_lib::CPulseCell_CursorQueue) == 0x130);
     };
 };

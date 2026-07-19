@@ -14,38 +14,30 @@ namespace source2sdk
 {
     namespace client
     {
-        // Registered alignment: unknown
-        // Alignment: 0x4
+        // Registered alignment: 0x8
+        // Alignment: 0x8
         // Standard-layout class: true
         // Size: 0x90
         // Has VTable
         // Has Trivial Destructor
+        // Construct allowed
         // 
-        // static metadata: MNetworkVarNames "int16 scale"
-        // static metadata: MNetworkVarNames "Vector origin"
-        // static metadata: MNetworkVarNames "bool bClip3DSkyBoxNearToWorldFar"
-        // static metadata: MNetworkVarNames "float32 flClip3DSkyBoxNearToWorldFarOffset"
-        // static metadata: MNetworkVarNames "fogparams_t fog"
-        // static metadata: MNetworkVarNames "WorldGroupId_t m_nWorldGroupID"
+        // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct sky3dparams_t
         {
         public:
             uint8_t _pad0000[0x8]; // 0x0
-            // metadata: MNetworkEnable
             std::int16_t scale; // 0x8            
             uint8_t _pad000a[0x2]; // 0xa
-            // metadata: MNetworkEnable
-            // metadata: MNetworkEncoder "coord"
-            Vector origin; // 0xc            
-            // metadata: MNetworkEnable
+            VectorWS origin; // 0xc            
+            // metadata: MNotSaved
             bool bClip3DSkyBoxNearToWorldFar; // 0x18            
             uint8_t _pad0019[0x3]; // 0x19
-            // metadata: MNetworkEnable
+            // metadata: MNotSaved
             float flClip3DSkyBoxNearToWorldFarOffset; // 0x1c            
-            // metadata: MNetworkEnable
+            // metadata: MNotSaved
             source2sdk::client::fogparams_t fog; // 0x20            
-            // metadata: MNetworkEnable
             WorldGroupId_t m_nWorldGroupID; // 0x88            
             uint8_t _pad008c[0x4];
         };

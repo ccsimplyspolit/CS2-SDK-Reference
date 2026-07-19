@@ -20,6 +20,7 @@ namespace source2sdk
         // Has VTable
         // Is Abstract
         // Has Trivial Destructor
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MVDataRoot

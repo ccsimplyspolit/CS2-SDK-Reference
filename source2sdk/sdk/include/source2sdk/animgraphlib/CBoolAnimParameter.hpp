@@ -19,8 +19,8 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x88
         // Has VTable
+        // Construct allowed
         // 
-        // static metadata: M_LEGACY_OptInToSchemaPropertyDomain
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Bool Parameter"
         #pragma pack(push, 1)

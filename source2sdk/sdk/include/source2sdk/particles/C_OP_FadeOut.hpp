@@ -17,8 +17,9 @@ namespace source2sdk
         // Registered alignment: 0x10
         // Alignment: 0x10
         // Standard-layout class: false
-        // Size: 0x210
+        // Size: 0x230
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -26,24 +27,24 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "fade out time min"
-            float m_flFadeOutTimeMin; // 0x1c0            
+            float m_flFadeOutTimeMin; // 0x1d8            
             // metadata: MPropertyFriendlyName "fade out time max"
-            float m_flFadeOutTimeMax; // 0x1c4            
+            float m_flFadeOutTimeMax; // 0x1dc            
             // metadata: MPropertyFriendlyName "fade out time exponent"
-            float m_flFadeOutTimeExp; // 0x1c8            
+            float m_flFadeOutTimeExp; // 0x1e0            
             // metadata: MPropertyFriendlyName "fade bias"
-            float m_flFadeBias; // 0x1cc            
-            uint8_t _pad01d0[0x30]; // 0x1d0
+            float m_flFadeBias; // 0x1e4            
+            uint8_t _pad01e8[0x38]; // 0x1e8
             // metadata: MPropertyFriendlyName "proportional 0/1"
-            bool m_bProportional; // 0x200            
+            bool m_bProportional; // 0x220            
             // metadata: MPropertyFriendlyName "ease in and out"
-            bool m_bEaseInAndOut; // 0x201            
-            uint8_t _pad0202[0xe];
+            bool m_bEaseInAndOut; // 0x221            
+            uint8_t _pad0222[0xe];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_OP_FadeOut because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_OP_FadeOut) == 0x210);
+        static_assert(sizeof(source2sdk::particles::C_OP_FadeOut) == 0x230);
     };
 };

@@ -17,7 +17,8 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: true
-        // Size: 0x18
+        // Size: 0x20
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -29,14 +30,22 @@ namespace source2sdk
             char m_hMaterial[0x8]; // 0x0            
             CGlobalSymbol m_sSequenceName; // 0x8            
             float m_flProbability; // 0x10            
-            uint8_t _pad0014[0x4];
+            bool m_bEnableAngleBetweenNormalAndGravityRange; // 0x14            
+            uint8_t _pad0015[0x3]; // 0x15
+            // metadata: MPropertySuppressExpr "m_bEnableAngleBetweenNormalAndGravityRange == 0"
+            float m_flMinAngleBetweenNormalAndGravity; // 0x18            
+            // metadata: MPropertySuppressExpr "m_bEnableAngleBetweenNormalAndGravityRange == 0"
+            float m_flMaxAngleBetweenNormalAndGravity; // 0x1c            
         };
         #pragma pack(pop)
         
         static_assert(offsetof(source2sdk::client::DecalGroupOption_t, m_hMaterial) == 0x0);
         static_assert(offsetof(source2sdk::client::DecalGroupOption_t, m_sSequenceName) == 0x8);
         static_assert(offsetof(source2sdk::client::DecalGroupOption_t, m_flProbability) == 0x10);
+        static_assert(offsetof(source2sdk::client::DecalGroupOption_t, m_bEnableAngleBetweenNormalAndGravityRange) == 0x14);
+        static_assert(offsetof(source2sdk::client::DecalGroupOption_t, m_flMinAngleBetweenNormalAndGravity) == 0x18);
+        static_assert(offsetof(source2sdk::client::DecalGroupOption_t, m_flMaxAngleBetweenNormalAndGravity) == 0x1c);
         
-        static_assert(sizeof(source2sdk::client::DecalGroupOption_t) == 0x18);
+        static_assert(sizeof(source2sdk::client::DecalGroupOption_t) == 0x20);
     };
 };

@@ -8,7 +8,7 @@ namespace source2sdk
 {
     namespace server
     {
-        struct CBaseFlex;
+        struct CBaseModelEntity;
     };
 };
 
@@ -21,16 +21,25 @@ namespace source2sdk
 {
     namespace server
     {
-        // Registered alignment: unknown
+        // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: true
         // Size: 0xa0
         // Has VTable
+        // Construct allowed
+        // 
+        // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CAI_Expresser
         {
         public:
-            uint8_t _pad0000[0x60]; // 0x0
+            uint8_t _pad0000[0x10]; // 0x0
+            // m_conceptCooldowns has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+            // CUtlDict<source2sdk::entity2::GameTime_t> m_conceptCooldowns;
+            char m_conceptCooldowns[0x28]; // 0x10            
+            // m_ruleCooldowns has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+            // CUtlDict<source2sdk::entity2::GameTime_t> m_ruleCooldowns;
+            char m_ruleCooldowns[0x28]; // 0x38            
             source2sdk::entity2::GameTime_t m_flStopTalkTime; // 0x60            
             source2sdk::entity2::GameTime_t m_flStopTalkTimeWithoutDelay; // 0x64            
             source2sdk::entity2::GameTime_t m_flQueuedSpeechTime; // 0x68            
@@ -43,15 +52,13 @@ namespace source2sdk
             uint8_t _pad007b[0x1]; // 0x7b
             std::int32_t m_nLastSpokenPriority; // 0x7c            
             uint8_t _pad0080[0x18]; // 0x80
-            source2sdk::server::CBaseFlex* m_pOuter; // 0x98            
-            
-            // Datamap fields:
-            // void m_pSink; // 0x8
-            // void m_conceptCooldowns; // 0x10
-            // void m_ruleCooldowns; // 0x38
+            // metadata: MNotSaved
+            source2sdk::server::CBaseModelEntity* m_pOuter; // 0x98            
         };
         #pragma pack(pop)
         
+        static_assert(offsetof(source2sdk::server::CAI_Expresser, m_conceptCooldowns) == 0x10);
+        static_assert(offsetof(source2sdk::server::CAI_Expresser, m_ruleCooldowns) == 0x38);
         static_assert(offsetof(source2sdk::server::CAI_Expresser, m_flStopTalkTime) == 0x60);
         static_assert(offsetof(source2sdk::server::CAI_Expresser, m_flStopTalkTimeWithoutDelay) == 0x64);
         static_assert(offsetof(source2sdk::server::CAI_Expresser, m_flQueuedSpeechTime) == 0x68);

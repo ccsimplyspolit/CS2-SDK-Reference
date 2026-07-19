@@ -20,6 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x18
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -30,8 +31,8 @@ namespace source2sdk
             std::int16_t m_nTargetValueNodeIdx; // 0x12            
             bool m_bIsOffsetNode; // 0x14            
             bool m_bIsOffsetRelativeToCharacter; // 0x15            
-            source2sdk::animlib::CNmRootMotionData_SamplingMode_t m_samplingMode; // 0x16            
-            uint8_t _pad0017[0x1];
+            bool m_bWarpTranslation; // 0x16            
+            source2sdk::animlib::CNmRootMotionData_SamplingMode_t m_samplingMode; // 0x17            
         };
         #pragma pack(pop)
         

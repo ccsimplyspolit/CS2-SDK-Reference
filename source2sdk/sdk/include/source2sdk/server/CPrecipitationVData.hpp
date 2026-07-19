@@ -5,6 +5,7 @@
 #include <cstdint>
 #include "source2sdk/animationsystem/ParticleAttachment_t.hpp"
 #include "source2sdk/client/CEntitySubclassVDataBase.hpp"
+#include "source2sdk/client/PrecipitationFilter_t.hpp"
 #include "source2sdk/resourcesystem/InfoForResourceTypeIParticleSystemDefinition.hpp"
 
 // /////////////////////////////////////////////////////////////
@@ -19,8 +20,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x128
+        // Size: 0x2f0
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -30,19 +32,28 @@ namespace source2sdk
             // m_szParticlePrecipitationEffect has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_szParticlePrecipitationEffect;
             char m_szParticlePrecipitationEffect[0xe0]; // 0x28            
-            float m_flInnerDistance; // 0x108            
-            source2sdk::animationsystem::ParticleAttachment_t m_nAttachType; // 0x10c            
-            bool m_bBatchSameVolumeType; // 0x110            
-            uint8_t _pad0111[0x3]; // 0x111
-            std::int32_t m_nRTEnvCP; // 0x114            
-            std::int32_t m_nRTEnvCPComponent; // 0x118            
-            uint8_t _pad011c[0x4]; // 0x11c
-            CUtlString m_szModifier; // 0x120            
+            // m_szParticlePrecipitationPuddleEffect has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+            // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_szParticlePrecipitationPuddleEffect;
+            char m_szParticlePrecipitationPuddleEffect[0xe0]; // 0x108            
+            // m_szParticlePrecipitationPostEffect has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+            // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_szParticlePrecipitationPostEffect;
+            char m_szParticlePrecipitationPostEffect[0xe0]; // 0x1e8            
+            float m_flInnerDistance; // 0x2c8            
+            source2sdk::animationsystem::ParticleAttachment_t m_nAttachType; // 0x2cc            
+            bool m_bBatchSameVolumeType; // 0x2d0            
+            uint8_t _pad02d1[0x3]; // 0x2d1
+            std::int32_t m_nRTEnvCP; // 0x2d4            
+            std::int32_t m_nRTEnvCPComponent; // 0x2d8            
+            uint8_t _pad02dc[0x4]; // 0x2dc
+            CUtlString m_szModifier; // 0x2e0            
+            // metadata: MPropertyDescription "If set, we will populate a snapshot from the surface graph"
+            std::int32_t m_nUseSnapshotFromSurfaceGraph; // 0x2e8            
+            source2sdk::client::PrecipitationFilter_t m_snapshotFilter; // 0x2ec            
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in CPrecipitationVData because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::server::CPrecipitationVData) == 0x128);
+        static_assert(sizeof(source2sdk::server::CPrecipitationVData) == 0x2f0);
     };
 };

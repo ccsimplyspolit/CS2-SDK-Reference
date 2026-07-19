@@ -17,7 +17,7 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: 0x1
         // Standard-layout class: false
-        // Size: 0x98
+        // Size: 0xa0
         // Has VTable
         #pragma pack(push, 1)
         class CNavVolumeAll : public source2sdk::navlib::CNavVolumeVector
@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::navlib::CNavVolumeAll) == 0x98);
+        static_assert(sizeof(source2sdk::navlib::CNavVolumeAll) == 0xa0);
     };
 };

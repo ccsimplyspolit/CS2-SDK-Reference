@@ -20,10 +20,10 @@ namespace source2sdk
         // Size: 0x18
         // Has VTable
         // Has Trivial Destructor
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Damping"
-        // static metadata: M_LEGACY_OptInToSchemaPropertyDomain
         #pragma pack(push, 1)
         class CAnimInputDamping
         {

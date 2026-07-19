@@ -17,19 +17,22 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0xd68
+        // Size: 0x16f8
         // Has VTable
-        // 
-        // static metadata: MEntityAllowsPortraitWorldSpawn
+        // Construct allowed
+        // MClassHasEntityLimitedDataDesc
         #pragma pack(push, 1)
         class C_EconWearable : public source2sdk::client::C_EconEntity
         {
         public:
-            uint8_t _pad0d60[0x8];
+            std::int32_t m_nForceSkin; // 0x16f0            
+            bool m_bAlwaysAllow; // 0x16f4            
+            uint8_t _pad16f5[0x3];
         };
         #pragma pack(pop)
         
+        // Cannot assert offsets of fields in C_EconWearable because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::client::C_EconWearable) == 0xd68);
+        static_assert(sizeof(source2sdk::client::C_EconWearable) == 0x16f8);
     };
 };

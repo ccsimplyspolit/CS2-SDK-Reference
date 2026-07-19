@@ -18,29 +18,24 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x520
+        // Size: 0x4d8
         // Has VTable
-        // 
-        // static metadata: MNetworkVarNames "string_t m_worldName"
-        // static metadata: MNetworkVarNames "string_t m_layerName"
-        // static metadata: MNetworkVarNames "bool m_bWorldLayerVisible"
-        // static metadata: MNetworkVarNames "bool m_bEntitiesSpawned"
+        // Construct allowed
         #pragma pack(push, 1)
         class CInfoWorldLayer : public source2sdk::server::CBaseEntity
         {
         public:
-            source2sdk::entity2::CEntityIOOutput m_pOutputOnEntitiesSpawned; // 0x4e0            
-            // metadata: MNetworkEnable
-            CUtlSymbolLarge m_worldName; // 0x508            
-            // metadata: MNetworkEnable
-            CUtlSymbolLarge m_layerName; // 0x510            
-            // metadata: MNetworkEnable
-            bool m_bWorldLayerVisible; // 0x518            
-            // metadata: MNetworkEnable
-            bool m_bEntitiesSpawned; // 0x519            
-            bool m_bCreateAsChildSpawnGroup; // 0x51a            
-            uint8_t _pad051b[0x1]; // 0x51b
-            std::uint32_t m_hLayerSpawnGroup; // 0x51c            
+            source2sdk::entity2::CEntityIOOutput m_pOutputOnEntitiesSpawned; // 0x4a8            
+            // metadata: MNotSaved
+            CUtlSymbolLarge m_worldName; // 0x4c0            
+            // metadata: MNotSaved
+            CUtlSymbolLarge m_layerName; // 0x4c8            
+            bool m_bWorldLayerVisible; // 0x4d0            
+            bool m_bEntitiesSpawned; // 0x4d1            
+            bool m_bCreateAsChildSpawnGroup; // 0x4d2            
+            uint8_t _pad04d3[0x1]; // 0x4d3
+            // metadata: MNotSaved
+            std::uint32_t m_hLayerSpawnGroup; // 0x4d4            
             
             // Datamap fields:
             // void ShowWorldLayer; // 0x0
@@ -54,6 +49,6 @@ namespace source2sdk
         
         // Cannot assert offsets of fields in CInfoWorldLayer because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::server::CInfoWorldLayer) == 0x520);
+        static_assert(sizeof(source2sdk::server::CInfoWorldLayer) == 0x4d8);
     };
 };

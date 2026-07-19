@@ -18,8 +18,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x1d0
+        // Size: 0x1e8
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -27,21 +28,21 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "control point"
-            std::int32_t m_nCP; // 0x1c0            
+            std::int32_t m_nCP; // 0x1d8            
             // metadata: MPropertyFriendlyName "rotation field"
             // metadata: MPropertyAttributeChoiceName "particlefield_rotation"
-            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1c4            
+            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1dc            
             // metadata: MPropertyFriendlyName "offset rotation"
-            float m_flOffsetRot; // 0x1c8            
+            float m_flOffsetRot; // 0x1e0            
             // metadata: MPropertyFriendlyName "control point axis"
             // metadata: MPropertyAttributeChoiceName "vector_component"
             // metadata: MVectorIsSometimesCoordinate "m_nFieldOutput"
-            std::int32_t m_nComponent; // 0x1cc            
+            std::int32_t m_nComponent; // 0x1e4            
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_OP_RemapControlPointOrientationToRotation because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_OP_RemapControlPointOrientationToRotation) == 0x1d0);
+        static_assert(sizeof(source2sdk::particles::C_OP_RemapControlPointOrientationToRotation) == 0x1e8);
     };
 };

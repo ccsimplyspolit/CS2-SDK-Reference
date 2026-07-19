@@ -17,20 +17,22 @@ namespace source2sdk
         // Registered alignment: 0x10
         // Alignment: 0x10
         // Standard-layout class: false
-        // Size: 0xb40
+        // Size: 0xaf0
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MEntityAllowsPortraitWorldSpawn
         #pragma pack(push, 1)
         class C_GlobalLight : public source2sdk::client::C_BaseEntity
         {
         public:
-            uint8_t _pad05e8[0x528]; // 0x5e8
-            std::uint16_t m_WindClothForceHandle; // 0xb10            
-            uint8_t _pad0b12[0x2e];
+            uint8_t _pad0600[0x4c0]; // 0x600
+            // metadata: MNotSaved
+            std::uint16_t m_WindClothForceHandle; // 0xac0            
+            uint8_t _pad0ac2[0x2e];
             
             // Datamap fields:
-            // CGlobalLightBase CGlobalLightBase; // 0x5f0
+            // CGlobalLightBase CGlobalLightBase; // 0x600
             // void InputTurnOn; // 0x0
             // void InputTurnOff; // 0x0
             // float InputSetLightScale; // 0x0
@@ -39,6 +41,6 @@ namespace source2sdk
         
         // Cannot assert offsets of fields in C_GlobalLight because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::client::C_GlobalLight) == 0xb40);
+        static_assert(sizeof(source2sdk::client::C_GlobalLight) == 0xaf0);
     };
 };

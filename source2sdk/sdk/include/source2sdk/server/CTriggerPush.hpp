@@ -24,21 +24,25 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x9f8
+        // Size: 0x920
         // Has VTable
+        // Construct allowed
         #pragma pack(push, 1)
         class CTriggerPush : public source2sdk::server::CBaseTrigger
         {
         public:
-            QAngle m_angPushEntitySpace; // 0x9c0            
-            Vector m_vecPushDirEntitySpace; // 0x9cc            
-            bool m_bTriggerOnStartTouch; // 0x9d8            
-            bool m_bUsePathSimple; // 0x9d9            
-            uint8_t _pad09da[0x6]; // 0x9da
-            CUtlSymbolLarge m_iszPathSimpleName; // 0x9e0            
-            source2sdk::server::CPathSimple* m_PathSimple; // 0x9e8            
-            std::uint32_t m_splinePushType; // 0x9f0            
-            uint8_t _pad09f4[0x4];
+            QAngle m_angPushEntitySpace; // 0x8e8            
+            Vector m_vecPushDirEntitySpace; // 0x8f4            
+            bool m_bTriggerOnStartTouch; // 0x900            
+            bool m_bUsePathSimple; // 0x901            
+            uint8_t _pad0902[0x6]; // 0x902
+            CUtlSymbolLarge m_iszPathSimpleName; // 0x908            
+            // m_PathSimple has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+            // CHandle<source2sdk::server::CPathSimple> m_PathSimple;
+            char m_PathSimple[0x4]; // 0x910            
+            std::uint32_t m_splinePushType; // 0x914            
+            float m_flSpeed; // 0x918            
+            uint8_t _pad091c[0x4];
             
             // Datamap fields:
             // Vector InputSetPushDirection; // 0x0
@@ -48,6 +52,6 @@ namespace source2sdk
         
         // Cannot assert offsets of fields in CTriggerPush because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::server::CTriggerPush) == 0x9f8);
+        static_assert(sizeof(source2sdk::server::CTriggerPush) == 0x920);
     };
 };

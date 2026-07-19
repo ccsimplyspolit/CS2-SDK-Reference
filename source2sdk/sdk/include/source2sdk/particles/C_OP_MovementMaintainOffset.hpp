@@ -17,8 +17,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x1d8
+        // Size: 0x1f0
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -27,17 +28,17 @@ namespace source2sdk
         public:
             // metadata: MPropertyFriendlyName "desired offset"
             // metadata: MVectorIsCoordinate
-            Vector m_vecOffset; // 0x1c0            
+            Vector m_vecOffset; // 0x1d8            
             // metadata: MPropertyFriendlyName "local space CP"
-            std::int32_t m_nCP; // 0x1cc            
+            std::int32_t m_nCP; // 0x1e4            
             // metadata: MPropertyFriendlyName "scale by radius"
-            bool m_bRadiusScale; // 0x1d0            
-            uint8_t _pad01d1[0x7];
+            bool m_bRadiusScale; // 0x1e8            
+            uint8_t _pad01e9[0x7];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_OP_MovementMaintainOffset because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_OP_MovementMaintainOffset) == 0x1d8);
+        static_assert(sizeof(source2sdk::particles::C_OP_MovementMaintainOffset) == 0x1f0);
     };
 };

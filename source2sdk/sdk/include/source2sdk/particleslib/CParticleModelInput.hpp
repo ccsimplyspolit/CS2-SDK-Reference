@@ -20,11 +20,11 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x60
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyCustomEditor "ModelInput()"
-        // static metadata: MClassIsParticleModel
-        // static metadata: MParticleCustomFieldDefaultValue
+        // static metadata: MCustomFGDMetadata "{ KV3DefaultTestFnName = 'CParticleModelInputDefaultTestFunc' }"
         #pragma pack(push, 1)
         class CParticleModelInput : public source2sdk::particleslib::CParticleInput
         {

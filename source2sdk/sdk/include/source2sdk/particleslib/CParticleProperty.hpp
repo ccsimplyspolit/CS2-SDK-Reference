@@ -13,16 +13,19 @@ namespace source2sdk
 {
     namespace particleslib
     {
-        // Registered alignment: unknown
-        // Alignment: 0x1
+        // Registered alignment: 0x8
+        // Alignment: 0x8
         // Standard-layout class: true
         // Size: 0x28
+        // Construct allowed
+        // MNetworkNoBase
+        // 
+        // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CParticleProperty
         {
         public:
             uint8_t _pad0000[0x28];
-            // No schema binary for binding
         };
         #pragma pack(pop)
         

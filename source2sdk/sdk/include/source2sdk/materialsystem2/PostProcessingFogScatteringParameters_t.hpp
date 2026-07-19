@@ -16,8 +16,9 @@ namespace source2sdk
         // Registered alignment: 0x4
         // Alignment: 0x4
         // Standard-layout class: true
-        // Size: 0x14
+        // Size: 0x20
         // Has Trivial Destructor
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -29,6 +30,9 @@ namespace source2sdk
             float m_fCubemapScale; // 0x8            
             float m_fVolumetricScale; // 0xc            
             float m_fGradientScale; // 0x10            
+            float m_fWaterScale; // 0x14            
+            float m_fWaterDensity; // 0x18            
+            float m_fWaterDepthBlurRadius; // 0x1c            
         };
         #pragma pack(pop)
         
@@ -37,7 +41,10 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::materialsystem2::PostProcessingFogScatteringParameters_t, m_fCubemapScale) == 0x8);
         static_assert(offsetof(source2sdk::materialsystem2::PostProcessingFogScatteringParameters_t, m_fVolumetricScale) == 0xc);
         static_assert(offsetof(source2sdk::materialsystem2::PostProcessingFogScatteringParameters_t, m_fGradientScale) == 0x10);
+        static_assert(offsetof(source2sdk::materialsystem2::PostProcessingFogScatteringParameters_t, m_fWaterScale) == 0x14);
+        static_assert(offsetof(source2sdk::materialsystem2::PostProcessingFogScatteringParameters_t, m_fWaterDensity) == 0x18);
+        static_assert(offsetof(source2sdk::materialsystem2::PostProcessingFogScatteringParameters_t, m_fWaterDepthBlurRadius) == 0x1c);
         
-        static_assert(sizeof(source2sdk::materialsystem2::PostProcessingFogScatteringParameters_t) == 0x14);
+        static_assert(sizeof(source2sdk::materialsystem2::PostProcessingFogScatteringParameters_t) == 0x20);
     };
 };

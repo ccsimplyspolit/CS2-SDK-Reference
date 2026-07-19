@@ -20,8 +20,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x98
+        // Size: 0xa0
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -44,12 +45,12 @@ namespace source2sdk
             bool m_bEnablePhaseMatching; // 0x8e            
             uint8_t _pad008f[0x1]; // 0x8f
             float m_flPhaseMatchingMaxRootMotionSkip; // 0x90            
-            uint8_t _pad0094[0x4];
+            uint8_t _pad0094[0xc];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in CTargetSelectorUpdateNode because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::animgraphlib::CTargetSelectorUpdateNode) == 0x98);
+        static_assert(sizeof(source2sdk::animgraphlib::CTargetSelectorUpdateNode) == 0xa0);
     };
 };

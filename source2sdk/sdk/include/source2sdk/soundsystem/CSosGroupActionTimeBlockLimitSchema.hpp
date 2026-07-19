@@ -17,24 +17,23 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x20
+        // Size: 0x10
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
-        // static metadata: M_LEGACY_OptInToSchemaPropertyDomain
+        // static metadata: MPropertyFriendlyName "Timed Block Limiter"
         #pragma pack(push, 1)
         class CSosGroupActionTimeBlockLimitSchema : public source2sdk::soundsystem::CSosGroupActionSchema
         {
         public:
-            // metadata: MPropertyFriendlyName "Max Count"
-            std::int32_t m_nMaxCount; // 0x18            
-            // metadata: MPropertyFriendlyName "Max Time"
-            float m_flMaxDuration; // 0x1c            
+            std::int32_t m_nMaxCount; // 0x8            
+            float m_flMaxDuration; // 0xc            
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in CSosGroupActionTimeBlockLimitSchema because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::soundsystem::CSosGroupActionTimeBlockLimitSchema) == 0x20);
+        static_assert(sizeof(source2sdk::soundsystem::CSosGroupActionTimeBlockLimitSchema) == 0x10);
     };
 };

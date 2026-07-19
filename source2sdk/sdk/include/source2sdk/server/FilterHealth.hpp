@@ -17,22 +17,23 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x548
+        // Size: 0x4f0
         // Has VTable
+        // Construct allowed
         #pragma pack(push, 1)
         class FilterHealth : public source2sdk::server::CBaseFilter
         {
         public:
-            bool m_bAdrenalineActive; // 0x538            
-            uint8_t _pad0539[0x3]; // 0x539
-            std::int32_t m_iHealthMin; // 0x53c            
-            std::int32_t m_iHealthMax; // 0x540            
-            uint8_t _pad0544[0x4];
+            bool m_bAdrenalineActive; // 0x4e0            
+            uint8_t _pad04e1[0x3]; // 0x4e1
+            std::int32_t m_iHealthMin; // 0x4e4            
+            std::int32_t m_iHealthMax; // 0x4e8            
+            uint8_t _pad04ec[0x4];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in FilterHealth because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::server::FilterHealth) == 0x548);
+        static_assert(sizeof(source2sdk::server::FilterHealth) == 0x4f0);
     };
 };

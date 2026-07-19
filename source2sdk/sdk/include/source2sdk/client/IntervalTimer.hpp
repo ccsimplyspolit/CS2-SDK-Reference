@@ -14,23 +14,23 @@ namespace source2sdk
 {
     namespace client
     {
-        // Registered alignment: unknown
-        // Alignment: 0x4
+        // Registered alignment: 0x8
+        // Alignment: 0x8
         // Standard-layout class: true
         // Size: 0x10
         // Has VTable
         // Has Trivial Destructor
+        // Construct allowed
+        // MDisableDataDescValidation
+        // MNetworkNoBase
         // 
-        // static metadata: MNetworkVarNames "GameTime_t m_timestamp"
-        // static metadata: MNetworkVarNames "WorldGroupId_t m_nWorldGroupId"
+        // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class IntervalTimer
         {
         public:
             uint8_t _pad0000[0x8]; // 0x0
-            // metadata: MNetworkEnable
             source2sdk::entity2::GameTime_t m_timestamp; // 0x8            
-            // metadata: MNetworkEnable
             WorldGroupId_t m_nWorldGroupId; // 0xc            
         };
         #pragma pack(pop)

@@ -17,22 +17,20 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x6b8
+        // Size: 0x6c8
         // Has VTable
-        // 
-        // static metadata: MNetworkVarNames "float m_flRadius"
+        // Construct allowed
         #pragma pack(push, 1)
         class C_SoundEventSphereEntity : public source2sdk::client::C_SoundEventEntity
         {
         public:
-            // metadata: MNetworkEnable
-            float m_flRadius; // 0x6b0            
-            uint8_t _pad06b4[0x4];
+            float m_flRadius; // 0x6c0            
+            uint8_t _pad06c4[0x4];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_SoundEventSphereEntity because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::client::C_SoundEventSphereEntity) == 0x6b8);
+        static_assert(sizeof(source2sdk::client::C_SoundEventSphereEntity) == 0x6c8);
     };
 };

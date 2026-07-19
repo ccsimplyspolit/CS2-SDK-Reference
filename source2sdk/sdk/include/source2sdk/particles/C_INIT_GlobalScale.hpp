@@ -17,8 +17,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x1d8
+        // Size: 0x1f0
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -26,23 +27,23 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "scale amount"
-            float m_flScale; // 0x1c8            
+            float m_flScale; // 0x1e0            
             // metadata: MPropertyFriendlyName "scale control point number"
-            std::int32_t m_nScaleControlPointNumber; // 0x1cc            
+            std::int32_t m_nScaleControlPointNumber; // 0x1e4            
             // metadata: MPropertyFriendlyName "control point number"
-            std::int32_t m_nControlPointNumber; // 0x1d0            
+            std::int32_t m_nControlPointNumber; // 0x1e8            
             // metadata: MPropertyFriendlyName "scale radius"
-            bool m_bScaleRadius; // 0x1d4            
+            bool m_bScaleRadius; // 0x1ec            
             // metadata: MPropertyFriendlyName "scale position"
-            bool m_bScalePosition; // 0x1d5            
+            bool m_bScalePosition; // 0x1ed            
             // metadata: MPropertyFriendlyName "scale velocity"
-            bool m_bScaleVelocity; // 0x1d6            
-            uint8_t _pad01d7[0x1];
+            bool m_bScaleVelocity; // 0x1ee            
+            uint8_t _pad01ef[0x1];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_INIT_GlobalScale because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_INIT_GlobalScale) == 0x1d8);
+        static_assert(sizeof(source2sdk::particles::C_INIT_GlobalScale) == 0x1f0);
     };
 };

@@ -19,6 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xc
         // Has Trivial Destructor
+        // Construct disallowed
         #pragma pack(push, 1)
         class CSimTimer : public source2sdk::client::CSimpleSimTimer
         {

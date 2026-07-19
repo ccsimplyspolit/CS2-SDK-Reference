@@ -20,6 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x30
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -30,10 +31,11 @@ namespace source2sdk
             std::int16_t m_desiredFacingDirectionNodeIdx; // 0x1a            
             std::int16_t m_linearVelocityLimitNodeIdx; // 0x1c            
             std::int16_t m_angularVelocityLimitNodeIdx; // 0x1e            
-            float m_maxLinearVelocity; // 0x20            
-            float m_maxAngularVelocityRadians; // 0x24            
-            source2sdk::animlib::CNmBitFlags m_overrideFlags; // 0x28            
-            uint8_t _pad002c[0x4];
+            std::int16_t m_enabledNodeIdx; // 0x20            
+            uint8_t _pad0022[0x2]; // 0x22
+            float m_maxLinearVelocity; // 0x24            
+            float m_maxAngularVelocityRadians; // 0x28            
+            source2sdk::animlib::CNmBitFlags m_overrideFlags; // 0x2c            
         };
         #pragma pack(pop)
         

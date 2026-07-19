@@ -26,15 +26,11 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x78
         // Has VTable
-        // 
-        // static metadata: MNetworkVarNames "CEconItemAttribute m_Attributes"
         #pragma pack(push, 1)
         class CAttributeList
         {
         public:
             uint8_t _pad0000[0x8]; // 0x0
-            // metadata: MNetworkEnable
-            // metadata: MNetworkTypeAlias "CUtlVector< CEconItemAttribute >"
             // m_Attributes has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVectorEmbeddedNetworkVar<source2sdk::server::CEconItemAttribute> m_Attributes;
             char m_Attributes[0x68]; // 0x8            

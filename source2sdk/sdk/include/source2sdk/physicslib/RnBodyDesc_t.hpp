@@ -18,6 +18,7 @@ namespace source2sdk
         // Alignment: 0x8
         // Standard-layout class: true
         // Size: 0xe0
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -25,7 +26,7 @@ namespace source2sdk
         {
         public:
             CUtlString m_sDebugName; // 0x0            
-            Vector m_vPosition; // 0x8            
+            VectorWS m_vPosition; // 0x8            
             QuaternionStorage m_qOrientation; // 0x14            
             Vector m_vLinearVelocity; // 0x24            
             Vector m_vAngularVelocity; // 0x30            
@@ -37,13 +38,13 @@ namespace source2sdk
             float m_flInertiaScaleInv; // 0x78            
             float m_flLinearDamping; // 0x7c            
             float m_flAngularDamping; // 0x80            
-            float m_flLinearDrag; // 0x84            
-            float m_flAngularDrag; // 0x88            
-            float m_flLinearBuoyancyDrag; // 0x8c            
-            float m_flAngularBuoyancyDrag; // 0x90            
+            float m_flLinearDragScale; // 0x84            
+            float m_flAngularDragScale; // 0x88            
+            float m_flLinearFluidDragScale; // 0x8c            
+            float m_flAngularFluidDragScale; // 0x90            
             Vector m_vLastAwakeForceAccum; // 0x94            
             Vector m_vLastAwakeTorqueAccum; // 0xa0            
-            float m_flBuoyancyFactor; // 0xac            
+            float m_flBuoyancyScale; // 0xac            
             float m_flGravityScale; // 0xb0            
             float m_flTimeScale; // 0xb4            
             std::int32_t m_nBodyType; // 0xb8            
@@ -56,7 +57,7 @@ namespace source2sdk
             bool m_bSleeping; // 0xc8            
             bool m_bIsContinuousEnabled; // 0xc9            
             bool m_bDragEnabled; // 0xca            
-            bool m_bBuoyancyDragEnabled; // 0xcb            
+            uint8_t _pad00cb[0x1]; // 0xcb
             Vector m_vGravity; // 0xcc            
             bool m_bSpeculativeEnabled; // 0xd8            
             bool m_bHasShadowController; // 0xd9            
@@ -78,13 +79,13 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::physicslib::RnBodyDesc_t, m_flInertiaScaleInv) == 0x78);
         static_assert(offsetof(source2sdk::physicslib::RnBodyDesc_t, m_flLinearDamping) == 0x7c);
         static_assert(offsetof(source2sdk::physicslib::RnBodyDesc_t, m_flAngularDamping) == 0x80);
-        static_assert(offsetof(source2sdk::physicslib::RnBodyDesc_t, m_flLinearDrag) == 0x84);
-        static_assert(offsetof(source2sdk::physicslib::RnBodyDesc_t, m_flAngularDrag) == 0x88);
-        static_assert(offsetof(source2sdk::physicslib::RnBodyDesc_t, m_flLinearBuoyancyDrag) == 0x8c);
-        static_assert(offsetof(source2sdk::physicslib::RnBodyDesc_t, m_flAngularBuoyancyDrag) == 0x90);
+        static_assert(offsetof(source2sdk::physicslib::RnBodyDesc_t, m_flLinearDragScale) == 0x84);
+        static_assert(offsetof(source2sdk::physicslib::RnBodyDesc_t, m_flAngularDragScale) == 0x88);
+        static_assert(offsetof(source2sdk::physicslib::RnBodyDesc_t, m_flLinearFluidDragScale) == 0x8c);
+        static_assert(offsetof(source2sdk::physicslib::RnBodyDesc_t, m_flAngularFluidDragScale) == 0x90);
         static_assert(offsetof(source2sdk::physicslib::RnBodyDesc_t, m_vLastAwakeForceAccum) == 0x94);
         static_assert(offsetof(source2sdk::physicslib::RnBodyDesc_t, m_vLastAwakeTorqueAccum) == 0xa0);
-        static_assert(offsetof(source2sdk::physicslib::RnBodyDesc_t, m_flBuoyancyFactor) == 0xac);
+        static_assert(offsetof(source2sdk::physicslib::RnBodyDesc_t, m_flBuoyancyScale) == 0xac);
         static_assert(offsetof(source2sdk::physicslib::RnBodyDesc_t, m_flGravityScale) == 0xb0);
         static_assert(offsetof(source2sdk::physicslib::RnBodyDesc_t, m_flTimeScale) == 0xb4);
         static_assert(offsetof(source2sdk::physicslib::RnBodyDesc_t, m_nBodyType) == 0xb8);
@@ -97,7 +98,6 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::physicslib::RnBodyDesc_t, m_bSleeping) == 0xc8);
         static_assert(offsetof(source2sdk::physicslib::RnBodyDesc_t, m_bIsContinuousEnabled) == 0xc9);
         static_assert(offsetof(source2sdk::physicslib::RnBodyDesc_t, m_bDragEnabled) == 0xca);
-        static_assert(offsetof(source2sdk::physicslib::RnBodyDesc_t, m_bBuoyancyDragEnabled) == 0xcb);
         static_assert(offsetof(source2sdk::physicslib::RnBodyDesc_t, m_vGravity) == 0xcc);
         static_assert(offsetof(source2sdk::physicslib::RnBodyDesc_t, m_bSpeculativeEnabled) == 0xd8);
         static_assert(offsetof(source2sdk::physicslib::RnBodyDesc_t, m_bHasShadowController) == 0xd9);

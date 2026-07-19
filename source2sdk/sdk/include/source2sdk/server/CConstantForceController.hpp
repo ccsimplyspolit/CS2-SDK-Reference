@@ -13,12 +13,15 @@ namespace source2sdk
 {
     namespace server
     {
-        // Registered alignment: unknown
-        // Alignment: 0x4
+        // Registered alignment: 0x8
+        // Alignment: 0x8
         // Standard-layout class: true
         // Size: 0x40
         // Has VTable
         // Has Trivial Destructor
+        // Construct allowed
+        // 
+        // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CConstantForceController
         {
@@ -29,9 +32,6 @@ namespace source2sdk
             Vector m_linearSave; // 0x24            
             RotationVector m_angularSave; // 0x30            
             uint8_t _pad003c[0x4];
-            
-            // Datamap fields:
-            // bool m_bLocalSpace; // 0x8
         };
         #pragma pack(pop)
         

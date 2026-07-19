@@ -20,8 +20,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x5f8
+        // Size: 0x7b0
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -29,24 +30,26 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "expression"
-            source2sdk::particles::ScalarExpressionType_t m_nExpression; // 0x1c8            
-            uint8_t _pad01cc[0x4]; // 0x1cc
+            source2sdk::particles::ScalarExpressionType_t m_nExpression; // 0x1e0            
+            uint8_t _pad01e4[0x4]; // 0x1e4
             // metadata: MPropertyFriendlyName "input 1"
-            source2sdk::particleslib::CParticleCollectionFloatInput m_flInput1; // 0x1d0            
+            source2sdk::particleslib::CParticleCollectionFloatInput m_flInput1; // 0x1e8            
             // metadata: MPropertyFriendlyName "input 2"
-            source2sdk::particleslib::CParticleCollectionFloatInput m_flInput2; // 0x330            
+            source2sdk::particleslib::CParticleCollectionFloatInput m_flInput2; // 0x358            
             // metadata: MPropertyFriendlyName "output"
-            source2sdk::particleslib::CParticleRemapFloatInput m_flOutputRemap; // 0x490            
+            source2sdk::particleslib::CParticleRemapFloatInput m_flOutputRemap; // 0x4c8            
             // metadata: MPropertyFriendlyName "output control point"
-            std::int32_t m_nOutputCP; // 0x5f0            
+            std::int32_t m_nOutputCP; // 0x638            
             // metadata: MPropertyFriendlyName "output component"
             // metadata: MPropertyAttributeChoiceName "vector_component"
-            std::int32_t m_nOutVectorField; // 0x5f4            
+            std::int32_t m_nOutVectorField; // 0x63c            
+            // metadata: MPropertyFriendlyName "Interpolation"
+            source2sdk::particleslib::CParticleCollectionFloatInput m_flInterpolation; // 0x640            
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_OP_SetControlPointFieldToScalarExpression because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_OP_SetControlPointFieldToScalarExpression) == 0x5f8);
+        static_assert(sizeof(source2sdk::particles::C_OP_SetControlPointFieldToScalarExpression) == 0x7b0);
     };
 };

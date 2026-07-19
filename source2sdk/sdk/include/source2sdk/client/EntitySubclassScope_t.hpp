@@ -13,13 +13,19 @@ namespace source2sdk
 {
     namespace client
     {
-        // Enumerator count: 2
+        // Enumerator count: 4
         // Alignment: 4
         // Size: 0x4
         enum class EntitySubclassScope_t : std::uint32_t
         {
             SUBCLASS_SCOPE_NONE = 0xffffffff,
-            SUBCLASS_SCOPE_COUNT = 0x0,
+            // MPropertyFriendlyName "Precipitation"
+            // MEntitySubclassScopeFile
+            SUBCLASS_SCOPE_PRECIPITATION = 0x0,
+            // MPropertyFriendlyName "PlayerWeapon"
+            // MEntitySubclassScopeFile
+            SUBCLASS_SCOPE_PLAYER_WEAPONS = 0x1,
+            SUBCLASS_SCOPE_COUNT = 0x2,
         };
     };
 };

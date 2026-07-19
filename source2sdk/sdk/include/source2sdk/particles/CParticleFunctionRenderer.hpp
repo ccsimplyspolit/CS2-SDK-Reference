@@ -18,9 +18,10 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x210
+        // Size: 0x228
         // Has VTable
         // Is Abstract
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -28,20 +29,20 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertySortPriority "-1"
-            source2sdk::particles::CParticleVisibilityInputs VisibilityInputs; // 0x1c0            
+            source2sdk::particles::CParticleVisibilityInputs VisibilityInputs; // 0x1d8            
             // metadata: MPropertyStartGroup "Rendering filter"
             // metadata: MPropertyFriendlyName "I cannot be refracted through refracting objects like water"
             // metadata: MPropertySortPriority "-1"
-            bool m_bCannotBeRefracted; // 0x208            
+            bool m_bCannotBeRefracted; // 0x220            
             // metadata: MPropertyFriendlyName "Skip rendering on mobile"
             // metadata: MPropertySortPriority "-1"
-            bool m_bSkipRenderingOnMobile; // 0x209            
-            uint8_t _pad020a[0x6];
+            bool m_bSkipRenderingOnMobile; // 0x221            
+            uint8_t _pad0222[0x6];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in CParticleFunctionRenderer because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::CParticleFunctionRenderer) == 0x210);
+        static_assert(sizeof(source2sdk::particles::CParticleFunctionRenderer) == 0x228);
     };
 };

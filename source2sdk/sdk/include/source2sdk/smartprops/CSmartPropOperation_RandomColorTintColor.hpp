@@ -21,6 +21,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xf0
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Tint Color Gradient"

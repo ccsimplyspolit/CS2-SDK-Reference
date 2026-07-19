@@ -17,25 +17,18 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: 0x1
         // Standard-layout class: false
-        // Size: 0x128
+        // Size: 0x130
         // Has VTable
-        // 
-        // static metadata: MPulseInstanceDomainInfo
-        // static metadata: MPulseDomainHookInfo
-        // static metadata: MPulseDomainScopeInfo
-        // static metadata: MPulseLibraryBindings
-        // static metadata: MPulseDomainHiddenInTool
-        // static metadata: MPulseDomainOptInFeatureTag
-        // static metadata: MPulseDomainOptInFeatureTag
         #pragma pack(push, 1)
         class CParticleCollectionBindingInstance : public source2sdk::pulse_runtime_lib::CBasePulseGraphInstance
         {
         public:
-            uint8_t _pad0108[0x20];
+            uint8_t _pad0110[0x20];
+            // No schema binary for binding
         };
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::particleslib::CParticleCollectionBindingInstance) == 0x128);
+        static_assert(sizeof(source2sdk::particleslib::CParticleCollectionBindingInstance) == 0x130);
     };
 };

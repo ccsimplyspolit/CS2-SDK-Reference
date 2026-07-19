@@ -17,18 +17,19 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x500
+        // Size: 0x4c8
         // Has VTable
+        // Construct allowed
         #pragma pack(push, 1)
         class CAI_ChangeHintGroup : public source2sdk::server::CBaseEntity
         {
         public:
-            std::int32_t m_iSearchType; // 0x4e0            
-            uint8_t _pad04e4[0x4]; // 0x4e4
-            CUtlSymbolLarge m_strSearchName; // 0x4e8            
-            CUtlSymbolLarge m_strNewHintGroup; // 0x4f0            
-            float m_flRadius; // 0x4f8            
-            uint8_t _pad04fc[0x4];
+            std::int32_t m_iSearchType; // 0x4a8            
+            uint8_t _pad04ac[0x4]; // 0x4ac
+            CUtlSymbolLarge m_strSearchName; // 0x4b0            
+            CUtlSymbolLarge m_strNewHintGroup; // 0x4b8            
+            float m_flRadius; // 0x4c0            
+            uint8_t _pad04c4[0x4];
             
             // Datamap fields:
             // void InputActivate; // 0x0
@@ -37,6 +38,6 @@ namespace source2sdk
         
         // Cannot assert offsets of fields in CAI_ChangeHintGroup because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::server::CAI_ChangeHintGroup) == 0x500);
+        static_assert(sizeof(source2sdk::server::CAI_ChangeHintGroup) == 0x4c8);
     };
 };

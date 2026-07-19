@@ -20,6 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x30
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -32,7 +33,8 @@ namespace source2sdk
             float m_flBlendTimeSeconds; // 0x24            
             source2sdk::animlib::NmIKBlendMode_t m_blendMode; // 0x28            
             bool m_bIsTargetInWorldSpace; // 0x29            
-            uint8_t _pad002a[0x6];
+            uint8_t _pad002a[0x2]; // 0x2a
+            float m_flChainRotationWeight; // 0x2c            
         };
         #pragma pack(pop)
         

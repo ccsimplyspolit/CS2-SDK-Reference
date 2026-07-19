@@ -17,20 +17,21 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x1d0
+        // Size: 0x1e8
         // Has VTable
         // Is Abstract
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CParticleFunctionForce : public source2sdk::particles::CParticleFunction
         {
         public:
-            uint8_t _pad01c0[0x10];
+            uint8_t _pad01d8[0x10];
         };
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::particles::CParticleFunctionForce) == 0x1d0);
+        static_assert(sizeof(source2sdk::particles::CParticleFunctionForce) == 0x1e8);
     };
 };

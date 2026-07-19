@@ -13,7 +13,7 @@ namespace source2sdk
 {
     namespace pulse_runtime_lib
     {
-        // Enumerator count: 6
+        // Enumerator count: 7
         // Alignment: 4
         // Size: 0x4
         enum class PulseVariableKeysSource_t : std::uint32_t
@@ -28,8 +28,10 @@ namespace source2sdk
             VMDL = 0x3,
             // MPropertyFriendlyName "Parent XML"
             XML = 0x4,
+            // MPropertyFriendlyName "Parent VData"
+            VDATA = 0x5,
             // MPropertySuppressEnumerator
-            COUNT = 0x5,
+            COUNT = 0x6,
         };
     };
 };

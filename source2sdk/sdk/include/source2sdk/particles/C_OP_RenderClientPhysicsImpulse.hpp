@@ -18,8 +18,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x4d8
+        // Size: 0x510
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -27,17 +28,17 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "radius"
-            source2sdk::particleslib::CPerParticleFloatInput m_flRadius; // 0x210            
+            source2sdk::particleslib::CPerParticleFloatInput m_flRadius; // 0x228            
             // metadata: MPropertyFriendlyName "magnitude"
-            source2sdk::particleslib::CPerParticleFloatInput m_flMagnitude; // 0x370            
+            source2sdk::particleslib::CPerParticleFloatInput m_flMagnitude; // 0x398            
             // metadata: MPropertyFriendlyName "filter explosion to single simulation id"
-            std::int32_t m_nSimIdFilter; // 0x4d0            
-            uint8_t _pad04d4[0x4];
+            std::int32_t m_nSimIdFilter; // 0x508            
+            uint8_t _pad050c[0x4];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_OP_RenderClientPhysicsImpulse because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_OP_RenderClientPhysicsImpulse) == 0x4d8);
+        static_assert(sizeof(source2sdk::particles::C_OP_RenderClientPhysicsImpulse) == 0x510);
     };
 };

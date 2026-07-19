@@ -17,8 +17,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x850
+        // Size: 0x758
         // Has VTable
+        // Construct allowed
         #pragma pack(push, 1)
         class CLogicNPCCounterOBB : public source2sdk::server::CLogicNPCCounterAABB
         {
@@ -28,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CLogicNPCCounterOBB) == 0x850);
+        static_assert(sizeof(source2sdk::server::CLogicNPCCounterOBB) == 0x758);
     };
 };

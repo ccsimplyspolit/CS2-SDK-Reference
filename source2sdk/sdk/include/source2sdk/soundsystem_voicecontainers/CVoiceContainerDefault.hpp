@@ -17,8 +17,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0xb8
+        // Size: 0x70
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Default Container"
@@ -31,6 +32,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::soundsystem_voicecontainers::CVoiceContainerDefault) == 0xb8);
+        static_assert(sizeof(source2sdk::soundsystem_voicecontainers::CVoiceContainerDefault) == 0x70);
     };
 };

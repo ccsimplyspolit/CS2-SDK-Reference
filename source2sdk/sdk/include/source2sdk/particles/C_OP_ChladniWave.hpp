@@ -5,9 +5,9 @@
 #include <cstdint>
 #include "source2sdk/particles/CParticleFunctionOperator.hpp"
 #include "source2sdk/particles/ParticleAttributeIndex_t.hpp"
-#include "source2sdk/particles/ParticleSetMethod_t.hpp"
 #include "source2sdk/particleslib/CPerParticleFloatInput.hpp"
 #include "source2sdk/particleslib/CPerParticleVecInput.hpp"
+#include "source2sdk/particleslib/ParticleSetMethod_t.hpp"
 
 // /////////////////////////////////////////////////////////////
 // Module: particles
@@ -21,8 +21,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x1448
+        // Size: 0x1520
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -31,32 +32,32 @@ namespace source2sdk
         public:
             // metadata: MPropertyFriendlyName "output field"
             // metadata: MPropertyAttributeChoiceName "particlefield_scalar"
-            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1c0            
-            uint8_t _pad01c4[0x4]; // 0x1c4
+            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1d8            
+            uint8_t _pad01dc[0x4]; // 0x1dc
             // metadata: MPropertyFriendlyName "wave minimum"
-            source2sdk::particleslib::CPerParticleFloatInput m_flInputMin; // 0x1c8            
+            source2sdk::particleslib::CPerParticleFloatInput m_flInputMin; // 0x1e0            
             // metadata: MPropertyFriendlyName "wave maximum"
-            source2sdk::particleslib::CPerParticleFloatInput m_flInputMax; // 0x328            
+            source2sdk::particleslib::CPerParticleFloatInput m_flInputMax; // 0x350            
             // metadata: MPropertyFriendlyName "output minimum"
-            source2sdk::particleslib::CPerParticleFloatInput m_flOutputMin; // 0x488            
+            source2sdk::particleslib::CPerParticleFloatInput m_flOutputMin; // 0x4c0            
             // metadata: MPropertyFriendlyName "output maximum"
-            source2sdk::particleslib::CPerParticleFloatInput m_flOutputMax; // 0x5e8            
+            source2sdk::particleslib::CPerParticleFloatInput m_flOutputMax; // 0x630            
             // metadata: MPropertyFriendlyName "wave length"
-            source2sdk::particleslib::CPerParticleVecInput m_vecWaveLength; // 0x748            
+            source2sdk::particleslib::CPerParticleVecInput m_vecWaveLength; // 0x7a0            
             // metadata: MPropertyFriendlyName "harmonics"
-            source2sdk::particleslib::CPerParticleVecInput m_vecHarmonics; // 0xdc0            
+            source2sdk::particleslib::CPerParticleVecInput m_vecHarmonics; // 0xe58            
             // metadata: MPropertyFriendlyName "set value method"
-            source2sdk::particles::ParticleSetMethod_t m_nSetMethod; // 0x1438            
+            source2sdk::particleslib::ParticleSetMethod_t m_nSetMethod; // 0x1510            
             // metadata: MPropertyFriendlyName "local space control point"
-            std::int32_t m_nLocalSpaceControlPoint; // 0x143c            
+            std::int32_t m_nLocalSpaceControlPoint; // 0x1514            
             // metadata: MPropertyFriendlyName "3D"
-            bool m_b3D; // 0x1440            
-            uint8_t _pad1441[0x7];
+            bool m_b3D; // 0x1518            
+            uint8_t _pad1519[0x7];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_OP_ChladniWave because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_OP_ChladniWave) == 0x1448);
+        static_assert(sizeof(source2sdk::particles::C_OP_ChladniWave) == 0x1520);
     };
 };

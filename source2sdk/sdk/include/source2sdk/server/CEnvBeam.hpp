@@ -27,44 +27,43 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x938
+        // Size: 0x8a8
         // Has VTable
+        // Construct allowed
         #pragma pack(push, 1)
         class CEnvBeam : public source2sdk::server::CBeam
         {
         public:
-            std::int32_t m_active; // 0x890            
-            uint8_t _pad0894[0x4]; // 0x894
+            std::int32_t m_active; // 0x810            
+            uint8_t _pad0814[0x4]; // 0x814
             // m_spriteTexture has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CStrongHandle<source2sdk::resourcesystem::InfoForResourceTypeIMaterial2> m_spriteTexture;
-            char m_spriteTexture[0x8]; // 0x898            
-            CUtlSymbolLarge m_iszStartEntity; // 0x8a0            
-            CUtlSymbolLarge m_iszEndEntity; // 0x8a8            
-            float m_life; // 0x8b0            
-            float m_boltWidth; // 0x8b4            
-            float m_noiseAmplitude; // 0x8b8            
-            std::int32_t m_speed; // 0x8bc            
-            float m_restrike; // 0x8c0            
-            uint8_t _pad08c4[0x4]; // 0x8c4
-            CUtlSymbolLarge m_iszSpriteName; // 0x8c8            
-            std::int32_t m_frameStart; // 0x8d0            
-            Vector m_vEndPointWorld; // 0x8d4            
-            Vector m_vEndPointRelative; // 0x8e0            
-            float m_radius; // 0x8ec            
-            source2sdk::server::Touch_t m_TouchType; // 0x8f0            
-            uint8_t _pad08f4[0x4]; // 0x8f4
-            CUtlSymbolLarge m_iFilterName; // 0x8f8            
+            char m_spriteTexture[0x8]; // 0x818            
+            CUtlSymbolLarge m_iszStartEntity; // 0x820            
+            CUtlSymbolLarge m_iszEndEntity; // 0x828            
+            float m_life; // 0x830            
+            float m_boltWidth; // 0x834            
+            float m_noiseAmplitude; // 0x838            
+            std::int32_t m_speed; // 0x83c            
+            float m_restrike; // 0x840            
+            uint8_t _pad0844[0x4]; // 0x844
+            CUtlSymbolLarge m_iszSpriteName; // 0x848            
+            std::int32_t m_frameStart; // 0x850            
+            VectorWS m_vEndPointWorld; // 0x854            
+            // metadata: MNotSaved
+            Vector m_vEndPointRelative; // 0x860            
+            float m_radius; // 0x86c            
+            source2sdk::server::Touch_t m_TouchType; // 0x870            
+            uint8_t _pad0874[0x4]; // 0x874
+            CUtlSymbolLarge m_iFilterName; // 0x878            
             // m_hFilter has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hFilter;
-            char m_hFilter[0x4]; // 0x900            
-            uint8_t _pad0904[0x4]; // 0x904
-            CUtlSymbolLarge m_iszDecal; // 0x908            
-            source2sdk::entity2::CEntityIOOutput m_OnTouchedByEntity; // 0x910            
+            char m_hFilter[0x4]; // 0x880            
+            uint8_t _pad0884[0x4]; // 0x884
+            CUtlSymbolLarge m_iszDecal; // 0x888            
+            source2sdk::entity2::CEntityIOOutput m_OnTouchedByEntity; // 0x890            
             
             // Datamap fields:
-            // int32_t m_nClipStyle; // 0x874
-            // void CEnvBeamStrikeThink; // 0x0
-            // void CEnvBeamUpdateThink; // 0x0
             // void InputTurnOn; // 0x0
             // void InputTurnOff; // 0x0
             // void InputToggle; // 0x0
@@ -74,6 +73,6 @@ namespace source2sdk
         
         // Cannot assert offsets of fields in CEnvBeam because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::server::CEnvBeam) == 0x938);
+        static_assert(sizeof(source2sdk::server::CEnvBeam) == 0x8a8);
     };
 };

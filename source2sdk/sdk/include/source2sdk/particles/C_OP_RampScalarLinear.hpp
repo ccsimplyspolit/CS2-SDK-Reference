@@ -18,8 +18,9 @@ namespace source2sdk
         // Registered alignment: 0x10
         // Alignment: 0x10
         // Standard-layout class: false
-        // Size: 0x210
+        // Size: 0x220
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -27,29 +28,29 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "ramp rate min"
-            float m_RateMin; // 0x1c0            
+            float m_RateMin; // 0x1d8            
             // metadata: MPropertyFriendlyName "ramp rate max"
-            float m_RateMax; // 0x1c4            
+            float m_RateMax; // 0x1dc            
             // metadata: MPropertyFriendlyName "start time min"
-            float m_flStartTime_min; // 0x1c8            
+            float m_flStartTime_min; // 0x1e0            
             // metadata: MPropertyFriendlyName "start time max"
-            float m_flStartTime_max; // 0x1cc            
+            float m_flStartTime_max; // 0x1e4            
             // metadata: MPropertyFriendlyName "end time min"
-            float m_flEndTime_min; // 0x1d0            
+            float m_flEndTime_min; // 0x1e8            
             // metadata: MPropertyFriendlyName "end time max"
-            float m_flEndTime_max; // 0x1d4            
-            uint8_t _pad01d8[0x28]; // 0x1d8
+            float m_flEndTime_max; // 0x1ec            
+            uint8_t _pad01f0[0x20]; // 0x1f0
             // metadata: MPropertyFriendlyName "ramp field"
             // metadata: MPropertyAttributeChoiceName "particlefield_scalar"
-            source2sdk::particles::ParticleAttributeIndex_t m_nField; // 0x200            
+            source2sdk::particles::ParticleAttributeIndex_t m_nField; // 0x210            
             // metadata: MPropertyFriendlyName "start/end proportional"
-            bool m_bProportionalOp; // 0x204            
-            uint8_t _pad0205[0xb];
+            bool m_bProportionalOp; // 0x214            
+            uint8_t _pad0215[0xb];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_OP_RampScalarLinear because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_OP_RampScalarLinear) == 0x210);
+        static_assert(sizeof(source2sdk::particles::C_OP_RampScalarLinear) == 0x220);
     };
 };

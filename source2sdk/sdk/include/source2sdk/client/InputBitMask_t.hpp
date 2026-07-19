@@ -13,7 +13,7 @@ namespace source2sdk
 {
     namespace client
     {
-        // Enumerator count: 18
+        // Enumerator count: 21
         // Alignment: 8
         // Size: 0x8
         enum class InputBitMask_t : std::uint64_t
@@ -38,7 +38,10 @@ namespace source2sdk
             IN_JOYAUTOSPRINT = 0x20000,
             // MEnumeratorIsNotAFlag
             IN_FIRST_MOD_SPECIFIC_BIT = 0x100000000,
-            IN_QUERY = 0x100000000,
+            IN_USEORRELOAD = 0x100000000,
+            IN_SCORE = 0x200000000,
+            IN_ZOOM = 0x400000000,
+            IN_LOOK_AT_WEAPON = 0x800000000,
         };
     };
 };

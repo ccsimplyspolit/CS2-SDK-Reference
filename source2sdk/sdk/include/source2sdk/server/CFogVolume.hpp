@@ -17,30 +17,30 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x818
+        // Size: 0x798
         // Has VTable
+        // Construct allowed
         #pragma pack(push, 1)
         class CFogVolume : public source2sdk::server::CServerOnlyModelEntity
         {
         public:
-            CUtlSymbolLarge m_fogName; // 0x7f0            
-            CUtlSymbolLarge m_postProcessName; // 0x7f8            
-            CUtlSymbolLarge m_colorCorrectionName; // 0x800            
-            uint8_t _pad0808[0x8]; // 0x808
-            bool m_bDisabled; // 0x810            
-            bool m_bInFogVolumesList; // 0x811            
-            uint8_t _pad0812[0x6];
+            CUtlSymbolLarge m_fogName; // 0x770            
+            CUtlSymbolLarge m_postProcessName; // 0x778            
+            CUtlSymbolLarge m_colorCorrectionName; // 0x780            
+            uint8_t _pad0788[0x8]; // 0x788
+            bool m_bDisabled; // 0x790            
+            // metadata: MNotSaved
+            bool m_bInFogVolumesList; // 0x791            
+            uint8_t _pad0792[0x6];
             
             // Datamap fields:
             // void InputEnable; // 0x0
             // void InputDisable; // 0x0
-            // CHandle< CBaseEntity > m_hFogController; // 0x808
-            // CHandle< CBaseEntity > m_hColorCorrectionController; // 0x80c
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in CFogVolume because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::server::CFogVolume) == 0x818);
+        static_assert(sizeof(source2sdk::server::CFogVolume) == 0x798);
     };
 };

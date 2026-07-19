@@ -24,6 +24,7 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0000[0x8]; // 0x0
+            // metadata: MNotSaved
             source2sdk::entity2::CNetworkVarChainer __m_pChainEntity; // 0x8            
             uint8_t _pad0030[0x10];
         };

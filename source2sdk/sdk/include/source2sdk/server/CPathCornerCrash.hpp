@@ -17,8 +17,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x510
+        // Size: 0x4d0
         // Has VTable
+        // Construct allowed
         #pragma pack(push, 1)
         class CPathCornerCrash : public source2sdk::server::CPathCorner
         {
@@ -28,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CPathCornerCrash) == 0x510);
+        static_assert(sizeof(source2sdk::server::CPathCornerCrash) == 0x4d0);
     };
 };

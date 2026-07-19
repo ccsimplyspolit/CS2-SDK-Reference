@@ -23,6 +23,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x30
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -31,11 +32,11 @@ namespace source2sdk
         public:
             std::int16_t m_nTargetStateNodeIdx; // 0x10            
             std::int16_t m_nDurationOverrideNodeIdx; // 0x12            
-            std::int16_t m_syncEventOffsetOverrideNodeIdx; // 0x14            
+            std::int16_t m_timeOffsetOverrideNodeIdx; // 0x14            
             std::int16_t m_startBoneMaskNodeIdx; // 0x16            
             float m_flDuration; // 0x18            
             source2sdk::animlib::NmPercent_t m_boneMaskBlendInTimePercentage; // 0x1c            
-            float m_syncEventOffset; // 0x20            
+            float m_flTimeOffset; // 0x20            
             source2sdk::animlib::CNmBitFlags m_transitionOptions; // 0x24            
             std::int16_t m_targetSyncIDNodeIdx; // 0x28            
             source2sdk::animlib::NmEasingOperation_t m_blendWeightEasing; // 0x2a            

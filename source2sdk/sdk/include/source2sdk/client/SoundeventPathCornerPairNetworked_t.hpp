@@ -22,15 +22,10 @@ namespace source2sdk
         struct SoundeventPathCornerPairNetworked_t
         {
         public:
-            // metadata: MNetworkEnable
-            Vector vP1; // 0x0            
-            // metadata: MNetworkEnable
-            Vector vP2; // 0xc            
-            // metadata: MNetworkEnable
+            VectorWS vP1; // 0x0            
+            VectorWS vP2; // 0xc            
             float flPathLengthSqr; // 0x18            
-            // metadata: MNetworkEnable
             float flP1Pct; // 0x1c            
-            // metadata: MNetworkEnable
             float flP2Pct; // 0x20            
         };
         #pragma pack(pop)

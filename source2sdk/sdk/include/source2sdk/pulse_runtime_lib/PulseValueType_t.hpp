@@ -13,7 +13,7 @@ namespace source2sdk
 {
     namespace pulse_runtime_lib
     {
-        // Enumerator count: 32
+        // Enumerator count: 35
         // Alignment: 4
         // Size: 0x4
         enum class PulseValueType_t : std::uint32_t
@@ -83,7 +83,14 @@ namespace source2sdk
             // MPropertyFriendlyName "Typesafe Int64"
             PVAL_TYPESAFE_INT64 = 0x1d,
             // MPropertySuppressEnumerator
-            PVAL_COUNT = 0x1e,
+            // MPropertyFriendlyName "Particle Object"
+            PVAL_PARTICLE_EHANDLE = 0x1e,
+            // MPropertyFriendlyName "Anim Sequence"
+            PVAL_ANIM_SEQUENCE = 0x1f,
+            // MPropertyFriendlyName "VData Choice"
+            PVAL_VDATA_CHOICE = 0x20,
+            // MPropertySuppressEnumerator
+            PVAL_COUNT = 0x21,
         };
     };
 };

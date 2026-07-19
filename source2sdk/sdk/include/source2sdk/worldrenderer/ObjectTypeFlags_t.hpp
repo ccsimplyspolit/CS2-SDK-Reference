@@ -13,7 +13,7 @@ namespace source2sdk
 {
     namespace worldrenderer
     {
-        // Enumerator count: 15
+        // Enumerator count: 16
         // Alignment: 4
         // Size: 0x4
         enum class ObjectTypeFlags_t : std::uint32_t
@@ -24,7 +24,6 @@ namespace source2sdk
             OBJECT_TYPE_NO_SHADOWS = 0x20,
             OBJECT_TYPE_WORLDSPACE_TEXURE_BLEND = 0x40,
             OBJECT_TYPE_DISABLED_IN_LOW_QUALITY = 0x80,
-            OBJECT_TYPE_NO_SUN_SHADOWS = 0x100,
             OBJECT_TYPE_RENDER_WITH_DYNAMIC = 0x200,
             OBJECT_TYPE_RENDER_TO_CUBEMAPS = 0x400,
             OBJECT_TYPE_MODEL_HAS_LODS = 0x800,
@@ -33,6 +32,8 @@ namespace source2sdk
             OBJECT_TYPE_STATIC_CUBE_MAP = 0x8000,
             OBJECT_TYPE_DISABLE_VIS_CULLING = 0x10000,
             OBJECT_TYPE_BAKED_GEOMETRY = 0x20000,
+            OBJECT_TYPE_NEEDS_DYNAMIC_SHADOWS = 0x40000,
+            OBJECT_TYPE_HAS_AGGREGATE_RTPROXY = 0x80000,
         };
     };
 };

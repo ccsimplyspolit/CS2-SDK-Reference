@@ -3,7 +3,7 @@
 #include "source2sdk/source2gen/source2gen.hpp"
 #include <cstddef>
 #include <cstdint>
-#include "source2sdk/server/CBaseAnimatingActivity.hpp"
+#include "source2sdk/server/CBaseAnimGraph.hpp"
 
 // /////////////////////////////////////////////////////////////
 // Module: server
@@ -17,18 +17,19 @@ namespace source2sdk
         // Registered alignment: 0x10
         // Alignment: 0x10
         // Standard-layout class: false
-        // Size: 0x830
+        // Size: 0x990
         // Has VTable
+        // Construct allowed
         #pragma pack(push, 1)
-        class CBaseProp : public source2sdk::server::CBaseAnimatingActivity
+        class CBaseProp : public source2sdk::server::CBaseAnimGraph
         {
         public:
-            bool m_bModelOverrodeBlockLOS; // 0x800            
-            uint8_t _pad0801[0x3]; // 0x801
-            std::int32_t m_iShapeType; // 0x804            
-            bool m_bConformToCollisionBounds; // 0x808            
-            uint8_t _pad0809[0x7]; // 0x809
-            CTransform m_mPreferredCatchTransform; // 0x810            
+            bool m_bModelOverrodeBlockLOS; // 0x960            
+            uint8_t _pad0961[0x3]; // 0x961
+            std::int32_t m_iShapeType; // 0x964            
+            bool m_bConformToCollisionBounds; // 0x968            
+            uint8_t _pad0969[0x7]; // 0x969
+            CTransform m_mPreferredCatchTransform; // 0x970            
             
             // Datamap fields:
             // void health; // 0x7fffffff
@@ -38,6 +39,6 @@ namespace source2sdk
         
         // Cannot assert offsets of fields in CBaseProp because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::server::CBaseProp) == 0x830);
+        static_assert(sizeof(source2sdk::server::CBaseProp) == 0x990);
     };
 };

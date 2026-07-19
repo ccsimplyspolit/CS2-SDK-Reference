@@ -16,21 +16,19 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: 0x1
         // Standard-layout class: true
-        // Size: 0x108
+        // Size: 0x110
         // Has VTable
         // Is Abstract
-        // 
-        // static metadata: MPulseInstanceDomainInfo
-        // static metadata: MPulseDomainHiddenInTool
         #pragma pack(push, 1)
         class CBasePulseGraphInstance
         {
         public:
-            uint8_t _pad0000[0x108];
+            uint8_t _pad0000[0x110];
+            // No schema binary for binding
         };
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::pulse_runtime_lib::CBasePulseGraphInstance) == 0x108);
+        static_assert(sizeof(source2sdk::pulse_runtime_lib::CBasePulseGraphInstance) == 0x110);
     };
 };

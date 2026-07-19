@@ -24,27 +24,28 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x518
+        // Size: 0x4e0
         // Has VTable
+        // Construct allowed
         #pragma pack(push, 1)
         class CLogicLineToEntity : public source2sdk::server::CLogicalEntity
         {
         public:
             // m_Line has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEntityOutputTemplate<Vector> m_Line;
-            char m_Line[0x28]; // 0x4e0            
-            CUtlSymbolLarge m_SourceName; // 0x508            
+            char m_Line[0x28]; // 0x4a8            
+            CUtlSymbolLarge m_SourceName; // 0x4d0            
             // m_StartEntity has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_StartEntity;
-            char m_StartEntity[0x4]; // 0x510            
+            char m_StartEntity[0x4]; // 0x4d8            
             // m_EndEntity has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_EndEntity;
-            char m_EndEntity[0x4]; // 0x514            
+            char m_EndEntity[0x4]; // 0x4dc            
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in CLogicLineToEntity because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::server::CLogicLineToEntity) == 0x518);
+        static_assert(sizeof(source2sdk::server::CLogicLineToEntity) == 0x4e0);
     };
 };

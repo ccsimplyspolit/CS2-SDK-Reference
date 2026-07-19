@@ -19,14 +19,19 @@ namespace source2sdk
         enum class SharedMovementGait_t : std::uint8_t
         {
             // MPropertyFriendlyName "None"
+            // MAlternateSemanticName
             eInvalid = 0xff,
             // MPropertyFriendlyName "Slow"
+            // MAlternateSemanticName
             eSlow = 0x0,
             // MPropertyFriendlyName "Medium"
+            // MAlternateSemanticName
             eMedium = 0x1,
             // MPropertyFriendlyName "Fast"
+            // MAlternateSemanticName
             eFast = 0x2,
             // MPropertyFriendlyName "VeryFast"
+            // MAlternateSemanticName
             eVeryFast = 0x3,
             // MPropertySuppressEnumerator
             eCount = 0x4,

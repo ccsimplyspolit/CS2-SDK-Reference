@@ -17,19 +17,19 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: 0x4
         // Standard-layout class: false
-        // Size: 0x88
+        // Size: 0x90
         // Has VTable
         #pragma pack(push, 1)
         class CNavVolumeSphericalShell : public source2sdk::navlib::CNavVolumeSphere
         {
         public:
-            float m_flRadiusInner; // 0x80            
-            uint8_t _pad0084[0x4];
+            float m_flRadiusInner; // 0x88            
+            uint8_t _pad008c[0x4];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in CNavVolumeSphericalShell because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::navlib::CNavVolumeSphericalShell) == 0x88);
+        static_assert(sizeof(source2sdk::navlib::CNavVolumeSphericalShell) == 0x90);
     };
 };

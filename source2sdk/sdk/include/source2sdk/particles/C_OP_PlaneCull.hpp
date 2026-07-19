@@ -4,6 +4,7 @@
 #include <cstddef>
 #include <cstdint>
 #include "source2sdk/particles/CParticleFunctionOperator.hpp"
+#include "source2sdk/particleslib/CParticleCollectionVecInput.hpp"
 
 // /////////////////////////////////////////////////////////////
 // Module: particles
@@ -17,8 +18,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x1d8
+        // Size: 0x8a0
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -26,20 +28,20 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "control point for point on plane"
-            std::int32_t m_nPlaneControlPoint; // 0x1c0            
+            std::int32_t m_nPlaneControlPoint; // 0x1d8            
+            uint8_t _pad01dc[0x4]; // 0x1dc
             // metadata: MPropertyFriendlyName "plane normal"
-            // metadata: MVectorIsCoordinate
-            Vector m_vecPlaneDirection; // 0x1c4            
+            source2sdk::particleslib::CParticleCollectionVecInput m_vecPlaneDirection; // 0x1e0            
             // metadata: MPropertyFriendlyName "use local space"
-            bool m_bLocalSpace; // 0x1d0            
-            uint8_t _pad01d1[0x3]; // 0x1d1
+            bool m_bLocalSpace; // 0x898            
+            uint8_t _pad0899[0x3]; // 0x899
             // metadata: MPropertyFriendlyName "cull plane offset"
-            float m_flPlaneOffset; // 0x1d4            
+            float m_flPlaneOffset; // 0x89c            
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_OP_PlaneCull because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_OP_PlaneCull) == 0x1d8);
+        static_assert(sizeof(source2sdk::particles::C_OP_PlaneCull) == 0x8a0);
     };
 };

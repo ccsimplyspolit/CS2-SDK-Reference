@@ -19,8 +19,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x8b0
+        // Size: 0x908
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -28,20 +29,20 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "only set position once"
-            bool m_bSetOnce; // 0x1c8            
-            uint8_t _pad01c9[0x3]; // 0x1c9
+            bool m_bSetOnce; // 0x1e0            
+            uint8_t _pad01e1[0x3]; // 0x1e1
             // metadata: MPropertyFriendlyName "control point number"
-            std::int32_t m_nCP1; // 0x1cc            
+            std::int32_t m_nCP1; // 0x1e4            
             // metadata: MPropertyFriendlyName "control point location"
-            source2sdk::particleslib::CParticleCollectionVecInput m_vecCP1Pos; // 0x1d0            
+            source2sdk::particleslib::CParticleCollectionVecInput m_vecCP1Pos; // 0x1e8            
             // metadata: MPropertyFriendlyName "transform to offset positions from"
             // metadata: MParticleInputOptional
-            source2sdk::particleslib::CParticleTransformInput m_transformInput; // 0x848            
+            source2sdk::particleslib::CParticleTransformInput m_transformInput; // 0x8a0            
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_OP_SetSingleControlPointPosition because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_OP_SetSingleControlPointPosition) == 0x8b0);
+        static_assert(sizeof(source2sdk::particles::C_OP_SetSingleControlPointPosition) == 0x908);
     };
 };

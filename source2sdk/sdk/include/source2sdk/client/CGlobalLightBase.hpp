@@ -23,8 +23,9 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: 0x4
         // Standard-layout class: true
-        // Size: 0x520
+        // Size: 0x4c0
         // Has VTable
+        // MClassHasEntityLimitedDataDesc
         #pragma pack(push, 1)
         class CGlobalLightBase
         {
@@ -32,7 +33,7 @@ namespace source2sdk
             uint8_t _pad0000[0x10]; // 0x0
             bool m_bSpotLight; // 0x10            
             uint8_t _pad0011[0x3]; // 0x11
-            Vector m_SpotLightOrigin; // 0x14            
+            VectorWS m_SpotLightOrigin; // 0x14            
             QAngle m_SpotLightAngles; // 0x20            
             Vector m_ShadowDirection; // 0x2c            
             Vector m_AmbientDirection; // 0x38            
@@ -70,10 +71,10 @@ namespace source2sdk
             bool m_bEnableSeparateSkyboxFog; // 0xc4            
             uint8_t _pad00c5[0x3]; // 0xc5
             Vector m_vFowColor; // 0xc8            
-            Vector m_ViewOrigin; // 0xd4            
+            VectorWS m_ViewOrigin; // 0xd4            
             QAngle m_ViewAngles; // 0xe0            
             float m_flViewFoV; // 0xec            
-            Vector m_WorldPoints[8]; // 0xf0            
+            VectorWS m_WorldPoints[8]; // 0xf0            
             uint8_t _pad0150[0x358]; // 0x150
             Vector2D m_vFogOffsetLayer0; // 0x4a8            
             Vector2D m_vFogOffsetLayer1; // 0x4b0            
@@ -83,9 +84,6 @@ namespace source2sdk
             // m_hEnvSky has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::C_BaseEntity> m_hEnvSky;
             char m_hEnvSky[0x4]; // 0x4bc            
-            float m_fSmoothedAmount; // 0x4c0            
-            float m_fSlowSmoothedAmount; // 0x4c4            
-            uint8_t _pad04c8[0x58];
         };
         #pragma pack(pop)
         
@@ -132,9 +130,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::client::CGlobalLightBase, m_vFogOffsetLayer1) == 0x4b0);
         static_assert(offsetof(source2sdk::client::CGlobalLightBase, m_hEnvWind) == 0x4b8);
         static_assert(offsetof(source2sdk::client::CGlobalLightBase, m_hEnvSky) == 0x4bc);
-        static_assert(offsetof(source2sdk::client::CGlobalLightBase, m_fSmoothedAmount) == 0x4c0);
-        static_assert(offsetof(source2sdk::client::CGlobalLightBase, m_fSlowSmoothedAmount) == 0x4c4);
         
-        static_assert(sizeof(source2sdk::client::CGlobalLightBase) == 0x520);
+        static_assert(sizeof(source2sdk::client::CGlobalLightBase) == 0x4c0);
     };
 };

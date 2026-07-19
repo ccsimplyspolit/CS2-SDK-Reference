@@ -25,59 +25,32 @@ namespace source2sdk
         // Registered alignment: 0x10
         // Alignment: 0x10
         // Standard-layout class: false
-        // Size: 0xb60
+        // Size: 0x1100
         // Has VTable
-        // 
-        // static metadata: MNetworkVarNames "Vector m_vFanOrigin"
-        // static metadata: MNetworkVarNames "Vector m_vFanOriginOffset"
-        // static metadata: MNetworkVarNames "Vector m_vFanEnd"
-        // static metadata: MNetworkVarNames "Vector m_vNoiseDirectionTarget"
-        // static metadata: MNetworkVarNames "Vector m_vDirection"
-        // static metadata: MNetworkVarNames "bool m_bPushTowardsInfoTarget"
-        // static metadata: MNetworkVarNames "bool m_bPushAwayFromInfoTarget"
-        // static metadata: MNetworkVarNames "Quaternion m_qNoiseDelta"
-        // static metadata: MNetworkVarNames "CHandle< CInfoFan> m_hInfoFan"
-        // static metadata: MNetworkVarNames "float m_flForce"
-        // static metadata: MNetworkVarNames "bool m_bFalloff"
-        // static metadata: MNetworkVarNames "CountdownTimer m_RampTimer"
+        // Construct allowed
         #pragma pack(push, 1)
         class CTriggerFan : public source2sdk::client::C_BaseTrigger
         {
         public:
-            // metadata: MNetworkEnable
-            Vector m_vFanOrigin; // 0xad8            
-            // metadata: MNetworkEnable
-            Vector m_vFanOriginOffset; // 0xae4            
-            // metadata: MNetworkEnable
-            Vector m_vFanEnd; // 0xaf0            
-            // metadata: MNetworkEnable
-            Vector m_vNoiseDirectionTarget; // 0xafc            
-            // metadata: MNetworkEnable
-            Vector m_vDirection; // 0xb08            
-            // metadata: MNetworkEnable
-            bool m_bPushTowardsInfoTarget; // 0xb14            
-            // metadata: MNetworkEnable
-            bool m_bPushAwayFromInfoTarget; // 0xb15            
-            uint8_t _pad0b16[0xa]; // 0xb16
-            // metadata: MNetworkEnable
-            Quaternion m_qNoiseDelta; // 0xb20            
-            // metadata: MNetworkEnable
+            Vector m_vFanOriginOffset; // 0x1098            
+            Vector m_vDirection; // 0x10a4            
+            bool m_bPushTowardsInfoTarget; // 0x10b0            
+            bool m_bPushAwayFromInfoTarget; // 0x10b1            
+            uint8_t _pad10b2[0xe]; // 0x10b2
+            Quaternion m_qNoiseDelta; // 0x10c0            
             // m_hInfoFan has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::CInfoFan> m_hInfoFan;
-            char m_hInfoFan[0x4]; // 0xb30            
-            // metadata: MNetworkEnable
-            float m_flForce; // 0xb34            
-            // metadata: MNetworkEnable
-            bool m_bFalloff; // 0xb38            
-            uint8_t _pad0b39[0x7]; // 0xb39
-            // metadata: MNetworkEnable
-            source2sdk::client::CountdownTimer m_RampTimer; // 0xb40            
-            uint8_t _pad0b58[0x8];
+            char m_hInfoFan[0x4]; // 0x10d0            
+            float m_flForce; // 0x10d4            
+            bool m_bFalloff; // 0x10d8            
+            uint8_t _pad10d9[0x7]; // 0x10d9
+            source2sdk::client::CountdownTimer m_RampTimer; // 0x10e0            
+            uint8_t _pad10f8[0x8];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in CTriggerFan because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::client::CTriggerFan) == 0xb60);
+        static_assert(sizeof(source2sdk::client::CTriggerFan) == 0x1100);
     };
 };
