@@ -41,12 +41,22 @@ PROTOS    = REPO_ROOT / "protobufs"
 
 # -- upstream sources ---------------------------------------------------------
 CS2DUMPER_RAW = "https://raw.githubusercontent.com/{owner}/cs2-dumper/{branch}/output/{name}"
+CS2DUMPER_API = "https://api.github.com/repos/{owner}/cs2-dumper/contents/output?ref={branch}"
 CS2DUMPER_PR  = "https://api.github.com/repos/a2x/cs2-dumper/pulls/{n}"
 STEAMDB_API   = "https://api.github.com/repos/SteamDatabase/Protobufs/contents/csgo?ref=master"
 STEAMDB_RAW   = "https://raw.githubusercontent.com/SteamDatabase/Protobufs/master/csgo/{name}"
 
-OFFSET_FILES = ["offsets.json", "offsets.rs", "offsets.hpp", "offsets.cs"]
-SCHEMA_FILES = ["client_dll.json", "engine2_dll.json", "server_dll.json"]
+# offsets.* are the runtime globals; info/interfaces/buttons describe the same
+# dump (build number, interface registrations, button bitmasks) and belong next
+# to them rather than in schema/.
+OFFSET_FILES = ["offsets.json", "offsets.rs", "offsets.hpp", "offsets.cs",
+                "info.json", "interfaces.json", "buttons.json"]
+
+# Every *_dll.json in the upstream output is a schema module. The list is
+# discovered rather than hardcoded so a module CS2 adds later is picked up
+# without touching this file; SCHEMA_FALLBACK only applies if the listing call
+# fails (e.g. unauthenticated API rate limit).
+SCHEMA_FALLBACK = ["client_dll.json", "engine2_dll.json", "server_dll.json"]
 
 # -- helpers ------------------------------------------------------------------
 def info(msg):  print(f"[*] {msg}")
@@ -79,6 +89,21 @@ def normalise_eol(data):
 
 def sha256_of(data):  return hashlib.sha256(normalise_eol(data)).hexdigest() if data else None
 def sha256_of_file(p): return sha256_of(p.read_bytes()) if p.exists() else None
+
+def discover_schema_files(owner, branch):
+    """Every *_dll.json the upstream dump currently publishes."""
+    try:
+        data = http_get(CS2DUMPER_API.format(owner=owner, branch=branch))
+        listing = read_json_bytes(data)
+        if isinstance(listing, list):
+            found = sorted(e["name"] for e in listing
+                           if e.get("type") == "file" and e.get("name", "").endswith("_dll.json"))
+            if found:
+                return found
+    except Exception as e:
+        warn(f"could not list upstream output/ ({e})")
+    warn(f"falling back to the built-in module list ({len(SCHEMA_FALLBACK)} modules)")
+    return SCHEMA_FALLBACK
 
 def resolve_pr(pr_num):
     """Return (owner, branch) for a cs2-dumper PR."""
@@ -143,7 +168,10 @@ def sync_offsets(owner, branch, dry_run=False):
         to_write[dst] = data
         info(f"  offsets/{name}  {(old_sha or 'new')[:8]} → {new_sha[:8]}")
 
-    for name in SCHEMA_FILES:
+    schema_files = discover_schema_files(owner, branch)
+    info(f"  {len(schema_files)} schema module(s) upstream")
+
+    for name in schema_files:
         data = http_get(CS2DUMPER_RAW.format(owner=owner, branch=branch, name=name))
         if not data:
             warn(f"  schema/{name}: 404 — skipping")
@@ -160,9 +188,13 @@ def sync_offsets(owner, branch, dry_run=False):
     if dry_run:
         return changed, unchanged, {}
     if changed > 0:
-        # Snapshot BEFORE writing, using a timestamp label.
-        label = datetime.now(timezone.utc).strftime("pre_sync_%Y%m%dT%H%M%SZ")
-        snapshot_current(label)
+        # Snapshot BEFORE writing, but only when something is actually being
+        # replaced — a sync that only adds new modules has nothing to preserve.
+        if any(dst.exists() for dst in to_write):
+            label = datetime.now(timezone.utc).strftime("pre_sync_%Y%m%dT%H%M%SZ")
+            snapshot_current(label)
+        else:
+            info("all writes are new files — nothing to snapshot")
         for dst, data in to_write.items():
             dst.parent.mkdir(parents=True, exist_ok=True)
             dst.write_bytes(data)

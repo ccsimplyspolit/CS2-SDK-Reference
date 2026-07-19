@@ -1,9 +1,14 @@
 """
-Refresh CS2-SDK-Reference from upstream.
+Refresh CS2-SDK-Reference from upstream (legacy, offsets + schema only).
 
 - Fetches a2x/cs2-dumper HEAD offsets + schema.
 - Optionally fetches a specific PR branch (--pr <number>).
 - Backs up existing latest/ to history/build_<N>_<date>/ before overwriting.
+
+For the full one-button sync (protobufs too, snapshots, verify, commit) use
+sync_from_upstream.py instead. This script is kept because it is referenced
+from older docs; both now discover every *_dll.json module rather than a fixed
+three.
 
 Usage:
   python fetch_head_offsets.py
@@ -15,7 +20,7 @@ import os
 import shutil
 import sys
 from pathlib import Path
-from urllib.request import urlopen
+from urllib.request import urlopen, Request
 from urllib.error import URLError
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
@@ -24,9 +29,28 @@ HISTORY   = REPO_ROOT / "offsets" / "history"
 SCHEMA    = REPO_ROOT / "schema"
 
 RAW = "https://raw.githubusercontent.com/{owner}/cs2-dumper/{branch}/output/{name}"
+API = "https://api.github.com/repos/{owner}/cs2-dumper/contents/output?ref={branch}"
 
-FILES_LATEST  = ["offsets.json", "offsets.rs", "offsets.hpp", "offsets.cs"]
-FILES_SCHEMA  = ["client_dll.json", "engine2_dll.json", "server_dll.json"]
+FILES_LATEST  = ["offsets.json", "offsets.rs", "offsets.hpp", "offsets.cs",
+                 "info.json", "interfaces.json", "buttons.json"]
+FILES_SCHEMA_FALLBACK = ["client_dll.json", "engine2_dll.json", "server_dll.json"]
+
+
+def discover_schema(owner, branch):
+    """Every *_dll.json the upstream output currently publishes."""
+    url = API.format(owner=owner, branch=branch)
+    try:
+        req = Request(url, headers={"User-Agent": "cs2-sdk-reference/1.0",
+                                    "Accept": "application/vnd.github+json"})
+        with urlopen(req, timeout=20) as r:
+            listing = json.loads(r.read())
+        found = sorted(e["name"] for e in listing
+                       if e.get("type") == "file" and e.get("name", "").endswith("_dll.json"))
+        if found:
+            return found
+    except Exception as e:
+        print(f"    ! could not list output/ ({e}); using built-in module list")
+    return FILES_SCHEMA_FALLBACK
 
 def fetch(owner, branch, name, dest):
     url = RAW.format(owner=owner, branch=branch, name=name)
@@ -104,8 +128,10 @@ def main():
     for name in FILES_LATEST:
         total += fetch(args.owner, args.branch, name, LATEST / name)
 
-    # 2. Schema JSONs
-    for name in FILES_SCHEMA:
+    # 2. Schema JSONs — every module upstream publishes
+    schema_files = discover_schema(args.owner, args.branch)
+    print(f"    {len(schema_files)} schema module(s)")
+    for name in schema_files:
         total += fetch(args.owner, args.branch, name, SCHEMA / name)
 
     print(f"\n[+] fetched {total} total bytes")
