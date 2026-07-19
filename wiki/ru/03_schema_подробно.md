@@ -1,16 +1,26 @@
 # Schema подробно
 
-`schema/client_dll.json` и два его собрата содержат byte-offset каждого
-члена каждого класса, что идёт с cs2. Ниже — как они устроены, почему
-оффсеты почти не двигаются и как их обходить программно.
+Файлы `schema/` содержат byte-offset каждого члена каждого класса, что идёт с
+cs2. Ниже — как они устроены, почему оффсеты почти не двигаются и как их
+обходить программно.
 
-## Три файла
+## Файлы
+
+В `schema/` лежит по одному JSON на каждый модуль, который выдаёт cs2-dumper —
+всего **18 модулей, 3330 классов, 16595 полей**. Три, к которым обращаешься чаще
+всего:
 
 | Файл | Примерный размер | Что внутри |
 |---|---|---|
-| `client_dll.json` | ~214 КБ | 300+ клиентских классов (`CCSPlayerController`, `C_CSGameRules`, `C_BaseEntity`, entity, оружие). ~3189 полей. |
+| `client_dll.json` | ~214 КБ | 563 клиентских класса (`CCSPlayerController`, `C_CSGameRules`, `C_BaseEntity`, entity, оружие). 3189 полей. |
+| `server_dll.json` | ~495 КБ | 990 серверных классов, 5871 поле. Самый большой — на сервере логики больше; ещё и на клиенте грузится для prediction. Учти: `CCSPlayerController` есть и здесь, но по *другим* оффсетам, чем клиентская копия. |
 | `engine2_dll.json` | ~11 КБ | Engine-слой классов. Маленький, потому что большинство engine-state прячется за opaque-интерфейсами. |
-| `server_dll.json` | ~495 КБ | Серверные классы. Самый большой — на сервере логики больше; ещё и на клиенте грузится для prediction. |
+
+Остальные — `animationsystem_dll`, `particles_dll`, `soundsystem_dll`,
+`pulse_system_dll`, `vphysics2_dll`, `worldrenderer_dll`, `materialsystem2_dll`,
+`schemasystem_dll` и другие — устроены точно так же. `tools/sync_from_upstream.py`
+подхватывает любой `*_dll.json`, что публикует upstream, так что новые модули
+появляются здесь автоматически.
 
 ## Структура JSON
 
@@ -77,7 +87,7 @@ for k, v in list(fields.items())[:10]:
     print(f'{k:40s} 0x{v:X}')
 ```
 
-Вывод (2026-07-16, билд 14170):
+Вывод (билд 14169, сверено с установленной игрой 2026-07-19):
 
 ```
 m_bAbandonAllowsSurrender                0x8F2
@@ -85,9 +95,11 @@ m_bAbandonOffersInstantSurrender         0x8F3
 m_bCanControlObservedBot                 0x910
 m_bCannotBeKicked                        0x8F0
 m_bControllingBot                        0x908
-m_bEverFullyConnected                    0x898
-m_bEverPlayedOnTeam                      0x8F1
-...
+m_bDisconnection1MinWarningPrinted       0x8F4
+m_bEverFullyConnected                    0x8F1
+m_bEverPlayedOnTeam                      0x854
+m_bFireBulletsSeedSynchronized           0x95D
+m_bHasBeenControlledByPlayerThisRound    0x90A
 ```
 
 ## Почему оффсеты почти не двигаются
