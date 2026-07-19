@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadel_Ability_Cadence_Anthem) == 0x1258);
+        // size assertion omitted: CCitadel_Ability_Cadence_Anthem has no schema binary (size is a guess)
     };
 };

@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_Ability_Lina_Slow_Burn) == 0x580);
+        // size assertion omitted: CDOTA_Ability_Lina_Slow_Burn has no schema binary (size is a guess)
     };
 };

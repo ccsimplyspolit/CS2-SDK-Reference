@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CSoundEventEntityAlias_snd_event_point) == 0x560);
+        // size assertion omitted: CSoundEventEntityAlias_snd_event_point has no schema binary (size is a guess)
     };
 };

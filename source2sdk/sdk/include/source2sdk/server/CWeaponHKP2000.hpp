@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CWeaponHKP2000) == 0x1070);
+        // size assertion omitted: CWeaponHKP2000 has no schema binary (size is a guess)
     };
 };

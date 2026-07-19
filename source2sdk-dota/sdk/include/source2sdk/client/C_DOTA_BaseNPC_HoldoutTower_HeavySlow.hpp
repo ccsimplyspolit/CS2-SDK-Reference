@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_DOTA_BaseNPC_HoldoutTower_HeavySlow) == 0x1a98);
+        // size assertion omitted: C_DOTA_BaseNPC_HoldoutTower_HeavySlow has no schema binary (size is a guess)
     };
 };

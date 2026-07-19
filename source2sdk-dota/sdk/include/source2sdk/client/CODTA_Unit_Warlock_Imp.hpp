@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CODTA_Unit_Warlock_Imp) == 0x19b8);
+        // size assertion omitted: CODTA_Unit_Warlock_Imp has no schema binary (size is a guess)
     };
 };

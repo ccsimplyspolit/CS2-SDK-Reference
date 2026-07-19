@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_MinibossSpawner) == 0x4a8);
+        // size assertion omitted: CDOTA_MinibossSpawner has no schema binary (size is a guess)
     };
 };

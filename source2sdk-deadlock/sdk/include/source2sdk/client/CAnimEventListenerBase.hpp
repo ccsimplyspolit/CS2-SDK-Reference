@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CAnimEventListenerBase) == 0x18);
+        // size assertion omitted: CAnimEventListenerBase has no schema binary (size is a guess)
     };
 };

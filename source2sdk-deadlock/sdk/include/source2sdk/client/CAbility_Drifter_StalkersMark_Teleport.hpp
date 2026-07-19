@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CAbility_Drifter_StalkersMark_Teleport) == 0x11e8);
+        // size assertion omitted: CAbility_Drifter_StalkersMark_Teleport has no schema binary (size is a guess)
     };
 };

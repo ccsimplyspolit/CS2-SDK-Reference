@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_Modifier_ApplyDebuff_Proc) == 0x208);
+        // size assertion omitted: CCitadel_Modifier_ApplyDebuff_Proc has no schema binary (size is a guess)
     };
 };

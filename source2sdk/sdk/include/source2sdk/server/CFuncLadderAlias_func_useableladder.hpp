@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CFuncLadderAlias_func_useableladder) == 0x800);
+        // size assertion omitted: CFuncLadderAlias_func_useableladder has no schema binary (size is a guess)
     };
 };

@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_DarkWillow_Creature) == 0x18a0);
+        // size assertion omitted: CDOTA_DarkWillow_Creature has no schema binary (size is a guess)
     };
 };

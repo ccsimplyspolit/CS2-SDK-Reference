@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CProjectile_Necro_ZombieWall_Projectile) == 0xa80);
+        // size assertion omitted: CProjectile_Necro_ZombieWall_Projectile has no schema binary (size is a guess)
     };
 };

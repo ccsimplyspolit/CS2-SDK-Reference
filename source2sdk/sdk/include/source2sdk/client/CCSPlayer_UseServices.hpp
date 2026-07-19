@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCSPlayer_UseServices) == 0x48);
+        // size assertion omitted: CCSPlayer_UseServices has no schema binary (size is a guess)
     };
 };

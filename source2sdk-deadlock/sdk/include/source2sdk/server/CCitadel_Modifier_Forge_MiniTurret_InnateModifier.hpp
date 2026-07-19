@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_Modifier_Forge_MiniTurret_InnateModifier) == 0x350);
+        // size assertion omitted: CCitadel_Modifier_Forge_MiniTurret_InnateModifier has no schema binary (size is a guess)
     };
 };

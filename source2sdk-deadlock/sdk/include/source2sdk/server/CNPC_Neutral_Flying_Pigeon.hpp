@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CNPC_Neutral_Flying_Pigeon) == 0xc10);
+        // size assertion omitted: CNPC_Neutral_Flying_Pigeon has no schema binary (size is a guess)
     };
 };

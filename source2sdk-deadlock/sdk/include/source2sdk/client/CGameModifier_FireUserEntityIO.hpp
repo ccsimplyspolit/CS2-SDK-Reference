@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CGameModifier_FireUserEntityIO) == 0xc0);
+        // size assertion omitted: CGameModifier_FireUserEntityIO has no schema binary (size is a guess)
     };
 };

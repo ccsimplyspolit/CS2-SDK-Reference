@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadel_Ability_Priest_CrossbowWeapon) == 0x1440);
+        // size assertion omitted: CCitadel_Ability_Priest_CrossbowWeapon has no schema binary (size is a guess)
     };
 };

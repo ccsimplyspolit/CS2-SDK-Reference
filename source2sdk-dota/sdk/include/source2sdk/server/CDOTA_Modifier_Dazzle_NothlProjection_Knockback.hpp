@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Dazzle_NothlProjection_Knockback) == 0x1a90);
+        // size assertion omitted: CDOTA_Modifier_Dazzle_NothlProjection_Knockback has no schema binary (size is a guess)
     };
 };

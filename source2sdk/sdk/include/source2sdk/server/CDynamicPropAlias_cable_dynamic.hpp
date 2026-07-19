@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDynamicPropAlias_cable_dynamic) == 0xba0);
+        // size assertion omitted: CDynamicPropAlias_cable_dynamic has no schema binary (size is a guess)
     };
 };

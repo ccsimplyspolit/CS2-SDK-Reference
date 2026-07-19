@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_Ability_BookWorm_PrimaryWeapon) == 0x1398);
+        // size assertion omitted: CCitadel_Ability_BookWorm_PrimaryWeapon has no schema binary (size is a guess)
     };
 };

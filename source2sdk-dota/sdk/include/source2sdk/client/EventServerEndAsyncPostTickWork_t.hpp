@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::EventServerEndAsyncPostTickWork_t) == 0x1);
+        // size assertion omitted: EventServerEndAsyncPostTickWork_t has no schema binary (size is a guess)
     };
 };

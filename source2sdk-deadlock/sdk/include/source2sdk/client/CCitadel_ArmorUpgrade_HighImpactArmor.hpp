@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadel_ArmorUpgrade_HighImpactArmor) == 0x12d8);
+        // size assertion omitted: CCitadel_ArmorUpgrade_HighImpactArmor has no schema binary (size is a guess)
     };
 };

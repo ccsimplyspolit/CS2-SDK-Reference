@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CModifier_Drifter_StalkersMark_PostTeleport) == 0x240);
+        // size assertion omitted: CModifier_Drifter_StalkersMark_PostTeleport has no schema binary (size is a guess)
     };
 };

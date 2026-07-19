@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCSSprite) == 0x7e0);
+        // size assertion omitted: CCSSprite has no schema binary (size is a guess)
     };
 };

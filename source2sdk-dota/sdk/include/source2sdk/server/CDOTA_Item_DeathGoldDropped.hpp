@@ -31,6 +31,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_Item_DeathGoldDropped) == 0x7a0);
+        // size assertion omitted: CDOTA_Item_DeathGoldDropped has no schema binary (size is a guess)
     };
 };

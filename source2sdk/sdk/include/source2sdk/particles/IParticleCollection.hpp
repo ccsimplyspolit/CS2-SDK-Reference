@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::particles::IParticleCollection) == 0x10);
+        // size assertion omitted: IParticleCollection has no schema binary (size is a guess)
     };
 };

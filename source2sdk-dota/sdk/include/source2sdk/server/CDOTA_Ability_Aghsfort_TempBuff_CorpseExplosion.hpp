@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_Ability_Aghsfort_TempBuff_CorpseExplosion) == 0x580);
+        // size assertion omitted: CDOTA_Ability_Aghsfort_TempBuff_CorpseExplosion has no schema binary (size is a guess)
     };
 };

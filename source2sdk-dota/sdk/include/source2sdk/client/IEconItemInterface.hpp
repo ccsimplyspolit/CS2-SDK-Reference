@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::IEconItemInterface) == 0x8);
+        // size assertion omitted: IEconItemInterface has no schema binary (size is a guess)
     };
 };

@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CWeaponElite) == 0x1070);
+        // size assertion omitted: CWeaponElite has no schema binary (size is a guess)
     };
 };

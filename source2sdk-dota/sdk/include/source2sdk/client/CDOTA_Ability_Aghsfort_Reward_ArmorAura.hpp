@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CDOTA_Ability_Aghsfort_Reward_ArmorAura) == 0x6a8);
+        // size assertion omitted: CDOTA_Ability_Aghsfort_Reward_ArmorAura has no schema binary (size is a guess)
     };
 };

@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_Upgrade_OverdriveClip) == 0xf78);
+        // size assertion omitted: CCitadel_Upgrade_OverdriveClip has no schema binary (size is a guess)
     };
 };

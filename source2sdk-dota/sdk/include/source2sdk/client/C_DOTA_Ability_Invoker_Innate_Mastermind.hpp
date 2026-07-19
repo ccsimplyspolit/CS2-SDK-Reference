@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_DOTA_Ability_Invoker_Innate_Mastermind) == 0x6a8);
+        // size assertion omitted: C_DOTA_Ability_Invoker_Innate_Mastermind has no schema binary (size is a guess)
     };
 };

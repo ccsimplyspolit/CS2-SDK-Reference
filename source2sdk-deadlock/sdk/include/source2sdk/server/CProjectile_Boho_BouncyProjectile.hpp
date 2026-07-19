@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CProjectile_Boho_BouncyProjectile) == 0x8b0);
+        // size assertion omitted: CProjectile_Boho_BouncyProjectile has no schema binary (size is a guess)
     };
 };

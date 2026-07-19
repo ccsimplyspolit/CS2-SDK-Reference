@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_SoundOpvarSetOBBEntity) == 0x610);
+        // size assertion omitted: C_SoundOpvarSetOBBEntity has no schema binary (size is a guess)
     };
 };

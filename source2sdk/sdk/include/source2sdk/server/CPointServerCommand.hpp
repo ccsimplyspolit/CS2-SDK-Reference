@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CPointServerCommand) == 0x4a8);
+        // size assertion omitted: CPointServerCommand has no schema binary (size is a guess)
     };
 };

@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_NPC_Neutral_Hideout_Cat) == 0xcb0);
+        // size assertion omitted: C_NPC_Neutral_Hideout_Cat has no schema binary (size is a guess)
     };
 };

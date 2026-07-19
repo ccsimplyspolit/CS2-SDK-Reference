@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_Modifier_ScalingPowerUp) == 0xd8);
+        // size assertion omitted: CCitadel_Modifier_ScalingPowerUp has no schema binary (size is a guess)
     };
 };

@@ -12,8 +12,8 @@ template <typename>
 using CAnimGraphParamOptionalRef = char[0x20];
 template <typename>
 using CAnimGraphParamRef = char[0x20];
-using CAnimGraphTagOptionalRef = char[0x18];
-using CAnimGraphTagRef = char[0x18];
+using CAnimGraphTagOptionalRef = char[0x20];
+using CAnimGraphTagRef = char[0x20];
 template <typename>
 // size is a guess
 using CAnimScriptParam = char[0x08];

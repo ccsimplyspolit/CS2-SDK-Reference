@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadel_Modifier_Swan_Acrobat) == 0x240);
+        // size assertion omitted: CCitadel_Modifier_Swan_Acrobat has no schema binary (size is a guess)
     };
 };

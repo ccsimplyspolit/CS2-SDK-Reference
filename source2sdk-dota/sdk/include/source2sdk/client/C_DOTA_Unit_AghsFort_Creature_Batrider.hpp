@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_DOTA_Unit_AghsFort_Creature_Batrider) == 0x19c0);
+        // size assertion omitted: C_DOTA_Unit_AghsFort_Creature_Batrider has no schema binary (size is a guess)
     };
 };

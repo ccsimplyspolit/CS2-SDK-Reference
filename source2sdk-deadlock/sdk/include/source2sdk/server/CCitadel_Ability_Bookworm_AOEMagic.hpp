@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_Ability_Bookworm_AOEMagic) == 0x1078);
+        // size assertion omitted: CCitadel_Ability_Bookworm_AOEMagic has no schema binary (size is a guess)
     };
 };

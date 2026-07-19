@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCSPlayer_DamageReactServices) == 0x68);
+        // size assertion omitted: CCSPlayer_DamageReactServices has no schema binary (size is a guess)
     };
 };

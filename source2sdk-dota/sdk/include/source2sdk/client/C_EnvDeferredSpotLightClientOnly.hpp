@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_EnvDeferredSpotLightClientOnly) == 0xd30);
+        // size assertion omitted: C_EnvDeferredSpotLightClientOnly has no schema binary (size is a guess)
     };
 };

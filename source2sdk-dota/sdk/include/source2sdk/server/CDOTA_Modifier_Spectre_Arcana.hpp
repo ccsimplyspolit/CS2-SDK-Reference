@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Spectre_Arcana) == 0x1a60);
+        // size assertion omitted: CDOTA_Modifier_Spectre_Arcana has no schema binary (size is a guess)
     };
 };

@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CTonemapController2Alias_env_tonemap_controller2) == 0x4b8);
+        // size assertion omitted: CTonemapController2Alias_env_tonemap_controller2 has no schema binary (size is a guess)
     };
 };

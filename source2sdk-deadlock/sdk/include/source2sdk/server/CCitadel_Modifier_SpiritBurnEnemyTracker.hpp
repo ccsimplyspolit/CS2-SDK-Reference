@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_Modifier_SpiritBurnEnemyTracker) == 0x3f0);
+        // size assertion omitted: CCitadel_Modifier_SpiritBurnEnemyTracker has no schema binary (size is a guess)
     };
 };

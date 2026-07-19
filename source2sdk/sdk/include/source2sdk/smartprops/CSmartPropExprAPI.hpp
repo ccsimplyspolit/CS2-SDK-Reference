@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::smartprops::CSmartPropExprAPI) == 0x1);
+        // size assertion omitted: CSmartPropExprAPI has no schema binary (size is a guess)
     };
 };

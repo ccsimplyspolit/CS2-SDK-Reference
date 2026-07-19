@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CDOTA_Unit_AghsFort_SpectralTusk_Tombstone) == 0x19b0);
+        // size assertion omitted: CDOTA_Unit_AghsFort_SpectralTusk_Tombstone has no schema binary (size is a guess)
     };
 };

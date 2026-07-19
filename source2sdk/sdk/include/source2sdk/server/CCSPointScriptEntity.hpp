@@ -33,6 +33,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCSPointScriptEntity) == 0x610);
+        // size assertion omitted: CCSPointScriptEntity has no schema binary (size is a guess)
     };
 };

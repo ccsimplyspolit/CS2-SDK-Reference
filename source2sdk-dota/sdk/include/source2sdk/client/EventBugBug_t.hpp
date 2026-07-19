@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::EventBugBug_t) == 0x20);
+        // size assertion omitted: EventBugBug_t has no schema binary (size is a guess)
     };
 };

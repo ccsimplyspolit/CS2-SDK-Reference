@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CDOTA_Ability_Skywrath_Mage_Ruin_And_Restoration) == 0x6a8);
+        // size assertion omitted: CDOTA_Ability_Skywrath_Mage_Ruin_And_Restoration has no schema binary (size is a guess)
     };
 };

@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CProjectile_Synth_Barrage) == 0x860);
+        // size assertion omitted: CProjectile_Synth_Barrage has no schema binary (size is a guess)
     };
 };

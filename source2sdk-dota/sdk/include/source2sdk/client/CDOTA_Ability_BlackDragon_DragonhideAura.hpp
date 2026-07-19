@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CDOTA_Ability_BlackDragon_DragonhideAura) == 0x6a8);
+        // size assertion omitted: CDOTA_Ability_BlackDragon_DragonhideAura has no schema binary (size is a guess)
     };
 };

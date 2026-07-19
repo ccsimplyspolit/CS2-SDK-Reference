@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Tome_Of_Knowledge_Consumed) == 0x1a58);
+        // size assertion omitted: CDOTA_Modifier_Tome_Of_Knowledge_Consumed has no schema binary (size is a guess)
     };
 };

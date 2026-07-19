@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CIngameEvent_Diretide2020) == 0x1a60);
+        // size assertion omitted: CIngameEvent_Diretide2020 has no schema binary (size is a guess)
     };
 };

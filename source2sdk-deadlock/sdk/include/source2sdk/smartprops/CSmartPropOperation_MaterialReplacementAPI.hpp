@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::smartprops::CSmartPropOperation_MaterialReplacementAPI) == 0x1);
+        // size assertion omitted: CSmartPropOperation_MaterialReplacementAPI has no schema binary (size is a guess)
     };
 };

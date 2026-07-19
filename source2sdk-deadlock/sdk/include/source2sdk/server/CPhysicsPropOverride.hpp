@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CPhysicsPropOverride) == 0xd60);
+        // size assertion omitted: CPhysicsPropOverride has no schema binary (size is a guess)
     };
 };

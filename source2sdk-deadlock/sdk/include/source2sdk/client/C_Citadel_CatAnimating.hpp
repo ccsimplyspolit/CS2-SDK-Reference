@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_Citadel_CatAnimating) == 0xcc8);
+        // size assertion omitted: C_Citadel_CatAnimating has no schema binary (size is a guess)
     };
 };

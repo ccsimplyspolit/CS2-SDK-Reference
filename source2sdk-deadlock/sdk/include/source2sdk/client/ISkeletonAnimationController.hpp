@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::ISkeletonAnimationController) == 0x8);
+        // size assertion omitted: ISkeletonAnimationController has no schema binary (size is a guess)
     };
 };

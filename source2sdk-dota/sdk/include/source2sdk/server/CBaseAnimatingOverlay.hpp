@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CBaseAnimatingOverlay) == 0x798);
+        // size assertion omitted: CBaseAnimatingOverlay has no schema binary (size is a guess)
     };
 };

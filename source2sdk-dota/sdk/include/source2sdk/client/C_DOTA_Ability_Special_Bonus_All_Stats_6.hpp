@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_DOTA_Ability_Special_Bonus_All_Stats_6) == 0x6a8);
+        // size assertion omitted: C_DOTA_Ability_Special_Bonus_All_Stats_6 has no schema binary (size is a guess)
     };
 };

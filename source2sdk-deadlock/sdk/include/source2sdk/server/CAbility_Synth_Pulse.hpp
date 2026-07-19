@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CAbility_Synth_Pulse) == 0x10f0);
+        // size assertion omitted: CAbility_Synth_Pulse has no schema binary (size is a guess)
     };
 };

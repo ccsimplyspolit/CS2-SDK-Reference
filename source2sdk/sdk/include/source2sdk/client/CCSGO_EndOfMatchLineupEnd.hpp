@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCSGO_EndOfMatchLineupEnd) == 0x600);
+        // size assertion omitted: CCSGO_EndOfMatchLineupEnd has no schema binary (size is a guess)
     };
 };

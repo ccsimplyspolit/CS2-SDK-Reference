@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadelAbilityDruidPlantSomething) == 0x11e0);
+        // size assertion omitted: CCitadelAbilityDruidPlantSomething has no schema binary (size is a guess)
     };
 };

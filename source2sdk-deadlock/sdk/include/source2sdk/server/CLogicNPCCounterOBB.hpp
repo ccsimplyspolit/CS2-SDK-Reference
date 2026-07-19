@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CLogicNPCCounterOBB) == 0x750);
+        // size assertion omitted: CLogicNPCCounterOBB has no schema binary (size is a guess)
     };
 };

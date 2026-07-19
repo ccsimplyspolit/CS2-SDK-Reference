@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::soundsystem::CSndSeqInstruments) == 0x28);
+        // size assertion omitted: CSndSeqInstruments has no schema binary (size is a guess)
     };
 };

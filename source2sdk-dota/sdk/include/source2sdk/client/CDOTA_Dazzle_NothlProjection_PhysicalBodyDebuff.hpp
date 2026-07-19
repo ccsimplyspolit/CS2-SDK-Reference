@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CDOTA_Dazzle_NothlProjection_PhysicalBodyDebuff) == 0x1a60);
+        // size assertion omitted: CDOTA_Dazzle_NothlProjection_PhysicalBodyDebuff has no schema binary (size is a guess)
     };
 };

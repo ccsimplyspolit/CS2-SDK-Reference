@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CSmokeGrenade) == 0x10a0);
+        // size assertion omitted: CSmokeGrenade has no schema binary (size is a guess)
     };
 };

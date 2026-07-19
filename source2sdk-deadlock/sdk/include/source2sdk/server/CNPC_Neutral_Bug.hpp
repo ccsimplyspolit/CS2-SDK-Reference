@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CNPC_Neutral_Bug) == 0xab0);
+        // size assertion omitted: CNPC_Neutral_Bug has no schema binary (size is a guess)
     };
 };

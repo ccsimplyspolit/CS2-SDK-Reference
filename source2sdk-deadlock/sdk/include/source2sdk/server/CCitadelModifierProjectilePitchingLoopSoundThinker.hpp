@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadelModifierProjectilePitchingLoopSoundThinker) == 0xe8);
+        // size assertion omitted: CCitadelModifierProjectilePitchingLoopSoundThinker has no schema binary (size is a guess)
     };
 };

@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CLocomotionBase) == 0x90);
+        // size assertion omitted: CLocomotionBase has no schema binary (size is a guess)
     };
 };

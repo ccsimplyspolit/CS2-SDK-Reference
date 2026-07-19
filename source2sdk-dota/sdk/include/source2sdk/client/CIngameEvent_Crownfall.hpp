@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CIngameEvent_Crownfall) == 0x19b8);
+        // size assertion omitted: CIngameEvent_Crownfall has no schema binary (size is a guess)
     };
 };

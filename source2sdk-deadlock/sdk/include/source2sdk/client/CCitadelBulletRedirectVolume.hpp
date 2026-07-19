@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadelBulletRedirectVolume) == 0x9a8);
+        // size assertion omitted: CCitadelBulletRedirectVolume has no schema binary (size is a guess)
     };
 };

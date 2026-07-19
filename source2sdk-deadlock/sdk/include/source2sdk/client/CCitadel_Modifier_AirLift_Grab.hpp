@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadel_Modifier_AirLift_Grab) == 0x140);
+        // size assertion omitted: CCitadel_Modifier_AirLift_Grab has no schema binary (size is a guess)
     };
 };

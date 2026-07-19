@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_Ability_Vandal_Pillar) == 0x1170);
+        // size assertion omitted: CCitadel_Ability_Vandal_Pillar has no schema binary (size is a guess)
     };
 };

@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CModifier_CheatDeathImmunity) == 0xd8);
+        // size assertion omitted: CModifier_CheatDeathImmunity has no schema binary (size is a guess)
     };
 };

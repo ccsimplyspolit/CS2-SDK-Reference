@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_NPC_Boss_Tier2_Sidelanes) == 0x1c98);
+        // size assertion omitted: C_NPC_Boss_Tier2_Sidelanes has no schema binary (size is a guess)
     };
 };

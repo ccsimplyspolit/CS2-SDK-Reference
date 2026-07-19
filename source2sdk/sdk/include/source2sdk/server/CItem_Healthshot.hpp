@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CItem_Healthshot) == 0x1060);
+        // size assertion omitted: CItem_Healthshot has no schema binary (size is a guess)
     };
 };

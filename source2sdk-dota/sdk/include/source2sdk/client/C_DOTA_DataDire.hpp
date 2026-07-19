@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_DOTA_DataDire) == 0x1dd8);
+        // size assertion omitted: C_DOTA_DataDire has no schema binary (size is a guess)
     };
 };

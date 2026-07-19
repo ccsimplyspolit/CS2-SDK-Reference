@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Item_SuperArcane_Blink) == 0x1a60);
+        // size assertion omitted: CDOTA_Modifier_Item_SuperArcane_Blink has no schema binary (size is a guess)
     };
 };

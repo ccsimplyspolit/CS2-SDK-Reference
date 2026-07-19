@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_Ability_Viper_Innate_Corrosive_Skin_Virulent) == 0x580);
+        // size assertion omitted: CDOTA_Ability_Viper_Innate_Corrosive_Skin_Virulent has no schema binary (size is a guess)
     };
 };

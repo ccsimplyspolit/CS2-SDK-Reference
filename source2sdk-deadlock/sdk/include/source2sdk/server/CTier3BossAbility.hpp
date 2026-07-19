@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CTier3BossAbility) == 0xf70);
+        // size assertion omitted: CTier3BossAbility has no schema binary (size is a guess)
     };
 };

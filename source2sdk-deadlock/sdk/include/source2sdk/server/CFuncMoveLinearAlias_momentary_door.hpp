@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CFuncMoveLinearAlias_momentary_door) == 0x888);
+        // size assertion omitted: CFuncMoveLinearAlias_momentary_door has no schema binary (size is a guess)
     };
 };

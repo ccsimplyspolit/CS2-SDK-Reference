@@ -33,6 +33,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CPhysicalButton) == 0x900);
+        // size assertion omitted: CPhysicalButton has no schema binary (size is a guess)
     };
 };

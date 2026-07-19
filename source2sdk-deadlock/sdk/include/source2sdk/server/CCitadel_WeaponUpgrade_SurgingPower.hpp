@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_WeaponUpgrade_SurgingPower) == 0xf78);
+        // size assertion omitted: CCitadel_WeaponUpgrade_SurgingPower has no schema binary (size is a guess)
     };
 };

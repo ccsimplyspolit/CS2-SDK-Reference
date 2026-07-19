@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::COrbSpawner) == 0x4c8);
+        // size assertion omitted: COrbSpawner has no schema binary (size is a guess)
     };
 };

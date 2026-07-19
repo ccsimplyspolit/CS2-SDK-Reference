@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_DOTA_Item_Recipe_InvisibilityEdge) == 0x758);
+        // size assertion omitted: C_DOTA_Item_Recipe_InvisibilityEdge has no schema binary (size is a guess)
     };
 };

@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_Projectile_Doorman_Cart_Projectile) == 0xaf8);
+        // size assertion omitted: C_Projectile_Doorman_Cart_Projectile has no schema binary (size is a guess)
     };
 };

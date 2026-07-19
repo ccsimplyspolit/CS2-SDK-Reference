@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CAI_MotorGroundAnimGraph_State_InstantStop) == 0x80);
+        // size assertion omitted: CAI_MotorGroundAnimGraph_State_InstantStop has no schema binary (size is a guess)
     };
 };

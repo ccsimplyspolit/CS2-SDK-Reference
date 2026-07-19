@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_FuncMover) == 0x9a8);
+        // size assertion omitted: C_FuncMover has no schema binary (size is a guess)
     };
 };

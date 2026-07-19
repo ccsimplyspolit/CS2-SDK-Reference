@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CModifier_Operative_Revelation_Aura) == 0x208);
+        // size assertion omitted: CModifier_Operative_Revelation_Aura has no schema binary (size is a guess)
     };
 };

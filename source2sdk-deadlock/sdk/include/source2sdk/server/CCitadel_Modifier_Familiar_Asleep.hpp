@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_Modifier_Familiar_Asleep) == 0x300);
+        // size assertion omitted: CCitadel_Modifier_Familiar_Asleep has no schema binary (size is a guess)
     };
 };

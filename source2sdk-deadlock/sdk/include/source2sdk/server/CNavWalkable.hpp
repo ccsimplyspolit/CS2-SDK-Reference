@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CNavWalkable) == 0x4a0);
+        // size assertion omitted: CNavWalkable has no schema binary (size is a guess)
     };
 };

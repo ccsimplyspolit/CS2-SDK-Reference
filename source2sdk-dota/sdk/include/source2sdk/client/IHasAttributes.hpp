@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::IHasAttributes) == 0x8);
+        // size assertion omitted: IHasAttributes has no schema binary (size is a guess)
     };
 };

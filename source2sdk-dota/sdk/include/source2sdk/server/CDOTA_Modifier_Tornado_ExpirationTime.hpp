@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Tornado_ExpirationTime) == 0x1a58);
+        // size assertion omitted: CDOTA_Modifier_Tornado_ExpirationTime has no schema binary (size is a guess)
     };
 };

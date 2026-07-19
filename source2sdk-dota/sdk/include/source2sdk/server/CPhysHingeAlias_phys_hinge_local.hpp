@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CPhysHingeAlias_phys_hinge_local) == 0x668);
+        // size assertion omitted: CPhysHingeAlias_phys_hinge_local has no schema binary (size is a guess)
     };
 };

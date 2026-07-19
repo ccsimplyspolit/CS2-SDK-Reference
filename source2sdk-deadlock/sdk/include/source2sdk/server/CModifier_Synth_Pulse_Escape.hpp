@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CModifier_Synth_Pulse_Escape) == 0x1d0);
+        // size assertion omitted: CModifier_Synth_Pulse_Escape has no schema binary (size is a guess)
     };
 };

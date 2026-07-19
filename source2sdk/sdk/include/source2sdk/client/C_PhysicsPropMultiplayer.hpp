@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_PhysicsPropMultiplayer) == 0x1300);
+        // size assertion omitted: C_PhysicsPropMultiplayer has no schema binary (size is a guess)
     };
 };

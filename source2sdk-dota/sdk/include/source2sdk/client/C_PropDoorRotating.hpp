@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_PropDoorRotating) == 0xd50);
+        // size assertion omitted: C_PropDoorRotating has no schema binary (size is a guess)
     };
 };

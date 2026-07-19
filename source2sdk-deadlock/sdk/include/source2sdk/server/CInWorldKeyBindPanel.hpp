@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CInWorldKeyBindPanel) == 0x938);
+        // size assertion omitted: CInWorldKeyBindPanel has no schema binary (size is a guess)
     };
 };

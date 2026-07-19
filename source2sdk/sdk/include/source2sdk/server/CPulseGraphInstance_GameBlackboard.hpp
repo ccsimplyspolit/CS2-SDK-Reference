@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CPulseGraphInstance_GameBlackboard) == 0x1d8);
+        // size assertion omitted: CPulseGraphInstance_GameBlackboard has no schema binary (size is a guess)
     };
 };

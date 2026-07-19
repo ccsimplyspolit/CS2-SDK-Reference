@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::pulse_system::FakeEntity_tAPI) == 0x8);
+        // size assertion omitted: FakeEntity_tAPI has no schema binary (size is a guess)
     };
 };

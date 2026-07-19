@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::INextBotBody) == 0x20);
+        // size assertion omitted: INextBotBody has no schema binary (size is a guess)
     };
 };

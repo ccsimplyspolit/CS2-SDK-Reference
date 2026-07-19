@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CHEGrenadeProjectile) == 0xa60);
+        // size assertion omitted: CHEGrenadeProjectile has no schema binary (size is a guess)
     };
 };

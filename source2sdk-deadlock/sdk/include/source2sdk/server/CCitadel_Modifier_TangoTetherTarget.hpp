@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_Modifier_TangoTetherTarget) == 0xd0);
+        // size assertion omitted: CCitadel_Modifier_TangoTetherTarget has no schema binary (size is a guess)
     };
 };

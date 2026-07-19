@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CDOTA_Item_RiverPainter7) == 0x760);
+        // size assertion omitted: CDOTA_Item_RiverPainter7 has no schema binary (size is a guess)
     };
 };

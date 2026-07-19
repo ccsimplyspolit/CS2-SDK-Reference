@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_SingleplayRules) == 0x40);
+        // size assertion omitted: C_SingleplayRules has no schema binary (size is a guess)
     };
 };

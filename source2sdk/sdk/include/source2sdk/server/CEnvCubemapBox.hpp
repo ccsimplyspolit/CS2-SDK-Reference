@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CEnvCubemapBox) == 0x590);
+        // size assertion omitted: CEnvCubemapBox has no schema binary (size is a guess)
     };
 };

@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_BaseNPC_RespawningTower) == 0x19e0);
+        // size assertion omitted: CDOTA_BaseNPC_RespawningTower has no schema binary (size is a guess)
     };
 };

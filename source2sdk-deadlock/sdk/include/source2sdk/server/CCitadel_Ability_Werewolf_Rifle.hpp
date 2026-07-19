@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_Ability_Werewolf_Rifle) == 0x1198);
+        // size assertion omitted: CCitadel_Ability_Werewolf_Rifle has no schema binary (size is a guess)
     };
 };

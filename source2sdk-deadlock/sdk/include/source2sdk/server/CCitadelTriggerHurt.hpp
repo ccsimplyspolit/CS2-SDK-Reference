@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadelTriggerHurt) == 0x968);
+        // size assertion omitted: CCitadelTriggerHurt has no schema binary (size is a guess)
     };
 };

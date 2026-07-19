@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CDOTA_Ability_Miniboss_Minion_Deflecting_Shield) == 0x6a8);
+        // size assertion omitted: CDOTA_Ability_Miniboss_Minion_Deflecting_Shield has no schema binary (size is a guess)
     };
 };

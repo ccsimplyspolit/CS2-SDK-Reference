@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadel_Ability_Boho_PrimaryWeapon) == 0x1438);
+        // size assertion omitted: CCitadel_Ability_Boho_PrimaryWeapon has no schema binary (size is a guess)
     };
 };

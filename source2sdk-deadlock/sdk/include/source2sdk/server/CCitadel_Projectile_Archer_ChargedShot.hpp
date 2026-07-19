@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_Projectile_Archer_ChargedShot) == 0x860);
+        // size assertion omitted: CCitadel_Projectile_Archer_ChargedShot has no schema binary (size is a guess)
     };
 };

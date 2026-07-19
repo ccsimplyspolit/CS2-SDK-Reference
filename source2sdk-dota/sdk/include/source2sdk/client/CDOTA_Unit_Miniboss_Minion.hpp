@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CDOTA_Unit_Miniboss_Minion) == 0x19b0);
+        // size assertion omitted: CDOTA_Unit_Miniboss_Minion has no schema binary (size is a guess)
     };
 };

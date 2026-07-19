@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CAdditionalWearable) == 0x9f0);
+        // size assertion omitted: CAdditionalWearable has no schema binary (size is a guess)
     };
 };

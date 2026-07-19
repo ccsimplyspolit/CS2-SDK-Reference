@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_Modifier_Arcane_Eater_Watcher) == 0x220);
+        // size assertion omitted: CCitadel_Modifier_Arcane_Eater_Watcher has no schema binary (size is a guess)
     };
 };

@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CDOTA_Item_Medallion_Of_Courage) == 0x758);
+        // size assertion omitted: CDOTA_Item_Medallion_Of_Courage has no schema binary (size is a guess)
     };
 };

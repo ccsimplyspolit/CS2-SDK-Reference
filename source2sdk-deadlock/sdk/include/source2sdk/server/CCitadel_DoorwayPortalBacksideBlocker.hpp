@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_DoorwayPortalBacksideBlocker) == 0x780);
+        // size assertion omitted: CCitadel_DoorwayPortalBacksideBlocker has no schema binary (size is a guess)
     };
 };

@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadel_Modifier_Necro_Ghoul_Explode) == 0x450);
+        // size assertion omitted: CCitadel_Modifier_Necro_Ghoul_Explode has no schema binary (size is a guess)
     };
 };

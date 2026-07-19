@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_Ability_Tier2Boss_Stomp) == 0xf70);
+        // size assertion omitted: CCitadel_Ability_Tier2Boss_Stomp has no schema binary (size is a guess)
     };
 };

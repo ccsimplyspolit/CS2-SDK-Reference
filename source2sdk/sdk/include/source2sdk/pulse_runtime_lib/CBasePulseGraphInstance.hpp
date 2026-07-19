@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::pulse_runtime_lib::CBasePulseGraphInstance) == 0x110);
+        // size assertion omitted: CBasePulseGraphInstance has no schema binary (size is a guess)
     };
 };

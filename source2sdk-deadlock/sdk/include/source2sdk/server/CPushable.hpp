@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CPushable) == 0x858);
+        // size assertion omitted: CPushable has no schema binary (size is a guess)
     };
 };

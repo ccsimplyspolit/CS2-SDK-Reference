@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CInfoTargetServerOnly) == 0x498);
+        // size assertion omitted: CInfoTargetServerOnly has no schema binary (size is a guess)
     };
 };

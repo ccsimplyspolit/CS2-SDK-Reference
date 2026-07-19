@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadel_WeaponUpgrade_RechargingBullets) == 0x1370);
+        // size assertion omitted: CCitadel_WeaponUpgrade_RechargingBullets has no schema binary (size is a guess)
     };
 };

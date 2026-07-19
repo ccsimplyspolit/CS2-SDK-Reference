@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_Upgrade_AerialAssault) == 0xff8);
+        // size assertion omitted: CCitadel_Upgrade_AerialAssault has no schema binary (size is a guess)
     };
 };

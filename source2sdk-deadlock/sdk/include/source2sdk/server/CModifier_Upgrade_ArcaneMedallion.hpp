@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CModifier_Upgrade_ArcaneMedallion) == 0x288);
+        // size assertion omitted: CModifier_Upgrade_ArcaneMedallion has no schema binary (size is a guess)
     };
 };

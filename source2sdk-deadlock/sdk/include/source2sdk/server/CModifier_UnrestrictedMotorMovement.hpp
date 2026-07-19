@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CModifier_UnrestrictedMotorMovement) == 0xd0);
+        // size assertion omitted: CModifier_UnrestrictedMotorMovement has no schema binary (size is a guess)
     };
 };

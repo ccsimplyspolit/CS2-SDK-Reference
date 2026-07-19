@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CPrecipitation) == 0x8e8);
+        // size assertion omitted: CPrecipitation has no schema binary (size is a guess)
     };
 };

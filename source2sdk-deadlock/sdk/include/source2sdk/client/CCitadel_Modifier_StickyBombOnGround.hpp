@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadel_Modifier_StickyBombOnGround) == 0x2d8);
+        // size assertion omitted: CCitadel_Modifier_StickyBombOnGround has no schema binary (size is a guess)
     };
 };

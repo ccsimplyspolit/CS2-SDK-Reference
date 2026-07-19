@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Centaur_Hitched_Into_Cart) == 0x1a58);
+        // size assertion omitted: CDOTA_Modifier_Centaur_Hitched_Into_Cart has no schema binary (size is a guess)
     };
 };

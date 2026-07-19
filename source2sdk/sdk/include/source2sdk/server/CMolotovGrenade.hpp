@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CMolotovGrenade) == 0x1090);
+        // size assertion omitted: CMolotovGrenade has no schema binary (size is a guess)
     };
 };

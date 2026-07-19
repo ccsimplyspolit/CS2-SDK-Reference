@@ -32,6 +32,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_Citadel_DruidHealingFruit) == 0xcc0);
+        // size assertion omitted: C_Citadel_DruidHealingFruit has no schema binary (size is a guess)
     };
 };

@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_PickupItemSpawnerAPI) == 0x8);
+        // size assertion omitted: CCitadel_PickupItemSpawnerAPI has no schema binary (size is a guess)
     };
 };

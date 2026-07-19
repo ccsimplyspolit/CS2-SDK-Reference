@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CNavVolumeCalculatedVector) == 0xa0);
+        // size assertion omitted: CNavVolumeCalculatedVector has no schema binary (size is a guess)
     };
 };

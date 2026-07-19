@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Tower_Truesight_Aura) == 0x1a60);
+        // size assertion omitted: CDOTA_Modifier_Tower_Truesight_Aura has no schema binary (size is a guess)
     };
 };

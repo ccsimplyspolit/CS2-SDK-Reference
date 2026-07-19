@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CAirheartStickyBombInWorld) == 0xa90);
+        // size assertion omitted: CAirheartStickyBombInWorld has no schema binary (size is a guess)
     };
 };

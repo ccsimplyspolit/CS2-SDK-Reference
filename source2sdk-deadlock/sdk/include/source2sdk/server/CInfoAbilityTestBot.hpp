@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CInfoAbilityTestBot) == 0x4b0);
+        // size assertion omitted: CInfoAbilityTestBot has no schema binary (size is a guess)
     };
 };

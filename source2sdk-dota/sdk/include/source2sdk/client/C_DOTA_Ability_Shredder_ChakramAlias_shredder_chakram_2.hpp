@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_DOTA_Ability_Shredder_ChakramAlias_shredder_chakram_2) == 0x6f8);
+        // size assertion omitted: C_DOTA_Ability_Shredder_ChakramAlias_shredder_chakram_2 has no schema binary (size is a guess)
     };
 };

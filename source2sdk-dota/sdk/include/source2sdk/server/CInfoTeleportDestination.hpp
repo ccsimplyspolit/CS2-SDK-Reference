@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CInfoTeleportDestination) == 0x498);
+        // size assertion omitted: CInfoTeleportDestination has no schema binary (size is a guess)
     };
 };

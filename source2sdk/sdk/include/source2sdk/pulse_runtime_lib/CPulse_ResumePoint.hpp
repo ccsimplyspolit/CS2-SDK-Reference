@@ -27,6 +27,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::pulse_runtime_lib::CPulse_ResumePoint) == 0x48);
+        // size assertion omitted: CPulse_ResumePoint has no schema binary (size is a guess)
     };
 };

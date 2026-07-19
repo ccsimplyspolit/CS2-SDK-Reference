@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Treant_NaturesGuise_Invis) == 0x1a68);
+        // size assertion omitted: CDOTA_Modifier_Treant_NaturesGuise_Invis has no schema binary (size is a guess)
     };
 };

@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CInfoDeathmatchSpawn) == 0x4b8);
+        // size assertion omitted: CInfoDeathmatchSpawn has no schema binary (size is a guess)
     };
 };

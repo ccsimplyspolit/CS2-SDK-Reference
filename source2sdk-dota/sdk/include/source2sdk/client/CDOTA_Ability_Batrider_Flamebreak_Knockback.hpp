@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CDOTA_Ability_Batrider_Flamebreak_Knockback) == 0x1a90);
+        // size assertion omitted: CDOTA_Ability_Batrider_Flamebreak_Knockback has no schema binary (size is a guess)
     };
 };

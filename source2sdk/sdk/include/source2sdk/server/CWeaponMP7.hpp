@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CWeaponMP7) == 0x1070);
+        // size assertion omitted: CWeaponMP7 has no schema binary (size is a guess)
     };
 };

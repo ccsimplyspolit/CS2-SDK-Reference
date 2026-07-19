@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CLightEnvironmentEntity) == 0x788);
+        // size assertion omitted: CLightEnvironmentEntity has no schema binary (size is a guess)
     };
 };

@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CDOTA_Unit_Hero_AncientApparition) == 0x1d80);
+        // size assertion omitted: CDOTA_Unit_Hero_AncientApparition has no schema binary (size is a guess)
     };
 };

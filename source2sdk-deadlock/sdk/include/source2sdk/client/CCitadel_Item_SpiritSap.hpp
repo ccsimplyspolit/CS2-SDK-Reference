@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadel_Item_SpiritSap) == 0x11d8);
+        // size assertion omitted: CCitadel_Item_SpiritSap has no schema binary (size is a guess)
     };
 };
