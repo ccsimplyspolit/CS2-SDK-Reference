@@ -1,0 +1,41 @@
+#pragma once
+
+#include "source2sdk/source2gen/source2gen.hpp"
+#include <cstddef>
+#include <cstdint>
+#include "source2sdk/client/C_BaseEntity.hpp"
+
+// /////////////////////////////////////////////////////////////
+// Module: client
+// Created using source2gen - github.com/neverlosecc/source2gen
+// /////////////////////////////////////////////////////////////
+
+namespace source2sdk
+{
+    namespace client
+    {
+        // Registered alignment: 0x8
+        // Alignment: 0x8
+        // Standard-layout class: false
+        // Size: 0x610
+        // Has VTable
+        // Construct allowed
+        // MClassHasEntityLimitedDataDesc
+        #pragma pack(push, 1)
+        class CDOTA_AghsFort_BossPreview : public source2sdk::client::C_BaseEntity
+        {
+        public:
+            CUtlSymbolLarge m_strBossUnit; // 0x5f0            
+            CUtlSymbolLarge m_strModelName; // 0x5f8            
+            float m_flBossModelScale; // 0x600            
+            float m_flExtraModelScale; // 0x604            
+            std::int32_t m_nEncounterType; // 0x608            
+            uint8_t _pad060c[0x4];
+        };
+        #pragma pack(pop)
+        
+        // Cannot assert offsets of fields in CDOTA_AghsFort_BossPreview because it is not a standard-layout class
+        
+        static_assert(sizeof(source2sdk::client::CDOTA_AghsFort_BossPreview) == 0x610);
+    };
+};

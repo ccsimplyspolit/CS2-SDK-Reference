@@ -1,0 +1,74 @@
+#pragma once
+
+#include "source2sdk/source2gen/source2gen.hpp"
+#include <cstddef>
+#include <cstdint>
+#include "source2sdk/client/CDOTA_Buff.hpp"
+#include "source2sdk/client/ParticleIndex_t.hpp"
+namespace source2sdk
+{
+    namespace server
+    {
+        struct CBaseEntity;
+    };
+};
+
+// /////////////////////////////////////////////////////////////
+// Module: server
+// Created using source2gen - github.com/neverlosecc/source2gen
+// /////////////////////////////////////////////////////////////
+
+namespace source2sdk
+{
+    namespace server
+    {
+        // Registered alignment: unknown
+        // Alignment: unknown
+        // Standard-layout class: false
+        // Size: 0x1ae0
+        // Has VTable
+        #pragma pack(push, 1)
+        class CDOTA_Modifier_Marci_Lunge_Arc : public source2sdk::client::CDOTA_Buff
+        {
+        public:
+            float m_flPredictedTotalTime; // 0x1a58            
+            VectorWS m_vStartPosition; // 0x1a5c            
+            float m_flCurrentTimeHoriz; // 0x1a68            
+            float m_flCurrentTimeVert; // 0x1a6c            
+            bool m_bDamageApplied; // 0x1a70            
+            bool m_bTargetTeleported; // 0x1a71            
+            uint8_t _pad1a72[0x2]; // 0x1a72
+            Vector m_vHorizontalVelocity; // 0x1a74            
+            VectorWS m_vLastKnownTargetPosition; // 0x1a80            
+            float m_flInitialVelocityZ; // 0x1a8c            
+            float m_fClampedProjectileSpeed; // 0x1a90            
+            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x1a94            
+            float m_fAcceleration; // 0x1a98            
+            bool m_bTriggeredLandingAnim; // 0x1a9c            
+            uint8_t _pad1a9d[0x3]; // 0x1a9d
+            std::int32_t m_nMaxJumpDistance; // 0x1aa0            
+            std::int32_t min_jump_distance; // 0x1aa4            
+            std::int32_t max_jump_distance; // 0x1aa8            
+            float min_lob_travel_time; // 0x1aac            
+            float max_lob_travel_time; // 0x1ab0            
+            float landing_radius; // 0x1ab4            
+            float debuff_duration; // 0x1ab8            
+            float min_height_above_lowest; // 0x1abc            
+            float min_height_above_highest; // 0x1ac0            
+            float min_acceleration; // 0x1ac4            
+            float max_acceleration; // 0x1ac8            
+            float impact_damage; // 0x1acc            
+            std::int32_t impact_position_offset; // 0x1ad0            
+            std::int32_t ally_impact_damage_pct; // 0x1ad4            
+            float ally_buff_duration; // 0x1ad8            
+            // m_hBounceEntity has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+            // CHandle<source2sdk::server::CBaseEntity> m_hBounceEntity;
+            char m_hBounceEntity[0x4]; // 0x1adc            
+        };
+        #pragma pack(pop)
+        
+        // Cannot assert offsets of fields in CDOTA_Modifier_Marci_Lunge_Arc because it is not a standard-layout class
+        
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Marci_Lunge_Arc) == 0x1ae0);
+    };
+};

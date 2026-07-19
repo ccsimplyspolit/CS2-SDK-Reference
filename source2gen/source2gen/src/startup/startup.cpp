@@ -17,7 +17,25 @@
 #include <unordered_set>
 #include <utility>
 
+#if TARGET_OS == WINDOWS
+    #include <eh.h>
+    #include <stdexcept>
+#endif
+
 namespace {
+
+#if TARGET_OS == WINDOWS
+    // Turn Windows structured exceptions (access violations, etc.) into C++
+    // exceptions so the per-class guard in GenerateTypeScopeSdk can skip a
+    // single faulting type instead of the whole process dying. Requires /EHa.
+    void InstallSehTranslator() {
+        _set_se_translator([](unsigned int code, EXCEPTION_POINTERS*) {
+            throw std::runtime_error(std::format("structured exception 0x{:08x}", code));
+        });
+    }
+#else
+    void InstallSehTranslator() {}
+#endif
     [[nodiscard]] auto GetRequiredModules() {
         // clang-format off
         return std::to_array<std::string>({
@@ -190,6 +208,8 @@ namespace source2_gen {
     bool Dump(Options options) try {
         std::locale::global(std::locale(""));
         std::cout.imbue(std::locale());
+
+        InstallSehTranslator();
 
         const auto modules = GetRequiredModules();
 

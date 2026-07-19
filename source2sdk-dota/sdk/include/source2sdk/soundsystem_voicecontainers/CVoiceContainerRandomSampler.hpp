@@ -1,0 +1,49 @@
+#pragma once
+
+#include "source2sdk/source2gen/source2gen.hpp"
+#include <cstddef>
+#include <cstdint>
+#include "source2sdk/resourcesystem/InfoForResourceTypeCVoiceContainerBase.hpp"
+#include "source2sdk/soundsystem_voicecontainers/CVoiceContainerAsyncGenerator.hpp"
+
+// /////////////////////////////////////////////////////////////
+// Module: soundsystem_voicecontainers
+// Created using source2gen - github.com/neverlosecc/source2gen
+// /////////////////////////////////////////////////////////////
+
+namespace source2sdk
+{
+    namespace soundsystem_voicecontainers
+    {
+        // Registered alignment: 0x8
+        // Alignment: 0x8
+        // Standard-layout class: false
+        // Size: 0x1a8
+        // Has VTable
+        // Construct allowed
+        // 
+        // static metadata: MGetKV3ClassDefaults
+        // static metadata: MPropertyFriendlyName "Random Sampler Container"
+        // static metadata: MPropertyDescription "Trash Synth"
+        #pragma pack(push, 1)
+        class CVoiceContainerRandomSampler : public source2sdk::soundsystem_voicecontainers::CVoiceContainerAsyncGenerator
+        {
+        public:
+            float m_flAmplitude; // 0x80            
+            float m_flAmplitudeJitter; // 0x84            
+            float m_flTimeJitter; // 0x88            
+            float m_flMaxLength; // 0x8c            
+            std::int32_t m_nNumDelayVariations; // 0x90            
+            uint8_t _pad0094[0x4]; // 0x94
+            // m_grainResources has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+            // CUtlVector<CStrongHandle<source2sdk::resourcesystem::InfoForResourceTypeCVoiceContainerBase>> m_grainResources;
+            char m_grainResources[0x18]; // 0x98            
+            uint8_t _pad00b0[0xf8];
+        };
+        #pragma pack(pop)
+        
+        // Cannot assert offsets of fields in CVoiceContainerRandomSampler because it is not a standard-layout class
+        
+        static_assert(sizeof(source2sdk::soundsystem_voicecontainers::CVoiceContainerRandomSampler) == 0x1a8);
+    };
+};
