@@ -27,10 +27,15 @@ namespace source2sdk
         // Size: 0x10
         // Has VTable
         // Is Abstract
+        // Construct allowed
+        // Construct disallowed
+        // 
+        // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CSkeletonAnimationController : public source2sdk::client::ISkeletonAnimationController
         {
         public:
+            // metadata: MNotSaved
             source2sdk::client::CSkeletonInstance* m_pSkeletonInstance; // 0x8            
         };
         #pragma pack(pop)

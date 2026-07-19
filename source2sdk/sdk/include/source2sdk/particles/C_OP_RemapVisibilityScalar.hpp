@@ -18,8 +18,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x1e0
+        // Size: 0x1f8
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -28,26 +29,26 @@ namespace source2sdk
         public:
             // metadata: MPropertyFriendlyName "input field"
             // metadata: MPropertyAttributeChoiceName "particlefield_scalar"
-            source2sdk::particles::ParticleAttributeIndex_t m_nFieldInput; // 0x1c0            
+            source2sdk::particles::ParticleAttributeIndex_t m_nFieldInput; // 0x1d8            
             // metadata: MPropertyFriendlyName "output field"
             // metadata: MPropertyAttributeChoiceName "particlefield_scalar"
-            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1c4            
+            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1dc            
             // metadata: MPropertyFriendlyName "visibility minimum"
-            float m_flInputMin; // 0x1c8            
+            float m_flInputMin; // 0x1e0            
             // metadata: MPropertyFriendlyName "visibility maximum"
-            float m_flInputMax; // 0x1cc            
+            float m_flInputMax; // 0x1e4            
             // metadata: MPropertyFriendlyName "output minimum"
-            float m_flOutputMin; // 0x1d0            
+            float m_flOutputMin; // 0x1e8            
             // metadata: MPropertyFriendlyName "output maximum"
-            float m_flOutputMax; // 0x1d4            
+            float m_flOutputMax; // 0x1ec            
             // metadata: MPropertyFriendlyName "radius scale"
-            float m_flRadiusScale; // 0x1d8            
-            uint8_t _pad01dc[0x4];
+            float m_flRadiusScale; // 0x1f0            
+            uint8_t _pad01f4[0x4];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_OP_RemapVisibilityScalar because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_OP_RemapVisibilityScalar) == 0x1e0);
+        static_assert(sizeof(source2sdk::particles::C_OP_RemapVisibilityScalar) == 0x1f8);
     };
 };

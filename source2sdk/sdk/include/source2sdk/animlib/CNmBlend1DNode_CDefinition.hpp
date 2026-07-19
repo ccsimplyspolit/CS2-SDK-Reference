@@ -18,20 +18,21 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x90
+        // Size: 0x80
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CNmBlend1DNode_CDefinition : public source2sdk::animlib::CNmParameterizedBlendNode_CDefinition
         {
         public:
-            source2sdk::animlib::CNmParameterizedBlendNode_Parameterization_t m_parameterization; // 0x40            
+            source2sdk::animlib::CNmParameterizedBlendNode_Parameterization_t m_parameterization; // 0x30            
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in CNmBlend1DNode::CDefinition because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::animlib::CNmBlend1DNode_CDefinition) == 0x90);
+        static_assert(sizeof(source2sdk::animlib::CNmBlend1DNode_CDefinition) == 0x80);
     };
 };

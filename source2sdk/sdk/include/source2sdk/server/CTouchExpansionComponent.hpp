@@ -14,17 +14,19 @@ namespace source2sdk
 {
     namespace server
     {
-        // Registered alignment: unknown
-        // Alignment: 0x1
+        // Registered alignment: 0x8
+        // Alignment: 0x8
         // Standard-layout class: false
         // Size: 0x50
         // Has VTable
+        // Construct allowed
+        // 
+        // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CTouchExpansionComponent : public source2sdk::entity2::CEntityComponent
         {
         public:
             uint8_t _pad0008[0x48];
-            // No schema binary for binding
         };
         #pragma pack(pop)
         

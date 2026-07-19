@@ -20,8 +20,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x9b8
+        // Size: 0xa20
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -29,32 +30,32 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "snapshot control point number"
-            std::int32_t m_nControlPointNumber; // 0x1c0            
+            std::int32_t m_nControlPointNumber; // 0x1d8            
             // metadata: MPropertyFriendlyName "extra velocity field to write"
             // metadata: MPropertyAttributeChoiceName "particlefield"
-            source2sdk::particles::ParticleAttributeIndex_t m_nAttributeToWrite; // 0x1c4            
+            source2sdk::particles::ParticleAttributeIndex_t m_nAttributeToWrite; // 0x1dc            
             // metadata: MPropertyFriendlyName "local space control point number"
-            std::int32_t m_nLocalSpaceCP; // 0x1c8            
-            uint8_t _pad01cc[0x4]; // 0x1cc
+            std::int32_t m_nLocalSpaceCP; // 0x1e0            
+            uint8_t _pad01e4[0x4]; // 0x1e4
             // metadata: MPropertyFriendlyName "Interpolation"
-            source2sdk::particleslib::CPerParticleFloatInput m_flInterpolation; // 0x1d0            
+            source2sdk::particleslib::CPerParticleFloatInput m_flInterpolation; // 0x1e8            
             // metadata: MPropertyFriendlyName "Component Scale"
-            source2sdk::particleslib::CPerParticleVecInput m_vecScale; // 0x330            
+            source2sdk::particleslib::CPerParticleVecInput m_vecScale; // 0x358            
             // metadata: MPropertyFriendlyName "Boundary Dampening"
-            float m_flBoundaryDampening; // 0x9a8            
+            float m_flBoundaryDampening; // 0xa10            
             // metadata: MPropertyFriendlyName "Set Velocity"
-            bool m_bSetVelocity; // 0x9ac            
+            bool m_bSetVelocity; // 0xa14            
             // metadata: MPropertyFriendlyName "Lock to Surface"
-            bool m_bLockToSurface; // 0x9ad            
-            uint8_t _pad09ae[0x2]; // 0x9ae
+            bool m_bLockToSurface; // 0xa15            
+            uint8_t _pad0a16[0x2]; // 0xa16
             // metadata: MPropertyFriendlyName "Vector Field Grid Spacing Override"
-            float m_flGridSpacing; // 0x9b0            
-            uint8_t _pad09b4[0x4];
+            float m_flGridSpacing; // 0xa18            
+            uint8_t _pad0a1c[0x4];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_OP_VectorFieldSnapshot because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_OP_VectorFieldSnapshot) == 0x9b8);
+        static_assert(sizeof(source2sdk::particles::C_OP_VectorFieldSnapshot) == 0xa20);
     };
 };

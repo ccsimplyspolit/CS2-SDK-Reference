@@ -20,6 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xb0
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -47,7 +48,7 @@ namespace source2sdk
             std::int16_t m_nLayerRootMotionWeightNodeIdx; // 0xaa            
             std::int16_t m_nLayerBoneMaskNodeIdx; // 0xac            
             bool m_bIsOffState; // 0xae            
-            uint8_t _pad00af[0x1];
+            bool m_bUseActualElapsedTimeInStateForTimedEvents; // 0xaf            
         };
         #pragma pack(pop)
         

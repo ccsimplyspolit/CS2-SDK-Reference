@@ -19,29 +19,28 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0xd8
+        // Size: 0x168
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
-        // static metadata: MCellForDomain "BaseDomain"
-        // static metadata: MPulseCellMethodBindings
-        // static metadata: MPulseCellOutflowHookInfo "ÐYKæþ"
         // static metadata: MPropertyFriendlyName "Interval Timer"
         // static metadata: MPropertyDescription "Wait for a duration, firing a child cursor at regular (or randomized) intervals"
         // static metadata: MPulseEditorHeaderIcon "tools/images/pulse_editor/node_timer.png"
+        // static metadata: MPulseEditorCanvasItemSpecKV3
         #pragma pack(push, 1)
         class CPulseCell_IntervalTimer : public source2sdk::pulse_runtime_lib::CPulseCell_BaseYieldingInflow
         {
         public:
             // metadata: MPropertyDescription "Called when timer reaches the duration OR is stopped. NOTE: This will run a little while AFTER the last interval fires unless they line up perfectly."
-            source2sdk::pulse_runtime_lib::CPulse_ResumePoint m_Completed; // 0x48            
+            source2sdk::pulse_runtime_lib::CPulse_ResumePoint m_Completed; // 0xd8            
             // metadata: MPropertyDescription "New child cursor starts here every time the wait interval elapses"
-            source2sdk::pulse_runtime_lib::SignatureOutflow_Continue m_OnInterval; // 0x90            
+            source2sdk::pulse_runtime_lib::SignatureOutflow_Continue m_OnInterval; // 0x120            
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in CPulseCell_IntervalTimer because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::pulse_runtime_lib::CPulseCell_IntervalTimer) == 0xd8);
+        static_assert(sizeof(source2sdk::pulse_runtime_lib::CPulseCell_IntervalTimer) == 0x168);
     };
 };

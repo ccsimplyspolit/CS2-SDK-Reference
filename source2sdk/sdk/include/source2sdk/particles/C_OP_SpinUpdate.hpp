@@ -17,10 +17,12 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x1c0
+        // Size: 0x1d8
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
+        // static metadata: MGPUParticleFunction
         #pragma pack(push, 1)
         class C_OP_SpinUpdate : public source2sdk::particles::CSpinUpdateBase
         {
@@ -29,6 +31,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::particles::C_OP_SpinUpdate) == 0x1c0);
+        static_assert(sizeof(source2sdk::particles::C_OP_SpinUpdate) == 0x1d8);
     };
 };

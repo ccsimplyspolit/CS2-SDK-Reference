@@ -13,7 +13,7 @@ namespace source2sdk
 {
     namespace client
     {
-        // Enumerator count: 6
+        // Enumerator count: 5
         // Alignment: 4
         // Size: 0x4
         enum class GCProtoBufMsgSrc : std::uint32_t
@@ -23,7 +23,6 @@ namespace source2sdk
             GCProtoBufMsgSrc_FromSteamID = 0x2,
             GCProtoBufMsgSrc_FromGC = 0x3,
             GCProtoBufMsgSrc_ReplySystem = 0x4,
-            GCProtoBufMsgSrc_SpoofedSteamID = 0x5,
         };
     };
 };

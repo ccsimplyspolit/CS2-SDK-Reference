@@ -17,8 +17,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x258
+        // Size: 0x270
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -26,21 +27,21 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "velocity minimum"
-            float m_flVelocityMin; // 0x1c8            
+            float m_flVelocityMin; // 0x1e0            
             // metadata: MPropertyFriendlyName "velocity maximum"
-            float m_flVelocityMax; // 0x1cc            
+            float m_flVelocityMax; // 0x1e4            
             // metadata: MPropertyFriendlyName "control point number"
-            std::int32_t m_nControlPointNumber; // 0x1d0            
+            std::int32_t m_nControlPointNumber; // 0x1e8            
             // metadata: MPropertyFriendlyName "hitbox set"
-            char m_HitboxSetName[128]; // 0x1d4            
+            char m_HitboxSetName[128]; // 0x1ec            
             // metadata: MPropertyFriendlyName "use bones instead of hitboxes"
-            bool m_bUseBones; // 0x254            
-            uint8_t _pad0255[0x3];
+            bool m_bUseBones; // 0x26c            
+            uint8_t _pad026d[0x3];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_INIT_InitialVelocityFromHitbox because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_INIT_InitialVelocityFromHitbox) == 0x258);
+        static_assert(sizeof(source2sdk::particles::C_INIT_InitialVelocityFromHitbox) == 0x270);
     };
 };

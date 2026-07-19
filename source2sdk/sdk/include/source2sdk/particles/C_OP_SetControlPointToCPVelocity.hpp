@@ -18,8 +18,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x858
+        // Size: 0x8b0
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -27,25 +28,25 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "control point input"
-            std::int32_t m_nCPInput; // 0x1c8            
+            std::int32_t m_nCPInput; // 0x1e0            
             // metadata: MPropertyFriendlyName "control point number to set velocity"
-            std::int32_t m_nCPOutputVel; // 0x1cc            
+            std::int32_t m_nCPOutputVel; // 0x1e4            
             // metadata: MPropertyFriendlyName "normalize output"
-            bool m_bNormalize; // 0x1d0            
-            uint8_t _pad01d1[0x3]; // 0x1d1
+            bool m_bNormalize; // 0x1e8            
+            uint8_t _pad01e9[0x3]; // 0x1e9
             // metadata: MPropertyFriendlyName "control point number to set magnitude"
-            std::int32_t m_nCPOutputMag; // 0x1d4            
+            std::int32_t m_nCPOutputMag; // 0x1ec            
             // metadata: MPropertyFriendlyName "control point field for magnitude"
             // metadata: MPropertyAttributeChoiceName "vector_component"
-            std::int32_t m_nCPField; // 0x1d8            
-            uint8_t _pad01dc[0x4]; // 0x1dc
+            std::int32_t m_nCPField; // 0x1f0            
+            uint8_t _pad01f4[0x4]; // 0x1f4
             // metadata: MPropertyFriendlyName "comparison velocity"
-            source2sdk::particleslib::CParticleCollectionVecInput m_vecComparisonVelocity; // 0x1e0            
+            source2sdk::particleslib::CParticleCollectionVecInput m_vecComparisonVelocity; // 0x1f8            
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_OP_SetControlPointToCPVelocity because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_OP_SetControlPointToCPVelocity) == 0x858);
+        static_assert(sizeof(source2sdk::particles::C_OP_SetControlPointToCPVelocity) == 0x8b0);
     };
 };

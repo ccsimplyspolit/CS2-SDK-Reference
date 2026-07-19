@@ -14,39 +14,30 @@ namespace source2sdk
 {
     namespace server
     {
-        // Registered alignment: 0x8
-        // Alignment: 0x8
+        // Registered alignment: 0x10
+        // Alignment: 0x10
         // Standard-layout class: false
-        // Size: 0xc90
+        // Size: 0xb60
         // Has VTable
-        // 
-        // static metadata: MNetworkVarNames "uint32 m_boneIndexAttached"
-        // static metadata: MNetworkVarNames "uint32 m_ragdollAttachedObjectIndex"
-        // static metadata: MNetworkVarNames "Vector m_attachmentPointBoneSpace"
-        // static metadata: MNetworkVarNames "Vector m_attachmentPointRagdollSpace"
+        // Construct allowed
         #pragma pack(push, 1)
         class CRagdollPropAttached : public source2sdk::server::CRagdollProp
         {
         public:
-            // metadata: MNetworkEnable
-            std::uint32_t m_boneIndexAttached; // 0xc50            
-            // metadata: MNetworkEnable
-            std::uint32_t m_ragdollAttachedObjectIndex; // 0xc54            
-            // metadata: MNetworkEnable
-            // metadata: MNetworkEncoder "coord"
-            Vector m_attachmentPointBoneSpace; // 0xc58            
-            // metadata: MNetworkEnable
-            // metadata: MNetworkEncoder "coord"
-            Vector m_attachmentPointRagdollSpace; // 0xc64            
-            bool m_bShouldDetach; // 0xc70            
-            uint8_t _pad0c71[0xf]; // 0xc71
-            bool m_bShouldDeleteAttachedActivationRecord; // 0xc80            
-            uint8_t _pad0c81[0xf];
+            std::uint32_t m_boneIndexAttached; // 0xb20            
+            std::uint32_t m_ragdollAttachedObjectIndex; // 0xb24            
+            Vector m_attachmentPointBoneSpace; // 0xb28            
+            Vector m_attachmentPointRagdollSpace; // 0xb34            
+            bool m_bShouldDetach; // 0xb40            
+            uint8_t _pad0b41[0xf]; // 0xb41
+            // metadata: MNotSaved
+            bool m_bShouldDeleteAttachedActivationRecord; // 0xb50            
+            uint8_t _pad0b51[0xf];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in CRagdollPropAttached because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::server::CRagdollPropAttached) == 0xc90);
+        static_assert(sizeof(source2sdk::server::CRagdollPropAttached) == 0xb60);
     };
 };

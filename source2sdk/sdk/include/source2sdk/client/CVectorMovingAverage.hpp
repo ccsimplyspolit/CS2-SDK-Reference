@@ -22,10 +22,6 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0000[0x20];
-            // Datamap fields:
-            // void m_vecSamples; // 0x0
-            // int32_t m_nSamples; // 0x18
-            // int32_t m_nCurrentSampleIndex; // 0x1c
             // No schema binary for binding
         };
         #pragma pack(pop)

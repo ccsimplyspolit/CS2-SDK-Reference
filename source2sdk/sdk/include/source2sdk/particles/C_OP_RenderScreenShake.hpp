@@ -18,8 +18,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x238
+        // Size: 0x250
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -27,33 +28,33 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "duration scale"
-            float m_flDurationScale; // 0x210            
+            float m_flDurationScale; // 0x228            
             // metadata: MPropertyFriendlyName "radius scale"
-            float m_flRadiusScale; // 0x214            
+            float m_flRadiusScale; // 0x22c            
             // metadata: MPropertyFriendlyName "frequence scale"
-            float m_flFrequencyScale; // 0x218            
+            float m_flFrequencyScale; // 0x230            
             // metadata: MPropertyFriendlyName "amplitude scale"
-            float m_flAmplitudeScale; // 0x21c            
+            float m_flAmplitudeScale; // 0x234            
             // metadata: MPropertyFriendlyName "radius field"
             // metadata: MPropertyAttributeChoiceName "particlefield_scalar"
-            source2sdk::particles::ParticleAttributeIndex_t m_nRadiusField; // 0x220            
+            source2sdk::particles::ParticleAttributeIndex_t m_nRadiusField; // 0x238            
             // metadata: MPropertyFriendlyName "duration field"
             // metadata: MPropertyAttributeChoiceName "particlefield_scalar"
-            source2sdk::particles::ParticleAttributeIndex_t m_nDurationField; // 0x224            
+            source2sdk::particles::ParticleAttributeIndex_t m_nDurationField; // 0x23c            
             // metadata: MPropertyFriendlyName "frequency field"
             // metadata: MPropertyAttributeChoiceName "particlefield_scalar"
-            source2sdk::particles::ParticleAttributeIndex_t m_nFrequencyField; // 0x228            
+            source2sdk::particles::ParticleAttributeIndex_t m_nFrequencyField; // 0x240            
             // metadata: MPropertyFriendlyName "amplitude field"
             // metadata: MPropertyAttributeChoiceName "particlefield_scalar"
-            source2sdk::particles::ParticleAttributeIndex_t m_nAmplitudeField; // 0x22c            
+            source2sdk::particles::ParticleAttributeIndex_t m_nAmplitudeField; // 0x244            
             // metadata: MPropertyFriendlyName "control point of shake recipient (-1 = global)"
-            std::int32_t m_nFilterCP; // 0x230            
-            uint8_t _pad0234[0x4];
+            std::int32_t m_nFilterCP; // 0x248            
+            uint8_t _pad024c[0x4];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_OP_RenderScreenShake because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_OP_RenderScreenShake) == 0x238);
+        static_assert(sizeof(source2sdk::particles::C_OP_RenderScreenShake) == 0x250);
     };
 };

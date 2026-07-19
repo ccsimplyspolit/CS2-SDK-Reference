@@ -18,6 +18,7 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0xc
         // Has Trivial Destructor
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -29,7 +30,7 @@ namespace source2sdk
             bool m_bRecomputeSmoothNormalsAfterAnimation; // 0x8            
             bool m_bComputeDynamicMeshTensionAfterAnimation; // 0x9            
             bool m_bSmoothNormalsAcrossUvSeams; // 0xa            
-            uint8_t _pad000b[0x1];
+            bool m_bEnableEyeBulgeDeformation; // 0xb            
         };
         #pragma pack(pop)
         
@@ -38,6 +39,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::modellib::DynamicMeshDeformParams_t, m_bRecomputeSmoothNormalsAfterAnimation) == 0x8);
         static_assert(offsetof(source2sdk::modellib::DynamicMeshDeformParams_t, m_bComputeDynamicMeshTensionAfterAnimation) == 0x9);
         static_assert(offsetof(source2sdk::modellib::DynamicMeshDeformParams_t, m_bSmoothNormalsAcrossUvSeams) == 0xa);
+        static_assert(offsetof(source2sdk::modellib::DynamicMeshDeformParams_t, m_bEnableEyeBulgeDeformation) == 0xb);
         
         static_assert(sizeof(source2sdk::modellib::DynamicMeshDeformParams_t) == 0xc);
     };

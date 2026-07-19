@@ -62,12 +62,12 @@ The `CCSGOInput` global. This is where the user-command build pipeline lives.
 `CGlobalVarsBase*` — game time, frame time, tick count. Every entity
 tick-based logic reads these.
 
-### `client.dll.dwEntityList` / `dwGameEntitySystem` — `0x2549920`
+### `client.dll.dwEntityList` / `dwGameEntitySystem` — `0x254EE60`
 
 The entity list root. From here you can walk every networked entity in the
 world. Same offset for both symbols in current builds — they alias.
 
-### `client.dll.dwGlowManager` — `0x23A4008`
+### `client.dll.dwGlowManager` — `0x23A0708`
 
 Glow effects registry. Rarely relevant for VMP work; useful for ESP-adjacent
 plugins.
@@ -76,16 +76,16 @@ plugins.
 
 `C_Prediction*` — where client-side prediction state lives.
 
-### `client.dll.dwSensitivity` — `0x23A48A8`
+### `client.dll.dwSensitivity` — `0x23A1228`
 
 `CSensitivity*` — mouse sensitivity + `dwSensitivity_sensitivity` (`+0x58`)
 is the float you want if you're scaling raw mouse deltas.
 
-### `client.dll.dwViewAngles` — `0x23BE578`
+### `client.dll.dwViewAngles` — `0x23B9C78`
 
 Current view angles (pitch/yaw/roll) as a `QAngle` — a 3-float struct.
 
-### `client.dll.dwViewMatrix` — `0x23A9A80`
+### `client.dll.dwViewMatrix` — `0x23A9340`
 
 The 4x4 world-to-screen matrix. Read as 16 consecutive floats; used for
 projecting world coords to screen for ESP.
@@ -104,7 +104,7 @@ The `INetworkGameClient*`. Its sub-offsets:
 - `+0xF8`  (`dwNetworkGameClient_localPlayer`) — local player slot.
 - `+0x240` (`dwNetworkGameClient_maxClients`) — server capacity.
 
-### `engine2.dll.dwBuildNumber` — `0x60F014`
+### `engine2.dll.dwBuildNumber` — `0x60F594`
 
 Game build number. Read as `int32` at `engine2.dll + dwBuildNumber` — this
 is the fastest way in code to know which cs2 build you're running against.

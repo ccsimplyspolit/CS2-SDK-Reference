@@ -736,34 +736,68 @@ namespace {
     }
 
     [[nodiscard]]
-    ClassAssemblyState AssembleBitfield(codegen::IGenerator& generator, ClassAssemblyState&& state) {
+    ClassAssemblyState AssembleBitfield(codegen::IGenerator& generator, ClassAssemblyState&& state, std::int64_t bitfield_end_offset) {
         state.assembling_bitfield = false;
 
         std::size_t exact_bitfield_size_bits = 0;
         for (const auto& entry : state.bitfield) {
             exact_bitfield_size_bits += entry.size;
         }
-        const auto type_name = field_parser::guess_bitfield_type(exact_bitfield_size_bits);
+
+        // Named bitfields (`uint32_t x : 14; ...`) occupy a whole storage unit
+        // of the member type on MSVC — bit_ceil() of the summed bits, i.e. the
+        // same width MSVC allocates. The REAL block, however, is only as wide as
+        // the gap to the next field. When the game (also MSVC-built) packed it
+        // narrower — a 24-bit block sitting in 3 bytes, not 4 — named bitfields
+        // would over-allocate and push every following field forward by the
+        // difference. Emit those blocks as a raw byte array of the real width so
+        // the layout matches the binary on every compiler; keep the field
+        // breakdown in a comment. Blocks whose real width is >= the natural one
+        // are left as named bitfields (any surplus becomes trailing padding,
+        // which the caller's InsertPadUntil already handles).
+        //
+        // The block starts where the previous field ends: the schema reports
+        // every bitfield member at offset 0, so state.bitfield_start is useless
+        // for positioning — the running last_field_offset+size is the real start.
+        const std::int64_t bitfield_start = state.last_field_offset.value_or(0) + state.last_field_size.value_or(0);
+        const std::int64_t real_size_bytes = bitfield_end_offset - bitfield_start;
+        const std::size_t natural_size_bytes = std::bit_ceil(std::max(std::size_t{8}, exact_bitfield_size_bits)) / 8;
+        const bool overshoots = real_size_bytes > 0 && static_cast<std::size_t>(real_size_bytes) < natural_size_bytes;
 
         generator.begin_bitfield_block();
 
-        for (const auto& entry : state.bitfield) {
-            for (const auto& field_metadata : entry.metadata) {
-                if (auto data = GetMetadataValue(field_metadata); data.empty())
-                    generator.comment(std::format("metadata: {}", field_metadata.m_szName));
-                else
-                    generator.comment(std::format("metadata: {} \"{}\"", field_metadata.m_szName, data));
+        if (overshoots) {
+            for (const auto& entry : state.bitfield) {
+                generator.comment(std::format("bitfield {} : {} bit(s)", entry.name, entry.size));
+                for (const auto& field_metadata : entry.metadata) {
+                    if (auto data = GetMetadataValue(field_metadata); data.empty())
+                        generator.comment(std::format("  metadata: {}", field_metadata.m_szName));
+                    else
+                        generator.comment(std::format("  metadata: {} \"{}\"", field_metadata.m_szName, data));
+                }
             }
+            generator.prop(codegen::Prop{.type_name = "uint8_t",
+                                         .name = std::format("_bitfield{:04x}[{:#x}]", bitfield_start, real_size_bytes)},
+                           true);
+        } else {
+            const auto type_name = field_parser::guess_bitfield_type(exact_bitfield_size_bits);
+            for (const auto& entry : state.bitfield) {
+                for (const auto& field_metadata : entry.metadata) {
+                    if (auto data = GetMetadataValue(field_metadata); data.empty())
+                        generator.comment(std::format("metadata: {}", field_metadata.m_szName));
+                    else
+                        generator.comment(std::format("metadata: {} \"{}\"", field_metadata.m_szName, data));
+                }
 
-            generator.prop(codegen::Prop{.type_name = type_name, .name = entry.name, .bitfield_size = entry.size}, true);
+                generator.prop(codegen::Prop{.type_name = type_name, .name = entry.name, .bitfield_size = entry.size}, true);
+            }
         }
 
         generator.end_bitfield_block(false).reset_tabs_count().comment(std::format("{:d} bits", exact_bitfield_size_bits)).restore_tabs_count();
 
         state.bitfield.clear();
-        state.last_field_offset = state.last_field_offset.value_or(0) + state.last_field_size.value_or(0);
-        // call to bit_ceil() relies on guess_bitfield_type() returning the next highest power of 2
-        state.last_field_size = std::bit_ceil(std::max(std::size_t{8}, exact_bitfield_size_bits)) / 8;
+        state.last_field_offset = bitfield_start;
+        state.last_field_size = overshoots ? static_cast<std::size_t>(real_size_bytes) : natural_size_bytes;
 
         return state;
     }
@@ -940,8 +974,9 @@ namespace {
             InsertPadUntil(generator, state, state.assembling_bitfield ? state.bitfield_start : field.m_nSingleInheritanceOffset, verbose);
 
             // This is the first field after a bitfield, i.e. the active bitfield has ended. Emit the bitfield we have collected.
+            // Its real width is the gap up to this field's offset.
             if (state.assembling_bitfield) {
-                state = AssembleBitfield(generator, std::move(state));
+                state = AssembleBitfield(generator, std::move(state), field.m_nSingleInheritanceOffset);
 
                 // We need another pad here because the current loop iteration is already on a non-bitfield field which will get emitted right away.
                 InsertPadUntil(generator, state, field.m_nSingleInheritanceOffset, verbose);
@@ -1035,9 +1070,9 @@ namespace {
         }
 
         // @note: @es3n1n: if struct ends with bitfield we should end bitfield before ending the class
-        //
+        // A trailing bitfield runs up to the end of the class.
         if (state.assembling_bitfield) {
-            state = AssembleBitfield(generator, std::move(state));
+            state = AssembleBitfield(generator, std::move(state), class_size);
         }
 
         // pad the class end.

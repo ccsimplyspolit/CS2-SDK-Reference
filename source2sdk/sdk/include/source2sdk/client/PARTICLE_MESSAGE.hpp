@@ -13,7 +13,7 @@ namespace source2sdk
 {
     namespace client
     {
-        // Enumerator count: 39
+        // Enumerator count: 42
         // Alignment: 4
         // Size: 0x4
         enum class PARTICLE_MESSAGE : std::uint32_t
@@ -57,6 +57,9 @@ namespace source2sdk
             GAME_PARTICLE_MANAGER_EVENT_ADD_FAN = 0x24,
             GAME_PARTICLE_MANAGER_EVENT_UPDATE_FAN = 0x25,
             GAME_PARTICLE_MANAGER_EVENT_SET_CLUSTER_GROWTH = 0x26,
+            GAME_PARTICLE_MANAGER_EVENT_REMOVE_FAN = 0x27,
+            GAME_PARTICLE_MANAGER_EVENT_CREATE_SMOKE_GRID = 0x28,
+            GAME_PARTICLE_MANAGER_EVENT_SET_OVERRIDE_TEXTURE = 0x29,
         };
     };
 };

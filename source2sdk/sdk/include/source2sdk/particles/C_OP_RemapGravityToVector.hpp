@@ -5,8 +5,8 @@
 #include <cstdint>
 #include "source2sdk/particles/CParticleFunctionOperator.hpp"
 #include "source2sdk/particles/ParticleAttributeIndex_t.hpp"
-#include "source2sdk/particles/ParticleSetMethod_t.hpp"
 #include "source2sdk/particleslib/CPerParticleVecInput.hpp"
+#include "source2sdk/particleslib/ParticleSetMethod_t.hpp"
 
 // /////////////////////////////////////////////////////////////
 // Module: particles
@@ -20,8 +20,9 @@ namespace source2sdk
         // Registered alignment: 0x10
         // Alignment: 0x10
         // Standard-layout class: false
-        // Size: 0x8b0
+        // Size: 0x900
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -29,20 +30,20 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "position input"
-            source2sdk::particleslib::CPerParticleVecInput m_vInput1; // 0x1c0            
+            source2sdk::particleslib::CPerParticleVecInput m_vInput1; // 0x1d8            
             // metadata: MPropertyFriendlyName "output field"
             // metadata: MPropertyAttributeChoiceName "particlefield_vector"
-            source2sdk::particles::ParticleAttributeIndex_t m_nOutputField; // 0x838            
+            source2sdk::particles::ParticleAttributeIndex_t m_nOutputField; // 0x890            
             // metadata: MPropertyFriendlyName "set value method"
-            source2sdk::particles::ParticleSetMethod_t m_nSetMethod; // 0x83c            
+            source2sdk::particleslib::ParticleSetMethod_t m_nSetMethod; // 0x894            
             // metadata: MPropertyFriendlyName "normalize result"
-            bool m_bNormalizedOutput; // 0x840            
-            uint8_t _pad0841[0x6f];
+            bool m_bNormalizedOutput; // 0x898            
+            uint8_t _pad0899[0x67];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_OP_RemapGravityToVector because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_OP_RemapGravityToVector) == 0x8b0);
+        static_assert(sizeof(source2sdk::particles::C_OP_RemapGravityToVector) == 0x900);
     };
 };

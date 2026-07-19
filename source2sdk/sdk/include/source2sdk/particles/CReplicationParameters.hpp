@@ -19,7 +19,8 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x1118
+        // Size: 0x11c8
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -34,18 +35,18 @@ namespace source2sdk
             // metadata: MPropertyFriendlyName "Minimum random scale for radius"
             source2sdk::particleslib::CParticleCollectionFloatInput m_flMinRandomRadiusScale; // 0x8            
             // metadata: MPropertyFriendlyName "Maximum random scale for radius"
-            source2sdk::particleslib::CParticleCollectionFloatInput m_flMaxRandomRadiusScale; // 0x168            
+            source2sdk::particleslib::CParticleCollectionFloatInput m_flMaxRandomRadiusScale; // 0x178            
             // metadata: MPropertyFriendlyName "min random displacement for child particles"
-            source2sdk::particleslib::CParticleCollectionVecInput m_vMinRandomDisplacement; // 0x2c8            
+            source2sdk::particleslib::CParticleCollectionVecInput m_vMinRandomDisplacement; // 0x2e8            
             // metadata: MPropertyFriendlyName "max random displacement for child particles"
-            source2sdk::particleslib::CParticleCollectionVecInput m_vMaxRandomDisplacement; // 0x940            
+            source2sdk::particleslib::CParticleCollectionVecInput m_vMaxRandomDisplacement; // 0x9a0            
             // metadata: MPropertyFriendlyName "Modelling scale"
-            source2sdk::particleslib::CParticleCollectionFloatInput m_flModellingScale; // 0xfb8            
+            source2sdk::particleslib::CParticleCollectionFloatInput m_flModellingScale; // 0x1058            
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in CReplicationParameters because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::CReplicationParameters) == 0x1118);
+        static_assert(sizeof(source2sdk::particles::CReplicationParameters) == 0x11c8);
     };
 };

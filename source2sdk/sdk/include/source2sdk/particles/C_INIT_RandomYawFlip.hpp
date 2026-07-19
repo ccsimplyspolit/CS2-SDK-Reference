@@ -17,22 +17,24 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x1d0
+        // Size: 0x1e8
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
+        // static metadata: MGPUParticleFunction
         #pragma pack(push, 1)
         class C_INIT_RandomYawFlip : public source2sdk::particles::CParticleFunctionInitializer
         {
         public:
             // metadata: MPropertyFriendlyName "flip percentage"
-            float m_flPercent; // 0x1c8            
-            uint8_t _pad01cc[0x4];
+            float m_flPercent; // 0x1e0            
+            uint8_t _pad01e4[0x4];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_INIT_RandomYawFlip because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_INIT_RandomYawFlip) == 0x1d0);
+        static_assert(sizeof(source2sdk::particles::C_INIT_RandomYawFlip) == 0x1e8);
     };
 };

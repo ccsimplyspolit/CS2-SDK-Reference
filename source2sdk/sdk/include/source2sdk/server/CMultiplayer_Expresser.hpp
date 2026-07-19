@@ -14,11 +14,12 @@ namespace source2sdk
 {
     namespace server
     {
-        // Registered alignment: unknown
+        // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
         // Size: 0xa8
         // Has VTable
+        // Construct allowed
         #pragma pack(push, 1)
         class CMultiplayer_Expresser : public source2sdk::server::CAI_ExpresserWithFollowup
         {

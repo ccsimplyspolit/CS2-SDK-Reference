@@ -17,8 +17,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x1d8
+        // Size: 0x1f0
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -26,24 +27,24 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "direction matching strength"
-            float m_flDirScale; // 0x1c0            
+            float m_flDirScale; // 0x1d8            
             // metadata: MPropertyFriendlyName "speed matching strength"
-            float m_flSpdScale; // 0x1c4            
+            float m_flSpdScale; // 0x1dc            
             // metadata: MPropertyFriendlyName "neighbor distance"
-            float m_flNeighborDistance; // 0x1c8            
+            float m_flNeighborDistance; // 0x1e0            
             // metadata: MPropertyFriendlyName "facing strength falloff"
-            float m_flFacingStrength; // 0x1cc            
+            float m_flFacingStrength; // 0x1e4            
             // metadata: MPropertyFriendlyName "use AABB"
             // metadata: MPropertySuppressExpr "m_flNeighborDistance > 0"
-            bool m_bUseAABB; // 0x1d0            
-            uint8_t _pad01d1[0x3]; // 0x1d1
+            bool m_bUseAABB; // 0x1e8            
+            uint8_t _pad01e9[0x3]; // 0x1e9
             // metadata: MPropertyFriendlyName "control point to broadcast speed and direction to"
-            std::int32_t m_nCPBroadcast; // 0x1d4            
+            std::int32_t m_nCPBroadcast; // 0x1ec            
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_OP_VelocityMatchingForce because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_OP_VelocityMatchingForce) == 0x1d8);
+        static_assert(sizeof(source2sdk::particles::C_OP_VelocityMatchingForce) == 0x1f0);
     };
 };

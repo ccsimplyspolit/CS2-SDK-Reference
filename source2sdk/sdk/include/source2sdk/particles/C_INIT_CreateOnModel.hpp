@@ -21,56 +21,63 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x12e0
+        // Size: 0x1398
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
+        // static metadata: MGPUParticleFunction
         #pragma pack(push, 1)
         class C_INIT_CreateOnModel : public source2sdk::particles::CParticleFunctionInitializer
         {
         public:
             // metadata: MPropertyFriendlyName "input model"
-            source2sdk::particleslib::CParticleModelInput m_modelInput; // 0x1c8            
+            source2sdk::particleslib::CParticleModelInput m_modelInput; // 0x1e0            
             // metadata: MPropertyFriendlyName "input transform for transforming local space bias vector"
             // metadata: MParticleInputOptional
-            source2sdk::particleslib::CParticleTransformInput m_transformInput; // 0x228            
+            source2sdk::particleslib::CParticleTransformInput m_transformInput; // 0x240            
             // metadata: MPropertyFriendlyName "force to be inside model"
-            std::int32_t m_nForceInModel; // 0x290            
+            // metadata: MPropertySuppressExpr "is_gpu_particle_system"
+            std::int32_t m_nForceInModel; // 0x2a8            
             // metadata: MPropertyFriendlyName "bias box distribution by volume"
-            bool m_bScaleToVolume; // 0x294            
+            bool m_bScaleToVolume; // 0x2ac            
             // metadata: MPropertyFriendlyName "even distribution within boxes"
-            bool m_bEvenDistribution; // 0x295            
-            uint8_t _pad0296[0x2]; // 0x296
+            bool m_bEvenDistribution; // 0x2ad            
+            uint8_t _pad02ae[0x2]; // 0x2ae
             // metadata: MPropertyFriendlyName "desired hitbox"
-            source2sdk::particleslib::CParticleCollectionFloatInput m_nDesiredHitbox; // 0x298            
+            source2sdk::particleslib::CParticleCollectionFloatInput m_nDesiredHitbox; // 0x2b0            
             // metadata: MPropertyFriendlyName "Control Point Providing Hitbox index"
-            std::int32_t m_nHitboxValueFromControlPointIndex; // 0x3f8            
-            uint8_t _pad03fc[0x4]; // 0x3fc
+            std::int32_t m_nHitboxValueFromControlPointIndex; // 0x420            
+            uint8_t _pad0424[0x4]; // 0x424
             // metadata: MPropertyFriendlyName "hitbox scale"
-            source2sdk::particleslib::CParticleCollectionVecInput m_vecHitBoxScale; // 0x400            
+            source2sdk::particleslib::CParticleCollectionVecInput m_vecHitBoxScale; // 0x428            
             // metadata: MPropertyFriendlyName "inherited velocity scale"
-            float m_flBoneVelocity; // 0xa78            
+            float m_flBoneVelocity; // 0xae0            
             // metadata: MPropertyFriendlyName "maximum inherited velocity"
-            float m_flMaxBoneVelocity; // 0xa7c            
+            float m_flMaxBoneVelocity; // 0xae4            
             // metadata: MPropertyFriendlyName "direction bias"
             // metadata: MVectorIsCoordinate
-            source2sdk::particleslib::CParticleCollectionVecInput m_vecDirectionBias; // 0xa80            
+            // metadata: MPropertySuppressExpr "is_gpu_particle_system"
+            source2sdk::particleslib::CParticleCollectionVecInput m_vecDirectionBias; // 0xae8            
             // metadata: MPropertyFriendlyName "hitbox set"
-            char m_HitboxSetName[128]; // 0x10f8            
+            char m_HitboxSetName[128]; // 0x11a0            
             // metadata: MPropertyFriendlyName "bias in local space"
-            bool m_bLocalCoords; // 0x1178            
+            bool m_bLocalCoords; // 0x1220            
             // metadata: MPropertyFriendlyName "use bones instead of hitboxes"
-            bool m_bUseBones; // 0x1179            
+            // metadata: MPropertySuppressExpr "is_gpu_particle_system"
+            bool m_bUseBones; // 0x1221            
             // metadata: MPropertyFriendlyName "Use renderable meshes instead of hitboxes"
-            bool m_bUseMesh; // 0x117a            
-            uint8_t _pad117b[0x5]; // 0x117b
+            // metadata: MPropertySuppressExpr "is_gpu_particle_system"
+            bool m_bUseMesh; // 0x1222            
+            uint8_t _pad1223[0x5]; // 0x1223
             // metadata: MPropertyFriendlyName "hitbox shell thickness"
-            source2sdk::particleslib::CParticleCollectionFloatInput m_flShellSize; // 0x1180            
+            // metadata: MPropertySuppressExpr "is_gpu_particle_system"
+            source2sdk::particleslib::CParticleCollectionFloatInput m_flShellSize; // 0x1228            
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_INIT_CreateOnModel because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_INIT_CreateOnModel) == 0x12e0);
+        static_assert(sizeof(source2sdk::particles::C_INIT_CreateOnModel) == 0x1398);
     };
 };

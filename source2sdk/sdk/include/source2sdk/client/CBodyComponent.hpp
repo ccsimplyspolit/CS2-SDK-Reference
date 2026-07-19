@@ -27,12 +27,18 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x78
         // Has VTable
+        // Construct allowed
+        // Construct disallowed
+        // 
+        // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CBodyComponent : public source2sdk::entity2::CEntityComponent
         {
         public:
+            // metadata: MNotSaved
             source2sdk::client::CGameSceneNode* m_pSceneNode; // 0x8            
             uint8_t _pad0010[0x38]; // 0x10
+            // metadata: MNotSaved
             source2sdk::entity2::CNetworkVarChainer __m_pChainEntity; // 0x48            
             uint8_t _pad0070[0x8];
         };

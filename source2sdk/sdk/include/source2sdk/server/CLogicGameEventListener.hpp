@@ -18,22 +18,20 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x530
+        // Size: 0x4e8
         // Has VTable
-        // 
-        // static metadata: MNetworkVarNames "bool m_bEnabled"
+        // Construct allowed
         #pragma pack(push, 1)
         class CLogicGameEventListener : public source2sdk::server::CLogicalEntity
         {
         public:
-            uint8_t _pad04e0[0x10]; // 0x4e0
-            source2sdk::entity2::CEntityIOOutput m_OnEventFired; // 0x4f0            
-            CUtlSymbolLarge m_iszGameEventName; // 0x518            
-            CUtlSymbolLarge m_iszGameEventItem; // 0x520            
-            // metadata: MNetworkEnable
-            bool m_bEnabled; // 0x528            
-            bool m_bStartDisabled; // 0x529            
-            uint8_t _pad052a[0x6];
+            uint8_t _pad04a8[0x10]; // 0x4a8
+            source2sdk::entity2::CEntityIOOutput m_OnEventFired; // 0x4b8            
+            CUtlSymbolLarge m_iszGameEventName; // 0x4d0            
+            CUtlSymbolLarge m_iszGameEventItem; // 0x4d8            
+            bool m_bEnabled; // 0x4e0            
+            bool m_bStartDisabled; // 0x4e1            
+            uint8_t _pad04e2[0x6];
             
             // Datamap fields:
             // void InputEnable; // 0x0
@@ -44,6 +42,6 @@ namespace source2sdk
         
         // Cannot assert offsets of fields in CLogicGameEventListener because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::server::CLogicGameEventListener) == 0x530);
+        static_assert(sizeof(source2sdk::server::CLogicGameEventListener) == 0x4e8);
     };
 };

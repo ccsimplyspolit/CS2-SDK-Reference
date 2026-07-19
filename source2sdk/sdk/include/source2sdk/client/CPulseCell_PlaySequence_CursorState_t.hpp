@@ -7,7 +7,7 @@ namespace source2sdk
 {
     namespace client
     {
-        struct CBaseAnimatingActivity;
+        struct CBaseAnimGraph;
     };
 };
 
@@ -25,6 +25,7 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x4
         // Has Trivial Destructor
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -32,7 +33,7 @@ namespace source2sdk
         {
         public:
             // m_hTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
-            // CHandle<source2sdk::client::CBaseAnimatingActivity> m_hTarget;
+            // CHandle<source2sdk::client::CBaseAnimGraph> m_hTarget;
             char m_hTarget[0x4]; // 0x0            
         };
         #pragma pack(pop)

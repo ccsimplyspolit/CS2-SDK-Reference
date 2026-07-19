@@ -25,23 +25,21 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x48
         // Has VTable
+        // Construct allowed
         // 
-        // static metadata: MNetworkVarNames "CTransform m_Transforms"
-        // static metadata: MNetworkVarNames "EHANDLE m_hOwner"
+        // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct PhysicsRagdollPose_t
         {
         public:
             uint8_t _pad0000[0x8]; // 0x0
-            // metadata: MNetworkEnable
-            // metadata: MNetworkChangeCallback "OnTransformChanged"
             // m_Transforms has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // C_NetworkUtlVectorBase<CTransform> m_Transforms;
             char m_Transforms[0x18]; // 0x8            
-            // metadata: MNetworkEnable
             // m_hOwner has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::C_BaseEntity> m_hOwner;
             char m_hOwner[0x4]; // 0x20            
+            // metadata: MNotSaved
             bool m_bSetFromDebugHistory; // 0x24            
             uint8_t _pad0025[0x23];
         };

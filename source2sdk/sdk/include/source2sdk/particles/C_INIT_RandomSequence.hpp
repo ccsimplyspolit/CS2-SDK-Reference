@@ -18,35 +18,37 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x1f8
+        // Size: 0x228
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
+        // static metadata: MGPUParticleFunction
         #pragma pack(push, 1)
         class C_INIT_RandomSequence : public source2sdk::particles::CParticleFunctionInitializer
         {
         public:
             // metadata: MPropertyFriendlyName "sequence min"
             // metadata: MPropertyAttributeEditor "SequencePicker( 1 )"
-            std::int32_t m_nSequenceMin; // 0x1c8            
+            std::int32_t m_nSequenceMin; // 0x1e0            
             // metadata: MPropertyFriendlyName "sequence max"
             // metadata: MPropertyAttributeEditor "SequencePicker( 1 )"
-            std::int32_t m_nSequenceMax; // 0x1cc            
+            std::int32_t m_nSequenceMax; // 0x1e4            
             // metadata: MPropertyFriendlyName "shuffle"
-            bool m_bShuffle; // 0x1d0            
+            bool m_bShuffle; // 0x1e8            
             // metadata: MPropertyFriendlyName "linear"
-            bool m_bLinear; // 0x1d1            
-            uint8_t _pad01d2[0x6]; // 0x1d2
+            bool m_bLinear; // 0x1e9            
+            uint8_t _pad01ea[0x6]; // 0x1ea
             // metadata: MPropertyFriendlyName "weighted list"
             // m_WeightedList has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::particles::SequenceWeightedList_t> m_WeightedList;
-            char m_WeightedList[0x18]; // 0x1d8            
-            uint8_t _pad01f0[0x8];
+            char m_WeightedList[0x18]; // 0x1f0            
+            uint8_t _pad0208[0x20];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_INIT_RandomSequence because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_INIT_RandomSequence) == 0x1f8);
+        static_assert(sizeof(source2sdk::particles::C_INIT_RandomSequence) == 0x228);
     };
 };

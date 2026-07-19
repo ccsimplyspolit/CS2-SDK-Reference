@@ -17,8 +17,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x1d0
+        // Size: 0x1e8
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -27,15 +28,15 @@ namespace source2sdk
         public:
             // metadata: MPropertyFriendlyName "sequence min"
             // metadata: MPropertyAttributeEditor "SequencePicker( 2 )"
-            std::int32_t m_nSequenceMin; // 0x1c8            
+            std::int32_t m_nSequenceMin; // 0x1e0            
             // metadata: MPropertyFriendlyName "sequence max"
             // metadata: MPropertyAttributeEditor "SequencePicker( 2 )"
-            std::int32_t m_nSequenceMax; // 0x1cc            
+            std::int32_t m_nSequenceMax; // 0x1e4            
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_INIT_RandomSecondSequence because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_INIT_RandomSecondSequence) == 0x1d0);
+        static_assert(sizeof(source2sdk::particles::C_INIT_RandomSecondSequence) == 0x1e8);
     };
 };

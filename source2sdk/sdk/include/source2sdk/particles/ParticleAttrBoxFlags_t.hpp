@@ -13,7 +13,7 @@ namespace source2sdk
 {
     namespace particles
     {
-        // Enumerator count: 7
+        // Enumerator count: 11
         // Alignment: 4
         // Size: 0x4
         enum class ParticleAttrBoxFlags_t : std::uint32_t
@@ -32,6 +32,14 @@ namespace source2sdk
             PARTICLE_ATTR_BOX_FLAGS_FROZEN = 0x10,
             // MPropertyFriendlyName "Timed Decay"
             PARTICLE_ATTR_BOX_FLAGS_TIMED_DECAY = 0x20,
+            // MPropertyFriendlyName "Disable Non-Static Collision"
+            PARTICLE_ATTR_BOX_FLAGS_DISABLE_NONSTATIC_COLLISION = 0x40,
+            // MPropertyFriendlyName "Decay From Wake"
+            PARTICLE_ATTR_BOX_FLAGS_WAKE_DECAY = 0x80,
+            // MPropertyFriendlyName "Motion Disabled"
+            PARTICLE_ATTR_BOX_FLAGS_MOTION_DISABLED = 0x100,
+            // MPropertyFriendlyName "Zero Gravity"
+            PARTICLE_ATTR_BOX_FLAGS_ZERO_GRAVITY = 0x200,
         };
     };
 };

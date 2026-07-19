@@ -19,11 +19,9 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x48
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
-        // static metadata: MCellForDomain "BaseDomain"
-        // static metadata: MPulseCellMethodBindings
-        // static metadata: MPulseCellOutflowHookInfo "@?Πώ"
         // static metadata: MPropertyFriendlyName "Choice Weight"
         // static metadata: MPropertyDescription "Specifies a weighting value which affects that likelyhood of selecting this element which picking a choice."
         #pragma pack(push, 1)

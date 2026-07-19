@@ -17,8 +17,10 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x5e8
+        // Size: 0x600
         // Has VTable
+        // Construct allowed
+        // MDisableDataDescValidation
         #pragma pack(push, 1)
         class C_PointEntity : public source2sdk::client::C_BaseEntity
         {
@@ -28,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_PointEntity) == 0x5e8);
+        static_assert(sizeof(source2sdk::client::C_PointEntity) == 0x600);
     };
 };

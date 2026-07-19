@@ -4,11 +4,12 @@
 
 cd /d "%~dp0"
 python tools\sync_from_upstream.py %*
-if errorlevel 1 (
-    echo.
-    echo Sync finished with error code %ERRORLEVEL%.
-) else (
-    echo.
+set "RC=%ERRORLEVEL%"
+echo.
+if "%RC%"=="0" (
     echo Sync OK.
+) else (
+    echo Sync finished with error code %RC%.
 )
 pause
+exit /b %RC%

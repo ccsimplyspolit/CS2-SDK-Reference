@@ -18,32 +18,26 @@ namespace source2sdk
         // Registered alignment: 0x10
         // Alignment: 0x10
         // Standard-layout class: false
-        // Size: 0x5f0
+        // Size: 0x5b0
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MEntityAllowsPortraitWorldSpawn
-        // static metadata: MNetworkVarNames "CPathQueryComponent::Storage_t m_CPathQueryComponent"
-        // static metadata: MNetworkVarNames "CUtlString m_pathString"
         #pragma pack(push, 1)
         class CPathSimple : public source2sdk::server::CBaseEntity
         {
         public:
-            uint8_t _pad04e0[0x10]; // 0x4e0
-            // metadata: MNetworkEnable
-            // metadata: MNetworkUserGroup "CPathQueryComponent"
-            // metadata: MNetworkAlias "CPathQueryComponent"
-            // metadata: MNetworkTypeAlias "CPathQueryComponent"
-            source2sdk::server::CPathQueryComponent m_CPathQueryComponent; // 0x4f0            
-            uint8_t _pad0590[0x50]; // 0x590
-            // metadata: MNetworkEnable
-            CUtlString m_pathString; // 0x5e0            
-            bool m_bClosedLoop; // 0x5e8            
-            uint8_t _pad05e9[0x7];
+            uint8_t _pad04a8[0x8]; // 0x4a8
+            source2sdk::server::CPathQueryComponent m_CPathQueryComponent; // 0x4b0            
+            uint8_t _pad0550[0x50]; // 0x550
+            CUtlString m_pathString; // 0x5a0            
+            bool m_bClosedLoop; // 0x5a8            
+            uint8_t _pad05a9[0x7];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in CPathSimple because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::server::CPathSimple) == 0x5f0);
+        static_assert(sizeof(source2sdk::server::CPathSimple) == 0x5b0);
     };
 };

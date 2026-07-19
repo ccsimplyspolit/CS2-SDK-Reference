@@ -20,6 +20,7 @@ namespace source2sdk
         // Alignment: 0x8
         // Standard-layout class: true
         // Size: 0x100
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MVDataRoot

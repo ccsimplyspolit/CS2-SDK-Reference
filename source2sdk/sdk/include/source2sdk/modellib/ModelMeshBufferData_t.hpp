@@ -18,6 +18,7 @@ namespace source2sdk
         // Alignment: 0x8
         // Standard-layout class: true
         // Size: 0x30
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -29,12 +30,14 @@ namespace source2sdk
             std::uint32_t m_nElementSizeInBytes; // 0x8            
             bool m_bMeshoptCompressed; // 0xc            
             bool m_bMeshoptIndexSequence; // 0xd            
-            bool m_bCompressedZSTD; // 0xe            
-            bool m_bCreateBufferSRV; // 0xf            
-            bool m_bCreateBufferUAV; // 0x10            
-            bool m_bCreateRawBuffer; // 0x11            
-            bool m_bCreatePooledBuffer; // 0x12            
-            uint8_t _pad0013[0x5]; // 0x13
+            std::int8_t m_nMeshoptMeshletEncodeVersion; // 0xe            
+            bool m_bCompressedZSTD; // 0xf            
+            bool m_bCreateBufferSRV; // 0x10            
+            bool m_bCreateBufferUAV; // 0x11            
+            bool m_bCreateRawBuffer; // 0x12            
+            bool m_bCreatePooledBuffer; // 0x13            
+            std::uint8_t m_nBufferUsage; // 0x14            
+            uint8_t _pad0015[0x3]; // 0x15
             // m_inputLayoutFields has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::modellib::RenderInputLayoutField_t> m_inputLayoutFields;
             char m_inputLayoutFields[0x18]; // 0x18            
@@ -46,11 +49,13 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::modellib::ModelMeshBufferData_t, m_nElementSizeInBytes) == 0x8);
         static_assert(offsetof(source2sdk::modellib::ModelMeshBufferData_t, m_bMeshoptCompressed) == 0xc);
         static_assert(offsetof(source2sdk::modellib::ModelMeshBufferData_t, m_bMeshoptIndexSequence) == 0xd);
-        static_assert(offsetof(source2sdk::modellib::ModelMeshBufferData_t, m_bCompressedZSTD) == 0xe);
-        static_assert(offsetof(source2sdk::modellib::ModelMeshBufferData_t, m_bCreateBufferSRV) == 0xf);
-        static_assert(offsetof(source2sdk::modellib::ModelMeshBufferData_t, m_bCreateBufferUAV) == 0x10);
-        static_assert(offsetof(source2sdk::modellib::ModelMeshBufferData_t, m_bCreateRawBuffer) == 0x11);
-        static_assert(offsetof(source2sdk::modellib::ModelMeshBufferData_t, m_bCreatePooledBuffer) == 0x12);
+        static_assert(offsetof(source2sdk::modellib::ModelMeshBufferData_t, m_nMeshoptMeshletEncodeVersion) == 0xe);
+        static_assert(offsetof(source2sdk::modellib::ModelMeshBufferData_t, m_bCompressedZSTD) == 0xf);
+        static_assert(offsetof(source2sdk::modellib::ModelMeshBufferData_t, m_bCreateBufferSRV) == 0x10);
+        static_assert(offsetof(source2sdk::modellib::ModelMeshBufferData_t, m_bCreateBufferUAV) == 0x11);
+        static_assert(offsetof(source2sdk::modellib::ModelMeshBufferData_t, m_bCreateRawBuffer) == 0x12);
+        static_assert(offsetof(source2sdk::modellib::ModelMeshBufferData_t, m_bCreatePooledBuffer) == 0x13);
+        static_assert(offsetof(source2sdk::modellib::ModelMeshBufferData_t, m_nBufferUsage) == 0x14);
         static_assert(offsetof(source2sdk::modellib::ModelMeshBufferData_t, m_inputLayoutFields) == 0x18);
         
         static_assert(sizeof(source2sdk::modellib::ModelMeshBufferData_t) == 0x30);

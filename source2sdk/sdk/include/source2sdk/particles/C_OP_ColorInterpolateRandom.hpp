@@ -18,8 +18,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x200
+        // Size: 0x218
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -27,26 +28,26 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "color fade min"
-            Color m_ColorFadeMin; // 0x1c0            
-            uint8_t _pad01c4[0x18]; // 0x1c4
+            Color m_ColorFadeMin; // 0x1d8            
+            uint8_t _pad01dc[0x18]; // 0x1dc
             // metadata: MPropertyFriendlyName "color fade max"
-            Color m_ColorFadeMax; // 0x1dc            
-            uint8_t _pad01e0[0xc]; // 0x1e0
+            Color m_ColorFadeMax; // 0x1f4            
+            uint8_t _pad01f8[0xc]; // 0x1f8
             // metadata: MPropertyFriendlyName "fade start time"
-            float m_flFadeStartTime; // 0x1ec            
+            float m_flFadeStartTime; // 0x204            
             // metadata: MPropertyFriendlyName "fade end time"
-            float m_flFadeEndTime; // 0x1f0            
+            float m_flFadeEndTime; // 0x208            
             // metadata: MPropertyFriendlyName "output field"
             // metadata: MPropertyAttributeChoiceName "particlefield_vector"
-            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1f4            
+            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x20c            
             // metadata: MPropertyFriendlyName "ease in and out"
-            bool m_bEaseInOut; // 0x1f8            
-            uint8_t _pad01f9[0x7];
+            bool m_bEaseInOut; // 0x210            
+            uint8_t _pad0211[0x7];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_OP_ColorInterpolateRandom because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_OP_ColorInterpolateRandom) == 0x200);
+        static_assert(sizeof(source2sdk::particles::C_OP_ColorInterpolateRandom) == 0x218);
     };
 };

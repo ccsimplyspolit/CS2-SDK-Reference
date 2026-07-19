@@ -19,8 +19,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x488
+        // Size: 0x4c0
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -29,17 +30,17 @@ namespace source2sdk
         public:
             // metadata: MPropertyFriendlyName "output field"
             // metadata: MPropertyAttributeChoiceName "particlefield_scalar"
-            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1c0            
-            uint8_t _pad01c4[0x4]; // 0x1c4
+            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1d8            
+            uint8_t _pad01dc[0x4]; // 0x1dc
             // metadata: MPropertyFriendlyName "output minimum"
-            source2sdk::particleslib::CPerParticleFloatInput m_flOutputMin; // 0x1c8            
+            source2sdk::particleslib::CPerParticleFloatInput m_flOutputMin; // 0x1e0            
             // metadata: MPropertyFriendlyName "output maximum"
-            source2sdk::particleslib::CPerParticleFloatInput m_flOutputMax; // 0x328            
+            source2sdk::particleslib::CPerParticleFloatInput m_flOutputMax; // 0x350            
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_OP_ClampScalar because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_OP_ClampScalar) == 0x488);
+        static_assert(sizeof(source2sdk::particles::C_OP_ClampScalar) == 0x4c0);
     };
 };

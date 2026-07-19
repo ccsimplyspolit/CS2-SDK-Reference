@@ -6,6 +6,7 @@
 #include "source2sdk/mathlib_extended/AABB_t.hpp"
 #include "source2sdk/modellib/CMaterialDrawDescriptor.hpp"
 #include "source2sdk/modellib/CMeshletDescriptor.hpp"
+#include "source2sdk/modellib/CSceneObjectData_RTProxyDrawDescriptor_t.hpp"
 
 // /////////////////////////////////////////////////////////////
 // Module: modellib
@@ -19,7 +20,8 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: true
-        // Size: 0x90
+        // Size: 0xb8
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -37,8 +39,11 @@ namespace source2sdk
             // m_meshlets has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlLeanVector<source2sdk::modellib::CMeshletDescriptor> m_meshlets;
             char m_meshlets[0x10]; // 0x38            
-            Vector4D m_vTintColor; // 0x48            
-            uint8_t _pad0058[0x38];
+            // m_rtProxyDrawCalls has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+            // CUtlLeanVector<source2sdk::modellib::CSceneObjectData_RTProxyDrawDescriptor_t> m_rtProxyDrawCalls;
+            char m_rtProxyDrawCalls[0x10]; // 0x48            
+            Vector4D m_vTintColor; // 0x58            
+            uint8_t _pad0068[0x50];
         };
         #pragma pack(pop)
         
@@ -47,8 +52,9 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::modellib::CSceneObjectData, m_drawCalls) == 0x18);
         static_assert(offsetof(source2sdk::modellib::CSceneObjectData, m_drawBounds) == 0x28);
         static_assert(offsetof(source2sdk::modellib::CSceneObjectData, m_meshlets) == 0x38);
-        static_assert(offsetof(source2sdk::modellib::CSceneObjectData, m_vTintColor) == 0x48);
+        static_assert(offsetof(source2sdk::modellib::CSceneObjectData, m_rtProxyDrawCalls) == 0x48);
+        static_assert(offsetof(source2sdk::modellib::CSceneObjectData, m_vTintColor) == 0x58);
         
-        static_assert(sizeof(source2sdk::modellib::CSceneObjectData) == 0x90);
+        static_assert(sizeof(source2sdk::modellib::CSceneObjectData) == 0xb8);
     };
 };

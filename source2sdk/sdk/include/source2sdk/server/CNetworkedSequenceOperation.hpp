@@ -14,49 +14,23 @@ namespace source2sdk
 {
     namespace server
     {
-        // Registered alignment: unknown
-        // Alignment: 0x4
+        // Registered alignment: 0x8
+        // Alignment: 0x8
         // Standard-layout class: true
         // Size: 0x28
         // Has VTable
         // Has Trivial Destructor
+        // Construct allowed
         // 
-        // static metadata: MNetworkVarNames "HSequence m_hSequence"
-        // static metadata: MNetworkVarNames "float32 m_flPrevCycle"
-        // static metadata: MNetworkVarNames "float32 m_flCycle"
+        // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CNetworkedSequenceOperation
         {
         public:
             uint8_t _pad0000[0x8]; // 0x0
-            // metadata: MNetworkEnable
-            // metadata: MNetworkSerializer "minusone"
-            // metadata: MNetworkChangeCallback "sequenceOpSequenceChanged"
-            // metadata: MNetworkPriority "32"
             source2sdk::animationsystem::HSequence m_hSequence; // 0x8            
-            // metadata: MNetworkEnable
-            // metadata: MNetworkBitCount "15"
-            // metadata: MNetworkMinValue "0,000000"
-            // metadata: MNetworkMaxValue "1,000000"
-            // metadata: MNetworkEncodeFlags "8"
-            // metadata: MNetworkPriority "32"
-            // metadata: MNetworkSendProxyRecipientsFilter
-            // metadata: MNetworkUserGroup "m_flCycle"
             float m_flPrevCycle; // 0xc            
-            // metadata: MNetworkEnable
-            // metadata: MNetworkBitCount "15"
-            // metadata: MNetworkMinValue "0,000000"
-            // metadata: MNetworkMaxValue "1,000000"
-            // metadata: MNetworkEncodeFlags "8"
-            // metadata: MNetworkPriority "32"
-            // metadata: MNetworkSendProxyRecipientsFilter
-            // metadata: MNetworkUserGroup "m_flCycle"
             float m_flCycle; // 0x10            
-            // metadata: MNetworkEnable
-            // metadata: MNetworkBitCount "8"
-            // metadata: MNetworkMinValue "0,000000"
-            // metadata: MNetworkMaxValue "1,000000"
-            // metadata: MNetworkEncodeFlags "0"
             CNetworkedQuantizedFloat m_flWeight; // 0x14            
             bool m_bSequenceChangeNetworked; // 0x1c            
             bool m_bDiscontinuity; // 0x1d            

@@ -17,20 +17,21 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x520
+        // Size: 0x4e0
         // Has VTable
+        // Construct allowed
         #pragma pack(push, 1)
         class CEnvGlobal : public source2sdk::server::CLogicalEntity
         {
         public:
             // m_outCounter has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEntityOutputTemplate<std::int32_t> m_outCounter;
-            char m_outCounter[0x28]; // 0x4e0            
-            CUtlSymbolLarge m_globalstate; // 0x508            
-            std::int32_t m_triggermode; // 0x510            
-            std::int32_t m_initialstate; // 0x514            
-            std::int32_t m_counter; // 0x518            
-            uint8_t _pad051c[0x4];
+            char m_outCounter[0x20]; // 0x4a8            
+            CUtlSymbolLarge m_globalstate; // 0x4c8            
+            std::int32_t m_triggermode; // 0x4d0            
+            std::int32_t m_initialstate; // 0x4d4            
+            std::int32_t m_counter; // 0x4d8            
+            uint8_t _pad04dc[0x4];
             
             // Datamap fields:
             // void InputTurnOn; // 0x0
@@ -45,6 +46,6 @@ namespace source2sdk
         
         // Cannot assert offsets of fields in CEnvGlobal because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::server::CEnvGlobal) == 0x520);
+        static_assert(sizeof(source2sdk::server::CEnvGlobal) == 0x4e0);
     };
 };

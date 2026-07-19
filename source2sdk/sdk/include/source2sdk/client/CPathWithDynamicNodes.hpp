@@ -1,0 +1,46 @@
+#pragma once
+
+#include "source2sdk/source2gen/source2gen.hpp"
+#include <cstddef>
+#include <cstdint>
+#include "source2sdk/client/CPathSimple.hpp"
+namespace source2sdk
+{
+    namespace client
+    {
+        struct CPathNode;
+    };
+};
+
+// /////////////////////////////////////////////////////////////
+// Module: client
+// Created using source2gen - github.com/neverlosecc/source2gen
+// /////////////////////////////////////////////////////////////
+
+namespace source2sdk
+{
+    namespace client
+    {
+        // Registered alignment: 0x10
+        // Alignment: 0x10
+        // Standard-layout class: false
+        // Size: 0x750
+        // Has VTable
+        // Construct allowed
+        #pragma pack(push, 1)
+        class CPathWithDynamicNodes : public source2sdk::client::CPathSimple
+        {
+        public:
+            // m_vecPathNodes has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+            // C_NetworkUtlVectorBase<CHandle<source2sdk::client::CPathNode>> m_vecPathNodes;
+            char m_vecPathNodes[0x18]; // 0x710            
+            uint8_t _pad0728[0x8]; // 0x728
+            CTransform m_xInitialPathWorldToLocal; // 0x730            
+        };
+        #pragma pack(pop)
+        
+        // Cannot assert offsets of fields in CPathWithDynamicNodes because it is not a standard-layout class
+        
+        static_assert(sizeof(source2sdk::client::CPathWithDynamicNodes) == 0x750);
+    };
+};

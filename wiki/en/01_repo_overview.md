@@ -48,13 +48,14 @@ CS2-SDK-Reference/
 ├── sync.sh                   POSIX launcher
 ├── offsets/
 │   ├── README.md
-│   ├── latest/               HEAD dump — offsets.json/.rs/.hpp/.cs
+│   ├── latest/               HEAD dump — offsets.{json,rs,hpp,cs} + info/interfaces/buttons.json
 │   └── history/              per-build snapshots
 ├── schema/
 │   ├── README.md
-│   ├── client_dll.json       ~200 classes, ~3189 fields
+│   ├── client_dll.json       563 classes, 3189 fields
+│   ├── server_dll.json       990 classes, 5871 fields (largest)
 │   ├── engine2_dll.json      engine-side classes
-│   └── server_dll.json       server-side classes (largest)
+│   └── *_dll.json            15 more modules (particles, animationsystem, ...) — 18 total
 ├── protobufs/
 │   ├── README.md
 │   └── *.proto               43 files
@@ -62,10 +63,16 @@ CS2-SDK-Reference/
 │   └── README.md             human-readable summaries
 ├── vmp_targets/
 │   └── README.md             VMP-plugin ↔ schema cross-reference
+├── source2gen/               the SDK generator (C++23), builds source2sdk/
+├── source2sdk/               generated CS2 SDK — 3748 headers, 33 modules
+├── cs2-dumper/               snapshot of the a2x dumper + its output/
+├── steamtracking-protos/     raw SteamTracking proto tree
 ├── tools/
 │   ├── sync_from_upstream.py      main sync driver
 │   ├── fetch_head_offsets.py      legacy offsets-only fetcher
-│   └── verify_offsets.py          live cs2 verifier
+│   ├── verify_offsets_static.py   offset verifier (installed binaries, no admin)
+│   ├── verify_offsets.py          live cs2 verifier
+│   └── verify_docs.py             checks doc-cited offsets against the schema
 └── wiki/                     this directory — deep dives
     ├── en/
     └── ru/

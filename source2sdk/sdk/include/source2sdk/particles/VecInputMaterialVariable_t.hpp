@@ -17,7 +17,8 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x680
+        // Size: 0x6c0
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -33,6 +34,6 @@ namespace source2sdk
         
         // Cannot assert offsets of fields in VecInputMaterialVariable_t because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::VecInputMaterialVariable_t) == 0x680);
+        static_assert(sizeof(source2sdk::particles::VecInputMaterialVariable_t) == 0x6c0);
     };
 };

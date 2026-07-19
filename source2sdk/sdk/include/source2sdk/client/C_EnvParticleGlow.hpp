@@ -18,30 +18,20 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0xf60
+        // Size: 0x1598
         // Has VTable
-        // 
-        // static metadata: MNetworkVarNames "float32 m_flAlphaScale"
-        // static metadata: MNetworkVarNames "float32 m_flRadiusScale"
-        // static metadata: MNetworkVarNames "float32 m_flSelfIllumScale"
-        // static metadata: MNetworkVarNames "Color m_ColorTint"
-        // static metadata: MNetworkVarNames "HRenderTextureStrong m_hTextureOverride"
+        // Construct allowed
         #pragma pack(push, 1)
         class C_EnvParticleGlow : public source2sdk::client::C_ParticleSystem
         {
         public:
-            // metadata: MNetworkEnable
-            float m_flAlphaScale; // 0xf48            
-            // metadata: MNetworkEnable
-            float m_flRadiusScale; // 0xf4c            
-            // metadata: MNetworkEnable
-            float m_flSelfIllumScale; // 0xf50            
-            // metadata: MNetworkEnable
-            Color m_ColorTint; // 0xf54            
-            // metadata: MNetworkEnable
+            float m_flAlphaScale; // 0x1580            
+            float m_flRadiusScale; // 0x1584            
+            float m_flSelfIllumScale; // 0x1588            
+            Color m_ColorTint; // 0x158c            
             // m_hTextureOverride has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CStrongHandle<source2sdk::resourcesystem::InfoForResourceTypeCTextureBase> m_hTextureOverride;
-            char m_hTextureOverride[0x8]; // 0xf58            
+            char m_hTextureOverride[0x8]; // 0x1590            
             
             // Datamap fields:
             // float InputSetScale; // 0x0
@@ -52,6 +42,6 @@ namespace source2sdk
         
         // Cannot assert offsets of fields in C_EnvParticleGlow because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::client::C_EnvParticleGlow) == 0xf60);
+        static_assert(sizeof(source2sdk::client::C_EnvParticleGlow) == 0x1598);
     };
 };

@@ -18,15 +18,14 @@ namespace source2sdk
         // Alignment: 0x8
         // Standard-layout class: false
         // Size: 0x28
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct RnSphereDesc_t : public source2sdk::physicslib::RnShapeDesc_t
         {
         public:
-            // m_Sphere has a template type with potentially unknown template parameters. You can try uncommenting the field below.
-            // SphereBase_t<float> m_Sphere;
-            char m_Sphere[0x10]; // 0x18            
+            RnSphere_t m_Sphere; // 0x18            
         };
         #pragma pack(pop)
         

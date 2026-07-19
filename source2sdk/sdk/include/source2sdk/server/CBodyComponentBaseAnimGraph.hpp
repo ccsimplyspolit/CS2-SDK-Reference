@@ -16,24 +16,24 @@ namespace source2sdk
     namespace server
     {
         // Registered alignment: unknown
-        // Alignment: unknown
+        // Alignment: 0x10
         // Standard-layout class: false
-        // Size: 0x910
+        // Size: 0xb30
         // Has VTable
+        // Construct allowed
+        // Construct disallowed
         // 
-        // static metadata: MNetworkVarNames "CBaseAnimGraphController m_animationController"
+        // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CBodyComponentBaseAnimGraph : public source2sdk::server::CBodyComponentSkeletonInstance
         {
         public:
-            // metadata: MNetworkEnable
-            source2sdk::server::CBaseAnimGraphController m_animationController; // 0x510            
-            uint8_t _pad0908[0x8];
+            source2sdk::server::CBaseAnimGraphController m_animationController; // 0x4e0            
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in CBodyComponentBaseAnimGraph because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::server::CBodyComponentBaseAnimGraph) == 0x910);
+        static_assert(sizeof(source2sdk::server::CBodyComponentBaseAnimGraph) == 0xb30);
     };
 };

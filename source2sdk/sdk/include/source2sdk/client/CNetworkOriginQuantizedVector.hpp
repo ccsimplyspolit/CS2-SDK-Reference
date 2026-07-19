@@ -18,33 +18,13 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x28
         // Has Trivial Destructor
-        // 
-        // static metadata: MNetworkVarsAtomic
         #pragma pack(push, 1)
         class CNetworkOriginQuantizedVector
         {
         public:
             uint8_t _pad0000[0x10]; // 0x0
-            // metadata: MNetworkEnable
-            // metadata: MNetworkBitCount "19"
-            // metadata: MNetworkMinValue "-16384,000000"
-            // metadata: MNetworkMaxValue "16384,000000"
-            // metadata: MNetworkEncodeFlags "4"
-            // metadata: MNetworkChangeCallback "CNetworkOriginQuantizedVector"
             CNetworkedQuantizedFloat m_vecX; // 0x10            
-            // metadata: MNetworkEnable
-            // metadata: MNetworkBitCount "19"
-            // metadata: MNetworkMinValue "-16384,000000"
-            // metadata: MNetworkMaxValue "16384,000000"
-            // metadata: MNetworkEncodeFlags "4"
-            // metadata: MNetworkChangeCallback "CNetworkOriginQuantizedVector"
             CNetworkedQuantizedFloat m_vecY; // 0x18            
-            // metadata: MNetworkEnable
-            // metadata: MNetworkBitCount "19"
-            // metadata: MNetworkMinValue "-16384,000000"
-            // metadata: MNetworkMaxValue "16384,000000"
-            // metadata: MNetworkEncodeFlags "4"
-            // metadata: MNetworkChangeCallback "CNetworkOriginQuantizedVector"
             CNetworkedQuantizedFloat m_vecZ; // 0x20            
         };
         #pragma pack(pop)

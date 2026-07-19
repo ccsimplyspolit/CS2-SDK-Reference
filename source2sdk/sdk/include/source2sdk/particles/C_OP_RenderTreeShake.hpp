@@ -18,8 +18,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x238
+        // Size: 0x250
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -27,32 +28,32 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "peak strength"
-            float m_flPeakStrength; // 0x210            
+            float m_flPeakStrength; // 0x228            
             // metadata: MPropertyFriendlyName "peak strength field override"
             // metadata: MPropertyAttributeChoiceName "particlefield_scalar"
-            source2sdk::particles::ParticleAttributeIndex_t m_nPeakStrengthFieldOverride; // 0x214            
+            source2sdk::particles::ParticleAttributeIndex_t m_nPeakStrengthFieldOverride; // 0x22c            
             // metadata: MPropertyFriendlyName "radius"
-            float m_flRadius; // 0x218            
+            float m_flRadius; // 0x230            
             // metadata: MPropertyFriendlyName "strength field override"
             // metadata: MPropertyAttributeChoiceName "particlefield_scalar"
-            source2sdk::particles::ParticleAttributeIndex_t m_nRadiusFieldOverride; // 0x21c            
+            source2sdk::particles::ParticleAttributeIndex_t m_nRadiusFieldOverride; // 0x234            
             // metadata: MPropertyFriendlyName "shake duration after end"
-            float m_flShakeDuration; // 0x220            
+            float m_flShakeDuration; // 0x238            
             // metadata: MPropertyFriendlyName "amount of time taken to smooth between different shake parameters"
-            float m_flTransitionTime; // 0x224            
+            float m_flTransitionTime; // 0x23c            
             // metadata: MPropertyFriendlyName "Twist amount (-1..1)"
-            float m_flTwistAmount; // 0x228            
+            float m_flTwistAmount; // 0x240            
             // metadata: MPropertyFriendlyName "Radial Amount (-1..1)"
-            float m_flRadialAmount; // 0x22c            
+            float m_flRadialAmount; // 0x244            
             // metadata: MPropertyFriendlyName "Control Point Orientation Amount (-1..1)"
-            float m_flControlPointOrientationAmount; // 0x230            
+            float m_flControlPointOrientationAmount; // 0x248            
             // metadata: MPropertyFriendlyName "Control Point for Orientation Amount"
-            std::int32_t m_nControlPointForLinearDirection; // 0x234            
+            std::int32_t m_nControlPointForLinearDirection; // 0x24c            
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_OP_RenderTreeShake because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_OP_RenderTreeShake) == 0x238);
+        static_assert(sizeof(source2sdk::particles::C_OP_RenderTreeShake) == 0x250);
     };
 };

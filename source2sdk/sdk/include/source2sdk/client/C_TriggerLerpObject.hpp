@@ -17,8 +17,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0xad8
+        // Size: 0x1098
         // Has VTable
+        // Construct allowed
         #pragma pack(push, 1)
         class C_TriggerLerpObject : public source2sdk::client::C_BaseTrigger
         {
@@ -28,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_TriggerLerpObject) == 0xad8);
+        static_assert(sizeof(source2sdk::client::C_TriggerLerpObject) == 0x1098);
     };
 };

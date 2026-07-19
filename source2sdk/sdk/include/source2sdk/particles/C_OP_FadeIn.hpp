@@ -17,8 +17,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x1d0
+        // Size: 0x1e8
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -26,19 +27,19 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "fade in time min"
-            float m_flFadeInTimeMin; // 0x1c0            
+            float m_flFadeInTimeMin; // 0x1d8            
             // metadata: MPropertyFriendlyName "fade in time max"
-            float m_flFadeInTimeMax; // 0x1c4            
+            float m_flFadeInTimeMax; // 0x1dc            
             // metadata: MPropertyFriendlyName "fade in time exponent"
-            float m_flFadeInTimeExp; // 0x1c8            
+            float m_flFadeInTimeExp; // 0x1e0            
             // metadata: MPropertyFriendlyName "proportional 0/1"
-            bool m_bProportional; // 0x1cc            
-            uint8_t _pad01cd[0x3];
+            bool m_bProportional; // 0x1e4            
+            uint8_t _pad01e5[0x3];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_OP_FadeIn because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_OP_FadeIn) == 0x1d0);
+        static_assert(sizeof(source2sdk::particles::C_OP_FadeIn) == 0x1e8);
     };
 };

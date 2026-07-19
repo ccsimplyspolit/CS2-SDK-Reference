@@ -18,7 +18,8 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: true
-        // Size: 0x68
+        // Size: 0x70
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -43,9 +44,10 @@ namespace source2sdk
             bool m_bShouldDrawAttachmentNames; // 0x52            
             bool m_bShouldDrawControlPointAxes; // 0x53            
             bool m_bAnimationNonLooping; // 0x54            
-            uint8_t _pad0055[0x3]; // 0x55
+            bool m_bSequenceNameIsAnimClipPath; // 0x55            
+            uint8_t _pad0056[0x2]; // 0x56
             Vector m_vecPreviewGravity; // 0x58            
-            uint8_t _pad0064[0x4];
+            Vector m_vecPreviewWind; // 0x64            
         };
         #pragma pack(pop)
         
@@ -64,8 +66,10 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::particles::ParticlePreviewState_t, m_bShouldDrawAttachmentNames) == 0x52);
         static_assert(offsetof(source2sdk::particles::ParticlePreviewState_t, m_bShouldDrawControlPointAxes) == 0x53);
         static_assert(offsetof(source2sdk::particles::ParticlePreviewState_t, m_bAnimationNonLooping) == 0x54);
+        static_assert(offsetof(source2sdk::particles::ParticlePreviewState_t, m_bSequenceNameIsAnimClipPath) == 0x55);
         static_assert(offsetof(source2sdk::particles::ParticlePreviewState_t, m_vecPreviewGravity) == 0x58);
+        static_assert(offsetof(source2sdk::particles::ParticlePreviewState_t, m_vecPreviewWind) == 0x64);
         
-        static_assert(sizeof(source2sdk::particles::ParticlePreviewState_t) == 0x68);
+        static_assert(sizeof(source2sdk::particles::ParticlePreviewState_t) == 0x70);
     };
 };

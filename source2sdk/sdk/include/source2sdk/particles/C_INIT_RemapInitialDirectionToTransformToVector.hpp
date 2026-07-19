@@ -19,34 +19,36 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x250
+        // Size: 0x268
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
+        // static metadata: MGPUParticleFunction
         #pragma pack(push, 1)
         class C_INIT_RemapInitialDirectionToTransformToVector : public source2sdk::particles::CParticleFunctionInitializer
         {
         public:
             // metadata: MPropertyFriendlyName "transform input"
-            source2sdk::particleslib::CParticleTransformInput m_TransformInput; // 0x1c8            
+            source2sdk::particleslib::CParticleTransformInput m_TransformInput; // 0x1e0            
             // metadata: MPropertyFriendlyName "output field"
             // metadata: MPropertyAttributeChoiceName "particlefield_vector"
-            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x230            
+            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x248            
             // metadata: MPropertyFriendlyName "scale factor"
-            float m_flScale; // 0x234            
+            float m_flScale; // 0x24c            
             // metadata: MPropertyFriendlyName "offset rotation"
-            float m_flOffsetRot; // 0x238            
+            float m_flOffsetRot; // 0x250            
             // metadata: MPropertyFriendlyName "offset axis"
             // metadata: MVectorIsCoordinate
-            Vector m_vecOffsetAxis; // 0x23c            
+            Vector m_vecOffsetAxis; // 0x254            
             // metadata: MPropertyFriendlyName "normalize"
-            bool m_bNormalize; // 0x248            
-            uint8_t _pad0249[0x7];
+            bool m_bNormalize; // 0x260            
+            uint8_t _pad0261[0x7];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_INIT_RemapInitialDirectionToTransformToVector because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_INIT_RemapInitialDirectionToTransformToVector) == 0x250);
+        static_assert(sizeof(source2sdk::particles::C_INIT_RemapInitialDirectionToTransformToVector) == 0x268);
     };
 };

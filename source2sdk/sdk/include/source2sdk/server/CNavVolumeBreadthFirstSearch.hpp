@@ -17,21 +17,21 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: 0x4
         // Standard-layout class: false
-        // Size: 0xb8
+        // Size: 0xc0
         // Has VTable
         #pragma pack(push, 1)
         class CNavVolumeBreadthFirstSearch : public source2sdk::server::CNavVolumeCalculatedVector
         {
         public:
-            uint8_t _pad0098[0x8]; // 0x98
-            Vector m_vStartPos; // 0xa0            
-            float m_flSearchDist; // 0xac            
-            uint8_t _pad00b0[0x8];
+            uint8_t _pad00a0[0x8]; // 0xa0
+            VectorWS m_vStartPos; // 0xa8            
+            float m_flSearchDist; // 0xb4            
+            uint8_t _pad00b8[0x8];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in CNavVolumeBreadthFirstSearch because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::server::CNavVolumeBreadthFirstSearch) == 0xb8);
+        static_assert(sizeof(source2sdk::server::CNavVolumeBreadthFirstSearch) == 0xc0);
     };
 };

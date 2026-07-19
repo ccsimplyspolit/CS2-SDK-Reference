@@ -25,19 +25,20 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x550
+        // Size: 0x4f8
         // Has VTable
+        // Construct allowed
         #pragma pack(push, 1)
         class CLogicBranch : public source2sdk::server::CLogicalEntity
         {
         public:
-            bool m_bInValue; // 0x4e0            
-            uint8_t _pad04e1[0x7]; // 0x4e1
+            bool m_bInValue; // 0x4a8            
+            uint8_t _pad04a9[0x7]; // 0x4a9
             // m_Listeners has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::server::CBaseEntity>> m_Listeners;
-            char m_Listeners[0x18]; // 0x4e8            
-            source2sdk::entity2::CEntityIOOutput m_OnTrue; // 0x500            
-            source2sdk::entity2::CEntityIOOutput m_OnFalse; // 0x528            
+            char m_Listeners[0x18]; // 0x4b0            
+            source2sdk::entity2::CEntityIOOutput m_OnTrue; // 0x4c8            
+            source2sdk::entity2::CEntityIOOutput m_OnFalse; // 0x4e0            
             
             // Datamap fields:
             // bool InputSetValue; // 0x0
@@ -50,6 +51,6 @@ namespace source2sdk
         
         // Cannot assert offsets of fields in CLogicBranch because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::server::CLogicBranch) == 0x550);
+        static_assert(sizeof(source2sdk::server::CLogicBranch) == 0x4f8);
     };
 };

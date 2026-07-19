@@ -13,7 +13,7 @@ namespace source2sdk
 {
     namespace client
     {
-        // Enumerator count: 9
+        // Enumerator count: 11
         // Alignment: 4
         // Size: 0x4
         enum class EGCMsgResponse : std::uint32_t
@@ -27,6 +27,8 @@ namespace source2sdk
             k_EGCMsgResponseUnknownError = 0x6,
             k_EGCMsgResponseNotLoggedOn = 0x7,
             k_EGCMsgFailedToCreate = 0x8,
+            k_EGCMsgLimitExceeded = 0x9,
+            k_EGCMsgCommitUnfinalized = 0xa,
         };
     };
 };

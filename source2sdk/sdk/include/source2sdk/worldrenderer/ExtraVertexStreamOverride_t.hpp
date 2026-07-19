@@ -21,6 +21,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x30
         // Has Trivial Destructor
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)

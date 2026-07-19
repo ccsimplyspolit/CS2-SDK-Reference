@@ -20,10 +20,10 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x78
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Body Group Tag"
-        // static metadata: M_LEGACY_OptInToSchemaPropertyDomain
         #pragma pack(push, 1)
         class CBodyGroupAnimTag : public source2sdk::animgraphlib::CAnimTagBase
         {

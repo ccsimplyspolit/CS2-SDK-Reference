@@ -3,7 +3,7 @@
 #include "source2sdk/source2gen/source2gen.hpp"
 #include <cstddef>
 #include <cstdint>
-#include "source2sdk/client/C_SoundOpvarSetPointEntity.hpp"
+#include "source2sdk/client/CSoundOpvarSetBoxEntity.hpp"
 
 // /////////////////////////////////////////////////////////////
 // Module: client
@@ -17,10 +17,11 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x608
+        // Size: 0x620
         // Has VTable
+        // Construct allowed
         #pragma pack(push, 1)
-        class C_SoundOpvarSetAABBEntity : public source2sdk::client::C_SoundOpvarSetPointEntity
+        class C_SoundOpvarSetAABBEntity : public source2sdk::client::CSoundOpvarSetBoxEntity
         {
         public:
             // No schema binary for binding
@@ -28,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_SoundOpvarSetAABBEntity) == 0x608);
+        static_assert(sizeof(source2sdk::client::C_SoundOpvarSetAABBEntity) == 0x620);
     };
 };

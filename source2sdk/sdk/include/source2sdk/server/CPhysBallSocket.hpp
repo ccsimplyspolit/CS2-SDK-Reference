@@ -17,25 +17,26 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x568
+        // Size: 0x520
         // Has VTable
+        // Construct allowed
         #pragma pack(push, 1)
         class CPhysBallSocket : public source2sdk::server::CPhysConstraint
         {
         public:
-            float m_flJointFriction; // 0x550            
-            bool m_bEnableSwingLimit; // 0x554            
-            uint8_t _pad0555[0x3]; // 0x555
-            float m_flSwingLimit; // 0x558            
-            bool m_bEnableTwistLimit; // 0x55c            
-            uint8_t _pad055d[0x3]; // 0x55d
-            float m_flMinTwistAngle; // 0x560            
-            float m_flMaxTwistAngle; // 0x564            
+            float m_flJointFriction; // 0x508            
+            bool m_bEnableSwingLimit; // 0x50c            
+            uint8_t _pad050d[0x3]; // 0x50d
+            float m_flSwingLimit; // 0x510            
+            bool m_bEnableTwistLimit; // 0x514            
+            uint8_t _pad0515[0x3]; // 0x515
+            float m_flMinTwistAngle; // 0x518            
+            float m_flMaxTwistAngle; // 0x51c            
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in CPhysBallSocket because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::server::CPhysBallSocket) == 0x568);
+        static_assert(sizeof(source2sdk::server::CPhysBallSocket) == 0x520);
     };
 };

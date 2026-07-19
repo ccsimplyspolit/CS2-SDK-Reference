@@ -20,11 +20,9 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xd8
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
-        // static metadata: MCellForDomain "TestDomain"
-        // static metadata: MPulseCellMethodBindings
-        // static metadata: MPulseCellOutflowHookInfo "`ê&áþ"
         // static metadata: MPropertyFriendlyName "[Test] Random Yes/No Outflow"
         // static metadata: MPropertyDescription "Test node that randomly picks between two outflows."
         #pragma pack(push, 1)

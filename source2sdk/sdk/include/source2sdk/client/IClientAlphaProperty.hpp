@@ -20,12 +20,14 @@ namespace source2sdk
         // Has VTable
         // Is Abstract
         // Has Trivial Destructor
+        // Construct allowed
+        // 
+        // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class IClientAlphaProperty
         {
         public:
             uint8_t _pad0000[0x8];
-            // No schema binary for binding
         };
         #pragma pack(pop)
         

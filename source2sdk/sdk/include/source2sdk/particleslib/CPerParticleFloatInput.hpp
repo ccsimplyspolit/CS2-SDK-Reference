@@ -17,8 +17,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x160
+        // Size: 0x170
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyCustomEditor "PerParticleFloatInput()"
@@ -30,6 +31,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::particleslib::CPerParticleFloatInput) == 0x160);
+        static_assert(sizeof(source2sdk::particleslib::CPerParticleFloatInput) == 0x170);
     };
 };

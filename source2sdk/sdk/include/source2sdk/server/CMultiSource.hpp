@@ -25,28 +25,26 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x618
+        // Size: 0x5d0
         // Has VTable
+        // Construct allowed
         #pragma pack(push, 1)
         class CMultiSource : public source2sdk::server::CLogicalEntity
         {
         public:
             // m_rgEntities has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_rgEntities[32];
-            char m_rgEntities[0x80]; // 0x4e0            
-            std::int32_t m_rgTriggered[32]; // 0x560            
-            source2sdk::entity2::CEntityIOOutput m_OnTrigger; // 0x5e0            
-            std::int32_t m_iTotal; // 0x608            
-            uint8_t _pad060c[0x4]; // 0x60c
-            CUtlSymbolLarge m_globalstate; // 0x610            
-            
-            // Datamap fields:
-            // void CMultiSourceRegister; // 0x0
+            char m_rgEntities[0x80]; // 0x4a8            
+            std::int32_t m_rgTriggered[32]; // 0x528            
+            source2sdk::entity2::CEntityIOOutput m_OnTrigger; // 0x5a8            
+            std::int32_t m_iTotal; // 0x5c0            
+            uint8_t _pad05c4[0x4]; // 0x5c4
+            CUtlSymbolLarge m_globalstate; // 0x5c8            
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in CMultiSource because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::server::CMultiSource) == 0x618);
+        static_assert(sizeof(source2sdk::server::CMultiSource) == 0x5d0);
     };
 };

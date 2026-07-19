@@ -17,20 +17,18 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x848
+        // Size: 0x7c8
         // Has VTable
-        // 
-        // static metadata: MNetworkVarNames "string_t m_EffectName"
+        // Construct allowed
         #pragma pack(push, 1)
         class CFuncElectrifiedVolume : public source2sdk::server::CFuncBrush
         {
         public:
-            // metadata: MNetworkEnable
-            CUtlSymbolLarge m_EffectName; // 0x810            
-            CUtlSymbolLarge m_EffectInterpenetrateName; // 0x818            
-            CUtlSymbolLarge m_EffectZapName; // 0x820            
-            CUtlSymbolLarge m_iszEffectSource; // 0x828            
-            uint8_t _pad0830[0x18];
+            CUtlSymbolLarge m_EffectName; // 0x790            
+            CUtlSymbolLarge m_EffectInterpenetrateName; // 0x798            
+            CUtlSymbolLarge m_EffectZapName; // 0x7a0            
+            CUtlSymbolLarge m_iszEffectSource; // 0x7a8            
+            uint8_t _pad07b0[0x18];
             
             // Datamap fields:
             // void InputDisable; // 0x0
@@ -40,6 +38,6 @@ namespace source2sdk
         
         // Cannot assert offsets of fields in CFuncElectrifiedVolume because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::server::CFuncElectrifiedVolume) == 0x848);
+        static_assert(sizeof(source2sdk::server::CFuncElectrifiedVolume) == 0x7c8);
     };
 };

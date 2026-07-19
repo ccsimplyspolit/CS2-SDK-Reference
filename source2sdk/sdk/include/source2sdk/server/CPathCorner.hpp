@@ -18,15 +18,18 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x510
+        // Size: 0x4d0
         // Has VTable
+        // Construct allowed
         #pragma pack(push, 1)
         class CPathCorner : public source2sdk::server::CPointEntity
         {
         public:
-            float m_flWait; // 0x4e0            
-            float m_flRadius; // 0x4e4            
-            source2sdk::entity2::CEntityIOOutput m_OnPass; // 0x4e8            
+            float m_flSpeed; // 0x4a8            
+            float m_flWait; // 0x4ac            
+            float m_flRadius; // 0x4b0            
+            uint8_t _pad04b4[0x4]; // 0x4b4
+            source2sdk::entity2::CEntityIOOutput m_OnPass; // 0x4b8            
             
             // Datamap fields:
             // CUtlSymbolLarge InputSetNextPathCorner; // 0x0
@@ -36,6 +39,6 @@ namespace source2sdk
         
         // Cannot assert offsets of fields in CPathCorner because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::server::CPathCorner) == 0x510);
+        static_assert(sizeof(source2sdk::server::CPathCorner) == 0x4d0);
     };
 };

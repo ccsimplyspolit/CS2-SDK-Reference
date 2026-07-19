@@ -17,24 +17,19 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x500
+        // Size: 0x4c8
         // Has VTable
-        // 
-        // static metadata: MNetworkVarNames "bool m_bDisabled"
-        // static metadata: MNetworkVarNames "string_t m_iszSoundAreaType"
-        // static metadata: MNetworkVarNames "Vector m_vPos"
+        // Construct disallowed
+        // MConstructibleClassBase
         #pragma pack(push, 1)
         class CSoundAreaEntityBase : public source2sdk::server::CBaseEntity
         {
         public:
-            // metadata: MNetworkEnable
-            bool m_bDisabled; // 0x4e0            
-            uint8_t _pad04e1[0x7]; // 0x4e1
-            // metadata: MNetworkEnable
-            CUtlSymbolLarge m_iszSoundAreaType; // 0x4e8            
-            // metadata: MNetworkEnable
-            Vector m_vPos; // 0x4f0            
-            uint8_t _pad04fc[0x4];
+            bool m_bDisabled; // 0x4a8            
+            uint8_t _pad04a9[0x7]; // 0x4a9
+            CUtlSymbolLarge m_iszSoundAreaType; // 0x4b0            
+            Vector m_vPos; // 0x4b8            
+            uint8_t _pad04c4[0x4];
             
             // Datamap fields:
             // void InputEnable; // 0x0
@@ -44,6 +39,6 @@ namespace source2sdk
         
         // Cannot assert offsets of fields in CSoundAreaEntityBase because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::server::CSoundAreaEntityBase) == 0x500);
+        static_assert(sizeof(source2sdk::server::CSoundAreaEntityBase) == 0x4c8);
     };
 };

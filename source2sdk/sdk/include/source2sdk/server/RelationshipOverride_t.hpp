@@ -22,11 +22,14 @@ namespace source2sdk
 {
     namespace server
     {
-        // Registered alignment: unknown
+        // Registered alignment: 0x4
         // Alignment: 0x4
         // Standard-layout class: false
         // Size: 0x10
         // Has Trivial Destructor
+        // Construct allowed
+        // 
+        // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct RelationshipOverride_t : public source2sdk::server::Relationship_t
         {

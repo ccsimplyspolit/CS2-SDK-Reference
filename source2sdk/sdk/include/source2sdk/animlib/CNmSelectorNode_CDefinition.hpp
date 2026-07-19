@@ -19,6 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x40
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -26,10 +27,10 @@ namespace source2sdk
         {
         public:
             // m_optionNodeIndices has a template type with potentially unknown template parameters. You can try uncommenting the field below.
-            // CUtlLeanVectorFixedGrowable<std::int16_t,5> m_optionNodeIndices;
+            // CUtlLeanVectorFixedGrowable<std::int16_t,8> m_optionNodeIndices;
             char m_optionNodeIndices[0x18]; // 0x10            
             // m_conditionNodeIndices has a template type with potentially unknown template parameters. You can try uncommenting the field below.
-            // CUtlLeanVectorFixedGrowable<std::int16_t,5> m_conditionNodeIndices;
+            // CUtlLeanVectorFixedGrowable<std::int16_t,8> m_conditionNodeIndices;
             char m_conditionNodeIndices[0x18]; // 0x28            
         };
         #pragma pack(pop)

@@ -20,12 +20,15 @@ namespace source2sdk
         // Has VTable
         // Is Abstract
         // Has Trivial Destructor
+        // Construct allowed
+        // Construct disallowed
+        // 
+        // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class ISkeletonAnimationController
         {
         public:
             uint8_t _pad0000[0x8];
-            // No schema binary for binding
         };
         #pragma pack(pop)
         

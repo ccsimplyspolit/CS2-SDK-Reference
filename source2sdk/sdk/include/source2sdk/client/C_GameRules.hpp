@@ -20,21 +20,15 @@ namespace source2sdk
         // Size: 0x40
         // Has VTable
         // Is Abstract
-        // 
-        // static metadata: MNetworkVarNames "int m_nTotalPausedTicks"
-        // static metadata: MNetworkVarNames "int m_nPauseStartTick"
-        // static metadata: MNetworkVarNames "bool m_bGamePaused"
         #pragma pack(push, 1)
         class C_GameRules
         {
         public:
             uint8_t _pad0000[0x8]; // 0x0
+            // metadata: MNotSaved
             source2sdk::entity2::CNetworkVarChainer __m_pChainEntity; // 0x8            
-            // metadata: MNetworkEnable
             std::int32_t m_nTotalPausedTicks; // 0x30            
-            // metadata: MNetworkEnable
             std::int32_t m_nPauseStartTick; // 0x34            
-            // metadata: MNetworkEnable
             bool m_bGamePaused; // 0x38            
             uint8_t _pad0039[0x7];
         };

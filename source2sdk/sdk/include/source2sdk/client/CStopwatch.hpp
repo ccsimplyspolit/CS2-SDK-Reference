@@ -19,6 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x10
         // Has Trivial Destructor
+        // Construct disallowed
         #pragma pack(push, 1)
         class CStopwatch : public source2sdk::client::CStopwatchBase
         {

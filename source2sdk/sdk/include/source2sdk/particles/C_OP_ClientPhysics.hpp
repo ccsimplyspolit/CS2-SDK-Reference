@@ -5,8 +5,9 @@
 #include <cstdint>
 #include "source2sdk/particles/CParticleFunctionRenderer.hpp"
 #include "source2sdk/particles/ParticleAttrBoxFlags_t.hpp"
-#include "source2sdk/particles/ParticleColorBlendType_t.hpp"
+#include "source2sdk/particles/ParticleAttributeIndex_t.hpp"
 #include "source2sdk/particleslib/CParticleCollectionFloatInput.hpp"
+#include "source2sdk/particleslib/ParticleColorBlendType_t.hpp"
 
 // /////////////////////////////////////////////////////////////
 // Module: particles
@@ -20,8 +21,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x500
+        // Size: 0x540
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -30,44 +32,52 @@ namespace source2sdk
         public:
             // metadata: MPropertyFriendlyName "client physics type"
             // metadata: MPropertyAttributeEditor "VDataChoice( scripts/misc.vdata!generic_physics_particle_spawner )"
-            CUtlString m_strPhysicsType; // 0x210            
+            CUtlString m_strPhysicsType; // 0x228            
             // metadata: MPropertyFriendlyName "start all physics asleep"
-            bool m_bStartAsleep; // 0x218            
-            uint8_t _pad0219[0x7]; // 0x219
+            bool m_bStartAsleep; // 0x230            
+            uint8_t _pad0231[0x7]; // 0x231
             // metadata: MPropertyFriendlyName "Player Wake Radius"
-            source2sdk::particleslib::CParticleCollectionFloatInput m_flPlayerWakeRadius; // 0x220            
+            source2sdk::particleslib::CParticleCollectionFloatInput m_flPlayerWakeRadius; // 0x238            
             // metadata: MPropertyFriendlyName "Vehicle Wake Radius"
-            source2sdk::particleslib::CParticleCollectionFloatInput m_flVehicleWakeRadius; // 0x380            
+            source2sdk::particleslib::CParticleCollectionFloatInput m_flVehicleWakeRadius; // 0x3a8            
             // metadata: MPropertyFriendlyName "use high quality simulation"
-            bool m_bUseHighQualitySimulation; // 0x4e0            
-            uint8_t _pad04e1[0x3]; // 0x4e1
+            bool m_bUseHighQualitySimulation; // 0x518            
+            uint8_t _pad0519[0x3]; // 0x519
             // metadata: MPropertyFriendlyName "max particle count"
-            std::int32_t m_nMaxParticleCount; // 0x4e4            
+            std::int32_t m_nMaxParticleCount; // 0x51c            
             // metadata: MPropertyFriendlyName "prevent spawning in exclusion volumes"
             // metadata: MPropertySuppressExpr "m_bKillParticles == true"
-            bool m_bRespectExclusionVolumes; // 0x4e8            
+            bool m_bRespectExclusionVolumes; // 0x520            
             // metadata: MPropertyFriendlyName "kill physics particles"
-            bool m_bKillParticles; // 0x4e9            
+            bool m_bKillParticles; // 0x521            
             // metadata: MPropertyFriendlyName "delete physics sim when stopped"
             // metadata: MPropertySuppressExpr "m_bKillParticles == false"
-            bool m_bDeleteSim; // 0x4ea            
-            uint8_t _pad04eb[0x1]; // 0x4eb
+            bool m_bDeleteSim; // 0x522            
+            uint8_t _pad0523[0x1]; // 0x523
             // metadata: MPropertyFriendlyName "control point (for finding nearest sim)"
             // metadata: MPropertySuppressExpr "m_bKillParticles == true"
-            std::int32_t m_nControlPoint; // 0x4ec            
+            std::int32_t m_nControlPoint; // 0x524            
             // metadata: MPropertyFriendlyName "specific sim id"
             // metadata: MPropertySuppressExpr "m_bKillParticles == true"
-            std::int32_t m_nForcedSimId; // 0x4f0            
+            std::int32_t m_nForcedSimId; // 0x528            
             // metadata: MPropertyFriendlyName "tint blend (color vs prop group gradient)"
-            source2sdk::particles::ParticleColorBlendType_t m_nColorBlendType; // 0x4f4            
+            source2sdk::particleslib::ParticleColorBlendType_t m_nColorBlendType; // 0x52c            
             // metadata: MPropertyFriendlyName "forced status effect flags"
-            source2sdk::particles::ParticleAttrBoxFlags_t m_nForcedStatusEffects; // 0x4f8            
-            uint8_t _pad04fc[0x4];
+            source2sdk::particles::ParticleAttrBoxFlags_t m_nForcedStatusEffects; // 0x530            
+            // metadata: MPropertyFriendlyName "Disable Non-Static Collision Duration"
+            // metadata: MPropertyAttributeChoiceName "particlefield_scalar"
+            // metadata: MPropertySuppressExpr "m_nForcedStatusEffects == 0"
+            source2sdk::particles::ParticleAttributeIndex_t m_nNoCollisionAttribute; // 0x534            
+            // metadata: MPropertyFriendlyName "Zero Gravity Duration"
+            // metadata: MPropertyAttributeChoiceName "particlefield_scalar"
+            // metadata: MPropertySuppressExpr "m_nForcedStatusEffects == 0"
+            source2sdk::particles::ParticleAttributeIndex_t m_nZeroGravityAttribute; // 0x538            
+            uint8_t _pad053c[0x4];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_OP_ClientPhysics because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_OP_ClientPhysics) == 0x500);
+        static_assert(sizeof(source2sdk::particles::C_OP_ClientPhysics) == 0x540);
     };
 };

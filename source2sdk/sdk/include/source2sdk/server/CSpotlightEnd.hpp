@@ -17,26 +17,22 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x810
+        // Size: 0x790
         // Has VTable
-        // 
-        // static metadata: MNetworkVarNames "float32 m_flLightScale"
-        // static metadata: MNetworkVarNames "float32 m_Radius"
+        // Construct allowed
         #pragma pack(push, 1)
         class CSpotlightEnd : public source2sdk::server::CBaseModelEntity
         {
         public:
-            // metadata: MNetworkEnable
-            float m_flLightScale; // 0x7f0            
-            // metadata: MNetworkEnable
-            float m_Radius; // 0x7f4            
-            Vector m_vSpotlightDir; // 0x7f8            
-            Vector m_vSpotlightOrg; // 0x804            
+            float m_flLightScale; // 0x770            
+            float m_Radius; // 0x774            
+            Vector m_vSpotlightDir; // 0x778            
+            VectorWS m_vSpotlightOrg; // 0x784            
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in CSpotlightEnd because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::server::CSpotlightEnd) == 0x810);
+        static_assert(sizeof(source2sdk::server::CSpotlightEnd) == 0x790);
     };
 };

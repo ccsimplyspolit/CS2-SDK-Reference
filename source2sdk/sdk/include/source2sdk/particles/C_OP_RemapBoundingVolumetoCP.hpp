@@ -17,8 +17,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x1e0
+        // Size: 0x1f8
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -26,21 +27,21 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "output control point"
-            std::int32_t m_nOutControlPointNumber; // 0x1c8            
+            std::int32_t m_nOutControlPointNumber; // 0x1e0            
             // metadata: MPropertyFriendlyName "input volume minimum in cubic units"
-            float m_flInputMin; // 0x1cc            
+            float m_flInputMin; // 0x1e4            
             // metadata: MPropertyFriendlyName "input volume maximum in cubic units"
-            float m_flInputMax; // 0x1d0            
+            float m_flInputMax; // 0x1e8            
             // metadata: MPropertyFriendlyName "output minimum"
-            float m_flOutputMin; // 0x1d4            
+            float m_flOutputMin; // 0x1ec            
             // metadata: MPropertyFriendlyName "output maximum"
-            float m_flOutputMax; // 0x1d8            
-            uint8_t _pad01dc[0x4];
+            float m_flOutputMax; // 0x1f0            
+            uint8_t _pad01f4[0x4];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_OP_RemapBoundingVolumetoCP because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_OP_RemapBoundingVolumetoCP) == 0x1e0);
+        static_assert(sizeof(source2sdk::particles::C_OP_RemapBoundingVolumetoCP) == 0x1f8);
     };
 };

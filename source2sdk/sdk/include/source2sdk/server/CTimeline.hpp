@@ -15,37 +15,26 @@ namespace source2sdk
 {
     namespace server
     {
-        // Registered alignment: unknown
-        // Alignment: 0x4
+        // Registered alignment: 0x8
+        // Alignment: 0x8
         // Standard-layout class: false
         // Size: 0x228
         // Has VTable
         // Has Trivial Destructor
+        // Construct allowed
+        // MNetworkNoBase
         // 
-        // static metadata: MNetworkVarNames "float m_flValues"
-        // static metadata: MNetworkVarNames "int m_nValueCounts"
-        // static metadata: MNetworkVarNames "int m_nBucketCount"
-        // static metadata: MNetworkVarNames "float m_flInterval"
-        // static metadata: MNetworkVarNames "float m_flFinalValue"
-        // static metadata: MNetworkVarNames "TimelineCompression_t m_nCompressionType"
-        // static metadata: MNetworkVarNames "bool m_bStopped"
+        // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CTimeline : public source2sdk::server::IntervalTimer
         {
         public:
-            // metadata: MNetworkEnable
             float m_flValues[64]; // 0x10            
-            // metadata: MNetworkEnable
             std::int32_t m_nValueCounts[64]; // 0x110            
-            // metadata: MNetworkEnable
             std::int32_t m_nBucketCount; // 0x210            
-            // metadata: MNetworkEnable
             float m_flInterval; // 0x214            
-            // metadata: MNetworkEnable
             float m_flFinalValue; // 0x218            
-            // metadata: MNetworkEnable
             source2sdk::client::TimelineCompression_t m_nCompressionType; // 0x21c            
-            // metadata: MNetworkEnable
             bool m_bStopped; // 0x220            
             uint8_t _pad0221[0x7];
         };

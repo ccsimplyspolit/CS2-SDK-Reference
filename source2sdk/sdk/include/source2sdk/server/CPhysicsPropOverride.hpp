@@ -17,8 +17,9 @@ namespace source2sdk
         // Registered alignment: 0x10
         // Alignment: 0x10
         // Standard-layout class: false
-        // Size: 0xb70
+        // Size: 0xc30
         // Has VTable
+        // Construct allowed
         #pragma pack(push, 1)
         class CPhysicsPropOverride : public source2sdk::server::CPhysicsProp
         {
@@ -28,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CPhysicsPropOverride) == 0xb70);
+        static_assert(sizeof(source2sdk::server::CPhysicsPropOverride) == 0xc30);
     };
 };

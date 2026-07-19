@@ -3,6 +3,13 @@
 #include "source2sdk/source2gen/source2gen.hpp"
 #include <cstddef>
 #include <cstdint>
+namespace source2sdk
+{
+    namespace client
+    {
+        struct IPhysicsMotionController;
+    };
+};
 
 // /////////////////////////////////////////////////////////////
 // Module: client
@@ -13,16 +20,22 @@ namespace source2sdk
 {
     namespace client
     {
-        // Registered alignment: unknown
+        // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: true
         // Size: 0x118
         // Has VTable
+        // Construct allowed
+        // 
+        // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CBuoyancyHelper
         {
         public:
-            uint8_t _pad0000[0x18]; // 0x0
+            uint8_t _pad0000[0x8]; // 0x0
+            // metadata: MPhysPtr
+            source2sdk::client::IPhysicsMotionController* m_pController; // 0x8            
+            uint8_t _pad0010[0x8]; // 0x10
             CUtlStringToken m_nFluidType; // 0x18            
             float m_flFluidDensity; // 0x1c            
             float m_flNeutrallyBuoyantGravity; // 0x20            
@@ -43,12 +56,10 @@ namespace source2sdk
             // CUtlVector<float> m_vecWheelDrag;
             char m_vecWheelDrag[0x18]; // 0x78            
             uint8_t _pad0090[0x88];
-            
-            // Datamap fields:
-            // void m_pController; // 0x8
         };
         #pragma pack(pop)
         
+        static_assert(offsetof(source2sdk::client::CBuoyancyHelper, m_pController) == 0x8);
         static_assert(offsetof(source2sdk::client::CBuoyancyHelper, m_nFluidType) == 0x18);
         static_assert(offsetof(source2sdk::client::CBuoyancyHelper, m_flFluidDensity) == 0x1c);
         static_assert(offsetof(source2sdk::client::CBuoyancyHelper, m_flNeutrallyBuoyantGravity) == 0x20);

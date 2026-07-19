@@ -20,6 +20,7 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x58
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
