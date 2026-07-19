@@ -1,0 +1,31 @@
+#pragma once
+
+#include "source2sdk/source2gen/source2gen.hpp"
+#include <cstddef>
+#include <cstdint>
+
+// /////////////////////////////////////////////////////////////
+// Module: client
+// Created using source2gen - github.com/neverlosecc/source2gen
+// /////////////////////////////////////////////////////////////
+
+namespace source2sdk
+{
+    namespace client
+    {
+        // Enumerator count: 4
+        // Alignment: 4
+        // Size: 0x4
+        enum class ECitadelPingMessageRecipients_t : std::uint32_t
+        {
+            // MPropertyFriendlyName "Global Sound - Allied Players"
+            k_ECitadelRecipients_GlobalFriendlyTeam = 0x0,
+            // MPropertyFriendlyName "Ping Target and Pinging Player only"
+            k_ECitadelRecipients_RecipientAndPlayer = 0x1,
+            // MPropertyFriendlyName "Allied Players around Pinging Player"
+            k_ECitadelRecipients_RecipientsAroundPlayer = 0x2,
+            // MPropertyFriendlyName "Global Sound - Allied and Enemy Players"
+            k_ECitadelRecipients_GlobalAllChat = 0x3,
+        };
+    };
+};

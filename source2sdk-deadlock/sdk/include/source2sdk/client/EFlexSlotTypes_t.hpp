@@ -1,0 +1,33 @@
+#pragma once
+
+#include "source2sdk/source2gen/source2gen.hpp"
+#include <cstddef>
+#include <cstdint>
+
+// /////////////////////////////////////////////////////////////
+// Module: client
+// Created using source2gen - github.com/neverlosecc/source2gen
+// /////////////////////////////////////////////////////////////
+
+namespace source2sdk
+{
+    namespace client
+    {
+        // Enumerator count: 5
+        // Alignment: 2
+        // Size: 0x2
+        enum class EFlexSlotTypes_t : std::uint16_t
+        {
+            // MPropertyFriendlyName "Invalid"
+            EFlexSlot_Invalid = 0x0,
+            // MPropertyFriendlyName "Kill 3 Tier 1"
+            EFlexSlot_Slot01 = 0x1,
+            // MPropertyFriendlyName "Kill 2 Tier 2"
+            EFlexSlot_Slot02 = 0x2,
+            // MPropertyFriendlyName "Kill 3 Tier 2"
+            EFlexSlot_Slot03 = 0x4,
+            // MPropertyFriendlyName "1 set of base guardians"
+            EFlexSlot_Slot04 = 0x8,
+        };
+    };
+};

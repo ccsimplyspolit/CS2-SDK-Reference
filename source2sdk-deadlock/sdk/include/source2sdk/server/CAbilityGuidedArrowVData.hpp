@@ -1,0 +1,84 @@
+#pragma once
+
+#include "source2sdk/source2gen/source2gen.hpp"
+#include <cstddef>
+#include <cstdint>
+#include "source2sdk/client/CitadelCameraOperationsSequence_t.hpp"
+#include "source2sdk/resourcesystem/InfoForResourceTypeCModel.hpp"
+#include "source2sdk/resourcesystem/InfoForResourceTypeIParticleSystemDefinition.hpp"
+#include "source2sdk/server/CCitadelModifier.hpp"
+#include "source2sdk/server/CitadelAbilityVData.hpp"
+
+// /////////////////////////////////////////////////////////////
+// Module: server
+// Created using source2gen - github.com/neverlosecc/source2gen
+// /////////////////////////////////////////////////////////////
+
+namespace source2sdk
+{
+    namespace server
+    {
+        // Registered alignment: 0x8
+        // Alignment: 0x8
+        // Standard-layout class: false
+        // Size: 0x1d28
+        // Has VTable
+        // 
+        // static metadata: MGetKV3ClassDefaults
+        #pragma pack(push, 1)
+        class CAbilityGuidedArrowVData : public source2sdk::server::CitadelAbilityVData
+        {
+        public:
+            // metadata: MPropertyStartGroup "Camera"
+            source2sdk::client::CitadelCameraOperationsSequence_t m_cameraCancelledTransitionBacktoArcher; // 0x1818            
+            source2sdk::client::CitadelCameraOperationsSequence_t m_cameraExplodedTransitionBackToArcher; // 0x18a0            
+            float m_flCameraHoldAtExplosion; // 0x1928            
+            float m_flFadeIn; // 0x192c            
+            float m_flFadeHoldTime; // 0x1930            
+            float m_flFadeOut; // 0x1934            
+            // metadata: MPropertyStartGroup "Visuals"
+            // m_SpectatingProjectileParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+            // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_SpectatingProjectileParticle;
+            char m_SpectatingProjectileParticle[0xe0]; // 0x1938            
+            // m_ExplosionParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+            // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_ExplosionParticle;
+            char m_ExplosionParticle[0xe0]; // 0x1a18            
+            // m_GuidedArrowChannelParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+            // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_GuidedArrowChannelParticle;
+            char m_GuidedArrowChannelParticle[0xe0]; // 0x1af8            
+            // m_ProjectileModel has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+            // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeCModel>> m_ProjectileModel;
+            char m_ProjectileModel[0xe0]; // 0x1bd8            
+            float m_ArrowOffsetX; // 0x1cb8            
+            float m_ArrowCameraDistance; // 0x1cbc            
+            float m_ArrowCameraHeightOffset; // 0x1cc0            
+            float m_ArrowInitialPitch; // 0x1cc4            
+            // metadata: MPropertyStartGroup "Modifiers"
+            // m_GuidingModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+            // CEmbeddedSubclass<source2sdk::server::CCitadelModifier> m_GuidingModifier;
+            char m_GuidingModifier[0x10]; // 0x1cc8            
+            // m_DebuffModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+            // CEmbeddedSubclass<source2sdk::server::CCitadelModifier> m_DebuffModifier;
+            char m_DebuffModifier[0x10]; // 0x1cd8            
+            // m_KillCheckModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+            // CEmbeddedSubclass<source2sdk::server::CCitadelModifier> m_KillCheckModifier;
+            char m_KillCheckModifier[0x10]; // 0x1ce8            
+            // metadata: MPropertyGroupName "Sounds"
+            CSoundEventName m_strExplodeSound; // 0x1cf8            
+            // metadata: MPropertyStartGroup "Gameplay"
+            float m_flTrackAmount; // 0x1d08            
+            float m_flSpeedAccel; // 0x1d0c            
+            float m_flSpeedDeccel; // 0x1d10            
+            float m_flBaseProjectileSpeed; // 0x1d14            
+            float m_flMaxProjectileSpeed; // 0x1d18            
+            float m_flArrowModelTurnSpringStrength; // 0x1d1c            
+            float m_flKillCheckWindow; // 0x1d20            
+            float m_flWorldCollideGraceWindow; // 0x1d24            
+        };
+        #pragma pack(pop)
+        
+        // Cannot assert offsets of fields in CAbilityGuidedArrowVData because it is not a standard-layout class
+        
+        static_assert(sizeof(source2sdk::server::CAbilityGuidedArrowVData) == 0x1d28);
+    };
+};
