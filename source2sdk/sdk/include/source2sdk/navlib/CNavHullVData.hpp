@@ -18,6 +18,7 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x3c
         // Has Trivial Destructor
+        // Construct allowed
         // 
         // static metadata: MVDataRoot
         // static metadata: MGetKV3ClassDefaults

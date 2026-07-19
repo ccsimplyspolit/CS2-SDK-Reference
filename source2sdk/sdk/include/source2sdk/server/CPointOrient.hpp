@@ -27,34 +27,34 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x500
+        // Size: 0x4c8
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MEntityAllowsPortraitWorldSpawn
         #pragma pack(push, 1)
         class CPointOrient : public source2sdk::server::CBaseEntity
         {
         public:
-            CUtlSymbolLarge m_iszSpawnTargetName; // 0x4e0            
+            CUtlSymbolLarge m_iszSpawnTargetName; // 0x4a8            
             // m_hTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hTarget;
-            char m_hTarget[0x4]; // 0x4e8            
-            bool m_bActive; // 0x4ec            
-            uint8_t _pad04ed[0x3]; // 0x4ed
-            source2sdk::client::PointOrientGoalDirectionType_t m_nGoalDirection; // 0x4f0            
-            source2sdk::client::PointOrientConstraint_t m_nConstraint; // 0x4f4            
-            float m_flMaxTurnRate; // 0x4f8            
-            source2sdk::entity2::GameTime_t m_flLastGameTime; // 0x4fc            
+            char m_hTarget[0x4]; // 0x4b0            
+            bool m_bActive; // 0x4b4            
+            uint8_t _pad04b5[0x3]; // 0x4b5
+            source2sdk::client::PointOrientGoalDirectionType_t m_nGoalDirection; // 0x4b8            
+            source2sdk::client::PointOrientConstraint_t m_nConstraint; // 0x4bc            
+            float m_flMaxTurnRate; // 0x4c0            
+            source2sdk::entity2::GameTime_t m_flLastGameTime; // 0x4c4            
             
             // Datamap fields:
             // bool InputSetActive; // 0x0
             // CUtlSymbolLarge InputSetTarget; // 0x0
-            // void CPointOrientReorientThink; // 0x0
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in CPointOrient because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::server::CPointOrient) == 0x500);
+        static_assert(sizeof(source2sdk::server::CPointOrient) == 0x4c8);
     };
 };

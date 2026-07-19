@@ -22,8 +22,8 @@ namespace source2sdk
         class Extent
         {
         public:
-            Vector lo; // 0x0            
-            Vector hi; // 0xc            
+            VectorWS lo; // 0x0            
+            VectorWS hi; // 0xc            
         };
         #pragma pack(pop)
         

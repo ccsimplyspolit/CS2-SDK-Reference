@@ -13,22 +13,20 @@ namespace source2sdk
 {
     namespace server
     {
-        // Registered alignment: unknown
-        // Alignment: 0x4
+        // Registered alignment: 0x8
+        // Alignment: 0x8
         // Standard-layout class: true
         // Size: 0x48
         // Has VTable
+        // Construct allowed
         // 
-        // static metadata: MNetworkVarNames "CUtlStringToken m_ID"
-        // static metadata: MNetworkVarNames "Vector4D m_Values"
+        // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct EntityRenderAttribute_t
         {
         public:
             uint8_t _pad0000[0x30]; // 0x0
-            // metadata: MNetworkEnable
             CUtlStringToken m_ID; // 0x30            
-            // metadata: MNetworkEnable
             Vector4D m_Values; // 0x34            
             uint8_t _pad0044[0x4];
         };

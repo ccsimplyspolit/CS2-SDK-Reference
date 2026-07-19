@@ -17,8 +17,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x9c0
+        // Size: 0x8e8
         // Has VTable
+        // Construct allowed
         #pragma pack(push, 1)
         class CTriggerGravity : public source2sdk::server::CBaseTrigger
         {
@@ -28,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CTriggerGravity) == 0x9c0);
+        static_assert(sizeof(source2sdk::server::CTriggerGravity) == 0x8e8);
     };
 };

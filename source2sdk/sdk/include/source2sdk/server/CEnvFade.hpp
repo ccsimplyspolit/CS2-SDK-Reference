@@ -18,20 +18,18 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x518
+        // Size: 0x4d0
         // Has VTable
-        // 
-        // static metadata: MNetworkVarNames "Color m_fadeColor"
+        // Construct allowed
         #pragma pack(push, 1)
         class CEnvFade : public source2sdk::server::CLogicalEntity
         {
         public:
-            // metadata: MNetworkEnable
-            Color m_fadeColor; // 0x4e0            
-            float m_Duration; // 0x4e4            
-            float m_HoldDuration; // 0x4e8            
-            uint8_t _pad04ec[0x4]; // 0x4ec
-            source2sdk::entity2::CEntityIOOutput m_OnBeginFade; // 0x4f0            
+            Color m_fadeColor; // 0x4a8            
+            float m_Duration; // 0x4ac            
+            float m_HoldDuration; // 0x4b0            
+            uint8_t _pad04b4[0x4]; // 0x4b4
+            source2sdk::entity2::CEntityIOOutput m_OnBeginFade; // 0x4b8            
             
             // Datamap fields:
             // void InputFade; // 0x0
@@ -40,6 +38,6 @@ namespace source2sdk
         
         // Cannot assert offsets of fields in CEnvFade because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::server::CEnvFade) == 0x518);
+        static_assert(sizeof(source2sdk::server::CEnvFade) == 0x4d0);
     };
 };

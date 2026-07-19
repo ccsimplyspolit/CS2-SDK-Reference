@@ -17,18 +17,21 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x4f8
+        // Size: 0x4c0
         // Has VTable
+        // Construct allowed
         #pragma pack(push, 1)
         class CLogicCollisionPair : public source2sdk::server::CLogicalEntity
         {
         public:
-            CUtlSymbolLarge m_nameAttach1; // 0x4e0            
-            CUtlSymbolLarge m_nameAttach2; // 0x4e8            
-            bool m_supportMultipleEntitiesWithSameName; // 0x4f0            
-            bool m_disabled; // 0x4f1            
-            bool m_succeeded; // 0x4f2            
-            uint8_t _pad04f3[0x5];
+            CUtlSymbolLarge m_nameAttach1; // 0x4a8            
+            CUtlSymbolLarge m_nameAttach2; // 0x4b0            
+            bool m_includeHierarchy; // 0x4b8            
+            bool m_supportMultipleEntitiesWithSameName; // 0x4b9            
+            bool m_disabled; // 0x4ba            
+            bool m_succeeded; // 0x4bb            
+            bool m_allowMissing; // 0x4bc            
+            uint8_t _pad04bd[0x3];
             
             // Datamap fields:
             // void InputDisableCollisions; // 0x0
@@ -39,6 +42,6 @@ namespace source2sdk
         
         // Cannot assert offsets of fields in CLogicCollisionPair because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::server::CLogicCollisionPair) == 0x4f8);
+        static_assert(sizeof(source2sdk::server::CLogicCollisionPair) == 0x4c0);
     };
 };

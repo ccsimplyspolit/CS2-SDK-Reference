@@ -5,6 +5,7 @@
 #include <cstdint>
 #include "source2sdk/client/AmmoIndex_t.hpp"
 #include "source2sdk/client/DamageTypes_t.hpp"
+#include "source2sdk/client/DestructiblePartDamageRequest_t.hpp"
 #include "source2sdk/client/HitGroup_t.hpp"
 #include "source2sdk/client/TakeDamageFlags_t.hpp"
 namespace source2sdk
@@ -24,19 +25,22 @@ namespace source2sdk
 {
     namespace client
     {
-        // Registered alignment: unknown
+        // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: true
-        // Size: 0xc0
+        // Size: 0x118
         // Has VTable
+        // Construct allowed
+        // 
+        // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CTakeDamageInfo
         {
         public:
             uint8_t _pad0000[0x8]; // 0x0
             Vector m_vecDamageForce; // 0x8            
-            Vector m_vecDamagePosition; // 0x14            
-            Vector m_vecReportedPosition; // 0x20            
+            VectorWS m_vecDamagePosition; // 0x14            
+            VectorWS m_vecReportedPosition; // 0x20            
             Vector m_vecDamageDirection; // 0x2c            
             // m_hInflictor has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::C_BaseEntity> m_hInflictor;
@@ -58,19 +62,17 @@ namespace source2sdk
             bool m_bShouldSpark; // 0x65            
             uint8_t _pad0066[0xa]; // 0x66
             source2sdk::client::TakeDamageFlags_t m_nDamageFlags; // 0x70            
-            CGlobalSymbol m_sDamageSourceName; // 0x78            
-            std::int32_t m_bitsDotaDamageType; // 0x80            
-            std::int32_t m_nDotaDamageCategory; // 0x84            
-            float m_flCombatLogCreditFactor; // 0x88            
-            std::int16_t m_iRecord; // 0x8c            
-            uint8_t _pad008e[0x2]; // 0x8e
-            source2sdk::client::HitGroup_t m_iHitGroupId; // 0x90            
-            uint8_t _pad0094[0x20]; // 0x94
-            bool m_bInTakeDamageFlow; // 0xb4            
-            uint8_t _pad00b5[0xb];
-            
-            // Datamap fields:
-            // void m_hScriptInstance; // 0x98
+            source2sdk::client::HitGroup_t m_iHitGroupId; // 0x78            
+            std::int32_t m_nNumObjectsPenetrated; // 0x7c            
+            float m_flFriendlyFireDamageReductionRatio; // 0x80            
+            bool m_bStoppedBullet; // 0x84            
+            uint8_t _pad0085[0x7b]; // 0x85
+            // m_DestructibleHitGroupRequests has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+            // CUtlLeanVector<source2sdk::client::DestructiblePartDamageRequest_t> m_DestructibleHitGroupRequests;
+            char m_DestructibleHitGroupRequests[0x10]; // 0x100            
+            // metadata: MNotSaved
+            bool m_bInTakeDamageFlow; // 0x110            
+            uint8_t _pad0111[0x7];
         };
         #pragma pack(pop)
         
@@ -90,14 +92,13 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::client::CTakeDamageInfo, m_bShouldBleed) == 0x64);
         static_assert(offsetof(source2sdk::client::CTakeDamageInfo, m_bShouldSpark) == 0x65);
         static_assert(offsetof(source2sdk::client::CTakeDamageInfo, m_nDamageFlags) == 0x70);
-        static_assert(offsetof(source2sdk::client::CTakeDamageInfo, m_sDamageSourceName) == 0x78);
-        static_assert(offsetof(source2sdk::client::CTakeDamageInfo, m_bitsDotaDamageType) == 0x80);
-        static_assert(offsetof(source2sdk::client::CTakeDamageInfo, m_nDotaDamageCategory) == 0x84);
-        static_assert(offsetof(source2sdk::client::CTakeDamageInfo, m_flCombatLogCreditFactor) == 0x88);
-        static_assert(offsetof(source2sdk::client::CTakeDamageInfo, m_iRecord) == 0x8c);
-        static_assert(offsetof(source2sdk::client::CTakeDamageInfo, m_iHitGroupId) == 0x90);
-        static_assert(offsetof(source2sdk::client::CTakeDamageInfo, m_bInTakeDamageFlow) == 0xb4);
+        static_assert(offsetof(source2sdk::client::CTakeDamageInfo, m_iHitGroupId) == 0x78);
+        static_assert(offsetof(source2sdk::client::CTakeDamageInfo, m_nNumObjectsPenetrated) == 0x7c);
+        static_assert(offsetof(source2sdk::client::CTakeDamageInfo, m_flFriendlyFireDamageReductionRatio) == 0x80);
+        static_assert(offsetof(source2sdk::client::CTakeDamageInfo, m_bStoppedBullet) == 0x84);
+        static_assert(offsetof(source2sdk::client::CTakeDamageInfo, m_DestructibleHitGroupRequests) == 0x100);
+        static_assert(offsetof(source2sdk::client::CTakeDamageInfo, m_bInTakeDamageFlow) == 0x110);
         
-        static_assert(sizeof(source2sdk::client::CTakeDamageInfo) == 0xc0);
+        static_assert(sizeof(source2sdk::client::CTakeDamageInfo) == 0x118);
     };
 };

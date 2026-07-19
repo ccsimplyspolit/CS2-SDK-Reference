@@ -14,19 +14,22 @@ namespace source2sdk
 {
     namespace server
     {
-        // Registered alignment: unknown
+        // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: true
         // Size: 0x20
         // Has VTable
         // Has Trivial Destructor
+        // Construct allowed
+        // 
+        // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct locksound_t
         {
         public:
             uint8_t _pad0000[0x8]; // 0x0
-            CUtlSymbolLarge sLockedSound; // 0x8            
-            CUtlSymbolLarge sUnlockedSound; // 0x10            
+            CGameSoundEventName sLockedSound; // 0x8            
+            CGameSoundEventName sUnlockedSound; // 0x10            
             source2sdk::entity2::GameTime_t flwaitSound; // 0x18            
             uint8_t _pad001c[0x4];
         };

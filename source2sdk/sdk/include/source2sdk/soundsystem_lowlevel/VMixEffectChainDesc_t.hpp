@@ -13,25 +13,23 @@ namespace source2sdk
 {
     namespace soundsystem_lowlevel
     {
-        // Registered alignment: 0x4
-        // Alignment: 0x4
+        // Registered alignment: 0x8
+        // Alignment: 0x8
         // Standard-layout class: true
-        // Size: 0x4
-        // Has Trivial Destructor
+        // Size: 0x8
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct VMixEffectChainDesc_t
         {
         public:
-            // metadata: MPropertyFriendlyName "Crossfade Time (s)"
-            // metadata: MPropertyAttributeRange "0.1 10"
-            float m_flCrossfadeTime; // 0x0            
+            CUtlString m_effectName; // 0x0            
         };
         #pragma pack(pop)
         
-        static_assert(offsetof(source2sdk::soundsystem_lowlevel::VMixEffectChainDesc_t, m_flCrossfadeTime) == 0x0);
+        static_assert(offsetof(source2sdk::soundsystem_lowlevel::VMixEffectChainDesc_t, m_effectName) == 0x0);
         
-        static_assert(sizeof(source2sdk::soundsystem_lowlevel::VMixEffectChainDesc_t) == 0x4);
+        static_assert(sizeof(source2sdk::soundsystem_lowlevel::VMixEffectChainDesc_t) == 0x8);
     };
 };

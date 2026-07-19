@@ -20,11 +20,14 @@ namespace source2sdk
 {
     namespace client
     {
-        // Registered alignment: unknown
+        // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: true
         // Size: 0x20
         // Has Trivial Destructor
+        // Construct allowed
+        // 
+        // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class ResponseParams
         {
@@ -33,11 +36,8 @@ namespace source2sdk
             std::int16_t odds; // 0x10            
             std::int16_t flags; // 0x12            
             uint8_t _pad0014[0x4]; // 0x14
+            // metadata: MNotSaved
             source2sdk::client::ResponseFollowup* m_pFollowup; // 0x18            
-            
-            // Datamap fields:
-            // int32_t delay; // 0x0
-            // int32_t respeakdelay; // 0x4
         };
         #pragma pack(pop)
         

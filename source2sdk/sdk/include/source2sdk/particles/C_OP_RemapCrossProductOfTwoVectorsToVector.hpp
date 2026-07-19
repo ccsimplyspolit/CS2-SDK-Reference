@@ -19,8 +19,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0xeb8
+        // Size: 0xf50
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -28,20 +29,20 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "input vector 1"
-            source2sdk::particleslib::CPerParticleVecInput m_InputVec1; // 0x1c0            
+            source2sdk::particleslib::CPerParticleVecInput m_InputVec1; // 0x1d8            
             // metadata: MPropertyFriendlyName "input vector 2"
-            source2sdk::particleslib::CPerParticleVecInput m_InputVec2; // 0x838            
+            source2sdk::particleslib::CPerParticleVecInput m_InputVec2; // 0x890            
             // metadata: MPropertyFriendlyName "output field"
             // metadata: MPropertyAttributeChoiceName "particlefield_vector"
-            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0xeb0            
+            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0xf48            
             // metadata: MPropertyFriendlyName "normalize output"
-            bool m_bNormalize; // 0xeb4            
-            uint8_t _pad0eb5[0x3];
+            bool m_bNormalize; // 0xf4c            
+            uint8_t _pad0f4d[0x3];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_OP_RemapCrossProductOfTwoVectorsToVector because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_OP_RemapCrossProductOfTwoVectorsToVector) == 0xeb8);
+        static_assert(sizeof(source2sdk::particles::C_OP_RemapCrossProductOfTwoVectorsToVector) == 0xf50);
     };
 };

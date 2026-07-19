@@ -13,7 +13,7 @@ namespace source2sdk
 {
     namespace modellib
     {
-        // Enumerator count: 5
+        // Enumerator count: 7
         // Alignment: 4
         // Size: 0x4
         enum class NPCPhysicsHullType_t : std::uint32_t
@@ -28,6 +28,10 @@ namespace source2sdk
             eGenericCapsule = 0x3,
             // MPropertyFriendlyName "Box - Ground"
             eGroundBox = 0x4,
+            // MPropertyFriendlyName "Cylinder - Ground (SLOW PERF)"
+            eGroundCylinder = 0x5,
+            // MPropertyFriendlyName "Cylinder - Centered (SLOW PERF)"
+            eCenteredCylinder = 0x6,
         };
     };
 };

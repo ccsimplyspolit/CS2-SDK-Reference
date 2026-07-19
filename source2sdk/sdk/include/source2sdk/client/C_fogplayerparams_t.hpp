@@ -20,21 +20,20 @@ namespace source2sdk
 {
     namespace client
     {
-        // Registered alignment: unknown
-        // Alignment: 0x4
+        // Registered alignment: 0x8
+        // Alignment: 0x8
         // Standard-layout class: true
         // Size: 0x40
         // Has VTable
         // Has Trivial Destructor
+        // Construct allowed
         // 
-        // static metadata: MNetworkVarNames "CHandle< CFogController> m_hCtrl"
+        // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct C_fogplayerparams_t
         {
         public:
             uint8_t _pad0000[0x8]; // 0x0
-            // metadata: MNetworkEnable
-            // metadata: MNetworkUserGroup "PlayerFogController"
             // m_hCtrl has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::C_FogController> m_hCtrl;
             char m_hCtrl[0x4]; // 0x8            
@@ -42,14 +41,20 @@ namespace source2sdk
             Color m_OldColor; // 0x10            
             float m_flOldStart; // 0x14            
             float m_flOldEnd; // 0x18            
+            // metadata: MNotSaved
             float m_flOldMaxDensity; // 0x1c            
+            // metadata: MNotSaved
             float m_flOldHDRColorScale; // 0x20            
+            // metadata: MNotSaved
             float m_flOldFarZ; // 0x24            
             Color m_NewColor; // 0x28            
             float m_flNewStart; // 0x2c            
             float m_flNewEnd; // 0x30            
+            // metadata: MNotSaved
             float m_flNewMaxDensity; // 0x34            
+            // metadata: MNotSaved
             float m_flNewHDRColorScale; // 0x38            
+            // metadata: MNotSaved
             float m_flNewFarZ; // 0x3c            
         };
         #pragma pack(pop)

@@ -17,8 +17,9 @@ namespace source2sdk
         // Registered alignment: 0x10
         // Alignment: 0x10
         // Standard-layout class: false
-        // Size: 0xad0
+        // Size: 0xba0
         // Has VTable
+        // Construct allowed
         #pragma pack(push, 1)
         class CDynamicPropAlias_prop_dynamic_override : public source2sdk::server::CDynamicProp
         {
@@ -28,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDynamicPropAlias_prop_dynamic_override) == 0xad0);
+        static_assert(sizeof(source2sdk::server::CDynamicPropAlias_prop_dynamic_override) == 0xba0);
     };
 };

@@ -19,8 +19,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0xdb8
+        // Size: 0xe50
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -28,20 +29,20 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "slack"
-            source2sdk::particleslib::CPerParticleFloatInput m_flRestLength; // 0x1c0            
+            source2sdk::particleslib::CPerParticleFloatInput m_flRestLength; // 0x1d8            
             // metadata: MPropertyFriendlyName "minimum segment length %"
-            source2sdk::particleslib::CPerParticleFloatInput m_flMinDistance; // 0x320            
+            source2sdk::particleslib::CPerParticleFloatInput m_flMinDistance; // 0x348            
             // metadata: MPropertyFriendlyName "maximum segment length %"
-            source2sdk::particleslib::CPerParticleFloatInput m_flMaxDistance; // 0x480            
+            source2sdk::particleslib::CPerParticleFloatInput m_flMaxDistance; // 0x4b8            
             // metadata: MPropertyFriendlyName "resting spacing"
-            source2sdk::particleslib::CPerParticleFloatInput m_flRestingLength; // 0x5e0            
+            source2sdk::particleslib::CPerParticleFloatInput m_flRestingLength; // 0x628            
             // metadata: MPropertyFriendlyName "anchor vector"
-            source2sdk::particleslib::CPerParticleVecInput m_vecAnchorVector; // 0x740            
+            source2sdk::particleslib::CPerParticleVecInput m_vecAnchorVector; // 0x798            
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_OP_SpringToVectorConstraint because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_OP_SpringToVectorConstraint) == 0xdb8);
+        static_assert(sizeof(source2sdk::particles::C_OP_SpringToVectorConstraint) == 0xe50);
     };
 };

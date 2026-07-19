@@ -31,7 +31,7 @@ namespace source2sdk
             float m_flMuzzleFlashBrightness; // 0x24            
             uint8_t _pad0028[0x8]; // 0x28
             Quaternion m_quatMuzzleFlashOrientation; // 0x30            
-            Vector m_vecMuzzleFlashOrigin; // 0x40            
+            VectorWS m_vecMuzzleFlashOrigin; // 0x40            
             float m_flFov; // 0x4c            
             float m_flFarZ; // 0x50            
             float m_flLinearAtten; // 0x54            

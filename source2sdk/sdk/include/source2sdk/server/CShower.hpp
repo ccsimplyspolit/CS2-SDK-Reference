@@ -17,17 +17,20 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x7f0
+        // Size: 0x778
         // Has VTable
+        // Construct allowed
         #pragma pack(push, 1)
         class CShower : public source2sdk::server::CModelPointEntity
         {
         public:
-            // No schema binary for binding
+            float m_flSpeed; // 0x770            
+            uint8_t _pad0774[0x4];
         };
         #pragma pack(pop)
         
+        // Cannot assert offsets of fields in CShower because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::server::CShower) == 0x7f0);
+        static_assert(sizeof(source2sdk::server::CShower) == 0x778);
     };
 };

@@ -17,8 +17,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x218
+        // Size: 0x230
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MObsoleteParticleFunction
         // static metadata: MGetKV3ClassDefaults
@@ -27,14 +28,14 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "rotate rate(dps)"
-            float m_flRotateRateDegrees; // 0x210            
+            float m_flRotateRateDegrees; // 0x228            
             // metadata: MPropertyFriendlyName "forward angle"
-            float m_flForwardDegrees; // 0x214            
+            float m_flForwardDegrees; // 0x22c            
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_OP_RenderScreenVelocityRotate because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_OP_RenderScreenVelocityRotate) == 0x218);
+        static_assert(sizeof(source2sdk::particles::C_OP_RenderScreenVelocityRotate) == 0x230);
     };
 };

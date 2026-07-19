@@ -17,19 +17,18 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x998
+        // Size: 0xfb0
         // Has VTable
-        // 
-        // static metadata: MNetworkOverride "m_angRotation CGameSceneNode"
-        // static metadata: MNetworkOverride "m_flSimulationTime C_BaseEntity"
+        // Construct allowed
         #pragma pack(push, 1)
         class C_FuncRotating : public source2sdk::client::C_BaseModelEntity
         {
         public:
+            // No schema binary for binding
         };
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_FuncRotating) == 0x998);
+        static_assert(sizeof(source2sdk::client::C_FuncRotating) == 0xfb0);
     };
 };

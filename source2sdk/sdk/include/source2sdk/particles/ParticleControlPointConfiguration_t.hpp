@@ -18,7 +18,8 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: true
-        // Size: 0x88
+        // Size: 0x90
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -37,6 +38,6 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::particles::ParticleControlPointConfiguration_t, m_drivers) == 0x8);
         static_assert(offsetof(source2sdk::particles::ParticleControlPointConfiguration_t, m_previewState) == 0x20);
         
-        static_assert(sizeof(source2sdk::particles::ParticleControlPointConfiguration_t) == 0x88);
+        static_assert(sizeof(source2sdk::particles::ParticleControlPointConfiguration_t) == 0x90);
     };
 };

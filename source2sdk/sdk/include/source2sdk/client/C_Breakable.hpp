@@ -17,8 +17,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x998
+        // Size: 0xfb0
         // Has VTable
+        // Construct allowed
         #pragma pack(push, 1)
         class C_Breakable : public source2sdk::client::C_BaseModelEntity
         {
@@ -28,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_Breakable) == 0x998);
+        static_assert(sizeof(source2sdk::client::C_Breakable) == 0xfb0);
     };
 };

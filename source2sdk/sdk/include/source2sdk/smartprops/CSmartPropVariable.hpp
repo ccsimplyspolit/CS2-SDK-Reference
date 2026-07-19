@@ -20,6 +20,7 @@ namespace source2sdk
         // Size: 0x38
         // Has VTable
         // Is Abstract
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MVDataRoot

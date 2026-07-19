@@ -19,11 +19,9 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x60
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
-        // static metadata: MCellForDomain "BaseDomain"
-        // static metadata: MPulseCellMethodBindings
-        // static metadata: MPulseCellOutflowHookInfo "0XKæþ"
         // static metadata: MPropertyFriendlyName "Gradient"
         #pragma pack(push, 1)
         class CPulseCell_Value_Gradient : public source2sdk::pulse_runtime_lib::CPulseCell_BaseValue

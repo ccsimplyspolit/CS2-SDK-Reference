@@ -17,23 +17,24 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x538
+        // Size: 0x500
         // Has VTable
+        // Construct allowed
         #pragma pack(push, 1)
         class CSoundOpvarSetEntity : public source2sdk::server::CBaseEntity
         {
         public:
-            uint8_t _pad04e0[0x18]; // 0x4e0
-            CUtlSymbolLarge m_iszStackName; // 0x4f8            
-            CUtlSymbolLarge m_iszOperatorName; // 0x500            
-            CUtlSymbolLarge m_iszOpvarName; // 0x508            
-            std::int32_t m_nOpvarType; // 0x510            
-            std::int32_t m_nOpvarIndex; // 0x514            
-            float m_flOpvarValue; // 0x518            
-            uint8_t _pad051c[0x4]; // 0x51c
-            CUtlSymbolLarge m_OpvarValueString; // 0x520            
-            bool m_bSetOnSpawn; // 0x528            
-            uint8_t _pad0529[0xf];
+            uint8_t _pad04a8[0x18]; // 0x4a8
+            CUtlSymbolLarge m_iszStackName; // 0x4c0            
+            CUtlSymbolLarge m_iszOperatorName; // 0x4c8            
+            CUtlSymbolLarge m_iszOpvarName; // 0x4d0            
+            std::int32_t m_nOpvarType; // 0x4d8            
+            std::int32_t m_nOpvarIndex; // 0x4dc            
+            float m_flOpvarValue; // 0x4e0            
+            uint8_t _pad04e4[0x4]; // 0x4e4
+            CUtlSymbolLarge m_OpvarValueString; // 0x4e8            
+            bool m_bSetOnSpawn; // 0x4f0            
+            uint8_t _pad04f1[0xf];
             
             // Datamap fields:
             // uint64_t InputSetEventGuid; // 0x0
@@ -44,13 +45,11 @@ namespace source2sdk
             // void InputSetOpvar; // 0x0
             // float InputChangeOpvarValue; // 0x0
             // float InputChangeOpvarValueAndSet; // 0x0
-            // void m_nGUID; // 0x4e0
-            // void m_LastOpvarValueString; // 0x530
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in CSoundOpvarSetEntity because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::server::CSoundOpvarSetEntity) == 0x538);
+        static_assert(sizeof(source2sdk::server::CSoundOpvarSetEntity) == 0x500);
     };
 };

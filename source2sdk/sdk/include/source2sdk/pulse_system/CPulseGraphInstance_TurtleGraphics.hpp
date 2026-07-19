@@ -17,23 +17,18 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: 0x1
         // Standard-layout class: false
-        // Size: 0x130
+        // Size: 0x138
         // Has VTable
-        // 
-        // static metadata: MPulseInstanceDomainInfo
-        // static metadata: MPulseDomainHookInfo
-        // static metadata: MPulseDomainScopeInfo
-        // static metadata: MPulseLibraryBindings
-        // static metadata: MPulseDomainDebuggerCanCreateInstance
         #pragma pack(push, 1)
         class CPulseGraphInstance_TurtleGraphics : public source2sdk::pulse_runtime_lib::CBasePulseGraphInstance
         {
         public:
-            uint8_t _pad0108[0x28];
+            uint8_t _pad0110[0x28];
+            // No schema binary for binding
         };
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::pulse_system::CPulseGraphInstance_TurtleGraphics) == 0x130);
+        static_assert(sizeof(source2sdk::pulse_system::CPulseGraphInstance_TurtleGraphics) == 0x138);
     };
 };

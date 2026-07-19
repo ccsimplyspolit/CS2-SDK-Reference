@@ -13,7 +13,7 @@ namespace source2sdk
 {
     namespace scenesystem
     {
-        // Enumerator count: 4
+        // Enumerator count: 5
         // Alignment: 1
         // Size: 0x1
         enum class DisableShadows_t : std::uint8_t
@@ -22,6 +22,7 @@ namespace source2sdk
             kDisableShadows_All = 0x1,
             kDisableShadows_Baked = 0x2,
             kDisableShadows_Realtime = 0x3,
+            kDisableShadows_ReallyNone = 0x4,
         };
     };
 };

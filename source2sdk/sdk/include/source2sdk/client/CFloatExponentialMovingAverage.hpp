@@ -23,12 +23,6 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0000[0x14];
-            // Datamap fields:
-            // int32_t m_nSampleCount; // 0x4
-            // int32_t m_nMaxSampleCount; // 0x0
-            // float m_previousSample; // 0x8
-            // float m_average; // 0xc
-            // float m_averageDelta; // 0x10
             // No schema binary for binding
         };
         #pragma pack(pop)

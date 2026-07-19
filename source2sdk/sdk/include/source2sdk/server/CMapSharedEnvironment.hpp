@@ -17,19 +17,20 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x4f0
+        // Size: 0x4b8
         // Has VTable
+        // Construct allowed
         #pragma pack(push, 1)
         class CMapSharedEnvironment : public source2sdk::server::CLogicalEntity
         {
         public:
-            CUtlSymbolLarge m_targetMapName; // 0x4e0            
-            uint8_t _pad04e8[0x8];
+            CUtlSymbolLarge m_targetMapName; // 0x4a8            
+            uint8_t _pad04b0[0x8];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in CMapSharedEnvironment because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::server::CMapSharedEnvironment) == 0x4f0);
+        static_assert(sizeof(source2sdk::server::CMapSharedEnvironment) == 0x4b8);
     };
 };

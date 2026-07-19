@@ -20,6 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x40
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Fit on Line Scale Mode"

@@ -22,9 +22,9 @@ namespace source2sdk
         // Size: 0x80
         // Has VTable
         // Is Abstract
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
-        // static metadata: M_LEGACY_OptInToSchemaPropertyDomain
         #pragma pack(push, 1)
         class CConcreteAnimParameter : public source2sdk::animgraphlib::CAnimParameterBase
         {

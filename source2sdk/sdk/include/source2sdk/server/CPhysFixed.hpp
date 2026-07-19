@@ -17,21 +17,22 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x578
+        // Size: 0x530
         // Has VTable
+        // Construct allowed
         #pragma pack(push, 1)
         class CPhysFixed : public source2sdk::server::CPhysConstraint
         {
         public:
-            float m_flLinearFrequency; // 0x550            
-            float m_flLinearDampingRatio; // 0x554            
-            float m_flAngularFrequency; // 0x558            
-            float m_flAngularDampingRatio; // 0x55c            
-            bool m_bEnableLinearConstraint; // 0x560            
-            bool m_bEnableAngularConstraint; // 0x561            
-            uint8_t _pad0562[0x6]; // 0x562
-            CUtlSymbolLarge m_sBoneName1; // 0x568            
-            CUtlSymbolLarge m_sBoneName2; // 0x570            
+            float m_flLinearFrequency; // 0x508            
+            float m_flLinearDampingRatio; // 0x50c            
+            float m_flAngularFrequency; // 0x510            
+            float m_flAngularDampingRatio; // 0x514            
+            bool m_bEnableLinearConstraint; // 0x518            
+            bool m_bEnableAngularConstraint; // 0x519            
+            uint8_t _pad051a[0x6]; // 0x51a
+            CUtlSymbolLarge m_sBoneName1; // 0x520            
+            CUtlSymbolLarge m_sBoneName2; // 0x528            
             
             // Datamap fields:
             // float InputSetLinearFrequency; // 0x0
@@ -43,6 +44,6 @@ namespace source2sdk
         
         // Cannot assert offsets of fields in CPhysFixed because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::server::CPhysFixed) == 0x578);
+        static_assert(sizeof(source2sdk::server::CPhysFixed) == 0x530);
     };
 };

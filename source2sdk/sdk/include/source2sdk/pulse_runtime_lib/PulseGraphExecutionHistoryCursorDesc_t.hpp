@@ -18,7 +18,8 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: true
-        // Size: 0x28
+        // Size: 0x30
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -32,6 +33,8 @@ namespace source2sdk
             source2sdk::pulse_runtime_lib::PulseDocNodeID_t nRetiredAtNodeID; // 0x1c            
             float flLastReferenced; // 0x20            
             std::int32_t nLastValidEntryIdx; // 0x24            
+            bool bWasAnObservableComputation; // 0x28            
+            uint8_t _pad0029[0x7];
         };
         #pragma pack(pop)
         
@@ -40,7 +43,8 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::pulse_runtime_lib::PulseGraphExecutionHistoryCursorDesc_t, nRetiredAtNodeID) == 0x1c);
         static_assert(offsetof(source2sdk::pulse_runtime_lib::PulseGraphExecutionHistoryCursorDesc_t, flLastReferenced) == 0x20);
         static_assert(offsetof(source2sdk::pulse_runtime_lib::PulseGraphExecutionHistoryCursorDesc_t, nLastValidEntryIdx) == 0x24);
+        static_assert(offsetof(source2sdk::pulse_runtime_lib::PulseGraphExecutionHistoryCursorDesc_t, bWasAnObservableComputation) == 0x28);
         
-        static_assert(sizeof(source2sdk::pulse_runtime_lib::PulseGraphExecutionHistoryCursorDesc_t) == 0x28);
+        static_assert(sizeof(source2sdk::pulse_runtime_lib::PulseGraphExecutionHistoryCursorDesc_t) == 0x30);
     };
 };

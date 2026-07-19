@@ -18,7 +18,8 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: true
-        // Size: 0xa0
+        // Size: 0xb0
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -48,8 +49,9 @@ namespace source2sdk
             std::int32_t m_nAttachBoneIdx; // 0x90            
             std::int32_t m_nAttachMeshIdx; // 0x94            
             std::int32_t m_nAttachMeshDrawCallIdx; // 0x98            
-            bool m_bEnableSimulation; // 0x9c            
-            uint8_t _pad009d[0x3];
+            uint8_t _pad009c[0x10]; // 0x9c
+            bool m_bEnableSimulation; // 0xac            
+            uint8_t _pad00ad[0x3];
         };
         #pragma pack(pop)
         
@@ -66,8 +68,8 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::modellib::CRenderGroom, m_nAttachBoneIdx) == 0x90);
         static_assert(offsetof(source2sdk::modellib::CRenderGroom, m_nAttachMeshIdx) == 0x94);
         static_assert(offsetof(source2sdk::modellib::CRenderGroom, m_nAttachMeshDrawCallIdx) == 0x98);
-        static_assert(offsetof(source2sdk::modellib::CRenderGroom, m_bEnableSimulation) == 0x9c);
+        static_assert(offsetof(source2sdk::modellib::CRenderGroom, m_bEnableSimulation) == 0xac);
         
-        static_assert(sizeof(source2sdk::modellib::CRenderGroom) == 0xa0);
+        static_assert(sizeof(source2sdk::modellib::CRenderGroom) == 0xb0);
     };
 };

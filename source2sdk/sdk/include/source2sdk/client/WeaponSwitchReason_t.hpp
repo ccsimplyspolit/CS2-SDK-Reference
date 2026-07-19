@@ -13,7 +13,7 @@ namespace source2sdk
 {
     namespace client
     {
-        // Enumerator count: 4
+        // Enumerator count: 5
         // Alignment: 4
         // Size: 0x4
         enum class WeaponSwitchReason_t : std::uint32_t
@@ -22,6 +22,7 @@ namespace source2sdk
             eEquipped = 0x1,
             eUserInitiatedSwitchToLast = 0x2,
             eUserInitiatedUIKeyPress = 0x3,
+            eUserInitiatedSwitchHands = 0x4,
         };
     };
 };

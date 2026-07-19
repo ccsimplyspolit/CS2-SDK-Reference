@@ -17,22 +17,17 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: 0x1
         // Standard-layout class: false
-        // Size: 0x128
+        // Size: 0x130
         // Has VTable
-        // 
-        // static metadata: MPulseInstanceDomainInfo
-        // static metadata: MPulseDomainHookInfo
-        // static metadata: MPulseDomainScopeInfo
-        // static metadata: MPulseLibraryBindings
-        // static metadata: MPulseDomainHiddenInTool
         #pragma pack(push, 1)
         class CParticleBindingRealPulse : public source2sdk::particleslib::CParticleCollectionBindingInstance
         {
         public:
+            // No schema binary for binding
         };
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::particleslib::CParticleBindingRealPulse) == 0x128);
+        static_assert(sizeof(source2sdk::particleslib::CParticleBindingRealPulse) == 0x130);
     };
 };

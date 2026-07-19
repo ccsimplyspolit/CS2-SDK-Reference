@@ -17,18 +17,19 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x600
+        // Size: 0x618
         // Has VTable
+        // Construct allowed
         #pragma pack(push, 1)
         class C_TintController : public source2sdk::client::C_BaseEntity
         {
         public:
-            uint8_t _pad05e8[0x18];
+            uint8_t _pad0600[0x18];
             // No schema binary for binding
         };
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_TintController) == 0x600);
+        static_assert(sizeof(source2sdk::client::C_TintController) == 0x618);
     };
 };

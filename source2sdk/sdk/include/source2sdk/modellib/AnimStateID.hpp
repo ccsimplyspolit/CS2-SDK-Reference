@@ -18,9 +18,9 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x4
         // Has Trivial Destructor
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
-        // static metadata: MPropertyEditClassAsString
         #pragma pack(push, 1)
         class AnimStateID
         {

@@ -18,8 +18,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x498
+        // Size: 0x4d0
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -27,22 +28,22 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "minimum distance"
-            source2sdk::particleslib::CParticleCollectionFloatInput m_fMinDistance; // 0x1c0            
+            source2sdk::particleslib::CParticleCollectionFloatInput m_fMinDistance; // 0x1d8            
             // metadata: MPropertyFriendlyName "maximum distance"
-            source2sdk::particleslib::CParticleCollectionFloatInput m_fMaxDistance; // 0x320            
+            source2sdk::particleslib::CParticleCollectionFloatInput m_fMaxDistance; // 0x348            
             // metadata: MPropertyFriendlyName "control point number"
-            std::int32_t m_nControlPointNumber; // 0x480            
+            std::int32_t m_nControlPointNumber; // 0x4b8            
             // metadata: MPropertyFriendlyName "offset of center"
             // metadata: MVectorIsCoordinate
-            Vector m_CenterOffset; // 0x484            
+            Vector m_CenterOffset; // 0x4bc            
             // metadata: MPropertyFriendlyName "global center point"
-            bool m_bGlobalCenter; // 0x490            
-            uint8_t _pad0491[0x7];
+            bool m_bGlobalCenter; // 0x4c8            
+            uint8_t _pad04c9[0x7];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_OP_ConstrainDistance because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_OP_ConstrainDistance) == 0x498);
+        static_assert(sizeof(source2sdk::particles::C_OP_ConstrainDistance) == 0x4d0);
     };
 };

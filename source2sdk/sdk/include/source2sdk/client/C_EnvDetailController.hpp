@@ -17,24 +17,21 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x5f0
+        // Size: 0x608
         // Has VTable
-        // 
-        // static metadata: MNetworkVarNames "float32 m_flFadeStartDist"
-        // static metadata: MNetworkVarNames "float32 m_flFadeEndDist"
+        // Construct allowed
+        // MNetworkNoBase
         #pragma pack(push, 1)
         class C_EnvDetailController : public source2sdk::client::C_BaseEntity
         {
         public:
-            // metadata: MNetworkEnable
-            float m_flFadeStartDist; // 0x5e8            
-            // metadata: MNetworkEnable
-            float m_flFadeEndDist; // 0x5ec            
+            float m_flFadeStartDist; // 0x600            
+            float m_flFadeEndDist; // 0x604            
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_EnvDetailController because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::client::C_EnvDetailController) == 0x5f0);
+        static_assert(sizeof(source2sdk::client::C_EnvDetailController) == 0x608);
     };
 };

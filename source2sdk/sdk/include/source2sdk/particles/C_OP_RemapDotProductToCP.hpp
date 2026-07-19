@@ -18,8 +18,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x758
+        // Size: 0x7b0
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -27,27 +28,27 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "first input control point"
-            std::int32_t m_nInputCP1; // 0x1c8            
+            std::int32_t m_nInputCP1; // 0x1e0            
             // metadata: MPropertyFriendlyName "second input control point"
-            std::int32_t m_nInputCP2; // 0x1cc            
+            std::int32_t m_nInputCP2; // 0x1e4            
             // metadata: MPropertyFriendlyName "output control point"
-            std::int32_t m_nOutputCP; // 0x1d0            
+            std::int32_t m_nOutputCP; // 0x1e8            
             // metadata: MPropertyFriendlyName "output component"
             // metadata: MPropertyAttributeChoiceName "vector_component"
-            std::int32_t m_nOutVectorField; // 0x1d4            
+            std::int32_t m_nOutVectorField; // 0x1ec            
             // metadata: MPropertyFriendlyName "input minimum (-1 to 1)"
-            source2sdk::particleslib::CParticleCollectionFloatInput m_flInputMin; // 0x1d8            
+            source2sdk::particleslib::CParticleCollectionFloatInput m_flInputMin; // 0x1f0            
             // metadata: MPropertyFriendlyName "input maximum (-1 to 1)"
-            source2sdk::particleslib::CParticleCollectionFloatInput m_flInputMax; // 0x338            
+            source2sdk::particleslib::CParticleCollectionFloatInput m_flInputMax; // 0x360            
             // metadata: MPropertyFriendlyName "output minimum"
-            source2sdk::particleslib::CParticleCollectionFloatInput m_flOutputMin; // 0x498            
+            source2sdk::particleslib::CParticleCollectionFloatInput m_flOutputMin; // 0x4d0            
             // metadata: MPropertyFriendlyName "output maximum"
-            source2sdk::particleslib::CParticleCollectionFloatInput m_flOutputMax; // 0x5f8            
+            source2sdk::particleslib::CParticleCollectionFloatInput m_flOutputMax; // 0x640            
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_OP_RemapDotProductToCP because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_OP_RemapDotProductToCP) == 0x758);
+        static_assert(sizeof(source2sdk::particles::C_OP_RemapDotProductToCP) == 0x7b0);
     };
 };

@@ -19,8 +19,9 @@ namespace source2sdk
         // Registered alignment: 0x10
         // Alignment: 0x10
         // Standard-layout class: false
-        // Size: 0x220
+        // Size: 0x240
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -28,28 +29,29 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "minimum distance"
-            float m_fMinDistance; // 0x1c0            
+            float m_fMinDistance; // 0x1d8            
             // metadata: MPropertyFriendlyName "maximum distance"
-            float m_flMaxDistance0; // 0x1c4            
+            float m_flMaxDistance0; // 0x1dc            
             // metadata: MPropertyFriendlyName "maximum distance middle"
-            float m_flMaxDistanceMid; // 0x1c8            
+            float m_flMaxDistanceMid; // 0x1e0            
             // metadata: MPropertyFriendlyName "maximum distance end"
-            float m_flMaxDistance1; // 0x1cc            
-            source2sdk::particles::CPathParameters m_PathParameters; // 0x1d0            
+            float m_flMaxDistance1; // 0x1e4            
+            uint8_t _pad01e8[0x8]; // 0x1e8
+            source2sdk::particles::CPathParameters m_PathParameters; // 0x1f0            
             // metadata: MPropertyFriendlyName "travel time"
-            float m_flTravelTime; // 0x210            
+            float m_flTravelTime; // 0x230            
             // metadata: MPropertyFriendlyName "travel time scale field"
             // metadata: MPropertyAttributeChoiceName "particlefield_scalar"
-            source2sdk::particles::ParticleAttributeIndex_t m_nFieldScale; // 0x214            
+            source2sdk::particles::ParticleAttributeIndex_t m_nFieldScale; // 0x234            
             // metadata: MPropertyFriendlyName "manual time placement field"
             // metadata: MPropertyAttributeChoiceName "particlefield_scalar"
-            source2sdk::particles::ParticleAttributeIndex_t m_nManualTField; // 0x218            
-            uint8_t _pad021c[0x4];
+            source2sdk::particles::ParticleAttributeIndex_t m_nManualTField; // 0x238            
+            uint8_t _pad023c[0x4];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_OP_ConstrainDistanceToPath because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_OP_ConstrainDistanceToPath) == 0x220);
+        static_assert(sizeof(source2sdk::particles::C_OP_ConstrainDistanceToPath) == 0x240);
     };
 };

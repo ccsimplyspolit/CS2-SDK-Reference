@@ -18,23 +18,22 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x6c8
+        // Size: 0x6d8
         // Has VTable
-        // 
-        // static metadata: MNetworkVarNames "SoundeventPathCornerPairNetworked_t m_vecCornerPairsNetworked"
+        // Construct allowed
         #pragma pack(push, 1)
         class C_SoundEventPathCornerEntity : public source2sdk::client::C_SoundEventEntity
         {
         public:
-            // metadata: MNetworkEnable
+            // metadata: MNotSaved
             // m_vecCornerPairsNetworked has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // C_NetworkUtlVectorBase<source2sdk::client::SoundeventPathCornerPairNetworked_t> m_vecCornerPairsNetworked;
-            char m_vecCornerPairsNetworked[0x18]; // 0x6b0            
+            char m_vecCornerPairsNetworked[0x18]; // 0x6c0            
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_SoundEventPathCornerEntity because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::client::C_SoundEventPathCornerEntity) == 0x6c8);
+        static_assert(sizeof(source2sdk::client::C_SoundEventPathCornerEntity) == 0x6d8);
     };
 };

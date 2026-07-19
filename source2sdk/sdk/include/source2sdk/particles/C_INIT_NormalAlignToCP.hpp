@@ -19,8 +19,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x238
+        // Size: 0x250
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -28,15 +29,15 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "input"
-            source2sdk::particleslib::CParticleTransformInput m_transformInput; // 0x1c8            
+            source2sdk::particleslib::CParticleTransformInput m_transformInput; // 0x1e0            
             // metadata: MPropertyFriendlyName "control point axis"
-            source2sdk::particles::ParticleControlPointAxis_t m_nControlPointAxis; // 0x230            
-            uint8_t _pad0234[0x4];
+            source2sdk::particles::ParticleControlPointAxis_t m_nControlPointAxis; // 0x248            
+            uint8_t _pad024c[0x4];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_INIT_NormalAlignToCP because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_INIT_NormalAlignToCP) == 0x238);
+        static_assert(sizeof(source2sdk::particles::C_INIT_NormalAlignToCP) == 0x250);
     };
 };

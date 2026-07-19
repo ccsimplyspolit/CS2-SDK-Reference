@@ -17,22 +17,21 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x9a0
+        // Size: 0xfb8
         // Has VTable
-        // 
-        // static metadata: MNetworkVarNames "bool m_bIsUsable"
+        // Construct allowed
         #pragma pack(push, 1)
         class C_BaseDoor : public source2sdk::client::C_BaseToggle
         {
         public:
-            // metadata: MNetworkEnable
-            bool m_bIsUsable; // 0x998            
-            uint8_t _pad0999[0x7];
+            // metadata: MNotSaved
+            bool m_bIsUsable; // 0xfb0            
+            uint8_t _pad0fb1[0x7];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_BaseDoor because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::client::C_BaseDoor) == 0x9a0);
+        static_assert(sizeof(source2sdk::client::C_BaseDoor) == 0xfb8);
     };
 };

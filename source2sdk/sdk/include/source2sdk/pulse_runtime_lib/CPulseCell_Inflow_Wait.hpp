@@ -18,13 +18,11 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x90
+        // Size: 0x120
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
-        // static metadata: MCellForDomain "BaseDomain"
-        // static metadata: MPulseCellMethodBindings
-        // static metadata: MPulseCellOutflowHookInfo "ะมJๆþ"
         // static metadata: MPropertyFriendlyName "Wait"
         // static metadata: MPropertyDescription "Causes each execution cursor to pause at this node for a fixed period of time. Each cursor will wake up and resume execution when the time expires, unless aborted or early-woken."
         // static metadata: MPulseEditorHeaderIcon "tools/images/pulse_editor/inflow_wait.png"
@@ -33,12 +31,12 @@ namespace source2sdk
         class CPulseCell_Inflow_Wait : public source2sdk::pulse_runtime_lib::CPulseCell_BaseYieldingInflow
         {
         public:
-            source2sdk::pulse_runtime_lib::CPulse_ResumePoint m_WakeResume; // 0x48            
+            source2sdk::pulse_runtime_lib::CPulse_ResumePoint m_WakeResume; // 0xd8            
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in CPulseCell_Inflow_Wait because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::pulse_runtime_lib::CPulseCell_Inflow_Wait) == 0x90);
+        static_assert(sizeof(source2sdk::pulse_runtime_lib::CPulseCell_Inflow_Wait) == 0x120);
     };
 };

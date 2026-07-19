@@ -18,8 +18,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x490
+        // Size: 0x4c8
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -27,23 +28,23 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "control point number"
-            std::int32_t m_nControlPointNumber; // 0x1c0            
+            std::int32_t m_nControlPointNumber; // 0x1d8            
             // metadata: MPropertyFriendlyName "snapshot control point number"
-            std::int32_t m_nSnapshotControlPointNumber; // 0x1c4            
+            std::int32_t m_nSnapshotControlPointNumber; // 0x1dc            
             // metadata: MPropertyFriendlyName "set normal"
-            bool m_bSetNormal; // 0x1c8            
+            bool m_bSetNormal; // 0x1e0            
             // metadata: MPropertyFriendlyName "set radius"
-            bool m_bSetRadius; // 0x1c9            
-            uint8_t _pad01ca[0x6]; // 0x1ca
+            bool m_bSetRadius; // 0x1e1            
+            uint8_t _pad01e2[0x6]; // 0x1e2
             // metadata: MPropertyFriendlyName "Interpolation"
-            source2sdk::particleslib::CPerParticleFloatInput m_flInterpolation; // 0x1d0            
+            source2sdk::particleslib::CPerParticleFloatInput m_flInterpolation; // 0x1e8            
             // metadata: MPropertyFriendlyName "Snapshot Index T Value"
-            source2sdk::particleslib::CPerParticleFloatInput m_flTValue; // 0x330            
+            source2sdk::particleslib::CPerParticleFloatInput m_flTValue; // 0x358            
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_OP_MovementMoveAlongSkinnedCPSnapshot because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_OP_MovementMoveAlongSkinnedCPSnapshot) == 0x490);
+        static_assert(sizeof(source2sdk::particles::C_OP_MovementMoveAlongSkinnedCPSnapshot) == 0x4c8);
     };
 };

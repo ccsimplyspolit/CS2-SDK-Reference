@@ -3,7 +3,7 @@
 #include "source2sdk/source2gen/source2gen.hpp"
 #include <cstddef>
 #include <cstdint>
-#include "source2sdk/client/C_EconItemAttribute.hpp"
+#include "source2sdk/client/CEconItemAttribute.hpp"
 namespace source2sdk
 {
     namespace client
@@ -26,17 +26,13 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x78
         // Has VTable
-        // 
-        // static metadata: MNetworkVarNames "C_EconItemAttribute m_Attributes"
         #pragma pack(push, 1)
         class CAttributeList
         {
         public:
             uint8_t _pad0000[0x8]; // 0x0
-            // metadata: MNetworkEnable
-            // metadata: MNetworkTypeAlias "CUtlVector< CEconItemAttribute >"
             // m_Attributes has a template type with potentially unknown template parameters. You can try uncommenting the field below.
-            // C_UtlVectorEmbeddedNetworkVar<source2sdk::client::C_EconItemAttribute> m_Attributes;
+            // C_UtlVectorEmbeddedNetworkVar<source2sdk::client::CEconItemAttribute> m_Attributes;
             char m_Attributes[0x68]; // 0x8            
             source2sdk::client::CAttributeManager* m_pManager; // 0x70            
         };

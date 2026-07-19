@@ -13,7 +13,7 @@ namespace source2sdk
 {
     namespace particleslib
     {
-        // Enumerator count: 28
+        // Enumerator count: 33
         // Alignment: 4
         // Size: 0x4
         enum class ParticleFloatType_t : std::uint32_t
@@ -31,21 +31,26 @@ namespace source2sdk
             PF_TYPE_PARTICLE_DETAIL_LEVEL = 0x9,
             PF_TYPE_CONCURRENT_DEF_COUNT = 0xa,
             PF_TYPE_CLOSEST_CAMERA_DISTANCE = 0xb,
-            PF_TYPE_RENDERER_CAMERA_DISTANCE = 0xc,
-            PF_TYPE_RENDERER_CAMERA_DOT_PRODUCT = 0xd,
-            PF_TYPE_PARTICLE_NOISE = 0xe,
-            PF_TYPE_PARTICLE_AGE = 0xf,
-            PF_TYPE_PARTICLE_AGE_NORMALIZED = 0x10,
-            PF_TYPE_PARTICLE_FLOAT = 0x11,
-            PF_TYPE_PARTICLE_INITIAL_FLOAT = 0x12,
-            PF_TYPE_PARTICLE_VECTOR_COMPONENT = 0x13,
-            PF_TYPE_PARTICLE_INITIAL_VECTOR_COMPONENT = 0x14,
-            PF_TYPE_PARTICLE_SPEED = 0x15,
-            PF_TYPE_PARTICLE_NUMBER = 0x16,
-            PF_TYPE_PARTICLE_NUMBER_NORMALIZED = 0x17,
-            PF_TYPE_PARTICLE_SCREENSPACE_CAMERA_DISTANCE = 0x18,
-            PF_TYPE_PARTICLE_SCREENSPACE_CAMERA_DOT_PRODUCT = 0x19,
-            PF_TYPE_COUNT = 0x1a,
+            PF_TYPE_SNAPSHOT_COUNT = 0xc,
+            PF_TYPE_SNAPSHOT_CHANGED = 0xd,
+            PF_TYPE_CONTROL_POINT_IS_SET = 0xe,
+            PF_TYPE_RENDERER_CAMERA_DISTANCE = 0xf,
+            PF_TYPE_RENDERER_CAMERA_DOT_PRODUCT = 0x10,
+            PF_TYPE_PARTICLE_NOISE = 0x11,
+            PF_TYPE_PARTICLE_AGE = 0x12,
+            PF_TYPE_PARTICLE_AGE_NORMALIZED = 0x13,
+            PF_TYPE_PARTICLE_FLOAT = 0x14,
+            PF_TYPE_PARTICLE_INITIAL_FLOAT = 0x15,
+            PF_TYPE_PARTICLE_VECTOR_COMPONENT = 0x16,
+            PF_TYPE_PARTICLE_INITIAL_VECTOR_COMPONENT = 0x17,
+            PF_TYPE_PARTICLE_SPEED = 0x18,
+            PF_TYPE_PARTICLE_NUMBER = 0x19,
+            PF_TYPE_PARTICLE_NUMBER_NORMALIZED = 0x1a,
+            PF_TYPE_PARTICLE_ROPE_SEGMENT = 0x1b,
+            PF_TYPE_PARTICLE_ROPE_SEGMENT_NORMALIZED = 0x1c,
+            PF_TYPE_PARTICLE_SCREENSPACE_CAMERA_DISTANCE = 0x1d,
+            PF_TYPE_PARTICLE_SCREENSPACE_CAMERA_DOT_PRODUCT = 0x1e,
+            PF_TYPE_COUNT = 0x1f,
         };
     };
 };

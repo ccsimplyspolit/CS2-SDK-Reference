@@ -18,8 +18,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x338
+        // Size: 0x360
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -27,18 +28,18 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "control point"
-            std::int32_t m_nControlPoint; // 0x1c8            
-            uint8_t _pad01cc[0x4]; // 0x1cc
+            std::int32_t m_nControlPoint; // 0x1e0            
+            uint8_t _pad01e4[0x4]; // 0x1e4
             // metadata: MPropertyFriendlyName "cull distance"
-            source2sdk::particleslib::CParticleCollectionFloatInput m_flDistance; // 0x1d0            
+            source2sdk::particleslib::CParticleCollectionFloatInput m_flDistance; // 0x1e8            
             // metadata: MPropertyFriendlyName "cull inside instead of outside"
-            bool m_bCullInside; // 0x330            
-            uint8_t _pad0331[0x7];
+            bool m_bCullInside; // 0x358            
+            uint8_t _pad0359[0x7];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_INIT_DistanceCull because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_INIT_DistanceCull) == 0x338);
+        static_assert(sizeof(source2sdk::particles::C_INIT_DistanceCull) == 0x360);
     };
 };

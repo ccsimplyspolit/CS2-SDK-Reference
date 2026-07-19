@@ -18,8 +18,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x490
+        // Size: 0x4c8
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -27,19 +28,19 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "input"
-            source2sdk::particleslib::CParticleCollectionFloatInput m_flInputValue; // 0x1c8            
+            source2sdk::particleslib::CParticleCollectionFloatInput m_flInputValue; // 0x1e0            
             // metadata: MPropertyFriendlyName "output control point"
-            std::int32_t m_nCPOutput; // 0x328            
+            std::int32_t m_nCPOutput; // 0x350            
             // metadata: MPropertyFriendlyName "output component"
             // metadata: MPropertyAttributeChoiceName "vector_component"
-            std::int32_t m_nOutVectorField; // 0x32c            
+            std::int32_t m_nOutVectorField; // 0x354            
             // metadata: MPropertyFriendlyName "interval to snap to"
-            source2sdk::particleslib::CParticleCollectionFloatInput m_flQuantizeValue; // 0x330            
+            source2sdk::particleslib::CParticleCollectionFloatInput m_flQuantizeValue; // 0x358            
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_OP_QuantizeCPComponent because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_OP_QuantizeCPComponent) == 0x490);
+        static_assert(sizeof(source2sdk::particles::C_OP_QuantizeCPComponent) == 0x4c8);
     };
 };

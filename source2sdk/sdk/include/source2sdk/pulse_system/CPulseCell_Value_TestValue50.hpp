@@ -19,11 +19,9 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x48
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
-        // static metadata: MCellForDomain "TestDomain"
-        // static metadata: MPulseCellMethodBindings
-        // static metadata: MPulseCellOutflowHookInfo
         // static metadata: MPropertyFriendlyName "[Test] Int Value 50"
         // static metadata: MPropertyDescription "Test node that just generates the integer 50. Nothing to see here!"
         #pragma pack(push, 1)

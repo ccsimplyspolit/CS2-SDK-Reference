@@ -4,6 +4,8 @@
 #include <cstddef>
 #include <cstdint>
 #include "source2sdk/particles/CParticleFunctionInitializer.hpp"
+#include "source2sdk/particleslib/CParticleTransformInput.hpp"
+#include "source2sdk/particleslib/CPerParticleFloatInput.hpp"
 
 // /////////////////////////////////////////////////////////////
 // Module: particles
@@ -17,34 +19,33 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x1e8
+        // Size: 0x810
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_INIT_CreateSpiralSphere : public source2sdk::particles::CParticleFunctionInitializer
         {
         public:
-            // metadata: MPropertyFriendlyName "control point number"
-            std::int32_t m_nControlPointNumber; // 0x1c8            
-            // metadata: MPropertyFriendlyName "override CP (X/Y/Z *= radius/density/speed)"
-            std::int32_t m_nOverrideCP; // 0x1cc            
+            // metadata: MPropertyFriendlyName "input position transform"
+            source2sdk::particleslib::CParticleTransformInput m_TransformInput; // 0x1e0            
             // metadata: MPropertyFriendlyName "density"
-            std::int32_t m_nDensity; // 0x1d0            
+            source2sdk::particleslib::CPerParticleFloatInput m_flDensity; // 0x248            
             // metadata: MPropertyFriendlyName "initial radius"
-            float m_flInitialRadius; // 0x1d4            
+            source2sdk::particleslib::CPerParticleFloatInput m_flInitialRadius; // 0x3b8            
             // metadata: MPropertyFriendlyName "min initial speed"
-            float m_flInitialSpeedMin; // 0x1d8            
+            source2sdk::particleslib::CPerParticleFloatInput m_flInitialSpeedMin; // 0x528            
             // metadata: MPropertyFriendlyName "max initial speed"
-            float m_flInitialSpeedMax; // 0x1dc            
+            source2sdk::particleslib::CPerParticleFloatInput m_flInitialSpeedMax; // 0x698            
             // metadata: MPropertyFriendlyName "use particle count as density scale"
-            bool m_bUseParticleCount; // 0x1e0            
-            uint8_t _pad01e1[0x7];
+            bool m_bUseParticleCount; // 0x808            
+            uint8_t _pad0809[0x7];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_INIT_CreateSpiralSphere because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_INIT_CreateSpiralSphere) == 0x1e8);
+        static_assert(sizeof(source2sdk::particles::C_INIT_CreateSpiralSphere) == 0x810);
     };
 };

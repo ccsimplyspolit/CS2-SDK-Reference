@@ -17,23 +17,17 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: 0x1
         // Standard-layout class: false
-        // Size: 0x108
+        // Size: 0x110
         // Has VTable
-        // 
-        // static metadata: MPulseInstanceDomainInfo
-        // static metadata: MPulseDomainHookInfo
-        // static metadata: MPulseDomainScopeInfo
-        // static metadata: MPulseLibraryBindings
-        // static metadata: MPulseDomainOptInFeatureTag
-        // static metadata: MPulseDomainHiddenInTool
         #pragma pack(push, 1)
         class CPulseGraphInstance_TestDomain_FakeEntityOwner : public source2sdk::pulse_runtime_lib::CBasePulseGraphInstance
         {
         public:
+            // No schema binary for binding
         };
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::pulse_system::CPulseGraphInstance_TestDomain_FakeEntityOwner) == 0x108);
+        static_assert(sizeof(source2sdk::pulse_system::CPulseGraphInstance_TestDomain_FakeEntityOwner) == 0x110);
     };
 };

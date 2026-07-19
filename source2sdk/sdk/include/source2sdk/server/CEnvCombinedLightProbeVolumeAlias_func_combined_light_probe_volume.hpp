@@ -17,8 +17,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x1628
+        // Size: 0x15f0
         // Has VTable
+        // Construct allowed
         #pragma pack(push, 1)
         class CEnvCombinedLightProbeVolumeAlias_func_combined_light_probe_volume : public source2sdk::server::CEnvCombinedLightProbeVolume
         {
@@ -28,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CEnvCombinedLightProbeVolumeAlias_func_combined_light_probe_volume) == 0x1628);
+        static_assert(sizeof(source2sdk::server::CEnvCombinedLightProbeVolumeAlias_func_combined_light_probe_volume) == 0x15f0);
     };
 };

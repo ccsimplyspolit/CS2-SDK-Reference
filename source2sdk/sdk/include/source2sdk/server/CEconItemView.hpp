@@ -4,10 +4,6 @@
 #include <cstddef>
 #include <cstdint>
 #include "source2sdk/client/IEconItemInterface.hpp"
-#include "source2sdk/client/eEconItemOrigin.hpp"
-#include "source2sdk/client/item_definition_index_t.hpp"
-#include "source2sdk/client/itemid_t.hpp"
-#include "source2sdk/client/style_index_t.hpp"
 #include "source2sdk/server/CAttributeList.hpp"
 
 // /////////////////////////////////////////////////////////////
@@ -22,58 +18,36 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0xd8
+        // Size: 0x2a8
         // Has VTable
-        // 
-        // static metadata: MNetworkVarNames "item_definition_index_t m_iItemDefinitionIndex"
-        // static metadata: MNetworkVarNames "int m_iEntityQuality"
-        // static metadata: MNetworkVarNames "uint32 m_iEntityLevel"
-        // static metadata: MNetworkVarNames "itemid_t m_iItemID"
-        // static metadata: MNetworkVarNames "uint32 m_iAccountID"
-        // static metadata: MNetworkVarNames "uint32 m_iInventoryPosition"
-        // static metadata: MNetworkVarNames "bool m_bInitialized"
-        // static metadata: MNetworkVarNames "style_index_t m_nOverrideStyle"
-        // static metadata: MNetworkVarNames "CAttributeList m_AttributeList"
         #pragma pack(push, 1)
         class CEconItemView : public source2sdk::client::IEconItemInterface
         {
         public:
-            // metadata: MNetworkEnable
-            source2sdk::client::item_definition_index_t m_iItemDefinitionIndex; // 0x8            
-            // metadata: MNetworkEnable
-            std::int32_t m_iEntityQuality; // 0xc            
-            // metadata: MNetworkEnable
-            std::uint32_t m_iEntityLevel; // 0x10            
-            uint8_t _pad0014[0x4]; // 0x14
-            // metadata: MNetworkEnable
-            source2sdk::client::itemid_t m_iItemID; // 0x18            
-            // metadata: MNetworkEnable
-            std::uint32_t m_iAccountID; // 0x20            
-            // metadata: MNetworkEnable
-            std::uint32_t m_iInventoryPosition; // 0x24            
-            uint8_t _pad0028[0x8]; // 0x28
-            // metadata: MNetworkEnable
-            bool m_bInitialized; // 0x30            
-            // metadata: MNetworkEnable
-            source2sdk::client::style_index_t m_nOverrideStyle; // 0x31            
-            bool m_bIsStoreItem; // 0x32            
-            bool m_bIsTradeItem; // 0x33            
-            bool m_bHasComputedAttachedParticles; // 0x34            
-            bool m_bHasAttachedParticles; // 0x35            
-            uint8_t _pad0036[0x2]; // 0x36
-            std::int32_t m_iEntityQuantity; // 0x38            
-            std::uint8_t m_unClientFlags; // 0x3c            
-            uint8_t _pad003d[0x3]; // 0x3d
-            source2sdk::client::eEconItemOrigin m_unOverrideOrigin; // 0x40            
-            uint8_t _pad0044[0x14]; // 0x44
-            // metadata: MNetworkEnable
-            source2sdk::server::CAttributeList m_AttributeList; // 0x58            
-            uint8_t _pad00d0[0x8];
+            uint8_t _pad0008[0x30]; // 0x8
+            std::uint16_t m_iItemDefinitionIndex; // 0x38            
+            uint8_t _pad003a[0x2]; // 0x3a
+            std::int32_t m_iEntityQuality; // 0x3c            
+            std::uint32_t m_iEntityLevel; // 0x40            
+            uint8_t _pad0044[0x4]; // 0x44
+            std::uint64_t m_iItemID; // 0x48            
+            std::uint32_t m_iItemIDHigh; // 0x50            
+            std::uint32_t m_iItemIDLow; // 0x54            
+            std::uint32_t m_iAccountID; // 0x58            
+            std::uint32_t m_iInventoryPosition; // 0x5c            
+            uint8_t _pad0060[0x8]; // 0x60
+            bool m_bInitialized; // 0x68            
+            uint8_t _pad0069[0x7]; // 0x69
+            source2sdk::server::CAttributeList m_AttributeList; // 0x70            
+            source2sdk::server::CAttributeList m_NetworkedDynamicAttributes; // 0xe8            
+            char m_szCustomName[161]; // 0x160            
+            char m_szCustomNameOverride[161]; // 0x201            
+            uint8_t _pad02a2[0x6];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in CEconItemView because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::server::CEconItemView) == 0xd8);
+        static_assert(sizeof(source2sdk::server::CEconItemView) == 0x2a8);
     };
 };

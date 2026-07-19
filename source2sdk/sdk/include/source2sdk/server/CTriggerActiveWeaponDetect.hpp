@@ -18,22 +18,20 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x9f0
+        // Size: 0x908
         // Has VTable
+        // Construct allowed
         #pragma pack(push, 1)
         class CTriggerActiveWeaponDetect : public source2sdk::server::CBaseTrigger
         {
         public:
-            source2sdk::entity2::CEntityIOOutput m_OnTouchedActiveWeapon; // 0x9c0            
-            CUtlSymbolLarge m_iszWeaponClassName; // 0x9e8            
-            
-            // Datamap fields:
-            // void CTriggerActiveWeaponDetectActiveWeaponThink; // 0x0
+            source2sdk::entity2::CEntityIOOutput m_OnTouchedActiveWeapon; // 0x8e8            
+            CUtlSymbolLarge m_iszWeaponClassName; // 0x900            
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in CTriggerActiveWeaponDetect because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::server::CTriggerActiveWeaponDetect) == 0x9f0);
+        static_assert(sizeof(source2sdk::server::CTriggerActiveWeaponDetect) == 0x908);
     };
 };

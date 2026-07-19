@@ -18,8 +18,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x330
+        // Size: 0x358
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -27,17 +28,17 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "duration at which to stop"
-            source2sdk::particleslib::CParticleCollectionFloatInput m_flDuration; // 0x1c8            
+            source2sdk::particleslib::CParticleCollectionFloatInput m_flDuration; // 0x1e0            
             // metadata: MPropertyFriendlyName "destroy all particles immediately"
-            bool m_bDestroyImmediately; // 0x328            
+            bool m_bDestroyImmediately; // 0x350            
             // metadata: MPropertyFriendlyName "play end cap effect"
-            bool m_bPlayEndCap; // 0x329            
-            uint8_t _pad032a[0x6];
+            bool m_bPlayEndCap; // 0x351            
+            uint8_t _pad0352[0x6];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_OP_StopAfterCPDuration because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_OP_StopAfterCPDuration) == 0x330);
+        static_assert(sizeof(source2sdk::particles::C_OP_StopAfterCPDuration) == 0x358);
     };
 };

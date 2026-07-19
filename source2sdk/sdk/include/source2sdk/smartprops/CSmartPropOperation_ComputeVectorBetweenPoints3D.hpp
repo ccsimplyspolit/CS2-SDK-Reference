@@ -20,6 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x1d8
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Vector Between Points"

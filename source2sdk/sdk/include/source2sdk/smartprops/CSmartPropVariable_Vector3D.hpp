@@ -19,6 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x48
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Vector 3D"

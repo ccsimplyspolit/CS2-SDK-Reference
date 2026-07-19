@@ -13,7 +13,7 @@ namespace source2sdk
 {
     namespace mathlib_extended
     {
-        // Enumerator count: 82
+        // Enumerator count: 84
         // Alignment: 1
         // Size: 0x1
         enum class fieldtype_t : std::uint8_t
@@ -87,7 +87,7 @@ namespace source2sdk
             FIELD_ATTACHMENT_HANDLE = 0x42,
             FIELD_AMMO_INDEX = 0x43,
             FIELD_CONDITION_ID = 0x44,
-            FIELD_AI_SCHEDULE_BITS = 0x45,
+            DEPRECATED_FIELD_AI_SCHEDULE_BITS = 0x45,
             FIELD_MODIFIER_HANDLE = 0x46,
             FIELD_ROTATION_VECTOR = 0x47,
             FIELD_ROTATION_VECTOR_WORLDSPACE = 0x48,
@@ -99,7 +99,9 @@ namespace source2sdk
             FIELD_WORLD_GROUP_ID = 0x4e,
             FIELD_GLOBALSYMBOL = 0x4f,
             FIELD_HNMGRAPHDEFINITION = 0x50,
-            FIELD_TYPECOUNT = 0x51,
+            FIELD_NETWORK_QUANTIZED_VECTORWS = 0x51,
+            FIELD_NETWORK_ORIGIN_CELL_QUANTIZED_VECTORWS = 0x52,
+            FIELD_TYPECOUNT = 0x53,
         };
     };
 };

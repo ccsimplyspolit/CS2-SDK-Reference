@@ -19,11 +19,15 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xc
         // Has Trivial Destructor
+        // Construct allowed
+        // Construct disallowed
+        // 
+        // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CStopwatchBase : public source2sdk::client::CSimpleSimTimer
         {
         public:
-            bool m_fIsRunning; // 0x8            
+            bool m_bIsRunning; // 0x8            
             uint8_t _pad0009[0x3];
         };
         #pragma pack(pop)

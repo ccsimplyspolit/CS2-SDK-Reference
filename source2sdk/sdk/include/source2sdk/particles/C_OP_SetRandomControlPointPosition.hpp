@@ -18,8 +18,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x4b0
+        // Size: 0x4e8
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -27,28 +28,28 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "set positions in world space"
-            bool m_bUseWorldLocation; // 0x1c8            
+            bool m_bUseWorldLocation; // 0x1e0            
             // metadata: MPropertyFriendlyName "inherit CP orientation"
-            bool m_bOrient; // 0x1c9            
-            uint8_t _pad01ca[0x2]; // 0x1ca
+            bool m_bOrient; // 0x1e1            
+            uint8_t _pad01e2[0x2]; // 0x1e2
             // metadata: MPropertyFriendlyName "control point number"
-            std::int32_t m_nCP1; // 0x1cc            
+            std::int32_t m_nCP1; // 0x1e4            
             // metadata: MPropertyFriendlyName "control point to offset positions from"
-            std::int32_t m_nHeadLocation; // 0x1d0            
-            uint8_t _pad01d4[0x4]; // 0x1d4
+            std::int32_t m_nHeadLocation; // 0x1e8            
+            uint8_t _pad01ec[0x4]; // 0x1ec
             // metadata: MPropertyFriendlyName "re-randomize rate (-1 for once only)"
-            source2sdk::particleslib::CParticleCollectionFloatInput m_flReRandomRate; // 0x1d8            
+            source2sdk::particleslib::CParticleCollectionFloatInput m_flReRandomRate; // 0x1f0            
             // metadata: MPropertyFriendlyName "control point min"
-            Vector m_vecCPMinPos; // 0x338            
+            Vector m_vecCPMinPos; // 0x360            
             // metadata: MPropertyFriendlyName "control point max"
-            Vector m_vecCPMaxPos; // 0x344            
+            Vector m_vecCPMaxPos; // 0x36c            
             // metadata: MPropertyFriendlyName "Interpolation"
-            source2sdk::particleslib::CParticleCollectionFloatInput m_flInterpolation; // 0x350            
+            source2sdk::particleslib::CParticleCollectionFloatInput m_flInterpolation; // 0x378            
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_OP_SetRandomControlPointPosition because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_OP_SetRandomControlPointPosition) == 0x4b0);
+        static_assert(sizeof(source2sdk::particles::C_OP_SetRandomControlPointPosition) == 0x4e8);
     };
 };

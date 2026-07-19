@@ -17,8 +17,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x8c8
+        // Size: 0x848
         // Has VTable
+        // Construct allowed
         #pragma pack(push, 1)
         class CPushable : public source2sdk::server::CBreakable
         {
@@ -28,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CPushable) == 0x8c8);
+        static_assert(sizeof(source2sdk::server::CPushable) == 0x848);
     };
 };

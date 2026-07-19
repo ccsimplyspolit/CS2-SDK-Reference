@@ -23,9 +23,7 @@ namespace source2sdk
         struct AABB_t
         {
         public:
-            // metadata: MNetworkEnable
             Vector m_vMinBounds; // 0x0            
-            // metadata: MNetworkEnable
             Vector m_vMaxBounds; // 0xc            
         };
         #pragma pack(pop)

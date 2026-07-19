@@ -21,11 +21,14 @@ namespace source2sdk
 {
     namespace server
     {
-        // Registered alignment: unknown
-        // Alignment: 0x4
+        // Registered alignment: 0x8
+        // Alignment: 0x8
         // Standard-layout class: true
         // Size: 0x38
         // Has Trivial Destructor
+        // Construct allowed
+        // 
+        // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CRelativeLocation
         {
@@ -34,7 +37,7 @@ namespace source2sdk
             source2sdk::server::RelativeLocationType_t m_Type; // 0x18            
             uint8_t _pad0019[0x3]; // 0x19
             Vector m_vRelativeOffset; // 0x1c            
-            Vector m_vWorldSpacePos; // 0x28            
+            VectorWS m_vWorldSpacePos; // 0x28            
             // m_hEntity has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hEntity;
             char m_hEntity[0x4]; // 0x34            

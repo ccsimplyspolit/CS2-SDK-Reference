@@ -17,22 +17,19 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: 0x4
         // Standard-layout class: false
-        // Size: 0xd8
+        // Size: 0xe0
         // Has VTable
-        // 
-        // static metadata: MPulseLibraryBindings
-        // static metadata: MPulseInternal_IsCursor
         #pragma pack(push, 1)
         class CTestDomainDerived_Cursor : public source2sdk::pulse_runtime_lib::CPulseExecCursor
         {
         public:
-            std::int32_t m_nCursorValueA; // 0xd0            
-            std::int32_t m_nCursorValueB; // 0xd4            
+            std::int32_t m_nCursorValueA; // 0xd8            
+            std::int32_t m_nCursorValueB; // 0xdc            
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in CTestDomainDerived_Cursor because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::pulse_system::CTestDomainDerived_Cursor) == 0xd8);
+        static_assert(sizeof(source2sdk::pulse_system::CTestDomainDerived_Cursor) == 0xe0);
     };
 };

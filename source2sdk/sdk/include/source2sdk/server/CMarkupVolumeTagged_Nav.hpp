@@ -18,14 +18,15 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x838
+        // Size: 0x7b8
         // Has VTable
+        // Construct allowed
         #pragma pack(push, 1)
         class CMarkupVolumeTagged_Nav : public source2sdk::server::CMarkupVolumeTagged
         {
         public:
-            source2sdk::server::NavScopeFlags_t m_nScopes; // 0x830            
-            uint8_t _pad0831[0x7];
+            source2sdk::server::NavScopeFlags_t m_nScopes; // 0x7b0            
+            uint8_t _pad07b1[0x7];
             
             // Datamap fields:
             // CUtlSymbolLarge navProperty_NavAttributes; // 0x7fffffff
@@ -34,6 +35,6 @@ namespace source2sdk
         
         // Cannot assert offsets of fields in CMarkupVolumeTagged_Nav because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::server::CMarkupVolumeTagged_Nav) == 0x838);
+        static_assert(sizeof(source2sdk::server::CMarkupVolumeTagged_Nav) == 0x7b8);
     };
 };

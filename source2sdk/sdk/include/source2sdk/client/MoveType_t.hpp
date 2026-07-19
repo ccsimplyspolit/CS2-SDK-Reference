@@ -13,7 +13,7 @@ namespace source2sdk
 {
     namespace client
     {
-        // Enumerator count: 13
+        // Enumerator count: 14
         // Alignment: 1
         // Size: 0x1
         enum class MoveType_t : std::uint8_t
@@ -27,9 +27,10 @@ namespace source2sdk
             MOVETYPE_PUSH = 0x6,
             MOVETYPE_NOCLIP = 0x7,
             MOVETYPE_OBSERVER = 0x8,
-            MOVETYPE_CUSTOM = 0x9,
-            MOVETYPE_LAST = 0xa,
-            MOVETYPE_INVALID = 0xa,
+            MOVETYPE_LADDER = 0x9,
+            MOVETYPE_CUSTOM = 0xa,
+            MOVETYPE_LAST = 0xb,
+            MOVETYPE_INVALID = 0xb,
             MOVETYPE_MAX_BITS = 0x5,
         };
     };
