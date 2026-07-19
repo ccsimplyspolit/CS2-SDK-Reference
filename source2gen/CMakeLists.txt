@@ -27,6 +27,15 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 
+# Build with /EHa (async exceptions) so _set_se_translator can turn a Windows
+# structured exception — an access violation while walking a game's schema whose
+# layout has drifted — into a C++ exception, letting the generator skip one bad
+# type instead of crashing. Scrub the default /EHsc first to avoid an override warning.
+if(MSVC)
+    string(REGEX REPLACE "/EH[a-z]+" "" CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}")
+    add_compile_options(/EHa)
+endif()
+
 if(${CMAKE_SOURCE_DIR} STREQUAL ${CMAKE_BINARY_DIR})
     message(FATAL_ERROR "In-source builds are not allowed. Please make a new directory (called a build directory) and run CMake from there. You may need to remove CMakeCache.txt. ")
 endif()

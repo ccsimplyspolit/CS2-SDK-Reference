@@ -1,0 +1,46 @@
+#pragma once
+
+#include "source2sdk/source2gen/source2gen.hpp"
+#include <cstddef>
+#include <cstdint>
+#include "source2sdk/client/C_DOTA_BaseNPC_Additive.hpp"
+namespace source2sdk
+{
+    namespace client
+    {
+        struct C_DOTA_BaseNPC_Hero;
+    };
+};
+
+// /////////////////////////////////////////////////////////////
+// Module: client
+// Created using source2gen - github.com/neverlosecc/source2gen
+// /////////////////////////////////////////////////////////////
+
+namespace source2sdk
+{
+    namespace client
+    {
+        // Registered alignment: 0x8
+        // Alignment: 0x8
+        // Standard-layout class: false
+        // Size: 0x19b8
+        // Has VTable
+        // Construct allowed
+        // MClassHasEntityLimitedDataDesc
+        #pragma pack(push, 1)
+        class CDOTA_Unit_Frogling_Event : public source2sdk::client::C_DOTA_BaseNPC_Additive
+        {
+        public:
+            // m_hHeroHandle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+            // CHandle<source2sdk::client::C_DOTA_BaseNPC_Hero> m_hHeroHandle;
+            char m_hHeroHandle[0x4]; // 0x19b0            
+            uint8_t _pad19b4[0x4];
+        };
+        #pragma pack(pop)
+        
+        // Cannot assert offsets of fields in CDOTA_Unit_Frogling_Event because it is not a standard-layout class
+        
+        static_assert(sizeof(source2sdk::client::CDOTA_Unit_Frogling_Event) == 0x19b8);
+    };
+};

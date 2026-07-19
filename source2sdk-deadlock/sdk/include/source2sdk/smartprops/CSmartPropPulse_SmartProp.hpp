@@ -1,0 +1,41 @@
+#pragma once
+
+#include "source2sdk/source2gen/source2gen.hpp"
+#include <cstddef>
+#include <cstdint>
+#include "source2sdk/pulse_runtime_lib/CPulseCell_BaseFlow.hpp"
+#include "source2sdk/resourcesystem/InfoForResourceTypeCSmartProp.hpp"
+
+// /////////////////////////////////////////////////////////////
+// Module: smartprops
+// Created using source2gen - github.com/neverlosecc/source2gen
+// /////////////////////////////////////////////////////////////
+
+namespace source2sdk
+{
+    namespace smartprops
+    {
+        // Registered alignment: 0x8
+        // Alignment: 0x8
+        // Standard-layout class: false
+        // Size: 0x50
+        // Has VTable
+        // 
+        // static metadata: MGetKV3ClassDefaults
+        // static metadata: MPropertyFriendlyName "Smart Prop Reference"
+        #pragma pack(push, 1)
+        class CSmartPropPulse_SmartProp : public source2sdk::pulse_runtime_lib::CPulseCell_BaseFlow
+        {
+        public:
+            // metadata: MPropertyDescription "Name of the target smart prop resource (.vsmart) to evaluate."
+            // m_hSmartProp has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+            // CStrongHandle<source2sdk::resourcesystem::InfoForResourceTypeCSmartProp> m_hSmartProp;
+            char m_hSmartProp[0x8]; // 0x48            
+        };
+        #pragma pack(pop)
+        
+        // Cannot assert offsets of fields in CSmartPropPulse_SmartProp because it is not a standard-layout class
+        
+        static_assert(sizeof(source2sdk::smartprops::CSmartPropPulse_SmartProp) == 0x50);
+    };
+};

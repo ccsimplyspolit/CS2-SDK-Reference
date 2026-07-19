@@ -326,6 +326,21 @@ size = 0x08
 [VectorWS]
 size = 0xc
 
+# Types below appear in Dota 2 / Deadlock (not CS2). Sizes derived from the
+# generated field layout and consistent across every usage in those dumps.
+
+[CAnimGraphParamAutoResetRef]
+size = 0x30
+note = "Dota/Deadlock; size from field layout"
+
+[CVDataLocalizedToken]
+size = 0x10
+note = "Dota/Deadlock; size from field layout, consistent across 8 usages"
+
+[SndOpEventGuid_t]
+size = 0x14
+note = "Dota/Deadlock; size from field layout"
+
 # Types below appear in current CS2 builds but were never added upstream.
 # Each size is derived from the generated field layout and is consistent across
 # every usage in the dump (see the per-type usage counts in the notes).

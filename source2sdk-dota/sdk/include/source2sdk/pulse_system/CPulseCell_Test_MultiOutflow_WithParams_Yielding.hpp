@@ -1,0 +1,43 @@
+#pragma once
+
+#include "source2sdk/source2gen/source2gen.hpp"
+#include <cstddef>
+#include <cstdint>
+#include "source2sdk/pulse_runtime_lib/CPulseCell_BaseYieldingInflow.hpp"
+#include "source2sdk/pulse_runtime_lib/SignatureOutflow_Continue.hpp"
+#include "source2sdk/pulse_runtime_lib/SignatureOutflow_Resume.hpp"
+
+// /////////////////////////////////////////////////////////////
+// Module: pulse_system
+// Created using source2gen - github.com/neverlosecc/source2gen
+// /////////////////////////////////////////////////////////////
+
+namespace source2sdk
+{
+    namespace pulse_system
+    {
+        // Registered alignment: 0x8
+        // Alignment: 0x8
+        // Standard-layout class: false
+        // Size: 0x240
+        // Has VTable
+        // Construct allowed
+        // 
+        // static metadata: MGetKV3ClassDefaults
+        #pragma pack(push, 1)
+        class CPulseCell_Test_MultiOutflow_WithParams_Yielding : public source2sdk::pulse_runtime_lib::CPulseCell_BaseYieldingInflow
+        {
+        public:
+            source2sdk::pulse_runtime_lib::SignatureOutflow_Continue m_Out1; // 0xd8            
+            source2sdk::pulse_runtime_lib::SignatureOutflow_Continue m_AsyncChild1; // 0x120            
+            source2sdk::pulse_runtime_lib::SignatureOutflow_Continue m_AsyncChild2; // 0x168            
+            source2sdk::pulse_runtime_lib::SignatureOutflow_Resume m_YieldResume1; // 0x1b0            
+            source2sdk::pulse_runtime_lib::SignatureOutflow_Resume m_YieldResume2; // 0x1f8            
+        };
+        #pragma pack(pop)
+        
+        // Cannot assert offsets of fields in CPulseCell_Test_MultiOutflow_WithParams_Yielding because it is not a standard-layout class
+        
+        static_assert(sizeof(source2sdk::pulse_system::CPulseCell_Test_MultiOutflow_WithParams_Yielding) == 0x240);
+    };
+};
