@@ -32,11 +32,12 @@ namespace source2sdk
             std::uint16_t m_nDistFadeStart; // 0x10            
             std::uint16_t m_nDistFadeEnd; // 0x12            
             // start of bitfield block
-            uint32_t m_nDesyncOffset: 14;
-            uint32_t m_bAlphaOverride: 1;
-            uint32_t m_bShadowAlphaOverride: 1;
-            uint32_t m_nRenderMode: 3;
-            uint32_t m_nRenderFX: 5;
+            // bitfield m_nDesyncOffset : 14 bit(s)
+            // bitfield m_bAlphaOverride : 1 bit(s)
+            // bitfield m_bShadowAlphaOverride : 1 bit(s)
+            // bitfield m_nRenderMode : 3 bit(s)
+            // bitfield m_nRenderFX : 5 bit(s)
+            uint8_t _bitfield0014[0x3];
             // end of bitfield block// 24 bits
             std::uint8_t m_nAlpha; // 0x17            
             float m_flFadeScale; // 0x18            

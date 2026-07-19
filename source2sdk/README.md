@@ -81,32 +81,44 @@ Compile-tested per module with MSVC 19.44 (`/std:c++17 /permissive-`):
 | | |
 |---|---|
 | Headers compiled | 3748 |
-| Modules clean | 32 of 33 |
-| Errors | **1** |
+| Modules clean | **33 of 33** |
+| Errors | **0** |
 
 For reference, the same test on the tree as vendored produced 241 errors, of
 which 74 were undefined types and 167 were failing asserts. Those were fixed by
-adding 16 missing types to `sdk-static.toml` and correcting two whose sizes had
-drifted (`CUtlBinaryBlock` 0x18 → 0x10, `CPulseValueFullType` 0x10 → 0x18).
+adding 16 missing types to `sdk-static.toml`, correcting two whose sizes had
+drifted (`CUtlBinaryBlock` 0x18 → 0x10, `CPulseValueFullType` 0x10 → 0x18), and
+fixing an MSVC bitfield-packing bug in the generator (below).
 
-### Known issue: one MSVC bitfield assert
+### Fixed: MSVC bitfield over-allocation
 
-`client/CClientAlphaProperty.hpp` fails its `sizeof` assert on MSVC only. The
-class contains a 24-bit bitfield block of `uint32_t` members. MSVC gives that
-block a full 4-byte storage unit, while the Itanium ABI (GCC/Clang) packs it into
-3 under `#pragma pack(1)` — so every following field shifts by one byte:
+`client/CClientAlphaProperty.hpp` used to fail its `sizeof` assert on MSVC. The
+class has a 24-bit bitfield block. The generator emitted it as `uint32_t`
+members, and MSVC gives a `uint32_t` bitfield a full 4-byte storage unit — but
+the real (also MSVC-built) game packs that block into **3 bytes**, so every
+field after it shifted forward by one byte on Windows. The schema agrees: it
+puts `m_nAlpha` at 0x17 and `m_flFadeScale` at 0x18, which the old 4-byte block
+made impossible.
 
+Fixed in the generator (`source2gen/source2gen/src/sdk/sdk.cpp`,
+`AssembleBitfield`): when a bitfield block's real width — the gap to the next
+field — is narrower than the storage unit named bitfields would occupy, it is
+now emitted as a raw byte array of the real width, with the field breakdown kept
+in a comment:
+
+```cpp
+// start of bitfield block
+// bitfield m_nDesyncOffset : 14 bit(s)
+// bitfield m_bAlphaOverride : 1 bit(s)
+// ...
+uint8_t _bitfield0014[0x3];
+// end of bitfield block  // 24 bits
+std::uint8_t m_nAlpha; // 0x17
 ```
-uint32_t bitfields (24 bits), then uint8_t:
-  MSVC        next member at 0x8   sizeof 0xd
-  GCC/Clang   next member at 0x7   sizeof 0xc   <- what the schema says
-```
 
-The offsets in the header are correct; only MSVC's layout of that one class
-disagrees. Emitting it MSVC-compatibly would mean declaring the members with a
-narrower base type than the schema states, so it is left as-is. The generator
-already skips per-field asserts here (`CClientAlphaProperty` is not
-standard-layout); only the `sizeof` assert remains.
+This reproduces the real layout on every compiler. Blocks that already round to
+a natural unit (8/16/32/64 bits) keep their named bitfields — only the odd-sized
+block that couldn't pack correctly is converted (1 class in the whole dump).
 
 ---
 
