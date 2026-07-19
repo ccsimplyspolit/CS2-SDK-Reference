@@ -1,0 +1,35 @@
+#pragma once
+
+#include "source2sdk/source2gen/source2gen.hpp"
+#include <cstddef>
+#include <cstdint>
+#include "source2sdk/pulse_system/CPulseGraphInstance_TestDomain.hpp"
+
+// /////////////////////////////////////////////////////////////
+// Module: pulse_system
+// Created using source2gen - github.com/neverlosecc/source2gen
+// /////////////////////////////////////////////////////////////
+
+namespace source2sdk
+{
+    namespace pulse_system
+    {
+        // Registered alignment: unknown
+        // Alignment: 0x8
+        // Standard-layout class: false
+        // Size: 0x160
+        // Has VTable
+        #pragma pack(push, 1)
+        class CPulseGraphInstance_TestDomain_Derived : public source2sdk::pulse_system::CPulseGraphInstance_TestDomain
+        {
+        public:
+            std::int32_t m_nInstanceValueX; // 0x158            
+            uint8_t _pad015c[0x4];
+        };
+        #pragma pack(pop)
+        
+        // Cannot assert offsets of fields in CPulseGraphInstance_TestDomain_Derived because it is not a standard-layout class
+        
+        static_assert(sizeof(source2sdk::pulse_system::CPulseGraphInstance_TestDomain_Derived) == 0x160);
+    };
+};

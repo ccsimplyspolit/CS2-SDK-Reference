@@ -1,0 +1,40 @@
+#pragma once
+
+#include "source2sdk/source2gen/source2gen.hpp"
+#include <cstddef>
+#include <cstdint>
+#include "source2sdk/client/CDOTA_Buff.hpp"
+#include "source2sdk/client/ParticleIndex_t.hpp"
+
+// /////////////////////////////////////////////////////////////
+// Module: server
+// Created using source2gen - github.com/neverlosecc/source2gen
+// /////////////////////////////////////////////////////////////
+
+namespace source2sdk
+{
+    namespace server
+    {
+        // Registered alignment: unknown
+        // Alignment: unknown
+        // Standard-layout class: false
+        // Size: 0x1aa8
+        // Has VTable
+        #pragma pack(push, 1)
+        class CDOTA_Modifier_Medusa_SplitShot : public source2sdk::client::CDOTA_Buff
+        {
+        public:
+            std::int32_t damage_modifier; // 0x1a58            
+            std::int32_t range; // 0x1a5c            
+            std::int32_t arrow_count; // 0x1a60            
+            std::int32_t projectile_speed; // 0x1a64            
+            source2sdk::client::ParticleIndex_t m_nSplitShotBowFXIndex; // 0x1a68            
+            uint8_t _pad1a6c[0x3c];
+        };
+        #pragma pack(pop)
+        
+        // Cannot assert offsets of fields in CDOTA_Modifier_Medusa_SplitShot because it is not a standard-layout class
+        
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Medusa_SplitShot) == 0x1aa8);
+    };
+};
