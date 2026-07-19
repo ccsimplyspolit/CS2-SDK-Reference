@@ -129,7 +129,14 @@ namespace {
     };
 
     constinit std::array var_name_string_class_metadata_entries = {
-        FNV32("MNetworkVarNames"), FNV32("MNetworkOverride"), FNV32("MNetworkVarTypeOverride"), FNV32("MScriptDescription"), FNV32("MParticleDomainTag"),
+        // NOTE: MScriptDescription was here AND in string_metadata_entries. The
+        // var_name branch runs first and reads the network value as two pointers
+        // (a "type name" pair, 0x10 bytes), but MScriptDescription's value is a
+        // single 0x8-byte string pointer. On the last enumerator of a packed
+        // array the second pointer lands on the 0xffffffff end-filler and
+        // dereferencing it faulted (e.g. Dota's 409-value `modifierfunction`
+        // enum). It is a plain string — kept only in string_metadata_entries.
+        FNV32("MNetworkVarNames"), FNV32("MNetworkOverride"), FNV32("MNetworkVarTypeOverride"), FNV32("MParticleDomainTag"),
     };
 
     constinit std::array integer_metadata_entries = {
@@ -1376,7 +1383,13 @@ namespace sdk {
                 result.generated_files.emplace(GenerateEnumSdk(options, module_name, *el));
             } catch (const std::exception& e) {
                 ++skipped;
-                std::cerr << std::format("{}: skipped enum in {}: {}", __FUNCTION__, module_name, e.what()) << std::endl;
+                const char* enm = "<unknown>";
+                try {
+                    if (el && el->m_pszName)
+                        enm = el->m_pszName;
+                } catch (...) {
+                }
+                std::cerr << std::format("{}: skipped enum {}::{}: {}", __FUNCTION__, module_name, enm, e.what()) << std::endl;
             }
         });
         std::ranges::for_each(classes, [&](const auto* el) {
