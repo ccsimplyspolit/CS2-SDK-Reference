@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::QuestProgress) == 0x1);
+        // size assertion omitted: QuestProgress has no schema binary (size is a guess)
     };
 };

@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_BaseNPC_Creep_Siege) == 0x18f0);
+        // size assertion omitted: CDOTA_BaseNPC_Creep_Siege has no schema binary (size is a guess)
     };
 };

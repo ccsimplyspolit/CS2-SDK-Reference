@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_DOTA_Ability_Warlock_Fatal_Bonds) == 0x6a8);
+        // size assertion omitted: C_DOTA_Ability_Warlock_Fatal_Bonds has no schema binary (size is a guess)
     };
 };

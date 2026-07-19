@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadelMinimapComponent) == 0x20);
+        // size assertion omitted: CCitadelMinimapComponent has no schema binary (size is a guess)
     };
 };

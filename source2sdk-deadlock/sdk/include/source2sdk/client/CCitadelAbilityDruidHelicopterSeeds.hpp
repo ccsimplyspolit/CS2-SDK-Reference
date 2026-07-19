@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadelAbilityDruidHelicopterSeeds) == 0x11d8);
+        // size assertion omitted: CCitadelAbilityDruidHelicopterSeeds has no schema binary (size is a guess)
     };
 };

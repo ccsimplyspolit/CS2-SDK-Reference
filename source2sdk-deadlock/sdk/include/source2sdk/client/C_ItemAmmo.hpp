@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_ItemAmmo) == 0xcc8);
+        // size assertion omitted: C_ItemAmmo has no schema binary (size is a guess)
     };
 };

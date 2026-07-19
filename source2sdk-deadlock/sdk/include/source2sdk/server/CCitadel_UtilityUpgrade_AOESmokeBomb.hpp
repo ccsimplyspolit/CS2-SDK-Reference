@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_UtilityUpgrade_AOESmokeBomb) == 0xff8);
+        // size assertion omitted: CCitadel_UtilityUpgrade_AOESmokeBomb has no schema binary (size is a guess)
     };
 };

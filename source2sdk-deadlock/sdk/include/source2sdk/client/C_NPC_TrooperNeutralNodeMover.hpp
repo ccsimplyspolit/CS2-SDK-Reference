@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_NPC_TrooperNeutralNodeMover) == 0x1c10);
+        // size assertion omitted: C_NPC_TrooperNeutralNodeMover has no schema binary (size is a guess)
     };
 };

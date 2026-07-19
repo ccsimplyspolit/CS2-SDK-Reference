@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCommentaryViewPosition) == 0x7e0);
+        // size assertion omitted: CCommentaryViewPosition has no schema binary (size is a guess)
     };
 };

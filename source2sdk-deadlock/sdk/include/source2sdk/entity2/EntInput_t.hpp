@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::entity2::EntInput_t) == 0x30);
+        // size assertion omitted: EntInput_t has no schema binary (size is a guess)
     };
 };

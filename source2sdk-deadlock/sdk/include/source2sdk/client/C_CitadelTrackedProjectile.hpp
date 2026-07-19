@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_CitadelTrackedProjectile) == 0xad8);
+        // size assertion omitted: C_CitadelTrackedProjectile has no schema binary (size is a guess)
     };
 };

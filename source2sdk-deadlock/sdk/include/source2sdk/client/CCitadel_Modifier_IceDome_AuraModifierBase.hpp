@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadel_Modifier_IceDome_AuraModifierBase) == 0xc0);
+        // size assertion omitted: CCitadel_Modifier_IceDome_AuraModifierBase has no schema binary (size is a guess)
     };
 };

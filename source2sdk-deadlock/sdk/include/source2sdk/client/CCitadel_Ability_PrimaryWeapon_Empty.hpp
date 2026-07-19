@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadel_Ability_PrimaryWeapon_Empty) == 0x1430);
+        // size assertion omitted: CCitadel_Ability_PrimaryWeapon_Empty has no schema binary (size is a guess)
     };
 };

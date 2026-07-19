@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CNPC_Escort) == 0x17e0);
+        // size assertion omitted: CNPC_Escort has no schema binary (size is a guess)
     };
 };

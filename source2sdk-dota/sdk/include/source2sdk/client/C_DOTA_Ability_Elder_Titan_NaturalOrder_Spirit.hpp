@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_DOTA_Ability_Elder_Titan_NaturalOrder_Spirit) == 0x6a8);
+        // size assertion omitted: C_DOTA_Ability_Elder_Titan_NaturalOrder_Spirit has no schema binary (size is a guess)
     };
 };

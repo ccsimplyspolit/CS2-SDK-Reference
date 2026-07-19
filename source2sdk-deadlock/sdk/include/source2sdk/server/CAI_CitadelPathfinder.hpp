@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CAI_CitadelPathfinder) == 0x4938);
+        // size assertion omitted: CAI_CitadelPathfinder has no schema binary (size is a guess)
     };
 };

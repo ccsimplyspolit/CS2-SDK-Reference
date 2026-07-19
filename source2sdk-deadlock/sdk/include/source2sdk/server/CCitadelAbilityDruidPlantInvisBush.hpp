@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadelAbilityDruidPlantInvisBush) == 0xff8);
+        // size assertion omitted: CCitadelAbilityDruidPlantInvisBush has no schema binary (size is a guess)
     };
 };

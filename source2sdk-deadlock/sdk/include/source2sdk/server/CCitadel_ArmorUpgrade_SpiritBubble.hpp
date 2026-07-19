@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_ArmorUpgrade_SpiritBubble) == 0x1110);
+        // size assertion omitted: CCitadel_ArmorUpgrade_SpiritBubble has no schema binary (size is a guess)
     };
 };

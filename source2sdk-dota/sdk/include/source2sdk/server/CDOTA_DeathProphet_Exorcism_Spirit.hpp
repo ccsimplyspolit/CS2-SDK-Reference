@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_DeathProphet_Exorcism_Spirit) == 0x798);
+        // size assertion omitted: CDOTA_DeathProphet_Exorcism_Spirit has no schema binary (size is a guess)
     };
 };

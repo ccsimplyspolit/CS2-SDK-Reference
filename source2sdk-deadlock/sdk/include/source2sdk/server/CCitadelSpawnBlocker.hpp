@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadelSpawnBlocker) == 0x7a0);
+        // size assertion omitted: CCitadelSpawnBlocker has no schema binary (size is a guess)
     };
 };

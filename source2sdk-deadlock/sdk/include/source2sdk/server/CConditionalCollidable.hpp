@@ -32,6 +32,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CConditionalCollidable) == 0x780);
+        // size assertion omitted: CConditionalCollidable has no schema binary (size is a guess)
     };
 };

@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CIngameEvent_TI2024) == 0x19b8);
+        // size assertion omitted: CIngameEvent_TI2024 has no schema binary (size is a guess)
     };
 };

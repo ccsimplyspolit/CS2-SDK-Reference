@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_Unit_Hero_TrollWarlord) == 0x1f00);
+        // size assertion omitted: CDOTA_Unit_Hero_TrollWarlord has no schema binary (size is a guess)
     };
 };

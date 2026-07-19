@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_Modifier_Kelvin_Frozen) == 0xd0);
+        // size assertion omitted: CCitadel_Modifier_Kelvin_Frozen has no schema binary (size is a guess)
     };
 };

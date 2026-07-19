@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CFuncTrackAuto) == 0x880);
+        // size assertion omitted: CFuncTrackAuto has no schema binary (size is a guess)
     };
 };

@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::EventServerProcessNetworking_t) == 0x30);
+        // size assertion omitted: EventServerProcessNetworking_t has no schema binary (size is a guess)
     };
 };

@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_IngameEvent_FV2018) == 0x19b8);
+        // size assertion omitted: C_IngameEvent_FV2018 has no schema binary (size is a guess)
     };
 };

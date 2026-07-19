@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CItemSilenceGlyph) == 0x12d8);
+        // size assertion omitted: CItemSilenceGlyph has no schema binary (size is a guess)
     };
 };

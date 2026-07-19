@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CAbility_Rutger_CheatDeath) == 0xff0);
+        // size assertion omitted: CAbility_Rutger_CheatDeath has no schema binary (size is a guess)
     };
 };

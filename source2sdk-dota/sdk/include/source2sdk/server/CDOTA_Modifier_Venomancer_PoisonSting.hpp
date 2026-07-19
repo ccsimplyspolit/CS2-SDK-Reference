@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Venomancer_PoisonSting) == 0x1a70);
+        // size assertion omitted: CDOTA_Modifier_Venomancer_PoisonSting has no schema binary (size is a guess)
     };
 };

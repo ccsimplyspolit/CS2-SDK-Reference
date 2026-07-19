@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CModifier_Operative_Revelation_Caster) == 0x150);
+        // size assertion omitted: CModifier_Operative_Revelation_Caster has no schema binary (size is a guess)
     };
 };

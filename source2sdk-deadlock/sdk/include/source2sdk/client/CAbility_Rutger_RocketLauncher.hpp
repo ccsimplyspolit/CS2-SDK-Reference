@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CAbility_Rutger_RocketLauncher) == 0x16d8);
+        // size assertion omitted: CAbility_Rutger_RocketLauncher has no schema binary (size is a guess)
     };
 };

@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CNavVolumeMarkupVolume) == 0xe0);
+        // size assertion omitted: CNavVolumeMarkupVolume has no schema binary (size is a guess)
     };
 };

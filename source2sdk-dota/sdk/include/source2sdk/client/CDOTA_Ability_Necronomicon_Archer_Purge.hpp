@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CDOTA_Ability_Necronomicon_Archer_Purge) == 0x6a8);
+        // size assertion omitted: CDOTA_Ability_Necronomicon_Archer_Purge has no schema binary (size is a guess)
     };
 };

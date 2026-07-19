@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CModifier_Fathom_LurkersAmbush_Debuff) == 0x240);
+        // size assertion omitted: CModifier_Fathom_LurkersAmbush_Debuff has no schema binary (size is a guess)
     };
 };

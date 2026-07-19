@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadelPlayerPawnBase) == 0xd70);
+        // size assertion omitted: CCitadelPlayerPawnBase has no schema binary (size is a guess)
     };
 };

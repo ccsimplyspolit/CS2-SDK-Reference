@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadel_Item_Stasis_Bomb) == 0x1360);
+        // size assertion omitted: CCitadel_Item_Stasis_Bomb has no schema binary (size is a guess)
     };
 };

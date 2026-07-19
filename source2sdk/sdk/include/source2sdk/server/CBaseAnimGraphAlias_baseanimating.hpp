@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CBaseAnimGraphAlias_baseanimating) == 0x960);
+        // size assertion omitted: CBaseAnimGraphAlias_baseanimating has no schema binary (size is a guess)
     };
 };

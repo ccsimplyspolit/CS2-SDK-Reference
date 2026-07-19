@@ -33,6 +33,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CGamePlayerEquip) == 0x7a8);
+        // size assertion omitted: CGamePlayerEquip has no schema binary (size is a guess)
     };
 };

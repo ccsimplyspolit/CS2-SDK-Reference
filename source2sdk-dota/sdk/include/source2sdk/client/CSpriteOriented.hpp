@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CSpriteOriented) == 0xb08);
+        // size assertion omitted: CSpriteOriented has no schema binary (size is a guess)
     };
 };

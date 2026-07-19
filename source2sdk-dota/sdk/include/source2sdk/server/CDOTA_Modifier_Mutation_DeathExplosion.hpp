@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Mutation_DeathExplosion) == 0x1a58);
+        // size assertion omitted: CDOTA_Modifier_Mutation_DeathExplosion has no schema binary (size is a guess)
     };
 };

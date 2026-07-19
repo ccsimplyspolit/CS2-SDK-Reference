@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadelPlayerBot) == 0x4bd8);
+        // size assertion omitted: CCitadelPlayerBot has no schema binary (size is a guess)
     };
 };

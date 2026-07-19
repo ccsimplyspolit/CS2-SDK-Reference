@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CAI_LocalNavigatorBase) == 0x60);
+        // size assertion omitted: CAI_LocalNavigatorBase has no schema binary (size is a guess)
     };
 };

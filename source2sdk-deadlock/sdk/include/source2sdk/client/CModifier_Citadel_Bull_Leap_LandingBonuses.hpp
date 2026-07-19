@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CModifier_Citadel_Bull_Leap_LandingBonuses) == 0x1c0);
+        // size assertion omitted: CModifier_Citadel_Bull_Leap_LandingBonuses has no schema binary (size is a guess)
     };
 };

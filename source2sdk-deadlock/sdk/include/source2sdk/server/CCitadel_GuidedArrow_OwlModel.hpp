@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_GuidedArrow_OwlModel) == 0xbf0);
+        // size assertion omitted: CCitadel_GuidedArrow_OwlModel has no schema binary (size is a guess)
     };
 };

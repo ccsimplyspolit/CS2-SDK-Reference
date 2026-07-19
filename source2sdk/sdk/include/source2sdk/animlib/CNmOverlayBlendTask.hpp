@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::animlib::CNmOverlayBlendTask) == 0x100);
+        // size assertion omitted: CNmOverlayBlendTask has no schema binary (size is a guess)
     };
 };

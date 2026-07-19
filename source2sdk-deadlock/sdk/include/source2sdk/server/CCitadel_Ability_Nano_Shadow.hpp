@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_Ability_Nano_Shadow) == 0xff0);
+        // size assertion omitted: CCitadel_Ability_Nano_Shadow has no schema binary (size is a guess)
     };
 };

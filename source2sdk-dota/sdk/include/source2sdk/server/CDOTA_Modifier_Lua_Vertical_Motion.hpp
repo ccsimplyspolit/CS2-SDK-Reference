@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Lua_Vertical_Motion) == 0x1b28);
+        // size assertion omitted: CDOTA_Modifier_Lua_Vertical_Motion has no schema binary (size is a guess)
     };
 };

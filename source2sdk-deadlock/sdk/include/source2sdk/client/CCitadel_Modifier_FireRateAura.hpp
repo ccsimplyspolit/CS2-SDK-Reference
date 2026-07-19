@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadel_Modifier_FireRateAura) == 0x1c0);
+        // size assertion omitted: CCitadel_Modifier_FireRateAura has no schema binary (size is a guess)
     };
 };

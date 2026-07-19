@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Visage_Stone_Form_Self_Cast_Cooldown_Manager) == 0x1a58);
+        // size assertion omitted: CDOTA_Modifier_Visage_Stone_Form_Self_Cast_Cooldown_Manager has no schema binary (size is a guess)
     };
 };

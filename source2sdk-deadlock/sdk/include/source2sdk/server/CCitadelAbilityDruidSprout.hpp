@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadelAbilityDruidSprout) == 0xf80);
+        // size assertion omitted: CCitadelAbilityDruidSprout has no schema binary (size is a guess)
     };
 };

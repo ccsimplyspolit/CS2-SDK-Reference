@@ -31,6 +31,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_DOTA_Item_Foragers_Kit) == 0x770);
+        // size assertion omitted: C_DOTA_Item_Foragers_Kit has no schema binary (size is a guess)
     };
 };

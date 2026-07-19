@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CTriggerHostageReset) == 0x8e8);
+        // size assertion omitted: CTriggerHostageReset has no schema binary (size is a guess)
     };
 };

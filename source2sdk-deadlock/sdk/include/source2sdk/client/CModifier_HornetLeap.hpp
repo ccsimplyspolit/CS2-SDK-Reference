@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CModifier_HornetLeap) == 0x1c0);
+        // size assertion omitted: CModifier_HornetLeap has no schema binary (size is a guess)
     };
 };

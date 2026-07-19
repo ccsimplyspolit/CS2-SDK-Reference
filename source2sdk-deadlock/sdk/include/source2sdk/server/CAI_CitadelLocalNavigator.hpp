@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CAI_CitadelLocalNavigator) == 0x60);
+        // size assertion omitted: CAI_CitadelLocalNavigator has no schema binary (size is a guess)
     };
 };

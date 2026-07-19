@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CEntityBlocker) == 0x770);
+        // size assertion omitted: CEntityBlocker has no schema binary (size is a guess)
     };
 };

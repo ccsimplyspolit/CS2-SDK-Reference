@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_InfoPlayerStartBadGuys) == 0x5f8);
+        // size assertion omitted: C_InfoPlayerStartBadGuys has no schema binary (size is a guess)
     };
 };

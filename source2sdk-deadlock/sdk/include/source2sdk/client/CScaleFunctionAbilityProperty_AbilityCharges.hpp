@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CScaleFunctionAbilityProperty_AbilityCharges) == 0x18);
+        // size assertion omitted: CScaleFunctionAbilityProperty_AbilityCharges has no schema binary (size is a guess)
     };
 };

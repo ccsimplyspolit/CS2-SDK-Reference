@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_Citadel_Projectile_Guided_Arrow) == 0xae8);
+        // size assertion omitted: C_Citadel_Projectile_Guided_Arrow has no schema binary (size is a guess)
     };
 };

@@ -31,6 +31,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CFuncRetakeBarrier) == 0x13e0);
+        // size assertion omitted: CFuncRetakeBarrier has no schema binary (size is a guess)
     };
 };

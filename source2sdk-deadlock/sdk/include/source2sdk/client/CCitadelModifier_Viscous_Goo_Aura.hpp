@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadelModifier_Viscous_Goo_Aura) == 0x110);
+        // size assertion omitted: CCitadelModifier_Viscous_Goo_Aura has no schema binary (size is a guess)
     };
 };

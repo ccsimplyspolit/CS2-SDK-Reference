@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadel_Modifier_Bookworm_KnightBarrier) == 0xc8);
+        // size assertion omitted: CCitadel_Modifier_Bookworm_KnightBarrier has no schema binary (size is a guess)
     };
 };

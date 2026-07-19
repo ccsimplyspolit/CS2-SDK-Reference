@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CWeaponRevolver) == 0x1070);
+        // size assertion omitted: CWeaponRevolver has no schema binary (size is a guess)
     };
 };

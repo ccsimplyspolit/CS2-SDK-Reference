@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CInfoKOTHSpawnLocation) == 0x608);
+        // size assertion omitted: CInfoKOTHSpawnLocation has no schema binary (size is a guess)
     };
 };

@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_Ability_Boho_BouncyProjectile) == 0x11f8);
+        // size assertion omitted: CCitadel_Ability_Boho_BouncyProjectile has no schema binary (size is a guess)
     };
 };

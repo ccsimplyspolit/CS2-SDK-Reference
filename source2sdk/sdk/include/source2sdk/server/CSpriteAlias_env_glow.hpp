@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CSpriteAlias_env_glow) == 0x7e0);
+        // size assertion omitted: CSpriteAlias_env_glow has no schema binary (size is a guess)
     };
 };

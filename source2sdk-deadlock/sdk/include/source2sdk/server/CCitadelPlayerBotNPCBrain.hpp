@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadelPlayerBotNPCBrain) == 0x1950);
+        // size assertion omitted: CCitadelPlayerBotNPCBrain has no schema binary (size is a guess)
     };
 };

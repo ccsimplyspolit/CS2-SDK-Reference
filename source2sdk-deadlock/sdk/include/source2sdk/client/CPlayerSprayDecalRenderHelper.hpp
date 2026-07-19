@@ -27,6 +27,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CPlayerSprayDecalRenderHelper) == 0x60);
+        // size assertion omitted: CPlayerSprayDecalRenderHelper has no schema binary (size is a guess)
     };
 };

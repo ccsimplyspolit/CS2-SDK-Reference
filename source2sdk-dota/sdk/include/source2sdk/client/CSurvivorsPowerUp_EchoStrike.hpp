@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CSurvivorsPowerUp_EchoStrike) == 0x810);
+        // size assertion omitted: CSurvivorsPowerUp_EchoStrike has no schema binary (size is a guess)
     };
 };

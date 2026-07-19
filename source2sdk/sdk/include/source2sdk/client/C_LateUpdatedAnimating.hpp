@@ -31,6 +31,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_LateUpdatedAnimating) == 0x1240);
+        // size assertion omitted: C_LateUpdatedAnimating has no schema binary (size is a guess)
     };
 };

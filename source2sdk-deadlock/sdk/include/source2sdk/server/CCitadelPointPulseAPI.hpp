@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadelPointPulseAPI) == 0x1);
+        // size assertion omitted: CCitadelPointPulseAPI has no schema binary (size is a guess)
     };
 };

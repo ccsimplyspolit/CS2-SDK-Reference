@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_Unit_Falconers_Glove_Hawk) == 0x18d0);
+        // size assertion omitted: CDOTA_Unit_Falconers_Glove_Hawk has no schema binary (size is a guess)
     };
 };

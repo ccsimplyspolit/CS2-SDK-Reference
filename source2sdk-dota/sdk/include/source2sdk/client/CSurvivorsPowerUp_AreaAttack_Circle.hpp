@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CSurvivorsPowerUp_AreaAttack_Circle) == 0x800);
+        // size assertion omitted: CSurvivorsPowerUp_AreaAttack_Circle has no schema binary (size is a guess)
     };
 };

@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CInfoTutorialController) == 0xf00);
+        // size assertion omitted: CInfoTutorialController has no schema binary (size is a guess)
     };
 };

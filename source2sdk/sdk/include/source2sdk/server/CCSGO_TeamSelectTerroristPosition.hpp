@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCSGO_TeamSelectTerroristPosition) == 0xcc0);
+        // size assertion omitted: CCSGO_TeamSelectTerroristPosition has no schema binary (size is a guess)
     };
 };

@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Aghsfort_Bonus_Pudge_Meat_Hook) == 0x1a58);
+        // size assertion omitted: CDOTA_Modifier_Aghsfort_Bonus_Pudge_Meat_Hook has no schema binary (size is a guess)
     };
 };

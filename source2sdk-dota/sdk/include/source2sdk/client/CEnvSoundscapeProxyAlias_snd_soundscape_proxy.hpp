@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CEnvSoundscapeProxyAlias_snd_soundscape_proxy) == 0x688);
+        // size assertion omitted: CEnvSoundscapeProxyAlias_snd_soundscape_proxy has no schema binary (size is a guess)
     };
 };

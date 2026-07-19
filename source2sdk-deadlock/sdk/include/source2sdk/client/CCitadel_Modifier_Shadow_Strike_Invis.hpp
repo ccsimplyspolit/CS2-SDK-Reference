@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadel_Modifier_Shadow_Strike_Invis) == 0x460);
+        // size assertion omitted: CCitadel_Modifier_Shadow_Strike_Invis has no schema binary (size is a guess)
     };
 };

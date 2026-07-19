@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::pulse_runtime_lib::CPulseExecCursor) == 0xd8);
+        // size assertion omitted: CPulseExecCursor has no schema binary (size is a guess)
     };
 };

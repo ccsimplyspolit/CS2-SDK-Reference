@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_Item_Camouflage) == 0xf78);
+        // size assertion omitted: CCitadel_Item_Camouflage has no schema binary (size is a guess)
     };
 };

@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CNmSnapWeaponTask) == 0x80);
+        // size assertion omitted: CNmSnapWeaponTask has no schema binary (size is a guess)
     };
 };

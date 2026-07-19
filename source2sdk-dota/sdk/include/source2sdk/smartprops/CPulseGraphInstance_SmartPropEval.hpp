@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::smartprops::CPulseGraphInstance_SmartPropEval) == 0x120);
+        // size assertion omitted: CPulseGraphInstance_SmartPropEval has no schema binary (size is a guess)
     };
 };

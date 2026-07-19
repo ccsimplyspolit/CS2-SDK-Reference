@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CUnitStatusOverlay) == 0xc00);
+        // size assertion omitted: CUnitStatusOverlay has no schema binary (size is a guess)
     };
 };

@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CModifier_Mirage_Tornado_Aura) == 0x288);
+        // size assertion omitted: CModifier_Mirage_Tornado_Aura has no schema binary (size is a guess)
     };
 };

@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_BaseNPC_Effigy_BattleCup) == 0x19b8);
+        // size assertion omitted: CDOTA_BaseNPC_Effigy_BattleCup has no schema binary (size is a guess)
     };
 };

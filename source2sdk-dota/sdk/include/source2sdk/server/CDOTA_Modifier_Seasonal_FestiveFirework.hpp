@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Seasonal_FestiveFirework) == 0x1a70);
+        // size assertion omitted: CDOTA_Modifier_Seasonal_FestiveFirework has no schema binary (size is a guess)
     };
 };

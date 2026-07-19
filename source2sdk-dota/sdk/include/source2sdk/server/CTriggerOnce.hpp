@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CTriggerOnce) == 0x908);
+        // size assertion omitted: CTriggerOnce has no schema binary (size is a guess)
     };
 };

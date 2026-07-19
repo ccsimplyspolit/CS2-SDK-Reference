@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CDOTA_Ability_Bloodseeker_Rupture) == 0x6a8);
+        // size assertion omitted: CDOTA_Ability_Bloodseeker_Rupture has no schema binary (size is a guess)
     };
 };

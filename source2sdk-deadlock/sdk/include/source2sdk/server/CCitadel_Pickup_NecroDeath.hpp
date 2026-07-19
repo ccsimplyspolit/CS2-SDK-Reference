@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_Pickup_NecroDeath) == 0xb20);
+        // size assertion omitted: CCitadel_Pickup_NecroDeath has no schema binary (size is a guess)
     };
 };

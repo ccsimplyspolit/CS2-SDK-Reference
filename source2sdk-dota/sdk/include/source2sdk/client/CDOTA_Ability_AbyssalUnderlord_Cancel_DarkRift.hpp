@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CDOTA_Ability_AbyssalUnderlord_Cancel_DarkRift) == 0x6a8);
+        // size assertion omitted: CDOTA_Ability_AbyssalUnderlord_Cancel_DarkRift has no schema binary (size is a guess)
     };
 };

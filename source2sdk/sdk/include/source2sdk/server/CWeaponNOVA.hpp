@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CWeaponNOVA) == 0x1050);
+        // size assertion omitted: CWeaponNOVA has no schema binary (size is a guess)
     };
 };

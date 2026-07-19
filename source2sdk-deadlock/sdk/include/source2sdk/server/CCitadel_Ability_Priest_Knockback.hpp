@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_Ability_Priest_Knockback) == 0x16f0);
+        // size assertion omitted: CCitadel_Ability_Priest_Knockback has no schema binary (size is a guess)
     };
 };

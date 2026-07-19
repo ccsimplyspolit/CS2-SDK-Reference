@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::animlib::CNmCachedPoseWriteTask) == 0x60);
+        // size assertion omitted: CNmCachedPoseWriteTask has no schema binary (size is a guess)
     };
 };

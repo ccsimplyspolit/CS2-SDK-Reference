@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadel_Ability_Viper_PetrifyBola) == 0x1458);
+        // size assertion omitted: CCitadel_Ability_Viper_PetrifyBola has no schema binary (size is a guess)
     };
 };

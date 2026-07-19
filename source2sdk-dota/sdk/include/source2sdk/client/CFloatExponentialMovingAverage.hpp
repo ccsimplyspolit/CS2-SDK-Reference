@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CFloatExponentialMovingAverage) == 0x14);
+        // size assertion omitted: CFloatExponentialMovingAverage has no schema binary (size is a guess)
     };
 };

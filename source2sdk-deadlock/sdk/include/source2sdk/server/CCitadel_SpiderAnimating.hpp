@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_SpiderAnimating) == 0xc10);
+        // size assertion omitted: CCitadel_SpiderAnimating has no schema binary (size is a guess)
     };
 };

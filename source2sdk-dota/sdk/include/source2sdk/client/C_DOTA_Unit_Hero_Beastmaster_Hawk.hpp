@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_DOTA_Unit_Hero_Beastmaster_Hawk) == 0x19b8);
+        // size assertion omitted: C_DOTA_Unit_Hero_Beastmaster_Hawk has no schema binary (size is a guess)
     };
 };

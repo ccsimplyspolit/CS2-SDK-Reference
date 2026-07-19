@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_DynamicPropAlias_dynamic_prop) == 0x13c0);
+        // size assertion omitted: C_DynamicPropAlias_dynamic_prop has no schema binary (size is a guess)
     };
 };

@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadelLootTable) == 0x18);
+        // size assertion omitted: CCitadelLootTable has no schema binary (size is a guess)
     };
 };

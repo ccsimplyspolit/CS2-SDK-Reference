@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CEnvSoundscapeAlias_snd_soundscape) == 0x538);
+        // size assertion omitted: CEnvSoundscapeAlias_snd_soundscape has no schema binary (size is a guess)
     };
 };

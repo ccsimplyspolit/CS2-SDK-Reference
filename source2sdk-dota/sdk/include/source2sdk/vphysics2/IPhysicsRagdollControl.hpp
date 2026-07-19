@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::vphysics2::IPhysicsRagdollControl) == 0x8);
+        // size assertion omitted: IPhysicsRagdollControl has no schema binary (size is a guess)
     };
 };

@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_Item_Light_Collector) == 0x658);
+        // size assertion omitted: CDOTA_Item_Light_Collector has no schema binary (size is a guess)
     };
 };

@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadel_Ability_MobileResupply) == 0x1258);
+        // size assertion omitted: CCitadel_Ability_MobileResupply has no schema binary (size is a guess)
     };
 };

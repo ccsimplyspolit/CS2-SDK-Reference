@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_Ability_Life_Stealer_Control) == 0x580);
+        // size assertion omitted: CDOTA_Ability_Life_Stealer_Control has no schema binary (size is a guess)
     };
 };

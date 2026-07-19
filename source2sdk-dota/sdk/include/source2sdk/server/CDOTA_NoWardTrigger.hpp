@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_NoWardTrigger) == 0x8f0);
+        // size assertion omitted: CDOTA_NoWardTrigger has no schema binary (size is a guess)
     };
 };

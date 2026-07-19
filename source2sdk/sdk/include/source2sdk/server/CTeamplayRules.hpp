@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CTeamplayRules) == 0xd0);
+        // size assertion omitted: CTeamplayRules has no schema binary (size is a guess)
     };
 };

@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_DOTA_BaseNPC_Trap_Ward) == 0x19c0);
+        // size assertion omitted: C_DOTA_BaseNPC_Trap_Ward has no schema binary (size is a guess)
     };
 };

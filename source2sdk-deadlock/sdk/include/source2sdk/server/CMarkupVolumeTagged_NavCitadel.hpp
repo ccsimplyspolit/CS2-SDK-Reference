@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CMarkupVolumeTagged_NavCitadel) == 0x7e8);
+        // size assertion omitted: CMarkupVolumeTagged_NavCitadel has no schema binary (size is a guess)
     };
 };

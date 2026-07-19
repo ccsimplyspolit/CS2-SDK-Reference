@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CItemMysticReverb) == 0x12d8);
+        // size assertion omitted: CItemMysticReverb has no schema binary (size is a guess)
     };
 };

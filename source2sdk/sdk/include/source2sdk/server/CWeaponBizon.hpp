@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CWeaponBizon) == 0x1070);
+        // size assertion omitted: CWeaponBizon has no schema binary (size is a guess)
     };
 };

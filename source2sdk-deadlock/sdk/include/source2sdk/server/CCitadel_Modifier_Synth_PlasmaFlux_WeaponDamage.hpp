@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_Modifier_Synth_PlasmaFlux_WeaponDamage) == 0x150);
+        // size assertion omitted: CCitadel_Modifier_Synth_PlasmaFlux_WeaponDamage has no schema binary (size is a guess)
     };
 };

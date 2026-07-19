@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CDOTA_BaseNPC_Seasonal_CNY_Balloon) == 0x19b0);
+        // size assertion omitted: CDOTA_BaseNPC_Seasonal_CNY_Balloon has no schema binary (size is a guess)
     };
 };

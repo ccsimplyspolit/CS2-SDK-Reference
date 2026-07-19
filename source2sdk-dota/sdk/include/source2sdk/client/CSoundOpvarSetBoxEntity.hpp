@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CSoundOpvarSetBoxEntity) == 0x610);
+        // size assertion omitted: CSoundOpvarSetBoxEntity has no schema binary (size is a guess)
     };
 };

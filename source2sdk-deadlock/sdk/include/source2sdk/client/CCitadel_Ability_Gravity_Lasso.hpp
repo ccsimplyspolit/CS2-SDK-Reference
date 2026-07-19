@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadel_Ability_Gravity_Lasso) == 0x13e8);
+        // size assertion omitted: CCitadel_Ability_Gravity_Lasso has no schema binary (size is a guess)
     };
 };

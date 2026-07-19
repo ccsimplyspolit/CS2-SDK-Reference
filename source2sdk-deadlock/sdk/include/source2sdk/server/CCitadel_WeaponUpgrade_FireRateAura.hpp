@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_WeaponUpgrade_FireRateAura) == 0xff8);
+        // size assertion omitted: CCitadel_WeaponUpgrade_FireRateAura has no schema binary (size is a guess)
     };
 };

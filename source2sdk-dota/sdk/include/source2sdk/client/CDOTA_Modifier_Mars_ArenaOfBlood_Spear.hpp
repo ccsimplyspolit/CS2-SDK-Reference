@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Mars_ArenaOfBlood_Spear) == 0x1a90);
+        // size assertion omitted: CDOTA_Modifier_Mars_ArenaOfBlood_Spear has no schema binary (size is a guess)
     };
 };

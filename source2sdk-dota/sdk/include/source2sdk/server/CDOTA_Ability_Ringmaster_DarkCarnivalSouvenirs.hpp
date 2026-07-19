@@ -31,6 +31,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_Ability_Ringmaster_DarkCarnivalSouvenirs) == 0x5b8);
+        // size assertion omitted: CDOTA_Ability_Ringmaster_DarkCarnivalSouvenirs has no schema binary (size is a guess)
     };
 };

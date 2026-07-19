@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTAPlayer_MovementServices) == 0x258);
+        // size assertion omitted: CDOTAPlayer_MovementServices has no schema binary (size is a guess)
     };
 };

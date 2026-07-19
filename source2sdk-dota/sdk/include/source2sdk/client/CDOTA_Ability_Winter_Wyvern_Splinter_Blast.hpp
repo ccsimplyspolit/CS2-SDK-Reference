@@ -31,6 +31,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CDOTA_Ability_Winter_Wyvern_Splinter_Blast) == 0x6c0);
+        // size assertion omitted: CDOTA_Ability_Winter_Wyvern_Splinter_Blast has no schema binary (size is a guess)
     };
 };

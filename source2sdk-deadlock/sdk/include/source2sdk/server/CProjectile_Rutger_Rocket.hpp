@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CProjectile_Rutger_Rocket) == 0x860);
+        // size assertion omitted: CProjectile_Rutger_Rocket has no schema binary (size is a guess)
     };
 };

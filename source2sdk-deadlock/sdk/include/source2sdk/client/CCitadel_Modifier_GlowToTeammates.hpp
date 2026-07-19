@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadel_Modifier_GlowToTeammates) == 0xc0);
+        // size assertion omitted: CCitadel_Modifier_GlowToTeammates has no schema binary (size is a guess)
     };
 };

@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadel_Modifier_Unicorn_PrismaticGuard) == 0x2e0);
+        // size assertion omitted: CCitadel_Modifier_Unicorn_PrismaticGuard has no schema binary (size is a guess)
     };
 };

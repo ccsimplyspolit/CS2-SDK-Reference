@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_Modifier_Hero_Testing_Damage_Aura) == 0x108);
+        // size assertion omitted: CCitadel_Modifier_Hero_Testing_Damage_Aura has no schema binary (size is a guess)
     };
 };

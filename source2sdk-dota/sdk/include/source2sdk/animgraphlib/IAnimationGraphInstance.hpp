@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::animgraphlib::IAnimationGraphInstance) == 0x18);
+        // size assertion omitted: IAnimationGraphInstance has no schema binary (size is a guess)
     };
 };

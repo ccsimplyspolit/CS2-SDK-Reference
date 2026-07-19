@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_Tiny_ScepterTree) == 0x908);
+        // size assertion omitted: CDOTA_Tiny_ScepterTree has no schema binary (size is a guess)
     };
 };

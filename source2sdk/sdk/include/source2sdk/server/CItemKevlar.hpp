@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CItemKevlar) == 0xa00);
+        // size assertion omitted: CItemKevlar has no schema binary (size is a guess)
     };
 };

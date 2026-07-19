@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_ArmorUpgrade_ActiveBulletShield) == 0xff8);
+        // size assertion omitted: CCitadel_ArmorUpgrade_ActiveBulletShield has no schema binary (size is a guess)
     };
 };

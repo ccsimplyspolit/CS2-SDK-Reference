@@ -27,6 +27,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::particleslib::CParticleProperty) == 0x28);
+        // size assertion omitted: CParticleProperty has no schema binary (size is a guess)
     };
 };

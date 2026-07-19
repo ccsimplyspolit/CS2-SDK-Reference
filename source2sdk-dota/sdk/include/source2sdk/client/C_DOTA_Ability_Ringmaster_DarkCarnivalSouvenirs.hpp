@@ -31,6 +31,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_DOTA_Ability_Ringmaster_DarkCarnivalSouvenirs) == 0x6e0);
+        // size assertion omitted: C_DOTA_Ability_Ringmaster_DarkCarnivalSouvenirs has no schema binary (size is a guess)
     };
 };

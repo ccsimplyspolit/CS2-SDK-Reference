@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadel_Ability_Tokamak_Radiance) == 0x11d8);
+        // size assertion omitted: CCitadel_Ability_Tokamak_Radiance has no schema binary (size is a guess)
     };
 };

@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCSObserver_UseServices) == 0x48);
+        // size assertion omitted: CCSObserver_UseServices has no schema binary (size is a guess)
     };
 };

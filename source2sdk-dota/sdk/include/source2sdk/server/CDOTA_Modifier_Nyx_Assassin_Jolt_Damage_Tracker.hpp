@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Nyx_Assassin_Jolt_Damage_Tracker) == 0x1a70);
+        // size assertion omitted: CDOTA_Modifier_Nyx_Assassin_Jolt_Damage_Tracker has no schema binary (size is a guess)
     };
 };

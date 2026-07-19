@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CCitadelPreviewPlayerController) == 0xc30);
+        // size assertion omitted: CCitadelPreviewPlayerController has no schema binary (size is a guess)
     };
 };

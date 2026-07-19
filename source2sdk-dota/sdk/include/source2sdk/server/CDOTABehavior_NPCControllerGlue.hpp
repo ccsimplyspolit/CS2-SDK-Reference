@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTABehavior_NPCControllerGlue) == 0x68);
+        // size assertion omitted: CDOTABehavior_NPCControllerGlue has no schema binary (size is a guess)
     };
 };

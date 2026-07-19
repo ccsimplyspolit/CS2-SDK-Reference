@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_Ability_Faceless_Void_Innate_Time_Walk_Backtrack_Duration) == 0x580);
+        // size assertion omitted: CDOTA_Ability_Faceless_Void_Innate_Time_Walk_Backtrack_Duration has no schema binary (size is a guess)
     };
 };

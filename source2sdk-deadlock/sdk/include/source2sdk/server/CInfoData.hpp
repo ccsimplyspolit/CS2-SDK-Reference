@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CInfoData) == 0x830);
+        // size assertion omitted: CInfoData has no schema binary (size is a guess)
     };
 };

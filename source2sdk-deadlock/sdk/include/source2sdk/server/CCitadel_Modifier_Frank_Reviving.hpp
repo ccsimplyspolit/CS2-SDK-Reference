@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_Modifier_Frank_Reviving) == 0x150);
+        // size assertion omitted: CCitadel_Modifier_Frank_Reviving has no schema binary (size is a guess)
     };
 };

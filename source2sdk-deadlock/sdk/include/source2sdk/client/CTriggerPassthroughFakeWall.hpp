@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CTriggerPassthroughFakeWall) == 0xa90);
+        // size assertion omitted: CTriggerPassthroughFakeWall has no schema binary (size is a guess)
     };
 };

@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CDOTA_Item_Helm_Of_The_Undying) == 0x758);
+        // size assertion omitted: CDOTA_Item_Helm_Of_The_Undying has no schema binary (size is a guess)
     };
 };

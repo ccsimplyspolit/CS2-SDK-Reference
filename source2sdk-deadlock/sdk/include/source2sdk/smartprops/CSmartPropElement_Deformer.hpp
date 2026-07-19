@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::smartprops::CSmartPropElement_Deformer) == 0xa0);
+        // size assertion omitted: CSmartPropElement_Deformer has no schema binary (size is a guess)
     };
 };

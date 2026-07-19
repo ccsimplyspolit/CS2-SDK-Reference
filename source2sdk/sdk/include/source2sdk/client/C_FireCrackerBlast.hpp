@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_FireCrackerBlast) == 0x85c0);
+        // size assertion omitted: C_FireCrackerBlast has no schema binary (size is a guess)
     };
 };

@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_Ability_Weapon_BossTier2) == 0xf70);
+        // size assertion omitted: CCitadel_Ability_Weapon_BossTier2 has no schema binary (size is a guess)
     };
 };

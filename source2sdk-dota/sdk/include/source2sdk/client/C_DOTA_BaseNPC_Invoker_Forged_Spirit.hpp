@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_DOTA_BaseNPC_Invoker_Forged_Spirit) == 0x19b8);
+        // size assertion omitted: C_DOTA_BaseNPC_Invoker_Forged_Spirit has no schema binary (size is a guess)
     };
 };

@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CInfoInstructorHintTarget) == 0x4a8);
+        // size assertion omitted: CInfoInstructorHintTarget has no schema binary (size is a guess)
     };
 };

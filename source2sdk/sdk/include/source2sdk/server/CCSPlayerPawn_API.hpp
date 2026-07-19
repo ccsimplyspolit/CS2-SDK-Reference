@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCSPlayerPawn_API) == 0x8);
+        // size assertion omitted: CCSPlayerPawn_API has no schema binary (size is a guess)
     };
 };

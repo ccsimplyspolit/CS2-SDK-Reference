@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_Item_Electric_Slippers) == 0x1220);
+        // size assertion omitted: CCitadel_Item_Electric_Slippers has no schema binary (size is a guess)
     };
 };

@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::C_WeaponSawedoff) == 0x1ce0);
+        // size assertion omitted: C_WeaponSawedoff has no schema binary (size is a guess)
     };
 };

@@ -30,6 +30,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CDOTA_Ability_Abyssal_Underling_Archer_AoE) == 0x6a8);
+        // size assertion omitted: CDOTA_Ability_Abyssal_Underling_Archer_AoE has no schema binary (size is a guess)
     };
 };

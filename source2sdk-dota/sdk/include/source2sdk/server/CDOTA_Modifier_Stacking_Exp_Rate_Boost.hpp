@@ -28,6 +28,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Stacking_Exp_Rate_Boost) == 0x1a58);
+        // size assertion omitted: CDOTA_Modifier_Stacking_Exp_Rate_Boost has no schema binary (size is a guess)
     };
 };

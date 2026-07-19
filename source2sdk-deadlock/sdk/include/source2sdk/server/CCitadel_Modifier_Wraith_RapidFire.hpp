@@ -29,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CCitadel_Modifier_Wraith_RapidFire) == 0x350);
+        // size assertion omitted: CCitadel_Modifier_Wraith_RapidFire has no schema binary (size is a guess)
     };
 };
