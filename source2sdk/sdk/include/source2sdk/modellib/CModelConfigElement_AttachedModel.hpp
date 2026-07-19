@@ -21,6 +21,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xe8
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -40,7 +41,7 @@ namespace source2sdk
             bool m_bBoneMergeFlex; // 0x8c            
             bool m_bUserSpecifiedColor; // 0x8d            
             bool m_bUserSpecifiedMaterialGroup; // 0x8e            
-            bool m_bAcceptParentMaterialDrivenDecals; // 0x8f            
+            uint8_t _pad008f[0x1]; // 0x8f
             CUtlString m_BodygroupOnOtherModels; // 0x90            
             CUtlString m_MaterialGroupOnOtherModels; // 0x98            
             uint8_t _pad00a0[0x48];

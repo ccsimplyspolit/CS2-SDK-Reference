@@ -3,6 +3,7 @@
 #include "source2sdk/source2gen/source2gen.hpp"
 #include <cstddef>
 #include <cstdint>
+#include "source2sdk/entity2/CEntityIOOutput.hpp"
 #include "source2sdk/server/CLogicalEntity.hpp"
 
 // /////////////////////////////////////////////////////////////
@@ -17,23 +18,26 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x4e8
+        // Size: 0x4e0
         // Has VTable
+        // Construct allowed
         #pragma pack(push, 1)
         class CLogicRelay : public source2sdk::server::CLogicalEntity
         {
         public:
-            bool m_bDisabled; // 0x4e0            
-            bool m_bWaitForRefire; // 0x4e1            
-            bool m_bTriggerOnce; // 0x4e2            
-            bool m_bFastRetrigger; // 0x4e3            
-            bool m_bPassthoughCaller; // 0x4e4            
-            uint8_t _pad04e5[0x3];
+            source2sdk::entity2::CEntityIOOutput m_OnSpawn; // 0x4a8            
+            source2sdk::entity2::CEntityIOOutput m_OnTrigger; // 0x4c0            
+            bool m_bDisabled; // 0x4d8            
+            bool m_bWaitForRefire; // 0x4d9            
+            bool m_bTriggerOnce; // 0x4da            
+            bool m_bFastRetrigger; // 0x4db            
+            bool m_bPassthoughCaller; // 0x4dc            
+            uint8_t _pad04dd[0x3];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in CLogicRelay because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::server::CLogicRelay) == 0x4e8);
+        static_assert(sizeof(source2sdk::server::CLogicRelay) == 0x4e0);
     };
 };

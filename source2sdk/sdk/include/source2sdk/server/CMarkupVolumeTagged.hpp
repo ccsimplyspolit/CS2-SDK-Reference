@@ -17,29 +17,33 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x830
+        // Size: 0x7b0
         // Has VTable
+        // Construct disallowed
+        // MConstructibleClassBase
         #pragma pack(push, 1)
         class CMarkupVolumeTagged : public source2sdk::server::CMarkupVolume
         {
         public:
             // m_GroupNames has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CGlobalSymbol> m_GroupNames;
-            char m_GroupNames[0x18]; // 0x7f8            
+            char m_GroupNames[0x18]; // 0x778            
             // m_Tags has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CGlobalSymbol> m_Tags;
-            char m_Tags[0x18]; // 0x810            
-            bool m_bIsGroup; // 0x828            
-            bool m_bGroupByPrefab; // 0x829            
-            bool m_bGroupByVolume; // 0x82a            
-            bool m_bGroupOtherGroups; // 0x82b            
-            bool m_bIsInGroup; // 0x82c            
-            uint8_t _pad082d[0x3];
+            char m_Tags[0x18]; // 0x790            
+            // metadata: MNotSaved
+            bool m_bIsGroup; // 0x7a8            
+            bool m_bGroupByPrefab; // 0x7a9            
+            bool m_bGroupByVolume; // 0x7aa            
+            bool m_bGroupOtherGroups; // 0x7ab            
+            // metadata: MNotSaved
+            bool m_bIsInGroup; // 0x7ac            
+            uint8_t _pad07ad[0x3];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in CMarkupVolumeTagged because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::server::CMarkupVolumeTagged) == 0x830);
+        static_assert(sizeof(source2sdk::server::CMarkupVolumeTagged) == 0x7b0);
     };
 };

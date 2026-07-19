@@ -17,8 +17,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x640
+        // Size: 0x638
         // Has VTable
+        // Construct allowed
         #pragma pack(push, 1)
         class CFilterLOS : public source2sdk::client::CBaseFilter
         {
@@ -28,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CFilterLOS) == 0x640);
+        static_assert(sizeof(source2sdk::client::CFilterLOS) == 0x638);
     };
 };

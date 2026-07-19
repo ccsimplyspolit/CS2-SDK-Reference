@@ -18,21 +18,22 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x90
+        // Size: 0x120
         // Has VTable
         // Is Abstract
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CPulseCell_BaseLerp : public source2sdk::pulse_runtime_lib::CPulseCell_BaseYieldingInflow
         {
         public:
-            source2sdk::pulse_runtime_lib::CPulse_ResumePoint m_WakeResume; // 0x48            
+            source2sdk::pulse_runtime_lib::CPulse_ResumePoint m_WakeResume; // 0xd8            
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in CPulseCell_BaseLerp because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::pulse_runtime_lib::CPulseCell_BaseLerp) == 0x90);
+        static_assert(sizeof(source2sdk::pulse_runtime_lib::CPulseCell_BaseLerp) == 0x120);
     };
 };

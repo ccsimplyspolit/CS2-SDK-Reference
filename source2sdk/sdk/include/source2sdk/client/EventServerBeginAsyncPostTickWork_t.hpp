@@ -3,7 +3,6 @@
 #include "source2sdk/source2gen/source2gen.hpp"
 #include <cstddef>
 #include <cstdint>
-#include "source2sdk/client/EventPostAdvanceTick_t.hpp"
 
 // /////////////////////////////////////////////////////////////
 // Module: client
@@ -15,19 +14,20 @@ namespace source2sdk
     namespace client
     {
         // Registered alignment: unknown
-        // Alignment: 0x4
-        // Standard-layout class: false
-        // Size: 0x40
+        // Alignment: 0x1
+        // Standard-layout class: true
+        // Size: 0x1
         // Has Trivial Destructor
         #pragma pack(push, 1)
-        struct EventServerBeginAsyncPostTickWork_t : public source2sdk::client::EventPostAdvanceTick_t
+        struct EventServerBeginAsyncPostTickWork_t
         {
         public:
-            // No schema binary for binding
+            bool m_bIsOncePerFrameAsyncWorkPhase; // 0x0            
         };
         #pragma pack(pop)
         
+        static_assert(offsetof(source2sdk::client::EventServerBeginAsyncPostTickWork_t, m_bIsOncePerFrameAsyncWorkPhase) == 0x0);
         
-        static_assert(sizeof(source2sdk::client::EventServerBeginAsyncPostTickWork_t) == 0x40);
+        static_assert(sizeof(source2sdk::client::EventServerBeginAsyncPostTickWork_t) == 0x1);
     };
 };

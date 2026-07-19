@@ -20,12 +20,12 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x678
+        // Size: 0x6b8
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
-        // static metadata: MClassIsParticleVec
-        // static metadata: MParticleCustomFieldDefaultValue
+        // static metadata: MCustomFGDMetadata "{ SkipImprintFGDClassOnKV3 = true SkipRemoveKeysInKV3AtFGDDefault = true KV3DefaultTestFnName = 'CParticleVecInputDefaultTestFunc' }"
         #pragma pack(push, 1)
         class CParticleVecInput : public source2sdk::particleslib::CParticleInput
         {
@@ -45,21 +45,21 @@ namespace source2sdk
             Vector m_vCPRelativePosition; // 0x90            
             Vector m_vCPRelativeDir; // 0x9c            
             source2sdk::particleslib::CParticleFloatInput m_FloatComponentX; // 0xa8            
-            source2sdk::particleslib::CParticleFloatInput m_FloatComponentY; // 0x208            
-            source2sdk::particleslib::CParticleFloatInput m_FloatComponentZ; // 0x368            
-            source2sdk::particleslib::CParticleFloatInput m_FloatInterp; // 0x4c8            
-            float m_flInterpInput0; // 0x628            
-            float m_flInterpInput1; // 0x62c            
-            Vector m_vInterpOutput0; // 0x630            
-            Vector m_vInterpOutput1; // 0x63c            
-            CColorGradient m_Gradient; // 0x648            
-            Vector m_vRandomMin; // 0x660            
-            Vector m_vRandomMax; // 0x66c            
+            source2sdk::particleslib::CParticleFloatInput m_FloatComponentY; // 0x218            
+            source2sdk::particleslib::CParticleFloatInput m_FloatComponentZ; // 0x388            
+            source2sdk::particleslib::CParticleFloatInput m_FloatInterp; // 0x4f8            
+            float m_flInterpInput0; // 0x668            
+            float m_flInterpInput1; // 0x66c            
+            Vector m_vInterpOutput0; // 0x670            
+            Vector m_vInterpOutput1; // 0x67c            
+            CColorGradient m_Gradient; // 0x688            
+            Vector m_vRandomMin; // 0x6a0            
+            Vector m_vRandomMax; // 0x6ac            
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in CParticleVecInput because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particleslib::CParticleVecInput) == 0x678);
+        static_assert(sizeof(source2sdk::particleslib::CParticleVecInput) == 0x6b8);
     };
 };

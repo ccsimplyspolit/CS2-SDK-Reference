@@ -17,36 +17,20 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x4f8
+        // Size: 0x4c0
         // Has VTable
-        // 
-        // static metadata: MNetworkVarNames "float m_flVisibilityStrength"
-        // static metadata: MNetworkVarNames "float m_flFogDistanceMultiplier"
-        // static metadata: MNetworkVarNames "float m_flFogMaxDensityMultiplier"
-        // static metadata: MNetworkVarNames "float m_flFadeTime"
-        // static metadata: MNetworkVarNames "bool m_bStartDisabled"
-        // static metadata: MNetworkVarNames "bool m_bIsEnabled"
+        // Construct allowed
         #pragma pack(push, 1)
         class CPlayerVisibility : public source2sdk::server::CBaseEntity
         {
         public:
-            // metadata: MNetworkEnable
-            // metadata: MNetworkChangeCallback "PlayerVisibilityStateChanged"
-            float m_flVisibilityStrength; // 0x4e0            
-            // metadata: MNetworkEnable
-            // metadata: MNetworkChangeCallback "PlayerVisibilityStateChanged"
-            float m_flFogDistanceMultiplier; // 0x4e4            
-            // metadata: MNetworkEnable
-            // metadata: MNetworkChangeCallback "PlayerVisibilityStateChanged"
-            float m_flFogMaxDensityMultiplier; // 0x4e8            
-            // metadata: MNetworkEnable
-            // metadata: MNetworkChangeCallback "PlayerVisibilityStateChanged"
-            float m_flFadeTime; // 0x4ec            
-            // metadata: MNetworkEnable
-            bool m_bStartDisabled; // 0x4f0            
-            // metadata: MNetworkEnable
-            bool m_bIsEnabled; // 0x4f1            
-            uint8_t _pad04f2[0x6];
+            float m_flVisibilityStrength; // 0x4a8            
+            float m_flFogDistanceMultiplier; // 0x4ac            
+            float m_flFogMaxDensityMultiplier; // 0x4b0            
+            float m_flFadeTime; // 0x4b4            
+            bool m_bStartDisabled; // 0x4b8            
+            bool m_bIsEnabled; // 0x4b9            
+            uint8_t _pad04ba[0x6];
             
             // Datamap fields:
             // bool InputEnable; // 0x0
@@ -59,6 +43,6 @@ namespace source2sdk
         
         // Cannot assert offsets of fields in CPlayerVisibility because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::server::CPlayerVisibility) == 0x4f8);
+        static_assert(sizeof(source2sdk::server::CPlayerVisibility) == 0x4c0);
     };
 };

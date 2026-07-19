@@ -19,12 +19,15 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xa0
         // Has VTable
+        // Construct allowed
+        // Construct disallowed
+        // 
+        // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CPathQueryComponent : public source2sdk::entity2::CEntityComponent
         {
         public:
             uint8_t _pad0008[0x98];
-            // No schema binary for binding
         };
         #pragma pack(pop)
         

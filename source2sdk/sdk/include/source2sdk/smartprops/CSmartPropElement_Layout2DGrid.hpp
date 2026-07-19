@@ -21,6 +21,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x3a0
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Layout Grid"

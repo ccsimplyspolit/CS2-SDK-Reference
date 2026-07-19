@@ -6,6 +6,10 @@
 #include <iostream>
 #include <optional>
 
+#if TARGET_OS == WINDOWS
+    #include <io.h>
+#endif
+
 int main(const int argc, char* argv[]) {
     int exit_code = 1;
 
@@ -18,8 +22,12 @@ int main(const int argc, char* argv[]) {
 
     /// Errors would be logged in the `source2_gen::Dump` itself
     /// We don't want to call getch on linux as the program would be started within a terminal anyway.
+    /// On Windows we only hold the console open when there is a human to read
+    /// it — otherwise a scripted run would block here forever.
 #if TARGET_OS == WINDOWS
-    (void)std::getchar();
+    if (_isatty(_fileno(stdin))) {
+        (void)std::getchar();
+    }
 #endif
     return exit_code;
 }

@@ -4,6 +4,13 @@
 #include <cstddef>
 #include <cstdint>
 #include "source2sdk/server/CBaseTrigger.hpp"
+namespace source2sdk
+{
+    namespace client
+    {
+        struct IPhysicsMotionController;
+    };
+};
 
 // /////////////////////////////////////////////////////////////
 // Module: server
@@ -17,64 +24,39 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0xa20
+        // Size: 0x948
         // Has VTable
-        // 
-        // static metadata: MNetworkVarNames "float m_gravityScale"
-        // static metadata: MNetworkVarNames "float m_linearLimit"
-        // static metadata: MNetworkVarNames "float m_linearDamping"
-        // static metadata: MNetworkVarNames "float m_angularLimit"
-        // static metadata: MNetworkVarNames "float m_angularDamping"
-        // static metadata: MNetworkVarNames "float m_linearForce"
-        // static metadata: MNetworkVarNames "float m_flFrequency"
-        // static metadata: MNetworkVarNames "float m_flDampingRatio"
-        // static metadata: MNetworkVarNames "Vector m_vecLinearForcePointAt"
-        // static metadata: MNetworkVarNames "bool m_bCollapseToForcePoint"
-        // static metadata: MNetworkVarNames "Vector m_vecLinearForcePointAtWorld"
-        // static metadata: MNetworkVarNames "Vector m_vecLinearForceDirection"
-        // static metadata: MNetworkVarNames "bool m_bConvertToDebrisWhenPossible"
+        // Construct allowed
         #pragma pack(push, 1)
         class CTriggerPhysics : public source2sdk::server::CBaseTrigger
         {
         public:
-            uint8_t _pad09c0[0x10]; // 0x9c0
-            // metadata: MNetworkEnable
-            float m_gravityScale; // 0x9d0            
-            // metadata: MNetworkEnable
-            float m_linearLimit; // 0x9d4            
-            // metadata: MNetworkEnable
-            float m_linearDamping; // 0x9d8            
-            // metadata: MNetworkEnable
-            float m_angularLimit; // 0x9dc            
-            // metadata: MNetworkEnable
-            float m_angularDamping; // 0x9e0            
-            // metadata: MNetworkEnable
-            float m_linearForce; // 0x9e4            
-            // metadata: MNetworkEnable
-            float m_flFrequency; // 0x9e8            
-            // metadata: MNetworkEnable
-            float m_flDampingRatio; // 0x9ec            
-            // metadata: MNetworkEnable
-            Vector m_vecLinearForcePointAt; // 0x9f0            
-            // metadata: MNetworkEnable
-            bool m_bCollapseToForcePoint; // 0x9fc            
-            uint8_t _pad09fd[0x3]; // 0x9fd
-            // metadata: MNetworkEnable
-            Vector m_vecLinearForcePointAtWorld; // 0xa00            
-            // metadata: MNetworkEnable
-            Vector m_vecLinearForceDirection; // 0xa0c            
-            // metadata: MNetworkEnable
-            bool m_bConvertToDebrisWhenPossible; // 0xa18            
-            uint8_t _pad0a19[0x7];
+            uint8_t _pad08e8[0x8]; // 0x8e8
+            // metadata: MPhysPtr
+            source2sdk::client::IPhysicsMotionController* m_pController; // 0x8f0            
+            float m_gravityScale; // 0x8f8            
+            float m_linearLimit; // 0x8fc            
+            float m_linearDamping; // 0x900            
+            float m_angularLimit; // 0x904            
+            float m_angularDamping; // 0x908            
+            float m_linearForce; // 0x90c            
+            float m_flFrequency; // 0x910            
+            float m_flDampingRatio; // 0x914            
+            Vector m_vecLinearForcePointAt; // 0x918            
+            bool m_bCollapseToForcePoint; // 0x924            
+            uint8_t _pad0925[0x3]; // 0x925
+            VectorWS m_vecLinearForcePointAtWorld; // 0x928            
+            Vector m_vecLinearForceDirection; // 0x934            
+            bool m_bConvertToDebrisWhenPossible; // 0x940            
+            uint8_t _pad0941[0x7];
             
             // Datamap fields:
-            // void m_pController; // 0x9c8
             // CUtlSymbolLarge InputSetLinearForcePointAt; // 0x0
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in CTriggerPhysics because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::server::CTriggerPhysics) == 0xa20);
+        static_assert(sizeof(source2sdk::server::CTriggerPhysics) == 0x948);
     };
 };

@@ -17,8 +17,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x80
+        // Size: 0x60
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -26,17 +27,17 @@ namespace source2sdk
         {
         public:
             // m_conditionNodeIndices has a template type with potentially unknown template parameters. You can try uncommenting the field below.
-            // CUtlVectorFixedGrowable<std::int16_t,5> m_conditionNodeIndices;
-            char m_conditionNodeIndices[0x28]; // 0x10            
+            // CUtlLeanVectorFixedGrowable<std::int16_t,5> m_conditionNodeIndices;
+            char m_conditionNodeIndices[0x18]; // 0x10            
             // m_values has a template type with potentially unknown template parameters. You can try uncommenting the field below.
-            // CUtlVectorFixedGrowable<CGlobalSymbol,5> m_values;
-            char m_values[0x40]; // 0x38            
-            CGlobalSymbol m_defaultValue; // 0x78            
+            // CUtlLeanVectorFixedGrowable<CGlobalSymbol,5> m_values;
+            char m_values[0x30]; // 0x28            
+            CGlobalSymbol m_defaultValue; // 0x58            
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in CNmIDSelectorNode::CDefinition because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::animlib::CNmIDSelectorNode_CDefinition) == 0x80);
+        static_assert(sizeof(source2sdk::animlib::CNmIDSelectorNode_CDefinition) == 0x60);
     };
 };

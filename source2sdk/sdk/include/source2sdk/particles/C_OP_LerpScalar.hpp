@@ -19,8 +19,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x330
+        // Size: 0x358
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -29,19 +30,19 @@ namespace source2sdk
         public:
             // metadata: MPropertyFriendlyName "output field"
             // metadata: MPropertyAttributeChoiceName "particlefield_scalar"
-            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1c0            
-            uint8_t _pad01c4[0x4]; // 0x1c4
+            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1d8            
+            uint8_t _pad01dc[0x4]; // 0x1dc
             // metadata: MPropertyFriendlyName "value to lerp to"
-            source2sdk::particleslib::CPerParticleFloatInput m_flOutput; // 0x1c8            
+            source2sdk::particleslib::CPerParticleFloatInput m_flOutput; // 0x1e0            
             // metadata: MPropertyFriendlyName "start time"
-            float m_flStartTime; // 0x328            
+            float m_flStartTime; // 0x350            
             // metadata: MPropertyFriendlyName "end time"
-            float m_flEndTime; // 0x32c            
+            float m_flEndTime; // 0x354            
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_OP_LerpScalar because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_OP_LerpScalar) == 0x330);
+        static_assert(sizeof(source2sdk::particles::C_OP_LerpScalar) == 0x358);
     };
 };

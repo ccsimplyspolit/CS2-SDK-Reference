@@ -18,8 +18,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x338
+        // Size: 0x360
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -27,15 +28,15 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "control point"
-            std::int32_t m_nControlPointNumber; // 0x1d0            
-            uint8_t _pad01d4[0x4]; // 0x1d4
+            std::int32_t m_nControlPointNumber; // 0x1e8            
+            uint8_t _pad01ec[0x4]; // 0x1ec
             // metadata: MPropertyFriendlyName "velocity scale"
-            source2sdk::particleslib::CPerParticleFloatInput m_flScale; // 0x1d8            
+            source2sdk::particleslib::CPerParticleFloatInput m_flScale; // 0x1f0            
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_OP_CPVelocityForce because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_OP_CPVelocityForce) == 0x338);
+        static_assert(sizeof(source2sdk::particles::C_OP_CPVelocityForce) == 0x360);
     };
 };

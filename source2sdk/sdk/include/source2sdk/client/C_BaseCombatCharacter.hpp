@@ -3,8 +3,8 @@
 #include "source2sdk/source2gen/source2gen.hpp"
 #include <cstddef>
 #include <cstdint>
+#include "source2sdk/client/CBaseAnimGraph.hpp"
 #include "source2sdk/client/C_BaseCombatCharacter_WaterWakeMode_t.hpp"
-#include "source2sdk/client/C_BaseFlex.hpp"
 #include "source2sdk/modellib/AttachmentHandle_t.hpp"
 namespace source2sdk
 {
@@ -26,32 +26,34 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0xc48
+        // Size: 0x1208
         // Has VTable
-        // 
-        // static metadata: MNetworkExcludeByUserGroup "LocalPlayerExclusive"
-        // static metadata: MNetworkVarNames "CHandle<C_EconWearable > m_hMyWearables"
+        // Construct allowed
         #pragma pack(push, 1)
-        class C_BaseCombatCharacter : public source2sdk::client::C_BaseFlex
+        class C_BaseCombatCharacter : public source2sdk::client::CBaseAnimGraph
         {
         public:
-            // metadata: MNetworkEnable
-            // metadata: MNetworkChangeCallback "OnWearablesChanged"
+            // metadata: MNotSaved
             // m_hMyWearables has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // C_NetworkUtlVectorBase<CHandle<source2sdk::client::C_EconWearable>> m_hMyWearables;
-            char m_hMyWearables[0x18]; // 0xbc0            
-            source2sdk::modellib::AttachmentHandle_t m_leftFootAttachment; // 0xbd8            
-            source2sdk::modellib::AttachmentHandle_t m_rightFootAttachment; // 0xbd9            
-            uint8_t _pad0bda[0x2]; // 0xbda
-            source2sdk::client::C_BaseCombatCharacter_WaterWakeMode_t m_nWaterWakeMode; // 0xbdc            
-            float m_flWaterWorldZ; // 0xbe0            
-            float m_flWaterNextTraceTime; // 0xbe4            
-            uint8_t _pad0be8[0x60];
+            char m_hMyWearables[0x18]; // 0x1180            
+            // metadata: MNotSaved
+            source2sdk::modellib::AttachmentHandle_t m_leftFootAttachment; // 0x1198            
+            // metadata: MNotSaved
+            source2sdk::modellib::AttachmentHandle_t m_rightFootAttachment; // 0x1199            
+            uint8_t _pad119a[0x2]; // 0x119a
+            // metadata: MNotSaved
+            source2sdk::client::C_BaseCombatCharacter_WaterWakeMode_t m_nWaterWakeMode; // 0x119c            
+            // metadata: MNotSaved
+            float m_flWaterWorldZ; // 0x11a0            
+            // metadata: MNotSaved
+            float m_flWaterNextTraceTime; // 0x11a4            
+            uint8_t _pad11a8[0x60];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_BaseCombatCharacter because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::client::C_BaseCombatCharacter) == 0xc48);
+        static_assert(sizeof(source2sdk::client::C_BaseCombatCharacter) == 0x1208);
     };
 };

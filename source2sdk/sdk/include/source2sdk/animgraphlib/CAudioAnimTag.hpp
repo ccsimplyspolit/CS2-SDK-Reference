@@ -19,10 +19,10 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x70
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Audio Tag"
-        // static metadata: M_LEGACY_OptInToSchemaPropertyDomain
         #pragma pack(push, 1)
         class CAudioAnimTag : public source2sdk::animgraphlib::CAnimTagBase
         {

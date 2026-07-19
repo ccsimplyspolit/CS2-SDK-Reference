@@ -13,18 +13,21 @@ namespace source2sdk
 {
     namespace server
     {
-        // Registered alignment: unknown
+        // Registered alignment: 0x4
         // Alignment: 0x4
         // Standard-layout class: true
         // Size: 0x18
         // Has Trivial Constructor
         // Has Trivial Destructor
+        // Construct allowed
+        // 
+        // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct AutoRoomDoorwayPairs_t
         {
         public:
-            Vector vP1; // 0x0            
-            Vector vP2; // 0xc            
+            VectorWS vP1; // 0x0            
+            VectorWS vP2; // 0xc            
         };
         #pragma pack(pop)
         

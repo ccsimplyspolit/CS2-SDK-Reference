@@ -6,6 +6,7 @@
 #include "source2sdk/materialsystem2/PostProcessingBloomParameters_t.hpp"
 #include "source2sdk/materialsystem2/PostProcessingFogScatteringParameters_t.hpp"
 #include "source2sdk/materialsystem2/PostProcessingLocalContrastParameters_t.hpp"
+#include "source2sdk/materialsystem2/PostProcessingLocalExposureParameters_t.hpp"
 #include "source2sdk/materialsystem2/PostProcessingTonemapParameters_t.hpp"
 #include "source2sdk/materialsystem2/PostProcessingVignetteParameters_t.hpp"
 
@@ -21,7 +22,8 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: true
-        // Size: 0x138
+        // Size: 0x158
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -46,6 +48,9 @@ namespace source2sdk
             bool m_bHasFogScatteringParams; // 0x121            
             uint8_t _pad0122[0x2]; // 0x122
             source2sdk::materialsystem2::PostProcessingFogScatteringParameters_t m_fogScatteringParams; // 0x124            
+            bool m_bHasLocalExposureParams; // 0x144            
+            uint8_t _pad0145[0x3]; // 0x145
+            source2sdk::materialsystem2::PostProcessingLocalExposureParameters_t m_localExposureParams; // 0x148            
         };
         #pragma pack(pop)
         
@@ -62,7 +67,9 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::materialsystem2::PostProcessingResource_t, m_bHasColorCorrection) == 0x120);
         static_assert(offsetof(source2sdk::materialsystem2::PostProcessingResource_t, m_bHasFogScatteringParams) == 0x121);
         static_assert(offsetof(source2sdk::materialsystem2::PostProcessingResource_t, m_fogScatteringParams) == 0x124);
+        static_assert(offsetof(source2sdk::materialsystem2::PostProcessingResource_t, m_bHasLocalExposureParams) == 0x144);
+        static_assert(offsetof(source2sdk::materialsystem2::PostProcessingResource_t, m_localExposureParams) == 0x148);
         
-        static_assert(sizeof(source2sdk::materialsystem2::PostProcessingResource_t) == 0x138);
+        static_assert(sizeof(source2sdk::materialsystem2::PostProcessingResource_t) == 0x158);
     };
 };

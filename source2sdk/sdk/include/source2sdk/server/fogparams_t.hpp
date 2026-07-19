@@ -14,102 +14,54 @@ namespace source2sdk
 {
     namespace server
     {
-        // Registered alignment: unknown
-        // Alignment: 0x4
+        // Registered alignment: 0x8
+        // Alignment: 0x8
         // Standard-layout class: true
         // Size: 0x68
         // Has VTable
         // Has Trivial Destructor
+        // Construct allowed
         // 
-        // static metadata: MNetworkVarNames "Vector dirPrimary"
-        // static metadata: MNetworkVarNames "Color colorPrimary"
-        // static metadata: MNetworkVarNames "Color colorSecondary"
-        // static metadata: MNetworkVarNames "Color colorPrimaryLerpTo"
-        // static metadata: MNetworkVarNames "Color colorSecondaryLerpTo"
-        // static metadata: MNetworkVarNames "float32 start"
-        // static metadata: MNetworkVarNames "float32 end"
-        // static metadata: MNetworkVarNames "float32 farz"
-        // static metadata: MNetworkVarNames "float32 maxdensity"
-        // static metadata: MNetworkVarNames "float32 exponent"
-        // static metadata: MNetworkVarNames "float32 HDRColorScale"
-        // static metadata: MNetworkVarNames "float32 skyboxFogFactor"
-        // static metadata: MNetworkVarNames "float32 skyboxFogFactorLerpTo"
-        // static metadata: MNetworkVarNames "float32 startLerpTo"
-        // static metadata: MNetworkVarNames "float32 endLerpTo"
-        // static metadata: MNetworkVarNames "float32 maxdensityLerpTo"
-        // static metadata: MNetworkVarNames "GameTime_t lerptime"
-        // static metadata: MNetworkVarNames "float32 duration"
-        // static metadata: MNetworkVarNames "float32 blendtobackground"
-        // static metadata: MNetworkVarNames "float32 scattering"
-        // static metadata: MNetworkVarNames "float32 locallightscale"
-        // static metadata: MNetworkVarNames "bool enable"
-        // static metadata: MNetworkVarNames "bool blend"
+        // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct fogparams_t
         {
         public:
             uint8_t _pad0000[0x8]; // 0x0
-            // metadata: MNetworkEnable
-            // metadata: MNetworkEncoder "coord"
             Vector dirPrimary; // 0x8            
-            // metadata: MNetworkEnable
             Color colorPrimary; // 0x14            
-            // metadata: MNetworkEnable
             Color colorSecondary; // 0x18            
-            // metadata: MNetworkEnable
-            // metadata: MNetworkUserGroup "FogController"
+            // metadata: MNotSaved
             Color colorPrimaryLerpTo; // 0x1c            
-            // metadata: MNetworkEnable
-            // metadata: MNetworkUserGroup "FogController"
+            // metadata: MNotSaved
             Color colorSecondaryLerpTo; // 0x20            
-            // metadata: MNetworkEnable
             float start; // 0x24            
-            // metadata: MNetworkEnable
             float end; // 0x28            
-            // metadata: MNetworkEnable
-            // metadata: MNetworkUserGroup "FogController"
             float farz; // 0x2c            
-            // metadata: MNetworkEnable
             float maxdensity; // 0x30            
-            // metadata: MNetworkEnable
             float exponent; // 0x34            
-            // metadata: MNetworkEnable
             float HDRColorScale; // 0x38            
-            // metadata: MNetworkEnable
-            // metadata: MNetworkUserGroup "FogController"
+            // metadata: MNotSaved
             float skyboxFogFactor; // 0x3c            
-            // metadata: MNetworkEnable
-            // metadata: MNetworkUserGroup "FogController"
+            // metadata: MNotSaved
             float skyboxFogFactorLerpTo; // 0x40            
-            // metadata: MNetworkEnable
-            // metadata: MNetworkUserGroup "FogController"
+            // metadata: MNotSaved
             float startLerpTo; // 0x44            
-            // metadata: MNetworkEnable
-            // metadata: MNetworkUserGroup "FogController"
+            // metadata: MNotSaved
             float endLerpTo; // 0x48            
-            // metadata: MNetworkEnable
-            // metadata: MNetworkUserGroup "FogController"
+            // metadata: MNotSaved
             float maxdensityLerpTo; // 0x4c            
-            // metadata: MNetworkEnable
-            // metadata: MNetworkUserGroup "FogController"
+            // metadata: MNotSaved
             source2sdk::entity2::GameTime_t lerptime; // 0x50            
-            // metadata: MNetworkEnable
-            // metadata: MNetworkUserGroup "FogController"
             float duration; // 0x54            
-            // metadata: MNetworkEnable
-            // metadata: MNetworkUserGroup "FogController"
             float blendtobackground; // 0x58            
-            // metadata: MNetworkEnable
-            // metadata: MNetworkUserGroup "FogController"
             float scattering; // 0x5c            
-            // metadata: MNetworkEnable
-            // metadata: MNetworkUserGroup "FogController"
             float locallightscale; // 0x60            
-            // metadata: MNetworkEnable
             bool enable; // 0x64            
-            // metadata: MNetworkEnable
             bool blend; // 0x65            
+            // metadata: MNotSaved
             bool m_bPadding2; // 0x66            
+            // metadata: MNotSaved
             bool m_bPadding; // 0x67            
         };
         #pragma pack(pop)

@@ -19,6 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x3c8
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Create Sizer"

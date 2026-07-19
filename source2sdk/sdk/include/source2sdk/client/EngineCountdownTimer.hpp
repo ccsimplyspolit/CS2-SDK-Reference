@@ -13,26 +13,24 @@ namespace source2sdk
 {
     namespace client
     {
-        // Registered alignment: unknown
-        // Alignment: 0x4
+        // Registered alignment: 0x8
+        // Alignment: 0x8
         // Standard-layout class: true
         // Size: 0x18
         // Has VTable
         // Has Trivial Destructor
+        // Construct allowed
+        // MNetworkNoBase
         // 
-        // static metadata: MNetworkVarNames "float32 m_duration"
-        // static metadata: MNetworkVarNames "float32 m_timestamp"
-        // static metadata: MNetworkVarNames "float32 m_timescale"
+        // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class EngineCountdownTimer
         {
         public:
             uint8_t _pad0000[0x8]; // 0x0
-            // metadata: MNetworkEnable
             float m_duration; // 0x8            
-            // metadata: MNetworkEnable
+            // metadata: MKV3TransferSaveOpsForField
             float m_timestamp; // 0xc            
-            // metadata: MNetworkEnable
             float m_timescale; // 0x10            
             uint8_t _pad0014[0x4];
         };

@@ -21,8 +21,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0xb08
+        // Size: 0xb80
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -30,23 +31,23 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "control point number"
-            std::int32_t m_nControlPointNumber; // 0x1c0            
-            uint8_t _pad01c4[0x4]; // 0x1c4
+            std::int32_t m_nControlPointNumber; // 0x1d8            
+            uint8_t _pad01dc[0x4]; // 0x1dc
             // metadata: MPropertyFriendlyName "Interpolation"
-            source2sdk::particleslib::CPerParticleFloatInput m_flInterpolation; // 0x1c8            
+            source2sdk::particleslib::CPerParticleFloatInput m_flInterpolation; // 0x1e0            
             // metadata: MPropertyFriendlyName "position cache attribute"
             // metadata: MPropertyAttributeChoiceName "particlefield_vector"
-            source2sdk::particles::ParticleAttributeIndex_t m_nCacheField; // 0x328            
-            uint8_t _pad032c[0x4]; // 0x32c
+            source2sdk::particles::ParticleAttributeIndex_t m_nCacheField; // 0x350            
+            uint8_t _pad0354[0x4]; // 0x354
             // metadata: MPropertyFriendlyName "scale"
-            source2sdk::particleslib::CParticleCollectionFloatInput m_flScale; // 0x330            
+            source2sdk::particleslib::CParticleCollectionFloatInput m_flScale; // 0x358            
             // metadata: MPropertyFriendlyName "component scale"
-            source2sdk::particleslib::CParticleCollectionVecInput m_vecScale; // 0x490            
+            source2sdk::particleslib::CParticleCollectionVecInput m_vecScale; // 0x4c8            
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_OP_LerpToInitialPosition because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_OP_LerpToInitialPosition) == 0xb08);
+        static_assert(sizeof(source2sdk::particles::C_OP_LerpToInitialPosition) == 0xb80);
     };
 };

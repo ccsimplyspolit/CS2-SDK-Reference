@@ -18,73 +18,38 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x850
+        // Size: 0x7d0
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MEntityAllowsPortraitWorldSpawn
-        // static metadata: MNetworkVarNames "HMaterialStrong m_hSkyMaterial"
-        // static metadata: MNetworkVarNames "HMaterialStrong m_hSkyMaterialLightingOnly"
-        // static metadata: MNetworkVarNames "bool m_bStartDisabled"
-        // static metadata: MNetworkVarNames "Color m_vTintColor"
-        // static metadata: MNetworkVarNames "Color m_vTintColorLightingOnly"
-        // static metadata: MNetworkVarNames "float m_flBrightnessScale"
-        // static metadata: MNetworkVarNames "int m_nFogType"
-        // static metadata: MNetworkVarNames "float m_flFogMinStart"
-        // static metadata: MNetworkVarNames "float m_flFogMinEnd"
-        // static metadata: MNetworkVarNames "float m_flFogMaxStart"
-        // static metadata: MNetworkVarNames "float m_flFogMaxEnd"
-        // static metadata: MNetworkVarNames "bool m_bEnabled"
         #pragma pack(push, 1)
         class CEnvSky : public source2sdk::server::CBaseModelEntity
         {
         public:
-            // metadata: MNetworkEnable
-            // metadata: MNetworkChangeCallback "SkyStateChanged"
             // m_hSkyMaterial has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CStrongHandle<source2sdk::resourcesystem::InfoForResourceTypeIMaterial2> m_hSkyMaterial;
-            char m_hSkyMaterial[0x8]; // 0x7f0            
-            // metadata: MNetworkEnable
-            // metadata: MNetworkChangeCallback "SkyStateChanged"
+            char m_hSkyMaterial[0x8]; // 0x770            
             // m_hSkyMaterialLightingOnly has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CStrongHandle<source2sdk::resourcesystem::InfoForResourceTypeIMaterial2> m_hSkyMaterialLightingOnly;
-            char m_hSkyMaterialLightingOnly[0x8]; // 0x7f8            
-            // metadata: MNetworkEnable
-            // metadata: MNetworkChangeCallback "SkyStateChanged"
-            bool m_bStartDisabled; // 0x800            
-            // metadata: MNetworkEnable
-            // metadata: MNetworkChangeCallback "SkyStateChanged"
-            Color m_vTintColor; // 0x801            
-            // metadata: MNetworkEnable
-            // metadata: MNetworkChangeCallback "SkyStateChanged"
-            Color m_vTintColorLightingOnly; // 0x805            
-            uint8_t _pad0809[0x3]; // 0x809
-            // metadata: MNetworkEnable
-            // metadata: MNetworkChangeCallback "SkyStateChanged"
-            float m_flBrightnessScale; // 0x80c            
-            // metadata: MNetworkEnable
-            // metadata: MNetworkChangeCallback "SkyStateChanged"
-            std::int32_t m_nFogType; // 0x810            
-            // metadata: MNetworkEnable
-            // metadata: MNetworkChangeCallback "SkyStateChanged"
-            float m_flFogMinStart; // 0x814            
-            // metadata: MNetworkEnable
-            // metadata: MNetworkChangeCallback "SkyStateChanged"
-            float m_flFogMinEnd; // 0x818            
-            // metadata: MNetworkEnable
-            // metadata: MNetworkChangeCallback "SkyStateChanged"
-            float m_flFogMaxStart; // 0x81c            
-            // metadata: MNetworkEnable
-            // metadata: MNetworkChangeCallback "SkyStateChanged"
-            float m_flFogMaxEnd; // 0x820            
-            // metadata: MNetworkEnable
-            // metadata: MNetworkChangeCallback "SkyStateChanged"
-            bool m_bEnabled; // 0x824            
-            uint8_t _pad0825[0x2b];
+            char m_hSkyMaterialLightingOnly[0x8]; // 0x778            
+            bool m_bStartDisabled; // 0x780            
+            Color m_vTintColor; // 0x781            
+            Color m_vTintColorLightingOnly; // 0x785            
+            uint8_t _pad0789[0x3]; // 0x789
+            float m_flBrightnessScale; // 0x78c            
+            std::int32_t m_nFogType; // 0x790            
+            float m_flFogMinStart; // 0x794            
+            float m_flFogMinEnd; // 0x798            
+            float m_flFogMaxStart; // 0x79c            
+            float m_flFogMaxEnd; // 0x7a0            
+            bool m_bEnabled; // 0x7a4            
+            uint8_t _pad07a5[0x2b];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in CEnvSky because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::server::CEnvSky) == 0x850);
+        static_assert(sizeof(source2sdk::server::CEnvSky) == 0x7d0);
     };
 };

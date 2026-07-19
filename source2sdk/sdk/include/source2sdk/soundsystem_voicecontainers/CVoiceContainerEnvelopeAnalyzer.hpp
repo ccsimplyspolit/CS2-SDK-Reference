@@ -18,8 +18,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x60
+        // Size: 0x58
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Envelope Analyzer"
@@ -29,17 +30,17 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "Envelope Mode"
-            source2sdk::soundsystem_voicecontainers::EMode_t m_mode; // 0x50            
+            source2sdk::soundsystem_voicecontainers::EMode_t m_mode; // 0x48            
             // metadata: MPropertyFriendlyName "Analysis Window"
-            float m_fAnalysisWindowMs; // 0x54            
+            float m_fAnalysisWindowMs; // 0x4c            
             // metadata: MPropertyFriendlyName "Threshold"
-            float m_flThreshold; // 0x58            
-            uint8_t _pad005c[0x4];
+            float m_flThreshold; // 0x50            
+            uint8_t _pad0054[0x4];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in CVoiceContainerEnvelopeAnalyzer because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::soundsystem_voicecontainers::CVoiceContainerEnvelopeAnalyzer) == 0x60);
+        static_assert(sizeof(source2sdk::soundsystem_voicecontainers::CVoiceContainerEnvelopeAnalyzer) == 0x58);
     };
 };

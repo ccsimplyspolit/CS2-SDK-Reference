@@ -19,10 +19,10 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x58
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Movement Handshake Tag"
-        // static metadata: M_LEGACY_OptInToSchemaPropertyDomain
         #pragma pack(push, 1)
         class CMovementHandshakeAnimTag : public source2sdk::animgraphlib::CHandshakeAnimTagBase
         {

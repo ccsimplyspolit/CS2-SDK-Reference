@@ -17,23 +17,23 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x20
+        // Size: 0x10
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
-        // static metadata: M_LEGACY_OptInToSchemaPropertyDomain
+        // static metadata: MPropertyFriendlyName "Time Limiter"
         #pragma pack(push, 1)
         class CSosGroupActionTimeLimitSchema : public source2sdk::soundsystem::CSosGroupActionSchema
         {
         public:
-            // metadata: MPropertyFriendlyName "Max Time"
-            float m_flMaxDuration; // 0x18            
-            uint8_t _pad001c[0x4];
+            float m_flMaxDuration; // 0x8            
+            uint8_t _pad000c[0x4];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in CSosGroupActionTimeLimitSchema because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::soundsystem::CSosGroupActionTimeLimitSchema) == 0x20);
+        static_assert(sizeof(source2sdk::soundsystem::CSosGroupActionTimeLimitSchema) == 0x10);
     };
 };

@@ -25,37 +25,38 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x870
+        // Size: 0x7f0
         // Has VTable
+        // Construct allowed
         #pragma pack(push, 1)
         class CBaseToggle : public source2sdk::server::CBaseModelEntity
         {
         public:
-            source2sdk::server::TOGGLE_STATE m_toggle_state; // 0x7f0            
-            float m_flMoveDistance; // 0x7f4            
-            float m_flWait; // 0x7f8            
-            float m_flLip; // 0x7fc            
-            bool m_bAlwaysFireBlockedOutputs; // 0x800            
-            uint8_t _pad0801[0x3]; // 0x801
-            Vector m_vecPosition1; // 0x804            
-            Vector m_vecPosition2; // 0x810            
-            QAngle m_vecMoveAng; // 0x81c            
-            QAngle m_vecAngle1; // 0x828            
-            QAngle m_vecAngle2; // 0x834            
-            float m_flHeight; // 0x840            
+            source2sdk::server::TOGGLE_STATE m_toggle_state; // 0x770            
+            float m_flMoveDistance; // 0x774            
+            float m_flWait; // 0x778            
+            float m_flLip; // 0x77c            
+            bool m_bAlwaysFireBlockedOutputs; // 0x780            
+            uint8_t _pad0781[0x3]; // 0x781
+            Vector m_vecPosition1; // 0x784            
+            Vector m_vecPosition2; // 0x790            
+            QAngle m_vecMoveAng; // 0x79c            
+            QAngle m_vecAngle1; // 0x7a8            
+            QAngle m_vecAngle2; // 0x7b4            
+            float m_flHeight; // 0x7c0            
             // m_hActivator has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hActivator;
-            char m_hActivator[0x4]; // 0x844            
-            Vector m_vecFinalDest; // 0x848            
-            QAngle m_vecFinalAngle; // 0x854            
-            std::int32_t m_movementType; // 0x860            
-            uint8_t _pad0864[0x4]; // 0x864
-            CUtlSymbolLarge m_sMaster; // 0x868            
+            char m_hActivator[0x4]; // 0x7c4            
+            Vector m_vecFinalDest; // 0x7c8            
+            QAngle m_vecFinalAngle; // 0x7d4            
+            std::int32_t m_movementType; // 0x7e0            
+            uint8_t _pad07e4[0x4]; // 0x7e4
+            CUtlSymbolLarge m_sMaster; // 0x7e8            
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in CBaseToggle because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::server::CBaseToggle) == 0x870);
+        static_assert(sizeof(source2sdk::server::CBaseToggle) == 0x7f0);
     };
 };

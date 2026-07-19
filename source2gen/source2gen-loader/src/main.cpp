@@ -45,6 +45,31 @@ namespace {
         return std::string(val);
     }
 
+    /// Directory the loader itself lives in.
+    /// source2gen.exe has to be invoked through an absolute path: cmd.exe drops
+    /// the current directory from its executable search whenever
+    /// NoDefaultCurrentDirectoryInExePath is set, and we prepend the game's own
+    /// binary directories to PATH before spawning it.
+    [[nodiscard]] std::filesystem::path get_loader_directory() {
+        std::wstring buffer(MAX_PATH, L'\0');
+
+        while (true) {
+            const auto length = GetModuleFileNameW(nullptr, buffer.data(), static_cast<DWORD>(buffer.size()));
+            if (length == 0) {
+                throw std::runtime_error("unable to locate the loader executable");
+            }
+
+            if (length < buffer.size()) {
+                buffer.resize(length);
+                break;
+            }
+
+            buffer.resize(buffer.size() * 2);
+        }
+
+        return std::filesystem::path{buffer}.parent_path();
+    }
+
     [[nodiscard]] std::filesystem::path find_second_bin_directory(const std::filesystem::path& game_path) {
         for (const auto& it : std::filesystem::directory_iterator{game_path / "game"}) {
             if (!it.is_directory()) {
@@ -174,14 +199,25 @@ int main(const int argc, char* argv[]) try {
     assert(!arguments.empty());
     arguments.erase(arguments.begin());
 
-    std::string invoke_cmd = kExecutableName;
-    invoke_cmd += " " + (arguments | std::views::join_with(' ') | std::ranges::to<std::string>());
+    const auto executable_path = get_loader_directory() / kExecutableName;
+    if (!exists(executable_path)) {
+        std::println(stderr, "{} not found next to the loader", executable_path.string());
+        return 1;
+    }
+
+    /// The command carries one extra pair of quotes on purpose: cmd.exe strips
+    /// the outermost pair, which leaves the quoted executable path and every
+    /// forwarded argument intact even when they contain spaces.
+    std::string invoke_cmd = "\"\"" + executable_path.string() + "\"";
+    for (const auto& argument : arguments) {
+        invoke_cmd += " " + argument;
+    }
+    invoke_cmd += "\"";
 
     std::println("*** loading source2gen: {}", invoke_cmd);
     std::fflush(stdout);
 
-    std::system(invoke_cmd.c_str());
-    return 0;
+    return std::system(invoke_cmd.c_str());
 } catch (const std::runtime_error& error) {
     std::println(stderr, "Fatal error: {}", error.what());
     return 1;

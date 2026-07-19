@@ -18,8 +18,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x5f8
+        // Size: 0x640
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -27,22 +28,22 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "group ID to affect"
-            std::int32_t m_nChildGroupID; // 0x1c8            
-            uint8_t _pad01cc[0x4]; // 0x1cc
+            std::int32_t m_nChildGroupID; // 0x1e0            
+            uint8_t _pad01e4[0x4]; // 0x1e4
             // metadata: MPropertyFriendlyName "Within-Cluster Refire Time"
-            source2sdk::particleslib::CParticleCollectionFloatInput m_flClusterRefireTime; // 0x1d0            
+            source2sdk::particleslib::CParticleCollectionFloatInput m_flClusterRefireTime; // 0x1e8            
             // metadata: MPropertyFriendlyName "Within-Cluster Fire Count Before Cooldown"
-            source2sdk::particleslib::CParticleCollectionFloatInput m_flClusterSize; // 0x330            
+            source2sdk::particleslib::CParticleCollectionFloatInput m_flClusterSize; // 0x358            
             // metadata: MPropertyFriendlyName "Cluster Cooldown Time"
-            source2sdk::particleslib::CParticleCollectionFloatInput m_flClusterCooldown; // 0x490            
+            source2sdk::particleslib::CParticleCollectionFloatInput m_flClusterCooldown; // 0x4c8            
             // metadata: MPropertyFriendlyName "limit active children to parent particle count"
-            bool m_bLimitChildCount; // 0x5f0            
-            uint8_t _pad05f1[0x7];
+            bool m_bLimitChildCount; // 0x638            
+            uint8_t _pad0639[0x7];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_OP_RepeatedTriggerChildGroup because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_OP_RepeatedTriggerChildGroup) == 0x5f8);
+        static_assert(sizeof(source2sdk::particles::C_OP_RepeatedTriggerChildGroup) == 0x640);
     };
 };

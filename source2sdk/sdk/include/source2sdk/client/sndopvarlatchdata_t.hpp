@@ -13,12 +13,15 @@ namespace source2sdk
 {
     namespace client
     {
-        // Registered alignment: unknown
+        // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: true
         // Size: 0x30
         // Has VTable
         // Has Trivial Destructor
+        // Construct allowed
+        // 
+        // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct sndopvarlatchdata_t
         {
@@ -28,7 +31,7 @@ namespace source2sdk
             CUtlSymbolLarge m_iszOperator; // 0x10            
             CUtlSymbolLarge m_iszOpvar; // 0x18            
             float m_flVal; // 0x20            
-            Vector m_vPos; // 0x24            
+            VectorWS m_vPos; // 0x24            
         };
         #pragma pack(pop)
         

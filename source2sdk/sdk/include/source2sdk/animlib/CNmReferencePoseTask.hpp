@@ -14,11 +14,12 @@ namespace source2sdk
 {
     namespace animlib
     {
-        // Registered alignment: 0x8
-        // Alignment: 0x8
+        // Registered alignment: 0x10
+        // Alignment: 0x10
         // Standard-layout class: false
-        // Size: 0x50
+        // Size: 0x70
         // Has VTable
+        // Construct allowed
         #pragma pack(push, 1)
         class CNmReferencePoseTask : public source2sdk::animlib::CNmPoseTask
         {
@@ -28,6 +29,6 @@ namespace source2sdk
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::animlib::CNmReferencePoseTask) == 0x50);
+        static_assert(sizeof(source2sdk::animlib::CNmReferencePoseTask) == 0x70);
     };
 };

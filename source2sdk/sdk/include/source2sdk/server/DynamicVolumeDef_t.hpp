@@ -20,11 +20,14 @@ namespace source2sdk
 {
     namespace server
     {
-        // Registered alignment: unknown
+        // Registered alignment: 0x4
         // Alignment: 0x4
         // Standard-layout class: true
         // Size: 0x30
         // Has Trivial Destructor
+        // Construct allowed
+        // 
+        // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct DynamicVolumeDef_t
         {
@@ -36,8 +39,8 @@ namespace source2sdk
             // CHandle<source2sdk::server::CBaseEntity> m_target;
             char m_target[0x4]; // 0x4            
             std::int32_t m_nHullIdx; // 0x8            
-            Vector m_vSourceAnchorPos; // 0xc            
-            Vector m_vTargetAnchorPos; // 0x18            
+            VectorWS m_vSourceAnchorPos; // 0xc            
+            VectorWS m_vTargetAnchorPos; // 0x18            
             std::uint32_t m_nAreaSrc; // 0x24            
             std::uint32_t m_nAreaDst; // 0x28            
             bool m_bAttached; // 0x2c            

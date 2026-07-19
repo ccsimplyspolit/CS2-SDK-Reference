@@ -18,8 +18,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x1d0
+        // Size: 0x1e8
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MParticleMaxVersion "8"
         // static metadata: MParticleReplacementOp "C_OP_InheritFromParentParticlesV2"
@@ -29,20 +30,20 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "scale"
-            float m_flScale; // 0x1c0            
+            float m_flScale; // 0x1d8            
             // metadata: MPropertyFriendlyName "inherited field"
             // metadata: MPropertyAttributeChoiceName "particlefield"
-            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1c4            
+            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1dc            
             // metadata: MPropertyFriendlyName "particle increment amount"
-            std::int32_t m_nIncrement; // 0x1c8            
+            std::int32_t m_nIncrement; // 0x1e0            
             // metadata: MPropertyFriendlyName "random parent particle distribution"
-            bool m_bRandomDistribution; // 0x1cc            
-            uint8_t _pad01cd[0x3];
+            bool m_bRandomDistribution; // 0x1e4            
+            uint8_t _pad01e5[0x3];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_OP_InheritFromParentParticles because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_OP_InheritFromParentParticles) == 0x1d0);
+        static_assert(sizeof(source2sdk::particles::C_OP_InheritFromParentParticles) == 0x1e8);
     };
 };

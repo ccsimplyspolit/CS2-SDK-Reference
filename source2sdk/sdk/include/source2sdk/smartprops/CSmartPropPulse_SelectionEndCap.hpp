@@ -19,11 +19,9 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x48
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
-        // static metadata: MCellForDomain "BaseDomain"
-        // static metadata: MPulseCellMethodBindings
-        // static metadata: MPulseCellOutflowHookInfo "`'Πώ"
         // static metadata: MPropertyFriendlyName "End Cap Settings"
         // static metadata: MPropertyDescription "Specifies that this is a special part that should be used at the start or end of the line."
         #pragma pack(push, 1)

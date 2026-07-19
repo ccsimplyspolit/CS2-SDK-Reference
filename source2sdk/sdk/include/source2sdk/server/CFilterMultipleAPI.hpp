@@ -18,15 +18,12 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x8
         // Has Trivial Destructor
-        // 
-        // static metadata: MPulseLibraryBindings
-        // static metadata: MPulseProvideFeatureTag "1"
-        // static metadata: MPulseDomainHookInfo
         #pragma pack(push, 1)
         class CFilterMultipleAPI
         {
         public:
             uint8_t _pad0000[0x8];
+            // No schema binary for binding
         };
         #pragma pack(pop)
         

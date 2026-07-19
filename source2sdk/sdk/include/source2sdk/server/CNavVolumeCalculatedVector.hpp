@@ -17,19 +17,19 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: 0x1
         // Standard-layout class: false
-        // Size: 0x98
+        // Size: 0xa0
         // Has VTable
         // Is Abstract
         #pragma pack(push, 1)
         class CNavVolumeCalculatedVector : public source2sdk::navlib::CNavVolume
         {
         public:
-            uint8_t _pad0070[0x28];
+            uint8_t _pad0078[0x28];
             // No schema binary for binding
         };
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CNavVolumeCalculatedVector) == 0x98);
+        static_assert(sizeof(source2sdk::server::CNavVolumeCalculatedVector) == 0xa0);
     };
 };

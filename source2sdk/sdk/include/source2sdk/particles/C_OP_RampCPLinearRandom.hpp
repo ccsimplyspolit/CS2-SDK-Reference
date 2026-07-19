@@ -17,8 +17,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x1e8
+        // Size: 0x200
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -26,17 +27,17 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "output control point"
-            std::int32_t m_nOutControlPointNumber; // 0x1c8            
+            std::int32_t m_nOutControlPointNumber; // 0x1e0            
             // metadata: MPropertyFriendlyName "ramp rate min"
-            Vector m_vecRateMin; // 0x1cc            
+            Vector m_vecRateMin; // 0x1e4            
             // metadata: MPropertyFriendlyName "ramp rate max"
-            Vector m_vecRateMax; // 0x1d8            
-            uint8_t _pad01e4[0x4];
+            Vector m_vecRateMax; // 0x1f0            
+            uint8_t _pad01fc[0x4];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_OP_RampCPLinearRandom because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_OP_RampCPLinearRandom) == 0x1e8);
+        static_assert(sizeof(source2sdk::particles::C_OP_RampCPLinearRandom) == 0x200);
     };
 };

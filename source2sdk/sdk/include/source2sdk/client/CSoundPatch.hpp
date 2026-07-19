@@ -25,7 +25,7 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: 0x8
         // Standard-layout class: true
-        // Size: 0xa8
+        // Size: 0xb0
         // Has VTable
         #pragma pack(push, 1)
         class CSoundPatch
@@ -42,17 +42,18 @@ namespace source2sdk
             // m_hEnt has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::C_BaseEntity> m_hEnt;
             char m_hEnt[0x4]; // 0x50            
+            // metadata: MNotSaved
             CEntityIndex m_soundEntityIndex; // 0x54            
-            Vector m_soundOrigin; // 0x58            
+            // metadata: MNotSaved
+            VectorWS m_soundOrigin; // 0x58            
             std::int32_t m_isPlaying; // 0x64            
             source2sdk::client::CCopyRecipientFilter m_Filter; // 0x68            
-            float m_flCloseCaptionDuration; // 0x98            
-            bool m_bUpdatedSoundOrigin; // 0x9c            
-            uint8_t _pad009d[0x3]; // 0x9d
-            CUtlSymbolLarge m_iszClassName; // 0xa0            
-            
-            // Datamap fields:
-            // void m_guid; // 0x28
+            float m_flCloseCaptionDuration; // 0xa0            
+            // metadata: MNotSaved
+            bool m_bUpdatedSoundOrigin; // 0xa4            
+            uint8_t _pad00a5[0x3]; // 0xa5
+            // metadata: MNotSaved
+            CUtlSymbolLarge m_iszClassName; // 0xa8            
         };
         #pragma pack(pop)
         
@@ -66,10 +67,10 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::client::CSoundPatch, m_soundOrigin) == 0x58);
         static_assert(offsetof(source2sdk::client::CSoundPatch, m_isPlaying) == 0x64);
         static_assert(offsetof(source2sdk::client::CSoundPatch, m_Filter) == 0x68);
-        static_assert(offsetof(source2sdk::client::CSoundPatch, m_flCloseCaptionDuration) == 0x98);
-        static_assert(offsetof(source2sdk::client::CSoundPatch, m_bUpdatedSoundOrigin) == 0x9c);
-        static_assert(offsetof(source2sdk::client::CSoundPatch, m_iszClassName) == 0xa0);
+        static_assert(offsetof(source2sdk::client::CSoundPatch, m_flCloseCaptionDuration) == 0xa0);
+        static_assert(offsetof(source2sdk::client::CSoundPatch, m_bUpdatedSoundOrigin) == 0xa4);
+        static_assert(offsetof(source2sdk::client::CSoundPatch, m_iszClassName) == 0xa8);
         
-        static_assert(sizeof(source2sdk::client::CSoundPatch) == 0xa8);
+        static_assert(sizeof(source2sdk::client::CSoundPatch) == 0xb0);
     };
 };

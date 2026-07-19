@@ -17,19 +17,19 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: 0x1
         // Standard-layout class: false
-        // Size: 0xd8
+        // Size: 0x100
         // Has VTable
         // Is Abstract
         #pragma pack(push, 1)
         class CNmBlendTaskBase : public source2sdk::animlib::CNmPoseTask
         {
         public:
-            uint8_t _pad0050[0x88];
+            uint8_t _pad0070[0x90];
             // No schema binary for binding
         };
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::animlib::CNmBlendTaskBase) == 0xd8);
+        static_assert(sizeof(source2sdk::animlib::CNmBlendTaskBase) == 0x100);
     };
 };

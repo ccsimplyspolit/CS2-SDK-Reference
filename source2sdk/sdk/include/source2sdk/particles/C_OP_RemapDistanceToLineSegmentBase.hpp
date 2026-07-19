@@ -17,9 +17,10 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x1d8
+        // Size: 0x1f0
         // Has VTable
         // Is Abstract
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -27,21 +28,21 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "control point 0"
-            std::int32_t m_nCP0; // 0x1c0            
+            std::int32_t m_nCP0; // 0x1d8            
             // metadata: MPropertyFriendlyName "control point 1"
-            std::int32_t m_nCP1; // 0x1c4            
+            std::int32_t m_nCP1; // 0x1dc            
             // metadata: MPropertyFriendlyName "min distance value"
-            float m_flMinInputValue; // 0x1c8            
+            float m_flMinInputValue; // 0x1e0            
             // metadata: MPropertyFriendlyName "max distance value"
-            float m_flMaxInputValue; // 0x1cc            
+            float m_flMaxInputValue; // 0x1e4            
             // metadata: MPropertyFriendlyName "use distance to an infinite line instead of a finite line segment"
-            bool m_bInfiniteLine; // 0x1d0            
-            uint8_t _pad01d1[0x7];
+            bool m_bInfiniteLine; // 0x1e8            
+            uint8_t _pad01e9[0x7];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_OP_RemapDistanceToLineSegmentBase because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_OP_RemapDistanceToLineSegmentBase) == 0x1d8);
+        static_assert(sizeof(source2sdk::particles::C_OP_RemapDistanceToLineSegmentBase) == 0x1f0);
     };
 };

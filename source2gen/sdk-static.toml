@@ -46,8 +46,8 @@ size = 0x40
 size = 0x04
 
 [CPulseValueFullType]
-size = 0x10
-note = "size is 8 bytes bigger in Deadlock"
+size = 0x18
+note = "was 0x10; current CS2 matches the larger Deadlock layout — all 10 usages in the dump agree on 0x18"
 
 [CResourceName]
 size = 0xe0
@@ -59,7 +59,8 @@ size = 0x04
 size = 0x20
 
 [CUtlBinaryBlock]
-size = 0x18
+size = 0x10
+note = "shrank from 0x18 in current CS2; all 16 usages in the dump agree on 0x10"
 
 [CUtlHashtable]
 template-arguments-count = 2
@@ -324,3 +325,71 @@ size = 0x08
 
 [VectorWS]
 size = 0xc
+
+# Types below appear in current CS2 builds but were never added upstream.
+# Each size is derived from the generated field layout and is consistent across
+# every usage in the dump (see the per-type usage counts in the notes).
+
+[BASEPTR]
+size = 0x08
+note = "size derived from field layout; consistent across 3 usages"
+
+[CAnimGraph2ParamAutoResetOptionalRef]
+size = 0x20
+note = "size derived from field layout"
+
+[CModelAnimNameWithDeltas]
+size = 0x08
+note = "size derived from field layout"
+
+[CMotionTransform]
+size = 0x10
+note = "size derived from field layout"
+
+[CRotation]
+size = 0x04
+note = "size derived from field layout; consistent across 2 usages"
+
+[CTransformWS]
+size = 0x20
+note = "size derived from field layout; consistent across 7 usages"
+
+[CEntityNameString]
+size = 0x08
+note = "size derived from field layout"
+
+[CGameSoundEventName]
+size = 0x08
+note = "size derived from field layout; consistent across 43 usages"
+
+[CModelMaterialGroupName]
+size = 0x08
+note = "size derived from field layout"
+
+[CSmartPropAttributeSurfaceProperty]
+size = 0x40
+note = "size derived from field layout; matches every other CSmartPropAttribute*"
+
+[ENTITYFUNCPTR]
+size = 0x08
+note = "size derived from field layout; consistent across 2 usages"
+
+[HPulseCellBase]
+size = 0x08
+note = "size derived from field layout"
+
+[HYieldedCursor]
+size = 0x0c
+note = "size derived from field layout"
+
+[ParticleParamID_t]
+size = 0x10
+note = "size derived from field layout"
+
+[RnSphere_t]
+size = 0x10
+note = "size derived from field layout; matches Vector centre + float radius"
+
+[USEPTR]
+size = 0x08
+note = "size derived from field layout"

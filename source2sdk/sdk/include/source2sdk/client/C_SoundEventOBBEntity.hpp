@@ -17,25 +17,21 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x6d8
+        // Size: 0x6e8
         // Has VTable
-        // 
-        // static metadata: MNetworkVarNames "Vector m_vMins"
-        // static metadata: MNetworkVarNames "Vector m_vMaxs"
+        // Construct allowed
         #pragma pack(push, 1)
         class C_SoundEventOBBEntity : public source2sdk::client::C_SoundEventEntity
         {
         public:
-            // metadata: MNetworkEnable
-            Vector m_vMins; // 0x6b0            
-            // metadata: MNetworkEnable
-            Vector m_vMaxs; // 0x6bc            
-            uint8_t _pad06c8[0x10];
+            Vector m_vMins; // 0x6c0            
+            Vector m_vMaxs; // 0x6cc            
+            uint8_t _pad06d8[0x10];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_SoundEventOBBEntity because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::client::C_SoundEventOBBEntity) == 0x6d8);
+        static_assert(sizeof(source2sdk::client::C_SoundEventOBBEntity) == 0x6e8);
     };
 };

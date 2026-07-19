@@ -17,21 +17,22 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x68
+        // Size: 0x60
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CNmFloatCurveEvent : public source2sdk::animlib::CNmEvent
         {
         public:
-            CGlobalSymbol m_ID; // 0x20            
-            CPiecewiseCurve m_curve; // 0x28            
+            CGlobalSymbol m_ID; // 0x18            
+            CPiecewiseCurve m_curve; // 0x20            
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in CNmFloatCurveEvent because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::animlib::CNmFloatCurveEvent) == 0x68);
+        static_assert(sizeof(source2sdk::animlib::CNmFloatCurveEvent) == 0x60);
     };
 };

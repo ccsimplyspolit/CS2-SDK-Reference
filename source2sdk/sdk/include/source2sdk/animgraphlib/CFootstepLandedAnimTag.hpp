@@ -4,6 +4,7 @@
 #include <cstddef>
 #include <cstdint>
 #include "source2sdk/animgraphlib/CAnimTagBase.hpp"
+#include "source2sdk/animgraphlib/FootstepJumpPhase_t.hpp"
 #include "source2sdk/animgraphlib/FootstepLandedFootSoundType_t.hpp"
 
 // /////////////////////////////////////////////////////////////
@@ -18,12 +19,12 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x78
+        // Size: 0x80
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "FootstepLanded Tag"
-        // static metadata: M_LEGACY_OptInToSchemaPropertyDomain
         #pragma pack(push, 1)
         class CFootstepLandedAnimTag : public source2sdk::animgraphlib::CAnimTagBase
         {
@@ -40,11 +41,14 @@ namespace source2sdk
             // metadata: MPropertyFriendlyName "Bone Name"
             // metadata: MPropertyAttributeChoiceName "Bone"
             CUtlString m_BoneName; // 0x70            
+            // metadata: MPropertyFriendlyName "Jump Phase"
+            source2sdk::animgraphlib::FootstepJumpPhase_t m_footstepJumpPhase; // 0x78            
+            uint8_t _pad0079[0x7];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in CFootstepLandedAnimTag because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::animgraphlib::CFootstepLandedAnimTag) == 0x78);
+        static_assert(sizeof(source2sdk::animgraphlib::CFootstepLandedAnimTag) == 0x80);
     };
 };

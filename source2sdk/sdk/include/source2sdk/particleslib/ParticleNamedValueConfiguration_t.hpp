@@ -18,6 +18,7 @@ namespace source2sdk
         // Alignment: 0x8
         // Standard-layout class: true
         // Size: 0x38
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -26,9 +27,9 @@ namespace source2sdk
         public:
             CUtlString m_ConfigName; // 0x0            
             KeyValues3 m_ConfigValue; // 0x8            
-            source2sdk::animationsystem::ParticleAttachment_t m_iAttachType; // 0x18            
-            uint8_t _pad001c[0x4]; // 0x1c
-            CUtlString m_BoundEntityPath; // 0x20            
+            CUtlString m_BoundValuePath; // 0x18            
+            source2sdk::animationsystem::ParticleAttachment_t m_iAttachType; // 0x20            
+            uint8_t _pad0024[0x4]; // 0x24
             CUtlString m_strEntityScope; // 0x28            
             CUtlString m_strAttachmentName; // 0x30            
         };
@@ -36,8 +37,8 @@ namespace source2sdk
         
         static_assert(offsetof(source2sdk::particleslib::ParticleNamedValueConfiguration_t, m_ConfigName) == 0x0);
         static_assert(offsetof(source2sdk::particleslib::ParticleNamedValueConfiguration_t, m_ConfigValue) == 0x8);
-        static_assert(offsetof(source2sdk::particleslib::ParticleNamedValueConfiguration_t, m_iAttachType) == 0x18);
-        static_assert(offsetof(source2sdk::particleslib::ParticleNamedValueConfiguration_t, m_BoundEntityPath) == 0x20);
+        static_assert(offsetof(source2sdk::particleslib::ParticleNamedValueConfiguration_t, m_BoundValuePath) == 0x18);
+        static_assert(offsetof(source2sdk::particleslib::ParticleNamedValueConfiguration_t, m_iAttachType) == 0x20);
         static_assert(offsetof(source2sdk::particleslib::ParticleNamedValueConfiguration_t, m_strEntityScope) == 0x28);
         static_assert(offsetof(source2sdk::particleslib::ParticleNamedValueConfiguration_t, m_strAttachmentName) == 0x30);
         

@@ -17,20 +17,20 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: 0x1
         // Standard-layout class: false
-        // Size: 0x98
+        // Size: 0xa0
         // Has VTable
         #pragma pack(push, 1)
         class CNavVolumeVector : public source2sdk::navlib::CNavVolume
         {
         public:
-            uint8_t _pad0070[0x8]; // 0x70
-            bool m_bHasBeenPreFiltered; // 0x78            
-            uint8_t _pad0079[0x1f];
+            uint8_t _pad0078[0x8]; // 0x78
+            bool m_bHasBeenPreFiltered; // 0x80            
+            uint8_t _pad0081[0x1f];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in CNavVolumeVector because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::navlib::CNavVolumeVector) == 0x98);
+        static_assert(sizeof(source2sdk::navlib::CNavVolumeVector) == 0xa0);
     };
 };

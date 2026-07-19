@@ -16,20 +16,21 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: 0x1
         // Standard-layout class: true
-        // Size: 0x10
+        // Size: 0xb0
         // Has VTable
         // Is Abstract
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CNmEventConsumer
         {
         public:
-            uint8_t _pad0000[0x10];
+            uint8_t _pad0000[0xb0];
         };
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::client::CNmEventConsumer) == 0x10);
+        static_assert(sizeof(source2sdk::client::CNmEventConsumer) == 0xb0);
     };
 };

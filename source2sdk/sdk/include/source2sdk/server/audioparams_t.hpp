@@ -13,34 +13,25 @@ namespace source2sdk
 {
     namespace server
     {
-        // Registered alignment: unknown
-        // Alignment: 0x4
+        // Registered alignment: 0x8
+        // Alignment: 0x8
         // Standard-layout class: true
         // Size: 0x78
         // Has VTable
         // Has Trivial Destructor
+        // Construct allowed
         // 
-        // static metadata: MNetworkVarNames "Vector localSound"
-        // static metadata: MNetworkVarNames "int32 soundscapeIndex"
-        // static metadata: MNetworkVarNames "uint8 localBits"
-        // static metadata: MNetworkVarNames "int soundscapeEntityListIndex"
-        // static metadata: MNetworkVarNames "uint32 soundEventHash"
+        // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct audioparams_t
         {
         public:
             uint8_t _pad0000[0x8]; // 0x0
-            // metadata: MNetworkEnable
-            // metadata: MNetworkEncoder "coord"
-            Vector localSound[8]; // 0x8            
-            // metadata: MNetworkEnable
+            VectorWS localSound[8]; // 0x8            
             std::int32_t soundscapeIndex; // 0x68            
-            // metadata: MNetworkEnable
             std::uint8_t localBits; // 0x6c            
             uint8_t _pad006d[0x3]; // 0x6d
-            // metadata: MNetworkEnable
             std::int32_t soundscapeEntityListIndex; // 0x70            
-            // metadata: MNetworkEnable
             std::uint32_t soundEventHash; // 0x74            
         };
         #pragma pack(pop)

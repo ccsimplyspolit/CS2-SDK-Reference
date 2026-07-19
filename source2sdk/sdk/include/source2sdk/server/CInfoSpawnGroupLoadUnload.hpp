@@ -18,30 +18,32 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x5f8
+        // Size: 0x580
         // Has VTable
+        // Construct allowed
         #pragma pack(push, 1)
         class CInfoSpawnGroupLoadUnload : public source2sdk::server::CLogicalEntity
         {
         public:
-            source2sdk::entity2::CEntityIOOutput m_OnSpawnGroupLoadStarted; // 0x4e0            
-            source2sdk::entity2::CEntityIOOutput m_OnSpawnGroupLoadFinished; // 0x508            
-            source2sdk::entity2::CEntityIOOutput m_OnSpawnGroupUnloadStarted; // 0x530            
-            source2sdk::entity2::CEntityIOOutput m_OnSpawnGroupUnloadFinished; // 0x558            
-            CUtlSymbolLarge m_iszSpawnGroupName; // 0x580            
-            CUtlSymbolLarge m_iszSpawnGroupFilterName; // 0x588            
-            CUtlSymbolLarge m_iszLandmarkName; // 0x590            
-            CUtlString m_sFixedSpawnGroupName; // 0x598            
-            float m_flTimeoutInterval; // 0x5a0            
-            bool m_bAutoActivate; // 0x5a4            
-            bool m_bUnloadingStarted; // 0x5a5            
-            bool m_bQueueActiveSpawnGroupChange; // 0x5a6            
-            bool m_bQueueFinishLoading; // 0x5a7            
-            uint8_t _pad05a8[0x50];
+            source2sdk::entity2::CEntityIOOutput m_OnSpawnGroupLoadStarted; // 0x4a8            
+            source2sdk::entity2::CEntityIOOutput m_OnSpawnGroupLoadFinished; // 0x4c0            
+            source2sdk::entity2::CEntityIOOutput m_OnSpawnGroupUnloadStarted; // 0x4d8            
+            source2sdk::entity2::CEntityIOOutput m_OnSpawnGroupUnloadFinished; // 0x4f0            
+            CUtlSymbolLarge m_iszSpawnGroupName; // 0x508            
+            CUtlSymbolLarge m_iszSpawnGroupFilterName; // 0x510            
+            CUtlSymbolLarge m_iszLandmarkName; // 0x518            
+            CUtlString m_sFixedSpawnGroupName; // 0x520            
+            float m_flTimeoutInterval; // 0x528            
+            bool m_bAutoActivate; // 0x52c            
+            // metadata: MNotSaved
+            bool m_bUnloadingStarted; // 0x52d            
+            // metadata: MNotSaved
+            bool m_bQueueActiveSpawnGroupChange; // 0x52e            
+            // metadata: MNotSaved
+            bool m_bQueueFinishLoading; // 0x52f            
+            uint8_t _pad0530[0x50];
             
             // Datamap fields:
-            // void CInfoSpawnGroupLoadUnloadSpawnGroupLoadingThink; // 0x0
-            // void CInfoSpawnGroupLoadUnloadSpawnGroupUnloadingThink; // 0x0
             // void InputStartSpawnGroupLoad; // 0x0
             // void InputActivateSpawnGroup; // 0x0
             // void InputStartSpawnGroupUnload; // 0x0
@@ -51,6 +53,6 @@ namespace source2sdk
         
         // Cannot assert offsets of fields in CInfoSpawnGroupLoadUnload because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::server::CInfoSpawnGroupLoadUnload) == 0x5f8);
+        static_assert(sizeof(source2sdk::server::CInfoSpawnGroupLoadUnload) == 0x580);
     };
 };

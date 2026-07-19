@@ -18,38 +18,27 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0xbe0
+        // Size: 0xb08
         // Has VTable
-        // 
-        // static metadata: MNetworkVarNames "float32 m_MaxWeight"
-        // static metadata: MNetworkVarNames "float32 m_FadeDuration"
-        // static metadata: MNetworkVarNames "float32 m_Weight"
-        // static metadata: MNetworkVarNames "char m_lookupFilename"
+        // Construct allowed
         #pragma pack(push, 1)
         class CColorCorrectionVolume : public source2sdk::server::CBaseTrigger
         {
         public:
-            // metadata: MNetworkEnable
-            float m_MaxWeight; // 0x9c0            
-            // metadata: MNetworkEnable
-            float m_FadeDuration; // 0x9c4            
-            // metadata: MNetworkEnable
-            float m_Weight; // 0x9c8            
-            // metadata: MNetworkEnable
-            char m_lookupFilename[512]; // 0x9cc            
-            float m_LastEnterWeight; // 0xbcc            
-            source2sdk::entity2::GameTime_t m_LastEnterTime; // 0xbd0            
-            float m_LastExitWeight; // 0xbd4            
-            source2sdk::entity2::GameTime_t m_LastExitTime; // 0xbd8            
-            uint8_t _pad0bdc[0x4];
-            
-            // Datamap fields:
-            // void CColorCorrectionVolumeThinkFunc; // 0x0
+            float m_MaxWeight; // 0x8e8            
+            float m_FadeDuration; // 0x8ec            
+            float m_Weight; // 0x8f0            
+            char m_lookupFilename[512]; // 0x8f4            
+            float m_LastEnterWeight; // 0xaf4            
+            source2sdk::entity2::GameTime_t m_LastEnterTime; // 0xaf8            
+            float m_LastExitWeight; // 0xafc            
+            source2sdk::entity2::GameTime_t m_LastExitTime; // 0xb00            
+            uint8_t _pad0b04[0x4];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in CColorCorrectionVolume because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::server::CColorCorrectionVolume) == 0xbe0);
+        static_assert(sizeof(source2sdk::server::CColorCorrectionVolume) == 0xb08);
     };
 };

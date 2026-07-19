@@ -19,11 +19,9 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x48
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
-        // static metadata: MCellForDomain "TestDomain"
-        // static metadata: MPulseCellMethodBindings
-        // static metadata: MPulseCellOutflowHookInfo "Ý&áþ"
         #pragma pack(push, 1)
         class CPulseCell_Test_MultiInflow_WithDefault : public source2sdk::pulse_runtime_lib::CPulseCell_BaseFlow
         {

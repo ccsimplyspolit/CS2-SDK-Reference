@@ -13,16 +13,20 @@ namespace source2sdk
 {
     namespace client
     {
-        // Registered alignment: unknown
-        // Alignment: 0x4
+        // Registered alignment: 0x8
+        // Alignment: 0x8
         // Standard-layout class: true
         // Size: 0x18
+        // Construct allowed
+        // 
+        // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CBreakableStageHelper
         {
         public:
             uint8_t _pad0000[0x8]; // 0x0
             std::int32_t m_nCurrentStage; // 0x8            
+            // metadata: MNotSaved
             std::int32_t m_nStageCount; // 0xc            
             uint8_t _pad0010[0x8];
         };

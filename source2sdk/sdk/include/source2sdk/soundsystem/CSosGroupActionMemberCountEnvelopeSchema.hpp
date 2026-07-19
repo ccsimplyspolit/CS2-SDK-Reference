@@ -17,37 +17,38 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x40
+        // Size: 0x30
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
-        // static metadata: M_LEGACY_OptInToSchemaPropertyDomain
+        // static metadata: MPropertyFriendlyName "Count Envelope"
         #pragma pack(push, 1)
         class CSosGroupActionMemberCountEnvelopeSchema : public source2sdk::soundsystem::CSosGroupActionSchema
         {
         public:
             // metadata: MPropertyFriendlyName "Min Threshold Count"
-            std::int32_t m_nBaseCount; // 0x18            
+            std::int32_t m_nBaseCount; // 0x8            
             // metadata: MPropertyFriendlyName "Max Target Count"
-            std::int32_t m_nTargetCount; // 0x1c            
+            std::int32_t m_nTargetCount; // 0xc            
             // metadata: MPropertyFriendlyName "Threshold Value"
-            float m_flBaseValue; // 0x20            
+            float m_flBaseValue; // 0x10            
             // metadata: MPropertyFriendlyName "Target Value"
-            float m_flTargetValue; // 0x24            
+            float m_flTargetValue; // 0x14            
             // metadata: MPropertyFriendlyName "Attack"
-            float m_flAttack; // 0x28            
+            float m_flAttack; // 0x18            
             // metadata: MPropertyFriendlyName "Decay"
-            float m_flDecay; // 0x2c            
+            float m_flDecay; // 0x1c            
             // metadata: MPropertyFriendlyName "Result Variable Name"
-            CUtlString m_resultVarName; // 0x30            
+            CUtlString m_resultVarName; // 0x20            
             // metadata: MPropertyFriendlyName "Save Result to Group"
-            bool m_bSaveToGroup; // 0x38            
-            uint8_t _pad0039[0x7];
+            bool m_bSaveToGroup; // 0x28            
+            uint8_t _pad0029[0x7];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in CSosGroupActionMemberCountEnvelopeSchema because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::soundsystem::CSosGroupActionMemberCountEnvelopeSchema) == 0x40);
+        static_assert(sizeof(source2sdk::soundsystem::CSosGroupActionMemberCountEnvelopeSchema) == 0x30);
     };
 };

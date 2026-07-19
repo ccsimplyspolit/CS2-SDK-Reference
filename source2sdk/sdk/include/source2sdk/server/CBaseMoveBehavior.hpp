@@ -24,29 +24,38 @@ namespace source2sdk
         // Registered alignment: 0x10
         // Alignment: 0x10
         // Standard-layout class: false
-        // Size: 0x580
+        // Size: 0x520
         // Has VTable
+        // Construct allowed
         #pragma pack(push, 1)
         class CBaseMoveBehavior : public source2sdk::server::CPathKeyFrame
         {
         public:
-            std::int32_t m_iPositionInterpolator; // 0x540            
-            std::int32_t m_iRotationInterpolator; // 0x544            
-            float m_flAnimStartTime; // 0x548            
-            float m_flAnimEndTime; // 0x54c            
-            float m_flAverageSpeedAcrossFrame; // 0x550            
-            uint8_t _pad0554[0x4]; // 0x554
-            source2sdk::server::CPathKeyFrame* m_pCurrentKeyFrame; // 0x558            
-            source2sdk::server::CPathKeyFrame* m_pTargetKeyFrame; // 0x560            
-            source2sdk::server::CPathKeyFrame* m_pPreKeyFrame; // 0x568            
-            source2sdk::server::CPathKeyFrame* m_pPostKeyFrame; // 0x570            
-            float m_flTimeIntoFrame; // 0x578            
-            std::int32_t m_iDirection; // 0x57c            
+            std::int32_t m_iPositionInterpolator; // 0x4f0            
+            std::int32_t m_iRotationInterpolator; // 0x4f4            
+            float m_flAnimStartTime; // 0x4f8            
+            float m_flAnimEndTime; // 0x4fc            
+            float m_flAverageSpeedAcrossFrame; // 0x500            
+            // m_pCurrentKeyFrame has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+            // CHandle<source2sdk::server::CPathKeyFrame> m_pCurrentKeyFrame;
+            char m_pCurrentKeyFrame[0x4]; // 0x504            
+            // m_pTargetKeyFrame has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+            // CHandle<source2sdk::server::CPathKeyFrame> m_pTargetKeyFrame;
+            char m_pTargetKeyFrame[0x4]; // 0x508            
+            // m_pPreKeyFrame has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+            // CHandle<source2sdk::server::CPathKeyFrame> m_pPreKeyFrame;
+            char m_pPreKeyFrame[0x4]; // 0x50c            
+            // m_pPostKeyFrame has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+            // CHandle<source2sdk::server::CPathKeyFrame> m_pPostKeyFrame;
+            char m_pPostKeyFrame[0x4]; // 0x510            
+            float m_flTimeIntoFrame; // 0x514            
+            std::int32_t m_iDirection; // 0x518            
+            uint8_t _pad051c[0x4];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in CBaseMoveBehavior because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::server::CBaseMoveBehavior) == 0x580);
+        static_assert(sizeof(source2sdk::server::CBaseMoveBehavior) == 0x520);
     };
 };

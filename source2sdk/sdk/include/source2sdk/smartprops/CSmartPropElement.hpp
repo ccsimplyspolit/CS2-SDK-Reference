@@ -32,6 +32,7 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x88
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MVDataBase

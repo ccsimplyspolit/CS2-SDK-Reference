@@ -18,7 +18,8 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: true
-        // Size: 0x50
+        // Size: 0x60
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -35,6 +36,7 @@ namespace source2sdk
             bool m_bIsObservable; // 0x49            
             uint8_t _pad004a[0x2]; // 0x4a
             source2sdk::pulse_runtime_lib::PulseDocNodeID_t m_nEditorNodeID; // 0x4c            
+            KeyValues3 m_Metadata; // 0x50            
         };
         #pragma pack(pop)
         
@@ -46,7 +48,8 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::pulse_runtime_lib::CPulse_Variable, m_bIsPublicBlackboardVariable) == 0x48);
         static_assert(offsetof(source2sdk::pulse_runtime_lib::CPulse_Variable, m_bIsObservable) == 0x49);
         static_assert(offsetof(source2sdk::pulse_runtime_lib::CPulse_Variable, m_nEditorNodeID) == 0x4c);
+        static_assert(offsetof(source2sdk::pulse_runtime_lib::CPulse_Variable, m_Metadata) == 0x50);
         
-        static_assert(sizeof(source2sdk::pulse_runtime_lib::CPulse_Variable) == 0x50);
+        static_assert(sizeof(source2sdk::pulse_runtime_lib::CPulse_Variable) == 0x60);
     };
 };

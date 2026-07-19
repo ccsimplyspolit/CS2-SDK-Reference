@@ -23,7 +23,7 @@ namespace source2sdk
         public:
             Vector2D m_Vector2D; // 0x0            
             Vector m_Vector; // 0x8            
-            uint8_t _pad0014[0xc]; // 0x14
+            VectorWS m_VectorWS; // 0x14            
             VectorAligned m_VectorAligned; // 0x20            
             Quaternion m_Quaternion; // 0x30            
             QAngle m_QAngle; // 0x40            
@@ -54,6 +54,7 @@ namespace source2sdk
         
         static_assert(offsetof(source2sdk::schemasystem::CSchemaSystemInternalRegistration, m_Vector2D) == 0x0);
         static_assert(offsetof(source2sdk::schemasystem::CSchemaSystemInternalRegistration, m_Vector) == 0x8);
+        static_assert(offsetof(source2sdk::schemasystem::CSchemaSystemInternalRegistration, m_VectorWS) == 0x14);
         static_assert(offsetof(source2sdk::schemasystem::CSchemaSystemInternalRegistration, m_VectorAligned) == 0x20);
         static_assert(offsetof(source2sdk::schemasystem::CSchemaSystemInternalRegistration, m_Quaternion) == 0x30);
         static_assert(offsetof(source2sdk::schemasystem::CSchemaSystemInternalRegistration, m_QAngle) == 0x40);

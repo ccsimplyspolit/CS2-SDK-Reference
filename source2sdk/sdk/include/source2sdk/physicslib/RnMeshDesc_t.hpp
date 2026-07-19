@@ -19,6 +19,7 @@ namespace source2sdk
         // Alignment: 0x8
         // Standard-layout class: false
         // Size: 0xd8
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)

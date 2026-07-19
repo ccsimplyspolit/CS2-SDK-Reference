@@ -17,21 +17,22 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x30
+        // Size: 0x28
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CNmIDEvent : public source2sdk::animlib::CNmEvent
         {
         public:
-            CGlobalSymbol m_ID; // 0x20            
-            CGlobalSymbol m_secondaryID; // 0x28            
+            CGlobalSymbol m_ID; // 0x18            
+            CGlobalSymbol m_secondaryID; // 0x20            
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in CNmIDEvent because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::animlib::CNmIDEvent) == 0x30);
+        static_assert(sizeof(source2sdk::animlib::CNmIDEvent) == 0x28);
     };
 };

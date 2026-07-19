@@ -17,30 +17,21 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x4f8
+        // Size: 0x4c0
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MEntityAllowsPortraitWorldSpawn
-        // static metadata: MNetworkVarNames "float m_flAutoExposureMin"
-        // static metadata: MNetworkVarNames "float m_flAutoExposureMax"
-        // static metadata: MNetworkVarNames "float m_flExposureAdaptationSpeedUp"
-        // static metadata: MNetworkVarNames "float m_flExposureAdaptationSpeedDown"
-        // static metadata: MNetworkVarNames "float m_flTonemapEVSmoothingRange"
         #pragma pack(push, 1)
         class CTonemapController2 : public source2sdk::server::CBaseEntity
         {
         public:
-            // metadata: MNetworkEnable
-            float m_flAutoExposureMin; // 0x4e0            
-            // metadata: MNetworkEnable
-            float m_flAutoExposureMax; // 0x4e4            
-            // metadata: MNetworkEnable
-            float m_flExposureAdaptationSpeedUp; // 0x4e8            
-            // metadata: MNetworkEnable
-            float m_flExposureAdaptationSpeedDown; // 0x4ec            
-            // metadata: MNetworkEnable
-            float m_flTonemapEVSmoothingRange; // 0x4f0            
-            uint8_t _pad04f4[0x4];
+            float m_flAutoExposureMin; // 0x4a8            
+            float m_flAutoExposureMax; // 0x4ac            
+            float m_flExposureAdaptationSpeedUp; // 0x4b0            
+            float m_flExposureAdaptationSpeedDown; // 0x4b4            
+            float m_flTonemapEVSmoothingRange; // 0x4b8            
+            uint8_t _pad04bc[0x4];
             
             // Datamap fields:
             // void InputEnable; // 0x0
@@ -54,6 +45,6 @@ namespace source2sdk
         
         // Cannot assert offsets of fields in CTonemapController2 because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::server::CTonemapController2) == 0x4f8);
+        static_assert(sizeof(source2sdk::server::CTonemapController2) == 0x4c0);
     };
 };

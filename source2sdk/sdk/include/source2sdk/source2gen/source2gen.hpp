@@ -2,6 +2,10 @@
 #pragma once
 #include <string_view>
 
+// size derived from field layout; consistent across 3 usages
+using BASEPTR = char[0x08];
+// size derived from field layout
+using CAnimGraph2ParamAutoResetOptionalRef = char[0x20];
 template <typename>
 using CAnimGraphParamOptionalRef = char[0x20];
 template <typename>
@@ -24,14 +28,24 @@ template <typename>
 using CCompressor = char[0x01];
 using CEntityHandle = char[0x04];
 using CEntityIndex = char[0x04];
+// size derived from field layout
+using CEntityNameString = char[0x08];
 template <typename>
 using CEntityOutputTemplate = char[0x28];
+// size derived from field layout; consistent across 43 usages
+using CGameSoundEventName = char[0x08];
 using CGlobalSymbol = char[0x08];
 using CGlobalSymbolCaseSensitive = char[0x08];
 template <typename>
 using CHandle = char[0x04];
 using CKV3MemberNameSet = char[0x10];
 using CKV3MemberNameWithStorage = char[0x38];
+// size derived from field layout
+using CModelAnimNameWithDeltas = char[0x08];
+// size derived from field layout
+using CModelMaterialGroupName = char[0x08];
+// size derived from field layout
+using CMotionTransform = char[0x10];
 template <typename>
 using CNetworkUtlVectorBase = char[0x18];
 using CNetworkedQuantizedFloat = char[0x08];
@@ -39,8 +53,8 @@ using CPanoramaImageName = char[0x10];
 using CParticleNamedValueRef = char[0x40];
 using CPiecewiseCurve = char[0x40];
 using CPlayerSlot = char[0x04];
-// size is 8 bytes bigger in Deadlock
-using CPulseValueFullType = char[0x10];
+// was 0x10; current CS2 matches the larger Deadlock layout — all 10 usages in the dump agree on 0x18
+using CPulseValueFullType = char[0x18];
 template <typename>
 using CResourceArray = char[0x08];
 using CResourceName = char[0xe0];
@@ -50,6 +64,8 @@ template <typename>
 using CResourcePointer = char[0x08];
 // size unknown
 using CResourceString = char[0x08];
+// size derived from field layout; consistent across 2 usages
+using CRotation = char[0x04];
 using CSmartPropAttributeAngles = char[0x40];
 using CSmartPropAttributeBool = char[0x40];
 using CSmartPropAttributeColor = char[0x40];
@@ -59,6 +75,8 @@ using CSmartPropAttributeMaterialGroup = char[0x40];
 using CSmartPropAttributeMaterialName = char[0x40];
 using CSmartPropAttributeModelName = char[0x40];
 using CSmartPropAttributeStateName = char[0x40];
+// size derived from field layout; matches every other CSmartPropAttribute*
+using CSmartPropAttributeSurfaceProperty = char[0x40];
 using CSmartPropAttributeVariableValue = char[0x40];
 using CSmartPropAttributeVector = char[0x40];
 using CSmartPropAttributeVector2D = char[0x40];
@@ -74,7 +92,10 @@ using CStrongHandleCopyable = char[0x08];
 // size doesn't matter. only used as a pointer
 using CStrongHandleVoid = char[0x08];
 using CTransform = char[0x20];
-using CUtlBinaryBlock = char[0x18];
+// size derived from field layout; consistent across 7 usages
+using CTransformWS = char[0x20];
+// shrank from 0x18 in current CS2; all 16 usages in the dump agree on 0x10
+using CUtlBinaryBlock = char[0x10];
 template <typename, typename>
 using CUtlHashtable = char[0x20];
 template <typename>
@@ -109,25 +130,38 @@ template <typename>
 using C_UtlVectorEmbeddedNetworkVar = char[0x50];
 using Color = char[0x04];
 using DegreeEuler = char[0x0c];
+// size derived from field layout; consistent across 2 usages
+using ENTITYFUNCPTR = char[0x08];
 using FourVectors = char[0x30];
+// size derived from field layout
+using HPulseCellBase = char[0x08];
 using HSCRIPT = char[0x08];
+// size derived from field layout
+using HYieldedCursor = char[0x0c];
 // size doesn't matter. only used as a pointer
 using KeyValues = char[0x01];
 using KeyValues3 = char[0x10];
+// size derived from field layout
+using ParticleParamID_t = char[0x10];
 using PulseSymbol_t = char[0x10];
 using QAngle = char[0x0c];
 using Quaternion = char[0x10];
 using QuaternionStorage = char[0x10];
 using RadianEuler = char[0x0c];
 using Range_t = char[0x08];
+// size derived from field layout; matches Vector centre + float radius
+using RnSphere_t = char[0x10];
 using RotationVector = char[0x0c];
 template <typename>
 using SphereBase_t = char[0x10];
+// size derived from field layout
+using USEPTR = char[0x08];
 using V_uuid_t = char[0x10];
 using Vector = char[0x0c];
 using Vector2D = char[0x08];
 using Vector4D = char[0x10];
 using VectorAligned = char[0x10];
+using VectorWS = char[0x0c];
 using WorldGroupId_t = char[0x04];
 using float32 = char[0x04];
 using fltx4 = char[0x10];

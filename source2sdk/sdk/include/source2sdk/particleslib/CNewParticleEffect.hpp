@@ -50,21 +50,25 @@ namespace source2sdk
             source2sdk::particles::IParticleCollection* m_pParticles; // 0x20            
             char* m_pDebugName; // 0x28            
             // start of bitfield block
-            uint16_t m_bDontRemove: 1;
-            uint16_t m_bRemove: 1;
-            uint16_t m_bNeedsBBoxUpdate: 1;
-            uint16_t m_bIsFirstFrame: 1;
-            uint16_t m_bAutoUpdateBBox: 1;
-            uint16_t m_bAllocated: 1;
-            uint16_t m_bSimulate: 1;
-            uint16_t m_bShouldPerformCullCheck: 1;
-            uint16_t m_bForceNoDraw: 1;
-            uint16_t m_bSuppressScreenSpaceEffect: 1;
-            uint16_t m_bShouldSave: 1;
-            uint16_t m_bShouldSimulateDuringGamePaused: 1;
-            uint16_t m_bShouldCheckFoW: 1;
-            // end of bitfield block// 13 bits
-            uint8_t _pad0032[0xe]; // 0x32
+            uint32_t m_bDontRemove: 1;
+            uint32_t m_bRemove: 1;
+            uint32_t m_bNeedsBBoxUpdate: 1;
+            uint32_t m_bIsFirstFrame: 1;
+            uint32_t m_bAutoUpdateBBox: 1;
+            uint32_t m_bAllocated: 1;
+            uint32_t m_bSimulate: 1;
+            uint32_t m_bShouldPerformCullCheck: 1;
+            uint32_t m_bForceNoDraw: 1;
+            uint32_t m_bSuppressScreenSpaceEffect: 1;
+            uint32_t m_bShouldSave: 1;
+            uint32_t m_bShouldSimulateDuringGamePaused: 1;
+            uint32_t m_bShouldCheckFoW: 1;
+            uint32_t m_bIsAsyncCreate: 1;
+            uint32_t m_bFreezeTransitionActive: 1;
+            uint32_t m_bFreezeTargetState: 1;
+            uint32_t m_bCanFreeze: 1;
+            // end of bitfield block// 17 bits
+            uint8_t _pad0034[0xc]; // 0x34
             Vector m_vSortOrigin; // 0x40            
             float m_flScale; // 0x4c            
             source2sdk::particleslib::PARTICLE_EHANDLE* m_hOwner; // 0x50            
@@ -73,15 +77,11 @@ namespace source2sdk
             float m_flFreezeTransitionStart; // 0x70            
             float m_flFreezeTransitionDuration; // 0x74            
             float m_flFreezeTransitionOverride; // 0x78            
-            bool m_bFreezeTransitionActive; // 0x7c            
-            bool m_bFreezeTargetState; // 0x7d            
-            bool m_bCanFreeze; // 0x7e            
-            uint8_t _pad007f[0x1]; // 0x7f
-            Vector m_LastMin; // 0x80            
-            Vector m_LastMax; // 0x8c            
-            CSplitScreenSlot m_nSplitScreenUser; // 0x98            
-            Vector m_vecAggregationCenter; // 0x9c            
-            uint8_t _pad00a8[0x28]; // 0xa8
+            Vector m_LastMin; // 0x7c            
+            Vector m_LastMax; // 0x88            
+            CSplitScreenSlot m_nSplitScreenUser; // 0x94            
+            Vector m_vecAggregationCenter; // 0x98            
+            uint8_t _pad00a4[0x2c]; // 0xa4
             std::int32_t m_RefCount; // 0xd0            
             uint8_t _pad00d4[0x4];
         };

@@ -37,7 +37,7 @@ namespace source2sdk
             source2sdk::client::ParticleIndex_t m_iIndex; // 0x4            
             source2sdk::entity2::GameTime_t m_flStartTime; // 0x8            
             float m_flGrowthDuration; // 0xc            
-            Vector m_vecGrowthOrigin; // 0x10            
+            VectorWS m_vecGrowthOrigin; // 0x10            
             float m_flEndcapTime; // 0x1c            
             bool m_bMarkedForDelete; // 0x20            
             uint8_t _pad0021[0x3];

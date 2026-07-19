@@ -18,8 +18,9 @@ namespace source2sdk
         // Registered alignment: 0x4
         // Alignment: 0x4
         // Standard-layout class: true
-        // Size: 0x24
+        // Size: 0x2c
         // Has Trivial Destructor
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -38,8 +39,10 @@ namespace source2sdk
             std::int32_t m_nLightProbeVolumePrecomputedHandshake; // 0x14            
             std::uint32_t m_nInstanceStreamOffset; // 0x18            
             std::uint32_t m_nVertexAlbedoStreamOffset; // 0x1c            
-            source2sdk::worldrenderer::AggregateInstanceStream_t m_instanceStreams; // 0x20            
-            uint8_t _pad0021[0x3];
+            std::uint32_t m_nVertexEmissiveStreamOffset; // 0x20            
+            source2sdk::worldrenderer::AggregateInstanceStream_t m_instanceStreams; // 0x24            
+            uint8_t _pad0025[0x3]; // 0x25
+            float m_fEmissiveFactor; // 0x28            
         };
         #pragma pack(pop)
         
@@ -54,8 +57,10 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::worldrenderer::AggregateMeshInfo_t, m_nLightProbeVolumePrecomputedHandshake) == 0x14);
         static_assert(offsetof(source2sdk::worldrenderer::AggregateMeshInfo_t, m_nInstanceStreamOffset) == 0x18);
         static_assert(offsetof(source2sdk::worldrenderer::AggregateMeshInfo_t, m_nVertexAlbedoStreamOffset) == 0x1c);
-        static_assert(offsetof(source2sdk::worldrenderer::AggregateMeshInfo_t, m_instanceStreams) == 0x20);
+        static_assert(offsetof(source2sdk::worldrenderer::AggregateMeshInfo_t, m_nVertexEmissiveStreamOffset) == 0x20);
+        static_assert(offsetof(source2sdk::worldrenderer::AggregateMeshInfo_t, m_instanceStreams) == 0x24);
+        static_assert(offsetof(source2sdk::worldrenderer::AggregateMeshInfo_t, m_fEmissiveFactor) == 0x28);
         
-        static_assert(sizeof(source2sdk::worldrenderer::AggregateMeshInfo_t) == 0x24);
+        static_assert(sizeof(source2sdk::worldrenderer::AggregateMeshInfo_t) == 0x2c);
     };
 };

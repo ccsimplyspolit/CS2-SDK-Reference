@@ -5,10 +5,10 @@
 #include <cstdint>
 #include "source2sdk/particles/CParticleFunctionInitializer.hpp"
 #include "source2sdk/particles/ParticleAttributeIndex_t.hpp"
-#include "source2sdk/particles/ParticleSetMethod_t.hpp"
 #include "source2sdk/particles/VectorFloatExpressionType_t.hpp"
 #include "source2sdk/particleslib/CParticleRemapFloatInput.hpp"
 #include "source2sdk/particleslib/CPerParticleVecInput.hpp"
+#include "source2sdk/particleslib/ParticleSetMethod_t.hpp"
 
 // /////////////////////////////////////////////////////////////
 // Module: particles
@@ -22,8 +22,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x1028
+        // Size: 0x10d0
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -31,24 +32,24 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "expression"
-            source2sdk::particles::VectorFloatExpressionType_t m_nExpression; // 0x1c8            
-            uint8_t _pad01cc[0x4]; // 0x1cc
+            source2sdk::particles::VectorFloatExpressionType_t m_nExpression; // 0x1e0            
+            uint8_t _pad01e4[0x4]; // 0x1e4
             // metadata: MPropertyFriendlyName "input 1"
-            source2sdk::particleslib::CPerParticleVecInput m_vInput1; // 0x1d0            
+            source2sdk::particleslib::CPerParticleVecInput m_vInput1; // 0x1e8            
             // metadata: MPropertyFriendlyName "input 2"
-            source2sdk::particleslib::CPerParticleVecInput m_vInput2; // 0x848            
+            source2sdk::particleslib::CPerParticleVecInput m_vInput2; // 0x8a0            
             // metadata: MPropertyFriendlyName "output"
-            source2sdk::particleslib::CParticleRemapFloatInput m_flOutputRemap; // 0xec0            
+            source2sdk::particleslib::CParticleRemapFloatInput m_flOutputRemap; // 0xf58            
             // metadata: MPropertyFriendlyName "output field"
             // metadata: MPropertyAttributeChoiceName "particlefield_scalar"
-            source2sdk::particles::ParticleAttributeIndex_t m_nOutputField; // 0x1020            
+            source2sdk::particles::ParticleAttributeIndex_t m_nOutputField; // 0x10c8            
             // metadata: MPropertyFriendlyName "set value method"
-            source2sdk::particles::ParticleSetMethod_t m_nSetMethod; // 0x1024            
+            source2sdk::particleslib::ParticleSetMethod_t m_nSetMethod; // 0x10cc            
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_INIT_SetFloatAttributeToVectorExpression because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_INIT_SetFloatAttributeToVectorExpression) == 0x1028);
+        static_assert(sizeof(source2sdk::particles::C_INIT_SetFloatAttributeToVectorExpression) == 0x10d0);
     };
 };

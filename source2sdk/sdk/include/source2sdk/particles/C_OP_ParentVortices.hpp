@@ -17,8 +17,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x1e8
+        // Size: 0x200
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -26,18 +27,18 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "amount of force"
-            float m_flForceScale; // 0x1d0            
+            float m_flForceScale; // 0x1e8            
             // metadata: MPropertyFriendlyName "twist axis"
             // metadata: MVectorIsCoordinate
-            Vector m_vecTwistAxis; // 0x1d4            
+            Vector m_vecTwistAxis; // 0x1ec            
             // metadata: MPropertyFriendlyName "flip twist axis with yaw"
-            bool m_bFlipBasedOnYaw; // 0x1e0            
-            uint8_t _pad01e1[0x7];
+            bool m_bFlipBasedOnYaw; // 0x1f8            
+            uint8_t _pad01f9[0x7];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_OP_ParentVortices because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_OP_ParentVortices) == 0x1e8);
+        static_assert(sizeof(source2sdk::particles::C_OP_ParentVortices) == 0x200);
     };
 };

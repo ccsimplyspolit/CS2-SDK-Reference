@@ -18,27 +18,26 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x9b0
+        // Size: 0xfc8
         // Has VTable
-        // 
-        // static metadata: MNetworkVarNames "string_t m_EffectName"
-        // static metadata: MNetworkVarNames "bool m_bState"
+        // Construct allowed
         #pragma pack(push, 1)
         class C_FuncElectrifiedVolume : public source2sdk::client::C_FuncBrush
         {
         public:
-            source2sdk::client::ParticleIndex_t m_nAmbientEffect; // 0x998            
-            uint8_t _pad099c[0x4]; // 0x99c
-            // metadata: MNetworkEnable
-            CUtlSymbolLarge m_EffectName; // 0x9a0            
-            // metadata: MNetworkEnable
-            bool m_bState; // 0x9a8            
-            uint8_t _pad09a9[0x7];
+            // metadata: MNotSaved
+            source2sdk::client::ParticleIndex_t m_nAmbientEffect; // 0xfb0            
+            uint8_t _pad0fb4[0x4]; // 0xfb4
+            // metadata: MNotSaved
+            CUtlSymbolLarge m_EffectName; // 0xfb8            
+            // metadata: MNotSaved
+            bool m_bState; // 0xfc0            
+            uint8_t _pad0fc1[0x7];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_FuncElectrifiedVolume because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::client::C_FuncElectrifiedVolume) == 0x9b0);
+        static_assert(sizeof(source2sdk::client::C_FuncElectrifiedVolume) == 0xfc8);
     };
 };

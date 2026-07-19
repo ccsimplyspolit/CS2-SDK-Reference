@@ -32,8 +32,19 @@ TOKEN_QUERY               = 0x0008
 SE_PRIVILEGE_ENABLED      = 0x00000002
 LIST_MODULES_ALL          = 0x03
 
+ERROR_NOT_ALL_ASSIGNED = 1300
+MEM_COMMIT             = 0x1000
+PAGE_GUARD             = 0x100
+PAGE_NOACCESS          = 0x01
+
 class MODULEINFO(ctypes.Structure):
     _fields_ = [("lpBaseOfDll", wt.LPVOID), ("SizeOfImage", wt.DWORD), ("EntryPoint", wt.LPVOID)]
+
+class MEMORY_BASIC_INFORMATION(ctypes.Structure):
+    _fields_ = [("BaseAddress", ctypes.c_void_p), ("AllocationBase", ctypes.c_void_p),
+                ("AllocationProtect", wt.DWORD), ("PartitionId", wt.WORD),
+                ("RegionSize", ctypes.c_size_t), ("State", wt.DWORD),
+                ("Protect", wt.DWORD), ("Type", wt.DWORD)]
 
 class LUID(ctypes.Structure):
     _fields_ = [("LowPart", wt.DWORD), ("HighPart", ctypes.c_long)]
@@ -62,6 +73,8 @@ advapi32.LookupPrivilegeValueW.restype  = wt.BOOL
 advapi32.AdjustTokenPrivileges.argtypes = [wt.HANDLE, wt.BOOL, ctypes.POINTER(TOKEN_PRIVILEGES),
                                             wt.DWORD, ctypes.POINTER(TOKEN_PRIVILEGES), ctypes.POINTER(wt.DWORD)]
 advapi32.AdjustTokenPrivileges.restype  = wt.BOOL
+kernel32.VirtualQueryEx.argtypes = [wt.HANDLE, wt.LPCVOID, ctypes.POINTER(MEMORY_BASIC_INFORMATION), ctypes.c_size_t]
+kernel32.VirtualQueryEx.restype  = ctypes.c_size_t
 
 def enable_se_debug():
     token = wt.HANDLE()
@@ -74,25 +87,41 @@ def enable_se_debug():
     tp.PrivilegeCount = 1
     tp.Privileges[0].Luid = luid
     tp.Privileges[0].Attributes = SE_PRIVILEGE_ENABLED
-    advapi32.AdjustTokenPrivileges(token, False, ctypes.byref(tp), 0, None, None)
-    ok = ctypes.get_last_error() == 0
+    # AdjustTokenPrivileges reports success even when it assigned nothing;
+    # ERROR_NOT_ALL_ASSIGNED is the only way to tell the privilege was refused.
+    called = advapi32.AdjustTokenPrivileges(token, False, ctypes.byref(tp), 0, None, None)
+    ok = bool(called) and ctypes.get_last_error() != ERROR_NOT_ALL_ASSIGNED
     kernel32.CloseHandle(token)
     return ok
 
-def find_module(h, name):
-    want = name.lower()
+def region_of(h, va):
+    """Return the committed, readable region containing va, or None."""
+    mbi = MEMORY_BASIC_INFORMATION()
+    if not kernel32.VirtualQueryEx(h, ctypes.c_void_p(va), ctypes.byref(mbi), ctypes.sizeof(mbi)):
+        return None
+    if mbi.State != MEM_COMMIT:
+        return None
+    if mbi.Protect & (PAGE_GUARD | PAGE_NOACCESS):
+        return None
+    return mbi
+
+def loaded_modules(h):
+    """name(lower) -> (base, size) for every module mapped into the process."""
+    out = {}
     arr = (wt.HMODULE * 4096)()
     need = wt.DWORD(0)
     psapi.EnumProcessModulesEx(h, arr, ctypes.sizeof(arr), ctypes.byref(need), LIST_MODULES_ALL)
-    n = need.value // ctypes.sizeof(wt.HMODULE)
+    n = min(need.value // ctypes.sizeof(wt.HMODULE), len(arr))
     for i in range(n):
         nm = ctypes.create_unicode_buffer(260)
         psapi.GetModuleBaseNameW(h, arr[i], nm, len(nm))
-        if nm.value.lower() == want:
-            info = MODULEINFO()
-            psapi.GetModuleInformation(h, arr[i], ctypes.byref(info), ctypes.sizeof(info))
-            return int(info.lpBaseOfDll), int(info.SizeOfImage)
-    return None, 0
+        info = MODULEINFO()
+        if psapi.GetModuleInformation(h, arr[i], ctypes.byref(info), ctypes.sizeof(info)):
+            out[nm.value.lower()] = (int(info.lpBaseOfDll or 0), int(info.SizeOfImage))
+    return out
+
+def find_module(h, name):
+    return loaded_modules(h).get(name.lower(), (None, 0))
 
 def read_qword(h, va):
     buf = (ctypes.c_ubyte * 8)()
@@ -117,17 +146,27 @@ def main():
         'engine2.dll': ['dwNetworkGameClient'],
     }
 
-    if not enable_se_debug():
-        print("[-] SeDebugPrivilege not granted — run elevated.")
-        sys.exit(1)
+    # Reading a same-user, same-integrity cs2 needs no special privilege, so a
+    # refusal here is not fatal — only report it if the open actually fails.
+    have_se_debug = enable_se_debug()
+
     h = kernel32.OpenProcess(PROCESS_QUERY_INFORMATION | PROCESS_VM_READ, False, args.pid)
     if not h:
-        print(f"[-] OpenProcess({args.pid}) err={ctypes.get_last_error()}")
+        e = ctypes.get_last_error()
+        print(f"[-] OpenProcess({args.pid}) failed, err={e}")
+        if e == 5:
+            print("    ERROR_ACCESS_DENIED. Likely causes:")
+            print("      * cs2 is running under anti-cheat handle protection —")
+            print("        launch it with -insecure -allow_third_party_software, or")
+            print("      * cs2 runs at a higher integrity level than this shell"
+                  f"{' (SeDebugPrivilege was refused; try an elevated shell)' if not have_se_debug else ''}.")
         sys.exit(1)
+
+    modules = loaded_modules(h)
 
     ok = fail = 0
     for module, fields in tracked.items():
-        base, size = find_module(h, module)
+        base, size = modules.get(module, (None, 0))
         if not base:
             print(f"[-] {module}: not loaded in PID {args.pid}")
             fail += len(fields)
@@ -145,10 +184,18 @@ def main():
                 verdict = "UNREADABLE"; fail += 1
             elif val == 0:
                 verdict = "NULL (game may not be fully loaded)"; ok += 1  # NULL is OK — just not in match yet
-            elif 0x00007ff000000000 <= val < 0x00007fffffffffff:
-                verdict = f"ptr 0x{val:x} (in user-mode range)"; ok += 1
             else:
-                verdict = f"value 0x{val:x} (unexpected)"; fail += 1
+                # These globals hold pointers to heap objects, which live far
+                # below the 0x7ff... range that modules are mapped at. Asking the
+                # kernel whether the target is committed is the check that
+                # actually means something.
+                mbi = region_of(h, val)
+                if mbi is None:
+                    verdict = f"value 0x{val:x} (not a committed address)"; fail += 1
+                else:
+                    owner = next((m for m, (b, s) in modules.items() if b <= val < b + s), None)
+                    where = f"in {owner}" if owner else "on the heap"
+                    verdict = f"ptr 0x{val:x} ({where})"; ok += 1
             print(f"  {field:35s}  offset=0x{off:x}  va=0x{va:x}  → {verdict}")
 
     kernel32.CloseHandle(h)

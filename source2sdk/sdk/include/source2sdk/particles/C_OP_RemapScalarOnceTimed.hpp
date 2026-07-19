@@ -18,8 +18,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x1e0
+        // Size: 0x1f8
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -27,29 +28,29 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "remap time proportional"
-            bool m_bProportional; // 0x1c0            
-            uint8_t _pad01c1[0x3]; // 0x1c1
+            bool m_bProportional; // 0x1d8            
+            uint8_t _pad01d9[0x3]; // 0x1d9
             // metadata: MPropertyFriendlyName "input field"
             // metadata: MPropertyAttributeChoiceName "particlefield_scalar"
-            source2sdk::particles::ParticleAttributeIndex_t m_nFieldInput; // 0x1c4            
+            source2sdk::particles::ParticleAttributeIndex_t m_nFieldInput; // 0x1dc            
             // metadata: MPropertyFriendlyName "output field"
             // metadata: MPropertyAttributeChoiceName "particlefield_scalar"
-            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1c8            
+            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1e0            
             // metadata: MPropertyFriendlyName "input minimum"
-            float m_flInputMin; // 0x1cc            
+            float m_flInputMin; // 0x1e4            
             // metadata: MPropertyFriendlyName "input maximum"
-            float m_flInputMax; // 0x1d0            
+            float m_flInputMax; // 0x1e8            
             // metadata: MPropertyFriendlyName "output minimum"
-            float m_flOutputMin; // 0x1d4            
+            float m_flOutputMin; // 0x1ec            
             // metadata: MPropertyFriendlyName "output maximum"
-            float m_flOutputMax; // 0x1d8            
+            float m_flOutputMax; // 0x1f0            
             // metadata: MPropertyFriendlyName "remap time"
-            float m_flRemapTime; // 0x1dc            
+            float m_flRemapTime; // 0x1f4            
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_OP_RemapScalarOnceTimed because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_OP_RemapScalarOnceTimed) == 0x1e0);
+        static_assert(sizeof(source2sdk::particles::C_OP_RemapScalarOnceTimed) == 0x1f8);
     };
 };

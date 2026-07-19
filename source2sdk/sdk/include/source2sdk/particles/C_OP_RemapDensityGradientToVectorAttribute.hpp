@@ -18,8 +18,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x1c8
+        // Size: 0x1e0
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -27,15 +28,15 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "Radius scale for particle influence"
-            float m_flRadiusScale; // 0x1c0            
+            float m_flRadiusScale; // 0x1d8            
             // metadata: MPropertyFriendlyName "output field"
             // metadata: MPropertyAttributeChoiceName "particlefield_vector"
-            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1c4            
+            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1dc            
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_OP_RemapDensityGradientToVectorAttribute because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_OP_RemapDensityGradientToVectorAttribute) == 0x1c8);
+        static_assert(sizeof(source2sdk::particles::C_OP_RemapDensityGradientToVectorAttribute) == 0x1e0);
     };
 };

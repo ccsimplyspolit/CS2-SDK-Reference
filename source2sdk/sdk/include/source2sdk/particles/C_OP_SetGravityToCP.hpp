@@ -18,8 +18,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x338
+        // Size: 0x360
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -27,22 +28,24 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "control point to sample gravity"
-            std::int32_t m_nCPInput; // 0x1c8            
+            std::int32_t m_nCPInput; // 0x1e0            
             // metadata: MPropertyFriendlyName "output control point"
-            std::int32_t m_nCPOutput; // 0x1cc            
+            std::int32_t m_nCPOutput; // 0x1e4            
             // metadata: MPropertyFriendlyName "gravity scale"
-            source2sdk::particleslib::CParticleCollectionFloatInput m_flScale; // 0x1d0            
+            source2sdk::particleslib::CParticleCollectionFloatInput m_flScale; // 0x1e8            
+            // metadata: MPropertyFriendlyName "set position to gravity vector"
+            bool m_bSetPosition; // 0x358            
             // metadata: MPropertyFriendlyName "set orientation"
-            bool m_bSetOrientation; // 0x330            
+            bool m_bSetOrientation; // 0x359            
             // metadata: MPropertyFriendlyName "set gravity orientation to Z Down (instead of X)"
             // metadata: MPropertySuppressExpr "!m_bSetOrientation"
-            bool m_bSetZDown; // 0x331            
-            uint8_t _pad0332[0x6];
+            bool m_bSetZDown; // 0x35a            
+            uint8_t _pad035b[0x5];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_OP_SetGravityToCP because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_OP_SetGravityToCP) == 0x338);
+        static_assert(sizeof(source2sdk::particles::C_OP_SetGravityToCP) == 0x360);
     };
 };

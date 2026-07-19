@@ -15,26 +15,36 @@ namespace source2sdk
 {
     namespace client
     {
-        // Registered alignment: unknown
+        // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: true
         // Size: 0x1d0
+        // Construct allowed
+        // 
+        // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CRR_Response
         {
         public:
             std::uint8_t m_Type; // 0x0            
             char m_szResponseName[192]; // 0x1            
+            // metadata: MNotSaved
             char m_szMatchingRule[128]; // 0xc1            
             uint8_t _pad0141[0x1f]; // 0x141
             source2sdk::client::ResponseParams m_Params; // 0x160            
+            // metadata: MNotSaved
             float m_fMatchScore; // 0x180            
+            // metadata: MNotSaved
             bool m_bAnyMatchingRulesInCooldown; // 0x184            
             uint8_t _pad0185[0x3]; // 0x185
+            // metadata: MNotSaved
             char* m_szSpeakerContext; // 0x188            
+            // metadata: MNotSaved
             char* m_szWorldContext; // 0x190            
+            // metadata: MNotSaved
             source2sdk::client::ResponseFollowup m_Followup; // 0x198            
             uint8_t _pad01c9[0x1]; // 0x1c9
+            // metadata: MNotSaved
             CUtlSymbol m_recipientFilter; // 0x1ca            
             uint8_t _pad01cc[0x4];
         };

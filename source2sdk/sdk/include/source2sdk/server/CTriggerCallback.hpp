@@ -17,18 +17,19 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x9c8
+        // Size: 0x8f0
         // Has VTable
+        // Construct allowed
         #pragma pack(push, 1)
         class CTriggerCallback : public source2sdk::server::CBaseTrigger
         {
         public:
-            uint8_t _pad09c0[0x8];
+            uint8_t _pad08e8[0x8];
             // No schema binary for binding
         };
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CTriggerCallback) == 0x9c8);
+        static_assert(sizeof(source2sdk::server::CTriggerCallback) == 0x8f0);
     };
 };

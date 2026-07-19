@@ -13,7 +13,7 @@ namespace source2sdk
 {
     namespace particles
     {
-        // Enumerator count: 11
+        // Enumerator count: 12
         // Alignment: 4
         // Size: 0x4
         enum class EventTypeSelection_t : std::uint32_t
@@ -32,6 +32,8 @@ namespace source2sdk
             PARTICLE_EVENT_TYPE_MASK_COLLISION_STOPPED = 0x10,
             // MPropertyFriendlyName "Killed on Collision"
             PARTICLE_EVENT_TYPE_MASK_KILLED_ON_COLLISION = 0x20,
+            // MPropertyFriendlyName "Killed on Cull"
+            PARTICLE_EVENT_TYPE_MASK_KILLED_ON_CULL = 0x400,
             // MPropertyFriendlyName "User Event 1"
             PARTICLE_EVENT_TYPE_MASK_USER_1 = 0x40,
             // MPropertyFriendlyName "User Event 2"

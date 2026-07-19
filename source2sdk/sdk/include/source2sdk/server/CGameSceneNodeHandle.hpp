@@ -13,23 +13,21 @@ namespace source2sdk
 {
     namespace server
     {
-        // Registered alignment: unknown
-        // Alignment: 0x4
+        // Registered alignment: 0x8
+        // Alignment: 0x8
         // Standard-layout class: true
         // Size: 0x10
         // Has VTable
         // Has Trivial Destructor
+        // Construct allowed
         // 
-        // static metadata: MNetworkVarNames "CEntityHandle m_hOwner"
-        // static metadata: MNetworkVarNames "CUtlStringToken m_name"
+        // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CGameSceneNodeHandle
         {
         public:
             uint8_t _pad0000[0x8]; // 0x0
-            // metadata: MNetworkEnable
             CEntityHandle m_hOwner; // 0x8            
-            // metadata: MNetworkEnable
             CUtlStringToken m_name; // 0xc            
         };
         #pragma pack(pop)

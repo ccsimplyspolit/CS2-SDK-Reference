@@ -15,23 +15,31 @@ namespace source2sdk
 {
     namespace server
     {
-        // Registered alignment: unknown
-        // Alignment: 0x4
+        // Registered alignment: 0x8
+        // Alignment: 0x8
         // Standard-layout class: false
         // Size: 0xb0
         // Has VTable
+        // Construct allowed
+        // 
+        // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CRenderComponent : public source2sdk::entity2::CEntityComponent
         {
         public:
             uint8_t _pad0008[0x8]; // 0x8
+            // metadata: MNotSaved
             source2sdk::entity2::CNetworkVarChainer __m_pChainEntity; // 0x10            
             uint8_t _pad0038[0x18]; // 0x38
+            // metadata: MNotSaved
             bool m_bIsRenderingWithViewModels; // 0x50            
             uint8_t _pad0051[0x3]; // 0x51
+            // metadata: MNotSaved
             std::uint32_t m_nSplitscreenFlags; // 0x54            
+            // metadata: MNotSaved
             bool m_bEnableRendering; // 0x58            
             uint8_t _pad0059[0x4f]; // 0x59
+            // metadata: MNotSaved
             bool m_bInterpolationReadyToDraw; // 0xa8            
             uint8_t _pad00a9[0x7];
         };

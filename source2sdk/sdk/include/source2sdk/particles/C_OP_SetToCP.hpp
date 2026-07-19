@@ -17,8 +17,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x1d8
+        // Size: 0x1f0
         // Has VTable
+        // Construct allowed
         // 
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -26,17 +27,17 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "control point number"
-            std::int32_t m_nControlPointNumber; // 0x1c0            
+            std::int32_t m_nControlPointNumber; // 0x1d8            
             // metadata: MPropertyFriendlyName "offset"
-            Vector m_vecOffset; // 0x1c4            
+            Vector m_vecOffset; // 0x1dc            
             // metadata: MPropertyFriendlyName "offset in local space"
-            bool m_bOffsetLocal; // 0x1d0            
-            uint8_t _pad01d1[0x7];
+            bool m_bOffsetLocal; // 0x1e8            
+            uint8_t _pad01e9[0x7];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_OP_SetToCP because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::particles::C_OP_SetToCP) == 0x1d8);
+        static_assert(sizeof(source2sdk::particles::C_OP_SetToCP) == 0x1f0);
     };
 };

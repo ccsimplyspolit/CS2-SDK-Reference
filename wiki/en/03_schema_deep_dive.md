@@ -1,17 +1,25 @@
 # Schema deep dive
 
-`schema/client_dll.json` — and its two siblings — contain the byte-offset of
-every member of every C++ class that ships with cs2. This page explains how
-they're structured, why offsets rarely change, and how to walk them
-programmatically.
+The `schema/` files contain the byte-offset of every member of every C++ class
+that ships with cs2. This page explains how they're structured, why offsets
+rarely change, and how to walk them programmatically.
 
-## The three files
+## The files
+
+`schema/` holds one JSON per module that cs2-dumper emits — **18 modules,
+3330 classes, 16595 fields** in total. The three you'll touch most:
 
 | File | Approx size | What's inside |
 |---|---|---|
-| `client_dll.json` | ~214 KB | 300+ client-side classes (`CCSPlayerController`, `C_CSGameRules`, `C_BaseEntity`, entities, weapons). ~3189 fields. |
+| `client_dll.json` | ~214 KB | 563 client-side classes (`CCSPlayerController`, `C_CSGameRules`, `C_BaseEntity`, entities, weapons). 3189 fields. |
+| `server_dll.json` | ~495 KB | 990 server-side classes, 5871 fields. Largest because the server has more logic; also loaded client-side for prediction. Note `CCSPlayerController` exists here too, at *different* offsets than the client copy. |
 | `engine2_dll.json` | ~11 KB | Engine-layer classes. Smaller because most engine state lives behind opaque interfaces. |
-| `server_dll.json` | ~495 KB | Server-side classes. Largest because the server has more logic; also loaded client-side for prediction. |
+
+The rest — `animationsystem_dll`, `particles_dll`, `soundsystem_dll`,
+`pulse_system_dll`, `vphysics2_dll`, `worldrenderer_dll`, `materialsystem2_dll`,
+`schemasystem_dll`, and more — follow the identical shape below. `tools/sync_from_upstream.py`
+discovers whatever `*_dll.json` upstream publishes, so new modules appear here
+automatically.
 
 ## JSON structure
 
@@ -79,7 +87,7 @@ for k, v in list(fields.items())[:10]:
     print(f'{k:40s} 0x{v:X}')
 ```
 
-Output (2026-07-16, build 14170):
+Output (build 14169, verified against the installed game 2026-07-19):
 
 ```
 m_bAbandonAllowsSurrender                0x8F2
@@ -87,9 +95,11 @@ m_bAbandonOffersInstantSurrender         0x8F3
 m_bCanControlObservedBot                 0x910
 m_bCannotBeKicked                        0x8F0
 m_bControllingBot                        0x908
-m_bEverFullyConnected                    0x898
-m_bEverPlayedOnTeam                      0x8F1
-...
+m_bDisconnection1MinWarningPrinted       0x8F4
+m_bEverFullyConnected                    0x8F1
+m_bEverPlayedOnTeam                      0x854
+m_bFireBulletsSeedSynchronized           0x95D
+m_bHasBeenControlledByPlayerThisRound    0x90A
 ```
 
 ## Why offsets rarely change

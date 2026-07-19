@@ -17,22 +17,23 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x580
+        // Size: 0x538
         // Has VTable
+        // Construct allowed
         #pragma pack(push, 1)
         class CPhysPulley : public source2sdk::server::CPhysConstraint
         {
         public:
-            Vector m_position2; // 0x550            
-            Vector m_offset[2]; // 0x55c            
-            float m_addLength; // 0x574            
-            float m_gearRatio; // 0x578            
-            uint8_t _pad057c[0x4];
+            VectorWS m_position2; // 0x508            
+            Vector m_offset[2]; // 0x514            
+            float m_addLength; // 0x52c            
+            float m_gearRatio; // 0x530            
+            uint8_t _pad0534[0x4];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in CPhysPulley because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::server::CPhysPulley) == 0x580);
+        static_assert(sizeof(source2sdk::server::CPhysPulley) == 0x538);
     };
 };

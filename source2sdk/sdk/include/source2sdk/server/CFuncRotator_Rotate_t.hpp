@@ -13,7 +13,7 @@ namespace source2sdk
 {
     namespace server
     {
-        // Enumerator count: 5
+        // Enumerator count: 7
         // Alignment: 4
         // Size: 0x4
         enum class CFuncRotator_Rotate_t : std::uint32_t
@@ -22,7 +22,9 @@ namespace source2sdk
             ROTATE_OSCILLATE = 0x1,
             ROTATE_STOP_AT_END = 0x2,
             ROTATE_LOOK_AT_TARGET = 0x3,
-            ROTATE_RETURN_TO_INITIAL_ORIENTATION = 0x4,
+            ROTATE_LOOK_AT_TARGET_ONLY_YAW = 0x4,
+            ROTATE_LOOK_AT_TARGET_ONLY_PITCH = 0x5,
+            ROTATE_RETURN_TO_INITIAL_ORIENTATION = 0x6,
         };
     };
 };

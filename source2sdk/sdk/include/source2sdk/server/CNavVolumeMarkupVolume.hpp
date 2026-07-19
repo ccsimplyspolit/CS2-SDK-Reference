@@ -17,18 +17,18 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: 0x1
         // Standard-layout class: false
-        // Size: 0xd8
+        // Size: 0xe0
         // Has VTable
         #pragma pack(push, 1)
         class CNavVolumeMarkupVolume : public source2sdk::navlib::CNavVolume
         {
         public:
-            uint8_t _pad0070[0x68];
+            uint8_t _pad0078[0x68];
             // No schema binary for binding
         };
         #pragma pack(pop)
         
         
-        static_assert(sizeof(source2sdk::server::CNavVolumeMarkupVolume) == 0xd8);
+        static_assert(sizeof(source2sdk::server::CNavVolumeMarkupVolume) == 0xe0);
     };
 };
