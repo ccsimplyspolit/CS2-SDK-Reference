@@ -5,6 +5,8 @@
 typedef char BASEPTR[0x08];
 // size derived from field layout
 typedef char CAnimGraph2ParamAutoResetOptionalRef[0x20];
+// Dota/Deadlock; size from field layout
+typedef char CAnimGraphParamAutoResetRef[0x30];
 // skipped template CAnimGraphParamOptionalRef
 // skipped template CAnimGraphParamRef
 typedef char CAnimGraphTagOptionalRef[0x18];
@@ -92,6 +94,8 @@ typedef char CUtlSymbolLarge[0x08];
 // skipped template CUtlVectorEmbeddedNetworkVar
 // skipped template CUtlVectorFixedGrowable
 typedef char CUtlVectorSIMDPaddedVector[0x18];
+// Dota/Deadlock; size from field layout, consistent across 8 usages
+typedef char CVDataLocalizedToken[0x10];
 // skipped template CVariantBase
 // skipped template CWeakHandle
 // skipped template C_NetworkUtlVectorBase
@@ -120,6 +124,8 @@ typedef char Range_t[0x08];
 // size derived from field layout; matches Vector centre + float radius
 typedef char RnSphere_t[0x10];
 typedef char RotationVector[0x0c];
+// Dota/Deadlock; size from field layout
+typedef char SndOpEventGuid_t[0x14];
 // skipped template SphereBase_t
 // size derived from field layout
 typedef char USEPTR[0x08];

@@ -1320,8 +1320,33 @@ namespace sdk {
 
         GeneratorResult result{};
 
-        std::ranges::for_each(enums, [&](const auto* el) { result.generated_files.emplace(GenerateEnumSdk(options, module_name, *el)); });
-        std::ranges::for_each(classes, [&](const auto* el) { result.generated_files.emplace(GenerateClassSdk(options, cache, module_name, *el)); });
+        // A single class whose schema layout the generator mis-reads (e.g. a
+        // game whose schema-system struct offsets have drifted from what this
+        // build of source2gen hardcodes) can fault mid-assembly. Guard each
+        // class so one bad type is skipped and logged instead of aborting the
+        // whole dump. TranslateSehToCpp (installed in startup) turns the fault
+        // into a C++ exception this catch can see.
+        std::size_t skipped = 0;
+        std::ranges::for_each(enums, [&](const auto* el) {
+            try {
+                result.generated_files.emplace(GenerateEnumSdk(options, module_name, *el));
+            } catch (const std::exception& e) {
+                ++skipped;
+                std::cerr << std::format("{}: skipped enum in {}: {}", __FUNCTION__, module_name, e.what()) << std::endl;
+            }
+        });
+        std::ranges::for_each(classes, [&](const auto* el) {
+            const char* nm = (el && el->m_pszName) ? el->m_pszName : "<unknown>";
+            try {
+                result.generated_files.emplace(GenerateClassSdk(options, cache, module_name, *el));
+            } catch (const std::exception& e) {
+                ++skipped;
+                std::cerr << std::format("{}: skipped class {}::{}: {}", __FUNCTION__, module_name, nm, e.what()) << std::endl;
+            }
+        });
+        if (skipped) {
+            std::cerr << std::format("{}: module {} — {} type(s) skipped", __FUNCTION__, module_name, skipped) << std::endl;
+        }
 
         return result;
     }
