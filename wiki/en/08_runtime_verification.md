@@ -44,11 +44,11 @@ not actually running, or the PID is wrong).
 
 ```
 === client.dll @ 0x7ffcaba00000  (size 0x2554000) ===
-  dwLocalPlayerController              offset=0x237eba0  va=0x7ffcabd7eba0  → ptr 0x7ffcaef53080 (in user-mode range)
-  dwGameRules                          offset=0x23a39d8  va=0x7ffcabda39d8  → ptr 0x7ffcaee06210 (in user-mode range)
-  dwLocalPlayerPawn                    offset=0x23a4238  va=0x7ffcabda4238  → ptr 0x7ffcae4c05f0 (in user-mode range)
-  dwCSGOInput                          offset=0x23b95f0  va=0x7ffcabdb95f0  → ptr 0x7ffcaee06550 (in user-mode range)
-  dwGlobalVars                         offset=0x208fd60  va=0x7ffcaba8fd60  → ptr 0x7ffcaee01a80 (in user-mode range)
+  dwLocalPlayerController              offset=0x237FB70  va=0x7ffcabd7eba0  → ptr 0x7ffcaef53080 (in user-mode range)
+  dwGameRules                          offset=0x23A49D8  va=0x7ffcabda39d8  → ptr 0x7ffcaee06210 (in user-mode range)
+  dwLocalPlayerPawn                    offset=0x23A5238  va=0x7ffcabda4238  → ptr 0x7ffcae4c05f0 (in user-mode range)
+  dwCSGOInput                          offset=0x23BA790  va=0x7ffcabdb95f0  → ptr 0x7ffcaee06550 (in user-mode range)
+  dwGlobalVars                         offset=0x2090D60  va=0x7ffcaba8fd60  → ptr 0x7ffcaee01a80 (in user-mode range)
 
 === engine2.dll @ 0x7ffcc4200000  (size 0x1080000) ===
   dwNetworkGameClient                  offset=0x90d4b0  va=0x7ffcc4b0d4b0  → ptr 0x7ffcc4d02420 (in user-mode range)
@@ -64,7 +64,7 @@ matches cs2.
 ### `NULL (game may not be fully loaded)`
 
 ```
-dwLocalPlayerController  offset=0x237eba0  va=...  → NULL (game may not be fully loaded)
+dwLocalPlayerController  offset=0x237FB70  va=...  → NULL (game may not be fully loaded)
 ```
 
 `[dwLocalPlayerController]` is 0. Common at main menu — the pointer only
@@ -74,7 +74,7 @@ it's a valid CS2 state, not drift. Re-run after joining a game.
 ### `value 0x... (unexpected)`
 
 ```
-dwGameRules  offset=0x23a39d8  va=...  → value 0x1234 (unexpected)
+dwGameRules  offset=0x23A49D8  va=...  → value 0x1234 (unexpected)
 ```
 
 The read succeeded but the value isn't `NULL` and isn't in the pointer

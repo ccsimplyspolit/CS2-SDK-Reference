@@ -1,6 +1,6 @@
 {
   "GameOverlayRenderer64.dll": {
-    "present": "48 89 5C 24 ? 48 89 6C 24 ? 56 57 41 54 41 56 41 57 48 83 EC ? 41 8B E8"
+    "present": "48 89 5C 24 ? 48 89 6C 24 ? 56 57 41 54 41 56 41 57 48 83 EC ? 41 8B F0"
   },
   "client.dll": {
     "createmove": "48 8B C4 4C 89 40 ? 48 89 48 ? 55 53 41 54",
