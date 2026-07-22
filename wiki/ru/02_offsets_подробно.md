@@ -25,11 +25,11 @@
 }
 ```
 
-В hex: `hex(37219232) == '0x237eba0'`.
+В hex: `hex(37219232) == '0x237FB70'`.
 
 ## Что за что отвечает
 
-### `client.dll.dwLocalPlayerController` — `0x237EBA0`
+### `client.dll.dwLocalPlayerController` — `0x237FB70`
 
 `[client.dll + dwLocalPlayerController]` — это **указатель** на локальный
 `CCSPlayerController*`. Читай `qword` по этому адресу; если ненулевой —
@@ -37,7 +37,7 @@
 полностью инициализирован (главное меню, ранний загруз); ретраить в
 следующем фрейме.
 
-### `client.dll.dwLocalPlayerPawn` — `0x23A4238`
+### `client.dll.dwLocalPlayerPawn` — `0x23A5238`
 
 Указатель на `C_CSPlayerPawn*` — локальную "пешку" игрока. В
 терминологии Source 2 **controller** владеет **pawn**'ом: контроллер
@@ -45,48 +45,48 @@
 per-life entity-state (позиция, оружие, HP). Пешку можно достать и
 через `CCSPlayerController + m_hPlayerPawn` — см. `05_структуры.md`.
 
-### `client.dll.dwGameRules` — `0x23A39D8`
+### `client.dll.dwGameRules` — `0x23A49D8`
 
 Указатель на `C_CSGameRules*` — глобальный синглтон game-state. Для VMP
 ключевой член — `m_bIsValveDS` в `+0xA4` (1-байтовый флаг: `1` на
 официальных Valve-серверах, `0` на community). FVA-шный gate-byte в
 `image_base + 0x23A9A0` (уже FVA-image, не cs2) — это его зеркало.
 
-### `client.dll.dwCSGOInput` — `0x23B95F0`
+### `client.dll.dwCSGOInput` — `0x23BA790`
 
 Глобальный `CCSGOInput`. Здесь живёт пайплайн сборки user-command'ов.
 `CreateMove` читает отсюда.
 
-### `client.dll.dwGlobalVars` — `0x208FD60`
+### `client.dll.dwGlobalVars` — `0x2090D60`
 
 `CGlobalVarsBase*` — время игры, frame time, tick count. Любая
 tick-based логика entity читает это.
 
-### `client.dll.dwEntityList` / `dwGameEntitySystem` — `0x254EE60`
+### `client.dll.dwEntityList` / `dwGameEntitySystem` — `0x254FE70`
 
 Корень entity-list. Отсюда можно пройти по всем networked-entity в
 мире. В текущих билдах оба символа = одно значение — алиасы.
 
-### `client.dll.dwGlowManager` — `0x23A0708`
+### `client.dll.dwGlowManager` — `0x23A1708`
 
 Registry glow-эффектов. Для VMP-работы почти не важен; ESP-плагинам —
 полезен.
 
-### `client.dll.dwPrediction` — `0x23A4140`
+### `client.dll.dwPrediction` — `0x23A5140`
 
 `C_Prediction*` — куда упирается client-side prediction.
 
-### `client.dll.dwSensitivity` — `0x23A1228`
+### `client.dll.dwSensitivity` — `0x23A2228`
 
 `CSensitivity*` — mouse sensitivity + `dwSensitivity_sensitivity`
 (`+0x58`) — тот float, который нужен, если масштабируешь raw-mouse
 дельты.
 
-### `client.dll.dwViewAngles` — `0x23B9C78`
+### `client.dll.dwViewAngles` — `0x23BAE18`
 
 Текущие view-angles (pitch/yaw/roll) как `QAngle` — 3-float struct.
 
-### `client.dll.dwViewMatrix` — `0x23A9340`
+### `client.dll.dwViewMatrix` — `0x23AA340`
 
 4×4 world-to-screen матрица. 16 подряд идущих float; нужна для
 проекции мировых координат в экран (ESP).
