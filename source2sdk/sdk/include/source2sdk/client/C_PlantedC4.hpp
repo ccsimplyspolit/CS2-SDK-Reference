@@ -41,7 +41,7 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x1710
+        // Size: 0x1730
         // Has VTable
         // Construct allowed
         // MClassHasEntityLimitedDataDesc
@@ -94,12 +94,12 @@ namespace source2sdk
             VectorWS m_vecC4ExplodeSpectatePos; // 0x16f0            
             QAngle m_vecC4ExplodeSpectateAng; // 0x16fc            
             float m_flC4ExplodeSpectateDuration; // 0x1708            
-            uint8_t _pad170c[0x4];
+            uint8_t _pad170c[0x24];
         };
         #pragma pack(pop)
         
         // Cannot assert offsets of fields in C_PlantedC4 because it is not a standard-layout class
         
-        static_assert(sizeof(source2sdk::client::C_PlantedC4) == 0x1710);
+        static_assert(sizeof(source2sdk::client::C_PlantedC4) == 0x1730);
     };
 };

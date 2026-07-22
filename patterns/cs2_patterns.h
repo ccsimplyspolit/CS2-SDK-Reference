@@ -2,14 +2,14 @@
 //    CS2 signature patterns                                        //
 //    PATTERNS: 141                                                 //
 //    All 140 byte-patterns resolve UNIQUELY + 1 export FOUND       //
-//    against build 14170 / the installed game.                     //
+//    against build 14172 / the installed game.                     //
 //    Verify: python tools/verify_patterns.py                       //
-//    LAST CHECKED: 2026-07-19                                      //
+//    LAST CHECKED: 2026-07-22 (present re-derived for 14172)       //
 // -------------------------------------------------------------- //
 #pragma once
 
 // GameOverlayRenderer64.dll (steam)
-#define PRESENT_PATTERN "48 89 5C 24 ? 48 89 6C 24 ? 56 57 41 54 41 56 41 57 48 83 EC ? 41 8B E8"
+#define PRESENT_PATTERN "48 89 5C 24 ? 48 89 6C 24 ? 56 57 41 54 41 56 41 57 48 83 EC ? 41 8B F0"
 
 // client.dll
 #define CREATEMOVE_PATTERN "48 8B C4 4C 89 40 ? 48 89 48 ? 55 53 41 54"

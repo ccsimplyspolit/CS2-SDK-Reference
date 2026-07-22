@@ -25,11 +25,11 @@ values are dictionaries of `symbol → integer_offset` (decimal). Example:
 }
 ```
 
-To convert to hex for reading: `hex(37219232) == '0x237eba0'`.
+To convert to hex for reading: `hex(37219232) == '0x237FB70'`.
 
 ## What each global points at
 
-### `client.dll.dwLocalPlayerController` — `0x237EBA0`
+### `client.dll.dwLocalPlayerController` — `0x237FB70`
 
 `[client.dll + dwLocalPlayerController]` is a **pointer** to the local
 `CCSPlayerController*`. Read `qword` at that address; if non-zero, you have
@@ -37,7 +37,7 @@ the local player controller. This dereferences to `NULL` when the local
 player is not fully initialised (main menu, early load) — treat `NULL` as a
 signal to try again next frame.
 
-### `client.dll.dwLocalPlayerPawn` — `0x23A4238`
+### `client.dll.dwLocalPlayerPawn` — `0x23A5238`
 
 Pointer to `C_CSPlayerPawn*` for the local player's pawn. In CS2's Source 2
 terminology, a **controller** owns a **pawn**: the controller carries
@@ -45,47 +45,47 @@ persistent per-player state (rank, wins, MVPs), the pawn carries per-life
 entity state (position, weapons, health). You can also reach the pawn via
 `CCSPlayerController + m_hPlayerPawn` — see `05_structures.md`.
 
-### `client.dll.dwGameRules` — `0x23A39D8`
+### `client.dll.dwGameRules` — `0x23A49D8`
 
 Pointer to `C_CSGameRules*`. This is the global game-state singleton. Its
 key member for VMP work is `m_bIsValveDS` at `+0xA4` — a 1-byte flag that
 is `1` on official Valve dedicated servers and `0` on community servers.
 FVA's gate byte at `image_base + 0x23A9A0` (of FVA, not cs2) mirrors this.
 
-### `client.dll.dwCSGOInput` — `0x23B95F0`
+### `client.dll.dwCSGOInput` — `0x23BA790`
 
 The `CCSGOInput` global. This is where the user-command build pipeline lives.
 `CreateMove` reads from here.
 
-### `client.dll.dwGlobalVars` — `0x208FD60`
+### `client.dll.dwGlobalVars` — `0x2090D60`
 
 `CGlobalVarsBase*` — game time, frame time, tick count. Every entity
 tick-based logic reads these.
 
-### `client.dll.dwEntityList` / `dwGameEntitySystem` — `0x254EE60`
+### `client.dll.dwEntityList` / `dwGameEntitySystem` — `0x254FE70`
 
 The entity list root. From here you can walk every networked entity in the
 world. Same offset for both symbols in current builds — they alias.
 
-### `client.dll.dwGlowManager` — `0x23A0708`
+### `client.dll.dwGlowManager` — `0x23A1708`
 
 Glow effects registry. Rarely relevant for VMP work; useful for ESP-adjacent
 plugins.
 
-### `client.dll.dwPrediction` — `0x23A4140`
+### `client.dll.dwPrediction` — `0x23A5140`
 
 `C_Prediction*` — where client-side prediction state lives.
 
-### `client.dll.dwSensitivity` — `0x23A1228`
+### `client.dll.dwSensitivity` — `0x23A2228`
 
 `CSensitivity*` — mouse sensitivity + `dwSensitivity_sensitivity` (`+0x58`)
 is the float you want if you're scaling raw mouse deltas.
 
-### `client.dll.dwViewAngles` — `0x23B9C78`
+### `client.dll.dwViewAngles` — `0x23BAE18`
 
 Current view angles (pitch/yaw/roll) as a `QAngle` — a 3-float struct.
 
-### `client.dll.dwViewMatrix` — `0x23A9340`
+### `client.dll.dwViewMatrix` — `0x23AA340`
 
 The 4x4 world-to-screen matrix. Read as 16 consecutive floats; used for
 projecting world coords to screen for ESP.
