@@ -28,7 +28,7 @@ tools):
 python tools/verify_patterns.py
 ```
 
-Last run (2026-07-19, build 14170 / installed game):
+Last run (2026-07-22, build 14172 / installed game):
 
 ```
 141 pattern(s): 140 unique, 0 ambiguous, 0 not-found, 0 dll-missing;
@@ -98,7 +98,7 @@ Requires IDA + [Sigmaker](https://github.com/A200K/IDA-Pro-SigMaker) +
 python tools/verify_patterns.py
 ```
 
-Последний прогон (2026-07-19, билд 14170 / установленная игра):
+Последний прогон (2026-07-22, билд 14172 / установленная игра):
 
 ```
 141 pattern(s): 140 unique, 0 ambiguous, 0 not-found, 0 dll-missing;

@@ -76,15 +76,15 @@ Exit codes: `0` = OK, `1` = network/git error, `2` = dry-run drift.
 cat offsets/latest/offsets.json | jq '.["client.dll"]'
 ```
 
-Current values (a2x/cs2-dumper HEAD, build 14169; PR #670's build 14170 is identical for these fields):
+Current values (a2x/cs2-dumper HEAD, build 14172 / 2026-07-20; client globals shifted +0x1000 from 14169/14170):
 
 | Field | Decimal | Hex | Points at |
 |---|---:|---|---|
-| `dwLocalPlayerController` | 37219232 | `0x237EBA0` | follow ptr → `CCSPlayerController*` |
-| `dwGameRules` | 37370328 | `0x23A39D8` | `C_CSGameRules*` |
-| `dwLocalPlayerPawn` | 37372472 | `0x23A4238` | `C_CSPlayerPawn*` |
-| `dwCSGOInput` | 37459440 | `0x23B95F0` | `CCSGOInput*` |
-| `dwGlobalVars` | 34143584 | `0x208FD60` | `CGlobalVars*` |
+| `dwLocalPlayerController` | 37223280 | `0x237FB70` | follow ptr → `CCSPlayerController*` |
+| `dwGameRules` | 37374424 | `0x23A49D8` | `C_CSGameRules*` |
+| `dwLocalPlayerPawn` | 37376568 | `0x23A5238` | `C_CSPlayerPawn*` |
+| `dwCSGOInput` | 37463952 | `0x23BA790` | `CCSGOInput*` |
+| `dwGlobalVars` | 34147680 | `0x2090D60` | `CGlobalVars*` |
 
 _(Reproduce with `python -c "import json; print(json.load(open('offsets/latest/offsets.json'))['client.dll'])"`. Every one of the 32 offsets was resolved against the installed CS2 binaries with `tools/verify_offsets_static.py`.)_
 
@@ -254,15 +254,15 @@ python tools/sync_from_upstream.py --verify --live-pid 53000  # сверка с 
 cat offsets/latest/offsets.json | jq '.["client.dll"]'
 ```
 
-Актуальные значения (`a2x/cs2-dumper` HEAD, билд 14169; билд 14170 из PR #670 по этим полям идентичен):
+Актуальные значения (`a2x/cs2-dumper` HEAD, билд 14172 / 2026-07-20; client-глобалы сдвинулись на +0x1000 против 14169/14170):
 
 | Поле | Десятичное | Hex | Куда указывает |
 |---|---:|---|---|
-| `dwLocalPlayerController` | 37219232 | `0x237EBA0` | разыменовать → `CCSPlayerController*` |
-| `dwGameRules` | 37370328 | `0x23A39D8` | `C_CSGameRules*` |
-| `dwLocalPlayerPawn` | 37372472 | `0x23A4238` | `C_CSPlayerPawn*` |
-| `dwCSGOInput` | 37459440 | `0x23B95F0` | `CCSGOInput*` |
-| `dwGlobalVars` | 34143584 | `0x208FD60` | `CGlobalVars*` |
+| `dwLocalPlayerController` | 37223280 | `0x237FB70` | разыменовать → `CCSPlayerController*` |
+| `dwGameRules` | 37374424 | `0x23A49D8` | `C_CSGameRules*` |
+| `dwLocalPlayerPawn` | 37376568 | `0x23A5238` | `C_CSPlayerPawn*` |
+| `dwCSGOInput` | 37463952 | `0x23BA790` | `CCSGOInput*` |
+| `dwGlobalVars` | 34147680 | `0x2090D60` | `CGlobalVars*` |
 
 _(Воспроизводится через `python -c "import json; print(json.load(open('offsets/latest/offsets.json'))['client.dll'])"`. Все 32 оффсета сверены с установленными бинарниками CS2 через `tools/verify_offsets_static.py`.)_
 
