@@ -81,7 +81,7 @@ offset  type   field
 
 ### CSkeletonInstance / CModelState — world-space bone matrix (ESP skeleton)
 
-The animated bone transforms an ESP draws live inside the entity's scene node. For any animated pawn `m_pGameSceneNode` **is** a `CSkeletonInstance` (`CSkeletonInstance : CGameSceneNode`, size `0x490`), which embeds a `CModelState` (size `0x2b0`) at `0x140` and, in its engine-internal region, a pointer to the world-space bone array.
+The animated bone transforms an ESP draws live inside the entity's scene node. For any animated pawn `m_pGameSceneNode` (offset `0x330`) **is** a `CSkeletonInstance` (`CSkeletonInstance : CGameSceneNode`, class size `0x490`), which embeds a `CModelState` (class size `0x2b0`) at `0x140` and, in its engine-internal region, a pointer to the world-space bone array.
 
 **Access chain (every offset verified against build 14172):**
 
@@ -323,7 +323,7 @@ offset  type   field
 
 ### CSkeletonInstance / CModelState — world-space bone-матрица (ESP-скелет)
 
-Анимированные bone-трансформы, которые рисует ESP, живут внутри scene-node'а entity. У любого анимированного pawn'а `m_pGameSceneNode` — **это** `CSkeletonInstance` (`CSkeletonInstance : CGameSceneNode`, размер `0x490`), который встраивает `CModelState` (размер `0x2b0`) по `0x140` и, в своей engine-internal области, указатель на world-space bone-массив.
+Анимированные bone-трансформы, которые рисует ESP, живут внутри scene-node'а entity. У любого анимированного pawn'а `m_pGameSceneNode` (оффсет `0x330`) — **это** `CSkeletonInstance` (`CSkeletonInstance : CGameSceneNode`, размер класса `0x490`), который встраивает `CModelState` (размер класса `0x2b0`) по `0x140` и, в своей engine-internal области, указатель на world-space bone-массив.
 
 **Цепочка доступа (каждый оффсет сверен с билдом 14172):**
 
