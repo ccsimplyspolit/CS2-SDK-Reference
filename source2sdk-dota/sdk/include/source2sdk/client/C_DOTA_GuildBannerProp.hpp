@@ -21,7 +21,7 @@ namespace source2sdk
         // Has VTable
         // Construct allowed
         // MClassHasEntityLimitedDataDesc
-        // 
+        //
         // static metadata: MEntityAllowsPortraitWorldSpawn
         #pragma pack(push, 1)
         class C_DOTA_GuildBannerProp : public source2sdk::client::C_DynamicProp
@@ -30,8 +30,8 @@ namespace source2sdk
             uint8_t _pad0d10[0x50];
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::client::C_DOTA_GuildBannerProp) == 0xd60);
     };
 };

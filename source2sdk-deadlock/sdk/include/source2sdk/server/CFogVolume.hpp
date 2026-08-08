@@ -23,15 +23,15 @@ namespace source2sdk
         class CFogVolume : public source2sdk::server::CServerOnlyModelEntity
         {
         public:
-            CUtlSymbolLarge m_fogName; // 0x780            
-            CUtlSymbolLarge m_postProcessName; // 0x788            
-            CUtlSymbolLarge m_colorCorrectionName; // 0x790            
+            CUtlSymbolLarge m_fogName; // 0x780
+            CUtlSymbolLarge m_postProcessName; // 0x788
+            CUtlSymbolLarge m_colorCorrectionName; // 0x790
             uint8_t _pad0798[0x8]; // 0x798
-            bool m_bDisabled; // 0x7a0            
+            bool m_bDisabled; // 0x7a0
             // metadata: MNotSaved
-            bool m_bInFogVolumesList; // 0x7a1            
+            bool m_bInFogVolumesList; // 0x7a1
             uint8_t _pad07a2[0x6];
-            
+
             // Datamap fields:
             // void InputEnable; // 0x0
             // void InputDisable; // 0x0
@@ -39,9 +39,9 @@ namespace source2sdk
             // CHandle< CBaseEntity > m_hColorCorrectionController; // 0x79c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CFogVolume because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CFogVolume) == 0x7a8);
     };
 };

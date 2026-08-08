@@ -25,13 +25,13 @@ namespace source2sdk
         class CDOTA_Ability_Morphling_AdaptiveStrike_Agi : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            float stun_min; // 0x580            
-            float stun_max; // 0x584            
+            float stun_min; // 0x580
+            float stun_max; // 0x584
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Morphling_AdaptiveStrike_Agi because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Morphling_AdaptiveStrike_Agi) == 0x588);
     };
 };

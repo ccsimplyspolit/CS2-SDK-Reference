@@ -21,7 +21,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x1f8
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_DifferencePreviousParticle : public source2sdk::particles::CParticleFunctionOperator
@@ -29,30 +29,30 @@ namespace source2sdk
         public:
             // metadata: MPropertyFriendlyName "input field"
             // metadata: MPropertyAttributeChoiceName "particlefield_vector"
-            source2sdk::particles::ParticleAttributeIndex_t m_nFieldInput; // 0x1d8            
+            source2sdk::particles::ParticleAttributeIndex_t m_nFieldInput; // 0x1d8
             // metadata: MPropertyFriendlyName "output field"
             // metadata: MPropertyAttributeChoiceName "particlefield_scalar"
-            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1dc            
+            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1dc
             // metadata: MPropertyFriendlyName "difference minimum"
-            float m_flInputMin; // 0x1e0            
+            float m_flInputMin; // 0x1e0
             // metadata: MPropertyFriendlyName "difference maximum"
-            float m_flInputMax; // 0x1e4            
+            float m_flInputMax; // 0x1e4
             // metadata: MPropertyFriendlyName "output minimum"
-            float m_flOutputMin; // 0x1e8            
+            float m_flOutputMin; // 0x1e8
             // metadata: MPropertyFriendlyName "output maximum"
-            float m_flOutputMax; // 0x1ec            
+            float m_flOutputMax; // 0x1ec
             // metadata: MPropertyFriendlyName "set value method"
-            source2sdk::particles::ParticleSetMethod_t m_nSetMethod; // 0x1f0            
+            source2sdk::particles::ParticleSetMethod_t m_nSetMethod; // 0x1f0
             // metadata: MPropertyFriendlyName "only active within specified difference"
-            bool m_bActiveRange; // 0x1f4            
+            bool m_bActiveRange; // 0x1f4
             // metadata: MPropertyFriendlyName "also set ouput to previous particle"
-            bool m_bSetPreviousParticle; // 0x1f5            
+            bool m_bSetPreviousParticle; // 0x1f5
             uint8_t _pad01f6[0x2];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_DifferencePreviousParticle because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_DifferencePreviousParticle) == 0x1f8);
     };
 };

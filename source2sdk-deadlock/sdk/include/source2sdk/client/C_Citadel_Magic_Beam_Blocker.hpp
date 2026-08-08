@@ -20,20 +20,20 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xcb0
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "GameTime_t m_flTurnSolidTime"
         #pragma pack(push, 1)
         class C_Citadel_Magic_Beam_Blocker : public source2sdk::client::CBaseAnimGraph
         {
         public:
             // metadata: MNetworkEnable
-            source2sdk::entity2::GameTime_t m_flTurnSolidTime; // 0xca8            
+            source2sdk::entity2::GameTime_t m_flTurnSolidTime; // 0xca8
             uint8_t _pad0cac[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_Citadel_Magic_Beam_Blocker because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_Citadel_Magic_Beam_Blocker) == 0xcb0);
     };
 };

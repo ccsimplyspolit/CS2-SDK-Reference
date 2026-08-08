@@ -19,22 +19,22 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x14
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CNavLinkMetrics_ClimbUp
         {
         public:
-            float m_flEntryDistance; // 0x0            
-            source2sdk::tier2::CRangeFloat m_horizontalRange; // 0x4            
-            source2sdk::tier2::CRangeFloat m_verticalRange; // 0xc            
+            float m_flEntryDistance; // 0x0
+            source2sdk::tier2::CRangeFloat m_horizontalRange; // 0x4
+            source2sdk::tier2::CRangeFloat m_verticalRange; // 0xc
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::CNavLinkMetrics_ClimbUp, m_flEntryDistance) == 0x0);
         static_assert(offsetof(source2sdk::server::CNavLinkMetrics_ClimbUp, m_horizontalRange) == 0x4);
         static_assert(offsetof(source2sdk::server::CNavLinkMetrics_ClimbUp, m_verticalRange) == 0xc);
-        
+
         static_assert(sizeof(source2sdk::server::CNavLinkMetrics_ClimbUp) == 0x14);
     };
 };

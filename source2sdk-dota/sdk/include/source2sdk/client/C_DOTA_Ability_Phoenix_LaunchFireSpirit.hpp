@@ -26,15 +26,15 @@ namespace source2sdk
         class C_DOTA_Ability_Phoenix_LaunchFireSpirit : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            float spirit_speed; // 0x6a8            
-            float duration; // 0x6ac            
-            float radius; // 0x6b0            
-            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x6b4            
+            float spirit_speed; // 0x6a8
+            float duration; // 0x6ac
+            float radius; // 0x6b0
+            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x6b4
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_Phoenix_LaunchFireSpirit because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_Phoenix_LaunchFireSpirit) == 0x6b8);
     };
 };

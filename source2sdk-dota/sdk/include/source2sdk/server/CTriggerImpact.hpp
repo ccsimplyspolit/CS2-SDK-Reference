@@ -24,22 +24,22 @@ namespace source2sdk
         class CTriggerImpact : public source2sdk::server::CTriggerMultiple
         {
         public:
-            float m_flMagnitude; // 0x908            
-            float m_flNoise; // 0x90c            
-            float m_flViewkick; // 0x910            
+            float m_flMagnitude; // 0x908
+            float m_flNoise; // 0x90c
+            float m_flViewkick; // 0x910
             uint8_t _pad0914[0x4]; // 0x914
             // m_pOutputForce has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEntityOutputTemplate<Vector> m_pOutputForce;
-            char m_pOutputForce[0x28]; // 0x918            
-            
+            char m_pOutputForce[0x28]; // 0x918
+
             // Datamap fields:
             // void InputImpact; // 0x0
             // float InputSetMagnitude; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CTriggerImpact because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CTriggerImpact) == 0x940);
     };
 };

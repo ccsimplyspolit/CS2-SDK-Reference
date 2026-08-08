@@ -25,16 +25,16 @@ namespace source2sdk
         class CDOTA_Ability_Skywrath_Mage_Arcane_Bolt : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            std::int32_t bolt_vision; // 0x580            
-            float vision_duration; // 0x584            
-            float m_flDamage; // 0x588            
-            std::int32_t m_nFXIndex; // 0x58c            
+            std::int32_t bolt_vision; // 0x580
+            float vision_duration; // 0x584
+            float m_flDamage; // 0x588
+            std::int32_t m_nFXIndex; // 0x58c
             uint8_t _pad0590[0x18];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Skywrath_Mage_Arcane_Bolt because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Skywrath_Mage_Arcane_Bolt) == 0x5a8);
     };
 };

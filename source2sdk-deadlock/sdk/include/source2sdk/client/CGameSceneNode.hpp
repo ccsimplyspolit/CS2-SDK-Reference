@@ -27,7 +27,7 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x140
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "CGameSceneNodeHandle m_hParent"
         // static metadata: MNetworkVarNames "CNetworkOriginCellCoordQuantizedVector m_vecOrigin"
         // static metadata: MNetworkVarNames "QAngle m_angRotation"
@@ -40,53 +40,53 @@ namespace source2sdk
         public:
             uint8_t _pad0000[0x10]; // 0x0
             // metadata: MNotSaved
-            CTransformWS m_nodeToWorld; // 0x10            
+            CTransformWS m_nodeToWorld; // 0x10
             // metadata: MNotSaved
-            source2sdk::entity2::CEntityInstance* m_pOwner; // 0x30            
+            source2sdk::entity2::CEntityInstance* m_pOwner; // 0x30
             // metadata: MNotSaved
-            source2sdk::client::CGameSceneNode* m_pParent; // 0x38            
+            source2sdk::client::CGameSceneNode* m_pParent; // 0x38
             // metadata: MNotSaved
-            source2sdk::client::CGameSceneNode* m_pChild; // 0x40            
+            source2sdk::client::CGameSceneNode* m_pChild; // 0x40
             // metadata: MNotSaved
-            source2sdk::client::CGameSceneNode* m_pNextSibling; // 0x48            
+            source2sdk::client::CGameSceneNode* m_pNextSibling; // 0x48
             uint8_t _pad0050[0x20]; // 0x50
             // metadata: MNetworkEnable
             // metadata: MNetworkSerializer "gameSceneNode"
             // metadata: MNetworkChangeCallback "gameSceneNodeHierarchyParentChanged"
             // metadata: MNetworkPriority "32"
             // metadata: MNetworkVarEmbeddedFieldOffsetDelta "8"
-            source2sdk::client::CGameSceneNodeHandle m_hParent; // 0x70            
+            source2sdk::client::CGameSceneNodeHandle m_hParent; // 0x70
             // metadata: MNetworkEnable
             // metadata: MNetworkPriority "32"
             // metadata: MNetworkUserGroup "Origin"
             // metadata: MNetworkChangeCallback "gameSceneNodeLocalOriginChanged"
-            source2sdk::client::CNetworkOriginCellCoordQuantizedVector m_vecOrigin; // 0x80            
+            source2sdk::client::CNetworkOriginCellCoordQuantizedVector m_vecOrigin; // 0x80
             uint8_t _pad00b0[0x8]; // 0xb0
             // metadata: MNetworkEnable
             // metadata: MNetworkPriority "32"
             // metadata: MNetworkSerializer "gameSceneNodeStepSimulationAnglesSerializer"
             // metadata: MNetworkChangeCallback "gameSceneNodeLocalAnglesChanged"
             // metadata: MNetworkEncoder "qangle_precise"
-            QAngle m_angRotation; // 0xb8            
+            QAngle m_angRotation; // 0xb8
             // metadata: MNetworkEnable
             // metadata: MNetworkChangeCallback "gameSceneNodeLocalScaleChanged"
             // metadata: MNetworkPriority "32"
-            float m_flScale; // 0xc4            
-            VectorWS m_vecAbsOrigin; // 0xc8            
-            QAngle m_angAbsRotation; // 0xd4            
-            float m_flAbsScale; // 0xe0            
+            float m_flScale; // 0xc4
+            VectorWS m_vecAbsOrigin; // 0xc8
+            QAngle m_angAbsRotation; // 0xd4
+            float m_flAbsScale; // 0xe0
             // metadata: MNotSaved
-            Vector m_vecWrappedLocalOrigin; // 0xe4            
+            Vector m_vecWrappedLocalOrigin; // 0xe4
             // metadata: MNotSaved
-            QAngle m_angWrappedLocalRotation; // 0xf0            
+            QAngle m_angWrappedLocalRotation; // 0xf0
             // metadata: MNotSaved
-            float m_flWrappedScale; // 0xfc            
+            float m_flWrappedScale; // 0xfc
             // metadata: MNotSaved
-            std::int16_t m_nParentAttachmentOrBone; // 0x100            
+            std::int16_t m_nParentAttachmentOrBone; // 0x100
             // metadata: MNotSaved
-            bool m_bDebugAbsOriginChanges; // 0x102            
-            bool m_bDormant; // 0x103            
-            bool m_bForceParentToBeNetworked; // 0x104            
+            bool m_bDebugAbsOriginChanges; // 0x102
+            bool m_bDormant; // 0x103
+            bool m_bForceParentToBeNetworked; // 0x104
             // start of bitfield block
             // metadata: MNotSaved
             uint16_t m_bDirtyHierarchy: 1;
@@ -108,22 +108,22 @@ namespace source2sdk
             uint16_t m_bDirtyBoneMergeBoneToRoot: 1;
             // end of bitfield block// 10 bits
             // metadata: MNotSaved
-            std::uint8_t m_nHierarchicalDepth; // 0x107            
+            std::uint8_t m_nHierarchicalDepth; // 0x107
             // metadata: MNotSaved
-            std::uint8_t m_nHierarchyType; // 0x108            
+            std::uint8_t m_nHierarchyType; // 0x108
             // metadata: MNotSaved
-            std::uint8_t m_nDoNotSetAnimTimeInInvalidatePhysicsCount; // 0x109            
+            std::uint8_t m_nDoNotSetAnimTimeInInvalidatePhysicsCount; // 0x109
             uint8_t _pad010a[0x2]; // 0x10a
             // metadata: MNetworkEnable
-            CUtlStringToken m_name; // 0x10c            
+            CUtlStringToken m_name; // 0x10c
             uint8_t _pad0110[0x10]; // 0x110
             // metadata: MNetworkEnable
             // metadata: MNetworkChangeCallback "gameSceneNodeHierarchyAttachmentChanged"
-            CUtlStringToken m_hierarchyAttachName; // 0x120            
-            float m_flClientLocalScale; // 0x124            
-            Vector m_vRenderOrigin; // 0x128            
+            CUtlStringToken m_hierarchyAttachName; // 0x120
+            float m_flClientLocalScale; // 0x124
+            Vector m_vRenderOrigin; // 0x128
             uint8_t _pad0134[0xc];
-            
+
             // Datamap fields:
             // void m_bDirtyHierarchy; // -0x1
             // void m_bDirtyBoneMergeInfo; // -0x1
@@ -144,7 +144,7 @@ namespace source2sdk
             // float ModelScale; // 0x7fffffff
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::CGameSceneNode, m_nodeToWorld) == 0x10);
         static_assert(offsetof(source2sdk::client::CGameSceneNode, m_pOwner) == 0x30);
         static_assert(offsetof(source2sdk::client::CGameSceneNode, m_pParent) == 0x38);
@@ -180,7 +180,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::client::CGameSceneNode, m_hierarchyAttachName) == 0x120);
         static_assert(offsetof(source2sdk::client::CGameSceneNode, m_flClientLocalScale) == 0x124);
         static_assert(offsetof(source2sdk::client::CGameSceneNode, m_vRenderOrigin) == 0x128);
-        
+
         static_assert(sizeof(source2sdk::client::CGameSceneNode) == 0x140);
     };
 };

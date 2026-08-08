@@ -19,7 +19,7 @@ namespace source2sdk
         // Size: 0x38
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MVDataRoot
         #pragma pack(push, 1)
@@ -27,18 +27,18 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0000[0x8]; // 0x0
-            CUtlString m_szName; // 0x8            
-            CUtlString m_szGameObject; // 0x10            
+            CUtlString m_szName; // 0x8
+            CUtlString m_szGameObject; // 0x10
             uint8_t _pad0018[0x4]; // 0x18
-            Vector2D m_vPosition; // 0x1c            
-            float m_flRotation; // 0x24            
-            Vector2D m_vScale; // 0x28            
-            bool m_bFacingLeft; // 0x30            
+            Vector2D m_vPosition; // 0x1c
+            float m_flRotation; // 0x24
+            Vector2D m_vScale; // 0x28
+            bool m_bFacingLeft; // 0x30
             uint8_t _pad0031[0x3]; // 0x31
-            float m_flYawOffset; // 0x34            
+            float m_flYawOffset; // 0x34
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::ArtyGameObjectInstance_t, m_szName) == 0x8);
         static_assert(offsetof(source2sdk::client::ArtyGameObjectInstance_t, m_szGameObject) == 0x10);
         static_assert(offsetof(source2sdk::client::ArtyGameObjectInstance_t, m_vPosition) == 0x1c);
@@ -46,7 +46,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::client::ArtyGameObjectInstance_t, m_vScale) == 0x28);
         static_assert(offsetof(source2sdk::client::ArtyGameObjectInstance_t, m_bFacingLeft) == 0x30);
         static_assert(offsetof(source2sdk::client::ArtyGameObjectInstance_t, m_flYawOffset) == 0x34);
-        
+
         static_assert(sizeof(source2sdk::client::ArtyGameObjectInstance_t) == 0x38);
     };
 };

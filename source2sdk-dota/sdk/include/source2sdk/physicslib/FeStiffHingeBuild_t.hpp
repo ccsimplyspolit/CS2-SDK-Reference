@@ -19,25 +19,25 @@ namespace source2sdk
         // Size: 0x1c
         // Has Trivial Destructor
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct FeStiffHingeBuild_t
         {
         public:
-            float flMaxAngle; // 0x0            
-            float flStrength; // 0x4            
-            float flMotionBias[3]; // 0x8            
-            std::uint16_t nNode[3]; // 0x14            
+            float flMaxAngle; // 0x0
+            float flStrength; // 0x4
+            float flMotionBias[3]; // 0x8
+            std::uint16_t nNode[3]; // 0x14
             uint8_t _pad001a[0x2];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::physicslib::FeStiffHingeBuild_t, flMaxAngle) == 0x0);
         static_assert(offsetof(source2sdk::physicslib::FeStiffHingeBuild_t, flStrength) == 0x4);
         static_assert(offsetof(source2sdk::physicslib::FeStiffHingeBuild_t, flMotionBias) == 0x8);
         static_assert(offsetof(source2sdk::physicslib::FeStiffHingeBuild_t, nNode) == 0x14);
-        
+
         static_assert(sizeof(source2sdk::physicslib::FeStiffHingeBuild_t) == 0x1c);
     };
 };

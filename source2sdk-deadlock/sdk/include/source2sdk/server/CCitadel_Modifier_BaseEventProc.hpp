@@ -34,17 +34,17 @@ namespace source2sdk
         public:
             // m_vecProcdUnitsThisShot has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::server::CBaseEntity*> m_vecProcdUnitsThisShot;
-            char m_vecProcdUnitsThisShot[0x18]; // 0xd0            
+            char m_vecProcdUnitsThisShot[0x18]; // 0xd0
             // m_vecTrackedUnitsThisFrame has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::server::CBaseEntity*> m_vecTrackedUnitsThisFrame;
-            char m_vecTrackedUnitsThisFrame[0x18]; // 0xe8            
-            source2sdk::client::ShotID_t m_nLastShotId; // 0x100            
+            char m_vecTrackedUnitsThisFrame[0x18]; // 0xe8
+            source2sdk::client::ShotID_t m_nLastShotId; // 0x100
             uint8_t _pad0104[0x104];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_BaseEventProc because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_BaseEventProc) == 0x208);
     };
 };

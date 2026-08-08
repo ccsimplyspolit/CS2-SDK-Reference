@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x148
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MVDataRoot
         #pragma pack(push, 1)
@@ -29,8 +29,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::client::CSurvivorsSpawnerGolemDefinition) == 0x148);
     };
 };

@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x9a8
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "float m_flBulletTimeScale"
         // static metadata: MNetworkVarNames "float m_flProjectileTimeScale"
         // static metadata: MNetworkVarNames "GameTime_t m_flExpireTime"
@@ -32,23 +32,23 @@ namespace source2sdk
         {
         public:
             // metadata: MNetworkEnable
-            float m_flBulletTimeScale; // 0x780            
+            float m_flBulletTimeScale; // 0x780
             // metadata: MNetworkEnable
-            float m_flProjectileTimeScale; // 0x784            
+            float m_flProjectileTimeScale; // 0x784
             // metadata: MNetworkEnable
-            source2sdk::entity2::GameTime_t m_flExpireTime; // 0x788            
+            source2sdk::entity2::GameTime_t m_flExpireTime; // 0x788
             // metadata: MNetworkEnable
-            float m_flStopDuration; // 0x78c            
+            float m_flStopDuration; // 0x78c
             // metadata: MNetworkEnable
-            float m_flBulletTimeScaleFriendly; // 0x790            
+            float m_flBulletTimeScaleFriendly; // 0x790
             // metadata: MNetworkEnable
-            float m_flBonusBulletBaseDamageFriendly; // 0x794            
+            float m_flBonusBulletBaseDamageFriendly; // 0x794
             uint8_t _pad0798[0x210];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadelBulletTimeWarp because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadelBulletTimeWarp) == 0x9a8);
     };
 };

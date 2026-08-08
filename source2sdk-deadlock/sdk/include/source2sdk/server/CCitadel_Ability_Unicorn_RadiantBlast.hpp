@@ -33,12 +33,12 @@ namespace source2sdk
             uint8_t _pad0f70[0x200]; // 0xf70
             // m_vecHitTargets has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::server::CBaseEntity>> m_vecHitTargets;
-            char m_vecHitTargets[0x18]; // 0x1170            
+            char m_vecHitTargets[0x18]; // 0x1170
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_Unicorn_RadiantBlast because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Ability_Unicorn_RadiantBlast) == 0x1188);
     };
 };

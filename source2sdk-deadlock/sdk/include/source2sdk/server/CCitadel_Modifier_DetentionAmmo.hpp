@@ -23,13 +23,13 @@ namespace source2sdk
         class CCitadel_Modifier_DetentionAmmo : public source2sdk::server::CCitadel_Modifier_BaseEventProc
         {
         public:
-            float m_flBuildupPerBullet; // 0x208            
+            float m_flBuildupPerBullet; // 0x208
             uint8_t _pad020c[0x284];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_DetentionAmmo because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_DetentionAmmo) == 0x490);
     };
 };

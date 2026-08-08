@@ -23,15 +23,15 @@ namespace source2sdk
         class CCitadel_Modifier_Rutger_ForceField_PushOut : public source2sdk::server::CCitadelModifier
         {
         public:
-            Vector m_vStart; // 0xd0            
-            Vector m_vDest; // 0xdc            
-            Vector m_vCenter; // 0xe8            
+            Vector m_vStart; // 0xd0
+            Vector m_vDest; // 0xdc
+            Vector m_vCenter; // 0xe8
             uint8_t _pad00f4[0x184];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_Rutger_ForceField_PushOut because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_Rutger_ForceField_PushOut) == 0x278);
     };
 };

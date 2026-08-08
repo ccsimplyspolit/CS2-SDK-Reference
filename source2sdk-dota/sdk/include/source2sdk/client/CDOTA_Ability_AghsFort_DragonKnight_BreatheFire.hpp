@@ -26,17 +26,17 @@ namespace source2sdk
         class CDOTA_Ability_AghsFort_DragonKnight_BreatheFire : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            std::int32_t start_radius; // 0x6a8            
-            std::int32_t end_radius; // 0x6ac            
-            VectorWS m_vStartPos; // 0x6b0            
-            source2sdk::entity2::GameTime_t m_fStartTime; // 0x6bc            
-            float m_fTotalTime; // 0x6c0            
+            std::int32_t start_radius; // 0x6a8
+            std::int32_t end_radius; // 0x6ac
+            VectorWS m_vStartPos; // 0x6b0
+            source2sdk::entity2::GameTime_t m_fStartTime; // 0x6bc
+            float m_fTotalTime; // 0x6c0
             uint8_t _pad06c4[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_AghsFort_DragonKnight_BreatheFire because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CDOTA_Ability_AghsFort_DragonKnight_BreatheFire) == 0x6c8);
     };
 };

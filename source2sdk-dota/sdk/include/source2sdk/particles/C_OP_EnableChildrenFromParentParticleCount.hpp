@@ -21,32 +21,32 @@ namespace source2sdk
         // Size: 0x360
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_EnableChildrenFromParentParticleCount : public source2sdk::particles::CParticleFunctionPreEmission
         {
         public:
             // metadata: MPropertyFriendlyName "group ID to affect"
-            std::int32_t m_nChildGroupID; // 0x1e0            
+            std::int32_t m_nChildGroupID; // 0x1e0
             // metadata: MPropertyFriendlyName "first child to enable"
-            std::int32_t m_nFirstChild; // 0x1e4            
+            std::int32_t m_nFirstChild; // 0x1e4
             // metadata: MPropertyFriendlyName "max # of children to enable (-1 for max particle count)"
-            source2sdk::particleslib::CParticleCollectionFloatInput m_nNumChildrenToEnable; // 0x1e8            
+            source2sdk::particleslib::CParticleCollectionFloatInput m_nNumChildrenToEnable; // 0x1e8
             // metadata: MPropertyFriendlyName "remove children when particle count lowers"
-            bool m_bDisableChildren; // 0x358            
+            bool m_bDisableChildren; // 0x358
             // metadata: MPropertyFriendlyName "play endcap when children are removed"
             // metadata: MPropertySuppressExpr "!m_bDisableChildren"
-            bool m_bPlayEndcapOnStop; // 0x359            
+            bool m_bPlayEndcapOnStop; // 0x359
             // metadata: MPropertyFriendlyName "destroy particles immediately when child is removed"
             // metadata: MPropertySuppressExpr "!m_bDisableChildren"
-            bool m_bDestroyImmediately; // 0x35a            
+            bool m_bDestroyImmediately; // 0x35a
             uint8_t _pad035b[0x5];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_EnableChildrenFromParentParticleCount because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_EnableChildrenFromParentParticleCount) == 0x360);
     };
 };

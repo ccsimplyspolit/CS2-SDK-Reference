@@ -17,23 +17,23 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a70
+        // Size: 0x1a90
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Threads_Of_Fate : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float thread_setup_distance; // 0x1a58            
-            float established_thread_duration; // 0x1a5c            
-            float thread_setup_time; // 0x1a60            
-            std::int32_t damage_per_thread_creep; // 0x1a64            
-            std::int32_t damage_per_thread_hero; // 0x1a68            
-            float death_linger_duration; // 0x1a6c            
+            float thread_setup_distance; // 0x1a78
+            float established_thread_duration; // 0x1a7c
+            float thread_setup_time; // 0x1a80
+            std::int32_t damage_per_thread_creep; // 0x1a84
+            std::int32_t damage_per_thread_hero; // 0x1a88
+            float death_linger_duration; // 0x1a8c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Threads_Of_Fate because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Threads_Of_Fate) == 0x1a70);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Threads_Of_Fate) == 0x1a90);
     };
 };

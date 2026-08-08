@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x10f0
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkIncludeByName "m_iMaxHealth"
         // static metadata: MNetworkExcludeByName "m_baseLayer.m_hSequence"
         // static metadata: MNetworkExcludeByUserGroup "m_flCycle"
@@ -42,8 +42,8 @@ namespace source2sdk
             // CCitadelObserver_MovementServices m_pMovementServices; // 0xf28
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::client::C_CitadelObserverPawn) == 0x10f0);
     };
 };

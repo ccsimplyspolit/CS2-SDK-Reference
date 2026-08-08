@@ -23,13 +23,13 @@ namespace source2sdk
         class CCitadel_Item_DivinersKevlar : public source2sdk::server::CCitadel_Item
         {
         public:
-            bool m_bExecuted; // 0xf78            
+            bool m_bExecuted; // 0xf78
             uint8_t _pad0f79[0x87];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Item_DivinersKevlar because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Item_DivinersKevlar) == 0x1000);
     };
 };

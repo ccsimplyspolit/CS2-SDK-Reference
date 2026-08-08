@@ -32,15 +32,15 @@ namespace source2sdk
         class CDOTA_Ability_Snapfire_SpitCreep : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            std::int32_t m_nDamagePerProjectile; // 0x6a8            
+            std::int32_t m_nDamagePerProjectile; // 0x6a8
             // m_hGobbledUnit has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::C_BaseEntity> m_hGobbledUnit;
-            char m_hGobbledUnit[0x4]; // 0x6ac            
+            char m_hGobbledUnit[0x4]; // 0x6ac
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Snapfire_SpitCreep because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CDOTA_Ability_Snapfire_SpitCreep) == 0x6b0);
     };
 };

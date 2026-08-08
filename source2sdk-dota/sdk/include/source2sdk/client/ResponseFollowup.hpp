@@ -29,23 +29,23 @@ namespace source2sdk
         class ResponseFollowup
         {
         public:
-            char* followup_concept; // 0x0            
-            char* followup_contexts; // 0x8            
-            float followup_delay; // 0x10            
+            char* followup_concept; // 0x0
+            char* followup_contexts; // 0x8
+            float followup_delay; // 0x10
             // Property ResponseFollowup::followup_target is misaligned.
             char followup_target[0x8];
-            // char* followup_target; // 0x14            
+            // char* followup_target; // 0x14
             // Property ResponseFollowup::followup_entityiotarget is misaligned.
             char followup_entityiotarget[0x8];
-            // char* followup_entityiotarget; // 0x1c            
+            // char* followup_entityiotarget; // 0x1c
             // Property ResponseFollowup::followup_entityioinput is misaligned.
             char followup_entityioinput[0x8];
-            // char* followup_entityioinput; // 0x24            
-            float followup_entityiodelay; // 0x2c            
-            bool bFired; // 0x30            
+            // char* followup_entityioinput; // 0x24
+            float followup_entityiodelay; // 0x2c
+            bool bFired; // 0x30
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::ResponseFollowup, followup_concept) == 0x0);
         static_assert(offsetof(source2sdk::client::ResponseFollowup, followup_contexts) == 0x8);
         static_assert(offsetof(source2sdk::client::ResponseFollowup, followup_delay) == 0x10);
@@ -55,7 +55,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::client::ResponseFollowup, followup_entityiodelay) == 0x2c);
         static_assert(offsetof(source2sdk::client::ResponseFollowup, bFired) == 0x30);
         */
-        
+
         static_assert(sizeof(source2sdk::client::ResponseFollowup) == 0x31);
     };
 };

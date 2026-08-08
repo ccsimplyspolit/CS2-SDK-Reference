@@ -25,23 +25,23 @@ namespace source2sdk
         class CEnvParticleGlow : public source2sdk::server::CParticleSystem
         {
         public:
-            float m_flAlphaScale; // 0xd00            
-            float m_flRadiusScale; // 0xd04            
-            float m_flSelfIllumScale; // 0xd08            
-            Color m_ColorTint; // 0xd0c            
+            float m_flAlphaScale; // 0xd00
+            float m_flRadiusScale; // 0xd04
+            float m_flSelfIllumScale; // 0xd08
+            Color m_ColorTint; // 0xd0c
             // m_hTextureOverride has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CStrongHandle<source2sdk::resourcesystem::InfoForResourceTypeCTextureBase> m_hTextureOverride;
-            char m_hTextureOverride[0x8]; // 0xd10            
-            
+            char m_hTextureOverride[0x8]; // 0xd10
+
             // Datamap fields:
             // float InputSetScale; // 0x0
             // float InputSetAlphaScale; // 0x0
             // Color InputSetColorTint; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CEnvParticleGlow because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CEnvParticleGlow) == 0xd18);
     };
 };

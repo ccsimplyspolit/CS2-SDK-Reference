@@ -24,14 +24,14 @@ namespace source2sdk
         {
         public:
             uint8_t _pad04a0[0x4]; // 0x4a0
-            std::int32_t m_iLane; // 0x4a4            
-            bool m_bDisableZiplining; // 0x4a8            
+            std::int32_t m_iLane; // 0x4a4
+            bool m_bDisableZiplining; // 0x4a8
             uint8_t _pad04a9[0x1f];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CInfoTrooperSpawn because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CInfoTrooperSpawn) == 0x4c8);
     };
 };

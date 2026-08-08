@@ -25,23 +25,23 @@ namespace source2sdk
         class HintNodeData
         {
         public:
-            CUtlSymbolLarge strEntityName; // 0x0            
-            std::int16_t nHintType; // 0x8            
+            CUtlSymbolLarge strEntityName; // 0x0
+            std::int16_t nHintType; // 0x8
             uint8_t _pad000a[0x6]; // 0xa
-            CUtlSymbolLarge strGroup; // 0x10            
-            std::int32_t iDisabled; // 0x18            
+            CUtlSymbolLarge strGroup; // 0x10
+            std::int32_t iDisabled; // 0x18
             uint8_t _pad001c[0x4]; // 0x1c
-            CUtlSymbolLarge iszGenericType; // 0x20            
-            source2sdk::server::HintIgnoreFacing_t fIgnoreFacing; // 0x28            
-            source2sdk::client::NPC_STATE minState; // 0x2c            
-            source2sdk::client::NPC_STATE maxState; // 0x30            
-            std::int32_t nRadius; // 0x34            
-            source2sdk::server::HintPriority_t ePriority; // 0x38            
-            bool bReturnHintPositionAsOnGroundPerHull; // 0x3c            
+            CUtlSymbolLarge iszGenericType; // 0x20
+            source2sdk::server::HintIgnoreFacing_t fIgnoreFacing; // 0x28
+            source2sdk::client::NPC_STATE minState; // 0x2c
+            source2sdk::client::NPC_STATE maxState; // 0x30
+            std::int32_t nRadius; // 0x34
+            source2sdk::server::HintPriority_t ePriority; // 0x38
+            bool bReturnHintPositionAsOnGroundPerHull; // 0x3c
             uint8_t _pad003d[0x3];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::HintNodeData, strEntityName) == 0x0);
         static_assert(offsetof(source2sdk::server::HintNodeData, nHintType) == 0x8);
         static_assert(offsetof(source2sdk::server::HintNodeData, strGroup) == 0x10);
@@ -53,7 +53,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::server::HintNodeData, nRadius) == 0x34);
         static_assert(offsetof(source2sdk::server::HintNodeData, ePriority) == 0x38);
         static_assert(offsetof(source2sdk::server::HintNodeData, bReturnHintPositionAsOnGroundPerHull) == 0x3c);
-        
+
         static_assert(sizeof(source2sdk::server::HintNodeData) == 0x40);
     };
 };

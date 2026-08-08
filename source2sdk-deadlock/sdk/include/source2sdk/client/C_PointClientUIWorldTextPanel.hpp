@@ -19,24 +19,24 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xe00
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "char m_messageText"
         #pragma pack(push, 1)
         class C_PointClientUIWorldTextPanel : public source2sdk::client::C_PointClientUIWorldPanel
         {
         public:
             // metadata: MNetworkEnable
-            char m_messageText[512]; // 0xc00            
-            
+            char m_messageText[512]; // 0xc00
+
             // Datamap fields:
             // void InputToggle; // 0x0
             // CUtlSymbolLarge InputSetMessage; // 0x0
             // int32_t InputSetIntMessage; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_PointClientUIWorldTextPanel because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_PointClientUIWorldTextPanel) == 0xe00);
     };
 };

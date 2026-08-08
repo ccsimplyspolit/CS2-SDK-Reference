@@ -23,13 +23,13 @@ namespace source2sdk
         class CCitadel_Modifier_Urn_Debuff : public source2sdk::server::CCitadelModifier
         {
         public:
-            bool m_bProcApplied; // 0xd0            
+            bool m_bProcApplied; // 0xd0
             uint8_t _pad00d1[0x207];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_Urn_Debuff because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_Urn_Debuff) == 0x2d8);
     };
 };

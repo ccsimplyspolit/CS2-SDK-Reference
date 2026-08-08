@@ -23,12 +23,12 @@ namespace source2sdk
         struct C_EconEntity_AttachedModelData_t
         {
         public:
-            std::int32_t m_iModelDisplayFlags; // 0x0            
+            std::int32_t m_iModelDisplayFlags; // 0x0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::C_EconEntity_AttachedModelData_t, m_iModelDisplayFlags) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::client::C_EconEntity_AttachedModelData_t) == 0x4);
     };
 };

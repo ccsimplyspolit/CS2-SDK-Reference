@@ -23,13 +23,13 @@ namespace source2sdk
         class CPulseGraphInstance_TestDomain_Derived : public source2sdk::pulse_system::CPulseGraphInstance_TestDomain
         {
         public:
-            std::int32_t m_nInstanceValueX; // 0x158            
+            std::int32_t m_nInstanceValueX; // 0x158
             uint8_t _pad015c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPulseGraphInstance_TestDomain_Derived because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::pulse_system::CPulseGraphInstance_TestDomain_Derived) == 0x160);
     };
 };

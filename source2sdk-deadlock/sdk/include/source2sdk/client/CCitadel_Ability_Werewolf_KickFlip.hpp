@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x1b68
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "bool m_bIsLeaping"
         // static metadata: MNetworkVarNames "GameTime_t m_tLeapStartTime"
         // static metadata: MNetworkVarNames "GameTime_t m_tLeapOffTime"
@@ -29,18 +29,18 @@ namespace source2sdk
         {
         public:
             // metadata: MNetworkEnable
-            bool m_bIsLeaping; // 0x11d8            
+            bool m_bIsLeaping; // 0x11d8
             uint8_t _pad11d9[0x3]; // 0x11d9
             // metadata: MNetworkEnable
-            source2sdk::entity2::GameTime_t m_tLeapStartTime; // 0x11dc            
+            source2sdk::entity2::GameTime_t m_tLeapStartTime; // 0x11dc
             // metadata: MNetworkEnable
-            source2sdk::entity2::GameTime_t m_tLeapOffTime; // 0x11e0            
+            source2sdk::entity2::GameTime_t m_tLeapOffTime; // 0x11e0
             uint8_t _pad11e4[0x984];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_Werewolf_KickFlip because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Ability_Werewolf_KickFlip) == 0x1b68);
     };
 };

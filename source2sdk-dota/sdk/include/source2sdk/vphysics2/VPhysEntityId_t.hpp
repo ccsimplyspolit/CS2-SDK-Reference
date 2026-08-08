@@ -20,18 +20,18 @@ namespace source2sdk
         // Has Trivial Constructor
         // Has Trivial Destructor
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct VPhysEntityId_t
         {
         public:
-            std::uint32_t m_Id; // 0x0            
+            std::uint32_t m_Id; // 0x0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::vphysics2::VPhysEntityId_t, m_Id) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::vphysics2::VPhysEntityId_t) == 0x4);
     };
 };

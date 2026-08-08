@@ -18,21 +18,21 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x18
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyAutoExpandSelf
         #pragma pack(push, 1)
         struct SlashInfo_t
         {
         public:
-            Vector m_vecBulletOriginOffsets0; // 0x0            
-            Vector m_vecBulletOriginOffsets1; // 0xc            
+            Vector m_vecBulletOriginOffsets0; // 0x0
+            Vector m_vecBulletOriginOffsets1; // 0xc
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::SlashInfo_t, m_vecBulletOriginOffsets0) == 0x0);
         static_assert(offsetof(source2sdk::client::SlashInfo_t, m_vecBulletOriginOffsets1) == 0xc);
-        
+
         static_assert(sizeof(source2sdk::client::SlashInfo_t) == 0x18);
     };
 };

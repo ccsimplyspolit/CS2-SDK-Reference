@@ -28,8 +28,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: CDOTA_Ability_Greevil_Miniboss_Black_Nightmare has no schema binary (size is a guess)
     };
 };

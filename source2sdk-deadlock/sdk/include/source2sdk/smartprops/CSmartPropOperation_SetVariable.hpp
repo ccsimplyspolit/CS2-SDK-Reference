@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x90
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Set Variable"
         // static metadata: MPropertyDescription "Set the value of a variable."
@@ -29,12 +29,12 @@ namespace source2sdk
         class CSmartPropOperation_SetVariable : public source2sdk::smartprops::CSmartPropOperation
         {
         public:
-            CSmartPropAttributeVariableValue m_VariableValue; // 0x50            
+            CSmartPropAttributeVariableValue m_VariableValue; // 0x50
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSmartPropOperation_SetVariable because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::smartprops::CSmartPropOperation_SetVariable) == 0x90);
     };
 };

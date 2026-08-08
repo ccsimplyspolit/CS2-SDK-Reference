@@ -39,16 +39,16 @@ namespace source2sdk
         {
         public:
             // metadata: MSaveOpsForField
-            source2sdk::server::CNavLinkMotor_Legacy_GraphController* m_pGraphController; // 0x30            
+            source2sdk::server::CNavLinkMotor_Legacy_GraphController* m_pGraphController; // 0x30
             // m_hNavLinkEntity has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CNavLinkAreaEntity> m_hNavLinkEntity;
-            char m_hNavLinkEntity[0x4]; // 0x38            
-            std::int32_t m_nNavLinkIndex; // 0x3c            
+            char m_hNavLinkEntity[0x4]; // 0x38
+            std::int32_t m_nNavLinkIndex; // 0x3c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CNavLinkMotor_Legacy_NavLink because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CNavLinkMotor_Legacy_NavLink) == 0x40);
     };
 };

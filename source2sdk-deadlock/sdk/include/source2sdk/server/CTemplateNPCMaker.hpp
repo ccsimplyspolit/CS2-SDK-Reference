@@ -23,13 +23,13 @@ namespace source2sdk
         class CTemplateNPCMaker : public source2sdk::server::CBaseNPCMaker
         {
         public:
-            CUtlSymbolLarge m_iszWorldName; // 0x588            
-            CUtlSymbolLarge m_iszSource2EntityLumpName; // 0x590            
+            CUtlSymbolLarge m_iszWorldName; // 0x588
+            CUtlSymbolLarge m_iszSource2EntityLumpName; // 0x590
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CTemplateNPCMaker because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CTemplateNPCMaker) == 0x598);
     };
 };

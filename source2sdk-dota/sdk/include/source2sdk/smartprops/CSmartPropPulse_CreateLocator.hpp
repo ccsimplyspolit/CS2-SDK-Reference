@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x50
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Create Locator"
         // static metadata: MPropertyDescription "Create a locator with the current transform. The locator may optionally be configurable, so that its transform can be modified in Hammer."
@@ -31,12 +31,12 @@ namespace source2sdk
         public:
             // metadata: MPropertyFriendlyName "Name"
             // metadata: MPropertyDescription "Name of the locator. This can be used to reference the locator in this element or its children. If the locator is configurable, the locator will be identified by this name in Hammer."
-            CUtlString m_LocatorName; // 0x48            
+            CUtlString m_LocatorName; // 0x48
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSmartPropPulse_CreateLocator because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::smartprops::CSmartPropPulse_CreateLocator) == 0x50);
     };
 };

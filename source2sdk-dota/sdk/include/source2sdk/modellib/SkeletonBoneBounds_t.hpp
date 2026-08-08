@@ -19,20 +19,20 @@ namespace source2sdk
         // Size: 0x18
         // Has Trivial Destructor
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct SkeletonBoneBounds_t
         {
         public:
-            Vector m_vecCenter; // 0x0            
-            Vector m_vecSize; // 0xc            
+            Vector m_vecCenter; // 0x0
+            Vector m_vecSize; // 0xc
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::modellib::SkeletonBoneBounds_t, m_vecCenter) == 0x0);
         static_assert(offsetof(source2sdk::modellib::SkeletonBoneBounds_t, m_vecSize) == 0xc);
-        
+
         static_assert(sizeof(source2sdk::modellib::SkeletonBoneBounds_t) == 0x18);
     };
 };

@@ -26,36 +26,36 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1ad0
+        // Size: 0x1af0
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Seasonal_PartyHat : public source2sdk::client::CDOTA_Buff
         {
         public:
-            std::int32_t controlled_unit_search_radius; // 0x1a58            
-            bool child_modifier; // 0x1a5c            
-            uint8_t _pad1a5d[0x3]; // 0x1a5d
+            std::int32_t controlled_unit_search_radius; // 0x1a78
+            bool child_modifier; // 0x1a7c
+            uint8_t _pad1a7d[0x3]; // 0x1a7d
             // m_vecParticles has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::client::ParticleIndex_t> m_vecParticles;
-            char m_vecParticles[0x18]; // 0x1a60            
+            char m_vecParticles[0x18]; // 0x1a80
             // m_vecHatColors has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<std::int32_t> m_vecHatColors;
-            char m_vecHatColors[0x18]; // 0x1a78            
-            std::uint32_t m_unVersion; // 0x1a90            
-            uint8_t _pad1a94[0x4]; // 0x1a94
+            char m_vecHatColors[0x18]; // 0x1a98
+            std::uint32_t m_unVersion; // 0x1ab0
+            uint8_t _pad1ab4[0x4]; // 0x1ab4
             // m_vecNearbyUnits has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::server::CBaseEntity>> m_vecNearbyUnits;
-            char m_vecNearbyUnits[0x18]; // 0x1a98            
+            char m_vecNearbyUnits[0x18]; // 0x1ab8
             // m_vecUnitIdleStartTimes has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::entity2::GameTime_t> m_vecUnitIdleStartTimes;
-            char m_vecUnitIdleStartTimes[0x18]; // 0x1ab0            
-            bool m_bPlayEndcapOnNext; // 0x1ac8            
-            uint8_t _pad1ac9[0x7];
+            char m_vecUnitIdleStartTimes[0x18]; // 0x1ad0
+            bool m_bPlayEndcapOnNext; // 0x1ae8
+            uint8_t _pad1ae9[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Seasonal_PartyHat because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Seasonal_PartyHat) == 0x1ad0);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Seasonal_PartyHat) == 0x1af0);
     };
 };

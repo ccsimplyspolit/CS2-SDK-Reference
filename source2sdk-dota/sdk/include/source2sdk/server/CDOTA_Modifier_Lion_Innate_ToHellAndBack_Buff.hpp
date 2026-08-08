@@ -24,21 +24,21 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a60
+        // Size: 0x1a80
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Lion_Innate_ToHellAndBack_Buff : public source2sdk::client::CDOTA_Buff
         {
         public:
-            std::int32_t debuff_amp; // 0x1a58            
+            std::int32_t debuff_amp; // 0x1a78
             // m_hHero has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hHero;
-            char m_hHero[0x4]; // 0x1a5c            
+            char m_hHero[0x4]; // 0x1a7c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Lion_Innate_ToHellAndBack_Buff because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Lion_Innate_ToHellAndBack_Buff) == 0x1a60);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Lion_Innate_ToHellAndBack_Buff) == 0x1a80);
     };
 };

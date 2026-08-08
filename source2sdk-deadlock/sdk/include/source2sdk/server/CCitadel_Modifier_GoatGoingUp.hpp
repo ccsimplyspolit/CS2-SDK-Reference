@@ -23,17 +23,17 @@ namespace source2sdk
         class CCitadel_Modifier_GoatGoingUp : public source2sdk::server::CCitadelModifier
         {
         public:
-            bool m_bAtTargetElevation; // 0xd0            
+            bool m_bAtTargetElevation; // 0xd0
             uint8_t _pad00d1[0x3]; // 0xd1
-            Vector m_vKnockAwayVector; // 0xd4            
+            Vector m_vKnockAwayVector; // 0xd4
             uint8_t _pad00e0[0x180]; // 0xe0
-            float m_flTargetElevation; // 0x260            
+            float m_flTargetElevation; // 0x260
             uint8_t _pad0264[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_GoatGoingUp because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_GoatGoingUp) == 0x268);
     };
 };

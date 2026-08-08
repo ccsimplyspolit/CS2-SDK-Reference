@@ -23,21 +23,21 @@ namespace source2sdk
         class CLogicCompare : public source2sdk::server::CLogicalEntity
         {
         public:
-            float m_flInValue; // 0x4a0            
-            float m_flCompareValue; // 0x4a4            
+            float m_flInValue; // 0x4a0
+            float m_flCompareValue; // 0x4a4
             // m_OnLessThan has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEntityOutputTemplate<float> m_OnLessThan;
-            char m_OnLessThan[0x20]; // 0x4a8            
+            char m_OnLessThan[0x20]; // 0x4a8
             // m_OnEqualTo has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEntityOutputTemplate<float> m_OnEqualTo;
-            char m_OnEqualTo[0x20]; // 0x4c8            
+            char m_OnEqualTo[0x20]; // 0x4c8
             // m_OnNotEqualTo has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEntityOutputTemplate<float> m_OnNotEqualTo;
-            char m_OnNotEqualTo[0x20]; // 0x4e8            
+            char m_OnNotEqualTo[0x20]; // 0x4e8
             // m_OnGreaterThan has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEntityOutputTemplate<float> m_OnGreaterThan;
-            char m_OnGreaterThan[0x20]; // 0x508            
-            
+            char m_OnGreaterThan[0x20]; // 0x508
+
             // Datamap fields:
             // float InputSetValue; // 0x0
             // float InputSetValueCompare; // 0x0
@@ -45,9 +45,9 @@ namespace source2sdk
             // void InputCompare; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CLogicCompare because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CLogicCompare) == 0x528);
     };
 };

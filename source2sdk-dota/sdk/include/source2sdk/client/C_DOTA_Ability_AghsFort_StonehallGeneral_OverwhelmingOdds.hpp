@@ -26,17 +26,17 @@ namespace source2sdk
         class C_DOTA_Ability_AghsFort_StonehallGeneral_OverwhelmingOdds : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            std::int32_t max_steps; // 0x6a8            
-            VectorWS m_vTarget; // 0x6ac            
-            Vector m_vDir; // 0x6b8            
-            std::int32_t m_nSteps; // 0x6c4            
-            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x6c8            
+            std::int32_t max_steps; // 0x6a8
+            VectorWS m_vTarget; // 0x6ac
+            Vector m_vDir; // 0x6b8
+            std::int32_t m_nSteps; // 0x6c4
+            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x6c8
             uint8_t _pad06cc[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_AghsFort_StonehallGeneral_OverwhelmingOdds because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_AghsFort_StonehallGeneral_OverwhelmingOdds) == 0x6d0);
     };
 };

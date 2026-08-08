@@ -17,21 +17,21 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a68
+        // Size: 0x1a88
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Broodmother_Spiders_Milk : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float kill_heal_heroes; // 0x1a58            
-            std::int32_t kill_creeps_penalty; // 0x1a5c            
-            float kill_heal_aoe; // 0x1a60            
-            float kill_heal_duration; // 0x1a64            
+            float kill_heal_heroes; // 0x1a78
+            std::int32_t kill_creeps_penalty; // 0x1a7c
+            float kill_heal_aoe; // 0x1a80
+            float kill_heal_duration; // 0x1a84
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Broodmother_Spiders_Milk because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Broodmother_Spiders_Milk) == 0x1a68);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Broodmother_Spiders_Milk) == 0x1a88);
     };
 };

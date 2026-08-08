@@ -32,13 +32,13 @@ namespace source2sdk
         public:
             // m_hTrigger has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CTriggerTrooperDetector> m_hTrigger;
-            char m_hTrigger[0x4]; // 0xd0            
-            std::int32_t m_iEnemyHeroCount; // 0xd4            
+            char m_hTrigger[0x4]; // 0xd0
+            std::int32_t m_iEnemyHeroCount; // 0xd4
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_Objective_Bullet_Resist because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_Objective_Bullet_Resist) == 0xd8);
     };
 };

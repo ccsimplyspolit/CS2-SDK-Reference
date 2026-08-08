@@ -26,13 +26,13 @@ namespace source2sdk
         class C_DOTA_Ability_LoneDruid_SpiritBear_Return : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            source2sdk::client::ParticleIndex_t m_nFXCaster; // 0x6a8            
-            source2sdk::client::ParticleIndex_t m_nFXOrigin; // 0x6ac            
+            source2sdk::client::ParticleIndex_t m_nFXCaster; // 0x6a8
+            source2sdk::client::ParticleIndex_t m_nFXOrigin; // 0x6ac
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_LoneDruid_SpiritBear_Return because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_LoneDruid_SpiritBear_Return) == 0x6b0);
     };
 };

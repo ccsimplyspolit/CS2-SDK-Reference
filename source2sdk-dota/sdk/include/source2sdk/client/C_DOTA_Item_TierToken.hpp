@@ -26,13 +26,13 @@ namespace source2sdk
         class C_DOTA_Item_TierToken : public source2sdk::client::C_DOTA_Item
         {
         public:
-            source2sdk::client::AbilityID_t m_vecChoices[9]; // 0x758            
+            source2sdk::client::AbilityID_t m_vecChoices[9]; // 0x758
             uint8_t _pad077c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Item_TierToken because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Item_TierToken) == 0x780);
     };
 };

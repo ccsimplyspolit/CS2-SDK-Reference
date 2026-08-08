@@ -17,7 +17,7 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x18a8
+        // Size: 0x18b0
         // Has VTable
         // Construct allowed
         // MClassHasEntityLimitedDataDesc
@@ -25,13 +25,13 @@ namespace source2sdk
         class CDOTA_NPC_WitchDoctor_Ward : public source2sdk::server::CDOTA_BaseNPC_Additive
         {
         public:
-            std::int32_t m_nTargetType; // 0x18a0            
-            std::int32_t m_nTargetFlags; // 0x18a4            
+            std::int32_t m_nTargetType; // 0x18a8
+            std::int32_t m_nTargetFlags; // 0x18ac
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_NPC_WitchDoctor_Ward because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_NPC_WitchDoctor_Ward) == 0x18a8);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_NPC_WitchDoctor_Ward) == 0x18b0);
     };
 };

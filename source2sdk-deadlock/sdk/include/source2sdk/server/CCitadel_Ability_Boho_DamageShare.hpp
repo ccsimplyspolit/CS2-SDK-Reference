@@ -32,13 +32,13 @@ namespace source2sdk
         public:
             // m_vecLinkedEnemies has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::server::CBaseEntity>> m_vecLinkedEnemies;
-            char m_vecLinkedEnemies[0x18]; // 0xf70            
+            char m_vecLinkedEnemies[0x18]; // 0xf70
             uint8_t _pad0f88[0x100];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_Boho_DamageShare because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Ability_Boho_DamageShare) == 0x1088);
     };
 };

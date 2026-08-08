@@ -21,23 +21,23 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x8a0
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_INIT_InitVecCollection : public source2sdk::particles::CParticleFunctionInitializer
         {
         public:
             // metadata: MPropertyFriendlyName "value"
-            source2sdk::particleslib::CParticleCollectionVecInput m_InputValue; // 0x1e0            
+            source2sdk::particleslib::CParticleCollectionVecInput m_InputValue; // 0x1e0
             // metadata: MPropertyFriendlyName "output field"
             // metadata: MPropertyAttributeChoiceName "particlefield_vector"
-            source2sdk::particles::ParticleAttributeIndex_t m_nOutputField; // 0x898            
+            source2sdk::particles::ParticleAttributeIndex_t m_nOutputField; // 0x898
             uint8_t _pad089c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_INIT_InitVecCollection because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_INIT_InitVecCollection) == 0x8a0);
     };
 };

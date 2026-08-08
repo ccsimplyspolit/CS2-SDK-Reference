@@ -21,24 +21,24 @@ namespace source2sdk
         // Has VTable
         // Has Trivial Destructor
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct locksound_t
         {
         public:
             uint8_t _pad0000[0x8]; // 0x0
-            CGameSoundEventName sLockedSound; // 0x8            
-            CGameSoundEventName sUnlockedSound; // 0x10            
-            source2sdk::entity2::GameTime_t flwaitSound; // 0x18            
+            CGameSoundEventName sLockedSound; // 0x8
+            CGameSoundEventName sUnlockedSound; // 0x10
+            source2sdk::entity2::GameTime_t flwaitSound; // 0x18
             uint8_t _pad001c[0x4];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::locksound_t, sLockedSound) == 0x8);
         static_assert(offsetof(source2sdk::server::locksound_t, sUnlockedSound) == 0x10);
         static_assert(offsetof(source2sdk::server::locksound_t, flwaitSound) == 0x18);
-        
+
         static_assert(sizeof(source2sdk::server::locksound_t) == 0x20);
     };
 };

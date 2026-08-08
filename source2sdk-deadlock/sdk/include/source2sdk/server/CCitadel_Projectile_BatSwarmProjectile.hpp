@@ -25,15 +25,15 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0890[0x8c]; // 0x890
-            Vector m_vecTargetVelocity; // 0x91c            
-            Vector m_vecLastVelocity; // 0x928            
-            source2sdk::entity2::GameTime_t m_SpawnTime; // 0x934            
+            Vector m_vecTargetVelocity; // 0x91c
+            Vector m_vecLastVelocity; // 0x928
+            source2sdk::entity2::GameTime_t m_SpawnTime; // 0x934
             uint8_t _pad0938[0x10];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Projectile_BatSwarmProjectile because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Projectile_BatSwarmProjectile) == 0x948);
     };
 };

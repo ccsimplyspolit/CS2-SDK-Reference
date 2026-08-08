@@ -34,12 +34,12 @@ namespace source2sdk
         public:
             // m_hSkeletonSummons has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::server::CBaseEntity>> m_hSkeletonSummons;
-            char m_hSkeletonSummons[0x18]; // 0x580            
+            char m_hSkeletonSummons[0x18]; // 0x580
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Clinkz_WindWalk because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Clinkz_WindWalk) == 0x598);
     };
 };

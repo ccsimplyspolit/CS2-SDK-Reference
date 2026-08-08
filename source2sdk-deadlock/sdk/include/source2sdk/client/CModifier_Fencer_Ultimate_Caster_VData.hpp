@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x910
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CModifier_Fencer_Ultimate_Caster_VData : public source2sdk::client::CCitadelModifierVData
@@ -29,15 +29,15 @@ namespace source2sdk
             // metadata: MPropertyStartGroup "Visuals"
             // m_DashParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_DashParticle;
-            char m_DashParticle[0xe0]; // 0x750            
+            char m_DashParticle[0xe0]; // 0x750
             // m_DashTrailParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_DashTrailParticle;
-            char m_DashTrailParticle[0xe0]; // 0x830            
+            char m_DashTrailParticle[0xe0]; // 0x830
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CModifier_Fencer_Ultimate_Caster_VData because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CModifier_Fencer_Ultimate_Caster_VData) == 0x910);
     };
 };

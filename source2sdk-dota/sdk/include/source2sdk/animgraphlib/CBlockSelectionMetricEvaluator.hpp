@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x50
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CBlockSelectionMetricEvaluator : public source2sdk::animgraphlib::CMotionMetricEvaluator
@@ -28,8 +28,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::animgraphlib::CBlockSelectionMetricEvaluator) == 0x50);
     };
 };

@@ -19,24 +19,24 @@ namespace source2sdk
         // Size: 0x10
         // Has Trivial Destructor
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct PostProcessingLocalExposureParameters_t
         {
         public:
-            float m_fShadowOffsetEV; // 0x0            
-            float m_fHighlightOffsetEV; // 0x4            
-            float m_fSigma; // 0x8            
-            float m_fBoostLocalContrast; // 0xc            
+            float m_fShadowOffsetEV; // 0x0
+            float m_fHighlightOffsetEV; // 0x4
+            float m_fSigma; // 0x8
+            float m_fBoostLocalContrast; // 0xc
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::materialsystem2::PostProcessingLocalExposureParameters_t, m_fShadowOffsetEV) == 0x0);
         static_assert(offsetof(source2sdk::materialsystem2::PostProcessingLocalExposureParameters_t, m_fHighlightOffsetEV) == 0x4);
         static_assert(offsetof(source2sdk::materialsystem2::PostProcessingLocalExposureParameters_t, m_fSigma) == 0x8);
         static_assert(offsetof(source2sdk::materialsystem2::PostProcessingLocalExposureParameters_t, m_fBoostLocalContrast) == 0xc);
-        
+
         static_assert(sizeof(source2sdk::materialsystem2::PostProcessingLocalExposureParameters_t) == 0x10);
     };
 };

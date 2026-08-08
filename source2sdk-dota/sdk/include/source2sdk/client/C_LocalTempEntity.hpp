@@ -26,62 +26,62 @@ namespace source2sdk
         {
         public:
             // metadata: MNotSaved
-            std::int32_t flags; // 0xac0            
+            std::int32_t flags; // 0xac0
             // metadata: MNotSaved
-            source2sdk::entity2::GameTime_t die; // 0xac4            
+            source2sdk::entity2::GameTime_t die; // 0xac4
             // metadata: MNotSaved
-            float m_flFrameMax; // 0xac8            
+            float m_flFrameMax; // 0xac8
             // metadata: MNotSaved
-            float x; // 0xacc            
+            float x; // 0xacc
             // metadata: MNotSaved
-            float y; // 0xad0            
+            float y; // 0xad0
             // metadata: MNotSaved
-            float fadeSpeed; // 0xad4            
+            float fadeSpeed; // 0xad4
             // metadata: MNotSaved
-            float bounceFactor; // 0xad8            
+            float bounceFactor; // 0xad8
             // metadata: MNotSaved
-            std::int32_t hitSound; // 0xadc            
+            std::int32_t hitSound; // 0xadc
             // metadata: MNotSaved
-            std::int32_t priority; // 0xae0            
+            std::int32_t priority; // 0xae0
             // metadata: MNotSaved
-            Vector tentOffset; // 0xae4            
+            Vector tentOffset; // 0xae4
             // metadata: MNotSaved
-            QAngle m_vecTempEntAngVelocity; // 0xaf0            
+            QAngle m_vecTempEntAngVelocity; // 0xaf0
             // metadata: MNotSaved
-            std::int32_t tempent_renderamt; // 0xafc            
+            std::int32_t tempent_renderamt; // 0xafc
             // metadata: MNotSaved
-            Vector m_vecNormal; // 0xb00            
+            Vector m_vecNormal; // 0xb00
             // metadata: MNotSaved
-            float m_flSpriteScale; // 0xb0c            
+            float m_flSpriteScale; // 0xb0c
             // metadata: MNotSaved
-            std::int32_t m_nFlickerFrame; // 0xb10            
+            std::int32_t m_nFlickerFrame; // 0xb10
             // metadata: MNotSaved
-            float m_flFrameRate; // 0xb14            
+            float m_flFrameRate; // 0xb14
             // metadata: MNotSaved
-            float m_flFrame; // 0xb18            
+            float m_flFrame; // 0xb18
             uint8_t _pad0b1c[0x4]; // 0xb1c
             // metadata: MNotSaved
-            char* m_pszImpactEffect; // 0xb20            
+            char* m_pszImpactEffect; // 0xb20
             // metadata: MNotSaved
-            char* m_pszParticleEffect; // 0xb28            
+            char* m_pszParticleEffect; // 0xb28
             // metadata: MNotSaved
-            bool m_bParticleCollision; // 0xb30            
+            bool m_bParticleCollision; // 0xb30
             uint8_t _pad0b31[0x3]; // 0xb31
             // metadata: MNotSaved
-            std::int32_t m_iLastCollisionFrame; // 0xb34            
+            std::int32_t m_iLastCollisionFrame; // 0xb34
             // metadata: MNotSaved
-            VectorWS m_vLastCollisionOrigin; // 0xb38            
+            VectorWS m_vLastCollisionOrigin; // 0xb38
             // metadata: MNotSaved
-            Vector m_vecTempEntVelocity; // 0xb44            
+            Vector m_vecTempEntVelocity; // 0xb44
             // metadata: MNotSaved
-            VectorWS m_vecPrevAbsOrigin; // 0xb50            
+            VectorWS m_vecPrevAbsOrigin; // 0xb50
             // metadata: MNotSaved
-            Vector m_vecTempEntAcceleration; // 0xb5c            
+            Vector m_vecTempEntAcceleration; // 0xb5c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_LocalTempEntity because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_LocalTempEntity) == 0xb68);
     };
 };

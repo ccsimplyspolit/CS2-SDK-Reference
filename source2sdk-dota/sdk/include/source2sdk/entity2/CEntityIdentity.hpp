@@ -27,7 +27,7 @@ namespace source2sdk
         // Size: 0x70
         // Construct allowed
         // Construct disallowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CEntityIdentity
@@ -35,33 +35,33 @@ namespace source2sdk
         public:
             uint8_t _pad0000[0x14]; // 0x0
             // metadata: MNotSaved
-            std::int32_t m_nameStringTableIndex; // 0x14            
-            CUtlSymbolLarge m_name; // 0x18            
+            std::int32_t m_nameStringTableIndex; // 0x14
+            CUtlSymbolLarge m_name; // 0x18
             // metadata: MNotSaved
-            CUtlSymbolLarge m_designerName; // 0x20            
+            CUtlSymbolLarge m_designerName; // 0x20
             uint8_t _pad0028[0x8]; // 0x28
             // metadata: MNotSaved
-            std::uint32_t m_flags; // 0x30            
+            std::uint32_t m_flags; // 0x30
             uint8_t _pad0034[0x4]; // 0x34
             // metadata: MNotSaved
-            WorldGroupId_t m_worldGroupId; // 0x38            
+            WorldGroupId_t m_worldGroupId; // 0x38
             // metadata: MNotSaved
-            std::uint32_t m_fDataObjectTypes; // 0x3c            
+            std::uint32_t m_fDataObjectTypes; // 0x3c
             // metadata: MNotSaved
-            source2sdk::networksystem::ChangeAccessorFieldPathIndex_t m_PathIndex; // 0x40            
+            source2sdk::networksystem::ChangeAccessorFieldPathIndex_t m_PathIndex; // 0x40
             uint8_t _pad0044[0x4]; // 0x44
-            source2sdk::entity2::CEntityAttributeTable* m_pAttributes; // 0x48            
+            source2sdk::entity2::CEntityAttributeTable* m_pAttributes; // 0x48
             // metadata: MNotSaved
-            source2sdk::entity2::CEntityIdentity* m_pPrev; // 0x50            
+            source2sdk::entity2::CEntityIdentity* m_pPrev; // 0x50
             // metadata: MNotSaved
-            source2sdk::entity2::CEntityIdentity* m_pNext; // 0x58            
+            source2sdk::entity2::CEntityIdentity* m_pNext; // 0x58
             // metadata: MNotSaved
-            source2sdk::entity2::CEntityIdentity* m_pPrevByClass; // 0x60            
+            source2sdk::entity2::CEntityIdentity* m_pPrevByClass; // 0x60
             // metadata: MNotSaved
-            source2sdk::entity2::CEntityIdentity* m_pNextByClass; // 0x68            
+            source2sdk::entity2::CEntityIdentity* m_pNextByClass; // 0x68
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::entity2::CEntityIdentity, m_nameStringTableIndex) == 0x14);
         static_assert(offsetof(source2sdk::entity2::CEntityIdentity, m_name) == 0x18);
         static_assert(offsetof(source2sdk::entity2::CEntityIdentity, m_designerName) == 0x20);
@@ -74,7 +74,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::entity2::CEntityIdentity, m_pNext) == 0x58);
         static_assert(offsetof(source2sdk::entity2::CEntityIdentity, m_pPrevByClass) == 0x60);
         static_assert(offsetof(source2sdk::entity2::CEntityIdentity, m_pNextByClass) == 0x68);
-        
+
         static_assert(sizeof(source2sdk::entity2::CEntityIdentity) == 0x70);
     };
 };

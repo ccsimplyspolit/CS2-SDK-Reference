@@ -34,12 +34,12 @@ namespace source2sdk
         public:
             // hAlreadyHitList has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::client::C_BaseEntity>> hAlreadyHitList;
-            char hAlreadyHitList[0x18]; // 0x6a8            
+            char hAlreadyHitList[0x18]; // 0x6a8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_ChaosKnight_Chaos_Bolt because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_ChaosKnight_Chaos_Bolt) == 0x6c0);
     };
 };

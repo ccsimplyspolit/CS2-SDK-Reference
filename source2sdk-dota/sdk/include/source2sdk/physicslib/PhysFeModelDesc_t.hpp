@@ -62,7 +62,7 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x6f8
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct PhysFeModelDesc_t
@@ -70,257 +70,257 @@ namespace source2sdk
         public:
             // m_CtrlHash has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<std::uint32_t> m_CtrlHash;
-            char m_CtrlHash[0x18]; // 0x0            
+            char m_CtrlHash[0x18]; // 0x0
             // m_CtrlName has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CUtlString> m_CtrlName;
-            char m_CtrlName[0x18]; // 0x18            
-            std::uint32_t m_nStaticNodeFlags; // 0x30            
-            std::uint32_t m_nDynamicNodeFlags; // 0x34            
-            float m_flLocalForce; // 0x38            
-            float m_flLocalRotation; // 0x3c            
-            std::uint16_t m_nNodeCount; // 0x40            
-            std::uint16_t m_nStaticNodes; // 0x42            
-            std::uint16_t m_nRotLockStaticNodes; // 0x44            
-            std::uint16_t m_nFirstPositionDrivenNode; // 0x46            
-            std::uint16_t m_nSimdTriCount1; // 0x48            
-            std::uint16_t m_nSimdTriCount2; // 0x4a            
-            std::uint16_t m_nSimdQuadCount1; // 0x4c            
-            std::uint16_t m_nSimdQuadCount2; // 0x4e            
-            std::uint16_t m_nQuadCount1; // 0x50            
-            std::uint16_t m_nQuadCount2; // 0x52            
-            std::uint16_t m_nTreeDepth; // 0x54            
-            std::uint16_t m_nNodeBaseJiggleboneDependsCount; // 0x56            
-            std::uint16_t m_nRopeCount; // 0x58            
+            char m_CtrlName[0x18]; // 0x18
+            std::uint32_t m_nStaticNodeFlags; // 0x30
+            std::uint32_t m_nDynamicNodeFlags; // 0x34
+            float m_flLocalForce; // 0x38
+            float m_flLocalRotation; // 0x3c
+            std::uint16_t m_nNodeCount; // 0x40
+            std::uint16_t m_nStaticNodes; // 0x42
+            std::uint16_t m_nRotLockStaticNodes; // 0x44
+            std::uint16_t m_nFirstPositionDrivenNode; // 0x46
+            std::uint16_t m_nSimdTriCount1; // 0x48
+            std::uint16_t m_nSimdTriCount2; // 0x4a
+            std::uint16_t m_nSimdQuadCount1; // 0x4c
+            std::uint16_t m_nSimdQuadCount2; // 0x4e
+            std::uint16_t m_nQuadCount1; // 0x50
+            std::uint16_t m_nQuadCount2; // 0x52
+            std::uint16_t m_nTreeDepth; // 0x54
+            std::uint16_t m_nNodeBaseJiggleboneDependsCount; // 0x56
+            std::uint16_t m_nRopeCount; // 0x58
             uint8_t _pad005a[0x6]; // 0x5a
             // m_Ropes has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<std::uint16_t> m_Ropes;
-            char m_Ropes[0x18]; // 0x60            
+            char m_Ropes[0x18]; // 0x60
             // m_NodeBases has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::physicslib::FeNodeBase_t> m_NodeBases;
-            char m_NodeBases[0x18]; // 0x78            
+            char m_NodeBases[0x18]; // 0x78
             // m_SimdNodeBases has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::physicslib::FeSimdNodeBase_t> m_SimdNodeBases;
-            char m_SimdNodeBases[0x18]; // 0x90            
+            char m_SimdNodeBases[0x18]; // 0x90
             // m_Quads has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::physicslib::FeQuad_t> m_Quads;
-            char m_Quads[0x18]; // 0xa8            
+            char m_Quads[0x18]; // 0xa8
             // m_SimdQuads has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::physicslib::FeSimdQuad_t> m_SimdQuads;
-            char m_SimdQuads[0x18]; // 0xc0            
+            char m_SimdQuads[0x18]; // 0xc0
             // m_SimdTris has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::physicslib::FeSimdTri_t> m_SimdTris;
-            char m_SimdTris[0x18]; // 0xd8            
+            char m_SimdTris[0x18]; // 0xd8
             // m_SimdRods has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::physicslib::FeSimdRodConstraint_t> m_SimdRods;
-            char m_SimdRods[0x18]; // 0xf0            
+            char m_SimdRods[0x18]; // 0xf0
             // m_SimdRodsAnim has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::physicslib::FeSimdRodConstraintAnim_t> m_SimdRodsAnim;
-            char m_SimdRodsAnim[0x18]; // 0x108            
+            char m_SimdRodsAnim[0x18]; // 0x108
             // m_InitPose has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CTransform> m_InitPose;
-            char m_InitPose[0x18]; // 0x120            
+            char m_InitPose[0x18]; // 0x120
             // m_Rods has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::physicslib::FeRodConstraint_t> m_Rods;
-            char m_Rods[0x18]; // 0x138            
+            char m_Rods[0x18]; // 0x138
             // m_Twists has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::physicslib::FeTwistConstraint_t> m_Twists;
-            char m_Twists[0x18]; // 0x150            
+            char m_Twists[0x18]; // 0x150
             // m_HingeLimits has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::physicslib::FeHingeLimit_t> m_HingeLimits;
-            char m_HingeLimits[0x18]; // 0x168            
+            char m_HingeLimits[0x18]; // 0x168
             // m_AntiTunnelBytecode has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<std::uint32_t> m_AntiTunnelBytecode;
-            char m_AntiTunnelBytecode[0x18]; // 0x180            
+            char m_AntiTunnelBytecode[0x18]; // 0x180
             // m_DynKinLinks has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::physicslib::FeDynKinLink_t> m_DynKinLinks;
-            char m_DynKinLinks[0x18]; // 0x198            
+            char m_DynKinLinks[0x18]; // 0x198
             // m_BoneMergeLinks has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::physicslib::FeBoneMergeLink_t> m_BoneMergeLinks;
-            char m_BoneMergeLinks[0x18]; // 0x1b0            
+            char m_BoneMergeLinks[0x18]; // 0x1b0
             // m_AntiTunnelProbes has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::physicslib::FeAntiTunnelProbe_t> m_AntiTunnelProbes;
-            char m_AntiTunnelProbes[0x18]; // 0x1c8            
+            char m_AntiTunnelProbes[0x18]; // 0x1c8
             // m_AntiTunnelTargetNodes has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<std::uint16_t> m_AntiTunnelTargetNodes;
-            char m_AntiTunnelTargetNodes[0x18]; // 0x1e0            
+            char m_AntiTunnelTargetNodes[0x18]; // 0x1e0
             // m_NodeStrayBoxes has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::physicslib::FeNodeStrayBox_t> m_NodeStrayBoxes;
-            char m_NodeStrayBoxes[0x18]; // 0x1f8            
+            char m_NodeStrayBoxes[0x18]; // 0x1f8
             // m_AxialEdges has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::physicslib::FeAxialEdgeBend_t> m_AxialEdges;
-            char m_AxialEdges[0x18]; // 0x210            
+            char m_AxialEdges[0x18]; // 0x210
             // m_NodeInvMasses has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<float> m_NodeInvMasses;
-            char m_NodeInvMasses[0x18]; // 0x228            
+            char m_NodeInvMasses[0x18]; // 0x228
             // m_CtrlOffsets has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::physicslib::FeCtrlOffset_t> m_CtrlOffsets;
-            char m_CtrlOffsets[0x18]; // 0x240            
+            char m_CtrlOffsets[0x18]; // 0x240
             // m_CtrlOsOffsets has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::physicslib::FeCtrlOsOffset_t> m_CtrlOsOffsets;
-            char m_CtrlOsOffsets[0x18]; // 0x258            
+            char m_CtrlOsOffsets[0x18]; // 0x258
             // m_FollowNodes has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::physicslib::FeFollowNode_t> m_FollowNodes;
-            char m_FollowNodes[0x18]; // 0x270            
+            char m_FollowNodes[0x18]; // 0x270
             // m_CollisionPlanes has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::physicslib::FeCollisionPlane_t> m_CollisionPlanes;
-            char m_CollisionPlanes[0x18]; // 0x288            
+            char m_CollisionPlanes[0x18]; // 0x288
             // m_NodeIntegrator has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::physicslib::FeNodeIntegrator_t> m_NodeIntegrator;
-            char m_NodeIntegrator[0x18]; // 0x2a0            
+            char m_NodeIntegrator[0x18]; // 0x2a0
             // m_SpringIntegrator has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::physicslib::FeSpringIntegrator_t> m_SpringIntegrator;
-            char m_SpringIntegrator[0x18]; // 0x2b8            
+            char m_SpringIntegrator[0x18]; // 0x2b8
             // m_SimdSpringIntegrator has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::physicslib::FeSimdSpringIntegrator_t> m_SimdSpringIntegrator;
-            char m_SimdSpringIntegrator[0x18]; // 0x2d0            
+            char m_SimdSpringIntegrator[0x18]; // 0x2d0
             // m_WorldCollisionParams has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::physicslib::FeWorldCollisionParams_t> m_WorldCollisionParams;
-            char m_WorldCollisionParams[0x18]; // 0x2e8            
+            char m_WorldCollisionParams[0x18]; // 0x2e8
             // m_LegacyStretchForce has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<float> m_LegacyStretchForce;
-            char m_LegacyStretchForce[0x18]; // 0x300            
+            char m_LegacyStretchForce[0x18]; // 0x300
             // m_NodeCollisionRadii has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<float> m_NodeCollisionRadii;
-            char m_NodeCollisionRadii[0x18]; // 0x318            
+            char m_NodeCollisionRadii[0x18]; // 0x318
             // m_DynNodeFriction has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<float> m_DynNodeFriction;
-            char m_DynNodeFriction[0x18]; // 0x330            
+            char m_DynNodeFriction[0x18]; // 0x330
             // m_LocalRotation has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<float> m_LocalRotation;
-            char m_LocalRotation[0x18]; // 0x348            
+            char m_LocalRotation[0x18]; // 0x348
             // m_LocalForce has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<float> m_LocalForce;
-            char m_LocalForce[0x18]; // 0x360            
+            char m_LocalForce[0x18]; // 0x360
             // m_TaperedCapsuleStretches has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::physicslib::FeTaperedCapsuleStretch_t> m_TaperedCapsuleStretches;
-            char m_TaperedCapsuleStretches[0x18]; // 0x378            
+            char m_TaperedCapsuleStretches[0x18]; // 0x378
             // m_TaperedCapsuleRigids has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::physicslib::FeTaperedCapsuleRigid_t> m_TaperedCapsuleRigids;
-            char m_TaperedCapsuleRigids[0x18]; // 0x390            
+            char m_TaperedCapsuleRigids[0x18]; // 0x390
             // m_SphereRigids has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::physicslib::FeSphereRigid_t> m_SphereRigids;
-            char m_SphereRigids[0x18]; // 0x3a8            
+            char m_SphereRigids[0x18]; // 0x3a8
             // m_WorldCollisionNodes has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<std::uint16_t> m_WorldCollisionNodes;
-            char m_WorldCollisionNodes[0x18]; // 0x3c0            
+            char m_WorldCollisionNodes[0x18]; // 0x3c0
             // m_TreeParents has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<std::uint16_t> m_TreeParents;
-            char m_TreeParents[0x18]; // 0x3d8            
+            char m_TreeParents[0x18]; // 0x3d8
             // m_TreeCollisionMasks has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<std::uint16_t> m_TreeCollisionMasks;
-            char m_TreeCollisionMasks[0x18]; // 0x3f0            
+            char m_TreeCollisionMasks[0x18]; // 0x3f0
             // m_TreeChildren has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::physicslib::FeTreeChildren_t> m_TreeChildren;
-            char m_TreeChildren[0x18]; // 0x408            
+            char m_TreeChildren[0x18]; // 0x408
             // m_FreeNodes has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<std::uint16_t> m_FreeNodes;
-            char m_FreeNodes[0x18]; // 0x420            
+            char m_FreeNodes[0x18]; // 0x420
             // m_FitMatrices has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::physicslib::FeFitMatrix_t> m_FitMatrices;
-            char m_FitMatrices[0x18]; // 0x438            
+            char m_FitMatrices[0x18]; // 0x438
             // m_FitWeights has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::physicslib::FeFitWeight_t> m_FitWeights;
-            char m_FitWeights[0x18]; // 0x450            
+            char m_FitWeights[0x18]; // 0x450
             // m_ReverseOffsets has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::physicslib::FeNodeReverseOffset_t> m_ReverseOffsets;
-            char m_ReverseOffsets[0x18]; // 0x468            
+            char m_ReverseOffsets[0x18]; // 0x468
             // m_AnimStrayRadii has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::physicslib::FeAnimStrayRadius_t> m_AnimStrayRadii;
-            char m_AnimStrayRadii[0x18]; // 0x480            
+            char m_AnimStrayRadii[0x18]; // 0x480
             // m_SimdAnimStrayRadii has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::physicslib::FeSimdAnimStrayRadius_t> m_SimdAnimStrayRadii;
-            char m_SimdAnimStrayRadii[0x18]; // 0x498            
+            char m_SimdAnimStrayRadii[0x18]; // 0x498
             // m_KelagerBends has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::physicslib::FeKelagerBend2_t> m_KelagerBends;
-            char m_KelagerBends[0x18]; // 0x4b0            
+            char m_KelagerBends[0x18]; // 0x4b0
             // m_CtrlSoftOffsets has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::physicslib::FeCtrlSoftOffset_t> m_CtrlSoftOffsets;
-            char m_CtrlSoftOffsets[0x18]; // 0x4c8            
+            char m_CtrlSoftOffsets[0x18]; // 0x4c8
             // m_JiggleBones has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::physicslib::CFeIndexedJiggleBone> m_JiggleBones;
-            char m_JiggleBones[0x18]; // 0x4e0            
+            char m_JiggleBones[0x18]; // 0x4e0
             // m_SourceElems has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<std::uint16_t> m_SourceElems;
-            char m_SourceElems[0x18]; // 0x4f8            
+            char m_SourceElems[0x18]; // 0x4f8
             // m_GoalDampedSpringIntegrators has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<std::uint32_t> m_GoalDampedSpringIntegrators;
-            char m_GoalDampedSpringIntegrators[0x18]; // 0x510            
+            char m_GoalDampedSpringIntegrators[0x18]; // 0x510
             // m_Tris has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::physicslib::FeTri_t> m_Tris;
-            char m_Tris[0x18]; // 0x528            
-            std::uint16_t m_nTriCount1; // 0x540            
-            std::uint16_t m_nTriCount2; // 0x542            
-            std::uint8_t m_nReservedUint8; // 0x544            
-            std::uint8_t m_nExtraPressureIterations; // 0x545            
-            std::uint8_t m_nExtraGoalIterations; // 0x546            
-            std::uint8_t m_nExtraIterations; // 0x547            
+            char m_Tris[0x18]; // 0x528
+            std::uint16_t m_nTriCount1; // 0x540
+            std::uint16_t m_nTriCount2; // 0x542
+            std::uint8_t m_nReservedUint8; // 0x544
+            std::uint8_t m_nExtraPressureIterations; // 0x545
+            std::uint8_t m_nExtraGoalIterations; // 0x546
+            std::uint8_t m_nExtraIterations; // 0x547
             // m_SDFRigids has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::physicslib::FeSDFRigid_t> m_SDFRigids;
-            char m_SDFRigids[0x18]; // 0x548            
+            char m_SDFRigids[0x18]; // 0x548
             // m_BoxRigids has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::physicslib::FeBoxRigid_t> m_BoxRigids;
-            char m_BoxRigids[0x18]; // 0x560            
+            char m_BoxRigids[0x18]; // 0x560
             // m_DynNodeVertexSet has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<std::uint8_t> m_DynNodeVertexSet;
-            char m_DynNodeVertexSet[0x18]; // 0x578            
+            char m_DynNodeVertexSet[0x18]; // 0x578
             // m_VertexSetNames has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<std::uint32_t> m_VertexSetNames;
-            char m_VertexSetNames[0x18]; // 0x590            
+            char m_VertexSetNames[0x18]; // 0x590
             // m_RigidColliderPriorities has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::physicslib::FeRigidColliderIndices_t> m_RigidColliderPriorities;
-            char m_RigidColliderPriorities[0x18]; // 0x5a8            
+            char m_RigidColliderPriorities[0x18]; // 0x5a8
             // m_MorphLayers has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::physicslib::FeMorphLayerDepr_t> m_MorphLayers;
-            char m_MorphLayers[0x18]; // 0x5c0            
+            char m_MorphLayers[0x18]; // 0x5c0
             // m_MorphSetData has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<std::uint8_t> m_MorphSetData;
-            char m_MorphSetData[0x18]; // 0x5d8            
+            char m_MorphSetData[0x18]; // 0x5d8
             // m_VertexMaps has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::physicslib::FeVertexMapDesc_t> m_VertexMaps;
-            char m_VertexMaps[0x18]; // 0x5f0            
+            char m_VertexMaps[0x18]; // 0x5f0
             // m_VertexMapValues has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<std::uint8_t> m_VertexMapValues;
-            char m_VertexMapValues[0x18]; // 0x608            
+            char m_VertexMapValues[0x18]; // 0x608
             // m_Effects has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::physicslib::FeEffectDesc_t> m_Effects;
-            char m_Effects[0x18]; // 0x620            
+            char m_Effects[0x18]; // 0x620
             // m_LockToParent has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::physicslib::FeCtrlOffset_t> m_LockToParent;
-            char m_LockToParent[0x18]; // 0x638            
+            char m_LockToParent[0x18]; // 0x638
             // m_LockToGoal has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<std::uint16_t> m_LockToGoal;
-            char m_LockToGoal[0x18]; // 0x650            
+            char m_LockToGoal[0x18]; // 0x650
             // m_SkelParents has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<std::int16_t> m_SkelParents;
-            char m_SkelParents[0x18]; // 0x668            
+            char m_SkelParents[0x18]; // 0x668
             // m_DynNodeWindBases has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::physicslib::FeNodeWindBase_t> m_DynNodeWindBases;
-            char m_DynNodeWindBases[0x18]; // 0x680            
+            char m_DynNodeWindBases[0x18]; // 0x680
             // m_SelfCollisionLayers has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::physicslib::FeModelSelfCollisionLayer_t> m_SelfCollisionLayers;
-            char m_SelfCollisionLayers[0x18]; // 0x698            
-            float m_flInternalPressure; // 0x6b0            
-            float m_flDefaultTimeDilation; // 0x6b4            
-            float m_flWindage; // 0x6b8            
-            float m_flWindDrag; // 0x6bc            
-            float m_flDefaultSurfaceStretch; // 0x6c0            
-            float m_flDefaultThreadStretch; // 0x6c4            
-            float m_flDefaultGravityScale; // 0x6c8            
-            float m_flDefaultVelAirDrag; // 0x6cc            
-            float m_flDefaultExpAirDrag; // 0x6d0            
-            float m_flDefaultVelQuadAirDrag; // 0x6d4            
-            float m_flDefaultExpQuadAirDrag; // 0x6d8            
-            float m_flRodVelocitySmoothRate; // 0x6dc            
-            float m_flQuadVelocitySmoothRate; // 0x6e0            
-            float m_flAddWorldCollisionRadius; // 0x6e4            
-            float m_flDefaultVolumetricSolveAmount; // 0x6e8            
-            float m_flMotionSmoothCDT; // 0x6ec            
-            float m_flLocalDrag1; // 0x6f0            
-            std::uint16_t m_nRodVelocitySmoothIterations; // 0x6f4            
-            std::uint16_t m_nQuadVelocitySmoothIterations; // 0x6f6            
+            char m_SelfCollisionLayers[0x18]; // 0x698
+            float m_flInternalPressure; // 0x6b0
+            float m_flDefaultTimeDilation; // 0x6b4
+            float m_flWindage; // 0x6b8
+            float m_flWindDrag; // 0x6bc
+            float m_flDefaultSurfaceStretch; // 0x6c0
+            float m_flDefaultThreadStretch; // 0x6c4
+            float m_flDefaultGravityScale; // 0x6c8
+            float m_flDefaultVelAirDrag; // 0x6cc
+            float m_flDefaultExpAirDrag; // 0x6d0
+            float m_flDefaultVelQuadAirDrag; // 0x6d4
+            float m_flDefaultExpQuadAirDrag; // 0x6d8
+            float m_flRodVelocitySmoothRate; // 0x6dc
+            float m_flQuadVelocitySmoothRate; // 0x6e0
+            float m_flAddWorldCollisionRadius; // 0x6e4
+            float m_flDefaultVolumetricSolveAmount; // 0x6e8
+            float m_flMotionSmoothCDT; // 0x6ec
+            float m_flLocalDrag1; // 0x6f0
+            std::uint16_t m_nRodVelocitySmoothIterations; // 0x6f4
+            std::uint16_t m_nQuadVelocitySmoothIterations; // 0x6f6
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::physicslib::PhysFeModelDesc_t, m_CtrlHash) == 0x0);
         static_assert(offsetof(source2sdk::physicslib::PhysFeModelDesc_t, m_CtrlName) == 0x18);
         static_assert(offsetof(source2sdk::physicslib::PhysFeModelDesc_t, m_nStaticNodeFlags) == 0x30);
@@ -432,7 +432,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::physicslib::PhysFeModelDesc_t, m_flLocalDrag1) == 0x6f0);
         static_assert(offsetof(source2sdk::physicslib::PhysFeModelDesc_t, m_nRodVelocitySmoothIterations) == 0x6f4);
         static_assert(offsetof(source2sdk::physicslib::PhysFeModelDesc_t, m_nQuadVelocitySmoothIterations) == 0x6f6);
-        
+
         static_assert(sizeof(source2sdk::physicslib::PhysFeModelDesc_t) == 0x6f8);
     };
 };

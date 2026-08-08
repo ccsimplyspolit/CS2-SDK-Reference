@@ -23,13 +23,13 @@ namespace source2sdk
         class CCitadel_Modifier_UltCombo_Self : public source2sdk::client::CCitadelModifier
         {
         public:
-            QAngle m_angles; // 0xc0            
+            QAngle m_angles; // 0xc0
             uint8_t _pad00cc[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_UltCombo_Self because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Modifier_UltCombo_Self) == 0xd0);
     };
 };

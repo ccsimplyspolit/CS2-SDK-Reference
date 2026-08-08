@@ -26,12 +26,12 @@ namespace source2sdk
         public:
             // m_vecSpawnedTowers has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::client::SurvivorsUnitID_t> m_vecSpawnedTowers;
-            char m_vecSpawnedTowers[0x18]; // 0x178            
+            char m_vecSpawnedTowers[0x18]; // 0x178
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSurvivorsSpawnerTower because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CSurvivorsSpawnerTower) == 0x190);
     };
 };

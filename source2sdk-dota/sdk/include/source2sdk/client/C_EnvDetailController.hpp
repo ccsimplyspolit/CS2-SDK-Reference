@@ -25,13 +25,13 @@ namespace source2sdk
         class C_EnvDetailController : public source2sdk::client::C_BaseEntity
         {
         public:
-            float m_flFadeStartDist; // 0x5f0            
-            float m_flFadeEndDist; // 0x5f4            
+            float m_flFadeStartDist; // 0x5f0
+            float m_flFadeEndDist; // 0x5f4
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_EnvDetailController because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_EnvDetailController) == 0x5f8);
     };
 };

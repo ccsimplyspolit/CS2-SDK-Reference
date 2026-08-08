@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x1c10
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "bool m_bWillLeapOff"
         // static metadata: MNetworkVarNames "bool m_bIsLeaping"
         // static metadata: MNetworkVarNames "GameTime_t m_tLeapStartTime"
@@ -30,23 +30,23 @@ namespace source2sdk
         {
         public:
             // metadata: MNetworkEnable
-            bool m_bWillLeapOff; // 0x11d8            
+            bool m_bWillLeapOff; // 0x11d8
             // metadata: MNetworkEnable
-            bool m_bIsLeaping; // 0x11d9            
+            bool m_bIsLeaping; // 0x11d9
             uint8_t _pad11da[0x2]; // 0x11da
             // metadata: MNetworkEnable
-            source2sdk::entity2::GameTime_t m_tLeapStartTime; // 0x11dc            
+            source2sdk::entity2::GameTime_t m_tLeapStartTime; // 0x11dc
             // metadata: MNetworkEnable
-            source2sdk::entity2::GameTime_t m_tLeapOffTime; // 0x11e0            
-            VectorWS m_vLaunchPosition; // 0x11e4            
-            VectorWS m_vLaunchVelocity; // 0x11f0            
-            QAngle m_qLaunchAngle; // 0x11fc            
+            source2sdk::entity2::GameTime_t m_tLeapOffTime; // 0x11e0
+            VectorWS m_vLaunchPosition; // 0x11e4
+            VectorWS m_vLaunchVelocity; // 0x11f0
+            QAngle m_qLaunchAngle; // 0x11fc
             uint8_t _pad1208[0xa08];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_Werewolf_Leap because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Ability_Werewolf_Leap) == 0x1c10);
     };
 };

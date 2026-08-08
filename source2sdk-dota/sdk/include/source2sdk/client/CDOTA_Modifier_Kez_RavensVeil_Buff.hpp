@@ -17,21 +17,21 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a78
+        // Size: 0x1a98
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Kez_RavensVeil_Buff : public source2sdk::client::CDOTA_Modifier_Invisible
         {
         public:
-            float fade_time; // 0x1a68            
-            float buff_duration; // 0x1a6c            
-            std::int32_t bonus_ms; // 0x1a70            
-            uint8_t _pad1a74[0x4];
+            float fade_time; // 0x1a88
+            float buff_duration; // 0x1a8c
+            std::int32_t bonus_ms; // 0x1a90
+            uint8_t _pad1a94[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Kez_RavensVeil_Buff because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Kez_RavensVeil_Buff) == 0x1a78);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Kez_RavensVeil_Buff) == 0x1a98);
     };
 };

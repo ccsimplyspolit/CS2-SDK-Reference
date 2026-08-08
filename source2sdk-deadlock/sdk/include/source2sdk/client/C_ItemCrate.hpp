@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xe40
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkIncludeByName "m_iHealth"
         // static metadata: MNetworkIncludeByName "m_iMaxHealth"
         // static metadata: MNetworkVarNames "int m_eLootType"
@@ -28,13 +28,13 @@ namespace source2sdk
         {
         public:
             // metadata: MNetworkEnable
-            std::int32_t m_eLootType; // 0xe30            
+            std::int32_t m_eLootType; // 0xe30
             uint8_t _pad0e34[0xc];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_ItemCrate because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_ItemCrate) == 0xe40);
     };
 };

@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0xc0
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct ArtyPlayerDef_t : public source2sdk::client::ArtyUnitDef_t
@@ -28,8 +28,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::client::ArtyPlayerDef_t) == 0xc0);
     };
 };

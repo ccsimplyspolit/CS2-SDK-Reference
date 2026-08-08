@@ -17,21 +17,21 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a78
+        // Size: 0x1a98
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Enigma_BlackHoleThinker : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float radius; // 0x1a58            
-            bool m_bFoundFive; // 0x1a5c            
-            bool m_bGrantedKillEater; // 0x1a5d            
-            uint8_t _pad1a5e[0x1a];
+            float radius; // 0x1a78
+            bool m_bFoundFive; // 0x1a7c
+            bool m_bGrantedKillEater; // 0x1a7d
+            uint8_t _pad1a7e[0x1a];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Enigma_BlackHoleThinker because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Enigma_BlackHoleThinker) == 0x1a78);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Enigma_BlackHoleThinker) == 0x1a98);
     };
 };

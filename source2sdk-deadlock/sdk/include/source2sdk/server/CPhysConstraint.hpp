@@ -40,26 +40,26 @@ namespace source2sdk
         {
         public:
             // metadata: MPhysPtr
-            source2sdk::vphysics2::IPhysicsJoint* m_hJoint; // 0x4a0            
-            CUtlSymbolLarge m_nameAttach1; // 0x4a8            
-            CUtlSymbolLarge m_nameAttach2; // 0x4b0            
+            source2sdk::vphysics2::IPhysicsJoint* m_hJoint; // 0x4a0
+            CUtlSymbolLarge m_nameAttach1; // 0x4a8
+            CUtlSymbolLarge m_nameAttach2; // 0x4b0
             // m_hAttach1 has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hAttach1;
-            char m_hAttach1[0x4]; // 0x4b8            
+            char m_hAttach1[0x4]; // 0x4b8
             // m_hAttach2 has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hAttach2;
-            char m_hAttach2[0x4]; // 0x4bc            
-            CUtlSymbolLarge m_nameAttachment1; // 0x4c0            
-            CUtlSymbolLarge m_nameAttachment2; // 0x4c8            
-            CUtlSymbolLarge m_breakSound; // 0x4d0            
-            float m_forceLimit; // 0x4d8            
-            float m_torqueLimit; // 0x4dc            
-            float m_minTeleportDistance; // 0x4e0            
-            bool m_bSnapObjectPositions; // 0x4e4            
-            bool m_bTreatEntity1AsInfiniteMass; // 0x4e5            
+            char m_hAttach2[0x4]; // 0x4bc
+            CUtlSymbolLarge m_nameAttachment1; // 0x4c0
+            CUtlSymbolLarge m_nameAttachment2; // 0x4c8
+            CUtlSymbolLarge m_breakSound; // 0x4d0
+            float m_forceLimit; // 0x4d8
+            float m_torqueLimit; // 0x4dc
+            float m_minTeleportDistance; // 0x4e0
+            bool m_bSnapObjectPositions; // 0x4e4
+            bool m_bTreatEntity1AsInfiniteMass; // 0x4e5
             uint8_t _pad04e6[0x2]; // 0x4e6
-            source2sdk::entity2::CEntityIOOutput m_OnBreak; // 0x4e8            
-            
+            source2sdk::entity2::CEntityIOOutput m_OnBreak; // 0x4e8
+
             // Datamap fields:
             // void InputBreak; // 0x0
             // void InputOnBreak; // 0x0
@@ -75,9 +75,9 @@ namespace source2sdk
             // float InputSetMotorTargetVelocity; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPhysConstraint because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CPhysConstraint) == 0x500);
     };
 };

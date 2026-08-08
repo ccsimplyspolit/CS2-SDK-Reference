@@ -28,7 +28,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x1a60
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "bool m_bDamagedAnyHero"
         // static metadata: MNetworkVarNames "bool m_bActive"
         // static metadata: MNetworkVarNames "bool m_bStartedOnGround"
@@ -45,38 +45,38 @@ namespace source2sdk
         public:
             // m_vHitEnts has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::client::C_BaseEntity>> m_vHitEnts;
-            char m_vHitEnts[0x18]; // 0x11d8            
+            char m_vHitEnts[0x18]; // 0x11d8
             uint8_t _pad11f0[0x488]; // 0x11f0
             // metadata: MNetworkEnable
-            bool m_bDamagedAnyHero; // 0x1678            
+            bool m_bDamagedAnyHero; // 0x1678
             // metadata: MNetworkEnable
-            bool m_bActive; // 0x1679            
+            bool m_bActive; // 0x1679
             // metadata: MNetworkEnable
-            bool m_bStartedOnGround; // 0x167a            
+            bool m_bStartedOnGround; // 0x167a
             // metadata: MNetworkEnable
-            bool m_bIsBonusCast; // 0x167b            
+            bool m_bIsBonusCast; // 0x167b
             // metadata: MNetworkEnable
-            Vector m_vStartPosition; // 0x167c            
+            Vector m_vStartPosition; // 0x167c
             // metadata: MNetworkEnable
-            QAngle m_qCurrentAngles; // 0x1688            
+            QAngle m_qCurrentAngles; // 0x1688
             uint8_t _pad1694[0x4]; // 0x1694
             // metadata: MNetworkEnable
-            source2sdk::client::CCitadelAutoScaledTime m_flDepartureTime; // 0x1698            
+            source2sdk::client::CCitadelAutoScaledTime m_flDepartureTime; // 0x1698
             // metadata: MNetworkEnable
-            source2sdk::client::CCitadelAutoScaledTime m_flArrivalTime; // 0x16b0            
-            Vector m_vLastKnownSafePos; // 0x16c8            
-            bool m_bMadeSlashParticle; // 0x16d4            
+            source2sdk::client::CCitadelAutoScaledTime m_flArrivalTime; // 0x16b0
+            Vector m_vLastKnownSafePos; // 0x16c8
+            bool m_bMadeSlashParticle; // 0x16d4
             uint8_t _pad16d5[0x3]; // 0x16d5
             // metadata: MNetworkEnable
-            source2sdk::entity2::GameTime_t m_flDrainSuppressEndTime; // 0x16d8            
+            source2sdk::entity2::GameTime_t m_flDrainSuppressEndTime; // 0x16d8
             // metadata: MNetworkEnable
-            source2sdk::entity2::GameTime_t m_flRecastWindowEnd; // 0x16dc            
+            source2sdk::entity2::GameTime_t m_flRecastWindowEnd; // 0x16dc
             uint8_t _pad16e0[0x380];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_Shiv_KillingBlow because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Ability_Shiv_KillingBlow) == 0x1a60);
     };
 };

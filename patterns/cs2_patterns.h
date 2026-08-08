@@ -2,9 +2,9 @@
 //    CS2 signature patterns                                        //
 //    PATTERNS: 141                                                 //
 //    All 140 byte-patterns resolve UNIQUELY + 1 export FOUND       //
-//    against build 14172 / the installed game.                     //
+//    against build 14174 / the installed game.                     //
 //    Verify: python tools/verify_patterns.py                       //
-//    LAST CHECKED: 2026-07-22 (present re-derived for 14172)       //
+//    LAST CHECKED: 2026-08-08 (all patterns re-verified for 14174) //
 // -------------------------------------------------------------- //
 #pragma once
 

@@ -23,12 +23,12 @@ namespace source2sdk
         class CFilterModel : public source2sdk::client::CBaseFilter
         {
         public:
-            CUtlSymbolLarge m_iFilterModel; // 0x628            
+            CUtlSymbolLarge m_iFilterModel; // 0x628
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CFilterModel because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CFilterModel) == 0x630);
     };
 };

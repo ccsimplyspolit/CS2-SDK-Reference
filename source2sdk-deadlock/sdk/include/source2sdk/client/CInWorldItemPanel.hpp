@@ -33,14 +33,14 @@ namespace source2sdk
             // metadata: MNotSaved
             // m_hTrackedEntity has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::C_BaseEntity> m_hTrackedEntity;
-            char m_hTrackedEntity[0x4]; // 0xc00            
-            std::int32_t m_nTrackedEntity; // 0xc04            
+            char m_hTrackedEntity[0x4]; // 0xc00
+            std::int32_t m_nTrackedEntity; // 0xc04
             uint8_t _pad0c08[0x8];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CInWorldItemPanel because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CInWorldItemPanel) == 0xc10);
     };
 };

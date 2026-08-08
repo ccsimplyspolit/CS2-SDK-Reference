@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xa48
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "GameTime_t m_timeLaunch"
         // static metadata: MNetworkVarNames "GameTime_t m_flAttackableTime"
         // static metadata: MNetworkVarNames "GameTime_t m_flEndAttackableTime"
@@ -32,22 +32,22 @@ namespace source2sdk
             uint8_t _pad09a8[0x60]; // 0x9a8
             // metadata: MNetworkEnable
             // metadata: MNotSaved
-            source2sdk::entity2::GameTime_t m_timeLaunch; // 0xa08            
+            source2sdk::entity2::GameTime_t m_timeLaunch; // 0xa08
             // metadata: MNetworkEnable
             // metadata: MNotSaved
-            source2sdk::entity2::GameTime_t m_flAttackableTime; // 0xa0c            
+            source2sdk::entity2::GameTime_t m_flAttackableTime; // 0xa0c
             // metadata: MNetworkEnable
             // metadata: MNotSaved
-            source2sdk::entity2::GameTime_t m_flEndAttackableTime; // 0xa10            
+            source2sdk::entity2::GameTime_t m_flEndAttackableTime; // 0xa10
             // metadata: MNetworkEnable
             // metadata: MNotSaved
-            std::int32_t m_nLaunchNum; // 0xa14            
+            std::int32_t m_nLaunchNum; // 0xa14
             uint8_t _pad0a18[0x30];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CItemXP because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CItemXP) == 0xa48);
     };
 };

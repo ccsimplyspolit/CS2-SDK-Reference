@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x4d0
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "string_t m_worldName"
         // static metadata: MNetworkVarNames "string_t m_layerName"
         // static metadata: MNetworkVarNames "bool m_bWorldLayerVisible"
@@ -29,22 +29,22 @@ namespace source2sdk
         class CInfoWorldLayer : public source2sdk::server::CBaseEntity
         {
         public:
-            source2sdk::entity2::CEntityIOOutput m_pOutputOnEntitiesSpawned; // 0x4a0            
+            source2sdk::entity2::CEntityIOOutput m_pOutputOnEntitiesSpawned; // 0x4a0
             // metadata: MNetworkEnable
             // metadata: MNotSaved
-            CUtlSymbolLarge m_worldName; // 0x4b8            
+            CUtlSymbolLarge m_worldName; // 0x4b8
             // metadata: MNetworkEnable
             // metadata: MNotSaved
-            CUtlSymbolLarge m_layerName; // 0x4c0            
+            CUtlSymbolLarge m_layerName; // 0x4c0
             // metadata: MNetworkEnable
-            bool m_bWorldLayerVisible; // 0x4c8            
+            bool m_bWorldLayerVisible; // 0x4c8
             // metadata: MNetworkEnable
-            bool m_bEntitiesSpawned; // 0x4c9            
-            bool m_bCreateAsChildSpawnGroup; // 0x4ca            
+            bool m_bEntitiesSpawned; // 0x4c9
+            bool m_bCreateAsChildSpawnGroup; // 0x4ca
             uint8_t _pad04cb[0x1]; // 0x4cb
             // metadata: MNotSaved
-            std::uint32_t m_hLayerSpawnGroup; // 0x4cc            
-            
+            std::uint32_t m_hLayerSpawnGroup; // 0x4cc
+
             // Datamap fields:
             // void ShowWorldLayer; // 0x0
             // void HideWorldLayer; // 0x0
@@ -54,9 +54,9 @@ namespace source2sdk
             // void HideWorldLayerAndDestroyEntities; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CInfoWorldLayer because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CInfoWorldLayer) == 0x4d0);
     };
 };

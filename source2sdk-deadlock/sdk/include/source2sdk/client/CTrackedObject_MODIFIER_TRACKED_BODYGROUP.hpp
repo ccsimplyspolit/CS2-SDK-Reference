@@ -20,18 +20,18 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x18
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CTrackedObject_MODIFIER_TRACKED_BODYGROUP : public source2sdk::client::IModifierTrackedObject
         {
         public:
-            source2sdk::client::ModifierTrackedBodyGroup_t m_objectData; // 0x8            
+            source2sdk::client::ModifierTrackedBodyGroup_t m_objectData; // 0x8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CTrackedObject_MODIFIER_TRACKED_BODYGROUP because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CTrackedObject_MODIFIER_TRACKED_BODYGROUP) == 0x18);
     };
 };

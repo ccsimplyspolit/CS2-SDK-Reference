@@ -26,15 +26,15 @@ namespace source2sdk
             uint8_t _pad0000[0x8]; // 0x0
             // m_flProbabilityElements has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<float> m_flProbabilityElements;
-            char m_flProbabilityElements[0x18]; // 0x8            
-            float m_flProbability; // 0x20            
+            char m_flProbabilityElements[0x18]; // 0x8
+            float m_flProbability; // 0x20
             uint8_t _pad0024[0x4];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::CDOTAMusicProbabilityEntry, m_flProbabilityElements) == 0x8);
         static_assert(offsetof(source2sdk::server::CDOTAMusicProbabilityEntry, m_flProbability) == 0x20);
-        
+
         static_assert(sizeof(source2sdk::server::CDOTAMusicProbabilityEntry) == 0x28);
     };
 };

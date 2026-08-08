@@ -30,19 +30,19 @@ namespace source2sdk
         class CMultiLightProxy : public source2sdk::server::CLogicalEntity
         {
         public:
-            CUtlSymbolLarge m_iszLightNameFilter; // 0x4a0            
-            CUtlSymbolLarge m_iszLightClassFilter; // 0x4a8            
-            float m_flLightRadiusFilter; // 0x4b0            
-            float m_flBrightnessDelta; // 0x4b4            
-            bool m_bPerformScreenFade; // 0x4b8            
+            CUtlSymbolLarge m_iszLightNameFilter; // 0x4a0
+            CUtlSymbolLarge m_iszLightClassFilter; // 0x4a8
+            float m_flLightRadiusFilter; // 0x4b0
+            float m_flBrightnessDelta; // 0x4b4
+            bool m_bPerformScreenFade; // 0x4b8
             uint8_t _pad04b9[0x3]; // 0x4b9
-            float m_flTargetBrightnessMultiplier; // 0x4bc            
-            float m_flCurrentBrightnessMultiplier; // 0x4c0            
+            float m_flTargetBrightnessMultiplier; // 0x4bc
+            float m_flCurrentBrightnessMultiplier; // 0x4c0
             uint8_t _pad04c4[0x4]; // 0x4c4
             // m_vecLights has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::server::CLightEntity>> m_vecLights;
-            char m_vecLights[0x18]; // 0x4c8            
-            
+            char m_vecLights[0x18]; // 0x4c8
+
             // Datamap fields:
             // float InputFlickerLights; // 0x0
             // float InputDisableLights; // 0x0
@@ -52,9 +52,9 @@ namespace source2sdk
             // void CMultiLightProxyApproachBrightnessThink; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CMultiLightProxy because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CMultiLightProxy) == 0x4e0);
     };
 };

@@ -27,17 +27,17 @@ namespace source2sdk
             uint8_t _pad0000[0x8]; // 0x0
             // m_vecItemSlots has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVectorEmbeddedNetworkVar<source2sdk::server::QuickBuySlot_t> m_vecItemSlots;
-            char m_vecItemSlots[0x68]; // 0x8            
-            std::int32_t m_nTotalSlotCountIncludingOverflow; // 0x70            
+            char m_vecItemSlots[0x68]; // 0x8
+            std::int32_t m_nTotalSlotCountIncludingOverflow; // 0x70
             uint8_t _pad0074[0x4]; // 0x74
-            source2sdk::server::QuickBuySlot_t m_stickyItemSlot; // 0x78            
+            source2sdk::server::QuickBuySlot_t m_stickyItemSlot; // 0x78
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::InventoryQuickBuyState_t, m_vecItemSlots) == 0x8);
         static_assert(offsetof(source2sdk::server::InventoryQuickBuyState_t, m_nTotalSlotCountIncludingOverflow) == 0x70);
         static_assert(offsetof(source2sdk::server::InventoryQuickBuyState_t, m_stickyItemSlot) == 0x78);
-        
+
         static_assert(sizeof(source2sdk::server::InventoryQuickBuyState_t) == 0xd0);
     };
 };

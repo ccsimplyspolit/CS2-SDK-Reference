@@ -21,7 +21,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x850
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CCitadel_Modifier_PatronsBlessingEnemyTrackerVData : public source2sdk::server::CCitadelModifierVData
@@ -30,18 +30,18 @@ namespace source2sdk
             // metadata: MPropertyStartGroup "Modifiers"
             // m_ProcNotificationModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEmbeddedSubclass<source2sdk::server::CCitadelModifier> m_ProcNotificationModifier;
-            char m_ProcNotificationModifier[0x10]; // 0x750            
+            char m_ProcNotificationModifier[0x10]; // 0x750
             // metadata: MPropertyGroupName "Visuals"
             // m_HealParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_HealParticle;
-            char m_HealParticle[0xe0]; // 0x760            
+            char m_HealParticle[0xe0]; // 0x760
             // metadata: MPropertyGroupName "Sounds"
-            CSoundEventName m_strHealSound; // 0x840            
+            CSoundEventName m_strHealSound; // 0x840
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_PatronsBlessingEnemyTrackerVData because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_PatronsBlessingEnemyTrackerVData) == 0x850);
     };
 };

@@ -21,19 +21,19 @@ namespace source2sdk
         // Size: 0x348
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_DecayClampCount : public source2sdk::particles::CParticleFunctionOperator
         {
         public:
             // metadata: MPropertyFriendlyName "Maximum Count"
-            source2sdk::particleslib::CParticleCollectionFloatInput m_nCount; // 0x1d8            
+            source2sdk::particleslib::CParticleCollectionFloatInput m_nCount; // 0x1d8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_DecayClampCount because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_DecayClampCount) == 0x348);
     };
 };

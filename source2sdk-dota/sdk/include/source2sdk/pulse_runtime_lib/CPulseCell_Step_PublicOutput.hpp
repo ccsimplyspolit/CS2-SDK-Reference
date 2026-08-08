@@ -21,19 +21,19 @@ namespace source2sdk
         // Size: 0x50
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CPulseCell_Step_PublicOutput : public source2sdk::pulse_runtime_lib::CPulseCell_BaseFlow
         {
         public:
-            source2sdk::pulse_runtime_lib::PulseRuntimeOutputIndex_t m_OutputIndex; // 0x48            
+            source2sdk::pulse_runtime_lib::PulseRuntimeOutputIndex_t m_OutputIndex; // 0x48
             uint8_t _pad004c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPulseCell_Step_PublicOutput because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::pulse_runtime_lib::CPulseCell_Step_PublicOutput) == 0x50);
     };
 };

@@ -27,18 +27,18 @@ namespace source2sdk
         // Size: 0xa90
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MEntityAllowsPortraitWorldSpawn
         #pragma pack(push, 1)
         class C_LightEntity : public source2sdk::client::C_BaseModelEntity
         {
         public:
-            source2sdk::client::CLightComponent* m_CLightComponent; // 0xa88            
+            source2sdk::client::CLightComponent* m_CLightComponent; // 0xa88
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_LightEntity because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_LightEntity) == 0xa90);
     };
 };

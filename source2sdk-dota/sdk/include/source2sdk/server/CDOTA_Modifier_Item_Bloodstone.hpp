@@ -17,25 +17,25 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a78
+        // Size: 0x1a98
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Item_Bloodstone : public source2sdk::server::CDOTA_Buff_Item
         {
         public:
-            std::int32_t bonus_health; // 0x1a58            
-            std::int32_t bonus_mana; // 0x1a5c            
-            float bonus_hp_regen; // 0x1a60            
-            std::int32_t bonus_intellect; // 0x1a64            
-            float spell_lifesteal; // 0x1a68            
-            float spell_lifesteal_while_active; // 0x1a6c            
-            float aura_radius; // 0x1a70            
-            uint8_t _pad1a74[0x4];
+            std::int32_t bonus_health; // 0x1a78
+            std::int32_t bonus_mana; // 0x1a7c
+            float bonus_hp_regen; // 0x1a80
+            std::int32_t bonus_intellect; // 0x1a84
+            float spell_lifesteal; // 0x1a88
+            float spell_lifesteal_while_active; // 0x1a8c
+            float aura_radius; // 0x1a90
+            uint8_t _pad1a94[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Item_Bloodstone because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Item_Bloodstone) == 0x1a78);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Item_Bloodstone) == 0x1a98);
     };
 };

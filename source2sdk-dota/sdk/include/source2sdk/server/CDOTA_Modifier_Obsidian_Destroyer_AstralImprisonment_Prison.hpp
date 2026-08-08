@@ -18,22 +18,22 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a68
+        // Size: 0x1a88
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Obsidian_Destroyer_AstralImprisonment_Prison : public source2sdk::client::CDOTA_Buff
         {
         public:
-            std::int32_t allied_movement_speed_pct; // 0x1a58            
-            bool m_bAllowMovement; // 0x1a5c            
-            uint8_t _pad1a5d[0x3]; // 0x1a5d
-            float damage_mult; // 0x1a60            
-            source2sdk::client::ParticleIndex_t m_nDebuffImmuneEffect; // 0x1a64            
+            std::int32_t allied_movement_speed_pct; // 0x1a78
+            bool m_bAllowMovement; // 0x1a7c
+            uint8_t _pad1a7d[0x3]; // 0x1a7d
+            float damage_mult; // 0x1a80
+            source2sdk::client::ParticleIndex_t m_nDebuffImmuneEffect; // 0x1a84
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Obsidian_Destroyer_AstralImprisonment_Prison because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Obsidian_Destroyer_AstralImprisonment_Prison) == 0x1a68);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Obsidian_Destroyer_AstralImprisonment_Prison) == 0x1a88);
     };
 };

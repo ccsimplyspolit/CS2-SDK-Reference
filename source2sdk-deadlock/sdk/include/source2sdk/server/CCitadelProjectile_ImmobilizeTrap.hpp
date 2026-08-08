@@ -24,16 +24,16 @@ namespace source2sdk
         class CCitadelProjectile_ImmobilizeTrap : public source2sdk::server::CCitadelProjectile
         {
         public:
-            source2sdk::entity2::GameTime_t m_flStartTime; // 0x860            
-            Vector m_vecStartPos; // 0x864            
-            Vector m_vecEndPos; // 0x870            
-            source2sdk::entity2::GameTime_t m_flProjectileLandTime; // 0x87c            
+            source2sdk::entity2::GameTime_t m_flStartTime; // 0x860
+            Vector m_vecStartPos; // 0x864
+            Vector m_vecEndPos; // 0x870
+            source2sdk::entity2::GameTime_t m_flProjectileLandTime; // 0x87c
             uint8_t _pad0880[0x720];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadelProjectile_ImmobilizeTrap because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadelProjectile_ImmobilizeTrap) == 0xfa0);
     };
 };

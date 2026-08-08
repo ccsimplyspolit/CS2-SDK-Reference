@@ -23,13 +23,13 @@ namespace source2sdk
         struct EventServerPostSimulate_t : public source2sdk::client::EventSimulate_t
         {
         public:
-            bool m_bLastTickBeforeClientUpdate; // 0x30            
+            bool m_bLastTickBeforeClientUpdate; // 0x30
             uint8_t _pad0031[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in EventServerPostSimulate_t because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::EventServerPostSimulate_t) == 0x38);
     };
 };

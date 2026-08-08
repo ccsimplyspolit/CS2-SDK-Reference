@@ -17,19 +17,19 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a68
+        // Size: 0x1a88
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Slark_EssenceShift_Debuff : public source2sdk::server::CDOTA_Modifier_Stacking_Multiple_Buff_Base
         {
         public:
-            std::int32_t stat_loss; // 0x1a60            
-            uint8_t _pad1a64[0x4];
+            std::int32_t stat_loss; // 0x1a80
+            uint8_t _pad1a84[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Slark_EssenceShift_Debuff because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Slark_EssenceShift_Debuff) == 0x1a68);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Slark_EssenceShift_Debuff) == 0x1a88);
     };
 };

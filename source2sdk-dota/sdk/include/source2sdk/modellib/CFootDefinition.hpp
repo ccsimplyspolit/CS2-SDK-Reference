@@ -18,24 +18,24 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x40
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CFootDefinition
         {
         public:
-            CUtlString m_name; // 0x0            
-            CUtlString m_ankleBoneName; // 0x8            
-            CUtlString m_toeBoneName; // 0x10            
-            Vector m_vBallOffset; // 0x18            
-            Vector m_vHeelOffset; // 0x24            
-            float m_flFootLength; // 0x30            
-            float m_flBindPoseDirectionMS; // 0x34            
-            float m_flTraceHeight; // 0x38            
-            float m_flTraceRadius; // 0x3c            
+            CUtlString m_name; // 0x0
+            CUtlString m_ankleBoneName; // 0x8
+            CUtlString m_toeBoneName; // 0x10
+            Vector m_vBallOffset; // 0x18
+            Vector m_vHeelOffset; // 0x24
+            float m_flFootLength; // 0x30
+            float m_flBindPoseDirectionMS; // 0x34
+            float m_flTraceHeight; // 0x38
+            float m_flTraceRadius; // 0x3c
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::modellib::CFootDefinition, m_name) == 0x0);
         static_assert(offsetof(source2sdk::modellib::CFootDefinition, m_ankleBoneName) == 0x8);
         static_assert(offsetof(source2sdk::modellib::CFootDefinition, m_toeBoneName) == 0x10);
@@ -45,7 +45,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::modellib::CFootDefinition, m_flBindPoseDirectionMS) == 0x34);
         static_assert(offsetof(source2sdk::modellib::CFootDefinition, m_flTraceHeight) == 0x38);
         static_assert(offsetof(source2sdk::modellib::CFootDefinition, m_flTraceRadius) == 0x3c);
-        
+
         static_assert(sizeof(source2sdk::modellib::CFootDefinition) == 0x40);
     };
 };

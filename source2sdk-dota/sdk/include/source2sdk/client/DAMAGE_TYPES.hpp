@@ -16,7 +16,7 @@ namespace source2sdk
         // Enumerator count: 7
         // Alignment: 4
         // Size: 0x4
-        // 
+        //
         // metadata: MEnumFlagsWithOverlappingBits
         enum class DAMAGE_TYPES : std::uint32_t
         {

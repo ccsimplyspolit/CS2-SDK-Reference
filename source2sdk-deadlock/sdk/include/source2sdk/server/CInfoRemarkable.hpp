@@ -24,14 +24,14 @@ namespace source2sdk
         {
         public:
             // metadata: MNotSaved
-            std::int32_t m_iTimesRemarkedUpon; // 0x4a0            
+            std::int32_t m_iTimesRemarkedUpon; // 0x4a0
             uint8_t _pad04a4[0x4]; // 0x4a4
-            CUtlSymbolLarge m_szRemarkContext; // 0x4a8            
+            CUtlSymbolLarge m_szRemarkContext; // 0x4a8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CInfoRemarkable because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CInfoRemarkable) == 0x4b0);
     };
 };

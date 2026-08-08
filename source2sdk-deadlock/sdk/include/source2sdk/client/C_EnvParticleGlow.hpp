@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xf70
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "float32 m_flAlphaScale"
         // static metadata: MNetworkVarNames "float32 m_flRadiusScale"
         // static metadata: MNetworkVarNames "float32 m_flSelfIllumScale"
@@ -31,27 +31,27 @@ namespace source2sdk
         {
         public:
             // metadata: MNetworkEnable
-            float m_flAlphaScale; // 0xf58            
+            float m_flAlphaScale; // 0xf58
             // metadata: MNetworkEnable
-            float m_flRadiusScale; // 0xf5c            
+            float m_flRadiusScale; // 0xf5c
             // metadata: MNetworkEnable
-            float m_flSelfIllumScale; // 0xf60            
+            float m_flSelfIllumScale; // 0xf60
             // metadata: MNetworkEnable
-            Color m_ColorTint; // 0xf64            
+            Color m_ColorTint; // 0xf64
             // metadata: MNetworkEnable
             // m_hTextureOverride has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CStrongHandle<source2sdk::resourcesystem::InfoForResourceTypeCTextureBase> m_hTextureOverride;
-            char m_hTextureOverride[0x8]; // 0xf68            
-            
+            char m_hTextureOverride[0x8]; // 0xf68
+
             // Datamap fields:
             // float InputSetScale; // 0x0
             // float InputSetAlphaScale; // 0x0
             // Color InputSetColorTint; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_EnvParticleGlow because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_EnvParticleGlow) == 0xf70);
     };
 };

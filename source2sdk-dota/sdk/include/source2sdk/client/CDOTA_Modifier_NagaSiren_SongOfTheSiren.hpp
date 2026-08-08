@@ -17,21 +17,21 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a68
+        // Size: 0x1a88
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_NagaSiren_SongOfTheSiren : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float m_flSongDuration; // 0x1a58            
-            float m_flSongStartTime; // 0x1a5c            
-            float mana_pct; // 0x1a60            
-            float animation_rate; // 0x1a64            
+            float m_flSongDuration; // 0x1a78
+            float m_flSongStartTime; // 0x1a7c
+            float mana_pct; // 0x1a80
+            float animation_rate; // 0x1a84
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_NagaSiren_SongOfTheSiren because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_NagaSiren_SongOfTheSiren) == 0x1a68);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_NagaSiren_SongOfTheSiren) == 0x1a88);
     };
 };

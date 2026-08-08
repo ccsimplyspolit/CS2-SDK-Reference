@@ -21,7 +21,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x1928
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CCitadel_Ability_Gravity_Lasso_VData : public source2sdk::server::CitadelAbilityVData
@@ -30,21 +30,21 @@ namespace source2sdk
             // metadata: MPropertyStartGroup "Modifiers"
             // m_GravityLassoSelf has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEmbeddedSubclass<source2sdk::server::CBaseModifier> m_GravityLassoSelf;
-            char m_GravityLassoSelf[0x10]; // 0x1818            
+            char m_GravityLassoSelf[0x10]; // 0x1818
             // m_GravityLassoTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEmbeddedSubclass<source2sdk::server::CBaseModifier> m_GravityLassoTarget;
-            char m_GravityLassoTarget[0x10]; // 0x1828            
+            char m_GravityLassoTarget[0x10]; // 0x1828
             // metadata: MPropertyStartGroup "Sounds"
-            CSoundEventName m_TargetWarningSound; // 0x1838            
+            CSoundEventName m_TargetWarningSound; // 0x1838
             // metadata: MPropertyStartGroup "Visuals"
             // m_PreCastParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_PreCastParticle;
-            char m_PreCastParticle[0xe0]; // 0x1848            
+            char m_PreCastParticle[0xe0]; // 0x1848
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_Gravity_Lasso_VData because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Ability_Gravity_Lasso_VData) == 0x1928);
     };
 };

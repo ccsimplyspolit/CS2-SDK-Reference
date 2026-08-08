@@ -2,7 +2,7 @@
 
 Каждый `dw*`-символ, который экспортит CS2, что за ним лежит и как от
 него дойти до полезного. Значения ниже — из `offsets/latest/offsets.json`
-на момент написания (билд 14170, 2026-07-15); всегда сверяйся с JSON.
+на момент написания (билд 14174, 2026-08-04); всегда сверяйся с JSON.
 
 ## Сам JSON
 
@@ -12,11 +12,11 @@
 ```json
 {
   "client.dll": {
-    "dwLocalPlayerController": 37219232,
-    "dwGameRules":             37370328,
-    "dwLocalPlayerPawn":       37372472,
-    "dwCSGOInput":             37459440,
-    "dwGlobalVars":            34143584
+    "dwLocalPlayerController": 37223296,
+    "dwGameRules":             37374424,
+    "dwLocalPlayerPawn":       37376568,
+    "dwCSGOInput":             37463952,
+    "dwGlobalVars":            34147680
   },
   "engine2.dll": {
     "dwNetworkGameClient":            9491632,
@@ -25,11 +25,11 @@
 }
 ```
 
-В hex: `hex(37219232) == '0x237FB70'`.
+В hex: `hex(37223296) == '0x237FB80'`.
 
 ## Что за что отвечает
 
-### `client.dll.dwLocalPlayerController` — `0x237FB70`
+### `client.dll.dwLocalPlayerController` — `0x237FB80`
 
 `[client.dll + dwLocalPlayerController]` — это **указатель** на локальный
 `CCSPlayerController*`. Читай `qword` по этому адресу; если ненулевой —
@@ -62,7 +62,7 @@ per-life entity-state (позиция, оружие, HP). Пешку можно 
 `CGlobalVarsBase*` — время игры, frame time, tick count. Любая
 tick-based логика entity читает это.
 
-### `client.dll.dwEntityList` / `dwGameEntitySystem` — `0x254FE70`
+### `client.dll.dwEntityList` / `dwGameEntitySystem` — `0x254FE80`
 
 Корень entity-list. Отсюда можно пройти по всем networked-entity в
 мире. В текущих билдах оба символа = одно значение — алиасы.

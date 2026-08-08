@@ -24,19 +24,19 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0000[0x68]; // 0x0
-            source2sdk::server::CDOTABehaviorMoveTo m_MoveTo; // 0x68            
-            VectorWS m_vPosition; // 0x150            
-            bool m_bDirectional; // 0x15c            
-            bool m_bRelative; // 0x15d            
+            source2sdk::server::CDOTABehaviorMoveTo m_MoveTo; // 0x68
+            VectorWS m_vPosition; // 0x150
+            bool m_bDirectional; // 0x15c
+            bool m_bRelative; // 0x15d
             uint8_t _pad015e[0x2];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::CDOTABehaviorCommandMoveToPosition, m_MoveTo) == 0x68);
         static_assert(offsetof(source2sdk::server::CDOTABehaviorCommandMoveToPosition, m_vPosition) == 0x150);
         static_assert(offsetof(source2sdk::server::CDOTABehaviorCommandMoveToPosition, m_bDirectional) == 0x15c);
         static_assert(offsetof(source2sdk::server::CDOTABehaviorCommandMoveToPosition, m_bRelative) == 0x15d);
-        
+
         static_assert(sizeof(source2sdk::server::CDOTABehaviorCommandMoveToPosition) == 0x160);
     };
 };

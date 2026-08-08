@@ -17,21 +17,21 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a80
+        // Size: 0x1aa0
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_StormSpirit_ElectricVortex_Pull : public source2sdk::client::CDOTA_Buff
         {
         public:
-            VectorWS m_vDestination; // 0x1a58            
-            std::int32_t electric_vortex_pull_distance; // 0x1a64            
-            float electric_vortex_pull_tether_range; // 0x1a68            
-            uint8_t _pad1a6c[0x14];
+            VectorWS m_vDestination; // 0x1a78
+            std::int32_t electric_vortex_pull_distance; // 0x1a84
+            float electric_vortex_pull_tether_range; // 0x1a88
+            uint8_t _pad1a8c[0x14];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_StormSpirit_ElectricVortex_Pull because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_StormSpirit_ElectricVortex_Pull) == 0x1a80);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_StormSpirit_ElectricVortex_Pull) == 0x1aa0);
     };
 };

@@ -23,16 +23,16 @@ namespace source2sdk
         struct DamageShareEvent_t
         {
         public:
-            float m_flOriginalDamage; // 0x0            
-            float m_flTakenDamage; // 0x4            
-            source2sdk::client::PlayerID_t m_nPlayerID; // 0x8            
+            float m_flOriginalDamage; // 0x0
+            float m_flTakenDamage; // 0x4
+            source2sdk::client::PlayerID_t m_nPlayerID; // 0x8
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::DamageShareEvent_t, m_flOriginalDamage) == 0x0);
         static_assert(offsetof(source2sdk::server::DamageShareEvent_t, m_flTakenDamage) == 0x4);
         static_assert(offsetof(source2sdk::server::DamageShareEvent_t, m_nPlayerID) == 0x8);
-        
+
         static_assert(sizeof(source2sdk::server::DamageShareEvent_t) == 0xc);
     };
 };

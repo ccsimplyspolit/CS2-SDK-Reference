@@ -20,23 +20,23 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xa08
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CCitadel_Pickup_Currency_VData : public source2sdk::client::CCitadel_Pickup_VData
         {
         public:
             // metadata: MPropertyStartGroup "Currency"
-            source2sdk::client::ECurrencyType m_Currency; // 0x9f0            
-            std::int32_t m_nCurrencyAmount; // 0x9f4            
-            bool m_bPlayCurrencySound; // 0x9f8            
+            source2sdk::client::ECurrencyType m_Currency; // 0x9f0
+            std::int32_t m_nCurrencyAmount; // 0x9f4
+            bool m_bPlayCurrencySound; // 0x9f8
             uint8_t _pad09f9[0x7]; // 0x9f9
-            CUtlString m_strLabelName; // 0xa00            
+            CUtlString m_strLabelName; // 0xa00
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Pickup_Currency_VData because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Pickup_Currency_VData) == 0xa08);
     };
 };

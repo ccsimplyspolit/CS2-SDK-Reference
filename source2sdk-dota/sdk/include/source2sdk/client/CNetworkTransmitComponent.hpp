@@ -19,20 +19,20 @@ namespace source2sdk
         // Size: 0x1d0
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CNetworkTransmitComponent
         {
         public:
             uint8_t _pad0000[0x184]; // 0x0
-            std::uint8_t m_nTransmitStateOwnedCounter; // 0x184            
+            std::uint8_t m_nTransmitStateOwnedCounter; // 0x184
             uint8_t _pad0185[0x4b];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::CNetworkTransmitComponent, m_nTransmitStateOwnedCounter) == 0x184);
-        
+
         static_assert(sizeof(source2sdk::client::CNetworkTransmitComponent) == 0x1d0);
     };
 };

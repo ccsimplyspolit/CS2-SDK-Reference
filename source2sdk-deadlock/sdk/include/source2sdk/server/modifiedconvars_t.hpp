@@ -23,16 +23,16 @@ namespace source2sdk
         struct modifiedconvars_t
         {
         public:
-            char pszConvar[128]; // 0x0            
-            char pszCurrentValue[128]; // 0x80            
-            char pszOrgValue[128]; // 0x100            
+            char pszConvar[128]; // 0x0
+            char pszCurrentValue[128]; // 0x80
+            char pszOrgValue[128]; // 0x100
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::modifiedconvars_t, pszConvar) == 0x0);
         static_assert(offsetof(source2sdk::server::modifiedconvars_t, pszCurrentValue) == 0x80);
         static_assert(offsetof(source2sdk::server::modifiedconvars_t, pszOrgValue) == 0x100);
-        
+
         static_assert(sizeof(source2sdk::server::modifiedconvars_t) == 0x180);
     };
 };

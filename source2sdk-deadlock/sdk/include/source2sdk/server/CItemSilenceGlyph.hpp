@@ -32,13 +32,13 @@ namespace source2sdk
         public:
             // m_vHitEnts has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::server::CBaseEntity>> m_vHitEnts;
-            char m_vHitEnts[0x18]; // 0xf78            
+            char m_vHitEnts[0x18]; // 0xf78
             uint8_t _pad0f90[0x100];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CItemSilenceGlyph because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CItemSilenceGlyph) == 0x1090);
     };
 };

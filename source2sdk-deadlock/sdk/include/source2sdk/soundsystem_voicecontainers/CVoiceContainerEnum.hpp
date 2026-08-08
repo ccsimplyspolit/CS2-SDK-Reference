@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xe8
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "VSND Enum"
         // static metadata: MPropertyDescription "Switches between a selection of vsnds based on a provided index."
@@ -29,16 +29,16 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "Sounds To Play"
-            source2sdk::soundsystem_voicecontainers::CSoundContainerReferenceArray m_soundsToPlay; // 0xa8            
+            source2sdk::soundsystem_voicecontainers::CSoundContainerReferenceArray m_soundsToPlay; // 0xa8
             // metadata: MPropertyFriendlyName "Index"
-            std::int32_t m_iSelection; // 0xe0            
+            std::int32_t m_iSelection; // 0xe0
             // metadata: MPropertyFriendlyName "Crossfade Time"
-            float m_flCrossfadeTime; // 0xe4            
+            float m_flCrossfadeTime; // 0xe4
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CVoiceContainerEnum because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::soundsystem_voicecontainers::CVoiceContainerEnum) == 0xe8);
     };
 };

@@ -21,7 +21,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xf8
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Play Sequence"
         // static metadata: MPropertyDescription "Play the specified animation sequence on a NON-ANIMGRAPH entity, and wait for it to complete."
@@ -30,15 +30,15 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyAttributeSuggestionName "pulse_model_sequence_name"
-            CUtlString m_SequenceName; // 0x48            
-            source2sdk::pulse_runtime_lib::PulseNodeDynamicOutflows_t m_PulseAnimEvents; // 0x50            
-            source2sdk::pulse_runtime_lib::CPulse_ResumePoint m_OnFinished; // 0x68            
-            source2sdk::pulse_runtime_lib::CPulse_ResumePoint m_OnCanceled; // 0xb0            
+            CUtlString m_SequenceName; // 0x48
+            source2sdk::pulse_runtime_lib::PulseNodeDynamicOutflows_t m_PulseAnimEvents; // 0x50
+            source2sdk::pulse_runtime_lib::CPulse_ResumePoint m_OnFinished; // 0x68
+            source2sdk::pulse_runtime_lib::CPulse_ResumePoint m_OnCanceled; // 0xb0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPulseCell_PlaySequence because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CPulseCell_PlaySequence) == 0xf8);
     };
 };

@@ -25,13 +25,13 @@ namespace source2sdk
         class CDOTAPropPlusPlayerGuildBanner : public source2sdk::client::C_DOTA_GuildBannerDynamic
         {
         public:
-            std::int32_t m_nPlayerID; // 0xd70            
+            std::int32_t m_nPlayerID; // 0xd70
             uint8_t _pad0d74[0xc];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTAPropPlusPlayerGuildBanner because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CDOTAPropPlusPlayerGuildBanner) == 0xd80);
     };
 };

@@ -23,14 +23,14 @@ namespace source2sdk
         class CCitadel_Ability_Necro_KillSummonTrigger : public source2sdk::server::CCitadelBaseTriggerAbility
         {
         public:
-            VectorWS m_vLaunchPosition; // 0xf80            
-            QAngle m_qLaunchAngle; // 0xf8c            
+            VectorWS m_vLaunchPosition; // 0xf80
+            QAngle m_qLaunchAngle; // 0xf8c
             uint8_t _pad0f98[0x180];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_Necro_KillSummonTrigger because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Ability_Necro_KillSummonTrigger) == 0x1118);
     };
 };

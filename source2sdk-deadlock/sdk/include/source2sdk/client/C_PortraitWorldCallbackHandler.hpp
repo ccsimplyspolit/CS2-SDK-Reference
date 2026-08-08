@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x5f8
         // Has VTable
-        // 
+        //
         // static metadata: MEntityAllowsPortraitWorldSpawn
         #pragma pack(push, 1)
         class C_PortraitWorldCallbackHandler : public source2sdk::client::C_BaseEntity
@@ -28,8 +28,8 @@ namespace source2sdk
             uint8_t _pad05f0[0x8];
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::client::C_PortraitWorldCallbackHandler) == 0x5f8);
     };
 };

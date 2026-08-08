@@ -25,13 +25,13 @@ namespace source2sdk
         class C_DOTA_Item_Holy_Locket : public source2sdk::client::C_DOTA_Item
         {
         public:
-            float charge_radius; // 0x758            
-            std::int32_t max_charges; // 0x75c            
+            float charge_radius; // 0x758
+            std::int32_t max_charges; // 0x75c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Item_Holy_Locket because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Item_Holy_Locket) == 0x760);
     };
 };

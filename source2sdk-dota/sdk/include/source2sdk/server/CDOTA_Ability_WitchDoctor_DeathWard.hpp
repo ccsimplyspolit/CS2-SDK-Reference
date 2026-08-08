@@ -37,22 +37,22 @@ namespace source2sdk
         public:
             // m_hWard has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hWard;
-            char m_hWard[0x4]; // 0x580            
-            std::int32_t bonus_accuracy; // 0x584            
-            std::int32_t m_iDamage; // 0x588            
-            std::int32_t m_iBounceRadius; // 0x58c            
-            std::int32_t m_iProjectileSpeed; // 0x590            
-            source2sdk::entity2::GameTime_t m_fWardExpireTime; // 0x594            
-            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x598            
+            char m_hWard[0x4]; // 0x580
+            std::int32_t bonus_accuracy; // 0x584
+            std::int32_t m_iDamage; // 0x588
+            std::int32_t m_iBounceRadius; // 0x58c
+            std::int32_t m_iProjectileSpeed; // 0x590
+            source2sdk::entity2::GameTime_t m_fWardExpireTime; // 0x594
+            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x598
             uint8_t _pad059c[0x4]; // 0x59c
             // m_BounceInfo has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::client::sBounceInfo> m_BounceInfo;
-            char m_BounceInfo[0x18]; // 0x5a0            
+            char m_BounceInfo[0x18]; // 0x5a0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_WitchDoctor_DeathWard because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_WitchDoctor_DeathWard) == 0x5b8);
     };
 };

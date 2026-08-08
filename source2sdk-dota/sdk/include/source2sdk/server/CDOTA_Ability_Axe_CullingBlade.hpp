@@ -33,18 +33,18 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0580[0x10]; // 0x580
-            bool m_bInterrupted; // 0x590            
+            bool m_bInterrupted; // 0x590
             uint8_t _pad0591[0x3]; // 0x591
-            VectorWS m_vProjectileLocation; // 0x594            
+            VectorWS m_vProjectileLocation; // 0x594
             // m_hTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hTarget;
-            char m_hTarget[0x4]; // 0x5a0            
+            char m_hTarget[0x4]; // 0x5a0
             uint8_t _pad05a4[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Axe_CullingBlade because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Axe_CullingBlade) == 0x5a8);
     };
 };

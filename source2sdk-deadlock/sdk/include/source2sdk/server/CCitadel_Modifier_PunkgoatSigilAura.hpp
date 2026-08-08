@@ -33,16 +33,16 @@ namespace source2sdk
         public:
             // m_vecHitUnits has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::server::CBaseEntity>> m_vecHitUnits;
-            char m_vecHitUnits[0x18]; // 0x108            
-            float m_flWaveRadius; // 0x120            
-            source2sdk::client::ParticleIndex_t m_nWaveParticleEnemy; // 0x124            
-            source2sdk::client::ParticleIndex_t m_nWaveParticleFriendly; // 0x128            
+            char m_vecHitUnits[0x18]; // 0x108
+            float m_flWaveRadius; // 0x120
+            source2sdk::client::ParticleIndex_t m_nWaveParticleEnemy; // 0x124
+            source2sdk::client::ParticleIndex_t m_nWaveParticleFriendly; // 0x128
             uint8_t _pad012c[0x604];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_PunkgoatSigilAura because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_PunkgoatSigilAura) == 0x730);
     };
 };

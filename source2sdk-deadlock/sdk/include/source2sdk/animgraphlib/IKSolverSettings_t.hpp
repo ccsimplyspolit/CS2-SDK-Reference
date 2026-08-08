@@ -26,19 +26,19 @@ namespace source2sdk
         public:
             // metadata: MPropertyFriendlyName "Solver Type"
             // metadata: MPropertyAutoRebuildOnChange
-            source2sdk::animgraphlib::IKSolverType m_SolverType; // 0x0            
+            source2sdk::animgraphlib::IKSolverType m_SolverType; // 0x0
             // metadata: MPropertyFriendlyName "Num Iterations "
             // metadata: MPropertyAttrStateCallback
-            std::int32_t m_nNumIterations; // 0x4            
+            std::int32_t m_nNumIterations; // 0x4
             // metadata: MPropertyFriendlyName "End Effector Rotation Behaviour"
-            source2sdk::animgraphlib::EIKEndEffectorRotationFixUpMode m_EndEffectorRotationFixUpMode; // 0x8            
+            source2sdk::animgraphlib::EIKEndEffectorRotationFixUpMode m_EndEffectorRotationFixUpMode; // 0x8
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::animgraphlib::IKSolverSettings_t, m_SolverType) == 0x0);
         static_assert(offsetof(source2sdk::animgraphlib::IKSolverSettings_t, m_nNumIterations) == 0x4);
         static_assert(offsetof(source2sdk::animgraphlib::IKSolverSettings_t, m_EndEffectorRotationFixUpMode) == 0x8);
-        
+
         static_assert(sizeof(source2sdk::animgraphlib::IKSolverSettings_t) == 0xc);
     };
 };

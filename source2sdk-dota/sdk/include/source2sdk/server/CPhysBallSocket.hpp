@@ -24,19 +24,19 @@ namespace source2sdk
         class CPhysBallSocket : public source2sdk::server::CPhysConstraint
         {
         public:
-            float m_flJointFriction; // 0x4f8            
-            bool m_bEnableSwingLimit; // 0x4fc            
+            float m_flJointFriction; // 0x4f8
+            bool m_bEnableSwingLimit; // 0x4fc
             uint8_t _pad04fd[0x3]; // 0x4fd
-            float m_flSwingLimit; // 0x500            
-            bool m_bEnableTwistLimit; // 0x504            
+            float m_flSwingLimit; // 0x500
+            bool m_bEnableTwistLimit; // 0x504
             uint8_t _pad0505[0x3]; // 0x505
-            float m_flMinTwistAngle; // 0x508            
-            float m_flMaxTwistAngle; // 0x50c            
+            float m_flMinTwistAngle; // 0x508
+            float m_flMaxTwistAngle; // 0x50c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPhysBallSocket because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CPhysBallSocket) == 0x510);
     };
 };

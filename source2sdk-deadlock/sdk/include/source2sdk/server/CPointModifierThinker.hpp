@@ -26,17 +26,17 @@ namespace source2sdk
         public:
             // m_hModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CModifierHandleTyped<source2sdk::server::CCitadelModifier> m_hModifier;
-            char m_hModifier[0x18]; // 0x4a0            
-            bool m_bSendToClients; // 0x4b8            
+            char m_hModifier[0x18]; // 0x4a0
+            bool m_bSendToClients; // 0x4b8
             uint8_t _pad04b9[0x7];
-            
+
             // Datamap fields:
             // void CPointModifierThinkerOnModifierLost; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPointModifierThinker because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CPointModifierThinker) == 0x4c0);
     };
 };

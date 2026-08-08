@@ -25,16 +25,16 @@ namespace source2sdk
         {
         public:
             uint8_t _pad08e0[0x40]; // 0x8e0
-            CUtlSymbolLarge m_strDestLandmark; // 0x920            
-            CUtlSymbolLarge m_strDestMap; // 0x928            
-            CUtlSymbolLarge m_strDestLocString; // 0x930            
-            source2sdk::entity2::CEntityIOOutput m_OnHideoutTeleport; // 0x938            
-            CUtlSymbolLarge m_strPropModel; // 0x950            
+            CUtlSymbolLarge m_strDestLandmark; // 0x920
+            CUtlSymbolLarge m_strDestMap; // 0x928
+            CUtlSymbolLarge m_strDestLocString; // 0x930
+            source2sdk::entity2::CEntityIOOutput m_OnHideoutTeleport; // 0x938
+            CUtlSymbolLarge m_strPropModel; // 0x950
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadelHideoutTeleportTrigger because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadelHideoutTeleportTrigger) == 0x958);
     };
 };

@@ -24,13 +24,13 @@ namespace source2sdk
         class CSoundEventAABBEntity : public source2sdk::server::CSoundEventEntity
         {
         public:
-            Vector m_vMins; // 0x558            
-            Vector m_vMaxs; // 0x564            
+            Vector m_vMins; // 0x558
+            Vector m_vMaxs; // 0x564
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSoundEventAABBEntity because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CSoundEventAABBEntity) == 0x570);
     };
 };

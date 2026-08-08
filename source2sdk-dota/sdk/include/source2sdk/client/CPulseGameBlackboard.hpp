@@ -25,13 +25,13 @@ namespace source2sdk
         {
         public:
             uint8_t _pad05f0[0x8]; // 0x5f0
-            CUtlString m_strGraphName; // 0x5f8            
-            CUtlString m_strStateBlob; // 0x600            
+            CUtlString m_strGraphName; // 0x5f8
+            CUtlString m_strStateBlob; // 0x600
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPulseGameBlackboard because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CPulseGameBlackboard) == 0x608);
     };
 };

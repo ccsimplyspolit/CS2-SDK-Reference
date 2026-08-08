@@ -23,12 +23,12 @@ namespace source2sdk
         class CGameModifier_PlayEffectOnDeath : public source2sdk::client::CCitadelModifier
         {
         public:
-            CUtlString m_sEffect; // 0xc0            
+            CUtlString m_sEffect; // 0xc0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CGameModifier_PlayEffectOnDeath because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CGameModifier_PlayEffectOnDeath) == 0xc8);
     };
 };

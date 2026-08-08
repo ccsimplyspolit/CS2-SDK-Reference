@@ -25,13 +25,13 @@ namespace source2sdk
         class CDOTA_Ability_Grimstroke_InkCreature : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            float spawn_time; // 0x6a8            
+            float spawn_time; // 0x6a8
             uint8_t _pad06ac[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Grimstroke_InkCreature because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CDOTA_Ability_Grimstroke_InkCreature) == 0x6b0);
     };
 };

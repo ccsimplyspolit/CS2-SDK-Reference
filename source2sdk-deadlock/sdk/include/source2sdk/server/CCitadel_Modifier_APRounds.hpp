@@ -24,13 +24,13 @@ namespace source2sdk
         class CCitadel_Modifier_APRounds : public source2sdk::server::CCitadel_Modifier_BaseBulletPreRollProc
         {
         public:
-            source2sdk::client::ShotID_t m_nLastProcShotID; // 0x228            
+            source2sdk::client::ShotID_t m_nLastProcShotID; // 0x228
             uint8_t _pad022c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_APRounds because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_APRounds) == 0x230);
     };
 };

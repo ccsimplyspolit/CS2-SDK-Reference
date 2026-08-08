@@ -24,22 +24,22 @@ namespace source2sdk
         class CLogicAuto : public source2sdk::server::CBaseEntity
         {
         public:
-            source2sdk::entity2::CEntityIOOutput m_OnMapSpawn; // 0x4a0            
-            source2sdk::entity2::CEntityIOOutput m_OnDemoMapSpawn; // 0x4b8            
-            source2sdk::entity2::CEntityIOOutput m_OnNewGame; // 0x4d0            
-            source2sdk::entity2::CEntityIOOutput m_OnLoadGame; // 0x4e8            
-            source2sdk::entity2::CEntityIOOutput m_OnMapTransition; // 0x500            
-            source2sdk::entity2::CEntityIOOutput m_OnBackgroundMap; // 0x518            
-            source2sdk::entity2::CEntityIOOutput m_OnMultiNewMap; // 0x530            
-            source2sdk::entity2::CEntityIOOutput m_OnMultiNewRound; // 0x548            
-            source2sdk::entity2::CEntityIOOutput m_OnVREnabled; // 0x560            
-            source2sdk::entity2::CEntityIOOutput m_OnVRNotEnabled; // 0x578            
-            CUtlSymbolLarge m_globalstate; // 0x590            
+            source2sdk::entity2::CEntityIOOutput m_OnMapSpawn; // 0x4a0
+            source2sdk::entity2::CEntityIOOutput m_OnDemoMapSpawn; // 0x4b8
+            source2sdk::entity2::CEntityIOOutput m_OnNewGame; // 0x4d0
+            source2sdk::entity2::CEntityIOOutput m_OnLoadGame; // 0x4e8
+            source2sdk::entity2::CEntityIOOutput m_OnMapTransition; // 0x500
+            source2sdk::entity2::CEntityIOOutput m_OnBackgroundMap; // 0x518
+            source2sdk::entity2::CEntityIOOutput m_OnMultiNewMap; // 0x530
+            source2sdk::entity2::CEntityIOOutput m_OnMultiNewRound; // 0x548
+            source2sdk::entity2::CEntityIOOutput m_OnVREnabled; // 0x560
+            source2sdk::entity2::CEntityIOOutput m_OnVRNotEnabled; // 0x578
+            CUtlSymbolLarge m_globalstate; // 0x590
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CLogicAuto because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CLogicAuto) == 0x598);
     };
 };

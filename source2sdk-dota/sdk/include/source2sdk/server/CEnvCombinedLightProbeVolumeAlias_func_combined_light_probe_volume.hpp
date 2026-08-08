@@ -27,8 +27,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: CEnvCombinedLightProbeVolumeAlias_func_combined_light_probe_volume has no schema binary (size is a guess)
     };
 };

@@ -18,20 +18,20 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x19c0
+        // Size: 0x19c8
         // Has VTable
         // Construct allowed
         #pragma pack(push, 1)
         class CDOTA_BaseNPC_Shop : public source2sdk::server::CDOTA_BaseNPC_Building
         {
         public:
-            source2sdk::client::DOTA_SHOP_TYPE m_ShopType; // 0x19b8            
-            uint8_t _pad19bc[0x4];
+            source2sdk::client::DOTA_SHOP_TYPE m_ShopType; // 0x19c0
+            uint8_t _pad19c4[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_BaseNPC_Shop because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_BaseNPC_Shop) == 0x19c0);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_BaseNPC_Shop) == 0x19c8);
     };
 };

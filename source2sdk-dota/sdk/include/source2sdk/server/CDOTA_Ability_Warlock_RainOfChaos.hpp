@@ -25,14 +25,14 @@ namespace source2sdk
         class CDOTA_Ability_Warlock_RainOfChaos : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            float aoe; // 0x580            
-            bool m_bHasScepter; // 0x584            
+            float aoe; // 0x580
+            bool m_bHasScepter; // 0x584
             uint8_t _pad0585[0x3];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Warlock_RainOfChaos because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Warlock_RainOfChaos) == 0x588);
     };
 };

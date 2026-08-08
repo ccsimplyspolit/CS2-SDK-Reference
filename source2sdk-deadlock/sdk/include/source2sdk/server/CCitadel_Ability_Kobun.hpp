@@ -23,13 +23,13 @@ namespace source2sdk
         class CCitadel_Ability_Kobun : public source2sdk::server::CCitadelBaseAbility
         {
         public:
-            bool m_bFlipOffset; // 0xf70            
+            bool m_bFlipOffset; // 0xf70
             uint8_t _pad0f71[0x307];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_Kobun because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Ability_Kobun) == 0x1278);
     };
 };

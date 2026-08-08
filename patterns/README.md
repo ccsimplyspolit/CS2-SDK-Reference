@@ -28,7 +28,7 @@ tools):
 python tools/verify_patterns.py
 ```
 
-Last run (2026-07-22, build 14172 / installed game):
+Last run (2026-08-08, build 14174 / installed game):
 
 ```
 141 pattern(s): 140 unique, 0 ambiguous, 0 not-found, 0 dll-missing;
@@ -37,10 +37,8 @@ exports 1 ok / 0 missing
 ```
 
 **All 140 byte-patterns resolve to exactly one address**, and the one export
-(`tier0!LoadKV3`) is present. A sample of resolved addresses was independently
-disassembled and confirmed to land on real function entries (e.g.
-`createmove` → `0xC97750`, a `mov rax, rsp` prologue with a `.pdata` unwind
-record; `getlocalpawn` → `0x926960`, 259+ callers).
+(`tier0!LoadKV3`) is present. Current scan samples include
+`createmove` → `0xC98DD0` and `getlocalpawn` → `0x926D60`.
 
 ### How the patterns were made
 
@@ -98,7 +96,7 @@ Requires IDA + [Sigmaker](https://github.com/A200K/IDA-Pro-SigMaker) +
 python tools/verify_patterns.py
 ```
 
-Последний прогон (2026-07-22, билд 14172 / установленная игра):
+Последний прогон (2026-08-08, билд 14174 / установленная игра):
 
 ```
 141 pattern(s): 140 unique, 0 ambiguous, 0 not-found, 0 dll-missing;
@@ -107,9 +105,8 @@ exports 1 ok / 0 missing
 ```
 
 **Все 140 байт-паттернов резолвятся ровно в один адрес**, экспорт
-(`tier0!LoadKV3`) на месте. Выборка адресов независимо дизассемблирована и
-подтверждена как реальные входы функций (`createmove` → `0xC97750`, пролог
-`mov rax, rsp` с `.pdata`-unwind; `getlocalpawn` → `0x926960`, 259+ вызывающих).
+(`tier0!LoadKV3`) на месте. В текущем прогоне примеры адресов: `createmove`
+→ `0xC98DD0` и `getlocalpawn` → `0x926D60`.
 
 ### Как получены паттерны
 

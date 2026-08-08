@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0xf0
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MVDataRoot
         // static metadata: MVDataSingleton
@@ -28,42 +28,42 @@ namespace source2sdk
         class CDOTAFlappySkywrathDefinition
         {
         public:
-            CUtlString strID; // 0x0            
-            CUtlString sLayoutPath; // 0x8            
-            CUtlString sMapFile; // 0x10            
-            CUtlString sMapLoopingFile; // 0x18            
-            CUtlString sMapBGFile; // 0x20            
+            CUtlString strID; // 0x0
+            CUtlString sLayoutPath; // 0x8
+            CUtlString sMapFile; // 0x10
+            CUtlString sMapLoopingFile; // 0x18
+            CUtlString sMapBGFile; // 0x20
             // vecDifficulties has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::client::CDOTAFlappySkywrathDifficulty> vecDifficulties;
-            char vecDifficulties[0x18]; // 0x28            
-            float flMinimumSpeed; // 0x40            
-            float flGravity; // 0x44            
-            float flJumpPower; // 0x48            
-            float flGlideAcceleration; // 0x4c            
-            float flGlideFallSpeed; // 0x50            
-            float flDashDuration; // 0x54            
-            float flDashBoost; // 0x58            
-            float flDashSpeed; // 0x5c            
-            float flDiveDuration; // 0x60            
-            float flDiveSpeed; // 0x64            
-            float flTrackDistance; // 0x68            
-            float flCameraDistance; // 0x6c            
-            Vector vCameraOffset; // 0x70            
-            Vector2D vCameraEdgeThresholds; // 0x7c            
-            float flCameraAcceleration; // 0x84            
-            Vector2D vPlayerSize; // 0x88            
-            Vector2D vPlayerVerticalBounds; // 0x90            
-            Vector2D vObstacleVerticalBounds; // 0x98            
-            Vector2D vObstacleHorizontalBounds; // 0xa0            
-            float flTopOffsetToTip; // 0xa8            
-            float flBottomOffsetToTip; // 0xac            
+            char vecDifficulties[0x18]; // 0x28
+            float flMinimumSpeed; // 0x40
+            float flGravity; // 0x44
+            float flJumpPower; // 0x48
+            float flGlideAcceleration; // 0x4c
+            float flGlideFallSpeed; // 0x50
+            float flDashDuration; // 0x54
+            float flDashBoost; // 0x58
+            float flDashSpeed; // 0x5c
+            float flDiveDuration; // 0x60
+            float flDiveSpeed; // 0x64
+            float flTrackDistance; // 0x68
+            float flCameraDistance; // 0x6c
+            Vector vCameraOffset; // 0x70
+            Vector2D vCameraEdgeThresholds; // 0x7c
+            float flCameraAcceleration; // 0x84
+            Vector2D vPlayerSize; // 0x88
+            Vector2D vPlayerVerticalBounds; // 0x90
+            Vector2D vObstacleVerticalBounds; // 0x98
+            Vector2D vObstacleHorizontalBounds; // 0xa0
+            float flTopOffsetToTip; // 0xa8
+            float flBottomOffsetToTip; // 0xac
             uint8_t _pad00b0[0x28]; // 0xb0
             // vecInputActions has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::client::CDOTAFlappySkywrathInputAction> vecInputActions;
-            char vecInputActions[0x18]; // 0xd8            
+            char vecInputActions[0x18]; // 0xd8
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::CDOTAFlappySkywrathDefinition, strID) == 0x0);
         static_assert(offsetof(source2sdk::client::CDOTAFlappySkywrathDefinition, sLayoutPath) == 0x8);
         static_assert(offsetof(source2sdk::client::CDOTAFlappySkywrathDefinition, sMapFile) == 0x10);
@@ -92,7 +92,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::client::CDOTAFlappySkywrathDefinition, flTopOffsetToTip) == 0xa8);
         static_assert(offsetof(source2sdk::client::CDOTAFlappySkywrathDefinition, flBottomOffsetToTip) == 0xac);
         static_assert(offsetof(source2sdk::client::CDOTAFlappySkywrathDefinition, vecInputActions) == 0xd8);
-        
+
         static_assert(sizeof(source2sdk::client::CDOTAFlappySkywrathDefinition) == 0xf0);
     };
 };

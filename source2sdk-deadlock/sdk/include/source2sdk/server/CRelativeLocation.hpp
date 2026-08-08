@@ -31,25 +31,25 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0000[0x18]; // 0x0
-            source2sdk::server::RelativeLocationType_t m_Type; // 0x18            
+            source2sdk::server::RelativeLocationType_t m_Type; // 0x18
             uint8_t _pad0019[0x3]; // 0x19
-            Vector m_vRelativeOffset; // 0x1c            
-            VectorWS m_vWorldSpacePos; // 0x28            
+            Vector m_vRelativeOffset; // 0x1c
+            VectorWS m_vWorldSpacePos; // 0x28
             // m_hEntity has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hEntity;
-            char m_hEntity[0x4]; // 0x34            
-            std::uint32_t m_nNavAreaID; // 0x38            
-            std::uint32_t m_nSpaceBlockID; // 0x3c            
+            char m_hEntity[0x4]; // 0x34
+            std::uint32_t m_nNavAreaID; // 0x38
+            std::uint32_t m_nSpaceBlockID; // 0x3c
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::CRelativeLocation, m_Type) == 0x18);
         static_assert(offsetof(source2sdk::server::CRelativeLocation, m_vRelativeOffset) == 0x1c);
         static_assert(offsetof(source2sdk::server::CRelativeLocation, m_vWorldSpacePos) == 0x28);
         static_assert(offsetof(source2sdk::server::CRelativeLocation, m_hEntity) == 0x34);
         static_assert(offsetof(source2sdk::server::CRelativeLocation, m_nNavAreaID) == 0x38);
         static_assert(offsetof(source2sdk::server::CRelativeLocation, m_nSpaceBlockID) == 0x3c);
-        
+
         static_assert(sizeof(source2sdk::server::CRelativeLocation) == 0x40);
     };
 };

@@ -24,17 +24,17 @@ namespace source2sdk
         class C_PointClientUIWorldTextPanel : public source2sdk::client::C_PointClientUIWorldPanel
         {
         public:
-            char m_messageText[512]; // 0xcf0            
-            
+            char m_messageText[512]; // 0xcf0
+
             // Datamap fields:
             // void InputToggle; // 0x0
             // CUtlSymbolLarge InputSetMessage; // 0x0
             // int32_t InputSetIntMessage; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_PointClientUIWorldTextPanel because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_PointClientUIWorldTextPanel) == 0xef0);
     };
 };

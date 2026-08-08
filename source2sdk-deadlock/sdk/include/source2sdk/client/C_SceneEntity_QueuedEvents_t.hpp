@@ -23,13 +23,13 @@ namespace source2sdk
         struct C_SceneEntity_QueuedEvents_t
         {
         public:
-            float starttime; // 0x0            
+            float starttime; // 0x0
             uint8_t _pad0004[0x14];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::C_SceneEntity_QueuedEvents_t, starttime) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::client::C_SceneEntity_QueuedEvents_t) == 0x18);
     };
 };

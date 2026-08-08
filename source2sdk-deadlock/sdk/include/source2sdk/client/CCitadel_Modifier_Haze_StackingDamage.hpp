@@ -24,13 +24,13 @@ namespace source2sdk
         {
         public:
             uint8_t _pad00c0[0x180]; // 0xc0
-            std::int32_t m_nTotalProcs; // 0x240            
+            std::int32_t m_nTotalProcs; // 0x240
             uint8_t _pad0244[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_Haze_StackingDamage because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Modifier_Haze_StackingDamage) == 0x248);
     };
 };

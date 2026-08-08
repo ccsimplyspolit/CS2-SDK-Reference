@@ -34,15 +34,15 @@ namespace source2sdk
         public:
             // m_hThinker has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hThinker;
-            char m_hThinker[0x4]; // 0x580            
-            std::int32_t detonate_damage; // 0x584            
-            float detonate_stun_duration; // 0x588            
+            char m_hThinker[0x4]; // 0x580
+            std::int32_t detonate_damage; // 0x584
+            float detonate_stun_duration; // 0x588
             uint8_t _pad058c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Jakiro_IcePath because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Jakiro_IcePath) == 0x590);
     };
 };

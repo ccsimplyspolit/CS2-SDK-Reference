@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xd8
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Cross Product"
         // static metadata: MPropertyDescription "Compute a dot or cross product between two 3D vectors"
@@ -30,16 +30,16 @@ namespace source2sdk
         public:
             // metadata: MPropertyFriendlyName "Output Variable"
             // metadata: MPropertyAttributeEditor "SmartPropItemNameEditor( Variable:Vector3 )"
-            CUtlString m_OutputVariableName; // 0x50            
+            CUtlString m_OutputVariableName; // 0x50
             // metadata: MPropertyFriendlyName "Vector A"
-            CSmartPropAttributeVector m_InputVectorA; // 0x58            
+            CSmartPropAttributeVector m_InputVectorA; // 0x58
             // metadata: MPropertyFriendlyName "Vector B"
-            CSmartPropAttributeVector m_InputVectorB; // 0x98            
+            CSmartPropAttributeVector m_InputVectorB; // 0x98
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSmartPropOperation_ComputeCrossProduct3D because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::smartprops::CSmartPropOperation_ComputeCrossProduct3D) == 0xd8);
     };
 };

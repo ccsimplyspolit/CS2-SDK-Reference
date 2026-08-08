@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x918
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CModifierTier3BossInvulnVData : public source2sdk::server::CCitadelModifierVData
@@ -29,17 +29,17 @@ namespace source2sdk
             // metadata: MPropertyGroupName "Visuals"
             // m_AmberShieldParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_AmberShieldParticle;
-            char m_AmberShieldParticle[0xe0]; // 0x750            
+            char m_AmberShieldParticle[0xe0]; // 0x750
             // m_SapphShieldParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_SapphShieldParticle;
-            char m_SapphShieldParticle[0xe0]; // 0x830            
-            float m_flShieldRadius; // 0x910            
+            char m_SapphShieldParticle[0xe0]; // 0x830
+            float m_flShieldRadius; // 0x910
             uint8_t _pad0914[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CModifierTier3BossInvulnVData because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CModifierTier3BossInvulnVData) == 0x918);
     };
 };

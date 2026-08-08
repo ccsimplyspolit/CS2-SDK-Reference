@@ -19,22 +19,22 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x10
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct CNmSyncTrack_Event_t
         {
         public:
-            CGlobalSymbol m_ID; // 0x0            
-            source2sdk::animlib::NmPercent_t m_startTime; // 0x8            
-            source2sdk::animlib::NmPercent_t m_duration; // 0xc            
+            CGlobalSymbol m_ID; // 0x0
+            source2sdk::animlib::NmPercent_t m_startTime; // 0x8
+            source2sdk::animlib::NmPercent_t m_duration; // 0xc
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::animlib::CNmSyncTrack_Event_t, m_ID) == 0x0);
         static_assert(offsetof(source2sdk::animlib::CNmSyncTrack_Event_t, m_startTime) == 0x8);
         static_assert(offsetof(source2sdk::animlib::CNmSyncTrack_Event_t, m_duration) == 0xc);
-        
+
         static_assert(sizeof(source2sdk::animlib::CNmSyncTrack_Event_t) == 0x10);
     };
 };

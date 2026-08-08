@@ -23,23 +23,23 @@ namespace source2sdk
         class CFuncTimescale : public source2sdk::server::CBaseEntity
         {
         public:
-            float m_flDesiredTimescale; // 0x4a0            
-            float m_flAcceleration; // 0x4a4            
-            float m_flMinBlendRate; // 0x4a8            
-            float m_flBlendDeltaMultiplier; // 0x4ac            
+            float m_flDesiredTimescale; // 0x4a0
+            float m_flAcceleration; // 0x4a4
+            float m_flMinBlendRate; // 0x4a8
+            float m_flBlendDeltaMultiplier; // 0x4ac
             // metadata: MNotSaved
-            bool m_isStarted; // 0x4b0            
+            bool m_isStarted; // 0x4b0
             uint8_t _pad04b1[0x7];
-            
+
             // Datamap fields:
             // void InputStart; // 0x0
             // void InputStop; // 0x0
             // void InputReset; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CFuncTimescale because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CFuncTimescale) == 0x4b8);
     };
 };

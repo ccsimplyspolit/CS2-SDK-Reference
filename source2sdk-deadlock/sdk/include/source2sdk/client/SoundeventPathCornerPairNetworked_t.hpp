@@ -18,31 +18,31 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x24
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MNetworkStructNotInNetworkUtlVectorEmbedded
         #pragma pack(push, 1)
         struct SoundeventPathCornerPairNetworked_t
         {
         public:
             // metadata: MNetworkEnable
-            VectorWS vP1; // 0x0            
+            VectorWS vP1; // 0x0
             // metadata: MNetworkEnable
-            VectorWS vP2; // 0xc            
+            VectorWS vP2; // 0xc
             // metadata: MNetworkEnable
-            float flPathLengthSqr; // 0x18            
+            float flPathLengthSqr; // 0x18
             // metadata: MNetworkEnable
-            float flP1Pct; // 0x1c            
+            float flP1Pct; // 0x1c
             // metadata: MNetworkEnable
-            float flP2Pct; // 0x20            
+            float flP2Pct; // 0x20
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::SoundeventPathCornerPairNetworked_t, vP1) == 0x0);
         static_assert(offsetof(source2sdk::client::SoundeventPathCornerPairNetworked_t, vP2) == 0xc);
         static_assert(offsetof(source2sdk::client::SoundeventPathCornerPairNetworked_t, flPathLengthSqr) == 0x18);
         static_assert(offsetof(source2sdk::client::SoundeventPathCornerPairNetworked_t, flP1Pct) == 0x1c);
         static_assert(offsetof(source2sdk::client::SoundeventPathCornerPairNetworked_t, flP2Pct) == 0x20);
-        
+
         static_assert(sizeof(source2sdk::client::SoundeventPathCornerPairNetworked_t) == 0x24);
     };
 };

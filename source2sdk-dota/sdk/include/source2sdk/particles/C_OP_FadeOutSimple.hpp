@@ -21,7 +21,7 @@ namespace source2sdk
         // Size: 0x1e0
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MGPUParticleFunction
         #pragma pack(push, 1)
@@ -29,15 +29,15 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "proportional fade out time"
-            float m_flFadeOutTime; // 0x1d8            
+            float m_flFadeOutTime; // 0x1d8
             // metadata: MPropertyFriendlyName "alpha field"
             // metadata: MPropertyAttributeChoiceName "particlefield_alpha"
-            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1dc            
+            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1dc
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_FadeOutSimple because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_FadeOutSimple) == 0x1e0);
     };
 };

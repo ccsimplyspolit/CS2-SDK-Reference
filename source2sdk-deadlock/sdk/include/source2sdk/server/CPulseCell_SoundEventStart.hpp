@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x50
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Start Sound Event"
         // static metadata: MPropertyDescription "Starts a sound event, returns a handle that can be used to stop it. Keywords: create, sound, event, audio"
@@ -28,13 +28,13 @@ namespace source2sdk
         class CPulseCell_SoundEventStart : public source2sdk::pulse_runtime_lib::CPulseCell_BaseFlow
         {
         public:
-            source2sdk::server::SoundEventStartType_t m_Type; // 0x48            
+            source2sdk::server::SoundEventStartType_t m_Type; // 0x48
             uint8_t _pad004c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPulseCell_SoundEventStart because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CPulseCell_SoundEventStart) == 0x50);
     };
 };

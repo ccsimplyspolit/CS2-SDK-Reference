@@ -25,14 +25,14 @@ namespace source2sdk
         class C_DOTA_MinibossSpawner : public source2sdk::client::C_PointEntity
         {
         public:
-            std::int32_t m_nVisualTeam; // 0x5f0            
-            bool m_bIsRadiantMiniboss; // 0x5f4            
+            std::int32_t m_nVisualTeam; // 0x5f0
+            bool m_bIsRadiantMiniboss; // 0x5f4
             uint8_t _pad05f5[0x3];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_MinibossSpawner because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_MinibossSpawner) == 0x5f8);
     };
 };

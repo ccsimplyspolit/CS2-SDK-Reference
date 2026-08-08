@@ -25,13 +25,13 @@ namespace source2sdk
         {
         public:
             uint8_t _pad00d0[0x300]; // 0xd0
-            source2sdk::entity2::GameTime_t m_flNextAttackTime; // 0x3d0            
+            source2sdk::entity2::GameTime_t m_flNextAttackTime; // 0x3d0
             uint8_t _pad03d4[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_RapidFire because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_RapidFire) == 0x3d8);
     };
 };

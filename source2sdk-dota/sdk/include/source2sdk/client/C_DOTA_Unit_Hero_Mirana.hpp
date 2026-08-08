@@ -17,7 +17,7 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x1d80
+        // Size: 0x1d88
         // Has VTable
         // Construct allowed
         // MClassHasEntityLimitedDataDesc
@@ -28,8 +28,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: C_DOTA_Unit_Hero_Mirana has no schema binary (size is a guess)
     };
 };

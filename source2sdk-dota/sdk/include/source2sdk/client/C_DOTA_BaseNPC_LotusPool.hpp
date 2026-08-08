@@ -17,7 +17,7 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x1a38
+        // Size: 0x1a40
         // Has VTable
         // Construct allowed
         // MClassHasEntityLimitedDataDesc
@@ -25,17 +25,17 @@ namespace source2sdk
         class C_DOTA_BaseNPC_LotusPool : public source2sdk::client::C_DOTA_BaseNPC_Building
         {
         public:
-            std::int32_t m_nLotusCount; // 0x1a20            
-            std::int32_t m_nIntervals; // 0x1a24            
-            std::int32_t m_nLotusSeconds; // 0x1a28            
-            std::int32_t m_nLotusMax; // 0x1a2c            
-            bool m_bInVision; // 0x1a30            
-            uint8_t _pad1a31[0x7];
+            std::int32_t m_nLotusCount; // 0x1a28
+            std::int32_t m_nIntervals; // 0x1a2c
+            std::int32_t m_nLotusSeconds; // 0x1a30
+            std::int32_t m_nLotusMax; // 0x1a34
+            bool m_bInVision; // 0x1a38
+            uint8_t _pad1a39[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_BaseNPC_LotusPool because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::C_DOTA_BaseNPC_LotusPool) == 0x1a38);
+
+        static_assert(sizeof(source2sdk::client::C_DOTA_BaseNPC_LotusPool) == 0x1a40);
     };
 };

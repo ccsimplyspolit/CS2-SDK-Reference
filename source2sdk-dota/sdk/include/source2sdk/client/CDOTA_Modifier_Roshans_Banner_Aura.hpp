@@ -17,23 +17,23 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a70
+        // Size: 0x1a90
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Roshans_Banner_Aura : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float radius; // 0x1a58            
-            std::int32_t hp_bonus; // 0x1a5c            
-            std::int32_t damage_bonus; // 0x1a60            
-            std::int32_t model_scale; // 0x1a64            
-            float buff_linger_duration; // 0x1a68            
-            uint8_t _pad1a6c[0x4];
+            float radius; // 0x1a78
+            std::int32_t hp_bonus; // 0x1a7c
+            std::int32_t damage_bonus; // 0x1a80
+            std::int32_t model_scale; // 0x1a84
+            float buff_linger_duration; // 0x1a88
+            uint8_t _pad1a8c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Roshans_Banner_Aura because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Roshans_Banner_Aura) == 0x1a70);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Roshans_Banner_Aura) == 0x1a90);
     };
 };

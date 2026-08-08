@@ -23,13 +23,13 @@ namespace source2sdk
         class CCitadel_Modifier_DebugScale : public source2sdk::client::CCitadelModifier
         {
         public:
-            float m_flScale; // 0xc0            
+            float m_flScale; // 0xc0
             uint8_t _pad00c4[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_DebugScale because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Modifier_DebugScale) == 0xc8);
     };
 };

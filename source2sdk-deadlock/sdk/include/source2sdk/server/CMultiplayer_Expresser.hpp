@@ -23,13 +23,13 @@ namespace source2sdk
         class CMultiplayer_Expresser : public source2sdk::server::CAI_ExpresserWithFollowup
         {
         public:
-            bool m_bAllowMultipleScenes; // 0xa0            
+            bool m_bAllowMultipleScenes; // 0xa0
             uint8_t _pad00a1[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CMultiplayer_Expresser because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CMultiplayer_Expresser) == 0xa8);
     };
 };

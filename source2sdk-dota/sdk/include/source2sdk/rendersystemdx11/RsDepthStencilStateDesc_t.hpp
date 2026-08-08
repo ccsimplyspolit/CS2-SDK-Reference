@@ -31,15 +31,15 @@ namespace source2sdk
             uint8_t _pad0001[0x1]; // 0x1
             // Property RsDepthStencilStateDesc_t::m_stencilState appears to be misaligned. Its alignment is unknown and it is not aligned to max_align_t (8).
             char m_stencilState[0x6];
-            // source2sdk::rendersystemdx11::RsStencilStateDesc_t m_stencilState; // 0x2            
+            // source2sdk::rendersystemdx11::RsStencilStateDesc_t m_stencilState; // 0x2
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offset of bitfield RsDepthStencilStateDesc_t::m_bDepthTestEnable
         // Cannot assert offset of bitfield RsDepthStencilStateDesc_t::m_bDepthWriteEnable
         // Cannot assert offset of bitfield RsDepthStencilStateDesc_t::m_depthFunc
         static_assert(offsetof(source2sdk::rendersystemdx11::RsDepthStencilStateDesc_t, m_stencilState) == 0x2);
-        
+
         static_assert(sizeof(source2sdk::rendersystemdx11::RsDepthStencilStateDesc_t) == 0x8);
     };
 };

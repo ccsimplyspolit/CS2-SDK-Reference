@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xb8
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CCitadel_Ability_MedicHeal_GraphController : public source2sdk::client::CCitadelBaseAbilityGraphController
@@ -27,12 +27,12 @@ namespace source2sdk
         public:
             // m_bMedicHeal has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CAnimGraphParamRef<bool> m_bMedicHeal;
-            char m_bMedicHeal[0x28]; // 0x90            
+            char m_bMedicHeal[0x28]; // 0x90
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_MedicHeal_GraphController because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Ability_MedicHeal_GraphController) == 0xb8);
     };
 };

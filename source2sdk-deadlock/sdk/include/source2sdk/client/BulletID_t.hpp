@@ -23,14 +23,14 @@ namespace source2sdk
         struct BulletID_t
         {
         public:
-            source2sdk::client::ShotID_t m_ShotID; // 0x0            
-            std::uint32_t m_nBulletIndex; // 0x4            
+            source2sdk::client::ShotID_t m_ShotID; // 0x0
+            std::uint32_t m_nBulletIndex; // 0x4
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::BulletID_t, m_ShotID) == 0x0);
         static_assert(offsetof(source2sdk::client::BulletID_t, m_nBulletIndex) == 0x4);
-        
+
         static_assert(sizeof(source2sdk::client::BulletID_t) == 0x8);
     };
 };

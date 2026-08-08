@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x160
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CFacingServices_GraphController : public source2sdk::client::CAnimGraphControllerBase
@@ -27,22 +27,22 @@ namespace source2sdk
         public:
             // m_flFacingHeading has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CAnimGraphParamRef<float> m_flFacingHeading;
-            char m_flFacingHeading[0x28]; // 0x90            
+            char m_flFacingHeading[0x28]; // 0x90
             // m_vFacingTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CAnimGraphParamRef<Vector> m_vFacingTarget;
-            char m_vFacingTarget[0x28]; // 0xb8            
+            char m_vFacingTarget[0x28]; // 0xb8
             // m_sMovementStrafingState has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CAnimGraphParamRef<CGlobalSymbol> m_sMovementStrafingState;
-            char m_sMovementStrafingState[0x30]; // 0xe0            
+            char m_sMovementStrafingState[0x30]; // 0xe0
             // m_sFacingReason has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CAnimGraphParamRef<CGlobalSymbol> m_sFacingReason;
-            char m_sFacingReason[0x30]; // 0x110            
-            CAnimGraphTagOptionalRef m_sFacingModeUsePath; // 0x140            
+            char m_sFacingReason[0x30]; // 0x110
+            CAnimGraphTagOptionalRef m_sFacingModeUsePath; // 0x140
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CFacingServices_GraphController because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CFacingServices_GraphController) == 0x160);
     };
 };

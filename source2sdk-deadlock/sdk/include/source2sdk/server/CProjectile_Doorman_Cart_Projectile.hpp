@@ -27,8 +27,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: CProjectile_Doorman_Cart_Projectile has no schema binary (size is a guess)
     };
 };

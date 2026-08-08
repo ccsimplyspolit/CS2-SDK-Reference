@@ -34,17 +34,17 @@ namespace source2sdk
         public:
             // m_mapEntToTimeHit has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlOrderedMap<CHandle<source2sdk::server::CBaseEntity>,source2sdk::entity2::GameTime_t> m_mapEntToTimeHit;
-            char m_mapEntToTimeHit[0x28]; // 0xd0            
-            std::int32_t m_nNumPlayersAffected; // 0xf8            
-            std::int32_t m_nNumPlayersKilled; // 0xfc            
-            QAngle m_playerAngles; // 0x100            
-            source2sdk::client::ParticleIndex_t m_ConeParticle; // 0x10c            
+            char m_mapEntToTimeHit[0x28]; // 0xd0
+            std::int32_t m_nNumPlayersAffected; // 0xf8
+            std::int32_t m_nNumPlayersKilled; // 0xfc
+            QAngle m_playerAngles; // 0x100
+            source2sdk::client::ParticleIndex_t m_ConeParticle; // 0x10c
             uint8_t _pad0110[0x300];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_Warden_RiotProtocol because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_Warden_RiotProtocol) == 0x410);
     };
 };

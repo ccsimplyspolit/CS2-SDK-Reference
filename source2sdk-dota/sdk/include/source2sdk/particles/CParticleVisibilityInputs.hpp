@@ -19,72 +19,72 @@ namespace source2sdk
         // Size: 0x48
         // Has Trivial Destructor
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CParticleVisibilityInputs
         {
         public:
             // metadata: MPropertyFriendlyName "camera depth bias"
-            float m_flCameraBias; // 0x0            
+            float m_flCameraBias; // 0x0
             // metadata: MPropertyFriendlyName "input control point number"
-            std::int32_t m_nCPin; // 0x4            
+            std::int32_t m_nCPin; // 0x4
             // metadata: MPropertyFriendlyName "input proxy radius"
             // metadata: MPropertySuppressExpr "m_nCPin == -1"
-            float m_flProxyRadius; // 0x8            
+            float m_flProxyRadius; // 0x8
             // metadata: MPropertyFriendlyName "input proxy pixel visibility minimum"
             // metadata: MPropertySuppressExpr "m_nCPin == -1"
-            float m_flInputMin; // 0xc            
+            float m_flInputMin; // 0xc
             // metadata: MPropertyFriendlyName "input proxy pixel visibility maximum"
             // metadata: MPropertySuppressExpr "m_nCPin == -1"
-            float m_flInputMax; // 0x10            
+            float m_flInputMax; // 0x10
             // metadata: MPropertyFriendlyName "input proxy pixel visibility fade out time"
             // metadata: MPropertySuppressExpr "m_nCPin == -1"
-            float m_flInputPixelVisFade; // 0x14            
+            float m_flInputPixelVisFade; // 0x14
             // metadata: MPropertyFriendlyName "input proxy unsupported hardware fallback value"
             // metadata: MPropertySuppressExpr "m_nCPin == -1"
-            float m_flNoPixelVisibilityFallback; // 0x18            
+            float m_flNoPixelVisibilityFallback; // 0x18
             // metadata: MPropertyFriendlyName "input distance minimum"
             // metadata: MPropertySuppressExpr "m_nCPin == -1"
-            float m_flDistanceInputMin; // 0x1c            
+            float m_flDistanceInputMin; // 0x1c
             // metadata: MPropertyFriendlyName "input distance maximum"
             // metadata: MPropertySuppressExpr "m_nCPin == -1"
-            float m_flDistanceInputMax; // 0x20            
+            float m_flDistanceInputMax; // 0x20
             // metadata: MPropertyFriendlyName "input dot minimum"
             // metadata: MPropertySuppressExpr "m_nCPin == -1"
-            float m_flDotInputMin; // 0x24            
+            float m_flDotInputMin; // 0x24
             // metadata: MPropertyFriendlyName "input dot maximum"
             // metadata: MPropertySuppressExpr "m_nCPin == -1"
-            float m_flDotInputMax; // 0x28            
+            float m_flDotInputMax; // 0x28
             // metadata: MPropertyFriendlyName "input dot use CP angles"
             // metadata: MPropertySuppressExpr "m_nCPin == -1"
-            bool m_bDotCPAngles; // 0x2c            
+            bool m_bDotCPAngles; // 0x2c
             // metadata: MPropertyFriendlyName "input dot use Camera angles"
             // metadata: MPropertySuppressExpr "m_nCPin == -1"
-            bool m_bDotCameraAngles; // 0x2d            
+            bool m_bDotCameraAngles; // 0x2d
             uint8_t _pad002e[0x2]; // 0x2e
             // metadata: MPropertyFriendlyName "output alpha scale minimum"
             // metadata: MPropertySuppressExpr "m_nCPin == -1"
-            float m_flAlphaScaleMin; // 0x30            
+            float m_flAlphaScaleMin; // 0x30
             // metadata: MPropertyFriendlyName "output alpha scale maximum"
             // metadata: MPropertySuppressExpr "m_nCPin == -1"
-            float m_flAlphaScaleMax; // 0x34            
+            float m_flAlphaScaleMax; // 0x34
             // metadata: MPropertyFriendlyName "output radius scale minimum"
             // metadata: MPropertySuppressExpr "m_nCPin == -1"
-            float m_flRadiusScaleMin; // 0x38            
+            float m_flRadiusScaleMin; // 0x38
             // metadata: MPropertyFriendlyName "output radius scale maximum"
             // metadata: MPropertySuppressExpr "m_nCPin == -1"
-            float m_flRadiusScaleMax; // 0x3c            
+            float m_flRadiusScaleMax; // 0x3c
             // metadata: MPropertyFriendlyName "output radius FOV scale base"
             // metadata: MPropertySuppressExpr "m_nCPin == -1"
-            float m_flRadiusScaleFOVBase; // 0x40            
+            float m_flRadiusScaleFOVBase; // 0x40
             // metadata: MPropertyFriendlyName "vr camera right eye"
             // metadata: MParticleAdvancedField
-            bool m_bRightEye; // 0x44            
+            bool m_bRightEye; // 0x44
             uint8_t _pad0045[0x3];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::particles::CParticleVisibilityInputs, m_flCameraBias) == 0x0);
         static_assert(offsetof(source2sdk::particles::CParticleVisibilityInputs, m_nCPin) == 0x4);
         static_assert(offsetof(source2sdk::particles::CParticleVisibilityInputs, m_flProxyRadius) == 0x8);
@@ -104,7 +104,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::particles::CParticleVisibilityInputs, m_flRadiusScaleMax) == 0x3c);
         static_assert(offsetof(source2sdk::particles::CParticleVisibilityInputs, m_flRadiusScaleFOVBase) == 0x40);
         static_assert(offsetof(source2sdk::particles::CParticleVisibilityInputs, m_bRightEye) == 0x44);
-        
+
         static_assert(sizeof(source2sdk::particles::CParticleVisibilityInputs) == 0x48);
     };
 };

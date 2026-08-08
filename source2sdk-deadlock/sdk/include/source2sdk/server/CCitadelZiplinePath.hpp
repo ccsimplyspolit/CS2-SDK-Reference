@@ -23,14 +23,14 @@ namespace source2sdk
         class CCitadelZiplinePath : public source2sdk::server::CPathParticleRope
         {
         public:
-            std::int32_t m_iLaneNumber; // 0x588            
-            bool m_bUseBaseLaneColor; // 0x58c            
+            std::int32_t m_iLaneNumber; // 0x588
+            bool m_bUseBaseLaneColor; // 0x58c
             uint8_t _pad058d[0x3];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadelZiplinePath because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadelZiplinePath) == 0x590);
     };
 };

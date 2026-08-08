@@ -23,18 +23,18 @@ namespace source2sdk
         struct LastIncomingHit_t
         {
         public:
-            Vector vecDir; // 0x0            
-            Vector vecBoneLocalPos; // 0xc            
-            std::int32_t nHitboxBoneIndex; // 0x18            
-            float flHitStrength; // 0x1c            
+            Vector vecDir; // 0x0
+            Vector vecBoneLocalPos; // 0xc
+            std::int32_t nHitboxBoneIndex; // 0x18
+            float flHitStrength; // 0x1c
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::LastIncomingHit_t, vecDir) == 0x0);
         static_assert(offsetof(source2sdk::server::LastIncomingHit_t, vecBoneLocalPos) == 0xc);
         static_assert(offsetof(source2sdk::server::LastIncomingHit_t, nHitboxBoneIndex) == 0x18);
         static_assert(offsetof(source2sdk::server::LastIncomingHit_t, flHitStrength) == 0x1c);
-        
+
         static_assert(sizeof(source2sdk::server::LastIncomingHit_t) == 0x20);
     };
 };

@@ -24,12 +24,12 @@ namespace source2sdk
         class CDOTABehaviorTutorialRazorMoveToNPCToAttack : public source2sdk::server::CDOTABehaviorMoveToNPCToAttack
         {
         public:
-            source2sdk::server::CountdownTimer m_PlasmaFieldDelay; // 0x1a0            
+            source2sdk::server::CountdownTimer m_PlasmaFieldDelay; // 0x1a0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTABehaviorTutorialRazorMoveToNPCToAttack because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTABehaviorTutorialRazorMoveToNPCToAttack) == 0x1b8);
     };
 };

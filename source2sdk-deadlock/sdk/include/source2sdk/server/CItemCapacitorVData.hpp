@@ -21,7 +21,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x1a98
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CItemCapacitorVData : public source2sdk::server::CitadelItemVData
@@ -30,21 +30,21 @@ namespace source2sdk
             // metadata: MPropertyStartGroup "Modifiers"
             // m_DebuffModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEmbeddedSubclass<source2sdk::server::CCitadelModifier> m_DebuffModifier;
-            char m_DebuffModifier[0x10]; // 0x18b8            
+            char m_DebuffModifier[0x10]; // 0x18b8
             // metadata: MPropertyStartGroup "Visuals"
             // m_DamageParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_DamageParticle;
-            char m_DamageParticle[0xe0]; // 0x18c8            
+            char m_DamageParticle[0xe0]; // 0x18c8
             // m_PurgeCastParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_PurgeCastParticle;
-            char m_PurgeCastParticle[0xe0]; // 0x19a8            
+            char m_PurgeCastParticle[0xe0]; // 0x19a8
             // metadata: MPropertyStartGroup "Sounds"
-            CSoundEventName m_PurgeSound; // 0x1a88            
+            CSoundEventName m_PurgeSound; // 0x1a88
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CItemCapacitorVData because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CItemCapacitorVData) == 0x1a98);
     };
 };

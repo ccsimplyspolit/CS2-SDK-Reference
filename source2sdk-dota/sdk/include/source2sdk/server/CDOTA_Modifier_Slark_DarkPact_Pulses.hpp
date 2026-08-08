@@ -17,23 +17,23 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a70
+        // Size: 0x1a90
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Slark_DarkPact_Pulses : public source2sdk::client::CDOTA_Buff
         {
         public:
-            std::int32_t m_iPulseCount; // 0x1a58            
-            float radius; // 0x1a5c            
-            std::int32_t total_damage; // 0x1a60            
-            std::int32_t total_pulses; // 0x1a64            
-            std::int32_t self_damage_pct; // 0x1a68            
-            float pulse_interval; // 0x1a6c            
+            std::int32_t m_iPulseCount; // 0x1a78
+            float radius; // 0x1a7c
+            std::int32_t total_damage; // 0x1a80
+            std::int32_t total_pulses; // 0x1a84
+            std::int32_t self_damage_pct; // 0x1a88
+            float pulse_interval; // 0x1a8c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Slark_DarkPact_Pulses because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Slark_DarkPact_Pulses) == 0x1a70);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Slark_DarkPact_Pulses) == 0x1a90);
     };
 };

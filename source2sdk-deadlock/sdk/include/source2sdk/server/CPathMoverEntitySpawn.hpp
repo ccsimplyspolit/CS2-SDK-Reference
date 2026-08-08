@@ -37,17 +37,17 @@ namespace source2sdk
         public:
             // hMover has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CFuncMover> hMover;
-            char hMover[0x4]; // 0x0            
+            char hMover[0x4]; // 0x0
             uint8_t _pad0004[0x4]; // 0x4
             // vecOtherEntities has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::server::CBaseEntity>> vecOtherEntities;
-            char vecOtherEntities[0x18]; // 0x8            
+            char vecOtherEntities[0x18]; // 0x8
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::CPathMoverEntitySpawn, hMover) == 0x0);
         static_assert(offsetof(source2sdk::server::CPathMoverEntitySpawn, vecOtherEntities) == 0x8);
-        
+
         static_assert(sizeof(source2sdk::server::CPathMoverEntitySpawn) == 0x20);
     };
 };

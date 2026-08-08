@@ -19,18 +19,18 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x50
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CModelConfigElement_SetMaterialGroup : public source2sdk::modellib::CModelConfigElement
         {
         public:
-            CUtlString m_MaterialGroupName; // 0x48            
+            CUtlString m_MaterialGroupName; // 0x48
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CModelConfigElement_SetMaterialGroup because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::modellib::CModelConfigElement_SetMaterialGroup) == 0x50);
     };
 };

@@ -33,15 +33,15 @@ namespace source2sdk
         public:
             // m_glowEntity has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::C_BaseModelEntity> m_glowEntity;
-            char m_glowEntity[0x4]; // 0xa88            
-            bool m_usable; // 0xa8c            
+            char m_glowEntity[0x4]; // 0xa88
+            bool m_usable; // 0xa8c
             uint8_t _pad0a8d[0x3]; // 0xa8d
-            CUtlSymbolLarge m_szDisplayText; // 0xa90            
+            CUtlSymbolLarge m_szDisplayText; // 0xa90
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_BaseButton because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_BaseButton) == 0xa98);
     };
 };

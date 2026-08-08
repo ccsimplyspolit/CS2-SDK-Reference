@@ -27,7 +27,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xa98
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "GameTime_t m_tQueuedEnableTime"
         // static metadata: MNetworkVarNames "float m_flCaptureProgress"
         // static metadata: MNetworkVarNames "int m_nCaptureProgressOwner"
@@ -38,27 +38,27 @@ namespace source2sdk
         class CCitadelTriggerCapturePoint : public source2sdk::client::C_BaseTrigger
         {
         public:
-            source2sdk::client::CCitadelInWorldEventTimer* m_pUIWorldEventTimer; // 0xa78            
+            source2sdk::client::CCitadelInWorldEventTimer* m_pUIWorldEventTimer; // 0xa78
             // metadata: MNetworkEnable
             // metadata: MNetworkChangeCallback "OnQueuedEnableTimeChanged"
-            source2sdk::entity2::GameTime_t m_tQueuedEnableTime; // 0xa80            
+            source2sdk::entity2::GameTime_t m_tQueuedEnableTime; // 0xa80
             // metadata: MNetworkEnable
-            float m_flCaptureProgress; // 0xa84            
+            float m_flCaptureProgress; // 0xa84
             // metadata: MNetworkEnable
-            std::int32_t m_nCaptureProgressOwner; // 0xa88            
+            std::int32_t m_nCaptureProgressOwner; // 0xa88
             // metadata: MNetworkEnable
-            std::int32_t m_nActivelyCapturingTeam; // 0xa8c            
+            std::int32_t m_nActivelyCapturingTeam; // 0xa8c
             // metadata: MNetworkEnable
-            std::int32_t m_nActiveCapturers; // 0xa90            
+            std::int32_t m_nActiveCapturers; // 0xa90
             // metadata: MNetworkEnable
             // metadata: MNetworkChangeCallback "OnEnableStateChanged"
-            std::uint8_t m_nEnableState; // 0xa94            
+            std::uint8_t m_nEnableState; // 0xa94
             uint8_t _pad0a95[0x3];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadelTriggerCapturePoint because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadelTriggerCapturePoint) == 0xa98);
     };
 };

@@ -18,20 +18,20 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a78
+        // Size: 0x1a98
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Lycan_SummonWolves_CriticalStrike : public source2sdk::client::CDOTA_Buff
         {
         public:
-            source2sdk::server::CountdownTimer m_CooldownTimer; // 0x1a58            
-            std::int32_t maim_chance; // 0x1a70            
-            float maim_duration; // 0x1a74            
+            source2sdk::server::CountdownTimer m_CooldownTimer; // 0x1a78
+            std::int32_t maim_chance; // 0x1a90
+            float maim_duration; // 0x1a94
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Lycan_SummonWolves_CriticalStrike because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Lycan_SummonWolves_CriticalStrike) == 0x1a78);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Lycan_SummonWolves_CriticalStrike) == 0x1a98);
     };
 };

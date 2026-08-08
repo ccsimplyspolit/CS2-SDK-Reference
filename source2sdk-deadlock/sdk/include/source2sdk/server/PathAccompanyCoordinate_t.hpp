@@ -22,16 +22,16 @@ namespace source2sdk
         struct PathAccompanyCoordinate_t
         {
         public:
-            float m_flProgress; // 0x0            
-            float m_flLeftOffset; // 0x4            
-            VectorWS m_vOriginalPosition; // 0x8            
+            float m_flProgress; // 0x0
+            float m_flLeftOffset; // 0x4
+            VectorWS m_vOriginalPosition; // 0x8
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::PathAccompanyCoordinate_t, m_flProgress) == 0x0);
         static_assert(offsetof(source2sdk::server::PathAccompanyCoordinate_t, m_flLeftOffset) == 0x4);
         static_assert(offsetof(source2sdk::server::PathAccompanyCoordinate_t, m_vOriginalPosition) == 0x8);
-        
+
         static_assert(sizeof(source2sdk::server::PathAccompanyCoordinate_t) == 0x14);
     };
 };

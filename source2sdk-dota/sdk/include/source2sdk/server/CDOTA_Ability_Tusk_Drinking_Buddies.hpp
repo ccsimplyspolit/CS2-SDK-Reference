@@ -25,16 +25,16 @@ namespace source2sdk
         class CDOTA_Ability_Tusk_Drinking_Buddies : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            float buff_duration; // 0x580            
-            float pull_duration; // 0x584            
-            float min_distance; // 0x588            
-            bool m_bIsAltCastState; // 0x58c            
+            float buff_duration; // 0x580
+            float pull_duration; // 0x584
+            float min_distance; // 0x588
+            bool m_bIsAltCastState; // 0x58c
             uint8_t _pad058d[0x3];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Tusk_Drinking_Buddies because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Tusk_Drinking_Buddies) == 0x590);
     };
 };

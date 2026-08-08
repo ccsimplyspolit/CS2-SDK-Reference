@@ -32,13 +32,13 @@ namespace source2sdk
         public:
             // m_hHitTargets has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::server::CBaseEntity>> m_hHitTargets;
-            char m_hHitTargets[0x18]; // 0x208            
+            char m_hHitTargets[0x18]; // 0x208
             uint8_t _pad0220[0x2d0];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_UltimateBurst_Proc because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_UltimateBurst_Proc) == 0x4f0);
     };
 };

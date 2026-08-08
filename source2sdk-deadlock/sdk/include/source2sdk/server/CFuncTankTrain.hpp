@@ -24,12 +24,12 @@ namespace source2sdk
         class CFuncTankTrain : public source2sdk::server::CFuncTrackTrain
         {
         public:
-            source2sdk::entity2::CEntityIOOutput m_OnDeath; // 0x8a8            
+            source2sdk::entity2::CEntityIOOutput m_OnDeath; // 0x8a8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CFuncTankTrain because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CFuncTankTrain) == 0x8c0);
     };
 };

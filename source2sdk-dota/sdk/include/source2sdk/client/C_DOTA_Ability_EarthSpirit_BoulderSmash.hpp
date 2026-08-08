@@ -32,29 +32,29 @@ namespace source2sdk
         class C_DOTA_Ability_EarthSpirit_BoulderSmash : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            float speed; // 0x6a8            
-            float rock_damage; // 0x6ac            
-            float creep_multiplier; // 0x6b0            
-            float radius; // 0x6b4            
-            float rock_search_aoe; // 0x6b8            
-            float unit_distance; // 0x6bc            
-            float rock_distance; // 0x6c0            
-            std::int32_t m_nProjectileID; // 0x6c4            
+            float speed; // 0x6a8
+            float rock_damage; // 0x6ac
+            float creep_multiplier; // 0x6b0
+            float radius; // 0x6b4
+            float rock_search_aoe; // 0x6b8
+            float unit_distance; // 0x6bc
+            float rock_distance; // 0x6c0
+            std::int32_t m_nProjectileID; // 0x6c4
             // m_hCursorTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::C_BaseEntity> m_hCursorTarget;
-            char m_hCursorTarget[0x4]; // 0x6c8            
-            bool m_bUsedStone; // 0x6cc            
+            char m_hCursorTarget[0x4]; // 0x6c8
+            bool m_bUsedStone; // 0x6cc
             uint8_t _pad06cd[0x3]; // 0x6cd
             // m_hTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::C_BaseEntity> m_hTarget;
-            char m_hTarget[0x4]; // 0x6d0            
-            bool m_bTargetStone; // 0x6d4            
+            char m_hTarget[0x4]; // 0x6d0
+            bool m_bTargetStone; // 0x6d4
             uint8_t _pad06d5[0x3];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_EarthSpirit_BoulderSmash because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_EarthSpirit_BoulderSmash) == 0x6d8);
     };
 };

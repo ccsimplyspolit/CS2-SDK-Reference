@@ -20,24 +20,24 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x510
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_RenderClientPhysicsImpulse : public source2sdk::particles::CParticleFunctionRenderer
         {
         public:
             // metadata: MPropertyFriendlyName "radius"
-            source2sdk::particleslib::CPerParticleFloatInput m_flRadius; // 0x228            
+            source2sdk::particleslib::CPerParticleFloatInput m_flRadius; // 0x228
             // metadata: MPropertyFriendlyName "magnitude"
-            source2sdk::particleslib::CPerParticleFloatInput m_flMagnitude; // 0x398            
+            source2sdk::particleslib::CPerParticleFloatInput m_flMagnitude; // 0x398
             // metadata: MPropertyFriendlyName "filter explosion to single simulation id"
-            std::int32_t m_nSimIdFilter; // 0x508            
+            std::int32_t m_nSimIdFilter; // 0x508
             uint8_t _pad050c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_RenderClientPhysicsImpulse because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_RenderClientPhysicsImpulse) == 0x510);
     };
 };

@@ -18,22 +18,22 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a70
+        // Size: 0x1a90
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Seasonal_TI9_Shovel_BabyRoshan : public source2sdk::client::CDOTA_Buff
         {
         public:
-            bool m_bFirstThink; // 0x1a58            
-            uint8_t _pad1a59[0x3]; // 0x1a59
-            source2sdk::entity2::GameTime_t m_flStartTime; // 0x1a5c            
-            VectorWS m_vecStartingPos; // 0x1a60            
-            uint8_t _pad1a6c[0x4];
+            bool m_bFirstThink; // 0x1a78
+            uint8_t _pad1a79[0x3]; // 0x1a79
+            source2sdk::entity2::GameTime_t m_flStartTime; // 0x1a7c
+            VectorWS m_vecStartingPos; // 0x1a80
+            uint8_t _pad1a8c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Seasonal_TI9_Shovel_BabyRoshan because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Seasonal_TI9_Shovel_BabyRoshan) == 0x1a70);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Seasonal_TI9_Shovel_BabyRoshan) == 0x1a90);
     };
 };

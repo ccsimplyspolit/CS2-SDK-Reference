@@ -17,7 +17,7 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a58
+        // Size: 0x1a78
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Lone_Druid_Spirit_Bear_Self_Item_Restrictions : public source2sdk::client::CDOTA_Buff
@@ -26,8 +26,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: CDOTA_Modifier_Lone_Druid_Spirit_Bear_Self_Item_Restrictions has no schema binary (size is a guess)
     };
 };

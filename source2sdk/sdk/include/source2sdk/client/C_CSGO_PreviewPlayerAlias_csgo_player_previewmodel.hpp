@@ -17,7 +17,7 @@ namespace source2sdk
         // Registered alignment: 0x10
         // Alignment: 0x10
         // Standard-layout class: false
-        // Size: 0x3500
+        // Size: 0x3510
         // Has VTable
         // Construct allowed
         #pragma pack(push, 1)
@@ -27,8 +27,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: C_CSGO_PreviewPlayerAlias_csgo_player_previewmodel has no schema binary (size is a guess)
     };
 };

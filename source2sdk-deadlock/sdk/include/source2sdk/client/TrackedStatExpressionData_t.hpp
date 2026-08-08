@@ -17,7 +17,7 @@ namespace source2sdk
         // Alignment: 0x8
         // Standard-layout class: true
         // Size: 0x10
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyAutoExpandSelf
         #pragma pack(push, 1)
@@ -25,13 +25,13 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyDescription "The expression"
-            CUtlString strExpression; // 0x0            
+            CUtlString strExpression; // 0x0
             uint8_t _pad0008[0x8];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::TrackedStatExpressionData_t, strExpression) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::client::TrackedStatExpressionData_t) == 0x10);
     };
 };

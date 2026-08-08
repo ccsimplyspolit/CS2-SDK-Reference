@@ -17,22 +17,22 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a68
+        // Size: 0x1a88
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_SandKing_Impale : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float m_flPower; // 0x1a58            
-            float m_flStartZ; // 0x1a5c            
-            float m_flCurTime; // 0x1a60            
-            bool m_bDamageApplied; // 0x1a64            
-            uint8_t _pad1a65[0x3];
+            float m_flPower; // 0x1a78
+            float m_flStartZ; // 0x1a7c
+            float m_flCurTime; // 0x1a80
+            bool m_bDamageApplied; // 0x1a84
+            uint8_t _pad1a85[0x3];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_SandKing_Impale because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_SandKing_Impale) == 0x1a68);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_SandKing_Impale) == 0x1a88);
     };
 };

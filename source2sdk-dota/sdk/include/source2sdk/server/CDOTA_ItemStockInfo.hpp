@@ -27,19 +27,19 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0000[0x30]; // 0x0
-            std::int32_t iTeamNumber; // 0x30            
-            source2sdk::client::AbilityID_t nItemAbilityID; // 0x34            
-            float fStockDuration; // 0x38            
-            source2sdk::entity2::GameTime_t fStockTime; // 0x3c            
-            std::int32_t iStockCount; // 0x40            
-            std::int32_t iMaxCount; // 0x44            
-            float fInitialStockDuration; // 0x48            
-            source2sdk::client::PlayerID_t iPlayerID; // 0x4c            
-            std::int32_t iBonusDelayedStockCount; // 0x50            
+            std::int32_t iTeamNumber; // 0x30
+            source2sdk::client::AbilityID_t nItemAbilityID; // 0x34
+            float fStockDuration; // 0x38
+            source2sdk::entity2::GameTime_t fStockTime; // 0x3c
+            std::int32_t iStockCount; // 0x40
+            std::int32_t iMaxCount; // 0x44
+            float fInitialStockDuration; // 0x48
+            source2sdk::client::PlayerID_t iPlayerID; // 0x4c
+            std::int32_t iBonusDelayedStockCount; // 0x50
             uint8_t _pad0054[0x4];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::CDOTA_ItemStockInfo, iTeamNumber) == 0x30);
         static_assert(offsetof(source2sdk::server::CDOTA_ItemStockInfo, nItemAbilityID) == 0x34);
         static_assert(offsetof(source2sdk::server::CDOTA_ItemStockInfo, fStockDuration) == 0x38);
@@ -49,7 +49,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::server::CDOTA_ItemStockInfo, fInitialStockDuration) == 0x48);
         static_assert(offsetof(source2sdk::server::CDOTA_ItemStockInfo, iPlayerID) == 0x4c);
         static_assert(offsetof(source2sdk::server::CDOTA_ItemStockInfo, iBonusDelayedStockCount) == 0x50);
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_ItemStockInfo) == 0x58);
     };
 };

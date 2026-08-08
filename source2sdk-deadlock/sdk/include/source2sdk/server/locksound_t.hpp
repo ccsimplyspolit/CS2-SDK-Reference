@@ -25,17 +25,17 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0000[0x8]; // 0x0
-            CUtlSymbolLarge sLockedSound; // 0x8            
-            CUtlSymbolLarge sUnlockedSound; // 0x10            
-            source2sdk::entity2::GameTime_t flwaitSound; // 0x18            
+            CUtlSymbolLarge sLockedSound; // 0x8
+            CUtlSymbolLarge sUnlockedSound; // 0x10
+            source2sdk::entity2::GameTime_t flwaitSound; // 0x18
             uint8_t _pad001c[0x4];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::locksound_t, sLockedSound) == 0x8);
         static_assert(offsetof(source2sdk::server::locksound_t, sUnlockedSound) == 0x10);
         static_assert(offsetof(source2sdk::server::locksound_t, flwaitSound) == 0x18);
-        
+
         static_assert(sizeof(source2sdk::server::locksound_t) == 0x20);
     };
 };

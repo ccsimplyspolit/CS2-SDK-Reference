@@ -29,12 +29,12 @@ namespace source2sdk
         class CAnimGraphControllerPtr
         {
         public:
-            source2sdk::client::CAnimGraphControllerBase* m_pController; // 0x0            
+            source2sdk::client::CAnimGraphControllerBase* m_pController; // 0x0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::CAnimGraphControllerPtr, m_pController) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::client::CAnimGraphControllerPtr) == 0x8);
     };
 };

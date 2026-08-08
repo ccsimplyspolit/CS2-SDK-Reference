@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x918
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "CCitadelMinimapComponent::Storage_t m_CCitadelMinimapComponent"
         // static metadata: MNetworkVarNames "string_t m_iszSoundName"
         #pragma pack(push, 1)
@@ -31,16 +31,16 @@ namespace source2sdk
             // metadata: MNetworkUserGroup "CCitadelMinimapComponent"
             // metadata: MNetworkAlias "CCitadelMinimapComponent"
             // metadata: MNetworkTypeAlias "CCitadelMinimapComponent"
-            source2sdk::server::CCitadelMinimapComponent m_CCitadelMinimapComponent; // 0x8e0            
+            source2sdk::server::CCitadelMinimapComponent m_CCitadelMinimapComponent; // 0x8e0
             // metadata: MNetworkEnable
-            CUtlSymbolLarge m_iszSoundName; // 0x900            
-            Vector m_vAudioOffset; // 0x908            
+            CUtlSymbolLarge m_iszSoundName; // 0x900
+            Vector m_vAudioOffset; // 0x908
             uint8_t _pad0914[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CTriggerItemShop because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CTriggerItemShop) == 0x918);
     };
 };

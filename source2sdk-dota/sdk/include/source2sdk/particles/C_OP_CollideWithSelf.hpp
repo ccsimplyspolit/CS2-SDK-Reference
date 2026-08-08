@@ -21,21 +21,21 @@ namespace source2sdk
         // Size: 0x4b8
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_CollideWithSelf : public source2sdk::particles::CParticleFunctionConstraint
         {
         public:
             // metadata: MPropertyFriendlyName "particle radius scale"
-            source2sdk::particleslib::CPerParticleFloatInput m_flRadiusScale; // 0x1d8            
+            source2sdk::particleslib::CPerParticleFloatInput m_flRadiusScale; // 0x1d8
             // metadata: MPropertyFriendlyName "minimum speed for check"
-            source2sdk::particleslib::CPerParticleFloatInput m_flMinimumSpeed; // 0x348            
+            source2sdk::particleslib::CPerParticleFloatInput m_flMinimumSpeed; // 0x348
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_CollideWithSelf because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_CollideWithSelf) == 0x4b8);
     };
 };

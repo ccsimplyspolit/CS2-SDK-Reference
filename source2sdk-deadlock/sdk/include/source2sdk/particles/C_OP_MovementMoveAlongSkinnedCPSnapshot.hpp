@@ -20,30 +20,30 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x4c8
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_MovementMoveAlongSkinnedCPSnapshot : public source2sdk::particles::CParticleFunctionOperator
         {
         public:
             // metadata: MPropertyFriendlyName "control point number"
-            std::int32_t m_nControlPointNumber; // 0x1d8            
+            std::int32_t m_nControlPointNumber; // 0x1d8
             // metadata: MPropertyFriendlyName "snapshot control point number"
-            std::int32_t m_nSnapshotControlPointNumber; // 0x1dc            
+            std::int32_t m_nSnapshotControlPointNumber; // 0x1dc
             // metadata: MPropertyFriendlyName "set normal"
-            bool m_bSetNormal; // 0x1e0            
+            bool m_bSetNormal; // 0x1e0
             // metadata: MPropertyFriendlyName "set radius"
-            bool m_bSetRadius; // 0x1e1            
+            bool m_bSetRadius; // 0x1e1
             uint8_t _pad01e2[0x6]; // 0x1e2
             // metadata: MPropertyFriendlyName "Interpolation"
-            source2sdk::particleslib::CPerParticleFloatInput m_flInterpolation; // 0x1e8            
+            source2sdk::particleslib::CPerParticleFloatInput m_flInterpolation; // 0x1e8
             // metadata: MPropertyFriendlyName "Snapshot Index T Value"
-            source2sdk::particleslib::CPerParticleFloatInput m_flTValue; // 0x358            
+            source2sdk::particleslib::CPerParticleFloatInput m_flTValue; // 0x358
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_MovementMoveAlongSkinnedCPSnapshot because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_MovementMoveAlongSkinnedCPSnapshot) == 0x4c8);
     };
 };

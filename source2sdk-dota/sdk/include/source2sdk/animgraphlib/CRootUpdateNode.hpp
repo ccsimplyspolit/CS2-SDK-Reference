@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x70
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CRootUpdateNode : public source2sdk::animgraphlib::CUnaryUpdateNode
@@ -28,8 +28,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::animgraphlib::CRootUpdateNode) == 0x70);
     };
 };

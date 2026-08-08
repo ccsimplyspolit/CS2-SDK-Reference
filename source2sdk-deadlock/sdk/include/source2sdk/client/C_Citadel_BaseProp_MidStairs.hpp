@@ -20,20 +20,20 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x5f8
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "EMidStairsLocation_t m_eLocation"
         #pragma pack(push, 1)
         class C_Citadel_BaseProp_MidStairs : public source2sdk::client::C_PointEntity
         {
         public:
             // metadata: MNetworkEnable
-            source2sdk::client::EMidStairsLocation_t m_eLocation; // 0x5f0            
+            source2sdk::client::EMidStairsLocation_t m_eLocation; // 0x5f0
             uint8_t _pad05f4[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_Citadel_BaseProp_MidStairs because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_Citadel_BaseProp_MidStairs) == 0x5f8);
     };
 };

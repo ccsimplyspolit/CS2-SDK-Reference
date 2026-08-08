@@ -26,14 +26,14 @@ namespace source2sdk
         class CDOTA_Item_Orb_Of_Revelations : public source2sdk::server::CDOTA_Item
         {
         public:
-            source2sdk::server::CountdownTimer m_ViewerTimer; // 0x658            
-            std::int32_t m_iProjectile; // 0x670            
+            source2sdk::server::CountdownTimer m_ViewerTimer; // 0x658
+            std::int32_t m_iProjectile; // 0x670
             uint8_t _pad0674[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Item_Orb_Of_Revelations because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Item_Orb_Of_Revelations) == 0x678);
     };
 };

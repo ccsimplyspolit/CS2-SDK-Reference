@@ -23,26 +23,26 @@ namespace source2sdk
         class CEnvInstructorVRHint : public source2sdk::server::CPointEntity
         {
         public:
-            CUtlSymbolLarge m_iszName; // 0x4a0            
-            CUtlSymbolLarge m_iszHintTargetEntity; // 0x4a8            
-            std::int32_t m_iTimeout; // 0x4b0            
+            CUtlSymbolLarge m_iszName; // 0x4a0
+            CUtlSymbolLarge m_iszHintTargetEntity; // 0x4a8
+            std::int32_t m_iTimeout; // 0x4b0
             uint8_t _pad04b4[0x4]; // 0x4b4
-            CUtlSymbolLarge m_iszCaption; // 0x4b8            
-            CUtlSymbolLarge m_iszStartSound; // 0x4c0            
-            std::int32_t m_iLayoutFileType; // 0x4c8            
+            CUtlSymbolLarge m_iszCaption; // 0x4b8
+            CUtlSymbolLarge m_iszStartSound; // 0x4c0
+            std::int32_t m_iLayoutFileType; // 0x4c8
             uint8_t _pad04cc[0x4]; // 0x4cc
-            CUtlSymbolLarge m_iszCustomLayoutFile; // 0x4d0            
-            std::int32_t m_iAttachType; // 0x4d8            
-            float m_flHeightOffset; // 0x4dc            
-            
+            CUtlSymbolLarge m_iszCustomLayoutFile; // 0x4d0
+            std::int32_t m_iAttachType; // 0x4d8
+            float m_flHeightOffset; // 0x4dc
+
             // Datamap fields:
             // CUtlSymbolLarge InputShowHint; // 0x0
             // void InputEndHint; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CEnvInstructorVRHint because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CEnvInstructorVRHint) == 0x4e0);
     };
 };

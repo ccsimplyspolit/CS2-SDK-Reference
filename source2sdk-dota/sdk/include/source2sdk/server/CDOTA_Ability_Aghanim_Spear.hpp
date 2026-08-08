@@ -34,19 +34,19 @@ namespace source2sdk
         public:
             // hAlreadyHitList has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::server::CBaseEntity>> hAlreadyHitList;
-            char hAlreadyHitList[0x18]; // 0x580            
+            char hAlreadyHitList[0x18]; // 0x580
             // m_vecProjectileHandles has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<std::int32_t> m_vecProjectileHandles;
-            char m_vecProjectileHandles[0x18]; // 0x598            
+            char m_vecProjectileHandles[0x18]; // 0x598
             uint8_t _pad05b0[0x14]; // 0x5b0
-            VectorWS m_vTarget; // 0x5c4            
-            VectorWS m_vSourcePosition; // 0x5d0            
-            std::int32_t damage; // 0x5dc            
+            VectorWS m_vTarget; // 0x5c4
+            VectorWS m_vSourcePosition; // 0x5d0
+            std::int32_t damage; // 0x5dc
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Aghanim_Spear because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Aghanim_Spear) == 0x5e0);
     };
 };

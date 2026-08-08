@@ -25,13 +25,13 @@ namespace source2sdk
         {
         public:
             uint8_t _pad00c0[0x280]; // 0xc0
-            source2sdk::client::ParticleIndex_t m_hAOEEffect; // 0x340            
+            source2sdk::client::ParticleIndex_t m_hAOEEffect; // 0x340
             uint8_t _pad0344[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_NullificationAuraAOE because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Modifier_NullificationAuraAOE) == 0x348);
     };
 };

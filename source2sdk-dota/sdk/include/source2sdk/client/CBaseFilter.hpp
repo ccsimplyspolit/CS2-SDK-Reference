@@ -25,18 +25,18 @@ namespace source2sdk
         class CBaseFilter : public source2sdk::client::CLogicalEntity
         {
         public:
-            bool m_bNegated; // 0x5f0            
+            bool m_bNegated; // 0x5f0
             uint8_t _pad05f1[0x7]; // 0x5f1
-            source2sdk::entity2::CEntityIOOutput m_OnPass; // 0x5f8            
-            source2sdk::entity2::CEntityIOOutput m_OnFail; // 0x610            
-            
+            source2sdk::entity2::CEntityIOOutput m_OnPass; // 0x5f8
+            source2sdk::entity2::CEntityIOOutput m_OnFail; // 0x610
+
             // Datamap fields:
             // void InputTestActivator; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CBaseFilter because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CBaseFilter) == 0x628);
     };
 };

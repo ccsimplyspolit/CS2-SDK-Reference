@@ -32,13 +32,13 @@ namespace source2sdk
         public:
             // hProjectile has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> hProjectile;
-            char hProjectile[0x4]; // 0xd0            
+            char hProjectile[0x4]; // 0xd0
             uint8_t _pad00d4[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_Unicorn_DazzlingOrbNextTarget because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_Unicorn_DazzlingOrbNextTarget) == 0xd8);
     };
 };

@@ -20,19 +20,19 @@ namespace source2sdk
         // Size: 0x40
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Vector 2D"
         #pragma pack(push, 1)
         class CSmartPropVariable_Vector2D : public source2sdk::smartprops::CSmartPropVariable
         {
         public:
-            Vector2D m_DefaultValue; // 0x38            
+            Vector2D m_DefaultValue; // 0x38
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSmartPropVariable_Vector2D because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::smartprops::CSmartPropVariable_Vector2D) == 0x40);
     };
 };

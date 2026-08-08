@@ -17,23 +17,23 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a78
+        // Size: 0x1a98
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Greevil_Miniboss_Blue_ColdFeet : public source2sdk::client::CDOTA_Buff
         {
         public:
-            VectorWS m_vecStartPosition; // 0x1a58            
-            std::int32_t m_nCurrentTick; // 0x1a64            
-            float damage; // 0x1a68            
-            std::int32_t break_distance; // 0x1a6c            
-            float stun_duration; // 0x1a70            
-            uint8_t _pad1a74[0x4];
+            VectorWS m_vecStartPosition; // 0x1a78
+            std::int32_t m_nCurrentTick; // 0x1a84
+            float damage; // 0x1a88
+            std::int32_t break_distance; // 0x1a8c
+            float stun_duration; // 0x1a90
+            uint8_t _pad1a94[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Greevil_Miniboss_Blue_ColdFeet because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Greevil_Miniboss_Blue_ColdFeet) == 0x1a78);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Greevil_Miniboss_Blue_ColdFeet) == 0x1a98);
     };
 };

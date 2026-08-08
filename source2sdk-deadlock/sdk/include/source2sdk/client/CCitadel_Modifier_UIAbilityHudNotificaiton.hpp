@@ -23,12 +23,12 @@ namespace source2sdk
         class CCitadel_Modifier_UIAbilityHudNotificaiton : public source2sdk::client::CCitadelModifier
         {
         public:
-            CUtlString m_strHudMessage; // 0xc0            
+            CUtlString m_strHudMessage; // 0xc0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_UIAbilityHudNotificaiton because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Modifier_UIAbilityHudNotificaiton) == 0xc8);
     };
 };

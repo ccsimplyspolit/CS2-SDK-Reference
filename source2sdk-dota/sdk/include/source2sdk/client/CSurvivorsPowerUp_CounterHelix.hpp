@@ -24,14 +24,14 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0800[0x8]; // 0x800
-            float m_flChanceToCounter; // 0x808            
-            float m_flDelayBetweenCounters; // 0x80c            
+            float m_flChanceToCounter; // 0x808
+            float m_flDelayBetweenCounters; // 0x80c
             uint8_t _pad0810[0x8];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSurvivorsPowerUp_CounterHelix because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CSurvivorsPowerUp_CounterHelix) == 0x818);
     };
 };

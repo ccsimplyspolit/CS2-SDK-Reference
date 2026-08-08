@@ -31,12 +31,12 @@ namespace source2sdk
             uint8_t _pad0000[0x38]; // 0x0
             // m_ExpresserTargets has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::server::CAI_Expresser*> m_ExpresserTargets;
-            char m_ExpresserTargets[0x18]; // 0x38            
+            char m_ExpresserTargets[0x18]; // 0x38
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::CResponseQueue, m_ExpresserTargets) == 0x38);
-        
+
         static_assert(sizeof(source2sdk::server::CResponseQueue) == 0x50);
     };
 };

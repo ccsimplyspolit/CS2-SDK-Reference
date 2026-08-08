@@ -17,23 +17,23 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a70
+        // Size: 0x1a90
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Item_Force_Field_Effect : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float bonus_aoe_armor; // 0x1a58            
-            float bonus_aoe_ms; // 0x1a5c            
-            float bonus_aoe_mres; // 0x1a60            
-            float self_mres; // 0x1a64            
-            float self_armor; // 0x1a68            
-            std::int32_t active_reflection_pct; // 0x1a6c            
+            float bonus_aoe_armor; // 0x1a78
+            float bonus_aoe_ms; // 0x1a7c
+            float bonus_aoe_mres; // 0x1a80
+            float self_mres; // 0x1a84
+            float self_armor; // 0x1a88
+            std::int32_t active_reflection_pct; // 0x1a8c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Item_Force_Field_Effect because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Item_Force_Field_Effect) == 0x1a70);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Item_Force_Field_Effect) == 0x1a90);
     };
 };

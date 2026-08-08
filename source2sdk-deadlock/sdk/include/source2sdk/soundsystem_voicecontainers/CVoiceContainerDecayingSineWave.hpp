@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xb0
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "TESTBED: Decaying Sine Wave Container"
         // static metadata: MPropertyDescription "Only text params, renders in real time"
@@ -29,15 +29,15 @@ namespace source2sdk
         public:
             // metadata: MPropertyFriendlyName "Frequency (Hz)"
             // metadata: MPropertyDescription "The frequency of this sine tone."
-            float m_flFrequency; // 0xa8            
+            float m_flFrequency; // 0xa8
             // metadata: MPropertyFriendlyName "Decay Time (Seconds)"
             // metadata: MPropertyDescription "The frequency of this sine tone."
-            float m_flDecayTime; // 0xac            
+            float m_flDecayTime; // 0xac
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CVoiceContainerDecayingSineWave because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::soundsystem_voicecontainers::CVoiceContainerDecayingSineWave) == 0xb0);
     };
 };

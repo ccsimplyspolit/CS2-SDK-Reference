@@ -20,23 +20,23 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x58
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CNmIDEventConditionNode_CDefinition : public source2sdk::animlib::CNmBoolValueNode_CDefinition
         {
         public:
-            std::int16_t m_nSourceStateNodeIdx; // 0x10            
+            std::int16_t m_nSourceStateNodeIdx; // 0x10
             uint8_t _pad0012[0x2]; // 0x12
-            source2sdk::animlib::CNmBitFlags m_eventConditionRules; // 0x14            
+            source2sdk::animlib::CNmBitFlags m_eventConditionRules; // 0x14
             // m_eventIDs has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVectorFixedGrowable<CGlobalSymbol,5> m_eventIDs;
-            char m_eventIDs[0x40]; // 0x18            
+            char m_eventIDs[0x40]; // 0x18
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CNmIDEventConditionNode::CDefinition because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::animlib::CNmIDEventConditionNode_CDefinition) == 0x58);
     };
 };

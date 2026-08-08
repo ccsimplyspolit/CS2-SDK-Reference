@@ -33,18 +33,18 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0f70[0x4]; // 0xf70
-            source2sdk::entity2::GameTime_t m_tNextBombTime; // 0xf74            
+            source2sdk::entity2::GameTime_t m_tNextBombTime; // 0xf74
             // m_vHitTargets has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::server::CBaseEntity>> m_vHitTargets;
-            char m_vHitTargets[0x18]; // 0xf78            
-            source2sdk::modellib::AttachmentHandle_t m_hShootPos; // 0xf90            
+            char m_vHitTargets[0x18]; // 0xf78
+            source2sdk::modellib::AttachmentHandle_t m_hShootPos; // 0xf90
             uint8_t _pad0f91[0x3]; // 0xf91
-            float m_flDetonationTime; // 0xf94            
+            float m_flDetonationTime; // 0xf94
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_Tier3Boss_DropBombs because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Ability_Tier3Boss_DropBombs) == 0xf98);
     };
 };

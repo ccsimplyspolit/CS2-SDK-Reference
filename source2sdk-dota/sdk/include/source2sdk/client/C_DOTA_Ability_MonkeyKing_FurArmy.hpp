@@ -36,23 +36,23 @@ namespace source2sdk
         public:
             // m_hThinker has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::C_BaseEntity> m_hThinker;
-            char m_hThinker[0x4]; // 0x6a8            
-            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x6ac            
-            std::int32_t num_first_soldiers; // 0x6b0            
-            std::int32_t num_second_soldiers; // 0x6b4            
-            bool m_bCreateMonkeys; // 0x6b8            
+            char m_hThinker[0x4]; // 0x6a8
+            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x6ac
+            std::int32_t num_first_soldiers; // 0x6b0
+            std::int32_t num_second_soldiers; // 0x6b4
+            bool m_bCreateMonkeys; // 0x6b8
             uint8_t _pad06b9[0x3]; // 0x6b9
-            source2sdk::entity2::GameTime_t m_flNextCreationTime; // 0x6bc            
-            source2sdk::entity2::GameTime_t m_flScepterTime; // 0x6c0            
+            source2sdk::entity2::GameTime_t m_flNextCreationTime; // 0x6bc
+            source2sdk::entity2::GameTime_t m_flScepterTime; // 0x6c0
             uint8_t _pad06c4[0x4]; // 0x6c4
             // m_vecSoldiers has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::client::C_BaseEntity>> m_vecSoldiers;
-            char m_vecSoldiers[0x18]; // 0x6c8            
+            char m_vecSoldiers[0x18]; // 0x6c8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_MonkeyKing_FurArmy because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_MonkeyKing_FurArmy) == 0x6e0);
     };
 };

@@ -18,20 +18,20 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1b50
+        // Size: 0x1b70
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_AntiMage_Counterspell : public source2sdk::client::CDOTA_Buff
         {
         public:
-            source2sdk::client::CModifierParams m_LastParams; // 0x1a58            
-            std::int32_t magic_resistance; // 0x1b48            
-            std::int32_t reflected_spell_amp; // 0x1b4c            
+            source2sdk::client::CModifierParams m_LastParams; // 0x1a78
+            std::int32_t magic_resistance; // 0x1b68
+            std::int32_t reflected_spell_amp; // 0x1b6c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_AntiMage_Counterspell because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_AntiMage_Counterspell) == 0x1b50);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_AntiMage_Counterspell) == 0x1b70);
     };
 };

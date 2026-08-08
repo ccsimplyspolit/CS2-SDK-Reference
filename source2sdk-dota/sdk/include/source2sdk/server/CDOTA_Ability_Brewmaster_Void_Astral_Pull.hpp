@@ -25,15 +25,15 @@ namespace source2sdk
         class CDOTA_Ability_Brewmaster_Void_Astral_Pull : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            std::int32_t pull_speed; // 0x580            
-            std::int32_t pull_distance; // 0x584            
-            VectorWS m_vTargetPos; // 0x588            
-            VectorWS m_vEndpoint; // 0x594            
+            std::int32_t pull_speed; // 0x580
+            std::int32_t pull_distance; // 0x584
+            VectorWS m_vTargetPos; // 0x588
+            VectorWS m_vEndpoint; // 0x594
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Brewmaster_Void_Astral_Pull because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Brewmaster_Void_Astral_Pull) == 0x5a0);
     };
 };

@@ -45,7 +45,7 @@ x64. Значение оттуда почти наверняка — валид�
 
 ```
 === client.dll @ 0x7ffcaba00000  (size 0x2554000) ===
-  dwLocalPlayerController              offset=0x237FB70  va=0x7ffcabd7eba0  → ptr 0x7ffcaef53080 (in user-mode range)
+  dwLocalPlayerController              offset=0x237FB80  va=0x7ffcabd7ebb0  → ptr 0x7ffcaef53080 (in user-mode range)
   dwGameRules                          offset=0x23A49D8  va=0x7ffcabda39d8  → ptr 0x7ffcaee06210 (in user-mode range)
   dwLocalPlayerPawn                    offset=0x23A5238  va=0x7ffcabda4238  → ptr 0x7ffcae4c05f0 (in user-mode range)
   dwCSGOInput                          offset=0x23BA790  va=0x7ffcabdb95f0  → ptr 0x7ffcaee06550 (in user-mode range)
@@ -65,7 +65,7 @@ Exit `0`. Каждый TRACKED global указывает во что-то осм
 ### `NULL (game may not be fully loaded)`
 
 ```
-dwLocalPlayerController  offset=0x237FB70  va=...  → NULL (game may not be fully loaded)
+dwLocalPlayerController  offset=0x237FB80  va=...  → NULL (game may not be fully loaded)
 ```
 
 `[dwLocalPlayerController]` = 0. Классика для главного меню — pointer

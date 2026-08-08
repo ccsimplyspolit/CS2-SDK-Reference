@@ -23,16 +23,16 @@ namespace source2sdk
         class CCitadel_Ability_Teleport : public source2sdk::server::CCitadelBaseAbility
         {
         public:
-            bool m_bTeleportingToTarget; // 0xf70            
+            bool m_bTeleportingToTarget; // 0xf70
             uint8_t _pad0f71[0x3]; // 0xf71
-            Vector m_vTargetPosition; // 0xf74            
-            QAngle m_vTargetAngles; // 0xf80            
+            Vector m_vTargetPosition; // 0xf74
+            QAngle m_vTargetAngles; // 0xf80
             uint8_t _pad0f8c[0xc];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_Teleport because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Ability_Teleport) == 0xf98);
     };
 };

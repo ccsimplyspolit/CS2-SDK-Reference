@@ -28,8 +28,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: CDOTA_Ability_CDOTA_Ability_Special_Bonus_Unique_DarkWillow_1 has no schema binary (size is a guess)
     };
 };

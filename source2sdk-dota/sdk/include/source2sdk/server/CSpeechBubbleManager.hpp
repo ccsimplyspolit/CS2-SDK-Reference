@@ -29,14 +29,14 @@ namespace source2sdk
         public:
             // m_SpeechBubbles has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVectorEmbeddedNetworkVar<source2sdk::server::CSpeechBubbleInfo> m_SpeechBubbles;
-            char m_SpeechBubbles[0x578]; // 0x498            
-            std::uint16_t m_unBubbleCount; // 0xa10            
+            char m_SpeechBubbles[0x578]; // 0x498
+            std::uint16_t m_unBubbleCount; // 0xa10
             uint8_t _pad0a12[0x6];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSpeechBubbleManager because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CSpeechBubbleManager) == 0xa18);
     };
 };

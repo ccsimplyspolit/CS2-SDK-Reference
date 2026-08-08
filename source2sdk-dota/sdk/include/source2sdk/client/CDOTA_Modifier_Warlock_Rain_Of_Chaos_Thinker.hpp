@@ -17,22 +17,22 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a68
+        // Size: 0x1a88
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Warlock_Rain_Of_Chaos_Thinker : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float stun_duration; // 0x1a58            
-            bool bHasScepter; // 0x1a5c            
-            uint8_t _pad1a5d[0x3]; // 0x1a5d
-            float aoe; // 0x1a60            
-            std::int32_t m_iCount; // 0x1a64            
+            float stun_duration; // 0x1a78
+            bool bHasScepter; // 0x1a7c
+            uint8_t _pad1a7d[0x3]; // 0x1a7d
+            float aoe; // 0x1a80
+            std::int32_t m_iCount; // 0x1a84
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Warlock_Rain_Of_Chaos_Thinker because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Warlock_Rain_Of_Chaos_Thinker) == 0x1a68);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Warlock_Rain_Of_Chaos_Thinker) == 0x1a88);
     };
 };

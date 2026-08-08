@@ -22,18 +22,18 @@ namespace source2sdk
         struct VsInputSignatureElement_t
         {
         public:
-            char m_pName[64]; // 0x0            
-            char m_pSemantic[64]; // 0x40            
-            char m_pD3DSemanticName[64]; // 0x80            
-            std::int32_t m_nD3DSemanticIndex; // 0xc0            
+            char m_pName[64]; // 0x0
+            char m_pSemantic[64]; // 0x40
+            char m_pD3DSemanticName[64]; // 0x80
+            std::int32_t m_nD3DSemanticIndex; // 0xc0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::modellib::VsInputSignatureElement_t, m_pName) == 0x0);
         static_assert(offsetof(source2sdk::modellib::VsInputSignatureElement_t, m_pSemantic) == 0x40);
         static_assert(offsetof(source2sdk::modellib::VsInputSignatureElement_t, m_pD3DSemanticName) == 0x80);
         static_assert(offsetof(source2sdk::modellib::VsInputSignatureElement_t, m_nD3DSemanticIndex) == 0xc0);
-        
+
         static_assert(sizeof(source2sdk::modellib::VsInputSignatureElement_t) == 0xc4);
     };
 };

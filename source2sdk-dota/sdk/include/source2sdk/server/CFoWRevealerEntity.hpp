@@ -24,13 +24,13 @@ namespace source2sdk
         class CFoWRevealerEntity : public source2sdk::server::CBaseEntity
         {
         public:
-            std::uint32_t m_unViewerTeam; // 0x498            
-            std::int32_t m_nVisionRange; // 0x49c            
+            std::uint32_t m_unViewerTeam; // 0x498
+            std::int32_t m_nVisionRange; // 0x49c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CFoWRevealerEntity because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CFoWRevealerEntity) == 0x4a0);
     };
 };

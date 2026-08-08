@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x60
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyCustomEditor "ModelInput()"
         // static metadata: MCustomFGDMetadata "{ KV3DefaultTestFnName = 'CParticleModelInputDefaultTestFunc' }"
@@ -28,16 +28,16 @@ namespace source2sdk
         class CParticleModelInput : public source2sdk::particleslib::CParticleInput
         {
         public:
-            source2sdk::particleslib::ParticleModelType_t m_nType; // 0x10            
+            source2sdk::particleslib::ParticleModelType_t m_nType; // 0x10
             uint8_t _pad0014[0x4]; // 0x14
-            CParticleNamedValueRef m_NamedValue; // 0x18            
-            std::int32_t m_nControlPoint; // 0x58            
+            CParticleNamedValueRef m_NamedValue; // 0x18
+            std::int32_t m_nControlPoint; // 0x58
             uint8_t _pad005c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CParticleModelInput because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particleslib::CParticleModelInput) == 0x60);
     };
 };

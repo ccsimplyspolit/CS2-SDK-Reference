@@ -23,14 +23,14 @@ namespace source2sdk
         class CCitadel_Item_ProjectileTest : public source2sdk::server::CCitadel_Item
         {
         public:
-            VectorWS m_vLaunchPosition; // 0xf78            
-            QAngle m_qLaunchAngle; // 0xf84            
+            VectorWS m_vLaunchPosition; // 0xf78
+            QAngle m_qLaunchAngle; // 0xf84
             uint8_t _pad0f90[0x80];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Item_ProjectileTest because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Item_ProjectileTest) == 0x1010);
     };
 };

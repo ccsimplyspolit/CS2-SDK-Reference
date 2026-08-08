@@ -20,23 +20,23 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x628
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_LazyCullCompareFloat : public source2sdk::particles::CParticleFunctionOperator
         {
         public:
             // metadata: MPropertyFriendlyName "Comparison Value 1"
-            source2sdk::particleslib::CPerParticleFloatInput m_flComparsion1; // 0x1d8            
+            source2sdk::particleslib::CPerParticleFloatInput m_flComparsion1; // 0x1d8
             // metadata: MPropertyFriendlyName "Comparison Value 2"
-            source2sdk::particleslib::CPerParticleFloatInput m_flComparsion2; // 0x348            
+            source2sdk::particleslib::CPerParticleFloatInput m_flComparsion2; // 0x348
             // metadata: MPropertyFriendlyName "Cull Lifetime"
-            source2sdk::particleslib::CPerParticleFloatInput m_flCullTime; // 0x4b8            
+            source2sdk::particleslib::CPerParticleFloatInput m_flCullTime; // 0x4b8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_LazyCullCompareFloat because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_LazyCullCompareFloat) == 0x628);
     };
 };

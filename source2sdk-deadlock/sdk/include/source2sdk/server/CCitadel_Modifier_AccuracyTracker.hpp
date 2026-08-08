@@ -24,13 +24,13 @@ namespace source2sdk
         {
         public:
             uint8_t _pad00d0[0x18]; // 0xd0
-            float m_flInterval; // 0xe8            
-            float m_flProgress; // 0xec            
+            float m_flInterval; // 0xe8
+            float m_flProgress; // 0xec
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_AccuracyTracker because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_AccuracyTracker) == 0xf0);
     };
 };

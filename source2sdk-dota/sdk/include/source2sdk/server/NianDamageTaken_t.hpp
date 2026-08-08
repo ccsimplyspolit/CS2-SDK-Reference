@@ -23,16 +23,16 @@ namespace source2sdk
         struct NianDamageTaken_t
         {
         public:
-            std::int32_t nDamage; // 0x0            
-            source2sdk::client::PlayerID_t nPlayerID; // 0x4            
-            Vector vPos; // 0x8            
+            std::int32_t nDamage; // 0x0
+            source2sdk::client::PlayerID_t nPlayerID; // 0x4
+            Vector vPos; // 0x8
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::NianDamageTaken_t, nDamage) == 0x0);
         static_assert(offsetof(source2sdk::server::NianDamageTaken_t, nPlayerID) == 0x4);
         static_assert(offsetof(source2sdk::server::NianDamageTaken_t, vPos) == 0x8);
-        
+
         static_assert(sizeof(source2sdk::server::NianDamageTaken_t) == 0x14);
     };
 };

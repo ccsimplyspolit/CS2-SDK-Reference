@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0xa88
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MEntityAllowsPortraitWorldSpawn
         #pragma pack(push, 1)
         class CDOTA_Survivors_EffectsEntity : public source2sdk::client::C_BaseModelEntity
@@ -28,8 +28,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::client::CDOTA_Survivors_EffectsEntity) == 0xa88);
     };
 };

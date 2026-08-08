@@ -28,8 +28,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: CDOTA_Ability_Seasonal_Summon_TI9_Balloon has no schema binary (size is a guess)
     };
 };

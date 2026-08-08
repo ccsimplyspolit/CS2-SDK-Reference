@@ -24,12 +24,12 @@ namespace source2sdk
         class CAmbientCreatures : public source2sdk::client::C_DOTAWorldParticleSystem
         {
         public:
-            CUtlString m_szAnimationName; // 0xad0            
+            CUtlString m_szAnimationName; // 0xad0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CAmbientCreatures because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CAmbientCreatures) == 0xad8);
     };
 };

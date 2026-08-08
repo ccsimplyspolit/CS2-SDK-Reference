@@ -23,12 +23,12 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0000[0x8]; // 0x0
-            CUtlString m_ComponentData; // 0x8            
+            CUtlString m_ComponentData; // 0x8
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::pulse_system::TestComponent_t, m_ComponentData) == 0x8);
-        
+
         static_assert(sizeof(source2sdk::pulse_system::TestComponent_t) == 0x10);
     };
 };

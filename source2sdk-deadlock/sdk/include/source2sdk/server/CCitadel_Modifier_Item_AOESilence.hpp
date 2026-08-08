@@ -23,15 +23,15 @@ namespace source2sdk
         class CCitadel_Modifier_Item_AOESilence : public source2sdk::server::CCitadelModifierAura
         {
         public:
-            float m_flStartRadius; // 0x108            
-            float m_flEndRadius; // 0x10c            
-            float m_flSpreadDuration; // 0x110            
+            float m_flStartRadius; // 0x108
+            float m_flEndRadius; // 0x10c
+            float m_flSpreadDuration; // 0x110
             uint8_t _pad0114[0x104];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_Item_AOESilence because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_Item_AOESilence) == 0x218);
     };
 };

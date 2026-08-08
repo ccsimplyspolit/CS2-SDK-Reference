@@ -24,13 +24,13 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0000[0x8]; // 0x0
-            bool m_bIsValid; // 0x8            
+            bool m_bIsValid; // 0x8
             uint8_t _pad0009[0x7];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::host::CAnimScriptBase, m_bIsValid) == 0x8);
-        
+
         static_assert(sizeof(source2sdk::host::CAnimScriptBase) == 0x10);
     };
 };

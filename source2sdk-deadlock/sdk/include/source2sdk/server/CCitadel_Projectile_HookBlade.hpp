@@ -23,13 +23,13 @@ namespace source2sdk
         class CCitadel_Projectile_HookBlade : public source2sdk::server::CCitadelTrackedProjectile
         {
         public:
-            bool bIsReturning; // 0x890            
+            bool bIsReturning; // 0x890
             uint8_t _pad0891[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Projectile_HookBlade because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Projectile_HookBlade) == 0x898);
     };
 };

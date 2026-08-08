@@ -25,13 +25,13 @@ namespace source2sdk
         class C_DOTA_NeutralSpawner : public source2sdk::client::C_PointEntity
         {
         public:
-            std::int32_t m_Type; // 0x5f0            
+            std::int32_t m_Type; // 0x5f0
             uint8_t _pad05f4[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_NeutralSpawner because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_NeutralSpawner) == 0x5f8);
     };
 };

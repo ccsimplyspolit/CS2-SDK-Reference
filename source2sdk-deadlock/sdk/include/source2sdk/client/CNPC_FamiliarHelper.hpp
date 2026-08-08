@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x1be0
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "GameTime_t m_tCooldownStartTime"
         // static metadata: MNetworkVarNames "GameTime_t m_tCooldownEndTime"
         // static metadata: MNetworkVarNames "bool m_bIsHelperAvailableNet"
@@ -29,17 +29,17 @@ namespace source2sdk
         {
         public:
             // metadata: MNetworkEnable
-            source2sdk::entity2::GameTime_t m_tCooldownStartTime; // 0x1bd0            
+            source2sdk::entity2::GameTime_t m_tCooldownStartTime; // 0x1bd0
             // metadata: MNetworkEnable
-            source2sdk::entity2::GameTime_t m_tCooldownEndTime; // 0x1bd4            
+            source2sdk::entity2::GameTime_t m_tCooldownEndTime; // 0x1bd4
             // metadata: MNetworkEnable
-            bool m_bIsHelperAvailableNet; // 0x1bd8            
+            bool m_bIsHelperAvailableNet; // 0x1bd8
             uint8_t _pad1bd9[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CNPC_FamiliarHelper because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CNPC_FamiliarHelper) == 0x1be0);
     };
 };

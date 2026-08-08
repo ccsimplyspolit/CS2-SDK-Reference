@@ -27,12 +27,12 @@ namespace source2sdk
             uint8_t _pad00d0[0x380]; // 0xd0
             // m_mapHunterAbilities has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlOrderedMap<source2sdk::client::EAbilitySlots_t,CSubclassName<4>> m_mapHunterAbilities;
-            char m_mapHunterAbilities[0x28]; // 0x450            
+            char m_mapHunterAbilities[0x28]; // 0x450
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_Werewolf because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_Werewolf) == 0x478);
     };
 };

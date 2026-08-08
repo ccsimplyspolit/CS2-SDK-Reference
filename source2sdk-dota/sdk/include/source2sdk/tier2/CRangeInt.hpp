@@ -18,18 +18,18 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x8
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MPropertyCustomEditor "multi_int(2)"
         #pragma pack(push, 1)
         class CRangeInt
         {
         public:
-            std::int32_t m_pValue[2]; // 0x0            
+            std::int32_t m_pValue[2]; // 0x0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::tier2::CRangeInt, m_pValue) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::tier2::CRangeInt) == 0x8);
     };
 };

@@ -21,23 +21,23 @@ namespace source2sdk
         // Size: 0x700
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MEntityAllowsPortraitWorldSpawn
         #pragma pack(push, 1)
         class CPathSimple : public source2sdk::client::C_BaseEntity
         {
         public:
             uint8_t _pad05f0[0x10]; // 0x5f0
-            source2sdk::client::CPathQueryComponent m_CPathQueryComponent; // 0x600            
+            source2sdk::client::CPathQueryComponent m_CPathQueryComponent; // 0x600
             uint8_t _pad06a0[0x50]; // 0x6a0
-            CUtlString m_pathString; // 0x6f0            
-            bool m_bClosedLoop; // 0x6f8            
+            CUtlString m_pathString; // 0x6f0
+            bool m_bClosedLoop; // 0x6f8
             uint8_t _pad06f9[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPathSimple because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CPathSimple) == 0x700);
     };
 };

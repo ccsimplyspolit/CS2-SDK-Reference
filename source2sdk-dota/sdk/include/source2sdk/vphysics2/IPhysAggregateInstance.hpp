@@ -24,14 +24,14 @@ namespace source2sdk
         class IPhysAggregateInstance : public source2sdk::client::IPhysicsBodyList
         {
         public:
-            void* m_pSkeleton; // 0x8            
-            bool m_bIsAxisAligned; // 0x10            
+            void* m_pSkeleton; // 0x8
+            bool m_bIsAxisAligned; // 0x10
             uint8_t _pad0011[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in IPhysAggregateInstance because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::vphysics2::IPhysAggregateInstance) == 0x18);
     };
 };

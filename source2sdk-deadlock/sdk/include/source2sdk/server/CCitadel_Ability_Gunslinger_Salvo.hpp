@@ -33,15 +33,15 @@ namespace source2sdk
             uint8_t _pad0f70[0x4]; // 0xf70
             // m_CastTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_CastTarget;
-            char m_CastTarget[0x4]; // 0xf74            
-            std::int32_t m_iCurrentShots; // 0xf78            
-            std::int32_t m_iTotalShots; // 0xf7c            
+            char m_CastTarget[0x4]; // 0xf74
+            std::int32_t m_iCurrentShots; // 0xf78
+            std::int32_t m_iTotalShots; // 0xf7c
             uint8_t _pad0f80[0x100];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_Gunslinger_Salvo because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Ability_Gunslinger_Salvo) == 0x1080);
     };
 };

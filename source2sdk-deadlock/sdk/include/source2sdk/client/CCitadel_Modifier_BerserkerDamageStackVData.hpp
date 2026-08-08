@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x930
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CCitadel_Modifier_BerserkerDamageStackVData : public source2sdk::client::CCitadelModifierVData
@@ -29,18 +29,18 @@ namespace source2sdk
             // metadata: MPropertyStartGroup "Visuals"
             // m_BuffStatusParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_BuffStatusParticle;
-            char m_BuffStatusParticle[0xe0]; // 0x750            
+            char m_BuffStatusParticle[0xe0]; // 0x750
             // m_BuffStatusParticleEnemy has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_BuffStatusParticleEnemy;
-            char m_BuffStatusParticleEnemy[0xe0]; // 0x830            
+            char m_BuffStatusParticleEnemy[0xe0]; // 0x830
             // metadata: MPropertyStartGroup "Sounds"
-            CSoundEventName m_strBerserkerStackSound; // 0x910            
-            CSoundEventName m_strMaxStackLayer; // 0x920            
+            CSoundEventName m_strBerserkerStackSound; // 0x910
+            CSoundEventName m_strMaxStackLayer; // 0x920
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_BerserkerDamageStackVData because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Modifier_BerserkerDamageStackVData) == 0x930);
     };
 };

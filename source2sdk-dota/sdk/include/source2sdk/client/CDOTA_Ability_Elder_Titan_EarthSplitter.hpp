@@ -25,18 +25,18 @@ namespace source2sdk
         class CDOTA_Ability_Elder_Titan_EarthSplitter : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            float crack_width; // 0x6a8            
-            float crack_distance; // 0x6ac            
-            float speed; // 0x6b0            
-            float vision_width; // 0x6b4            
-            float crack_time; // 0x6b8            
-            VectorWS m_vTargetPos; // 0x6bc            
+            float crack_width; // 0x6a8
+            float crack_distance; // 0x6ac
+            float speed; // 0x6b0
+            float vision_width; // 0x6b4
+            float crack_time; // 0x6b8
+            VectorWS m_vTargetPos; // 0x6bc
             uint8_t _pad06c8[0x18];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Elder_Titan_EarthSplitter because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CDOTA_Ability_Elder_Titan_EarthSplitter) == 0x6e0);
     };
 };

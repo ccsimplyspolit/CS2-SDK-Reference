@@ -24,15 +24,15 @@ namespace source2sdk
         class CCitadel_ArmorUpgrade_PersonalRejuvenator : public source2sdk::server::CCitadel_Item
         {
         public:
-            bool m_bActivated; // 0xf78            
+            bool m_bActivated; // 0xf78
             uint8_t _pad0f79[0x3]; // 0xf79
-            source2sdk::client::ParticleIndex_t m_nFxIndex; // 0xf7c            
+            source2sdk::client::ParticleIndex_t m_nFxIndex; // 0xf7c
             uint8_t _pad0f80[0x180];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_ArmorUpgrade_PersonalRejuvenator because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_ArmorUpgrade_PersonalRejuvenator) == 0x1100);
     };
 };

@@ -23,13 +23,13 @@ namespace source2sdk
         class CScriptTriggerPush : public source2sdk::server::CTriggerPush
         {
         public:
-            Vector m_vExtent; // 0x918            
+            Vector m_vExtent; // 0x918
             uint8_t _pad0924[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CScriptTriggerPush because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CScriptTriggerPush) == 0x928);
     };
 };

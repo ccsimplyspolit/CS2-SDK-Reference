@@ -26,13 +26,13 @@ namespace source2sdk
         {
         public:
             uint8_t _pad11d8[0x180]; // 0x11d8
-            source2sdk::client::ParticleIndex_t m_nCastDelayParticleIndex; // 0x1358            
-            source2sdk::entity2::GameTime_t m_flLastTickTime; // 0x135c            
+            source2sdk::client::ParticleIndex_t m_nCastDelayParticleIndex; // 0x1358
+            source2sdk::entity2::GameTime_t m_flLastTickTime; // 0x135c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Item_ShadowStep because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Item_ShadowStep) == 0x1360);
     };
 };

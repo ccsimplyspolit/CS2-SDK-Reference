@@ -22,19 +22,19 @@ namespace source2sdk
         // Has VTable
         // Construct allowed
         // Construct disallowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_BodyComponentBaseAnimating : public source2sdk::client::CBodyComponentSkeletonInstance
         {
         public:
-            source2sdk::client::C_BaseAnimatingController m_animationController; // 0x530            
+            source2sdk::client::C_BaseAnimatingController m_animationController; // 0x530
             uint8_t _pad0b18[0x8];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_BodyComponentBaseAnimating because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_BodyComponentBaseAnimating) == 0xb20);
     };
 };

@@ -29,23 +29,23 @@ namespace source2sdk
         // Has VTable
         // Construct allowed
         // Construct disallowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CBodyComponent : public source2sdk::entity2::CEntityComponent
         {
         public:
             // metadata: MNotSaved
-            source2sdk::server::CGameSceneNode* m_pSceneNode; // 0x8            
+            source2sdk::server::CGameSceneNode* m_pSceneNode; // 0x8
             uint8_t _pad0010[0x38]; // 0x10
             // metadata: MNotSaved
-            source2sdk::entity2::CNetworkVarChainer __m_pChainEntity; // 0x48            
+            source2sdk::entity2::CNetworkVarChainer __m_pChainEntity; // 0x48
             uint8_t _pad0070[0x8];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CBodyComponent because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CBodyComponent) == 0x78);
     };
 };

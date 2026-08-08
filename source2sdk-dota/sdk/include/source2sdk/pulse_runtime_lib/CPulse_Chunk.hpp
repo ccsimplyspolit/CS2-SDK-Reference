@@ -21,7 +21,7 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x58
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CPulse_Chunk
@@ -29,21 +29,21 @@ namespace source2sdk
         public:
             // m_Instructions has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlLeanVector<source2sdk::pulse_runtime_lib::PGDInstruction_t> m_Instructions;
-            char m_Instructions[0x10]; // 0x0            
+            char m_Instructions[0x10]; // 0x0
             // m_Registers has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlLeanVector<source2sdk::pulse_runtime_lib::CPulse_RegisterInfo> m_Registers;
-            char m_Registers[0x10]; // 0x10            
+            char m_Registers[0x10]; // 0x10
             // m_InstructionDebugInfos has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlLeanVector<source2sdk::pulse_runtime_lib::CPulse_InstructionDebug> m_InstructionDebugInfos;
-            char m_InstructionDebugInfos[0x10]; // 0x20            
+            char m_InstructionDebugInfos[0x10]; // 0x20
             uint8_t _pad0030[0x28];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::pulse_runtime_lib::CPulse_Chunk, m_Instructions) == 0x0);
         static_assert(offsetof(source2sdk::pulse_runtime_lib::CPulse_Chunk, m_Registers) == 0x10);
         static_assert(offsetof(source2sdk::pulse_runtime_lib::CPulse_Chunk, m_InstructionDebugInfos) == 0x20);
-        
+
         static_assert(sizeof(source2sdk::pulse_runtime_lib::CPulse_Chunk) == 0x58);
     };
 };

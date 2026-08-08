@@ -23,13 +23,13 @@ namespace source2sdk
         class CCitadel_Modifier_Camouflage_Invis : public source2sdk::server::CCitadel_Modifier_Invis
         {
         public:
-            Vector m_vCastPosition; // 0x468            
+            Vector m_vCastPosition; // 0x468
             uint8_t _pad0474[0x104];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_Camouflage_Invis because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_Camouflage_Invis) == 0x578);
     };
 };

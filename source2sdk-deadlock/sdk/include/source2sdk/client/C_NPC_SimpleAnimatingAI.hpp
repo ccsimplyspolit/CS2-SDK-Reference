@@ -33,7 +33,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xcb8
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkIncludeByName "m_iMaxHealth"
         // static metadata: MNetworkIncludeByName "m_iHealth"
         // static metadata: MNetworkIncludeByName "m_iTeam"
@@ -50,17 +50,17 @@ namespace source2sdk
             // metadata: MNetworkEnable
             // m_hEnemy has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::C_BaseEntity> m_hEnemy;
-            char m_hEnemy[0x4]; // 0xca8            
+            char m_hEnemy[0x4]; // 0xca8
             // metadata: MNetworkEnable
             // m_hAbilityOwner has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::C_CitadelBaseAbility> m_hAbilityOwner;
-            char m_hAbilityOwner[0x4]; // 0xcac            
+            char m_hAbilityOwner[0x4]; // 0xcac
             uint8_t _pad0cb0[0x8];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_NPC_SimpleAnimatingAI because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_NPC_SimpleAnimatingAI) == 0xcb8);
     };
 };

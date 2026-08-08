@@ -33,16 +33,16 @@ namespace source2sdk
         class C_DOTA_Ability_Rubick_Telekinesis : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            VectorWS m_vStartLocation; // 0x6a8            
-            VectorWS m_vLandLocation; // 0x6b4            
-            source2sdk::entity2::GameTime_t m_flStartTime; // 0x6c0            
+            VectorWS m_vStartLocation; // 0x6a8
+            VectorWS m_vLandLocation; // 0x6b4
+            source2sdk::entity2::GameTime_t m_flStartTime; // 0x6c0
             uint8_t _pad06c4[0x4]; // 0x6c4
-            source2sdk::client::C_DOTA_BaseNPC* m_pTarget; // 0x6c8            
+            source2sdk::client::C_DOTA_BaseNPC* m_pTarget; // 0x6c8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_Rubick_Telekinesis because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_Rubick_Telekinesis) == 0x6d0);
     };
 };

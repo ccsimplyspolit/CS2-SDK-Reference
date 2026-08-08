@@ -23,19 +23,19 @@ namespace source2sdk
         struct VelocityZone_t
         {
         public:
-            std::uint8_t nMaxVel; // 0x0            
-            std::uint8_t nNextSelection; // 0x1            
-            std::uint8_t nNumSamples; // 0x2            
+            std::uint8_t nMaxVel; // 0x0
+            std::uint8_t nNextSelection; // 0x1
+            std::uint8_t nNumSamples; // 0x2
             uint8_t _pad0003[0x1]; // 0x3
-            std::uint32_t pSamples[4]; // 0x4            
+            std::uint32_t pSamples[4]; // 0x4
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::soundsystem::VelocityZone_t, nMaxVel) == 0x0);
         static_assert(offsetof(source2sdk::soundsystem::VelocityZone_t, nNextSelection) == 0x1);
         static_assert(offsetof(source2sdk::soundsystem::VelocityZone_t, nNumSamples) == 0x2);
         static_assert(offsetof(source2sdk::soundsystem::VelocityZone_t, pSamples) == 0x4);
-        
+
         static_assert(sizeof(source2sdk::soundsystem::VelocityZone_t) == 0x14);
     };
 };

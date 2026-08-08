@@ -34,13 +34,13 @@ namespace source2sdk
             uint8_t _pad00d0[0x200]; // 0xd0
             // m_hExecutedAbility has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hExecutedAbility;
-            char m_hExecutedAbility[0x4]; // 0x2d0            
-            source2sdk::entity2::GameTime_t m_tNextAbilityTriggerWindow; // 0x2d4            
+            char m_hExecutedAbility[0x4]; // 0x2d0
+            source2sdk::entity2::GameTime_t m_tNextAbilityTriggerWindow; // 0x2d4
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CModifier_Upgrade_ArcaneSurge because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CModifier_Upgrade_ArcaneSurge) == 0x2d8);
     };
 };

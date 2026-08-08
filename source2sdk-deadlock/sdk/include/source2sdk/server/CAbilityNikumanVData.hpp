@@ -21,7 +21,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x1908
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CAbilityNikumanVData : public source2sdk::server::CitadelAbilityVData
@@ -30,16 +30,16 @@ namespace source2sdk
             // metadata: MPropertyGroupName "Visuals"
             // m_CastParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_CastParticle;
-            char m_CastParticle[0xe0]; // 0x1818            
+            char m_CastParticle[0xe0]; // 0x1818
             // metadata: MPropertyGroupName "Modifiers"
             // m_NikumanModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEmbeddedSubclass<source2sdk::server::CCitadelModifier> m_NikumanModifier;
-            char m_NikumanModifier[0x10]; // 0x18f8            
+            char m_NikumanModifier[0x10]; // 0x18f8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CAbilityNikumanVData because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CAbilityNikumanVData) == 0x1908);
     };
 };

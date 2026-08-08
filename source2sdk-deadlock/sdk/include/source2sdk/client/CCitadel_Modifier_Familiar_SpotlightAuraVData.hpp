@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x890
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CCitadel_Modifier_Familiar_SpotlightAuraVData : public source2sdk::client::CCitadelModifierAuraVData
@@ -29,15 +29,15 @@ namespace source2sdk
             // metadata: MPropertyStartGroup "Visuals"
             // m_GroundParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_GroundParticle;
-            char m_GroundParticle[0xe0]; // 0x7a8            
+            char m_GroundParticle[0xe0]; // 0x7a8
             // metadata: MPropertyStartGroup "Gameplay"
-            float m_flHeight; // 0x888            
-            float m_flOffset; // 0x88c            
+            float m_flHeight; // 0x888
+            float m_flOffset; // 0x88c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_Familiar_SpotlightAuraVData because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Modifier_Familiar_SpotlightAuraVData) == 0x890);
     };
 };

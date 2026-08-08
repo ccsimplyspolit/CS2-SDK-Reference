@@ -24,12 +24,12 @@ namespace source2sdk
         class CEnvSpark : public source2sdk::server::CPointEntity
         {
         public:
-            float m_flDelay; // 0x4a0            
-            std::int32_t m_nMagnitude; // 0x4a4            
-            std::int32_t m_nTrailLength; // 0x4a8            
-            std::int32_t m_nType; // 0x4ac            
-            source2sdk::entity2::CEntityIOOutput m_OnSpark; // 0x4b0            
-            
+            float m_flDelay; // 0x4a0
+            std::int32_t m_nMagnitude; // 0x4a4
+            std::int32_t m_nTrailLength; // 0x4a8
+            std::int32_t m_nType; // 0x4ac
+            source2sdk::entity2::CEntityIOOutput m_OnSpark; // 0x4b0
+
             // Datamap fields:
             // void CEnvSparkSparkThink; // 0x0
             // void InputStartSpark; // 0x0
@@ -38,9 +38,9 @@ namespace source2sdk
             // void InputSparkOnce; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CEnvSpark because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CEnvSpark) == 0x4c8);
     };
 };

@@ -23,13 +23,13 @@ namespace source2sdk
         class CCitadel_ArmorUpgrade_DoubleJump : public source2sdk::server::CCitadel_Item
         {
         public:
-            std::int32_t m_nTickJumped; // 0xf78            
+            std::int32_t m_nTickJumped; // 0xf78
             uint8_t _pad0f7c[0x184];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_ArmorUpgrade_DoubleJump because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_ArmorUpgrade_DoubleJump) == 0x1100);
     };
 };

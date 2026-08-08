@@ -26,8 +26,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: CCitadel_Ability_Tier3Boss_DropBombs has no schema binary (size is a guess)
     };
 };

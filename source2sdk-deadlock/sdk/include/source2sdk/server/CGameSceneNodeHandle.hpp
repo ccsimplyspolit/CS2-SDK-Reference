@@ -19,7 +19,7 @@ namespace source2sdk
         // Size: 0x10
         // Has VTable
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MNetworkVarNames "CEntityHandle m_hOwner"
         // static metadata: MNetworkVarNames "CUtlStringToken m_name"
         #pragma pack(push, 1)
@@ -28,15 +28,15 @@ namespace source2sdk
         public:
             uint8_t _pad0000[0x8]; // 0x0
             // metadata: MNetworkEnable
-            CEntityHandle m_hOwner; // 0x8            
+            CEntityHandle m_hOwner; // 0x8
             // metadata: MNetworkEnable
-            CUtlStringToken m_name; // 0xc            
+            CUtlStringToken m_name; // 0xc
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::CGameSceneNodeHandle, m_hOwner) == 0x8);
         static_assert(offsetof(source2sdk::server::CGameSceneNodeHandle, m_name) == 0xc);
-        
+
         static_assert(sizeof(source2sdk::server::CGameSceneNodeHandle) == 0x10);
     };
 };

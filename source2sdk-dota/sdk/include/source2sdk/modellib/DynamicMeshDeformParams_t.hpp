@@ -19,28 +19,28 @@ namespace source2sdk
         // Size: 0xc
         // Has Trivial Destructor
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct DynamicMeshDeformParams_t
         {
         public:
-            float m_flTensionCompressScale; // 0x0            
-            float m_flTensionStretchScale; // 0x4            
-            bool m_bRecomputeSmoothNormalsAfterAnimation; // 0x8            
-            bool m_bComputeDynamicMeshTensionAfterAnimation; // 0x9            
-            bool m_bSmoothNormalsAcrossUvSeams; // 0xa            
-            bool m_bEnableEyeBulgeDeformation; // 0xb            
+            float m_flTensionCompressScale; // 0x0
+            float m_flTensionStretchScale; // 0x4
+            bool m_bRecomputeSmoothNormalsAfterAnimation; // 0x8
+            bool m_bComputeDynamicMeshTensionAfterAnimation; // 0x9
+            bool m_bSmoothNormalsAcrossUvSeams; // 0xa
+            bool m_bEnableEyeBulgeDeformation; // 0xb
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::modellib::DynamicMeshDeformParams_t, m_flTensionCompressScale) == 0x0);
         static_assert(offsetof(source2sdk::modellib::DynamicMeshDeformParams_t, m_flTensionStretchScale) == 0x4);
         static_assert(offsetof(source2sdk::modellib::DynamicMeshDeformParams_t, m_bRecomputeSmoothNormalsAfterAnimation) == 0x8);
         static_assert(offsetof(source2sdk::modellib::DynamicMeshDeformParams_t, m_bComputeDynamicMeshTensionAfterAnimation) == 0x9);
         static_assert(offsetof(source2sdk::modellib::DynamicMeshDeformParams_t, m_bSmoothNormalsAcrossUvSeams) == 0xa);
         static_assert(offsetof(source2sdk::modellib::DynamicMeshDeformParams_t, m_bEnableEyeBulgeDeformation) == 0xb);
-        
+
         static_assert(sizeof(source2sdk::modellib::DynamicMeshDeformParams_t) == 0xc);
     };
 };

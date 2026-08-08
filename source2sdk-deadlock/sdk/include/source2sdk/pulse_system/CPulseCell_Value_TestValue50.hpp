@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x48
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "[Test] Int Value 50"
         // static metadata: MPropertyDescription "Test node that just generates the integer 50. Nothing to see here!"
@@ -29,8 +29,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::pulse_system::CPulseCell_Value_TestValue50) == 0x48);
     };
 };

@@ -19,18 +19,18 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x78
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CNmEntityAttributeFloatEvent : public source2sdk::animlib::CNmEntityAttributeEventBase
         {
         public:
-            CPiecewiseCurve m_FloatValue; // 0x38            
+            CPiecewiseCurve m_FloatValue; // 0x38
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CNmEntityAttributeFloatEvent because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::animlib::CNmEntityAttributeFloatEvent) == 0x78);
     };
 };

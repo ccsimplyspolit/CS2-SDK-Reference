@@ -17,21 +17,21 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a68
+        // Size: 0x1a88
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_MetamorphicMandible_Active : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float bonus_magic_resistance; // 0x1a58            
-            float bonus_movespeed; // 0x1a5c            
-            float size_decrease; // 0x1a60            
-            float armor_decrease; // 0x1a64            
+            float bonus_magic_resistance; // 0x1a78
+            float bonus_movespeed; // 0x1a7c
+            float size_decrease; // 0x1a80
+            float armor_decrease; // 0x1a84
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_MetamorphicMandible_Active because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_MetamorphicMandible_Active) == 0x1a68);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_MetamorphicMandible_Active) == 0x1a88);
     };
 };

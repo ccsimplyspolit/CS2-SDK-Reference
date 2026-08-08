@@ -17,23 +17,23 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a70
+        // Size: 0x1a90
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Jakiro_LiquidIce_Debuff : public source2sdk::client::CDOTA_Buff
         {
         public:
-            std::int32_t damage; // 0x1a58            
-            float pct_health_damage; // 0x1a5c            
-            std::int32_t movement_slow; // 0x1a60            
-            std::int32_t slow_attack_speed_pct; // 0x1a64            
-            float tick_rate; // 0x1a68            
-            std::int32_t bonus_instance_damage_from_other_abilities; // 0x1a6c            
+            std::int32_t damage; // 0x1a78
+            float pct_health_damage; // 0x1a7c
+            std::int32_t movement_slow; // 0x1a80
+            std::int32_t slow_attack_speed_pct; // 0x1a84
+            float tick_rate; // 0x1a88
+            std::int32_t bonus_instance_damage_from_other_abilities; // 0x1a8c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Jakiro_LiquidIce_Debuff because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Jakiro_LiquidIce_Debuff) == 0x1a70);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Jakiro_LiquidIce_Debuff) == 0x1a90);
     };
 };

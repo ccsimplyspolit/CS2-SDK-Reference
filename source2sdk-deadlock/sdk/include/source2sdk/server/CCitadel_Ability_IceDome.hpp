@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xff8
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "GameTime_t m_flDomeStartTime"
         // static metadata: MNetworkVarNames "GameTime_t m_flDomeEndTime"
         #pragma pack(push, 1)
@@ -30,15 +30,15 @@ namespace source2sdk
             uint8_t _pad0f70[0x80]; // 0xf70
             // metadata: MNetworkEnable
             // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-            source2sdk::entity2::GameTime_t m_flDomeStartTime; // 0xff0            
+            source2sdk::entity2::GameTime_t m_flDomeStartTime; // 0xff0
             // metadata: MNetworkEnable
             // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-            source2sdk::entity2::GameTime_t m_flDomeEndTime; // 0xff4            
+            source2sdk::entity2::GameTime_t m_flDomeEndTime; // 0xff4
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_IceDome because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Ability_IceDome) == 0xff8);
     };
 };

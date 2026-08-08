@@ -17,22 +17,22 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a68
+        // Size: 0x1a88
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Spectre_Spectral : public source2sdk::client::CDOTA_Buff
         {
         public:
-            std::int32_t speed_bonus; // 0x1a58            
-            std::int32_t radius; // 0x1a5c            
-            float linger_time; // 0x1a60            
-            bool m_bSpeedBonus; // 0x1a64            
-            uint8_t _pad1a65[0x3];
+            std::int32_t speed_bonus; // 0x1a78
+            std::int32_t radius; // 0x1a7c
+            float linger_time; // 0x1a80
+            bool m_bSpeedBonus; // 0x1a84
+            uint8_t _pad1a85[0x3];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Spectre_Spectral because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Spectre_Spectral) == 0x1a68);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Spectre_Spectral) == 0x1a88);
     };
 };

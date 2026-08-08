@@ -17,19 +17,19 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a78
+        // Size: 0x1a98
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Brewmaster_Cyclone : public source2sdk::server::CDOTA_Modifier_Cyclone
         {
         public:
-            float landing_damage; // 0x1a70            
-            uint8_t _pad1a74[0x4];
+            float landing_damage; // 0x1a90
+            uint8_t _pad1a94[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Brewmaster_Cyclone because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Brewmaster_Cyclone) == 0x1a78);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Brewmaster_Cyclone) == 0x1a98);
     };
 };

@@ -21,7 +21,7 @@ namespace source2sdk
         // Size: 0xa0
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "LoopTrigger"
         // static metadata: MPropertyDescription "Continuously retriggers a sound and optionally fades to the new instance."
@@ -29,18 +29,18 @@ namespace source2sdk
         class CVoiceContainerLoopTrigger : public source2sdk::soundsystem_voicecontainers::CVoiceContainerBase
         {
         public:
-            float m_flRetriggerTimeMin; // 0x70            
-            float m_flRetriggerTimeMax; // 0x74            
-            float m_flFadeTime; // 0x78            
-            bool m_bCrossFade; // 0x7c            
+            float m_flRetriggerTimeMin; // 0x70
+            float m_flRetriggerTimeMax; // 0x74
+            float m_flFadeTime; // 0x78
+            bool m_bCrossFade; // 0x7c
             uint8_t _pad007d[0x3]; // 0x7d
             // metadata: MPropertyFriendlyName "Vsnd Reference"
-            source2sdk::soundsystem_voicecontainers::CSoundContainerReference m_sound; // 0x80            
+            source2sdk::soundsystem_voicecontainers::CSoundContainerReference m_sound; // 0x80
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CVoiceContainerLoopTrigger because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::soundsystem_voicecontainers::CVoiceContainerLoopTrigger) == 0xa0);
     };
 };

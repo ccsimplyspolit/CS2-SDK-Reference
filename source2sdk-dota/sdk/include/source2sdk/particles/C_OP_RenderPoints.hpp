@@ -21,7 +21,7 @@ namespace source2sdk
         // Size: 0x230
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MObsoleteParticleFunction
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -30,12 +30,12 @@ namespace source2sdk
         public:
             // m_hMaterial has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CStrongHandle<source2sdk::resourcesystem::InfoForResourceTypeIMaterial2> m_hMaterial;
-            char m_hMaterial[0x8]; // 0x228            
+            char m_hMaterial[0x8]; // 0x228
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_RenderPoints because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_RenderPoints) == 0x230);
     };
 };

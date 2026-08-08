@@ -17,19 +17,19 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a60
+        // Size: 0x1a80
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_AncientApparition_BoneChill : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float str_reduction; // 0x1a58            
-            float str_reduction_duration; // 0x1a5c            
+            float str_reduction; // 0x1a78
+            float str_reduction_duration; // 0x1a7c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_AncientApparition_BoneChill because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_AncientApparition_BoneChill) == 0x1a60);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_AncientApparition_BoneChill) == 0x1a80);
     };
 };

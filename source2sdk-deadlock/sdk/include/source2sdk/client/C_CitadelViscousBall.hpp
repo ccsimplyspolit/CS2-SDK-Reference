@@ -32,15 +32,15 @@ namespace source2sdk
         public:
             // m_hAbility has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::C_CitadelBaseAbility> m_hAbility;
-            char m_hAbility[0x4]; // 0x9b0            
-            float m_flBallRadius; // 0x9b4            
-            bool m_bNeedsPhysicsUpdate; // 0x9b8            
+            char m_hAbility[0x4]; // 0x9b0
+            float m_flBallRadius; // 0x9b4
+            bool m_bNeedsPhysicsUpdate; // 0x9b8
             uint8_t _pad09b9[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_CitadelViscousBall because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_CitadelViscousBall) == 0x9c0);
     };
 };

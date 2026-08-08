@@ -24,19 +24,19 @@ namespace source2sdk
         class CLogicRelay : public source2sdk::client::CLogicalEntity
         {
         public:
-            source2sdk::entity2::CEntityIOOutput m_OnSpawn; // 0x5f0            
-            source2sdk::entity2::CEntityIOOutput m_OnTrigger; // 0x608            
-            bool m_bDisabled; // 0x620            
-            bool m_bWaitForRefire; // 0x621            
-            bool m_bTriggerOnce; // 0x622            
-            bool m_bFastRetrigger; // 0x623            
-            bool m_bPassthoughCaller; // 0x624            
+            source2sdk::entity2::CEntityIOOutput m_OnSpawn; // 0x5f0
+            source2sdk::entity2::CEntityIOOutput m_OnTrigger; // 0x608
+            bool m_bDisabled; // 0x620
+            bool m_bWaitForRefire; // 0x621
+            bool m_bTriggerOnce; // 0x622
+            bool m_bFastRetrigger; // 0x623
+            bool m_bPassthoughCaller; // 0x624
             uint8_t _pad0625[0x3];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CLogicRelay because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CLogicRelay) == 0x628);
     };
 };

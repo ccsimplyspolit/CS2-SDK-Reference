@@ -20,24 +20,24 @@ namespace source2sdk
         // Size: 0x1e0
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_SnapshotRigidSkinToBones : public source2sdk::particles::CParticleFunctionOperator
         {
         public:
             // metadata: MPropertyFriendlyName "rotate normals"
-            bool m_bTransformNormals; // 0x1d8            
+            bool m_bTransformNormals; // 0x1d8
             // metadata: MPropertyFriendlyName "scale radii"
-            bool m_bTransformRadii; // 0x1d9            
+            bool m_bTransformRadii; // 0x1d9
             uint8_t _pad01da[0x2]; // 0x1da
             // metadata: MPropertyFriendlyName "control point number"
-            std::int32_t m_nControlPointNumber; // 0x1dc            
+            std::int32_t m_nControlPointNumber; // 0x1dc
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_SnapshotRigidSkinToBones because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_SnapshotRigidSkinToBones) == 0x1e0);
     };
 };

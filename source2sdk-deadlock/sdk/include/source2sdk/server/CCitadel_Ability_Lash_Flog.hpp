@@ -25,13 +25,13 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0f70[0x280]; // 0xf70
-            source2sdk::client::ParticleIndex_t m_SandEffect; // 0x11f0            
+            source2sdk::client::ParticleIndex_t m_SandEffect; // 0x11f0
             uint8_t _pad11f4[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_Lash_Flog because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Ability_Lash_Flog) == 0x11f8);
     };
 };

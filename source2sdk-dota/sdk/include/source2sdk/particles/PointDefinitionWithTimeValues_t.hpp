@@ -20,19 +20,19 @@ namespace source2sdk
         // Size: 0x18
         // Has Trivial Destructor
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct PointDefinitionWithTimeValues_t : public source2sdk::particles::PointDefinition_t
         {
         public:
             // metadata: MPropertyFriendlyName "Duration value for path point"
-            float m_flTimeDuration; // 0x14            
+            float m_flTimeDuration; // 0x14
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in PointDefinitionWithTimeValues_t because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::PointDefinitionWithTimeValues_t) == 0x18);
     };
 };

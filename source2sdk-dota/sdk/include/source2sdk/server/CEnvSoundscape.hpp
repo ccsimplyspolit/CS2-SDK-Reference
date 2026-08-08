@@ -25,37 +25,37 @@ namespace source2sdk
         class CEnvSoundscape : public source2sdk::server::CBaseEntity
         {
         public:
-            source2sdk::entity2::CEntityIOOutput m_OnPlay; // 0x498            
-            float m_flRadius; // 0x4b0            
+            source2sdk::entity2::CEntityIOOutput m_OnPlay; // 0x498
+            float m_flRadius; // 0x4b0
             uint8_t _pad04b4[0x4]; // 0x4b4
-            CGameSoundEventName m_soundEventName; // 0x4b8            
-            bool m_bOverrideWithEvent; // 0x4c0            
+            CGameSoundEventName m_soundEventName; // 0x4b8
+            bool m_bOverrideWithEvent; // 0x4c0
             uint8_t _pad04c1[0x3]; // 0x4c1
             // metadata: MNotSaved
-            std::int32_t m_soundscapeIndex; // 0x4c4            
+            std::int32_t m_soundscapeIndex; // 0x4c4
             // metadata: MNotSaved
-            std::int32_t m_soundscapeEntityListId; // 0x4c8            
+            std::int32_t m_soundscapeEntityListId; // 0x4c8
             uint8_t _pad04cc[0x4]; // 0x4cc
-            CUtlSymbolLarge m_positionNames[8]; // 0x4d0            
+            CUtlSymbolLarge m_positionNames[8]; // 0x4d0
             // m_hProxySoundscape has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CEnvSoundscape> m_hProxySoundscape;
-            char m_hProxySoundscape[0x4]; // 0x510            
-            bool m_bDisabled; // 0x514            
+            char m_hProxySoundscape[0x4]; // 0x510
+            bool m_bDisabled; // 0x514
             uint8_t _pad0515[0x3]; // 0x515
-            CUtlSymbolLarge m_soundscapeName; // 0x518            
+            CUtlSymbolLarge m_soundscapeName; // 0x518
             // metadata: MNotSaved
-            std::uint32_t m_soundEventHash; // 0x520            
+            std::uint32_t m_soundEventHash; // 0x520
             uint8_t _pad0524[0x4];
-            
+
             // Datamap fields:
             // void InputEnable; // 0x0
             // void InputDisable; // 0x0
             // void InputToggleEnabled; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CEnvSoundscape because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CEnvSoundscape) == 0x528);
     };
 };

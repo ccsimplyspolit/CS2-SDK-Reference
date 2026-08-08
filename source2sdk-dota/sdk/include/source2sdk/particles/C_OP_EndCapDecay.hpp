@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x1d8
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_EndCapDecay : public source2sdk::particles::CParticleFunctionOperator
@@ -28,8 +28,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::particles::C_OP_EndCapDecay) == 0x1d8);
     };
 };

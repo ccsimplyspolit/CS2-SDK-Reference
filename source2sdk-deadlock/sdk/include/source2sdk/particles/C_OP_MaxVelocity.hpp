@@ -20,21 +20,21 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x4b8
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_MaxVelocity : public source2sdk::particles::CParticleFunctionOperator
         {
         public:
             // metadata: MPropertyFriendlyName "maximum velocity"
-            source2sdk::particleslib::CPerParticleFloatInput m_flMaxVelocity; // 0x1d8            
+            source2sdk::particleslib::CPerParticleFloatInput m_flMaxVelocity; // 0x1d8
             // metadata: MPropertyFriendlyName "minimum velocity"
-            source2sdk::particleslib::CPerParticleFloatInput m_flMinVelocity; // 0x348            
+            source2sdk::particleslib::CPerParticleFloatInput m_flMinVelocity; // 0x348
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_MaxVelocity because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_MaxVelocity) == 0x4b8);
     };
 };

@@ -26,17 +26,17 @@ namespace source2sdk
         class C_DOTA_Ability_OgreBruiser_OgreSmash : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            float radius; // 0x6a8            
-            float hero_stun_duration; // 0x6ac            
-            float damage; // 0x6b0            
-            float damage_pct; // 0x6b4            
-            source2sdk::entity2::GameTime_t flCooldown; // 0x6b8            
+            float radius; // 0x6a8
+            float hero_stun_duration; // 0x6ac
+            float damage; // 0x6b0
+            float damage_pct; // 0x6b4
+            source2sdk::entity2::GameTime_t flCooldown; // 0x6b8
             uint8_t _pad06bc[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_OgreBruiser_OgreSmash because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_OgreBruiser_OgreSmash) == 0x6c0);
     };
 };

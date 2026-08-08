@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x838
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkIncludeByUserGroup "Origin"
         // static metadata: MNetworkVarNames "float32 m_MinFalloff"
         // static metadata: MNetworkVarNames "float32 m_MaxFalloff"
@@ -37,56 +37,56 @@ namespace source2sdk
         {
         public:
             // metadata: MNotSaved
-            Vector m_vecOrigin; // 0x5f0            
+            Vector m_vecOrigin; // 0x5f0
             // metadata: MNetworkEnable
             // metadata: MNotSaved
-            float m_MinFalloff; // 0x5fc            
+            float m_MinFalloff; // 0x5fc
             // metadata: MNetworkEnable
             // metadata: MNotSaved
-            float m_MaxFalloff; // 0x600            
+            float m_MaxFalloff; // 0x600
             // metadata: MNetworkEnable
             // metadata: MNotSaved
-            float m_flFadeInDuration; // 0x604            
+            float m_flFadeInDuration; // 0x604
             // metadata: MNetworkEnable
             // metadata: MNotSaved
-            float m_flFadeOutDuration; // 0x608            
+            float m_flFadeOutDuration; // 0x608
             // metadata: MNetworkEnable
             // metadata: MNotSaved
-            float m_flMaxWeight; // 0x60c            
+            float m_flMaxWeight; // 0x60c
             // metadata: MNetworkEnable
             // metadata: MNotSaved
-            float m_flCurWeight; // 0x610            
+            float m_flCurWeight; // 0x610
             // metadata: MNetworkEnable
             // metadata: MNotSaved
-            char m_netlookupFilename[512]; // 0x614            
+            char m_netlookupFilename[512]; // 0x614
             // metadata: MNetworkEnable
             // metadata: MNotSaved
-            bool m_bEnabled; // 0x814            
+            bool m_bEnabled; // 0x814
             // metadata: MNetworkEnable
             // metadata: MNotSaved
-            bool m_bMaster; // 0x815            
+            bool m_bMaster; // 0x815
             // metadata: MNetworkEnable
             // metadata: MNotSaved
-            bool m_bClientSide; // 0x816            
+            bool m_bClientSide; // 0x816
             // metadata: MNetworkEnable
             // metadata: MNotSaved
-            bool m_bExclusive; // 0x817            
+            bool m_bExclusive; // 0x817
             // metadata: MNotSaved
-            bool m_bEnabledOnClient[1]; // 0x818            
+            bool m_bEnabledOnClient[1]; // 0x818
             uint8_t _pad0819[0x3]; // 0x819
             // metadata: MNotSaved
-            float m_flCurWeightOnClient[1]; // 0x81c            
+            float m_flCurWeightOnClient[1]; // 0x81c
             // metadata: MNotSaved
-            bool m_bFadingIn[1]; // 0x820            
+            bool m_bFadingIn[1]; // 0x820
             uint8_t _pad0821[0x3]; // 0x821
             // metadata: MNotSaved
-            float m_flFadeStartWeight[1]; // 0x824            
+            float m_flFadeStartWeight[1]; // 0x824
             // metadata: MNotSaved
-            float m_flFadeStartTime[1]; // 0x828            
+            float m_flFadeStartTime[1]; // 0x828
             // metadata: MNotSaved
-            float m_flFadeDuration[1]; // 0x82c            
+            float m_flFadeDuration[1]; // 0x82c
             uint8_t _pad0830[0x8];
-            
+
             // Datamap fields:
             // bool m_bEnabledOnClient; // 0x818
             // float m_flCurWeightOnClient; // 0x81c
@@ -97,9 +97,9 @@ namespace source2sdk
             // void m_netlookupFilename; // 0x614
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_ColorCorrection because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_ColorCorrection) == 0x838);
     };
 };

@@ -23,13 +23,13 @@ namespace source2sdk
         class CSurvivorsSpawnerGolem : public source2sdk::client::CSurvivorsSpawner
         {
         public:
-            std::int32_t m_nRoomIndex; // 0x178            
-            std::int32_t m_nEnemiesSpawnedCount; // 0x17c            
+            std::int32_t m_nRoomIndex; // 0x178
+            std::int32_t m_nEnemiesSpawnedCount; // 0x17c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSurvivorsSpawnerGolem because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CSurvivorsSpawnerGolem) == 0x180);
     };
 };

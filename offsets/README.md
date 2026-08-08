@@ -8,28 +8,28 @@ Runtime address offsets exposed by CS2's DLLs — **32 globals across 5 modules*
 
 ### Contents
 
-- [`latest/`](latest/) — Current a2x/cs2-dumper HEAD (build 14172).
+- [`latest/`](latest/) — Current a2x/cs2-dumper HEAD (build 14174).
   - `offsets.json`, `offsets.rs`, `offsets.hpp`, `offsets.cs` — the 32 globals in 4 formats.
-  - `info.json` — build number (14172) + dump timestamp. `interfaces.json` — 112 interface factories across 32 modules. `buttons.json` — the 16 in-button bitmasks.
+  - `info.json` — build number (14174) + dump timestamp. `interfaces.json` — 112 interface factories across 32 modules. `buttons.json` — the 16 in-button bitmasks.
 - [`history/`](history/) — Historical snapshots per CS2 build.
   - `build_14170_2026-07-15/` — the 2026-07-15 update (identical to 14169 for tracked fields).
-  - `pre_sync_*/` — pre-14172 snapshot (client globals shifted +0x1000 in 14172).
+  - `pre_sync_*/` — pre-sync snapshots for each upstream refresh.
 
 ### Key globals
 
-**Build 14172 (2026-07-21) — client globals shifted +0x1000 vs 14169/14170:**
+**Build 14174 (2026-08-04) — current installed CS2 build:**
 
 | Field | Value | Meaning |
 |---|---|---|
-| `client.dll.dwLocalPlayerController` | `0x237FB70` | ptr → CCSPlayerController* |
+| `client.dll.dwLocalPlayerController` | `0x237FB80` | ptr → CCSPlayerController* |
 | `client.dll.dwLocalPlayerPawn` | `0x23A5238` | ptr → C_CSPlayerPawn* |
 | `client.dll.dwCSGOInput` | `0x23BA790` | input state ctx |
 | `client.dll.dwGlobalVars` | `0x2090D60` | game-wide vars |
 | `client.dll.dwGameRules` | `0x23A49D8` | ptr → C_CSGameRules* |
-| `engine2.dll.dwNetworkGameClient` | `0x90D4B0` | net client (engine2 unchanged in 14172) |
+| `engine2.dll.dwNetworkGameClient` | `0x90D4B0` | net client (engine2 unchanged in 14174) |
 | `engine2.dll.dwNetworkGameClient_signOnState` | `+0x230` | signon state offset |
 
-_Verified against the installed CS2 binaries (build 14172) with `tools/verify_offsets_static.py`, 2026-07-22._
+_Verified against the installed CS2 binaries (build 14174) with `tools/verify_offsets_static.py`, 2026-08-08._
 
 ### Update procedure
 
@@ -51,6 +51,7 @@ Known SHAs:
 - Build 14169 (2026-07-11): `868E1DF4BA4A2A1E73C3A5A563405BBF49ABC24330E0DC6E24F7CC9D186C0BAC`
 - Build 14170 (2026-07-15): `72786E9EBDD82E85C5E9EDC38D3758A348300AD55AAE8DB27FD9E6D73344F486`
 - Build 14172 (2026-07-20, ClientVersion 2000877): `92228E5CF38BCDFFC4C5D694A3B2D470AED3DA1E57460B6AC317D6F22172E21A`
+- Build 14174 (2026-08-04, ClientVersion 2000880): `EA2B721E3432D650A0CD7191235F29C4989FA28B2FE404A182999B3916FDF17A`
 
 ---
 
@@ -60,28 +61,28 @@ Runtime-оффсеты адресов, экспортируемые DLL-ками
 
 ### Содержимое
 
-- [`latest/`](latest/) — текущий HEAD `a2x/cs2-dumper` (билд 14172).
+- [`latest/`](latest/) — текущий HEAD `a2x/cs2-dumper` (билд 14174).
   - `offsets.json`, `offsets.rs`, `offsets.hpp`, `offsets.cs` — 32 global'а в 4 форматах.
-  - `info.json` — номер билда (14172) + timestamp дампа. `interfaces.json` — 112 interface-фабрик по 32 модулям. `buttons.json` — 16 in-button битмасок.
+  - `info.json` — номер билда (14174) + timestamp дампа. `interfaces.json` — 112 interface-фабрик по 32 модулям. `buttons.json` — 16 in-button битмасок.
 - [`history/`](history/) — исторические срезы по билдам CS2.
   - `build_14170_2026-07-15/` — апдейт от 2026-07-15 (идентичен 14169 по трекаемым полям).
-  - `pre_sync_*/` — срез до 14172 (client-глобалы сдвинулись на +0x1000 в 14172).
+  - `pre_sync_*/` — срезы перед каждым обновлением upstream.
 
 ### Ключевые globals
 
-**Билд 14172 (2026-07-21) — client-глобалы сдвинулись на +0x1000 против 14169/14170:**
+**Билд 14174 (2026-08-04) — текущий установленный билд CS2:**
 
 | Поле | Значение | Смысл |
 |---|---|---|
-| `client.dll.dwLocalPlayerController` | `0x237FB70` | ptr → CCSPlayerController* |
+| `client.dll.dwLocalPlayerController` | `0x237FB80` | ptr → CCSPlayerController* |
 | `client.dll.dwLocalPlayerPawn` | `0x23A5238` | ptr → C_CSPlayerPawn* |
 | `client.dll.dwCSGOInput` | `0x23BA790` | контекст input state |
 | `client.dll.dwGlobalVars` | `0x2090D60` | game-wide vars |
 | `client.dll.dwGameRules` | `0x23A49D8` | ptr → C_CSGameRules* |
-| `engine2.dll.dwNetworkGameClient` | `0x90D4B0` | net client (engine2 в 14172 не менялся) |
+| `engine2.dll.dwNetworkGameClient` | `0x90D4B0` | net client (engine2 в 14174 не менялся) |
 | `engine2.dll.dwNetworkGameClient_signOnState` | `+0x230` | оффсет signon state |
 
-_Сверено против установленных бинарников CS2 (билд 14172) через `tools/verify_offsets_static.py`, 2026-07-22._
+_Сверено против установленных бинарников CS2 (билд 14174) через `tools/verify_offsets_static.py`, 2026-08-08._
 
 ### Процедура обновления
 

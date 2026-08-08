@@ -17,24 +17,24 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a70
+        // Size: 0x1a90
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_FlaskHealing : public source2sdk::client::CDOTA_Buff
         {
         public:
-            std::int32_t health_regen; // 0x1a58            
-            std::int32_t break_on_hero_damage; // 0x1a5c            
-            bool half_heal; // 0x1a60            
-            uint8_t _pad1a61[0x3]; // 0x1a61
-            float m_fHealingDone; // 0x1a64            
-            float m_fUseSpeed; // 0x1a68            
-            uint8_t _pad1a6c[0x4];
+            std::int32_t health_regen; // 0x1a78
+            std::int32_t break_on_hero_damage; // 0x1a7c
+            bool half_heal; // 0x1a80
+            uint8_t _pad1a81[0x3]; // 0x1a81
+            float m_fHealingDone; // 0x1a84
+            float m_fUseSpeed; // 0x1a88
+            uint8_t _pad1a8c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_FlaskHealing because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_FlaskHealing) == 0x1a70);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_FlaskHealing) == 0x1a90);
     };
 };

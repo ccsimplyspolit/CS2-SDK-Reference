@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xfe8
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "float m_flVertOffset"
         // static metadata: MNetworkVarNames "float m_flHorizGap"
         // static metadata: MNetworkVarNames "Vector m_vStartPos"
@@ -34,31 +34,31 @@ namespace source2sdk
         public:
             // metadata: MNetworkEnable
             // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-            float m_flVertOffset; // 0xf70            
+            float m_flVertOffset; // 0xf70
             // metadata: MNetworkEnable
             // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-            float m_flHorizGap; // 0xf74            
+            float m_flHorizGap; // 0xf74
             // metadata: MNetworkEnable
             // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-            Vector m_vStartPos; // 0xf78            
+            Vector m_vStartPos; // 0xf78
             // metadata: MNetworkEnable
             // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-            Vector m_vTargetPos; // 0xf84            
+            Vector m_vTargetPos; // 0xf84
             // metadata: MNetworkEnable
             // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-            QAngle m_angFacing; // 0xf90            
+            QAngle m_angFacing; // 0xf90
             // metadata: MNetworkEnable
             // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-            std::int32_t m_nMantleTypeIndex; // 0xf9c            
+            std::int32_t m_nMantleTypeIndex; // 0xf9c
             // metadata: MNetworkEnable
             // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-            source2sdk::entity2::GameTime_t m_flStartTime; // 0xfa0            
+            source2sdk::entity2::GameTime_t m_flStartTime; // 0xfa0
             uint8_t _pad0fa4[0x44];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_Mantle because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Ability_Mantle) == 0xfe8);
     };
 };

@@ -22,7 +22,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x1508
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "bool m_bJetpackActive"
         // static metadata: MNetworkVarNames "GameTime_t m_tJetpackInputDownTime"
         // static metadata: MNetworkVarNames "Vector m_vPreservedVelocity"
@@ -44,51 +44,51 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0f70[0x500]; // 0xf70
-            source2sdk::client::ParticleIndex_t m_nJetpackFireFX; // 0x1470            
+            source2sdk::client::ParticleIndex_t m_nJetpackFireFX; // 0x1470
             uint8_t _pad1474[0x28]; // 0x1474
-            Vector m_vDebugVelocityIntentModelSpace; // 0x149c            
-            float m_flDebugCoeffFactor; // 0x14a8            
+            Vector m_vDebugVelocityIntentModelSpace; // 0x149c
+            float m_flDebugCoeffFactor; // 0x14a8
             // metadata: MNetworkEnable
-            bool m_bJetpackActive; // 0x14ac            
+            bool m_bJetpackActive; // 0x14ac
             uint8_t _pad14ad[0x3]; // 0x14ad
             // metadata: MNetworkEnable
-            source2sdk::entity2::GameTime_t m_tJetpackInputDownTime; // 0x14b0            
+            source2sdk::entity2::GameTime_t m_tJetpackInputDownTime; // 0x14b0
             // metadata: MNetworkEnable
-            Vector m_vPreservedVelocity; // 0x14b4            
+            Vector m_vPreservedVelocity; // 0x14b4
             // metadata: MNetworkEnable
-            bool m_bHasLeftGround; // 0x14c0            
+            bool m_bHasLeftGround; // 0x14c0
             // metadata: MNetworkEnable
-            bool m_bOutOfFuelAndHaventTouchedGround; // 0x14c1            
+            bool m_bOutOfFuelAndHaventTouchedGround; // 0x14c1
             // metadata: MNetworkEnable
-            source2sdk::client::EJetpackMode_t m_eMode; // 0x14c2            
+            source2sdk::client::EJetpackMode_t m_eMode; // 0x14c2
             uint8_t _pad14c3[0x1]; // 0x14c3
             // metadata: MNetworkEnable
-            source2sdk::entity2::GameTime_t m_tModeBeginTime; // 0x14c4            
+            source2sdk::entity2::GameTime_t m_tModeBeginTime; // 0x14c4
             // metadata: MNetworkEnable
-            Vector m_vJetpackInput; // 0x14c8            
+            Vector m_vJetpackInput; // 0x14c8
             // metadata: MNetworkEnable
-            source2sdk::entity2::GameTime_t m_tLastWallAttachTime; // 0x14d4            
+            source2sdk::entity2::GameTime_t m_tLastWallAttachTime; // 0x14d4
             // metadata: MNetworkEnable
-            source2sdk::entity2::GameTime_t m_tLastGroundedTime; // 0x14d8            
+            source2sdk::entity2::GameTime_t m_tLastGroundedTime; // 0x14d8
             // metadata: MNetworkEnable
-            bool m_bQueueWallAttachJump; // 0x14dc            
+            bool m_bQueueWallAttachJump; // 0x14dc
             uint8_t _pad14dd[0x3]; // 0x14dd
             // metadata: MNetworkEnable
-            source2sdk::entity2::GameTime_t m_tOverdriveBeginTime; // 0x14e0            
+            source2sdk::entity2::GameTime_t m_tOverdriveBeginTime; // 0x14e0
             // metadata: MNetworkEnable
-            Vector m_vIntentSpaceMPCVelocity; // 0x14e4            
+            Vector m_vIntentSpaceMPCVelocity; // 0x14e4
             // metadata: MNetworkEnable
-            Vector m_vIntentSpaceMPCOrigin; // 0x14f0            
+            Vector m_vIntentSpaceMPCOrigin; // 0x14f0
             // metadata: MNetworkEnable
-            float m_flIntentSpeedVerticalActual; // 0x14fc            
+            float m_flIntentSpeedVerticalActual; // 0x14fc
             // metadata: MNetworkEnable
-            float m_flIntentMultiplier; // 0x1500            
+            float m_flIntentMultiplier; // 0x1500
             uint8_t _pad1504[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_Airheart_Rocketeer3 because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Ability_Airheart_Rocketeer3) == 0x1508);
     };
 };

@@ -24,12 +24,12 @@ namespace source2sdk
         class CEnvSoundscapeProxy : public source2sdk::server::CEnvSoundscape
         {
         public:
-            CUtlSymbolLarge m_MainSoundscapeName; // 0x528            
+            CUtlSymbolLarge m_MainSoundscapeName; // 0x528
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CEnvSoundscapeProxy because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CEnvSoundscapeProxy) == 0x530);
     };
 };

@@ -32,26 +32,26 @@ namespace source2sdk
         class CDotaMoveSpeedModifierPath : public source2sdk::client::C_BaseEntity
         {
         public:
-            float m_flPathLength; // 0x5f0            
+            float m_flPathLength; // 0x5f0
             uint8_t _pad05f4[0x4]; // 0x5f4
             // m_vecNodes has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::client::DotaModifierPathNode_t> m_vecNodes;
-            char m_vecNodes[0x18]; // 0x5f8            
+            char m_vecNodes[0x18]; // 0x5f8
             uint8_t _pad0610[0x18]; // 0x610
             // m_hTrigger has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::C_BaseEntity> m_hTrigger;
-            char m_hTrigger[0x4]; // 0x628            
+            char m_hTrigger[0x4]; // 0x628
             uint8_t _pad062c[0x4];
-            
+
             // Datamap fields:
             // CUtlSymbolLarge pathNodes; // 0x7fffffff
             // CUtlSymbolLarge pathNodeRadiusScales; // 0x7fffffff
             // CUtlSymbolLarge pathNodeMoveSpeedTypes; // 0x7fffffff
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDotaMoveSpeedModifierPath because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CDotaMoveSpeedModifierPath) == 0x630);
     };
 };

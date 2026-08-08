@@ -22,17 +22,17 @@ namespace source2sdk
         struct RegionTriggerBoxes_t
         {
         public:
-            source2sdk::mathlib_extended::AABB_t regionBox; // 0x0            
-            VectorWS vRegionBoxOrigin; // 0x18            
+            source2sdk::mathlib_extended::AABB_t regionBox; // 0x0
+            VectorWS vRegionBoxOrigin; // 0x18
             uint8_t _pad0024[0x4]; // 0x24
-            CUtlString strRegionName; // 0x28            
+            CUtlString strRegionName; // 0x28
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::RegionTriggerBoxes_t, regionBox) == 0x0);
         static_assert(offsetof(source2sdk::client::RegionTriggerBoxes_t, vRegionBoxOrigin) == 0x18);
         static_assert(offsetof(source2sdk::client::RegionTriggerBoxes_t, strRegionName) == 0x28);
-        
+
         static_assert(sizeof(source2sdk::client::RegionTriggerBoxes_t) == 0x30);
     };
 };

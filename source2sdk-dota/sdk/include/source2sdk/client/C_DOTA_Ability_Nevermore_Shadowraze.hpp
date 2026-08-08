@@ -26,16 +26,16 @@ namespace source2sdk
         class C_DOTA_Ability_Nevermore_Shadowraze : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x6a8            
-            source2sdk::client::ParticleIndex_t m_nFXIndexB; // 0x6ac            
-            float cooldown_reduction_on_hero_hit; // 0x6b0            
-            bool m_bReadyToSetCooldown; // 0x6b4            
+            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x6a8
+            source2sdk::client::ParticleIndex_t m_nFXIndexB; // 0x6ac
+            float cooldown_reduction_on_hero_hit; // 0x6b0
+            bool m_bReadyToSetCooldown; // 0x6b4
             uint8_t _pad06b5[0x3];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_Nevermore_Shadowraze because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_Nevermore_Shadowraze) == 0x6b8);
     };
 };

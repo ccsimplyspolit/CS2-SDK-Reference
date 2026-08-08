@@ -32,23 +32,23 @@ namespace source2sdk
         class CDOTA_Ability_Hoodwink_HuntersBoomerang : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            std::int32_t radius; // 0x580            
-            std::int32_t speed; // 0x584            
-            std::int32_t damage; // 0x588            
-            float mark_duration; // 0x58c            
+            std::int32_t radius; // 0x580
+            std::int32_t speed; // 0x584
+            std::int32_t damage; // 0x588
+            float mark_duration; // 0x58c
             // m_hTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hTarget;
-            char m_hTarget[0x4]; // 0x590            
+            char m_hTarget[0x4]; // 0x590
             uint8_t _pad0594[0x4]; // 0x594
             // m_vecHitEntities has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::server::CBaseEntity>> m_vecHitEntities;
-            char m_vecHitEntities[0x18]; // 0x598            
+            char m_vecHitEntities[0x18]; // 0x598
             uint8_t _pad05b0[0x18];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Hoodwink_HuntersBoomerang because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Hoodwink_HuntersBoomerang) == 0x5c8);
     };
 };

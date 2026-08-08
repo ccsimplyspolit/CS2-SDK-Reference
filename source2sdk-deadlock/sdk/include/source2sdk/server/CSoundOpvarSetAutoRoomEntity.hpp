@@ -27,22 +27,22 @@ namespace source2sdk
         public:
             // m_traceResults has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::server::SoundOpvarTraceResult_t> m_traceResults;
-            char m_traceResults[0x18]; // 0x618            
+            char m_traceResults[0x18]; // 0x618
             // m_doorwayPairs has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::server::AutoRoomDoorwayPairs_t> m_doorwayPairs;
-            char m_doorwayPairs[0x18]; // 0x630            
-            float m_flSize; // 0x648            
-            float m_flHeightTolerance; // 0x64c            
-            float m_flSizeSqr; // 0x650            
+            char m_doorwayPairs[0x18]; // 0x630
+            float m_flSize; // 0x648
+            float m_flHeightTolerance; // 0x64c
+            float m_flSizeSqr; // 0x650
             uint8_t _pad0654[0x4];
-            
+
             // Datamap fields:
             // void CSoundOpvarSetAutoRoomEntitySetOpvarThink; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSoundOpvarSetAutoRoomEntity because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CSoundOpvarSetAutoRoomEntity) == 0x658);
     };
 };

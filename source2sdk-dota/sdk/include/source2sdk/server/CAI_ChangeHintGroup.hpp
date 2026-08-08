@@ -24,20 +24,20 @@ namespace source2sdk
         class CAI_ChangeHintGroup : public source2sdk::server::CBaseEntity
         {
         public:
-            std::int32_t m_iSearchType; // 0x498            
+            std::int32_t m_iSearchType; // 0x498
             uint8_t _pad049c[0x4]; // 0x49c
-            CUtlSymbolLarge m_strSearchName; // 0x4a0            
-            CUtlSymbolLarge m_strNewHintGroup; // 0x4a8            
-            float m_flRadius; // 0x4b0            
+            CUtlSymbolLarge m_strSearchName; // 0x4a0
+            CUtlSymbolLarge m_strNewHintGroup; // 0x4a8
+            float m_flRadius; // 0x4b0
             uint8_t _pad04b4[0x4];
-            
+
             // Datamap fields:
             // void InputActivate; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CAI_ChangeHintGroup because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CAI_ChangeHintGroup) == 0x4b8);
     };
 };

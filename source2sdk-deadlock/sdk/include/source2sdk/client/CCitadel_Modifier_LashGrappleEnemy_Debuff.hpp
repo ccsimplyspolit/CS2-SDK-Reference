@@ -24,16 +24,16 @@ namespace source2sdk
         class CCitadel_Modifier_LashGrappleEnemy_Debuff : public source2sdk::client::CCitadel_Modifier_Stunned
         {
         public:
-            Vector m_vCrashDir; // 0xc8            
-            Vector m_vLiftTarget; // 0xd4            
-            source2sdk::entity2::GameTime_t m_flStartTime; // 0xe0            
-            bool m_bCrashingDown; // 0xe4            
+            Vector m_vCrashDir; // 0xc8
+            Vector m_vLiftTarget; // 0xd4
+            source2sdk::entity2::GameTime_t m_flStartTime; // 0xe0
+            bool m_bCrashingDown; // 0xe4
             uint8_t _pad00e5[0x483];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_LashGrappleEnemy_Debuff because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Modifier_LashGrappleEnemy_Debuff) == 0x568);
     };
 };

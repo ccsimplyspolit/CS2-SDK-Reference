@@ -31,12 +31,12 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0000[0x8]; // 0x0
-            source2sdk::client::C_RopeKeyframe* m_pKeyframe; // 0x8            
+            source2sdk::client::C_RopeKeyframe* m_pKeyframe; // 0x8
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::C_RopeKeyframe_CPhysicsDelegate, m_pKeyframe) == 0x8);
-        
+
         static_assert(sizeof(source2sdk::client::C_RopeKeyframe_CPhysicsDelegate) == 0x10);
     };
 };

@@ -20,24 +20,24 @@ namespace source2sdk
         // Has Trivial Constructor
         // Has Trivial Destructor
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct VMixPitchShiftDesc_t
         {
         public:
-            std::int32_t m_nGrainSampleCount; // 0x0            
-            float m_flPitchShift; // 0x4            
-            std::int32_t m_nQuality; // 0x8            
-            std::int32_t m_nProcType; // 0xc            
+            std::int32_t m_nGrainSampleCount; // 0x0
+            float m_flPitchShift; // 0x4
+            std::int32_t m_nQuality; // 0x8
+            std::int32_t m_nProcType; // 0xc
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::VMixPitchShiftDesc_t, m_nGrainSampleCount) == 0x0);
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::VMixPitchShiftDesc_t, m_flPitchShift) == 0x4);
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::VMixPitchShiftDesc_t, m_nQuality) == 0x8);
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::VMixPitchShiftDesc_t, m_nProcType) == 0xc);
-        
+
         static_assert(sizeof(source2sdk::soundsystem_lowlevel::VMixPitchShiftDesc_t) == 0x10);
     };
 };

@@ -19,18 +19,18 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xf8
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CPulseCell_Outflow_PlaySequence : public source2sdk::server::CPulseCell_Outflow_PlaySceneBase
         {
         public:
-            CUtlString m_ParamSequenceName; // 0xf0            
+            CUtlString m_ParamSequenceName; // 0xf0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPulseCell_Outflow_PlaySequence because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CPulseCell_Outflow_PlaySequence) == 0xf8);
     };
 };

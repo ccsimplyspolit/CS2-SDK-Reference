@@ -17,21 +17,21 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a68
+        // Size: 0x1a88
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Sand_King_BurrowStrike : public source2sdk::client::CDOTA_Buff
         {
         public:
-            VectorWS m_vPopupLocation; // 0x1a58            
-            bool m_bTeleported; // 0x1a64            
-            bool m_bPreviouslyBurrowed; // 0x1a65            
-            uint8_t _pad1a66[0x2];
+            VectorWS m_vPopupLocation; // 0x1a78
+            bool m_bTeleported; // 0x1a84
+            bool m_bPreviouslyBurrowed; // 0x1a85
+            uint8_t _pad1a86[0x2];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Sand_King_BurrowStrike because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Sand_King_BurrowStrike) == 0x1a68);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Sand_King_BurrowStrike) == 0x1a88);
     };
 };

@@ -21,7 +21,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xef0
         // Has VTable
-        // 
+        //
         // static metadata: MEntityAllowsPortraitWorldSpawn
         // static metadata: MNetworkVarNames "bool m_bUseHitboxesForRenderBox"
         // static metadata: MNetworkVarNames "bool m_bUseAnimGraph"
@@ -30,40 +30,40 @@ namespace source2sdk
         {
         public:
             // metadata: MNetworkEnable
-            bool m_bUseHitboxesForRenderBox; // 0xe20            
+            bool m_bUseHitboxesForRenderBox; // 0xe20
             // metadata: MNetworkEnable
-            bool m_bUseAnimGraph; // 0xe21            
+            bool m_bUseAnimGraph; // 0xe21
             uint8_t _pad0e22[0x6]; // 0xe22
-            source2sdk::entity2::CEntityIOOutput m_pOutputAnimBegun; // 0xe28            
-            source2sdk::entity2::CEntityIOOutput m_pOutputAnimOver; // 0xe40            
-            source2sdk::entity2::CEntityIOOutput m_pOutputAnimLoopCycleOver; // 0xe58            
-            source2sdk::entity2::CEntityIOOutput m_OnAnimReachedStart; // 0xe70            
-            source2sdk::entity2::CEntityIOOutput m_OnAnimReachedEnd; // 0xe88            
-            CUtlSymbolLarge m_iszIdleAnim; // 0xea0            
-            source2sdk::client::AnimLoopMode_t m_nIdleAnimLoopMode; // 0xea8            
-            bool m_bRandomizeCycle; // 0xeac            
-            bool m_bStartDisabled; // 0xead            
-            bool m_bFiredStartEndOutput; // 0xeae            
+            source2sdk::entity2::CEntityIOOutput m_pOutputAnimBegun; // 0xe28
+            source2sdk::entity2::CEntityIOOutput m_pOutputAnimOver; // 0xe40
+            source2sdk::entity2::CEntityIOOutput m_pOutputAnimLoopCycleOver; // 0xe58
+            source2sdk::entity2::CEntityIOOutput m_OnAnimReachedStart; // 0xe70
+            source2sdk::entity2::CEntityIOOutput m_OnAnimReachedEnd; // 0xe88
+            CUtlSymbolLarge m_iszIdleAnim; // 0xea0
+            source2sdk::client::AnimLoopMode_t m_nIdleAnimLoopMode; // 0xea8
+            bool m_bRandomizeCycle; // 0xeac
+            bool m_bStartDisabled; // 0xead
+            bool m_bFiredStartEndOutput; // 0xeae
             // metadata: MNotSaved
-            bool m_bForceNpcExclude; // 0xeaf            
+            bool m_bForceNpcExclude; // 0xeaf
             // metadata: MNotSaved
-            bool m_bCreateNonSolid; // 0xeb0            
+            bool m_bCreateNonSolid; // 0xeb0
             // metadata: MNotSaved
-            bool m_bIsOverrideProp; // 0xeb1            
+            bool m_bIsOverrideProp; // 0xeb1
             uint8_t _pad0eb2[0x2]; // 0xeb2
-            std::int32_t m_iInitialGlowState; // 0xeb4            
-            std::int32_t m_nGlowRange; // 0xeb8            
-            std::int32_t m_nGlowRangeMin; // 0xebc            
-            Color m_glowColor; // 0xec0            
-            std::int32_t m_nGlowTeam; // 0xec4            
+            std::int32_t m_iInitialGlowState; // 0xeb4
+            std::int32_t m_nGlowRange; // 0xeb8
+            std::int32_t m_nGlowRangeMin; // 0xebc
+            Color m_glowColor; // 0xec0
+            std::int32_t m_nGlowTeam; // 0xec4
             // metadata: MNotSaved
-            std::int32_t m_iCachedFrameCount; // 0xec8            
+            std::int32_t m_iCachedFrameCount; // 0xec8
             // metadata: MNotSaved
-            Vector m_vecCachedRenderMins; // 0xecc            
+            Vector m_vecCachedRenderMins; // 0xecc
             // metadata: MNotSaved
-            Vector m_vecCachedRenderMaxs; // 0xed8            
+            Vector m_vecCachedRenderMaxs; // 0xed8
             uint8_t _pad0ee4[0xc];
-            
+
             // Datamap fields:
             // CUtlSymbolLarge StartingAnim; // 0x7fffffff
             // CUtlSymbolLarge StartingAnimationLoopMode; // 0x7fffffff
@@ -94,9 +94,9 @@ namespace source2sdk
             // bool HoldAnimation; // 0x7fffffff
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DynamicProp because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DynamicProp) == 0xef0);
     };
 };

@@ -28,7 +28,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x1748
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "bool m_bActive"
         // static metadata: MNetworkVarNames "EHANDLE m_hCurrentTarget"
         // static metadata: MNetworkVarNames "EHANDLE m_hLastCastTarget"
@@ -44,39 +44,39 @@ namespace source2sdk
         public:
             uint8_t _pad11d8[0x500]; // 0x11d8
             // metadata: MNetworkEnable
-            bool m_bActive; // 0x16d8            
+            bool m_bActive; // 0x16d8
             uint8_t _pad16d9[0x3]; // 0x16d9
             // metadata: MNetworkEnable
             // m_hCurrentTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::C_BaseEntity> m_hCurrentTarget;
-            char m_hCurrentTarget[0x4]; // 0x16dc            
+            char m_hCurrentTarget[0x4]; // 0x16dc
             // metadata: MNetworkEnable
             // m_hLastCastTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::C_BaseEntity> m_hLastCastTarget;
-            char m_hLastCastTarget[0x4]; // 0x16e0            
+            char m_hLastCastTarget[0x4]; // 0x16e0
             // metadata: MNetworkEnable
-            Vector m_vStartPosition; // 0x16e4            
+            Vector m_vStartPosition; // 0x16e4
             // metadata: MNetworkEnable
-            Vector m_vDeparturePosition; // 0x16f0            
+            Vector m_vDeparturePosition; // 0x16f0
             uint8_t _pad16fc[0x4]; // 0x16fc
             // metadata: MNetworkEnable
-            source2sdk::client::CCitadelAutoScaledTime m_flDepartureTime; // 0x1700            
+            source2sdk::client::CCitadelAutoScaledTime m_flDepartureTime; // 0x1700
             // metadata: MNetworkEnable
-            source2sdk::client::CCitadelAutoScaledTime m_flArrivalTime; // 0x1718            
-            Vector m_vLastKnownSafePos; // 0x1730            
-            bool m_bStartedPhase01; // 0x173c            
-            bool m_bStartedPhase02; // 0x173d            
+            source2sdk::client::CCitadelAutoScaledTime m_flArrivalTime; // 0x1718
+            Vector m_vLastKnownSafePos; // 0x1730
+            bool m_bStartedPhase01; // 0x173c
+            bool m_bStartedPhase02; // 0x173d
             // metadata: MNetworkEnable
-            bool m_bIsFirstCastCompleted; // 0x173e            
+            bool m_bIsFirstCastCompleted; // 0x173e
             uint8_t _pad173f[0x1]; // 0x173f
             // metadata: MNetworkEnable
-            source2sdk::entity2::GameTime_t m_tDoubleCastWindow; // 0x1740            
+            source2sdk::entity2::GameTime_t m_tDoubleCastWindow; // 0x1740
             uint8_t _pad1744[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_Nano_Pounce_Instant because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Ability_Nano_Pounce_Instant) == 0x1748);
     };
 };

@@ -28,8 +28,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: CDOTA_Ability_Omniknight_Hammer_Of_Purity has no schema binary (size is a guess)
     };
 };

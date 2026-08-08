@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x1d8
         // Has VTable
         // Is Abstract
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CParticleFunctionConstraint : public source2sdk::particles::CParticleFunction
@@ -28,8 +28,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::particles::CParticleFunctionConstraint) == 0x1d8);
     };
 };

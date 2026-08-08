@@ -24,16 +24,16 @@ namespace source2sdk
         class CCitadelModifierDruidInvis : public source2sdk::client::CCitadelModifier
         {
         public:
-            float m_flCurrentObscureLevel; // 0xc0            
-            std::int32_t m_nInvisModifierID; // 0xc4            
+            float m_flCurrentObscureLevel; // 0xc0
+            std::int32_t m_nInvisModifierID; // 0xc4
             // m_AmbientParticles has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVectorFixedGrowable<source2sdk::client::ParticleIndex_t,3> m_AmbientParticles;
-            char m_AmbientParticles[0x28]; // 0xc8            
+            char m_AmbientParticles[0x28]; // 0xc8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadelModifierDruidInvis because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadelModifierDruidInvis) == 0xf0);
     };
 };

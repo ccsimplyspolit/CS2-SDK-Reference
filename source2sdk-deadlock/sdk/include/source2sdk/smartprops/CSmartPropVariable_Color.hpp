@@ -19,20 +19,20 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x40
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Color"
         #pragma pack(push, 1)
         class CSmartPropVariable_Color : public source2sdk::smartprops::CSmartPropVariable
         {
         public:
-            Color m_DefaultValue; // 0x38            
+            Color m_DefaultValue; // 0x38
             uint8_t _pad003c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSmartPropVariable_Color because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::smartprops::CSmartPropVariable_Color) == 0x40);
     };
 };

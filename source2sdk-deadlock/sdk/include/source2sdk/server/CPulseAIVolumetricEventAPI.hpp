@@ -19,7 +19,7 @@ namespace source2sdk
         // Size: 0x1
         // Has Trivial Constructor
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MPropertyFriendlyName "AI Volumetric Events"
         // static metadata: MPropertyDescription "General helpers for ai volumetric events."
         #pragma pack(push, 1)
@@ -28,8 +28,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::server::CPulseAIVolumetricEventAPI) == 0x1);
     };
 };

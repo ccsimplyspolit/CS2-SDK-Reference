@@ -25,15 +25,15 @@ namespace source2sdk
         class C_DOTA_Ability_Morty_Hop : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            float max_distance; // 0x6a8            
-            VectorWS m_vTarget; // 0x6ac            
-            std::int32_t m_iTrackerProjectile; // 0x6b8            
+            float max_distance; // 0x6a8
+            VectorWS m_vTarget; // 0x6ac
+            std::int32_t m_iTrackerProjectile; // 0x6b8
             uint8_t _pad06bc[0x24];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_Morty_Hop because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_Morty_Hop) == 0x6e0);
     };
 };

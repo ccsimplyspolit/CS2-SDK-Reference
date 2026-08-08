@@ -21,30 +21,30 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x360
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_DistanceCull : public source2sdk::particles::CParticleFunctionOperator
         {
         public:
             // metadata: MPropertyFriendlyName "control point"
-            std::int32_t m_nControlPoint; // 0x1d8            
+            std::int32_t m_nControlPoint; // 0x1d8
             // metadata: MPropertyFriendlyName "control point offset"
             // metadata: MVectorIsCoordinate
-            Vector m_vecPointOffset; // 0x1dc            
+            Vector m_vecPointOffset; // 0x1dc
             // metadata: MPropertyFriendlyName "cull distance"
-            source2sdk::particleslib::CParticleCollectionFloatInput m_flDistance; // 0x1e8            
+            source2sdk::particleslib::CParticleCollectionFloatInput m_flDistance; // 0x1e8
             // metadata: MPropertyFriendlyName "cull inside instead of outside"
-            bool m_bCullInside; // 0x358            
+            bool m_bCullInside; // 0x358
             uint8_t _pad0359[0x3]; // 0x359
             // metadata: MPropertyFriendlyName "Attribute to Test"
             // metadata: MPropertyAttributeChoiceName "particlefield_vector"
-            source2sdk::particles::ParticleAttributeIndex_t m_nAttribute; // 0x35c            
+            source2sdk::particles::ParticleAttributeIndex_t m_nAttribute; // 0x35c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_DistanceCull because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_DistanceCull) == 0x360);
     };
 };

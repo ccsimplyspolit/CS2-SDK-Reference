@@ -23,13 +23,13 @@ namespace source2sdk
         class CGameModifier_BodyGroupChoice : public source2sdk::client::CCitadelModifier
         {
         public:
-            CUtlStringToken m_nBodyGroupName; // 0xc0            
-            std::int32_t m_nBodyGroupChoice; // 0xc4            
+            CUtlStringToken m_nBodyGroupName; // 0xc0
+            std::int32_t m_nBodyGroupChoice; // 0xc4
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CGameModifier_BodyGroupChoice because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CGameModifier_BodyGroupChoice) == 0xc8);
     };
 };

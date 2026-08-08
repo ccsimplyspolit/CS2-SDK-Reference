@@ -25,7 +25,7 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a80
+        // Size: 0x1aa0
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Enchantress_Little_Friends_Aura : public source2sdk::client::CDOTA_Buff
@@ -33,22 +33,22 @@ namespace source2sdk
         public:
             // m_hTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::C_BaseEntity> m_hTarget;
-            char m_hTarget[0x4]; // 0x1a58            
-            std::int32_t m_nAlliesTaunted; // 0x1a5c            
-            bool m_bRelicTriggered; // 0x1a60            
-            uint8_t _pad1a61[0x3]; // 0x1a61
-            float radius; // 0x1a64            
-            std::int32_t damage_amplification; // 0x1a68            
-            std::int32_t damage_reduction; // 0x1a6c            
-            float root_base_duration; // 0x1a70            
-            float root_per_target; // 0x1a74            
-            float max_root; // 0x1a78            
-            source2sdk::entity2::GameTime_t m_flLastSeen; // 0x1a7c            
+            char m_hTarget[0x4]; // 0x1a78
+            std::int32_t m_nAlliesTaunted; // 0x1a7c
+            bool m_bRelicTriggered; // 0x1a80
+            uint8_t _pad1a81[0x3]; // 0x1a81
+            float radius; // 0x1a84
+            std::int32_t damage_amplification; // 0x1a88
+            std::int32_t damage_reduction; // 0x1a8c
+            float root_base_duration; // 0x1a90
+            float root_per_target; // 0x1a94
+            float max_root; // 0x1a98
+            source2sdk::entity2::GameTime_t m_flLastSeen; // 0x1a9c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Enchantress_Little_Friends_Aura because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Enchantress_Little_Friends_Aura) == 0x1a80);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Enchantress_Little_Friends_Aura) == 0x1aa0);
     };
 };

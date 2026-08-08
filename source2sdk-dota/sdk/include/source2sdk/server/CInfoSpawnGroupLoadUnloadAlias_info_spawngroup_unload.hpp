@@ -27,8 +27,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: CInfoSpawnGroupLoadUnloadAlias_info_spawngroup_unload has no schema binary (size is a guess)
     };
 };

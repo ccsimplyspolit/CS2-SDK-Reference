@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x48
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CPulseCell_Test_MultiInflow_WithDefault : public source2sdk::pulse_runtime_lib::CPulseCell_BaseFlow
@@ -27,8 +27,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::pulse_system::CPulseCell_Test_MultiInflow_WithDefault) == 0x48);
     };
 };

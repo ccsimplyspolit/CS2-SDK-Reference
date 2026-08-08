@@ -34,13 +34,13 @@ namespace source2sdk
         public:
             // m_hGripTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::C_BaseEntity> m_hGripTarget;
-            char m_hGripTarget[0x4]; // 0x6a8            
-            std::int32_t fiend_grip_damage; // 0x6ac            
+            char m_hGripTarget[0x4]; // 0x6a8
+            std::int32_t fiend_grip_damage; // 0x6ac
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_Bane_FiendsGrip because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_Bane_FiendsGrip) == 0x6b0);
     };
 };

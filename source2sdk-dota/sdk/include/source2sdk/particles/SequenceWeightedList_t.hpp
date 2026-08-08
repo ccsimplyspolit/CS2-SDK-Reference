@@ -19,7 +19,7 @@ namespace source2sdk
         // Size: 0x8
         // Has Trivial Destructor
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct SequenceWeightedList_t
@@ -27,15 +27,15 @@ namespace source2sdk
         public:
             // metadata: MPropertyFriendlyName "sequence"
             // metadata: MPropertyAttributeEditor "SequencePicker( 1 )"
-            std::int32_t m_nSequence; // 0x0            
+            std::int32_t m_nSequence; // 0x0
             // metadata: MPropertyFriendlyName "weight"
-            float m_flRelativeWeight; // 0x4            
+            float m_flRelativeWeight; // 0x4
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::particles::SequenceWeightedList_t, m_nSequence) == 0x0);
         static_assert(offsetof(source2sdk::particles::SequenceWeightedList_t, m_flRelativeWeight) == 0x4);
-        
+
         static_assert(sizeof(source2sdk::particles::SequenceWeightedList_t) == 0x8);
     };
 };

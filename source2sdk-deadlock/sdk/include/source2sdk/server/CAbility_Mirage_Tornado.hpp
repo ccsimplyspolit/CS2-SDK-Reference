@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x1408
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "QAngle m_anglesCharging"
         // static metadata: MNetworkVarNames "GameTime_t m_flChargeStartTime"
         #pragma pack(push, 1)
@@ -28,18 +28,18 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0f70[0x4]; // 0xf70
-            source2sdk::entity2::GameTime_t m_RecastWindowEnd; // 0xf74            
+            source2sdk::entity2::GameTime_t m_RecastWindowEnd; // 0xf74
             uint8_t _pad0f78[0x480]; // 0xf78
             // metadata: MNetworkEnable
-            QAngle m_anglesCharging; // 0x13f8            
+            QAngle m_anglesCharging; // 0x13f8
             // metadata: MNetworkEnable
             // metadata: MNetworkChangeCallback "OnMirageTornadoStateChanged"
-            source2sdk::entity2::GameTime_t m_flChargeStartTime; // 0x1404            
+            source2sdk::entity2::GameTime_t m_flChargeStartTime; // 0x1404
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CAbility_Mirage_Tornado because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CAbility_Mirage_Tornado) == 0x1408);
     };
 };

@@ -33,12 +33,12 @@ namespace source2sdk
         class C_DOTASpectatorGraphManagerProxy : public source2sdk::client::C_BaseEntity
         {
         public:
-            source2sdk::client::C_DOTASpectatorGraphManager* m_pGraphManager; // 0x5f0            
+            source2sdk::client::C_DOTASpectatorGraphManager* m_pGraphManager; // 0x5f0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTASpectatorGraphManagerProxy because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTASpectatorGraphManagerProxy) == 0x5f8);
     };
 };

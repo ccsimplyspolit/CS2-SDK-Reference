@@ -24,23 +24,23 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a68
+        // Size: 0x1a88
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_TemplarAssassin_Meditation : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float health_regen; // 0x1a58            
-            float mana_regen; // 0x1a5c            
+            float health_regen; // 0x1a78
+            float mana_regen; // 0x1a7c
             // m_hIllusion has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hIllusion;
-            char m_hIllusion[0x4]; // 0x1a60            
-            uint8_t _pad1a64[0x4];
+            char m_hIllusion[0x4]; // 0x1a80
+            uint8_t _pad1a84[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_TemplarAssassin_Meditation because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_TemplarAssassin_Meditation) == 0x1a68);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_TemplarAssassin_Meditation) == 0x1a88);
     };
 };

@@ -26,13 +26,13 @@ namespace source2sdk
         class CDOTA_Ability_AghsFort_Creature_Venomancer_PoisonNova : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            source2sdk::client::ParticleIndex_t m_nFXPreview; // 0x580            
-            float radius; // 0x584            
+            source2sdk::client::ParticleIndex_t m_nFXPreview; // 0x580
+            float radius; // 0x584
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_AghsFort_Creature_Venomancer_PoisonNova because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_AghsFort_Creature_Venomancer_PoisonNova) == 0x588);
     };
 };

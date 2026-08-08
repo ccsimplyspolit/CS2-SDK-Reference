@@ -25,17 +25,17 @@ namespace source2sdk
         {
         public:
             // metadata: MNotSaved
-            std::int32_t m_nLongAxis; // 0xa88            
+            std::int32_t m_nLongAxis; // 0xa88
             // metadata: MNotSaved
-            float m_flRadius; // 0xa8c            
+            float m_flRadius; // 0xa8c
             // metadata: MNotSaved
-            float m_flLineLength; // 0xa90            
+            float m_flLineLength; // 0xa90
             uint8_t _pad0a94[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_FuncTrackTrain because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_FuncTrackTrain) == 0xa98);
     };
 };

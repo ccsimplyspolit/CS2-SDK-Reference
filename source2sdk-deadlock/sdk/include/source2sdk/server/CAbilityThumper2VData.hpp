@@ -21,7 +21,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x1928
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CAbilityThumper2VData : public source2sdk::server::CitadelAbilityVData
@@ -30,21 +30,21 @@ namespace source2sdk
             // metadata: MPropertyGroupName "Visuals"
             // m_StompParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_StompParticle;
-            char m_StompParticle[0xe0]; // 0x1818            
+            char m_StompParticle[0xe0]; // 0x1818
             // metadata: MPropertyGroupName "Sounds"
-            CSoundEventName m_strStompExplosionSound; // 0x18f8            
+            CSoundEventName m_strStompExplosionSound; // 0x18f8
             // metadata: MPropertyGroupName "Modifiers"
             // m_BuffModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEmbeddedSubclass<source2sdk::server::CCitadelModifier> m_BuffModifier;
-            char m_BuffModifier[0x10]; // 0x1908            
+            char m_BuffModifier[0x10]; // 0x1908
             // m_BarbedWireAuraModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEmbeddedSubclass<source2sdk::server::CCitadelModifier> m_BarbedWireAuraModifier;
-            char m_BarbedWireAuraModifier[0x10]; // 0x1918            
+            char m_BarbedWireAuraModifier[0x10]; // 0x1918
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CAbilityThumper2VData because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CAbilityThumper2VData) == 0x1928);
     };
 };

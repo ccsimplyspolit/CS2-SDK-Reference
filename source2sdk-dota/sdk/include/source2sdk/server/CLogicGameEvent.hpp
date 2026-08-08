@@ -24,15 +24,15 @@ namespace source2sdk
         class CLogicGameEvent : public source2sdk::server::CLogicalEntity
         {
         public:
-            CUtlSymbolLarge m_iszEventName; // 0x498            
-            
+            CUtlSymbolLarge m_iszEventName; // 0x498
+
             // Datamap fields:
             // void InputFireEvent; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CLogicGameEvent because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CLogicGameEvent) == 0x4a0);
     };
 };

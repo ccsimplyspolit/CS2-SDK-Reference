@@ -3,9 +3,12 @@
 Full Deadlock (Citadel) SDK generated from the installed game by
 [`../source2gen/`](../source2gen/) (built with `-o game=DEADLOCK`).
 
-**9016 headers across 32 modules**, generated 2026-07-19 against Deadlock
-`ClientVersion=6624` (VersionDate Jul 08 2026). 4377 `CCitadel*`/`C_Citadel*`
-classes. Schema stats: 11449 registrations.
+**9035 headers across 32 modules**, generated 2026-08-08 against Deadlock
+Steam app buildid `24599046`. 4363 `CCitadel*`/`C_Citadel*` class declarations.
+Schema stats: 11479 registrations.
+
+The source was regenerated from `K:\SteamLibrary\steamapps\common\Deadlock`;
+the game has no `steam.inf`, so the Steam app manifest buildid is recorded above.
 
 > The upstream that produced these SDKs — `neverlosecc/source2sdk` — is **404**.
 > This tree is generated fresh from the `source2gen` in this repo.
@@ -16,7 +19,7 @@ classes. Schema stats: 11449 registrations.
 sdk/
   CMakeLists.txt        header-only INTERFACE target + a compile-test target
   conanfile.py          conan recipe
-  include/source2sdk/   32 modules; client is the largest (3623 headers)
+  include/source2sdk/   32 modules; client is the largest (3637 headers)
 ```
 
 Header-only. Point your include path at `sdk/include`. Placeholder types

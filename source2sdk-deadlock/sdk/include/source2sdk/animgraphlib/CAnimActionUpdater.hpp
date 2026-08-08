@@ -19,7 +19,7 @@ namespace source2sdk
         // Size: 0x18
         // Has VTable
         // Is Abstract
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CAnimActionUpdater
@@ -28,8 +28,8 @@ namespace source2sdk
             uint8_t _pad0000[0x18];
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::animgraphlib::CAnimActionUpdater) == 0x18);
     };
 };

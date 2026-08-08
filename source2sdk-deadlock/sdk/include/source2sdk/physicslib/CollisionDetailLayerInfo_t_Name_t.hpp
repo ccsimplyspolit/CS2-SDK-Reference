@@ -17,22 +17,22 @@ namespace source2sdk
         // Alignment: 0x8
         // Standard-layout class: true
         // Size: 0x10
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MVDataRoot
         #pragma pack(push, 1)
         struct CollisionDetailLayerInfo_t_Name_t
         {
         public:
-            CUtlStringToken m_nNameToken; // 0x0            
+            CUtlStringToken m_nNameToken; // 0x0
             uint8_t _pad0004[0x4]; // 0x4
-            CUtlString m_sNameString; // 0x8            
+            CUtlString m_sNameString; // 0x8
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::physicslib::CollisionDetailLayerInfo_t_Name_t, m_nNameToken) == 0x0);
         static_assert(offsetof(source2sdk::physicslib::CollisionDetailLayerInfo_t_Name_t, m_sNameString) == 0x8);
-        
+
         static_assert(sizeof(source2sdk::physicslib::CollisionDetailLayerInfo_t_Name_t) == 0x10);
     };
 };

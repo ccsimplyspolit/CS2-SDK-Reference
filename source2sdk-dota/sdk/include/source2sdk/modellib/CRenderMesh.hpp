@@ -36,7 +36,7 @@ namespace source2sdk
         // Size: 0x230
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CRenderMesh
@@ -45,21 +45,21 @@ namespace source2sdk
             uint8_t _pad0000[0x10]; // 0x0
             // m_sceneObjects has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlLeanVectorFixedGrowable<source2sdk::modellib::CSceneObjectData,1> m_sceneObjects;
-            char m_sceneObjects[0xc0]; // 0x10            
+            char m_sceneObjects[0xc0]; // 0x10
             // m_constraints has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlLeanVector<source2sdk::modellib::CBaseConstraint*> m_constraints;
-            char m_constraints[0x10]; // 0xd0            
-            source2sdk::modellib::CRenderSkeleton m_skeleton; // 0xe0            
+            char m_constraints[0x10]; // 0xd0
+            source2sdk::modellib::CRenderSkeleton m_skeleton; // 0xe0
             uint8_t _pad0130[0xc4]; // 0x130
-            bool m_bUseUV2ForCharting; // 0x1f4            
-            bool m_bEmbeddedMapMesh; // 0x1f5            
+            bool m_bUseUV2ForCharting; // 0x1f4
+            bool m_bEmbeddedMapMesh; // 0x1f5
             uint8_t _pad01f6[0x22]; // 0x1f6
-            source2sdk::modellib::DynamicMeshDeformParams_t m_meshDeformParams; // 0x218            
+            source2sdk::modellib::DynamicMeshDeformParams_t m_meshDeformParams; // 0x218
             uint8_t _pad0224[0x4]; // 0x224
-            source2sdk::modellib::CRenderGroom* m_pGroomData; // 0x228            
+            source2sdk::modellib::CRenderGroom* m_pGroomData; // 0x228
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::modellib::CRenderMesh, m_sceneObjects) == 0x10);
         static_assert(offsetof(source2sdk::modellib::CRenderMesh, m_constraints) == 0xd0);
         static_assert(offsetof(source2sdk::modellib::CRenderMesh, m_skeleton) == 0xe0);
@@ -67,7 +67,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::modellib::CRenderMesh, m_bEmbeddedMapMesh) == 0x1f5);
         static_assert(offsetof(source2sdk::modellib::CRenderMesh, m_meshDeformParams) == 0x218);
         static_assert(offsetof(source2sdk::modellib::CRenderMesh, m_pGroomData) == 0x228);
-        
+
         static_assert(sizeof(source2sdk::modellib::CRenderMesh) == 0x230);
     };
 };

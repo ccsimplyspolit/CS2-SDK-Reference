@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x910
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CModifierPowerGeneratorVData : public source2sdk::client::CCitadelModifierVData
@@ -29,15 +29,15 @@ namespace source2sdk
             // metadata: MPropertyStartGroup "Visuals"
             // m_AmberEffectToTitan has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_AmberEffectToTitan;
-            char m_AmberEffectToTitan[0xe0]; // 0x750            
+            char m_AmberEffectToTitan[0xe0]; // 0x750
             // m_SapphEffectToTitan has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_SapphEffectToTitan;
-            char m_SapphEffectToTitan[0xe0]; // 0x830            
+            char m_SapphEffectToTitan[0xe0]; // 0x830
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CModifierPowerGeneratorVData because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CModifierPowerGeneratorVData) == 0x910);
     };
 };

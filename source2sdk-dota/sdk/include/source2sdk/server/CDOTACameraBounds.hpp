@@ -24,13 +24,13 @@ namespace source2sdk
         class CDOTACameraBounds : public source2sdk::server::CBaseEntity
         {
         public:
-            Vector m_vecBoundsMin; // 0x498            
-            Vector m_vecBoundsMax; // 0x4a4            
+            Vector m_vecBoundsMin; // 0x498
+            Vector m_vecBoundsMax; // 0x4a4
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTACameraBounds because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTACameraBounds) == 0x4b0);
     };
 };

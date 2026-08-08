@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0xb0
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CNmEventConsumerAttributes : public source2sdk::client::CNmEventConsumer
@@ -28,8 +28,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::client::CNmEventConsumerAttributes) == 0xb0);
     };
 };

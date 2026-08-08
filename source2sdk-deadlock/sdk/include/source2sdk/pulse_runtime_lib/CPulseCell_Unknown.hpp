@@ -23,12 +23,12 @@ namespace source2sdk
         class CPulseCell_Unknown : public source2sdk::pulse_runtime_lib::CPulseCell_Base
         {
         public:
-            KeyValues3 m_UnknownKeys; // 0x48            
+            KeyValues3 m_UnknownKeys; // 0x48
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPulseCell_Unknown because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::pulse_runtime_lib::CPulseCell_Unknown) == 0x58);
     };
 };

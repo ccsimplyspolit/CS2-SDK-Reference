@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x1f0
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_Noise : public source2sdk::particles::CParticleFunctionOperator
@@ -28,23 +28,23 @@ namespace source2sdk
         public:
             // metadata: MPropertyFriendlyName "output field"
             // metadata: MPropertyAttributeChoiceName "particlefield_scalar"
-            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1d8            
+            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1d8
             // metadata: MPropertyFriendlyName "output minimum"
-            float m_flOutputMin; // 0x1dc            
+            float m_flOutputMin; // 0x1dc
             // metadata: MPropertyFriendlyName "output maximum"
-            float m_flOutputMax; // 0x1e0            
+            float m_flOutputMax; // 0x1e0
             // metadata: MPropertyFriendlyName "noise coordinate scale"
-            float m_fl4NoiseScale; // 0x1e4            
+            float m_fl4NoiseScale; // 0x1e4
             // metadata: MPropertyFriendlyName "additive"
-            bool m_bAdditive; // 0x1e8            
+            bool m_bAdditive; // 0x1e8
             uint8_t _pad01e9[0x3]; // 0x1e9
             // metadata: MPropertyFriendlyName "Noise animation time scale"
-            float m_flNoiseAnimationTimeScale; // 0x1ec            
+            float m_flNoiseAnimationTimeScale; // 0x1ec
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_Noise because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_Noise) == 0x1f0);
     };
 };

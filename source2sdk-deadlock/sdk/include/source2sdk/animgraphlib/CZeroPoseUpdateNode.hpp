@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x60
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CZeroPoseUpdateNode : public source2sdk::animgraphlib::CLeafUpdateNode
@@ -28,8 +28,8 @@ namespace source2sdk
             uint8_t _pad0058[0x8];
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::animgraphlib::CZeroPoseUpdateNode) == 0x60);
     };
 };

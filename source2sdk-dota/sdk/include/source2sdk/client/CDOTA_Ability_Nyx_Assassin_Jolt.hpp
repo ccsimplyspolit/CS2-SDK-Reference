@@ -25,13 +25,13 @@ namespace source2sdk
         class CDOTA_Ability_Nyx_Assassin_Jolt : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            float aoe; // 0x6a8            
-            std::int32_t damage; // 0x6ac            
+            float aoe; // 0x6a8
+            std::int32_t damage; // 0x6ac
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Nyx_Assassin_Jolt because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CDOTA_Ability_Nyx_Assassin_Jolt) == 0x6b0);
     };
 };

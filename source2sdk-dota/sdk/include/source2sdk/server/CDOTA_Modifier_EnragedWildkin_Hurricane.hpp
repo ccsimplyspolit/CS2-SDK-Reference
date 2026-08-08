@@ -18,23 +18,23 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a78
+        // Size: 0x1a98
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_EnragedWildkin_Hurricane : public source2sdk::client::CDOTA_Buff
         {
         public:
-            Vector m_vDirection; // 0x1a58            
-            float m_flEndTime; // 0x1a64            
-            float m_flCurTime; // 0x1a68            
-            source2sdk::client::ParticleIndex_t m_FX; // 0x1a6c            
-            std::int32_t distance; // 0x1a70            
-            uint8_t _pad1a74[0x4];
+            Vector m_vDirection; // 0x1a78
+            float m_flEndTime; // 0x1a84
+            float m_flCurTime; // 0x1a88
+            source2sdk::client::ParticleIndex_t m_FX; // 0x1a8c
+            std::int32_t distance; // 0x1a90
+            uint8_t _pad1a94[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_EnragedWildkin_Hurricane because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_EnragedWildkin_Hurricane) == 0x1a78);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_EnragedWildkin_Hurricane) == 0x1a98);
     };
 };

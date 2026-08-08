@@ -24,27 +24,27 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a78
+        // Size: 0x1a98
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Leshrac_Lightning_Storm : public source2sdk::client::CDOTA_Buff
         {
         public:
-            std::int32_t damage; // 0x1a58            
-            float radius; // 0x1a5c            
-            std::int32_t jump_count; // 0x1a60            
-            float slow_duration; // 0x1a64            
-            float jump_delay; // 0x1a68            
+            std::int32_t damage; // 0x1a78
+            float radius; // 0x1a7c
+            std::int32_t jump_count; // 0x1a80
+            float slow_duration; // 0x1a84
+            float jump_delay; // 0x1a88
             // hInitialTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::C_BaseEntity> hInitialTarget;
-            char hInitialTarget[0x4]; // 0x1a6c            
-            float m_flDamage; // 0x1a70            
-            uint8_t _pad1a74[0x4];
+            char hInitialTarget[0x4]; // 0x1a8c
+            float m_flDamage; // 0x1a90
+            uint8_t _pad1a94[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Leshrac_Lightning_Storm because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Leshrac_Lightning_Storm) == 0x1a78);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Leshrac_Lightning_Storm) == 0x1a98);
     };
 };

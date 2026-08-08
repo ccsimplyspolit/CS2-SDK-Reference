@@ -43,52 +43,52 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0000[0x8]; // 0x0
-            bool m_bAutoCourierAutoBurst; // 0x8            
-            bool m_bAutoCourierAutoDeliver; // 0x9            
-            bool m_bDeliverWhileVisibleOnly; // 0xa            
+            bool m_bAutoCourierAutoBurst; // 0x8
+            bool m_bAutoCourierAutoDeliver; // 0x9
+            bool m_bDeliverWhileVisibleOnly; // 0xa
             uint8_t _pad000b[0x1]; // 0xb
             // m_hCourier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CDOTA_Unit_Courier> m_hCourier;
-            char m_hCourier[0x4]; // 0xc            
-            source2sdk::client::PlayerID_t m_nPlayerID; // 0x10            
-            bool m_bUseNewLogic; // 0x14            
+            char m_hCourier[0x4]; // 0xc
+            source2sdk::client::PlayerID_t m_nPlayerID; // 0x10
+            bool m_bUseNewLogic; // 0x14
             uint8_t _pad0015[0x3]; // 0x15
-            source2sdk::client::DOTA_SHOP_TYPE m_eFSMShop; // 0x18            
+            source2sdk::client::DOTA_SHOP_TYPE m_eFSMShop; // 0x18
             // m_hFSMUnit has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hFSMUnit;
-            char m_hFSMUnit[0x4]; // 0x1c            
-            source2sdk::client::ECourierState m_eFSMState; // 0x20            
-            bool m_bFSMStashAfter; // 0x24            
-            bool m_bManualRequest; // 0x25            
-            bool m_bIgnoreNextPlayerInteraction; // 0x26            
-            bool m_bWasAlive; // 0x27            
-            bool m_bTargetWasAlive; // 0x28            
+            char m_hFSMUnit[0x4]; // 0x1c
+            source2sdk::client::ECourierState m_eFSMState; // 0x20
+            bool m_bFSMStashAfter; // 0x24
+            bool m_bManualRequest; // 0x25
+            bool m_bIgnoreNextPlayerInteraction; // 0x26
+            bool m_bWasAlive; // 0x27
+            bool m_bTargetWasAlive; // 0x28
             uint8_t _pad0029[0x7]; // 0x29
-            source2sdk::server::CountdownTimer m_TransitionTimer; // 0x30            
-            source2sdk::server::CountdownTimer m_ManualTimer; // 0x48            
-            float m_flCourier_wait_time_item_purchase; // 0x60            
-            float m_flCourier_wait_time_item_mark; // 0x64            
-            float m_flCourier_wait_time_manualorder; // 0x68            
-            float m_flCourier_wait_time_manualorder_stop; // 0x6c            
-            float m_flCourier_nondivert_range; // 0x70            
-            float m_flCourier_min_dot_for_divert; // 0x74            
-            float m_flCourier_max_divert_length; // 0x78            
-            float m_flCourier_max_divert_mult; // 0x7c            
-            float m_flCourier_divert_near_shop_dist; // 0x80            
+            source2sdk::server::CountdownTimer m_TransitionTimer; // 0x30
+            source2sdk::server::CountdownTimer m_ManualTimer; // 0x48
+            float m_flCourier_wait_time_item_purchase; // 0x60
+            float m_flCourier_wait_time_item_mark; // 0x64
+            float m_flCourier_wait_time_manualorder; // 0x68
+            float m_flCourier_wait_time_manualorder_stop; // 0x6c
+            float m_flCourier_nondivert_range; // 0x70
+            float m_flCourier_min_dot_for_divert; // 0x74
+            float m_flCourier_max_divert_length; // 0x78
+            float m_flCourier_max_divert_mult; // 0x7c
+            float m_flCourier_divert_near_shop_dist; // 0x80
             uint8_t _pad0084[0x4]; // 0x84
             // m_vecAutoState has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<bool> m_vecAutoState;
-            char m_vecAutoState[0x18]; // 0x88            
-            std::int32_t m_nLastSecondCaptured; // 0xa0            
-            std::int32_t m_nMoveCount; // 0xa4            
-            VectorWS m_vLastPos; // 0xa8            
-            bool m_bDebugging; // 0xb4            
-            bool m_bTriggerDebug; // 0xb5            
+            char m_vecAutoState[0x18]; // 0x88
+            std::int32_t m_nLastSecondCaptured; // 0xa0
+            std::int32_t m_nMoveCount; // 0xa4
+            VectorWS m_vLastPos; // 0xa8
+            bool m_bDebugging; // 0xb4
+            bool m_bTriggerDebug; // 0xb5
             uint8_t _pad00b6[0x2]; // 0xb6
-            source2sdk::client::DebugOverlayBits_t m_eDebugBits; // 0xb8            
+            source2sdk::client::DebugOverlayBits_t m_eDebugBits; // 0xb8
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::CDOTACourierController, m_bAutoCourierAutoBurst) == 0x8);
         static_assert(offsetof(source2sdk::server::CDOTACourierController, m_bAutoCourierAutoDeliver) == 0x9);
         static_assert(offsetof(source2sdk::server::CDOTACourierController, m_bDeliverWhileVisibleOnly) == 0xa);
@@ -121,7 +121,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::server::CDOTACourierController, m_bDebugging) == 0xb4);
         static_assert(offsetof(source2sdk::server::CDOTACourierController, m_bTriggerDebug) == 0xb5);
         static_assert(offsetof(source2sdk::server::CDOTACourierController, m_eDebugBits) == 0xb8);
-        
+
         static_assert(sizeof(source2sdk::server::CDOTACourierController) == 0xc0);
     };
 };

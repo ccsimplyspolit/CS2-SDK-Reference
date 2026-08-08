@@ -26,21 +26,21 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0000[0x8]; // 0x0
-            source2sdk::client::AbilityID_t m_vecTrinketChoices[45]; // 0x8            
-            source2sdk::client::AbilityID_t m_vecEnhancementChoices[45]; // 0xbc            
-            std::int32_t m_vecSelectedTrinkets[5]; // 0x170            
-            std::int32_t m_vecSelectedEnhancements[5]; // 0x184            
-            std::int32_t m_vecTimesCrafted[5]; // 0x198            
+            source2sdk::client::AbilityID_t m_vecTrinketChoices[45]; // 0x8
+            source2sdk::client::AbilityID_t m_vecEnhancementChoices[45]; // 0xbc
+            std::int32_t m_vecSelectedTrinkets[5]; // 0x170
+            std::int32_t m_vecSelectedEnhancements[5]; // 0x184
+            std::int32_t m_vecTimesCrafted[5]; // 0x198
             uint8_t _pad01ac[0x4];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::PlayerNeutralChoices_t, m_vecTrinketChoices) == 0x8);
         static_assert(offsetof(source2sdk::client::PlayerNeutralChoices_t, m_vecEnhancementChoices) == 0xbc);
         static_assert(offsetof(source2sdk::client::PlayerNeutralChoices_t, m_vecSelectedTrinkets) == 0x170);
         static_assert(offsetof(source2sdk::client::PlayerNeutralChoices_t, m_vecSelectedEnhancements) == 0x184);
         static_assert(offsetof(source2sdk::client::PlayerNeutralChoices_t, m_vecTimesCrafted) == 0x198);
-        
+
         static_assert(sizeof(source2sdk::client::PlayerNeutralChoices_t) == 0x1b0);
     };
 };

@@ -17,18 +17,18 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a60
+        // Size: 0x1a80
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_MonsterHunterEvent : public source2sdk::client::CDOTA_Buff
         {
         public:
-            uint8_t _pad1a58[0x8];
+            uint8_t _pad1a78[0x8];
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: CDOTA_Modifier_MonsterHunterEvent has no schema binary (size is a guess)
     };
 };

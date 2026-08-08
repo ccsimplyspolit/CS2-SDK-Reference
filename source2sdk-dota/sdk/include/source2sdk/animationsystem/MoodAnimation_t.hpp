@@ -18,7 +18,7 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x10
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyArrayElementNameKey "m_sName"
         #pragma pack(push, 1)
@@ -26,16 +26,16 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyDescription "Name of the animation"
-            CModelAnimNameWithDeltas m_sName; // 0x0            
+            CModelAnimNameWithDeltas m_sName; // 0x0
             // metadata: MPropertyDescription "Weight of the animation, higher numbers get picked more"
-            float m_flWeight; // 0x8            
+            float m_flWeight; // 0x8
             uint8_t _pad000c[0x4];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::animationsystem::MoodAnimation_t, m_sName) == 0x0);
         static_assert(offsetof(source2sdk::animationsystem::MoodAnimation_t, m_flWeight) == 0x8);
-        
+
         static_assert(sizeof(source2sdk::animationsystem::MoodAnimation_t) == 0x10);
     };
 };

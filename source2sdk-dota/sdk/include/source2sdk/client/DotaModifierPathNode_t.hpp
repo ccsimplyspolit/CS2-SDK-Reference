@@ -23,18 +23,18 @@ namespace source2sdk
         struct DotaModifierPathNode_t
         {
         public:
-            Vector m_vPosition; // 0x0            
-            float m_flRadius; // 0xc            
-            float m_flDistToNext; // 0x10            
-            std::int32_t m_nMoveSpeedType; // 0x14            
+            Vector m_vPosition; // 0x0
+            float m_flRadius; // 0xc
+            float m_flDistToNext; // 0x10
+            std::int32_t m_nMoveSpeedType; // 0x14
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::DotaModifierPathNode_t, m_vPosition) == 0x0);
         static_assert(offsetof(source2sdk::client::DotaModifierPathNode_t, m_flRadius) == 0xc);
         static_assert(offsetof(source2sdk::client::DotaModifierPathNode_t, m_flDistToNext) == 0x10);
         static_assert(offsetof(source2sdk::client::DotaModifierPathNode_t, m_nMoveSpeedType) == 0x14);
-        
+
         static_assert(sizeof(source2sdk::client::DotaModifierPathNode_t) == 0x18);
     };
 };

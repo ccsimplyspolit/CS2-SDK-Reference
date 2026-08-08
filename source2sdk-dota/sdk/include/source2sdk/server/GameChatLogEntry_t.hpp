@@ -23,19 +23,19 @@ namespace source2sdk
         struct GameChatLogEntry_t
         {
         public:
-            std::int32_t m_nTeam; // 0x0            
-            source2sdk::client::PlayerID_t m_nPlayerID; // 0x4            
-            CUtlString m_sText; // 0x8            
-            source2sdk::entity2::GameTime_t m_flGameTime; // 0x10            
+            std::int32_t m_nTeam; // 0x0
+            source2sdk::client::PlayerID_t m_nPlayerID; // 0x4
+            CUtlString m_sText; // 0x8
+            source2sdk::entity2::GameTime_t m_flGameTime; // 0x10
             uint8_t _pad0014[0x4];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::GameChatLogEntry_t, m_nTeam) == 0x0);
         static_assert(offsetof(source2sdk::server::GameChatLogEntry_t, m_nPlayerID) == 0x4);
         static_assert(offsetof(source2sdk::server::GameChatLogEntry_t, m_sText) == 0x8);
         static_assert(offsetof(source2sdk::server::GameChatLogEntry_t, m_flGameTime) == 0x10);
-        
+
         static_assert(sizeof(source2sdk::server::GameChatLogEntry_t) == 0x18);
     };
 };

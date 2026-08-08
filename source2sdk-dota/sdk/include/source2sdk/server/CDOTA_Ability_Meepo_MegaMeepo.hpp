@@ -34,20 +34,20 @@ namespace source2sdk
         public:
             // hPreviousMeepo has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> hPreviousMeepo;
-            char hPreviousMeepo[0x4]; // 0x580            
+            char hPreviousMeepo[0x4]; // 0x580
             // hMegameepoFrame has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> hMegameepoFrame;
-            char hMegameepoFrame[0x4]; // 0x584            
+            char hMegameepoFrame[0x4]; // 0x584
             // hListOfMeepos has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::server::CBaseEntity>> hListOfMeepos;
-            char hListOfMeepos[0x18]; // 0x588            
-            bool m_bHasSwappedAbilities; // 0x5a0            
+            char hListOfMeepos[0x18]; // 0x588
+            bool m_bHasSwappedAbilities; // 0x5a0
             uint8_t _pad05a1[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Meepo_MegaMeepo because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Meepo_MegaMeepo) == 0x5a8);
     };
 };

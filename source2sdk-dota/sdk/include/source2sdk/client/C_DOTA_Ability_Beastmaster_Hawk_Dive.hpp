@@ -4,6 +4,13 @@
 #include <cstddef>
 #include <cstdint>
 #include "source2sdk/client/C_DOTABaseAbility.hpp"
+namespace source2sdk
+{
+    namespace client
+    {
+        struct C_BaseEntity;
+    };
+};
 
 // /////////////////////////////////////////////////////////////
 // Module: client
@@ -17,7 +24,7 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x6a8
+        // Size: 0x6b0
         // Has VTable
         // Construct allowed
         // MClassHasEntityLimitedDataDesc
@@ -25,11 +32,15 @@ namespace source2sdk
         class C_DOTA_Ability_Beastmaster_Hawk_Dive : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            // No schema binary for binding
+            // m_hSummonRaptorAbility has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+            // CHandle<source2sdk::client::C_BaseEntity> m_hSummonRaptorAbility;
+            char m_hSummonRaptorAbility[0x4]; // 0x6a8
+            uint8_t _pad06ac[0x4];
         };
         #pragma pack(pop)
-        
-        
-        // size assertion omitted: C_DOTA_Ability_Beastmaster_Hawk_Dive has no schema binary (size is a guess)
+
+        // Cannot assert offsets of fields in C_DOTA_Ability_Beastmaster_Hawk_Dive because it is not a standard-layout class
+
+        static_assert(sizeof(source2sdk::client::C_DOTA_Ability_Beastmaster_Hawk_Dive) == 0x6b0);
     };
 };

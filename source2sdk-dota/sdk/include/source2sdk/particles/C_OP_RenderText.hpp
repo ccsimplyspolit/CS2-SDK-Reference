@@ -20,22 +20,22 @@ namespace source2sdk
         // Size: 0x238
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_RenderText : public source2sdk::particles::CParticleFunctionRenderer
         {
         public:
             // metadata: MPropertyFriendlyName "outline color"
-            Color m_OutlineColor; // 0x228            
+            Color m_OutlineColor; // 0x228
             uint8_t _pad022c[0x4]; // 0x22c
             // metadata: MPropertyFriendlyName "default text"
-            CUtlString m_DefaultText; // 0x230            
+            CUtlString m_DefaultText; // 0x230
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_RenderText because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_RenderText) == 0x238);
     };
 };

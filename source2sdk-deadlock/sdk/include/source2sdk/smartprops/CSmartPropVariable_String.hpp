@@ -19,19 +19,19 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x40
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "String"
         #pragma pack(push, 1)
         class CSmartPropVariable_String : public source2sdk::smartprops::CSmartPropVariable
         {
         public:
-            CUtlString m_DefaultValue; // 0x38            
+            CUtlString m_DefaultValue; // 0x38
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSmartPropVariable_String because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::smartprops::CSmartPropVariable_String) == 0x40);
     };
 };

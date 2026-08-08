@@ -34,13 +34,13 @@ namespace source2sdk
         public:
             // m_hLastHitEntity has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hLastHitEntity;
-            char m_hLastHitEntity[0x4]; // 0x580            
-            std::int32_t m_nBounceCount; // 0x584            
+            char m_hLastHitEntity[0x4]; // 0x580
+            std::int32_t m_nBounceCount; // 0x584
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_PhantomLancer_SpiritLance because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_PhantomLancer_SpiritLance) == 0x588);
     };
 };

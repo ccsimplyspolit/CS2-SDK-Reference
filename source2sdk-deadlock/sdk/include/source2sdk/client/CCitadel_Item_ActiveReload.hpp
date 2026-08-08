@@ -23,14 +23,14 @@ namespace source2sdk
         class CCitadel_Item_ActiveReload : public source2sdk::client::CCitadel_Item
         {
         public:
-            bool m_bPlayedStartSound; // 0x11d8            
-            bool m_bActiveReloadFailed; // 0x11d9            
+            bool m_bPlayedStartSound; // 0x11d8
+            bool m_bActiveReloadFailed; // 0x11d9
             uint8_t _pad11da[0x6];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Item_ActiveReload because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Item_ActiveReload) == 0x11e0);
     };
 };

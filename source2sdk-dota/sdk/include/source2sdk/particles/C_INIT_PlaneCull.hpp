@@ -21,7 +21,7 @@ namespace source2sdk
         // Size: 0x360
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MGPUParticleFunction
         #pragma pack(push, 1)
@@ -29,18 +29,18 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "control point of plane"
-            std::int32_t m_nControlPoint; // 0x1e0            
+            std::int32_t m_nControlPoint; // 0x1e0
             uint8_t _pad01e4[0x4]; // 0x1e4
             // metadata: MPropertyFriendlyName "cull offset"
-            source2sdk::particleslib::CParticleCollectionFloatInput m_flDistance; // 0x1e8            
+            source2sdk::particleslib::CParticleCollectionFloatInput m_flDistance; // 0x1e8
             // metadata: MPropertyFriendlyName "flip cull normal"
-            bool m_bCullInside; // 0x358            
+            bool m_bCullInside; // 0x358
             uint8_t _pad0359[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_INIT_PlaneCull because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_INIT_PlaneCull) == 0x360);
     };
 };

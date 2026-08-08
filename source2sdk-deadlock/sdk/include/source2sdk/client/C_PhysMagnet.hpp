@@ -33,16 +33,16 @@ namespace source2sdk
             // metadata: MNotSaved
             // m_aAttachedObjectsFromServer has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<std::int32_t> m_aAttachedObjectsFromServer;
-            char m_aAttachedObjectsFromServer[0x18]; // 0xca8            
+            char m_aAttachedObjectsFromServer[0x18]; // 0xca8
             // metadata: MNotSaved
             // m_aAttachedObjects has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::client::C_BaseEntity>> m_aAttachedObjects;
-            char m_aAttachedObjects[0x18]; // 0xcc0            
+            char m_aAttachedObjects[0x18]; // 0xcc0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_PhysMagnet because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_PhysMagnet) == 0xcd8);
     };
 };

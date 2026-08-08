@@ -22,7 +22,7 @@ namespace source2sdk
         // Size: 0xd8
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Save Direction Vector"
         // static metadata: MPropertyDescription "Save the specified direction vector to a specified variable, in the requested coordinate space"
@@ -32,16 +32,16 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyDescription "Specifies which direction vector to save."
-            source2sdk::smartprops::CSmartPropAttributeDirection m_DirectionVector; // 0x50            
+            source2sdk::smartprops::CSmartPropAttributeDirection m_DirectionVector; // 0x50
             // metadata: MPropertyDescription "Specifies the coordinate space of the saved position value."
-            source2sdk::smartprops::CSmartPropAttributeCoordinateSpace m_CoordinateSpace; // 0x90            
+            source2sdk::smartprops::CSmartPropAttributeCoordinateSpace m_CoordinateSpace; // 0x90
             // metadata: MPropertyAttributeEditor "SmartPropItemNameEditor( Variable:Vector3 )"
-            CUtlString m_VariableName; // 0xd0            
+            CUtlString m_VariableName; // 0xd0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSmartPropOperation_SaveDirection because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::smartprops::CSmartPropOperation_SaveDirection) == 0xd8);
     };
 };

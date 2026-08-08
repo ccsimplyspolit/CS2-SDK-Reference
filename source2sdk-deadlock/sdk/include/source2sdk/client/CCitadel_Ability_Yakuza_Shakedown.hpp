@@ -23,13 +23,13 @@ namespace source2sdk
         class CCitadel_Ability_Yakuza_Shakedown : public source2sdk::client::C_CitadelBaseAbility
         {
         public:
-            std::int32_t m_IgnoreChannelSlow; // 0x11d8            
+            std::int32_t m_IgnoreChannelSlow; // 0x11d8
             uint8_t _pad11dc[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_Yakuza_Shakedown because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Ability_Yakuza_Shakedown) == 0x11e0);
     };
 };

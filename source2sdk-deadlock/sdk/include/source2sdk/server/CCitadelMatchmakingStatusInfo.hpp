@@ -24,14 +24,14 @@ namespace source2sdk
         class CCitadelMatchmakingStatusInfo : public source2sdk::server::CPointEntity
         {
         public:
-            source2sdk::entity2::CEntityIOOutput m_OnStartMatchmaking; // 0x4a0            
-            source2sdk::entity2::CEntityIOOutput m_OnStopMatchmaking; // 0x4b8            
+            source2sdk::entity2::CEntityIOOutput m_OnStartMatchmaking; // 0x4a0
+            source2sdk::entity2::CEntityIOOutput m_OnStopMatchmaking; // 0x4b8
             uint8_t _pad04d0[0x28];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadelMatchmakingStatusInfo because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadelMatchmakingStatusInfo) == 0x4f8);
     };
 };

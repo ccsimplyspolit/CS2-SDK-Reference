@@ -30,19 +30,19 @@ namespace source2sdk
         class CCitadel_Modifier_MysticReverb_Proc : public source2sdk::server::CCitadel_Modifier_BaseEventProc
         {
         public:
-            bool m_bNoDeath; // 0x208            
+            bool m_bNoDeath; // 0x208
             uint8_t _pad0209[0x3]; // 0x209
-            float m_flDamage; // 0x20c            
-            std::int32_t m_nDamageTick; // 0x210            
+            float m_flDamage; // 0x20c
+            std::int32_t m_nDamageTick; // 0x210
             // m_hTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hTarget;
-            char m_hTarget[0x4]; // 0x214            
+            char m_hTarget[0x4]; // 0x214
             uint8_t _pad0218[0x200];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_MysticReverb_Proc because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_MysticReverb_Proc) == 0x418);
     };
 };

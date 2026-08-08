@@ -25,13 +25,13 @@ namespace source2sdk
         class CDOTA_Ability_Alchemist_UnstableConcoctionThrow : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            float m_fCookTime; // 0x580            
-            VectorWS m_vProjectileLoc; // 0x584            
+            float m_fCookTime; // 0x580
+            VectorWS m_vProjectileLoc; // 0x584
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Alchemist_UnstableConcoctionThrow because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Alchemist_UnstableConcoctionThrow) == 0x590);
     };
 };

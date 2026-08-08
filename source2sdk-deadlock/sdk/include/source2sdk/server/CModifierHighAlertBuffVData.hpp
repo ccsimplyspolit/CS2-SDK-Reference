@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x830
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CModifierHighAlertBuffVData : public source2sdk::server::CCitadelModifierVData
@@ -29,12 +29,12 @@ namespace source2sdk
             // metadata: MPropertyGroupName "Visuals"
             // m_BuffParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_BuffParticle;
-            char m_BuffParticle[0xe0]; // 0x750            
+            char m_BuffParticle[0xe0]; // 0x750
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CModifierHighAlertBuffVData because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CModifierHighAlertBuffVData) == 0x830);
     };
 };

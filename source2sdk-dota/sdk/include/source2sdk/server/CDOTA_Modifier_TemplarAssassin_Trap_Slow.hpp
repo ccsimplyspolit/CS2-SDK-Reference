@@ -17,27 +17,27 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a80
+        // Size: 0x1aa0
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_TemplarAssassin_Trap_Slow : public source2sdk::client::CDOTA_Buff
         {
         public:
-            std::int32_t movement_speed_min; // 0x1a58            
-            std::int32_t movement_speed_max; // 0x1a5c            
-            std::int32_t extra_damage; // 0x1a60            
-            float trap_max_charge_duration; // 0x1a64            
-            float min_silence_duration; // 0x1a68            
-            float max_silence_duration; // 0x1a6c            
-            float stage; // 0x1a70            
-            float flDamagePerTick; // 0x1a74            
-            bool bExtraDamage; // 0x1a78            
-            uint8_t _pad1a79[0x7];
+            std::int32_t movement_speed_min; // 0x1a78
+            std::int32_t movement_speed_max; // 0x1a7c
+            std::int32_t extra_damage; // 0x1a80
+            float trap_max_charge_duration; // 0x1a84
+            float min_silence_duration; // 0x1a88
+            float max_silence_duration; // 0x1a8c
+            float stage; // 0x1a90
+            float flDamagePerTick; // 0x1a94
+            bool bExtraDamage; // 0x1a98
+            uint8_t _pad1a99[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_TemplarAssassin_Trap_Slow because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_TemplarAssassin_Trap_Slow) == 0x1a80);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_TemplarAssassin_Trap_Slow) == 0x1aa0);
     };
 };

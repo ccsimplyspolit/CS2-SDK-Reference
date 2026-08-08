@@ -20,20 +20,20 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xd00
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "CBaseAnimGraphController m_animationController"
         #pragma pack(push, 1)
         class CBodyComponentBaseAnimGraph : public source2sdk::server::CBodyComponentSkeletonInstance
         {
         public:
             // metadata: MNetworkEnable
-            source2sdk::server::CBaseAnimGraphController m_animationController; // 0x4a0            
+            source2sdk::server::CBaseAnimGraphController m_animationController; // 0x4a0
             uint8_t _pad0cf8[0x8];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CBodyComponentBaseAnimGraph because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CBodyComponentBaseAnimGraph) == 0xd00);
     };
 };

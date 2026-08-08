@@ -23,17 +23,17 @@ namespace source2sdk
         class CEnvMuzzleFlash : public source2sdk::server::CPointEntity
         {
         public:
-            float m_flScale; // 0x4a0            
+            float m_flScale; // 0x4a0
             uint8_t _pad04a4[0x4]; // 0x4a4
-            CUtlSymbolLarge m_iszParentAttachment; // 0x4a8            
-            
+            CUtlSymbolLarge m_iszParentAttachment; // 0x4a8
+
             // Datamap fields:
             // void InputFire; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CEnvMuzzleFlash because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CEnvMuzzleFlash) == 0x4b0);
     };
 };

@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x630
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "CCitadelHeroComponent::Storage_t m_CCitadelHeroComponent"
         #pragma pack(push, 1)
         class C_HeroPreview : public source2sdk::client::C_BaseEntity
@@ -30,12 +30,12 @@ namespace source2sdk
             // metadata: MNetworkUserGroup "CCitadelHeroComponent"
             // metadata: MNetworkAlias "CCitadelHeroComponent"
             // metadata: MNetworkTypeAlias "CCitadelHeroComponent"
-            source2sdk::client::CCitadelHeroComponent m_CCitadelHeroComponent; // 0x5f0            
+            source2sdk::client::CCitadelHeroComponent m_CCitadelHeroComponent; // 0x5f0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_HeroPreview because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_HeroPreview) == 0x630);
     };
 };

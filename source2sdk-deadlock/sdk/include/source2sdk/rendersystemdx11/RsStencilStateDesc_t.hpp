@@ -40,11 +40,11 @@ namespace source2sdk
             uint32_t m_backStencilPassOp: 3;
             uint32_t m_backStencilFunc: 3;
             // end of bitfield block// 25 bits
-            std::uint8_t m_nStencilReadMask; // 0x4            
-            std::uint8_t m_nStencilWriteMask; // 0x5            
+            std::uint8_t m_nStencilReadMask; // 0x4
+            std::uint8_t m_nStencilWriteMask; // 0x5
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offset of bitfield RsStencilStateDesc_t::m_bStencilEnable
         // Cannot assert offset of bitfield RsStencilStateDesc_t::m_frontStencilFailOp
         // Cannot assert offset of bitfield RsStencilStateDesc_t::m_frontStencilDepthFailOp
@@ -57,7 +57,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::rendersystemdx11::RsStencilStateDesc_t, m_nStencilReadMask) == 0x4);
         static_assert(offsetof(source2sdk::rendersystemdx11::RsStencilStateDesc_t, m_nStencilWriteMask) == 0x5);
         */
-        
+
         static_assert(sizeof(source2sdk::rendersystemdx11::RsStencilStateDesc_t) == 0x6);
     };
 };

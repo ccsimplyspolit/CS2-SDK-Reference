@@ -17,25 +17,25 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a78
+        // Size: 0x1a98
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Pugna_NetherWard : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float radius; // 0x1a58            
-            float mana_multiplier; // 0x1a5c            
-            float mana_drained_per_attack; // 0x1a60            
-            std::int32_t attacks_to_destroy; // 0x1a64            
-            std::int32_t health_restore_pct; // 0x1a68            
-            std::int32_t mana_restore_pct; // 0x1a6c            
-            float self_restoration_range; // 0x1a70            
-            uint8_t _pad1a74[0x4];
+            float radius; // 0x1a78
+            float mana_multiplier; // 0x1a7c
+            float mana_drained_per_attack; // 0x1a80
+            std::int32_t attacks_to_destroy; // 0x1a84
+            std::int32_t health_restore_pct; // 0x1a88
+            std::int32_t mana_restore_pct; // 0x1a8c
+            float self_restoration_range; // 0x1a90
+            uint8_t _pad1a94[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Pugna_NetherWard because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Pugna_NetherWard) == 0x1a78);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Pugna_NetherWard) == 0x1a98);
     };
 };

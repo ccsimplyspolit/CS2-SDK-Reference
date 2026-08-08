@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x10
         // Has VTable
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MNetworkVarNames "EAbilitySlots_t m_eStolenSlot"
         // static metadata: MNetworkVarNames "bool m_bIsActivelyStolen"
         #pragma pack(push, 1)
@@ -29,16 +29,16 @@ namespace source2sdk
         public:
             uint8_t _pad0000[0x8]; // 0x0
             // metadata: MNetworkEnable
-            source2sdk::client::EAbilitySlots_t m_eStolenSlot; // 0x8            
+            source2sdk::client::EAbilitySlots_t m_eStolenSlot; // 0x8
             // metadata: MNetworkEnable
-            bool m_bIsActivelyStolen; // 0xa            
+            bool m_bIsActivelyStolen; // 0xa
             uint8_t _pad000b[0x5];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::CitadelStolenAbilitySlot_t, m_eStolenSlot) == 0x8);
         static_assert(offsetof(source2sdk::client::CitadelStolenAbilitySlot_t, m_bIsActivelyStolen) == 0xa);
-        
+
         static_assert(sizeof(source2sdk::client::CitadelStolenAbilitySlot_t) == 0x10);
     };
 };

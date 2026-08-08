@@ -26,13 +26,13 @@ namespace source2sdk
         class C_DOTA_Item_PowerTreads : public source2sdk::client::C_DOTA_Item
         {
         public:
-            std::int32_t m_iStat; // 0x758            
-            source2sdk::client::ParticleIndex_t nFXIndexTreads; // 0x75c            
+            std::int32_t m_iStat; // 0x758
+            source2sdk::client::ParticleIndex_t nFXIndexTreads; // 0x75c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Item_PowerTreads because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Item_PowerTreads) == 0x760);
     };
 };

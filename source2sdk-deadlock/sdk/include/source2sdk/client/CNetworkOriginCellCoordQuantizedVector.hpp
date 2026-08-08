@@ -18,7 +18,7 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x30
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MNetworkVarsAtomic
         #pragma pack(push, 1)
         class CNetworkOriginCellCoordQuantizedVector
@@ -29,19 +29,19 @@ namespace source2sdk
             // metadata: MNetworkChangeCallback "OnCellChanged"
             // metadata: MNetworkPriority "31"
             // metadata: MNetworkSerializer "cellx"
-            std::uint16_t m_cellX; // 0x10            
+            std::uint16_t m_cellX; // 0x10
             // metadata: MNetworkEnable
             // metadata: MNetworkChangeCallback "OnCellChanged"
             // metadata: MNetworkPriority "31"
             // metadata: MNetworkSerializer "celly"
-            std::uint16_t m_cellY; // 0x12            
+            std::uint16_t m_cellY; // 0x12
             // metadata: MNetworkEnable
             // metadata: MNetworkChangeCallback "OnCellChanged"
             // metadata: MNetworkPriority "31"
             // metadata: MNetworkSerializer "cellz"
-            std::uint16_t m_cellZ; // 0x14            
+            std::uint16_t m_cellZ; // 0x14
             // metadata: MNetworkEnable
-            std::uint16_t m_nOutsideWorld; // 0x16            
+            std::uint16_t m_nOutsideWorld; // 0x16
             // metadata: MNetworkEnable
             // metadata: MNetworkBitCount "15"
             // metadata: MNetworkMinValue "0,000000"
@@ -50,7 +50,7 @@ namespace source2sdk
             // metadata: MNetworkChangeCallback "OnCellChanged"
             // metadata: MNetworkPriority "31"
             // metadata: MNetworkSerializer "posx"
-            CNetworkedQuantizedFloat m_vecX; // 0x18            
+            CNetworkedQuantizedFloat m_vecX; // 0x18
             // metadata: MNetworkEnable
             // metadata: MNetworkBitCount "15"
             // metadata: MNetworkMinValue "0,000000"
@@ -59,7 +59,7 @@ namespace source2sdk
             // metadata: MNetworkChangeCallback "OnCellChanged"
             // metadata: MNetworkPriority "31"
             // metadata: MNetworkSerializer "posy"
-            CNetworkedQuantizedFloat m_vecY; // 0x20            
+            CNetworkedQuantizedFloat m_vecY; // 0x20
             // metadata: MNetworkEnable
             // metadata: MNetworkBitCount "15"
             // metadata: MNetworkMinValue "0,000000"
@@ -68,10 +68,10 @@ namespace source2sdk
             // metadata: MNetworkChangeCallback "OnCellChanged"
             // metadata: MNetworkPriority "31"
             // metadata: MNetworkSerializer "posz"
-            CNetworkedQuantizedFloat m_vecZ; // 0x28            
+            CNetworkedQuantizedFloat m_vecZ; // 0x28
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::CNetworkOriginCellCoordQuantizedVector, m_cellX) == 0x10);
         static_assert(offsetof(source2sdk::client::CNetworkOriginCellCoordQuantizedVector, m_cellY) == 0x12);
         static_assert(offsetof(source2sdk::client::CNetworkOriginCellCoordQuantizedVector, m_cellZ) == 0x14);
@@ -79,7 +79,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::client::CNetworkOriginCellCoordQuantizedVector, m_vecX) == 0x18);
         static_assert(offsetof(source2sdk::client::CNetworkOriginCellCoordQuantizedVector, m_vecY) == 0x20);
         static_assert(offsetof(source2sdk::client::CNetworkOriginCellCoordQuantizedVector, m_vecZ) == 0x28);
-        
+
         static_assert(sizeof(source2sdk::client::CNetworkOriginCellCoordQuantizedVector) == 0x30);
     };
 };

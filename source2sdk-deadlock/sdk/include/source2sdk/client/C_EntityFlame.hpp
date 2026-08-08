@@ -26,7 +26,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x638
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "CHandle< C_BaseEntity> m_hEntAttached"
         // static metadata: MNetworkVarNames "bool m_bCheapEffect"
         #pragma pack(push, 1)
@@ -36,22 +36,22 @@ namespace source2sdk
             // metadata: MNetworkEnable
             // m_hEntAttached has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::C_BaseEntity> m_hEntAttached;
-            char m_hEntAttached[0x4]; // 0x5f0            
+            char m_hEntAttached[0x4]; // 0x5f0
             uint8_t _pad05f4[0x24]; // 0x5f4
             // m_hOldAttached has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::C_BaseEntity> m_hOldAttached;
-            char m_hOldAttached[0x4]; // 0x618            
+            char m_hOldAttached[0x4]; // 0x618
             // metadata: MNetworkEnable
-            bool m_bCheapEffect; // 0x61c            
+            bool m_bCheapEffect; // 0x61c
             uint8_t _pad061d[0x1b];
-            
+
             // Datamap fields:
             // void m_hEffect; // 0x5f8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_EntityFlame because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_EntityFlame) == 0x638);
     };
 };

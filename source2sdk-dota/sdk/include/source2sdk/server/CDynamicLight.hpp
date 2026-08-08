@@ -24,16 +24,16 @@ namespace source2sdk
         class CDynamicLight : public source2sdk::server::CBaseModelEntity
         {
         public:
-            std::uint8_t m_ActualFlags; // 0x778            
-            std::uint8_t m_Flags; // 0x779            
-            std::uint8_t m_LightStyle; // 0x77a            
-            bool m_On; // 0x77b            
-            float m_Radius; // 0x77c            
-            std::int32_t m_Exponent; // 0x780            
-            float m_InnerAngle; // 0x784            
-            float m_OuterAngle; // 0x788            
-            float m_SpotRadius; // 0x78c            
-            
+            std::uint8_t m_ActualFlags; // 0x778
+            std::uint8_t m_Flags; // 0x779
+            std::uint8_t m_LightStyle; // 0x77a
+            bool m_On; // 0x77b
+            float m_Radius; // 0x77c
+            std::int32_t m_Exponent; // 0x780
+            float m_InnerAngle; // 0x784
+            float m_OuterAngle; // 0x788
+            float m_SpotRadius; // 0x78c
+
             // Datamap fields:
             // void InputTurnOn; // 0x0
             // void InputTurnOff; // 0x0
@@ -43,9 +43,9 @@ namespace source2sdk
             // int32_t spawnflags; // 0x7fffffff
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDynamicLight because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDynamicLight) == 0x790);
     };
 };

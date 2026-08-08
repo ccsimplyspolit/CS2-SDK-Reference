@@ -19,18 +19,18 @@ namespace source2sdk
         // Size: 0x4
         // Has Trivial Destructor
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct FeTreeChildren_t
         {
         public:
-            std::uint16_t nChild[2]; // 0x0            
+            std::uint16_t nChild[2]; // 0x0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::physicslib::FeTreeChildren_t, nChild) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::physicslib::FeTreeChildren_t) == 0x4);
     };
 };

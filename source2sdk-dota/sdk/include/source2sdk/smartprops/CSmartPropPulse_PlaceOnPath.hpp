@@ -21,7 +21,7 @@ namespace source2sdk
         // Size: 0x68
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Place On Path"
         // static metadata: MPulseEditorHeaderIcon "tools/images/pulse_editor/requirements.png"
@@ -30,14 +30,14 @@ namespace source2sdk
         class CSmartPropPulse_PlaceOnPath : public source2sdk::smartprops::CSmartPropPulse_BaseQueryableFlow
         {
         public:
-            source2sdk::pulse_runtime_lib::PulseSelectorOutflowList_t m_OutflowList; // 0x48            
+            source2sdk::pulse_runtime_lib::PulseSelectorOutflowList_t m_OutflowList; // 0x48
             // metadata: MPropertyDescription "Name of the path to use. This path name will show up in the property editor when selecting a placement of this smart prop in Hammer, allowing selection of a path object in the map to use."
-            CUtlString m_PathName; // 0x60            
+            CUtlString m_PathName; // 0x60
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSmartPropPulse_PlaceOnPath because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::smartprops::CSmartPropPulse_PlaceOnPath) == 0x68);
     };
 };

@@ -18,22 +18,22 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a68
+        // Size: 0x1a88
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_DarkWillow_ShadowRealm_Buff_Attack_Logic : public source2sdk::client::CDOTA_Buff
         {
         public:
-            std::int32_t damage; // 0x1a58            
-            source2sdk::client::AttackRecord_t m_iRecord; // 0x1a5c            
-            uint8_t _pad1a5e[0x2]; // 0x1a5e
-            float m_flDamageScale; // 0x1a60            
-            uint8_t _pad1a64[0x4];
+            std::int32_t damage; // 0x1a78
+            source2sdk::client::AttackRecord_t m_iRecord; // 0x1a7c
+            uint8_t _pad1a7e[0x2]; // 0x1a7e
+            float m_flDamageScale; // 0x1a80
+            uint8_t _pad1a84[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_DarkWillow_ShadowRealm_Buff_Attack_Logic because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_DarkWillow_ShadowRealm_Buff_Attack_Logic) == 0x1a68);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_DarkWillow_ShadowRealm_Buff_Attack_Logic) == 0x1a88);
     };
 };

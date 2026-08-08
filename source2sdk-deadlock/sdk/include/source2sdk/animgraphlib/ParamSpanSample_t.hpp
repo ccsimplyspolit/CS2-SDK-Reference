@@ -18,21 +18,21 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x18
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct ParamSpanSample_t
         {
         public:
-            CAnimVariant m_value; // 0x0            
+            CAnimVariant m_value; // 0x0
             uint8_t _pad0011[0x3]; // 0x11
-            float m_flCycle; // 0x14            
+            float m_flCycle; // 0x14
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::animgraphlib::ParamSpanSample_t, m_value) == 0x0);
         static_assert(offsetof(source2sdk::animgraphlib::ParamSpanSample_t, m_flCycle) == 0x14);
-        
+
         static_assert(sizeof(source2sdk::animgraphlib::ParamSpanSample_t) == 0x18);
     };
 };

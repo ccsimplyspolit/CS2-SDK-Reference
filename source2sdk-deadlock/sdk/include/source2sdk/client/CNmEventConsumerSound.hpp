@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x30
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CNmEventConsumerSound : public source2sdk::client::CNmEventConsumer
@@ -28,8 +28,8 @@ namespace source2sdk
             uint8_t _pad0010[0x20];
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::client::CNmEventConsumerSound) == 0x30);
     };
 };

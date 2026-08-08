@@ -24,13 +24,13 @@ namespace source2sdk
         class CDOTA_DisplacementVisibility : public source2sdk::server::CBaseEntity
         {
         public:
-            std::int32_t m_HiddenDisplacement; // 0x498            
+            std::int32_t m_HiddenDisplacement; // 0x498
             uint8_t _pad049c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_DisplacementVisibility because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_DisplacementVisibility) == 0x4a0);
     };
 };

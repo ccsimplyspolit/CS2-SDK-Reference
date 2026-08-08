@@ -25,13 +25,13 @@ namespace source2sdk
         class CDOTA_Ability_Marci_Bodyguard : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            float bodyguard_duration; // 0x580            
+            float bodyguard_duration; // 0x580
             uint8_t _pad0584[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Marci_Bodyguard because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Marci_Bodyguard) == 0x588);
     };
 };

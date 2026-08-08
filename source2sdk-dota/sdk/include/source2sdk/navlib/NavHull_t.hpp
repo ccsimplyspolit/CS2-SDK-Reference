@@ -20,18 +20,18 @@ namespace source2sdk
         // Has Trivial Destructor
         // Construct allowed
         // Construct disallowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct NavHull_t
         {
         public:
-            std::int32_t m_nHullIdx; // 0x0            
+            std::int32_t m_nHullIdx; // 0x0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::navlib::NavHull_t, m_nHullIdx) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::navlib::NavHull_t) == 0x4);
     };
 };

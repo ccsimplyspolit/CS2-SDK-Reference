@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x48
         // Has VTable
         // Is Abstract
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CPulseCell_BaseYieldingInflow : public source2sdk::pulse_runtime_lib::CPulseCell_BaseFlow
@@ -28,8 +28,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::pulse_runtime_lib::CPulseCell_BaseYieldingInflow) == 0x48);
     };
 };

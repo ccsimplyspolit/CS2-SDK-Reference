@@ -24,7 +24,7 @@ namespace source2sdk
         // Size: 0xc0
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CChoiceUpdateNode : public source2sdk::animgraphlib::CAnimUpdateNodeBase
@@ -33,26 +33,26 @@ namespace source2sdk
             uint8_t _pad0058[0x8]; // 0x58
             // m_children has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::animgraphlib::CAnimUpdateNodeRef> m_children;
-            char m_children[0x18]; // 0x60            
+            char m_children[0x18]; // 0x60
             // m_weights has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<float> m_weights;
-            char m_weights[0x18]; // 0x78            
+            char m_weights[0x18]; // 0x78
             // m_blendTimes has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<float> m_blendTimes;
-            char m_blendTimes[0x18]; // 0x90            
-            source2sdk::animgraphlib::ChoiceMethod m_choiceMethod; // 0xa8            
-            source2sdk::animgraphlib::ChoiceChangeMethod m_choiceChangeMethod; // 0xac            
-            source2sdk::animgraphlib::ChoiceBlendMethod m_blendMethod; // 0xb0            
-            float m_blendTime; // 0xb4            
-            bool m_bCrossFade; // 0xb8            
-            bool m_bResetChosen; // 0xb9            
-            bool m_bDontResetSameSelection; // 0xba            
+            char m_blendTimes[0x18]; // 0x90
+            source2sdk::animgraphlib::ChoiceMethod m_choiceMethod; // 0xa8
+            source2sdk::animgraphlib::ChoiceChangeMethod m_choiceChangeMethod; // 0xac
+            source2sdk::animgraphlib::ChoiceBlendMethod m_blendMethod; // 0xb0
+            float m_blendTime; // 0xb4
+            bool m_bCrossFade; // 0xb8
+            bool m_bResetChosen; // 0xb9
+            bool m_bDontResetSameSelection; // 0xba
             uint8_t _pad00bb[0x5];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CChoiceUpdateNode because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::animgraphlib::CChoiceUpdateNode) == 0xc0);
     };
 };

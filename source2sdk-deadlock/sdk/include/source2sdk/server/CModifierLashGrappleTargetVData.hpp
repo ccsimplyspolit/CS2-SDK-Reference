@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xa00
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CModifierLashGrappleTargetVData : public source2sdk::server::CCitadelModifierVData
@@ -29,20 +29,20 @@ namespace source2sdk
             // metadata: MPropertyStartGroup "Visuals"
             // m_LockingOnParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_LockingOnParticle;
-            char m_LockingOnParticle[0xe0]; // 0x750            
+            char m_LockingOnParticle[0xe0]; // 0x750
             // m_LockedOnParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_LockedOnParticle;
-            char m_LockedOnParticle[0xe0]; // 0x830            
+            char m_LockedOnParticle[0xe0]; // 0x830
             // m_WarningParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_WarningParticle;
-            char m_WarningParticle[0xe0]; // 0x910            
+            char m_WarningParticle[0xe0]; // 0x910
             // metadata: MPropertyStartGroup "Sounds"
-            CSoundEventName m_strVictimLockonSound; // 0x9f0            
+            CSoundEventName m_strVictimLockonSound; // 0x9f0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CModifierLashGrappleTargetVData because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CModifierLashGrappleTargetVData) == 0xa00);
     };
 };

@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x28
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Networking"
         #pragma pack(push, 1)
@@ -27,13 +27,13 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "Enable Networking"
-            bool m_bNetworkingEnabled; // 0x20            
+            bool m_bNetworkingEnabled; // 0x20
             uint8_t _pad0021[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CAnimGraphNetworkSettings because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::animgraphlib::CAnimGraphNetworkSettings) == 0x28);
     };
 };

@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x48
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Random Float"
         // static metadata: MPropertyDescription "Generate a random float between min and max (inclusive)"
@@ -30,8 +30,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::pulse_runtime_lib::CPulseCell_Value_RandomFloat) == 0x48);
     };
 };

@@ -23,13 +23,13 @@ namespace source2sdk
         class CCitadel_Modifier_Basic_HealthRegen : public source2sdk::server::CCitadelModifier
         {
         public:
-            float m_flHealthRegen; // 0xd0            
-            float m_flExternalHealthRegen; // 0xd4            
+            float m_flHealthRegen; // 0xd0
+            float m_flExternalHealthRegen; // 0xd4
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_Basic_HealthRegen because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_Basic_HealthRegen) == 0xd8);
     };
 };

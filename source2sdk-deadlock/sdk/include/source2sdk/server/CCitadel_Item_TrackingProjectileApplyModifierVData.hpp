@@ -19,9 +19,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x19b8
+        // Size: 0x19c8
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CCitadel_Item_TrackingProjectileApplyModifierVData : public source2sdk::server::CitadelItemVData
@@ -30,19 +30,23 @@ namespace source2sdk
             // metadata: MPropertyStartGroup "Visuals"
             // m_ProjectileImpactParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_ProjectileImpactParticle;
-            char m_ProjectileImpactParticle[0xe0]; // 0x18b8            
+            char m_ProjectileImpactParticle[0xe0]; // 0x18b8
             // metadata: MPropertyStartGroup "Modifiers"
             // m_TargetModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEmbeddedSubclass<source2sdk::server::CCitadelModifier> m_TargetModifier;
-            char m_TargetModifier[0x10]; // 0x1998            
+            char m_TargetModifier[0x10]; // 0x1998
             // m_FriendlyOnlyModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEmbeddedSubclass<source2sdk::server::CCitadelModifier> m_FriendlyOnlyModifier;
-            char m_FriendlyOnlyModifier[0x10]; // 0x19a8            
+            char m_FriendlyOnlyModifier[0x10]; // 0x19a8
+            // metadata: MPropertyDescription "Optional. Applied to the caster on cast for the ability's duration - use for a self-cost."
+            // m_CasterModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+            // CEmbeddedSubclass<source2sdk::server::CCitadelModifier> m_CasterModifier;
+            char m_CasterModifier[0x10]; // 0x19b8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Item_TrackingProjectileApplyModifierVData because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CCitadel_Item_TrackingProjectileApplyModifierVData) == 0x19b8);
+
+        static_assert(sizeof(source2sdk::server::CCitadel_Item_TrackingProjectileApplyModifierVData) == 0x19c8);
     };
 };

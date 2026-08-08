@@ -20,35 +20,35 @@ namespace source2sdk
         // Size: 0x200
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_RemapSpeedtoCP : public source2sdk::particles::CParticleFunctionPreEmission
         {
         public:
             // metadata: MPropertyFriendlyName "input control point"
-            std::int32_t m_nInControlPointNumber; // 0x1e0            
+            std::int32_t m_nInControlPointNumber; // 0x1e0
             // metadata: MPropertyFriendlyName "output control point"
-            std::int32_t m_nOutControlPointNumber; // 0x1e4            
+            std::int32_t m_nOutControlPointNumber; // 0x1e4
             // metadata: MPropertyFriendlyName "Output field 0-2 X/Y/Z"
             // metadata: MPropertyAttributeChoiceName "vector_component"
-            std::int32_t m_nField; // 0x1e8            
+            std::int32_t m_nField; // 0x1e8
             // metadata: MPropertyFriendlyName "input minimum"
-            float m_flInputMin; // 0x1ec            
+            float m_flInputMin; // 0x1ec
             // metadata: MPropertyFriendlyName "input maximum"
-            float m_flInputMax; // 0x1f0            
+            float m_flInputMax; // 0x1f0
             // metadata: MPropertyFriendlyName "output minimum"
-            float m_flOutputMin; // 0x1f4            
+            float m_flOutputMin; // 0x1f4
             // metadata: MPropertyFriendlyName "output maximum"
-            float m_flOutputMax; // 0x1f8            
+            float m_flOutputMax; // 0x1f8
             // metadata: MPropertyFriendlyName "use delta of velocity instead of constant speed"
-            bool m_bUseDeltaV; // 0x1fc            
+            bool m_bUseDeltaV; // 0x1fc
             uint8_t _pad01fd[0x3];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_RemapSpeedtoCP because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_RemapSpeedtoCP) == 0x200);
     };
 };

@@ -32,17 +32,17 @@ namespace source2sdk
         class CDOTA_Ability_Tinker_Laser : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            VectorWS m_vProjectileLocation; // 0x580            
-            bool bBlocked; // 0x58c            
+            VectorWS m_vProjectileLocation; // 0x580
+            bool bBlocked; // 0x58c
             uint8_t _pad058d[0x3]; // 0x58d
             // m_hHitEntities has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::server::CBaseEntity>> m_hHitEntities;
-            char m_hHitEntities[0x18]; // 0x590            
+            char m_hHitEntities[0x18]; // 0x590
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Tinker_Laser because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Tinker_Laser) == 0x5a8);
     };
 };

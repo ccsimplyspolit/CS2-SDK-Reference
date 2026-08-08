@@ -25,8 +25,8 @@ namespace source2sdk
         {
         public:
             // metadata: MNotSaved
-            source2sdk::server::fogparams_t m_fog; // 0x8e0            
-            
+            source2sdk::server::fogparams_t m_fog; // 0x8e0
+
             // Datamap fields:
             // Color m_fog.colorPrimary; // 0x8f4
             // Color m_fog.colorSecondary; // 0x8f8
@@ -38,9 +38,9 @@ namespace source2sdk
             // float m_fog.farz; // 0x90c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CFogTrigger because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CFogTrigger) == 0x948);
     };
 };

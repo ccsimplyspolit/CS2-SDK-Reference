@@ -39,18 +39,18 @@ namespace source2sdk
         public:
             // m_vecMovers has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::server::CFuncMover>> m_vecMovers;
-            char m_vecMovers[0x18]; // 0x5f0            
+            char m_vecMovers[0x18]; // 0x5f0
             // m_hMoverSpawner has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CPathMoverEntitySpawner> m_hMoverSpawner;
-            char m_hMoverSpawner[0x4]; // 0x608            
+            char m_hMoverSpawner[0x4]; // 0x608
             uint8_t _pad060c[0x4]; // 0x60c
-            CUtlSymbolLarge m_iszMoverSpawnerName; // 0x610            
+            CUtlSymbolLarge m_iszMoverSpawnerName; // 0x610
             uint8_t _pad0618[0x8];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPathMover because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CPathMover) == 0x620);
     };
 };

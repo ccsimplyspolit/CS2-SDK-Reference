@@ -21,7 +21,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x19b8
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CCitadel_WeaponUpgrade_RechargingBulletsVData : public source2sdk::server::CitadelItemVData
@@ -30,18 +30,18 @@ namespace source2sdk
             // metadata: MPropertyStartGroup "Visuals"
             // m_ProcParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_ProcParticle;
-            char m_ProcParticle[0xe0]; // 0x18b8            
+            char m_ProcParticle[0xe0]; // 0x18b8
             // metadata: MPropertyStartGroup "Sounds"
-            CSoundEventName m_strProcSound; // 0x1998            
+            CSoundEventName m_strProcSound; // 0x1998
             // metadata: MPropertyStartGroup "Modifiers"
             // m_ProcNotificationModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEmbeddedSubclass<source2sdk::server::CCitadelModifier> m_ProcNotificationModifier;
-            char m_ProcNotificationModifier[0x10]; // 0x19a8            
+            char m_ProcNotificationModifier[0x10]; // 0x19a8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_WeaponUpgrade_RechargingBulletsVData because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_WeaponUpgrade_RechargingBulletsVData) == 0x19b8);
     };
 };

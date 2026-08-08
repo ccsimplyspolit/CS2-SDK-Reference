@@ -23,13 +23,13 @@ namespace source2sdk
         class CCitadel_Modifier_UIHudMessage : public source2sdk::server::CCitadelModifier
         {
         public:
-            std::int32_t m_eModifierValue; // 0xd0            
-            float m_flValue; // 0xd4            
+            std::int32_t m_eModifierValue; // 0xd0
+            float m_flValue; // 0xd4
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_UIHudMessage because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_UIHudMessage) == 0xd8);
     };
 };

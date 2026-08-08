@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x18
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CAnimGraphServicesEventConsumer : public source2sdk::client::CNmEventConsumer
@@ -28,8 +28,8 @@ namespace source2sdk
             uint8_t _pad0010[0x8];
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::server::CAnimGraphServicesEventConsumer) == 0x18);
     };
 };

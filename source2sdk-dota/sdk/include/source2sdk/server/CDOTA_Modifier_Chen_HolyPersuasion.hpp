@@ -17,23 +17,23 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a70
+        // Size: 0x1a90
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Chen_HolyPersuasion : public source2sdk::client::CDOTA_Buff
         {
         public:
-            std::int32_t health_min; // 0x1a58            
-            std::int32_t damage_bonus; // 0x1a5c            
-            std::int32_t movement_speed_bonus; // 0x1a60            
-            float unsummon_time; // 0x1a64            
-            bool m_bCanBeUnsummoned; // 0x1a68            
-            uint8_t _pad1a69[0x7];
+            std::int32_t health_min; // 0x1a78
+            std::int32_t damage_bonus; // 0x1a7c
+            std::int32_t movement_speed_bonus; // 0x1a80
+            float unsummon_time; // 0x1a84
+            bool m_bCanBeUnsummoned; // 0x1a88
+            uint8_t _pad1a89[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Chen_HolyPersuasion because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Chen_HolyPersuasion) == 0x1a70);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Chen_HolyPersuasion) == 0x1a90);
     };
 };

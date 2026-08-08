@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x8
         // Has Trivial Destructor
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyAutoExpandSelf
         #pragma pack(push, 1)
@@ -28,15 +28,15 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyDescription "What Fantasy Period this data is for"
-            source2sdk::client::FantasyPeriod_t m_unPeriod; // 0x0            
+            source2sdk::client::FantasyPeriod_t m_unPeriod; // 0x0
             // metadata: MPropertyDescription "What level are fantasy tablets when this is the active crafting period?"
-            std::int32_t m_nTabletLevel; // 0x4            
+            std::int32_t m_nTabletLevel; // 0x4
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::FantasyPeriodData_t, m_unPeriod) == 0x0);
         static_assert(offsetof(source2sdk::client::FantasyPeriodData_t, m_nTabletLevel) == 0x4);
-        
+
         static_assert(sizeof(source2sdk::client::FantasyPeriodData_t) == 0x8);
     };
 };

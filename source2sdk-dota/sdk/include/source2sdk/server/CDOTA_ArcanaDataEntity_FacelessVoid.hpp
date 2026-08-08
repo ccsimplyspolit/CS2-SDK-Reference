@@ -26,14 +26,14 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0030[0xc]; // 0x30
-            std::int32_t m_nNumPoints; // 0x3c            
-            source2sdk::entity2::GameTime_t m_flShowPopupTime; // 0x40            
+            std::int32_t m_nNumPoints; // 0x3c
+            source2sdk::entity2::GameTime_t m_flShowPopupTime; // 0x40
             uint8_t _pad0044[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_ArcanaDataEntity_FacelessVoid because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_ArcanaDataEntity_FacelessVoid) == 0x48);
     };
 };

@@ -23,13 +23,13 @@ namespace source2sdk
         class CCitadel_Modifier_Wrecker_Ultimate_ThrowEnemy : public source2sdk::server::CCitadel_Modifier_Stunned
         {
         public:
-            Vector m_vThrowVelocity; // 0xd8            
+            Vector m_vThrowVelocity; // 0xd8
             uint8_t _pad00e4[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_Wrecker_Ultimate_ThrowEnemy because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_Wrecker_Ultimate_ThrowEnemy) == 0xe8);
     };
 };

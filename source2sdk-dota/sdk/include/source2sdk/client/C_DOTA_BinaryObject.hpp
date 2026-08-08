@@ -25,14 +25,14 @@ namespace source2sdk
         class C_DOTA_BinaryObject : public source2sdk::client::CBaseAnimatingActivity
         {
         public:
-            bool m_bActive; // 0xac0            
+            bool m_bActive; // 0xac0
             uint8_t _pad0ac1[0x3]; // 0xac1
-            std::int32_t m_nBinaryID; // 0xac4            
+            std::int32_t m_nBinaryID; // 0xac4
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_BinaryObject because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_BinaryObject) == 0xac8);
     };
 };

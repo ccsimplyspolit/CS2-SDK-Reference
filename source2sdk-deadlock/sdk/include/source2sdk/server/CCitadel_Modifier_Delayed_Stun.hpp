@@ -24,13 +24,13 @@ namespace source2sdk
         {
         public:
             uint8_t _pad00d0[0x180]; // 0xd0
-            float m_flRadius; // 0x250            
+            float m_flRadius; // 0x250
             uint8_t _pad0254[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_Delayed_Stun because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_Delayed_Stun) == 0x258);
     };
 };

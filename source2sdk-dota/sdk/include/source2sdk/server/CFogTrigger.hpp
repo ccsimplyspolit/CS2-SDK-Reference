@@ -26,12 +26,12 @@ namespace source2sdk
         {
         public:
             // metadata: MNotSaved
-            source2sdk::server::fogparams_t m_fog; // 0x8f0            
+            source2sdk::server::fogparams_t m_fog; // 0x8f0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CFogTrigger because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CFogTrigger) == 0x958);
     };
 };

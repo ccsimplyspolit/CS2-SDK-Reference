@@ -28,8 +28,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: C_DOTA_Ability_Visage_Stone_Form_Self_Cast has no schema binary (size is a guess)
     };
 };

@@ -25,13 +25,13 @@ namespace source2sdk
         {
         public:
             // metadata: MNotSaved
-            source2sdk::client::MoveType_t m_MoveTypeOverride; // 0xb30            
+            source2sdk::client::MoveType_t m_MoveTypeOverride; // 0xb30
             uint8_t _pad0b31[0xf];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CScriptItem because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CScriptItem) == 0xb40);
     };
 };

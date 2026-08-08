@@ -18,31 +18,31 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x20
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CPhysSurfacePropertiesAudio
         {
         public:
             // metadata: MKV3TransferName "audioreflectivity"
-            float m_reflectivity; // 0x0            
+            float m_reflectivity; // 0x0
             // metadata: MKV3TransferName "audiohardnessfactor"
-            float m_hardnessFactor; // 0x4            
+            float m_hardnessFactor; // 0x4
             // metadata: MKV3TransferName "audioroughnessfactor"
-            float m_roughnessFactor; // 0x8            
+            float m_roughnessFactor; // 0x8
             // metadata: MKV3TransferName "scrapeRoughThreshold"
-            float m_roughThreshold; // 0xc            
+            float m_roughThreshold; // 0xc
             // metadata: MKV3TransferName "impactHardThreshold"
-            float m_hardThreshold; // 0x10            
+            float m_hardThreshold; // 0x10
             // metadata: MKV3TransferName "audioHardMinVelocity"
-            float m_hardVelocityThreshold; // 0x14            
+            float m_hardVelocityThreshold; // 0x14
             // metadata: MKV3TransferName "staticImpactVolume"
-            float m_flStaticImpactVolume; // 0x18            
+            float m_flStaticImpactVolume; // 0x18
             // metadata: MKV3TransferName "occlusionFactor"
-            float m_flOcclusionFactor; // 0x1c            
+            float m_flOcclusionFactor; // 0x1c
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::modellib::CPhysSurfacePropertiesAudio, m_reflectivity) == 0x0);
         static_assert(offsetof(source2sdk::modellib::CPhysSurfacePropertiesAudio, m_hardnessFactor) == 0x4);
         static_assert(offsetof(source2sdk::modellib::CPhysSurfacePropertiesAudio, m_roughnessFactor) == 0x8);
@@ -51,7 +51,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::modellib::CPhysSurfacePropertiesAudio, m_hardVelocityThreshold) == 0x14);
         static_assert(offsetof(source2sdk::modellib::CPhysSurfacePropertiesAudio, m_flStaticImpactVolume) == 0x18);
         static_assert(offsetof(source2sdk::modellib::CPhysSurfacePropertiesAudio, m_flOcclusionFactor) == 0x1c);
-        
+
         static_assert(sizeof(source2sdk::modellib::CPhysSurfacePropertiesAudio) == 0x20);
     };
 };

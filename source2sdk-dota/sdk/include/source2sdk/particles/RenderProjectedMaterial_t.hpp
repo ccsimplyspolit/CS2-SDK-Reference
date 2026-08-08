@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x8
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct RenderProjectedMaterial_t
@@ -28,12 +28,12 @@ namespace source2sdk
             // metadata: MPropertyFriendlyName "Material"
             // m_hMaterial has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CStrongHandle<source2sdk::resourcesystem::InfoForResourceTypeIMaterial2> m_hMaterial;
-            char m_hMaterial[0x8]; // 0x0            
+            char m_hMaterial[0x8]; // 0x0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::particles::RenderProjectedMaterial_t, m_hMaterial) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::particles::RenderProjectedMaterial_t) == 0x8);
     };
 };

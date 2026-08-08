@@ -26,15 +26,15 @@ namespace source2sdk
         class C_DOTA_Item_Tombstone : public source2sdk::client::C_DOTA_Item
         {
         public:
-            float m_flTimer; // 0x758            
-            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x75c            
-            source2sdk::client::ParticleIndex_t m_nFXIndex2; // 0x760            
+            float m_flTimer; // 0x758
+            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x75c
+            source2sdk::client::ParticleIndex_t m_nFXIndex2; // 0x760
             uint8_t _pad0764[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Item_Tombstone because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Item_Tombstone) == 0x768);
     };
 };

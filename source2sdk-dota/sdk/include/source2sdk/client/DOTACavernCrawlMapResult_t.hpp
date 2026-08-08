@@ -24,14 +24,14 @@ namespace source2sdk
         struct DOTACavernCrawlMapResult_t
         {
         public:
-            source2sdk::client::CavernCrawlPathID_t m_nCompletedPathID; // 0x0            
-            source2sdk::client::CavernCrawlRoomID_t m_nClaimedRoomID; // 0x1            
+            source2sdk::client::CavernCrawlPathID_t m_nCompletedPathID; // 0x0
+            source2sdk::client::CavernCrawlRoomID_t m_nClaimedRoomID; // 0x1
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::DOTACavernCrawlMapResult_t, m_nCompletedPathID) == 0x0);
         static_assert(offsetof(source2sdk::client::DOTACavernCrawlMapResult_t, m_nClaimedRoomID) == 0x1);
-        
+
         static_assert(sizeof(source2sdk::client::DOTACavernCrawlMapResult_t) == 0x2);
     };
 };

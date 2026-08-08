@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x820
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CNPC_NecroSkele_GraphController : public source2sdk::server::CAI_CitadelNPC_GraphController
@@ -27,15 +27,15 @@ namespace source2sdk
         public:
             // m_eBaseAction has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CAnimGraph2ParamOptionalRef<CGlobalSymbol> m_eBaseAction;
-            char m_eBaseAction[0x18]; // 0x7f0            
+            char m_eBaseAction[0x18]; // 0x7f0
             // m_bNewTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CAnimGraph2ParamOptionalRef<bool> m_bNewTarget;
-            char m_bNewTarget[0x18]; // 0x808            
+            char m_bNewTarget[0x18]; // 0x808
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CNPC_NecroSkele_GraphController because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CNPC_NecroSkele_GraphController) == 0x820);
     };
 };

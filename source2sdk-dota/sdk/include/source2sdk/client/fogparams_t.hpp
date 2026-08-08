@@ -21,51 +21,51 @@ namespace source2sdk
         // Has VTable
         // Has Trivial Destructor
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct fogparams_t
         {
         public:
             uint8_t _pad0000[0x8]; // 0x0
-            Vector dirPrimary; // 0x8            
-            Color colorPrimary; // 0x14            
-            Color colorSecondary; // 0x18            
+            Vector dirPrimary; // 0x8
+            Color colorPrimary; // 0x14
+            Color colorSecondary; // 0x18
             // metadata: MNotSaved
-            Color colorPrimaryLerpTo; // 0x1c            
+            Color colorPrimaryLerpTo; // 0x1c
             // metadata: MNotSaved
-            Color colorSecondaryLerpTo; // 0x20            
-            float start; // 0x24            
-            float end; // 0x28            
-            float farz; // 0x2c            
-            float maxdensity; // 0x30            
-            float exponent; // 0x34            
-            float HDRColorScale; // 0x38            
+            Color colorSecondaryLerpTo; // 0x20
+            float start; // 0x24
+            float end; // 0x28
+            float farz; // 0x2c
+            float maxdensity; // 0x30
+            float exponent; // 0x34
+            float HDRColorScale; // 0x38
             // metadata: MNotSaved
-            float skyboxFogFactor; // 0x3c            
+            float skyboxFogFactor; // 0x3c
             // metadata: MNotSaved
-            float skyboxFogFactorLerpTo; // 0x40            
+            float skyboxFogFactorLerpTo; // 0x40
             // metadata: MNotSaved
-            float startLerpTo; // 0x44            
+            float startLerpTo; // 0x44
             // metadata: MNotSaved
-            float endLerpTo; // 0x48            
+            float endLerpTo; // 0x48
             // metadata: MNotSaved
-            float maxdensityLerpTo; // 0x4c            
+            float maxdensityLerpTo; // 0x4c
             // metadata: MNotSaved
-            source2sdk::entity2::GameTime_t lerptime; // 0x50            
-            float duration; // 0x54            
-            float blendtobackground; // 0x58            
-            float scattering; // 0x5c            
-            float locallightscale; // 0x60            
-            bool enable; // 0x64            
-            bool blend; // 0x65            
+            source2sdk::entity2::GameTime_t lerptime; // 0x50
+            float duration; // 0x54
+            float blendtobackground; // 0x58
+            float scattering; // 0x5c
+            float locallightscale; // 0x60
+            bool enable; // 0x64
+            bool blend; // 0x65
             // metadata: MNotSaved
-            bool m_bPadding2; // 0x66            
+            bool m_bPadding2; // 0x66
             // metadata: MNotSaved
-            bool m_bPadding; // 0x67            
+            bool m_bPadding; // 0x67
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::fogparams_t, dirPrimary) == 0x8);
         static_assert(offsetof(source2sdk::client::fogparams_t, colorPrimary) == 0x14);
         static_assert(offsetof(source2sdk::client::fogparams_t, colorSecondary) == 0x18);
@@ -91,7 +91,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::client::fogparams_t, blend) == 0x65);
         static_assert(offsetof(source2sdk::client::fogparams_t, m_bPadding2) == 0x66);
         static_assert(offsetof(source2sdk::client::fogparams_t, m_bPadding) == 0x67);
-        
+
         static_assert(sizeof(source2sdk::client::fogparams_t) == 0x68);
     };
 };

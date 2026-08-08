@@ -23,17 +23,17 @@ namespace source2sdk
         class COrnamentProp : public source2sdk::server::CDynamicProp
         {
         public:
-            CUtlSymbolLarge m_initialOwner; // 0xcd0            
+            CUtlSymbolLarge m_initialOwner; // 0xcd0
             uint8_t _pad0cd8[0x8];
-            
+
             // Datamap fields:
             // CUtlSymbolLarge InputSetAttached; // 0x0
             // void InputDetach; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in COrnamentProp because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::COrnamentProp) == 0xce0);
     };
 };

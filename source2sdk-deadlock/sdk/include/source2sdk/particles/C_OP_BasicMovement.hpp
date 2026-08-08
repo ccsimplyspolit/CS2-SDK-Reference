@@ -22,7 +22,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xe60
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_BasicMovement : public source2sdk::particles::CParticleFunctionOperator
@@ -30,22 +30,22 @@ namespace source2sdk
         public:
             // metadata: MPropertyFriendlyName "gravity"
             // metadata: MVectorIsCoordinate
-            source2sdk::particleslib::CParticleCollectionVecInput m_Gravity; // 0x1d8            
+            source2sdk::particleslib::CParticleCollectionVecInput m_Gravity; // 0x1d8
             // metadata: MPropertyFriendlyName "drag"
             // metadata: MPropertyAttributeRange "-1 1"
-            source2sdk::particleslib::CParticleCollectionFloatInput m_fDrag; // 0x890            
+            source2sdk::particleslib::CParticleCollectionFloatInput m_fDrag; // 0x890
             // metadata: MPropertyFriendlyName "Mass controls"
-            source2sdk::particles::CParticleMassCalculationParameters m_massControls; // 0xa00            
+            source2sdk::particles::CParticleMassCalculationParameters m_massControls; // 0xa00
             // metadata: MPropertyFriendlyName "max constraint passes"
-            std::int32_t m_nMaxConstraintPasses; // 0xe58            
+            std::int32_t m_nMaxConstraintPasses; // 0xe58
             // metadata: MPropertyFriendlyName "use new code"
-            bool m_bUseNewCode; // 0xe5c            
+            bool m_bUseNewCode; // 0xe5c
             uint8_t _pad0e5d[0x3];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_BasicMovement because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_BasicMovement) == 0xe60);
     };
 };

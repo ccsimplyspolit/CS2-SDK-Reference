@@ -24,13 +24,13 @@ namespace source2sdk
         class CTriggerPingLocation : public source2sdk::server::CBaseTrigger
         {
         public:
-            source2sdk::client::ECitadelPingLocation_t m_ePingLocation; // 0x8e0            
+            source2sdk::client::ECitadelPingLocation_t m_ePingLocation; // 0x8e0
             uint8_t _pad08e4[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CTriggerPingLocation because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CTriggerPingLocation) == 0x8e8);
     };
 };

@@ -21,27 +21,27 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x50
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CNmSoundEvent : public source2sdk::animlib::CNmEvent
         {
         public:
-            source2sdk::animlib::CNmEventRelevance_t m_relevance; // 0x20            
+            source2sdk::animlib::CNmEventRelevance_t m_relevance; // 0x20
             uint8_t _pad0024[0x4]; // 0x24
-            CUtlString m_name; // 0x28            
-            source2sdk::animlib::CNmSoundEvent_Position_t m_position; // 0x30            
+            CUtlString m_name; // 0x28
+            source2sdk::animlib::CNmSoundEvent_Position_t m_position; // 0x30
             uint8_t _pad0034[0x4]; // 0x34
-            CUtlString m_attachmentName; // 0x38            
-            CUtlString m_tags; // 0x40            
-            bool m_bContinuePlayingSoundAtDurationEnd; // 0x48            
+            CUtlString m_attachmentName; // 0x38
+            CUtlString m_tags; // 0x40
+            bool m_bContinuePlayingSoundAtDurationEnd; // 0x48
             uint8_t _pad0049[0x3]; // 0x49
-            float m_flDurationInterruptionThreshold; // 0x4c            
+            float m_flDurationInterruptionThreshold; // 0x4c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CNmSoundEvent because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::animlib::CNmSoundEvent) == 0x50);
     };
 };

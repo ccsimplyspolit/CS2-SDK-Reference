@@ -25,13 +25,13 @@ namespace source2sdk
         class C_DOTA_Ability_Leshrac_Diabolic_Edict : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            std::int32_t num_explosions; // 0x6a8            
-            float radius; // 0x6ac            
+            std::int32_t num_explosions; // 0x6a8
+            float radius; // 0x6ac
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_Leshrac_Diabolic_Edict because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_Leshrac_Diabolic_Edict) == 0x6b0);
     };
 };

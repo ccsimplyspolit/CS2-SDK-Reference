@@ -33,13 +33,13 @@ namespace source2sdk
             // metadata: MNotSaved
             // m_hPlayer has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::C_CitadelPlayerPawn> m_hPlayer;
-            char m_hPlayer[0x4]; // 0xc00            
+            char m_hPlayer[0x4]; // 0xc00
             uint8_t _pad0c04[0xc];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_InWorldKeyBindPanel because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_InWorldKeyBindPanel) == 0xc10);
     };
 };

@@ -18,21 +18,21 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a68
+        // Size: 0x1a88
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Lycan_Shapeshift : public source2sdk::client::CDOTA_Buff
         {
         public:
-            std::int32_t bonus_night_vision; // 0x1a58            
-            float kill_duration_extension; // 0x1a5c            
-            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x1a60            
-            std::int32_t m_iOriginalAttackCapability; // 0x1a64            
+            std::int32_t bonus_night_vision; // 0x1a78
+            float kill_duration_extension; // 0x1a7c
+            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x1a80
+            std::int32_t m_iOriginalAttackCapability; // 0x1a84
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Lycan_Shapeshift because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Lycan_Shapeshift) == 0x1a68);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Lycan_Shapeshift) == 0x1a88);
     };
 };

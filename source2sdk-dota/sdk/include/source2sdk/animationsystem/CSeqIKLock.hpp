@@ -19,25 +19,25 @@ namespace source2sdk
         // Size: 0xc
         // Has Trivial Destructor
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CSeqIKLock
         {
         public:
-            float m_flPosWeight; // 0x0            
-            float m_flAngleWeight; // 0x4            
-            std::int16_t m_nLocalBone; // 0x8            
-            bool m_bBonesOrientedAlongPositiveX; // 0xa            
+            float m_flPosWeight; // 0x0
+            float m_flAngleWeight; // 0x4
+            std::int16_t m_nLocalBone; // 0x8
+            bool m_bBonesOrientedAlongPositiveX; // 0xa
             uint8_t _pad000b[0x1];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::animationsystem::CSeqIKLock, m_flPosWeight) == 0x0);
         static_assert(offsetof(source2sdk::animationsystem::CSeqIKLock, m_flAngleWeight) == 0x4);
         static_assert(offsetof(source2sdk::animationsystem::CSeqIKLock, m_nLocalBone) == 0x8);
         static_assert(offsetof(source2sdk::animationsystem::CSeqIKLock, m_bBonesOrientedAlongPositiveX) == 0xa);
-        
+
         static_assert(sizeof(source2sdk::animationsystem::CSeqIKLock) == 0xc);
     };
 };

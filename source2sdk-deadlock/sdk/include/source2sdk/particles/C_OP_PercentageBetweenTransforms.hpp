@@ -22,7 +22,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x2c8
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_PercentageBetweenTransforms : public source2sdk::particles::CParticleFunctionOperator
@@ -30,32 +30,32 @@ namespace source2sdk
         public:
             // metadata: MPropertyFriendlyName "output field"
             // metadata: MPropertyAttributeChoiceName "particlefield_scalar"
-            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1d8            
+            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1d8
             // metadata: MPropertyFriendlyName "percentage minimum"
-            float m_flInputMin; // 0x1dc            
+            float m_flInputMin; // 0x1dc
             // metadata: MPropertyFriendlyName "percentage maximum"
-            float m_flInputMax; // 0x1e0            
+            float m_flInputMax; // 0x1e0
             // metadata: MPropertyFriendlyName "output minimum"
-            float m_flOutputMin; // 0x1e4            
+            float m_flOutputMin; // 0x1e4
             // metadata: MPropertyFriendlyName "output maximum"
-            float m_flOutputMax; // 0x1e8            
+            float m_flOutputMax; // 0x1e8
             uint8_t _pad01ec[0x4]; // 0x1ec
             // metadata: MPropertyFriendlyName "strarting transform"
-            source2sdk::particleslib::CParticleTransformInput m_TransformStart; // 0x1f0            
+            source2sdk::particleslib::CParticleTransformInput m_TransformStart; // 0x1f0
             // metadata: MPropertyFriendlyName "end transform"
-            source2sdk::particleslib::CParticleTransformInput m_TransformEnd; // 0x258            
+            source2sdk::particleslib::CParticleTransformInput m_TransformEnd; // 0x258
             // metadata: MPropertyFriendlyName "set value method"
-            source2sdk::particles::ParticleSetMethod_t m_nSetMethod; // 0x2c0            
+            source2sdk::particles::ParticleSetMethod_t m_nSetMethod; // 0x2c0
             // metadata: MPropertyFriendlyName "only active within input range"
-            bool m_bActiveRange; // 0x2c4            
+            bool m_bActiveRange; // 0x2c4
             // metadata: MPropertyFriendlyName "treat distance between points as radius"
-            bool m_bRadialCheck; // 0x2c5            
+            bool m_bRadialCheck; // 0x2c5
             uint8_t _pad02c6[0x2];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_PercentageBetweenTransforms because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_PercentageBetweenTransforms) == 0x2c8);
     };
 };

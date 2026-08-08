@@ -20,37 +20,37 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x70
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct ParticlePreviewState_t
         {
         public:
-            CUtlString m_previewModel; // 0x0            
-            std::uint32_t m_nModSpecificData; // 0x8            
-            source2sdk::particles::PetGroundType_t m_groundType; // 0xc            
-            CUtlString m_sequenceName; // 0x10            
-            std::int32_t m_nFireParticleOnSequenceFrame; // 0x18            
+            CUtlString m_previewModel; // 0x0
+            std::uint32_t m_nModSpecificData; // 0x8
+            source2sdk::particles::PetGroundType_t m_groundType; // 0xc
+            CUtlString m_sequenceName; // 0x10
+            std::int32_t m_nFireParticleOnSequenceFrame; // 0x18
             uint8_t _pad001c[0x4]; // 0x1c
-            CUtlString m_hitboxSetName; // 0x20            
-            CUtlString m_materialGroupName; // 0x28            
+            CUtlString m_hitboxSetName; // 0x20
+            CUtlString m_materialGroupName; // 0x28
             // m_vecBodyGroups has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::particles::ParticlePreviewBodyGroup_t> m_vecBodyGroups;
-            char m_vecBodyGroups[0x18]; // 0x30            
-            float m_flPlaybackSpeed; // 0x48            
-            float m_flParticleSimulationRate; // 0x4c            
-            bool m_bShouldDrawHitboxes; // 0x50            
-            bool m_bShouldDrawAttachments; // 0x51            
-            bool m_bShouldDrawAttachmentNames; // 0x52            
-            bool m_bShouldDrawControlPointAxes; // 0x53            
-            bool m_bAnimationNonLooping; // 0x54            
-            bool m_bSequenceNameIsAnimClipPath; // 0x55            
+            char m_vecBodyGroups[0x18]; // 0x30
+            float m_flPlaybackSpeed; // 0x48
+            float m_flParticleSimulationRate; // 0x4c
+            bool m_bShouldDrawHitboxes; // 0x50
+            bool m_bShouldDrawAttachments; // 0x51
+            bool m_bShouldDrawAttachmentNames; // 0x52
+            bool m_bShouldDrawControlPointAxes; // 0x53
+            bool m_bAnimationNonLooping; // 0x54
+            bool m_bSequenceNameIsAnimClipPath; // 0x55
             uint8_t _pad0056[0x2]; // 0x56
-            Vector m_vecPreviewGravity; // 0x58            
-            Vector m_vecPreviewWind; // 0x64            
+            Vector m_vecPreviewGravity; // 0x58
+            Vector m_vecPreviewWind; // 0x64
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::particles::ParticlePreviewState_t, m_previewModel) == 0x0);
         static_assert(offsetof(source2sdk::particles::ParticlePreviewState_t, m_nModSpecificData) == 0x8);
         static_assert(offsetof(source2sdk::particles::ParticlePreviewState_t, m_groundType) == 0xc);
@@ -69,7 +69,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::particles::ParticlePreviewState_t, m_bSequenceNameIsAnimClipPath) == 0x55);
         static_assert(offsetof(source2sdk::particles::ParticlePreviewState_t, m_vecPreviewGravity) == 0x58);
         static_assert(offsetof(source2sdk::particles::ParticlePreviewState_t, m_vecPreviewWind) == 0x64);
-        
+
         static_assert(sizeof(source2sdk::particles::ParticlePreviewState_t) == 0x70);
     };
 };

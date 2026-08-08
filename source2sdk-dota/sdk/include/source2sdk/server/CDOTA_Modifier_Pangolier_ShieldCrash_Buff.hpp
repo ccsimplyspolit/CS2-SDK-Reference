@@ -19,25 +19,25 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a78
+        // Size: 0x1a98
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Pangolier_ShieldCrash_Buff : public source2sdk::client::CDOTA_Buff
         {
         public:
-            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x1a58            
-            std::int32_t m_nAbsorbRemaining; // 0x1a5c            
-            std::int32_t hero_shield; // 0x1a60            
-            std::int32_t base_shield; // 0x1a64            
-            std::int32_t accumulated_value; // 0x1a68            
-            float effectiveness_pct; // 0x1a6c            
-            source2sdk::entity2::GameTime_t m_flLastParryTime; // 0x1a70            
-            uint8_t _pad1a74[0x4];
+            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x1a78
+            std::int32_t m_nAbsorbRemaining; // 0x1a7c
+            std::int32_t hero_shield; // 0x1a80
+            std::int32_t base_shield; // 0x1a84
+            std::int32_t accumulated_value; // 0x1a88
+            float effectiveness_pct; // 0x1a8c
+            source2sdk::entity2::GameTime_t m_flLastParryTime; // 0x1a90
+            uint8_t _pad1a94[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Pangolier_ShieldCrash_Buff because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Pangolier_ShieldCrash_Buff) == 0x1a78);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Pangolier_ShieldCrash_Buff) == 0x1a98);
     };
 };

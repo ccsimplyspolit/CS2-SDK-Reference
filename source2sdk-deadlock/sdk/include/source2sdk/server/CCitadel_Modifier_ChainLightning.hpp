@@ -25,13 +25,13 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0228[0x80]; // 0x228
-            source2sdk::entity2::GameTime_t m_flNextProcTime; // 0x2a8            
+            source2sdk::entity2::GameTime_t m_flNextProcTime; // 0x2a8
             uint8_t _pad02ac[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_ChainLightning because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_ChainLightning) == 0x2b0);
     };
 };

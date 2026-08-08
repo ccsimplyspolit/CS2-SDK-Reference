@@ -32,13 +32,13 @@ namespace source2sdk
             uint8_t _pad0000[0x8]; // 0x0
             // m_hNPC has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CAI_BaseNPC> m_hNPC;
-            char m_hNPC[0x4]; // 0x8            
+            char m_hNPC[0x4]; // 0x8
             uint8_t _pad000c[0x4];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::INavSmartGoal, m_hNPC) == 0x8);
-        
+
         static_assert(sizeof(source2sdk::server::INavSmartGoal) == 0x10);
     };
 };

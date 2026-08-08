@@ -23,14 +23,14 @@ namespace source2sdk
         class CTonemapTrigger : public source2sdk::server::CBaseTrigger
         {
         public:
-            CUtlSymbolLarge m_tonemapControllerName; // 0x8e0            
-            CEntityHandle m_hTonemapController; // 0x8e8            
+            CUtlSymbolLarge m_tonemapControllerName; // 0x8e0
+            CEntityHandle m_hTonemapController; // 0x8e8
             uint8_t _pad08ec[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CTonemapTrigger because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CTonemapTrigger) == 0x8f0);
     };
 };

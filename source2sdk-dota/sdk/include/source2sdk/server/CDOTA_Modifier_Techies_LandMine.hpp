@@ -18,26 +18,26 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1aa0
+        // Size: 0x1ac0
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Techies_LandMine : public source2sdk::server::CDOTA_Modifier_Invisible
         {
         public:
-            float radius; // 0x1a68            
-            float proximity_threshold; // 0x1a6c            
-            float damage; // 0x1a70            
-            float activation_delay; // 0x1a74            
-            float outer_damage; // 0x1a78            
-            std::int32_t min_distance; // 0x1a7c            
-            bool bActivated; // 0x1a80            
-            uint8_t _pad1a81[0x7]; // 0x1a81
-            source2sdk::server::CountdownTimer m_Timer; // 0x1a88            
+            float radius; // 0x1a88
+            float proximity_threshold; // 0x1a8c
+            float damage; // 0x1a90
+            float activation_delay; // 0x1a94
+            float outer_damage; // 0x1a98
+            std::int32_t min_distance; // 0x1a9c
+            bool bActivated; // 0x1aa0
+            uint8_t _pad1aa1[0x7]; // 0x1aa1
+            source2sdk::server::CountdownTimer m_Timer; // 0x1aa8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Techies_LandMine because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Techies_LandMine) == 0x1aa0);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Techies_LandMine) == 0x1ac0);
     };
 };

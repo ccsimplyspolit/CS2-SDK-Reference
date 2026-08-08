@@ -24,14 +24,14 @@ namespace source2sdk
         class CCitadel_Modifier_CinematicIntro_Player : public source2sdk::server::CCitadelModifier
         {
         public:
-            bool m_bFirstFrame; // 0xd0            
+            bool m_bFirstFrame; // 0xd0
             uint8_t _pad00d1[0x7]; // 0xd1
-            source2sdk::client::CameraEntityOverride_t m_override; // 0xd8            
+            source2sdk::client::CameraEntityOverride_t m_override; // 0xd8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_CinematicIntro_Player because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_CinematicIntro_Player) == 0xe8);
     };
 };

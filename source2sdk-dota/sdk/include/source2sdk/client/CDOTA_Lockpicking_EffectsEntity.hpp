@@ -21,7 +21,7 @@ namespace source2sdk
         // Has VTable
         // Construct allowed
         // MClassHasEntityLimitedDataDesc
-        // 
+        //
         // static metadata: MEntityAllowsPortraitWorldSpawn
         #pragma pack(push, 1)
         class CDOTA_Lockpicking_EffectsEntity : public source2sdk::client::C_BaseModelEntity
@@ -29,8 +29,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::client::CDOTA_Lockpicking_EffectsEntity) == 0xa88);
     };
 };

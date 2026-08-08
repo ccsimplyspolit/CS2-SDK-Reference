@@ -26,13 +26,13 @@ namespace source2sdk
         class CDOTA_Ability_LoneDruid_SpiritBear_Return : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            source2sdk::client::ParticleIndex_t m_nFXCaster; // 0x580            
-            source2sdk::client::ParticleIndex_t m_nFXOrigin; // 0x584            
+            source2sdk::client::ParticleIndex_t m_nFXCaster; // 0x580
+            source2sdk::client::ParticleIndex_t m_nFXOrigin; // 0x584
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_LoneDruid_SpiritBear_Return because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_LoneDruid_SpiritBear_Return) == 0x588);
     };
 };

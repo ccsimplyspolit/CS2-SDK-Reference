@@ -25,19 +25,19 @@ namespace source2sdk
         class C_DOTA_Ability_Invoker_ForgeSpirit : public source2sdk::client::CDOTA_Ability_Invoker_InvokedBase
         {
         public:
-            float spirit_damage; // 0x6b8            
-            std::int32_t spirit_mana; // 0x6bc            
-            std::int32_t spirit_armor; // 0x6c0            
-            float spirit_attack_range; // 0x6c4            
-            std::int32_t spirit_hp; // 0x6c8            
-            std::int32_t spirit_level; // 0x6cc            
-            float spirit_duration; // 0x6d0            
-            float armor_per_attack; // 0x6d4            
+            float spirit_damage; // 0x6b8
+            std::int32_t spirit_mana; // 0x6bc
+            std::int32_t spirit_armor; // 0x6c0
+            float spirit_attack_range; // 0x6c4
+            std::int32_t spirit_hp; // 0x6c8
+            std::int32_t spirit_level; // 0x6cc
+            float spirit_duration; // 0x6d0
+            float armor_per_attack; // 0x6d4
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_Invoker_ForgeSpirit because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_Invoker_ForgeSpirit) == 0x6d8);
     };
 };

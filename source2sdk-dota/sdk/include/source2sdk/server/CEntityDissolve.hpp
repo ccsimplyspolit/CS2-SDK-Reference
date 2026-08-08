@@ -26,24 +26,24 @@ namespace source2sdk
         class CEntityDissolve : public source2sdk::server::CBaseModelEntity
         {
         public:
-            float m_flFadeInStart; // 0x778            
-            float m_flFadeInLength; // 0x77c            
-            float m_flFadeOutModelStart; // 0x780            
-            float m_flFadeOutModelLength; // 0x784            
-            float m_flFadeOutStart; // 0x788            
-            float m_flFadeOutLength; // 0x78c            
-            source2sdk::entity2::GameTime_t m_flStartTime; // 0x790            
-            source2sdk::client::EntityDissolveType_t m_nDissolveType; // 0x794            
-            VectorWS m_vDissolverOrigin; // 0x798            
-            std::uint32_t m_nMagnitude; // 0x7a4            
-            
+            float m_flFadeInStart; // 0x778
+            float m_flFadeInLength; // 0x77c
+            float m_flFadeOutModelStart; // 0x780
+            float m_flFadeOutModelLength; // 0x784
+            float m_flFadeOutStart; // 0x788
+            float m_flFadeOutLength; // 0x78c
+            source2sdk::entity2::GameTime_t m_flStartTime; // 0x790
+            source2sdk::client::EntityDissolveType_t m_nDissolveType; // 0x794
+            VectorWS m_vDissolverOrigin; // 0x798
+            std::uint32_t m_nMagnitude; // 0x7a4
+
             // Datamap fields:
             // CUtlSymbolLarge InputDissolve; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CEntityDissolve because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CEntityDissolve) == 0x7a8);
     };
 };

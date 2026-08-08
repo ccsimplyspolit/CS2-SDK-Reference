@@ -17,9 +17,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x1590
+        // Size: 0x1610
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "float m_flTotalBuildup"
         #pragma pack(push, 1)
         class CCitadel_Ability_Necro_Fear : public source2sdk::server::CCitadelBaseAbility
@@ -27,13 +27,13 @@ namespace source2sdk
         public:
             uint8_t _pad0f70[0x18]; // 0xf70
             // metadata: MNetworkEnable
-            float m_flTotalBuildup; // 0xf88            
-            uint8_t _pad0f8c[0x604];
+            float m_flTotalBuildup; // 0xf88
+            uint8_t _pad0f8c[0x684];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_Necro_Fear because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CCitadel_Ability_Necro_Fear) == 0x1590);
+
+        static_assert(sizeof(source2sdk::server::CCitadel_Ability_Necro_Fear) == 0x1610);
     };
 };

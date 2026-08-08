@@ -21,18 +21,18 @@ namespace source2sdk
         // Size: 0xb0
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CDemoSettingsComponentUpdater : public source2sdk::animgraphlib::CAnimComponentUpdater
         {
         public:
-            source2sdk::animgraphlib::CAnimDemoCaptureSettings m_settings; // 0x30            
+            source2sdk::animgraphlib::CAnimDemoCaptureSettings m_settings; // 0x30
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDemoSettingsComponentUpdater because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::animgraphlib::CDemoSettingsComponentUpdater) == 0xb0);
     };
 };

@@ -24,25 +24,25 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a70
+        // Size: 0x1a90
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Ringmaster_Wheel_Mesmerize_Pull : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float m_fMovementSpeed; // 0x1a58            
+            float m_fMovementSpeed; // 0x1a78
             // m_hPullTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CDOTA_BaseNPC> m_hPullTarget;
-            char m_hPullTarget[0x4]; // 0x1a5c            
-            float think_interval; // 0x1a60            
-            float mesmerize_radius; // 0x1a64            
-            float k_flCloseThreshold; // 0x1a68            
-            uint8_t _pad1a6c[0x4];
+            char m_hPullTarget[0x4]; // 0x1a7c
+            float think_interval; // 0x1a80
+            float mesmerize_radius; // 0x1a84
+            float k_flCloseThreshold; // 0x1a88
+            uint8_t _pad1a8c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Ringmaster_Wheel_Mesmerize_Pull because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Ringmaster_Wheel_Mesmerize_Pull) == 0x1a70);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Ringmaster_Wheel_Mesmerize_Pull) == 0x1a90);
     };
 };

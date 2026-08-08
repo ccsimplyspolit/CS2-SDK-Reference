@@ -32,16 +32,16 @@ namespace source2sdk
         class CDOTA_Ability_Lich_Sinister_Gaze : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            float m_flLongestGazeDuration; // 0x580            
+            float m_flLongestGazeDuration; // 0x580
             uint8_t _pad0584[0x4]; // 0x584
             // m_hAffectedEntities has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::server::CBaseEntity>> m_hAffectedEntities;
-            char m_hAffectedEntities[0x18]; // 0x588            
+            char m_hAffectedEntities[0x18]; // 0x588
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Lich_Sinister_Gaze because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Lich_Sinister_Gaze) == 0x5a0);
     };
 };

@@ -24,13 +24,13 @@ namespace source2sdk
         class CGameModifier_SetMoveType : public source2sdk::client::CCitadelModifier
         {
         public:
-            source2sdk::client::MoveType_t m_nMoveType; // 0xc0            
+            source2sdk::client::MoveType_t m_nMoveType; // 0xc0
             uint8_t _pad00c1[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CGameModifier_SetMoveType because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CGameModifier_SetMoveType) == 0xc8);
     };
 };

@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x9a8
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkIncludeByName "m_fFlags"
         // static metadata: MNetworkIncludeByName "m_vecVelocity"
         // static metadata: MNetworkOverride "m_fFlags C_BaseEntity"
@@ -29,8 +29,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::client::C_FuncMoveLinear) == 0x9a8);
     };
 };

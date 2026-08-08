@@ -23,16 +23,16 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0000[0x10]; // 0x0
-            CNetworkedQuantizedFloat m_vecX; // 0x10            
-            CNetworkedQuantizedFloat m_vecY; // 0x18            
-            CNetworkedQuantizedFloat m_vecZ; // 0x20            
+            CNetworkedQuantizedFloat m_vecX; // 0x10
+            CNetworkedQuantizedFloat m_vecY; // 0x18
+            CNetworkedQuantizedFloat m_vecZ; // 0x20
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::CNetworkViewOffsetVector, m_vecX) == 0x10);
         static_assert(offsetof(source2sdk::client::CNetworkViewOffsetVector, m_vecY) == 0x18);
         static_assert(offsetof(source2sdk::client::CNetworkViewOffsetVector, m_vecZ) == 0x20);
-        
+
         static_assert(sizeof(source2sdk::client::CNetworkViewOffsetVector) == 0x28);
     };
 };

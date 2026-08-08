@@ -21,7 +21,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xf08
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkIncludeByName "m_bTakesDamage"
         // static metadata: MNetworkIncludeByName "m_nTakeDamageFlags"
         // static metadata: MNetworkVarNames "CCitadelAbilityComponent::Storage_t m_CCitadelAbilityComponent"
@@ -37,27 +37,27 @@ namespace source2sdk
             // metadata: MNetworkUserGroup "CCitadelAbilityComponent"
             // metadata: MNetworkAlias "CCitadelAbilityComponent"
             // metadata: MNetworkTypeAlias "CCitadelAbilityComponent"
-            source2sdk::client::CCitadelAbilityComponent m_CCitadelAbilityComponent; // 0xcb0            
+            source2sdk::client::CCitadelAbilityComponent m_CCitadelAbilityComponent; // 0xcb0
             // metadata: MNetworkEnable
             // metadata: MNotSaved
             // m_vecWeakPoints has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // C_UtlVectorEmbeddedNetworkVar<source2sdk::client::WeakPoint_t> m_vecWeakPoints;
-            char m_vecWeakPoints[0x68]; // 0xe98            
+            char m_vecWeakPoints[0x68]; // 0xe98
             // metadata: MNetworkEnable
             // metadata: MNetworkChangeCallback "DestroyedChanged"
             // metadata: MNotSaved
-            bool m_bDestroyed; // 0xf00            
+            bool m_bDestroyed; // 0xf00
             // metadata: MNetworkEnable
             // metadata: MNotSaved
-            bool m_bActive; // 0xf01            
+            bool m_bActive; // 0xf01
             // metadata: MNetworkEnable
-            bool m_bFinal; // 0xf02            
+            bool m_bFinal; // 0xf02
             uint8_t _pad0f03[0x5];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_Citadel_Destroyable_Building because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_Citadel_Destroyable_Building) == 0xf08);
     };
 };

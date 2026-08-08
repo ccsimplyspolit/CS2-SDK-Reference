@@ -24,13 +24,13 @@ namespace source2sdk
         class CCitadelModifier_Viscous_Goo_Aura : public source2sdk::server::CCitadelModifierAura
         {
         public:
-            source2sdk::client::ParticleIndex_t m_AuraParticle; // 0x108            
+            source2sdk::client::ParticleIndex_t m_AuraParticle; // 0x108
             uint8_t _pad010c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadelModifier_Viscous_Goo_Aura because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadelModifier_Viscous_Goo_Aura) == 0x110);
     };
 };

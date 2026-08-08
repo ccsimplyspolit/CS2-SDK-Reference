@@ -18,18 +18,18 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x8
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CFlexDesc
         {
         public:
-            CUtlString m_szFacs; // 0x0            
+            CUtlString m_szFacs; // 0x0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::modellib::CFlexDesc, m_szFacs) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::modellib::CFlexDesc) == 0x8);
     };
 };

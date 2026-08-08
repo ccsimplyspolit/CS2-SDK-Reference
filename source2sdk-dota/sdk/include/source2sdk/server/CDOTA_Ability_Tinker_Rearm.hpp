@@ -25,14 +25,14 @@ namespace source2sdk
         class CDOTA_Ability_Tinker_Rearm : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            VectorWS m_vProjectileLocation; // 0x580            
-            bool affects_items; // 0x58c            
+            VectorWS m_vProjectileLocation; // 0x580
+            bool affects_items; // 0x58c
             uint8_t _pad058d[0x3];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Tinker_Rearm because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Tinker_Rearm) == 0x590);
     };
 };

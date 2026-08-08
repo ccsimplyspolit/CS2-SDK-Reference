@@ -33,12 +33,12 @@ namespace source2sdk
         class C_DOTAGameManagerProxy : public source2sdk::client::C_BaseEntity
         {
         public:
-            source2sdk::client::C_DOTAGameManager* m_pGameManager; // 0x5f0            
+            source2sdk::client::C_DOTAGameManager* m_pGameManager; // 0x5f0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTAGameManagerProxy because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTAGameManagerProxy) == 0x5f8);
     };
 };

@@ -20,24 +20,24 @@ namespace source2sdk
         // Has Trivial Constructor
         // Has Trivial Destructor
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct VMixDiffusorDesc_t
         {
         public:
-            float m_flSize; // 0x0            
-            float m_flComplexity; // 0x4            
-            float m_flFeedback; // 0x8            
-            float m_flOutputGain; // 0xc            
+            float m_flSize; // 0x0
+            float m_flComplexity; // 0x4
+            float m_flFeedback; // 0x8
+            float m_flOutputGain; // 0xc
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::VMixDiffusorDesc_t, m_flSize) == 0x0);
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::VMixDiffusorDesc_t, m_flComplexity) == 0x4);
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::VMixDiffusorDesc_t, m_flFeedback) == 0x8);
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::VMixDiffusorDesc_t, m_flOutputGain) == 0xc);
-        
+
         static_assert(sizeof(source2sdk::soundsystem_lowlevel::VMixDiffusorDesc_t) == 0x10);
     };
 };

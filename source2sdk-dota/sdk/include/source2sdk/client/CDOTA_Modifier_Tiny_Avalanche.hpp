@@ -24,7 +24,7 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a90
+        // Size: 0x1ab0
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Tiny_Avalanche : public source2sdk::client::CDOTA_Buff
@@ -32,20 +32,20 @@ namespace source2sdk
         public:
             // m_pHeroesHit has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::client::C_DOTA_BaseNPC*> m_pHeroesHit;
-            char m_pHeroesHit[0x18]; // 0x1a58            
-            float radius; // 0x1a70            
-            float total_duration; // 0x1a74            
-            float stun_duration; // 0x1a78            
-            std::int32_t tick_count; // 0x1a7c            
-            std::int32_t toss_damage_bonus_pct; // 0x1a80            
-            std::int32_t m_damage; // 0x1a84            
-            std::int32_t m_nTicks; // 0x1a88            
-            uint8_t _pad1a8c[0x4];
+            char m_pHeroesHit[0x18]; // 0x1a78
+            float radius; // 0x1a90
+            float total_duration; // 0x1a94
+            float stun_duration; // 0x1a98
+            std::int32_t tick_count; // 0x1a9c
+            std::int32_t toss_damage_bonus_pct; // 0x1aa0
+            std::int32_t m_damage; // 0x1aa4
+            std::int32_t m_nTicks; // 0x1aa8
+            uint8_t _pad1aac[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Tiny_Avalanche because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Tiny_Avalanche) == 0x1a90);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Tiny_Avalanche) == 0x1ab0);
     };
 };

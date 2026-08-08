@@ -29,8 +29,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: CDOTA_Ability_Venomancer_NoxiousPlague has no schema binary (size is a guess)
     };
 };

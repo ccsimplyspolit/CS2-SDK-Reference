@@ -19,20 +19,20 @@ namespace source2sdk
         // Size: 0x8
         // Has Trivial Constructor
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct RnSoftbodySpring_t
         {
         public:
-            std::uint16_t m_nParticle[2]; // 0x0            
-            float m_flLength; // 0x4            
+            std::uint16_t m_nParticle[2]; // 0x0
+            float m_flLength; // 0x4
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::physicslib::RnSoftbodySpring_t, m_nParticle) == 0x0);
         static_assert(offsetof(source2sdk::physicslib::RnSoftbodySpring_t, m_flLength) == 0x4);
-        
+
         static_assert(sizeof(source2sdk::physicslib::RnSoftbodySpring_t) == 0x8);
     };
 };

@@ -21,7 +21,7 @@ namespace source2sdk
         // Size: 0x48
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CDampedValueComponentUpdater : public source2sdk::animgraphlib::CAnimComponentUpdater
@@ -29,12 +29,12 @@ namespace source2sdk
         public:
             // m_items has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::animgraphlib::CDampedValueUpdateItem> m_items;
-            char m_items[0x18]; // 0x30            
+            char m_items[0x18]; // 0x30
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDampedValueComponentUpdater because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::animgraphlib::CDampedValueComponentUpdater) == 0x48);
     };
 };

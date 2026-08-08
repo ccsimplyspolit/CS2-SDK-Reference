@@ -33,16 +33,16 @@ namespace source2sdk
         class CDOTA_Ability_Rubick_Telekinesis : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            VectorWS m_vStartLocation; // 0x580            
-            VectorWS m_vLandLocation; // 0x58c            
-            source2sdk::entity2::GameTime_t m_flStartTime; // 0x598            
+            VectorWS m_vStartLocation; // 0x580
+            VectorWS m_vLandLocation; // 0x58c
+            source2sdk::entity2::GameTime_t m_flStartTime; // 0x598
             uint8_t _pad059c[0x4]; // 0x59c
-            source2sdk::server::CDOTA_BaseNPC* m_pTarget; // 0x5a0            
+            source2sdk::server::CDOTA_BaseNPC* m_pTarget; // 0x5a0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Rubick_Telekinesis because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Rubick_Telekinesis) == 0x5a8);
     };
 };

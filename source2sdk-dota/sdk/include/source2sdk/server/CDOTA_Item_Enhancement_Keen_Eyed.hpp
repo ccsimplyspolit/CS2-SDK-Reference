@@ -28,8 +28,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: CDOTA_Item_Enhancement_Keen_Eyed has no schema binary (size is a guess)
     };
 };

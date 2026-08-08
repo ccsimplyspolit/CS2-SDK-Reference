@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x4f8
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "float m_fFanForceMaxRadius"
         // static metadata: MNetworkVarNames "float m_fFanForceMinRadius"
         // static metadata: MNetworkVarNames "float m_flCurveDistRange"
@@ -30,19 +30,19 @@ namespace source2sdk
         public:
             uint8_t _pad04a0[0x40]; // 0x4a0
             // metadata: MNetworkEnable
-            float m_fFanForceMaxRadius; // 0x4e0            
+            float m_fFanForceMaxRadius; // 0x4e0
             // metadata: MNetworkEnable
-            float m_fFanForceMinRadius; // 0x4e4            
+            float m_fFanForceMinRadius; // 0x4e4
             // metadata: MNetworkEnable
-            float m_flCurveDistRange; // 0x4e8            
+            float m_flCurveDistRange; // 0x4e8
             uint8_t _pad04ec[0x4]; // 0x4ec
             // metadata: MNetworkEnable
-            CUtlSymbolLarge m_FanForceCurveString; // 0x4f0            
+            CUtlSymbolLarge m_FanForceCurveString; // 0x4f0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CInfoFan because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CInfoFan) == 0x4f8);
     };
 };

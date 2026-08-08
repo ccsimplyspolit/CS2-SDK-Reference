@@ -25,18 +25,18 @@ namespace source2sdk
         class CInfoWorldLayer : public source2sdk::server::CBaseEntity
         {
         public:
-            source2sdk::entity2::CEntityIOOutput m_pOutputOnEntitiesSpawned; // 0x498            
+            source2sdk::entity2::CEntityIOOutput m_pOutputOnEntitiesSpawned; // 0x498
             // metadata: MNotSaved
-            CUtlSymbolLarge m_worldName; // 0x4b0            
+            CUtlSymbolLarge m_worldName; // 0x4b0
             // metadata: MNotSaved
-            CUtlSymbolLarge m_layerName; // 0x4b8            
-            bool m_bWorldLayerVisible; // 0x4c0            
-            bool m_bEntitiesSpawned; // 0x4c1            
-            bool m_bCreateAsChildSpawnGroup; // 0x4c2            
+            CUtlSymbolLarge m_layerName; // 0x4b8
+            bool m_bWorldLayerVisible; // 0x4c0
+            bool m_bEntitiesSpawned; // 0x4c1
+            bool m_bCreateAsChildSpawnGroup; // 0x4c2
             uint8_t _pad04c3[0x1]; // 0x4c3
             // metadata: MNotSaved
-            std::uint32_t m_hLayerSpawnGroup; // 0x4c4            
-            
+            std::uint32_t m_hLayerSpawnGroup; // 0x4c4
+
             // Datamap fields:
             // void ShowWorldLayer; // 0x0
             // void HideWorldLayer; // 0x0
@@ -46,9 +46,9 @@ namespace source2sdk
             // void HideWorldLayerAndDestroyEntities; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CInfoWorldLayer because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CInfoWorldLayer) == 0x4c8);
     };
 };

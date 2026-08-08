@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x80
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Filter: Surface Properties"
         // static metadata: MPropertyDescription "Allows the parent element to be conditionally evaluated based on surface properties."
@@ -32,16 +32,16 @@ namespace source2sdk
             // metadata: MPropertyDescription "List of surface properties on which this element is valid. If empty element is not restricted to any specific surfaces."
             // m_AllowedSurfaceProperties has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CUtlString> m_AllowedSurfaceProperties;
-            char m_AllowedSurfaceProperties[0x18]; // 0x50            
+            char m_AllowedSurfaceProperties[0x18]; // 0x50
             // metadata: MPropertyDescription "List of surface properties on which this element is not valid. If empty element is not restricted to any specific surfaces."
             // m_DisallowedSurfaceProperties has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CUtlString> m_DisallowedSurfaceProperties;
-            char m_DisallowedSurfaceProperties[0x18]; // 0x68            
+            char m_DisallowedSurfaceProperties[0x18]; // 0x68
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSmartPropFilter_SurfaceProperties because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::smartprops::CSmartPropFilter_SurfaceProperties) == 0x80);
     };
 };

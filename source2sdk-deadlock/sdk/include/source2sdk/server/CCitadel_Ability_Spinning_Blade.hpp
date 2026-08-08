@@ -40,16 +40,16 @@ namespace source2sdk
             uint8_t _pad0f70[0x400]; // 0xf70
             // m_vecOutgoingHits has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::server::CBaseEntity>> m_vecOutgoingHits;
-            char m_vecOutgoingHits[0x18]; // 0x1370            
+            char m_vecOutgoingHits[0x18]; // 0x1370
             // m_hActiveProjectile has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CCitadelProjectile> m_hActiveProjectile;
-            char m_hActiveProjectile[0x4]; // 0x1388            
+            char m_hActiveProjectile[0x4]; // 0x1388
             uint8_t _pad138c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_Spinning_Blade because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Ability_Spinning_Blade) == 0x1390);
     };
 };

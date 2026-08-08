@@ -33,12 +33,12 @@ namespace source2sdk
         class CDOTAGameManagerProxy : public source2sdk::server::CBaseEntity
         {
         public:
-            source2sdk::server::CDOTAGameManager* m_pGameManager; // 0x498            
+            source2sdk::server::CDOTAGameManager* m_pGameManager; // 0x498
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTAGameManagerProxy because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTAGameManagerProxy) == 0x4a0);
     };
 };

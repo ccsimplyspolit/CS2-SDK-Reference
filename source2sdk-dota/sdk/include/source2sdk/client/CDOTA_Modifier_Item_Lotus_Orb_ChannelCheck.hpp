@@ -25,7 +25,7 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a78
+        // Size: 0x1a98
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Item_Lotus_Orb_ChannelCheck : public source2sdk::client::CDOTA_Buff
@@ -33,20 +33,20 @@ namespace source2sdk
         public:
             // m_hCurrentAbility has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::C_BaseEntity> m_hCurrentAbility;
-            char m_hCurrentAbility[0x4]; // 0x1a58            
+            char m_hCurrentAbility[0x4]; // 0x1a78
             // m_hTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::C_BaseEntity> m_hTarget;
-            char m_hTarget[0x4]; // 0x1a5c            
-            VectorWS m_vLocation; // 0x1a60            
-            source2sdk::entity2::GameTime_t m_fChannelEnd; // 0x1a6c            
-            bool m_bInterrupt; // 0x1a70            
-            bool m_bExpired; // 0x1a71            
-            uint8_t _pad1a72[0x6];
+            char m_hTarget[0x4]; // 0x1a7c
+            VectorWS m_vLocation; // 0x1a80
+            source2sdk::entity2::GameTime_t m_fChannelEnd; // 0x1a8c
+            bool m_bInterrupt; // 0x1a90
+            bool m_bExpired; // 0x1a91
+            uint8_t _pad1a92[0x6];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Item_Lotus_Orb_ChannelCheck because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Item_Lotus_Orb_ChannelCheck) == 0x1a78);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Item_Lotus_Orb_ChannelCheck) == 0x1a98);
     };
 };

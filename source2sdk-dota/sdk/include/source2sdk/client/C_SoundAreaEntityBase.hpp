@@ -25,19 +25,19 @@ namespace source2sdk
         class C_SoundAreaEntityBase : public source2sdk::client::C_BaseEntity
         {
         public:
-            bool m_bDisabled; // 0x5f0            
+            bool m_bDisabled; // 0x5f0
             uint8_t _pad05f1[0x7]; // 0x5f1
             // metadata: MNotSaved
-            bool m_bWasEnabled; // 0x5f8            
+            bool m_bWasEnabled; // 0x5f8
             uint8_t _pad05f9[0x7]; // 0x5f9
-            CUtlSymbolLarge m_iszSoundAreaType; // 0x600            
-            Vector m_vPos; // 0x608            
+            CUtlSymbolLarge m_iszSoundAreaType; // 0x600
+            Vector m_vPos; // 0x608
             uint8_t _pad0614[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_SoundAreaEntityBase because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_SoundAreaEntityBase) == 0x618);
     };
 };

@@ -27,7 +27,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xb8
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Envelope VSND"
         // static metadata: MPropertyDescription "Plays sound with envelope."
@@ -38,14 +38,14 @@ namespace source2sdk
             // metadata: MPropertyFriendlyName "Vsnd File"
             // m_sound has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CStrongHandle<source2sdk::resourcesystem::InfoForResourceTypeCVoiceContainerBase> m_sound;
-            char m_sound[0x8]; // 0xa8            
+            char m_sound[0x8]; // 0xa8
             // metadata: MPropertyFriendlyName "Container Analyzers"
-            source2sdk::soundsystem_voicecontainers::CVoiceContainerAnalysisBase* m_analysisContainer; // 0xb0            
+            source2sdk::soundsystem_voicecontainers::CVoiceContainerAnalysisBase* m_analysisContainer; // 0xb0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CVoiceContainerEnvelope because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::soundsystem_voicecontainers::CVoiceContainerEnvelope) == 0xb8);
     };
 };

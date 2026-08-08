@@ -27,15 +27,15 @@ namespace source2sdk
         class C_DOTACustomGameHeroPickRules : public source2sdk::client::C_DOTABaseCustomHeroPickRules
         {
         public:
-            source2sdk::client::DOTACustomHeroPickRulesPhase_t m_Phase; // 0x5f0            
-            std::int32_t m_nNumBansPerTeam; // 0x5f4            
-            source2sdk::entity2::GameTime_t m_flEnterTime; // 0x5f8            
-            std::int32_t m_nNumHeroesPicked; // 0x5fc            
+            source2sdk::client::DOTACustomHeroPickRulesPhase_t m_Phase; // 0x5f0
+            std::int32_t m_nNumBansPerTeam; // 0x5f4
+            source2sdk::entity2::GameTime_t m_flEnterTime; // 0x5f8
+            std::int32_t m_nNumHeroesPicked; // 0x5fc
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTACustomGameHeroPickRules because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTACustomGameHeroPickRules) == 0x600);
     };
 };

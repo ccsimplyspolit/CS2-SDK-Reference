@@ -25,12 +25,12 @@ namespace source2sdk
         class CDOTA_Ability_Launchpad : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            char* pTargetName; // 0x580            
+            char* pTargetName; // 0x580
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Launchpad because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Launchpad) == 0x588);
     };
 };

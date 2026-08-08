@@ -22,28 +22,28 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xa10
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_MovementLoopInsideSphere : public source2sdk::particles::CParticleFunctionOperator
         {
         public:
             // metadata: MPropertyFriendlyName "control point"
-            std::int32_t m_nCP; // 0x1d8            
+            std::int32_t m_nCP; // 0x1d8
             uint8_t _pad01dc[0x4]; // 0x1dc
             // metadata: MPropertyFriendlyName "distance maximum"
-            source2sdk::particleslib::CParticleCollectionFloatInput m_flDistance; // 0x1e0            
+            source2sdk::particleslib::CParticleCollectionFloatInput m_flDistance; // 0x1e0
             // metadata: MPropertyFriendlyName "component scale"
-            source2sdk::particleslib::CParticleCollectionVecInput m_vecScale; // 0x350            
+            source2sdk::particleslib::CParticleCollectionVecInput m_vecScale; // 0x350
             // metadata: MPropertyFriendlyName "distance squared output attribute"
             // metadata: MPropertyAttributeChoiceName "particlefield_scalar"
-            source2sdk::particles::ParticleAttributeIndex_t m_nDistSqrAttr; // 0xa08            
+            source2sdk::particles::ParticleAttributeIndex_t m_nDistSqrAttr; // 0xa08
             uint8_t _pad0a0c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_MovementLoopInsideSphere because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_MovementLoopInsideSphere) == 0xa10);
     };
 };

@@ -17,25 +17,25 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a78
+        // Size: 0x1a98
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Ogre_Magi_DumbLuck : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float mana_per_str; // 0x1a58            
-            float mana_regen_per_str; // 0x1a5c            
-            float bonus_strength; // 0x1a60            
-            float bonus_strength_gain; // 0x1a64            
-            std::int32_t level_one_ability_points; // 0x1a68            
-            std::int32_t level_two_ability_points; // 0x1a6c            
-            std::int32_t required_level_reduction; // 0x1a70            
-            uint8_t _pad1a74[0x4];
+            float mana_per_str; // 0x1a78
+            float mana_regen_per_str; // 0x1a7c
+            float bonus_strength; // 0x1a80
+            float bonus_strength_gain; // 0x1a84
+            std::int32_t level_one_ability_points; // 0x1a88
+            std::int32_t level_two_ability_points; // 0x1a8c
+            std::int32_t required_level_reduction; // 0x1a90
+            uint8_t _pad1a94[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Ogre_Magi_DumbLuck because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Ogre_Magi_DumbLuck) == 0x1a78);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Ogre_Magi_DumbLuck) == 0x1a98);
     };
 };

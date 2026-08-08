@@ -24,28 +24,28 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1aa0
+        // Size: 0x1ac0
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Juggernaut_Vaulted_Strike : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float m_flPredictedTotalTime; // 0x1a58            
-            float m_flCurrentTimeVert; // 0x1a5c            
-            VectorWS m_vTargetPos; // 0x1a60            
-            VectorWS m_vStart; // 0x1a6c            
-            float m_flZDelta; // 0x1a78            
-            float jump_speed; // 0x1a7c            
-            float start_height; // 0x1a80            
-            float jump_attack_radius; // 0x1a84            
+            float m_flPredictedTotalTime; // 0x1a78
+            float m_flCurrentTimeVert; // 0x1a7c
+            VectorWS m_vTargetPos; // 0x1a80
+            VectorWS m_vStart; // 0x1a8c
+            float m_flZDelta; // 0x1a98
+            float jump_speed; // 0x1a9c
+            float start_height; // 0x1aa0
+            float jump_attack_radius; // 0x1aa4
             // m_hHitEntities has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::server::CBaseEntity>> m_hHitEntities;
-            char m_hHitEntities[0x18]; // 0x1a88            
+            char m_hHitEntities[0x18]; // 0x1aa8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Juggernaut_Vaulted_Strike because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Juggernaut_Vaulted_Strike) == 0x1aa0);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Juggernaut_Vaulted_Strike) == 0x1ac0);
     };
 };

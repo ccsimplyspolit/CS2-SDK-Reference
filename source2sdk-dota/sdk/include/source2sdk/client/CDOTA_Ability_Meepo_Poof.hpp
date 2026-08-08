@@ -26,15 +26,15 @@ namespace source2sdk
         class CDOTA_Ability_Meepo_Poof : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x6a8            
+            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x6a8
             uint8_t _pad06ac[0x14]; // 0x6ac
-            float radius; // 0x6c0            
+            float radius; // 0x6c0
             uint8_t _pad06c4[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Meepo_Poof because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CDOTA_Ability_Meepo_Poof) == 0x6c8);
     };
 };

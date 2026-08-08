@@ -35,17 +35,17 @@ namespace source2sdk
         public:
             // m_vecMarkedUnits has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::server::CBaseEntity>> m_vecMarkedUnits;
-            char m_vecMarkedUnits[0x18]; // 0x580            
-            std::int32_t m_iAttackIndex; // 0x598            
+            char m_vecMarkedUnits[0x18]; // 0x580
+            std::int32_t m_iAttackIndex; // 0x598
             uint8_t _pad059c[0x4]; // 0x59c
             // m_GlaiveInfo has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::client::sGlaiveInfo> m_GlaiveInfo;
-            char m_GlaiveInfo[0x18]; // 0x5a0            
+            char m_GlaiveInfo[0x18]; // 0x5a0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Luna_MoonGlaive because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Luna_MoonGlaive) == 0x5b8);
     };
 };

@@ -24,13 +24,13 @@ namespace source2sdk
         class CIngameEvent_SeasonalRewardLine : public source2sdk::client::C_IngameEvent_Base
         {
         public:
-            std::int32_t m_eventID; // 0x19b8            
+            std::int32_t m_eventID; // 0x19b8
             uint8_t _pad19bc[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CIngameEvent_SeasonalRewardLine because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CIngameEvent_SeasonalRewardLine) == 0x19c0);
     };
 };

@@ -33,17 +33,17 @@ namespace source2sdk
         class CDOTA_Ability_Techies_Minefield_Sign : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x580            
-            source2sdk::client::ParticleIndex_t m_nFXHammerIndex; // 0x584            
-            std::int32_t aura_radius; // 0x588            
+            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x580
+            source2sdk::client::ParticleIndex_t m_nFXHammerIndex; // 0x584
+            std::int32_t aura_radius; // 0x588
             // m_hSign has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hSign;
-            char m_hSign[0x4]; // 0x58c            
+            char m_hSign[0x4]; // 0x58c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Techies_Minefield_Sign because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Techies_Minefield_Sign) == 0x590);
     };
 };

@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0xe0
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "ItemDraftItem_t m_Item"
         // static metadata: MNetworkVarNames "ItemDraftItem_t m_BonusItem1"
         // static metadata: MNetworkVarNames "ItemDraftItem_t m_BonusItem2"
@@ -31,25 +31,25 @@ namespace source2sdk
         public:
             uint8_t _pad0000[0x30]; // 0x0
             // metadata: MNetworkEnable
-            source2sdk::server::ItemDraftItem_t m_Item; // 0x30            
+            source2sdk::server::ItemDraftItem_t m_Item; // 0x30
             // metadata: MNetworkEnable
-            source2sdk::server::ItemDraftItem_t m_BonusItem1; // 0x68            
+            source2sdk::server::ItemDraftItem_t m_BonusItem1; // 0x68
             // metadata: MNetworkEnable
-            source2sdk::server::ItemDraftItem_t m_BonusItem2; // 0xa0            
+            source2sdk::server::ItemDraftItem_t m_BonusItem2; // 0xa0
             // metadata: MNetworkEnable
-            bool m_bHasBeenDrafted; // 0xd8            
+            bool m_bHasBeenDrafted; // 0xd8
             // metadata: MNetworkEnable
-            bool m_bRare; // 0xd9            
+            bool m_bRare; // 0xd9
             uint8_t _pad00da[0x6];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::ItemDraftOption_t, m_Item) == 0x30);
         static_assert(offsetof(source2sdk::server::ItemDraftOption_t, m_BonusItem1) == 0x68);
         static_assert(offsetof(source2sdk::server::ItemDraftOption_t, m_BonusItem2) == 0xa0);
         static_assert(offsetof(source2sdk::server::ItemDraftOption_t, m_bHasBeenDrafted) == 0xd8);
         static_assert(offsetof(source2sdk::server::ItemDraftOption_t, m_bRare) == 0xd9);
-        
+
         static_assert(sizeof(source2sdk::server::ItemDraftOption_t) == 0xe0);
     };
 };

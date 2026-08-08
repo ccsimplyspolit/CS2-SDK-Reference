@@ -19,7 +19,7 @@ namespace source2sdk
         // Size: 0x18
         // Has Trivial Destructor
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class LookData
@@ -27,13 +27,13 @@ namespace source2sdk
         public:
             // m_vLookTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CAnimNetVar<Vector> m_vLookTarget;
-            char m_vLookTarget[0x14]; // 0x0            
+            char m_vLookTarget[0x14]; // 0x0
             uint8_t _pad0014[0x4];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::animgraphlib::LookData, m_vLookTarget) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::animgraphlib::LookData) == 0x18);
     };
 };

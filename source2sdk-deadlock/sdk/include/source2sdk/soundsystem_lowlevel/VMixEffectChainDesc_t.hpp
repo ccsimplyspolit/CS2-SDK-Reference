@@ -17,18 +17,18 @@ namespace source2sdk
         // Alignment: 0x8
         // Standard-layout class: true
         // Size: 0x8
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct VMixEffectChainDesc_t
         {
         public:
-            CUtlString m_effectName; // 0x0            
+            CUtlString m_effectName; // 0x0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::VMixEffectChainDesc_t, m_effectName) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::soundsystem_lowlevel::VMixEffectChainDesc_t) == 0x8);
     };
 };

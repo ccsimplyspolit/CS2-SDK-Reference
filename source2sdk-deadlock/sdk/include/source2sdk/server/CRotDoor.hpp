@@ -23,13 +23,13 @@ namespace source2sdk
         class CRotDoor : public source2sdk::server::CBaseDoor
         {
         public:
-            bool m_bSolidBsp; // 0x980            
+            bool m_bSolidBsp; // 0x980
             uint8_t _pad0981[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CRotDoor because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CRotDoor) == 0x988);
     };
 };

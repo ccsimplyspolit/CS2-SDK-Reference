@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x38
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Soundevent Priority"
         #pragma pack(push, 1)
@@ -27,19 +27,19 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "Priority Value, typically 0.0 to 1.0"
-            CUtlString m_priorityValue; // 0x8            
+            CUtlString m_priorityValue; // 0x8
             // metadata: MPropertyFriendlyName "Priority-Based Volume Multiplier, 0.0 to 1.0"
-            CUtlString m_priorityVolumeScalar; // 0x10            
+            CUtlString m_priorityVolumeScalar; // 0x10
             // metadata: MPropertyFriendlyName "Contribute to the priority system, but volume is unaffected by it (bool)"
-            CUtlString m_priorityContributeButDontRead; // 0x18            
+            CUtlString m_priorityContributeButDontRead; // 0x18
             // metadata: MPropertyFriendlyName "Don't contribute to the priority system, but volume is affected by it (bool)"
-            CUtlString m_bPriorityReadButDontContribute; // 0x20            
+            CUtlString m_bPriorityReadButDontContribute; // 0x20
             uint8_t _pad0028[0x10];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSosGroupActionSoundeventPrioritySchema because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::soundsystem::CSosGroupActionSoundeventPrioritySchema) == 0x38);
     };
 };

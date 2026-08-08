@@ -23,13 +23,13 @@ namespace source2sdk
         class CCitadelDruidInvisAura : public source2sdk::server::CCitadelModifierAura
         {
         public:
-            std::int32_t nInvisID; // 0x108            
+            std::int32_t nInvisID; // 0x108
             uint8_t _pad010c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadelDruidInvisAura because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadelDruidInvisAura) == 0x110);
     };
 };

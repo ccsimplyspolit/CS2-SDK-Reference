@@ -24,7 +24,7 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a68
+        // Size: 0x1a88
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Ogre_Magi_Fireblast_Multicast : public source2sdk::client::CDOTA_Buff
@@ -32,16 +32,16 @@ namespace source2sdk
         public:
             // m_hTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::C_DOTA_BaseNPC> m_hTarget;
-            char m_hTarget[0x4]; // 0x1a58            
-            float multicast_delay; // 0x1a5c            
-            std::int32_t m_nMultiCastCount; // 0x1a60            
-            bool m_bTalentCast; // 0x1a64            
-            uint8_t _pad1a65[0x3];
+            char m_hTarget[0x4]; // 0x1a78
+            float multicast_delay; // 0x1a7c
+            std::int32_t m_nMultiCastCount; // 0x1a80
+            bool m_bTalentCast; // 0x1a84
+            uint8_t _pad1a85[0x3];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Ogre_Magi_Fireblast_Multicast because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Ogre_Magi_Fireblast_Multicast) == 0x1a68);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Ogre_Magi_Fireblast_Multicast) == 0x1a88);
     };
 };

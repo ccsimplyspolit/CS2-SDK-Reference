@@ -18,24 +18,24 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x10
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct FeNodeIntegrator_t
         {
         public:
-            float flPointDamping; // 0x0            
-            float flAnimationForceAttraction; // 0x4            
-            float flAnimationVertexAttraction; // 0x8            
-            float flGravity; // 0xc            
+            float flPointDamping; // 0x0
+            float flAnimationForceAttraction; // 0x4
+            float flAnimationVertexAttraction; // 0x8
+            float flGravity; // 0xc
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::physicslib::FeNodeIntegrator_t, flPointDamping) == 0x0);
         static_assert(offsetof(source2sdk::physicslib::FeNodeIntegrator_t, flAnimationForceAttraction) == 0x4);
         static_assert(offsetof(source2sdk::physicslib::FeNodeIntegrator_t, flAnimationVertexAttraction) == 0x8);
         static_assert(offsetof(source2sdk::physicslib::FeNodeIntegrator_t, flGravity) == 0xc);
-        
+
         static_assert(sizeof(source2sdk::physicslib::FeNodeIntegrator_t) == 0x10);
     };
 };

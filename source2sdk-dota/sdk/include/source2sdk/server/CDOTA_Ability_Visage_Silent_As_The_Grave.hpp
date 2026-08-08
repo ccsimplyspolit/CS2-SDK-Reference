@@ -25,13 +25,13 @@ namespace source2sdk
         class CDOTA_Ability_Visage_Silent_As_The_Grave : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            float flight_duration; // 0x580            
-            std::int32_t invis; // 0x584            
+            float flight_duration; // 0x580
+            std::int32_t invis; // 0x584
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Visage_Silent_As_The_Grave because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Visage_Silent_As_The_Grave) == 0x588);
     };
 };

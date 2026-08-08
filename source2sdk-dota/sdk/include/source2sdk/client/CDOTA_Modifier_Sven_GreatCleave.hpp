@@ -18,26 +18,26 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a78
+        // Size: 0x1a98
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Sven_GreatCleave : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float cleave_starting_width; // 0x1a58            
-            float cleave_ending_width; // 0x1a5c            
-            float cleave_distance; // 0x1a60            
-            float great_cleave_damage; // 0x1a64            
-            std::int32_t strength_bonus; // 0x1a68            
-            source2sdk::client::AttackRecord_t m_nLastCleaveRecord; // 0x1a6c            
-            uint8_t _pad1a6e[0x2]; // 0x1a6e
-            std::int32_t m_nLastCleaveKills; // 0x1a70            
-            uint8_t _pad1a74[0x4];
+            float cleave_starting_width; // 0x1a78
+            float cleave_ending_width; // 0x1a7c
+            float cleave_distance; // 0x1a80
+            float great_cleave_damage; // 0x1a84
+            std::int32_t strength_bonus; // 0x1a88
+            source2sdk::client::AttackRecord_t m_nLastCleaveRecord; // 0x1a8c
+            uint8_t _pad1a8e[0x2]; // 0x1a8e
+            std::int32_t m_nLastCleaveKills; // 0x1a90
+            uint8_t _pad1a94[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Sven_GreatCleave because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Sven_GreatCleave) == 0x1a78);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Sven_GreatCleave) == 0x1a98);
     };
 };

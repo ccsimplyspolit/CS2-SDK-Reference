@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x40
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CScaleFunctionAbilityProperty_HealingSpiritScaleVData : public source2sdk::client::CScaleFunctionVData
@@ -27,8 +27,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::client::CScaleFunctionAbilityProperty_HealingSpiritScaleVData) == 0x40);
     };
 };

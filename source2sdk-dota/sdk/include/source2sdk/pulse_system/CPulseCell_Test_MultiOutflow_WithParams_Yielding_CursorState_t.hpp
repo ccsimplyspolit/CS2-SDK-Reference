@@ -19,18 +19,18 @@ namespace source2sdk
         // Size: 0x4
         // Has Trivial Destructor
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct CPulseCell_Test_MultiOutflow_WithParams_Yielding_CursorState_t
         {
         public:
-            std::int32_t nTestStep; // 0x0            
+            std::int32_t nTestStep; // 0x0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::pulse_system::CPulseCell_Test_MultiOutflow_WithParams_Yielding_CursorState_t, nTestStep) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::pulse_system::CPulseCell_Test_MultiOutflow_WithParams_Yielding_CursorState_t) == 0x4);
     };
 };

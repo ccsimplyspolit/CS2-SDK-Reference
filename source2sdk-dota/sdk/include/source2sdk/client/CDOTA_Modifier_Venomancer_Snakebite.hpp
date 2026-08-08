@@ -17,22 +17,22 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a68
+        // Size: 0x1a88
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Venomancer_Snakebite : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float base_damage; // 0x1a58            
-            float tick_damage; // 0x1a5c            
-            float damage_interval; // 0x1a60            
-            bool undispellable; // 0x1a64            
-            uint8_t _pad1a65[0x3];
+            float base_damage; // 0x1a78
+            float tick_damage; // 0x1a7c
+            float damage_interval; // 0x1a80
+            bool undispellable; // 0x1a84
+            uint8_t _pad1a85[0x3];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Venomancer_Snakebite because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Venomancer_Snakebite) == 0x1a68);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Venomancer_Snakebite) == 0x1a88);
     };
 };

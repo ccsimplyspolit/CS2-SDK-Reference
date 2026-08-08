@@ -34,13 +34,13 @@ namespace source2sdk
         public:
             // m_hPickupOwner has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hPickupOwner;
-            char m_hPickupOwner[0x4]; // 0x658            
+            char m_hPickupOwner[0x4]; // 0x658
             uint8_t _pad065c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Item_Tidehunter_Fish because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Item_Tidehunter_Fish) == 0x660);
     };
 };

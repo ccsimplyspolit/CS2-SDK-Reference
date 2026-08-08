@@ -22,14 +22,14 @@ namespace source2sdk
         class TimedEvent
         {
         public:
-            float m_TimeBetweenEvents; // 0x0            
-            float m_fNextEvent; // 0x4            
+            float m_TimeBetweenEvents; // 0x0
+            float m_fNextEvent; // 0x4
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::TimedEvent, m_TimeBetweenEvents) == 0x0);
         static_assert(offsetof(source2sdk::client::TimedEvent, m_fNextEvent) == 0x4);
-        
+
         static_assert(sizeof(source2sdk::client::TimedEvent) == 0x8);
     };
 };

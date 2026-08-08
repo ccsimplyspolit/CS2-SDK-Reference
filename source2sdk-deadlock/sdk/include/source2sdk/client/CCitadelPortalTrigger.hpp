@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xa98
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "CHandle< CCitadelPortalTrigger > m_hOtherPortal"
         #pragma pack(push, 1)
         class CCitadelPortalTrigger : public source2sdk::client::C_BaseTrigger
@@ -29,17 +29,17 @@ namespace source2sdk
             // metadata: MNetworkEnable
             // m_hOtherPortal has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::CCitadelPortalTrigger> m_hOtherPortal;
-            char m_hOtherPortal[0x4]; // 0xa90            
+            char m_hOtherPortal[0x4]; // 0xa90
             uint8_t _pad0a94[0x4];
-            
+
             // Datamap fields:
             // Vector trigger_mins; // 0x7fffffff
             // Vector trigger_maxs; // 0x7fffffff
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadelPortalTrigger because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadelPortalTrigger) == 0xa98);
     };
 };

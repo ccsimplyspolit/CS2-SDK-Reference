@@ -25,23 +25,23 @@ namespace source2sdk
         class CEnvWindController : public source2sdk::server::CBaseEntity
         {
         public:
-            source2sdk::server::CEnvWindShared m_EnvWindShared; // 0x498            
-            float m_fDirectionVariation; // 0x5c8            
-            float m_fSpeedVariation; // 0x5cc            
-            float m_fTurbulence; // 0x5d0            
-            float m_fVolumeHalfExtentXY; // 0x5d4            
-            float m_fVolumeHalfExtentZ; // 0x5d8            
-            std::int32_t m_nVolumeResolutionXY; // 0x5dc            
-            std::int32_t m_nVolumeResolutionZ; // 0x5e0            
-            std::int32_t m_nClipmapLevels; // 0x5e4            
-            bool m_bIsMaster; // 0x5e8            
-            bool m_bFirstTime; // 0x5e9            
+            source2sdk::server::CEnvWindShared m_EnvWindShared; // 0x498
+            float m_fDirectionVariation; // 0x5c8
+            float m_fSpeedVariation; // 0x5cc
+            float m_fTurbulence; // 0x5d0
+            float m_fVolumeHalfExtentXY; // 0x5d4
+            float m_fVolumeHalfExtentZ; // 0x5d8
+            std::int32_t m_nVolumeResolutionXY; // 0x5dc
+            std::int32_t m_nVolumeResolutionZ; // 0x5e0
+            std::int32_t m_nClipmapLevels; // 0x5e4
+            bool m_bIsMaster; // 0x5e8
+            bool m_bFirstTime; // 0x5e9
             uint8_t _pad05ea[0x6];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CEnvWindController because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CEnvWindController) == 0x5f0);
     };
 };

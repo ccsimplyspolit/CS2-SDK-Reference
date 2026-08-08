@@ -26,13 +26,13 @@ namespace source2sdk
         class C_DOTA_Ability_AghsFort_Creature_Venomancer_PoisonNova : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            source2sdk::client::ParticleIndex_t m_nFXPreview; // 0x6a8            
-            float radius; // 0x6ac            
+            source2sdk::client::ParticleIndex_t m_nFXPreview; // 0x6a8
+            float radius; // 0x6ac
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_AghsFort_Creature_Venomancer_PoisonNova because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_AghsFort_Creature_Venomancer_PoisonNova) == 0x6b0);
     };
 };

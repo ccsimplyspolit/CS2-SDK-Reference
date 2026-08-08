@@ -23,13 +23,13 @@ namespace source2sdk
         class CRulePointEntity : public source2sdk::server::CRuleEntity
         {
         public:
-            std::int32_t m_Score; // 0x788            
+            std::int32_t m_Score; // 0x788
             uint8_t _pad078c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CRulePointEntity because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CRulePointEntity) == 0x790);
     };
 };

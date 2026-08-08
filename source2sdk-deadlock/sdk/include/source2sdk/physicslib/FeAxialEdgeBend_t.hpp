@@ -18,26 +18,26 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x28
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct FeAxialEdgeBend_t
         {
         public:
-            float te; // 0x0            
-            float tv; // 0x4            
-            float flDist; // 0x8            
-            float flWeight[4]; // 0xc            
-            std::uint16_t nNode[6]; // 0x1c            
+            float te; // 0x0
+            float tv; // 0x4
+            float flDist; // 0x8
+            float flWeight[4]; // 0xc
+            std::uint16_t nNode[6]; // 0x1c
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::physicslib::FeAxialEdgeBend_t, te) == 0x0);
         static_assert(offsetof(source2sdk::physicslib::FeAxialEdgeBend_t, tv) == 0x4);
         static_assert(offsetof(source2sdk::physicslib::FeAxialEdgeBend_t, flDist) == 0x8);
         static_assert(offsetof(source2sdk::physicslib::FeAxialEdgeBend_t, flWeight) == 0xc);
         static_assert(offsetof(source2sdk::physicslib::FeAxialEdgeBend_t, nNode) == 0x1c);
-        
+
         static_assert(sizeof(source2sdk::physicslib::FeAxialEdgeBend_t) == 0x28);
     };
 };

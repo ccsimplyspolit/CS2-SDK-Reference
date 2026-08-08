@@ -32,12 +32,12 @@ namespace source2sdk
         class CDOTAGamerulesProxy : public source2sdk::server::CGameRulesProxy
         {
         public:
-            source2sdk::server::CDOTAGameRules* m_pGameRules; // 0x498            
+            source2sdk::server::CDOTAGameRules* m_pGameRules; // 0x498
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTAGamerulesProxy because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTAGamerulesProxy) == 0x4a0);
     };
 };

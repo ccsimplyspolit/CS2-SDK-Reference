@@ -28,13 +28,13 @@ namespace source2sdk
         public:
             // m_vecTrackedStats has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // C_UtlVectorEmbeddedNetworkVar<source2sdk::client::TrackedStatNetworkData_t> m_vecTrackedStats;
-            char m_vecTrackedStats[0x68]; // 0x5f0            
+            char m_vecTrackedStats[0x68]; // 0x5f0
             uint8_t _pad0658[0x8];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CBaseTrackedStatsEntity because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CBaseTrackedStatsEntity) == 0x660);
     };
 };

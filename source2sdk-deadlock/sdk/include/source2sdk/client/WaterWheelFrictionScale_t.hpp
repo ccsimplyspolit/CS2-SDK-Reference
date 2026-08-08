@@ -18,20 +18,20 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x8
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct WaterWheelFrictionScale_t
         {
         public:
-            float m_flFractionOfWheelSubmerged; // 0x0            
-            float m_flFrictionScale; // 0x4            
+            float m_flFractionOfWheelSubmerged; // 0x0
+            float m_flFrictionScale; // 0x4
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::WaterWheelFrictionScale_t, m_flFractionOfWheelSubmerged) == 0x0);
         static_assert(offsetof(source2sdk::client::WaterWheelFrictionScale_t, m_flFrictionScale) == 0x4);
-        
+
         static_assert(sizeof(source2sdk::client::WaterWheelFrictionScale_t) == 0x8);
     };
 };

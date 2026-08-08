@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x30
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CNmVelocityBlendNode_CDefinition : public source2sdk::animlib::CNmParameterizedBlendNode_CDefinition
@@ -28,8 +28,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::animlib::CNmVelocityBlendNode_CDefinition) == 0x30);
     };
 };

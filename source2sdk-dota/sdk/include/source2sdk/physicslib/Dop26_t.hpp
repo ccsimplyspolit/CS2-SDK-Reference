@@ -20,18 +20,18 @@ namespace source2sdk
         // Has Trivial Constructor
         // Has Trivial Destructor
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct Dop26_t
         {
         public:
-            float m_flSupport[26]; // 0x0            
+            float m_flSupport[26]; // 0x0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::physicslib::Dop26_t, m_flSupport) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::physicslib::Dop26_t) == 0x68);
     };
 };

@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x90
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Filter: Probability"
         // static metadata: MPropertyDescription "Causes the parent element to only be evaluated with a specified random probability."
@@ -29,12 +29,12 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyDescription "0.0 to 1.0 value indicating the probability of this element being evaluated. Where a value of 0 means the element will never be evaluated and 1.0 means it will always be evaluated"
-            CSmartPropAttributeFloat m_flProbability; // 0x50            
+            CSmartPropAttributeFloat m_flProbability; // 0x50
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSmartPropFilter_Probability because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::smartprops::CSmartPropFilter_Probability) == 0x90);
     };
 };

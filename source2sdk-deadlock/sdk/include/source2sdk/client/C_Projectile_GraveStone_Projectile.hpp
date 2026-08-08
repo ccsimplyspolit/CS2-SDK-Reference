@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xc60
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "float m_flWidth"
         // static metadata: MNetworkVarNames "GameTime_t m_tDieTime"
         #pragma pack(push, 1)
@@ -28,15 +28,15 @@ namespace source2sdk
         {
         public:
             // metadata: MNetworkEnable
-            float m_flWidth; // 0xad8            
+            float m_flWidth; // 0xad8
             // metadata: MNetworkEnable
-            source2sdk::entity2::GameTime_t m_tDieTime; // 0xadc            
+            source2sdk::entity2::GameTime_t m_tDieTime; // 0xadc
             uint8_t _pad0ae0[0x180];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_Projectile_GraveStone_Projectile because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_Projectile_GraveStone_Projectile) == 0xc60);
     };
 };

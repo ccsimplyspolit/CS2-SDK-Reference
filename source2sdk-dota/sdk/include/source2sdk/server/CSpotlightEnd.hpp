@@ -24,15 +24,15 @@ namespace source2sdk
         class CSpotlightEnd : public source2sdk::server::CBaseModelEntity
         {
         public:
-            float m_flLightScale; // 0x778            
-            float m_Radius; // 0x77c            
-            Vector m_vSpotlightDir; // 0x780            
-            VectorWS m_vSpotlightOrg; // 0x78c            
+            float m_flLightScale; // 0x778
+            float m_Radius; // 0x77c
+            Vector m_vSpotlightDir; // 0x780
+            VectorWS m_vSpotlightOrg; // 0x78c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSpotlightEnd because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CSpotlightEnd) == 0x798);
     };
 };

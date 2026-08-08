@@ -20,7 +20,7 @@ namespace source2sdk
         // Has VTable
         // Is Abstract
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CBoneConstraintBase
@@ -29,8 +29,8 @@ namespace source2sdk
             uint8_t _pad0000[0x20];
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::modellib::CBoneConstraintBase) == 0x20);
     };
 };

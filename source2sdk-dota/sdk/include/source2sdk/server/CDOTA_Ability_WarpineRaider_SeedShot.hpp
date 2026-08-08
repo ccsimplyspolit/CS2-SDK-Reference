@@ -25,13 +25,13 @@ namespace source2sdk
         class CDOTA_Ability_WarpineRaider_SeedShot : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            std::int32_t m_iBounces; // 0x580            
-            std::int32_t bounces; // 0x584            
+            std::int32_t m_iBounces; // 0x580
+            std::int32_t bounces; // 0x584
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_WarpineRaider_SeedShot because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_WarpineRaider_SeedShot) == 0x588);
     };
 };

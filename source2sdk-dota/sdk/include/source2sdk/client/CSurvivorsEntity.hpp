@@ -24,13 +24,13 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0000[0x10]; // 0x0
-            source2sdk::client::SurvivorsPhysicsBodyID_t m_unPhysicsBodyID; // 0x10            
+            source2sdk::client::SurvivorsPhysicsBodyID_t m_unPhysicsBodyID; // 0x10
             uint8_t _pad0014[0x14];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::CSurvivorsEntity, m_unPhysicsBodyID) == 0x10);
-        
+
         static_assert(sizeof(source2sdk::client::CSurvivorsEntity) == 0x28);
     };
 };

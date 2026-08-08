@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x40
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Coordinate Space"
         // static metadata: MPropertyDescription "Specifies a coordinate space in which a point or vector value is defined."
@@ -29,13 +29,13 @@ namespace source2sdk
         class CSmartPropVariable_CoordinateSpace : public source2sdk::smartprops::CSmartPropVariable
         {
         public:
-            source2sdk::smartprops::SmartPropSpace_t m_DefaultValue; // 0x38            
+            source2sdk::smartprops::SmartPropSpace_t m_DefaultValue; // 0x38
             uint8_t _pad003c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSmartPropVariable_CoordinateSpace because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::smartprops::CSmartPropVariable_CoordinateSpace) == 0x40);
     };
 };

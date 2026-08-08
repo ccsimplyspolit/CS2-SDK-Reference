@@ -18,7 +18,7 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x10
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct TimeScalingValue_t
@@ -27,27 +27,27 @@ namespace source2sdk
             // metadata: MPropertyFlattenIntoParentRow
             // metadata: MPropertyFlattenIncludeLabel
             // metadata: MPropertyFriendlyName "Base"
-            float m_flBase; // 0x0            
+            float m_flBase; // 0x0
             // metadata: MPropertyFlattenIntoParentRow
             // metadata: MPropertyFlattenIncludeLabel
             // metadata: MPropertyFriendlyName "Growth Per Minute"
-            float m_flPerMinuteAfterStart; // 0x4            
+            float m_flPerMinuteAfterStart; // 0x4
             // metadata: MPropertyFlattenIntoParentRow
             // metadata: MPropertyFlattenIncludeLabel
             // metadata: MPropertyFriendlyName "Growth Start Minute"
-            float m_flStartMinute; // 0x8            
+            float m_flStartMinute; // 0x8
             // metadata: MPropertyFlattenIntoParentRow
             // metadata: MPropertyFlattenIncludeLabel
             // metadata: MPropertyFriendlyName "Max Value"
-            float m_flMaxValue; // 0xc            
+            float m_flMaxValue; // 0xc
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::TimeScalingValue_t, m_flBase) == 0x0);
         static_assert(offsetof(source2sdk::client::TimeScalingValue_t, m_flPerMinuteAfterStart) == 0x4);
         static_assert(offsetof(source2sdk::client::TimeScalingValue_t, m_flStartMinute) == 0x8);
         static_assert(offsetof(source2sdk::client::TimeScalingValue_t, m_flMaxValue) == 0xc);
-        
+
         static_assert(sizeof(source2sdk::client::TimeScalingValue_t) == 0x10);
     };
 };

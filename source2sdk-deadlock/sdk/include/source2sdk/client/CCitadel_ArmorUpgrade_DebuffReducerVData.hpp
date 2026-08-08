@@ -21,7 +21,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x1a88
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CCitadel_ArmorUpgrade_DebuffReducerVData : public source2sdk::client::CitadelItemVData
@@ -30,19 +30,19 @@ namespace source2sdk
             // metadata: MPropertyStartGroup "Visuals"
             // m_DebuffReducedParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_DebuffReducedParticle;
-            char m_DebuffReducedParticle[0xe0]; // 0x18b8            
+            char m_DebuffReducedParticle[0xe0]; // 0x18b8
             // m_PurgeCastParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_PurgeCastParticle;
-            char m_PurgeCastParticle[0xe0]; // 0x1998            
+            char m_PurgeCastParticle[0xe0]; // 0x1998
             // metadata: MPropertyGroupName "Modifiers"
             // m_MoveSpeedModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEmbeddedSubclass<source2sdk::client::CCitadelModifier> m_MoveSpeedModifier;
-            char m_MoveSpeedModifier[0x10]; // 0x1a78            
+            char m_MoveSpeedModifier[0x10]; // 0x1a78
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_ArmorUpgrade_DebuffReducerVData because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_ArmorUpgrade_DebuffReducerVData) == 0x1a88);
     };
 };

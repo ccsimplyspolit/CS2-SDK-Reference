@@ -28,8 +28,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: CDOTA_Ability_Special_Bonus_Attack_Damage_35 has no schema binary (size is a guess)
     };
 };

@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x9b0
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkIncludeByName "m_iHealth"
         // static metadata: MNetworkIncludeByName "m_iMaxHealth"
         #pragma pack(push, 1)
@@ -29,8 +29,8 @@ namespace source2sdk
             uint8_t _pad09a8[0x8];
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::client::CCitadelModelEntity) == 0x9b0);
     };
 };

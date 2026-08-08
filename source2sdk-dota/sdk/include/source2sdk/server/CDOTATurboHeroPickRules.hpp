@@ -26,13 +26,13 @@ namespace source2sdk
         class CDOTATurboHeroPickRules : public source2sdk::server::CDOTABaseCustomHeroPickRules
         {
         public:
-            source2sdk::client::DOTACustomHeroPickRulesPhase_t m_Phase; // 0x498            
+            source2sdk::client::DOTACustomHeroPickRulesPhase_t m_Phase; // 0x498
             uint8_t _pad049c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTATurboHeroPickRules because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTATurboHeroPickRules) == 0x4a0);
     };
 };

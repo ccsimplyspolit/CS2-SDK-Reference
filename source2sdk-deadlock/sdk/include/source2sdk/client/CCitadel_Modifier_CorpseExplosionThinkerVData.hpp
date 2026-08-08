@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x918
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CCitadel_Modifier_CorpseExplosionThinkerVData : public source2sdk::client::CCitadelModifierVData
@@ -29,18 +29,18 @@ namespace source2sdk
             // metadata: MPropertyStartGroup "Visuals"
             // m_WarningParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_WarningParticle;
-            char m_WarningParticle[0xe0]; // 0x750            
+            char m_WarningParticle[0xe0]; // 0x750
             // m_ExplosionParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_ExplosionParticle;
-            char m_ExplosionParticle[0xe0]; // 0x830            
+            char m_ExplosionParticle[0xe0]; // 0x830
             // metadata: MPropertyStartGroup "Gameplay"
-            float m_flTickRate; // 0x910            
+            float m_flTickRate; // 0x910
             uint8_t _pad0914[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_CorpseExplosionThinkerVData because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Modifier_CorpseExplosionThinkerVData) == 0x918);
     };
 };

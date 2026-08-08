@@ -21,7 +21,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x198
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Boolean Switch State"
         // static metadata: MPropertyDescription "While active, activate a child state based on the results of a boolean condition. Any referenced variables must be marked as observable."
@@ -31,15 +31,15 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyDescription "Condition to evaluate when any of its dependent values change."
-            source2sdk::pulse_runtime_lib::PulseObservableBoolExpression_t m_Condition; // 0x48            
-            source2sdk::pulse_runtime_lib::CPulse_OutflowConnection m_SubGraph; // 0xc0            
-            source2sdk::pulse_runtime_lib::CPulse_OutflowConnection m_WhenTrue; // 0x108            
-            source2sdk::pulse_runtime_lib::CPulse_OutflowConnection m_WhenFalse; // 0x150            
+            source2sdk::pulse_runtime_lib::PulseObservableBoolExpression_t m_Condition; // 0x48
+            source2sdk::pulse_runtime_lib::CPulse_OutflowConnection m_SubGraph; // 0xc0
+            source2sdk::pulse_runtime_lib::CPulse_OutflowConnection m_WhenTrue; // 0x108
+            source2sdk::pulse_runtime_lib::CPulse_OutflowConnection m_WhenFalse; // 0x150
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPulseCell_BooleanSwitchState because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::pulse_runtime_lib::CPulseCell_BooleanSwitchState) == 0x198);
     };
 };

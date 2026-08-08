@@ -23,14 +23,14 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0000[0x30]; // 0x0
-            float m_flKillability; // 0x30            
-            std::int32_t m_nEntIndex; // 0x34            
+            float m_flKillability; // 0x30
+            std::int32_t m_nEntIndex; // 0x34
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::DOTAThreatLevelInfo_t, m_flKillability) == 0x30);
         static_assert(offsetof(source2sdk::server::DOTAThreatLevelInfo_t, m_nEntIndex) == 0x34);
-        
+
         static_assert(sizeof(source2sdk::server::DOTAThreatLevelInfo_t) == 0x38);
     };
 };

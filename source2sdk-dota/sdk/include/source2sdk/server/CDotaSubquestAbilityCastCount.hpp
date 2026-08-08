@@ -26,16 +26,16 @@ namespace source2sdk
         class CDotaSubquestAbilityCastCount : public source2sdk::server::CDotaSubquestBase
         {
         public:
-            std::int32_t m_sAbilityNameSymbol; // 0x6f0            
-            std::int32_t m_nTargetCastCount; // 0x6f4            
-            std::int32_t m_nCurrentCastCount; // 0x6f8            
-            bool m_bRequiresChannelSuccess; // 0x6fc            
+            std::int32_t m_sAbilityNameSymbol; // 0x6f0
+            std::int32_t m_nTargetCastCount; // 0x6f4
+            std::int32_t m_nCurrentCastCount; // 0x6f8
+            bool m_bRequiresChannelSuccess; // 0x6fc
             uint8_t _pad06fd[0x3];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDotaSubquestAbilityCastCount because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDotaSubquestAbilityCastCount) == 0x700);
     };
 };

@@ -17,24 +17,24 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a80
+        // Size: 0x1aa0
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Magnataur_Shockwave_Erupt : public source2sdk::client::CDOTA_Buff
         {
         public:
-            std::int32_t scepter_width; // 0x1a58            
-            float scepter_duration; // 0x1a5c            
-            bool play_particle; // 0x1a60            
-            uint8_t _pad1a61[0x3]; // 0x1a61
-            VectorWS m_vStart; // 0x1a64            
-            VectorWS m_vEnd; // 0x1a70            
-            uint8_t _pad1a7c[0x4];
+            std::int32_t scepter_width; // 0x1a78
+            float scepter_duration; // 0x1a7c
+            bool play_particle; // 0x1a80
+            uint8_t _pad1a81[0x3]; // 0x1a81
+            VectorWS m_vStart; // 0x1a84
+            VectorWS m_vEnd; // 0x1a90
+            uint8_t _pad1a9c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Magnataur_Shockwave_Erupt because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Magnataur_Shockwave_Erupt) == 0x1a80);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Magnataur_Shockwave_Erupt) == 0x1aa0);
     };
 };

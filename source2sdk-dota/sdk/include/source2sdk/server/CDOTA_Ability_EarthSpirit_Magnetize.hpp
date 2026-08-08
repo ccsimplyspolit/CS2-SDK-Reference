@@ -25,15 +25,15 @@ namespace source2sdk
         class CDOTA_Ability_EarthSpirit_Magnetize : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            std::int32_t magnetize_self; // 0x580            
-            float cast_radius; // 0x584            
-            float rock_explosion_radius; // 0x588            
-            float damage_duration; // 0x58c            
+            std::int32_t magnetize_self; // 0x580
+            float cast_radius; // 0x584
+            float rock_explosion_radius; // 0x588
+            float damage_duration; // 0x58c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_EarthSpirit_Magnetize because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_EarthSpirit_Magnetize) == 0x590);
     };
 };

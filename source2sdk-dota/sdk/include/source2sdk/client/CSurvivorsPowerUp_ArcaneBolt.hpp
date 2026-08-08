@@ -23,13 +23,13 @@ namespace source2sdk
         class CSurvivorsPowerUp_ArcaneBolt : public source2sdk::client::CSurvivorsPowerUp_ProjectileAttack
         {
         public:
-            float m_flNextShotTimer; // 0x730            
-            std::int32_t m_nShotsFired; // 0x734            
+            float m_flNextShotTimer; // 0x730
+            std::int32_t m_nShotsFired; // 0x734
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSurvivorsPowerUp_ArcaneBolt because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CSurvivorsPowerUp_ArcaneBolt) == 0x738);
     };
 };

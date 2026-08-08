@@ -25,18 +25,18 @@ namespace source2sdk
         class CDOTA_Ability_SandKing_BurrowStrike : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            float burrow_width; // 0x580            
-            std::int32_t burrow_speed; // 0x584            
-            float burrow_anim_time; // 0x588            
-            bool m_bIsVectorTargeted; // 0x58c            
+            float burrow_width; // 0x580
+            std::int32_t burrow_speed; // 0x584
+            float burrow_anim_time; // 0x588
+            bool m_bIsVectorTargeted; // 0x58c
             uint8_t _pad058d[0x3]; // 0x58d
-            VectorWS m_vEndpoint; // 0x590            
+            VectorWS m_vEndpoint; // 0x590
             uint8_t _pad059c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_SandKing_BurrowStrike because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_SandKing_BurrowStrike) == 0x5a0);
     };
 };

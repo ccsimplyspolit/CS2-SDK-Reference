@@ -21,7 +21,7 @@ namespace source2sdk
         // Size: 0x120
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Material Group"
         #pragma pack(push, 1)
@@ -32,15 +32,15 @@ namespace source2sdk
             // metadata: MPropertyProvidesEditContextString
             // m_sModelName has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeCModel>> m_sModelName;
-            char m_sModelName[0xe0]; // 0x38            
+            char m_sModelName[0xe0]; // 0x38
             // metadata: MPropertyFriendlyName "Default Material Group"
             // metadata: MPropertyDescription "Default material group (skin) to assign to the variable value."
-            CModelMaterialGroupName m_DefaultValue; // 0x118            
+            CModelMaterialGroupName m_DefaultValue; // 0x118
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSmartPropVariable_MaterialGroup because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::smartprops::CSmartPropVariable_MaterialGroup) == 0x120);
     };
 };

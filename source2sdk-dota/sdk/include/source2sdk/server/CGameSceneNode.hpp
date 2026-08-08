@@ -28,7 +28,7 @@ namespace source2sdk
         // Size: 0x110
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CGameSceneNode
@@ -36,30 +36,30 @@ namespace source2sdk
         public:
             uint8_t _pad0000[0x10]; // 0x0
             // metadata: MNotSaved
-            CTransformWS m_nodeToWorld; // 0x10            
+            CTransformWS m_nodeToWorld; // 0x10
             // metadata: MNotSaved
-            source2sdk::entity2::CEntityInstance* m_pOwner; // 0x30            
+            source2sdk::entity2::CEntityInstance* m_pOwner; // 0x30
             // metadata: MNotSaved
-            source2sdk::server::CGameSceneNode* m_pParent; // 0x38            
+            source2sdk::server::CGameSceneNode* m_pParent; // 0x38
             // metadata: MNotSaved
-            source2sdk::server::CGameSceneNode* m_pChild; // 0x40            
+            source2sdk::server::CGameSceneNode* m_pChild; // 0x40
             // metadata: MNotSaved
-            source2sdk::server::CGameSceneNode* m_pNextSibling; // 0x48            
+            source2sdk::server::CGameSceneNode* m_pNextSibling; // 0x48
             uint8_t _pad0050[0x20]; // 0x50
-            source2sdk::server::CGameSceneNodeHandle m_hParent; // 0x70            
-            source2sdk::client::CNetworkOriginCellCoordQuantizedVector m_vecOrigin; // 0x80            
+            source2sdk::server::CGameSceneNodeHandle m_hParent; // 0x70
+            source2sdk::client::CNetworkOriginCellCoordQuantizedVector m_vecOrigin; // 0x80
             uint8_t _pad00b0[0x8]; // 0xb0
-            QAngle m_angRotation; // 0xb8            
-            float m_flScale; // 0xc4            
-            VectorWS m_vecAbsOrigin; // 0xc8            
-            QAngle m_angAbsRotation; // 0xd4            
-            float m_flAbsScale; // 0xe0            
+            QAngle m_angRotation; // 0xb8
+            float m_flScale; // 0xc4
+            VectorWS m_vecAbsOrigin; // 0xc8
+            QAngle m_angAbsRotation; // 0xd4
+            float m_flAbsScale; // 0xe0
             // metadata: MNotSaved
-            std::int16_t m_nParentAttachmentOrBone; // 0xe4            
+            std::int16_t m_nParentAttachmentOrBone; // 0xe4
             // metadata: MNotSaved
-            bool m_bDebugAbsOriginChanges; // 0xe6            
-            bool m_bDormant; // 0xe7            
-            bool m_bForceParentToBeNetworked; // 0xe8            
+            bool m_bDebugAbsOriginChanges; // 0xe6
+            bool m_bDormant; // 0xe7
+            bool m_bForceParentToBeNetworked; // 0xe8
             // start of bitfield block
             // metadata: MNotSaved
             uint16_t m_bDirtyHierarchy: 1;
@@ -81,18 +81,18 @@ namespace source2sdk
             uint16_t m_bDirtyBoneMergeBoneToRoot: 1;
             // end of bitfield block// 10 bits
             // metadata: MNotSaved
-            std::uint8_t m_nHierarchicalDepth; // 0xeb            
+            std::uint8_t m_nHierarchicalDepth; // 0xeb
             // metadata: MNotSaved
-            std::uint8_t m_nHierarchyType; // 0xec            
+            std::uint8_t m_nHierarchyType; // 0xec
             // metadata: MNotSaved
-            std::uint8_t m_nDoNotSetAnimTimeInInvalidatePhysicsCount; // 0xed            
+            std::uint8_t m_nDoNotSetAnimTimeInInvalidatePhysicsCount; // 0xed
             uint8_t _pad00ee[0x2]; // 0xee
-            CUtlStringToken m_name; // 0xf0            
+            CUtlStringToken m_name; // 0xf0
             uint8_t _pad00f4[0x10]; // 0xf4
-            CUtlStringToken m_hierarchyAttachName; // 0x104            
-            float m_flClientLocalScale; // 0x108            
+            CUtlStringToken m_hierarchyAttachName; // 0x104
+            float m_flClientLocalScale; // 0x108
             uint8_t _pad010c[0x4];
-            
+
             // Datamap fields:
             // CHandle< CBaseEntity > parentname; // 0x7fffffff
             // bool useLocalOffset; // 0x7fffffff
@@ -104,7 +104,7 @@ namespace source2sdk
             // float ModelScale; // 0x7fffffff
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::CGameSceneNode, m_nodeToWorld) == 0x10);
         static_assert(offsetof(source2sdk::server::CGameSceneNode, m_pOwner) == 0x30);
         static_assert(offsetof(source2sdk::server::CGameSceneNode, m_pParent) == 0x38);
@@ -136,7 +136,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::server::CGameSceneNode, m_name) == 0xf0);
         static_assert(offsetof(source2sdk::server::CGameSceneNode, m_hierarchyAttachName) == 0x104);
         static_assert(offsetof(source2sdk::server::CGameSceneNode, m_flClientLocalScale) == 0x108);
-        
+
         static_assert(sizeof(source2sdk::server::CGameSceneNode) == 0x110);
     };
 };

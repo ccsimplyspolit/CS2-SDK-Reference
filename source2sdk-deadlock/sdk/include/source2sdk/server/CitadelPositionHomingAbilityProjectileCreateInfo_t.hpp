@@ -22,13 +22,13 @@ namespace source2sdk
         struct CitadelPositionHomingAbilityProjectileCreateInfo_t : public source2sdk::server::CitadelAbilityProjectileCreateInfo_t
         {
         public:
-            Vector m_vecHomingPosition; // 0x60            
+            Vector m_vecHomingPosition; // 0x60
             uint8_t _pad006c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CitadelPositionHomingAbilityProjectileCreateInfo_t because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CitadelPositionHomingAbilityProjectileCreateInfo_t) == 0x70);
     };
 };

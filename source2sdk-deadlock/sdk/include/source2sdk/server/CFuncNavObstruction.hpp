@@ -24,14 +24,14 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0780[0x18]; // 0x780
-            bool m_bDisabled; // 0x798            
-            bool m_bUseAsyncObstacleUpdate; // 0x799            
+            bool m_bDisabled; // 0x798
+            bool m_bUseAsyncObstacleUpdate; // 0x799
             uint8_t _pad079a[0x6];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CFuncNavObstruction because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CFuncNavObstruction) == 0x7a0);
     };
 };

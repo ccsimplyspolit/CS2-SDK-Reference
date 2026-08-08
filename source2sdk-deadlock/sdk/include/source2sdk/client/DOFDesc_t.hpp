@@ -18,28 +18,28 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x10
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct DOFDesc_t
         {
         public:
             // metadata: MPropertyDescription "Blurry up through this distance."
-            float m_flDofNearBlurry; // 0x0            
+            float m_flDofNearBlurry; // 0x0
             // metadata: MPropertyDescription "Progress to crisp at this distance."
-            float m_flDofNearCrisp; // 0x4            
+            float m_flDofNearCrisp; // 0x4
             // metadata: MPropertyDescription "Stay crisp up through this distance."
-            float m_flDofFarCrisp; // 0x8            
+            float m_flDofFarCrisp; // 0x8
             // metadata: MPropertyDescription "Progress blurry at this distance."
-            float m_flDofFarBlurry; // 0xc            
+            float m_flDofFarBlurry; // 0xc
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::DOFDesc_t, m_flDofNearBlurry) == 0x0);
         static_assert(offsetof(source2sdk::client::DOFDesc_t, m_flDofNearCrisp) == 0x4);
         static_assert(offsetof(source2sdk::client::DOFDesc_t, m_flDofFarCrisp) == 0x8);
         static_assert(offsetof(source2sdk::client::DOFDesc_t, m_flDofFarBlurry) == 0xc);
-        
+
         static_assert(sizeof(source2sdk::client::DOFDesc_t) == 0x10);
     };
 };

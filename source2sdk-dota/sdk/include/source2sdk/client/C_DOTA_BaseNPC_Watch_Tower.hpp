@@ -18,7 +18,7 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x1a38
+        // Size: 0x1a40
         // Has VTable
         // Construct allowed
         // MClassHasEntityLimitedDataDesc
@@ -26,15 +26,15 @@ namespace source2sdk
         class C_DOTA_BaseNPC_Watch_Tower : public source2sdk::client::C_DOTA_BaseNPC_Building
         {
         public:
-            source2sdk::client::ParticleIndex_t m_iRangeFX; // 0x1a20            
-            uint8_t _pad1a24[0x4]; // 0x1a24
-            CUtlSymbolLarge m_szOutpostName; // 0x1a28            
-            CUtlSymbolLarge m_szInteractAbilityName; // 0x1a30            
+            source2sdk::client::ParticleIndex_t m_iRangeFX; // 0x1a28
+            uint8_t _pad1a2c[0x4]; // 0x1a2c
+            CUtlSymbolLarge m_szOutpostName; // 0x1a30
+            CUtlSymbolLarge m_szInteractAbilityName; // 0x1a38
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_BaseNPC_Watch_Tower because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::C_DOTA_BaseNPC_Watch_Tower) == 0x1a38);
+
+        static_assert(sizeof(source2sdk::client::C_DOTA_BaseNPC_Watch_Tower) == 0x1a40);
     };
 };

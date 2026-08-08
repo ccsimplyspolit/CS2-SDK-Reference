@@ -26,19 +26,19 @@ namespace source2sdk
         public:
             uint8_t _pad0000[0x8]; // 0x0
             // metadata: MNotSaved
-            source2sdk::entity2::CNetworkVarChainer __m_pChainEntity; // 0x8            
-            std::int32_t m_nTotalPausedTicks; // 0x30            
-            std::int32_t m_nPauseStartTick; // 0x34            
-            bool m_bGamePaused; // 0x38            
+            source2sdk::entity2::CNetworkVarChainer __m_pChainEntity; // 0x8
+            std::int32_t m_nTotalPausedTicks; // 0x30
+            std::int32_t m_nPauseStartTick; // 0x34
+            bool m_bGamePaused; // 0x38
             uint8_t _pad0039[0x7];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::C_GameRules, __m_pChainEntity) == 0x8);
         static_assert(offsetof(source2sdk::client::C_GameRules, m_nTotalPausedTicks) == 0x30);
         static_assert(offsetof(source2sdk::client::C_GameRules, m_nPauseStartTick) == 0x34);
         static_assert(offsetof(source2sdk::client::C_GameRules, m_bGamePaused) == 0x38);
-        
+
         static_assert(sizeof(source2sdk::client::C_GameRules) == 0x40);
     };
 };

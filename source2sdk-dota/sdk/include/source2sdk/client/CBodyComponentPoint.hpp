@@ -22,19 +22,19 @@ namespace source2sdk
         // Has VTable
         // Construct allowed
         // Construct disallowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CBodyComponentPoint : public source2sdk::client::CBodyComponent
         {
         public:
             uint8_t _pad0078[0x8]; // 0x78
-            source2sdk::client::CGameSceneNode m_sceneNode; // 0x80            
+            source2sdk::client::CGameSceneNode m_sceneNode; // 0x80
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CBodyComponentPoint because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CBodyComponentPoint) == 0x1d0);
     };
 };

@@ -29,7 +29,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x16f8
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "bool m_bHasTurretReady"
         // static metadata: MNetworkVarNames "int m_iCurrentSwapCount"
         // static metadata: MNetworkVarNames "GameTime_t m_flTurretExpireTime"
@@ -40,25 +40,25 @@ namespace source2sdk
         public:
             uint8_t _pad11d8[0x280]; // 0x11d8
             // metadata: MNetworkEnable
-            bool m_bHasTurretReady; // 0x1458            
+            bool m_bHasTurretReady; // 0x1458
             uint8_t _pad1459[0x3]; // 0x1459
             // metadata: MNetworkEnable
-            std::int32_t m_iCurrentSwapCount; // 0x145c            
+            std::int32_t m_iCurrentSwapCount; // 0x145c
             // metadata: MNetworkEnable
-            source2sdk::entity2::GameTime_t m_flTurretExpireTime; // 0x1460            
+            source2sdk::entity2::GameTime_t m_flTurretExpireTime; // 0x1460
             uint8_t _pad1464[0x4]; // 0x1464
-            source2sdk::client::ShotID_t m_nLastBulletShotID; // 0x1468            
+            source2sdk::client::ShotID_t m_nLastBulletShotID; // 0x1468
             // metadata: MNetworkEnable
             // m_pActiveTurret has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::C_BaseEntity> m_pActiveTurret;
-            char m_pActiveTurret[0x4]; // 0x146c            
-            source2sdk::client::ParticleIndex_t m_nTurretFXIndex; // 0x1470            
+            char m_pActiveTurret[0x4]; // 0x146c
+            source2sdk::client::ParticleIndex_t m_nTurretFXIndex; // 0x1470
             uint8_t _pad1474[0x284];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_TurretClone because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Ability_TurretClone) == 0x16f8);
     };
 };

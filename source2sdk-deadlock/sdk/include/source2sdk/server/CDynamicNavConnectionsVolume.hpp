@@ -24,21 +24,21 @@ namespace source2sdk
         class CDynamicNavConnectionsVolume : public source2sdk::server::CTriggerMultiple
         {
         public:
-            CUtlSymbolLarge m_iszConnectionTarget; // 0x8f8            
+            CUtlSymbolLarge m_iszConnectionTarget; // 0x8f8
             // m_vecConnections has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::server::DynamicVolumeDef_t> m_vecConnections;
-            char m_vecConnections[0x18]; // 0x900            
-            CGlobalSymbol m_sTransitionType; // 0x918            
-            bool m_bConnectionsEnabled; // 0x920            
+            char m_vecConnections[0x18]; // 0x900
+            CGlobalSymbol m_sTransitionType; // 0x918
+            bool m_bConnectionsEnabled; // 0x920
             uint8_t _pad0921[0x3]; // 0x921
-            float m_flTargetAreaSearchRadius; // 0x924            
-            float m_flUpdateDistance; // 0x928            
-            float m_flMaxConnectionDistance; // 0x92c            
+            float m_flTargetAreaSearchRadius; // 0x924
+            float m_flUpdateDistance; // 0x928
+            float m_flMaxConnectionDistance; // 0x92c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDynamicNavConnectionsVolume because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDynamicNavConnectionsVolume) == 0x930);
     };
 };

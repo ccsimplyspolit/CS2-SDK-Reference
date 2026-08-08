@@ -17,21 +17,21 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a68
+        // Size: 0x1a88
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Undying_Tombstone_Bunker : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float bunker_heal_pct; // 0x1a58            
-            float tombstone_grab_radius; // 0x1a5c            
-            float tombstone_stun_penalty; // 0x1a60            
-            uint8_t _pad1a64[0x4];
+            float bunker_heal_pct; // 0x1a78
+            float tombstone_grab_radius; // 0x1a7c
+            float tombstone_stun_penalty; // 0x1a80
+            uint8_t _pad1a84[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Undying_Tombstone_Bunker because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Undying_Tombstone_Bunker) == 0x1a68);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Undying_Tombstone_Bunker) == 0x1a88);
     };
 };

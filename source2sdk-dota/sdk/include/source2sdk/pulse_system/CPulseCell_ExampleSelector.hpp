@@ -21,7 +21,7 @@ namespace source2sdk
         // Size: 0x60
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Select Example Criteria"
         // static metadata: MPropertyDescription "Evaluate the requirements of each connected node"
@@ -31,12 +31,12 @@ namespace source2sdk
         class CPulseCell_ExampleSelector : public source2sdk::pulse_runtime_lib::CPulseCell_BaseFlow
         {
         public:
-            source2sdk::pulse_runtime_lib::PulseSelectorOutflowList_t m_OutflowList; // 0x48            
+            source2sdk::pulse_runtime_lib::PulseSelectorOutflowList_t m_OutflowList; // 0x48
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPulseCell_ExampleSelector because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::pulse_system::CPulseCell_ExampleSelector) == 0x60);
     };
 };

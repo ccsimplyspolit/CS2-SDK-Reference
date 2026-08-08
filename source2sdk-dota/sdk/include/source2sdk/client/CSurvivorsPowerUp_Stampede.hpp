@@ -35,15 +35,15 @@ namespace source2sdk
             uint8_t _pad0608[0x30]; // 0x608
             // m_sParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_sParticle;
-            char m_sParticle[0xe0]; // 0x638            
-            source2sdk::client::SurvivorsParticleID_t m_unParticleID; // 0x718            
+            char m_sParticle[0xe0]; // 0x638
+            source2sdk::client::SurvivorsParticleID_t m_unParticleID; // 0x718
             uint8_t _pad071c[0x4]; // 0x71c
-            source2sdk::particleslib::CNewParticleEffect* m_pParticle; // 0x720            
+            source2sdk::particleslib::CNewParticleEffect* m_pParticle; // 0x720
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSurvivorsPowerUp_Stampede because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CSurvivorsPowerUp_Stampede) == 0x728);
     };
 };

@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x70
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Filter: Variable Value"
         // static metadata: MPropertyDescription "Compares the current value of a variable to the specified value. If the comparison is false the element evaluation is stopped."
@@ -28,12 +28,12 @@ namespace source2sdk
         class CSmartPropFilter_VariableValue : public source2sdk::smartprops::CSmartPropFilter
         {
         public:
-            CSmartPropVariableComparison m_VariableComparison; // 0x50            
+            CSmartPropVariableComparison m_VariableComparison; // 0x50
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSmartPropFilter_VariableValue because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::smartprops::CSmartPropFilter_VariableValue) == 0x70);
     };
 };

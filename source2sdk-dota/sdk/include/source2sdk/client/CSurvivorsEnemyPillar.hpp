@@ -30,16 +30,16 @@ namespace source2sdk
         class CSurvivorsEnemyPillar : public source2sdk::client::CSurvivorsEnemy
         {
         public:
-            bool m_bDestroyed; // 0x338            
+            bool m_bDestroyed; // 0x338
             uint8_t _pad0339[0x3]; // 0x339
             // m_pPillarEntity has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::C_BaseModelEntity> m_pPillarEntity;
-            char m_pPillarEntity[0x4]; // 0x33c            
+            char m_pPillarEntity[0x4]; // 0x33c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSurvivorsEnemyPillar because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CSurvivorsEnemyPillar) == 0x340);
     };
 };

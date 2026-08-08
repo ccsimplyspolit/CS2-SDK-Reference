@@ -17,23 +17,23 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a70
+        // Size: 0x1a90
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Item_CrellasCrozier_Active : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float interval; // 0x1a58            
-            float movespeed_steal_pct; // 0x1a5c            
-            float active_health_steal; // 0x1a60            
-            float active_radius; // 0x1a64            
-            float stack_duration; // 0x1a68            
-            float m_flHealAmount; // 0x1a6c            
+            float interval; // 0x1a78
+            float movespeed_steal_pct; // 0x1a7c
+            float active_health_steal; // 0x1a80
+            float active_radius; // 0x1a84
+            float stack_duration; // 0x1a88
+            float m_flHealAmount; // 0x1a8c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Item_CrellasCrozier_Active because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Item_CrellasCrozier_Active) == 0x1a70);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Item_CrellasCrozier_Active) == 0x1a90);
     };
 };

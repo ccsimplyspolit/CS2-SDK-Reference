@@ -21,20 +21,20 @@ namespace source2sdk
         // Size: 0x18
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CNmFloatAngleMathNode_CDefinition : public source2sdk::animlib::CNmFloatValueNode_CDefinition
         {
         public:
-            std::int16_t m_nInputValueNodeIdx; // 0x10            
-            source2sdk::animlib::CNmFloatAngleMathNode_Operation_t m_operation; // 0x12            
+            std::int16_t m_nInputValueNodeIdx; // 0x10
+            source2sdk::animlib::CNmFloatAngleMathNode_Operation_t m_operation; // 0x12
             uint8_t _pad0013[0x5];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CNmFloatAngleMathNode::CDefinition because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::animlib::CNmFloatAngleMathNode_CDefinition) == 0x18);
     };
 };

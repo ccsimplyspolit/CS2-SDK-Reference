@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x628
         // Has VTable
-        // 
+        //
         // static metadata: MEntityAllowsPortraitWorldSpawn
         // static metadata: MNetworkVarNames "bool m_bActive"
         // static metadata: MNetworkVarNames "Vector m_vBoxMins"
@@ -35,35 +35,35 @@ namespace source2sdk
         {
         public:
             // metadata: MNetworkEnable
-            bool m_bActive; // 0x5f0            
+            bool m_bActive; // 0x5f0
             uint8_t _pad05f1[0x3]; // 0x5f1
             // metadata: MNetworkEnable
-            Vector m_vBoxMins; // 0x5f4            
+            Vector m_vBoxMins; // 0x5f4
             // metadata: MNetworkEnable
-            Vector m_vBoxMaxs; // 0x600            
+            Vector m_vBoxMaxs; // 0x600
             // metadata: MNetworkEnable
-            bool m_bStartDisabled; // 0x60c            
+            bool m_bStartDisabled; // 0x60c
             uint8_t _pad060d[0x3]; // 0x60d
             // metadata: MNetworkEnable
-            std::int32_t m_nShape; // 0x610            
+            std::int32_t m_nShape; // 0x610
             // metadata: MNetworkEnable
-            float m_fWindSpeedMultiplier; // 0x614            
+            float m_fWindSpeedMultiplier; // 0x614
             // metadata: MNetworkEnable
-            float m_fWindTurbulenceMultiplier; // 0x618            
+            float m_fWindTurbulenceMultiplier; // 0x618
             // metadata: MNetworkEnable
-            float m_fWindSpeedVariationMultiplier; // 0x61c            
+            float m_fWindSpeedVariationMultiplier; // 0x61c
             // metadata: MNetworkEnable
-            float m_fWindDirectionVariationMultiplier; // 0x620            
+            float m_fWindDirectionVariationMultiplier; // 0x620
             uint8_t _pad0624[0x4];
-            
+
             // Datamap fields:
             // bool InputEnable; // 0x0
             // bool InputDisable; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_EnvWindVolume because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_EnvWindVolume) == 0x628);
     };
 };

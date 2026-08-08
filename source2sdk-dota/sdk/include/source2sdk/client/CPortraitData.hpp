@@ -32,16 +32,16 @@ namespace source2sdk
         public:
             // m_RenderList has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::client::C_BaseEntity>> m_RenderList;
-            char m_RenderList[0x18]; // 0xdd0            
+            char m_RenderList[0x18]; // 0xdd0
             // m_hHero has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::C_BaseEntity> m_hHero;
-            char m_hHero[0x4]; // 0xde8            
+            char m_hHero[0x4]; // 0xde8
             uint8_t _pad0dec[0x14];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPortraitData because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CPortraitData) == 0xe00);
     };
 };

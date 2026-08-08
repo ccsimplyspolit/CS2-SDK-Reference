@@ -34,16 +34,16 @@ namespace source2sdk
         public:
             // m_hEntsHit has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::client::C_BaseEntity>> m_hEntsHit;
-            char m_hEntsHit[0x18]; // 0x758            
-            std::int32_t damage; // 0x770            
-            float duration; // 0x774            
-            float spend_charge_delay; // 0x778            
+            char m_hEntsHit[0x18]; // 0x758
+            std::int32_t damage; // 0x770
+            float duration; // 0x774
+            float spend_charge_delay; // 0x778
             uint8_t _pad077c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_AghsFort_Ravage_Potion because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CDOTA_Ability_AghsFort_Ravage_Potion) == 0x780);
     };
 };

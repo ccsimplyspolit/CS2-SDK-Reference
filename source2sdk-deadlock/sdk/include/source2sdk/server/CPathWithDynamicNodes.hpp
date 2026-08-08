@@ -26,7 +26,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x5f0
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "CHandle< CPathNode > m_vecPathNodes"
         // static metadata: MNetworkVarNames "CTransform m_xInitialPathWorldToLocal"
         #pragma pack(push, 1)
@@ -36,15 +36,15 @@ namespace source2sdk
             // metadata: MNetworkEnable
             // m_vecPathNodes has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CNetworkUtlVectorBase<CHandle<source2sdk::server::CPathNode>> m_vecPathNodes;
-            char m_vecPathNodes[0x18]; // 0x5b0            
+            char m_vecPathNodes[0x18]; // 0x5b0
             uint8_t _pad05c8[0x8]; // 0x5c8
             // metadata: MNetworkEnable
-            CTransform m_xInitialPathWorldToLocal; // 0x5d0            
+            CTransform m_xInitialPathWorldToLocal; // 0x5d0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPathWithDynamicNodes because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CPathWithDynamicNodes) == 0x5f0);
     };
 };

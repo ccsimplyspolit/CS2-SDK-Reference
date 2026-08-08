@@ -30,16 +30,16 @@ namespace source2sdk
         class CTriggerVolume : public source2sdk::server::CBaseModelEntity
         {
         public:
-            CUtlSymbolLarge m_iFilterName; // 0x780            
+            CUtlSymbolLarge m_iFilterName; // 0x780
             // m_hFilter has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseFilter> m_hFilter;
-            char m_hFilter[0x4]; // 0x788            
+            char m_hFilter[0x4]; // 0x788
             uint8_t _pad078c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CTriggerVolume because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CTriggerVolume) == 0x790);
     };
 };

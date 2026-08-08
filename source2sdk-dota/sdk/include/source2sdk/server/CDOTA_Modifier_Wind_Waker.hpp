@@ -25,7 +25,7 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a80
+        // Size: 0x1aa0
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Wind_Waker : public source2sdk::client::CDOTA_Buff
@@ -33,17 +33,17 @@ namespace source2sdk
         public:
             // m_hBlocker has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hBlocker;
-            char m_hBlocker[0x4]; // 0x1a58            
-            source2sdk::entity2::GameTime_t m_flStartTime; // 0x1a5c            
-            VectorWS m_vStartPos; // 0x1a60            
-            float m_flCurTime; // 0x1a6c            
-            float m_flHeightT; // 0x1a70            
-            VectorWS m_vMoveToPos; // 0x1a74            
+            char m_hBlocker[0x4]; // 0x1a78
+            source2sdk::entity2::GameTime_t m_flStartTime; // 0x1a7c
+            VectorWS m_vStartPos; // 0x1a80
+            float m_flCurTime; // 0x1a8c
+            float m_flHeightT; // 0x1a90
+            VectorWS m_vMoveToPos; // 0x1a94
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Wind_Waker because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Wind_Waker) == 0x1a80);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Wind_Waker) == 0x1aa0);
     };
 };

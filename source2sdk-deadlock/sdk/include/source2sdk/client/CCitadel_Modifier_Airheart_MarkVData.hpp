@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x968
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CCitadel_Modifier_Airheart_MarkVData : public source2sdk::client::CCitadelModifierAuraVData
@@ -29,15 +29,15 @@ namespace source2sdk
             // metadata: MPropertyStartGroup "Visuals"
             // m_IndicatorFX has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_IndicatorFX;
-            char m_IndicatorFX[0xe0]; // 0x7a8            
+            char m_IndicatorFX[0xe0]; // 0x7a8
             // m_ExplosionFX has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_ExplosionFX;
-            char m_ExplosionFX[0xe0]; // 0x888            
+            char m_ExplosionFX[0xe0]; // 0x888
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_Airheart_MarkVData because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Modifier_Airheart_MarkVData) == 0x968);
     };
 };

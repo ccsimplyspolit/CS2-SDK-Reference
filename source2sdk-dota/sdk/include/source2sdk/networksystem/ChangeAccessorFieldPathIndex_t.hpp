@@ -22,12 +22,12 @@ namespace source2sdk
         struct ChangeAccessorFieldPathIndex_t
         {
         public:
-            std::int32_t m_Value; // 0x0            
+            std::int32_t m_Value; // 0x0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::networksystem::ChangeAccessorFieldPathIndex_t, m_Value) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::networksystem::ChangeAccessorFieldPathIndex_t) == 0x4);
     };
 };

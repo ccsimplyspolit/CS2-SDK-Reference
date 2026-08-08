@@ -22,7 +22,7 @@ namespace source2sdk
         // Size: 0xe8
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Selector"
         // static metadata: MPropertyDescription "Plays a selected vsnd on playback."
@@ -31,20 +31,20 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "Playback Mode"
-            source2sdk::soundsystem_voicecontainers::PlayBackMode_t m_mode; // 0x70            
+            source2sdk::soundsystem_voicecontainers::PlayBackMode_t m_mode; // 0x70
             uint8_t _pad0074[0x4]; // 0x74
             // metadata: MPropertyFriendlyName "Sounds To play"
-            source2sdk::soundsystem_voicecontainers::CSoundContainerReferenceArray m_soundsToPlay; // 0x78            
+            source2sdk::soundsystem_voicecontainers::CSoundContainerReferenceArray m_soundsToPlay; // 0x78
             // metadata: MPropertyFriendlyName "Relative Weights"
             // m_fProbabilityWeights has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<float> m_fProbabilityWeights;
-            char m_fProbabilityWeights[0x18]; // 0xb0            
+            char m_fProbabilityWeights[0x18]; // 0xb0
             uint8_t _pad00c8[0x20];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CVoiceContainerSelector because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::soundsystem_voicecontainers::CVoiceContainerSelector) == 0xe8);
     };
 };

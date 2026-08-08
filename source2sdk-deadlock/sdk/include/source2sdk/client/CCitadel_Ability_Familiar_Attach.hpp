@@ -26,7 +26,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x1700
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "EHANDLE m_vecTagAlongVisitedAllies"
         // static metadata: MNetworkVarNames "EHANDLE m_hLastAttachedTo"
         #pragma pack(push, 1)
@@ -37,17 +37,17 @@ namespace source2sdk
             // metadata: MNetworkEnable
             // m_vecTagAlongVisitedAllies has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // C_NetworkUtlVectorBase<CHandle<source2sdk::client::C_BaseEntity>> m_vecTagAlongVisitedAllies;
-            char m_vecTagAlongVisitedAllies[0x18]; // 0x11e0            
+            char m_vecTagAlongVisitedAllies[0x18]; // 0x11e0
             // metadata: MNetworkEnable
             // m_hLastAttachedTo has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::C_BaseEntity> m_hLastAttachedTo;
-            char m_hLastAttachedTo[0x4]; // 0x11f8            
+            char m_hLastAttachedTo[0x4]; // 0x11f8
             uint8_t _pad11fc[0x504];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_Familiar_Attach because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Ability_Familiar_Attach) == 0x1700);
     };
 };

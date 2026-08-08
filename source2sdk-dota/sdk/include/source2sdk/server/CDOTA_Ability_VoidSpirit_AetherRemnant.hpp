@@ -25,19 +25,19 @@ namespace source2sdk
         class CDOTA_Ability_VoidSpirit_AetherRemnant : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            float start_radius; // 0x580            
-            float end_radius; // 0x584            
-            float remnant_watch_distance; // 0x588            
-            float projectile_speed; // 0x58c            
+            float start_radius; // 0x580
+            float end_radius; // 0x584
+            float remnant_watch_distance; // 0x588
+            float projectile_speed; // 0x58c
             uint8_t _pad0590[0x14]; // 0x590
-            VectorWS m_vDashPosition; // 0x5a4            
-            VectorWS m_vFacePosition; // 0x5b0            
-            VectorWS m_vEndpoint; // 0x5bc            
+            VectorWS m_vDashPosition; // 0x5a4
+            VectorWS m_vFacePosition; // 0x5b0
+            VectorWS m_vEndpoint; // 0x5bc
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_VoidSpirit_AetherRemnant because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_VoidSpirit_AetherRemnant) == 0x5c8);
     };
 };

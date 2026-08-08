@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x760
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CCitadelModifierProjectilePitchingLoopSoundThinkerVData : public source2sdk::client::CCitadelModifierVData
@@ -28,12 +28,12 @@ namespace source2sdk
         public:
             // metadata: MPropertyGroupName "Audio"
             // metadata: MPropertyDescription "Remap values from Speed to Pitch (MinSpeed, MaxSpeed, MinSpeedPitch, MaxSpeedPitch)"
-            source2sdk::client::CRemapFloat m_speedToPitchRemap; // 0x750            
+            source2sdk::client::CRemapFloat m_speedToPitchRemap; // 0x750
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadelModifierProjectilePitchingLoopSoundThinkerVData because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadelModifierProjectilePitchingLoopSoundThinkerVData) == 0x760);
     };
 };

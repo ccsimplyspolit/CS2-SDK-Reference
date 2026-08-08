@@ -35,19 +35,19 @@ namespace source2sdk
         public:
             // m_hTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hTarget;
-            char m_hTarget[0x4]; // 0x0            
-            VectorWS m_vPosition; // 0x4            
-            Vector m_vDirection; // 0x10            
-            bool m_bDiscardOutsideViewcone; // 0x1c            
+            char m_hTarget[0x4]; // 0x0
+            VectorWS m_vPosition; // 0x4
+            Vector m_vDirection; // 0x10
+            bool m_bDiscardOutsideViewcone; // 0x1c
             uint8_t _pad001d[0x3]; // 0x1d
-            source2sdk::client::ChoreoLookAtMode_t m_nLookAtMode; // 0x20            
-            source2sdk::client::ChoreoLookAtSpeed_t m_nLookAtSpeed; // 0x24            
-            source2sdk::server::CAI_InterestTarget_Type_t m_eType; // 0x28            
-            WorldGroupId_t m_nWorldGroupId; // 0x2c            
-            source2sdk::entity2::GameTime_t m_flEndTime; // 0x30            
+            source2sdk::client::ChoreoLookAtMode_t m_nLookAtMode; // 0x20
+            source2sdk::client::ChoreoLookAtSpeed_t m_nLookAtSpeed; // 0x24
+            source2sdk::server::CAI_InterestTarget_Type_t m_eType; // 0x28
+            WorldGroupId_t m_nWorldGroupId; // 0x2c
+            source2sdk::entity2::GameTime_t m_flEndTime; // 0x30
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::CAI_InterestTarget, m_hTarget) == 0x0);
         static_assert(offsetof(source2sdk::server::CAI_InterestTarget, m_vPosition) == 0x4);
         static_assert(offsetof(source2sdk::server::CAI_InterestTarget, m_vDirection) == 0x10);
@@ -57,7 +57,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::server::CAI_InterestTarget, m_eType) == 0x28);
         static_assert(offsetof(source2sdk::server::CAI_InterestTarget, m_nWorldGroupId) == 0x2c);
         static_assert(offsetof(source2sdk::server::CAI_InterestTarget, m_flEndTime) == 0x30);
-        
+
         static_assert(sizeof(source2sdk::server::CAI_InterestTarget) == 0x34);
     };
 };

@@ -17,33 +17,33 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1aa0
+        // Size: 0x1ac0
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Slark_Pounce : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float m_flTotalTime; // 0x1a58            
-            float m_flInitialVelocity; // 0x1a5c            
-            VectorWS m_vStartPosition; // 0x1a60            
-            Vector m_vTargetHorizontalDirection; // 0x1a6c            
-            float m_flCurrentTimeHoriz; // 0x1a78            
-            float m_flCurrentTimeVert; // 0x1a7c            
-            bool m_bInterrupted; // 0x1a80            
-            bool m_bFoundUnit; // 0x1a81            
-            uint8_t _pad1a82[0x2]; // 0x1a82
-            std::int32_t pounce_distance; // 0x1a84            
-            std::int32_t pounce_distance_scepter; // 0x1a88            
-            float pounce_speed; // 0x1a8c            
-            float pounce_acceleration; // 0x1a90            
-            std::int32_t pounce_radius; // 0x1a94            
-            std::int32_t pounce_damage; // 0x1a98            
-            float leash_duration; // 0x1a9c            
+            float m_flTotalTime; // 0x1a78
+            float m_flInitialVelocity; // 0x1a7c
+            VectorWS m_vStartPosition; // 0x1a80
+            Vector m_vTargetHorizontalDirection; // 0x1a8c
+            float m_flCurrentTimeHoriz; // 0x1a98
+            float m_flCurrentTimeVert; // 0x1a9c
+            bool m_bInterrupted; // 0x1aa0
+            bool m_bFoundUnit; // 0x1aa1
+            uint8_t _pad1aa2[0x2]; // 0x1aa2
+            std::int32_t pounce_distance; // 0x1aa4
+            std::int32_t pounce_distance_scepter; // 0x1aa8
+            float pounce_speed; // 0x1aac
+            float pounce_acceleration; // 0x1ab0
+            std::int32_t pounce_radius; // 0x1ab4
+            std::int32_t pounce_damage; // 0x1ab8
+            float leash_duration; // 0x1abc
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Slark_Pounce because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Slark_Pounce) == 0x1aa0);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Slark_Pounce) == 0x1ac0);
     };
 };

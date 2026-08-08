@@ -29,12 +29,12 @@ namespace source2sdk
         struct EventBugBugComplete_t
         {
         public:
-            source2sdk::client::EventBugBug_t* m_pPayload; // 0x0            
+            source2sdk::client::EventBugBug_t* m_pPayload; // 0x0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::EventBugBugComplete_t, m_pPayload) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::client::EventBugBugComplete_t) == 0x8);
     };
 };

@@ -34,13 +34,13 @@ namespace source2sdk
         public:
             // m_hScepterIllusion has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::C_BaseEntity> m_hScepterIllusion;
-            char m_hScepterIllusion[0x4]; // 0x6a8            
+            char m_hScepterIllusion[0x4]; // 0x6a8
             uint8_t _pad06ac[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_VengefulSpirit_Command_Aura because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_VengefulSpirit_Command_Aura) == 0x6b0);
     };
 };

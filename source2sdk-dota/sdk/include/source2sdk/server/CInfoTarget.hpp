@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x498
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MEntityAllowsPortraitWorldSpawn
         #pragma pack(push, 1)
         class CInfoTarget : public source2sdk::server::CPointEntity
@@ -28,8 +28,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::server::CInfoTarget) == 0x498);
     };
 };

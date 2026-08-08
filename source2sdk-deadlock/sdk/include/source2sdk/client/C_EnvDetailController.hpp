@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x5f8
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "float32 m_flFadeStartDist"
         // static metadata: MNetworkVarNames "float32 m_flFadeEndDist"
         #pragma pack(push, 1)
@@ -27,14 +27,14 @@ namespace source2sdk
         {
         public:
             // metadata: MNetworkEnable
-            float m_flFadeStartDist; // 0x5f0            
+            float m_flFadeStartDist; // 0x5f0
             // metadata: MNetworkEnable
-            float m_flFadeEndDist; // 0x5f4            
+            float m_flFadeEndDist; // 0x5f4
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_EnvDetailController because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_EnvDetailController) == 0x5f8);
     };
 };

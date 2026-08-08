@@ -3,8 +3,11 @@
 Full Dota 2 SDK generated from the installed game by [`../source2gen/`](../source2gen/)
 (built with `-o game=DOTA2`).
 
-**17219 headers across 32 modules**, generated 2026-07-19 against Dota 2
-`ClientVersion=6861` (VersionDate Jul 17 2026). 13180 `CDOTA*`/`C_DOTA*` classes.
+**17229 headers across 32 modules**, generated 2026-08-08 against Dota 2
+`ClientVersion=6888` (VersionDate Aug 05 2026). 13391 `CDOTA*`/`C_DOTA*` class declarations.
+
+The source was regenerated from `K:\SteamLibrary\steamapps\common\dota 2 beta`
+(`appmanifest_570.acf` buildid 24585913).
 
 > The upstream that produced these SDKs — `neverlosecc/source2sdk` — is **404**.
 > This tree is generated fresh from the `source2gen` in this repo.
@@ -15,7 +18,7 @@ Full Dota 2 SDK generated from the installed game by [`../source2gen/`](../sourc
 sdk/
   CMakeLists.txt        header-only INTERFACE target + a compile-test target
   conanfile.py          conan recipe
-  include/source2sdk/   32 modules; client is the largest (7967 headers)
+  include/source2sdk/   32 modules; client is the largest (7973 headers)
 ```
 
 Header-only. Point your include path at `sdk/include`. Placeholder types

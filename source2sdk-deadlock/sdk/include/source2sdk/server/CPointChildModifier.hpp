@@ -23,13 +23,13 @@ namespace source2sdk
         class CPointChildModifier : public source2sdk::server::CPointEntity
         {
         public:
-            bool m_bOrphanInsteadOfDeletingChildrenOnRemove; // 0x4a0            
+            bool m_bOrphanInsteadOfDeletingChildrenOnRemove; // 0x4a0
             uint8_t _pad04a1[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPointChildModifier because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CPointChildModifier) == 0x4a8);
     };
 };

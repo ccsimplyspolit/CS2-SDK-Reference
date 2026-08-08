@@ -23,13 +23,13 @@ namespace source2sdk
         class CCitadel_Ability_ShivDagger : public source2sdk::server::CCitadelBaseShivAbility
         {
         public:
-            bool m_bIsInRicochet; // 0xf70            
+            bool m_bIsInRicochet; // 0xf70
             uint8_t _pad0f71[0x21f];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_ShivDagger because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Ability_ShivDagger) == 0x1190);
     };
 };

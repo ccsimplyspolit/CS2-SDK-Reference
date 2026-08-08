@@ -18,22 +18,22 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0xc
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct AI_PathPostProcessSettings_t
         {
         public:
-            float m_flMaxSpringTension; // 0x0            
-            float m_flSpringConstant; // 0x4            
-            float m_flSharpStartAngle; // 0x8            
+            float m_flMaxSpringTension; // 0x0
+            float m_flSpringConstant; // 0x4
+            float m_flSharpStartAngle; // 0x8
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::AI_PathPostProcessSettings_t, m_flMaxSpringTension) == 0x0);
         static_assert(offsetof(source2sdk::client::AI_PathPostProcessSettings_t, m_flSpringConstant) == 0x4);
         static_assert(offsetof(source2sdk::client::AI_PathPostProcessSettings_t, m_flSharpStartAngle) == 0x8);
-        
+
         static_assert(sizeof(source2sdk::client::AI_PathPostProcessSettings_t) == 0xc);
     };
 };

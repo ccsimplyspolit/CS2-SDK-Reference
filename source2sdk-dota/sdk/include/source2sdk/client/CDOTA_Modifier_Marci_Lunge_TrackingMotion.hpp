@@ -25,33 +25,33 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a90
+        // Size: 0x1ab0
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Marci_Lunge_TrackingMotion : public source2sdk::client::CDOTA_Buff
         {
         public:
-            std::int32_t m_nProjectileID; // 0x1a58            
-            std::int32_t m_nMaxJumpDistance; // 0x1a5c            
-            float landing_radius; // 0x1a60            
-            std::int32_t max_jump_distance; // 0x1a64            
-            std::int32_t min_jump_distance; // 0x1a68            
-            std::int32_t target_abort_distance; // 0x1a6c            
-            std::int32_t impact_position_offset; // 0x1a70            
-            float m_flCastDistance; // 0x1a74            
-            source2sdk::client::ParticleIndex_t m_nAoEFXIndex; // 0x1a78            
-            VectorWS m_vDestination; // 0x1a7c            
+            std::int32_t m_nProjectileID; // 0x1a78
+            std::int32_t m_nMaxJumpDistance; // 0x1a7c
+            float landing_radius; // 0x1a80
+            std::int32_t max_jump_distance; // 0x1a84
+            std::int32_t min_jump_distance; // 0x1a88
+            std::int32_t target_abort_distance; // 0x1a8c
+            std::int32_t impact_position_offset; // 0x1a90
+            float m_flCastDistance; // 0x1a94
+            source2sdk::client::ParticleIndex_t m_nAoEFXIndex; // 0x1a98
+            VectorWS m_vDestination; // 0x1a9c
             // m_hBounceEntity has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::C_BaseEntity> m_hBounceEntity;
-            char m_hBounceEntity[0x4]; // 0x1a88            
+            char m_hBounceEntity[0x4]; // 0x1aa8
             // m_hBounceEntityClient has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::C_BaseEntity> m_hBounceEntityClient;
-            char m_hBounceEntityClient[0x4]; // 0x1a8c            
+            char m_hBounceEntityClient[0x4]; // 0x1aac
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Marci_Lunge_TrackingMotion because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Marci_Lunge_TrackingMotion) == 0x1a90);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Marci_Lunge_TrackingMotion) == 0x1ab0);
     };
 };

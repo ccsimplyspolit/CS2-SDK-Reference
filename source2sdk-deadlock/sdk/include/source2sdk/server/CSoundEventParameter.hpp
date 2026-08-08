@@ -24,10 +24,10 @@ namespace source2sdk
         {
         public:
             uint8_t _pad04a0[0x18]; // 0x4a0
-            CUtlSymbolLarge m_iszParamName; // 0x4b8            
-            float m_flFloatValue; // 0x4c0            
+            CUtlSymbolLarge m_iszParamName; // 0x4b8
+            float m_flFloatValue; // 0x4c0
             uint8_t _pad04c4[0x4];
-            
+
             // Datamap fields:
             // uint64_t InputSetEventGuid; // 0x0
             // CUtlSymbolLarge InputSetParamName; // 0x0
@@ -35,9 +35,9 @@ namespace source2sdk
             // void m_nGUID; // 0x4a0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSoundEventParameter because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CSoundEventParameter) == 0x4c8);
     };
 };

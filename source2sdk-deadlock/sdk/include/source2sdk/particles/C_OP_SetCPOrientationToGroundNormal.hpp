@@ -20,37 +20,37 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x288
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_SetCPOrientationToGroundNormal : public source2sdk::particles::CParticleFunctionOperator
         {
         public:
             // metadata: MPropertyFriendlyName "interpolation rate"
-            float m_flInterpRate; // 0x1d8            
+            float m_flInterpRate; // 0x1d8
             // metadata: MPropertyFriendlyName "max trace length"
-            float m_flMaxTraceLength; // 0x1dc            
+            float m_flMaxTraceLength; // 0x1dc
             // metadata: MPropertyFriendlyName "CP movement tolerance"
-            float m_flTolerance; // 0x1e0            
+            float m_flTolerance; // 0x1e0
             // metadata: MPropertyFriendlyName "trace offset"
-            float m_flTraceOffset; // 0x1e4            
+            float m_flTraceOffset; // 0x1e4
             // metadata: MPropertyFriendlyName "collision group"
-            char m_CollisionGroupName[128]; // 0x1e8            
+            char m_CollisionGroupName[128]; // 0x1e8
             // metadata: MPropertyFriendlyName "Trace Set"
-            source2sdk::particles::ParticleTraceSet_t m_nTraceSet; // 0x268            
+            source2sdk::particles::ParticleTraceSet_t m_nTraceSet; // 0x268
             // metadata: MPropertyFriendlyName "CP to trace from"
-            std::int32_t m_nInputCP; // 0x26c            
+            std::int32_t m_nInputCP; // 0x26c
             // metadata: MPropertyFriendlyName "CP to set"
-            std::int32_t m_nOutputCP; // 0x270            
+            std::int32_t m_nOutputCP; // 0x270
             uint8_t _pad0274[0xc]; // 0x274
             // metadata: MPropertyFriendlyName "include water"
-            bool m_bIncludeWater; // 0x280            
+            bool m_bIncludeWater; // 0x280
             uint8_t _pad0281[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_SetCPOrientationToGroundNormal because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_SetCPOrientationToGroundNormal) == 0x288);
     };
 };

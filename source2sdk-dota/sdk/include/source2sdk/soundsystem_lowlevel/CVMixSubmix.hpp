@@ -21,23 +21,23 @@ namespace source2sdk
         class CVMixSubmix
         {
         public:
-            CUtlString m_name; // 0x0            
-            CUtlString m_sendOperator; // 0x8            
-            CUtlString m_SendNames[4]; // 0x10            
-            std::uint32_t m_nSoloNameHash; // 0x30            
-            std::int32_t m_nChannels; // 0x34            
-            std::int32_t m_nMixDownRule; // 0x38            
+            CUtlString m_name; // 0x0
+            CUtlString m_sendOperator; // 0x8
+            CUtlString m_SendNames[4]; // 0x10
+            std::uint32_t m_nSoloNameHash; // 0x30
+            std::int32_t m_nChannels; // 0x34
+            std::int32_t m_nMixDownRule; // 0x38
             uint8_t _pad003c[0x4];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::CVMixSubmix, m_name) == 0x0);
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::CVMixSubmix, m_sendOperator) == 0x8);
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::CVMixSubmix, m_SendNames) == 0x10);
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::CVMixSubmix, m_nSoloNameHash) == 0x30);
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::CVMixSubmix, m_nChannels) == 0x34);
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::CVMixSubmix, m_nMixDownRule) == 0x38);
-        
+
         static_assert(sizeof(source2sdk::soundsystem_lowlevel::CVMixSubmix) == 0x40);
     };
 };

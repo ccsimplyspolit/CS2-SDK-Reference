@@ -25,13 +25,13 @@ namespace source2sdk
         class CEnvDetailController : public source2sdk::server::CBaseEntity
         {
         public:
-            float m_flFadeStartDist; // 0x498            
-            float m_flFadeEndDist; // 0x49c            
+            float m_flFadeStartDist; // 0x498
+            float m_flFadeEndDist; // 0x49c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CEnvDetailController because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CEnvDetailController) == 0x4a0);
     };
 };

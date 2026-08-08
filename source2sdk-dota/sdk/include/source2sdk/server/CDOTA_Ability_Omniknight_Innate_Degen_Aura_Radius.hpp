@@ -28,8 +28,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: CDOTA_Ability_Omniknight_Innate_Degen_Aura_Radius has no schema binary (size is a guess)
     };
 };

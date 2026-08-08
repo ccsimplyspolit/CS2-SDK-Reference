@@ -18,25 +18,25 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a88
+        // Size: 0x1aa8
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_BackdoorProtection : public source2sdk::client::CDOTA_Buff
         {
         public:
-            bool m_bActivated; // 0x1a58            
-            uint8_t _pad1a59[0x3]; // 0x1a59
-            float m_flHealthToRestore; // 0x1a5c            
-            std::int32_t radius; // 0x1a60            
-            float activation_time; // 0x1a64            
-            std::int32_t regen_rate; // 0x1a68            
-            uint8_t _pad1a6c[0x4]; // 0x1a6c
-            source2sdk::server::CountdownTimer m_TimerToActivate; // 0x1a70            
+            bool m_bActivated; // 0x1a78
+            uint8_t _pad1a79[0x3]; // 0x1a79
+            float m_flHealthToRestore; // 0x1a7c
+            std::int32_t radius; // 0x1a80
+            float activation_time; // 0x1a84
+            std::int32_t regen_rate; // 0x1a88
+            uint8_t _pad1a8c[0x4]; // 0x1a8c
+            source2sdk::server::CountdownTimer m_TimerToActivate; // 0x1a90
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_BackdoorProtection because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_BackdoorProtection) == 0x1a88);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_BackdoorProtection) == 0x1aa8);
     };
 };

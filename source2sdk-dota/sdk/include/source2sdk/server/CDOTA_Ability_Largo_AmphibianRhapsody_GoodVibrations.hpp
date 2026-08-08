@@ -25,13 +25,13 @@ namespace source2sdk
         class CDOTA_Ability_Largo_AmphibianRhapsody_GoodVibrations : public source2sdk::server::CDOTA_Ability_Largo_AmphibianRhapsody_Song
         {
         public:
-            float radius; // 0x590            
-            float heal_burst; // 0x594            
+            float radius; // 0x590
+            float heal_burst; // 0x594
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Largo_AmphibianRhapsody_GoodVibrations because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Largo_AmphibianRhapsody_GoodVibrations) == 0x598);
     };
 };

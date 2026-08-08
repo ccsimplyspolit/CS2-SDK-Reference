@@ -19,31 +19,31 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x220
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_InterpolateRadius : public source2sdk::particles::CParticleFunctionOperator
         {
         public:
             // metadata: MPropertyFriendlyName "start time"
-            float m_flStartTime; // 0x1d8            
+            float m_flStartTime; // 0x1d8
             // metadata: MPropertyFriendlyName "end time"
-            float m_flEndTime; // 0x1dc            
+            float m_flEndTime; // 0x1dc
             // metadata: MPropertyFriendlyName "radius start scale"
-            float m_flStartScale; // 0x1e0            
+            float m_flStartScale; // 0x1e0
             // metadata: MPropertyFriendlyName "radius end scale"
-            float m_flEndScale; // 0x1e4            
+            float m_flEndScale; // 0x1e4
             // metadata: MPropertyFriendlyName "ease in and out"
-            bool m_bEaseInAndOut; // 0x1e8            
+            bool m_bEaseInAndOut; // 0x1e8
             uint8_t _pad01e9[0x3]; // 0x1e9
             // metadata: MPropertyFriendlyName "scale bias"
-            float m_flBias; // 0x1ec            
+            float m_flBias; // 0x1ec
             uint8_t _pad01f0[0x30];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_InterpolateRadius because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_InterpolateRadius) == 0x220);
     };
 };

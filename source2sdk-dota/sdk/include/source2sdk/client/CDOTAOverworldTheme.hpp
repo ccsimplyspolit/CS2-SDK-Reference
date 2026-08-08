@@ -18,22 +18,22 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x38
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CDOTAOverworldTheme
         {
         public:
-            CUtlString m_sButtonType; // 0x0            
-            CUtlString m_sTokenType; // 0x8            
-            CUtlString m_sTokenReceivedPopupLayout; // 0x10            
-            CUtlString m_sTokenTraderEncounterLayout; // 0x18            
-            CUtlString m_sTokenTraderVisualNovelStyle; // 0x20            
-            CUtlString m_sInventoryPickerLayout; // 0x28            
-            CUtlString m_sTextPrefix; // 0x30            
+            CUtlString m_sButtonType; // 0x0
+            CUtlString m_sTokenType; // 0x8
+            CUtlString m_sTokenReceivedPopupLayout; // 0x10
+            CUtlString m_sTokenTraderEncounterLayout; // 0x18
+            CUtlString m_sTokenTraderVisualNovelStyle; // 0x20
+            CUtlString m_sInventoryPickerLayout; // 0x28
+            CUtlString m_sTextPrefix; // 0x30
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::CDOTAOverworldTheme, m_sButtonType) == 0x0);
         static_assert(offsetof(source2sdk::client::CDOTAOverworldTheme, m_sTokenType) == 0x8);
         static_assert(offsetof(source2sdk::client::CDOTAOverworldTheme, m_sTokenReceivedPopupLayout) == 0x10);
@@ -41,7 +41,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::client::CDOTAOverworldTheme, m_sTokenTraderVisualNovelStyle) == 0x20);
         static_assert(offsetof(source2sdk::client::CDOTAOverworldTheme, m_sInventoryPickerLayout) == 0x28);
         static_assert(offsetof(source2sdk::client::CDOTAOverworldTheme, m_sTextPrefix) == 0x30);
-        
+
         static_assert(sizeof(source2sdk::client::CDOTAOverworldTheme) == 0x38);
     };
 };

@@ -25,19 +25,19 @@ namespace source2sdk
         class CEnvTilt : public source2sdk::server::CPointEntity
         {
         public:
-            float m_Duration; // 0x498            
-            float m_Radius; // 0x49c            
-            float m_TiltTime; // 0x4a0            
-            source2sdk::entity2::GameTime_t m_stopTime; // 0x4a4            
-            
+            float m_Duration; // 0x498
+            float m_Radius; // 0x49c
+            float m_TiltTime; // 0x4a0
+            source2sdk::entity2::GameTime_t m_stopTime; // 0x4a4
+
             // Datamap fields:
             // void InputStartTilt; // 0x0
             // void InputStopTilt; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CEnvTilt because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CEnvTilt) == 0x4a8);
     };
 };

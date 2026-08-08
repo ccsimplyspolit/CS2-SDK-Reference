@@ -23,13 +23,13 @@ namespace source2sdk
         class CAI_CitadelPlayerBotNavigator : public source2sdk::server::CAI_Navigator
         {
         public:
-            bool m_bBlocked; // 0x350            
+            bool m_bBlocked; // 0x350
             uint8_t _pad0351[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CAI_CitadelPlayerBotNavigator because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CAI_CitadelPlayerBotNavigator) == 0x358);
     };
 };

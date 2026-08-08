@@ -33,27 +33,27 @@ namespace source2sdk
         class C_DOTA_Ability_Elder_Titan_EchoStomp : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            source2sdk::client::ParticleIndex_t m_nFXIndexTitan; // 0x6a8            
-            source2sdk::client::ParticleIndex_t m_nFXIndexSpirit; // 0x6ac            
-            source2sdk::client::ParticleIndex_t m_nFXIndexTitanB; // 0x6b0            
-            source2sdk::client::ParticleIndex_t m_nFXIndexSpiritB; // 0x6b4            
-            float radius; // 0x6b8            
-            float stomp_damage; // 0x6bc            
-            float sleep_duration; // 0x6c0            
-            float cast_time; // 0x6c4            
+            source2sdk::client::ParticleIndex_t m_nFXIndexTitan; // 0x6a8
+            source2sdk::client::ParticleIndex_t m_nFXIndexSpirit; // 0x6ac
+            source2sdk::client::ParticleIndex_t m_nFXIndexTitanB; // 0x6b0
+            source2sdk::client::ParticleIndex_t m_nFXIndexSpiritB; // 0x6b4
+            float radius; // 0x6b8
+            float stomp_damage; // 0x6bc
+            float sleep_duration; // 0x6c0
+            float cast_time; // 0x6c4
             // m_vecStompedHeroes has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::client::C_BaseEntity>> m_vecStompedHeroes;
-            char m_vecStompedHeroes[0x18]; // 0x6c8            
+            char m_vecStompedHeroes[0x18]; // 0x6c8
             // m_vecStompedHeroes_BuffCounted has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::client::C_BaseEntity>> m_vecStompedHeroes_BuffCounted;
-            char m_vecStompedHeroes_BuffCounted[0x18]; // 0x6e0            
-            bool m_bStompedInvisibleHero; // 0x6f8            
+            char m_vecStompedHeroes_BuffCounted[0x18]; // 0x6e0
+            bool m_bStompedInvisibleHero; // 0x6f8
             uint8_t _pad06f9[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_Elder_Titan_EchoStomp because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_Elder_Titan_EchoStomp) == 0x700);
     };
 };

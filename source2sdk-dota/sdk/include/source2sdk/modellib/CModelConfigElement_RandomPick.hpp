@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x80
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CModelConfigElement_RandomPick : public source2sdk::modellib::CModelConfigElement
@@ -28,16 +28,16 @@ namespace source2sdk
         public:
             // m_Choices has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CUtlString> m_Choices;
-            char m_Choices[0x18]; // 0x48            
+            char m_Choices[0x18]; // 0x48
             // m_ChoiceWeights has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<float> m_ChoiceWeights;
-            char m_ChoiceWeights[0x18]; // 0x60            
+            char m_ChoiceWeights[0x18]; // 0x60
             uint8_t _pad0078[0x8];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CModelConfigElement_RandomPick because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::modellib::CModelConfigElement_RandomPick) == 0x80);
     };
 };

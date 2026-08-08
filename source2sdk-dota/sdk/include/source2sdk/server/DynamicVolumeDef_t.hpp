@@ -26,7 +26,7 @@ namespace source2sdk
         // Size: 0x30
         // Has Trivial Destructor
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct DynamicVolumeDef_t
@@ -34,20 +34,20 @@ namespace source2sdk
         public:
             // m_source has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_source;
-            char m_source[0x4]; // 0x0            
+            char m_source[0x4]; // 0x0
             // m_target has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_target;
-            char m_target[0x4]; // 0x4            
-            std::int32_t m_nHullIdx; // 0x8            
-            VectorWS m_vSourceAnchorPos; // 0xc            
-            VectorWS m_vTargetAnchorPos; // 0x18            
-            std::uint32_t m_nAreaSrc; // 0x24            
-            std::uint32_t m_nAreaDst; // 0x28            
-            bool m_bAttached; // 0x2c            
+            char m_target[0x4]; // 0x4
+            std::int32_t m_nHullIdx; // 0x8
+            VectorWS m_vSourceAnchorPos; // 0xc
+            VectorWS m_vTargetAnchorPos; // 0x18
+            std::uint32_t m_nAreaSrc; // 0x24
+            std::uint32_t m_nAreaDst; // 0x28
+            bool m_bAttached; // 0x2c
             uint8_t _pad002d[0x3];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::DynamicVolumeDef_t, m_source) == 0x0);
         static_assert(offsetof(source2sdk::server::DynamicVolumeDef_t, m_target) == 0x4);
         static_assert(offsetof(source2sdk::server::DynamicVolumeDef_t, m_nHullIdx) == 0x8);
@@ -56,7 +56,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::server::DynamicVolumeDef_t, m_nAreaSrc) == 0x24);
         static_assert(offsetof(source2sdk::server::DynamicVolumeDef_t, m_nAreaDst) == 0x28);
         static_assert(offsetof(source2sdk::server::DynamicVolumeDef_t, m_bAttached) == 0x2c);
-        
+
         static_assert(sizeof(source2sdk::server::DynamicVolumeDef_t) == 0x30);
     };
 };

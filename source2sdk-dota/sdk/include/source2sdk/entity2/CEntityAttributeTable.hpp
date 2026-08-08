@@ -23,16 +23,16 @@ namespace source2sdk
         public:
             // m_Attributes has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlOrderedMap<CUtlStringTokenNoRegistration,Attribute_t> m_Attributes;
-            char m_Attributes[0x28]; // 0x0            
+            char m_Attributes[0x28]; // 0x0
             // m_Names has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlOrderedMap<CUtlStringTokenNoRegistration,CUtlString> m_Names;
-            char m_Names[0x28]; // 0x28            
+            char m_Names[0x28]; // 0x28
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::entity2::CEntityAttributeTable, m_Attributes) == 0x0);
         static_assert(offsetof(source2sdk::entity2::CEntityAttributeTable, m_Names) == 0x28);
-        
+
         static_assert(sizeof(source2sdk::entity2::CEntityAttributeTable) == 0x50);
     };
 };

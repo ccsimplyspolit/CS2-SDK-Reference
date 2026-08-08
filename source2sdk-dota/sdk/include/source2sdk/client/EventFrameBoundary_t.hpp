@@ -23,12 +23,12 @@ namespace source2sdk
         struct EventFrameBoundary_t
         {
         public:
-            float m_flFrameTime; // 0x0            
+            float m_flFrameTime; // 0x0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::EventFrameBoundary_t, m_flFrameTime) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::client::EventFrameBoundary_t) == 0x4);
     };
 };

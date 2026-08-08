@@ -27,13 +27,13 @@ namespace source2sdk
             // metadata: MNotSaved
             // m_newTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CVariantBase<source2sdk::entity2::CVariantDefaultAllocator> m_newTarget;
-            char m_newTarget[0x10]; // 0x4a0            
-            CUtlSymbolLarge m_newTargetName; // 0x4b0            
+            char m_newTarget[0x10]; // 0x4a0
+            CUtlSymbolLarge m_newTargetName; // 0x4b0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CTankTargetChange because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CTankTargetChange) == 0x4b8);
     };
 };

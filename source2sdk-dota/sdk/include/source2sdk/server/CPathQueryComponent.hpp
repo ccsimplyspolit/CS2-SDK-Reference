@@ -21,7 +21,7 @@ namespace source2sdk
         // Has VTable
         // Construct allowed
         // Construct disallowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CPathQueryComponent : public source2sdk::entity2::CEntityComponent
@@ -30,8 +30,8 @@ namespace source2sdk
             uint8_t _pad0008[0x98];
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::server::CPathQueryComponent) == 0xa0);
     };
 };

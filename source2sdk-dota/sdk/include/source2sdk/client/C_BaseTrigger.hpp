@@ -39,24 +39,24 @@ namespace source2sdk
         class C_BaseTrigger : public source2sdk::client::C_BaseToggle
         {
         public:
-            source2sdk::entity2::CEntityIOOutput m_OnStartTouch; // 0xa88            
-            source2sdk::entity2::CEntityIOOutput m_OnStartTouchAll; // 0xaa0            
-            source2sdk::entity2::CEntityIOOutput m_OnEndTouch; // 0xab8            
-            source2sdk::entity2::CEntityIOOutput m_OnEndTouchAll; // 0xad0            
-            source2sdk::entity2::CEntityIOOutput m_OnTouching; // 0xae8            
-            source2sdk::entity2::CEntityIOOutput m_OnTouchingEachEntity; // 0xb00            
-            source2sdk::entity2::CEntityIOOutput m_OnNotTouching; // 0xb18            
-            source2sdk::entity2::CEntityIOOutput m_OnTouchingChanged; // 0xb30            
+            source2sdk::entity2::CEntityIOOutput m_OnStartTouch; // 0xa88
+            source2sdk::entity2::CEntityIOOutput m_OnStartTouchAll; // 0xaa0
+            source2sdk::entity2::CEntityIOOutput m_OnEndTouch; // 0xab8
+            source2sdk::entity2::CEntityIOOutput m_OnEndTouchAll; // 0xad0
+            source2sdk::entity2::CEntityIOOutput m_OnTouching; // 0xae8
+            source2sdk::entity2::CEntityIOOutput m_OnTouchingEachEntity; // 0xb00
+            source2sdk::entity2::CEntityIOOutput m_OnNotTouching; // 0xb18
+            source2sdk::entity2::CEntityIOOutput m_OnTouchingChanged; // 0xb30
             // m_hTouchingEntities has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::client::C_BaseEntity>> m_hTouchingEntities;
-            char m_hTouchingEntities[0x18]; // 0xb48            
-            CUtlSymbolLarge m_iFilterName; // 0xb60            
+            char m_hTouchingEntities[0x18]; // 0xb48
+            CUtlSymbolLarge m_iFilterName; // 0xb60
             // m_hFilter has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::CBaseFilter> m_hFilter;
-            char m_hFilter[0x4]; // 0xb68            
-            bool m_bDisabled; // 0xb6c            
+            char m_hFilter[0x4]; // 0xb68
+            bool m_bDisabled; // 0xb6c
             uint8_t _pad0b6d[0x3];
-            
+
             // Datamap fields:
             // void InputEnable; // 0x0
             // void InputDisable; // 0x0
@@ -68,9 +68,9 @@ namespace source2sdk
             // float radius; // 0x7fffffff
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_BaseTrigger because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_BaseTrigger) == 0xb70);
     };
 };

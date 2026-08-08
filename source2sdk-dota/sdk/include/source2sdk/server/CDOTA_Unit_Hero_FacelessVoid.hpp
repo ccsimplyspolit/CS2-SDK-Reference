@@ -17,7 +17,7 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x1f10
+        // Size: 0x1f18
         // Has VTable
         // Construct allowed
         // MClassHasEntityLimitedDataDesc
@@ -25,13 +25,13 @@ namespace source2sdk
         class CDOTA_Unit_Hero_FacelessVoid : public source2sdk::server::CDOTA_BaseNPC_Hero
         {
         public:
-            VectorWS m_vecStanceDestinationPoint; // 0x1f00            
-            uint8_t _pad1f0c[0x4];
+            VectorWS m_vecStanceDestinationPoint; // 0x1f08
+            uint8_t _pad1f14[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Unit_Hero_FacelessVoid because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Unit_Hero_FacelessVoid) == 0x1f10);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Unit_Hero_FacelessVoid) == 0x1f18);
     };
 };

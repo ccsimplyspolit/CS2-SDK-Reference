@@ -25,13 +25,13 @@ namespace source2sdk
         class C_DOTA_Ability_Beastmaster_WildAxes : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            float axe_damage; // 0x6a8            
+            float axe_damage; // 0x6a8
             uint8_t _pad06ac[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_Beastmaster_WildAxes because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_Beastmaster_WildAxes) == 0x6b0);
     };
 };

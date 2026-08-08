@@ -24,13 +24,13 @@ namespace source2sdk
         class CSoundEventBoxHelper : public source2sdk::server::CBaseEntity
         {
         public:
-            Vector m_vMins; // 0x498            
-            Vector m_vMaxs; // 0x4a4            
+            Vector m_vMins; // 0x498
+            Vector m_vMaxs; // 0x4a4
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSoundEventBoxHelper because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CSoundEventBoxHelper) == 0x4b0);
     };
 };

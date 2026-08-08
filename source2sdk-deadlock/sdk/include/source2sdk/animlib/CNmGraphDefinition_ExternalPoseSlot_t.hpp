@@ -18,21 +18,21 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x10
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct CNmGraphDefinition_ExternalPoseSlot_t
         {
         public:
-            std::int16_t m_nNodeIdx; // 0x0            
+            std::int16_t m_nNodeIdx; // 0x0
             uint8_t _pad0002[0x6]; // 0x2
-            CGlobalSymbol m_slotID; // 0x8            
+            CGlobalSymbol m_slotID; // 0x8
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::animlib::CNmGraphDefinition_ExternalPoseSlot_t, m_nNodeIdx) == 0x0);
         static_assert(offsetof(source2sdk::animlib::CNmGraphDefinition_ExternalPoseSlot_t, m_slotID) == 0x8);
-        
+
         static_assert(sizeof(source2sdk::animlib::CNmGraphDefinition_ExternalPoseSlot_t) == 0x10);
     };
 };

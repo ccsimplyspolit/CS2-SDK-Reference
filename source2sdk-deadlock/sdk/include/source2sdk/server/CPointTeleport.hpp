@@ -23,16 +23,16 @@ namespace source2sdk
         class CPointTeleport : public source2sdk::server::CServerOnlyPointEntity
         {
         public:
-            Vector m_vSaveOrigin; // 0x4a0            
-            QAngle m_vSaveAngles; // 0x4ac            
-            bool m_bTeleportParentedEntities; // 0x4b8            
-            bool m_bTeleportUseCurrentAngle; // 0x4b9            
+            Vector m_vSaveOrigin; // 0x4a0
+            QAngle m_vSaveAngles; // 0x4ac
+            bool m_bTeleportParentedEntities; // 0x4b8
+            bool m_bTeleportUseCurrentAngle; // 0x4b9
             uint8_t _pad04ba[0x6];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPointTeleport because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CPointTeleport) == 0x4c0);
     };
 };

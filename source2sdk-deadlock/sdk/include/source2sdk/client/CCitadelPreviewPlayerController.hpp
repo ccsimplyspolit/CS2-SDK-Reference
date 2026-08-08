@@ -17,7 +17,7 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0xc30
+        // Size: 0xc40
         // Has VTable
         #pragma pack(push, 1)
         class CCitadelPreviewPlayerController : public source2sdk::client::CCitadelPlayerController
@@ -26,8 +26,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: CCitadelPreviewPlayerController has no schema binary (size is a guess)
     };
 };

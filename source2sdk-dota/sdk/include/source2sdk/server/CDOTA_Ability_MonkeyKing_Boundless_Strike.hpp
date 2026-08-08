@@ -33,20 +33,20 @@ namespace source2sdk
         class CDOTA_Ability_MonkeyKing_Boundless_Strike : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            float strike_cast_range; // 0x580            
-            float strike_radius; // 0x584            
-            std::int32_t spring_channel_pct; // 0x588            
-            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x58c            
-            bool m_bIsAltCastState; // 0x590            
+            float strike_cast_range; // 0x580
+            float strike_radius; // 0x584
+            std::int32_t spring_channel_pct; // 0x588
+            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x58c
+            bool m_bIsAltCastState; // 0x590
             uint8_t _pad0591[0x7]; // 0x591
             // struckEntities has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::server::CDOTA_BaseNPC*> struckEntities;
-            char struckEntities[0x18]; // 0x598            
+            char struckEntities[0x18]; // 0x598
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_MonkeyKing_Boundless_Strike because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_MonkeyKing_Boundless_Strike) == 0x5b0);
     };
 };

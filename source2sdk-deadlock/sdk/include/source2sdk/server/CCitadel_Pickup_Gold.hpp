@@ -19,20 +19,20 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xb20
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "int m_iGoldReward"
         #pragma pack(push, 1)
         class CCitadel_Pickup_Gold : public source2sdk::server::CCitadel_Pickup
         {
         public:
             // metadata: MNetworkEnable
-            std::int32_t m_iGoldReward; // 0xb10            
+            std::int32_t m_iGoldReward; // 0xb10
             uint8_t _pad0b14[0xc];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Pickup_Gold because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Pickup_Gold) == 0xb20);
     };
 };

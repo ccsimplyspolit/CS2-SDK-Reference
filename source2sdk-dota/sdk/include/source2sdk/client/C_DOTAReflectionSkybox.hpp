@@ -21,7 +21,7 @@ namespace source2sdk
         // Has VTable
         // Construct allowed
         // MClassHasEntityLimitedDataDesc
-        // 
+        //
         // static metadata: MEntityAllowsPortraitWorldSpawn
         #pragma pack(push, 1)
         class C_DOTAReflectionSkybox : public source2sdk::client::C_BaseEntity
@@ -30,8 +30,8 @@ namespace source2sdk
             uint8_t _pad05f0[0x8];
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::client::C_DOTAReflectionSkybox) == 0x5f8);
     };
 };

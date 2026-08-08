@@ -32,13 +32,13 @@ namespace source2sdk
         public:
             // m_vecHitTargetList has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::client::C_BaseEntity>> m_vecHitTargetList;
-            char m_vecHitTargetList[0x18]; // 0x11d8            
+            char m_vecHitTargetList[0x18]; // 0x11d8
             uint8_t _pad11f0[0x210];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_Swan_FeatherBoomerang because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Ability_Swan_FeatherBoomerang) == 0x1400);
     };
 };

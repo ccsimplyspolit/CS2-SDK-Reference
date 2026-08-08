@@ -20,22 +20,22 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xc00
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CCitadel_Modifier_StickyBombOnGroundVData : public source2sdk::client::CCitadel_Modifier_StickyBombAttachedVData
         {
         public:
-            float m_flGroundOffset; // 0xb18            
+            float m_flGroundOffset; // 0xb18
             uint8_t _pad0b1c[0x4]; // 0xb1c
             // m_BombParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_BombParticle;
-            char m_BombParticle[0xe0]; // 0xb20            
+            char m_BombParticle[0xe0]; // 0xb20
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_StickyBombOnGroundVData because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Modifier_StickyBombOnGroundVData) == 0xc00);
     };
 };

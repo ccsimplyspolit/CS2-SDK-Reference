@@ -33,12 +33,12 @@ namespace source2sdk
             uint8_t _pad00d0[0x22c]; // 0xd0
             // m_hAttachedTo has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hAttachedTo;
-            char m_hAttachedTo[0x4]; // 0x2fc            
+            char m_hAttachedTo[0x4]; // 0x2fc
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_Familiar_Attached because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_Familiar_Attached) == 0x300);
     };
 };

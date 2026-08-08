@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x9c0
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MEntityAllowsPortraitWorldSpawn
         #pragma pack(push, 1)
         class C_DOTA_LightInfo : public source2sdk::client::C_BaseEntity
@@ -29,8 +29,8 @@ namespace source2sdk
             uint8_t _pad05f0[0x3d0];
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::client::C_DOTA_LightInfo) == 0x9c0);
     };
 };

@@ -19,7 +19,7 @@ namespace source2sdk
         // Size: 0x28
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MVDataRoot
         // static metadata: MVDataNodeType "1"
@@ -32,8 +32,8 @@ namespace source2sdk
             uint8_t _pad0000[0x28];
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::client::CEntitySubclassVDataBase) == 0x28);
     };
 };

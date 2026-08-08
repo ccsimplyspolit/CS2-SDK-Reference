@@ -21,32 +21,32 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x11c8
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CReplicationParameters
         {
         public:
             // metadata: MPropertyFriendlyName "Replication mode"
-            source2sdk::particles::ParticleReplicationMode_t m_nReplicationMode; // 0x0            
+            source2sdk::particles::ParticleReplicationMode_t m_nReplicationMode; // 0x0
             // metadata: MPropertyFriendlyName "Scale child particle radius based on parent radius"
-            bool m_bScaleChildParticleRadii; // 0x4            
+            bool m_bScaleChildParticleRadii; // 0x4
             uint8_t _pad0005[0x3]; // 0x5
             // metadata: MPropertyFriendlyName "Minimum random scale for radius"
-            source2sdk::particleslib::CParticleCollectionFloatInput m_flMinRandomRadiusScale; // 0x8            
+            source2sdk::particleslib::CParticleCollectionFloatInput m_flMinRandomRadiusScale; // 0x8
             // metadata: MPropertyFriendlyName "Maximum random scale for radius"
-            source2sdk::particleslib::CParticleCollectionFloatInput m_flMaxRandomRadiusScale; // 0x178            
+            source2sdk::particleslib::CParticleCollectionFloatInput m_flMaxRandomRadiusScale; // 0x178
             // metadata: MPropertyFriendlyName "min random displacement for child particles"
-            source2sdk::particleslib::CParticleCollectionVecInput m_vMinRandomDisplacement; // 0x2e8            
+            source2sdk::particleslib::CParticleCollectionVecInput m_vMinRandomDisplacement; // 0x2e8
             // metadata: MPropertyFriendlyName "max random displacement for child particles"
-            source2sdk::particleslib::CParticleCollectionVecInput m_vMaxRandomDisplacement; // 0x9a0            
+            source2sdk::particleslib::CParticleCollectionVecInput m_vMaxRandomDisplacement; // 0x9a0
             // metadata: MPropertyFriendlyName "Modelling scale"
-            source2sdk::particleslib::CParticleCollectionFloatInput m_flModellingScale; // 0x1058            
+            source2sdk::particleslib::CParticleCollectionFloatInput m_flModellingScale; // 0x1058
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CReplicationParameters because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::CReplicationParameters) == 0x11c8);
     };
 };

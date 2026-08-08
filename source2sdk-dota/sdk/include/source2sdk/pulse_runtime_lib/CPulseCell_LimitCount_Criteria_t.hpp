@@ -22,12 +22,12 @@ namespace source2sdk
         struct CPulseCell_LimitCount_Criteria_t
         {
         public:
-            bool m_bLimitCountPasses; // 0x0            
+            bool m_bLimitCountPasses; // 0x0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::pulse_runtime_lib::CPulseCell_LimitCount_Criteria_t, m_bLimitCountPasses) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::pulse_runtime_lib::CPulseCell_LimitCount_Criteria_t) == 0x1);
     };
 };

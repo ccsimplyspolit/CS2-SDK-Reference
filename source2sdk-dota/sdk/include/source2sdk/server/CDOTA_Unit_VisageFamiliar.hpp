@@ -19,7 +19,7 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x18f0
+        // Size: 0x18f8
         // Has VTable
         // Construct allowed
         // MClassHasEntityLimitedDataDesc
@@ -27,14 +27,14 @@ namespace source2sdk
         class CDOTA_Unit_VisageFamiliar : public source2sdk::server::CDOTA_BaseNPC_Creep
         {
         public:
-            source2sdk::server::CountdownTimer ctTimer; // 0x18d0            
-            source2sdk::client::ParticleIndex_t m_nFXAmbient; // 0x18e8            
-            uint8_t _pad18ec[0x4];
+            source2sdk::server::CountdownTimer ctTimer; // 0x18d8
+            source2sdk::client::ParticleIndex_t m_nFXAmbient; // 0x18f0
+            uint8_t _pad18f4[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Unit_VisageFamiliar because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Unit_VisageFamiliar) == 0x18f0);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Unit_VisageFamiliar) == 0x18f8);
     };
 };

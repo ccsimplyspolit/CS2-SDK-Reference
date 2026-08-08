@@ -33,7 +33,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x6a8
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkIncludeByName "m_iTeamNum"
         // static metadata: MNetworkVarNames "CHandle< CBasePlayerController > m_aPlayerControllers"
         // static metadata: MNetworkVarNames "CHandle< C_BasePlayerPawn > m_aPlayers"
@@ -47,22 +47,22 @@ namespace source2sdk
             // metadata: MNetworkAlias "m_aPlayers"
             // m_aPlayerControllers has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // C_NetworkUtlVectorBase<CHandle<source2sdk::client::CBasePlayerController>> m_aPlayerControllers;
-            char m_aPlayerControllers[0x18]; // 0x5f0            
+            char m_aPlayerControllers[0x18]; // 0x5f0
             // metadata: MNetworkEnable
             // metadata: MNetworkAlias "m_aPawns"
             // m_aPlayers has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // C_NetworkUtlVectorBase<CHandle<source2sdk::client::C_BasePlayerPawn>> m_aPlayers;
-            char m_aPlayers[0x18]; // 0x608            
+            char m_aPlayers[0x18]; // 0x608
             // metadata: MNetworkEnable
-            std::int32_t m_iScore; // 0x620            
+            std::int32_t m_iScore; // 0x620
             // metadata: MNetworkEnable
-            char m_szTeamname[129]; // 0x624            
+            char m_szTeamname[129]; // 0x624
             uint8_t _pad06a5[0x3];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_Team because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_Team) == 0x6a8);
     };
 };

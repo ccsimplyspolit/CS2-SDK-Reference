@@ -31,14 +31,14 @@ namespace source2sdk
         public:
             // m_hDeformable has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hDeformable;
-            char m_hDeformable[0x4]; // 0x0            
-            std::uint32_t m_nOtherAreaIdGlobalOrLocal; // 0x4            
+            char m_hDeformable[0x4]; // 0x0
+            std::uint32_t m_nOtherAreaIdGlobalOrLocal; // 0x4
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::NavAreaSave_t, m_hDeformable) == 0x0);
         static_assert(offsetof(source2sdk::server::NavAreaSave_t, m_nOtherAreaIdGlobalOrLocal) == 0x4);
-        
+
         static_assert(sizeof(source2sdk::server::NavAreaSave_t) == 0x8);
     };
 };

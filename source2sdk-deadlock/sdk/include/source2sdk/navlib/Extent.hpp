@@ -22,14 +22,14 @@ namespace source2sdk
         class Extent
         {
         public:
-            VectorWS lo; // 0x0            
-            VectorWS hi; // 0xc            
+            VectorWS lo; // 0x0
+            VectorWS hi; // 0xc
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::navlib::Extent, lo) == 0x0);
         static_assert(offsetof(source2sdk::navlib::Extent, hi) == 0xc);
-        
+
         static_assert(sizeof(source2sdk::navlib::Extent) == 0x18);
     };
 };

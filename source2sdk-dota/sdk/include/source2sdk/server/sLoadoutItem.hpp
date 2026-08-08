@@ -23,21 +23,21 @@ namespace source2sdk
         class sLoadoutItem
         {
         public:
-            CUtlSymbolLarge name; // 0x0            
-            std::int32_t iFlags; // 0x8            
-            source2sdk::client::AbilityID_t iAbilityID; // 0xc            
-            bool bPurchased; // 0x10            
-            bool bPregame; // 0x11            
+            CUtlSymbolLarge name; // 0x0
+            std::int32_t iFlags; // 0x8
+            source2sdk::client::AbilityID_t iAbilityID; // 0xc
+            bool bPurchased; // 0x10
+            bool bPregame; // 0x11
             uint8_t _pad0012[0x6];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::sLoadoutItem, name) == 0x0);
         static_assert(offsetof(source2sdk::server::sLoadoutItem, iFlags) == 0x8);
         static_assert(offsetof(source2sdk::server::sLoadoutItem, iAbilityID) == 0xc);
         static_assert(offsetof(source2sdk::server::sLoadoutItem, bPurchased) == 0x10);
         static_assert(offsetof(source2sdk::server::sLoadoutItem, bPregame) == 0x11);
-        
+
         static_assert(sizeof(source2sdk::server::sLoadoutItem) == 0x18);
     };
 };

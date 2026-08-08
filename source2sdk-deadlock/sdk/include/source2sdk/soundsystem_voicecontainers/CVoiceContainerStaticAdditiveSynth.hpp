@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xe8
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Additive Synth Container"
         // static metadata: MPropertyDescription "This is a static additive synth that can scale components of the synth based on how many instances are running."
@@ -30,13 +30,13 @@ namespace source2sdk
         public:
             // m_tones has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::soundsystem_voicecontainers::CVoiceContainerStaticAdditiveSynth_CTone> m_tones;
-            char m_tones[0x18]; // 0xb8            
+            char m_tones[0x18]; // 0xb8
             uint8_t _pad00d0[0x18];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CVoiceContainerStaticAdditiveSynth because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::soundsystem_voicecontainers::CVoiceContainerStaticAdditiveSynth) == 0xe8);
     };
 };

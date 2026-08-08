@@ -32,15 +32,15 @@ namespace source2sdk
         class CDOTA_Ability_Disruptor_KineticFence : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            VectorWS m_vEndpoint; // 0x580            
+            VectorWS m_vEndpoint; // 0x580
             // m_hSourceAbility has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CDOTABaseAbility> m_hSourceAbility;
-            char m_hSourceAbility[0x4]; // 0x58c            
+            char m_hSourceAbility[0x4]; // 0x58c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Disruptor_KineticFence because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Disruptor_KineticFence) == 0x590);
     };
 };

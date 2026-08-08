@@ -22,15 +22,15 @@ namespace source2sdk
         class CAI_ProxTester
         {
         public:
-            float m_distSq; // 0x0            
-            bool m_fInside; // 0x4            
+            float m_distSq; // 0x0
+            bool m_fInside; // 0x4
             uint8_t _pad0005[0x3];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::CAI_ProxTester, m_distSq) == 0x0);
         static_assert(offsetof(source2sdk::server::CAI_ProxTester, m_fInside) == 0x4);
-        
+
         static_assert(sizeof(source2sdk::server::CAI_ProxTester) == 0x8);
     };
 };

@@ -24,26 +24,26 @@ namespace source2sdk
         // Size: 0x180
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CAimMatrixUpdateNode : public source2sdk::animgraphlib::CUnaryUpdateNode
         {
         public:
-            source2sdk::animgraphlib::AimMatrixOpFixedSettings_t m_opFixedSettings; // 0x70            
+            source2sdk::animgraphlib::AimMatrixOpFixedSettings_t m_opFixedSettings; // 0x70
             uint8_t _pad0160[0x8]; // 0x160
-            source2sdk::animgraphlib::AnimVectorSource m_target; // 0x168            
-            source2sdk::animgraphlib::CAnimParamHandle m_paramIndex; // 0x16c            
+            source2sdk::animgraphlib::AnimVectorSource m_target; // 0x168
+            source2sdk::animgraphlib::CAnimParamHandle m_paramIndex; // 0x16c
             uint8_t _pad016e[0x2]; // 0x16e
-            source2sdk::animationsystem::HSequence m_hSequence; // 0x170            
-            bool m_bResetChild; // 0x174            
-            bool m_bLockWhenWaning; // 0x175            
+            source2sdk::animationsystem::HSequence m_hSequence; // 0x170
+            bool m_bResetChild; // 0x174
+            bool m_bLockWhenWaning; // 0x175
             uint8_t _pad0176[0xa];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CAimMatrixUpdateNode because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::animgraphlib::CAimMatrixUpdateNode) == 0x180);
     };
 };

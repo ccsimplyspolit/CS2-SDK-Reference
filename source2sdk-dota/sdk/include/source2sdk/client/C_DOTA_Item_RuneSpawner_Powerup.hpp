@@ -26,16 +26,16 @@ namespace source2sdk
         class C_DOTA_Item_RuneSpawner_Powerup : public source2sdk::client::CBaseAnimatingActivity
         {
         public:
-            source2sdk::client::DOTA_RUNES m_nRuneType; // 0xac0            
-            float m_flLastSpawnTime; // 0xac4            
-            float m_flNextSpawnTime; // 0xac8            
-            bool m_bNextRuneIsWater; // 0xacc            
+            source2sdk::client::DOTA_RUNES m_nRuneType; // 0xac0
+            float m_flLastSpawnTime; // 0xac4
+            float m_flNextSpawnTime; // 0xac8
+            bool m_bNextRuneIsWater; // 0xacc
             uint8_t _pad0acd[0x3];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Item_RuneSpawner_Powerup because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Item_RuneSpawner_Powerup) == 0xad0);
     };
 };

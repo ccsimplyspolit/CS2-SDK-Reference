@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x6e8
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "CEnvWindShared m_EnvWindShared"
         #pragma pack(push, 1)
         class C_EnvWind : public source2sdk::client::C_BaseEntity
@@ -28,12 +28,12 @@ namespace source2sdk
         public:
             // metadata: MNetworkEnable
             // metadata: MNotSaved
-            source2sdk::client::C_EnvWindShared m_EnvWindShared; // 0x5f0            
+            source2sdk::client::C_EnvWindShared m_EnvWindShared; // 0x5f0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_EnvWind because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_EnvWind) == 0x6e8);
     };
 };

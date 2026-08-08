@@ -17,22 +17,22 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a70
+        // Size: 0x1a90
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_KeeperOfTheLight_ManaLeak : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float mana_leak_pct; // 0x1a58            
-            VectorWS vLastPos; // 0x1a5c            
-            bool bResetPosition; // 0x1a68            
-            uint8_t _pad1a69[0x3]; // 0x1a69
-            float m_fAccumulatedManaLeak; // 0x1a6c            
+            float mana_leak_pct; // 0x1a78
+            VectorWS vLastPos; // 0x1a7c
+            bool bResetPosition; // 0x1a88
+            uint8_t _pad1a89[0x3]; // 0x1a89
+            float m_fAccumulatedManaLeak; // 0x1a8c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_KeeperOfTheLight_ManaLeak because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_KeeperOfTheLight_ManaLeak) == 0x1a70);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_KeeperOfTheLight_ManaLeak) == 0x1a90);
     };
 };

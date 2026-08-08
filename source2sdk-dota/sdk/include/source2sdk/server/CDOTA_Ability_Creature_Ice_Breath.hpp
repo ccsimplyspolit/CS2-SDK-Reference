@@ -26,20 +26,20 @@ namespace source2sdk
         class CDOTA_Ability_Creature_Ice_Breath : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            std::int32_t speed; // 0x580            
-            std::int32_t projectile_count; // 0x584            
-            float rotation_angle; // 0x588            
-            float damage; // 0x58c            
-            float radius; // 0x590            
-            float slow_duration; // 0x594            
-            source2sdk::server::CountdownTimer ctTimer; // 0x598            
-            Vector m_vecStartRot; // 0x5b0            
-            Vector m_vecEndRot; // 0x5bc            
+            std::int32_t speed; // 0x580
+            std::int32_t projectile_count; // 0x584
+            float rotation_angle; // 0x588
+            float damage; // 0x58c
+            float radius; // 0x590
+            float slow_duration; // 0x594
+            source2sdk::server::CountdownTimer ctTimer; // 0x598
+            Vector m_vecStartRot; // 0x5b0
+            Vector m_vecEndRot; // 0x5bc
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Creature_Ice_Breath because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Creature_Ice_Breath) == 0x5c8);
     };
 };

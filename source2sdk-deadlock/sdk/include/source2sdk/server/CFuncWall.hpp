@@ -23,13 +23,13 @@ namespace source2sdk
         class CFuncWall : public source2sdk::server::CBaseModelEntity
         {
         public:
-            std::int32_t m_nState; // 0x780            
+            std::int32_t m_nState; // 0x780
             uint8_t _pad0784[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CFuncWall because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CFuncWall) == 0x788);
     };
 };

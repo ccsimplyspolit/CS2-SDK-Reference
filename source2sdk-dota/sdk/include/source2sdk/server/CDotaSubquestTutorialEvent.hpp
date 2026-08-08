@@ -26,12 +26,12 @@ namespace source2sdk
         class CDotaSubquestTutorialEvent : public source2sdk::server::CDotaSubquestBase
         {
         public:
-            CUtlSymbolLarge m_sTutorialEvent; // 0x6f0            
+            CUtlSymbolLarge m_sTutorialEvent; // 0x6f0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDotaSubquestTutorialEvent because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDotaSubquestTutorialEvent) == 0x6f8);
     };
 };

@@ -23,15 +23,15 @@ namespace source2sdk
         class CCitadel_Item_ProjectileTest06 : public source2sdk::server::CCitadel_Item_ProjectileTest
         {
         public:
-            float m_flApproachX; // 0x1010            
-            float m_flApproachY; // 0x1014            
-            float m_flApproachZ; // 0x1018            
+            float m_flApproachX; // 0x1010
+            float m_flApproachY; // 0x1014
+            float m_flApproachZ; // 0x1018
             uint8_t _pad101c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Item_ProjectileTest06 because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Item_ProjectileTest06) == 0x1020);
     };
 };

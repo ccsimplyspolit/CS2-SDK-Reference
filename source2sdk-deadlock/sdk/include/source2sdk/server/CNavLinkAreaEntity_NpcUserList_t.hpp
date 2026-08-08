@@ -30,12 +30,12 @@ namespace source2sdk
         public:
             // m_vecUsers has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::server::CAI_BaseNPC>> m_vecUsers;
-            char m_vecUsers[0x18]; // 0x0            
+            char m_vecUsers[0x18]; // 0x0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::CNavLinkAreaEntity_NpcUserList_t, m_vecUsers) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::server::CNavLinkAreaEntity_NpcUserList_t) == 0x18);
     };
 };

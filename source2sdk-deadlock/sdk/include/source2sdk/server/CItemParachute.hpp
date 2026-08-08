@@ -33,15 +33,15 @@ namespace source2sdk
         public:
             // m_hAttachedEntity has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hAttachedEntity;
-            char m_hAttachedEntity[0x4]; // 0xd60            
+            char m_hAttachedEntity[0x4]; // 0xd60
             uint8_t _pad0d64[0x10]; // 0xd64
-            source2sdk::client::EObjectivePositions_t m_eObjectivePosition; // 0xd74            
+            source2sdk::client::EObjectivePositions_t m_eObjectivePosition; // 0xd74
             uint8_t _pad0d78[0x8];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CItemParachute because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CItemParachute) == 0xd80);
     };
 };

@@ -17,20 +17,20 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a60
+        // Size: 0x1a80
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Jakiro_DualBreath_Burn : public source2sdk::client::CDOTA_Buff
         {
         public:
-            bool m_bFirst; // 0x1a58            
-            uint8_t _pad1a59[0x3]; // 0x1a59
-            std::int32_t burn_damage; // 0x1a5c            
+            bool m_bFirst; // 0x1a78
+            uint8_t _pad1a79[0x3]; // 0x1a79
+            std::int32_t burn_damage; // 0x1a7c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Jakiro_DualBreath_Burn because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Jakiro_DualBreath_Burn) == 0x1a60);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Jakiro_DualBreath_Burn) == 0x1a80);
     };
 };

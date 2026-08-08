@@ -20,31 +20,31 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x230
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_MaintainSequentialPath : public source2sdk::particles::CParticleFunctionOperator
         {
         public:
             // metadata: MPropertyFriendlyName "maximum distance"
-            float m_fMaxDistance; // 0x1d8            
+            float m_fMaxDistance; // 0x1d8
             // metadata: MPropertyFriendlyName "particles to map from start to end"
-            float m_flNumToAssign; // 0x1dc            
+            float m_flNumToAssign; // 0x1dc
             // metadata: MPropertyFriendlyName "cohesion strength"
-            float m_flCohesionStrength; // 0x1e0            
+            float m_flCohesionStrength; // 0x1e0
             // metadata: MPropertyFriendlyName "control point movement tolerance"
-            float m_flTolerance; // 0x1e4            
+            float m_flTolerance; // 0x1e4
             // metadata: MPropertyFriendlyName "restart behavior (0 = bounce, 1 = loop )"
-            bool m_bLoop; // 0x1e8            
+            bool m_bLoop; // 0x1e8
             // metadata: MPropertyFriendlyName "use existing particle count"
-            bool m_bUseParticleCount; // 0x1e9            
+            bool m_bUseParticleCount; // 0x1e9
             uint8_t _pad01ea[0x6]; // 0x1ea
-            source2sdk::particles::CPathParameters m_PathParams; // 0x1f0            
+            source2sdk::particles::CPathParameters m_PathParams; // 0x1f0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_MaintainSequentialPath because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_MaintainSequentialPath) == 0x230);
     };
 };

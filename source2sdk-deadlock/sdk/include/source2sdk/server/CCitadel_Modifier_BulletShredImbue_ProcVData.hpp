@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x7a0
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CCitadel_Modifier_BulletShredImbue_ProcVData : public source2sdk::server::CCitadel_Modifier_BaseEventProcVData
@@ -29,15 +29,15 @@ namespace source2sdk
             // metadata: MPropertyGroupName "Modifiers"
             // m_BuffModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEmbeddedSubclass<source2sdk::server::CBaseModifier> m_BuffModifier;
-            char m_BuffModifier[0x10]; // 0x780            
+            char m_BuffModifier[0x10]; // 0x780
             // m_BuffNonHeroModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEmbeddedSubclass<source2sdk::server::CBaseModifier> m_BuffNonHeroModifier;
-            char m_BuffNonHeroModifier[0x10]; // 0x790            
+            char m_BuffNonHeroModifier[0x10]; // 0x790
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_BulletShredImbue_ProcVData because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_BulletShredImbue_ProcVData) == 0x7a0);
     };
 };

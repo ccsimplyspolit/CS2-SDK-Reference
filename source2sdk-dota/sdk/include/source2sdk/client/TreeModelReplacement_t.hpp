@@ -23,15 +23,15 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0000[0x30]; // 0x0
-            std::int32_t m_nBinaryObjectID; // 0x30            
-            char m_szModel[512]; // 0x34            
+            std::int32_t m_nBinaryObjectID; // 0x30
+            char m_szModel[512]; // 0x34
             uint8_t _pad0234[0x4];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::TreeModelReplacement_t, m_nBinaryObjectID) == 0x30);
         static_assert(offsetof(source2sdk::client::TreeModelReplacement_t, m_szModel) == 0x34);
-        
+
         static_assert(sizeof(source2sdk::client::TreeModelReplacement_t) == 0x238);
     };
 };

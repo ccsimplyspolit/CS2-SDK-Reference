@@ -25,13 +25,13 @@ namespace source2sdk
         class CDOTA_Item_Stonefeather_Satchel : public source2sdk::client::C_DOTA_Item
         {
         public:
-            std::int32_t m_iStat; // 0x758            
+            std::int32_t m_iStat; // 0x758
             uint8_t _pad075c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Item_Stonefeather_Satchel because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CDOTA_Item_Stonefeather_Satchel) == 0x760);
     };
 };

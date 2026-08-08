@@ -17,19 +17,19 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a60
+        // Size: 0x1a80
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Black_King_Bar_Immune : public source2sdk::client::CDOTA_Modifier_DebuffImmune
         {
         public:
-            std::int32_t model_scale; // 0x1a58            
-            float spell_reduce; // 0x1a5c            
+            std::int32_t model_scale; // 0x1a78
+            float spell_reduce; // 0x1a7c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Black_King_Bar_Immune because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Black_King_Bar_Immune) == 0x1a60);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Black_King_Bar_Immune) == 0x1a80);
     };
 };

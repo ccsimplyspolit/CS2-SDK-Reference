@@ -17,27 +17,27 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a80
+        // Size: 0x1aa0
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Magnataur_Empower : public source2sdk::client::CDOTA_Buff
         {
         public:
-            std::int32_t bonus_damage_pct; // 0x1a58            
-            float cleave_damage_pct; // 0x1a5c            
-            float cleave_starting_width; // 0x1a60            
-            float cleave_ending_width; // 0x1a64            
-            float cleave_distance; // 0x1a68            
-            float self_multiplier; // 0x1a6c            
-            float secondary_cleave_distance; // 0x1a70            
-            float self_multiplier_bonus_stack_duration; // 0x1a74            
-            std::int32_t self_multiplier_bonus_max_stacks; // 0x1a78            
-            std::int32_t self_multiplier_bonus_per_stack; // 0x1a7c            
+            std::int32_t bonus_damage_pct; // 0x1a78
+            float cleave_damage_pct; // 0x1a7c
+            float cleave_starting_width; // 0x1a80
+            float cleave_ending_width; // 0x1a84
+            float cleave_distance; // 0x1a88
+            float self_multiplier; // 0x1a8c
+            float secondary_cleave_distance; // 0x1a90
+            float self_multiplier_bonus_stack_duration; // 0x1a94
+            std::int32_t self_multiplier_bonus_max_stacks; // 0x1a98
+            std::int32_t self_multiplier_bonus_per_stack; // 0x1a9c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Magnataur_Empower because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Magnataur_Empower) == 0x1a80);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Magnataur_Empower) == 0x1aa0);
     };
 };

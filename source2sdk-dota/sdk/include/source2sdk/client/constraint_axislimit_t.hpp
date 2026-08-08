@@ -22,18 +22,18 @@ namespace source2sdk
         struct constraint_axislimit_t
         {
         public:
-            float flMinRotation; // 0x0            
-            float flMaxRotation; // 0x4            
-            float flMotorTargetAngSpeed; // 0x8            
-            float flMotorMaxTorque; // 0xc            
+            float flMinRotation; // 0x0
+            float flMaxRotation; // 0x4
+            float flMotorTargetAngSpeed; // 0x8
+            float flMotorMaxTorque; // 0xc
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::constraint_axislimit_t, flMinRotation) == 0x0);
         static_assert(offsetof(source2sdk::client::constraint_axislimit_t, flMaxRotation) == 0x4);
         static_assert(offsetof(source2sdk::client::constraint_axislimit_t, flMotorTargetAngSpeed) == 0x8);
         static_assert(offsetof(source2sdk::client::constraint_axislimit_t, flMotorMaxTorque) == 0xc);
-        
+
         static_assert(sizeof(source2sdk::client::constraint_axislimit_t) == 0x10);
     };
 };

@@ -34,12 +34,12 @@ namespace source2sdk
         public:
             // m_vecZealots has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::client::C_BaseEntity>> m_vecZealots;
-            char m_vecZealots[0x18]; // 0x6a8            
+            char m_vecZealots[0x18]; // 0x6a8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_Chen_Zealot because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_Chen_Zealot) == 0x6c0);
     };
 };

@@ -21,19 +21,19 @@ namespace source2sdk
         // Size: 0x40
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CVMixPlateReverbProcessorDesc : public source2sdk::soundsystem_lowlevel::CVMixBaseProcessorDesc
         {
         public:
-            source2sdk::soundsystem_lowlevel::VMixPlateverbDesc_t m_desc; // 0x20            
+            source2sdk::soundsystem_lowlevel::VMixPlateverbDesc_t m_desc; // 0x20
             uint8_t _pad003c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CVMixPlateReverbProcessorDesc because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::soundsystem_lowlevel::CVMixPlateReverbProcessorDesc) == 0x40);
     };
 };

@@ -24,14 +24,14 @@ namespace source2sdk
         {
         public:
             uint8_t _pad00a0[0x8]; // 0xa0
-            VectorWS m_vStartPos; // 0xa8            
-            float m_flSearchDist; // 0xb4            
+            VectorWS m_vStartPos; // 0xa8
+            float m_flSearchDist; // 0xb4
             uint8_t _pad00b8[0x8];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CNavVolumeBreadthFirstSearch because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CNavVolumeBreadthFirstSearch) == 0xc0);
     };
 };

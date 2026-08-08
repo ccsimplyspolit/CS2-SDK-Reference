@@ -28,8 +28,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: C_DOTA_Ability_PhantomAssassin_Fan_Of_Knives has no schema binary (size is a guess)
     };
 };

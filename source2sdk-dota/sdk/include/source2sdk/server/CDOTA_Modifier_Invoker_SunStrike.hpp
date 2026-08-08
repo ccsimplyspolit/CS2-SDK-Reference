@@ -17,23 +17,23 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a70
+        // Size: 0x1a90
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Invoker_SunStrike : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float area_of_effect; // 0x1a58            
-            float damage; // 0x1a5c            
-            float vision_distance; // 0x1a60            
-            float vision_duration; // 0x1a64            
-            float spell_amp; // 0x1a68            
-            float spell_lifesteal; // 0x1a6c            
+            float area_of_effect; // 0x1a78
+            float damage; // 0x1a7c
+            float vision_distance; // 0x1a80
+            float vision_duration; // 0x1a84
+            float spell_amp; // 0x1a88
+            float spell_lifesteal; // 0x1a8c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Invoker_SunStrike because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Invoker_SunStrike) == 0x1a70);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Invoker_SunStrike) == 0x1a90);
     };
 };

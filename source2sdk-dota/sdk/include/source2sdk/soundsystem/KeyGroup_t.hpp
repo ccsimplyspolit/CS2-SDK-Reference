@@ -30,21 +30,21 @@ namespace source2sdk
         struct KeyGroup_t
         {
         public:
-            std::uint8_t nCenterNote; // 0x0            
-            std::uint8_t nMinNote; // 0x1            
-            std::uint8_t nMaxNote; // 0x2            
-            std::uint8_t nNumVelocityZones; // 0x3            
+            std::uint8_t nCenterNote; // 0x0
+            std::uint8_t nMinNote; // 0x1
+            std::uint8_t nMaxNote; // 0x2
+            std::uint8_t nNumVelocityZones; // 0x3
             uint8_t _pad0004[0x4]; // 0x4
-            source2sdk::soundsystem::VelocityZone_t* pVelocityZones; // 0x8            
+            source2sdk::soundsystem::VelocityZone_t* pVelocityZones; // 0x8
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::soundsystem::KeyGroup_t, nCenterNote) == 0x0);
         static_assert(offsetof(source2sdk::soundsystem::KeyGroup_t, nMinNote) == 0x1);
         static_assert(offsetof(source2sdk::soundsystem::KeyGroup_t, nMaxNote) == 0x2);
         static_assert(offsetof(source2sdk::soundsystem::KeyGroup_t, nNumVelocityZones) == 0x3);
         static_assert(offsetof(source2sdk::soundsystem::KeyGroup_t, pVelocityZones) == 0x8);
-        
+
         static_assert(sizeof(source2sdk::soundsystem::KeyGroup_t) == 0x10);
     };
 };

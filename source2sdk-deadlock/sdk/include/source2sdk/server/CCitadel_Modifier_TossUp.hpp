@@ -23,17 +23,17 @@ namespace source2sdk
         class CCitadel_Modifier_TossUp : public source2sdk::server::CCitadelModifier
         {
         public:
-            bool m_bForceApplied; // 0xd0            
-            bool m_bRestrictMovement; // 0xd1            
+            bool m_bForceApplied; // 0xd0
+            bool m_bRestrictMovement; // 0xd1
             uint8_t _pad00d2[0x2]; // 0xd2
-            Vector m_vTossUpForce; // 0xd4            
-            float m_flCurrentVelocityScale; // 0xe0            
+            Vector m_vTossUpForce; // 0xd4
+            float m_flCurrentVelocityScale; // 0xe0
             uint8_t _pad00e4[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_TossUp because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_TossUp) == 0xe8);
     };
 };

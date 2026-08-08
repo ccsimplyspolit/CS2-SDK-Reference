@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x58
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Warp Section Tag"
         #pragma pack(push, 1)
@@ -27,15 +27,15 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "Warp Position"
-            bool m_bWarpPosition; // 0x50            
+            bool m_bWarpPosition; // 0x50
             // metadata: MPropertyFriendlyName "Warp Orientation"
-            bool m_bWarpOrientation; // 0x51            
+            bool m_bWarpOrientation; // 0x51
             uint8_t _pad0052[0x6];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CWarpSectionAnimTag because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::animgraphlib::CWarpSectionAnimTag) == 0x58);
     };
 };

@@ -17,30 +17,30 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1aa0
+        // Size: 0x1ac0
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Techies_Suicide_Leap : public source2sdk::client::CDOTA_Buff
         {
         public:
-            VectorWS m_vLoc; // 0x1a58            
-            float m_flPredictedTotalTime; // 0x1a64            
-            VectorWS m_vStartPosition; // 0x1a68            
-            float m_flCurrentTimeHoriz; // 0x1a74            
-            float m_flCurrentTimeVert; // 0x1a78            
-            bool m_bHorizontalMotionInterrupted; // 0x1a7c            
-            bool m_bDamageApplied; // 0x1a7d            
-            bool m_bTargetTeleported; // 0x1a7e            
-            uint8_t _pad1a7f[0x1]; // 0x1a7f
-            Vector m_vHorizontalVelocity; // 0x1a80            
-            VectorWS m_vLastKnownTargetPosition; // 0x1a8c            
-            float m_flInitialVelocityZ; // 0x1a98            
-            uint8_t _pad1a9c[0x4];
+            VectorWS m_vLoc; // 0x1a78
+            float m_flPredictedTotalTime; // 0x1a84
+            VectorWS m_vStartPosition; // 0x1a88
+            float m_flCurrentTimeHoriz; // 0x1a94
+            float m_flCurrentTimeVert; // 0x1a98
+            bool m_bHorizontalMotionInterrupted; // 0x1a9c
+            bool m_bDamageApplied; // 0x1a9d
+            bool m_bTargetTeleported; // 0x1a9e
+            uint8_t _pad1a9f[0x1]; // 0x1a9f
+            Vector m_vHorizontalVelocity; // 0x1aa0
+            VectorWS m_vLastKnownTargetPosition; // 0x1aac
+            float m_flInitialVelocityZ; // 0x1ab8
+            uint8_t _pad1abc[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Techies_Suicide_Leap because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Techies_Suicide_Leap) == 0x1aa0);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Techies_Suicide_Leap) == 0x1ac0);
     };
 };

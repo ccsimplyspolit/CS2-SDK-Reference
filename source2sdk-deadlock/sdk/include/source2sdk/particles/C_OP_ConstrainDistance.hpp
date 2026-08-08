@@ -20,29 +20,29 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x4d0
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_ConstrainDistance : public source2sdk::particles::CParticleFunctionConstraint
         {
         public:
             // metadata: MPropertyFriendlyName "minimum distance"
-            source2sdk::particleslib::CParticleCollectionFloatInput m_fMinDistance; // 0x1d8            
+            source2sdk::particleslib::CParticleCollectionFloatInput m_fMinDistance; // 0x1d8
             // metadata: MPropertyFriendlyName "maximum distance"
-            source2sdk::particleslib::CParticleCollectionFloatInput m_fMaxDistance; // 0x348            
+            source2sdk::particleslib::CParticleCollectionFloatInput m_fMaxDistance; // 0x348
             // metadata: MPropertyFriendlyName "control point number"
-            std::int32_t m_nControlPointNumber; // 0x4b8            
+            std::int32_t m_nControlPointNumber; // 0x4b8
             // metadata: MPropertyFriendlyName "offset of center"
             // metadata: MVectorIsCoordinate
-            Vector m_CenterOffset; // 0x4bc            
+            Vector m_CenterOffset; // 0x4bc
             // metadata: MPropertyFriendlyName "global center point"
-            bool m_bGlobalCenter; // 0x4c8            
+            bool m_bGlobalCenter; // 0x4c8
             uint8_t _pad04c9[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_ConstrainDistance because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_ConstrainDistance) == 0x4d0);
     };
 };

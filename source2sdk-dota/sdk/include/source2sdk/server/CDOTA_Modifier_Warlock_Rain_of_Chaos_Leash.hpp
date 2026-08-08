@@ -17,24 +17,24 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a78
+        // Size: 0x1a98
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Warlock_Rain_of_Chaos_Leash : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float m_flMaxMovespeed; // 0x1a58            
-            float leash_start_radius; // 0x1a5c            
-            float leash_radius; // 0x1a60            
-            float leashed_movespeed; // 0x1a64            
-            Vector2D m_vStartLoc; // 0x1a68            
-            float m_flLastMaxMovespeed; // 0x1a70            
-            uint8_t _pad1a74[0x4];
+            float m_flMaxMovespeed; // 0x1a78
+            float leash_start_radius; // 0x1a7c
+            float leash_radius; // 0x1a80
+            float leashed_movespeed; // 0x1a84
+            Vector2D m_vStartLoc; // 0x1a88
+            float m_flLastMaxMovespeed; // 0x1a90
+            uint8_t _pad1a94[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Warlock_Rain_of_Chaos_Leash because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Warlock_Rain_of_Chaos_Leash) == 0x1a78);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Warlock_Rain_of_Chaos_Leash) == 0x1a98);
     };
 };

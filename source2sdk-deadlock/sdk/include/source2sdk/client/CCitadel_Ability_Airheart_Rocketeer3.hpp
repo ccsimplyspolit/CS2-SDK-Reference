@@ -21,7 +21,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x1770
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "bool m_bJetpackActive"
         // static metadata: MNetworkVarNames "GameTime_t m_tJetpackInputDownTime"
         // static metadata: MNetworkVarNames "Vector m_vPreservedVelocity"
@@ -43,48 +43,48 @@ namespace source2sdk
         {
         public:
             uint8_t _pad11d8[0x530]; // 0x11d8
-            Vector m_vDebugVelocityIntentModelSpace; // 0x1708            
-            float m_flDebugCoeffFactor; // 0x1714            
+            Vector m_vDebugVelocityIntentModelSpace; // 0x1708
+            float m_flDebugCoeffFactor; // 0x1714
             // metadata: MNetworkEnable
-            bool m_bJetpackActive; // 0x1718            
+            bool m_bJetpackActive; // 0x1718
             uint8_t _pad1719[0x3]; // 0x1719
             // metadata: MNetworkEnable
-            source2sdk::entity2::GameTime_t m_tJetpackInputDownTime; // 0x171c            
+            source2sdk::entity2::GameTime_t m_tJetpackInputDownTime; // 0x171c
             // metadata: MNetworkEnable
-            Vector m_vPreservedVelocity; // 0x1720            
+            Vector m_vPreservedVelocity; // 0x1720
             // metadata: MNetworkEnable
-            bool m_bHasLeftGround; // 0x172c            
+            bool m_bHasLeftGround; // 0x172c
             // metadata: MNetworkEnable
-            bool m_bOutOfFuelAndHaventTouchedGround; // 0x172d            
+            bool m_bOutOfFuelAndHaventTouchedGround; // 0x172d
             // metadata: MNetworkEnable
-            source2sdk::client::EJetpackMode_t m_eMode; // 0x172e            
+            source2sdk::client::EJetpackMode_t m_eMode; // 0x172e
             uint8_t _pad172f[0x1]; // 0x172f
             // metadata: MNetworkEnable
-            source2sdk::entity2::GameTime_t m_tModeBeginTime; // 0x1730            
+            source2sdk::entity2::GameTime_t m_tModeBeginTime; // 0x1730
             // metadata: MNetworkEnable
-            Vector m_vJetpackInput; // 0x1734            
+            Vector m_vJetpackInput; // 0x1734
             // metadata: MNetworkEnable
-            source2sdk::entity2::GameTime_t m_tLastWallAttachTime; // 0x1740            
+            source2sdk::entity2::GameTime_t m_tLastWallAttachTime; // 0x1740
             // metadata: MNetworkEnable
-            source2sdk::entity2::GameTime_t m_tLastGroundedTime; // 0x1744            
+            source2sdk::entity2::GameTime_t m_tLastGroundedTime; // 0x1744
             // metadata: MNetworkEnable
-            bool m_bQueueWallAttachJump; // 0x1748            
+            bool m_bQueueWallAttachJump; // 0x1748
             uint8_t _pad1749[0x3]; // 0x1749
             // metadata: MNetworkEnable
-            source2sdk::entity2::GameTime_t m_tOverdriveBeginTime; // 0x174c            
+            source2sdk::entity2::GameTime_t m_tOverdriveBeginTime; // 0x174c
             // metadata: MNetworkEnable
-            Vector m_vIntentSpaceMPCVelocity; // 0x1750            
+            Vector m_vIntentSpaceMPCVelocity; // 0x1750
             // metadata: MNetworkEnable
-            Vector m_vIntentSpaceMPCOrigin; // 0x175c            
+            Vector m_vIntentSpaceMPCOrigin; // 0x175c
             // metadata: MNetworkEnable
-            float m_flIntentSpeedVerticalActual; // 0x1768            
+            float m_flIntentSpeedVerticalActual; // 0x1768
             // metadata: MNetworkEnable
-            float m_flIntentMultiplier; // 0x176c            
+            float m_flIntentMultiplier; // 0x176c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_Airheart_Rocketeer3 because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Ability_Airheart_Rocketeer3) == 0x1770);
     };
 };

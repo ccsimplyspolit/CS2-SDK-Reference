@@ -26,15 +26,15 @@ namespace source2sdk
         class CDOTA_Item_Armlet : public source2sdk::server::CDOTA_Item
         {
         public:
-            float toggle_cooldown; // 0x658            
-            source2sdk::entity2::GameTime_t m_flLastActivateTime; // 0x65c            
-            source2sdk::entity2::GameTime_t m_flLastDeactivateTime; // 0x660            
+            float toggle_cooldown; // 0x658
+            source2sdk::entity2::GameTime_t m_flLastActivateTime; // 0x65c
+            source2sdk::entity2::GameTime_t m_flLastDeactivateTime; // 0x660
             uint8_t _pad0664[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Item_Armlet because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Item_Armlet) == 0x668);
     };
 };

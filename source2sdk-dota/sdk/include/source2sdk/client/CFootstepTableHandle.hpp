@@ -18,7 +18,7 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x8
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MPropertyCustomFGDType "string"
         #pragma pack(push, 1)
         class CFootstepTableHandle
@@ -27,8 +27,8 @@ namespace source2sdk
             uint8_t _pad0000[0x8];
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::client::CFootstepTableHandle) == 0x8);
     };
 };

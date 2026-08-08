@@ -26,13 +26,13 @@ namespace source2sdk
         class C_DOTA_Ability_Lion_FingerOfDeath : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x6a8            
+            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x6a8
             uint8_t _pad06ac[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_Lion_FingerOfDeath because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_Lion_FingerOfDeath) == 0x6b0);
     };
 };

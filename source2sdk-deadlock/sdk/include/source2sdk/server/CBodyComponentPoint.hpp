@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x1a0
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "CGameSceneNode m_sceneNode"
         #pragma pack(push, 1)
         class CBodyComponentPoint : public source2sdk::server::CBodyComponent
@@ -28,12 +28,12 @@ namespace source2sdk
         public:
             uint8_t _pad0078[0x8]; // 0x78
             // metadata: MNetworkEnable
-            source2sdk::server::CGameSceneNode m_sceneNode; // 0x80            
+            source2sdk::server::CGameSceneNode m_sceneNode; // 0x80
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CBodyComponentPoint because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CBodyComponentPoint) == 0x1a0);
     };
 };

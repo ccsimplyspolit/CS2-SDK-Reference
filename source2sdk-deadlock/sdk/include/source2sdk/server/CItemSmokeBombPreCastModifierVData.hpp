@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x910
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CItemSmokeBombPreCastModifierVData : public source2sdk::server::CCitadelModifierVData
@@ -29,15 +29,15 @@ namespace source2sdk
             // metadata: MPropertyStartGroup "Visuals"
             // m_SmokeAreaParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_SmokeAreaParticle;
-            char m_SmokeAreaParticle[0xe0]; // 0x750            
+            char m_SmokeAreaParticle[0xe0]; // 0x750
             // m_CasterParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_CasterParticle;
-            char m_CasterParticle[0xe0]; // 0x830            
+            char m_CasterParticle[0xe0]; // 0x830
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CItemSmokeBombPreCastModifierVData because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CItemSmokeBombPreCastModifierVData) == 0x910);
     };
 };

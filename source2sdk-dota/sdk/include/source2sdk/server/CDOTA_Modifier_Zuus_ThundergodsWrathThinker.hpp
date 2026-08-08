@@ -24,29 +24,29 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a90
+        // Size: 0x1ab0
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Zuus_ThundergodsWrathThinker : public source2sdk::client::CDOTA_Buff
         {
         public:
-            std::int32_t damage; // 0x1a58            
-            float damage_pct; // 0x1a5c            
-            float sight_duration; // 0x1a60            
-            float growing_delay; // 0x1a64            
-            float grow_kill_amp; // 0x1a68            
-            bool m_bZeusHasArcana; // 0x1a6c            
-            uint8_t _pad1a6d[0x3]; // 0x1a6d
+            std::int32_t damage; // 0x1a78
+            float damage_pct; // 0x1a7c
+            float sight_duration; // 0x1a80
+            float growing_delay; // 0x1a84
+            float grow_kill_amp; // 0x1a88
+            bool m_bZeusHasArcana; // 0x1a8c
+            uint8_t _pad1a8d[0x3]; // 0x1a8d
             // m_hTargetEntities has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::server::CBaseEntity>> m_hTargetEntities;
-            char m_hTargetEntities[0x18]; // 0x1a70            
-            std::int32_t m_nFarKills; // 0x1a88            
-            std::int32_t m_nKills; // 0x1a8c            
+            char m_hTargetEntities[0x18]; // 0x1a90
+            std::int32_t m_nFarKills; // 0x1aa8
+            std::int32_t m_nKills; // 0x1aac
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Zuus_ThundergodsWrathThinker because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Zuus_ThundergodsWrathThinker) == 0x1a90);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Zuus_ThundergodsWrathThinker) == 0x1ab0);
     };
 };

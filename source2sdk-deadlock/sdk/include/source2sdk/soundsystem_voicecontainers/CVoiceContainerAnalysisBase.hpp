@@ -18,7 +18,7 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x50
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MVDataNodeType "1"
         // static metadata: MPropertyPolymorphicClass
@@ -30,16 +30,16 @@ namespace source2sdk
         public:
             uint8_t _pad0000[0x8]; // 0x0
             // metadata: MPropertyFriendlyName "Regenerate curve on compile"
-            bool m_bRegenerateCurveOnCompile; // 0x8            
+            bool m_bRegenerateCurveOnCompile; // 0x8
             uint8_t _pad0009[0x7]; // 0x9
             // metadata: MPropertyFriendlyName "Envelope Curve"
-            CPiecewiseCurve m_curve; // 0x10            
+            CPiecewiseCurve m_curve; // 0x10
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::soundsystem_voicecontainers::CVoiceContainerAnalysisBase, m_bRegenerateCurveOnCompile) == 0x8);
         static_assert(offsetof(source2sdk::soundsystem_voicecontainers::CVoiceContainerAnalysisBase, m_curve) == 0x10);
-        
+
         static_assert(sizeof(source2sdk::soundsystem_voicecontainers::CVoiceContainerAnalysisBase) == 0x50);
     };
 };

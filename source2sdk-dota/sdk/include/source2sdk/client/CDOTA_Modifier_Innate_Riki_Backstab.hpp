@@ -17,25 +17,25 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a78
+        // Size: 0x1a98
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Innate_Riki_Backstab : public source2sdk::client::CDOTA_Buff
         {
         public:
-            std::int32_t backstab_angle; // 0x1a58            
-            float damage_multiplier; // 0x1a5c            
-            float bonus_xp_kill; // 0x1a60            
-            float bonus_xp_assist; // 0x1a64            
-            float bonus_xp_assist_other; // 0x1a68            
-            float ally_multiplier; // 0x1a6c            
-            bool m_bBackstab; // 0x1a70            
-            uint8_t _pad1a71[0x7];
+            std::int32_t backstab_angle; // 0x1a78
+            float damage_multiplier; // 0x1a7c
+            float bonus_xp_kill; // 0x1a80
+            float bonus_xp_assist; // 0x1a84
+            float bonus_xp_assist_other; // 0x1a88
+            float ally_multiplier; // 0x1a8c
+            bool m_bBackstab; // 0x1a90
+            uint8_t _pad1a91[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Innate_Riki_Backstab because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Innate_Riki_Backstab) == 0x1a78);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Innate_Riki_Backstab) == 0x1a98);
     };
 };

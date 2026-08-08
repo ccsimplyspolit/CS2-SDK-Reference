@@ -17,22 +17,22 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a68
+        // Size: 0x1a88
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Item_Ocean_Heart : public source2sdk::client::CDOTA_Buff_Item
         {
         public:
-            float water_hp_regen; // 0x1a58            
-            float water_mp_regen; // 0x1a5c            
-            std::int32_t all_stats; // 0x1a60            
-            bool m_bInRiver; // 0x1a64            
-            uint8_t _pad1a65[0x3];
+            float water_hp_regen; // 0x1a78
+            float water_mp_regen; // 0x1a7c
+            std::int32_t all_stats; // 0x1a80
+            bool m_bInRiver; // 0x1a84
+            uint8_t _pad1a85[0x3];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Item_Ocean_Heart because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Item_Ocean_Heart) == 0x1a68);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Item_Ocean_Heart) == 0x1a88);
     };
 };

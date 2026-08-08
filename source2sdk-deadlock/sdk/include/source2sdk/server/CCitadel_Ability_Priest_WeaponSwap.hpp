@@ -33,13 +33,13 @@ namespace source2sdk
             uint8_t _pad0f70[0x488]; // 0xf70
             // m_hOriginalGun has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CCitadelBaseAbility> m_hOriginalGun;
-            char m_hOriginalGun[0x4]; // 0x13f8            
+            char m_hOriginalGun[0x4]; // 0x13f8
             uint8_t _pad13fc[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_Priest_WeaponSwap because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Ability_Priest_WeaponSwap) == 0x1400);
     };
 };

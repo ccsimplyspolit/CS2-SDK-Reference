@@ -27,8 +27,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: C_DOTA_Ability_Shredder_ChakramAlias_shredder_chakram_2 has no schema binary (size is a guess)
     };
 };

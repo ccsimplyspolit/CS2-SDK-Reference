@@ -26,7 +26,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xcc0
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "CHandle< CCitadelBaseAbility> m_hAbility"
         // static metadata: MNetworkVarNames "int m_iGravestoneState"
         #pragma pack(push, 1)
@@ -36,16 +36,16 @@ namespace source2sdk
             // metadata: MNetworkEnable
             // m_hAbility has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::C_CitadelBaseAbility> m_hAbility;
-            char m_hAbility[0x4]; // 0xcb0            
+            char m_hAbility[0x4]; // 0xcb0
             // metadata: MNetworkEnable
-            std::int32_t m_iGravestoneState; // 0xcb4            
-            float m_flLifetime; // 0xcb8            
+            std::int32_t m_iGravestoneState; // 0xcb4
+            float m_flLifetime; // 0xcb8
             uint8_t _pad0cbc[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_Citadel_GraveStone_Blocker because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_Citadel_GraveStone_Blocker) == 0xcc0);
     };
 };

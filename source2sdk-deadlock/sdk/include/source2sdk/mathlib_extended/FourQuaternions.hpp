@@ -23,18 +23,18 @@ namespace source2sdk
         class FourQuaternions
         {
         public:
-            fltx4 x; // 0x0            
-            fltx4 y; // 0x10            
-            fltx4 z; // 0x20            
-            fltx4 w; // 0x30            
+            fltx4 x; // 0x0
+            fltx4 y; // 0x10
+            fltx4 z; // 0x20
+            fltx4 w; // 0x30
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::mathlib_extended::FourQuaternions, x) == 0x0);
         static_assert(offsetof(source2sdk::mathlib_extended::FourQuaternions, y) == 0x10);
         static_assert(offsetof(source2sdk::mathlib_extended::FourQuaternions, z) == 0x20);
         static_assert(offsetof(source2sdk::mathlib_extended::FourQuaternions, w) == 0x30);
-        
+
         static_assert(sizeof(source2sdk::mathlib_extended::FourQuaternions) == 0x40);
     };
 };

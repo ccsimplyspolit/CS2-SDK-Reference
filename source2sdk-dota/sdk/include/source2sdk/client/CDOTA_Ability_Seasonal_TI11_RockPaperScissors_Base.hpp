@@ -28,8 +28,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: CDOTA_Ability_Seasonal_TI11_RockPaperScissors_Base has no schema binary (size is a guess)
     };
 };

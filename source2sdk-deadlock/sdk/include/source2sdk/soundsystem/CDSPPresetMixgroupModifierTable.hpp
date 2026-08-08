@@ -18,7 +18,7 @@ namespace source2sdk
         // Alignment: 0x8
         // Standard-layout class: true
         // Size: 0x18
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MVDataRoot
         // static metadata: MVDataNodeType "1"
@@ -30,12 +30,12 @@ namespace source2sdk
             // metadata: MPropertyFriendlyName "Modifier Table"
             // m_table has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::soundsystem::CDspPresetModifierList> m_table;
-            char m_table[0x18]; // 0x0            
+            char m_table[0x18]; // 0x0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::soundsystem::CDSPPresetMixgroupModifierTable, m_table) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::soundsystem::CDSPPresetMixgroupModifierTable) == 0x18);
     };
 };

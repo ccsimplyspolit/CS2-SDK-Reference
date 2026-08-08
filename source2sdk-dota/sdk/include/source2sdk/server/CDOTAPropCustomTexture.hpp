@@ -25,13 +25,13 @@ namespace source2sdk
         class CDOTAPropCustomTexture : public source2sdk::server::CDynamicProp
         {
         public:
-            std::uint32_t m_unTeamID; // 0x9f0            
+            std::uint32_t m_unTeamID; // 0x9f0
             uint8_t _pad09f4[0xc];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTAPropCustomTexture because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTAPropCustomTexture) == 0xa00);
     };
 };

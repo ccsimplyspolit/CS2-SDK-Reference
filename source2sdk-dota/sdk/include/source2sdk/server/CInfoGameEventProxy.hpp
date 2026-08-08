@@ -24,17 +24,17 @@ namespace source2sdk
         class CInfoGameEventProxy : public source2sdk::server::CPointEntity
         {
         public:
-            CUtlSymbolLarge m_iszEventName; // 0x498            
-            float m_flRange; // 0x4a0            
+            CUtlSymbolLarge m_iszEventName; // 0x498
+            float m_flRange; // 0x4a0
             uint8_t _pad04a4[0x4];
-            
+
             // Datamap fields:
             // CUtlSymbolLarge InputGenerateGameEvent; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CInfoGameEventProxy because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CInfoGameEventProxy) == 0x4a8);
     };
 };

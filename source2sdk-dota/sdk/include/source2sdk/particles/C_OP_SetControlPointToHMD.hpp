@@ -20,25 +20,25 @@ namespace source2sdk
         // Size: 0x1f8
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_SetControlPointToHMD : public source2sdk::particles::CParticleFunctionPreEmission
         {
         public:
             // metadata: MPropertyFriendlyName "control point number"
-            std::int32_t m_nCP1; // 0x1e0            
+            std::int32_t m_nCP1; // 0x1e0
             // metadata: MPropertyFriendlyName "control point offset"
             // metadata: MVectorIsCoordinate
-            Vector m_vecCP1Pos; // 0x1e4            
+            Vector m_vecCP1Pos; // 0x1e4
             // metadata: MPropertyFriendlyName "use hmd orientation"
-            bool m_bOrientToHMD; // 0x1f0            
+            bool m_bOrientToHMD; // 0x1f0
             uint8_t _pad01f1[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_SetControlPointToHMD because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_SetControlPointToHMD) == 0x1f8);
     };
 };

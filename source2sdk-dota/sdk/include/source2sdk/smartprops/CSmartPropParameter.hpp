@@ -21,7 +21,7 @@ namespace source2sdk
         // Is Abstract
         // Has Trivial Destructor
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MVDataRoot
         // static metadata: MVDataNodeType "1"
@@ -33,13 +33,13 @@ namespace source2sdk
             uint8_t _pad0000[0x8]; // 0x0
             // metadata: MPropertySuppressField
             // metadata: MVDataUniqueMonotonicInt "_editor/next_element_id"
-            std::int32_t m_nElementID; // 0x8            
+            std::int32_t m_nElementID; // 0x8
             uint8_t _pad000c[0x4];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::smartprops::CSmartPropParameter, m_nElementID) == 0x8);
-        
+
         static_assert(sizeof(source2sdk::smartprops::CSmartPropParameter) == 0x10);
     };
 };

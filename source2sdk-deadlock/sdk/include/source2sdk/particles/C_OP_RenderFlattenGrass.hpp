@@ -20,25 +20,25 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x238
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_RenderFlattenGrass : public source2sdk::particles::CParticleFunctionRenderer
         {
         public:
             // metadata: MPropertyFriendlyName "flattening strength"
-            float m_flFlattenStrength; // 0x228            
+            float m_flFlattenStrength; // 0x228
             // metadata: MPropertyFriendlyName "strength field override"
             // metadata: MPropertyAttributeChoiceName "particlefield_scalar"
-            source2sdk::particles::ParticleAttributeIndex_t m_nStrengthFieldOverride; // 0x22c            
+            source2sdk::particles::ParticleAttributeIndex_t m_nStrengthFieldOverride; // 0x22c
             // metadata: MPropertyFriendlyName "radius scale"
-            float m_flRadiusScale; // 0x230            
+            float m_flRadiusScale; // 0x230
             uint8_t _pad0234[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_RenderFlattenGrass because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_RenderFlattenGrass) == 0x238);
     };
 };

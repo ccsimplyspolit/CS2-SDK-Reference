@@ -25,13 +25,13 @@ namespace source2sdk
         class C_DOTAAmbientCreatureParticleZone : public source2sdk::client::C_FuncBrush
         {
         public:
-            char m_szModelName[64]; // 0xa88            
-            char m_szAreaName[256]; // 0xac8            
+            char m_szModelName[64]; // 0xa88
+            char m_szAreaName[256]; // 0xac8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTAAmbientCreatureParticleZone because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTAAmbientCreatureParticleZone) == 0xbc8);
     };
 };

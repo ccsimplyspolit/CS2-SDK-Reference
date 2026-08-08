@@ -25,13 +25,13 @@ namespace source2sdk
         class CIngameEvent_MonsterHunter : public source2sdk::server::CIngameEvent_Base
         {
         public:
-            std::int32_t m_dota_player_spawned_event; // 0x1a58            
+            std::int32_t m_dota_player_spawned_event; // 0x1a58
             uint8_t _pad1a5c[0xac];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CIngameEvent_MonsterHunter because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CIngameEvent_MonsterHunter) == 0x1b08);
     };
 };

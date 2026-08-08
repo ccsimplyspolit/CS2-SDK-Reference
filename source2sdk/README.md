@@ -2,9 +2,9 @@
 
 Full CS2 SDK generated from the installed game by [`../source2gen/`](../source2gen/).
 
-**3748 headers across 33 modules**, generated 2026-07-19 against CS2
-`ClientVersion=2000876` / `PatchVersion=1.41.7.1` (VersionDate Jul 16 2026),
-matching a2x/cs2-dumper build 14169.
+**3748 headers across 33 modules**, generated 2026-08-08 against CS2
+`ClientVersion=2000880` / `PatchVersion=1.41.7.4` (VersionDate Aug 03 2026),
+matching a2x/cs2-dumper build 14174.
 
 > The upstream this came from — `neverlosecc/source2sdk` — now returns **404**,
 > as does `neverlosecc/source2gen`. Both directories here are the surviving copy.

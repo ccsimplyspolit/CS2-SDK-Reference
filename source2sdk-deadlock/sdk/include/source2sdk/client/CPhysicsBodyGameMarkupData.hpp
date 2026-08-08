@@ -18,7 +18,7 @@ namespace source2sdk
         // Alignment: 0x8
         // Standard-layout class: true
         // Size: 0x28
-        // 
+        //
         // static metadata: MModelGameData
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -28,12 +28,12 @@ namespace source2sdk
             // metadata: MPropertyDescription "Physics Body Data By Bone Name"
             // m_PhysicsBodyMarkupByBoneName has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlOrderedMap<CUtlString,source2sdk::client::CPhysicsBodyGameMarkup> m_PhysicsBodyMarkupByBoneName;
-            char m_PhysicsBodyMarkupByBoneName[0x28]; // 0x0            
+            char m_PhysicsBodyMarkupByBoneName[0x28]; // 0x0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::CPhysicsBodyGameMarkupData, m_PhysicsBodyMarkupByBoneName) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::client::CPhysicsBodyGameMarkupData) == 0x28);
     };
 };

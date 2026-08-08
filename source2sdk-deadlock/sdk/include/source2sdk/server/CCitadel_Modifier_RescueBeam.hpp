@@ -25,13 +25,13 @@ namespace source2sdk
         {
         public:
             uint8_t _pad00d0[0x200]; // 0xd0
-            float m_flHealthPerSecond; // 0x2d0            
-            source2sdk::client::ParticleIndex_t m_nBeamIndex; // 0x2d4            
+            float m_flHealthPerSecond; // 0x2d0
+            source2sdk::client::ParticleIndex_t m_nBeamIndex; // 0x2d4
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_RescueBeam because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_RescueBeam) == 0x2d8);
     };
 };

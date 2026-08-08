@@ -25,13 +25,13 @@ namespace source2sdk
         class C_DOTA_Ability_Winter_Wyvern_Accelerated_Learning : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            std::int32_t nCachedLevels; // 0x6a8            
+            std::int32_t nCachedLevels; // 0x6a8
             uint8_t _pad06ac[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_Winter_Wyvern_Accelerated_Learning because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_Winter_Wyvern_Accelerated_Learning) == 0x6b0);
     };
 };

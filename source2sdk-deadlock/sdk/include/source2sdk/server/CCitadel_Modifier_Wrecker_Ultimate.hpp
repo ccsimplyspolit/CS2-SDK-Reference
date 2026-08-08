@@ -33,14 +33,14 @@ namespace source2sdk
         public:
             // m_vecGrabbed has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::server::CBaseEntity>> m_vecGrabbed;
-            char m_vecGrabbed[0x18]; // 0xd0            
-            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0xe8            
+            char m_vecGrabbed[0x18]; // 0xd0
+            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0xe8
             uint8_t _pad00ec[0x404];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_Wrecker_Ultimate because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_Wrecker_Ultimate) == 0x4f0);
     };
 };

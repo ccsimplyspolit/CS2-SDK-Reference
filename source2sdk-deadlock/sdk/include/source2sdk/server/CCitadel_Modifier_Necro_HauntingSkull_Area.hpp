@@ -31,17 +31,17 @@ namespace source2sdk
         class CCitadel_Modifier_Necro_HauntingSkull_Area : public source2sdk::server::CCitadelModifier
         {
         public:
-            source2sdk::client::ParticleIndex_t m_hPreviewRingParticle; // 0xd0            
+            source2sdk::client::ParticleIndex_t m_hPreviewRingParticle; // 0xd0
             uint8_t _pad00d4[0xc]; // 0xd4
             // m_vecDeployedSkulls has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::server::CBaseEntity>> m_vecDeployedSkulls;
-            char m_vecDeployedSkulls[0x18]; // 0xe0            
+            char m_vecDeployedSkulls[0x18]; // 0xe0
             uint8_t _pad00f8[0x300];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_Necro_HauntingSkull_Area because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_Necro_HauntingSkull_Area) == 0x3f8);
     };
 };

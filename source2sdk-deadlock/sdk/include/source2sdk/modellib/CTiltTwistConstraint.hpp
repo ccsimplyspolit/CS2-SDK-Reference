@@ -19,20 +19,20 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x90
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CTiltTwistConstraint : public source2sdk::modellib::CBaseConstraint
         {
         public:
-            std::int32_t m_nTargetAxis; // 0x60            
-            std::int32_t m_nSlaveAxis; // 0x64            
+            std::int32_t m_nTargetAxis; // 0x60
+            std::int32_t m_nSlaveAxis; // 0x64
             uint8_t _pad0068[0x28];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CTiltTwistConstraint because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::modellib::CTiltTwistConstraint) == 0x90);
     };
 };

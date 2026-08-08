@@ -26,29 +26,29 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1aa8
+        // Size: 0x1ac8
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_PhantomAssassin_Fan_Of_Knives_Thinker : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float m_fCurRadius; // 0x1a58            
-            source2sdk::entity2::GameTime_t m_fLastThink; // 0x1a5c            
+            float m_fCurRadius; // 0x1a78
+            source2sdk::entity2::GameTime_t m_fLastThink; // 0x1a7c
             // m_entitiesHit has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::server::CBaseEntity>> m_entitiesHit;
-            char m_entitiesHit[0x18]; // 0x1a60            
-            source2sdk::server::CountdownTimer m_ViewerTimer; // 0x1a78            
-            float projectile_speed; // 0x1a90            
-            float radius; // 0x1a94            
-            float duration; // 0x1a98            
-            float pct_health_damage_initial; // 0x1a9c            
-            float max_damage_initial; // 0x1aa0            
-            uint8_t _pad1aa4[0x4];
+            char m_entitiesHit[0x18]; // 0x1a80
+            source2sdk::server::CountdownTimer m_ViewerTimer; // 0x1a98
+            float projectile_speed; // 0x1ab0
+            float radius; // 0x1ab4
+            float duration; // 0x1ab8
+            float pct_health_damage_initial; // 0x1abc
+            float max_damage_initial; // 0x1ac0
+            uint8_t _pad1ac4[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_PhantomAssassin_Fan_Of_Knives_Thinker because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_PhantomAssassin_Fan_Of_Knives_Thinker) == 0x1aa8);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_PhantomAssassin_Fan_Of_Knives_Thinker) == 0x1ac8);
     };
 };

@@ -17,7 +17,7 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x1da0
+        // Size: 0x1da8
         // Has VTable
         // Construct allowed
         // MClassHasEntityLimitedDataDesc
@@ -25,14 +25,14 @@ namespace source2sdk
         class C_DOTA_Unit_Hero_Meepo : public source2sdk::client::C_DOTA_BaseNPC_Hero
         {
         public:
-            uint8_t _pad1d80[0x18]; // 0x1d80
-            std::int32_t m_nWhichMeepo; // 0x1d98            
-            uint8_t _pad1d9c[0x4];
+            uint8_t _pad1d88[0x18]; // 0x1d88
+            std::int32_t m_nWhichMeepo; // 0x1da0
+            uint8_t _pad1da4[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Unit_Hero_Meepo because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::C_DOTA_Unit_Hero_Meepo) == 0x1da0);
+
+        static_assert(sizeof(source2sdk::client::C_DOTA_Unit_Hero_Meepo) == 0x1da8);
     };
 };

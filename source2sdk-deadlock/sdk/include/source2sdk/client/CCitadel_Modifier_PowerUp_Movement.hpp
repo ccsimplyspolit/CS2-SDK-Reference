@@ -23,13 +23,13 @@ namespace source2sdk
         class CCitadel_Modifier_PowerUp_Movement : public source2sdk::client::CCitadel_Modifier_ScalingPowerUp
         {
         public:
-            bool m_bFilled; // 0xc0            
+            bool m_bFilled; // 0xc0
             uint8_t _pad00c1[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_PowerUp_Movement because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Modifier_PowerUp_Movement) == 0xc8);
     };
 };

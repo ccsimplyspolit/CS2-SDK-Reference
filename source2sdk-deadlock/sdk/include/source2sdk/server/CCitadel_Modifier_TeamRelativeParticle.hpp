@@ -24,13 +24,13 @@ namespace source2sdk
         class CCitadel_Modifier_TeamRelativeParticle : public source2sdk::server::CCitadelModifier
         {
         public:
-            source2sdk::client::ParticleIndex_t m_nParentViewParticle; // 0xd0            
-            source2sdk::client::ParticleIndex_t m_nOtherPlayerViewParticle; // 0xd4            
+            source2sdk::client::ParticleIndex_t m_nParentViewParticle; // 0xd0
+            source2sdk::client::ParticleIndex_t m_nOtherPlayerViewParticle; // 0xd4
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_TeamRelativeParticle because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_TeamRelativeParticle) == 0xd8);
     };
 };

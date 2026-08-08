@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x88
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Apply Modifiers"
         // static metadata: MPropertyDescription "An element which is used to apply a set of modifiers to the state of its parent."
@@ -31,8 +31,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::smartprops::CSmartPropElement_ModifyState) == 0x88);
     };
 };

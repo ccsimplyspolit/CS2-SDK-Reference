@@ -23,14 +23,14 @@ namespace source2sdk
         struct VertexPositionNormal_t
         {
         public:
-            Vector m_vPosition; // 0x0            
-            Vector m_vNormal; // 0xc            
+            Vector m_vPosition; // 0x0
+            Vector m_vNormal; // 0xc
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::physicslib::VertexPositionNormal_t, m_vPosition) == 0x0);
         static_assert(offsetof(source2sdk::physicslib::VertexPositionNormal_t, m_vNormal) == 0xc);
-        
+
         static_assert(sizeof(source2sdk::physicslib::VertexPositionNormal_t) == 0x18);
     };
 };

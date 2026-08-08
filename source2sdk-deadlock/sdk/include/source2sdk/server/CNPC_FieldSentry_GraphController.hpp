@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x130
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CNPC_FieldSentry_GraphController : public source2sdk::server::CNPC_SimpleAnimatingAI_GraphController
@@ -27,18 +27,18 @@ namespace source2sdk
         public:
             // m_flPanel1 has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CAnimGraphParamRef<float> m_flPanel1;
-            char m_flPanel1[0x28]; // 0xb8            
+            char m_flPanel1[0x28]; // 0xb8
             // m_flVelocity has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CAnimGraphParamRef<float> m_flVelocity;
-            char m_flVelocity[0x28]; // 0xe0            
+            char m_flVelocity[0x28]; // 0xe0
             // m_bShoot has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CAnimGraphParamRef<bool> m_bShoot;
-            char m_bShoot[0x28]; // 0x108            
+            char m_bShoot[0x28]; // 0x108
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CNPC_FieldSentry_GraphController because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CNPC_FieldSentry_GraphController) == 0x130);
     };
 };

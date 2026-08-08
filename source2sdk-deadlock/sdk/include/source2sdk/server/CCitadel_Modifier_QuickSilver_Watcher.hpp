@@ -24,13 +24,13 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0208[0x184]; // 0x208
-            bool m_bProcNextHit; // 0x38c            
+            bool m_bProcNextHit; // 0x38c
             uint8_t _pad038d[0x23];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_QuickSilver_Watcher because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_QuickSilver_Watcher) == 0x3b0);
     };
 };

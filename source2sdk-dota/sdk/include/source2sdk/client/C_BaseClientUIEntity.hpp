@@ -26,17 +26,17 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0a88[0x8]; // 0xa88
-            bool m_bEnabled; // 0xa90            
+            bool m_bEnabled; // 0xa90
             uint8_t _pad0a91[0x7]; // 0xa91
-            CUtlSymbolLarge m_DialogXMLName; // 0xa98            
-            CUtlSymbolLarge m_PanelClassName; // 0xaa0            
-            CUtlSymbolLarge m_PanelID; // 0xaa8            
+            CUtlSymbolLarge m_DialogXMLName; // 0xa98
+            CUtlSymbolLarge m_PanelClassName; // 0xaa0
+            CUtlSymbolLarge m_PanelID; // 0xaa8
             uint8_t _pad0ab0[0x8];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_BaseClientUIEntity because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_BaseClientUIEntity) == 0xab8);
     };
 };

@@ -19,19 +19,19 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x758
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CCitadel_Modifier_BulletResistReductionStackVData : public source2sdk::server::CCitadelModifierVData
         {
         public:
-            bool m_bSelfish; // 0x750            
+            bool m_bSelfish; // 0x750
             uint8_t _pad0751[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_BulletResistReductionStackVData because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_BulletResistReductionStackVData) == 0x758);
     };
 };

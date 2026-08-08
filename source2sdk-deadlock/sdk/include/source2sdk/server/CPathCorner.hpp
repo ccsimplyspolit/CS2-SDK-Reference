@@ -24,18 +24,18 @@ namespace source2sdk
         class CPathCorner : public source2sdk::server::CPointEntity
         {
         public:
-            float m_flWait; // 0x4a0            
-            float m_flRadius; // 0x4a4            
-            source2sdk::entity2::CEntityIOOutput m_OnPass; // 0x4a8            
-            
+            float m_flWait; // 0x4a0
+            float m_flRadius; // 0x4a4
+            source2sdk::entity2::CEntityIOOutput m_OnPass; // 0x4a8
+
             // Datamap fields:
             // CUtlSymbolLarge InputSetNextPathCorner; // 0x0
             // void InputInPass; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPathCorner because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CPathCorner) == 0x4c0);
     };
 };

@@ -25,16 +25,16 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0000[0x30]; // 0x0
-            char m_CustomShopName[256]; // 0x30            
+            char m_CustomShopName[256]; // 0x30
             // m_CustomShopItems has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // C_UtlVectorEmbeddedNetworkVar<source2sdk::client::CDOTACustomShopItemInfo> m_CustomShopItems;
-            char m_CustomShopItems[0x68]; // 0x130            
+            char m_CustomShopItems[0x68]; // 0x130
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::CDOTACustomShopInfo, m_CustomShopName) == 0x30);
         static_assert(offsetof(source2sdk::client::CDOTACustomShopInfo, m_CustomShopItems) == 0x130);
-        
+
         static_assert(sizeof(source2sdk::client::CDOTACustomShopInfo) == 0x198);
     };
 };

@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xea0
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "CCitadelAbilityComponent::Storage_t m_CCitadelAbilityComponent"
         #pragma pack(push, 1)
         class C_NPC_TeslaCoil : public source2sdk::client::C_NPC_SimpleAnimatingAI
@@ -30,12 +30,12 @@ namespace source2sdk
             // metadata: MNetworkUserGroup "CCitadelAbilityComponent"
             // metadata: MNetworkAlias "CCitadelAbilityComponent"
             // metadata: MNetworkTypeAlias "CCitadelAbilityComponent"
-            source2sdk::client::CCitadelAbilityComponent m_CCitadelAbilityComponent; // 0xcb8            
+            source2sdk::client::CCitadelAbilityComponent m_CCitadelAbilityComponent; // 0xcb8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_NPC_TeslaCoil because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_NPC_TeslaCoil) == 0xea0);
     };
 };

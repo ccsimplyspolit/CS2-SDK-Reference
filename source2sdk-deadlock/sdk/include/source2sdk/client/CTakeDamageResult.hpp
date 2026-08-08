@@ -31,22 +31,22 @@ namespace source2sdk
         {
         public:
             // metadata: MNotSaved
-            source2sdk::client::CTakeDamageInfo* m_pOriginatingInfo; // 0x0            
-            std::int32_t m_nHealthLost; // 0x8            
-            std::int32_t m_nHealthBefore; // 0xc            
-            std::int32_t m_nDamageDealt; // 0x10            
-            float m_flPreModifiedDamage; // 0x14            
-            std::int32_t m_nTotalledHealthLost; // 0x18            
-            std::int32_t m_nTotalledDamageDealt; // 0x1c            
-            float m_flTotalledPreModifiedDamage; // 0x20            
-            bool m_bWasDamageSuppressed; // 0x24            
-            bool m_bSuppressFlinch; // 0x25            
+            source2sdk::client::CTakeDamageInfo* m_pOriginatingInfo; // 0x0
+            std::int32_t m_nHealthLost; // 0x8
+            std::int32_t m_nHealthBefore; // 0xc
+            std::int32_t m_nDamageDealt; // 0x10
+            float m_flPreModifiedDamage; // 0x14
+            std::int32_t m_nTotalledHealthLost; // 0x18
+            std::int32_t m_nTotalledDamageDealt; // 0x1c
+            float m_flTotalledPreModifiedDamage; // 0x20
+            bool m_bWasDamageSuppressed; // 0x24
+            bool m_bSuppressFlinch; // 0x25
             uint8_t _pad0026[0x2]; // 0x26
-            source2sdk::client::HitGroup_t m_nOverrideFlinchHitGroup; // 0x28            
+            source2sdk::client::HitGroup_t m_nOverrideFlinchHitGroup; // 0x28
             uint8_t _pad002c[0x4];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::CTakeDamageResult, m_pOriginatingInfo) == 0x0);
         static_assert(offsetof(source2sdk::client::CTakeDamageResult, m_nHealthLost) == 0x8);
         static_assert(offsetof(source2sdk::client::CTakeDamageResult, m_nHealthBefore) == 0xc);
@@ -58,7 +58,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::client::CTakeDamageResult, m_bWasDamageSuppressed) == 0x24);
         static_assert(offsetof(source2sdk::client::CTakeDamageResult, m_bSuppressFlinch) == 0x25);
         static_assert(offsetof(source2sdk::client::CTakeDamageResult, m_nOverrideFlinchHitGroup) == 0x28);
-        
+
         static_assert(sizeof(source2sdk::client::CTakeDamageResult) == 0x30);
     };
 };

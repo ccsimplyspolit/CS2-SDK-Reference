@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x18
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "GameTime_t m_flTime"
         #pragma pack(push, 1)
         class CCitadelAutoScaledTime
@@ -27,13 +27,13 @@ namespace source2sdk
         public:
             uint8_t _pad0000[0x8]; // 0x0
             // metadata: MNetworkEnable
-            source2sdk::entity2::GameTime_t m_flTime; // 0x8            
+            source2sdk::entity2::GameTime_t m_flTime; // 0x8
             uint8_t _pad000c[0xc];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::CCitadelAutoScaledTime, m_flTime) == 0x8);
-        
+
         static_assert(sizeof(source2sdk::client::CCitadelAutoScaledTime) == 0x18);
     };
 };

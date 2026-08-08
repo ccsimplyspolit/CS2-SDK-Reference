@@ -24,13 +24,13 @@ namespace source2sdk
         class CPhysThruster : public source2sdk::server::CPhysForce
         {
         public:
-            Vector m_localOrigin; // 0x4f8            
+            Vector m_localOrigin; // 0x4f8
             uint8_t _pad0504[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPhysThruster because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CPhysThruster) == 0x508);
     };
 };

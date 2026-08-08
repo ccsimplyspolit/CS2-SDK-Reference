@@ -22,18 +22,18 @@ namespace source2sdk
         struct SoundeventBoxHelperNetworked_t
         {
         public:
-            VectorWS vOrigin; // 0x0            
-            QAngle qAngles; // 0xc            
-            Vector vMins; // 0x18            
-            Vector vMaxs; // 0x24            
+            VectorWS vOrigin; // 0x0
+            QAngle qAngles; // 0xc
+            Vector vMins; // 0x18
+            Vector vMaxs; // 0x24
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::SoundeventBoxHelperNetworked_t, vOrigin) == 0x0);
         static_assert(offsetof(source2sdk::client::SoundeventBoxHelperNetworked_t, qAngles) == 0xc);
         static_assert(offsetof(source2sdk::client::SoundeventBoxHelperNetworked_t, vMins) == 0x18);
         static_assert(offsetof(source2sdk::client::SoundeventBoxHelperNetworked_t, vMaxs) == 0x24);
-        
+
         static_assert(sizeof(source2sdk::client::SoundeventBoxHelperNetworked_t) == 0x30);
     };
 };

@@ -27,8 +27,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: C_PointEntityAlias_info_target_portrait_root has no schema binary (size is a guess)
     };
 };

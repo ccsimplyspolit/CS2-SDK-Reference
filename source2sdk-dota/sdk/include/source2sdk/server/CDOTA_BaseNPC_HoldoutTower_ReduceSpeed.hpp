@@ -17,7 +17,7 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x19e8
+        // Size: 0x19f0
         // Has VTable
         // Construct allowed
         #pragma pack(push, 1)
@@ -27,8 +27,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: CDOTA_BaseNPC_HoldoutTower_ReduceSpeed has no schema binary (size is a guess)
     };
 };

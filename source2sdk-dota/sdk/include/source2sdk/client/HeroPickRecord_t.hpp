@@ -24,16 +24,16 @@ namespace source2sdk
         struct HeroPickRecord_t
         {
         public:
-            source2sdk::client::HeroPickType eType; // 0x0            
-            source2sdk::client::HeroID_t nHeroID; // 0x4            
-            std::int32_t nTeam; // 0x8            
+            source2sdk::client::HeroPickType eType; // 0x0
+            source2sdk::client::HeroID_t nHeroID; // 0x4
+            std::int32_t nTeam; // 0x8
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::HeroPickRecord_t, eType) == 0x0);
         static_assert(offsetof(source2sdk::client::HeroPickRecord_t, nHeroID) == 0x4);
         static_assert(offsetof(source2sdk::client::HeroPickRecord_t, nTeam) == 0x8);
-        
+
         static_assert(sizeof(source2sdk::client::HeroPickRecord_t) == 0xc);
     };
 };

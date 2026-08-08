@@ -25,16 +25,16 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0498[0x40]; // 0x498
-            float m_fFanForceMaxRadius; // 0x4d8            
-            float m_fFanForceMinRadius; // 0x4dc            
-            float m_flCurveDistRange; // 0x4e0            
+            float m_fFanForceMaxRadius; // 0x4d8
+            float m_fFanForceMinRadius; // 0x4dc
+            float m_flCurveDistRange; // 0x4e0
             uint8_t _pad04e4[0x4]; // 0x4e4
-            CUtlSymbolLarge m_FanForceCurveString; // 0x4e8            
+            CUtlSymbolLarge m_FanForceCurveString; // 0x4e8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CInfoFan because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CInfoFan) == 0x4f0);
     };
 };

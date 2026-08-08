@@ -27,7 +27,7 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x130
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "EStreetBrawlGameState m_eStreetBrawlState"
         // static metadata: MNetworkVarNames "GameTime_t m_flStreetBrawlStateStartTime"
         // static metadata: MNetworkVarNames "GameTime_t m_flNextStateTime"
@@ -43,50 +43,50 @@ namespace source2sdk
             uint8_t _pad0000[0x8]; // 0x0
             // metadata: MNetworkEnable
             // metadata: MNetworkChangeCallback "streetBrawlStateChanged"
-            source2sdk::client::EStreetBrawlGameState m_eStreetBrawlState; // 0x8            
+            source2sdk::client::EStreetBrawlGameState m_eStreetBrawlState; // 0x8
             // metadata: MNetworkEnable
-            source2sdk::entity2::GameTime_t m_flStreetBrawlStateStartTime; // 0xc            
+            source2sdk::entity2::GameTime_t m_flStreetBrawlStateStartTime; // 0xc
             // metadata: MNetworkEnable
-            source2sdk::entity2::GameTime_t m_flNextStateTime; // 0x10            
+            source2sdk::entity2::GameTime_t m_flNextStateTime; // 0x10
             // metadata: MNetworkEnable
-            float m_flStreetBrawlTotalNonCombatTime; // 0x14            
+            float m_flStreetBrawlTotalNonCombatTime; // 0x14
             // metadata: MNetworkEnable
-            std::int32_t m_iRound; // 0x18            
+            std::int32_t m_iRound; // 0x18
             // metadata: MNetworkEnable
-            std::int32_t m_iLastBuyCountDown; // 0x1c            
+            std::int32_t m_iLastBuyCountDown; // 0x1c
             // metadata: MNetworkEnable
-            std::int32_t m_iTeamSapphireScore; // 0x20            
+            std::int32_t m_iTeamSapphireScore; // 0x20
             // metadata: MNetworkEnable
-            std::int32_t m_iTeamAmberScore; // 0x24            
-            float m_tNoTrooperTime; // 0x28            
-            bool m_bOvertime; // 0x2c            
+            std::int32_t m_iTeamAmberScore; // 0x24
+            float m_tNoTrooperTime; // 0x28
+            bool m_bOvertime; // 0x2c
             uint8_t _pad002d[0x3]; // 0x2d
-            std::int32_t m_nScoringTeam; // 0x30            
+            std::int32_t m_nScoringTeam; // 0x30
             uint8_t _pad0034[0x4]; // 0x34
             // m_vTeamSapphireBoss has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::server::CBaseEntity>> m_vTeamSapphireBoss;
-            char m_vTeamSapphireBoss[0x18]; // 0x38            
+            char m_vTeamSapphireBoss[0x18]; // 0x38
             // m_vTeamAmberBoss has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::server::CBaseEntity>> m_vTeamAmberBoss;
-            char m_vTeamAmberBoss[0x18]; // 0x50            
+            char m_vTeamAmberBoss[0x18]; // 0x50
             uint8_t _pad0068[0x28]; // 0x68
             // m_mapOriginalConVarVals has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlOrderedMap<CUtlString,CUtlString> m_mapOriginalConVarVals;
-            char m_mapOriginalConVarVals[0x28]; // 0x90            
+            char m_mapOriginalConVarVals[0x28]; // 0x90
             // m_vecOfferedLegendaries has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<std::int32_t> m_vecOfferedLegendaries;
-            char m_vecOfferedLegendaries[0x18]; // 0xb8            
+            char m_vecOfferedLegendaries[0x18]; // 0xb8
             // m_vecOfferedRares has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<std::int32_t> m_vecOfferedRares;
-            char m_vecOfferedRares[0x18]; // 0xd0            
+            char m_vecOfferedRares[0x18]; // 0xd0
             // m_vecOfferedEnhanced has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<std::int32_t> m_vecOfferedEnhanced;
-            char m_vecOfferedEnhanced[0x18]; // 0xe8            
-            std::int32_t m_nShuffleSeed; // 0x100            
+            char m_vecOfferedEnhanced[0x18]; // 0xe8
+            std::int32_t m_nShuffleSeed; // 0x100
             uint8_t _pad0104[0x2c];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::CStreetBrawlController, m_eStreetBrawlState) == 0x8);
         static_assert(offsetof(source2sdk::server::CStreetBrawlController, m_flStreetBrawlStateStartTime) == 0xc);
         static_assert(offsetof(source2sdk::server::CStreetBrawlController, m_flNextStateTime) == 0x10);
@@ -105,7 +105,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::server::CStreetBrawlController, m_vecOfferedRares) == 0xd0);
         static_assert(offsetof(source2sdk::server::CStreetBrawlController, m_vecOfferedEnhanced) == 0xe8);
         static_assert(offsetof(source2sdk::server::CStreetBrawlController, m_nShuffleSeed) == 0x100);
-        
+
         static_assert(sizeof(source2sdk::server::CStreetBrawlController) == 0x130);
     };
 };

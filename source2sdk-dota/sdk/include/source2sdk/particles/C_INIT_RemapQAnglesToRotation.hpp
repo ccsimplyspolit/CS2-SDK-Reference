@@ -21,19 +21,19 @@ namespace source2sdk
         // Size: 0x248
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_INIT_RemapQAnglesToRotation : public source2sdk::particles::CParticleFunctionInitializer
         {
         public:
             // metadata: MPropertyFriendlyName "transform input"
-            source2sdk::particleslib::CParticleTransformInput m_TransformInput; // 0x1e0            
+            source2sdk::particleslib::CParticleTransformInput m_TransformInput; // 0x1e0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_INIT_RemapQAnglesToRotation because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_INIT_RemapQAnglesToRotation) == 0x248);
     };
 };

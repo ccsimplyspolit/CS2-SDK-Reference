@@ -25,13 +25,13 @@ namespace source2sdk
         class C_DOTA_Ability_DrowRanger_FrostArrows : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            std::int32_t shard_burst_damage_per_stack; // 0x6a8            
-            float shard_burst_slow_duration; // 0x6ac            
+            std::int32_t shard_burst_damage_per_stack; // 0x6a8
+            float shard_burst_slow_duration; // 0x6ac
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_DrowRanger_FrostArrows because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_DrowRanger_FrostArrows) == 0x6b0);
     };
 };

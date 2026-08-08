@@ -25,13 +25,13 @@ namespace source2sdk
         class C_DOTA_Ability_Ringmaster_Impalement : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            VectorWS m_vStartPos; // 0x6a8            
-            std::int32_t dagger_width; // 0x6b4            
+            VectorWS m_vStartPos; // 0x6a8
+            std::int32_t dagger_width; // 0x6b4
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_Ringmaster_Impalement because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_Ringmaster_Impalement) == 0x6b8);
     };
 };

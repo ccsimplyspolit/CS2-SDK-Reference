@@ -25,15 +25,15 @@ namespace source2sdk
         class C_DOTA_Ability_VengefulSpirit_Nether_Swap : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            std::int32_t m_nFXIndex; // 0x6a8            
-            std::int32_t damage; // 0x6ac            
-            float damage_reduction; // 0x6b0            
-            float damage_reduction_duration; // 0x6b4            
+            std::int32_t m_nFXIndex; // 0x6a8
+            std::int32_t damage; // 0x6ac
+            float damage_reduction; // 0x6b0
+            float damage_reduction_duration; // 0x6b4
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_VengefulSpirit_Nether_Swap because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_VengefulSpirit_Nether_Swap) == 0x6b8);
     };
 };

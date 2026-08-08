@@ -24,17 +24,17 @@ namespace source2sdk
         class CLogicGameStateReport : public source2sdk::server::CBaseEntity
         {
         public:
-            bool m_bDisabled; // 0x498            
+            bool m_bDisabled; // 0x498
             uint8_t _pad0499[0xc7];
-            
+
             // Datamap fields:
             // void InputEnable; // 0x0
             // void InputDisable; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CLogicGameStateReport because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CLogicGameStateReport) == 0x560);
     };
 };

@@ -33,25 +33,25 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0000[0x8]; // 0x0
-            source2sdk::client::PlayerID_t m_nPlayerID; // 0x8            
+            source2sdk::client::PlayerID_t m_nPlayerID; // 0x8
             uint8_t _pad000c[0x4]; // 0xc
-            source2sdk::server::InventoryQuickBuyState_t m_quickBuyState; // 0x10            
-            bool m_bBuybackProtectionEnabled; // 0xe0            
-            bool m_bAutoMarkForBuy; // 0xe1            
+            source2sdk::server::InventoryQuickBuyState_t m_quickBuyState; // 0x10
+            bool m_bBuybackProtectionEnabled; // 0xe0
+            bool m_bAutoMarkForBuy; // 0xe1
             uint8_t _pad00e2[0x6]; // 0xe2
             // m_vecControlledUnits has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CNetworkUtlVectorBase<CHandle<source2sdk::server::CBaseEntity>> m_vecControlledUnits;
-            char m_vecControlledUnits[0x18]; // 0xe8            
+            char m_vecControlledUnits[0x18]; // 0xe8
             uint8_t _pad0100[0x30]; // 0x100
-            std::int32_t m_nNextOrder; // 0x130            
+            std::int32_t m_nNextOrder; // 0x130
             uint8_t _pad0134[0x34]; // 0x134
-            bool m_bQuickBuyIgnoredStateDirty; // 0x168            
+            bool m_bQuickBuyIgnoredStateDirty; // 0x168
             uint8_t _pad0169[0x3]; // 0x169
-            std::int32_t m_nSuggestItemIdx; // 0x16c            
+            std::int32_t m_nSuggestItemIdx; // 0x16c
             uint8_t _pad0170[0x18];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::CQuickBuyController, m_nPlayerID) == 0x8);
         static_assert(offsetof(source2sdk::server::CQuickBuyController, m_quickBuyState) == 0x10);
         static_assert(offsetof(source2sdk::server::CQuickBuyController, m_bBuybackProtectionEnabled) == 0xe0);
@@ -60,7 +60,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::server::CQuickBuyController, m_nNextOrder) == 0x130);
         static_assert(offsetof(source2sdk::server::CQuickBuyController, m_bQuickBuyIgnoredStateDirty) == 0x168);
         static_assert(offsetof(source2sdk::server::CQuickBuyController, m_nSuggestItemIdx) == 0x16c);
-        
+
         static_assert(sizeof(source2sdk::server::CQuickBuyController) == 0x188);
     };
 };

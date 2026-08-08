@@ -29,20 +29,20 @@ namespace source2sdk
             // metadata: MNotSaved
             // m_skyBoxFaces has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CStrongHandle<source2sdk::resourcesystem::InfoForResourceTypeIMaterial2> m_skyBoxFaces[6];
-            char m_skyBoxFaces[0x30]; // 0xa88            
+            char m_skyBoxFaces[0x30]; // 0xa88
             // metadata: MNotSaved
             // m_hHeightFogTexture has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CStrongHandle<source2sdk::resourcesystem::InfoForResourceTypeCTextureBase> m_hHeightFogTexture;
-            char m_hHeightFogTexture[0x8]; // 0xab8            
+            char m_hHeightFogTexture[0x8]; // 0xab8
             // metadata: MNotSaved
             // m_hHeightFogMaskTexture has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CStrongHandle<source2sdk::resourcesystem::InfoForResourceTypeCTextureBase> m_hHeightFogMaskTexture;
-            char m_hHeightFogMaskTexture[0x8]; // 0xac0            
+            char m_hHeightFogMaskTexture[0x8]; // 0xac0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_World because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_World) == 0xac8);
     };
 };

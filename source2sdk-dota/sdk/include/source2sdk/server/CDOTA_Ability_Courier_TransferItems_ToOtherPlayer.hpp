@@ -28,8 +28,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: CDOTA_Ability_Courier_TransferItems_ToOtherPlayer has no schema binary (size is a guess)
     };
 };

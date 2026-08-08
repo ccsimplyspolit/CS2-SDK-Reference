@@ -17,21 +17,21 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a70
+        // Size: 0x1a90
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Sand_King_Shard : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float shard_move_distance; // 0x1a58            
-            float shard_interval; // 0x1a5c            
-            VectorWS vLastPos; // 0x1a60            
-            float m_fAccumulatedDistance; // 0x1a6c            
+            float shard_move_distance; // 0x1a78
+            float shard_interval; // 0x1a7c
+            VectorWS vLastPos; // 0x1a80
+            float m_fAccumulatedDistance; // 0x1a8c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Sand_King_Shard because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Sand_King_Shard) == 0x1a70);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Sand_King_Shard) == 0x1a90);
     };
 };

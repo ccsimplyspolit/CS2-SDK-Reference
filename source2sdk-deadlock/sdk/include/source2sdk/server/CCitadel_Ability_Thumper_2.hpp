@@ -23,15 +23,15 @@ namespace source2sdk
         class CCitadel_Ability_Thumper_2 : public source2sdk::server::CCitadelBaseAbility
         {
         public:
-            Vector m_vStompPos; // 0xf70            
-            Vector m_vStompDir; // 0xf7c            
-            std::int32_t m_nStomps; // 0xf88            
+            Vector m_vStompPos; // 0xf70
+            Vector m_vStompDir; // 0xf7c
+            std::int32_t m_nStomps; // 0xf88
             uint8_t _pad0f8c[0x184];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_Thumper_2 because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Ability_Thumper_2) == 0x1110);
     };
 };

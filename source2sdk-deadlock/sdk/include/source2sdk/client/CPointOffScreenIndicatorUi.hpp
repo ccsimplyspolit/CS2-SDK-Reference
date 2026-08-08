@@ -31,19 +31,19 @@ namespace source2sdk
         {
         public:
             // metadata: MNotSaved
-            bool m_bBeenEnabled; // 0xc00            
+            bool m_bBeenEnabled; // 0xc00
             // metadata: MNotSaved
-            bool m_bHide; // 0xc01            
+            bool m_bHide; // 0xc01
             uint8_t _pad0c02[0x2]; // 0xc02
             // metadata: MNotSaved
-            float m_flSeenTargetTime; // 0xc04            
+            float m_flSeenTargetTime; // 0xc04
             // metadata: MNotSaved
-            source2sdk::client::C_PointClientUIWorldPanel* m_pTargetPanel; // 0xc08            
+            source2sdk::client::C_PointClientUIWorldPanel* m_pTargetPanel; // 0xc08
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPointOffScreenIndicatorUi because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CPointOffScreenIndicatorUi) == 0xc10);
     };
 };

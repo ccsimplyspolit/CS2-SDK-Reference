@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x50
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MVDataComponentValidGrandParents
         // static metadata: MPropertyFriendlyName "Is Valid"
@@ -32,12 +32,12 @@ namespace source2sdk
             // metadata: MPropertyFriendlyName "Valid When"
             // metadata: MPropertyDescription "Expression to evaluate to determine if this choice is currently valid."
             // metadata: MPropertyAttributeEditor "SmartPropAttributeEditor(expression)"
-            CUtlString m_Expression; // 0x48            
+            CUtlString m_Expression; // 0x48
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSmartPropSelectionCriteria_IsValid because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::smartprops::CSmartPropSelectionCriteria_IsValid) == 0x50);
     };
 };

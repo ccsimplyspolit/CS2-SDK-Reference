@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x108
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MVDataComponentValidGrandParents
         // static metadata: MPropertyFriendlyName "Filter Edges by Angle"
@@ -31,18 +31,18 @@ namespace source2sdk
         public:
             // metadata: MPropertyFriendlyName "Min Angle"
             // metadata: MPropertyDescription "Angle at closed edge of face."
-            CSmartPropAttributeFloat m_flMinAngle; // 0x48            
+            CSmartPropAttributeFloat m_flMinAngle; // 0x48
             // metadata: MPropertyFriendlyName "Max Angle"
             // metadata: MPropertyDescription "Angle at closed edge of face."
-            CSmartPropAttributeFloat m_flMaxAngle; // 0x88            
+            CSmartPropAttributeFloat m_flMaxAngle; // 0x88
             // metadata: MPropertyFriendlyName "Invert"
             // metadata: MPropertyDescription "When true, discard edges within the angle threshold."
-            CSmartPropAttributeBool m_bInvert; // 0xc8            
+            CSmartPropAttributeBool m_bInvert; // 0xc8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSmartPropSelectionCriteria_EdgeAngleCriteria because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::smartprops::CSmartPropSelectionCriteria_EdgeAngleCriteria) == 0x108);
     };
 };

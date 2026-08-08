@@ -23,13 +23,13 @@ namespace source2sdk
         class CCitadelSpeedBoostTrigger : public source2sdk::client::C_BaseTrigger
         {
         public:
-            float m_flMovespeedOverride; // 0xa78            
+            float m_flMovespeedOverride; // 0xa78
             uint8_t _pad0a7c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadelSpeedBoostTrigger because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadelSpeedBoostTrigger) == 0xa80);
     };
 };

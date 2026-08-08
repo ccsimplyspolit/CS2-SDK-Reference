@@ -19,18 +19,18 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x28
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct RnSphereDesc_t : public source2sdk::physicslib::RnShapeDesc_t
         {
         public:
-            RnSphere_t m_Sphere; // 0x18            
+            RnSphere_t m_Sphere; // 0x18
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in RnSphereDesc_t because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::physicslib::RnSphereDesc_t) == 0x28);
     };
 };

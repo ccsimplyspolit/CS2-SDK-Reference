@@ -33,23 +33,23 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0580[0x10]; // 0x580
-            std::int32_t m_nProjectileID; // 0x590            
-            VectorWS m_vStartLocation; // 0x594            
-            VectorWS m_vProjectileLocation; // 0x5a0            
-            QAngle m_ProjectileAngles; // 0x5ac            
+            std::int32_t m_nProjectileID; // 0x590
+            VectorWS m_vStartLocation; // 0x594
+            VectorWS m_vProjectileLocation; // 0x5a0
+            QAngle m_ProjectileAngles; // 0x5ac
             // m_hRemnantToKill has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hRemnantToKill;
-            char m_hRemnantToKill[0x4]; // 0x5b8            
-            bool m_bProjectileStarted; // 0x5bc            
+            char m_hRemnantToKill[0x4]; // 0x5b8
+            bool m_bProjectileStarted; // 0x5bc
             uint8_t _pad05bd[0x3]; // 0x5bd
             // hAlreadyHitList has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::server::CBaseEntity>> hAlreadyHitList;
-            char hAlreadyHitList[0x18]; // 0x5c0            
+            char hAlreadyHitList[0x18]; // 0x5c0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_EmberSpirit_Activate_FireRemnant because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_EmberSpirit_Activate_FireRemnant) == 0x5d8);
     };
 };

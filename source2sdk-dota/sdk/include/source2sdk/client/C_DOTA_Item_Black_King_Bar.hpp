@@ -25,13 +25,13 @@ namespace source2sdk
         class C_DOTA_Item_Black_King_Bar : public source2sdk::client::C_DOTA_Item
         {
         public:
-            bool m_bActive; // 0x758            
+            bool m_bActive; // 0x758
             uint8_t _pad0759[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Item_Black_King_Bar because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Item_Black_King_Bar) == 0x760);
     };
 };

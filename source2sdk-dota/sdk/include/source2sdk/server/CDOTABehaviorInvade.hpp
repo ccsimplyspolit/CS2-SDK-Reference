@@ -31,25 +31,25 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0000[0x68]; // 0x0
-            source2sdk::server::CDOTABehaviorMoveTo m_MoveTo; // 0x68            
+            source2sdk::server::CDOTABehaviorMoveTo m_MoveTo; // 0x68
             // m_goalEntity has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_goalEntity;
-            char m_goalEntity[0x4]; // 0x150            
+            char m_goalEntity[0x4]; // 0x150
             // m_nextGoalEntity has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_nextGoalEntity;
-            char m_nextGoalEntity[0x4]; // 0x154            
-            bool m_bReachedFinalGoal; // 0x158            
-            bool m_bRequireReachingEndPath; // 0x159            
+            char m_nextGoalEntity[0x4]; // 0x154
+            bool m_bReachedFinalGoal; // 0x158
+            bool m_bRequireReachingEndPath; // 0x159
             uint8_t _pad015a[0x6];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::CDOTABehaviorInvade, m_MoveTo) == 0x68);
         static_assert(offsetof(source2sdk::server::CDOTABehaviorInvade, m_goalEntity) == 0x150);
         static_assert(offsetof(source2sdk::server::CDOTABehaviorInvade, m_nextGoalEntity) == 0x154);
         static_assert(offsetof(source2sdk::server::CDOTABehaviorInvade, m_bReachedFinalGoal) == 0x158);
         static_assert(offsetof(source2sdk::server::CDOTABehaviorInvade, m_bRequireReachingEndPath) == 0x159);
-        
+
         static_assert(sizeof(source2sdk::server::CDOTABehaviorInvade) == 0x160);
     };
 };

@@ -20,54 +20,54 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x240
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_INIT_StatusEffect : public source2sdk::particles::CParticleFunctionInitializer
         {
         public:
             // metadata: MPropertyFriendlyName "D_DETAIL_2"
-            source2sdk::particles::Detail2Combo_t m_nDetail2Combo; // 0x1e0            
+            source2sdk::particles::Detail2Combo_t m_nDetail2Combo; // 0x1e0
             // metadata: MPropertyFriendlyName "$DETAIL2ROTATION"
-            float m_flDetail2Rotation; // 0x1e4            
+            float m_flDetail2Rotation; // 0x1e4
             // metadata: MPropertyFriendlyName "$DETAIL2SCALE"
-            float m_flDetail2Scale; // 0x1e8            
+            float m_flDetail2Scale; // 0x1e8
             // metadata: MPropertyFriendlyName "$DETAIL2BLENDFACTOR"
-            float m_flDetail2BlendFactor; // 0x1ec            
+            float m_flDetail2BlendFactor; // 0x1ec
             // metadata: MPropertyFriendlyName "$COLORWARPINTENSITY"
-            float m_flColorWarpIntensity; // 0x1f0            
+            float m_flColorWarpIntensity; // 0x1f0
             // metadata: MPropertyFriendlyName "$DIFFUSEWARPBLENDTOFULL"
-            float m_flDiffuseWarpBlendToFull; // 0x1f4            
+            float m_flDiffuseWarpBlendToFull; // 0x1f4
             // metadata: MPropertyFriendlyName "$ENVMAPINTENSITY"
-            float m_flEnvMapIntensity; // 0x1f8            
+            float m_flEnvMapIntensity; // 0x1f8
             // metadata: MPropertyFriendlyName "$AMBIENTSCALE"
-            float m_flAmbientScale; // 0x1fc            
+            float m_flAmbientScale; // 0x1fc
             // metadata: MPropertyFriendlyName "$SPECULARCOLOR"
-            Color m_specularColor; // 0x200            
+            Color m_specularColor; // 0x200
             // metadata: MPropertyFriendlyName "$SPECULARSCALE"
-            float m_flSpecularScale; // 0x204            
+            float m_flSpecularScale; // 0x204
             // metadata: MPropertyFriendlyName "$SPECULAREXPONENT"
-            float m_flSpecularExponent; // 0x208            
+            float m_flSpecularExponent; // 0x208
             // metadata: MPropertyFriendlyName "$SPECULAREXPONENTBLENDTOFULL"
-            float m_flSpecularExponentBlendToFull; // 0x20c            
+            float m_flSpecularExponentBlendToFull; // 0x20c
             // metadata: MPropertyFriendlyName "$SPECULARBLENDTOFULL"
-            float m_flSpecularBlendToFull; // 0x210            
+            float m_flSpecularBlendToFull; // 0x210
             // metadata: MPropertyFriendlyName "$RIMLIGHTCOLOR"
-            Color m_rimLightColor; // 0x214            
+            Color m_rimLightColor; // 0x214
             // metadata: MPropertyFriendlyName "$RIMLIGHTSCALE"
-            float m_flRimLightScale; // 0x218            
+            float m_flRimLightScale; // 0x218
             // metadata: MPropertyFriendlyName "$REFLECTIONSTINTBYBASEBLENDTONONE"
-            float m_flReflectionsTintByBaseBlendToNone; // 0x21c            
+            float m_flReflectionsTintByBaseBlendToNone; // 0x21c
             // metadata: MPropertyFriendlyName "$METALNESSBLENDTOFULL"
-            float m_flMetalnessBlendToFull; // 0x220            
+            float m_flMetalnessBlendToFull; // 0x220
             // metadata: MPropertyFriendlyName "$SELFILLUMBLENDTOFULL"
-            float m_flSelfIllumBlendToFull; // 0x224            
+            float m_flSelfIllumBlendToFull; // 0x224
             uint8_t _pad0228[0x18];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_INIT_StatusEffect because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_INIT_StatusEffect) == 0x240);
     };
 };

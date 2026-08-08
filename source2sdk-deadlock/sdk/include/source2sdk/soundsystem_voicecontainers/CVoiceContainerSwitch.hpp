@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xc0
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Container Switch"
         // static metadata: MPropertyDescription "An array of containers"
@@ -31,12 +31,12 @@ namespace source2sdk
             // metadata: MPropertyFriendlyName "Container List"
             // m_soundsToPlay has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::soundsystem_voicecontainers::CSoundContainerReference> m_soundsToPlay;
-            char m_soundsToPlay[0x18]; // 0xa8            
+            char m_soundsToPlay[0x18]; // 0xa8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CVoiceContainerSwitch because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::soundsystem_voicecontainers::CVoiceContainerSwitch) == 0xc0);
     };
 };

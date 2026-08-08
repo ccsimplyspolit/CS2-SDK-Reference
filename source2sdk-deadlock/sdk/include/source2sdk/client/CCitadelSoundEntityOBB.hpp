@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x6e0
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "Vector m_vMins"
         // static metadata: MNetworkVarNames "Vector m_vMaxs"
         #pragma pack(push, 1)
@@ -28,15 +28,15 @@ namespace source2sdk
         public:
             uint8_t _pad06b0[0x14]; // 0x6b0
             // metadata: MNetworkEnable
-            Vector m_vMins; // 0x6c4            
+            Vector m_vMins; // 0x6c4
             // metadata: MNetworkEnable
-            Vector m_vMaxs; // 0x6d0            
+            Vector m_vMaxs; // 0x6d0
             uint8_t _pad06dc[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadelSoundEntityOBB because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadelSoundEntityOBB) == 0x6e0);
     };
 };

@@ -21,37 +21,37 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0xc0
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct RnMesh_t
         {
         public:
-            Vector m_vMin; // 0x0            
-            Vector m_vMax; // 0xc            
+            Vector m_vMin; // 0x0
+            Vector m_vMax; // 0xc
             // m_Nodes has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::physicslib::RnNode_t> m_Nodes;
-            char m_Nodes[0x18]; // 0x18            
-            CUtlVectorSIMDPaddedVector m_Vertices; // 0x30            
+            char m_Nodes[0x18]; // 0x18
+            CUtlVectorSIMDPaddedVector m_Vertices; // 0x30
             // m_Triangles has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::physicslib::RnTriangle_t> m_Triangles;
-            char m_Triangles[0x18]; // 0x48            
+            char m_Triangles[0x18]; // 0x48
             // m_Wings has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::physicslib::RnWing_t> m_Wings;
-            char m_Wings[0x18]; // 0x60            
+            char m_Wings[0x18]; // 0x60
             // m_TriangleEdgeFlags has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<std::uint8_t> m_TriangleEdgeFlags;
-            char m_TriangleEdgeFlags[0x18]; // 0x78            
+            char m_TriangleEdgeFlags[0x18]; // 0x78
             // m_Materials has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<std::uint8_t> m_Materials;
-            char m_Materials[0x18]; // 0x90            
-            Vector m_vOrthographicAreas; // 0xa8            
-            std::uint32_t m_nFlags; // 0xb4            
-            std::uint32_t m_nDebugFlags; // 0xb8            
+            char m_Materials[0x18]; // 0x90
+            Vector m_vOrthographicAreas; // 0xa8
+            std::uint32_t m_nFlags; // 0xb4
+            std::uint32_t m_nDebugFlags; // 0xb8
             uint8_t _pad00bc[0x4];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::physicslib::RnMesh_t, m_vMin) == 0x0);
         static_assert(offsetof(source2sdk::physicslib::RnMesh_t, m_vMax) == 0xc);
         static_assert(offsetof(source2sdk::physicslib::RnMesh_t, m_Nodes) == 0x18);
@@ -63,7 +63,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::physicslib::RnMesh_t, m_vOrthographicAreas) == 0xa8);
         static_assert(offsetof(source2sdk::physicslib::RnMesh_t, m_nFlags) == 0xb4);
         static_assert(offsetof(source2sdk::physicslib::RnMesh_t, m_nDebugFlags) == 0xb8);
-        
+
         static_assert(sizeof(source2sdk::physicslib::RnMesh_t) == 0xc0);
     };
 };

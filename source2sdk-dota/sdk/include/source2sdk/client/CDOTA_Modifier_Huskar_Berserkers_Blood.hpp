@@ -18,26 +18,26 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a78
+        // Size: 0x1a98
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Huskar_Berserkers_Blood : public source2sdk::client::CDOTA_Buff
         {
         public:
-            std::int32_t maximum_health_regen; // 0x1a58            
-            std::int32_t maximum_attack_speed; // 0x1a5c            
-            std::int32_t maximum_magic_resist; // 0x1a60            
-            std::int32_t hp_threshold_max; // 0x1a64            
-            bool m_bIsActive; // 0x1a68            
-            uint8_t _pad1a69[0x3]; // 0x1a69
-            std::int32_t aura_effectiveness; // 0x1a6c            
-            source2sdk::client::ParticleIndex_t m_nFxHuskIndex; // 0x1a70            
-            source2sdk::client::ParticleIndex_t m_nFxIndexA; // 0x1a74            
+            std::int32_t maximum_health_regen; // 0x1a78
+            std::int32_t maximum_attack_speed; // 0x1a7c
+            std::int32_t maximum_magic_resist; // 0x1a80
+            std::int32_t hp_threshold_max; // 0x1a84
+            bool m_bIsActive; // 0x1a88
+            uint8_t _pad1a89[0x3]; // 0x1a89
+            std::int32_t aura_effectiveness; // 0x1a8c
+            source2sdk::client::ParticleIndex_t m_nFxHuskIndex; // 0x1a90
+            source2sdk::client::ParticleIndex_t m_nFxIndexA; // 0x1a94
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Huskar_Berserkers_Blood because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Huskar_Berserkers_Blood) == 0x1a78);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Huskar_Berserkers_Blood) == 0x1a98);
     };
 };

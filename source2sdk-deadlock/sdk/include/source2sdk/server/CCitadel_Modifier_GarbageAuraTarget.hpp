@@ -24,16 +24,16 @@ namespace source2sdk
         {
         public:
             uint8_t _pad00d8[0x100]; // 0xd8
-            float m_flMaxDist; // 0x1d8            
-            Vector m_vecOffsetDir; // 0x1dc            
-            Vector m_vecStartPosition; // 0x1e8            
-            float m_flAOERadius; // 0x1f4            
+            float m_flMaxDist; // 0x1d8
+            Vector m_vecOffsetDir; // 0x1dc
+            Vector m_vecStartPosition; // 0x1e8
+            float m_flAOERadius; // 0x1f4
             uint8_t _pad01f8[0x18];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_GarbageAuraTarget because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_GarbageAuraTarget) == 0x210);
     };
 };

@@ -26,17 +26,17 @@ namespace source2sdk
         class C_DOTACheers : public source2sdk::client::C_BaseEntity
         {
         public:
-            std::int16_t m_nRadiantCheers; // 0x5f0            
-            std::int16_t m_nDireCheers; // 0x5f2            
-            std::int16_t m_nRadiantPremiumCheers; // 0x5f4            
-            std::int16_t m_nDirePremiumCheers; // 0x5f6            
-            source2sdk::client::ECrowdLevel m_nRadiantCrowdLevel; // 0x5f8            
-            source2sdk::client::ECrowdLevel m_nDireCrowdLevel; // 0x5fc            
+            std::int16_t m_nRadiantCheers; // 0x5f0
+            std::int16_t m_nDireCheers; // 0x5f2
+            std::int16_t m_nRadiantPremiumCheers; // 0x5f4
+            std::int16_t m_nDirePremiumCheers; // 0x5f6
+            source2sdk::client::ECrowdLevel m_nRadiantCrowdLevel; // 0x5f8
+            source2sdk::client::ECrowdLevel m_nDireCrowdLevel; // 0x5fc
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTACheers because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTACheers) == 0x600);
     };
 };

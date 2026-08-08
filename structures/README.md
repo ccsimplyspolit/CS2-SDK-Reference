@@ -4,7 +4,7 @@
 
 ## English
 
-Human-readable summaries of the ~10 CS2 C++ classes any RE project keeps coming back to. Class field offsets are current through build 14172 (unchanged from 14169/14170 — only the runtime globals in the access-pattern example below shifted +0x1000 in 14172), verified field-by-field against the installed game. See `schema/client_dll.json` for machine-readable canonical data.
+Human-readable summaries of the ~10 CS2 C++ classes any RE project keeps coming back to. Class field offsets are current through upstream build 14174, verified field-by-field against the installed game. See `schema/client_dll.json` for machine-readable canonical data.
 
 ### CCSPlayerController
 
@@ -27,7 +27,7 @@ offset  type            field
 0x958   int32                   m_iMVPs                      // scoreboard star
 ```
 
-_Verified against `schema/client_dll.json` (cs2-dumper HEAD build 14169) and the installed game, 2026-07-19._
+_Verified against `schema/client_dll.json` (cs2-dumper HEAD build 14174) and the installed game, 2026-08-08._
 
 **Notes:**
 
@@ -83,7 +83,7 @@ offset  type   field
 
 The animated bone transforms an ESP draws live inside the entity's scene node. For any animated pawn `m_pGameSceneNode` (offset `0x330`) **is** a `CSkeletonInstance` (`CSkeletonInstance : CGameSceneNode`, class size `0x490`), which embeds a `CModelState` (class size `0x2b0`) at `0x140` and, in its engine-internal region, a pointer to the world-space bone array.
 
-**Access chain (every offset verified against build 14172):**
+**Access chain (current through upstream build 14174; verified against the installed game):**
 
 ```
 pawn                            // C_CSPlayerPawn*
@@ -102,7 +102,7 @@ boneArray = *(skel + 0x1C0)
 
 1. **Schema** — `schema/client_dll.json`: `CSkeletonInstance.m_modelState = 0x140`.
 2. **Regenerated SDK** — `CSkeletonInstance` (0x490) embeds `CModelState m_modelState` at `0x140`; `CModelState.m_hModel` sits at `0xA0`.
-3. **Disassembly** — `CalculateWorldSpaceBones` (`client.dll+0xA49A50`) does `lea rcx, [this+0x140]` and passes it as the `CModelState*`, and reads `m_hModel` at `this+0x1E0` (= `0x140 + 0xA0`). IDA Hex-Rays confirms the bone array as `*(this+0x1C0)` indexed `+ 32*i` (`0x20` stride, two 16-byte SIMD stores per bone).
+3. **Disassembly** — `CalculateWorldSpaceBones` (`client.dll+0xA49E00`) does `lea rcx, [this+0x140]` and passes it as the `CModelState*`, and reads `m_hModel` at `this+0x1E0` (= `0x140 + 0xA0`). IDA Hex-Rays confirms the bone array as `*(this+0x1C0)` indexed `+ 32*i` (`0x20` stride, two 16-byte SIMD stores per bone).
 
 The post predates 14172 by ~2 months; treat its `0x150` as a stale build.
 
@@ -141,7 +141,7 @@ PELVIS-HIP_L(17)  HIP_L-KNEE_L(18)  KNEE_L-FOOT_HEEL_L(19)
 PELVIS-HIP_R(20)  HIP_R-KNEE_R(21)  KNEE_R-FOOT_HEEL_R(22)
 ```
 
-_Bone-chain offsets verified via `schema/client_dll.json`, the regenerated SDK static-asserts, and IDA/mydisasm of `CalculateWorldSpaceBones` (`client.dll+0xA49A50`), build 14172, 2026-07-23. Bone indices are model-skeleton data (informational, not a binary offset)._
+_Bone-chain offsets verified via `schema/client_dll.json`, the regenerated SDK static-asserts, and the current pattern scan for `CalculateWorldSpaceBones` (`client.dll+0xA49E00`), build 14174, 2026-08-08. Bone indices are model-skeleton data (informational, not a binary offset)._
 
 ### Protobuf message layouts (on-wire)
 
@@ -214,7 +214,7 @@ Every RE project ends up writing the same 3-4 helper functions. Sketched below.
 ```cpp
 // Get local player controller
 uintptr_t client_base = /* ... via LdrGetProcedureAddress or PEB walk ... */;
-uintptr_t lpc_ptr = client_base + 0x237FB70;  // dwLocalPlayerController (build 14172)
+uintptr_t lpc_ptr = client_base + 0x237FB80;  // dwLocalPlayerController (build 14174)
 uintptr_t lpc = *(uintptr_t*)lpc_ptr;
 if (!lpc) return; // no controller yet
 
@@ -227,7 +227,7 @@ if (!inv) return;
 int level = *(int*)(inv + 0x74);
 
 // Get game rules
-uintptr_t gr_ptr = client_base + 0x23A49D8;  // dwGameRules (build 14172)
+uintptr_t gr_ptr = client_base + 0x23A49D8;  // dwGameRules (build 14174)
 uintptr_t gr = *(uintptr_t*)gr_ptr;
 uint8_t is_valve_ds = *(uint8_t*)(gr + 0xA4);
 ```
@@ -246,7 +246,7 @@ uint8_t is_valve_ds = *(uint8_t*)(gr + 0xA4);
 
 ## Русский
 
-Читаемые сводки по ~10 C++-классам CS2, к которым RE-проекты возвращаются постоянно. Оффсеты полей классов актуальны по билд 14172 включительно (не менялись с 14169/14170 — в 14172 сдвинулись на +0x1000 только runtime-globals в примере доступа ниже), сверены пополе с установленной игрой. Machine-readable canonical data — в `schema/client_dll.json`.
+Читаемые сводки по ~10 C++-классам CS2, к которым RE-проекты возвращаются постоянно. Оффсеты полей классов актуальны по upstream-билд 14174 включительно и сверены с установленной игрой. Machine-readable canonical data — в `schema/client_dll.json`.
 
 ### CCSPlayerController
 
@@ -269,7 +269,7 @@ offset  type            field
 0x958   int32                   m_iMVPs                      // звёздочка на scoreboard
 ```
 
-_Сверено против `schema/client_dll.json` (`cs2-dumper` HEAD, билд 14169) и установленной игры, 2026-07-19._
+_Сверено против `schema/client_dll.json` (`cs2-dumper` HEAD, билд 14174) и установленной игры, 2026-08-08._
 
 **Заметки:**
 
@@ -325,7 +325,7 @@ offset  type   field
 
 Анимированные bone-трансформы, которые рисует ESP, живут внутри scene-node'а entity. У любого анимированного pawn'а `m_pGameSceneNode` (оффсет `0x330`) — **это** `CSkeletonInstance` (`CSkeletonInstance : CGameSceneNode`, размер класса `0x490`), который встраивает `CModelState` (размер класса `0x2b0`) по `0x140` и, в своей engine-internal области, указатель на world-space bone-массив.
 
-**Цепочка доступа (каждый оффсет сверен с билдом 14172):**
+**Цепочка доступа (актуально для upstream-билда 14174; сверено с установленной игрой):**
 
 ```
 pawn                            // C_CSPlayerPawn*
@@ -344,7 +344,7 @@ boneArray = *(skel + 0x1C0)
 
 1. **Схема** — `schema/client_dll.json`: `CSkeletonInstance.m_modelState = 0x140`.
 2. **Регенерированный SDK** — `CSkeletonInstance` (0x490) встраивает `CModelState m_modelState` по `0x140`; `CModelState.m_hModel` — по `0xA0`.
-3. **Дизасм** — `CalculateWorldSpaceBones` (`client.dll+0xA49A50`) делает `lea rcx, [this+0x140]` и передаёт как `CModelState*`, а `m_hModel` читает по `this+0x1E0` (= `0x140 + 0xA0`). IDA Hex-Rays подтверждает bone-массив как `*(this+0x1C0)` с индексацией `+ 32*i` (шаг `0x20`, две 16-байтные SIMD-записи на кость).
+3. **Дизасм** — `CalculateWorldSpaceBones` (`client.dll+0xA49E00`) делает `lea rcx, [this+0x140]` и передаёт как `CModelState*`, а `m_hModel` читает по `this+0x1E0` (= `0x140 + 0xA0`). IDA Hex-Rays подтверждает bone-массив как `*(this+0x1C0)` с индексацией `+ 32*i` (шаг `0x20`, две 16-байтные SIMD-записи на кость).
 
 Пост старше 14172 на ~2 месяца; его `0x150` — устаревший билд.
 
@@ -383,7 +383,7 @@ PELVIS-HIP_L(17)  HIP_L-KNEE_L(18)  KNEE_L-FOOT_HEEL_L(19)
 PELVIS-HIP_R(20)  HIP_R-KNEE_R(21)  KNEE_R-FOOT_HEEL_R(22)
 ```
 
-_Оффсеты bone-цепочки сверены через `schema/client_dll.json`, static-asserts регенерированного SDK и IDA/mydisasm по `CalculateWorldSpaceBones` (`client.dll+0xA49A50`), билд 14172, 2026-07-23. Bone-индексы — данные скелета модели (информационно, не оффсет в бинаре)._
+_Оффсеты bone-цепочки сверены через `schema/client_dll.json`, static-asserts регенерированного SDK и текущий pattern-scan `CalculateWorldSpaceBones` (`client.dll+0xA49E00`), билд 14174, 2026-08-08. Bone-индексы — данные скелета модели (информационно, не оффсет в бинаре)._
 
 ### Layout'ы protobuf-сообщений (on-wire)
 
@@ -456,7 +456,7 @@ FVA проверяет бит `attack` для fire-gate mode; у VLB допол�
 ```cpp
 // Get local player controller
 uintptr_t client_base = /* ... via LdrGetProcedureAddress or PEB walk ... */;
-uintptr_t lpc_ptr = client_base + 0x237FB70;  // dwLocalPlayerController (build 14172)
+uintptr_t lpc_ptr = client_base + 0x237FB80;  // dwLocalPlayerController (build 14174)
 uintptr_t lpc = *(uintptr_t*)lpc_ptr;
 if (!lpc) return; // no controller yet
 
@@ -469,7 +469,7 @@ if (!inv) return;
 int level = *(int*)(inv + 0x74);
 
 // Get game rules
-uintptr_t gr_ptr = client_base + 0x23A49D8;  // dwGameRules (build 14172)
+uintptr_t gr_ptr = client_base + 0x23A49D8;  // dwGameRules (build 14174)
 uintptr_t gr = *(uintptr_t*)gr_ptr;
 uint8_t is_valve_ds = *(uint8_t*)(gr + 0xA4);
 ```

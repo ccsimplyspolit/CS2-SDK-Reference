@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x40
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "EntitySubclassID_t m_SourceModifierID"
         // static metadata: MNetworkVarNames "EModifierValue m_eValType"
         // static metadata: MNetworkVarNames "float m_flValue"
@@ -29,19 +29,19 @@ namespace source2sdk
         public:
             uint8_t _pad0000[0x30]; // 0x0
             // metadata: MNetworkEnable
-            CUtlStringToken m_SourceModifierID; // 0x30            
+            CUtlStringToken m_SourceModifierID; // 0x30
             // metadata: MNetworkEnable
-            source2sdk::client::EModifierValue m_eValType; // 0x34            
+            source2sdk::client::EModifierValue m_eValType; // 0x34
             // metadata: MNetworkEnable
-            float m_flValue; // 0x38            
+            float m_flValue; // 0x38
             uint8_t _pad003c[0x4];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::StatViewerModifierValues_t, m_SourceModifierID) == 0x30);
         static_assert(offsetof(source2sdk::server::StatViewerModifierValues_t, m_eValType) == 0x34);
         static_assert(offsetof(source2sdk::server::StatViewerModifierValues_t, m_flValue) == 0x38);
-        
+
         static_assert(sizeof(source2sdk::server::StatViewerModifierValues_t) == 0x40);
     };
 };

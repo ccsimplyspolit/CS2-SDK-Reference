@@ -17,25 +17,25 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1aa8
+        // Size: 0x1ac8
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Oracle_DivinersDeck_Intrinsic : public source2sdk::client::CDOTA_Buff
         {
         public:
-            uint8_t _pad1a58[0x38]; // 0x1a58
-            bool enabled; // 0x1a90            
-            uint8_t _pad1a91[0x3]; // 0x1a91
-            float duration; // 0x1a94            
-            float spell_amplification; // 0x1a98            
-            float gold_bonus_pct; // 0x1a9c            
-            float int_bonus_pct; // 0x1aa0            
-            uint8_t _pad1aa4[0x4];
+            uint8_t _pad1a78[0x38]; // 0x1a78
+            bool enabled; // 0x1ab0
+            uint8_t _pad1ab1[0x3]; // 0x1ab1
+            float duration; // 0x1ab4
+            float spell_amplification; // 0x1ab8
+            float gold_bonus_pct; // 0x1abc
+            float int_bonus_pct; // 0x1ac0
+            uint8_t _pad1ac4[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Oracle_DivinersDeck_Intrinsic because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Oracle_DivinersDeck_Intrinsic) == 0x1aa8);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Oracle_DivinersDeck_Intrinsic) == 0x1ac8);
     };
 };

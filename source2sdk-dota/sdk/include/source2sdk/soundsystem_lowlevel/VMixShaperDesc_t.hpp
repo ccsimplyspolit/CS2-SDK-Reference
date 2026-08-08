@@ -19,7 +19,7 @@ namespace source2sdk
         // Size: 0x14
         // Has Trivial Destructor
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct VMixShaperDesc_t
@@ -27,26 +27,26 @@ namespace source2sdk
         public:
             // metadata: MPropertyFriendlyName "Shape"
             // metadata: MPropertyAttributeRange "0 14"
-            std::int32_t m_nShape; // 0x0            
+            std::int32_t m_nShape; // 0x0
             // metadata: MPropertyFriendlyName "Drive (dB)"
             // metadata: MPropertyAttributeRange "0 36"
-            float m_fldbDrive; // 0x4            
+            float m_fldbDrive; // 0x4
             // metadata: MPropertyFriendlyName "Output Gain (dB)"
             // metadata: MPropertyAttributeRange "-36 0"
-            float m_fldbOutputGain; // 0x8            
+            float m_fldbOutputGain; // 0x8
             // metadata: MPropertyFriendlyName "Dry/Wet"
-            float m_flWetMix; // 0xc            
+            float m_flWetMix; // 0xc
             // metadata: MPropertyFriendlyName "Oversampling"
-            std::int32_t m_nOversampleFactor; // 0x10            
+            std::int32_t m_nOversampleFactor; // 0x10
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::VMixShaperDesc_t, m_nShape) == 0x0);
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::VMixShaperDesc_t, m_fldbDrive) == 0x4);
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::VMixShaperDesc_t, m_fldbOutputGain) == 0x8);
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::VMixShaperDesc_t, m_flWetMix) == 0xc);
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::VMixShaperDesc_t, m_nOversampleFactor) == 0x10);
-        
+
         static_assert(sizeof(source2sdk::soundsystem_lowlevel::VMixShaperDesc_t) == 0x14);
     };
 };

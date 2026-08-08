@@ -34,13 +34,13 @@ namespace source2sdk
         public:
             // m_hTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hTarget;
-            char m_hTarget[0x4]; // 0x580            
+            char m_hTarget[0x4]; // 0x580
             uint8_t _pad0584[0x2c];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Templar_Assassin_Hidden_Gates because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Templar_Assassin_Hidden_Gates) == 0x5b0);
     };
 };

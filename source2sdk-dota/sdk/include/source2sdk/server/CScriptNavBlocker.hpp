@@ -24,13 +24,13 @@ namespace source2sdk
         class CScriptNavBlocker : public source2sdk::server::CFuncNavBlocker
         {
         public:
-            Vector m_vExtent; // 0x790            
+            Vector m_vExtent; // 0x790
             uint8_t _pad079c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CScriptNavBlocker because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CScriptNavBlocker) == 0x7a0);
     };
 };

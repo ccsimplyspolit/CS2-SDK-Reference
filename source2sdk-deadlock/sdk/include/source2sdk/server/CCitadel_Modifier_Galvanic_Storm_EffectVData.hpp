@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x920
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CCitadel_Modifier_Galvanic_Storm_EffectVData : public source2sdk::server::CCitadel_Modifier_ChainLightningEffectVData
@@ -29,12 +29,12 @@ namespace source2sdk
             // metadata: MPropertyGroupName "Visuals"
             // m_BuffChainParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_BuffChainParticle;
-            char m_BuffChainParticle[0xe0]; // 0x840            
+            char m_BuffChainParticle[0xe0]; // 0x840
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_Galvanic_Storm_EffectVData because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_Galvanic_Storm_EffectVData) == 0x920);
     };
 };

@@ -33,12 +33,12 @@ namespace source2sdk
             uint8_t _pad0f70[0x380]; // 0xf70
             // m_vecDamagedTargets has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::server::CBaseEntity>> m_vecDamagedTargets;
-            char m_vecDamagedTargets[0x18]; // 0x12f0            
+            char m_vecDamagedTargets[0x18]; // 0x12f0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_Ghost_BloodShards because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Ability_Ghost_BloodShards) == 0x1308);
     };
 };

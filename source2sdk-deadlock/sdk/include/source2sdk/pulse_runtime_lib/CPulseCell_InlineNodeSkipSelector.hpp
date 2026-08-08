@@ -22,23 +22,23 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xb0
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPulseFunctionHiddenInTool
         #pragma pack(push, 1)
         class CPulseCell_InlineNodeSkipSelector : public source2sdk::pulse_runtime_lib::CPulseCell_BaseFlow
         {
         public:
-            source2sdk::pulse_runtime_lib::PulseDocNodeID_t m_nFlowNodeID; // 0x48            
-            bool m_bAnd; // 0x4c            
+            source2sdk::pulse_runtime_lib::PulseDocNodeID_t m_nFlowNodeID; // 0x48
+            bool m_bAnd; // 0x4c
             uint8_t _pad004d[0x3]; // 0x4d
-            source2sdk::pulse_runtime_lib::PulseSelectorOutflowList_t m_PassOutflow; // 0x50            
-            source2sdk::pulse_runtime_lib::CPulse_OutflowConnection m_FailOutflow; // 0x68            
+            source2sdk::pulse_runtime_lib::PulseSelectorOutflowList_t m_PassOutflow; // 0x50
+            source2sdk::pulse_runtime_lib::CPulse_OutflowConnection m_FailOutflow; // 0x68
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPulseCell_InlineNodeSkipSelector because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::pulse_runtime_lib::CPulseCell_InlineNodeSkipSelector) == 0xb0);
     };
 };

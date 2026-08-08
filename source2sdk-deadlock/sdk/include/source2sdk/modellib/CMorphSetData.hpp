@@ -24,36 +24,36 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x98
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CMorphSetData
         {
         public:
             uint8_t _pad0000[0x10]; // 0x0
-            std::int32_t m_nWidth; // 0x10            
-            std::int32_t m_nHeight; // 0x14            
+            std::int32_t m_nWidth; // 0x10
+            std::int32_t m_nHeight; // 0x14
             // m_bundleTypes has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::modellib::MorphBundleType_t> m_bundleTypes;
-            char m_bundleTypes[0x18]; // 0x18            
+            char m_bundleTypes[0x18]; // 0x18
             // m_morphDatas has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::modellib::CMorphData> m_morphDatas;
-            char m_morphDatas[0x18]; // 0x30            
+            char m_morphDatas[0x18]; // 0x30
             // m_pTextureAtlas has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CStrongHandle<source2sdk::resourcesystem::InfoForResourceTypeCTextureBase> m_pTextureAtlas;
-            char m_pTextureAtlas[0x8]; // 0x48            
+            char m_pTextureAtlas[0x8]; // 0x48
             // m_FlexDesc has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::modellib::CFlexDesc> m_FlexDesc;
-            char m_FlexDesc[0x18]; // 0x50            
+            char m_FlexDesc[0x18]; // 0x50
             // m_FlexControllers has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::modellib::CFlexController> m_FlexControllers;
-            char m_FlexControllers[0x18]; // 0x68            
+            char m_FlexControllers[0x18]; // 0x68
             // m_FlexRules has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::modellib::CFlexRule> m_FlexRules;
-            char m_FlexRules[0x18]; // 0x80            
+            char m_FlexRules[0x18]; // 0x80
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::modellib::CMorphSetData, m_nWidth) == 0x10);
         static_assert(offsetof(source2sdk::modellib::CMorphSetData, m_nHeight) == 0x14);
         static_assert(offsetof(source2sdk::modellib::CMorphSetData, m_bundleTypes) == 0x18);
@@ -62,7 +62,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::modellib::CMorphSetData, m_FlexDesc) == 0x50);
         static_assert(offsetof(source2sdk::modellib::CMorphSetData, m_FlexControllers) == 0x68);
         static_assert(offsetof(source2sdk::modellib::CMorphSetData, m_FlexRules) == 0x80);
-        
+
         static_assert(sizeof(source2sdk::modellib::CMorphSetData) == 0x98);
     };
 };

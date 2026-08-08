@@ -17,21 +17,21 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a78
+        // Size: 0x1a98
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_AghsFort_ShadowShaman_Shackles : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float tick_interval; // 0x1a58            
-            float total_damage; // 0x1a5c            
-            float channel_time; // 0x1a60            
-            uint8_t _pad1a64[0x14];
+            float tick_interval; // 0x1a78
+            float total_damage; // 0x1a7c
+            float channel_time; // 0x1a80
+            uint8_t _pad1a84[0x14];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_AghsFort_ShadowShaman_Shackles because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_AghsFort_ShadowShaman_Shackles) == 0x1a78);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_AghsFort_ShadowShaman_Shackles) == 0x1a98);
     };
 };

@@ -23,13 +23,13 @@ namespace source2sdk
         class CLaneMarkerPath : public source2sdk::server::CServerOnlyEntity
         {
         public:
-            std::int32_t m_iLane; // 0x4a0            
-            std::int32_t m_iPath; // 0x4a4            
+            std::int32_t m_iLane; // 0x4a0
+            std::int32_t m_iPath; // 0x4a4
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CLaneMarkerPath because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CLaneMarkerPath) == 0x4a8);
     };
 };

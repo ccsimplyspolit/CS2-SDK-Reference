@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x898
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_INIT_ScaleVelocity : public source2sdk::particles::CParticleFunctionInitializer
@@ -28,12 +28,12 @@ namespace source2sdk
         public:
             // metadata: MPropertyFriendlyName "velocity scale"
             // metadata: MVectorIsCoordinate
-            source2sdk::particleslib::CParticleCollectionVecInput m_vecScale; // 0x1e0            
+            source2sdk::particleslib::CParticleCollectionVecInput m_vecScale; // 0x1e0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_INIT_ScaleVelocity because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_INIT_ScaleVelocity) == 0x898);
     };
 };

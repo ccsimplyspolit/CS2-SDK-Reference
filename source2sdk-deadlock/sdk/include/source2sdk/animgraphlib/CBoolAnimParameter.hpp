@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x88
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Bool Parameter"
         #pragma pack(push, 1)
@@ -27,13 +27,13 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "Default Value"
-            bool m_bDefaultValue; // 0x80            
+            bool m_bDefaultValue; // 0x80
             uint8_t _pad0081[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CBoolAnimParameter because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::animgraphlib::CBoolAnimParameter) == 0x88);
     };
 };

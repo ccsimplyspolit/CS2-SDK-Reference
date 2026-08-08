@@ -17,22 +17,22 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a70
+        // Size: 0x1a90
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_ForgargersHealth_Buff : public source2sdk::client::CDOTA_Buff
         {
         public:
-            std::int32_t health_regen_pct; // 0x1a58            
-            std::int32_t break_on_hero_damage; // 0x1a5c            
-            float m_fHealingDone; // 0x1a60            
-            float m_fUseSpeed; // 0x1a64            
-            CUtlString m_sAbilityClassname; // 0x1a68            
+            std::int32_t health_regen_pct; // 0x1a78
+            std::int32_t break_on_hero_damage; // 0x1a7c
+            float m_fHealingDone; // 0x1a80
+            float m_fUseSpeed; // 0x1a84
+            CUtlString m_sAbilityClassname; // 0x1a88
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_ForgargersHealth_Buff because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_ForgargersHealth_Buff) == 0x1a70);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_ForgargersHealth_Buff) == 0x1a90);
     };
 };

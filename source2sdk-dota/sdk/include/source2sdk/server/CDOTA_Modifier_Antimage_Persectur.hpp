@@ -17,21 +17,21 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a68
+        // Size: 0x1a88
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Antimage_Persectur : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float mana_threshold; // 0x1a58            
-            float move_slow_min; // 0x1a5c            
-            float move_slow_max; // 0x1a60            
-            float slow_duration; // 0x1a64            
+            float mana_threshold; // 0x1a78
+            float move_slow_min; // 0x1a7c
+            float move_slow_max; // 0x1a80
+            float slow_duration; // 0x1a84
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Antimage_Persectur because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Antimage_Persectur) == 0x1a68);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Antimage_Persectur) == 0x1a88);
     };
 };

@@ -24,15 +24,15 @@ namespace source2sdk
         struct RotatorQueueEntry_t
         {
         public:
-            Quaternion qTarget; // 0x0            
-            source2sdk::server::RotatorTargetSpace_t eSpace; // 0x10            
+            Quaternion qTarget; // 0x0
+            source2sdk::server::RotatorTargetSpace_t eSpace; // 0x10
             uint8_t _pad0014[0xc];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::RotatorQueueEntry_t, qTarget) == 0x0);
         static_assert(offsetof(source2sdk::server::RotatorQueueEntry_t, eSpace) == 0x10);
-        
+
         static_assert(sizeof(source2sdk::server::RotatorQueueEntry_t) == 0x20);
     };
 };

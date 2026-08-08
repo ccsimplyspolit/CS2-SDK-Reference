@@ -22,7 +22,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xa30
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "char m_messageText"
         // static metadata: MNetworkVarNames "char m_FontName"
         // static metadata: MNetworkVarNames "char m_BackgroundMaterialName"
@@ -45,55 +45,55 @@ namespace source2sdk
         public:
             // metadata: MNetworkEnable
             // metadata: MNotSaved
-            char m_messageText[512]; // 0x780            
+            char m_messageText[512]; // 0x780
             // metadata: MNetworkEnable
             // metadata: MNotSaved
-            char m_FontName[64]; // 0x980            
+            char m_FontName[64]; // 0x980
             // metadata: MNetworkEnable
             // metadata: MNotSaved
-            char m_BackgroundMaterialName[64]; // 0x9c0            
+            char m_BackgroundMaterialName[64]; // 0x9c0
             // metadata: MNetworkEnable
             // metadata: MNotSaved
-            bool m_bEnabled; // 0xa00            
+            bool m_bEnabled; // 0xa00
             // metadata: MNetworkEnable
             // metadata: MNotSaved
-            bool m_bFullbright; // 0xa01            
+            bool m_bFullbright; // 0xa01
             uint8_t _pad0a02[0x2]; // 0xa02
             // metadata: MNetworkEnable
             // metadata: MNotSaved
-            float m_flWorldUnitsPerPx; // 0xa04            
+            float m_flWorldUnitsPerPx; // 0xa04
             // metadata: MNetworkEnable
             // metadata: MNotSaved
-            float m_flFontSize; // 0xa08            
+            float m_flFontSize; // 0xa08
             // metadata: MNetworkEnable
             // metadata: MNotSaved
-            float m_flDepthOffset; // 0xa0c            
+            float m_flDepthOffset; // 0xa0c
             // metadata: MNetworkEnable
             // metadata: MNotSaved
-            bool m_bDrawBackground; // 0xa10            
+            bool m_bDrawBackground; // 0xa10
             uint8_t _pad0a11[0x3]; // 0xa11
             // metadata: MNetworkEnable
             // metadata: MNotSaved
-            float m_flBackgroundBorderWidth; // 0xa14            
+            float m_flBackgroundBorderWidth; // 0xa14
             // metadata: MNetworkEnable
             // metadata: MNotSaved
-            float m_flBackgroundBorderHeight; // 0xa18            
+            float m_flBackgroundBorderHeight; // 0xa18
             // metadata: MNetworkEnable
             // metadata: MNotSaved
-            float m_flBackgroundWorldToUV; // 0xa1c            
+            float m_flBackgroundWorldToUV; // 0xa1c
             // metadata: MNetworkEnable
             // metadata: MNotSaved
-            Color m_Color; // 0xa20            
+            Color m_Color; // 0xa20
             // metadata: MNetworkEnable
             // metadata: MNotSaved
-            source2sdk::client::PointWorldTextJustifyHorizontal_t m_nJustifyHorizontal; // 0xa24            
+            source2sdk::client::PointWorldTextJustifyHorizontal_t m_nJustifyHorizontal; // 0xa24
             // metadata: MNetworkEnable
             // metadata: MNotSaved
-            source2sdk::client::PointWorldTextJustifyVertical_t m_nJustifyVertical; // 0xa28            
+            source2sdk::client::PointWorldTextJustifyVertical_t m_nJustifyVertical; // 0xa28
             // metadata: MNetworkEnable
             // metadata: MNotSaved
-            source2sdk::client::PointWorldTextReorientMode_t m_nReorientMode; // 0xa2c            
-            
+            source2sdk::client::PointWorldTextReorientMode_t m_nReorientMode; // 0xa2c
+
             // Datamap fields:
             // void InputEnable; // 0x0
             // void InputDisable; // 0x0
@@ -102,9 +102,9 @@ namespace source2sdk
             // int32_t InputSetIntMessage; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPointWorldText because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CPointWorldText) == 0xa30);
     };
 };

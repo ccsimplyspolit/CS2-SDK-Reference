@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0xc0
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CEmptyGraphController : public source2sdk::client::CAnimGraphControllerBase
@@ -28,8 +28,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::client::CEmptyGraphController) == 0xc0);
     };
 };

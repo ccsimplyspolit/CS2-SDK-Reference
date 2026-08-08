@@ -26,15 +26,15 @@ namespace source2sdk
         class CDOTA_Ability_Wisp_Relocate : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            source2sdk::client::ParticleIndex_t m_nFXIndexEndTeam; // 0x580            
-            source2sdk::client::ParticleIndex_t m_nFXIndexChannel; // 0x584            
-            float cast_delay; // 0x588            
-            float return_time; // 0x58c            
+            source2sdk::client::ParticleIndex_t m_nFXIndexEndTeam; // 0x580
+            source2sdk::client::ParticleIndex_t m_nFXIndexChannel; // 0x584
+            float cast_delay; // 0x588
+            float return_time; // 0x58c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Wisp_Relocate because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Wisp_Relocate) == 0x590);
     };
 };

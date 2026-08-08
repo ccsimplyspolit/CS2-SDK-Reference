@@ -25,13 +25,13 @@ namespace source2sdk
         class CDOTAPropArenaOfBloodWarrior : public source2sdk::client::C_DynamicProp
         {
         public:
-            bool m_bDying; // 0xd10            
+            bool m_bDying; // 0xd10
             uint8_t _pad0d11[0xf];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTAPropArenaOfBloodWarrior because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CDOTAPropArenaOfBloodWarrior) == 0xd20);
     };
 };

@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xd70
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "uint32 m_boneIndexAttached"
         // static metadata: MNetworkVarNames "uint32 m_ragdollAttachedObjectIndex"
         // static metadata: MNetworkVarNames "Vector m_attachmentPointBoneSpace"
@@ -30,30 +30,30 @@ namespace source2sdk
         public:
             // metadata: MNetworkEnable
             // metadata: MNotSaved
-            std::uint32_t m_boneIndexAttached; // 0xd38            
+            std::uint32_t m_boneIndexAttached; // 0xd38
             // metadata: MNetworkEnable
             // metadata: MNotSaved
-            std::uint32_t m_ragdollAttachedObjectIndex; // 0xd3c            
-            // metadata: MNetworkEnable
-            // metadata: MNetworkEncoder "coord"
-            // metadata: MNotSaved
-            Vector m_attachmentPointBoneSpace; // 0xd40            
+            std::uint32_t m_ragdollAttachedObjectIndex; // 0xd3c
             // metadata: MNetworkEnable
             // metadata: MNetworkEncoder "coord"
             // metadata: MNotSaved
-            Vector m_attachmentPointRagdollSpace; // 0xd4c            
+            Vector m_attachmentPointBoneSpace; // 0xd40
+            // metadata: MNetworkEnable
+            // metadata: MNetworkEncoder "coord"
             // metadata: MNotSaved
-            Vector m_vecOffset; // 0xd58            
+            Vector m_attachmentPointRagdollSpace; // 0xd4c
             // metadata: MNotSaved
-            float m_parentTime; // 0xd64            
+            Vector m_vecOffset; // 0xd58
             // metadata: MNotSaved
-            bool m_bHasParent; // 0xd68            
+            float m_parentTime; // 0xd64
+            // metadata: MNotSaved
+            bool m_bHasParent; // 0xd68
             uint8_t _pad0d69[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_RagdollPropAttached because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_RagdollPropAttached) == 0xd70);
     };
 };

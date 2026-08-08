@@ -31,14 +31,14 @@ namespace source2sdk
         public:
             // m_hMantleTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hMantleTarget;
-            char m_hMantleTarget[0x4]; // 0x0            
-            Vector m_vStartPositionOffsetLS; // 0x4            
+            char m_hMantleTarget[0x4]; // 0x0
+            Vector m_vStartPositionOffsetLS; // 0x4
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::AI_CustomMantleRequest, m_hMantleTarget) == 0x0);
         static_assert(offsetof(source2sdk::server::AI_CustomMantleRequest, m_vStartPositionOffsetLS) == 0x4);
-        
+
         static_assert(sizeof(source2sdk::server::AI_CustomMantleRequest) == 0x10);
     };
 };

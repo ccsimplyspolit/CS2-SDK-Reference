@@ -25,13 +25,13 @@ namespace source2sdk
         {
         public:
             uint8_t _pad11d8[0x80]; // 0x11d8
-            source2sdk::entity2::GameTime_t m_tBuffRechargeTime; // 0x1258            
+            source2sdk::entity2::GameTime_t m_tBuffRechargeTime; // 0x1258
             uint8_t _pad125c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_Priest_AntiSpiritVest because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Ability_Priest_AntiSpiritVest) == 0x1260);
     };
 };

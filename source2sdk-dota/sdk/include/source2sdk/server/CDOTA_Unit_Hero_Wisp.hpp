@@ -18,7 +18,7 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x1f18
+        // Size: 0x1f20
         // Has VTable
         // Construct allowed
         // MClassHasEntityLimitedDataDesc
@@ -26,20 +26,20 @@ namespace source2sdk
         class CDOTA_Unit_Hero_Wisp : public source2sdk::server::CDOTA_BaseNPC_Hero
         {
         public:
-            source2sdk::client::ParticleIndex_t m_nAmbientFXIndex; // 0x1f00            
-            source2sdk::client::ParticleIndex_t m_nStunnedFXIndex; // 0x1f04            
-            source2sdk::client::ParticleIndex_t m_nTalkFXIndex; // 0x1f08            
-            source2sdk::client::ParticleIndex_t m_nIllusionFXIndex; // 0x1f0c            
-            bool m_bParticleHexed; // 0x1f10            
-            bool m_bParticleStunned; // 0x1f11            
-            bool m_bDetermineAmbientEffect; // 0x1f12            
-            uint8_t _pad1f13[0x1]; // 0x1f13
-            float m_flPrevHealth; // 0x1f14            
+            source2sdk::client::ParticleIndex_t m_nAmbientFXIndex; // 0x1f08
+            source2sdk::client::ParticleIndex_t m_nStunnedFXIndex; // 0x1f0c
+            source2sdk::client::ParticleIndex_t m_nTalkFXIndex; // 0x1f10
+            source2sdk::client::ParticleIndex_t m_nIllusionFXIndex; // 0x1f14
+            bool m_bParticleHexed; // 0x1f18
+            bool m_bParticleStunned; // 0x1f19
+            bool m_bDetermineAmbientEffect; // 0x1f1a
+            uint8_t _pad1f1b[0x1]; // 0x1f1b
+            float m_flPrevHealth; // 0x1f1c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Unit_Hero_Wisp because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Unit_Hero_Wisp) == 0x1f18);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Unit_Hero_Wisp) == 0x1f20);
     };
 };

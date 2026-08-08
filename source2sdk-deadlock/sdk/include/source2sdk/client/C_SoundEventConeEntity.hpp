@@ -23,16 +23,16 @@ namespace source2sdk
         class C_SoundEventConeEntity : public source2sdk::client::C_SoundEventEntity
         {
         public:
-            float m_flEmitterAngle; // 0x6b0            
-            float m_flSweetSpotAngle; // 0x6b4            
-            float m_flAttenMin; // 0x6b8            
-            float m_flAttenMax; // 0x6bc            
-            CUtlSymbolLarge m_iszParameterName; // 0x6c0            
+            float m_flEmitterAngle; // 0x6b0
+            float m_flSweetSpotAngle; // 0x6b4
+            float m_flAttenMin; // 0x6b8
+            float m_flAttenMax; // 0x6bc
+            CUtlSymbolLarge m_iszParameterName; // 0x6c0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_SoundEventConeEntity because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_SoundEventConeEntity) == 0x6c8);
     };
 };

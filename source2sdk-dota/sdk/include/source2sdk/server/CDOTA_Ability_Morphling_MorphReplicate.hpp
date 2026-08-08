@@ -25,13 +25,13 @@ namespace source2sdk
         class CDOTA_Ability_Morphling_MorphReplicate : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            float m_flOldHealthPct; // 0x580            
-            float m_flOldManaPct; // 0x584            
+            float m_flOldHealthPct; // 0x580
+            float m_flOldManaPct; // 0x584
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Morphling_MorphReplicate because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Morphling_MorphReplicate) == 0x588);
     };
 };

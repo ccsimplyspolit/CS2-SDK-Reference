@@ -25,19 +25,19 @@ namespace source2sdk
         class CDOTA_Ability_VoidSpirit_AstralStep : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            VectorWS m_vStartPos; // 0x580            
-            VectorWS m_vDestination; // 0x58c            
-            Vector m_vDirection; // 0x598            
-            float radius; // 0x5a4            
-            float min_travel_distance; // 0x5a8            
-            float max_travel_distance; // 0x5ac            
-            float debuff_duration; // 0x5b0            
-            float pop_damage_delay; // 0x5b4            
+            VectorWS m_vStartPos; // 0x580
+            VectorWS m_vDestination; // 0x58c
+            Vector m_vDirection; // 0x598
+            float radius; // 0x5a4
+            float min_travel_distance; // 0x5a8
+            float max_travel_distance; // 0x5ac
+            float debuff_duration; // 0x5b0
+            float pop_damage_delay; // 0x5b4
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_VoidSpirit_AstralStep because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_VoidSpirit_AstralStep) == 0x5b8);
     };
 };

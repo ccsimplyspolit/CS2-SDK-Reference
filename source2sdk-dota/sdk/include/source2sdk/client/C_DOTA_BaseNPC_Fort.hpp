@@ -17,7 +17,7 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x1ad0
+        // Size: 0x1ad8
         // Has VTable
         // Construct allowed
         // MClassHasEntityLimitedDataDesc
@@ -25,14 +25,14 @@ namespace source2sdk
         class C_DOTA_BaseNPC_Fort : public source2sdk::client::C_DOTA_BaseNPC_Building
         {
         public:
-            uint8_t _pad1a20[0xa8]; // 0x1a20
-            std::uint32_t m_unRandomSeed; // 0x1ac8            
-            uint8_t _pad1acc[0x4];
+            uint8_t _pad1a28[0xa8]; // 0x1a28
+            std::uint32_t m_unRandomSeed; // 0x1ad0
+            uint8_t _pad1ad4[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_BaseNPC_Fort because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::C_DOTA_BaseNPC_Fort) == 0x1ad0);
+
+        static_assert(sizeof(source2sdk::client::C_DOTA_BaseNPC_Fort) == 0x1ad8);
     };
 };

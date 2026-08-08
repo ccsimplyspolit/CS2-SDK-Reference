@@ -26,7 +26,7 @@ namespace source2sdk
         // Size: 0x4
         // Has Trivial Destructor
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct CPulseCell_PlaySequence_CursorState_t
@@ -34,12 +34,12 @@ namespace source2sdk
         public:
             // m_hTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::CBaseAnimatingActivity> m_hTarget;
-            char m_hTarget[0x4]; // 0x0            
+            char m_hTarget[0x4]; // 0x0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::CPulseCell_PlaySequence_CursorState_t, m_hTarget) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::client::CPulseCell_PlaySequence_CursorState_t) == 0x4);
     };
 };

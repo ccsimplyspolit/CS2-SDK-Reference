@@ -21,7 +21,7 @@ namespace source2sdk
         // Size: 0xd0
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Transform: Set Position"
         // static metadata: MPropertyDescription "Set the position of the current transform."
@@ -31,14 +31,14 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyDescription "Local space position translation to apply to the current transform"
-            CSmartPropAttributeVector m_vPosition; // 0x50            
+            CSmartPropAttributeVector m_vPosition; // 0x50
             // metadata: MPropertyDescription "Specifies the coordinate space of the specified position value."
-            source2sdk::smartprops::CSmartPropAttributeCoordinateSpace m_CoordinateSpace; // 0x90            
+            source2sdk::smartprops::CSmartPropAttributeCoordinateSpace m_CoordinateSpace; // 0x90
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSmartPropOperation_SetPosition because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::smartprops::CSmartPropOperation_SetPosition) == 0xd0);
     };
 };

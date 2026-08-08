@@ -25,13 +25,13 @@ namespace source2sdk
         class CDOTA_Ability_KeeperOfTheLight_Recall : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            bool m_bIsAltCastState; // 0x580            
+            bool m_bIsAltCastState; // 0x580
             uint8_t _pad0581[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_KeeperOfTheLight_Recall because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_KeeperOfTheLight_Recall) == 0x588);
     };
 };

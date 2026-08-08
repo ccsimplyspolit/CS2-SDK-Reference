@@ -24,13 +24,13 @@ namespace source2sdk
         class CCitadel_Modifier_PlayerDisconnected : public source2sdk::server::CCitadelModifier
         {
         public:
-            source2sdk::entity2::GameTime_t m_flTimePathUpdated; // 0xd0            
+            source2sdk::entity2::GameTime_t m_flTimePathUpdated; // 0xd0
             uint8_t _pad00d4[0x491c];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_PlayerDisconnected because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_PlayerDisconnected) == 0x49f0);
     };
 };

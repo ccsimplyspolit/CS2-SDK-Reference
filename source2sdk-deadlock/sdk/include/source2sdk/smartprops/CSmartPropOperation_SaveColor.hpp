@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x58
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Save Current Color"
         // static metadata: MPropertyDescription "Save the current color tint value to a specified variable"
@@ -29,12 +29,12 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyAttributeEditor "SmartPropItemNameEditor( Variable:Color )"
-            CUtlString m_VariableName; // 0x50            
+            CUtlString m_VariableName; // 0x50
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSmartPropOperation_SaveColor because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::smartprops::CSmartPropOperation_SaveColor) == 0x58);
     };
 };

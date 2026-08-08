@@ -24,12 +24,12 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0000[0x60]; // 0x0
-            source2sdk::server::CountdownTimer m_timer; // 0x60            
+            source2sdk::server::CountdownTimer m_timer; // 0x60
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::CDOTABehaviorDie, m_timer) == 0x60);
-        
+
         static_assert(sizeof(source2sdk::server::CDOTABehaviorDie) == 0x78);
     };
 };

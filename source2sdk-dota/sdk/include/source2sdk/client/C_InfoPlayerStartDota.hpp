@@ -24,13 +24,13 @@ namespace source2sdk
         class C_InfoPlayerStartDota : public source2sdk::client::C_PointEntity
         {
         public:
-            bool m_bDisabled; // 0x5f0            
+            bool m_bDisabled; // 0x5f0
             uint8_t _pad05f1[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_InfoPlayerStartDota because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_InfoPlayerStartDota) == 0x5f8);
     };
 };

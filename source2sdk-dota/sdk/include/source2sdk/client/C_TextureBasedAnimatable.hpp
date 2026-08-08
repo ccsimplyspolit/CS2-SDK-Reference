@@ -25,21 +25,21 @@ namespace source2sdk
         class C_TextureBasedAnimatable : public source2sdk::client::C_BaseModelEntity
         {
         public:
-            bool m_bLoop; // 0xa88            
+            bool m_bLoop; // 0xa88
             uint8_t _pad0a89[0x3]; // 0xa89
-            float m_flFPS; // 0xa8c            
+            float m_flFPS; // 0xa8c
             // m_hPositionKeys has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CStrongHandle<source2sdk::resourcesystem::InfoForResourceTypeCTextureBase> m_hPositionKeys;
-            char m_hPositionKeys[0x8]; // 0xa90            
+            char m_hPositionKeys[0x8]; // 0xa90
             // m_hRotationKeys has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CStrongHandle<source2sdk::resourcesystem::InfoForResourceTypeCTextureBase> m_hRotationKeys;
-            char m_hRotationKeys[0x8]; // 0xa98            
-            Vector m_vAnimationBoundsMin; // 0xaa0            
-            Vector m_vAnimationBoundsMax; // 0xaac            
+            char m_hRotationKeys[0x8]; // 0xa98
+            Vector m_vAnimationBoundsMin; // 0xaa0
+            Vector m_vAnimationBoundsMax; // 0xaac
             // metadata: MNotSaved
-            float m_flStartTime; // 0xab8            
-            float m_flStartFrame; // 0xabc            
-            
+            float m_flStartTime; // 0xab8
+            float m_flStartFrame; // 0xabc
+
             // Datamap fields:
             // void InputStart; // 0x0
             // void InputStop; // 0x0
@@ -47,9 +47,9 @@ namespace source2sdk
             // void InputDisable; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_TextureBasedAnimatable because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_TextureBasedAnimatable) == 0xac0);
     };
 };

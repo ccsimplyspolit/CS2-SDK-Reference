@@ -17,26 +17,26 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a70
+        // Size: 0x1a90
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Plus_HighFiveRequested : public source2sdk::client::CDOTA_Buff
         {
         public:
-            std::int32_t acknowledge_range; // 0x1a58            
-            float think_interval; // 0x1a5c            
-            float acknowledged_cooldown; // 0x1a60            
-            bool m_bAcknowledged; // 0x1a64            
-            bool m_bWithEnemy; // 0x1a65            
-            bool m_bFirstThink; // 0x1a66            
-            uint8_t _pad1a67[0x1]; // 0x1a67
-            std::int32_t high_five_level; // 0x1a68            
-            uint8_t _pad1a6c[0x4];
+            std::int32_t acknowledge_range; // 0x1a78
+            float think_interval; // 0x1a7c
+            float acknowledged_cooldown; // 0x1a80
+            bool m_bAcknowledged; // 0x1a84
+            bool m_bWithEnemy; // 0x1a85
+            bool m_bFirstThink; // 0x1a86
+            uint8_t _pad1a87[0x1]; // 0x1a87
+            std::int32_t high_five_level; // 0x1a88
+            uint8_t _pad1a8c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Plus_HighFiveRequested because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Plus_HighFiveRequested) == 0x1a70);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Plus_HighFiveRequested) == 0x1a90);
     };
 };

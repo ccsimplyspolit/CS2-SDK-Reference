@@ -20,21 +20,21 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x58
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MVDataRoot
         #pragma pack(push, 1)
         struct DOTAOverworldCharacterOverrideConditional_t
         {
         public:
-            source2sdk::client::CDOTAOverworldCharacterConditional m_condition; // 0x0            
-            source2sdk::client::CDOTAOverworldCharacterBase m_character; // 0x20            
+            source2sdk::client::CDOTAOverworldCharacterConditional m_condition; // 0x0
+            source2sdk::client::CDOTAOverworldCharacterBase m_character; // 0x20
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::DOTAOverworldCharacterOverrideConditional_t, m_condition) == 0x0);
         static_assert(offsetof(source2sdk::client::DOTAOverworldCharacterOverrideConditional_t, m_character) == 0x20);
-        
+
         static_assert(sizeof(source2sdk::client::DOTAOverworldCharacterOverrideConditional_t) == 0x58);
     };
 };

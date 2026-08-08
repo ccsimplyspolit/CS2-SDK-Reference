@@ -25,17 +25,17 @@ namespace source2sdk
         class CDOTA_Ability_Clinkz_Burning_Army : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            std::int32_t range; // 0x580            
-            VectorWS m_vEndpoint; // 0x584            
-            Vector m_vSlashDir; // 0x590            
-            std::int32_t m_nDashProjectileID; // 0x59c            
-            Vector m_vDashProjectileLocation; // 0x5a0            
+            std::int32_t range; // 0x580
+            VectorWS m_vEndpoint; // 0x584
+            Vector m_vSlashDir; // 0x590
+            std::int32_t m_nDashProjectileID; // 0x59c
+            Vector m_vDashProjectileLocation; // 0x5a0
             uint8_t _pad05ac[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Clinkz_Burning_Army because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Clinkz_Burning_Army) == 0x5b0);
     };
 };

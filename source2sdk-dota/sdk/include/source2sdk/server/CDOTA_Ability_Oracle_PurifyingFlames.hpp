@@ -32,16 +32,16 @@ namespace source2sdk
         class CDOTA_Ability_Oracle_PurifyingFlames : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            bool m_bTargetIsAlly; // 0x580            
+            bool m_bTargetIsAlly; // 0x580
             uint8_t _pad0581[0x3]; // 0x581
             // m_hRecentTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hRecentTarget;
-            char m_hRecentTarget[0x4]; // 0x584            
+            char m_hRecentTarget[0x4]; // 0x584
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Oracle_PurifyingFlames because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Oracle_PurifyingFlames) == 0x588);
     };
 };

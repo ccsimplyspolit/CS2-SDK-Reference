@@ -22,12 +22,12 @@ namespace source2sdk
         struct EventClientSceneSystemThreadStateChange_t
         {
         public:
-            bool m_bThreadsActive; // 0x0            
+            bool m_bThreadsActive; // 0x0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::EventClientSceneSystemThreadStateChange_t, m_bThreadsActive) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::client::EventClientSceneSystemThreadStateChange_t) == 0x1);
     };
 };

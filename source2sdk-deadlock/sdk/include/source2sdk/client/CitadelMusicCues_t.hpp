@@ -19,7 +19,7 @@ namespace source2sdk
         // Alignment: 0x8
         // Standard-layout class: true
         // Size: 0x28
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct CitadelMusicCues_t
@@ -27,12 +27,12 @@ namespace source2sdk
         public:
             // m_MusicStateData has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlOrderedMap<source2sdk::client::EMusicState_t,source2sdk::client::CitadelMusicCueOverrides_t> m_MusicStateData;
-            char m_MusicStateData[0x28]; // 0x0            
+            char m_MusicStateData[0x28]; // 0x0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::CitadelMusicCues_t, m_MusicStateData) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::client::CitadelMusicCues_t) == 0x28);
     };
 };

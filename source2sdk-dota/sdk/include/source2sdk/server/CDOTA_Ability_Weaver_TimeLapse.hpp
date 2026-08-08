@@ -26,13 +26,13 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0580[0x10]; // 0x580
-            std::int32_t m_nNPCSpawnedID; // 0x590            
+            std::int32_t m_nNPCSpawnedID; // 0x590
             uint8_t _pad0594[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Weaver_TimeLapse because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Weaver_TimeLapse) == 0x598);
     };
 };

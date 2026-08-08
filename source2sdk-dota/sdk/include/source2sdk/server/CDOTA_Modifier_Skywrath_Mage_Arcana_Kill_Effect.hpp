@@ -18,19 +18,19 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a60
+        // Size: 0x1a80
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Skywrath_Mage_Arcana_Kill_Effect : public source2sdk::client::CDOTA_Buff
         {
         public:
-            source2sdk::client::ParticleIndex_t m_nCasterFXIndex; // 0x1a58            
-            uint8_t _pad1a5c[0x4];
+            source2sdk::client::ParticleIndex_t m_nCasterFXIndex; // 0x1a78
+            uint8_t _pad1a7c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Skywrath_Mage_Arcana_Kill_Effect because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Skywrath_Mage_Arcana_Kill_Effect) == 0x1a60);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Skywrath_Mage_Arcana_Kill_Effect) == 0x1a80);
     };
 };

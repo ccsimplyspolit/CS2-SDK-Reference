@@ -33,14 +33,14 @@ namespace source2sdk
         public:
             // m_vecHitEnemies has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::server::CBaseEntity>> m_vecHitEnemies;
-            char m_vecHitEnemies[0x18]; // 0xf70            
-            source2sdk::entity2::GameTime_t m_flNextProjectileTime; // 0xf88            
+            char m_vecHitEnemies[0x18]; // 0xf70
+            source2sdk::entity2::GameTime_t m_flNextProjectileTime; // 0xf88
             uint8_t _pad0f8c[0x684];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_Nano_ClusterGrenade because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Ability_Nano_ClusterGrenade) == 0x1610);
     };
 };

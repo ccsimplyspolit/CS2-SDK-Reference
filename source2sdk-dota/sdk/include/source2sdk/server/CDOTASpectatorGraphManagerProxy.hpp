@@ -33,12 +33,12 @@ namespace source2sdk
         class CDOTASpectatorGraphManagerProxy : public source2sdk::server::CBaseEntity
         {
         public:
-            source2sdk::server::CDOTASpectatorGraphManager* m_pGraphManager; // 0x498            
+            source2sdk::server::CDOTASpectatorGraphManager* m_pGraphManager; // 0x498
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTASpectatorGraphManagerProxy because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTASpectatorGraphManagerProxy) == 0x4a0);
     };
 };

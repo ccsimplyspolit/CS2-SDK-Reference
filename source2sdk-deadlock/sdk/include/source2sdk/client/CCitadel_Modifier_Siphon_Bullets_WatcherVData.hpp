@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x780
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CCitadel_Modifier_Siphon_Bullets_WatcherVData : public source2sdk::client::CCitadel_Modifier_StatStealBaseVData
@@ -29,12 +29,12 @@ namespace source2sdk
             // metadata: MPropertyStartGroup "Modifiers"
             // m_HealModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEmbeddedSubclass<source2sdk::client::CCitadelModifier> m_HealModifier;
-            char m_HealModifier[0x10]; // 0x770            
+            char m_HealModifier[0x10]; // 0x770
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_Siphon_Bullets_WatcherVData because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Modifier_Siphon_Bullets_WatcherVData) == 0x780);
     };
 };

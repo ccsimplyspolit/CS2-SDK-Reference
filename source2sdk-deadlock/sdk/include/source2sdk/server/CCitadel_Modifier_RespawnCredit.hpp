@@ -23,15 +23,15 @@ namespace source2sdk
         class CCitadel_Modifier_RespawnCredit : public source2sdk::server::CCitadelModifier
         {
         public:
-            bool m_bActivated; // 0xd0            
-            bool m_bSpokeAboutToExpire; // 0xd1            
+            bool m_bActivated; // 0xd0
+            bool m_bSpokeAboutToExpire; // 0xd1
             uint8_t _pad00d2[0x2]; // 0xd2
-            std::int32_t m_iMessageCount; // 0xd4            
+            std::int32_t m_iMessageCount; // 0xd4
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_RespawnCredit because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_RespawnCredit) == 0xd8);
     };
 };

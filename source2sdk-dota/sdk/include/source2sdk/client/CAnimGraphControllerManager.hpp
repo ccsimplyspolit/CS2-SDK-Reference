@@ -30,16 +30,16 @@ namespace source2sdk
         public:
             // m_controllers has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::client::CAnimGraphControllerBase*> m_controllers;
-            char m_controllers[0x18]; // 0x0            
+            char m_controllers[0x18]; // 0x0
             uint8_t _pad0018[0x78]; // 0x18
-            bool m_bGraphBindingsCreated; // 0x90            
+            bool m_bGraphBindingsCreated; // 0x90
             uint8_t _pad0091[0x7];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::CAnimGraphControllerManager, m_controllers) == 0x0);
         static_assert(offsetof(source2sdk::client::CAnimGraphControllerManager, m_bGraphBindingsCreated) == 0x90);
-        
+
         static_assert(sizeof(source2sdk::client::CAnimGraphControllerManager) == 0x98);
     };
 };

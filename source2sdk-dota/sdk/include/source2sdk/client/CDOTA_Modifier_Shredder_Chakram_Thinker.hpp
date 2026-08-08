@@ -17,23 +17,23 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a70
+        // Size: 0x1a90
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Shredder_Chakram_Thinker : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float damage_per_second; // 0x1a58            
-            float mana_per_second; // 0x1a5c            
-            float radius; // 0x1a60            
-            float break_distance; // 0x1a64            
-            float damage_interval; // 0x1a68            
-            uint8_t _pad1a6c[0x4];
+            float damage_per_second; // 0x1a78
+            float mana_per_second; // 0x1a7c
+            float radius; // 0x1a80
+            float break_distance; // 0x1a84
+            float damage_interval; // 0x1a88
+            uint8_t _pad1a8c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Shredder_Chakram_Thinker because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Shredder_Chakram_Thinker) == 0x1a70);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Shredder_Chakram_Thinker) == 0x1a90);
     };
 };

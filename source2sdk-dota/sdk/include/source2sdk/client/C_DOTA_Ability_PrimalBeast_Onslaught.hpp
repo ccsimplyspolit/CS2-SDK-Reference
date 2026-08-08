@@ -26,20 +26,20 @@ namespace source2sdk
         class C_DOTA_Ability_PrimalBeast_Onslaught : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            float max_charge_time; // 0x6a8            
-            float knockback_distance; // 0x6ac            
-            std::int32_t knockback_damage; // 0x6b0            
-            std::int32_t collision_radius; // 0x6b4            
-            std::int32_t max_distance; // 0x6b8            
-            VectorWS m_vStartPos; // 0x6bc            
-            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x6c8            
-            std::int32_t m_nProjectileID; // 0x6cc            
+            float max_charge_time; // 0x6a8
+            float knockback_distance; // 0x6ac
+            std::int32_t knockback_damage; // 0x6b0
+            std::int32_t collision_radius; // 0x6b4
+            std::int32_t max_distance; // 0x6b8
+            VectorWS m_vStartPos; // 0x6bc
+            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x6c8
+            std::int32_t m_nProjectileID; // 0x6cc
             uint8_t _pad06d0[0x18];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_PrimalBeast_Onslaught because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_PrimalBeast_Onslaught) == 0x6e8);
     };
 };

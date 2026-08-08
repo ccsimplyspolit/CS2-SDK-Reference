@@ -21,7 +21,7 @@ namespace source2sdk
         // Size: 0x128
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPulseEditorCanvasItemSpecKV3
         #pragma pack(push, 1)
@@ -29,14 +29,14 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyDescription "Any extra waiting cursors will be terminated. -1 for infinite cursors."
-            std::int32_t m_nCursorsAllowedToWait; // 0xd8            
+            std::int32_t m_nCursorsAllowedToWait; // 0xd8
             uint8_t _pad00dc[0x4]; // 0xdc
-            source2sdk::pulse_runtime_lib::CPulse_ResumePoint m_WaitComplete; // 0xe0            
+            source2sdk::pulse_runtime_lib::CPulse_ResumePoint m_WaitComplete; // 0xe0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPulseCell_WaitForCursorsWithTagBase because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::pulse_runtime_lib::CPulseCell_WaitForCursorsWithTagBase) == 0x128);
     };
 };

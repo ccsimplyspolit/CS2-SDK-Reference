@@ -18,18 +18,18 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x4
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class AnimTagID
         {
         public:
-            std::uint32_t m_id; // 0x0            
+            std::uint32_t m_id; // 0x0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::modellib::AnimTagID, m_id) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::modellib::AnimTagID) == 0x4);
     };
 };

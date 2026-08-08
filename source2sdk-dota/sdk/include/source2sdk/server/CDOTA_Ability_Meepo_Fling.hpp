@@ -34,15 +34,15 @@ namespace source2sdk
         public:
             // m_hHeldEntity has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hHeldEntity;
-            char m_hHeldEntity[0x4]; // 0x580            
+            char m_hHeldEntity[0x4]; // 0x580
             // m_hTargetThinker has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hTargetThinker;
-            char m_hTargetThinker[0x4]; // 0x584            
+            char m_hTargetThinker[0x4]; // 0x584
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Meepo_Fling because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Meepo_Fling) == 0x588);
     };
 };

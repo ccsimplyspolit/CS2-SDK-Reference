@@ -24,26 +24,26 @@ namespace source2sdk
         class CPhysExplosion : public source2sdk::server::CPointEntity
         {
         public:
-            bool m_bExplodeOnSpawn; // 0x4a0            
+            bool m_bExplodeOnSpawn; // 0x4a0
             uint8_t _pad04a1[0x3]; // 0x4a1
-            float m_flMagnitude; // 0x4a4            
-            float m_flDamage; // 0x4a8            
-            float m_radius; // 0x4ac            
-            CUtlSymbolLarge m_targetEntityName; // 0x4b0            
-            float m_flInnerRadius; // 0x4b8            
-            float m_flPushScale; // 0x4bc            
-            bool m_bConvertToDebrisWhenPossible; // 0x4c0            
-            bool m_bAffectInvulnerableEnts; // 0x4c1            
+            float m_flMagnitude; // 0x4a4
+            float m_flDamage; // 0x4a8
+            float m_radius; // 0x4ac
+            CUtlSymbolLarge m_targetEntityName; // 0x4b0
+            float m_flInnerRadius; // 0x4b8
+            float m_flPushScale; // 0x4bc
+            bool m_bConvertToDebrisWhenPossible; // 0x4c0
+            bool m_bAffectInvulnerableEnts; // 0x4c1
             uint8_t _pad04c2[0x6]; // 0x4c2
-            source2sdk::entity2::CEntityIOOutput m_OnPushedPlayer; // 0x4c8            
-            
+            source2sdk::entity2::CEntityIOOutput m_OnPushedPlayer; // 0x4c8
+
             // Datamap fields:
             // void InputExplode; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPhysExplosion because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CPhysExplosion) == 0x4e0);
     };
 };

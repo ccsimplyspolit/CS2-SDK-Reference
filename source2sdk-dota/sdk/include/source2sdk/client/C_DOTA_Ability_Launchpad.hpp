@@ -25,12 +25,12 @@ namespace source2sdk
         class C_DOTA_Ability_Launchpad : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            char* pTargetName; // 0x6a8            
+            char* pTargetName; // 0x6a8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_Launchpad because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_Launchpad) == 0x6b0);
     };
 };

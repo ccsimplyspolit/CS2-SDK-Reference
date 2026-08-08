@@ -23,13 +23,13 @@ namespace source2sdk
         class CRandStopwatch : public source2sdk::client::CStopwatchBase
         {
         public:
-            float m_flMinInterval; // 0xc            
-            float m_flMaxInterval; // 0x10            
+            float m_flMinInterval; // 0xc
+            float m_flMaxInterval; // 0x10
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CRandStopwatch because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CRandStopwatch) == 0x14);
     };
 };

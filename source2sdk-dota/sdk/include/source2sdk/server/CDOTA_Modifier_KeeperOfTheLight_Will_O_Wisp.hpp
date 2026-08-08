@@ -17,19 +17,19 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a68
+        // Size: 0x1a88
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_KeeperOfTheLight_Will_O_Wisp : public source2sdk::client::CDOTA_Buff
         {
         public:
-            std::int32_t fixed_movement_speed; // 0x1a58            
-            VectorWS m_vSource; // 0x1a5c            
+            std::int32_t fixed_movement_speed; // 0x1a78
+            VectorWS m_vSource; // 0x1a7c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_KeeperOfTheLight_Will_O_Wisp because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_KeeperOfTheLight_Will_O_Wisp) == 0x1a68);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_KeeperOfTheLight_Will_O_Wisp) == 0x1a88);
     };
 };

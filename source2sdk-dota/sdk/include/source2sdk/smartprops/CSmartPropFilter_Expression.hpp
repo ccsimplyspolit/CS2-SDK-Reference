@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x58
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Filter: Expression"
         // static metadata: MPropertyDescription "Evaluates the specified expression, if the result of the expression is false evaluation of the element is stopped."
@@ -30,12 +30,12 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyAttributeEditor "SmartPropAttributeEditor(expression)"
-            CUtlString m_Expression; // 0x50            
+            CUtlString m_Expression; // 0x50
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSmartPropFilter_Expression because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::smartprops::CSmartPropFilter_Expression) == 0x58);
     };
 };

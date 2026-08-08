@@ -23,13 +23,13 @@ namespace source2sdk
         class CCitadel_Modifier_VeilWalkerWatcher : public source2sdk::server::CCitadelModifier
         {
         public:
-            Vector m_vPreviousPos; // 0xd0            
+            Vector m_vPreviousPos; // 0xd0
             uint8_t _pad00dc[0x104];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_VeilWalkerWatcher because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_VeilWalkerWatcher) == 0x1e0);
     };
 };

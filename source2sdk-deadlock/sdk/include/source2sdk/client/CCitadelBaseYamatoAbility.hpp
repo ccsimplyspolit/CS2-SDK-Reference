@@ -24,14 +24,14 @@ namespace source2sdk
         class CCitadelBaseYamatoAbility : public source2sdk::client::C_CitadelBaseAbility
         {
         public:
-            float m_flCachedCastTime; // 0x11d8            
-            bool m_bIsShadowFormCast; // 0x11dc            
+            float m_flCachedCastTime; // 0x11d8
+            bool m_bIsShadowFormCast; // 0x11dc
             uint8_t _pad11dd[0x3];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadelBaseYamatoAbility because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadelBaseYamatoAbility) == 0x11e0);
     };
 };

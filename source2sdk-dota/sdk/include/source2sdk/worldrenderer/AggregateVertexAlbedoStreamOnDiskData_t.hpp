@@ -18,18 +18,18 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x10
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct AggregateVertexAlbedoStreamOnDiskData_t
         {
         public:
-            CUtlBinaryBlock m_BufferData; // 0x0            
+            CUtlBinaryBlock m_BufferData; // 0x0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::worldrenderer::AggregateVertexAlbedoStreamOnDiskData_t, m_BufferData) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::worldrenderer::AggregateVertexAlbedoStreamOnDiskData_t) == 0x10);
     };
 };

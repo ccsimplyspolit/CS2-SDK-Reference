@@ -23,15 +23,15 @@ namespace source2sdk
         class CCitadel_Modifier_ThermalDetonator_Thinker : public source2sdk::server::CCitadelModifierAura
         {
         public:
-            Vector m_vecOrigin; // 0x108            
-            Vector m_vecWorldSpaceMins; // 0x114            
-            Vector m_vecWorldSpaceMaxs; // 0x120            
+            Vector m_vecOrigin; // 0x108
+            Vector m_vecWorldSpaceMins; // 0x114
+            Vector m_vecWorldSpaceMaxs; // 0x120
             uint8_t _pad012c[0x104];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_ThermalDetonator_Thinker because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_ThermalDetonator_Thinker) == 0x230);
     };
 };

@@ -22,13 +22,13 @@ namespace source2sdk
         struct VertexPositionColor_t
         {
         public:
-            Vector m_vPosition; // 0x0            
+            Vector m_vPosition; // 0x0
             uint8_t _pad000c[0x4];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::physicslib::VertexPositionColor_t, m_vPosition) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::physicslib::VertexPositionColor_t) == 0x10);
     };
 };

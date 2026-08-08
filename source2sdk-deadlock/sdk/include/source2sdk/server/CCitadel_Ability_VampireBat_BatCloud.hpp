@@ -25,13 +25,13 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0f70[0x20]; // 0xf70
-            source2sdk::entity2::GameTime_t m_flBatCloudEndTime; // 0xf90            
+            source2sdk::entity2::GameTime_t m_flBatCloudEndTime; // 0xf90
             uint8_t _pad0f94[0x384];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_VampireBat_BatCloud because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Ability_VampireBat_BatCloud) == 0x1318);
     };
 };

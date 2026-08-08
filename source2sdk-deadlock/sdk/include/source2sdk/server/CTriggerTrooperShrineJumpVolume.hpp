@@ -23,13 +23,13 @@ namespace source2sdk
         class CTriggerTrooperShrineJumpVolume : public source2sdk::server::CBaseTrigger
         {
         public:
-            float m_flOuterRadius; // 0x8e0            
-            float m_flInnerRadius; // 0x8e4            
+            float m_flOuterRadius; // 0x8e0
+            float m_flInnerRadius; // 0x8e4
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CTriggerTrooperShrineJumpVolume because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CTriggerTrooperShrineJumpVolume) == 0x8e8);
     };
 };

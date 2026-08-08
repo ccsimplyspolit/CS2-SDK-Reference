@@ -19,25 +19,25 @@ namespace source2sdk
         // Alignment: 0x8
         // Standard-layout class: false
         // Size: 0x6c8
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct CPAssignment_t
         {
         public:
             // metadata: MPropertyFriendlyName "Control Point Number"
-            std::int32_t m_nCPNumber; // 0x0            
+            std::int32_t m_nCPNumber; // 0x0
             uint8_t _pad0004[0x4]; // 0x4
             // metadata: MPropertyFriendlyName "CP Position"
-            source2sdk::particleslib::CPerParticleVecInput m_Pos; // 0x8            
+            source2sdk::particleslib::CPerParticleVecInput m_Pos; // 0x8
             // metadata: MPropertyFriendlyName "CP Orientation Type"
-            source2sdk::particles::ParticleOrientationSetMode_t m_nOrientationMode; // 0x6c0            
+            source2sdk::particles::ParticleOrientationSetMode_t m_nOrientationMode; // 0x6c0
             uint8_t _pad06c4[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPAssignment_t because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::CPAssignment_t) == 0x6c8);
     };
 };

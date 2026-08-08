@@ -35,17 +35,17 @@ namespace source2sdk
         public:
             // m_hTornado has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::C_BaseEntity> m_hTornado;
-            char m_hTornado[0x4]; // 0x6a8            
+            char m_hTornado[0x4]; // 0x6a8
             // m_hNeutralTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::C_BaseEntity> m_hNeutralTarget;
-            char m_hNeutralTarget[0x4]; // 0x6ac            
-            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x6b0            
+            char m_hNeutralTarget[0x4]; // 0x6ac
+            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x6b0
             uint8_t _pad06b4[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_EnragedWildkin_Tornado because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_EnragedWildkin_Tornado) == 0x6b8);
     };
 };

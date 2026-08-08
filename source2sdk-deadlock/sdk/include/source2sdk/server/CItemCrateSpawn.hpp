@@ -26,14 +26,14 @@ namespace source2sdk
         {
         public:
             uint8_t _pad04a0[0x18]; // 0x4a0
-            source2sdk::client::ECrateLootType_t m_eLootType; // 0x4b8            
-            source2sdk::client::EObjectivePositions_t m_eObjectivePosition; // 0x4bc            
+            source2sdk::client::ECrateLootType_t m_eLootType; // 0x4b8
+            source2sdk::client::EObjectivePositions_t m_eObjectivePosition; // 0x4bc
             uint8_t _pad04c0[0x8];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CItemCrateSpawn because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CItemCrateSpawn) == 0x4c8);
     };
 };

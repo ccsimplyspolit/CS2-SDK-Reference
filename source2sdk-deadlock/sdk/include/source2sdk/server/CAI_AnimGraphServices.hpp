@@ -25,13 +25,13 @@ namespace source2sdk
         class CAI_AnimGraphServices : public source2sdk::client::CAI_Component
         {
         public:
-            source2sdk::server::HandshakeInfo_t m_pHandshakeInfo[2]; // 0x50            
-            source2sdk::server::LastIncomingHit_t m_LastIncomingHit; // 0x80            
+            source2sdk::server::HandshakeInfo_t m_pHandshakeInfo[2]; // 0x50
+            source2sdk::server::LastIncomingHit_t m_LastIncomingHit; // 0x80
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CAI_AnimGraphServices because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CAI_AnimGraphServices) == 0xa0);
     };
 };

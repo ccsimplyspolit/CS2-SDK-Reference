@@ -23,16 +23,16 @@ namespace source2sdk
         class CPhysFixed : public source2sdk::server::CPhysConstraint
         {
         public:
-            float m_flLinearFrequency; // 0x500            
-            float m_flLinearDampingRatio; // 0x504            
-            float m_flAngularFrequency; // 0x508            
-            float m_flAngularDampingRatio; // 0x50c            
-            bool m_bEnableLinearConstraint; // 0x510            
-            bool m_bEnableAngularConstraint; // 0x511            
+            float m_flLinearFrequency; // 0x500
+            float m_flLinearDampingRatio; // 0x504
+            float m_flAngularFrequency; // 0x508
+            float m_flAngularDampingRatio; // 0x50c
+            bool m_bEnableLinearConstraint; // 0x510
+            bool m_bEnableAngularConstraint; // 0x511
             uint8_t _pad0512[0x6]; // 0x512
-            CUtlSymbolLarge m_sBoneName1; // 0x518            
-            CUtlSymbolLarge m_sBoneName2; // 0x520            
-            
+            CUtlSymbolLarge m_sBoneName1; // 0x518
+            CUtlSymbolLarge m_sBoneName2; // 0x520
+
             // Datamap fields:
             // float InputSetLinearFrequency; // 0x0
             // float InputSetLinearDampingRatio; // 0x0
@@ -40,9 +40,9 @@ namespace source2sdk
             // float InputSetAngularDampingRatio; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPhysFixed because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CPhysFixed) == 0x528);
     };
 };

@@ -28,8 +28,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: CDOTA_Ability_Ogre_Magi_Unrefined_Fireblast has no schema binary (size is a guess)
     };
 };

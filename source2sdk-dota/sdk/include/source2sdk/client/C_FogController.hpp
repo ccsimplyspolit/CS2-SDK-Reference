@@ -22,18 +22,18 @@ namespace source2sdk
         // Has VTable
         // Construct allowed
         // MNetworkNoBase
-        // 
+        //
         // static metadata: MEntityAllowsPortraitWorldSpawn
         #pragma pack(push, 1)
         class C_FogController : public source2sdk::client::C_BaseEntity
         {
         public:
             // metadata: MNotSaved
-            source2sdk::client::fogparams_t m_fog; // 0x5f0            
-            bool m_bUseAngles; // 0x658            
+            source2sdk::client::fogparams_t m_fog; // 0x5f0
+            bool m_bUseAngles; // 0x658
             uint8_t _pad0659[0x3]; // 0x659
-            std::int32_t m_iChangedVariables; // 0x65c            
-            
+            std::int32_t m_iChangedVariables; // 0x65c
+
             // Datamap fields:
             // float InputSetStartDist; // 0x0
             // float InputSetEndDist; // 0x0
@@ -54,9 +54,9 @@ namespace source2sdk
             // void InputStartFogTransition; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_FogController because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_FogController) == 0x660);
     };
 };

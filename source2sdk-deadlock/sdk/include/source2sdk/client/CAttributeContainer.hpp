@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x158
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkIncludeByName "m_ProviderType"
         // static metadata: MNetworkIncludeByName "m_hOuter"
         // static metadata: MNetworkIncludeByName "m_iReapplyProvisionParity"
@@ -31,12 +31,12 @@ namespace source2sdk
         {
         public:
             // metadata: MNetworkEnable
-            source2sdk::client::C_EconItemView m_Item; // 0x68            
+            source2sdk::client::C_EconItemView m_Item; // 0x68
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CAttributeContainer because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CAttributeContainer) == 0x158);
     };
 };

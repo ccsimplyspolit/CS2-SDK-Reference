@@ -21,109 +21,109 @@ namespace source2sdk
         // Has VTable
         // Is Abstract
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct CitadelCameraOperationDef_t
         {
         public:
             uint8_t _pad0000[0x8]; // 0x0
-            source2sdk::client::CameraOperation m_eCameraOperation; // 0x8            
+            source2sdk::client::CameraOperation m_eCameraOperation; // 0x8
             // metadata: MPropertySuppressExpr "m_eCameraOperation == k_ECameraOp_Lag"
             // metadata: MPropertyDescription "All operation source and target values are considered relative to the default values"
-            bool m_bValuesAreRelative; // 0xc            
+            bool m_bValuesAreRelative; // 0xc
             uint8_t _pad000d[0x3]; // 0xd
-            float m_flDelay; // 0x10            
+            float m_flDelay; // 0x10
             // metadata: MPropertySuppressExpr "m_eCameraOperation != k_ECameraOp_Maintain"
             // metadata: MPropertyDescription "How long to hold the current value. Less than zero for an indefinite end."
-            float m_flMaintainDuration; // 0x14            
+            float m_flMaintainDuration; // 0x14
             // metadata: MPropertySuppressExpr "m_eCameraOperation != k_ECameraOp_Approach"
             // metadata: MPropertyDescription "How fast to approach the target value"
-            float m_flApproachSpeed; // 0x18            
+            float m_flApproachSpeed; // 0x18
             // metadata: MPropertySuppressExpr "m_eCameraOperation != k_ECameraOp_Approach"
             // metadata: MPropertyDescription "Acceleration as we approach the target value"
-            float m_flApproachAcceleration; // 0x1c            
+            float m_flApproachAcceleration; // 0x1c
             // metadata: MPropertySuppressExpr "m_eCameraOperation != k_ECameraOp_Approach"
             // metadata: MPropertyDescription "Minimum time to try approaching"
-            float m_flApproachMinDuration; // 0x20            
+            float m_flApproachMinDuration; // 0x20
             // metadata: MPropertySuppressExpr "m_bApproachDefault == true || m_eCameraOperation != k_ECameraOp_Approach || m_nCameraParam == 4"
             // metadata: MPropertyDescription "The target value"
-            float m_flApproachTarget; // 0x24            
+            float m_flApproachTarget; // 0x24
             // metadata: MPropertySuppressExpr "m_bApproachDefault == true || m_eCameraOperation != k_ECameraOp_Approach || m_nCameraParam != 4"
             // metadata: MPropertyDescription "The target value"
-            Vector m_vApproachTarget; // 0x28            
+            Vector m_vApproachTarget; // 0x28
             // metadata: MPropertySuppressExpr "m_eCameraOperation != k_ECameraOp_Approach"
             // metadata: MPropertyDescription "If true, approaches the dafault value.  If false, allows specifying a target value"
-            bool m_bApproachDefault; // 0x34            
+            bool m_bApproachDefault; // 0x34
             uint8_t _pad0035[0x3]; // 0x35
             // metadata: MPropertySuppressExpr "m_eCameraOperation != k_ECameraOp_Spring"
             // metadata: MPropertyDescription "Strength of the spring.  Larger is stronger"
-            float m_flSpringStrength; // 0x38            
+            float m_flSpringStrength; // 0x38
             // metadata: MPropertySuppressExpr "m_eCameraOperation != k_ECameraOp_Spring"
             // metadata: MPropertyDescription "Minimum speed of the spring.  Useful is the spring strength is low or the target is near."
-            float m_flSpringMinSpeed; // 0x3c            
+            float m_flSpringMinSpeed; // 0x3c
             // metadata: MPropertySuppressExpr "m_eCameraOperation != k_ECameraOp_Spring"
             // metadata: MPropertyDescription "Maximum time to spring to the target"
-            float m_flSpringMaxDuration; // 0x40            
+            float m_flSpringMaxDuration; // 0x40
             // metadata: MPropertySuppressExpr "m_eCameraOperation != k_ECameraOp_Spring"
             // metadata: MPropertyDescription "If true, spring to the default value.  If false, allows specifing the target value"
-            bool m_bSpringToDefault; // 0x44            
+            bool m_bSpringToDefault; // 0x44
             uint8_t _pad0045[0x3]; // 0x45
             // metadata: MPropertySuppressExpr "m_bSpringToDefault == true || m_eCameraOperation != k_ECameraOp_Spring || m_nCameraParam == 4"
             // metadata: MPropertyDescription "The target value to spring to"
-            float m_flSpringTarget; // 0x48            
+            float m_flSpringTarget; // 0x48
             // metadata: MPropertySuppressExpr "m_bSpringToDefault == true || m_eCameraOperation != k_ECameraOp_Spring || m_nCameraParam != 4"
             // metadata: MPropertyDescription "The target value to spring to"
-            Vector m_vSpringTarget; // 0x4c            
+            Vector m_vSpringTarget; // 0x4c
             // metadata: MPropertySuppressExpr "m_eCameraOperation != k_ECameraOp_Lerp"
             // metadata: MPropertyDescription "If true, start lerping from the current value.  If false, allows specifying the start lerp value"
-            bool m_bLerpStartAtCurrent; // 0x58            
+            bool m_bLerpStartAtCurrent; // 0x58
             // metadata: MPropertySuppressExpr "m_eCameraOperation != k_ECameraOp_Lerp"
             // metadata: MPropertyDescription "If true, lerp to the default value.  If false, allows specifying the end lerp value"
-            bool m_bLerpEndAtDefault; // 0x59            
+            bool m_bLerpEndAtDefault; // 0x59
             uint8_t _pad005a[0x2]; // 0x5a
             // metadata: MPropertySuppressExpr "m_bLerpStartAtCurrent == true || m_eCameraOperation != k_ECameraOp_Lerp || m_nCameraParam == 4"
             // metadata: MPropertyDescription "The start lerp value"
-            float m_flLerpStart; // 0x5c            
+            float m_flLerpStart; // 0x5c
             // metadata: MPropertySuppressExpr "m_bLerpEndAtDefault == true || m_eCameraOperation != k_ECameraOp_Lerp || m_nCameraParam == 4"
             // metadata: MPropertyDescription "The end lerp value"
-            float m_flLerpEnd; // 0x60            
+            float m_flLerpEnd; // 0x60
             // metadata: MPropertySuppressExpr "m_bLerpStartAtCurrent == true || m_eCameraOperation != k_ECameraOp_Lerp || m_nCameraParam != 4"
             // metadata: MPropertyDescription "The start lerp value"
-            Vector m_vLerpStart; // 0x64            
+            Vector m_vLerpStart; // 0x64
             // metadata: MPropertySuppressExpr "m_bLerpEndAtDefault == true || m_eCameraOperation != k_ECameraOp_Lerp || m_nCameraParam != 4"
             // metadata: MPropertyDescription "The end lerp value"
-            Vector m_vLerpEnd; // 0x70            
+            Vector m_vLerpEnd; // 0x70
             // metadata: MPropertySuppressExpr "m_eCameraOperation != k_ECameraOp_Lerp"
             // metadata: MPropertyAttributeRange "0 1"
             // metadata: MPropertyDescription "A bias on the lerp"
-            float m_flLerpBias; // 0x7c            
+            float m_flLerpBias; // 0x7c
             // metadata: MPropertySuppressExpr "m_eCameraOperation != k_ECameraOp_Lerp"
             // metadata: MPropertyAttributeRange "0 1"
             // metadata: MPropertyDescription "A gain on the lerp"
-            float m_flLerpGain; // 0x80            
+            float m_flLerpGain; // 0x80
             // metadata: MPropertySuppressExpr "m_eCameraOperation != k_ECameraOp_Lerp"
             // metadata: MPropertyDescription "How long to lerp from start to end"
-            float m_flLerpDuration; // 0x84            
+            float m_flLerpDuration; // 0x84
             // metadata: MPropertySuppressExpr "m_eCameraOperation != k_ECameraOp_Lag"
             // metadata: MPropertyDescription "Minimum time to have the spring active"
-            float m_flLagMinDuration; // 0x88            
+            float m_flLagMinDuration; // 0x88
             // metadata: MPropertySuppressExpr "m_eCameraOperation != k_ECameraOp_Lag"
             // metadata: MPropertyDescription "How long to let the value lag behind before springing to the default value"
-            float m_flLagTime; // 0x8c            
+            float m_flLagTime; // 0x8c
             // metadata: MPropertySuppressExpr "m_eCameraOperation != k_ECameraOp_Lag"
             // metadata: MPropertyDescription "While lagging behind, the max value we can approach the target value."
-            float m_flLagMaxSpeed; // 0x90            
+            float m_flLagMaxSpeed; // 0x90
             // metadata: MPropertySuppressExpr "m_eCameraOperation != k_ECameraOp_Lag"
             // metadata: MPropertyDescription "Once the lag period is over, how strong the spring is that pulls the current value to the default value"
-            float m_flLagSpringStrength; // 0x94            
+            float m_flLagSpringStrength; // 0x94
             // metadata: MPropertySuppressExpr "m_eCameraOperation != k_ECameraOp_Lag"
             // metadata: MPropertyDescription "When true, the spring strength will scale up to try to keep the target on screen"
-            bool m_bIncreaseSpringStrengthToKeepTargetOnScreen; // 0x98            
+            bool m_bIncreaseSpringStrengthToKeepTargetOnScreen; // 0x98
             uint8_t _pad0099[0x7];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::CitadelCameraOperationDef_t, m_eCameraOperation) == 0x8);
         static_assert(offsetof(source2sdk::client::CitadelCameraOperationDef_t, m_bValuesAreRelative) == 0xc);
         static_assert(offsetof(source2sdk::client::CitadelCameraOperationDef_t, m_flDelay) == 0x10);
@@ -154,7 +154,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::client::CitadelCameraOperationDef_t, m_flLagMaxSpeed) == 0x90);
         static_assert(offsetof(source2sdk::client::CitadelCameraOperationDef_t, m_flLagSpringStrength) == 0x94);
         static_assert(offsetof(source2sdk::client::CitadelCameraOperationDef_t, m_bIncreaseSpringStrengthToKeepTargetOnScreen) == 0x98);
-        
+
         static_assert(sizeof(source2sdk::client::CitadelCameraOperationDef_t) == 0xa0);
     };
 };

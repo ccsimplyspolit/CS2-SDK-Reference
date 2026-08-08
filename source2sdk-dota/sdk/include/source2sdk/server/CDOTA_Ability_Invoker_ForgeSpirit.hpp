@@ -32,22 +32,22 @@ namespace source2sdk
         class CDOTA_Ability_Invoker_ForgeSpirit : public source2sdk::server::CDOTA_Ability_Invoker_InvokedBase
         {
         public:
-            float spirit_damage; // 0x590            
-            std::int32_t spirit_mana; // 0x594            
-            std::int32_t spirit_armor; // 0x598            
-            float spirit_attack_range; // 0x59c            
-            std::int32_t spirit_hp; // 0x5a0            
-            std::int32_t spirit_level; // 0x5a4            
-            float spirit_duration; // 0x5a8            
-            float armor_per_attack; // 0x5ac            
+            float spirit_damage; // 0x590
+            std::int32_t spirit_mana; // 0x594
+            std::int32_t spirit_armor; // 0x598
+            float spirit_attack_range; // 0x59c
+            std::int32_t spirit_hp; // 0x5a0
+            std::int32_t spirit_level; // 0x5a4
+            float spirit_duration; // 0x5a8
+            float armor_per_attack; // 0x5ac
             // m_vecSpirits has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::server::CBaseEntity>> m_vecSpirits;
-            char m_vecSpirits[0x18]; // 0x5b0            
+            char m_vecSpirits[0x18]; // 0x5b0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Invoker_ForgeSpirit because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Invoker_ForgeSpirit) == 0x5c8);
     };
 };

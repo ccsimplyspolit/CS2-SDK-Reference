@@ -43,55 +43,55 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0000[0x28]; // 0x0
-            source2sdk::client::ModifierSerialNumber_t m_nSerialNumber; // 0x28            
-            source2sdk::entity2::GameTime_t m_flLastAppliedTime; // 0x2c            
-            source2sdk::entity2::GameTime_t m_flCreationTime; // 0x30            
-            float m_flDuration; // 0x34            
+            source2sdk::client::ModifierSerialNumber_t m_nSerialNumber; // 0x28
+            source2sdk::entity2::GameTime_t m_flLastAppliedTime; // 0x2c
+            source2sdk::entity2::GameTime_t m_flCreationTime; // 0x30
+            float m_flDuration; // 0x34
             // m_hCaster has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hCaster;
-            char m_hCaster[0x4]; // 0x38            
+            char m_hCaster[0x4]; // 0x38
             // m_hAbility has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hAbility;
-            char m_hAbility[0x4]; // 0x3c            
-            source2sdk::server::CModifierHandleBase m_hAuraProvider; // 0x40            
-            bool m_bInAuraRange; // 0x58            
+            char m_hAbility[0x4]; // 0x3c
+            source2sdk::server::CModifierHandleBase m_hAuraProvider; // 0x40
+            bool m_bInAuraRange; // 0x58
             uint8_t _pad0059[0x1]; // 0x59
             // metadata: MNotSaved
-            source2sdk::client::ModifierQueuedRefreshHandle_t m_nQueuedModifierRefreshHandle; // 0x5a            
-            CUtlStringToken m_nAbilitySubclassID; // 0x5c            
-            std::uint8_t m_iAttributes; // 0x60            
-            std::uint8_t m_iTeam; // 0x61            
-            std::int16_t m_iStackCount; // 0x62            
-            std::int16_t m_iMaxStackCount; // 0x64            
+            source2sdk::client::ModifierQueuedRefreshHandle_t m_nQueuedModifierRefreshHandle; // 0x5a
+            CUtlStringToken m_nAbilitySubclassID; // 0x5c
+            std::uint8_t m_iAttributes; // 0x60
+            std::uint8_t m_iTeam; // 0x61
+            std::int16_t m_iStackCount; // 0x62
+            std::int16_t m_iMaxStackCount; // 0x64
             uint8_t _pad0066[0x2]; // 0x66
             // metadata: MNotSaved
             // m_pVecStackDecayTimes has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::entity2::GameTime_t>* m_pVecStackDecayTimes;
-            char m_pVecStackDecayTimes[0x8]; // 0x68            
-            std::uint8_t m_eDestroyReason; // 0x70            
-            bool m_bDisabled; // 0x71            
-            bool m_bSuppressSendModifier; // 0x72            
+            char m_pVecStackDecayTimes[0x8]; // 0x68
+            std::uint8_t m_eDestroyReason; // 0x70
+            bool m_bDisabled; // 0x71
+            bool m_bSuppressSendModifier; // 0x72
             uint8_t _pad0073[0x1]; // 0x73
-            float m_flThinkInterval; // 0x74            
-            source2sdk::entity2::GameTime_t m_flThinkIntervalStartTime; // 0x78            
-            float m_flAsyncThinkInterval; // 0x7c            
-            source2sdk::entity2::GameTime_t m_flAsyncThinkIntervalStartTime; // 0x80            
-            float m_flTimeScale; // 0x84            
+            float m_flThinkInterval; // 0x74
+            source2sdk::entity2::GameTime_t m_flThinkIntervalStartTime; // 0x78
+            float m_flAsyncThinkInterval; // 0x7c
+            source2sdk::entity2::GameTime_t m_flAsyncThinkIntervalStartTime; // 0x80
+            float m_flTimeScale; // 0x84
             // metadata: MNotSaved
             // m_pVecTrackedObjects has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::client::IModifierTrackedObject*>* m_pVecTrackedObjects;
-            char m_pVecTrackedObjects[0x8]; // 0x88            
+            char m_pVecTrackedObjects[0x8]; // 0x88
             // metadata: MNotSaved
-            source2sdk::client::ModifierRuntimeHandle_t m_hModifierListHandle; // 0x90            
+            source2sdk::client::ModifierRuntimeHandle_t m_hModifierListHandle; // 0x90
             // metadata: MNotSaved
-            std::int32_t m_iStringIndex; // 0x94            
-            
+            std::int32_t m_iStringIndex; // 0x94
+
             // Datamap fields:
             // void m_pModifierProp; // 0x20
             // void m_pSubclassVData; // 0x10
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::CBaseModifier, m_nSerialNumber) == 0x28);
         static_assert(offsetof(source2sdk::server::CBaseModifier, m_flLastAppliedTime) == 0x2c);
         static_assert(offsetof(source2sdk::server::CBaseModifier, m_flCreationTime) == 0x30);
@@ -118,7 +118,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::server::CBaseModifier, m_pVecTrackedObjects) == 0x88);
         static_assert(offsetof(source2sdk::server::CBaseModifier, m_hModifierListHandle) == 0x90);
         static_assert(offsetof(source2sdk::server::CBaseModifier, m_iStringIndex) == 0x94);
-        
+
         static_assert(sizeof(source2sdk::server::CBaseModifier) == 0x98);
     };
 };

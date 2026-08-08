@@ -23,13 +23,13 @@ namespace source2sdk
         class CFilterProximity : public source2sdk::server::CBaseFilter
         {
         public:
-            float m_flRadius; // 0x4d8            
+            float m_flRadius; // 0x4d8
             uint8_t _pad04dc[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CFilterProximity because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CFilterProximity) == 0x4e0);
     };
 };

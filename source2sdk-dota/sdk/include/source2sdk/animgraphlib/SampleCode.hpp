@@ -20,18 +20,18 @@ namespace source2sdk
         // Has Trivial Constructor
         // Has Trivial Destructor
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class SampleCode
         {
         public:
-            std::uint8_t m_subCode[8]; // 0x0            
+            std::uint8_t m_subCode[8]; // 0x0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::animgraphlib::SampleCode, m_subCode) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::animgraphlib::SampleCode) == 0x8);
     };
 };

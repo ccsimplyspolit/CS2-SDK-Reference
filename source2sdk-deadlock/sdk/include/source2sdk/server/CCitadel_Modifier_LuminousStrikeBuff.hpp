@@ -24,13 +24,13 @@ namespace source2sdk
         class CCitadel_Modifier_LuminousStrikeBuff : public source2sdk::server::CCitadelModifier
         {
         public:
-            source2sdk::client::ParticleIndex_t m_nPowerupParticle; // 0xd0            
+            source2sdk::client::ParticleIndex_t m_nPowerupParticle; // 0xd0
             uint8_t _pad00d4[0x19c];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_LuminousStrikeBuff because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_LuminousStrikeBuff) == 0x270);
     };
 };

@@ -36,17 +36,17 @@ namespace source2sdk
         struct CitadelAbilityProjectileVolumeTouchInfo_t
         {
         public:
-            bool m_bIsProjectileAsBullet; // 0x0            
+            bool m_bIsProjectileAsBullet; // 0x0
             uint8_t _pad0001[0x7]; // 0x1
-            source2sdk::server::CBaseEntity* m_pProjectile; // 0x8            
-            CCitadel_Bullet_Base* m_pBullet; // 0x10            
+            source2sdk::server::CBaseEntity* m_pProjectile; // 0x8
+            CCitadel_Bullet_Base* m_pBullet; // 0x10
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::CitadelAbilityProjectileVolumeTouchInfo_t, m_bIsProjectileAsBullet) == 0x0);
         static_assert(offsetof(source2sdk::server::CitadelAbilityProjectileVolumeTouchInfo_t, m_pProjectile) == 0x8);
         static_assert(offsetof(source2sdk::server::CitadelAbilityProjectileVolumeTouchInfo_t, m_pBullet) == 0x10);
-        
+
         static_assert(sizeof(source2sdk::server::CitadelAbilityProjectileVolumeTouchInfo_t) == 0x18);
     };
 };

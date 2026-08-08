@@ -18,18 +18,18 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x4
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MIsBoxedIntegerType
         #pragma pack(push, 1)
         struct ArtyGraphicID_t
         {
         public:
-            std::uint32_t m_Value; // 0x0            
+            std::uint32_t m_Value; // 0x0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::ArtyGraphicID_t, m_Value) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::client::ArtyGraphicID_t) == 0x4);
     };
 };

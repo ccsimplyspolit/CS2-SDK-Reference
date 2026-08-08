@@ -25,12 +25,12 @@ namespace source2sdk
         class CAttributeContainer : public source2sdk::server::CAttributeManager
         {
         public:
-            source2sdk::server::CEconItemView m_Item; // 0x68            
+            source2sdk::server::CEconItemView m_Item; // 0x68
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CAttributeContainer because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CAttributeContainer) == 0x140);
     };
 };

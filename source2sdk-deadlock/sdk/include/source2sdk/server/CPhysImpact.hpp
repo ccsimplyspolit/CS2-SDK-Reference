@@ -23,18 +23,18 @@ namespace source2sdk
         class CPhysImpact : public source2sdk::server::CPointEntity
         {
         public:
-            float m_damage; // 0x4a0            
-            float m_distance; // 0x4a4            
-            CUtlSymbolLarge m_directionEntityName; // 0x4a8            
-            
+            float m_damage; // 0x4a0
+            float m_distance; // 0x4a4
+            CUtlSymbolLarge m_directionEntityName; // 0x4a8
+
             // Datamap fields:
             // void CPhysImpactPointAtEntity; // 0x0
             // void InputImpact; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPhysImpact because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CPhysImpact) == 0x4b0);
     };
 };

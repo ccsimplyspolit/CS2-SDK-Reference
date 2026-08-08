@@ -19,23 +19,23 @@ namespace source2sdk
         // Size: 0x8
         // Has Trivial Destructor
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CSeqAutoLayerFlag
         {
         public:
-            bool m_bPost; // 0x0            
-            bool m_bSpline; // 0x1            
-            bool m_bXFade; // 0x2            
-            bool m_bNoBlend; // 0x3            
-            bool m_bLocal; // 0x4            
-            bool m_bPose; // 0x5            
-            bool m_bFetchFrame; // 0x6            
-            bool m_bSubtract; // 0x7            
+            bool m_bPost; // 0x0
+            bool m_bSpline; // 0x1
+            bool m_bXFade; // 0x2
+            bool m_bNoBlend; // 0x3
+            bool m_bLocal; // 0x4
+            bool m_bPose; // 0x5
+            bool m_bFetchFrame; // 0x6
+            bool m_bSubtract; // 0x7
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::animationsystem::CSeqAutoLayerFlag, m_bPost) == 0x0);
         static_assert(offsetof(source2sdk::animationsystem::CSeqAutoLayerFlag, m_bSpline) == 0x1);
         static_assert(offsetof(source2sdk::animationsystem::CSeqAutoLayerFlag, m_bXFade) == 0x2);
@@ -44,7 +44,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::animationsystem::CSeqAutoLayerFlag, m_bPose) == 0x5);
         static_assert(offsetof(source2sdk::animationsystem::CSeqAutoLayerFlag, m_bFetchFrame) == 0x6);
         static_assert(offsetof(source2sdk::animationsystem::CSeqAutoLayerFlag, m_bSubtract) == 0x7);
-        
+
         static_assert(sizeof(source2sdk::animationsystem::CSeqAutoLayerFlag) == 0x8);
     };
 };

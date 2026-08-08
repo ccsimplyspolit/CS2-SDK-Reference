@@ -26,8 +26,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: CSoundEventEntityAlias_snd_event_point has no schema binary (size is a guess)
     };
 };

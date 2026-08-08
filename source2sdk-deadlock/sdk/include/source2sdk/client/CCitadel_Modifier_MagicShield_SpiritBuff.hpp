@@ -23,13 +23,13 @@ namespace source2sdk
         class CCitadel_Modifier_MagicShield_SpiritBuff : public source2sdk::client::CCitadelModifier
         {
         public:
-            bool m_bHasHealthForBonuses; // 0xc0            
+            bool m_bHasHealthForBonuses; // 0xc0
             uint8_t _pad00c1[0x187];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_MagicShield_SpiritBuff because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Modifier_MagicShield_SpiritBuff) == 0x248);
     };
 };

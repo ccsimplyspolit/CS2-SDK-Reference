@@ -18,21 +18,21 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a68
+        // Size: 0x1a88
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Oracle_DivinersDeck_TheTower : public source2sdk::client::CDOTA_Buff
         {
         public:
-            std::int32_t barrier_amount; // 0x1a58            
-            float barrier_restore_time; // 0x1a5c            
-            std::int32_t m_nDamageAbsorbed; // 0x1a60            
-            source2sdk::entity2::GameTime_t m_timeLastDamage; // 0x1a64            
+            std::int32_t barrier_amount; // 0x1a78
+            float barrier_restore_time; // 0x1a7c
+            std::int32_t m_nDamageAbsorbed; // 0x1a80
+            source2sdk::entity2::GameTime_t m_timeLastDamage; // 0x1a84
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Oracle_DivinersDeck_TheTower because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Oracle_DivinersDeck_TheTower) == 0x1a68);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Oracle_DivinersDeck_TheTower) == 0x1a88);
     };
 };

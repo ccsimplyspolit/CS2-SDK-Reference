@@ -21,7 +21,7 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x60
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "CEntityIndex m_nEntIndex"
         // static metadata: MNetworkVarNames "int m_nTeam"
         // static metadata: MNetworkVarNames "Class_T m_eClass"
@@ -40,36 +40,36 @@ namespace source2sdk
         public:
             uint8_t _pad0000[0x30]; // 0x0
             // metadata: MNetworkEnable
-            CEntityIndex m_nEntIndex; // 0x30            
+            CEntityIndex m_nEntIndex; // 0x30
             // metadata: MNetworkEnable
-            std::int32_t m_nTeam; // 0x34            
+            std::int32_t m_nTeam; // 0x34
             // metadata: MNetworkEnable
-            source2sdk::client::Class_T m_eClass; // 0x38            
+            source2sdk::client::Class_T m_eClass; // 0x38
             // metadata: MNetworkEnable
-            std::int32_t m_iLane; // 0x3c            
+            std::int32_t m_iLane; // 0x3c
             // metadata: MNetworkEnable
-            source2sdk::client::EMinimapHeight m_eHeight; // 0x40            
+            source2sdk::client::EMinimapHeight m_eHeight; // 0x40
             // metadata: MNetworkEnable
-            bool m_bVisibleOnMap; // 0x41            
+            bool m_bVisibleOnMap; // 0x41
             // metadata: MNetworkEnable
-            bool m_bBackdoorProtectionActive; // 0x42            
+            bool m_bBackdoorProtectionActive; // 0x42
             uint8_t _pad0043[0x1]; // 0x43
             // metadata: MNetworkEnable
-            source2sdk::entity2::GameTick_t m_nTickHidden; // 0x44            
+            source2sdk::entity2::GameTick_t m_nTickHidden; // 0x44
             // metadata: MNetworkEnable
-            CUtlString m_strEntityName; // 0x48            
+            CUtlString m_strEntityName; // 0x48
             // metadata: MNetworkEnable
-            std::uint8_t m_nHealthPercent; // 0x50            
-            // metadata: MNetworkEnable
-            // metadata: MNetworkPriority "32"
-            std::uint8_t m_nPositionX; // 0x51            
+            std::uint8_t m_nHealthPercent; // 0x50
             // metadata: MNetworkEnable
             // metadata: MNetworkPriority "32"
-            std::uint8_t m_nPositionY; // 0x52            
+            std::uint8_t m_nPositionX; // 0x51
+            // metadata: MNetworkEnable
+            // metadata: MNetworkPriority "32"
+            std::uint8_t m_nPositionY; // 0x52
             uint8_t _pad0053[0xd];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::STeamFOWEntity, m_nEntIndex) == 0x30);
         static_assert(offsetof(source2sdk::server::STeamFOWEntity, m_nTeam) == 0x34);
         static_assert(offsetof(source2sdk::server::STeamFOWEntity, m_eClass) == 0x38);
@@ -82,7 +82,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::server::STeamFOWEntity, m_nHealthPercent) == 0x50);
         static_assert(offsetof(source2sdk::server::STeamFOWEntity, m_nPositionX) == 0x51);
         static_assert(offsetof(source2sdk::server::STeamFOWEntity, m_nPositionY) == 0x52);
-        
+
         static_assert(sizeof(source2sdk::server::STeamFOWEntity) == 0x60);
     };
 };

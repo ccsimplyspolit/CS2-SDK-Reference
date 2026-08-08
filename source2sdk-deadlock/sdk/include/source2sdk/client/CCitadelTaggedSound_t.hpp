@@ -17,7 +17,7 @@ namespace source2sdk
         // Alignment: 0x8
         // Standard-layout class: true
         // Size: 0x18
-        // 
+        //
         // static metadata: MVDataOverlayType "2"
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -25,14 +25,14 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyStartGroup "Tagged Sounds"
-            CSoundEventName m_soundEvent; // 0x0            
-            CUtlString m_tags; // 0x10            
+            CSoundEventName m_soundEvent; // 0x0
+            CUtlString m_tags; // 0x10
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::CCitadelTaggedSound_t, m_soundEvent) == 0x0);
         static_assert(offsetof(source2sdk::client::CCitadelTaggedSound_t, m_tags) == 0x10);
-        
+
         static_assert(sizeof(source2sdk::client::CCitadelTaggedSound_t) == 0x18);
     };
 };

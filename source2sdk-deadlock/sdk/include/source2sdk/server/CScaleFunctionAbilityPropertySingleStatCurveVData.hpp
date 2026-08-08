@@ -19,18 +19,18 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x80
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CScaleFunctionAbilityPropertySingleStatCurveVData : public source2sdk::server::CScaleFunctionVData
         {
         public:
-            CPiecewiseCurve m_statCurve; // 0x40            
+            CPiecewiseCurve m_statCurve; // 0x40
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CScaleFunctionAbilityPropertySingleStatCurveVData because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CScaleFunctionAbilityPropertySingleStatCurveVData) == 0x80);
     };
 };

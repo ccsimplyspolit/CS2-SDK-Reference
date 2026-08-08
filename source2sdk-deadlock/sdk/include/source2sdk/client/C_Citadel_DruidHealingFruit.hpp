@@ -30,8 +30,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: C_Citadel_DruidHealingFruit has no schema binary (size is a guess)
     };
 };

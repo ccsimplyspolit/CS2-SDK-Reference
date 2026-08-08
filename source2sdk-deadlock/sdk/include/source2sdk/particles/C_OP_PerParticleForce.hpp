@@ -21,25 +21,25 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xa18
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_PerParticleForce : public source2sdk::particles::CParticleFunctionForce
         {
         public:
             // metadata: MPropertyFriendlyName "force scale"
-            source2sdk::particleslib::CPerParticleFloatInput m_flForceScale; // 0x1e8            
+            source2sdk::particleslib::CPerParticleFloatInput m_flForceScale; // 0x1e8
             // metadata: MPropertyFriendlyName "force to apply"
             // metadata: MVectorIsCoordinate
-            source2sdk::particleslib::CPerParticleVecInput m_vForce; // 0x358            
+            source2sdk::particleslib::CPerParticleVecInput m_vForce; // 0x358
             // metadata: MPropertyFriendlyName "local space control point"
-            std::int32_t m_nCP; // 0xa10            
+            std::int32_t m_nCP; // 0xa10
             uint8_t _pad0a14[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_PerParticleForce because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_PerParticleForce) == 0xa18);
     };
 };

@@ -17,21 +17,21 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a68
+        // Size: 0x1a88
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_PhantomAssassin_StiflingDagger_Caster : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float base_damage; // 0x1a58            
-            float attack_factor; // 0x1a5c            
-            float power_reduction; // 0x1a60            
-            uint8_t _pad1a64[0x4];
+            float base_damage; // 0x1a78
+            float attack_factor; // 0x1a7c
+            float power_reduction; // 0x1a80
+            uint8_t _pad1a84[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_PhantomAssassin_StiflingDagger_Caster because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_PhantomAssassin_StiflingDagger_Caster) == 0x1a68);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_PhantomAssassin_StiflingDagger_Caster) == 0x1a88);
     };
 };

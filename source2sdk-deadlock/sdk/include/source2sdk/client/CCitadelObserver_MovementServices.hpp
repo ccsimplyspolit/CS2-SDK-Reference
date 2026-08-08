@@ -23,14 +23,14 @@ namespace source2sdk
         class CCitadelObserver_MovementServices : public source2sdk::client::CPlayer_MovementServices
         {
         public:
-            float m_flRoamingSpeed; // 0x240            
-            bool m_bHasFreeCursor; // 0x244            
+            float m_flRoamingSpeed; // 0x240
+            bool m_bHasFreeCursor; // 0x244
             uint8_t _pad0245[0x3];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadelObserver_MovementServices because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadelObserver_MovementServices) == 0x248);
     };
 };

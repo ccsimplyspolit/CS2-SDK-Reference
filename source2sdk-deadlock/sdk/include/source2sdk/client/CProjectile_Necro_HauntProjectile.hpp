@@ -27,8 +27,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: CProjectile_Necro_HauntProjectile has no schema binary (size is a guess)
     };
 };

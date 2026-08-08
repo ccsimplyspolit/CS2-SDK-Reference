@@ -25,11 +25,11 @@ namespace source2sdk
         class CCredits : public source2sdk::server::CPointEntity
         {
         public:
-            source2sdk::entity2::CEntityIOOutput m_OnCreditsDone; // 0x498            
-            bool m_bRolledOutroCredits; // 0x4b0            
+            source2sdk::entity2::CEntityIOOutput m_OnCreditsDone; // 0x498
+            bool m_bRolledOutroCredits; // 0x4b0
             uint8_t _pad04b1[0x3]; // 0x4b1
-            float m_flLogoLength; // 0x4b4            
-            
+            float m_flLogoLength; // 0x4b4
+
             // Datamap fields:
             // void InputRollCredits; // 0x0
             // void InputRollOutroCredits; // 0x0
@@ -37,9 +37,9 @@ namespace source2sdk
             // float InputSetLogoLength; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCredits because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCredits) == 0x4b8);
     };
 };

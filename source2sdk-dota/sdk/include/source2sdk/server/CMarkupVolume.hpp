@@ -24,17 +24,17 @@ namespace source2sdk
         class CMarkupVolume : public source2sdk::server::CBaseModelEntity
         {
         public:
-            bool m_bDisabled; // 0x778            
+            bool m_bDisabled; // 0x778
             uint8_t _pad0779[0x7];
-            
+
             // Datamap fields:
             // void InputEnable; // 0x0
             // void InputDisable; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CMarkupVolume because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CMarkupVolume) == 0x780);
     };
 };

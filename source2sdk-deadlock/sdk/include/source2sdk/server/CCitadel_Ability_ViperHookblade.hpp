@@ -32,16 +32,16 @@ namespace source2sdk
         public:
             // m_vecOutgoingHitList has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::server::CBaseEntity>> m_vecOutgoingHitList;
-            char m_vecOutgoingHitList[0x18]; // 0xf70            
+            char m_vecOutgoingHitList[0x18]; // 0xf70
             // m_vecReturningHitList has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::server::CBaseEntity>> m_vecReturningHitList;
-            char m_vecReturningHitList[0x18]; // 0xf88            
+            char m_vecReturningHitList[0x18]; // 0xf88
             uint8_t _pad0fa0[0x480];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_ViperHookblade because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Ability_ViperHookblade) == 0x1420);
     };
 };

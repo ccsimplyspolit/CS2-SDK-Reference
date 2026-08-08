@@ -31,14 +31,14 @@ namespace source2sdk
         public:
             // m_hRemnant has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::C_BaseEntity> m_hRemnant;
-            char m_hRemnant[0x4]; // 0x0            
-            std::int32_t m_nProjectileHandle; // 0x4            
+            char m_hRemnant[0x4]; // 0x0
+            std::int32_t m_nProjectileHandle; // 0x4
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::RemnantData_t, m_hRemnant) == 0x0);
         static_assert(offsetof(source2sdk::client::RemnantData_t, m_nProjectileHandle) == 0x4);
-        
+
         static_assert(sizeof(source2sdk::client::RemnantData_t) == 0x8);
     };
 };

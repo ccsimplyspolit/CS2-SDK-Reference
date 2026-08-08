@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x58
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "AbilityID_t m_SourceAbilityID"
         // static metadata: MNetworkVarNames "EntitySubclassID_t m_vecImbuedAbilities"
         // static metadata: MNetworkVarNames "EModifierValue m_eValType"
@@ -30,24 +30,24 @@ namespace source2sdk
         public:
             uint8_t _pad0000[0x30]; // 0x0
             // metadata: MNetworkEnable
-            CUtlStringToken m_SourceAbilityID; // 0x30            
+            CUtlStringToken m_SourceAbilityID; // 0x30
             uint8_t _pad0034[0x4]; // 0x34
             // metadata: MNetworkEnable
             // m_vecImbuedAbilities has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // C_NetworkUtlVectorBase<CUtlStringToken> m_vecImbuedAbilities;
-            char m_vecImbuedAbilities[0x18]; // 0x38            
+            char m_vecImbuedAbilities[0x18]; // 0x38
             // metadata: MNetworkEnable
-            source2sdk::client::EModifierValue m_eValType; // 0x50            
+            source2sdk::client::EModifierValue m_eValType; // 0x50
             // metadata: MNetworkEnable
-            float m_flValue; // 0x54            
+            float m_flValue; // 0x54
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::DynamicAbilityValues_t, m_SourceAbilityID) == 0x30);
         static_assert(offsetof(source2sdk::client::DynamicAbilityValues_t, m_vecImbuedAbilities) == 0x38);
         static_assert(offsetof(source2sdk::client::DynamicAbilityValues_t, m_eValType) == 0x50);
         static_assert(offsetof(source2sdk::client::DynamicAbilityValues_t, m_flValue) == 0x54);
-        
+
         static_assert(sizeof(source2sdk::client::DynamicAbilityValues_t) == 0x58);
     };
 };

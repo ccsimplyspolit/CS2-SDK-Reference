@@ -32,12 +32,12 @@ namespace source2sdk
         class C_DOTAGamerulesProxy : public source2sdk::client::C_GameRulesProxy
         {
         public:
-            source2sdk::client::C_DOTAGamerules* m_pGameRules; // 0x5f0            
+            source2sdk::client::C_DOTAGamerules* m_pGameRules; // 0x5f0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTAGamerulesProxy because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTAGamerulesProxy) == 0x5f8);
     };
 };

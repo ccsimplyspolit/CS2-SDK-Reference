@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x58
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CAnimStateMachineUpdater
@@ -29,20 +29,20 @@ namespace source2sdk
             uint8_t _pad0000[0x8]; // 0x0
             // m_states has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::animgraphlib::CStateUpdateData> m_states;
-            char m_states[0x18]; // 0x8            
+            char m_states[0x18]; // 0x8
             // m_transitions has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::animgraphlib::CTransitionUpdateData> m_transitions;
-            char m_transitions[0x18]; // 0x20            
+            char m_transitions[0x18]; // 0x20
             uint8_t _pad0038[0x18]; // 0x38
-            std::int32_t m_startStateIndex; // 0x50            
+            std::int32_t m_startStateIndex; // 0x50
             uint8_t _pad0054[0x4];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::animgraphlib::CAnimStateMachineUpdater, m_states) == 0x8);
         static_assert(offsetof(source2sdk::animgraphlib::CAnimStateMachineUpdater, m_transitions) == 0x20);
         static_assert(offsetof(source2sdk::animgraphlib::CAnimStateMachineUpdater, m_startStateIndex) == 0x50);
-        
+
         static_assert(sizeof(source2sdk::animgraphlib::CAnimStateMachineUpdater) == 0x58);
     };
 };

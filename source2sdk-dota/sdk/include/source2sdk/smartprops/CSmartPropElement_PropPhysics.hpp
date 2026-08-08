@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x1d0
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Prop Physics"
         // static metadata: MPropertyDescription "Places a prop physics entity."
@@ -29,12 +29,12 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyDescription "Should this physics prop start in a sleeping (non-simulating) state such that it won't update until it is woken up by an external event."
-            CSmartPropAttributeBool m_bStartAsleep; // 0x190            
+            CSmartPropAttributeBool m_bStartAsleep; // 0x190
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSmartPropElement_PropPhysics because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::smartprops::CSmartPropElement_PropPhysics) == 0x1d0);
     };
 };

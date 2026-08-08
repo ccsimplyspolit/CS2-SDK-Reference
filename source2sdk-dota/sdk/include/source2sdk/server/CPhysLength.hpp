@@ -24,16 +24,16 @@ namespace source2sdk
         class CPhysLength : public source2sdk::server::CPhysConstraint
         {
         public:
-            Vector m_offset[2]; // 0x4f8            
-            VectorWS m_vecAttach; // 0x510            
-            float m_addLength; // 0x51c            
-            float m_minLength; // 0x520            
-            float m_totalLength; // 0x524            
+            Vector m_offset[2]; // 0x4f8
+            VectorWS m_vecAttach; // 0x510
+            float m_addLength; // 0x51c
+            float m_minLength; // 0x520
+            float m_totalLength; // 0x524
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPhysLength because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CPhysLength) == 0x528);
     };
 };

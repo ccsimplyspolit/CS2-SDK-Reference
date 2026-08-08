@@ -32,13 +32,13 @@ namespace source2sdk
             uint8_t _pad0000[0x8]; // 0x0
             // hEntity has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> hEntity;
-            char hEntity[0x4]; // 0x8            
+            char hEntity[0x4]; // 0x8
             uint8_t _pad000c[0x4];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::magnetted_objects_t, hEntity) == 0x8);
-        
+
         static_assert(sizeof(source2sdk::server::magnetted_objects_t) == 0x10);
     };
 };

@@ -24,13 +24,13 @@ namespace source2sdk
         class CFilterTeam : public source2sdk::server::CBaseFilter
         {
         public:
-            std::int32_t m_iFilterTeam; // 0x4d0            
+            std::int32_t m_iFilterTeam; // 0x4d0
             uint8_t _pad04d4[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CFilterTeam because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CFilterTeam) == 0x4d8);
     };
 };

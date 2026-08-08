@@ -20,20 +20,20 @@ namespace source2sdk
         // Size: 0x40
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Boolean"
         #pragma pack(push, 1)
         class CSmartPropVariable_Bool : public source2sdk::smartprops::CSmartPropVariable
         {
         public:
-            bool m_DefaultValue; // 0x38            
+            bool m_DefaultValue; // 0x38
             uint8_t _pad0039[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSmartPropVariable_Bool because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::smartprops::CSmartPropVariable_Bool) == 0x40);
     };
 };

@@ -24,12 +24,12 @@ namespace source2sdk
         class CSimTimer : public source2sdk::client::CSimpleSimTimer
         {
         public:
-            float m_flInterval; // 0x8            
+            float m_flInterval; // 0x8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSimTimer because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CSimTimer) == 0xc);
     };
 };

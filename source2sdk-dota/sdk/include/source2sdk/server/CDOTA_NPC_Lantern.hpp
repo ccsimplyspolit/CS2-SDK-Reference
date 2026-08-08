@@ -17,7 +17,7 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x19c0
+        // Size: 0x19c8
         // Has VTable
         // Construct allowed
         // MClassHasEntityLimitedDataDesc
@@ -25,12 +25,12 @@ namespace source2sdk
         class CDOTA_NPC_Lantern : public source2sdk::server::CDOTA_BaseNPC_Building
         {
         public:
-            CUtlSymbolLarge m_szInteractAbilityName; // 0x19b8            
+            CUtlSymbolLarge m_szInteractAbilityName; // 0x19c0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_NPC_Lantern because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_NPC_Lantern) == 0x19c0);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_NPC_Lantern) == 0x19c8);
     };
 };

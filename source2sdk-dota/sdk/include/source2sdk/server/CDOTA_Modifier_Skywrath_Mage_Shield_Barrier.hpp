@@ -18,22 +18,22 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a78
+        // Size: 0x1a98
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Skywrath_Mage_Shield_Barrier : public source2sdk::client::CDOTA_Buff
         {
         public:
-            std::int32_t m_nDamageAbsorbed; // 0x1a58            
-            float damage_barrier; // 0x1a5c            
+            std::int32_t m_nDamageAbsorbed; // 0x1a78
+            float damage_barrier; // 0x1a7c
             // m_flExpirationTimes has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::entity2::GameTime_t> m_flExpirationTimes;
-            char m_flExpirationTimes[0x18]; // 0x1a60            
+            char m_flExpirationTimes[0x18]; // 0x1a80
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Skywrath_Mage_Shield_Barrier because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Skywrath_Mage_Shield_Barrier) == 0x1a78);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Skywrath_Mage_Shield_Barrier) == 0x1a98);
     };
 };

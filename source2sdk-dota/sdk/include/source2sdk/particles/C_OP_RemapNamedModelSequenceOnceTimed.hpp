@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x238
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_RemapNamedModelSequenceOnceTimed : public source2sdk::particles::C_OP_RemapNamedModelElementOnceTimed
@@ -28,8 +28,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::particles::C_OP_RemapNamedModelSequenceOnceTimed) == 0x238);
     };
 };

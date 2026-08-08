@@ -24,13 +24,13 @@ namespace source2sdk
         {
         public:
             uint8_t _pad00d8[0x100]; // 0xd8
-            Vector m_vecFloatDest; // 0x1d8            
-            Vector m_vecStartingPos; // 0x1e4            
+            Vector m_vecFloatDest; // 0x1d8
+            Vector m_vecStartingPos; // 0x1e4
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_VandalOverflow because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_VandalOverflow) == 0x1f0);
     };
 };

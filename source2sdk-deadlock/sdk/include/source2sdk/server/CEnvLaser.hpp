@@ -30,13 +30,13 @@ namespace source2sdk
         class CEnvLaser : public source2sdk::server::CBeam
         {
         public:
-            CUtlSymbolLarge m_iszLaserTarget; // 0x820            
+            CUtlSymbolLarge m_iszLaserTarget; // 0x820
             // metadata: MClassPtr
-            source2sdk::server::CSprite* m_pSprite; // 0x828            
-            CUtlSymbolLarge m_iszSpriteName; // 0x830            
-            Vector m_firePosition; // 0x838            
-            float m_flStartFrame; // 0x844            
-            
+            source2sdk::server::CSprite* m_pSprite; // 0x828
+            CUtlSymbolLarge m_iszSpriteName; // 0x830
+            Vector m_firePosition; // 0x838
+            float m_flStartFrame; // 0x844
+
             // Datamap fields:
             // void CEnvLaserStrikeThink; // 0x0
             // void InputTurnOn; // 0x0
@@ -48,9 +48,9 @@ namespace source2sdk
             // CUtlString texture; // 0x7fffffff
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CEnvLaser because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CEnvLaser) == 0x848);
     };
 };

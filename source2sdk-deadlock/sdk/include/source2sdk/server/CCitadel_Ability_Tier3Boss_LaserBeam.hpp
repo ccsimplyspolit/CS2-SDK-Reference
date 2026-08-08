@@ -26,12 +26,12 @@ namespace source2sdk
         public:
             // m_pBeamModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CModifierHandleTyped<source2sdk::server::CCitadelModifier> m_pBeamModifier[1];
-            char m_pBeamModifier[0x18]; // 0xf70            
+            char m_pBeamModifier[0x18]; // 0xf70
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_Tier3Boss_LaserBeam because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Ability_Tier3Boss_LaserBeam) == 0xf88);
     };
 };

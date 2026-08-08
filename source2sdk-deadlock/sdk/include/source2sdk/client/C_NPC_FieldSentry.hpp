@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xcc8
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "float m_flAttackRange"
         // static metadata: MNetworkVarNames "float m_flAimPitch"
         #pragma pack(push, 1)
@@ -29,16 +29,16 @@ namespace source2sdk
             uint8_t _pad0cb8[0x4]; // 0xcb8
             // metadata: MNetworkEnable
             // metadata: MNotSaved
-            float m_flAttackRange; // 0xcbc            
+            float m_flAttackRange; // 0xcbc
             // metadata: MNetworkEnable
             // metadata: MNotSaved
-            float m_flAimPitch; // 0xcc0            
+            float m_flAimPitch; // 0xcc0
             uint8_t _pad0cc4[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_NPC_FieldSentry because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_NPC_FieldSentry) == 0xcc8);
     };
 };

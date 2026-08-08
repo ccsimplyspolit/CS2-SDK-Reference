@@ -17,7 +17,7 @@ namespace source2sdk
         // Alignment: 0x8
         // Standard-layout class: true
         // Size: 0x18
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct HeroAbilityResourceDef_t
@@ -25,15 +25,15 @@ namespace source2sdk
         public:
             uint8_t _pad0000[0x8]; // 0x0
             // metadata: MPropertyDescription "Which snippet to use in the hud to display this resource?"
-            CUtlString m_strHUDSnippetName; // 0x8            
+            CUtlString m_strHUDSnippetName; // 0x8
             // metadata: MPropertyDescription "Localization token to use when failing to cast when out of this resource?"
-            CUtlString m_strCantCastOutOfResourceToken; // 0x10            
+            CUtlString m_strCantCastOutOfResourceToken; // 0x10
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::HeroAbilityResourceDef_t, m_strHUDSnippetName) == 0x8);
         static_assert(offsetof(source2sdk::client::HeroAbilityResourceDef_t, m_strCantCastOutOfResourceToken) == 0x10);
-        
+
         static_assert(sizeof(source2sdk::client::HeroAbilityResourceDef_t) == 0x18);
     };
 };

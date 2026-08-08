@@ -26,8 +26,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: CSurvivorsPowerUp_AreaAttack_Circle has no schema binary (size is a guess)
     };
 };

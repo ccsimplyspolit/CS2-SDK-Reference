@@ -23,13 +23,13 @@ namespace source2sdk
         class CModifier_Headshot_Damage_Debuff : public source2sdk::client::CCitadelModifier
         {
         public:
-            float m_nDebuffsTotal; // 0xc0            
+            float m_nDebuffsTotal; // 0xc0
             uint8_t _pad00c4[0x284];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CModifier_Headshot_Damage_Debuff because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CModifier_Headshot_Damage_Debuff) == 0x348);
     };
 };

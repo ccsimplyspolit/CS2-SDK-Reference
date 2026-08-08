@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x110
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CCitadel_SpiderAnimatingVData : public source2sdk::client::CEntitySubclassVDataBase
@@ -29,14 +29,14 @@ namespace source2sdk
             // metadata: MPropertyStartGroup "Visuals"
             // m_sModelName has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeCModel>> m_sModelName;
-            char m_sModelName[0xe0]; // 0x28            
-            float m_flModelScale; // 0x108            
-            Color m_cGlowColor; // 0x10c            
+            char m_sModelName[0xe0]; // 0x28
+            float m_flModelScale; // 0x108
+            Color m_cGlowColor; // 0x10c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_SpiderAnimatingVData because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_SpiderAnimatingVData) == 0x110);
     };
 };

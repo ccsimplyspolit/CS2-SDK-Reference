@@ -19,7 +19,7 @@ namespace source2sdk
         // Size: 0x8
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Base Structured Data"
         #pragma pack(push, 1)
@@ -29,8 +29,8 @@ namespace source2sdk
             uint8_t _pad0000[0x8];
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::client::DebugSnapshotBaseStructuredData_t) == 0x8);
     };
 };

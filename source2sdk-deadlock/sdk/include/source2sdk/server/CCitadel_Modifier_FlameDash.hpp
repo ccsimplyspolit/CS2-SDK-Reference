@@ -23,13 +23,13 @@ namespace source2sdk
         class CCitadel_Modifier_FlameDash : public source2sdk::server::CCitadelModifier
         {
         public:
-            Vector m_vLastDropZonePos; // 0xd0            
+            Vector m_vLastDropZonePos; // 0xd0
             uint8_t _pad00dc[0x184];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_FlameDash because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_FlameDash) == 0x260);
     };
 };

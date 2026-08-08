@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x108
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MVDataComponentValidGrandParents
         // static metadata: MPropertyFriendlyName "Filter Faces By Open Edges"
@@ -31,18 +31,18 @@ namespace source2sdk
         public:
             // metadata: MPropertyFriendlyName "Edge Count"
             // metadata: MPropertyDescription "Iterate through faces with 'n' open edges (edges with only one neighboring face)."
-            CSmartPropAttributeInt m_nTargetOpenEdgeCount; // 0x48            
+            CSmartPropAttributeInt m_nTargetOpenEdgeCount; // 0x48
             // metadata: MPropertyFriendlyName "Use Closed Edges"
             // metadata: MPropertyDescription "When true, we only consider closed edges (edges with exactly two neighboring faces)."
-            CSmartPropAttributeBool m_bInvert; // 0x88            
+            CSmartPropAttributeBool m_bInvert; // 0x88
             // metadata: MPropertyFriendlyName "Enforce Shared Vert"
             // metadata: MPropertyDescription "When true, only consider open/closed edges that share a vert with another open/closed edge."
-            CSmartPropAttributeBool m_bSharedVert; // 0xc8            
+            CSmartPropAttributeBool m_bSharedVert; // 0xc8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSmartPropSelectionCriteria_TopoEdgeCountCriteria because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::smartprops::CSmartPropSelectionCriteria_TopoEdgeCountCriteria) == 0x108);
     };
 };

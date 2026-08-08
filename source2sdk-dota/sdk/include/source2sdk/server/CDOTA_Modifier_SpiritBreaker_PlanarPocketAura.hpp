@@ -24,26 +24,26 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a70
+        // Size: 0x1a90
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_SpiritBreaker_PlanarPocketAura : public source2sdk::client::CDOTA_Buff
         {
         public:
-            bool m_bHasActivated; // 0x1a58            
-            uint8_t _pad1a59[0x3]; // 0x1a59
+            bool m_bHasActivated; // 0x1a78
+            uint8_t _pad1a79[0x3]; // 0x1a79
             // m_hTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hTarget;
-            char m_hTarget[0x4]; // 0x1a5c            
-            float radius; // 0x1a60            
-            std::int32_t magic_resistance; // 0x1a64            
-            float break_distance; // 0x1a68            
-            uint8_t _pad1a6c[0x4];
+            char m_hTarget[0x4]; // 0x1a7c
+            float radius; // 0x1a80
+            std::int32_t magic_resistance; // 0x1a84
+            float break_distance; // 0x1a88
+            uint8_t _pad1a8c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_SpiritBreaker_PlanarPocketAura because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_SpiritBreaker_PlanarPocketAura) == 0x1a70);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_SpiritBreaker_PlanarPocketAura) == 0x1a90);
     };
 };

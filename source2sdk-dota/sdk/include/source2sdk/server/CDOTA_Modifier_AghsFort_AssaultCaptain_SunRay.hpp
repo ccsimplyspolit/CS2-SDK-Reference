@@ -26,49 +26,49 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1ad0
+        // Size: 0x1af0
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_AghsFort_AssaultCaptain_SunRay : public source2sdk::client::CDOTA_Buff
         {
         public:
-            std::int32_t hp_cost_perc_per_second; // 0x1a58            
-            std::int32_t beam_range; // 0x1a5c            
-            std::int32_t base_damage; // 0x1a60            
-            std::int32_t base_heal; // 0x1a64            
-            float tick_interval; // 0x1a68            
-            float forward_move_speed; // 0x1a6c            
-            float turn_rate_initial; // 0x1a70            
-            float turn_rate; // 0x1a74            
-            std::int32_t radius; // 0x1a78            
-            std::int32_t self_turn_rate_percent; // 0x1a7c            
-            float m_flCurrentTime; // 0x1a80            
-            source2sdk::entity2::GameTime_t m_flLastDamageTime; // 0x1a84            
-            float m_flAccumulatedSelfDamage; // 0x1a88            
-            bool m_bMovingForward; // 0x1a8c            
-            bool m_bTurningFast; // 0x1a8d            
-            uint8_t _pad1a8e[0x2]; // 0x1a8e
-            float m_flFacingTarget; // 0x1a90            
-            float hp_perc_damage; // 0x1a94            
-            float hp_perc_heal; // 0x1a98            
-            source2sdk::client::ParticleIndex_t m_nBeamFXIndex; // 0x1a9c            
+            std::int32_t hp_cost_perc_per_second; // 0x1a78
+            std::int32_t beam_range; // 0x1a7c
+            std::int32_t base_damage; // 0x1a80
+            std::int32_t base_heal; // 0x1a84
+            float tick_interval; // 0x1a88
+            float forward_move_speed; // 0x1a8c
+            float turn_rate_initial; // 0x1a90
+            float turn_rate; // 0x1a94
+            std::int32_t radius; // 0x1a98
+            std::int32_t self_turn_rate_percent; // 0x1a9c
+            float m_flCurrentTime; // 0x1aa0
+            source2sdk::entity2::GameTime_t m_flLastDamageTime; // 0x1aa4
+            float m_flAccumulatedSelfDamage; // 0x1aa8
+            bool m_bMovingForward; // 0x1aac
+            bool m_bTurningFast; // 0x1aad
+            uint8_t _pad1aae[0x2]; // 0x1aae
+            float m_flFacingTarget; // 0x1ab0
+            float hp_perc_damage; // 0x1ab4
+            float hp_perc_heal; // 0x1ab8
+            source2sdk::client::ParticleIndex_t m_nBeamFXIndex; // 0x1abc
             // m_hVisionThinkers has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hVisionThinkers[8];
-            char m_hVisionThinkers[0x20]; // 0x1aa0            
+            char m_hVisionThinkers[0x20]; // 0x1ac0
             // m_hBeamEnd has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hBeamEnd;
-            char m_hBeamEnd[0x4]; // 0x1ac0            
-            bool m_bCreatedVisionThinkers; // 0x1ac4            
-            uint8_t _pad1ac5[0x3]; // 0x1ac5
+            char m_hBeamEnd[0x4]; // 0x1ae0
+            bool m_bCreatedVisionThinkers; // 0x1ae4
+            uint8_t _pad1ae5[0x3]; // 0x1ae5
             // m_hBeamEndSound has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hBeamEndSound;
-            char m_hBeamEndSound[0x4]; // 0x1ac8            
-            uint8_t _pad1acc[0x4];
+            char m_hBeamEndSound[0x4]; // 0x1ae8
+            uint8_t _pad1aec[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_AghsFort_AssaultCaptain_SunRay because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_AghsFort_AssaultCaptain_SunRay) == 0x1ad0);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_AghsFort_AssaultCaptain_SunRay) == 0x1af0);
     };
 };

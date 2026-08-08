@@ -22,24 +22,24 @@ namespace source2sdk
         struct CDOTA_BaseNPC_Hero_KillInfo_t
         {
         public:
-            CUtlSymbolLarge m_victimname; // 0x0            
-            CUtlSymbolLarge m_inflictorname; // 0x8            
-            bool m_bEnemyInFOW; // 0x10            
-            bool m_bWasFirstBlood; // 0x11            
+            CUtlSymbolLarge m_victimname; // 0x0
+            CUtlSymbolLarge m_inflictorname; // 0x8
+            bool m_bEnemyInFOW; // 0x10
+            bool m_bWasFirstBlood; // 0x11
             uint8_t _pad0012[0x2]; // 0x12
-            std::int32_t m_iKillCount; // 0x14            
-            float m_flBlinkTime; // 0x18            
+            std::int32_t m_iKillCount; // 0x14
+            float m_flBlinkTime; // 0x18
             uint8_t _pad001c[0x4];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::CDOTA_BaseNPC_Hero_KillInfo_t, m_victimname) == 0x0);
         static_assert(offsetof(source2sdk::server::CDOTA_BaseNPC_Hero_KillInfo_t, m_inflictorname) == 0x8);
         static_assert(offsetof(source2sdk::server::CDOTA_BaseNPC_Hero_KillInfo_t, m_bEnemyInFOW) == 0x10);
         static_assert(offsetof(source2sdk::server::CDOTA_BaseNPC_Hero_KillInfo_t, m_bWasFirstBlood) == 0x11);
         static_assert(offsetof(source2sdk::server::CDOTA_BaseNPC_Hero_KillInfo_t, m_iKillCount) == 0x14);
         static_assert(offsetof(source2sdk::server::CDOTA_BaseNPC_Hero_KillInfo_t, m_flBlinkTime) == 0x18);
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_BaseNPC_Hero_KillInfo_t) == 0x20);
     };
 };

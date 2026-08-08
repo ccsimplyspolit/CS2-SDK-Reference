@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x4e0
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "Vector m_vMins"
         // static metadata: MNetworkVarNames "Vector m_vMaxs"
         // static metadata: MNetworkVarNames "uint32 m_nMaxDistance"
@@ -32,26 +32,26 @@ namespace source2sdk
         {
         public:
             // metadata: MNetworkEnable
-            Vector m_vMins; // 0x4a0            
+            Vector m_vMins; // 0x4a0
             // metadata: MNetworkEnable
-            Vector m_vMaxs; // 0x4ac            
+            Vector m_vMaxs; // 0x4ac
             // metadata: MNetworkEnable
-            std::uint32_t m_nMaxDistance; // 0x4b8            
+            std::uint32_t m_nMaxDistance; // 0x4b8
             uint8_t _pad04bc[0x4]; // 0x4bc
             // metadata: MNetworkEnable
-            CUtlString m_nStackName; // 0x4c0            
+            CUtlString m_nStackName; // 0x4c0
             // metadata: MNetworkEnable
-            CUtlString m_nOperatorName; // 0x4c8            
+            CUtlString m_nOperatorName; // 0x4c8
             // metadata: MNetworkEnable
-            CUtlString m_nOperatorFieldName; // 0x4d0            
+            CUtlString m_nOperatorFieldName; // 0x4d0
             // metadata: MNetworkEnable
-            std::uint32_t m_nMusicState; // 0x4d8            
+            std::uint32_t m_nMusicState; // 0x4d8
             uint8_t _pad04dc[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadelSoundStackFieldOBB because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadelSoundStackFieldOBB) == 0x4e0);
     };
 };

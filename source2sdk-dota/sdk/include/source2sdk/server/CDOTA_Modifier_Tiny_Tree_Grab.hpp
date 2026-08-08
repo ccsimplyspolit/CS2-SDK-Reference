@@ -25,29 +25,29 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a80
+        // Size: 0x1aa0
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Tiny_Tree_Grab : public source2sdk::client::CDOTA_Buff
         {
         public:
-            std::int32_t attack_count; // 0x1a58            
-            float stun_duration; // 0x1a5c            
-            std::int32_t attack_range; // 0x1a60            
-            std::int32_t m_nOriginalAttackCapability; // 0x1a64            
-            float bat_increase; // 0x1a68            
-            std::int32_t speed_reduction; // 0x1a6c            
-            std::int32_t m_nBonusAttackRange; // 0x1a70            
+            std::int32_t attack_count; // 0x1a78
+            float stun_duration; // 0x1a7c
+            std::int32_t attack_range; // 0x1a80
+            std::int32_t m_nOriginalAttackCapability; // 0x1a84
+            float bat_increase; // 0x1a88
+            std::int32_t speed_reduction; // 0x1a8c
+            std::int32_t m_nBonusAttackRange; // 0x1a90
             // m_hStolenTree has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hStolenTree;
-            char m_hStolenTree[0x4]; // 0x1a74            
-            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x1a78            
-            source2sdk::client::ParticleIndex_t m_nFXAttackIndex; // 0x1a7c            
+            char m_hStolenTree[0x4]; // 0x1a94
+            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x1a98
+            source2sdk::client::ParticleIndex_t m_nFXAttackIndex; // 0x1a9c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Tiny_Tree_Grab because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Tiny_Tree_Grab) == 0x1a80);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Tiny_Tree_Grab) == 0x1aa0);
     };
 };

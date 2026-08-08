@@ -21,7 +21,7 @@ namespace source2sdk
         // Size: 0x70
         // Has VTable
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MNetworkVarNames "VectorWS m_vOrigin"
         // static metadata: MNetworkVarNames "VectorWS m_vStart"
         // static metadata: MNetworkVarNames "Vector m_vNormal"
@@ -49,64 +49,64 @@ namespace source2sdk
             uint8_t _pad0000[0x8]; // 0x0
             // metadata: MNetworkEnable
             // metadata: MNetworkEncoder "coord_integral"
-            VectorWS m_vOrigin; // 0x8            
+            VectorWS m_vOrigin; // 0x8
             // metadata: MNetworkEnable
             // metadata: MNetworkEncoder "coord_integral"
-            VectorWS m_vStart; // 0x14            
+            VectorWS m_vStart; // 0x14
             // metadata: MNetworkEnable
             // metadata: MNetworkEncoder "normal"
-            Vector m_vNormal; // 0x20            
+            Vector m_vNormal; // 0x20
             // metadata: MNetworkEnable
             // metadata: MNetworkEncoder "qangle"
-            QAngle m_vAngles; // 0x2c            
+            QAngle m_vAngles; // 0x2c
             // metadata: MNetworkEnable
-            CEntityHandle m_hEntity; // 0x38            
+            CEntityHandle m_hEntity; // 0x38
             // metadata: MNetworkEnable
-            CEntityHandle m_hOtherEntity; // 0x3c            
+            CEntityHandle m_hOtherEntity; // 0x3c
             // metadata: MNetworkEnable
-            float m_flScale; // 0x40            
+            float m_flScale; // 0x40
             // metadata: MNetworkEnable
             // metadata: MNetworkBitCount "12"
             // metadata: MNetworkMinValue "0,000000"
             // metadata: MNetworkMaxValue "1023,000000"
             // metadata: MNetworkEncodeFlags "1"
-            float m_flMagnitude; // 0x44            
+            float m_flMagnitude; // 0x44
             // metadata: MNetworkEnable
             // metadata: MNetworkBitCount "10"
             // metadata: MNetworkMinValue "0,000000"
             // metadata: MNetworkMaxValue "1023,000000"
             // metadata: MNetworkEncodeFlags "1"
-            float m_flRadius; // 0x48            
+            float m_flRadius; // 0x48
             // metadata: MNetworkEnable
-            CUtlStringToken m_nSurfaceProp; // 0x4c            
+            CUtlStringToken m_nSurfaceProp; // 0x4c
             // metadata: MNetworkEnable
             // m_nEffectIndex has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition> m_nEffectIndex;
-            char m_nEffectIndex[0x8]; // 0x50            
+            char m_nEffectIndex[0x8]; // 0x50
             // metadata: MNetworkEnable
-            std::uint32_t m_nDamageType; // 0x58            
+            std::uint32_t m_nDamageType; // 0x58
             // metadata: MNetworkEnable
-            std::uint8_t m_nPenetrate; // 0x5c            
+            std::uint8_t m_nPenetrate; // 0x5c
             uint8_t _pad005d[0x1]; // 0x5d
             // metadata: MNetworkEnable
-            std::uint16_t m_nMaterial; // 0x5e            
+            std::uint16_t m_nMaterial; // 0x5e
             // metadata: MNetworkEnable
-            std::int16_t m_nHitBox; // 0x60            
+            std::int16_t m_nHitBox; // 0x60
             // metadata: MNetworkEnable
-            std::uint8_t m_nColor; // 0x62            
+            std::uint8_t m_nColor; // 0x62
             // metadata: MNetworkEnable
-            std::uint8_t m_fFlags; // 0x63            
+            std::uint8_t m_fFlags; // 0x63
             // metadata: MNetworkEnable
-            source2sdk::modellib::AttachmentHandle_t m_nAttachmentIndex; // 0x64            
+            source2sdk::modellib::AttachmentHandle_t m_nAttachmentIndex; // 0x64
             uint8_t _pad0065[0x3]; // 0x65
             // metadata: MNetworkEnable
-            CUtlStringToken m_nAttachmentName; // 0x68            
+            CUtlStringToken m_nAttachmentName; // 0x68
             // metadata: MNetworkEnable
-            std::uint16_t m_iEffectName; // 0x6c            
+            std::uint16_t m_iEffectName; // 0x6c
             uint8_t _pad006e[0x2];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::CEffectData, m_vOrigin) == 0x8);
         static_assert(offsetof(source2sdk::server::CEffectData, m_vStart) == 0x14);
         static_assert(offsetof(source2sdk::server::CEffectData, m_vNormal) == 0x20);
@@ -127,7 +127,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::server::CEffectData, m_nAttachmentIndex) == 0x64);
         static_assert(offsetof(source2sdk::server::CEffectData, m_nAttachmentName) == 0x68);
         static_assert(offsetof(source2sdk::server::CEffectData, m_iEffectName) == 0x6c);
-        
+
         static_assert(sizeof(source2sdk::server::CEffectData) == 0x70);
     };
 };

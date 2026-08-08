@@ -17,7 +17,7 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x19a8
+        // Size: 0x19b0
         // Has VTable
         // Construct allowed
         // MClassHasEntityLimitedDataDesc
@@ -25,14 +25,14 @@ namespace source2sdk
         class CDOTA_Unit_LoopingSound : public source2sdk::server::CDOTA_BaseNPC_Additive
         {
         public:
-            char m_pszNetworkedSoundLoop[256]; // 0x18a0            
-            std::int32_t m_nLoopingSoundParity; // 0x19a0            
-            uint8_t _pad19a4[0x4];
+            char m_pszNetworkedSoundLoop[256]; // 0x18a8
+            std::int32_t m_nLoopingSoundParity; // 0x19a8
+            uint8_t _pad19ac[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Unit_LoopingSound because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Unit_LoopingSound) == 0x19a8);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Unit_LoopingSound) == 0x19b0);
     };
 };

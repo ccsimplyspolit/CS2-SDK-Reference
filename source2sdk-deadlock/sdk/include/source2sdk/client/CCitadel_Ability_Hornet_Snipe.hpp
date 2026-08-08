@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x18a0
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "GameTime_t m_flScopeStartTime"
         // static metadata: MNetworkVarNames "int m_iSnipeKills"
         #pragma pack(push, 1)
@@ -30,16 +30,16 @@ namespace source2sdk
             uint8_t _pad11d8[0x69c]; // 0x11d8
             // metadata: MNetworkEnable
             // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-            source2sdk::entity2::GameTime_t m_flScopeStartTime; // 0x1874            
+            source2sdk::entity2::GameTime_t m_flScopeStartTime; // 0x1874
             // metadata: MNetworkEnable
             // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-            std::int32_t m_iSnipeKills; // 0x1878            
+            std::int32_t m_iSnipeKills; // 0x1878
             uint8_t _pad187c[0x24];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_Hornet_Snipe because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Ability_Hornet_Snipe) == 0x18a0);
     };
 };

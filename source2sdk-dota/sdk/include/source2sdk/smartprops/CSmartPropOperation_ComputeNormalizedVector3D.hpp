@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x98
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Normalize Vector"
         // static metadata: MPropertyDescription "Normalize the value of a 3d vector."
@@ -31,13 +31,13 @@ namespace source2sdk
         public:
             // metadata: MPropertyFriendlyName "Output Variable"
             // metadata: MPropertyAttributeEditor "SmartPropItemNameEditor( Variable:Vector3 )"
-            CUtlString m_OutputVariableName; // 0x50            
-            CSmartPropAttributeVector m_InputVector; // 0x58            
+            CUtlString m_OutputVariableName; // 0x50
+            CSmartPropAttributeVector m_InputVector; // 0x58
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSmartPropOperation_ComputeNormalizedVector3D because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::smartprops::CSmartPropOperation_ComputeNormalizedVector3D) == 0x98);
     };
 };

@@ -21,7 +21,7 @@ namespace source2sdk
         // Size: 0xc0
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "LoopTriggerWithRandomPanner"
         // static metadata: MPropertyDescription "Continuously retriggers a sound and optionally fades to the new instance. Sends a new Random panning value to a control input on each retrigger"
@@ -30,12 +30,12 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "Random Panner Control"
-            source2sdk::soundsystem_voicecontainers::CRandomPannerControls m_randomPannerControls; // 0xa0            
+            source2sdk::soundsystem_voicecontainers::CRandomPannerControls m_randomPannerControls; // 0xa0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CVoiceContainerLoopTriggerWithRandomPanner because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::soundsystem_voicecontainers::CVoiceContainerLoopTriggerWithRandomPanner) == 0xc0);
     };
 };

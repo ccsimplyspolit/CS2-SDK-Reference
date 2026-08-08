@@ -31,22 +31,22 @@ namespace source2sdk
         public:
             // hTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> hTarget;
-            char hTarget[0x4]; // 0x0            
+            char hTarget[0x4]; // 0x0
             // metadata: MNotSaved
             // slots has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CBitVec<48> slots;
-            char slots[0x8]; // 0x4            
+            char slots[0x8]; // 0x4
             // metadata: MNotSaved
             // inactive_slots_by_mode has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CBitVec<48> inactive_slots_by_mode;
-            char inactive_slots_by_mode[0x8]; // 0xc            
+            char inactive_slots_by_mode[0x8]; // 0xc
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::AISquadSlotTargetInfo_t, hTarget) == 0x0);
         static_assert(offsetof(source2sdk::server::AISquadSlotTargetInfo_t, slots) == 0x4);
         static_assert(offsetof(source2sdk::server::AISquadSlotTargetInfo_t, inactive_slots_by_mode) == 0xc);
-        
+
         static_assert(sizeof(source2sdk::server::AISquadSlotTargetInfo_t) == 0x14);
     };
 };

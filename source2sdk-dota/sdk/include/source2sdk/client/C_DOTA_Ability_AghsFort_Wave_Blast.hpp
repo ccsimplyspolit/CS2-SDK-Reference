@@ -25,15 +25,15 @@ namespace source2sdk
         class C_DOTA_Ability_AghsFort_Wave_Blast : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            std::int32_t damage; // 0x6a8            
-            float knockback_duration; // 0x6ac            
-            float disarm_duration; // 0x6b0            
+            std::int32_t damage; // 0x6a8
+            float knockback_duration; // 0x6ac
+            float disarm_duration; // 0x6b0
             uint8_t _pad06b4[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_AghsFort_Wave_Blast because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_AghsFort_Wave_Blast) == 0x6b8);
     };
 };

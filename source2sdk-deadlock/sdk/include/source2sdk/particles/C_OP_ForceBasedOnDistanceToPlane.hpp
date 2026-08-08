@@ -19,35 +19,35 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x220
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_ForceBasedOnDistanceToPlane : public source2sdk::particles::CParticleFunctionForce
         {
         public:
             // metadata: MPropertyFriendlyName "min distance from plane"
-            float m_flMinDist; // 0x1e8            
+            float m_flMinDist; // 0x1e8
             // metadata: MPropertyFriendlyName "force at min distance"
             // metadata: MVectorIsCoordinate
-            Vector m_vecForceAtMinDist; // 0x1ec            
+            Vector m_vecForceAtMinDist; // 0x1ec
             // metadata: MPropertyFriendlyName "max distance from plane"
-            float m_flMaxDist; // 0x1f8            
+            float m_flMaxDist; // 0x1f8
             // metadata: MPropertyFriendlyName "force at max distance"
             // metadata: MVectorIsCoordinate
-            Vector m_vecForceAtMaxDist; // 0x1fc            
+            Vector m_vecForceAtMaxDist; // 0x1fc
             // metadata: MPropertyFriendlyName "plane normal"
             // metadata: MVectorIsCoordinate
-            Vector m_vecPlaneNormal; // 0x208            
+            Vector m_vecPlaneNormal; // 0x208
             // metadata: MPropertyFriendlyName "control point number"
-            std::int32_t m_nControlPointNumber; // 0x214            
+            std::int32_t m_nControlPointNumber; // 0x214
             // metadata: MPropertyFriendlyName "exponent"
-            float m_flExponent; // 0x218            
+            float m_flExponent; // 0x218
             uint8_t _pad021c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_ForceBasedOnDistanceToPlane because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_ForceBasedOnDistanceToPlane) == 0x220);
     };
 };

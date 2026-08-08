@@ -25,17 +25,17 @@ namespace source2sdk
         class CDOTACheers : public source2sdk::server::CBaseEntity
         {
         public:
-            std::int16_t m_nRadiantCheers; // 0x498            
-            std::int16_t m_nDireCheers; // 0x49a            
-            std::int16_t m_nRadiantPremiumCheers; // 0x49c            
-            std::int16_t m_nDirePremiumCheers; // 0x49e            
-            source2sdk::client::ECrowdLevel m_nRadiantCrowdLevel; // 0x4a0            
-            source2sdk::client::ECrowdLevel m_nDireCrowdLevel; // 0x4a4            
+            std::int16_t m_nRadiantCheers; // 0x498
+            std::int16_t m_nDireCheers; // 0x49a
+            std::int16_t m_nRadiantPremiumCheers; // 0x49c
+            std::int16_t m_nDirePremiumCheers; // 0x49e
+            source2sdk::client::ECrowdLevel m_nRadiantCrowdLevel; // 0x4a0
+            source2sdk::client::ECrowdLevel m_nDireCrowdLevel; // 0x4a4
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTACheers because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTACheers) == 0x4a8);
     };
 };

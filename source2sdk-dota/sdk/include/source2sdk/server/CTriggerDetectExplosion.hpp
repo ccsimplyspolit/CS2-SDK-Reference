@@ -26,12 +26,12 @@ namespace source2sdk
         {
         public:
             uint8_t _pad08f0[0x28]; // 0x8f0
-            source2sdk::entity2::CEntityIOOutput m_OnDetectedExplosion; // 0x918            
+            source2sdk::entity2::CEntityIOOutput m_OnDetectedExplosion; // 0x918
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CTriggerDetectExplosion because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CTriggerDetectExplosion) == 0x930);
     };
 };

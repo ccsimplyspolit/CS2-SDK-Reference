@@ -19,7 +19,7 @@ namespace source2sdk
         // Size: 0x1
         // Has Trivial Constructor
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MPropertyDescription "Library for interacting with a few global test values."
         #pragma pack(push, 1)
         class CPulseTestFuncs_LibraryA
@@ -27,8 +27,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::pulse_system::CPulseTestFuncs_LibraryA) == 0x1);
     };
 };

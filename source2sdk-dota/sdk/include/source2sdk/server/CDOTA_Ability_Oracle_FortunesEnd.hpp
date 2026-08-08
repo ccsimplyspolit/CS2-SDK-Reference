@@ -34,27 +34,27 @@ namespace source2sdk
         class CDOTA_Ability_Oracle_FortunesEnd : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            std::int32_t damage; // 0x580            
-            float radius; // 0x584            
-            std::int32_t bolt_speed; // 0x588            
-            float maximum_purge_duration; // 0x58c            
-            float minimum_purge_duration; // 0x590            
-            bool purge_constantly; // 0x594            
+            std::int32_t damage; // 0x580
+            float radius; // 0x584
+            std::int32_t bolt_speed; // 0x588
+            float maximum_purge_duration; // 0x58c
+            float minimum_purge_duration; // 0x590
+            bool purge_constantly; // 0x594
             uint8_t _pad0595[0x3]; // 0x595
-            source2sdk::entity2::GameTime_t m_flStartTime; // 0x598            
-            float m_flDuration; // 0x59c            
-            float m_flDamage; // 0x5a0            
-            bool m_bAbsorbed; // 0x5a4            
+            source2sdk::entity2::GameTime_t m_flStartTime; // 0x598
+            float m_flDuration; // 0x59c
+            float m_flDamage; // 0x5a0
+            bool m_bAbsorbed; // 0x5a4
             uint8_t _pad05a5[0x3]; // 0x5a5
             // m_hTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hTarget;
-            char m_hTarget[0x4]; // 0x5a8            
-            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x5ac            
+            char m_hTarget[0x4]; // 0x5a8
+            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x5ac
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Oracle_FortunesEnd because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Oracle_FortunesEnd) == 0x5b0);
     };
 };

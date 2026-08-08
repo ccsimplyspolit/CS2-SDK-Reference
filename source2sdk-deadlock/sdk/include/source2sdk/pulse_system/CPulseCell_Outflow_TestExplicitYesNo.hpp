@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xd8
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "[Test] Explicit Yes/No Outflow"
         // static metadata: MPropertyDescription "Test node that picks between two outflows as specified in the test domain."
@@ -29,14 +29,14 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "Yes"
-            source2sdk::pulse_runtime_lib::CPulse_OutflowConnection m_Yes; // 0x48            
+            source2sdk::pulse_runtime_lib::CPulse_OutflowConnection m_Yes; // 0x48
             // metadata: MPropertyFriendlyName "No"
-            source2sdk::pulse_runtime_lib::CPulse_OutflowConnection m_No; // 0x90            
+            source2sdk::pulse_runtime_lib::CPulse_OutflowConnection m_No; // 0x90
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPulseCell_Outflow_TestExplicitYesNo because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::pulse_system::CPulseCell_Outflow_TestExplicitYesNo) == 0xd8);
     };
 };

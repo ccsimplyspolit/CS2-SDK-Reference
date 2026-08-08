@@ -18,7 +18,7 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x80
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CSmartPropMaterialReplacement
@@ -27,16 +27,16 @@ namespace source2sdk
             // metadata: MPropertyAttributeEditor "SmartPropAttributeEditor(MaterialInSmartProp)"
             // metadata: MPropertyFriendlyName "Original Material"
             // metadata: MPropertyDescription "Original material to replace. This is the material specified in the model, including any material group asignment within the model. Does not consider any existing material overrides specified within the smart prop."
-            CSmartPropAttributeMaterialName m_OriginalMaterial; // 0x0            
+            CSmartPropAttributeMaterialName m_OriginalMaterial; // 0x0
             // metadata: MPropertyFriendlyName "New Material"
             // metadata: MPropertyDescription "New material to replace the original material with."
-            CSmartPropAttributeMaterialName m_ReplacementMaterial; // 0x40            
+            CSmartPropAttributeMaterialName m_ReplacementMaterial; // 0x40
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::smartprops::CSmartPropMaterialReplacement, m_OriginalMaterial) == 0x0);
         static_assert(offsetof(source2sdk::smartprops::CSmartPropMaterialReplacement, m_ReplacementMaterial) == 0x40);
-        
+
         static_assert(sizeof(source2sdk::smartprops::CSmartPropMaterialReplacement) == 0x80);
     };
 };

@@ -25,13 +25,13 @@ namespace source2sdk
         {
         public:
             uint8_t _pad11d8[0x280]; // 0x11d8
-            source2sdk::entity2::GameTime_t m_timeNextCast; // 0x1458            
+            source2sdk::entity2::GameTime_t m_timeNextCast; // 0x1458
             uint8_t _pad145c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_NPCAbility_Vanguard_AOEBuff because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_NPCAbility_Vanguard_AOEBuff) == 0x1460);
     };
 };

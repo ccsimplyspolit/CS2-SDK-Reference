@@ -21,25 +21,25 @@ namespace source2sdk
         // Size: 0x30
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CNmTwoBoneIKNode_CDefinition : public source2sdk::animlib::CNmPassthroughNode_CDefinition
         {
         public:
-            CGlobalSymbol m_effectorBoneID; // 0x18            
-            std::int16_t m_nEffectorTargetNodeIdx; // 0x20            
-            std::int16_t m_nEnabledNodeIdx; // 0x22            
-            float m_flBlendTimeSeconds; // 0x24            
-            source2sdk::animlib::NmIKBlendMode_t m_blendMode; // 0x28            
-            bool m_bIsTargetInWorldSpace; // 0x29            
+            CGlobalSymbol m_effectorBoneID; // 0x18
+            std::int16_t m_nEffectorTargetNodeIdx; // 0x20
+            std::int16_t m_nEnabledNodeIdx; // 0x22
+            float m_flBlendTimeSeconds; // 0x24
+            source2sdk::animlib::NmIKBlendMode_t m_blendMode; // 0x28
+            bool m_bIsTargetInWorldSpace; // 0x29
             uint8_t _pad002a[0x2]; // 0x2a
-            float m_flChainRotationWeight; // 0x2c            
+            float m_flChainRotationWeight; // 0x2c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CNmTwoBoneIKNode::CDefinition because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::animlib::CNmTwoBoneIKNode_CDefinition) == 0x30);
     };
 };

@@ -39,7 +39,7 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x1a28
+        // Size: 0x1a30
         // Has VTable
         // Construct allowed
         // MClassHasEntityLimitedDataDesc
@@ -47,41 +47,41 @@ namespace source2sdk
         class CDOTA_BaseNPC_AghsFort_Watch_Tower : public source2sdk::server::CDOTA_BaseNPC_Building
         {
         public:
-            uint8_t _pad19b8[0x10]; // 0x19b8
-            std::int32_t m_nOptionNumber; // 0x19c8            
-            float m_flMovePlayersRadius; // 0x19cc            
-            source2sdk::server::CDOTA_BaseNPC_AghsFort_Watch_Tower_ExitDirection_t m_nExitDirection; // 0x19d0            
-            Vector m_vExitLocation; // 0x19d4            
-            std::int32_t m_nPathSelectedID; // 0x19e0            
-            std::int32_t m_nEncounterType; // 0x19e4            
-            bool m_bIsEliteEncounter; // 0x19e8            
-            bool m_bIsAscensionLevelPicker; // 0x19e9            
-            uint8_t _pad19ea[0x6]; // 0x19ea
-            CUtlSymbolLarge m_strEncounterName; // 0x19f0            
-            CUtlSymbolLarge m_strAscensionAbilities; // 0x19f8            
+            uint8_t _pad19c0[0x10]; // 0x19c0
+            std::int32_t m_nOptionNumber; // 0x19d0
+            float m_flMovePlayersRadius; // 0x19d4
+            source2sdk::server::CDOTA_BaseNPC_AghsFort_Watch_Tower_ExitDirection_t m_nExitDirection; // 0x19d8
+            Vector m_vExitLocation; // 0x19dc
+            std::int32_t m_nPathSelectedID; // 0x19e8
+            std::int32_t m_nEncounterType; // 0x19ec
+            bool m_bIsEliteEncounter; // 0x19f0
+            bool m_bIsAscensionLevelPicker; // 0x19f1
+            uint8_t _pad19f2[0x6]; // 0x19f2
+            CUtlSymbolLarge m_strEncounterName; // 0x19f8
+            CUtlSymbolLarge m_strAscensionAbilities; // 0x1a00
             // m_hEffigy has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hEffigy;
-            char m_hEffigy[0x4]; // 0x1a00            
-            std::int32_t m_nDepth; // 0x1a04            
+            char m_hEffigy[0x4]; // 0x1a08
+            std::int32_t m_nDepth; // 0x1a0c
             // m_hPedestal has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CDOTA_BaseNPC_Effigy_AghsFort> m_hPedestal;
-            char m_hPedestal[0x4]; // 0x1a08            
+            char m_hPedestal[0x4]; // 0x1a10
             // m_hParticleSystem has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hParticleSystem;
-            char m_hParticleSystem[0x4]; // 0x1a0c            
-            uint8_t _pad1a10[0x8]; // 0x1a10
+            char m_hParticleSystem[0x4]; // 0x1a14
+            uint8_t _pad1a18[0x8]; // 0x1a18
             // m_hRoomGate has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseAnimatingActivity> m_hRoomGate;
-            char m_hRoomGate[0x4]; // 0x1a18            
-            bool m_bIsBeingChanneled; // 0x1a1c            
-            uint8_t _pad1a1d[0x3]; // 0x1a1d
-            float m_flGoalCaptureProgress; // 0x1a20            
-            uint8_t _pad1a24[0x4];
+            char m_hRoomGate[0x4]; // 0x1a20
+            bool m_bIsBeingChanneled; // 0x1a24
+            uint8_t _pad1a25[0x3]; // 0x1a25
+            float m_flGoalCaptureProgress; // 0x1a28
+            uint8_t _pad1a2c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_BaseNPC_AghsFort_Watch_Tower because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_BaseNPC_AghsFort_Watch_Tower) == 0x1a28);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_BaseNPC_AghsFort_Watch_Tower) == 0x1a30);
     };
 };

@@ -23,15 +23,15 @@ namespace source2sdk
         class CCitadel_Modifier_TeleportToObjective : public source2sdk::server::CCitadelModifier
         {
         public:
-            Vector m_vDest; // 0xd0            
-            QAngle m_angDestAngles; // 0xdc            
-            Vector m_vDestVelocity; // 0xe8            
+            Vector m_vDest; // 0xd0
+            QAngle m_angDestAngles; // 0xdc
+            Vector m_vDestVelocity; // 0xe8
             uint8_t _pad00f4[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_TeleportToObjective because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_TeleportToObjective) == 0xf8);
     };
 };

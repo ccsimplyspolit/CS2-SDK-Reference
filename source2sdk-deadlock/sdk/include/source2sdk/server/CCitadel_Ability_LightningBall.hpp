@@ -23,13 +23,13 @@ namespace source2sdk
         class CCitadel_Ability_LightningBall : public source2sdk::server::CCitadelBaseAbility
         {
         public:
-            float m_flInitialSpeed; // 0xf70            
+            float m_flInitialSpeed; // 0xf70
             uint8_t _pad0f74[0x384];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_LightningBall because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Ability_LightningBall) == 0x12f8);
     };
 };

@@ -13,7 +13,7 @@ namespace source2sdk
 {
     namespace server
     {
-        // Enumerator count: 11
+        // Enumerator count: 12
         // Alignment: 1
         // Size: 0x1
         enum class FamiliarTaskType_t : std::uint8_t
@@ -28,7 +28,8 @@ namespace source2sdk
             FAMILIARTASK_SHOP = 0x7,
             FAMILIARTASK_INFEST_BEGIN = 0x8,
             FAMILIARTASK_INFEST_HEAL = 0x9,
-            FAMILIARTASK_MAX = 0xa,
+            FAMILIARTASK_HANG_OUT = 0xa,
+            FAMILIARTASK_MAX = 0xb,
         };
     };
 };

@@ -39,14 +39,14 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0000[0x8]; // 0x0
-            source2sdk::client::CModifierParams* m_pEventContext; // 0x8            
-            source2sdk::server::CDOTA_BaseNPC* m_pCaster; // 0x10            
+            source2sdk::client::CModifierParams* m_pEventContext; // 0x8
+            source2sdk::server::CDOTA_BaseNPC* m_pCaster; // 0x10
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::CDOTA_ActionRunner, m_pEventContext) == 0x8);
         static_assert(offsetof(source2sdk::server::CDOTA_ActionRunner, m_pCaster) == 0x10);
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_ActionRunner) == 0x18);
     };
 };

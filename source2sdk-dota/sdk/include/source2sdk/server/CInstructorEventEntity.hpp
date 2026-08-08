@@ -31,22 +31,22 @@ namespace source2sdk
         class CInstructorEventEntity : public source2sdk::server::CPointEntity
         {
         public:
-            CUtlSymbolLarge m_iszName; // 0x498            
-            CUtlSymbolLarge m_iszHintTargetEntity; // 0x4a0            
+            CUtlSymbolLarge m_iszName; // 0x498
+            CUtlSymbolLarge m_iszHintTargetEntity; // 0x4a0
             // m_hTargetPlayer has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBasePlayerPawn> m_hTargetPlayer;
-            char m_hTargetPlayer[0x4]; // 0x4a8            
+            char m_hTargetPlayer[0x4]; // 0x4a8
             uint8_t _pad04ac[0x4];
-            
+
             // Datamap fields:
             // CUtlSymbolLarge InputShowHint; // 0x0
             // void InputEndHint; // 0x0
             // void InputSetTargetPlayerToActivator; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CInstructorEventEntity because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CInstructorEventEntity) == 0x4b0);
     };
 };

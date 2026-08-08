@@ -24,13 +24,13 @@ namespace source2sdk
         {
         public:
             uint8_t _pad00d0[0x300]; // 0xd0
-            Vector m_vEscapeTarget; // 0x3d0            
+            Vector m_vEscapeTarget; // 0x3d0
             uint8_t _pad03dc[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_LockDown_Debuff because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_LockDown_Debuff) == 0x3e0);
     };
 };

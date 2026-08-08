@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x660
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "TrackedStatNetworkData_t m_vecTrackedStats"
         #pragma pack(push, 1)
         class CBaseTrackedStatsEntity : public source2sdk::client::C_BaseEntity
@@ -30,13 +30,13 @@ namespace source2sdk
             // metadata: MNetworkChangeCallback "OnTrackedStatsChanged"
             // m_vecTrackedStats has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // C_UtlVectorEmbeddedNetworkVar<source2sdk::client::TrackedStatNetworkData_t> m_vecTrackedStats;
-            char m_vecTrackedStats[0x68]; // 0x5f0            
+            char m_vecTrackedStats[0x68]; // 0x5f0
             uint8_t _pad0658[0x8];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CBaseTrackedStatsEntity because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CBaseTrackedStatsEntity) == 0x660);
     };
 };

@@ -23,13 +23,13 @@ namespace source2sdk
         class CFuncPlatRot : public source2sdk::server::CFuncPlat
         {
         public:
-            QAngle m_end; // 0x830            
-            QAngle m_start; // 0x83c            
+            QAngle m_end; // 0x830
+            QAngle m_start; // 0x83c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CFuncPlatRot because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CFuncPlatRot) == 0x848);
     };
 };

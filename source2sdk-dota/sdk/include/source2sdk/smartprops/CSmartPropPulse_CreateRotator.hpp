@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x50
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Create Rotator"
         // static metadata: MPropertyDescription "Create a rotator that will be displayed at the current location, allowing the user to manipulate a rotation around an axis. The rotation value can be applied to the current transform as well as saved to a variable."
@@ -31,12 +31,12 @@ namespace source2sdk
         public:
             // metadata: MPropertyFriendlyName "Name"
             // metadata: MPropertyDescription "Name used to identify the rotator. Must be unique within the parent element."
-            CUtlString m_Name; // 0x48            
+            CUtlString m_Name; // 0x48
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSmartPropPulse_CreateRotator because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::smartprops::CSmartPropPulse_CreateRotator) == 0x50);
     };
 };

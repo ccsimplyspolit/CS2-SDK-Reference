@@ -20,28 +20,28 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x1e8
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_RemapControlPointOrientationToRotation : public source2sdk::particles::CParticleFunctionOperator
         {
         public:
             // metadata: MPropertyFriendlyName "control point"
-            std::int32_t m_nCP; // 0x1d8            
+            std::int32_t m_nCP; // 0x1d8
             // metadata: MPropertyFriendlyName "rotation field"
             // metadata: MPropertyAttributeChoiceName "particlefield_rotation"
-            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1dc            
+            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1dc
             // metadata: MPropertyFriendlyName "offset rotation"
-            float m_flOffsetRot; // 0x1e0            
+            float m_flOffsetRot; // 0x1e0
             // metadata: MPropertyFriendlyName "control point axis"
             // metadata: MPropertyAttributeChoiceName "vector_component"
             // metadata: MVectorIsSometimesCoordinate "m_nFieldOutput"
-            std::int32_t m_nComponent; // 0x1e4            
+            std::int32_t m_nComponent; // 0x1e4
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_RemapControlPointOrientationToRotation because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_RemapControlPointOrientationToRotation) == 0x1e8);
     };
 };

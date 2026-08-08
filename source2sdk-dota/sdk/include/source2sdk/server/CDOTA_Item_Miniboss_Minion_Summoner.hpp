@@ -33,18 +33,18 @@ namespace source2sdk
         class CDOTA_Item_Miniboss_Minion_Summoner : public source2sdk::server::CDOTA_Item
         {
         public:
-            source2sdk::entity2::GameTime_t m_fEquipTime; // 0x658            
-            source2sdk::entity2::GameTime_t m_flActivatedTime; // 0x65c            
+            source2sdk::entity2::GameTime_t m_fEquipTime; // 0x658
+            source2sdk::entity2::GameTime_t m_flActivatedTime; // 0x65c
             // m_hOwner has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hOwner;
-            char m_hOwner[0x4]; // 0x660            
-            bool m_bItemActivated; // 0x664            
+            char m_hOwner[0x4]; // 0x660
+            bool m_bItemActivated; // 0x664
             uint8_t _pad0665[0x3];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Item_Miniboss_Minion_Summoner because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Item_Miniboss_Minion_Summoner) == 0x668);
     };
 };

@@ -26,15 +26,15 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0580[0x10]; // 0x580
-            std::int32_t speed; // 0x590            
-            std::int32_t m_nProjectileID; // 0x594            
-            VectorWS m_vProjectileLocation; // 0x598            
-            VectorWS m_vStartLocation; // 0x5a4            
+            std::int32_t speed; // 0x590
+            std::int32_t m_nProjectileID; // 0x594
+            VectorWS m_vProjectileLocation; // 0x598
+            VectorWS m_vStartLocation; // 0x5a4
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_FacelessVoid_TimeWalk_Reverse because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_FacelessVoid_TimeWalk_Reverse) == 0x5b0);
     };
 };

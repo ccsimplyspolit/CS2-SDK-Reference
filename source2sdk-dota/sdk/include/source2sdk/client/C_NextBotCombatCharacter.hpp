@@ -26,18 +26,18 @@ namespace source2sdk
         class C_NextBotCombatCharacter : public source2sdk::client::C_BaseCombatCharacter
         {
         public:
-            source2sdk::client::CountdownTimer m_shadowTimer; // 0xb60            
-            bool m_bInFrustum; // 0xb78            
+            source2sdk::client::CountdownTimer m_shadowTimer; // 0xb60
+            bool m_bInFrustum; // 0xb78
             uint8_t _pad0b79[0x3]; // 0xb79
-            std::int32_t m_nInFrustumFrame; // 0xb7c            
-            float m_flFrustumDistanceSqr; // 0xb80            
-            std::uint8_t m_nLod; // 0xb84            
+            std::int32_t m_nInFrustumFrame; // 0xb7c
+            float m_flFrustumDistanceSqr; // 0xb80
+            std::uint8_t m_nLod; // 0xb84
             uint8_t _pad0b85[0x3];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_NextBotCombatCharacter because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_NextBotCombatCharacter) == 0xb88);
     };
 };

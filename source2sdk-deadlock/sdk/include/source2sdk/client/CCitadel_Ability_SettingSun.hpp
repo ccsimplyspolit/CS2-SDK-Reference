@@ -26,15 +26,15 @@ namespace source2sdk
         public:
             // m_TargetPreviews has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::client::ParticleIndex_t> m_TargetPreviews;
-            char m_TargetPreviews[0x18]; // 0x11d8            
+            char m_TargetPreviews[0x18]; // 0x11d8
             uint8_t _pad11f0[0x108]; // 0x11f0
-            bool m_bWasSelected; // 0x12f8            
+            bool m_bWasSelected; // 0x12f8
             uint8_t _pad12f9[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_SettingSun because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Ability_SettingSun) == 0x1300);
     };
 };

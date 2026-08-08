@@ -24,13 +24,13 @@ namespace source2sdk
         class CCitadel_Modifier_CharmedWraps : public source2sdk::client::CCitadel_Modifier_BaseEventProc
         {
         public:
-            source2sdk::entity2::GameTime_t m_fLastPrimingLightAttackTime; // 0x1f8            
+            source2sdk::entity2::GameTime_t m_fLastPrimingLightAttackTime; // 0x1f8
             uint8_t _pad01fc[0x104];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_CharmedWraps because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Modifier_CharmedWraps) == 0x300);
     };
 };

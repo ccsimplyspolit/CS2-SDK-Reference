@@ -32,13 +32,13 @@ namespace source2sdk
         public:
             // m_pUndergroundTrigger has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CTriggerBurrowUnderground> m_pUndergroundTrigger;
-            char m_pUndergroundTrigger[0x4]; // 0xd0            
+            char m_pUndergroundTrigger[0x4]; // 0xd0
             uint8_t _pad00d4[0x184];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_Burrow because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_Burrow) == 0x258);
     };
 };

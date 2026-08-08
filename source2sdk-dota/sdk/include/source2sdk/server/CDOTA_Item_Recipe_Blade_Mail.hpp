@@ -28,8 +28,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: CDOTA_Item_Recipe_Blade_Mail has no schema binary (size is a guess)
     };
 };

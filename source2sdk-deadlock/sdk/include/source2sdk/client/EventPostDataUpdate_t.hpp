@@ -23,13 +23,13 @@ namespace source2sdk
         struct EventPostDataUpdate_t
         {
         public:
-            std::int32_t m_nCount; // 0x0            
+            std::int32_t m_nCount; // 0x0
             uint8_t _pad0004[0xc];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::EventPostDataUpdate_t, m_nCount) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::client::EventPostDataUpdate_t) == 0x10);
     };
 };

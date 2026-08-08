@@ -18,21 +18,21 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x10
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct CTestPulseIO_FloatStringArgs_t
         {
         public:
-            float flOutFloat; // 0x0            
+            float flOutFloat; // 0x0
             uint8_t _pad0004[0x4]; // 0x4
-            CUtlSymbolLarge strOutString; // 0x8            
+            CUtlSymbolLarge strOutString; // 0x8
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::CTestPulseIO_FloatStringArgs_t, flOutFloat) == 0x0);
         static_assert(offsetof(source2sdk::server::CTestPulseIO_FloatStringArgs_t, strOutString) == 0x8);
-        
+
         static_assert(sizeof(source2sdk::server::CTestPulseIO_FloatStringArgs_t) == 0x10);
     };
 };

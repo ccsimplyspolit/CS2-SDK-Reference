@@ -24,26 +24,26 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a70
+        // Size: 0x1a90
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Meepo_MegaMeepo_Self : public source2sdk::client::CDOTA_Buff
         {
         public:
-            std::int32_t base_strength; // 0x1a58            
-            std::int32_t base_int; // 0x1a5c            
-            std::int32_t base_agi; // 0x1a60            
-            std::int32_t stats_pct; // 0x1a64            
+            std::int32_t base_strength; // 0x1a78
+            std::int32_t base_int; // 0x1a7c
+            std::int32_t base_agi; // 0x1a80
+            std::int32_t stats_pct; // 0x1a84
             // m_hMegameepoFrame has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::C_BaseEntity> m_hMegameepoFrame;
-            char m_hMegameepoFrame[0x4]; // 0x1a68            
-            bool m_bWasOutOfGame; // 0x1a6c            
-            uint8_t _pad1a6d[0x3];
+            char m_hMegameepoFrame[0x4]; // 0x1a88
+            bool m_bWasOutOfGame; // 0x1a8c
+            uint8_t _pad1a8d[0x3];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Meepo_MegaMeepo_Self because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Meepo_MegaMeepo_Self) == 0x1a70);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Meepo_MegaMeepo_Self) == 0x1a90);
     };
 };

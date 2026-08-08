@@ -18,7 +18,7 @@ namespace source2sdk
         // Alignment: 0x8
         // Standard-layout class: true
         // Size: 0x18
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CParamSpanUpdater
@@ -26,12 +26,12 @@ namespace source2sdk
         public:
             // m_spans has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::animgraphlib::ParamSpan_t> m_spans;
-            char m_spans[0x18]; // 0x0            
+            char m_spans[0x18]; // 0x0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::animgraphlib::CParamSpanUpdater, m_spans) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::animgraphlib::CParamSpanUpdater) == 0x18);
     };
 };

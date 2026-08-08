@@ -33,19 +33,19 @@ namespace source2sdk
         class CDOTA_Ability_Magnataur_Shockwave : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x6a8            
-            std::int32_t m_nReturnDamagePct; // 0x6ac            
+            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x6a8
+            std::int32_t m_nReturnDamagePct; // 0x6ac
             // hAlreadyHitList has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::client::C_BaseEntity>> hAlreadyHitList;
-            char hAlreadyHitList[0x18]; // 0x6b0            
+            char hAlreadyHitList[0x18]; // 0x6b0
             // hAlreadyHitListReturning has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::client::C_BaseEntity>> hAlreadyHitListReturning;
-            char hAlreadyHitListReturning[0x18]; // 0x6c8            
+            char hAlreadyHitListReturning[0x18]; // 0x6c8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Magnataur_Shockwave because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CDOTA_Ability_Magnataur_Shockwave) == 0x6e0);
     };
 };

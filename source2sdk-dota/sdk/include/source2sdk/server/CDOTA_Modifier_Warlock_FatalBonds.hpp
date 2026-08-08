@@ -24,7 +24,7 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a78
+        // Size: 0x1a98
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Warlock_FatalBonds : public source2sdk::client::CDOTA_Buff
@@ -32,14 +32,14 @@ namespace source2sdk
         public:
             // m_FatalBondsEntities has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::server::CBaseEntity>> m_FatalBondsEntities;
-            char m_FatalBondsEntities[0x18]; // 0x1a58            
-            std::int32_t damage_share_percentage; // 0x1a70            
-            float imp_duration; // 0x1a74            
+            char m_FatalBondsEntities[0x18]; // 0x1a78
+            std::int32_t damage_share_percentage; // 0x1a90
+            float imp_duration; // 0x1a94
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Warlock_FatalBonds because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Warlock_FatalBonds) == 0x1a78);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Warlock_FatalBonds) == 0x1a98);
     };
 };

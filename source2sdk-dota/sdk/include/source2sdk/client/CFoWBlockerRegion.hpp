@@ -27,18 +27,18 @@ namespace source2sdk
         public:
             // m_vecFowBlockers has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // C_UtlVectorEmbeddedNetworkVar<source2sdk::client::FowBlocker_t> m_vecFowBlockers;
-            char m_vecFowBlockers[0x68]; // 0x5f0            
-            float m_flMinX; // 0x658            
-            float m_flMaxX; // 0x65c            
-            float m_flMinY; // 0x660            
-            float m_flMaxY; // 0x664            
-            float m_flGridSize; // 0x668            
+            char m_vecFowBlockers[0x68]; // 0x5f0
+            float m_flMinX; // 0x658
+            float m_flMaxX; // 0x65c
+            float m_flMinY; // 0x660
+            float m_flMaxY; // 0x664
+            float m_flGridSize; // 0x668
             uint8_t _pad066c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CFoWBlockerRegion because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CFoWBlockerRegion) == 0x670);
     };
 };

@@ -18,19 +18,19 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x8
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MVDataRoot
         #pragma pack(push, 1)
         class CDOTASlarkJailbreakStageDefinition
         {
         public:
-            CUtlString m_sLayout; // 0x0            
+            CUtlString m_sLayout; // 0x0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::CDOTASlarkJailbreakStageDefinition, m_sLayout) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::client::CDOTASlarkJailbreakStageDefinition) == 0x8);
     };
 };

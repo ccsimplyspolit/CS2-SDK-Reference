@@ -30,12 +30,12 @@ namespace source2sdk
         {
         public:
             // metadata: MPhysPtr
-            source2sdk::vphysics2::IPhysicsJoint* m_pJoint; // 0x0            
+            source2sdk::vphysics2::IPhysicsJoint* m_pJoint; // 0x0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::WrappedPhysicsJoint_t, m_pJoint) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::client::WrappedPhysicsJoint_t) == 0x8);
     };
 };

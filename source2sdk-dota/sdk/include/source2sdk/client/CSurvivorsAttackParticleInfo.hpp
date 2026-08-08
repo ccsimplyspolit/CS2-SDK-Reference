@@ -23,14 +23,14 @@ namespace source2sdk
         class CSurvivorsAttackParticleInfo
         {
         public:
-            source2sdk::client::SurvivorsParticleID_t unParticleID; // 0x0            
-            float flTimeLeft; // 0x4            
+            source2sdk::client::SurvivorsParticleID_t unParticleID; // 0x0
+            float flTimeLeft; // 0x4
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::CSurvivorsAttackParticleInfo, unParticleID) == 0x0);
         static_assert(offsetof(source2sdk::client::CSurvivorsAttackParticleInfo, flTimeLeft) == 0x4);
-        
+
         static_assert(sizeof(source2sdk::client::CSurvivorsAttackParticleInfo) == 0x8);
     };
 };

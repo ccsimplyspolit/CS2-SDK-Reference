@@ -24,15 +24,15 @@ namespace source2sdk
         class CCitadelDruidInvisBush : public source2sdk::server::CCitadelAnimatingModelEntity
         {
         public:
-            VectorWS m_vStartPos; // 0xbf0            
-            VectorWS m_vEndPos; // 0xbfc            
-            source2sdk::entity2::GameTime_t m_flStartGrowTime; // 0xc08            
-            source2sdk::entity2::GameTime_t m_flEndGrowTime; // 0xc0c            
+            VectorWS m_vStartPos; // 0xbf0
+            VectorWS m_vEndPos; // 0xbfc
+            source2sdk::entity2::GameTime_t m_flStartGrowTime; // 0xc08
+            source2sdk::entity2::GameTime_t m_flEndGrowTime; // 0xc0c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadelDruidInvisBush because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadelDruidInvisBush) == 0xc10);
     };
 };

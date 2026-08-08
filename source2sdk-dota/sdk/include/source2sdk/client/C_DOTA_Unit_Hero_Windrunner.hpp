@@ -18,7 +18,7 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x1d90
+        // Size: 0x1d98
         // Has VTable
         // Construct allowed
         // MClassHasEntityLimitedDataDesc
@@ -26,15 +26,15 @@ namespace source2sdk
         class C_DOTA_Unit_Hero_Windrunner : public source2sdk::client::C_DOTA_BaseNPC_Hero
         {
         public:
-            std::int32_t m_nTargetAngle; // 0x1d80            
-            std::int32_t m_iPoseParameterAim; // 0x1d84            
-            source2sdk::client::ParticleIndex_t m_nFXDeath; // 0x1d88            
-            uint8_t _pad1d8c[0x4];
+            std::int32_t m_nTargetAngle; // 0x1d88
+            std::int32_t m_iPoseParameterAim; // 0x1d8c
+            source2sdk::client::ParticleIndex_t m_nFXDeath; // 0x1d90
+            uint8_t _pad1d94[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Unit_Hero_Windrunner because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::C_DOTA_Unit_Hero_Windrunner) == 0x1d90);
+
+        static_assert(sizeof(source2sdk::client::C_DOTA_Unit_Hero_Windrunner) == 0x1d98);
     };
 };

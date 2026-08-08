@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x88
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CVsndTriggerSlot
@@ -28,35 +28,35 @@ namespace source2sdk
         public:
             // metadata: MPropertyGroupName "Vsnd"
             // metadata: MPropertyFriendlyName "Enable Vsnd"
-            bool m_bEnableVsnd; // 0x0            
+            bool m_bEnableVsnd; // 0x0
             uint8_t _pad0001[0x7]; // 0x1
             // metadata: MPropertyGroupName "Vsnd"
             // metadata: MPropertyFriendlyName "Vsnd File"
-            source2sdk::soundsystem_voicecontainers::CSoundContainerReference m_vsnd; // 0x8            
+            source2sdk::soundsystem_voicecontainers::CSoundContainerReference m_vsnd; // 0x8
             // metadata: MPropertyGroupName "Endcap"
             // metadata: MPropertyFriendlyName "Enable Endcap"
-            bool m_bEnableEndcap; // 0x28            
+            bool m_bEnableEndcap; // 0x28
             uint8_t _pad0029[0x7]; // 0x29
             // metadata: MPropertyGroupName "Endcap"
             // metadata: MPropertyFriendlyName "Endcap Vsnd (Stop)"
-            source2sdk::soundsystem_voicecontainers::CSoundContainerReference m_endcapVsnd; // 0x30            
+            source2sdk::soundsystem_voicecontainers::CSoundContainerReference m_endcapVsnd; // 0x30
             // metadata: MPropertyGroupName "Loopcap"
             // metadata: MPropertyFriendlyName "Enable Loopcap"
-            bool m_bEnableLoopcap; // 0x50            
+            bool m_bEnableLoopcap; // 0x50
             uint8_t _pad0051[0x7]; // 0x51
             // metadata: MPropertyGroupName "Loopcap"
             // metadata: MPropertyFriendlyName "Loopcap Vsnd (Loop)"
-            source2sdk::soundsystem_voicecontainers::CSoundContainerReference m_loopcapVsnd; // 0x58            
+            source2sdk::soundsystem_voicecontainers::CSoundContainerReference m_loopcapVsnd; // 0x58
             // metadata: MPropertyFriendlyName "Volume"
-            float m_volume; // 0x78            
+            float m_volume; // 0x78
             // metadata: MPropertyFriendlyName "Fade Out (sec)"
-            float m_fadeOut; // 0x7c            
+            float m_fadeOut; // 0x7c
             // metadata: MPropertyFriendlyName "Mode"
-            source2sdk::soundsystem_voicecontainers::EVsndTriggerMode m_mode; // 0x80            
+            source2sdk::soundsystem_voicecontainers::EVsndTriggerMode m_mode; // 0x80
             uint8_t _pad0084[0x4];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::soundsystem_voicecontainers::CVsndTriggerSlot, m_bEnableVsnd) == 0x0);
         static_assert(offsetof(source2sdk::soundsystem_voicecontainers::CVsndTriggerSlot, m_vsnd) == 0x8);
         static_assert(offsetof(source2sdk::soundsystem_voicecontainers::CVsndTriggerSlot, m_bEnableEndcap) == 0x28);
@@ -66,7 +66,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::soundsystem_voicecontainers::CVsndTriggerSlot, m_volume) == 0x78);
         static_assert(offsetof(source2sdk::soundsystem_voicecontainers::CVsndTriggerSlot, m_fadeOut) == 0x7c);
         static_assert(offsetof(source2sdk::soundsystem_voicecontainers::CVsndTriggerSlot, m_mode) == 0x80);
-        
+
         static_assert(sizeof(source2sdk::soundsystem_voicecontainers::CVsndTriggerSlot) == 0x88);
     };
 };

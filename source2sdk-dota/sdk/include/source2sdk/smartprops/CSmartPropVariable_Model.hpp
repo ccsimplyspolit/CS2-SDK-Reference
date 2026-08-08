@@ -21,7 +21,7 @@ namespace source2sdk
         // Size: 0x118
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Model"
         // static metadata: MPropertyDescription "Model Asset Variable"
@@ -32,12 +32,12 @@ namespace source2sdk
             // metadata: MPropertyFriendlyName "Default Model"
             // m_DefaultValue has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeCModel>> m_DefaultValue;
-            char m_DefaultValue[0xe0]; // 0x38            
+            char m_DefaultValue[0xe0]; // 0x38
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSmartPropVariable_Model because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::smartprops::CSmartPropVariable_Model) == 0x118);
     };
 };

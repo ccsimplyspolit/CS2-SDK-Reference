@@ -18,21 +18,21 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a68
+        // Size: 0x1a88
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Giant_Maul : public source2sdk::server::CDOTA_Buff_Item
         {
         public:
-            float crit_multiplier; // 0x1a58            
-            float debuff_duration; // 0x1a5c            
-            source2sdk::client::AttackRecord_t m_iInFlightRecord; // 0x1a60            
-            uint8_t _pad1a62[0x6];
+            float crit_multiplier; // 0x1a78
+            float debuff_duration; // 0x1a7c
+            source2sdk::client::AttackRecord_t m_iInFlightRecord; // 0x1a80
+            uint8_t _pad1a82[0x6];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Giant_Maul because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Giant_Maul) == 0x1a68);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Giant_Maul) == 0x1a88);
     };
 };

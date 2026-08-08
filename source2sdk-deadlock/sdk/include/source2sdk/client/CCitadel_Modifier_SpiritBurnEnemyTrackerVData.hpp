@@ -19,9 +19,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x840
+        // Size: 0x850
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CCitadel_Modifier_SpiritBurnEnemyTrackerVData : public source2sdk::client::CCitadelModifierVData
@@ -30,16 +30,20 @@ namespace source2sdk
             // metadata: MPropertyGroupName "Modifiers"
             // m_DebuffModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEmbeddedSubclass<source2sdk::client::CBaseModifier> m_DebuffModifier;
-            char m_DebuffModifier[0x10]; // 0x750            
+            char m_DebuffModifier[0x10]; // 0x750
+            // metadata: MPropertyDescription "Applied to a burned target as its per-target cooldown; blocks re-triggering while present."
+            // m_ImmunityModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+            // CEmbeddedSubclass<source2sdk::client::CBaseModifier> m_ImmunityModifier;
+            char m_ImmunityModifier[0x10]; // 0x760
             // metadata: MPropertyGroupName "Visuals"
             // m_ExplodeParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_ExplodeParticle;
-            char m_ExplodeParticle[0xe0]; // 0x760            
+            char m_ExplodeParticle[0xe0]; // 0x770
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_SpiritBurnEnemyTrackerVData because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CCitadel_Modifier_SpiritBurnEnemyTrackerVData) == 0x840);
+
+        static_assert(sizeof(source2sdk::client::CCitadel_Modifier_SpiritBurnEnemyTrackerVData) == 0x850);
     };
 };

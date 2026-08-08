@@ -23,20 +23,20 @@ namespace source2sdk
         class CInfoPlayerStart : public source2sdk::server::CPointEntity
         {
         public:
-            bool m_bDisabled; // 0x4a0            
-            bool m_bIsMaster; // 0x4a1            
+            bool m_bDisabled; // 0x4a0
+            bool m_bIsMaster; // 0x4a1
             uint8_t _pad04a2[0x6]; // 0x4a2
-            CGlobalSymbol m_pPawnSubclass; // 0x4a8            
-            
+            CGlobalSymbol m_pPawnSubclass; // 0x4a8
+
             // Datamap fields:
             // void InputEnable; // 0x0
             // void InputDisable; // 0x0
             // void InputToggle; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CInfoPlayerStart because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CInfoPlayerStart) == 0x4b0);
     };
 };

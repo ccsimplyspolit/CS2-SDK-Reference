@@ -25,13 +25,13 @@ namespace source2sdk
         class CDOTA_Item_Tombstone_Drop : public source2sdk::server::CDOTA_Item_Physical
         {
         public:
-            std::int32_t m_iTempViewer; // 0x7b0            
-            std::int32_t m_iTeam; // 0x7b4            
+            std::int32_t m_iTempViewer; // 0x7b0
+            std::int32_t m_iTeam; // 0x7b4
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Item_Tombstone_Drop because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Item_Tombstone_Drop) == 0x7b8);
     };
 };

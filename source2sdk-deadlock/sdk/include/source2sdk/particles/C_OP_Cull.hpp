@@ -19,25 +19,25 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x1e8
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_Cull : public source2sdk::particles::CParticleFunctionOperator
         {
         public:
             // metadata: MPropertyFriendlyName "cull percentage"
-            float m_flCullPerc; // 0x1d8            
+            float m_flCullPerc; // 0x1d8
             // metadata: MPropertyFriendlyName "cull start time"
-            float m_flCullStart; // 0x1dc            
+            float m_flCullStart; // 0x1dc
             // metadata: MPropertyFriendlyName "cull end time"
-            float m_flCullEnd; // 0x1e0            
+            float m_flCullEnd; // 0x1e0
             // metadata: MPropertyFriendlyName "cull time exponent"
-            float m_flCullExp; // 0x1e4            
+            float m_flCullExp; // 0x1e4
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_Cull because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_Cull) == 0x1e8);
     };
 };

@@ -23,12 +23,12 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyDescription "Relative weight of this choice, higher weighted choices are more likely to be selected."
-            float m_flWeight; // 0x0            
+            float m_flWeight; // 0x0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::smartprops::CSmartPropPulse_SelectionChoiceWeight_Criteria_t, m_flWeight) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::smartprops::CSmartPropPulse_SelectionChoiceWeight_Criteria_t) == 0x4);
     };
 };
