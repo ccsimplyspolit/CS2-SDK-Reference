@@ -19,7 +19,7 @@ namespace source2sdk
         // Size: 0x1
         // Has Trivial Constructor
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MPropertyFriendlyName "Server Sound"
         // static metadata: MPropertyDescription "Server sound helpers."
         #pragma pack(push, 1)
@@ -28,8 +28,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::server::CPulseServerFuncs_Sounds) == 0x1);
     };
 };

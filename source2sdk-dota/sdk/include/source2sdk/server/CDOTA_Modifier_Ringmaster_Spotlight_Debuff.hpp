@@ -18,21 +18,21 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a68
+        // Size: 0x1a88
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Ringmaster_Spotlight_Debuff : public source2sdk::client::CDOTA_Buff
         {
         public:
-            std::int32_t miss_chance; // 0x1a58            
-            std::int32_t illusion_percent_damage; // 0x1a5c            
-            float pulse_interval; // 0x1a60            
-            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x1a64            
+            std::int32_t miss_chance; // 0x1a78
+            std::int32_t illusion_percent_damage; // 0x1a7c
+            float pulse_interval; // 0x1a80
+            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x1a84
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Ringmaster_Spotlight_Debuff because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Ringmaster_Spotlight_Debuff) == 0x1a68);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Ringmaster_Spotlight_Debuff) == 0x1a88);
     };
 };

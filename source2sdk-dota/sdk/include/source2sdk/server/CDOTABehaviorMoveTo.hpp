@@ -24,19 +24,19 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0000[0xb8]; // 0x0
-            source2sdk::server::CountdownTimer m_repathTimer; // 0xb8            
-            bool m_bSetAnimation; // 0xd0            
-            bool m_bUseSwimAnimations; // 0xd1            
+            source2sdk::server::CountdownTimer m_repathTimer; // 0xb8
+            bool m_bSetAnimation; // 0xd0
+            bool m_bUseSwimAnimations; // 0xd1
             uint8_t _pad00d2[0x2]; // 0xd2
-            std::int32_t m_nIdleActivity; // 0xd4            
-            std::int32_t m_nRunActivity; // 0xd8            
-            float m_flTargetDist; // 0xdc            
-            bool m_bIsDirectional; // 0xe0            
-            bool m_bIsRelative; // 0xe1            
+            std::int32_t m_nIdleActivity; // 0xd4
+            std::int32_t m_nRunActivity; // 0xd8
+            float m_flTargetDist; // 0xdc
+            bool m_bIsDirectional; // 0xe0
+            bool m_bIsRelative; // 0xe1
             uint8_t _pad00e2[0x6];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::CDOTABehaviorMoveTo, m_repathTimer) == 0xb8);
         static_assert(offsetof(source2sdk::server::CDOTABehaviorMoveTo, m_bSetAnimation) == 0xd0);
         static_assert(offsetof(source2sdk::server::CDOTABehaviorMoveTo, m_bUseSwimAnimations) == 0xd1);
@@ -45,7 +45,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::server::CDOTABehaviorMoveTo, m_flTargetDist) == 0xdc);
         static_assert(offsetof(source2sdk::server::CDOTABehaviorMoveTo, m_bIsDirectional) == 0xe0);
         static_assert(offsetof(source2sdk::server::CDOTABehaviorMoveTo, m_bIsRelative) == 0xe1);
-        
+
         static_assert(sizeof(source2sdk::server::CDOTABehaviorMoveTo) == 0xe8);
     };
 };

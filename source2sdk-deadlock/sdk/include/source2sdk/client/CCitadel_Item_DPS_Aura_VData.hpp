@@ -21,7 +21,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x19a8
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CCitadel_Item_DPS_Aura_VData : public source2sdk::client::CitadelItemVData
@@ -30,16 +30,16 @@ namespace source2sdk
             // metadata: MPropertyStartGroup "Visuals"
             // m_AOECastParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_AOECastParticle;
-            char m_AOECastParticle[0xe0]; // 0x18b8            
+            char m_AOECastParticle[0xe0]; // 0x18b8
             // metadata: MPropertyStartGroup "Modifiers"
             // m_ActiveModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEmbeddedSubclass<source2sdk::client::CCitadelModifier> m_ActiveModifier;
-            char m_ActiveModifier[0x10]; // 0x1998            
+            char m_ActiveModifier[0x10]; // 0x1998
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Item_DPS_Aura_VData because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Item_DPS_Aura_VData) == 0x19a8);
     };
 };

@@ -20,30 +20,30 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x4e0
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "bool m_bEnabled"
         #pragma pack(push, 1)
         class CLogicGameEventListener : public source2sdk::server::CLogicalEntity
         {
         public:
             uint8_t _pad04a0[0x10]; // 0x4a0
-            source2sdk::entity2::CEntityIOOutput m_OnEventFired; // 0x4b0            
-            CUtlSymbolLarge m_iszGameEventName; // 0x4c8            
-            CUtlSymbolLarge m_iszGameEventItem; // 0x4d0            
+            source2sdk::entity2::CEntityIOOutput m_OnEventFired; // 0x4b0
+            CUtlSymbolLarge m_iszGameEventName; // 0x4c8
+            CUtlSymbolLarge m_iszGameEventItem; // 0x4d0
             // metadata: MNetworkEnable
-            bool m_bEnabled; // 0x4d8            
-            bool m_bStartDisabled; // 0x4d9            
+            bool m_bEnabled; // 0x4d8
+            bool m_bStartDisabled; // 0x4d9
             uint8_t _pad04da[0x6];
-            
+
             // Datamap fields:
             // void InputEnable; // 0x0
             // void InputDisable; // 0x0
             // void InputToggle; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CLogicGameEventListener because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CLogicGameEventListener) == 0x4e0);
     };
 };

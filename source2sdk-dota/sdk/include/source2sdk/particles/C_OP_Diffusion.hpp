@@ -21,25 +21,25 @@ namespace source2sdk
         // Size: 0x1e8
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_Diffusion : public source2sdk::particles::CParticleFunctionOperator
         {
         public:
             // metadata: MPropertyFriendlyName "Radius scale for particle influence"
-            float m_flRadiusScale; // 0x1d8            
+            float m_flRadiusScale; // 0x1d8
             // metadata: MPropertyFriendlyName "Output field"
             // metadata: MPropertyAttributeChoiceName "particlefield_vector"
-            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1dc            
+            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1dc
             // metadata: MPropertyFriendlyName "Resolution to use for creating a voxel grid"
-            std::int32_t m_nVoxelGridResolution; // 0x1e0            
+            std::int32_t m_nVoxelGridResolution; // 0x1e0
             uint8_t _pad01e4[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_Diffusion because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_Diffusion) == 0x1e8);
     };
 };

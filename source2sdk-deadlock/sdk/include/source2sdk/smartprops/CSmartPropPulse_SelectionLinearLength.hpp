@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x48
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Linear Length"
         // static metadata: MPropertyDescription "Specifies the length of this element, used when fitting an element on to a line."
@@ -29,8 +29,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::smartprops::CSmartPropPulse_SelectionLinearLength) == 0x48);
     };
 };

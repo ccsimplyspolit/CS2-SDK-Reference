@@ -30,16 +30,16 @@ namespace source2sdk
         class CCitadelHeroLoader : public source2sdk::server::CBaseEntity
         {
         public:
-            CUtlSymbolLarge m_hero; // 0x4a0            
-            std::int32_t m_nLoadSeq; // 0x4a8            
+            CUtlSymbolLarge m_hero; // 0x4a0
+            std::int32_t m_nLoadSeq; // 0x4a8
             // m_hOwner has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hOwner;
-            char m_hOwner[0x4]; // 0x4ac            
+            char m_hOwner[0x4]; // 0x4ac
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadelHeroLoader because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadelHeroLoader) == 0x4b0);
     };
 };

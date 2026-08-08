@@ -24,18 +24,18 @@ namespace source2sdk
         class CBaseAnimatingActivity : public source2sdk::server::CBaseModelEntity
         {
         public:
-            bool m_bShouldAnimateDuringGameplayPause; // 0x778            
-            bool m_bInitiallyPopulateInterpHistory; // 0x779            
-            bool m_bAnimationUpdateScheduled; // 0x77a            
+            bool m_bShouldAnimateDuringGameplayPause; // 0x778
+            bool m_bInitiallyPopulateInterpHistory; // 0x779
+            bool m_bAnimationUpdateScheduled; // 0x77a
             uint8_t _pad077b[0x5]; // 0x77b
             // m_vecSuppressedAnimEventTags has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CUtlString> m_vecSuppressedAnimEventTags;
-            char m_vecSuppressedAnimEventTags[0x18]; // 0x780            
+            char m_vecSuppressedAnimEventTags[0x18]; // 0x780
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CBaseAnimatingActivity because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CBaseAnimatingActivity) == 0x798);
     };
 };

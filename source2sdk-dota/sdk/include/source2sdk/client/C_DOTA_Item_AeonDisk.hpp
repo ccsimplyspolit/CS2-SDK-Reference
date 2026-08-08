@@ -25,13 +25,13 @@ namespace source2sdk
         class C_DOTA_Item_AeonDisk : public source2sdk::client::C_DOTA_Item
         {
         public:
-            std::int32_t m_nUses; // 0x758            
-            std::int32_t max_level; // 0x75c            
+            std::int32_t m_nUses; // 0x758
+            std::int32_t max_level; // 0x75c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Item_AeonDisk because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Item_AeonDisk) == 0x760);
     };
 };

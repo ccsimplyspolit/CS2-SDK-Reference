@@ -25,13 +25,13 @@ namespace source2sdk
         class CDOTA_Ability_Mars_ArenaOfBlood : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            bool pierces_debuff_immunity; // 0x6a8            
+            bool pierces_debuff_immunity; // 0x6a8
             uint8_t _pad06a9[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Mars_ArenaOfBlood because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CDOTA_Ability_Mars_ArenaOfBlood) == 0x6b0);
     };
 };

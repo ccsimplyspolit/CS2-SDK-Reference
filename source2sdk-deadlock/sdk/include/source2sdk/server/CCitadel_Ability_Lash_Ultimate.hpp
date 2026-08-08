@@ -21,7 +21,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x1610
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "ELashGrappleState m_EGrappleState"
         // static metadata: MNetworkVarNames "GameTime_t m_flStateEnterTime"
         // static metadata: MNetworkVarNames "GameTime_t m_flNextStateTime"
@@ -31,20 +31,20 @@ namespace source2sdk
         {
         public:
             // metadata: MNetworkEnable
-            source2sdk::client::ELashGrappleState m_EGrappleState; // 0x12e0            
+            source2sdk::client::ELashGrappleState m_EGrappleState; // 0x12e0
             uint8_t _pad12e1[0x3]; // 0x12e1
             // metadata: MNetworkEnable
-            source2sdk::entity2::GameTime_t m_flStateEnterTime; // 0x12e4            
+            source2sdk::entity2::GameTime_t m_flStateEnterTime; // 0x12e4
             // metadata: MNetworkEnable
-            source2sdk::entity2::GameTime_t m_flNextStateTime; // 0x12e8            
+            source2sdk::entity2::GameTime_t m_flNextStateTime; // 0x12e8
             // metadata: MNetworkEnable
-            source2sdk::entity2::GameTime_t m_flBoostEndTime; // 0x12ec            
+            source2sdk::entity2::GameTime_t m_flBoostEndTime; // 0x12ec
             uint8_t _pad12f0[0x320];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_Lash_Ultimate because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Ability_Lash_Ultimate) == 0x1610);
     };
 };

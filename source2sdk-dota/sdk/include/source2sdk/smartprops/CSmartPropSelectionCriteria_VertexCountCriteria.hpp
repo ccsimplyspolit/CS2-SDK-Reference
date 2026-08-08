@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x88
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MVDataComponentValidGrandParents
         // static metadata: MPropertyFriendlyName "Filter Faces By Vertex Count"
@@ -31,12 +31,12 @@ namespace source2sdk
         public:
             // metadata: MPropertyFriendlyName "Target Vertex Count"
             // metadata: MPropertyDescription "Iterate through faces with target vertex count."
-            CSmartPropAttributeInt m_nTargetVertexCount; // 0x48            
+            CSmartPropAttributeInt m_nTargetVertexCount; // 0x48
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSmartPropSelectionCriteria_VertexCountCriteria because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::smartprops::CSmartPropSelectionCriteria_VertexCountCriteria) == 0x88);
     };
 };

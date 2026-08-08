@@ -25,14 +25,14 @@ namespace source2sdk
         class C_DOTABotChallengeGameMode : public source2sdk::client::C_DOTABaseGameMode
         {
         public:
-            bool m_bRuleAncientsDuel; // 0x7d8            
+            bool m_bRuleAncientsDuel; // 0x7d8
             uint8_t _pad07d9[0x3]; // 0x7d9
-            float m_flEndgameTime; // 0x7dc            
+            float m_flEndgameTime; // 0x7dc
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTABotChallengeGameMode because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTABotChallengeGameMode) == 0x7e0);
     };
 };

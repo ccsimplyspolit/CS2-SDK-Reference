@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x5f0
         // Has VTable
-        // 
+        //
         // static metadata: MEntityAllowsPortraitWorldSpawn
         #pragma pack(push, 1)
         class CLogicalEntity : public source2sdk::client::C_BaseEntity
@@ -27,8 +27,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::client::CLogicalEntity) == 0x5f0);
     };
 };

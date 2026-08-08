@@ -24,18 +24,18 @@ namespace source2sdk
         class CTriggerGameEvent : public source2sdk::server::CBaseTrigger
         {
         public:
-            CUtlString m_strStartTouchEventName; // 0x8f0            
-            CUtlString m_strEndTouchEventName; // 0x8f8            
-            CUtlString m_strTriggerID; // 0x900            
-            
+            CUtlString m_strStartTouchEventName; // 0x8f0
+            CUtlString m_strEndTouchEventName; // 0x8f8
+            CUtlString m_strTriggerID; // 0x900
+
             // Datamap fields:
             // CUtlSymbolLarge InputSetStartTouchEvent; // 0x0
             // CUtlSymbolLarge InputSetEndTouchEvent; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CTriggerGameEvent because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CTriggerGameEvent) == 0x908);
     };
 };

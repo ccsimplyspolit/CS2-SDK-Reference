@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x1f0
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MGPUParticleFunction
         #pragma pack(push, 1)
@@ -28,17 +28,17 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "random speed min"
-            float m_fSpeedMin; // 0x1e0            
+            float m_fSpeedMin; // 0x1e0
             // metadata: MPropertyFriendlyName "random speed max"
-            float m_fSpeedMax; // 0x1e4            
+            float m_fSpeedMax; // 0x1e4
             // metadata: MPropertyFriendlyName "ignore delta time"
-            bool m_bIgnoreDt; // 0x1e8            
+            bool m_bIgnoreDt; // 0x1e8
             uint8_t _pad01e9[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_INIT_VelocityFromNormal because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_INIT_VelocityFromNormal) == 0x1f0);
     };
 };

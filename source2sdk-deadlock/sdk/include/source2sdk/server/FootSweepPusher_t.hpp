@@ -22,17 +22,17 @@ namespace source2sdk
         struct FootSweepPusher_t
         {
         public:
-            VectorWS m_vC; // 0x0            
-            float m_flR; // 0xc            
-            bool m_bIsForward; // 0x10            
+            VectorWS m_vC; // 0x0
+            float m_flR; // 0xc
+            bool m_bIsForward; // 0x10
             uint8_t _pad0011[0x3];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::FootSweepPusher_t, m_vC) == 0x0);
         static_assert(offsetof(source2sdk::server::FootSweepPusher_t, m_flR) == 0xc);
         static_assert(offsetof(source2sdk::server::FootSweepPusher_t, m_bIsForward) == 0x10);
-        
+
         static_assert(sizeof(source2sdk::server::FootSweepPusher_t) == 0x14);
     };
 };

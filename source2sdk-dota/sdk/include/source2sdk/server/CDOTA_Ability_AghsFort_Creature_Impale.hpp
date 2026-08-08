@@ -26,17 +26,17 @@ namespace source2sdk
         class CDOTA_Ability_AghsFort_Creature_Impale : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            source2sdk::client::ParticleIndex_t m_nPreviewFX; // 0x580            
-            std::int32_t width; // 0x584            
-            float duration; // 0x588            
-            std::int32_t length; // 0x58c            
-            std::int32_t speed; // 0x590            
+            source2sdk::client::ParticleIndex_t m_nPreviewFX; // 0x580
+            std::int32_t width; // 0x584
+            float duration; // 0x588
+            std::int32_t length; // 0x58c
+            std::int32_t speed; // 0x590
             uint8_t _pad0594[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_AghsFort_Creature_Impale because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_AghsFort_Creature_Impale) == 0x598);
     };
 };

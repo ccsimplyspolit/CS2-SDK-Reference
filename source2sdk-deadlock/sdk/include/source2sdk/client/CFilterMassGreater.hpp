@@ -23,13 +23,13 @@ namespace source2sdk
         class CFilterMassGreater : public source2sdk::client::CBaseFilter
         {
         public:
-            float m_fFilterMass; // 0x628            
+            float m_fFilterMass; // 0x628
             uint8_t _pad062c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CFilterMassGreater because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CFilterMassGreater) == 0x630);
     };
 };

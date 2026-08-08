@@ -19,21 +19,21 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x58
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct CSurvivorsAttributeDefinition_MetaProgressionTier_t
         {
         public:
-            source2sdk::client::CSurvivorsAttributeDefinition_MetaProgressionTierCost_t m_cost; // 0x0            
-            float m_flValue; // 0x50            
+            source2sdk::client::CSurvivorsAttributeDefinition_MetaProgressionTierCost_t m_cost; // 0x0
+            float m_flValue; // 0x50
             uint8_t _pad0054[0x4];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::CSurvivorsAttributeDefinition_MetaProgressionTier_t, m_cost) == 0x0);
         static_assert(offsetof(source2sdk::client::CSurvivorsAttributeDefinition_MetaProgressionTier_t, m_flValue) == 0x50);
-        
+
         static_assert(sizeof(source2sdk::client::CSurvivorsAttributeDefinition_MetaProgressionTier_t) == 0x58);
     };
 };

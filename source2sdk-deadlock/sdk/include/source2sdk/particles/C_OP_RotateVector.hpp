@@ -21,7 +21,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x370
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_RotateVector : public source2sdk::particles::CParticleFunctionOperator
@@ -29,27 +29,27 @@ namespace source2sdk
         public:
             // metadata: MPropertyFriendlyName "output field"
             // metadata: MPropertyAttributeChoiceName "particlefield_vector"
-            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1d8            
+            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1d8
             // metadata: MPropertyFriendlyName "rotation axis min"
             // metadata: MVectorIsCoordinate
-            Vector m_vecRotAxisMin; // 0x1dc            
+            Vector m_vecRotAxisMin; // 0x1dc
             // metadata: MPropertyFriendlyName "rotation axis max"
             // metadata: MVectorIsCoordinate
-            Vector m_vecRotAxisMax; // 0x1e8            
+            Vector m_vecRotAxisMax; // 0x1e8
             // metadata: MPropertyFriendlyName "rotation rate min"
-            float m_flRotRateMin; // 0x1f4            
+            float m_flRotRateMin; // 0x1f4
             // metadata: MPropertyFriendlyName "rotation rate max"
-            float m_flRotRateMax; // 0x1f8            
+            float m_flRotRateMax; // 0x1f8
             // metadata: MPropertyFriendlyName "normalize output"
-            bool m_bNormalize; // 0x1fc            
+            bool m_bNormalize; // 0x1fc
             uint8_t _pad01fd[0x3]; // 0x1fd
             // metadata: MPropertyFriendlyName "per particle scale"
-            source2sdk::particleslib::CPerParticleFloatInput m_flScale; // 0x200            
+            source2sdk::particleslib::CPerParticleFloatInput m_flScale; // 0x200
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_RotateVector because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_RotateVector) == 0x370);
     };
 };

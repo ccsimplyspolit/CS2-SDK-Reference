@@ -18,18 +18,18 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x4
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MIsBoxedFloatType
         #pragma pack(push, 1)
         struct GameTime_t
         {
         public:
-            float m_Value; // 0x0            
+            float m_Value; // 0x0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::entity2::GameTime_t, m_Value) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::entity2::GameTime_t) == 0x4);
     };
 };

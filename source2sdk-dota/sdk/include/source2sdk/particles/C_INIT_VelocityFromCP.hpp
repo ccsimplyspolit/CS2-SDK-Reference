@@ -22,7 +22,7 @@ namespace source2sdk
         // Size: 0x908
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MGPUParticleFunction
         #pragma pack(push, 1)
@@ -30,20 +30,20 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "velocity"
-            source2sdk::particleslib::CParticleCollectionVecInput m_velocityInput; // 0x1e0            
+            source2sdk::particleslib::CParticleCollectionVecInput m_velocityInput; // 0x1e0
             // metadata: MPropertyFriendlyName "local space"
             // metadata: MParticleInputOptional
-            source2sdk::particleslib::CParticleTransformInput m_transformInput; // 0x898            
+            source2sdk::particleslib::CParticleTransformInput m_transformInput; // 0x898
             // metadata: MPropertyFriendlyName "velocity scale"
-            float m_flVelocityScale; // 0x900            
+            float m_flVelocityScale; // 0x900
             // metadata: MPropertyFriendlyName "direction only"
-            bool m_bDirectionOnly; // 0x904            
+            bool m_bDirectionOnly; // 0x904
             uint8_t _pad0905[0x3];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_INIT_VelocityFromCP because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_INIT_VelocityFromCP) == 0x908);
     };
 };

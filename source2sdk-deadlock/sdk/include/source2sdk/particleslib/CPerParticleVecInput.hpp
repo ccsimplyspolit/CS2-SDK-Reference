@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x6b8
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyCustomEditor "PerParticleVecInput()"
         #pragma pack(push, 1)
@@ -28,8 +28,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::particleslib::CPerParticleVecInput) == 0x6b8);
     };
 };

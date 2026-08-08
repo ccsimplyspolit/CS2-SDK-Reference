@@ -20,28 +20,28 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x1f8
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_SetControlPointToCenter : public source2sdk::particles::CParticleFunctionPreEmission
         {
         public:
             // metadata: MPropertyFriendlyName "control point number to set"
-            std::int32_t m_nCP1; // 0x1e0            
+            std::int32_t m_nCP1; // 0x1e0
             // metadata: MPropertyFriendlyName "center offset"
             // metadata: MVectorIsCoordinate
-            Vector m_vecCP1Pos; // 0x1e4            
+            Vector m_vecCP1Pos; // 0x1e4
             // metadata: MPropertyFriendlyName "use average particle position"
             // metadata: MVectorIsCoordinate
-            bool m_bUseAvgParticlePos; // 0x1f0            
+            bool m_bUseAvgParticlePos; // 0x1f0
             uint8_t _pad01f1[0x3]; // 0x1f1
             // metadata: MPropertyFriendlyName "set parent"
-            source2sdk::particles::ParticleParentSetMode_t m_nSetParent; // 0x1f4            
+            source2sdk::particles::ParticleParentSetMode_t m_nSetParent; // 0x1f4
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_SetControlPointToCenter because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_SetControlPointToCenter) == 0x1f8);
     };
 };

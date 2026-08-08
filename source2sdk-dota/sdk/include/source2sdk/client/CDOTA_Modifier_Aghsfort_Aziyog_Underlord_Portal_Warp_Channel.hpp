@@ -18,25 +18,25 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a78
+        // Size: 0x1a98
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Aghsfort_Aziyog_Underlord_Portal_Warp_Channel : public source2sdk::client::CDOTA_Buff
         {
         public:
-            source2sdk::client::ParticleIndex_t m_nfxTargetTp; // 0x1a58            
-            source2sdk::client::ParticleIndex_t m_nfxTargetTp2; // 0x1a5c            
-            source2sdk::client::ParticleIndex_t m_nfxAmbientFx; // 0x1a60            
-            source2sdk::client::ParticleIndex_t m_nfxPortal1; // 0x1a64            
-            source2sdk::client::ParticleIndex_t m_nfxPortal2; // 0x1a68            
-            float animation_rate; // 0x1a6c            
-            std::int32_t stop_distance; // 0x1a70            
-            uint8_t _pad1a74[0x4];
+            source2sdk::client::ParticleIndex_t m_nfxTargetTp; // 0x1a78
+            source2sdk::client::ParticleIndex_t m_nfxTargetTp2; // 0x1a7c
+            source2sdk::client::ParticleIndex_t m_nfxAmbientFx; // 0x1a80
+            source2sdk::client::ParticleIndex_t m_nfxPortal1; // 0x1a84
+            source2sdk::client::ParticleIndex_t m_nfxPortal2; // 0x1a88
+            float animation_rate; // 0x1a8c
+            std::int32_t stop_distance; // 0x1a90
+            uint8_t _pad1a94[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Aghsfort_Aziyog_Underlord_Portal_Warp_Channel because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Aghsfort_Aziyog_Underlord_Portal_Warp_Channel) == 0x1a78);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Aghsfort_Aziyog_Underlord_Portal_Warp_Channel) == 0x1a98);
     };
 };

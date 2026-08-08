@@ -26,13 +26,13 @@ namespace source2sdk
         public:
             // m_AnimOverlay has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVectorEmbeddedNetworkVar<source2sdk::server::CAnimationLayer> m_AnimOverlay;
-            char m_AnimOverlay[0x68]; // 0x4c8            
+            char m_AnimOverlay[0x68]; // 0x4c8
             uint8_t _pad0530[0x8];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CBaseAnimatingOverlayController because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CBaseAnimatingOverlayController) == 0x538);
     };
 };

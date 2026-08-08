@@ -27,15 +27,15 @@ namespace source2sdk
         class CDotaSubquestPlayerStat : public source2sdk::server::CDotaSubquestBase
         {
         public:
-            source2sdk::client::subquest_player_stat_types_t m_ePlayerStatType; // 0x6f0            
-            std::int32_t m_nPlayerStatValue; // 0x6f4            
-            std::int32_t m_nStartingStatOffset; // 0x6f8            
+            source2sdk::client::subquest_player_stat_types_t m_ePlayerStatType; // 0x6f0
+            std::int32_t m_nPlayerStatValue; // 0x6f4
+            std::int32_t m_nStartingStatOffset; // 0x6f8
             uint8_t _pad06fc[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDotaSubquestPlayerStat because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDotaSubquestPlayerStat) == 0x700);
     };
 };

@@ -21,7 +21,7 @@ namespace source2sdk
         // Size: 0x40
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Selection Mode"
         // static metadata: MPropertyDescription "Specifies the method by which a child element is selected from a list."
@@ -30,13 +30,13 @@ namespace source2sdk
         class CSmartPropVariable_ChoiceSelectionMode : public source2sdk::smartprops::CSmartPropVariable
         {
         public:
-            source2sdk::smartprops::SmartPropChoiceSelectionMode_t m_DefaultValue; // 0x38            
+            source2sdk::smartprops::SmartPropChoiceSelectionMode_t m_DefaultValue; // 0x38
             uint8_t _pad003c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSmartPropVariable_ChoiceSelectionMode because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::smartprops::CSmartPropVariable_ChoiceSelectionMode) == 0x40);
     };
 };

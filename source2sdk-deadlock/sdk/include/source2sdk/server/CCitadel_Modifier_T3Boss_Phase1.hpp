@@ -24,13 +24,13 @@ namespace source2sdk
         class CCitadel_Modifier_T3Boss_Phase1 : public source2sdk::server::CCitadelModifier
         {
         public:
-            source2sdk::client::ParticleIndex_t m_nGroundParticle; // 0xd0            
-            source2sdk::client::ParticleIndex_t m_nShieldParticle; // 0xd4            
+            source2sdk::client::ParticleIndex_t m_nGroundParticle; // 0xd0
+            source2sdk::client::ParticleIndex_t m_nShieldParticle; // 0xd4
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_T3Boss_Phase1 because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_T3Boss_Phase1) == 0xd8);
     };
 };

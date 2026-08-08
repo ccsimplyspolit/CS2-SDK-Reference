@@ -26,15 +26,15 @@ namespace source2sdk
         class C_DOTA_Ability_Furion_Teleportation : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            source2sdk::client::ParticleIndex_t m_nFXIndexStart; // 0x6a8            
-            source2sdk::client::ParticleIndex_t m_nFXIndexEnd; // 0x6ac            
-            source2sdk::client::ParticleIndex_t m_nFXIndexEndTeam; // 0x6b0            
+            source2sdk::client::ParticleIndex_t m_nFXIndexStart; // 0x6a8
+            source2sdk::client::ParticleIndex_t m_nFXIndexEnd; // 0x6ac
+            source2sdk::client::ParticleIndex_t m_nFXIndexEndTeam; // 0x6b0
             uint8_t _pad06b4[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_Furion_Teleportation because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_Furion_Teleportation) == 0x6b8);
     };
 };

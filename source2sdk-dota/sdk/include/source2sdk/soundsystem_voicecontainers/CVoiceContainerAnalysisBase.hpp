@@ -19,7 +19,7 @@ namespace source2sdk
         // Size: 0x48
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MVDataNodeType "1"
         // static metadata: MPropertyPolymorphicClass
@@ -31,12 +31,12 @@ namespace source2sdk
         public:
             uint8_t _pad0000[0x8]; // 0x0
             // metadata: MPropertyFriendlyName "Envelope Curve"
-            CPiecewiseCurve m_curve; // 0x8            
+            CPiecewiseCurve m_curve; // 0x8
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::soundsystem_voicecontainers::CVoiceContainerAnalysisBase, m_curve) == 0x8);
-        
+
         static_assert(sizeof(source2sdk::soundsystem_voicecontainers::CVoiceContainerAnalysisBase) == 0x48);
     };
 };

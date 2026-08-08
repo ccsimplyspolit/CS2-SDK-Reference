@@ -21,19 +21,19 @@ namespace source2sdk
         // Size: 0xf0
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CDOTACrateDropPowerupDef : public source2sdk::client::CDOTACrateDropDroppableDef
         {
         public:
-            source2sdk::client::EDOTACrateDropPowerupType m_ePowerupType; // 0xe8            
+            source2sdk::client::EDOTACrateDropPowerupType m_ePowerupType; // 0xe8
             uint8_t _pad00ec[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTACrateDropPowerupDef because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CDOTACrateDropPowerupDef) == 0xf0);
     };
 };

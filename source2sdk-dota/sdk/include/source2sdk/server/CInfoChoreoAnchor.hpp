@@ -27,15 +27,15 @@ namespace source2sdk
         public:
             // m_vecTargetEntries has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::server::CInfoChoreoAnchorPosition> m_vecTargetEntries;
-            char m_vecTargetEntries[0x18]; // 0x498            
+            char m_vecTargetEntries[0x18]; // 0x498
             // m_vecTargetWarps has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::server::CInfoChoreoAnchorPosition> m_vecTargetWarps;
-            char m_vecTargetWarps[0x18]; // 0x4b0            
+            char m_vecTargetWarps[0x18]; // 0x4b0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CInfoChoreoAnchor because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CInfoChoreoAnchor) == 0x4c8);
     };
 };

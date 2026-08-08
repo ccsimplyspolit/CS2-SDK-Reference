@@ -23,14 +23,14 @@ namespace source2sdk
         class CCitadel_Ability_Operative_Blindside : public source2sdk::server::CCitadelBaseAbility
         {
         public:
-            VectorWS m_vLaunchPosition; // 0xf70            
-            QAngle m_qLaunchAngle; // 0xf7c            
+            VectorWS m_vLaunchPosition; // 0xf70
+            QAngle m_qLaunchAngle; // 0xf7c
             uint8_t _pad0f88[0x380];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_Operative_Blindside because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Ability_Operative_Blindside) == 0x1308);
     };
 };

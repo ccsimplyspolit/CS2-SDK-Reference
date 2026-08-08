@@ -19,20 +19,20 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x19c8
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CCitadel_Ability_ShivWeapon_VData : public source2sdk::client::CCitadel_Ability_PrimaryWeaponVData
         {
         public:
             // metadata: MPropertyStartGroup "+Gun Properties"
-            float m_flPushForce; // 0x19c0            
+            float m_flPushForce; // 0x19c0
             uint8_t _pad19c4[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_ShivWeapon_VData because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Ability_ShivWeapon_VData) == 0x19c8);
     };
 };

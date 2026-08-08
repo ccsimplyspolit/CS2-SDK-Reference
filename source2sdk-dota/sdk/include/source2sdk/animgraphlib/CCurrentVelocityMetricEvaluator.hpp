@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x50
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CCurrentVelocityMetricEvaluator : public source2sdk::animgraphlib::CMotionMetricEvaluator
@@ -28,8 +28,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::animgraphlib::CCurrentVelocityMetricEvaluator) == 0x50);
     };
 };

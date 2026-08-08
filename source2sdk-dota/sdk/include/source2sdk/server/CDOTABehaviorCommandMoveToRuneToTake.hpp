@@ -31,17 +31,17 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0000[0x68]; // 0x0
-            source2sdk::server::CDOTABehaviorMoveTo m_MoveTo; // 0x68            
+            source2sdk::server::CDOTABehaviorMoveTo m_MoveTo; // 0x68
             // m_hRune has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hRune;
-            char m_hRune[0x4]; // 0x150            
+            char m_hRune[0x4]; // 0x150
             uint8_t _pad0154[0x4];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::CDOTABehaviorCommandMoveToRuneToTake, m_MoveTo) == 0x68);
         static_assert(offsetof(source2sdk::server::CDOTABehaviorCommandMoveToRuneToTake, m_hRune) == 0x150);
-        
+
         static_assert(sizeof(source2sdk::server::CDOTABehaviorCommandMoveToRuneToTake) == 0x158);
     };
 };

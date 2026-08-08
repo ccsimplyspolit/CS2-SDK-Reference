@@ -28,8 +28,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: CDOTA_Ability_Storm_Spirit_Electric_Rave has no schema binary (size is a guess)
     };
 };

@@ -21,28 +21,28 @@ namespace source2sdk
         // Size: 0x1f0
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_INIT_SetRigidAttachment : public source2sdk::particles::CParticleFunctionInitializer
         {
         public:
             // metadata: MPropertyFriendlyName "control point number"
-            std::int32_t m_nControlPointNumber; // 0x1e0            
+            std::int32_t m_nControlPointNumber; // 0x1e0
             // metadata: MPropertyFriendlyName "attribute to read from"
             // metadata: MPropertyAttributeChoiceName "particlefield_vector"
-            source2sdk::particles::ParticleAttributeIndex_t m_nFieldInput; // 0x1e4            
+            source2sdk::particles::ParticleAttributeIndex_t m_nFieldInput; // 0x1e4
             // metadata: MPropertyFriendlyName "attribute to cache to"
             // metadata: MPropertyAttributeChoiceName "particlefield_vector"
-            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1e8            
+            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1e8
             // metadata: MPropertyFriendlyName "local space"
-            bool m_bLocalSpace; // 0x1ec            
+            bool m_bLocalSpace; // 0x1ec
             uint8_t _pad01ed[0x3];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_INIT_SetRigidAttachment because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_INIT_SetRigidAttachment) == 0x1f0);
     };
 };

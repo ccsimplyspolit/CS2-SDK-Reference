@@ -25,15 +25,15 @@ namespace source2sdk
         class C_DOTAPropCustomTexture : public source2sdk::client::C_DynamicProp
         {
         public:
-            std::uint32_t m_unTeamID; // 0xd10            
+            std::uint32_t m_unTeamID; // 0xd10
             uint8_t _pad0d14[0xc]; // 0xd14
-            bool m_bSetupMaterialProxy; // 0xd20            
+            bool m_bSetupMaterialProxy; // 0xd20
             uint8_t _pad0d21[0xf];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTAPropCustomTexture because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTAPropCustomTexture) == 0xd30);
     };
 };

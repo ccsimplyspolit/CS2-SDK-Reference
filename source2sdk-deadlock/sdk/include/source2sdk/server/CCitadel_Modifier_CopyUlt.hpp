@@ -24,14 +24,14 @@ namespace source2sdk
         class CCitadel_Modifier_CopyUlt : public source2sdk::server::CCitadelModifier
         {
         public:
-            std::int32_t m_nCopiedHeroID; // 0xd0            
+            std::int32_t m_nCopiedHeroID; // 0xd0
             uint8_t _pad00d4[0x4]; // 0xd4
-            source2sdk::client::ModelChange_t m_ModelChange; // 0xd8            
+            source2sdk::client::ModelChange_t m_ModelChange; // 0xd8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_CopyUlt because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_CopyUlt) == 0x1c0);
     };
 };

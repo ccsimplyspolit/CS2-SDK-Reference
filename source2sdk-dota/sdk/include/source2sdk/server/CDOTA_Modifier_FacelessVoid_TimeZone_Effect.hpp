@@ -24,7 +24,7 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1b28
+        // Size: 0x1b48
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_FacelessVoid_TimeZone_Effect : public source2sdk::client::CDOTA_Buff
@@ -32,18 +32,18 @@ namespace source2sdk
         public:
             // m_vecAbilities has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVectorFixedGrowable<CHandle<source2sdk::server::CDOTABaseAbility>,40> m_vecAbilities;
-            char m_vecAbilities[0xb8]; // 0x1a58            
-            std::int32_t bonus_move_speed; // 0x1b10            
-            std::int32_t bonus_attack_speed; // 0x1b14            
-            std::int32_t bonus_cast_speed; // 0x1b18            
-            std::int32_t bonus_turn_speed; // 0x1b1c            
-            std::int32_t cooldown_acceleration; // 0x1b20            
-            uint8_t _pad1b24[0x4];
+            char m_vecAbilities[0xb8]; // 0x1a78
+            std::int32_t bonus_move_speed; // 0x1b30
+            std::int32_t bonus_attack_speed; // 0x1b34
+            std::int32_t bonus_cast_speed; // 0x1b38
+            std::int32_t bonus_turn_speed; // 0x1b3c
+            std::int32_t cooldown_acceleration; // 0x1b40
+            uint8_t _pad1b44[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_FacelessVoid_TimeZone_Effect because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_FacelessVoid_TimeZone_Effect) == 0x1b28);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_FacelessVoid_TimeZone_Effect) == 0x1b48);
     };
 };

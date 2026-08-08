@@ -35,17 +35,17 @@ namespace source2sdk
             uint8_t _pad0498[0x18]; // 0x498
             // m_hMovingEntity has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hMovingEntity;
-            char m_hMovingEntity[0x4]; // 0x4b0            
+            char m_hMovingEntity[0x4]; // 0x4b0
             // m_hPhysicsBlocker has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hPhysicsBlocker;
-            char m_hPhysicsBlocker[0x4]; // 0x4b4            
-            float m_separationDuration; // 0x4b8            
-            source2sdk::entity2::GameTime_t m_cancelTime; // 0x4bc            
+            char m_hPhysicsBlocker[0x4]; // 0x4b4
+            float m_separationDuration; // 0x4b8
+            source2sdk::entity2::GameTime_t m_cancelTime; // 0x4bc
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPhysicsEntitySolver because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CPhysicsEntitySolver) == 0x4c0);
     };
 };

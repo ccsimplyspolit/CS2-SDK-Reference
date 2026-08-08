@@ -23,12 +23,12 @@ namespace source2sdk
         class CFilterModifier : public source2sdk::server::CBaseFilter
         {
         public:
-            CUtlSymbolLarge m_iFilterModifier; // 0x4d8            
+            CUtlSymbolLarge m_iFilterModifier; // 0x4d8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CFilterModifier because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CFilterModifier) == 0x4e0);
     };
 };

@@ -30,15 +30,15 @@ namespace source2sdk
         class sAbilityHistory
         {
         public:
-            source2sdk::entity2::GameTime_t flAppliedTime; // 0x0            
+            source2sdk::entity2::GameTime_t flAppliedTime; // 0x0
             uint8_t _pad0004[0x4]; // 0x4
-            source2sdk::client::C_DOTABaseAbility* pAbility; // 0x8            
+            source2sdk::client::C_DOTABaseAbility* pAbility; // 0x8
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::sAbilityHistory, flAppliedTime) == 0x0);
         static_assert(offsetof(source2sdk::client::sAbilityHistory, pAbility) == 0x8);
-        
+
         static_assert(sizeof(source2sdk::client::sAbilityHistory) == 0x10);
     };
 };

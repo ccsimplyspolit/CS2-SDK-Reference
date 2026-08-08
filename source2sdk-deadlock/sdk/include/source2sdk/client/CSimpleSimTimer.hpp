@@ -23,14 +23,14 @@ namespace source2sdk
         class CSimpleSimTimer
         {
         public:
-            source2sdk::entity2::GameTime_t m_flNext; // 0x0            
-            WorldGroupId_t m_nWorldGroupId; // 0x4            
+            source2sdk::entity2::GameTime_t m_flNext; // 0x0
+            WorldGroupId_t m_nWorldGroupId; // 0x4
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::CSimpleSimTimer, m_flNext) == 0x0);
         static_assert(offsetof(source2sdk::client::CSimpleSimTimer, m_nWorldGroupId) == 0x4);
-        
+
         static_assert(sizeof(source2sdk::client::CSimpleSimTimer) == 0x8);
     };
 };

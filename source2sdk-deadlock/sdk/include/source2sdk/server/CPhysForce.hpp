@@ -40,18 +40,18 @@ namespace source2sdk
         {
         public:
             // metadata: MPhysPtr
-            source2sdk::client::IPhysicsMotionController* m_pController; // 0x4a0            
-            CUtlSymbolLarge m_nameAttach; // 0x4a8            
-            float m_force; // 0x4b0            
-            float m_forceTime; // 0x4b4            
+            source2sdk::client::IPhysicsMotionController* m_pController; // 0x4a0
+            CUtlSymbolLarge m_nameAttach; // 0x4a8
+            float m_force; // 0x4b0
+            float m_forceTime; // 0x4b4
             // m_attachedObject has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_attachedObject;
-            char m_attachedObject[0x4]; // 0x4b8            
+            char m_attachedObject[0x4]; // 0x4b8
             // metadata: MNotSaved
-            bool m_wasRestored; // 0x4bc            
+            bool m_wasRestored; // 0x4bc
             uint8_t _pad04bd[0x3]; // 0x4bd
-            source2sdk::server::CConstantForceController m_integrator; // 0x4c0            
-            
+            source2sdk::server::CConstantForceController m_integrator; // 0x4c0
+
             // Datamap fields:
             // void InputActivate; // 0x0
             // void InputDeactivate; // 0x0
@@ -60,9 +60,9 @@ namespace source2sdk
             // void CPhysForceInitialThink; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPhysForce because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CPhysForce) == 0x500);
     };
 };

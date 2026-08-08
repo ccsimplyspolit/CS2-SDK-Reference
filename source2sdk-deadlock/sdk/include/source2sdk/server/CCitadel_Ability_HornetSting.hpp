@@ -30,18 +30,18 @@ namespace source2sdk
         class CCitadel_Ability_HornetSting : public source2sdk::server::CCitadelBaseAbility
         {
         public:
-            std::int32_t m_BounceCount; // 0xf70            
-            bool m_bHitHero; // 0xf74            
+            std::int32_t m_BounceCount; // 0xf70
+            bool m_bHitHero; // 0xf74
             uint8_t _pad0f75[0x3]; // 0xf75
             // m_vecValidBounceTargets has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::server::CBaseEntity>> m_vecValidBounceTargets;
-            char m_vecValidBounceTargets[0x18]; // 0xf78            
+            char m_vecValidBounceTargets[0x18]; // 0xf78
             uint8_t _pad0f90[0x380];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_HornetSting because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Ability_HornetSting) == 0x1310);
     };
 };

@@ -18,25 +18,25 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x18
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MVDataRoot
         #pragma pack(push, 1)
         class CShmupBossPhase
         {
         public:
-            CUtlString m_strName; // 0x0            
-            float m_flChargeTime; // 0x8            
-            float m_flDuration; // 0xc            
-            Vector2D m_vPosition; // 0x10            
+            CUtlString m_strName; // 0x0
+            float m_flChargeTime; // 0x8
+            float m_flDuration; // 0xc
+            Vector2D m_vPosition; // 0x10
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::CShmupBossPhase, m_strName) == 0x0);
         static_assert(offsetof(source2sdk::client::CShmupBossPhase, m_flChargeTime) == 0x8);
         static_assert(offsetof(source2sdk::client::CShmupBossPhase, m_flDuration) == 0xc);
         static_assert(offsetof(source2sdk::client::CShmupBossPhase, m_vPosition) == 0x10);
-        
+
         static_assert(sizeof(source2sdk::client::CShmupBossPhase) == 0x18);
     };
 };

@@ -25,13 +25,13 @@ namespace source2sdk
         class CTriggerActiveWeaponDetect : public source2sdk::server::CBaseTrigger
         {
         public:
-            source2sdk::entity2::CEntityIOOutput m_OnTouchedActiveWeapon; // 0x8f0            
-            CUtlSymbolLarge m_iszWeaponClassName; // 0x908            
+            source2sdk::entity2::CEntityIOOutput m_OnTouchedActiveWeapon; // 0x8f0
+            CUtlSymbolLarge m_iszWeaponClassName; // 0x908
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CTriggerActiveWeaponDetect because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CTriggerActiveWeaponDetect) == 0x910);
     };
 };

@@ -22,16 +22,16 @@ namespace source2sdk
         class CPathfindRandomData
         {
         public:
-            VectorWS m_vCenter; // 0x0            
-            float m_flMinRadius; // 0xc            
-            float m_flMaxRadius; // 0x10            
+            VectorWS m_vCenter; // 0x0
+            float m_flMinRadius; // 0xc
+            float m_flMaxRadius; // 0x10
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::CPathfindRandomData, m_vCenter) == 0x0);
         static_assert(offsetof(source2sdk::server::CPathfindRandomData, m_flMinRadius) == 0xc);
         static_assert(offsetof(source2sdk::server::CPathfindRandomData, m_flMaxRadius) == 0x10);
-        
+
         static_assert(sizeof(source2sdk::server::CPathfindRandomData) == 0x14);
     };
 };

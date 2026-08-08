@@ -28,8 +28,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: CDOTA_Item_Medallion_Of_Courage has no schema binary (size is a guess)
     };
 };

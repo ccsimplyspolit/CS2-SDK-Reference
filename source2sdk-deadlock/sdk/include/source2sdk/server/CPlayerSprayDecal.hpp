@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x7f8
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "int m_nUniqueID"
         // static metadata: MNetworkVarNames "uint32 m_unAccountID"
         // static metadata: MNetworkVarNames "uint32 m_unTraceID"
@@ -42,46 +42,46 @@ namespace source2sdk
         {
         public:
             // metadata: MNetworkEnable
-            std::int32_t m_nUniqueID; // 0x780            
+            std::int32_t m_nUniqueID; // 0x780
             // metadata: MNetworkEnable
-            std::uint32_t m_unAccountID; // 0x784            
+            std::uint32_t m_unAccountID; // 0x784
             // metadata: MNetworkEnable
-            std::uint32_t m_unTraceID; // 0x788            
+            std::uint32_t m_unTraceID; // 0x788
             // metadata: MNetworkEnable
-            Vector m_vecEndPos; // 0x78c            
+            Vector m_vecEndPos; // 0x78c
             // metadata: MNetworkEnable
-            Vector m_vecStart; // 0x798            
+            Vector m_vecStart; // 0x798
             // metadata: MNetworkEnable
-            Vector m_vecLeft; // 0x7a4            
+            Vector m_vecLeft; // 0x7a4
             // metadata: MNetworkEnable
-            Vector m_vecNormal; // 0x7b0            
+            Vector m_vecNormal; // 0x7b0
             // metadata: MNetworkEnable
-            CPlayerSlot m_nPlayerSlot; // 0x7bc            
+            CPlayerSlot m_nPlayerSlot; // 0x7bc
             // metadata: MNetworkEnable
-            std::int32_t m_nEntity; // 0x7c0            
+            std::int32_t m_nEntity; // 0x7c0
             // metadata: MNetworkEnable
-            std::int32_t m_nHitbox; // 0x7c4            
+            std::int32_t m_nHitbox; // 0x7c4
             // metadata: MNetworkEnable
-            float m_flCreationTime; // 0x7c8            
+            float m_flCreationTime; // 0x7c8
             // metadata: MNetworkEnable
-            std::int32_t m_nTintID; // 0x7cc            
+            std::int32_t m_nTintID; // 0x7cc
             // metadata: MNetworkEnable
-            std::uint8_t m_nVersion; // 0x7d0            
+            std::uint8_t m_nVersion; // 0x7d0
             uint8_t _pad07d1[0x7]; // 0x7d1
             // metadata: MNetworkEnable
-            CUtlString m_sTextureName; // 0x7d8            
+            CUtlString m_sTextureName; // 0x7d8
             // metadata: MNetworkEnable
-            CUtlString m_sTextureNameDamaged; // 0x7e0            
+            CUtlString m_sTextureNameDamaged; // 0x7e0
             // metadata: MNetworkEnable
-            CUtlString m_sSoundNameDamaged; // 0x7e8            
+            CUtlString m_sSoundNameDamaged; // 0x7e8
             // metadata: MNetworkEnable
-            bool m_bDamaged; // 0x7f0            
+            bool m_bDamaged; // 0x7f0
             uint8_t _pad07f1[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPlayerSprayDecal because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CPlayerSprayDecal) == 0x7f8);
     };
 };

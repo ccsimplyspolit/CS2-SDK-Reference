@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x58
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Status Tag"
         #pragma pack(push, 1)
@@ -30,8 +30,8 @@ namespace source2sdk
             uint8_t _pad0050[0x8];
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::animgraphlib::CTaskStatusAnimTag) == 0x58);
     };
 };

@@ -24,12 +24,12 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0000[0x8]; // 0x0
-            std::uint64_t m_nId; // 0x8            
+            std::uint64_t m_nId; // 0x8
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::INavObstacle, m_nId) == 0x8);
-        
+
         static_assert(sizeof(source2sdk::server::INavObstacle) == 0x10);
     };
 };

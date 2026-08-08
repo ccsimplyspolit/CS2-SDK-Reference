@@ -41,14 +41,14 @@ namespace source2sdk
         public:
             // m_hTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CDOTA_BaseNPC> m_hTarget;
-            char m_hTarget[0x4]; // 0x580            
+            char m_hTarget[0x4]; // 0x580
             uint8_t _pad0584[0x4]; // 0x584
-            source2sdk::client::CDOTA_Buff* m_pMyBuff; // 0x588            
+            source2sdk::client::CDOTA_Buff* m_pMyBuff; // 0x588
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Capture because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Capture) == 0x590);
     };
 };

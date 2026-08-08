@@ -22,7 +22,7 @@ namespace source2sdk
         // Size: 0x40
         // Has VTable
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MNetworkVarNames "CitadelHeroSpawnData_t m_spawnedHero"
         // static metadata: MNetworkVarNames "CitadelHeroSpawnData_t m_loadingHero"
         // static metadata: MNetworkVarNames "HeroID_t m_nNoSpawnHeroID"
@@ -33,18 +33,18 @@ namespace source2sdk
             uint8_t _pad0008[0x10]; // 0x8
             // metadata: MNetworkEnable
             // metadata: MNetworkChangeCallback "OnHeroChanged"
-            source2sdk::client::CitadelHeroSpawnData_t m_spawnedHero; // 0x18            
+            source2sdk::client::CitadelHeroSpawnData_t m_spawnedHero; // 0x18
             // metadata: MNetworkEnable
             // metadata: MNetworkPriority "32"
-            source2sdk::client::CitadelHeroSpawnData_t m_loadingHero; // 0x28            
+            source2sdk::client::CitadelHeroSpawnData_t m_loadingHero; // 0x28
             // metadata: MNetworkEnable
-            source2sdk::client::HeroID_t m_nNoSpawnHeroID; // 0x38            
+            source2sdk::client::HeroID_t m_nNoSpawnHeroID; // 0x38
             uint8_t _pad003c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadelHeroComponent because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadelHeroComponent) == 0x40);
     };
 };

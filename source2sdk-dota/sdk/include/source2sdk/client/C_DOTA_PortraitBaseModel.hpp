@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0xac0
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MEntityAllowsPortraitWorldSpawn
         #pragma pack(push, 1)
         class C_DOTA_PortraitBaseModel : public source2sdk::client::CBaseAnimatingActivity
@@ -28,8 +28,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::client::C_DOTA_PortraitBaseModel) == 0xac0);
     };
 };

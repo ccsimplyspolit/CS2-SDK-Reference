@@ -27,8 +27,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: CNPC_Neutral_Hideout_Rabbit has no schema binary (size is a guess)
     };
 };

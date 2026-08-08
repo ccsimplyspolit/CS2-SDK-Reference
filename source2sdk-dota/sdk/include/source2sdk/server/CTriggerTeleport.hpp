@@ -24,16 +24,16 @@ namespace source2sdk
         class CTriggerTeleport : public source2sdk::server::CBaseTrigger
         {
         public:
-            CUtlSymbolLarge m_iLandmark; // 0x8f0            
-            bool m_bUseLandmarkAngles; // 0x8f8            
-            bool m_bMirrorPlayer; // 0x8f9            
-            bool m_bCheckDestIfClearForPlayer; // 0x8fa            
+            CUtlSymbolLarge m_iLandmark; // 0x8f0
+            bool m_bUseLandmarkAngles; // 0x8f8
+            bool m_bMirrorPlayer; // 0x8f9
+            bool m_bCheckDestIfClearForPlayer; // 0x8fa
             uint8_t _pad08fb[0x5];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CTriggerTeleport because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CTriggerTeleport) == 0x900);
     };
 };

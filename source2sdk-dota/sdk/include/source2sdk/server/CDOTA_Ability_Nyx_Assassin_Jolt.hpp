@@ -26,15 +26,15 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0580[0x10]; // 0x580
-            float aoe; // 0x590            
-            std::int32_t damage; // 0x594            
-            std::int32_t m_nNPCSpawnedID; // 0x598            
+            float aoe; // 0x590
+            std::int32_t damage; // 0x594
+            std::int32_t m_nNPCSpawnedID; // 0x598
             uint8_t _pad059c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Nyx_Assassin_Jolt because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Nyx_Assassin_Jolt) == 0x5a0);
     };
 };

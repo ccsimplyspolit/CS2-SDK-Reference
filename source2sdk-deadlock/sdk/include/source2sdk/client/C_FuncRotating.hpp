@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x9a8
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkOverride "m_angRotation CGameSceneNode"
         // static metadata: MNetworkOverride "m_flSimulationTime C_BaseEntity"
         #pragma pack(push, 1)
@@ -28,8 +28,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::client::C_FuncRotating) == 0x9a8);
     };
 };

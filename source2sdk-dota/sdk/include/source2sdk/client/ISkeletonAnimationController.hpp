@@ -22,7 +22,7 @@ namespace source2sdk
         // Has Trivial Destructor
         // Construct allowed
         // Construct disallowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class ISkeletonAnimationController
@@ -31,8 +31,8 @@ namespace source2sdk
             uint8_t _pad0000[0x8];
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::client::ISkeletonAnimationController) == 0x8);
     };
 };

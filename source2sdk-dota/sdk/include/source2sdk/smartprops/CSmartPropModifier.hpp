@@ -20,7 +20,7 @@ namespace source2sdk
         // Has VTable
         // Is Abstract
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MVDataBase
         // static metadata: MVDataNodeType "1"
@@ -31,13 +31,13 @@ namespace source2sdk
         public:
             uint8_t _pad0000[0x8]; // 0x0
             // metadata: MVDataEnableKey
-            CSmartPropAttributeBool m_bEnabled; // 0x8            
+            CSmartPropAttributeBool m_bEnabled; // 0x8
             uint8_t _pad0048[0x8];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::smartprops::CSmartPropModifier, m_bEnabled) == 0x8);
-        
+
         static_assert(sizeof(source2sdk::smartprops::CSmartPropModifier) == 0x50);
     };
 };

@@ -25,15 +25,15 @@ namespace source2sdk
         class CDOTA_Ability_Largo_AmphibianRhapsody_Song : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            std::int32_t double_song; // 0x580            
-            float song_cost_reduction_per_stack; // 0x584            
-            bool m_bInRhythmTiming; // 0x588            
+            std::int32_t double_song; // 0x580
+            float song_cost_reduction_per_stack; // 0x584
+            bool m_bInRhythmTiming; // 0x588
             uint8_t _pad0589[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Largo_AmphibianRhapsody_Song because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Largo_AmphibianRhapsody_Song) == 0x590);
     };
 };

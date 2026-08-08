@@ -32,12 +32,12 @@ namespace source2sdk
         class CDOTA_Ability_PrimalBeast_Pulverize : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            source2sdk::server::CDOTA_BaseNPC* m_hTarget; // 0x580            
+            source2sdk::server::CDOTA_BaseNPC* m_hTarget; // 0x580
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_PrimalBeast_Pulverize because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_PrimalBeast_Pulverize) == 0x588);
     };
 };

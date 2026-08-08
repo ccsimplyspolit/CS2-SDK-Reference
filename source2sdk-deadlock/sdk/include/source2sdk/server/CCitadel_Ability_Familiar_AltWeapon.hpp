@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x1340
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "int16 m_nAmmoToBeConsumedForChannel"
         // static metadata: MNetworkVarNames "bool m_bForceFiring"
         #pragma pack(push, 1)
@@ -28,15 +28,15 @@ namespace source2sdk
         public:
             uint8_t _pad1198[0x1a0]; // 0x1198
             // metadata: MNetworkEnable
-            std::int16_t m_nAmmoToBeConsumedForChannel; // 0x1338            
+            std::int16_t m_nAmmoToBeConsumedForChannel; // 0x1338
             // metadata: MNetworkEnable
-            bool m_bForceFiring; // 0x133a            
+            bool m_bForceFiring; // 0x133a
             uint8_t _pad133b[0x5];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_Familiar_AltWeapon because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Ability_Familiar_AltWeapon) == 0x1340);
     };
 };

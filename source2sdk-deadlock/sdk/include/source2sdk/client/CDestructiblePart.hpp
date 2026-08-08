@@ -19,7 +19,7 @@ namespace source2sdk
         // Alignment: 0x8
         // Standard-layout class: true
         // Size: 0x50
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MModelGameData
         // static metadata: MFgdHelper
@@ -28,36 +28,36 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertySuppressField
-            CGlobalSymbol m_DebugName; // 0x0            
+            CGlobalSymbol m_DebugName; // 0x0
             // metadata: MPropertyStartGroup "+Hitgroup"
             // metadata: MPropertyDescription "The hitgroup this is related to."
-            source2sdk::client::HitGroup_t m_nHitGroup; // 0x8            
+            source2sdk::client::HitGroup_t m_nHitGroup; // 0x8
             // metadata: MPropertyDescription "Do we disable the hitgroup and physics bodies tagged with said hitgroup when all damage levels are destroyed?"
             // metadata: MPropertyFriendlyName "Disable Hit Group & Remove Tagged Physics Bodies When Destroyed"
-            bool m_bDisableHitGroupWhenDestroyed; // 0xc            
+            bool m_bDisableHitGroupWhenDestroyed; // 0xc
             uint8_t _pad000d[0x3]; // 0xd
             // metadata: MPropertyDescription "Other hitgroups to destroy when this one is fully destroyed.  Useful for chaining destructibles like blowing up the lower arm when the upper arm dies."
             // m_nOtherHitgroupsToDestroyWhenFullyDestructed has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::client::HitGroup_t> m_nOtherHitgroupsToDestroyWhenFullyDestructed;
-            char m_nOtherHitgroupsToDestroyWhenFullyDestructed[0x18]; // 0x10            
+            char m_nOtherHitgroupsToDestroyWhenFullyDestructed[0x18]; // 0x10
             // metadata: MPropertyStartGroup "+Gibbing"
             // metadata: MPropertyDescription "Only allow this part to be destroyed when gibbing.  Useful for special case gibbing breakables like torsos."
-            bool m_bOnlyDestroyWhenGibbing; // 0x28            
+            bool m_bOnlyDestroyWhenGibbing; // 0x28
             uint8_t _pad0029[0x7]; // 0x29
             // metadata: MPropertyStartGroup "+Model Setup/+Body Group"
             // metadata: MPropertyDescription "Body group to set when this damage level is broken."
             // metadata: MPropertyAttributeEditor "ModelDocPicker( MODELDOC_PICK_TYPE_BODY_GROUP )"
-            CGlobalSymbol m_sBodyGroupName; // 0x30            
+            CGlobalSymbol m_sBodyGroupName; // 0x30
             // metadata: MPropertyStartGroup
             // metadata: MPropertyDescription "The various damage levels for this hitgroup."
             // metadata: MPropertyFriendlyName "Damage Levels"
             // metadata: MPropertyAutoExpandSelf
             // m_DamageLevels has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::client::CDestructiblePart_DamageLevel> m_DamageLevels;
-            char m_DamageLevels[0x18]; // 0x38            
+            char m_DamageLevels[0x18]; // 0x38
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::CDestructiblePart, m_DebugName) == 0x0);
         static_assert(offsetof(source2sdk::client::CDestructiblePart, m_nHitGroup) == 0x8);
         static_assert(offsetof(source2sdk::client::CDestructiblePart, m_bDisableHitGroupWhenDestroyed) == 0xc);
@@ -65,7 +65,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::client::CDestructiblePart, m_bOnlyDestroyWhenGibbing) == 0x28);
         static_assert(offsetof(source2sdk::client::CDestructiblePart, m_sBodyGroupName) == 0x30);
         static_assert(offsetof(source2sdk::client::CDestructiblePart, m_DamageLevels) == 0x38);
-        
+
         static_assert(sizeof(source2sdk::client::CDestructiblePart) == 0x50);
     };
 };

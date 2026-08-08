@@ -23,21 +23,21 @@ namespace source2sdk
         class CBaseProp : public source2sdk::server::CBaseAnimGraph
         {
         public:
-            bool m_bModelOverrodeBlockLOS; // 0xa90            
+            bool m_bModelOverrodeBlockLOS; // 0xa90
             uint8_t _pad0a91[0x3]; // 0xa91
-            std::int32_t m_iShapeType; // 0xa94            
-            bool m_bConformToCollisionBounds; // 0xa98            
+            std::int32_t m_iShapeType; // 0xa94
+            bool m_bConformToCollisionBounds; // 0xa98
             uint8_t _pad0a99[0x7]; // 0xa99
-            CTransform m_mPreferredCatchTransform; // 0xaa0            
-            
+            CTransform m_mPreferredCatchTransform; // 0xaa0
+
             // Datamap fields:
             // void health; // 0x7fffffff
             // CUtlSymbolLarge propdata_override; // 0x7fffffff
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CBaseProp because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CBaseProp) == 0xac0);
     };
 };

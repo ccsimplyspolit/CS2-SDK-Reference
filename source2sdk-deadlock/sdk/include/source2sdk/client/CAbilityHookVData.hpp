@@ -21,7 +21,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x1c10
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CAbilityHookVData : public source2sdk::client::CitadelAbilityVData
@@ -30,39 +30,39 @@ namespace source2sdk
             // metadata: MPropertyStartGroup "Modifiers"
             // m_SelfModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEmbeddedSubclass<source2sdk::client::CCitadelModifier> m_SelfModifier;
-            char m_SelfModifier[0x10]; // 0x1818            
+            char m_SelfModifier[0x10]; // 0x1818
             // m_TargetModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEmbeddedSubclass<source2sdk::client::CCitadelModifier> m_TargetModifier;
-            char m_TargetModifier[0x10]; // 0x1828            
+            char m_TargetModifier[0x10]; // 0x1828
             // m_BulletAmpModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEmbeddedSubclass<source2sdk::client::CCitadelModifier> m_BulletAmpModifier;
-            char m_BulletAmpModifier[0x10]; // 0x1838            
+            char m_BulletAmpModifier[0x10]; // 0x1838
             // metadata: MPropertyStartGroup "Visuals"
             // m_HookOutParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_HookOutParticle;
-            char m_HookOutParticle[0xe0]; // 0x1848            
+            char m_HookOutParticle[0xe0]; // 0x1848
             // m_PrecastHookParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_PrecastHookParticle;
-            char m_PrecastHookParticle[0xe0]; // 0x1928            
+            char m_PrecastHookParticle[0xe0]; // 0x1928
             // m_HookRetrieveParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_HookRetrieveParticle;
-            char m_HookRetrieveParticle[0xe0]; // 0x1a08            
+            char m_HookRetrieveParticle[0xe0]; // 0x1a08
             // m_HookServerImpactParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_HookServerImpactParticle;
-            char m_HookServerImpactParticle[0xe0]; // 0x1ae8            
+            char m_HookServerImpactParticle[0xe0]; // 0x1ae8
             // metadata: MPropertyStartGroup "Sounds"
-            CSoundEventName m_strHookSuccessSound; // 0x1bc8            
-            CSoundEventName m_strHookNPCSound; // 0x1bd8            
-            CSoundEventName m_strHookAllySound; // 0x1be8            
-            CSoundEventName m_strHookImpactGeoSound; // 0x1bf8            
+            CSoundEventName m_strHookSuccessSound; // 0x1bc8
+            CSoundEventName m_strHookNPCSound; // 0x1bd8
+            CSoundEventName m_strHookAllySound; // 0x1be8
+            CSoundEventName m_strHookImpactGeoSound; // 0x1bf8
             // metadata: MPropertyStartGroup "Gameplay"
-            float m_flTrooperHitRadius; // 0x1c08            
-            float m_flFriendlyHookIgnoreRange; // 0x1c0c            
+            float m_flTrooperHitRadius; // 0x1c08
+            float m_flFriendlyHookIgnoreRange; // 0x1c0c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CAbilityHookVData because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CAbilityHookVData) == 0x1c10);
     };
 };

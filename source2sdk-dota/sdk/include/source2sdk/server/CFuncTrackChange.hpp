@@ -42,31 +42,31 @@ namespace source2sdk
             // metadata: MSaveBehavior
             // m_trackTop has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CPathTrack> m_trackTop;
-            char m_trackTop[0x4]; // 0x848            
+            char m_trackTop[0x4]; // 0x848
             // metadata: MSaveBehavior
             // m_trackBottom has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CPathTrack> m_trackBottom;
-            char m_trackBottom[0x4]; // 0x84c            
+            char m_trackBottom[0x4]; // 0x84c
             // metadata: MSaveBehavior
             // m_train has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CFuncTrackTrain> m_train;
-            char m_train[0x4]; // 0x850            
+            char m_train[0x4]; // 0x850
             uint8_t _pad0854[0x4]; // 0x854
             // metadata: MSaveBehavior
-            CUtlSymbolLarge m_trackTopName; // 0x858            
+            CUtlSymbolLarge m_trackTopName; // 0x858
             // metadata: MSaveBehavior
-            CUtlSymbolLarge m_trackBottomName; // 0x860            
+            CUtlSymbolLarge m_trackBottomName; // 0x860
             // metadata: MSaveBehavior
-            CUtlSymbolLarge m_trainName; // 0x868            
-            source2sdk::server::TRAIN_CODE m_code; // 0x870            
-            std::int32_t m_targetState; // 0x874            
-            std::int32_t m_use; // 0x878            
+            CUtlSymbolLarge m_trainName; // 0x868
+            source2sdk::server::TRAIN_CODE m_code; // 0x870
+            std::int32_t m_targetState; // 0x874
+            std::int32_t m_use; // 0x878
             uint8_t _pad087c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CFuncTrackChange because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CFuncTrackChange) == 0x880);
     };
 };

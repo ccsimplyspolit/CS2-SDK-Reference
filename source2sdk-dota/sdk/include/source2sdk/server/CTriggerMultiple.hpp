@@ -25,12 +25,12 @@ namespace source2sdk
         class CTriggerMultiple : public source2sdk::server::CBaseTrigger
         {
         public:
-            source2sdk::entity2::CEntityIOOutput m_OnTrigger; // 0x8f0            
+            source2sdk::entity2::CEntityIOOutput m_OnTrigger; // 0x8f0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CTriggerMultiple because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CTriggerMultiple) == 0x908);
     };
 };

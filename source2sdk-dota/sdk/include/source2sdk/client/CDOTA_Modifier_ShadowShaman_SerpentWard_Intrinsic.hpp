@@ -17,21 +17,21 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a68
+        // Size: 0x1a88
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_ShadowShaman_SerpentWard_Intrinsic : public source2sdk::client::CDOTA_Buff
         {
         public:
-            std::int32_t ward_health; // 0x1a58            
-            float mega_ward_multiplier_damage; // 0x1a5c            
-            float mega_ward_multiplier_health; // 0x1a60            
-            float ward_damage_tooltip; // 0x1a64            
+            std::int32_t ward_health; // 0x1a78
+            float mega_ward_multiplier_damage; // 0x1a7c
+            float mega_ward_multiplier_health; // 0x1a80
+            float ward_damage_tooltip; // 0x1a84
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_ShadowShaman_SerpentWard_Intrinsic because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_ShadowShaman_SerpentWard_Intrinsic) == 0x1a68);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_ShadowShaman_SerpentWard_Intrinsic) == 0x1a88);
     };
 };

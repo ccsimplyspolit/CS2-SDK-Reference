@@ -26,17 +26,17 @@ namespace source2sdk
         class CDOTA_Ability_AghsFort_Creature_Phoenix_LaunchFireSpirit : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            std::int32_t spirit_speed; // 0x580            
-            float duration; // 0x584            
-            std::int32_t radius; // 0x588            
-            std::int32_t hp_cost_perc; // 0x58c            
-            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x590            
+            std::int32_t spirit_speed; // 0x580
+            float duration; // 0x584
+            std::int32_t radius; // 0x588
+            std::int32_t hp_cost_perc; // 0x58c
+            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x590
             uint8_t _pad0594[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_AghsFort_Creature_Phoenix_LaunchFireSpirit because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_AghsFort_Creature_Phoenix_LaunchFireSpirit) == 0x598);
     };
 };

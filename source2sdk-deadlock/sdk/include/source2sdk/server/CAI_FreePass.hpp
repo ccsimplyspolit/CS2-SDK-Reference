@@ -34,15 +34,15 @@ namespace source2sdk
         public:
             // m_hTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hTarget;
-            char m_hTarget[0x4]; // 0x50            
-            float m_FreePassTimeRemaining; // 0x54            
-            source2sdk::server::CAI_MoveMonitor m_FreePassMoveMonitor; // 0x58            
-            source2sdk::server::AI_FreePassParams_t m_Params; // 0x68            
+            char m_hTarget[0x4]; // 0x50
+            float m_FreePassTimeRemaining; // 0x54
+            source2sdk::server::CAI_MoveMonitor m_FreePassMoveMonitor; // 0x58
+            source2sdk::server::AI_FreePassParams_t m_Params; // 0x68
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CAI_FreePass because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CAI_FreePass) == 0x98);
     };
 };

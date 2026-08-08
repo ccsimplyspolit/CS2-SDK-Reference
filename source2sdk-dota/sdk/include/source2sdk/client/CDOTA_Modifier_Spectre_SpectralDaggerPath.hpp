@@ -24,27 +24,27 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1aa0
+        // Size: 0x1ac0
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Spectre_SpectralDaggerPath : public source2sdk::client::CDOTA_Buff
         {
         public:
-            uint8_t _pad1a58[0x18]; // 0x1a58
+            uint8_t _pad1a78[0x18]; // 0x1a78
             // m_hUnitsInPath has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::client::C_BaseEntity>> m_hUnitsInPath;
-            char m_hUnitsInPath[0x18]; // 0x1a70            
-            float path_radius; // 0x1a88            
-            float vision_radius; // 0x1a8c            
-            float dagger_radius; // 0x1a90            
-            float buff_persistence; // 0x1a94            
-            float dagger_grace_period; // 0x1a98            
-            float dagger_path_duration; // 0x1a9c            
+            char m_hUnitsInPath[0x18]; // 0x1a90
+            float path_radius; // 0x1aa8
+            float vision_radius; // 0x1aac
+            float dagger_radius; // 0x1ab0
+            float buff_persistence; // 0x1ab4
+            float dagger_grace_period; // 0x1ab8
+            float dagger_path_duration; // 0x1abc
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Spectre_SpectralDaggerPath because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Spectre_SpectralDaggerPath) == 0x1aa0);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Spectre_SpectralDaggerPath) == 0x1ac0);
     };
 };

@@ -25,13 +25,13 @@ namespace source2sdk
         class CDOTA_Ability_Night_Stalker_Heart_Of_Darkness : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            std::int32_t m_nNightModification; // 0x580            
+            std::int32_t m_nNightModification; // 0x580
             uint8_t _pad0584[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Night_Stalker_Heart_Of_Darkness because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Night_Stalker_Heart_Of_Darkness) == 0x588);
     };
 };

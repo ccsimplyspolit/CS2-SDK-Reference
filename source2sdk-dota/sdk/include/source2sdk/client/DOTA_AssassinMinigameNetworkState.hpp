@@ -26,15 +26,15 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0000[0x8]; // 0x0
-            std::uint16_t nAssassinState; // 0x8            
+            std::uint16_t nAssassinState; // 0x8
             uint8_t _pad000a[0x2]; // 0xa
-            source2sdk::client::HeroID_t nVictimHeroID; // 0xc            
+            source2sdk::client::HeroID_t nVictimHeroID; // 0xc
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::DOTA_AssassinMinigameNetworkState, nAssassinState) == 0x8);
         static_assert(offsetof(source2sdk::client::DOTA_AssassinMinigameNetworkState, nVictimHeroID) == 0xc);
-        
+
         static_assert(sizeof(source2sdk::client::DOTA_AssassinMinigameNetworkState) == 0x10);
     };
 };

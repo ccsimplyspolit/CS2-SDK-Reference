@@ -25,17 +25,17 @@ namespace source2sdk
         class C_DOTA_Ability_Earthshaker_EchoSlam : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            float echo_slam_damage_range; // 0x6a8            
-            float echo_slam_echo_search_range; // 0x6ac            
-            float echo_slam_echo_range; // 0x6b0            
-            float echo_slam_echo_damage; // 0x6b4            
-            float echo_slam_initial_damage; // 0x6b8            
+            float echo_slam_damage_range; // 0x6a8
+            float echo_slam_echo_search_range; // 0x6ac
+            float echo_slam_echo_range; // 0x6b0
+            float echo_slam_echo_damage; // 0x6b4
+            float echo_slam_initial_damage; // 0x6b8
             uint8_t _pad06bc[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_Earthshaker_EchoSlam because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_Earthshaker_EchoSlam) == 0x6c0);
     };
 };

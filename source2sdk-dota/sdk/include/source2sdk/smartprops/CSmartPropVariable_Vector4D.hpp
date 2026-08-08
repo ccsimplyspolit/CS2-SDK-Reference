@@ -20,19 +20,19 @@ namespace source2sdk
         // Size: 0x48
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Vector 4D"
         #pragma pack(push, 1)
         class CSmartPropVariable_Vector4D : public source2sdk::smartprops::CSmartPropVariable
         {
         public:
-            Vector4D m_DefaultValue; // 0x38            
+            Vector4D m_DefaultValue; // 0x38
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSmartPropVariable_Vector4D because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::smartprops::CSmartPropVariable_Vector4D) == 0x48);
     };
 };

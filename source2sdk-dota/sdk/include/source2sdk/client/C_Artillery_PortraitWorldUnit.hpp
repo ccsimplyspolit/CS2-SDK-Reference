@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x1df0
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MEntityAllowsPortraitWorldSpawn
         #pragma pack(push, 1)
         class C_Artillery_PortraitWorldUnit : public source2sdk::client::C_PortraitWorldUnit
@@ -28,8 +28,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::client::C_Artillery_PortraitWorldUnit) == 0x1df0);
     };
 };

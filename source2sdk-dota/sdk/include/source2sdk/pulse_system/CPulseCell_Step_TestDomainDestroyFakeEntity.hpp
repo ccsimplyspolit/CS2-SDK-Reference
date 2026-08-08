@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x48
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Destroy Fake Entity"
         #pragma pack(push, 1)
@@ -29,8 +29,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::pulse_system::CPulseCell_Step_TestDomainDestroyFakeEntity) == 0x48);
     };
 };

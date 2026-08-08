@@ -19,31 +19,31 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x1f0
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_VelocityMatchingForce : public source2sdk::particles::CParticleFunctionOperator
         {
         public:
             // metadata: MPropertyFriendlyName "direction matching strength"
-            float m_flDirScale; // 0x1d8            
+            float m_flDirScale; // 0x1d8
             // metadata: MPropertyFriendlyName "speed matching strength"
-            float m_flSpdScale; // 0x1dc            
+            float m_flSpdScale; // 0x1dc
             // metadata: MPropertyFriendlyName "neighbor distance"
-            float m_flNeighborDistance; // 0x1e0            
+            float m_flNeighborDistance; // 0x1e0
             // metadata: MPropertyFriendlyName "facing strength falloff"
-            float m_flFacingStrength; // 0x1e4            
+            float m_flFacingStrength; // 0x1e4
             // metadata: MPropertyFriendlyName "use AABB"
             // metadata: MPropertySuppressExpr "m_flNeighborDistance > 0"
-            bool m_bUseAABB; // 0x1e8            
+            bool m_bUseAABB; // 0x1e8
             uint8_t _pad01e9[0x3]; // 0x1e9
             // metadata: MPropertyFriendlyName "control point to broadcast speed and direction to"
-            std::int32_t m_nCPBroadcast; // 0x1ec            
+            std::int32_t m_nCPBroadcast; // 0x1ec
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_VelocityMatchingForce because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_VelocityMatchingForce) == 0x1f0);
     };
 };

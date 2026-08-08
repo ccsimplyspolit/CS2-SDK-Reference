@@ -21,7 +21,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x4e0
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_PlanarConstraint : public source2sdk::particles::CParticleFunctionConstraint
@@ -29,28 +29,28 @@ namespace source2sdk
         public:
             // metadata: MPropertyFriendlyName "plane point"
             // metadata: MVectorIsCoordinate
-            Vector m_PointOnPlane; // 0x1d8            
+            Vector m_PointOnPlane; // 0x1d8
             // metadata: MPropertyFriendlyName "plane normal"
-            Vector m_PlaneNormal; // 0x1e4            
+            Vector m_PlaneNormal; // 0x1e4
             // metadata: MPropertyFriendlyName "control point number"
-            std::int32_t m_nControlPointNumber; // 0x1f0            
+            std::int32_t m_nControlPointNumber; // 0x1f0
             // metadata: MPropertyFriendlyName "global origin"
-            bool m_bGlobalOrigin; // 0x1f4            
+            bool m_bGlobalOrigin; // 0x1f4
             // metadata: MPropertyFriendlyName "global normal"
-            bool m_bGlobalNormal; // 0x1f5            
+            bool m_bGlobalNormal; // 0x1f5
             uint8_t _pad01f6[0x2]; // 0x1f6
             // metadata: MPropertyFriendlyName "radius scale"
-            source2sdk::particleslib::CPerParticleFloatInput m_flRadiusScale; // 0x1f8            
+            source2sdk::particleslib::CPerParticleFloatInput m_flRadiusScale; // 0x1f8
             // metadata: MPropertyFriendlyName "falloff distance from control point"
-            source2sdk::particleslib::CParticleCollectionFloatInput m_flMaximumDistanceToCP; // 0x368            
+            source2sdk::particleslib::CParticleCollectionFloatInput m_flMaximumDistanceToCP; // 0x368
             // metadata: MPropertyFriendlyName "use old code"
-            bool m_bUseOldCode; // 0x4d8            
+            bool m_bUseOldCode; // 0x4d8
             uint8_t _pad04d9[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_PlanarConstraint because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_PlanarConstraint) == 0x4e0);
     };
 };

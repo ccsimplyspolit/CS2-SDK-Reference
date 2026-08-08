@@ -25,17 +25,17 @@ namespace source2sdk
         class CDOTA_Ability_Snapfire_MortimerKisses : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            std::int32_t m_nDamagePerProjectile; // 0x580            
-            std::int32_t damage_per_impact; // 0x584            
-            float impact_radius; // 0x588            
-            float projectile_vision; // 0x58c            
-            float min_range; // 0x590            
+            std::int32_t m_nDamagePerProjectile; // 0x580
+            std::int32_t damage_per_impact; // 0x584
+            float impact_radius; // 0x588
+            float projectile_vision; // 0x58c
+            float min_range; // 0x590
             uint8_t _pad0594[0x14];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Snapfire_MortimerKisses because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Snapfire_MortimerKisses) == 0x5a8);
     };
 };

@@ -25,25 +25,25 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a78
+        // Size: 0x1a98
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Batrider_FlamingLasso : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float tick_rate; // 0x1a58            
-            std::int32_t drag_distance; // 0x1a5c            
-            std::int32_t break_distance; // 0x1a60            
-            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x1a64            
-            VectorWS vPreviousLocation; // 0x1a68            
+            float tick_rate; // 0x1a78
+            std::int32_t drag_distance; // 0x1a7c
+            std::int32_t break_distance; // 0x1a80
+            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x1a84
+            VectorWS vPreviousLocation; // 0x1a88
             // m_hAnchor has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CDOTA_BaseNPC> m_hAnchor;
-            char m_hAnchor[0x4]; // 0x1a74            
+            char m_hAnchor[0x4]; // 0x1a94
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Batrider_FlamingLasso because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Batrider_FlamingLasso) == 0x1a78);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Batrider_FlamingLasso) == 0x1a98);
     };
 };

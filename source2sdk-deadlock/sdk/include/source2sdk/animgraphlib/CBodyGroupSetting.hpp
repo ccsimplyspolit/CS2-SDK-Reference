@@ -17,7 +17,7 @@ namespace source2sdk
         // Alignment: 0x8
         // Standard-layout class: true
         // Size: 0x10
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Body Group Setting"
         // static metadata: MPropertyElementNameFn
@@ -28,17 +28,17 @@ namespace source2sdk
             // metadata: MPropertyFriendlyName "BodyGroup"
             // metadata: MPropertyAttributeChoiceName "BodyGroup"
             // metadata: MPropertyAutoRebuildOnChange
-            CUtlString m_BodyGroupName; // 0x0            
+            CUtlString m_BodyGroupName; // 0x0
             // metadata: MPropertyFriendlyName "BodyGroup Option"
             // metadata: MPropertyAttributeChoiceName "BodyGroupOption"
-            std::int32_t m_nBodyGroupOption; // 0x8            
+            std::int32_t m_nBodyGroupOption; // 0x8
             uint8_t _pad000c[0x4];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::animgraphlib::CBodyGroupSetting, m_BodyGroupName) == 0x0);
         static_assert(offsetof(source2sdk::animgraphlib::CBodyGroupSetting, m_nBodyGroupOption) == 0x8);
-        
+
         static_assert(sizeof(source2sdk::animgraphlib::CBodyGroupSetting) == 0x10);
     };
 };

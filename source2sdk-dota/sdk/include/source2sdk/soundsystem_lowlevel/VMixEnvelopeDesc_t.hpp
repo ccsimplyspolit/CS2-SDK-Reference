@@ -20,22 +20,22 @@ namespace source2sdk
         // Has Trivial Constructor
         // Has Trivial Destructor
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct VMixEnvelopeDesc_t
         {
         public:
-            float m_flAttackTimeMS; // 0x0            
-            float m_flHoldTimeMS; // 0x4            
-            float m_flReleaseTimeMS; // 0x8            
+            float m_flAttackTimeMS; // 0x0
+            float m_flHoldTimeMS; // 0x4
+            float m_flReleaseTimeMS; // 0x8
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::VMixEnvelopeDesc_t, m_flAttackTimeMS) == 0x0);
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::VMixEnvelopeDesc_t, m_flHoldTimeMS) == 0x4);
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::VMixEnvelopeDesc_t, m_flReleaseTimeMS) == 0x8);
-        
+
         static_assert(sizeof(source2sdk::soundsystem_lowlevel::VMixEnvelopeDesc_t) == 0xc);
     };
 };

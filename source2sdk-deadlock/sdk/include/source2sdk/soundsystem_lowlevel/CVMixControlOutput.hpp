@@ -18,19 +18,19 @@ namespace source2sdk
         // Alignment: 0x8
         // Standard-layout class: false
         // Size: 0x18
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CVMixControlOutput : public source2sdk::soundsystem_lowlevel::CVMixInputBase
         {
         public:
-            float m_flDefaultValue; // 0x10            
+            float m_flDefaultValue; // 0x10
             uint8_t _pad0014[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CVMixControlOutput because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::soundsystem_lowlevel::CVMixControlOutput) == 0x18);
     };
 };

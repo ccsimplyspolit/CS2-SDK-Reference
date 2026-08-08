@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x1830
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CAbilityRollingFireBallVData : public source2sdk::server::CitadelAbilityVData
@@ -29,17 +29,17 @@ namespace source2sdk
             // metadata: MPropertyStartGroup "Sounds"
             // metadata: MPropertyStartGroup "Modifiers"
             // metadata: MPropertyStartGroup "Gameplay"
-            float m_flBallLifetime; // 0x1818            
-            float m_flBallStepUpHeight; // 0x181c            
-            float m_flBallDistAboveGround; // 0x1820            
-            float m_flBallFloatDownRate; // 0x1824            
-            float m_flBallSpeed; // 0x1828            
-            float m_flBallTraceRadius; // 0x182c            
+            float m_flBallLifetime; // 0x1818
+            float m_flBallStepUpHeight; // 0x181c
+            float m_flBallDistAboveGround; // 0x1820
+            float m_flBallFloatDownRate; // 0x1824
+            float m_flBallSpeed; // 0x1828
+            float m_flBallTraceRadius; // 0x182c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CAbilityRollingFireBallVData because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CAbilityRollingFireBallVData) == 0x1830);
     };
 };

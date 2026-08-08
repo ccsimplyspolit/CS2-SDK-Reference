@@ -23,20 +23,20 @@ namespace source2sdk
         class CRagdollMagnet : public source2sdk::server::CPointEntity
         {
         public:
-            bool m_bDisabled; // 0x4a0            
+            bool m_bDisabled; // 0x4a0
             uint8_t _pad04a1[0x3]; // 0x4a1
-            float m_radius; // 0x4a4            
-            float m_force; // 0x4a8            
-            VectorWS m_axis; // 0x4ac            
-            
+            float m_radius; // 0x4a4
+            float m_force; // 0x4a8
+            VectorWS m_axis; // 0x4ac
+
             // Datamap fields:
             // void InputEnable; // 0x0
             // void InputDisable; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CRagdollMagnet because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CRagdollMagnet) == 0x4b8);
     };
 };

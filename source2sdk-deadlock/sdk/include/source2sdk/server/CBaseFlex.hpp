@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xae0
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "float32 m_flexWeight"
         // static metadata: MNetworkVarNames "VectorWS m_vLookTargetPosition"
         #pragma pack(push, 1)
@@ -34,18 +34,18 @@ namespace source2sdk
             // metadata: MNetworkEncodeFlags "1"
             // m_flexWeight has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CNetworkUtlVectorBase<float> m_flexWeight;
-            char m_flexWeight[0x18]; // 0xa90            
+            char m_flexWeight[0x18]; // 0xa90
             // metadata: MNetworkEnable
             // metadata: MNetworkEncoder "coord"
-            VectorWS m_vLookTargetPosition; // 0xaa8            
+            VectorWS m_vLookTargetPosition; // 0xaa8
             uint8_t _pad0ab4[0x24]; // 0xab4
-            source2sdk::entity2::GameTime_t m_flLastFlexAnimationTime; // 0xad8            
+            source2sdk::entity2::GameTime_t m_flLastFlexAnimationTime; // 0xad8
             uint8_t _pad0adc[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CBaseFlex because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CBaseFlex) == 0xae0);
     };
 };

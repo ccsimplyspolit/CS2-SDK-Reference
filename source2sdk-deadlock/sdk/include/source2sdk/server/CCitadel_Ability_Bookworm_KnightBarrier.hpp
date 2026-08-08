@@ -25,14 +25,14 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0f70[0x400]; // 0xf70
-            source2sdk::client::ParticleIndex_t m_nCastParticleIndex; // 0x1370            
-            std::int32_t m_iPendingBonusTargets; // 0x1374            
+            source2sdk::client::ParticleIndex_t m_nCastParticleIndex; // 0x1370
+            std::int32_t m_iPendingBonusTargets; // 0x1374
             uint8_t _pad1378[0x8];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_Bookworm_KnightBarrier because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Ability_Bookworm_KnightBarrier) == 0x1380);
     };
 };

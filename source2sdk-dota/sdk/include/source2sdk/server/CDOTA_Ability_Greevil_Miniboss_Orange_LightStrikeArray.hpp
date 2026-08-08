@@ -28,8 +28,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: CDOTA_Ability_Greevil_Miniboss_Orange_LightStrikeArray has no schema binary (size is a guess)
     };
 };

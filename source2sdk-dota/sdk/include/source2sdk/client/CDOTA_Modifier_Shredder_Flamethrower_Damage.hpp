@@ -18,23 +18,23 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a70
+        // Size: 0x1a90
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Shredder_Flamethrower_Damage : public source2sdk::client::CDOTA_Buff
         {
         public:
-            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x1a58            
-            source2sdk::client::ParticleIndex_t m_nActiveFXIndex; // 0x1a5c            
-            source2sdk::client::ParticleIndex_t m_nActiveStatusFXIndex; // 0x1a60            
-            float damage_per_second; // 0x1a64            
-            std::int32_t building_dmg_pct; // 0x1a68            
-            std::int32_t move_slow_pct; // 0x1a6c            
+            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x1a78
+            source2sdk::client::ParticleIndex_t m_nActiveFXIndex; // 0x1a7c
+            source2sdk::client::ParticleIndex_t m_nActiveStatusFXIndex; // 0x1a80
+            float damage_per_second; // 0x1a84
+            std::int32_t building_dmg_pct; // 0x1a88
+            std::int32_t move_slow_pct; // 0x1a8c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Shredder_Flamethrower_Damage because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Shredder_Flamethrower_Damage) == 0x1a70);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Shredder_Flamethrower_Damage) == 0x1a90);
     };
 };

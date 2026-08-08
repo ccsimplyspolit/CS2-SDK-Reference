@@ -23,14 +23,14 @@ namespace source2sdk
         struct PurchasedItem_t
         {
         public:
-            std::int32_t nItemID; // 0x0            
-            float flPurchaseTime; // 0x4            
+            std::int32_t nItemID; // 0x0
+            float flPurchaseTime; // 0x4
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::PurchasedItem_t, nItemID) == 0x0);
         static_assert(offsetof(source2sdk::server::PurchasedItem_t, flPurchaseTime) == 0x4);
-        
+
         static_assert(sizeof(source2sdk::server::PurchasedItem_t) == 0x8);
     };
 };

@@ -19,7 +19,7 @@ namespace source2sdk
         // Size: 0x1
         // Has Trivial Constructor
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MResourceTypeForInfoType "vanim"
         #pragma pack(push, 1)
         class InfoForResourceTypeCAnimData
@@ -27,8 +27,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::resourcesystem::InfoForResourceTypeCAnimData) == 0x1);
     };
 };

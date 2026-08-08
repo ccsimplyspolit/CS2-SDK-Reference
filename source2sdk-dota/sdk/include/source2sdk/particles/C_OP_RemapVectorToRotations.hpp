@@ -21,21 +21,21 @@ namespace source2sdk
         // Size: 0xf48
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_RemapVectorToRotations : public source2sdk::particles::CParticleFunctionOperator
         {
         public:
             // metadata: MPropertyFriendlyName "vector input"
-            source2sdk::particleslib::CPerParticleVecInput m_vecInput; // 0x1d8            
+            source2sdk::particleslib::CPerParticleVecInput m_vecInput; // 0x1d8
             // metadata: MPropertyFriendlyName "offset pitch/yaw/roll"
-            source2sdk::particleslib::CPerParticleVecInput m_vecRotation; // 0x890            
+            source2sdk::particleslib::CPerParticleVecInput m_vecRotation; // 0x890
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_RemapVectorToRotations because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_RemapVectorToRotations) == 0xf48);
     };
 };

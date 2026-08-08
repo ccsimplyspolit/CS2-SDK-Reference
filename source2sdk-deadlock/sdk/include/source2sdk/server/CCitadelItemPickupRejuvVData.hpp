@@ -21,7 +21,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x220
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CCitadelItemPickupRejuvVData : public source2sdk::server::CCitadelItemPickupVData
@@ -29,25 +29,25 @@ namespace source2sdk
         public:
             // m_AbilityProjectile has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CSubclassName<4> m_AbilityProjectile;
-            char m_AbilityProjectile[0x10]; // 0x108            
-            float m_flMaxDistForHeal; // 0x118            
-            float m_flPhysicsRadius; // 0x11c            
+            char m_AbilityProjectile[0x10]; // 0x108
+            float m_flMaxDistForHeal; // 0x118
+            float m_flPhysicsRadius; // 0x11c
             // metadata: MPropertyStartGroup "Modifiers"
             // m_RebirthModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEmbeddedSubclass<source2sdk::server::CCitadelModifier> m_RebirthModifier;
-            char m_RebirthModifier[0x10]; // 0x120            
+            char m_RebirthModifier[0x10]; // 0x120
             // m_PunchPickupModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEmbeddedSubclass<source2sdk::server::CCitadelModifier> m_PunchPickupModifier;
-            char m_PunchPickupModifier[0x10]; // 0x130            
+            char m_PunchPickupModifier[0x10]; // 0x130
             // metadata: MPropertyStartGroup "Visuals"
             // m_IsFrozenParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_IsFrozenParticle;
-            char m_IsFrozenParticle[0xe0]; // 0x140            
+            char m_IsFrozenParticle[0xe0]; // 0x140
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadelItemPickupRejuvVData because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadelItemPickupRejuvVData) == 0x220);
     };
 };

@@ -24,20 +24,20 @@ namespace source2sdk
         class CFuncElectrifiedVolume : public source2sdk::server::CFuncBrush
         {
         public:
-            CUtlSymbolLarge m_EffectName; // 0x798            
-            CUtlSymbolLarge m_EffectInterpenetrateName; // 0x7a0            
-            CUtlSymbolLarge m_EffectZapName; // 0x7a8            
-            CUtlSymbolLarge m_iszEffectSource; // 0x7b0            
+            CUtlSymbolLarge m_EffectName; // 0x798
+            CUtlSymbolLarge m_EffectInterpenetrateName; // 0x7a0
+            CUtlSymbolLarge m_EffectZapName; // 0x7a8
+            CUtlSymbolLarge m_iszEffectSource; // 0x7b0
             uint8_t _pad07b8[0x18];
-            
+
             // Datamap fields:
             // void InputDisable; // 0x0
             // void InputEnable; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CFuncElectrifiedVolume because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CFuncElectrifiedVolume) == 0x7d0);
     };
 };

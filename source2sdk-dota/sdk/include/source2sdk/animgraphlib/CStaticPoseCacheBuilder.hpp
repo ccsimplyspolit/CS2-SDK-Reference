@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x38
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CStaticPoseCacheBuilder : public source2sdk::animgraphlib::CStaticPoseCache
@@ -29,8 +29,8 @@ namespace source2sdk
             uint8_t _pad0030[0x8];
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::animgraphlib::CStaticPoseCacheBuilder) == 0x38);
     };
 };

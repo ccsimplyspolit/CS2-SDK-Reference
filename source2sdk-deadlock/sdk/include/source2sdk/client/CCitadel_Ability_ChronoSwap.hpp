@@ -23,14 +23,14 @@ namespace source2sdk
         class CCitadel_Ability_ChronoSwap : public source2sdk::client::C_CitadelBaseAbility
         {
         public:
-            bool m_bHitTarget; // 0x11d8            
-            bool m_bAltCast; // 0x11d9            
+            bool m_bHitTarget; // 0x11d8
+            bool m_bAltCast; // 0x11d9
             uint8_t _pad11da[0x306];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_ChronoSwap because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Ability_ChronoSwap) == 0x14e0);
     };
 };

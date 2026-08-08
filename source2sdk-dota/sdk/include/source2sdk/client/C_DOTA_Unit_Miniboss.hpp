@@ -26,7 +26,7 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x19f0
+        // Size: 0x19f8
         // Has VTable
         // Construct allowed
         // MClassHasEntityLimitedDataDesc
@@ -34,23 +34,23 @@ namespace source2sdk
         class C_DOTA_Unit_Miniboss : public source2sdk::client::C_DOTA_BaseNPC_Additive
         {
         public:
-            std::int32_t m_nVisualTeam; // 0x19b0            
-            uint8_t _pad19b4[0x4]; // 0x19b4
-            source2sdk::entity2::GameTime_t m_flTransitionTimestamp; // 0x19b8            
-            std::int32_t m_nTempViewer; // 0x19bc            
+            std::int32_t m_nVisualTeam; // 0x19b8
+            uint8_t _pad19bc[0x4]; // 0x19bc
+            source2sdk::entity2::GameTime_t m_flTransitionTimestamp; // 0x19c0
+            std::int32_t m_nTempViewer; // 0x19c4
             // m_hAttackingHeroes has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::client::C_BaseEntity>> m_hAttackingHeroes;
-            char m_hAttackingHeroes[0x18]; // 0x19c0            
-            uint8_t _pad19d8[0x8]; // 0x19d8
-            source2sdk::client::ParticleIndex_t nShieldFX; // 0x19e0            
-            std::int32_t m_nPreviewViewer; // 0x19e4            
-            source2sdk::client::ParticleIndex_t m_nTPFXIndex; // 0x19e8            
-            uint8_t _pad19ec[0x4];
+            char m_hAttackingHeroes[0x18]; // 0x19c8
+            uint8_t _pad19e0[0x8]; // 0x19e0
+            source2sdk::client::ParticleIndex_t nShieldFX; // 0x19e8
+            std::int32_t m_nPreviewViewer; // 0x19ec
+            source2sdk::client::ParticleIndex_t m_nTPFXIndex; // 0x19f0
+            uint8_t _pad19f4[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Unit_Miniboss because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::C_DOTA_Unit_Miniboss) == 0x19f0);
+
+        static_assert(sizeof(source2sdk::client::C_DOTA_Unit_Miniboss) == 0x19f8);
     };
 };

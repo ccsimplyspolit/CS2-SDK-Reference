@@ -35,19 +35,19 @@ namespace source2sdk
         public:
             // m_hTeleportTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hTeleportTarget;
-            char m_hTeleportTarget[0x4]; // 0x658            
-            source2sdk::client::ParticleIndex_t m_nFXCaster; // 0x65c            
-            source2sdk::client::ParticleIndex_t m_nFXOrigin; // 0x660            
-            source2sdk::client::ParticleIndex_t m_nFXDestination; // 0x664            
-            VectorWS m_vDestination; // 0x668            
-            std::int32_t m_iMinDistance; // 0x674            
-            float m_flBaseTeleportTime; // 0x678            
-            float m_flExtraTeleportTime; // 0x67c            
+            char m_hTeleportTarget[0x4]; // 0x658
+            source2sdk::client::ParticleIndex_t m_nFXCaster; // 0x65c
+            source2sdk::client::ParticleIndex_t m_nFXOrigin; // 0x660
+            source2sdk::client::ParticleIndex_t m_nFXDestination; // 0x664
+            VectorWS m_vDestination; // 0x668
+            std::int32_t m_iMinDistance; // 0x674
+            float m_flBaseTeleportTime; // 0x678
+            float m_flExtraTeleportTime; // 0x67c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Item_TeleportScroll because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Item_TeleportScroll) == 0x680);
     };
 };

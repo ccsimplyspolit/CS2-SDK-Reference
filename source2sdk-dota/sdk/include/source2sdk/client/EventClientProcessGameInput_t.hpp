@@ -23,16 +23,16 @@ namespace source2sdk
         struct EventClientProcessGameInput_t
         {
         public:
-            source2sdk::client::EngineLoopState_t m_LoopState; // 0x0            
-            float m_flRealTime; // 0x28            
-            float m_flFrameTime; // 0x2c            
+            source2sdk::client::EngineLoopState_t m_LoopState; // 0x0
+            float m_flRealTime; // 0x28
+            float m_flFrameTime; // 0x2c
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::EventClientProcessGameInput_t, m_LoopState) == 0x0);
         static_assert(offsetof(source2sdk::client::EventClientProcessGameInput_t, m_flRealTime) == 0x28);
         static_assert(offsetof(source2sdk::client::EventClientProcessGameInput_t, m_flFrameTime) == 0x2c);
-        
+
         static_assert(sizeof(source2sdk::client::EventClientProcessGameInput_t) == 0x30);
     };
 };

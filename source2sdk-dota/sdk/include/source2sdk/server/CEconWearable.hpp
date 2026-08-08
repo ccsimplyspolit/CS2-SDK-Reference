@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x900
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MEntityAllowsPortraitWorldSpawn
         #pragma pack(push, 1)
         class CEconWearable : public source2sdk::server::CEconEntity
@@ -29,8 +29,8 @@ namespace source2sdk
             uint8_t _pad08f8[0x8];
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::server::CEconWearable) == 0x900);
     };
 };

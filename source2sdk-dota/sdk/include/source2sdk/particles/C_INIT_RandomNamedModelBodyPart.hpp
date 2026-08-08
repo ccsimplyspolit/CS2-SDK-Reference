@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x208
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_INIT_RandomNamedModelBodyPart : public source2sdk::particles::C_INIT_RandomNamedModelElement
@@ -28,8 +28,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::particles::C_INIT_RandomNamedModelBodyPart) == 0x208);
     };
 };

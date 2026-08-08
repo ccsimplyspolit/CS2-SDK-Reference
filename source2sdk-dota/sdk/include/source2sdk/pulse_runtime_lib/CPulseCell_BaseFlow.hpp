@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x48
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CPulseCell_BaseFlow : public source2sdk::pulse_runtime_lib::CPulseCell_Base
@@ -28,8 +28,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::pulse_runtime_lib::CPulseCell_BaseFlow) == 0x48);
     };
 };

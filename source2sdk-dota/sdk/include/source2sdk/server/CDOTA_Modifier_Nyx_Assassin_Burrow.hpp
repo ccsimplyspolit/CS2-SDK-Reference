@@ -17,23 +17,23 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a88
+        // Size: 0x1aa8
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Nyx_Assassin_Burrow : public source2sdk::server::CDOTA_Modifier_Invisible
         {
         public:
-            float health_regen_rate; // 0x1a68            
-            float mana_regen_rate; // 0x1a6c            
-            std::int32_t damage_reduction; // 0x1a70            
-            std::int32_t cooldown_reduction; // 0x1a74            
-            std::int32_t cast_range; // 0x1a78            
-            VectorWS m_vecInitialPos; // 0x1a7c            
+            float health_regen_rate; // 0x1a88
+            float mana_regen_rate; // 0x1a8c
+            std::int32_t damage_reduction; // 0x1a90
+            std::int32_t cooldown_reduction; // 0x1a94
+            std::int32_t cast_range; // 0x1a98
+            VectorWS m_vecInitialPos; // 0x1a9c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Nyx_Assassin_Burrow because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Nyx_Assassin_Burrow) == 0x1a88);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Nyx_Assassin_Burrow) == 0x1aa8);
     };
 };

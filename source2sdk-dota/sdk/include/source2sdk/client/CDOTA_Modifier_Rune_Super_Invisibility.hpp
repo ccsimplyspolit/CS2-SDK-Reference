@@ -17,7 +17,7 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a68
+        // Size: 0x1a88
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Rune_Super_Invisibility : public source2sdk::client::CDOTA_Modifier_PersistentInvisibility
@@ -26,8 +26,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: CDOTA_Modifier_Rune_Super_Invisibility has no schema binary (size is a guess)
     };
 };

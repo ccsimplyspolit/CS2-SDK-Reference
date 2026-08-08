@@ -19,31 +19,31 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a98
+        // Size: 0x1ab8
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_DarkWillow_ShadowRealm_Buff : public source2sdk::client::CDOTA_Buff
         {
         public:
-            std::int32_t damage; // 0x1a58            
-            float max_damage_duration; // 0x1a5c            
-            std::int32_t attack_range_bonus; // 0x1a60            
-            uint8_t _pad1a64[0x4]; // 0x1a64
+            std::int32_t damage; // 0x1a78
+            float max_damage_duration; // 0x1a7c
+            std::int32_t attack_range_bonus; // 0x1a80
+            uint8_t _pad1a84[0x4]; // 0x1a84
             // m_InFlightAttackRecords has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::client::AttackRecord_t> m_InFlightAttackRecords;
-            char m_InFlightAttackRecords[0x18]; // 0x1a68            
-            bool bAttackRange; // 0x1a80            
-            uint8_t _pad1a81[0x3]; // 0x1a81
-            source2sdk::entity2::GameTime_t m_flStartTime; // 0x1a84            
-            source2sdk::entity2::GameTime_t m_flFadeTime; // 0x1a88            
-            float m_flDamageScale; // 0x1a8c            
-            float duration; // 0x1a90            
-            float aura_radius; // 0x1a94            
+            char m_InFlightAttackRecords[0x18]; // 0x1a88
+            bool bAttackRange; // 0x1aa0
+            uint8_t _pad1aa1[0x3]; // 0x1aa1
+            source2sdk::entity2::GameTime_t m_flStartTime; // 0x1aa4
+            source2sdk::entity2::GameTime_t m_flFadeTime; // 0x1aa8
+            float m_flDamageScale; // 0x1aac
+            float duration; // 0x1ab0
+            float aura_radius; // 0x1ab4
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_DarkWillow_ShadowRealm_Buff because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_DarkWillow_ShadowRealm_Buff) == 0x1a98);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_DarkWillow_ShadowRealm_Buff) == 0x1ab8);
     };
 };

@@ -25,15 +25,15 @@ namespace source2sdk
         class CDOTA_Ability_Largo_AmphibianRhapsody_DoubleTime : public source2sdk::server::CDOTA_Ability_Largo_AmphibianRhapsody_Song
         {
         public:
-            float radius; // 0x590            
-            float movement_burst_duration; // 0x594            
-            float slow_resistance_burst_duration; // 0x598            
+            float radius; // 0x590
+            float movement_burst_duration; // 0x594
+            float slow_resistance_burst_duration; // 0x598
             uint8_t _pad059c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Largo_AmphibianRhapsody_DoubleTime because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Largo_AmphibianRhapsody_DoubleTime) == 0x5a0);
     };
 };

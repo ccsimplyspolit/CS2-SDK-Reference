@@ -23,13 +23,13 @@ namespace source2sdk
         class CCitadel_Modifier_Item_HealthNova : public source2sdk::server::CCitadelModifier
         {
         public:
-            float m_flAmountPerSecond; // 0xd0            
+            float m_flAmountPerSecond; // 0xd0
             uint8_t _pad00d4[0x84];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_Item_HealthNova because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_Item_HealthNova) == 0x158);
     };
 };

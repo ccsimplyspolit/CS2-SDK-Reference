@@ -19,31 +19,31 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x20
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CVMixCommand
         {
         public:
             // metadata: MKV3TransferName "command"
-            source2sdk::soundsystem_lowlevel::VMixGraphCommandID_t m_nCommand; // 0x0            
+            source2sdk::soundsystem_lowlevel::VMixGraphCommandID_t m_nCommand; // 0x0
             // metadata: MKV3TransferName "paramName"
-            std::uint32_t m_nParameterNameHash; // 0x4            
+            std::uint32_t m_nParameterNameHash; // 0x4
             // metadata: MKV3TransferName "outputSubmix"
-            std::int32_t m_nOutputSubmix; // 0x8            
+            std::int32_t m_nOutputSubmix; // 0x8
             // metadata: MKV3TransferName "inputSubmix0"
-            std::int32_t m_nInputSubmix0; // 0xc            
+            std::int32_t m_nInputSubmix0; // 0xc
             // metadata: MKV3TransferName "inputSubmix1"
-            std::int32_t m_nInputSubmix1; // 0x10            
+            std::int32_t m_nInputSubmix1; // 0x10
             // metadata: MKV3TransferName "processor"
-            std::int32_t m_nProcessor; // 0x14            
+            std::int32_t m_nProcessor; // 0x14
             // metadata: MKV3TransferName "inputValue0"
-            std::int32_t m_nInputValue0; // 0x18            
+            std::int32_t m_nInputValue0; // 0x18
             // metadata: MKV3TransferName "inputValue1"
-            std::int32_t m_nInputValue1; // 0x1c            
+            std::int32_t m_nInputValue1; // 0x1c
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::CVMixCommand, m_nCommand) == 0x0);
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::CVMixCommand, m_nParameterNameHash) == 0x4);
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::CVMixCommand, m_nOutputSubmix) == 0x8);
@@ -52,7 +52,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::CVMixCommand, m_nProcessor) == 0x14);
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::CVMixCommand, m_nInputValue0) == 0x18);
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::CVMixCommand, m_nInputValue1) == 0x1c);
-        
+
         static_assert(sizeof(source2sdk::soundsystem_lowlevel::CVMixCommand) == 0x20);
     };
 };

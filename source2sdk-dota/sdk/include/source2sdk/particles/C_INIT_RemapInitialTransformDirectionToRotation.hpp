@@ -22,29 +22,29 @@ namespace source2sdk
         // Size: 0x258
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_INIT_RemapInitialTransformDirectionToRotation : public source2sdk::particles::CParticleFunctionInitializer
         {
         public:
             // metadata: MPropertyFriendlyName "transform input"
-            source2sdk::particleslib::CParticleTransformInput m_TransformInput; // 0x1e0            
+            source2sdk::particleslib::CParticleTransformInput m_TransformInput; // 0x1e0
             // metadata: MPropertyFriendlyName "rotation field"
             // metadata: MPropertyAttributeChoiceName "particlefield_rotation"
-            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x248            
+            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x248
             // metadata: MPropertyFriendlyName "offset rotation"
-            float m_flOffsetRot; // 0x24c            
+            float m_flOffsetRot; // 0x24c
             // metadata: MPropertyFriendlyName "control point axis"
             // metadata: MPropertyAttributeChoiceName "vector_component"
             // metadata: MVectorIsSometimesCoordinate "m_nFieldOutput"
-            std::int32_t m_nComponent; // 0x250            
+            std::int32_t m_nComponent; // 0x250
             uint8_t _pad0254[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_INIT_RemapInitialTransformDirectionToRotation because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_INIT_RemapInitialTransformDirectionToRotation) == 0x258);
     };
 };

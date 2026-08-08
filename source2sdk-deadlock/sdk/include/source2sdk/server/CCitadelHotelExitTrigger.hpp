@@ -23,13 +23,13 @@ namespace source2sdk
         class CCitadelHotelExitTrigger : public source2sdk::server::CBaseTrigger
         {
         public:
-            bool m_bIsSuccess; // 0x8e0            
+            bool m_bIsSuccess; // 0x8e0
             uint8_t _pad08e1[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadelHotelExitTrigger because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadelHotelExitTrigger) == 0x8e8);
     };
 };

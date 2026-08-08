@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x1828
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CAbilityThumper4VData : public source2sdk::server::CitadelAbilityVData
@@ -29,12 +29,12 @@ namespace source2sdk
             // metadata: MPropertyStartGroup "Modifiers"
             // m_PullAOEModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEmbeddedSubclass<source2sdk::server::CCitadelModifier> m_PullAOEModifier;
-            char m_PullAOEModifier[0x10]; // 0x1818            
+            char m_PullAOEModifier[0x10]; // 0x1818
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CAbilityThumper4VData because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CAbilityThumper4VData) == 0x1828);
     };
 };

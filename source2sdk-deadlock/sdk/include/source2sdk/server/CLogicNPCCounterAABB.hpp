@@ -23,15 +23,15 @@ namespace source2sdk
         class CLogicNPCCounterAABB : public source2sdk::server::CLogicNPCCounter
         {
         public:
-            Vector m_vDistanceOuterMins; // 0x720            
-            Vector m_vDistanceOuterMaxs; // 0x72c            
-            Vector m_vOuterMins; // 0x738            
-            Vector m_vOuterMaxs; // 0x744            
+            Vector m_vDistanceOuterMins; // 0x720
+            Vector m_vDistanceOuterMaxs; // 0x72c
+            Vector m_vOuterMins; // 0x738
+            Vector m_vOuterMaxs; // 0x744
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CLogicNPCCounterAABB because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CLogicNPCCounterAABB) == 0x750);
     };
 };

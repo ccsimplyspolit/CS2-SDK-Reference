@@ -23,14 +23,14 @@ namespace source2sdk
         class CProjectile_Rolling_FireBall : public source2sdk::server::CCitadelProjectile
         {
         public:
-            bool m_bHitWorld; // 0x860            
+            bool m_bHitWorld; // 0x860
             uint8_t _pad0861[0x3]; // 0x861
-            Vector m_vInitialDirection; // 0x864            
+            Vector m_vInitialDirection; // 0x864
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CProjectile_Rolling_FireBall because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CProjectile_Rolling_FireBall) == 0x870);
     };
 };

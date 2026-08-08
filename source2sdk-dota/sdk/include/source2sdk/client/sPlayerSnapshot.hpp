@@ -23,19 +23,19 @@ namespace source2sdk
         class sPlayerSnapshot
         {
         public:
-            source2sdk::client::AbilityID_t m_nItemAbilityID[11]; // 0x0            
-            float m_fGameTime; // 0x2c            
-            std::uint8_t unKills; // 0x30            
-            std::uint8_t unDeaths; // 0x31            
-            std::uint8_t unAssists; // 0x32            
-            std::uint8_t unLevel; // 0x33            
-            std::uint32_t unLastHits; // 0x34            
-            std::uint32_t unDenies; // 0x38            
-            std::uint8_t unFlags; // 0x3c            
+            source2sdk::client::AbilityID_t m_nItemAbilityID[11]; // 0x0
+            float m_fGameTime; // 0x2c
+            std::uint8_t unKills; // 0x30
+            std::uint8_t unDeaths; // 0x31
+            std::uint8_t unAssists; // 0x32
+            std::uint8_t unLevel; // 0x33
+            std::uint32_t unLastHits; // 0x34
+            std::uint32_t unDenies; // 0x38
+            std::uint8_t unFlags; // 0x3c
             uint8_t _pad003d[0x3];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::sPlayerSnapshot, m_nItemAbilityID) == 0x0);
         static_assert(offsetof(source2sdk::client::sPlayerSnapshot, m_fGameTime) == 0x2c);
         static_assert(offsetof(source2sdk::client::sPlayerSnapshot, unKills) == 0x30);
@@ -45,7 +45,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::client::sPlayerSnapshot, unLastHits) == 0x34);
         static_assert(offsetof(source2sdk::client::sPlayerSnapshot, unDenies) == 0x38);
         static_assert(offsetof(source2sdk::client::sPlayerSnapshot, unFlags) == 0x3c);
-        
+
         static_assert(sizeof(source2sdk::client::sPlayerSnapshot) == 0x40);
     };
 };

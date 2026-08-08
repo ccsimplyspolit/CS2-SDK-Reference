@@ -18,20 +18,20 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x20
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class FourVectors2D
         {
         public:
-            fltx4 x; // 0x0            
-            fltx4 y; // 0x10            
+            fltx4 x; // 0x0
+            fltx4 y; // 0x10
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::physicslib::FourVectors2D, x) == 0x0);
         static_assert(offsetof(source2sdk::physicslib::FourVectors2D, y) == 0x10);
-        
+
         static_assert(sizeof(source2sdk::physicslib::FourVectors2D) == 0x20);
     };
 };

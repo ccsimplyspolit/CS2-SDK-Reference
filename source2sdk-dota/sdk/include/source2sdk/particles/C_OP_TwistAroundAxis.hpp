@@ -20,27 +20,27 @@ namespace source2sdk
         // Size: 0x200
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_TwistAroundAxis : public source2sdk::particles::CParticleFunctionForce
         {
         public:
             // metadata: MPropertyFriendlyName "amount of force"
-            float m_fForceAmount; // 0x1e8            
+            float m_fForceAmount; // 0x1e8
             // metadata: MPropertyFriendlyName "twist axis"
             // metadata: MVectorIsCoordinate
-            Vector m_TwistAxis; // 0x1ec            
+            Vector m_TwistAxis; // 0x1ec
             // metadata: MPropertyFriendlyName "object local space axis 0/1"
-            bool m_bLocalSpace; // 0x1f8            
+            bool m_bLocalSpace; // 0x1f8
             uint8_t _pad01f9[0x3]; // 0x1f9
             // metadata: MPropertyFriendlyName "control point"
-            std::int32_t m_nControlPointNumber; // 0x1fc            
+            std::int32_t m_nControlPointNumber; // 0x1fc
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_TwistAroundAxis because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_TwistAroundAxis) == 0x200);
     };
 };

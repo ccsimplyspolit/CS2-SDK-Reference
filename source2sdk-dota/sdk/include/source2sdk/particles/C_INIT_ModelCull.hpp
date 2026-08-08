@@ -20,28 +20,28 @@ namespace source2sdk
         // Size: 0x268
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_INIT_ModelCull : public source2sdk::particles::CParticleFunctionInitializer
         {
         public:
             // metadata: MPropertyFriendlyName "control point number"
-            std::int32_t m_nControlPointNumber; // 0x1e0            
+            std::int32_t m_nControlPointNumber; // 0x1e0
             // metadata: MPropertyFriendlyName "use only bounding box"
-            bool m_bBoundBox; // 0x1e4            
+            bool m_bBoundBox; // 0x1e4
             // metadata: MPropertyFriendlyName "cull outside instead of inside"
-            bool m_bCullOutside; // 0x1e5            
+            bool m_bCullOutside; // 0x1e5
             // metadata: MPropertyFriendlyName "use bones instead of hitboxes"
-            bool m_bUseBones; // 0x1e6            
+            bool m_bUseBones; // 0x1e6
             // metadata: MPropertyFriendlyName "hitbox set"
-            char m_HitboxSetName[128]; // 0x1e7            
+            char m_HitboxSetName[128]; // 0x1e7
             uint8_t _pad0267[0x1];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_INIT_ModelCull because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_INIT_ModelCull) == 0x268);
     };
 };

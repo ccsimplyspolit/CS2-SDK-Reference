@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x1670
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "bool m_bIsInCatform"
         // static metadata: MNetworkVarNames "GameTime_t m_flLastDamageTime"
         // static metadata: MNetworkVarNames "GameTime_t m_flTransformStartTime"
@@ -31,22 +31,22 @@ namespace source2sdk
         {
         public:
             // metadata: MNetworkEnable
-            bool m_bIsInCatform; // 0x11d8            
+            bool m_bIsInCatform; // 0x11d8
             uint8_t _pad11d9[0x3]; // 0x11d9
             // metadata: MNetworkEnable
-            source2sdk::entity2::GameTime_t m_flLastDamageTime; // 0x11dc            
+            source2sdk::entity2::GameTime_t m_flLastDamageTime; // 0x11dc
             // metadata: MNetworkEnable
-            source2sdk::entity2::GameTime_t m_flTransformStartTime; // 0x11e0            
+            source2sdk::entity2::GameTime_t m_flTransformStartTime; // 0x11e0
             // metadata: MNetworkEnable
-            source2sdk::entity2::GameTime_t m_flTransformEndTime; // 0x11e4            
+            source2sdk::entity2::GameTime_t m_flTransformEndTime; // 0x11e4
             // metadata: MNetworkEnable
-            float m_flStoredDamageAmp; // 0x11e8            
+            float m_flStoredDamageAmp; // 0x11e8
             uint8_t _pad11ec[0x484];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_Nano_CatForm because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Ability_Nano_CatForm) == 0x1670);
     };
 };

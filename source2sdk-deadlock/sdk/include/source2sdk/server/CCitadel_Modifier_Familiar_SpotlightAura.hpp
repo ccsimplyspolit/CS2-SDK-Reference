@@ -24,13 +24,13 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0108[0x8]; // 0x108
-            VectorWS m_vRightVectorWS; // 0x110            
+            VectorWS m_vRightVectorWS; // 0x110
             uint8_t _pad011c[0x304];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_Familiar_SpotlightAura because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_Familiar_SpotlightAura) == 0x420);
     };
 };

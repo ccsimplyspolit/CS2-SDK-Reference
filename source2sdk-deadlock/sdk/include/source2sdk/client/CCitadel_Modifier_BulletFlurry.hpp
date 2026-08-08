@@ -26,15 +26,15 @@ namespace source2sdk
         {
         public:
             uint8_t _pad00c0[0x100]; // 0xc0
-            source2sdk::client::ParticleIndex_t m_nEffectId; // 0x1c0            
-            source2sdk::entity2::GameTime_t m_flNextSequenceChange; // 0x1c4            
-            std::int32_t m_nCurrentPose; // 0x1c8            
+            source2sdk::client::ParticleIndex_t m_nEffectId; // 0x1c0
+            source2sdk::entity2::GameTime_t m_flNextSequenceChange; // 0x1c4
+            std::int32_t m_nCurrentPose; // 0x1c8
             uint8_t _pad01cc[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_BulletFlurry because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Modifier_BulletFlurry) == 0x1d0);
     };
 };

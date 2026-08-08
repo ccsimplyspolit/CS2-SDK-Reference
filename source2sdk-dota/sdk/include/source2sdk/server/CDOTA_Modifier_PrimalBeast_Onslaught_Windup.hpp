@@ -18,31 +18,31 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a90
+        // Size: 0x1ab0
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_PrimalBeast_Onslaught_Windup : public source2sdk::client::CDOTA_Buff
         {
         public:
-            bool m_bReachedMax; // 0x1a58            
-            bool m_bShouldCharge; // 0x1a59            
-            uint8_t _pad1a5a[0x2]; // 0x1a5a
-            float m_flLastOverheadTime; // 0x1a5c            
-            float m_flFacingTarget; // 0x1a60            
-            VectorWS m_vAimTarget; // 0x1a64            
-            source2sdk::client::ParticleIndex_t m_nCrosshairFX; // 0x1a70            
-            float m_flChargeDuration; // 0x1a74            
-            std::int32_t max_distance; // 0x1a78            
-            float max_charge_time; // 0x1a7c            
-            float turn_rate; // 0x1a80            
-            float base_power; // 0x1a84            
-            std::int32_t charge_speed; // 0x1a88            
-            uint8_t _pad1a8c[0x4];
+            bool m_bReachedMax; // 0x1a78
+            bool m_bShouldCharge; // 0x1a79
+            uint8_t _pad1a7a[0x2]; // 0x1a7a
+            float m_flLastOverheadTime; // 0x1a7c
+            float m_flFacingTarget; // 0x1a80
+            VectorWS m_vAimTarget; // 0x1a84
+            source2sdk::client::ParticleIndex_t m_nCrosshairFX; // 0x1a90
+            float m_flChargeDuration; // 0x1a94
+            std::int32_t max_distance; // 0x1a98
+            float max_charge_time; // 0x1a9c
+            float turn_rate; // 0x1aa0
+            float base_power; // 0x1aa4
+            std::int32_t charge_speed; // 0x1aa8
+            uint8_t _pad1aac[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_PrimalBeast_Onslaught_Windup because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_PrimalBeast_Onslaught_Windup) == 0x1a90);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_PrimalBeast_Onslaught_Windup) == 0x1ab0);
     };
 };

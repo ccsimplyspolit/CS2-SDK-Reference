@@ -25,13 +25,13 @@ namespace source2sdk
         class CDOTA_Ability_DarkSeer_Vacuum : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            VectorWS m_vPullLocation; // 0x580            
+            VectorWS m_vPullLocation; // 0x580
             uint8_t _pad058c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_DarkSeer_Vacuum because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_DarkSeer_Vacuum) == 0x590);
     };
 };

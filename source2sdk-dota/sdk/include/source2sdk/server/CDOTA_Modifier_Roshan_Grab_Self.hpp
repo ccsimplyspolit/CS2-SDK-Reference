@@ -24,7 +24,7 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a78
+        // Size: 0x1a98
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Roshan_Grab_Self : public source2sdk::client::CDOTA_Buff
@@ -32,15 +32,15 @@ namespace source2sdk
         public:
             // m_hTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CDOTA_BaseNPC> m_hTarget;
-            char m_hTarget[0x4]; // 0x1a58            
-            VectorWS m_vPulverizeCenter; // 0x1a5c            
-            VectorWS m_vCasterStartPos; // 0x1a68            
-            float interval; // 0x1a74            
+            char m_hTarget[0x4]; // 0x1a78
+            VectorWS m_vPulverizeCenter; // 0x1a7c
+            VectorWS m_vCasterStartPos; // 0x1a88
+            float interval; // 0x1a94
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Roshan_Grab_Self because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Roshan_Grab_Self) == 0x1a78);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Roshan_Grab_Self) == 0x1a98);
     };
 };

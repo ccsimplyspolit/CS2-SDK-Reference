@@ -26,24 +26,24 @@ namespace source2sdk
         public:
             // m_OnStartFromOrInSegment has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEntityOutputTemplate<CUtlString> m_OnStartFromOrInSegment;
-            char m_OnStartFromOrInSegment[0x20]; // 0x4f0            
+            char m_OnStartFromOrInSegment[0x20]; // 0x4f0
             // m_OnStoppedAtOrInSegment has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEntityOutputTemplate<CUtlString> m_OnStoppedAtOrInSegment;
-            char m_OnStoppedAtOrInSegment[0x20]; // 0x510            
+            char m_OnStoppedAtOrInSegment[0x20]; // 0x510
             // m_OnPassThrough has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEntityOutputTemplate<CUtlString> m_OnPassThrough;
-            char m_OnPassThrough[0x20]; // 0x530            
+            char m_OnPassThrough[0x20]; // 0x530
             // m_OnPassThroughForward has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEntityOutputTemplate<CUtlString> m_OnPassThroughForward;
-            char m_OnPassThroughForward[0x20]; // 0x550            
+            char m_OnPassThroughForward[0x20]; // 0x550
             // m_OnPassThroughReverse has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEntityOutputTemplate<CUtlString> m_OnPassThroughReverse;
-            char m_OnPassThroughReverse[0x20]; // 0x570            
+            char m_OnPassThroughReverse[0x20]; // 0x570
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CMoverPathNode because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CMoverPathNode) == 0x590);
     };
 };

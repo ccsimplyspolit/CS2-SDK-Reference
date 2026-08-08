@@ -28,37 +28,37 @@ namespace source2sdk
         public:
             uint8_t _pad0a88[0x8]; // 0xa88
             // metadata: MNotSaved
-            source2sdk::entity2::GameTime_t m_flStartTime; // 0xa90            
+            source2sdk::entity2::GameTime_t m_flStartTime; // 0xa90
             // metadata: MNotSaved
-            float m_flFadeInStart; // 0xa94            
+            float m_flFadeInStart; // 0xa94
             // metadata: MNotSaved
-            float m_flFadeInLength; // 0xa98            
+            float m_flFadeInLength; // 0xa98
             // metadata: MNotSaved
-            float m_flFadeOutModelStart; // 0xa9c            
+            float m_flFadeOutModelStart; // 0xa9c
             // metadata: MNotSaved
-            float m_flFadeOutModelLength; // 0xaa0            
+            float m_flFadeOutModelLength; // 0xaa0
             // metadata: MNotSaved
-            float m_flFadeOutStart; // 0xaa4            
+            float m_flFadeOutStart; // 0xaa4
             // metadata: MNotSaved
-            float m_flFadeOutLength; // 0xaa8            
+            float m_flFadeOutLength; // 0xaa8
             // metadata: MNotSaved
-            source2sdk::client::EntityDissolveType_t m_nDissolveType; // 0xaac            
+            source2sdk::client::EntityDissolveType_t m_nDissolveType; // 0xaac
             // metadata: MNotSaved
-            std::uint32_t m_nMagnitude; // 0xab0            
+            std::uint32_t m_nMagnitude; // 0xab0
             // metadata: MNotSaved
-            VectorWS m_vDissolverOrigin; // 0xab4            
+            VectorWS m_vDissolverOrigin; // 0xab4
             // metadata: MNotSaved
-            source2sdk::entity2::GameTime_t m_flNextSparkTime; // 0xac0            
+            source2sdk::entity2::GameTime_t m_flNextSparkTime; // 0xac0
             // metadata: MNotSaved
-            bool m_bCoreExplode; // 0xac4            
+            bool m_bCoreExplode; // 0xac4
             // metadata: MNotSaved
-            bool m_bLinkedToServerEnt; // 0xac5            
+            bool m_bLinkedToServerEnt; // 0xac5
             uint8_t _pad0ac6[0xa];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_EntityDissolve because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_EntityDissolve) == 0xad0);
     };
 };

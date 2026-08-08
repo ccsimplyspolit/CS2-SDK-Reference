@@ -17,21 +17,21 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a68
+        // Size: 0x1a88
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Abyssal_Underlord_Raid_Boss : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float damage_reduction; // 0x1a58            
-            float bonus_ms; // 0x1a5c            
-            float buff_duration; // 0x1a60            
-            float dark_portal_multiplier; // 0x1a64            
+            float damage_reduction; // 0x1a78
+            float bonus_ms; // 0x1a7c
+            float buff_duration; // 0x1a80
+            float dark_portal_multiplier; // 0x1a84
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Abyssal_Underlord_Raid_Boss because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Abyssal_Underlord_Raid_Boss) == 0x1a68);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Abyssal_Underlord_Raid_Boss) == 0x1a88);
     };
 };

@@ -19,19 +19,19 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x58
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CPulseCell_Step_FollowEntity : public source2sdk::pulse_runtime_lib::CPulseCell_BaseFlow
         {
         public:
-            CUtlString m_ParamBoneOrAttachName; // 0x48            
-            CUtlString m_ParamBoneOrAttachNameChild; // 0x50            
+            CUtlString m_ParamBoneOrAttachName; // 0x48
+            CUtlString m_ParamBoneOrAttachNameChild; // 0x50
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPulseCell_Step_FollowEntity because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CPulseCell_Step_FollowEntity) == 0x58);
     };
 };

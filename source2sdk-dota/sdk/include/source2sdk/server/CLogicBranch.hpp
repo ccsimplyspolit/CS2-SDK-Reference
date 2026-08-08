@@ -32,14 +32,14 @@ namespace source2sdk
         class CLogicBranch : public source2sdk::server::CLogicalEntity
         {
         public:
-            bool m_bInValue; // 0x498            
+            bool m_bInValue; // 0x498
             uint8_t _pad0499[0x7]; // 0x499
             // m_Listeners has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::server::CBaseEntity>> m_Listeners;
-            char m_Listeners[0x18]; // 0x4a0            
-            source2sdk::entity2::CEntityIOOutput m_OnTrue; // 0x4b8            
-            source2sdk::entity2::CEntityIOOutput m_OnFalse; // 0x4d0            
-            
+            char m_Listeners[0x18]; // 0x4a0
+            source2sdk::entity2::CEntityIOOutput m_OnTrue; // 0x4b8
+            source2sdk::entity2::CEntityIOOutput m_OnFalse; // 0x4d0
+
             // Datamap fields:
             // bool InputSetValue; // 0x0
             // bool InputSetValueTest; // 0x0
@@ -48,9 +48,9 @@ namespace source2sdk
             // void InputTest; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CLogicBranch because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CLogicBranch) == 0x4e8);
     };
 };

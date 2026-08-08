@@ -24,16 +24,16 @@ namespace source2sdk
         class CInfoCitadelHideout : public source2sdk::client::C_PointEntity
         {
         public:
-            source2sdk::entity2::CEntityIOOutput m_OnFastCooldownsEnabled; // 0x5f0            
-            source2sdk::entity2::CEntityIOOutput m_OnFastCooldownsDisabled; // 0x608            
-            
+            source2sdk::entity2::CEntityIOOutput m_OnFastCooldownsEnabled; // 0x5f0
+            source2sdk::entity2::CEntityIOOutput m_OnFastCooldownsDisabled; // 0x608
+
             // Datamap fields:
             // void InputToggleFastCooldowns; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CInfoCitadelHideout because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CInfoCitadelHideout) == 0x620);
     };
 };

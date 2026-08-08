@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x1d8
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Project Vector"
         // static metadata: MPropertyDescription "Project Vector A onto Vector B"
@@ -31,29 +31,29 @@ namespace source2sdk
         public:
             // metadata: MPropertyFriendlyName "Output Variable"
             // metadata: MPropertyAttributeEditor "SmartPropItemNameEditor( Variable:Vector3 )"
-            CUtlString m_OutputVariableName; // 0x50            
+            CUtlString m_OutputVariableName; // 0x50
             // metadata: MPropertyDescription "Specifies the coordinate space that vector should be returned in."
-            source2sdk::smartprops::CSmartPropAttributeCoordinateSpace m_OutputCoordinateSpace; // 0x58            
+            source2sdk::smartprops::CSmartPropAttributeCoordinateSpace m_OutputCoordinateSpace; // 0x58
             // metadata: MPropertyGroupName "+Vector A"
             // metadata: MPropertyFriendlyName "Vector A"
-            CSmartPropAttributeVector m_InputVectorA; // 0x98            
+            CSmartPropAttributeVector m_InputVectorA; // 0x98
             // metadata: MPropertyGroupName "+Vector A"
             // metadata: MPropertyDescription "Specifies the coordinate space of vector A."
-            source2sdk::smartprops::CSmartPropAttributeCoordinateSpace m_CoordinateSpaceA; // 0xd8            
+            source2sdk::smartprops::CSmartPropAttributeCoordinateSpace m_CoordinateSpaceA; // 0xd8
             // metadata: MPropertyGroupName "+Vector B"
             // metadata: MPropertyFriendlyName "Vector B"
-            CSmartPropAttributeVector m_InputVectorB; // 0x118            
+            CSmartPropAttributeVector m_InputVectorB; // 0x118
             // metadata: MPropertyGroupName "+Vector B"
             // metadata: MPropertyDescription "Specifies the coordinate space of posivectortion B."
-            source2sdk::smartprops::CSmartPropAttributeCoordinateSpace m_CoordinateSpaceB; // 0x158            
+            source2sdk::smartprops::CSmartPropAttributeCoordinateSpace m_CoordinateSpaceB; // 0x158
             // metadata: MPropertyFriendlyName "Projection to plane"
             // metadata: MPropertyDescription "Interpret Vector B as plane normal."
-            CSmartPropAttributeBool m_bPlane; // 0x198            
+            CSmartPropAttributeBool m_bPlane; // 0x198
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSmartPropOperation_ComputeProjectVector3D because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::smartprops::CSmartPropOperation_ComputeProjectVector3D) == 0x1d8);
     };
 };

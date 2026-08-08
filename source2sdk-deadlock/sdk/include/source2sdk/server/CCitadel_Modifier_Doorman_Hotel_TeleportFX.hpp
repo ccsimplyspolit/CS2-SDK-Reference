@@ -23,13 +23,13 @@ namespace source2sdk
         class CCitadel_Modifier_Doorman_Hotel_TeleportFX : public source2sdk::server::CCitadelModifier
         {
         public:
-            Vector m_vMinimapPositionOverride; // 0xd0            
+            Vector m_vMinimapPositionOverride; // 0xd0
             uint8_t _pad00dc[0x284];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_Doorman_Hotel_TeleportFX because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_Doorman_Hotel_TeleportFX) == 0x360);
     };
 };

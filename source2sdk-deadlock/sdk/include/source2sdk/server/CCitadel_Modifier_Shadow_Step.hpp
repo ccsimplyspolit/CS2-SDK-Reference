@@ -24,13 +24,13 @@ namespace source2sdk
         class CCitadel_Modifier_Shadow_Step : public source2sdk::server::CCitadel_Modifier_Invis
         {
         public:
-            source2sdk::client::ParticleIndex_t m_nRevealedEffect; // 0x468            
+            source2sdk::client::ParticleIndex_t m_nRevealedEffect; // 0x468
             uint8_t _pad046c[0x284];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_Shadow_Step because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_Shadow_Step) == 0x6f0);
     };
 };

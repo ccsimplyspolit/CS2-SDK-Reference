@@ -20,24 +20,24 @@ namespace source2sdk
         // Size: 0x1f0
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_INIT_PositionOffsetToCP : public source2sdk::particles::CParticleFunctionInitializer
         {
         public:
             // metadata: MPropertyFriendlyName "creation control point number"
-            std::int32_t m_nControlPointNumberStart; // 0x1e0            
+            std::int32_t m_nControlPointNumberStart; // 0x1e0
             // metadata: MPropertyFriendlyName "offset control point number"
-            std::int32_t m_nControlPointNumberEnd; // 0x1e4            
+            std::int32_t m_nControlPointNumberEnd; // 0x1e4
             // metadata: MPropertyFriendlyName "offset in local space 0/1"
-            bool m_bLocalCoords; // 0x1e8            
+            bool m_bLocalCoords; // 0x1e8
             uint8_t _pad01e9[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_INIT_PositionOffsetToCP because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_INIT_PositionOffsetToCP) == 0x1f0);
     };
 };

@@ -22,7 +22,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x4450
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_RenderTrails : public source2sdk::particles::CBaseTrailRenderer
@@ -31,68 +31,68 @@ namespace source2sdk
             // metadata: MPropertyStartGroup "Screenspace Fading and culling"
             // metadata: MPropertyFriendlyName "enable fading and clamping"
             // metadata: MPropertySortPriority "1000"
-            bool m_bEnableFadingAndClamping; // 0x30e8            
+            bool m_bEnableFadingAndClamping; // 0x30e8
             uint8_t _pad30e9[0x3]; // 0x30e9
             // metadata: MPropertyFriendlyName "start fade dot product of normal vs view"
             // metadata: MPropertySortPriority "1000"
-            float m_flStartFadeDot; // 0x30ec            
+            float m_flStartFadeDot; // 0x30ec
             // metadata: MPropertyFriendlyName "end fade dot product of normal vs view"
             // metadata: MPropertySortPriority "1000"
-            float m_flEndFadeDot; // 0x30f0            
+            float m_flEndFadeDot; // 0x30f0
             // metadata: MPropertyStartGroup "+Trail Length"
             // metadata: MPropertyFriendlyName "Anchor point source"
             // metadata: MPropertyAttributeChoiceName "particlefield_vector"
             // metadata: MPropertySortPriority "800"
-            source2sdk::particles::ParticleAttributeIndex_t m_nPrevPntSource; // 0x30f4            
+            source2sdk::particles::ParticleAttributeIndex_t m_nPrevPntSource; // 0x30f4
             // metadata: MPropertyFriendlyName "max length"
             // metadata: MPropertySortPriority "800"
-            float m_flMaxLength; // 0x30f8            
+            float m_flMaxLength; // 0x30f8
             // metadata: MPropertyFriendlyName "min length"
             // metadata: MPropertySortPriority "800"
-            float m_flMinLength; // 0x30fc            
+            float m_flMinLength; // 0x30fc
             // metadata: MPropertyFriendlyName "ignore delta time"
             // metadata: MPropertySortPriority "800"
-            bool m_bIgnoreDT; // 0x3100            
+            bool m_bIgnoreDT; // 0x3100
             uint8_t _pad3101[0x3]; // 0x3101
             // metadata: MPropertyFriendlyName "constrain radius to no more than this times the length"
             // metadata: MPropertySortPriority "800"
-            float m_flConstrainRadiusToLengthRatio; // 0x3104            
+            float m_flConstrainRadiusToLengthRatio; // 0x3104
             // metadata: MPropertyFriendlyName "amount to scale trail length by"
-            float m_flLengthScale; // 0x3108            
+            float m_flLengthScale; // 0x3108
             // metadata: MPropertyFriendlyName "how long before a trail grows to its full length"
-            float m_flLengthFadeInTime; // 0x310c            
+            float m_flLengthFadeInTime; // 0x310c
             // metadata: MPropertyStartGroup "Trail Head & Tail"
             // metadata: MPropertyFriendlyName "head taper scale"
             // metadata: MPropertySortPriority "800"
-            source2sdk::particleslib::CPerParticleFloatInput m_flRadiusHeadTaper; // 0x3110            
+            source2sdk::particleslib::CPerParticleFloatInput m_flRadiusHeadTaper; // 0x3110
             // metadata: MPropertyFriendlyName "head color scale"
-            source2sdk::particleslib::CParticleCollectionVecInput m_vecHeadColorScale; // 0x3280            
+            source2sdk::particleslib::CParticleCollectionVecInput m_vecHeadColorScale; // 0x3280
             // metadata: MPropertyFriendlyName "head alpha scale"
-            source2sdk::particleslib::CPerParticleFloatInput m_flHeadAlphaScale; // 0x3938            
+            source2sdk::particleslib::CPerParticleFloatInput m_flHeadAlphaScale; // 0x3938
             // metadata: MPropertyFriendlyName "tail taper scale"
-            source2sdk::particleslib::CPerParticleFloatInput m_flRadiusTaper; // 0x3aa8            
+            source2sdk::particleslib::CPerParticleFloatInput m_flRadiusTaper; // 0x3aa8
             // metadata: MPropertyFriendlyName "tail color scale"
-            source2sdk::particleslib::CParticleCollectionVecInput m_vecTailColorScale; // 0x3c18            
+            source2sdk::particleslib::CParticleCollectionVecInput m_vecTailColorScale; // 0x3c18
             // metadata: MPropertyFriendlyName "tail alpha scale"
-            source2sdk::particleslib::CPerParticleFloatInput m_flTailAlphaScale; // 0x42d0            
+            source2sdk::particleslib::CPerParticleFloatInput m_flTailAlphaScale; // 0x42d0
             // metadata: MPropertyStartGroup "Trail UV Controls"
             // metadata: MPropertyFriendlyName "texture UV horizontal Scale field"
             // metadata: MPropertyAttributeChoiceName "particlefield_scalar"
             // metadata: MPropertySortPriority "800"
-            source2sdk::particles::ParticleAttributeIndex_t m_nHorizCropField; // 0x4440            
+            source2sdk::particles::ParticleAttributeIndex_t m_nHorizCropField; // 0x4440
             // metadata: MPropertyFriendlyName "texture UV vertical Scale field"
             // metadata: MPropertyAttributeChoiceName "particlefield_scalar"
-            source2sdk::particles::ParticleAttributeIndex_t m_nVertCropField; // 0x4444            
+            source2sdk::particles::ParticleAttributeIndex_t m_nVertCropField; // 0x4444
             // metadata: MPropertyFriendlyName "Trail forward shift (fraction)"
-            float m_flForwardShift; // 0x4448            
+            float m_flForwardShift; // 0x4448
             // metadata: MPropertyFriendlyName "Flip U or V texcoords if pitch or yaw go over PI"
-            bool m_bFlipUVBasedOnPitchYaw; // 0x444c            
+            bool m_bFlipUVBasedOnPitchYaw; // 0x444c
             uint8_t _pad444d[0x3];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_RenderTrails because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_RenderTrails) == 0x4450);
     };
 };

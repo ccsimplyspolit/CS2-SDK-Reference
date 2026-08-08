@@ -24,13 +24,13 @@ namespace source2sdk
         class CCitadel_Modifier_ZombieWallGroundAura : public source2sdk::server::CCitadelModifierAura
         {
         public:
-            source2sdk::client::ParticleIndex_t m_WallWarningParticle; // 0x108            
+            source2sdk::client::ParticleIndex_t m_WallWarningParticle; // 0x108
             uint8_t _pad010c[0x19c];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_ZombieWallGroundAura because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_ZombieWallGroundAura) == 0x2a8);
     };
 };

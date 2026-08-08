@@ -19,18 +19,18 @@ namespace source2sdk
         // Size: 0x4
         // Has Trivial Constructor
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct CollisionGroupContext_t
         {
         public:
-            std::int32_t m_nCollisionGroupNumber; // 0x0            
+            std::int32_t m_nCollisionGroupNumber; // 0x0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::particles::CollisionGroupContext_t, m_nCollisionGroupNumber) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::particles::CollisionGroupContext_t) == 0x4);
     };
 };

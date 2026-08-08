@@ -24,13 +24,13 @@ namespace source2sdk
         {
         public:
             uint8_t _pad00d0[0x100]; // 0xd0
-            Vector m_vecFloatDest; // 0x1d0            
-            Vector m_vecStartingPos; // 0x1dc            
+            Vector m_vecFloatDest; // 0x1d0
+            Vector m_vecStartingPos; // 0x1dc
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CModifier_Mirage_Tornado_Lift because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CModifier_Mirage_Tornado_Lift) == 0x1e8);
     };
 };

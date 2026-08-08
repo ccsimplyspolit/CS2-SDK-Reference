@@ -21,7 +21,7 @@ namespace source2sdk
         // Size: 0xb8
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Blender"
         // static metadata: MPropertyDescription "Blends two containers."
@@ -29,15 +29,15 @@ namespace source2sdk
         class CVoiceContainerBlender : public source2sdk::soundsystem_voicecontainers::CVoiceContainerBase
         {
         public:
-            source2sdk::soundsystem_voicecontainers::CSoundContainerReference m_firstSound; // 0x70            
-            source2sdk::soundsystem_voicecontainers::CSoundContainerReference m_secondSound; // 0x90            
-            float m_flBlendFactor; // 0xb0            
+            source2sdk::soundsystem_voicecontainers::CSoundContainerReference m_firstSound; // 0x70
+            source2sdk::soundsystem_voicecontainers::CSoundContainerReference m_secondSound; // 0x90
+            float m_flBlendFactor; // 0xb0
             uint8_t _pad00b4[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CVoiceContainerBlender because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::soundsystem_voicecontainers::CVoiceContainerBlender) == 0xb8);
     };
 };

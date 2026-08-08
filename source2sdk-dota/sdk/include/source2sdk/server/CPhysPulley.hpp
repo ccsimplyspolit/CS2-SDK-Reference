@@ -24,16 +24,16 @@ namespace source2sdk
         class CPhysPulley : public source2sdk::server::CPhysConstraint
         {
         public:
-            VectorWS m_position2; // 0x4f8            
-            Vector m_offset[2]; // 0x504            
-            float m_addLength; // 0x51c            
-            float m_gearRatio; // 0x520            
+            VectorWS m_position2; // 0x4f8
+            Vector m_offset[2]; // 0x504
+            float m_addLength; // 0x51c
+            float m_gearRatio; // 0x520
             uint8_t _pad0524[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPhysPulley because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CPhysPulley) == 0x528);
     };
 };

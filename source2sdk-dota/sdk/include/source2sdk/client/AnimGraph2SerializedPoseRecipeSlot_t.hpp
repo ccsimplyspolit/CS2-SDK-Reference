@@ -24,12 +24,12 @@ namespace source2sdk
         public:
             uint8_t _pad0000[0x30]; // 0x0
             // metadata: MNotSaved
-            CUtlBinaryBlock m_topology; // 0x30            
+            CUtlBinaryBlock m_topology; // 0x30
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::AnimGraph2SerializedPoseRecipeSlot_t, m_topology) == 0x30);
-        
+
         static_assert(sizeof(source2sdk::client::AnimGraph2SerializedPoseRecipeSlot_t) == 0x40);
     };
 };

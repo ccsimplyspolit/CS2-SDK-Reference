@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xdc0
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "CHandle< CCitadel_DoorwayPortal> m_hLinkedDoorway"
         #pragma pack(push, 1)
         class CCitadel_DoorwayPortal : public source2sdk::client::CBaseAnimGraph
@@ -30,18 +30,18 @@ namespace source2sdk
             // metadata: MNotSaved
             // m_hLinkedDoorway has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::CCitadel_DoorwayPortal> m_hLinkedDoorway;
-            char m_hLinkedDoorway[0x4]; // 0xda0            
+            char m_hLinkedDoorway[0x4]; // 0xda0
             uint8_t _pad0da4[0x1c];
-            
+
             // Datamap fields:
             // CHandle< CBaseEntity > other_door; // 0x7fffffff
             // CHandle< CBaseEntity > portal_model; // 0x7fffffff
             // CUtlSymbolLarge looping_sound; // 0x7fffffff
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_DoorwayPortal because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_DoorwayPortal) == 0xdc0);
     };
 };

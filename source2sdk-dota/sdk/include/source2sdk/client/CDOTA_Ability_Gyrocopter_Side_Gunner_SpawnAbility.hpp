@@ -28,8 +28,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: CDOTA_Ability_Gyrocopter_Side_Gunner_SpawnAbility has no schema binary (size is a guess)
     };
 };

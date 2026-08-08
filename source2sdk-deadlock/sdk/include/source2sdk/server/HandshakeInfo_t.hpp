@@ -26,16 +26,16 @@ namespace source2sdk
         struct HandshakeInfo_t
         {
         public:
-            CGlobalSymbol m_sHandshakeName; // 0x0            
-            std::uint64_t m_nActiveEventUniqueID; // 0x8            
-            source2sdk::entity2::GameTick_t m_nLastHandshakeUpdateTick; // 0x10            
-            source2sdk::server::HandshakeState_t m_nHandshakeState; // 0x14            
-            source2sdk::animgraphlib::HandshakeTagState_t m_nAG2EmulatedState; // 0x15            
-            source2sdk::server::TaskHandshakeScope_t m_nHandshakeScope; // 0x16            
-            bool m_bForceHandshakeRestartOnScriptedSequenceCompletion; // 0x17            
+            CGlobalSymbol m_sHandshakeName; // 0x0
+            std::uint64_t m_nActiveEventUniqueID; // 0x8
+            source2sdk::entity2::GameTick_t m_nLastHandshakeUpdateTick; // 0x10
+            source2sdk::server::HandshakeState_t m_nHandshakeState; // 0x14
+            source2sdk::animgraphlib::HandshakeTagState_t m_nAG2EmulatedState; // 0x15
+            source2sdk::server::TaskHandshakeScope_t m_nHandshakeScope; // 0x16
+            bool m_bForceHandshakeRestartOnScriptedSequenceCompletion; // 0x17
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::HandshakeInfo_t, m_sHandshakeName) == 0x0);
         static_assert(offsetof(source2sdk::server::HandshakeInfo_t, m_nActiveEventUniqueID) == 0x8);
         static_assert(offsetof(source2sdk::server::HandshakeInfo_t, m_nLastHandshakeUpdateTick) == 0x10);
@@ -43,7 +43,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::server::HandshakeInfo_t, m_nAG2EmulatedState) == 0x15);
         static_assert(offsetof(source2sdk::server::HandshakeInfo_t, m_nHandshakeScope) == 0x16);
         static_assert(offsetof(source2sdk::server::HandshakeInfo_t, m_bForceHandshakeRestartOnScriptedSequenceCompletion) == 0x17);
-        
+
         static_assert(sizeof(source2sdk::server::HandshakeInfo_t) == 0x18);
     };
 };

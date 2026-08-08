@@ -19,7 +19,7 @@ namespace source2sdk
         // Alignment: 0x8
         // Standard-layout class: true
         // Size: 0x10
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CStateActionUpdater
@@ -27,15 +27,15 @@ namespace source2sdk
         public:
             // m_pAction has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CSmartPtr<source2sdk::animgraphlib::CAnimActionUpdater> m_pAction;
-            char m_pAction[0x8]; // 0x0            
-            source2sdk::animgraphlib::StateActionBehavior m_eBehavior; // 0x8            
+            char m_pAction[0x8]; // 0x0
+            source2sdk::animgraphlib::StateActionBehavior m_eBehavior; // 0x8
             uint8_t _pad000c[0x4];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::animgraphlib::CStateActionUpdater, m_pAction) == 0x0);
         static_assert(offsetof(source2sdk::animgraphlib::CStateActionUpdater, m_eBehavior) == 0x8);
-        
+
         static_assert(sizeof(source2sdk::animgraphlib::CStateActionUpdater) == 0x10);
     };
 };

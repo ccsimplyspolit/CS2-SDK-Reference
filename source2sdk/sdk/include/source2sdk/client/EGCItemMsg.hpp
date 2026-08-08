@@ -13,7 +13,7 @@ namespace source2sdk
 {
     namespace client
     {
-        // Enumerator count: 147
+        // Enumerator count: 133
         // Alignment: 4
         // Size: 0x4
         enum class EGCItemMsg : std::uint32_t
@@ -103,20 +103,6 @@ namespace source2sdk
             k_EMsgGCCasketItemAdd = 0x444,
             k_EMsgGCCasketItemExtract = 0x445,
             k_EMsgGCCasketItemLoadContents = 0x446,
-            k_EMsgGCTradingBase = 0x5dc,
-            k_EMsgGCTrading_InitiateTradeRequest = 0x5dd,
-            k_EMsgGCTrading_InitiateTradeResponse = 0x5de,
-            k_EMsgGCTrading_StartSession = 0x5df,
-            k_EMsgGCTrading_SetItem = 0x5e0,
-            k_EMsgGCTrading_RemoveItem = 0x5e1,
-            k_EMsgGCTrading_UpdateTradeInfo = 0x5e2,
-            k_EMsgGCTrading_SetReadiness = 0x5e3,
-            k_EMsgGCTrading_ReadinessResponse = 0x5e4,
-            k_EMsgGCTrading_SessionClosed = 0x5e5,
-            k_EMsgGCTrading_CancelSession = 0x5e6,
-            k_EMsgGCTrading_TradeChatMsg = 0x5e7,
-            k_EMsgGCTrading_ConfirmOffer = 0x5e8,
-            k_EMsgGCTrading_TradeTypingChatMsg = 0x5e9,
             k_EMsgGCServerBrowser_FavoriteServer = 0x641,
             k_EMsgGCServerBrowser_BlacklistServer = 0x642,
             k_EMsgGCServerRentalsBase = 0x6a4,

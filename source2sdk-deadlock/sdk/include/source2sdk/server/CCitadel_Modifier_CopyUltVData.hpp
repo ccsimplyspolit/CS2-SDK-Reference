@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x750
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CCitadel_Modifier_CopyUltVData : public source2sdk::server::CCitadelModifierVData
@@ -27,8 +27,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_CopyUltVData) == 0x750);
     };
 };

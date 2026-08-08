@@ -27,8 +27,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: CModifier_Citadel_Bull_Leap_LandingBonuses has no schema binary (size is a guess)
     };
 };

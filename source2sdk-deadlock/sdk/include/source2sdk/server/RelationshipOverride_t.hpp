@@ -33,13 +33,13 @@ namespace source2sdk
         public:
             // entity has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> entity;
-            char entity[0x4]; // 0x8            
-            source2sdk::client::Class_T classType; // 0xc            
+            char entity[0x4]; // 0x8
+            source2sdk::client::Class_T classType; // 0xc
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in RelationshipOverride_t because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::RelationshipOverride_t) == 0x10);
     };
 };

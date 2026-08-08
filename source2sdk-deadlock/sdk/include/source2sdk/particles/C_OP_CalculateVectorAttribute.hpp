@@ -21,43 +21,43 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x238
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_CalculateVectorAttribute : public source2sdk::particles::CParticleFunctionOperator
         {
         public:
             // metadata: MPropertyFriendlyName "start value"
-            Vector m_vStartValue; // 0x1d8            
+            Vector m_vStartValue; // 0x1d8
             // metadata: MPropertyFriendlyName "input field 1"
             // metadata: MPropertyAttributeChoiceName "particlefield_vector"
-            source2sdk::particles::ParticleAttributeIndex_t m_nFieldInput1; // 0x1e4            
+            source2sdk::particles::ParticleAttributeIndex_t m_nFieldInput1; // 0x1e4
             // metadata: MPropertyFriendlyName "input scale 1"
-            float m_flInputScale1; // 0x1e8            
+            float m_flInputScale1; // 0x1e8
             // metadata: MPropertyFriendlyName "input field 2"
             // metadata: MPropertyAttributeChoiceName "particlefield_vector"
-            source2sdk::particles::ParticleAttributeIndex_t m_nFieldInput2; // 0x1ec            
+            source2sdk::particles::ParticleAttributeIndex_t m_nFieldInput2; // 0x1ec
             // metadata: MPropertyFriendlyName "input scale 2"
-            float m_flInputScale2; // 0x1f0            
+            float m_flInputScale2; // 0x1f0
             // metadata: MPropertyFriendlyName "control point input 1"
-            source2sdk::particles::ControlPointReference_t m_nControlPointInput1; // 0x1f4            
+            source2sdk::particles::ControlPointReference_t m_nControlPointInput1; // 0x1f4
             // metadata: MPropertyFriendlyName "control point scale 1"
-            float m_flControlPointScale1; // 0x208            
+            float m_flControlPointScale1; // 0x208
             // metadata: MPropertyFriendlyName "control point input 2"
-            source2sdk::particles::ControlPointReference_t m_nControlPointInput2; // 0x20c            
+            source2sdk::particles::ControlPointReference_t m_nControlPointInput2; // 0x20c
             // metadata: MPropertyFriendlyName "control point scale 2"
-            float m_flControlPointScale2; // 0x220            
+            float m_flControlPointScale2; // 0x220
             // metadata: MPropertyFriendlyName "output field"
             // metadata: MPropertyAttributeChoiceName "particlefield_vector"
-            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x224            
+            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x224
             // metadata: MPropertyFriendlyName "final per component scale"
-            Vector m_vFinalOutputScale; // 0x228            
+            Vector m_vFinalOutputScale; // 0x228
             uint8_t _pad0234[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_CalculateVectorAttribute because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_CalculateVectorAttribute) == 0x238);
     };
 };

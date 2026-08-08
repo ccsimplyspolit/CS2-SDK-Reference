@@ -21,7 +21,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x1bf8
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "int m_iLane"
         // static metadata: MNetworkVarNames "Vector m_vecElectricBeamTargetEnd"
         // static metadata: MNetworkVarNames "ETier3State_t m_eAliveState"
@@ -33,23 +33,23 @@ namespace source2sdk
         public:
             // metadata: MNetworkEnable
             // metadata: MNotSaved
-            std::int32_t m_iLane; // 0x1bd0            
+            std::int32_t m_iLane; // 0x1bd0
             // metadata: MNetworkEnable
-            Vector m_vecElectricBeamTargetEnd; // 0x1bd4            
-            // metadata: MNetworkEnable
-            // metadata: MNotSaved
-            source2sdk::client::ETier3State_t m_eAliveState; // 0x1be0            
+            Vector m_vecElectricBeamTargetEnd; // 0x1bd4
             // metadata: MNetworkEnable
             // metadata: MNotSaved
-            source2sdk::client::ETier3Phase_t m_ePhase; // 0x1be4            
+            source2sdk::client::ETier3State_t m_eAliveState; // 0x1be0
             // metadata: MNetworkEnable
-            Vector m_vShrineAttackTargetPos; // 0x1be8            
+            // metadata: MNotSaved
+            source2sdk::client::ETier3Phase_t m_ePhase; // 0x1be4
+            // metadata: MNetworkEnable
+            Vector m_vShrineAttackTargetPos; // 0x1be8
             uint8_t _pad1bf4[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_NPC_Boss_Tier3 because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_NPC_Boss_Tier3) == 0x1bf8);
     };
 };

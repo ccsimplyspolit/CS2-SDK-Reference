@@ -24,14 +24,14 @@ namespace source2sdk
         class CPlayerVisibility : public source2sdk::server::CBaseEntity
         {
         public:
-            float m_flVisibilityStrength; // 0x498            
-            float m_flFogDistanceMultiplier; // 0x49c            
-            float m_flFogMaxDensityMultiplier; // 0x4a0            
-            float m_flFadeTime; // 0x4a4            
-            bool m_bStartDisabled; // 0x4a8            
-            bool m_bIsEnabled; // 0x4a9            
+            float m_flVisibilityStrength; // 0x498
+            float m_flFogDistanceMultiplier; // 0x49c
+            float m_flFogMaxDensityMultiplier; // 0x4a0
+            float m_flFadeTime; // 0x4a4
+            bool m_bStartDisabled; // 0x4a8
+            bool m_bIsEnabled; // 0x4a9
             uint8_t _pad04aa[0x6];
-            
+
             // Datamap fields:
             // bool InputEnable; // 0x0
             // bool InputDisable; // 0x0
@@ -40,9 +40,9 @@ namespace source2sdk
             // float InputSetPlayerFogMaxDensityMultiplier; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPlayerVisibility because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CPlayerVisibility) == 0x4b0);
     };
 };

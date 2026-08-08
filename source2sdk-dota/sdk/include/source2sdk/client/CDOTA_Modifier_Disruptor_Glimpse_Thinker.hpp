@@ -24,23 +24,23 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a80
+        // Size: 0x1aa0
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Disruptor_Glimpse_Thinker : public source2sdk::client::CDOTA_Buff
         {
         public:
-            VectorWS m_vStartLoc; // 0x1a58            
+            VectorWS m_vStartLoc; // 0x1a78
             // m_hEntity has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::C_BaseEntity> m_hEntity;
-            char m_hEntity[0x4]; // 0x1a64            
-            float m_flDistance; // 0x1a68            
-            uint8_t _pad1a6c[0x14];
+            char m_hEntity[0x4]; // 0x1a84
+            float m_flDistance; // 0x1a88
+            uint8_t _pad1a8c[0x14];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Disruptor_Glimpse_Thinker because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Disruptor_Glimpse_Thinker) == 0x1a80);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Disruptor_Glimpse_Thinker) == 0x1aa0);
     };
 };

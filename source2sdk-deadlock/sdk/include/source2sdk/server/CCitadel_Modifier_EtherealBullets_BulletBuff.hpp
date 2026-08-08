@@ -24,14 +24,14 @@ namespace source2sdk
         class CCitadel_Modifier_EtherealBullets_BulletBuff : public source2sdk::server::CCitadelModifier
         {
         public:
-            std::int32_t m_iHitCount; // 0xd0            
-            source2sdk::client::ShotID_t m_shotProced; // 0xd4            
+            std::int32_t m_iHitCount; // 0xd0
+            source2sdk::client::ShotID_t m_shotProced; // 0xd4
             uint8_t _pad00d8[0x80];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_EtherealBullets_BulletBuff because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_EtherealBullets_BulletBuff) == 0x158);
     };
 };

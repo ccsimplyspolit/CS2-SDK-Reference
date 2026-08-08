@@ -30,22 +30,22 @@ namespace source2sdk
         struct SummaryTakeDamageInfo_t
         {
         public:
-            std::int32_t nSummarisedCount; // 0x0            
+            std::int32_t nSummarisedCount; // 0x0
             uint8_t _pad0004[0x4]; // 0x4
-            source2sdk::client::CTakeDamageInfo info; // 0x8            
-            source2sdk::client::CTakeDamageResult result; // 0x108            
+            source2sdk::client::CTakeDamageInfo info; // 0x8
+            source2sdk::client::CTakeDamageResult result; // 0x108
             // hTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::C_BaseEntity> hTarget;
-            char hTarget[0x4]; // 0x138            
+            char hTarget[0x4]; // 0x138
             uint8_t _pad013c[0x4];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::SummaryTakeDamageInfo_t, nSummarisedCount) == 0x0);
         static_assert(offsetof(source2sdk::client::SummaryTakeDamageInfo_t, info) == 0x8);
         static_assert(offsetof(source2sdk::client::SummaryTakeDamageInfo_t, result) == 0x108);
         static_assert(offsetof(source2sdk::client::SummaryTakeDamageInfo_t, hTarget) == 0x138);
-        
+
         static_assert(sizeof(source2sdk::client::SummaryTakeDamageInfo_t) == 0x140);
     };
 };

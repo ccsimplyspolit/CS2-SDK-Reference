@@ -30,15 +30,15 @@ namespace source2sdk
         class sRevenantDef
         {
         public:
-            source2sdk::client::C_DOTA_BaseNPC* pRevenant; // 0x0            
-            source2sdk::client::ParticleIndex_t nRevenantFXIndex; // 0x8            
+            source2sdk::client::C_DOTA_BaseNPC* pRevenant; // 0x0
+            source2sdk::client::ParticleIndex_t nRevenantFXIndex; // 0x8
             uint8_t _pad000c[0x4];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::sRevenantDef, pRevenant) == 0x0);
         static_assert(offsetof(source2sdk::client::sRevenantDef, nRevenantFXIndex) == 0x8);
-        
+
         static_assert(sizeof(source2sdk::client::sRevenantDef) == 0x10);
     };
 };

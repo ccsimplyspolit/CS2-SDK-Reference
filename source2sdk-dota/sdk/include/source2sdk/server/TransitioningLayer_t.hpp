@@ -26,16 +26,16 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0000[0x8]; // 0x0
-            source2sdk::server::CNetworkedSequenceOperation m_op; // 0x8            
-            source2sdk::entity2::GameTime_t m_flStartAnimTime; // 0x30            
-            float m_flStartWeight; // 0x34            
-            source2sdk::entity2::GameTime_t m_flAnimTime; // 0x38            
-            std::int32_t m_nOrder; // 0x3c            
-            float m_flPlaybackRate; // 0x40            
-            float m_flFadeOutDuration; // 0x44            
+            source2sdk::server::CNetworkedSequenceOperation m_op; // 0x8
+            source2sdk::entity2::GameTime_t m_flStartAnimTime; // 0x30
+            float m_flStartWeight; // 0x34
+            source2sdk::entity2::GameTime_t m_flAnimTime; // 0x38
+            std::int32_t m_nOrder; // 0x3c
+            float m_flPlaybackRate; // 0x40
+            float m_flFadeOutDuration; // 0x44
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::TransitioningLayer_t, m_op) == 0x8);
         static_assert(offsetof(source2sdk::server::TransitioningLayer_t, m_flStartAnimTime) == 0x30);
         static_assert(offsetof(source2sdk::server::TransitioningLayer_t, m_flStartWeight) == 0x34);
@@ -43,7 +43,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::server::TransitioningLayer_t, m_nOrder) == 0x3c);
         static_assert(offsetof(source2sdk::server::TransitioningLayer_t, m_flPlaybackRate) == 0x40);
         static_assert(offsetof(source2sdk::server::TransitioningLayer_t, m_flFadeOutDuration) == 0x44);
-        
+
         static_assert(sizeof(source2sdk::server::TransitioningLayer_t) == 0x48);
     };
 };

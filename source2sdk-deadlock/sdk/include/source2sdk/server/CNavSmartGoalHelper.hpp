@@ -23,9 +23,9 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0000[0x100]; // 0x0
-            bool m_bExecuteQueuedGoal; // 0x100            
+            bool m_bExecuteQueuedGoal; // 0x100
             uint8_t _pad0101[0x7];
-            
+
             // Datamap fields:
             // void m_pNPC; // 0x8
             // void m_pGoalAutoDoor; // 0x10
@@ -33,9 +33,9 @@ namespace source2sdk
             // void m_pQueuedSmartGoal; // 0x30
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::CNavSmartGoalHelper, m_bExecuteQueuedGoal) == 0x100);
-        
+
         static_assert(sizeof(source2sdk::server::CNavSmartGoalHelper) == 0x108);
     };
 };

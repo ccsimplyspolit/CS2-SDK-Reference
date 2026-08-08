@@ -18,22 +18,22 @@ namespace source2sdk
         // Alignment: 0x8
         // Standard-layout class: true
         // Size: 0x10
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct ModelAnimGraph2Ref_t
         {
         public:
-            CUtlString m_sIdentifier; // 0x0            
+            CUtlString m_sIdentifier; // 0x0
             // m_hGraph has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CStrongHandle<source2sdk::resourcesystem::InfoForResourceTypeCNmGraphDefinition> m_hGraph;
-            char m_hGraph[0x8]; // 0x8            
+            char m_hGraph[0x8]; // 0x8
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::modellib::ModelAnimGraph2Ref_t, m_sIdentifier) == 0x0);
         static_assert(offsetof(source2sdk::modellib::ModelAnimGraph2Ref_t, m_hGraph) == 0x8);
-        
+
         static_assert(sizeof(source2sdk::modellib::ModelAnimGraph2Ref_t) == 0x10);
     };
 };

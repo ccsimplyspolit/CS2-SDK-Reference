@@ -31,20 +31,20 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0000[0x60]; // 0x0
-            source2sdk::server::CountdownTimer m_abilityTimer; // 0x60            
-            source2sdk::server::CountdownTimer m_backSwingTimer; // 0x78            
-            bool m_bBackswinging; // 0x90            
+            source2sdk::server::CountdownTimer m_abilityTimer; // 0x60
+            source2sdk::server::CountdownTimer m_backSwingTimer; // 0x78
+            bool m_bBackswinging; // 0x90
             uint8_t _pad0091[0x3]; // 0x91
             // m_hAbility has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hAbility;
-            char m_hAbility[0x4]; // 0x94            
-            bool m_bActionLocked; // 0x98            
-            bool m_bTargetTeleported; // 0x99            
-            bool m_bOriginalTargetTeleported; // 0x9a            
+            char m_hAbility[0x4]; // 0x94
+            bool m_bActionLocked; // 0x98
+            bool m_bTargetTeleported; // 0x99
+            bool m_bOriginalTargetTeleported; // 0x9a
             uint8_t _pad009b[0x5];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::CDOTABehaviorAbilityPhase, m_abilityTimer) == 0x60);
         static_assert(offsetof(source2sdk::server::CDOTABehaviorAbilityPhase, m_backSwingTimer) == 0x78);
         static_assert(offsetof(source2sdk::server::CDOTABehaviorAbilityPhase, m_bBackswinging) == 0x90);
@@ -52,7 +52,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::server::CDOTABehaviorAbilityPhase, m_bActionLocked) == 0x98);
         static_assert(offsetof(source2sdk::server::CDOTABehaviorAbilityPhase, m_bTargetTeleported) == 0x99);
         static_assert(offsetof(source2sdk::server::CDOTABehaviorAbilityPhase, m_bOriginalTargetTeleported) == 0x9a);
-        
+
         static_assert(sizeof(source2sdk::server::CDOTABehaviorAbilityPhase) == 0xa0);
     };
 };

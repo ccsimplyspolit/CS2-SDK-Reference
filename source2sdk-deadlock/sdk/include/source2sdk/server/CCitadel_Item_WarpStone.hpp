@@ -24,13 +24,13 @@ namespace source2sdk
         class CCitadel_Item_WarpStone : public source2sdk::server::CCitadel_Item
         {
         public:
-            source2sdk::client::ParticleIndex_t m_nCastDelayParticleIndex; // 0xf78            
+            source2sdk::client::ParticleIndex_t m_nCastDelayParticleIndex; // 0xf78
             uint8_t _pad0f7c[0x84];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Item_WarpStone because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Item_WarpStone) == 0x1000);
     };
 };

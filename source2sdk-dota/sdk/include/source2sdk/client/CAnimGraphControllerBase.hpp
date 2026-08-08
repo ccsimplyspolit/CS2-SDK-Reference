@@ -21,20 +21,20 @@ namespace source2sdk
         // Has VTable
         // Is Abstract
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CAnimGraphControllerBase
         {
         public:
             uint8_t _pad0000[0x4c]; // 0x0
-            source2sdk::client::ExternalAnimGraphHandle_t m_hExternalGraph; // 0x4c            
+            source2sdk::client::ExternalAnimGraphHandle_t m_hExternalGraph; // 0x4c
             uint8_t _pad0050[0x70];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::CAnimGraphControllerBase, m_hExternalGraph) == 0x4c);
-        
+
         static_assert(sizeof(source2sdk::client::CAnimGraphControllerBase) == 0xc0);
     };
 };

@@ -17,25 +17,25 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a78
+        // Size: 0x1a98
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Item_TranquilBoots2 : public source2sdk::server::CDOTA_Buff_Item
         {
         public:
-            std::int32_t bonus_movement_speed; // 0x1a58            
-            std::int32_t broken_movement_speed; // 0x1a5c            
-            std::int32_t bonus_armor; // 0x1a60            
-            std::int32_t bonus_health_regen; // 0x1a64            
-            std::int32_t break_threshold; // 0x1a68            
-            std::int32_t break_time; // 0x1a6c            
-            std::int32_t break_count; // 0x1a70            
-            uint8_t _pad1a74[0x4];
+            std::int32_t bonus_movement_speed; // 0x1a78
+            std::int32_t broken_movement_speed; // 0x1a7c
+            std::int32_t bonus_armor; // 0x1a80
+            std::int32_t bonus_health_regen; // 0x1a84
+            std::int32_t break_threshold; // 0x1a88
+            std::int32_t break_time; // 0x1a8c
+            std::int32_t break_count; // 0x1a90
+            uint8_t _pad1a94[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Item_TranquilBoots2 because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Item_TranquilBoots2) == 0x1a78);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Item_TranquilBoots2) == 0x1a98);
     };
 };

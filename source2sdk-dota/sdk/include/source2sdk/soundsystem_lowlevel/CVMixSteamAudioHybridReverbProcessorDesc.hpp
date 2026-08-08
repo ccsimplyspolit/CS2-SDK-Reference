@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x20
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CVMixSteamAudioHybridReverbProcessorDesc : public source2sdk::soundsystem_lowlevel::CVMixBaseProcessorDesc
@@ -28,8 +28,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::soundsystem_lowlevel::CVMixSteamAudioHybridReverbProcessorDesc) == 0x20);
     };
 };

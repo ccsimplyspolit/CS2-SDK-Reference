@@ -19,20 +19,20 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x58
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CModelConfigElement_SetBodygroup : public source2sdk::modellib::CModelConfigElement
         {
         public:
-            CGlobalSymbol m_GroupName; // 0x48            
-            std::int32_t m_nChoice; // 0x50            
+            CGlobalSymbol m_GroupName; // 0x48
+            std::int32_t m_nChoice; // 0x50
             uint8_t _pad0054[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CModelConfigElement_SetBodygroup because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::modellib::CModelConfigElement_SetBodygroup) == 0x58);
     };
 };

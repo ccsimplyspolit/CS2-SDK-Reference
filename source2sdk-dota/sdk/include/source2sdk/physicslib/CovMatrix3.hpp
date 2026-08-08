@@ -20,24 +20,24 @@ namespace source2sdk
         // Has Trivial Constructor
         // Has Trivial Destructor
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CovMatrix3
         {
         public:
-            Vector m_vDiag; // 0x0            
-            float m_flXY; // 0xc            
-            float m_flXZ; // 0x10            
-            float m_flYZ; // 0x14            
+            Vector m_vDiag; // 0x0
+            float m_flXY; // 0xc
+            float m_flXZ; // 0x10
+            float m_flYZ; // 0x14
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::physicslib::CovMatrix3, m_vDiag) == 0x0);
         static_assert(offsetof(source2sdk::physicslib::CovMatrix3, m_flXY) == 0xc);
         static_assert(offsetof(source2sdk::physicslib::CovMatrix3, m_flXZ) == 0x10);
         static_assert(offsetof(source2sdk::physicslib::CovMatrix3, m_flYZ) == 0x14);
-        
+
         static_assert(sizeof(source2sdk::physicslib::CovMatrix3) == 0x18);
     };
 };

@@ -24,13 +24,13 @@ namespace source2sdk
         {
         public:
             uint8_t _pad00c0[0x100]; // 0xc0
-            float m_flCurrentThinkRate; // 0x1c0            
+            float m_flCurrentThinkRate; // 0x1c0
             uint8_t _pad01c4[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_TrophyCollectorPassiveGold because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Modifier_TrophyCollectorPassiveGold) == 0x1c8);
     };
 };

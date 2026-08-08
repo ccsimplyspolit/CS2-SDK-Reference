@@ -26,24 +26,24 @@ namespace source2sdk
         public:
             uint8_t _pad0008[0x8]; // 0x8
             // metadata: MNotSaved
-            source2sdk::entity2::CNetworkVarChainer __m_pChainEntity; // 0x10            
+            source2sdk::entity2::CNetworkVarChainer __m_pChainEntity; // 0x10
             uint8_t _pad0038[0x18]; // 0x38
             // metadata: MNotSaved
-            bool m_bIsRenderingWithViewModels; // 0x50            
+            bool m_bIsRenderingWithViewModels; // 0x50
             uint8_t _pad0051[0x3]; // 0x51
             // metadata: MNotSaved
-            std::uint32_t m_nSplitscreenFlags; // 0x54            
+            std::uint32_t m_nSplitscreenFlags; // 0x54
             // metadata: MNotSaved
-            bool m_bEnableRendering; // 0x58            
+            bool m_bEnableRendering; // 0x58
             uint8_t _pad0059[0x4f]; // 0x59
             // metadata: MNotSaved
-            bool m_bInterpolationReadyToDraw; // 0xa8            
+            bool m_bInterpolationReadyToDraw; // 0xa8
             uint8_t _pad00a9[0x27];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CRenderComponent because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CRenderComponent) == 0xd0);
     };
 };

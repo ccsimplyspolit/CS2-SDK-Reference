@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x90
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Transform: Rotate"
         // static metadata: MPropertyDescription "Apply a rotation to the current transform."
@@ -29,12 +29,12 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyDescription "Local space rotation (in degrees) to apply to the current transform"
-            CSmartPropAttributeAngles m_vRotation; // 0x50            
+            CSmartPropAttributeAngles m_vRotation; // 0x50
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSmartPropOperation_Rotate because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::smartprops::CSmartPropOperation_Rotate) == 0x90);
     };
 };

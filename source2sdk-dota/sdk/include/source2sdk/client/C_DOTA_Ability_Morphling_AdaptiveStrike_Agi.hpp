@@ -25,13 +25,13 @@ namespace source2sdk
         class C_DOTA_Ability_Morphling_AdaptiveStrike_Agi : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            float stun_min; // 0x6a8            
-            float stun_max; // 0x6ac            
+            float stun_min; // 0x6a8
+            float stun_max; // 0x6ac
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_Morphling_AdaptiveStrike_Agi because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_Morphling_AdaptiveStrike_Agi) == 0x6b0);
     };
 };

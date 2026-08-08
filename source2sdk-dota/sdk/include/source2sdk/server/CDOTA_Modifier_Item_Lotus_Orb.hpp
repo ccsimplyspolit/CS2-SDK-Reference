@@ -17,23 +17,23 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a70
+        // Size: 0x1a90
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Item_Lotus_Orb : public source2sdk::server::CDOTA_Buff_Item
         {
         public:
-            float bonus_health_regen; // 0x1a58            
-            float bonus_mana_regen; // 0x1a5c            
-            std::int32_t bonus_armor; // 0x1a60            
-            std::int32_t bonus_mana; // 0x1a64            
-            float block_cooldown; // 0x1a68            
-            uint8_t _pad1a6c[0x4];
+            float bonus_health_regen; // 0x1a78
+            float bonus_mana_regen; // 0x1a7c
+            std::int32_t bonus_armor; // 0x1a80
+            std::int32_t bonus_mana; // 0x1a84
+            float block_cooldown; // 0x1a88
+            uint8_t _pad1a8c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Item_Lotus_Orb because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Item_Lotus_Orb) == 0x1a70);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Item_Lotus_Orb) == 0x1a90);
     };
 };

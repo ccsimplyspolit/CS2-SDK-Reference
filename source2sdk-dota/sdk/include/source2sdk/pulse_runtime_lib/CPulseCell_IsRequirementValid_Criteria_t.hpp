@@ -22,12 +22,12 @@ namespace source2sdk
         struct CPulseCell_IsRequirementValid_Criteria_t
         {
         public:
-            bool m_bIsValid; // 0x0            
+            bool m_bIsValid; // 0x0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::pulse_runtime_lib::CPulseCell_IsRequirementValid_Criteria_t, m_bIsValid) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::pulse_runtime_lib::CPulseCell_IsRequirementValid_Criteria_t) == 0x1);
     };
 };

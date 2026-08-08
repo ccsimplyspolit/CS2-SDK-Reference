@@ -25,15 +25,15 @@ namespace source2sdk
         class C_DOTA_Ability_Bane_Nightmare : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            VectorWS m_vEndpoint; // 0x6a8            
-            Vector m_vWalkDir; // 0x6b4            
-            bool m_bIsAltCastState; // 0x6c0            
+            VectorWS m_vEndpoint; // 0x6a8
+            Vector m_vWalkDir; // 0x6b4
+            bool m_bIsAltCastState; // 0x6c0
             uint8_t _pad06c1[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_Bane_Nightmare because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_Bane_Nightmare) == 0x6c8);
     };
 };

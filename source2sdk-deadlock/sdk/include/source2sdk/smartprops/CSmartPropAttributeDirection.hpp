@@ -18,7 +18,7 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x40
         // Has VTable
-        // 
+        //
         // static metadata: MPropertyCustomEditor "SmartPropAttributeEditor(enum:SmartPropDirection_t)"
         #pragma pack(push, 1)
         class CSmartPropAttributeDirection
@@ -27,8 +27,8 @@ namespace source2sdk
             uint8_t _pad0000[0x40];
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::smartprops::CSmartPropAttributeDirection) == 0x40);
     };
 };

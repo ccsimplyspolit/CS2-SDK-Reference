@@ -28,8 +28,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: C_DOTA_Ability_Greevil_Miniboss_White_Degen_Aura has no schema binary (size is a guess)
     };
 };

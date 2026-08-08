@@ -28,8 +28,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: CDOTA_Ability_Leshrac_Lightning_Storm has no schema binary (size is a guess)
     };
 };

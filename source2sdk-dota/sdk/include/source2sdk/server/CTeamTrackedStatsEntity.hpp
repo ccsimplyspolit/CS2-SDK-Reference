@@ -26,13 +26,13 @@ namespace source2sdk
         class CTeamTrackedStatsEntity : public source2sdk::server::CBaseTrackedStatsEntity
         {
         public:
-            source2sdk::client::DOTATeam_t m_nTeam; // 0x500            
+            source2sdk::client::DOTATeam_t m_nTeam; // 0x500
             uint8_t _pad0504[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CTeamTrackedStatsEntity because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CTeamTrackedStatsEntity) == 0x508);
     };
 };

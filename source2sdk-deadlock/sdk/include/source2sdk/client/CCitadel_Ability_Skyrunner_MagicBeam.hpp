@@ -23,14 +23,14 @@ namespace source2sdk
         class CCitadel_Ability_Skyrunner_MagicBeam : public source2sdk::client::C_CitadelBaseAbility
         {
         public:
-            Vector m_vCastPosition; // 0x11d8            
-            QAngle m_qCastAngle; // 0x11e4            
+            Vector m_vCastPosition; // 0x11d8
+            QAngle m_qCastAngle; // 0x11e4
             uint8_t _pad11f0[0x100];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_Skyrunner_MagicBeam because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Ability_Skyrunner_MagicBeam) == 0x12f0);
     };
 };

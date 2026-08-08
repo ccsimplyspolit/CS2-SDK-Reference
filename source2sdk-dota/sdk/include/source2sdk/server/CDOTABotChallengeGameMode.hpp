@@ -32,25 +32,25 @@ namespace source2sdk
         class CDOTABotChallengeGameMode : public source2sdk::server::CDOTABaseGameMode
         {
         public:
-            bool m_bRuleMidLaneOnly; // 0x7d8            
-            bool m_bRuleEliteBotHeroes; // 0x7d9            
-            bool m_bRuleMeteorStaff; // 0x7da            
-            bool m_bHasStartedEndgame; // 0x7db            
+            bool m_bRuleMidLaneOnly; // 0x7d8
+            bool m_bRuleEliteBotHeroes; // 0x7d9
+            bool m_bRuleMeteorStaff; // 0x7da
+            bool m_bHasStartedEndgame; // 0x7db
             // m_hRadiantAncientNPC has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CDOTA_BaseNPC> m_hRadiantAncientNPC;
-            char m_hRadiantAncientNPC[0x4]; // 0x7dc            
+            char m_hRadiantAncientNPC[0x4]; // 0x7dc
             // m_hDireAncientNPC has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CDOTA_BaseNPC> m_hDireAncientNPC;
-            char m_hDireAncientNPC[0x4]; // 0x7e0            
+            char m_hDireAncientNPC[0x4]; // 0x7e0
             uint8_t _pad07e4[0x2c]; // 0x7e4
-            bool m_bRuleAncientsDuel; // 0x810            
+            bool m_bRuleAncientsDuel; // 0x810
             uint8_t _pad0811[0x3]; // 0x811
-            float m_flEndgameTime; // 0x814            
+            float m_flEndgameTime; // 0x814
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTABotChallengeGameMode because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTABotChallengeGameMode) == 0x818);
     };
 };

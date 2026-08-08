@@ -17,7 +17,7 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x1f28
+        // Size: 0x1f30
         // Has VTable
         // Construct allowed
         // MClassHasEntityLimitedDataDesc
@@ -25,16 +25,16 @@ namespace source2sdk
         class CDOTA_Unit_Hero_Rubick : public source2sdk::server::CDOTA_BaseNPC_Hero
         {
         public:
-            Vector m_stolenAbilityColorHSV1; // 0x1f00            
-            Vector m_stolenAbilityColorHSV2; // 0x1f0c            
-            Vector m_stolenAbilityFXColorHSV; // 0x1f18            
-            bool m_bHasInitializedAbilityColors; // 0x1f24            
-            uint8_t _pad1f25[0x3];
+            Vector m_stolenAbilityColorHSV1; // 0x1f08
+            Vector m_stolenAbilityColorHSV2; // 0x1f14
+            Vector m_stolenAbilityFXColorHSV; // 0x1f20
+            bool m_bHasInitializedAbilityColors; // 0x1f2c
+            uint8_t _pad1f2d[0x3];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Unit_Hero_Rubick because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Unit_Hero_Rubick) == 0x1f28);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Unit_Hero_Rubick) == 0x1f30);
     };
 };

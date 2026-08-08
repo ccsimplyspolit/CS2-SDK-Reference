@@ -26,14 +26,14 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0868[0x88]; // 0x868
-            std::uint8_t m_nLod; // 0x8f0            
-            bool m_didModelChange; // 0x8f1            
+            std::uint8_t m_nLod; // 0x8f0
+            bool m_didModelChange; // 0x8f1
             uint8_t _pad08f2[0x6];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in NextBotCombatCharacter because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::NextBotCombatCharacter) == 0x8f8);
     };
 };

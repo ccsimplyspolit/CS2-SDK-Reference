@@ -26,16 +26,16 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0498[0x10]; // 0x498
-            float m_flRecoveryDelay; // 0x4a8            
-            float m_flHealthRegenPerSecond; // 0x4ac            
-            float m_flManaRegenPerSecond; // 0x4b0            
-            float m_flTickInterval; // 0x4b4            
+            float m_flRecoveryDelay; // 0x4a8
+            float m_flHealthRegenPerSecond; // 0x4ac
+            float m_flManaRegenPerSecond; // 0x4b0
+            float m_flTickInterval; // 0x4b4
             uint8_t _pad04b8[0x38];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_GameMechanic_AutoRecovery because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_GameMechanic_AutoRecovery) == 0x4f0);
     };
 };

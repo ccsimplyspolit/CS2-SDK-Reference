@@ -28,7 +28,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x2708
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "bool m_bIceBeaming"
         // static metadata: MNetworkVarNames "CCitadelAbilityBeam_t m_beam"
         #pragma pack(push, 1)
@@ -37,20 +37,20 @@ namespace source2sdk
         public:
             // metadata: MNetworkEnable
             // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-            bool m_bIceBeaming; // 0x11d8            
+            bool m_bIceBeaming; // 0x11d8
             uint8_t _pad11d9[0x40b]; // 0x11d9
-            source2sdk::entity2::GameTime_t m_flNextDamageTick; // 0x15e4            
+            source2sdk::entity2::GameTime_t m_flNextDamageTick; // 0x15e4
             // metadata: MNetworkEnable
-            source2sdk::client::CCitadelAbilityBeam_t m_beam; // 0x15e8            
+            source2sdk::client::CCitadelAbilityBeam_t m_beam; // 0x15e8
             uint8_t _pad26b8[0x38]; // 0x26b8
             // m_vecEntitiesHit has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::client::C_BaseEntity>> m_vecEntitiesHit;
-            char m_vecEntitiesHit[0x18]; // 0x26f0            
+            char m_vecEntitiesHit[0x18]; // 0x26f0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_IceBeam because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Ability_IceBeam) == 0x2708);
     };
 };

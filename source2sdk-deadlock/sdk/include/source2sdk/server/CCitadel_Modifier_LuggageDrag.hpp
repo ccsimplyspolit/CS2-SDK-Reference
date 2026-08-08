@@ -30,17 +30,17 @@ namespace source2sdk
         class CCitadel_Modifier_LuggageDrag : public source2sdk::server::CCitadelModifier
         {
         public:
-            float m_flRelativeDist; // 0xd0            
-            float m_flCartSpeed; // 0xd4            
-            QAngle m_qRelativeOffset; // 0xd8            
+            float m_flRelativeDist; // 0xd0
+            float m_flCartSpeed; // 0xd4
+            QAngle m_qRelativeOffset; // 0xd8
             // m_hDragger has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hDragger;
-            char m_hDragger[0x4]; // 0xe4            
+            char m_hDragger[0x4]; // 0xe4
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_LuggageDrag because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_LuggageDrag) == 0xe8);
     };
 };

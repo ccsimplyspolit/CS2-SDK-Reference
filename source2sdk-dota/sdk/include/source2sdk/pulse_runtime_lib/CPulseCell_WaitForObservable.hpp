@@ -21,7 +21,7 @@ namespace source2sdk
         // Size: 0x198
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPulseEditorHeaderIcon "tools/images/pulse_editor/observable_variable_listener.png"
         // static metadata: MPropertyFriendlyName "Wait Until"
@@ -34,13 +34,13 @@ namespace source2sdk
             // metadata: MPropertyFriendlyName "Observable"
             // m_Condition has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CPulseObservableExpression<bool> m_Condition;
-            char m_Condition[0x78]; // 0xd8            
-            source2sdk::pulse_runtime_lib::CPulse_ResumePoint m_OnTrue; // 0x150            
+            char m_Condition[0x78]; // 0xd8
+            source2sdk::pulse_runtime_lib::CPulse_ResumePoint m_OnTrue; // 0x150
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPulseCell_WaitForObservable because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::pulse_runtime_lib::CPulseCell_WaitForObservable) == 0x198);
     };
 };

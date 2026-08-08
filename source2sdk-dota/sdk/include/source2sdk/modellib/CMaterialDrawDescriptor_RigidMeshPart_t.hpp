@@ -19,24 +19,24 @@ namespace source2sdk
         // Size: 0xc
         // Has Trivial Destructor
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct CMaterialDrawDescriptor_RigidMeshPart_t
         {
         public:
-            std::uint16_t m_nRigidBLASIndex; // 0x0            
-            std::int16_t m_nBoneIndex; // 0x2            
-            std::uint32_t m_nStartIndexOffset; // 0x4            
-            std::uint32_t m_nPrimitiveCount; // 0x8            
+            std::uint16_t m_nRigidBLASIndex; // 0x0
+            std::int16_t m_nBoneIndex; // 0x2
+            std::uint32_t m_nStartIndexOffset; // 0x4
+            std::uint32_t m_nPrimitiveCount; // 0x8
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::modellib::CMaterialDrawDescriptor_RigidMeshPart_t, m_nRigidBLASIndex) == 0x0);
         static_assert(offsetof(source2sdk::modellib::CMaterialDrawDescriptor_RigidMeshPart_t, m_nBoneIndex) == 0x2);
         static_assert(offsetof(source2sdk::modellib::CMaterialDrawDescriptor_RigidMeshPart_t, m_nStartIndexOffset) == 0x4);
         static_assert(offsetof(source2sdk::modellib::CMaterialDrawDescriptor_RigidMeshPart_t, m_nPrimitiveCount) == 0x8);
-        
+
         static_assert(sizeof(source2sdk::modellib::CMaterialDrawDescriptor_RigidMeshPart_t) == 0xc);
     };
 };

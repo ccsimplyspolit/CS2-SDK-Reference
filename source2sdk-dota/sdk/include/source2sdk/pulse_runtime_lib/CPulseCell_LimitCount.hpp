@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x50
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Limit Count"
         // static metadata: MPropertyDescription "Skip this node after the limit. Check Type does not apply, the limit will always be checked."
@@ -29,13 +29,13 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFlattenIntoParentRow
-            std::int32_t m_nLimitCount; // 0x48            
+            std::int32_t m_nLimitCount; // 0x48
             uint8_t _pad004c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPulseCell_LimitCount because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::pulse_runtime_lib::CPulseCell_LimitCount) == 0x50);
     };
 };

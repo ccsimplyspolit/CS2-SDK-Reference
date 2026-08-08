@@ -19,7 +19,7 @@ namespace source2sdk
         // Alignment: 0x8
         // Standard-layout class: false
         // Size: 0x10
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct MaterialParamTexture_t : public source2sdk::materialsystem2::MaterialParam_t
@@ -27,12 +27,12 @@ namespace source2sdk
         public:
             // m_pValue has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CStrongHandle<source2sdk::resourcesystem::InfoForResourceTypeCTextureBase> m_pValue;
-            char m_pValue[0x8]; // 0x8            
+            char m_pValue[0x8]; // 0x8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in MaterialParamTexture_t because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::materialsystem2::MaterialParamTexture_t) == 0x10);
     };
 };

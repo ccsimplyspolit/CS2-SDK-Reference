@@ -32,16 +32,16 @@ namespace source2sdk
         class C_DOTA_Ability_Ringmaster_TheBox : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            bool m_bGrantedScepterCharges; // 0x6a8            
+            bool m_bGrantedScepterCharges; // 0x6a8
             uint8_t _pad06a9[0x7]; // 0x6a9
             // m_vecBoxedUnits has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::client::C_BaseEntity>> m_vecBoxedUnits;
-            char m_vecBoxedUnits[0x18]; // 0x6b0            
+            char m_vecBoxedUnits[0x18]; // 0x6b0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_Ringmaster_TheBox because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_Ringmaster_TheBox) == 0x6c8);
     };
 };

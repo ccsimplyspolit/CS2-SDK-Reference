@@ -28,12 +28,12 @@ namespace source2sdk
         class CAI_WaypointList
         {
         public:
-            source2sdk::server::AI_Waypoint_t* m_pFirstWaypoint; // 0x0            
+            source2sdk::server::AI_Waypoint_t* m_pFirstWaypoint; // 0x0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::CAI_WaypointList, m_pFirstWaypoint) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::server::CAI_WaypointList) == 0x8);
     };
 };

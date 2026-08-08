@@ -23,17 +23,17 @@ namespace source2sdk
         class CModifier_Fencer_Ultimate_Target : public source2sdk::server::CCitadelModifier
         {
         public:
-            bool m_bDamageDone; // 0xd0            
+            bool m_bDamageDone; // 0xd0
             uint8_t _pad00d1[0x3]; // 0xd1
-            float m_flDamageTime; // 0xd4            
+            float m_flDamageTime; // 0xd4
             uint8_t _pad00d8[0x380]; // 0xd8
-            Vector m_vDashDirection; // 0x458            
+            Vector m_vDashDirection; // 0x458
             uint8_t _pad0464[0x1c];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CModifier_Fencer_Ultimate_Target because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CModifier_Fencer_Ultimate_Target) == 0x480);
     };
 };

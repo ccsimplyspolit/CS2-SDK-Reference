@@ -21,7 +21,7 @@ namespace source2sdk
         // Size: 0x60
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Group"
         // static metadata: MPulseEditorHeaderIcon "tools/images/pulse_editor/requirements.png"
@@ -30,12 +30,12 @@ namespace source2sdk
         class CSmartPropPulse_Group : public source2sdk::pulse_runtime_lib::CPulseCell_BaseFlow
         {
         public:
-            source2sdk::pulse_runtime_lib::PulseSelectorOutflowList_t m_OutflowList; // 0x48            
+            source2sdk::pulse_runtime_lib::PulseSelectorOutflowList_t m_OutflowList; // 0x48
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSmartPropPulse_Group because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::smartprops::CSmartPropPulse_Group) == 0x60);
     };
 };

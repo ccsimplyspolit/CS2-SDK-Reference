@@ -20,29 +20,29 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x18
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CMeshletDescriptor
         {
         public:
-            source2sdk::mathlib_extended::PackedAABB_t m_PackedAABB; // 0x0            
-            source2sdk::modellib::CDrawCullingData m_CullingData; // 0x8            
-            std::uint32_t m_nVertexOffset; // 0xc            
-            std::uint32_t m_nTriangleOffset; // 0x10            
-            std::uint8_t m_nVertexCount; // 0x14            
-            std::uint8_t m_nTriangleCount; // 0x15            
+            source2sdk::mathlib_extended::PackedAABB_t m_PackedAABB; // 0x0
+            source2sdk::modellib::CDrawCullingData m_CullingData; // 0x8
+            std::uint32_t m_nVertexOffset; // 0xc
+            std::uint32_t m_nTriangleOffset; // 0x10
+            std::uint8_t m_nVertexCount; // 0x14
+            std::uint8_t m_nTriangleCount; // 0x15
             uint8_t _pad0016[0x2];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::modellib::CMeshletDescriptor, m_PackedAABB) == 0x0);
         static_assert(offsetof(source2sdk::modellib::CMeshletDescriptor, m_CullingData) == 0x8);
         static_assert(offsetof(source2sdk::modellib::CMeshletDescriptor, m_nVertexOffset) == 0xc);
         static_assert(offsetof(source2sdk::modellib::CMeshletDescriptor, m_nTriangleOffset) == 0x10);
         static_assert(offsetof(source2sdk::modellib::CMeshletDescriptor, m_nVertexCount) == 0x14);
         static_assert(offsetof(source2sdk::modellib::CMeshletDescriptor, m_nTriangleCount) == 0x15);
-        
+
         static_assert(sizeof(source2sdk::modellib::CMeshletDescriptor) == 0x18);
     };
 };

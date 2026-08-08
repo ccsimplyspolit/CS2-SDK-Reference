@@ -26,8 +26,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: CDynamicPropAlias_dynamic_prop has no schema binary (size is a guess)
     };
 };

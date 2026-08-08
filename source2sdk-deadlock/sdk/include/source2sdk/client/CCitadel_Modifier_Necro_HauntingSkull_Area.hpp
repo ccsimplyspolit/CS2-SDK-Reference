@@ -33,13 +33,13 @@ namespace source2sdk
             uint8_t _pad00c0[0x8]; // 0xc0
             // m_vecDeployedSkulls has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::client::C_BaseEntity>> m_vecDeployedSkulls;
-            char m_vecDeployedSkulls[0x18]; // 0xc8            
+            char m_vecDeployedSkulls[0x18]; // 0xc8
             uint8_t _pad00e0[0x300];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_Necro_HauntingSkull_Area because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Modifier_Necro_HauntingSkull_Area) == 0x3e0);
     };
 };

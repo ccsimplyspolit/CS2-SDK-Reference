@@ -13,7 +13,7 @@ namespace source2sdk
 {
     namespace client
     {
-        // Enumerator count: 154
+        // Enumerator count: 156
         // Alignment: 4
         // Size: 0x4
         enum class EGCCitadelClientMessages : std::uint32_t
@@ -172,6 +172,8 @@ namespace source2sdk
             k_EMsgGCToClientUpdateHeroReleaseVoteTally = 0x2441,
             k_EMsgClientToGCSetAccountPrivacySetting = 0x2442,
             k_EMsgClientToGCSetAccountPrivacySettingResponse = 0x2443,
+            k_EMsgClientToGCStartRankedInterval = 0x2449,
+            k_EMsgClientToGCStartRankedIntervalResponse = 0x244a,
         };
     };
 };

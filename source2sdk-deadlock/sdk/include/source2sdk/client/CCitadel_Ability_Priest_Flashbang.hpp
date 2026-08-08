@@ -24,15 +24,15 @@ namespace source2sdk
         class CCitadel_Ability_Priest_Flashbang : public source2sdk::client::C_CitadelBaseAbility
         {
         public:
-            source2sdk::client::ShotID_t m_tInitialShotID; // 0x11d8            
-            VectorWS m_vLaunchPosition; // 0x11dc            
-            QAngle m_qLaunchAngle; // 0x11e8            
+            source2sdk::client::ShotID_t m_tInitialShotID; // 0x11d8
+            VectorWS m_vLaunchPosition; // 0x11dc
+            QAngle m_qLaunchAngle; // 0x11e8
             uint8_t _pad11f4[0x384];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_Priest_Flashbang because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Ability_Priest_Flashbang) == 0x1578);
     };
 };

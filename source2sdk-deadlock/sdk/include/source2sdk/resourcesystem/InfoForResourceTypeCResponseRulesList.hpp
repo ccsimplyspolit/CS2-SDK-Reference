@@ -19,7 +19,7 @@ namespace source2sdk
         // Size: 0x1
         // Has Trivial Constructor
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MResourceTypeForInfoType "vrr"
         #pragma pack(push, 1)
         class InfoForResourceTypeCResponseRulesList
@@ -27,8 +27,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::resourcesystem::InfoForResourceTypeCResponseRulesList) == 0x1);
     };
 };

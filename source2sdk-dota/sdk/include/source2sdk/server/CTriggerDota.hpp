@@ -25,12 +25,12 @@ namespace source2sdk
         class CTriggerDota : public source2sdk::server::CTriggerMultiple
         {
         public:
-            source2sdk::server::CDotaEntityFilterFlags m_FilterFlags; // 0x908            
+            source2sdk::server::CDotaEntityFilterFlags m_FilterFlags; // 0x908
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CTriggerDota because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CTriggerDota) == 0x928);
     };
 };

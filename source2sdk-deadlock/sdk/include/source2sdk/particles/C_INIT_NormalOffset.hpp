@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x200
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_INIT_NormalOffset : public source2sdk::particles::CParticleFunctionInitializer
@@ -27,22 +27,22 @@ namespace source2sdk
         public:
             // metadata: MPropertyFriendlyName "offset min"
             // metadata: MVectorIsCoordinate
-            Vector m_OffsetMin; // 0x1e0            
+            Vector m_OffsetMin; // 0x1e0
             // metadata: MPropertyFriendlyName "offset max"
             // metadata: MVectorIsCoordinate
-            Vector m_OffsetMax; // 0x1ec            
+            Vector m_OffsetMax; // 0x1ec
             // metadata: MPropertyFriendlyName "control point number"
-            std::int32_t m_nControlPointNumber; // 0x1f8            
+            std::int32_t m_nControlPointNumber; // 0x1f8
             // metadata: MPropertyFriendlyName "offset in local space 0/1"
-            bool m_bLocalCoords; // 0x1fc            
+            bool m_bLocalCoords; // 0x1fc
             // metadata: MPropertyFriendlyName "normalize output 0/1"
-            bool m_bNormalize; // 0x1fd            
+            bool m_bNormalize; // 0x1fd
             uint8_t _pad01fe[0x2];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_INIT_NormalOffset because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_INIT_NormalOffset) == 0x200);
     };
 };

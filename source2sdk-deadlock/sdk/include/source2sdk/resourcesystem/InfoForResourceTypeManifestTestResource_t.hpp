@@ -19,7 +19,7 @@ namespace source2sdk
         // Size: 0x1
         // Has Trivial Constructor
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MResourceTypeForInfoType "vmtst"
         #pragma pack(push, 1)
         struct InfoForResourceTypeManifestTestResource_t
@@ -27,8 +27,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::resourcesystem::InfoForResourceTypeManifestTestResource_t) == 0x1);
     };
 };

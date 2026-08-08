@@ -18,7 +18,7 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x19b8
+        // Size: 0x19c0
         // Has VTable
         // Construct allowed
         // MClassHasEntityLimitedDataDesc
@@ -26,13 +26,13 @@ namespace source2sdk
         class C_DOTA_BaseNPC_RotatableBuilding : public source2sdk::client::C_DOTA_BaseNPC
         {
         public:
-            source2sdk::animationsystem::HSequence m_hObsoleteHeroStatueSequence; // 0x19b0            
-            source2sdk::animationsystem::HSequence m_hObsoleteConstantLayerSequence; // 0x19b4            
+            source2sdk::animationsystem::HSequence m_hObsoleteHeroStatueSequence; // 0x19b8
+            source2sdk::animationsystem::HSequence m_hObsoleteConstantLayerSequence; // 0x19bc
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_BaseNPC_RotatableBuilding because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::C_DOTA_BaseNPC_RotatableBuilding) == 0x19b8);
+
+        static_assert(sizeof(source2sdk::client::C_DOTA_BaseNPC_RotatableBuilding) == 0x19c0);
     };
 };

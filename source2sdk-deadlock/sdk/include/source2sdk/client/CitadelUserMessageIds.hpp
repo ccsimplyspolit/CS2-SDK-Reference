@@ -13,7 +13,7 @@ namespace source2sdk
 {
     namespace client
     {
-        // Enumerator count: 60
+        // Enumerator count: 61
         // Alignment: 4
         // Size: 0x4
         enum class CitadelUserMessageIds : std::uint32_t
@@ -78,6 +78,7 @@ namespace source2sdk
             k_EUserMsg_ItemDraftReaction = 0x16c,
             k_EUserMsg_ImportantAbilityUsed = 0x16d,
             k_EUserMsg_BannedHeroes = 0x16e,
+            k_EUserMsg_ChangeHeroStatus = 0x172,
         };
     };
 };

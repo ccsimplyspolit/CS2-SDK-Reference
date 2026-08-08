@@ -30,12 +30,12 @@ namespace source2sdk
         class CCitadel_Ability_AbilityName : public source2sdk::client::CCitadelBaseTriggerAbility
         {
         public:
-            source2sdk::client::CCitadel_Ability_Doorman_Doorway* m_hDoorwayAbility; // 0x11e8            
+            source2sdk::client::CCitadel_Ability_Doorman_Doorway* m_hDoorwayAbility; // 0x11e8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_AbilityName because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Ability_AbilityName) == 0x11f0);
     };
 };

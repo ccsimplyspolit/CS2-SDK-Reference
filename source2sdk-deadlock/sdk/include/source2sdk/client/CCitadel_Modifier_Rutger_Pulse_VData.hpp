@@ -19,19 +19,19 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x760
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CCitadel_Modifier_Rutger_Pulse_VData : public source2sdk::client::CCitadelModifierVData
         {
         public:
             // metadata: MPropertyGroupName "Sounds"
-            CSoundEventName m_strSilenceTargetSound; // 0x750            
+            CSoundEventName m_strSilenceTargetSound; // 0x750
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_Rutger_Pulse_VData because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Modifier_Rutger_Pulse_VData) == 0x760);
     };
 };

@@ -27,8 +27,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: CIngameEvent_TI2025 has no schema binary (size is a guess)
     };
 };

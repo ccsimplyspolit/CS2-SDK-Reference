@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x18d8
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CItemHauntingScreamVData : public source2sdk::server::CitadelItemVData
@@ -29,14 +29,14 @@ namespace source2sdk
             // metadata: MPropertyStartGroup "Modifiers"
             // m_DebuffModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEmbeddedSubclass<source2sdk::server::CCitadelModifier> m_DebuffModifier;
-            char m_DebuffModifier[0x10]; // 0x18b8            
+            char m_DebuffModifier[0x10]; // 0x18b8
             // metadata: MPropertyStartGroup "Sounds"
-            CSoundEventName m_strHitConfirmSound; // 0x18c8            
+            CSoundEventName m_strHitConfirmSound; // 0x18c8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CItemHauntingScreamVData because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CItemHauntingScreamVData) == 0x18d8);
     };
 };

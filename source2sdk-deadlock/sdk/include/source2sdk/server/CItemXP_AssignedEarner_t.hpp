@@ -24,17 +24,17 @@ namespace source2sdk
         struct CItemXP_AssignedEarner_t
         {
         public:
-            source2sdk::client::ECurrencySource m_eSource; // 0x0            
-            std::int32_t m_iBounty; // 0x4            
-            source2sdk::client::EDenyDistributionType m_eDenyType; // 0x8            
+            source2sdk::client::ECurrencySource m_eSource; // 0x0
+            std::int32_t m_iBounty; // 0x4
+            source2sdk::client::EDenyDistributionType m_eDenyType; // 0x8
             uint8_t _pad000c[0x4];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::CItemXP_AssignedEarner_t, m_eSource) == 0x0);
         static_assert(offsetof(source2sdk::server::CItemXP_AssignedEarner_t, m_iBounty) == 0x4);
         static_assert(offsetof(source2sdk::server::CItemXP_AssignedEarner_t, m_eDenyType) == 0x8);
-        
+
         static_assert(sizeof(source2sdk::server::CItemXP_AssignedEarner_t) == 0x10);
     };
 };

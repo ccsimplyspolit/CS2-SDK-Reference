@@ -26,13 +26,13 @@ namespace source2sdk
         class CDOTAPlayerPawn : public source2sdk::server::CBasePlayerPawn
         {
         public:
-            source2sdk::client::PlayerID_t m_nPlayerID; // 0x9b0            
+            source2sdk::client::PlayerID_t m_nPlayerID; // 0x9b0
             uint8_t _pad09b4[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTAPlayerPawn because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTAPlayerPawn) == 0x9b8);
     };
 };

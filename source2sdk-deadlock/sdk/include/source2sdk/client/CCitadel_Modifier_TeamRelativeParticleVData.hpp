@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x910
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CCitadel_Modifier_TeamRelativeParticleVData : public source2sdk::client::CCitadelModifierVData
@@ -29,15 +29,15 @@ namespace source2sdk
             // metadata: MPropertyStartGroup "Visuals"
             // m_ParentViewParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_ParentViewParticle;
-            char m_ParentViewParticle[0xe0]; // 0x750            
+            char m_ParentViewParticle[0xe0]; // 0x750
             // m_OtherPlayerViewParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_OtherPlayerViewParticle;
-            char m_OtherPlayerViewParticle[0xe0]; // 0x830            
+            char m_OtherPlayerViewParticle[0xe0]; // 0x830
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_TeamRelativeParticleVData because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Modifier_TeamRelativeParticleVData) == 0x910);
     };
 };

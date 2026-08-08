@@ -22,39 +22,39 @@ namespace source2sdk
         // Size: 0x810
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_ModelSurfaceSnapshotGenerator : public source2sdk::particles::CParticleFunctionPreEmission
         {
         public:
             // metadata: MPropertyFriendlyName "snapshot control point number"
-            std::int32_t m_nCPSnapshot; // 0x1e0            
+            std::int32_t m_nCPSnapshot; // 0x1e0
             uint8_t _pad01e4[0x4]; // 0x1e4
             // metadata: MPropertyFriendlyName "input model"
-            source2sdk::particleslib::CParticleModelInput m_modelInput; // 0x1e8            
+            source2sdk::particleslib::CParticleModelInput m_modelInput; // 0x1e8
             // metadata: MPropertyFriendlyName "Recalculation Rate"
-            source2sdk::particleslib::CParticleCollectionFloatInput m_flRecalcRate; // 0x248            
+            source2sdk::particleslib::CParticleCollectionFloatInput m_flRecalcRate; // 0x248
             // metadata: MPropertyFriendlyName "U Spacing"
-            source2sdk::particleslib::CParticleCollectionFloatInput m_flUSpacing; // 0x3b8            
+            source2sdk::particleslib::CParticleCollectionFloatInput m_flUSpacing; // 0x3b8
             // metadata: MPropertyFriendlyName "V Spacing"
-            source2sdk::particleslib::CParticleCollectionFloatInput m_flVSpacing; // 0x528            
+            source2sdk::particleslib::CParticleCollectionFloatInput m_flVSpacing; // 0x528
             // metadata: MPropertyFriendlyName "Surface Offset"
-            source2sdk::particleslib::CParticleCollectionFloatInput m_flSurfaceOffset; // 0x698            
+            source2sdk::particleslib::CParticleCollectionFloatInput m_flSurfaceOffset; // 0x698
             // metadata: MPropertyFriendlyName "Set Normal"
-            bool m_bSetNormal; // 0x808            
+            bool m_bSetNormal; // 0x808
             // metadata: MPropertyFriendlyName "Set UV Up Direction (To Box Angles)"
-            bool m_bSetUp; // 0x809            
+            bool m_bSetUp; // 0x809
             // metadata: MPropertyFriendlyName "Set Gravity Direction (To Prev Position)"
-            bool m_bSetGravity; // 0x80a            
+            bool m_bSetGravity; // 0x80a
             // metadata: MPropertyFriendlyName "Set UV (To Hitbox Offset)"
-            bool m_bSetUV; // 0x80b            
+            bool m_bSetUV; // 0x80b
             uint8_t _pad080c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_ModelSurfaceSnapshotGenerator because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_ModelSurfaceSnapshotGenerator) == 0x810);
     };
 };

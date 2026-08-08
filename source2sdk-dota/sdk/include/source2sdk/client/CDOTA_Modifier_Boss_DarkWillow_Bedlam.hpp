@@ -26,31 +26,31 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a80
+        // Size: 0x1aa0
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Boss_DarkWillow_Bedlam : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float m_flRotation; // 0x1a58            
+            float m_flRotation; // 0x1a78
             // m_hWisp has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::C_BaseEntity> m_hWisp;
-            char m_hWisp[0x4]; // 0x1a5c            
-            source2sdk::entity2::GameTime_t m_flLastAttack; // 0x1a60            
-            bool reversed; // 0x1a64            
-            uint8_t _pad1a65[0x3]; // 0x1a65
-            std::int32_t roaming_radius; // 0x1a68            
-            std::int32_t attack_radius; // 0x1a6c            
-            float roaming_seconds_per_rotation; // 0x1a70            
-            float attack_interval; // 0x1a74            
-            bool m_bSetupWarning; // 0x1a78            
-            uint8_t _pad1a79[0x3]; // 0x1a79
-            source2sdk::client::ParticleIndex_t m_nPreviewFX; // 0x1a7c            
+            char m_hWisp[0x4]; // 0x1a7c
+            source2sdk::entity2::GameTime_t m_flLastAttack; // 0x1a80
+            bool reversed; // 0x1a84
+            uint8_t _pad1a85[0x3]; // 0x1a85
+            std::int32_t roaming_radius; // 0x1a88
+            std::int32_t attack_radius; // 0x1a8c
+            float roaming_seconds_per_rotation; // 0x1a90
+            float attack_interval; // 0x1a94
+            bool m_bSetupWarning; // 0x1a98
+            uint8_t _pad1a99[0x3]; // 0x1a99
+            source2sdk::client::ParticleIndex_t m_nPreviewFX; // 0x1a9c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Boss_DarkWillow_Bedlam because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Boss_DarkWillow_Bedlam) == 0x1a80);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Boss_DarkWillow_Bedlam) == 0x1aa0);
     };
 };

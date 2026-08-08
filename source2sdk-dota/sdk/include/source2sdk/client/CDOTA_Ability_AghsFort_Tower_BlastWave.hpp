@@ -26,13 +26,13 @@ namespace source2sdk
         class CDOTA_Ability_AghsFort_Tower_BlastWave : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            source2sdk::client::ParticleIndex_t m_nPreviewFX; // 0x6a8            
-            float duration; // 0x6ac            
+            source2sdk::client::ParticleIndex_t m_nPreviewFX; // 0x6a8
+            float duration; // 0x6ac
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_AghsFort_Tower_BlastWave because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CDOTA_Ability_AghsFort_Tower_BlastWave) == 0x6b0);
     };
 };

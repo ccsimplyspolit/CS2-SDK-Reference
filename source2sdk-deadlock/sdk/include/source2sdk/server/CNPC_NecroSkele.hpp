@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x1800
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "GameTime_t m_tSpawnTime"
         // static metadata: MNetworkVarNames "VectorWS m_vecCastLocation"
         // static metadata: MNetworkVarNames "bool m_bDontMove"
@@ -32,27 +32,27 @@ namespace source2sdk
         public:
             uint8_t _pad17b0[0x28]; // 0x17b0
             // metadata: MNetworkEnable
-            source2sdk::entity2::GameTime_t m_tSpawnTime; // 0x17d8            
+            source2sdk::entity2::GameTime_t m_tSpawnTime; // 0x17d8
             // metadata: MNetworkEnable
-            VectorWS m_vecCastLocation; // 0x17dc            
+            VectorWS m_vecCastLocation; // 0x17dc
             // metadata: MNetworkEnable
-            bool m_bDontMove; // 0x17e8            
+            bool m_bDontMove; // 0x17e8
             uint8_t _pad17e9[0x3]; // 0x17e9
             // metadata: MNetworkEnable
             // metadata: MNotSaved
-            float m_flAttackRange; // 0x17ec            
+            float m_flAttackRange; // 0x17ec
             // metadata: MNetworkEnable
             // metadata: MNotSaved
-            float m_flSpawnDuration; // 0x17f0            
+            float m_flSpawnDuration; // 0x17f0
             uint8_t _pad17f4[0xc];
-            
+
             // Datamap fields:
             // CHandle< CBaseEntity > m_hCastingAbility; // 0x17c4
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CNPC_NecroSkele because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CNPC_NecroSkele) == 0x1800);
     };
 };

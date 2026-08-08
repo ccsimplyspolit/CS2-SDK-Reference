@@ -20,18 +20,18 @@ namespace source2sdk
         // Size: 0x20
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CDOTAMotionComicImageFrame : public source2sdk::client::CDOTAMotionComicFrame
         {
         public:
-            CPanoramaImageName m_Image; // 0x10            
+            CPanoramaImageName m_Image; // 0x10
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTAMotionComicImageFrame because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CDOTAMotionComicImageFrame) == 0x20);
     };
 };

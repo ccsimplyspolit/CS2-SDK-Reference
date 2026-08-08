@@ -25,17 +25,17 @@ namespace source2sdk
         class C_DOTA_Ability_DrowRanger_WaveOfSilence : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            float wave_width; // 0x6a8            
-            float wave_speed; // 0x6ac            
-            float silence_duration; // 0x6b0            
-            float knockback_distance_max; // 0x6b4            
-            std::int32_t m_nHeroesHit; // 0x6b8            
+            float wave_width; // 0x6a8
+            float wave_speed; // 0x6ac
+            float silence_duration; // 0x6b0
+            float knockback_distance_max; // 0x6b4
+            std::int32_t m_nHeroesHit; // 0x6b8
             uint8_t _pad06bc[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_DrowRanger_WaveOfSilence because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_DrowRanger_WaveOfSilence) == 0x6c0);
     };
 };

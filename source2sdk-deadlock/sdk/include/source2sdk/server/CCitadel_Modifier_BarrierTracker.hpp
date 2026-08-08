@@ -24,14 +24,14 @@ namespace source2sdk
         {
         public:
             uint8_t _pad00d0[0x4]; // 0xd0
-            float m_flMaxHealth; // 0xd4            
-            float m_flCurrentHealth; // 0xd8            
+            float m_flMaxHealth; // 0xd4
+            float m_flCurrentHealth; // 0xd8
             uint8_t _pad00dc[0x1c];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_BarrierTracker because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_BarrierTracker) == 0xf8);
     };
 };

@@ -32,17 +32,17 @@ namespace source2sdk
         class C_DOTA_Ability_DoomBringer_Devour : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            bool m_bIsAltCastState; // 0x6a8            
+            bool m_bIsAltCastState; // 0x6a8
             uint8_t _pad06a9[0x3]; // 0x6a9
-            std::int32_t ability_bonus_level; // 0x6ac            
+            std::int32_t ability_bonus_level; // 0x6ac
             // m_vecAbilityDraftStolenAbilities has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::client::C_DOTABaseAbility>> m_vecAbilityDraftStolenAbilities;
-            char m_vecAbilityDraftStolenAbilities[0x18]; // 0x6b0            
+            char m_vecAbilityDraftStolenAbilities[0x18]; // 0x6b0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_DoomBringer_Devour because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_DoomBringer_Devour) == 0x6c8);
     };
 };

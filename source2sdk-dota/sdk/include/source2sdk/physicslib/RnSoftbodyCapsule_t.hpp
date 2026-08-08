@@ -20,22 +20,22 @@ namespace source2sdk
         // Has Trivial Constructor
         // Has Trivial Destructor
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct RnSoftbodyCapsule_t
         {
         public:
-            Vector m_vCenter[2]; // 0x0            
-            float m_flRadius; // 0x18            
-            std::uint16_t m_nParticle[2]; // 0x1c            
+            Vector m_vCenter[2]; // 0x0
+            float m_flRadius; // 0x18
+            std::uint16_t m_nParticle[2]; // 0x1c
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::physicslib::RnSoftbodyCapsule_t, m_vCenter) == 0x0);
         static_assert(offsetof(source2sdk::physicslib::RnSoftbodyCapsule_t, m_flRadius) == 0x18);
         static_assert(offsetof(source2sdk::physicslib::RnSoftbodyCapsule_t, m_nParticle) == 0x1c);
-        
+
         static_assert(sizeof(source2sdk::physicslib::RnSoftbodyCapsule_t) == 0x20);
     };
 };

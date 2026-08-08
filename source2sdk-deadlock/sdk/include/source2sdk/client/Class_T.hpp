@@ -13,7 +13,7 @@ namespace source2sdk
 {
     namespace client
     {
-        // Enumerator count: 110
+        // Enumerator count: 112
         // Alignment: 4
         // Size: 0x4
         enum class Class_T : std::uint32_t
@@ -127,7 +127,9 @@ namespace source2sdk
             CLASS_MATCH_INTRO_HERO_CARD = 0x6a,
             CLASS_SMALL_DEPLOYABLE = 0x6b,
             CLASS_PLAYER_SPRAY = 0x6c,
-            NUM_CLASSIFY_CLASSES = 0x6d,
+            CLASS_RANKED_BADGE_PROP = 0x6d,
+            CLASS_LOCAL_PLAYER_RANKED_BADGE_PROP = 0x6e,
+            NUM_CLASSIFY_CLASSES = 0x6f,
         };
     };
 };

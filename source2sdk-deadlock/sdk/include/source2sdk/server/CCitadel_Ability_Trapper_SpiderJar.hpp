@@ -23,15 +23,15 @@ namespace source2sdk
         class CCitadel_Ability_Trapper_SpiderJar : public source2sdk::server::CCitadelBaseAbility
         {
         public:
-            VectorWS m_vLaunchPosition; // 0xf70            
-            QAngle m_qLaunchAngle; // 0xf7c            
-            bool m_bHasMadeSpiders; // 0xf88            
+            VectorWS m_vLaunchPosition; // 0xf70
+            QAngle m_qLaunchAngle; // 0xf7c
+            bool m_bHasMadeSpiders; // 0xf88
             uint8_t _pad0f89[0x607];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_Trapper_SpiderJar because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Ability_Trapper_SpiderJar) == 0x1590);
     };
 };

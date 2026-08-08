@@ -20,23 +20,23 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x840
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CCitadel_Modifier_Werewolf_Kickflip_BonusDamageVData : public source2sdk::server::CCitadelModifierVData
         {
         public:
             // metadata: MPropertyStartGroup "Sounds"
-            CSoundEventName m_strOnBulletHitDamageSound; // 0x750            
+            CSoundEventName m_strOnBulletHitDamageSound; // 0x750
             // metadata: MPropertyStartGroup "Visuals"
             // m_DamageFX has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_DamageFX;
-            char m_DamageFX[0xe0]; // 0x760            
+            char m_DamageFX[0xe0]; // 0x760
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_Werewolf_Kickflip_BonusDamageVData because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_Werewolf_Kickflip_BonusDamageVData) == 0x840);
     };
 };

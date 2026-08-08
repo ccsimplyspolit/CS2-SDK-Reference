@@ -21,7 +21,7 @@ namespace source2sdk
         // Alignment: 0x8
         // Standard-layout class: true
         // Size: 0x30
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MVDataRoot
         #pragma pack(push, 1)
@@ -32,23 +32,23 @@ namespace source2sdk
             // metadata: MPropertyDescription "unique integer ID of this stat"
             // metadata: MVDataUniqueMonotonicInt "_editor/next_team_stat_id"
             // metadata: MPropertyAttributeEditor "locked_int()"
-            source2sdk::client::TrackedStatID_t m_unStatID; // 0x8            
+            source2sdk::client::TrackedStatID_t m_unStatID; // 0x8
             // metadata: MPropertyDescription "how this stat is implemented"
-            source2sdk::client::ETeamTrackedStatImpl m_eStatImpl; // 0xc            
+            source2sdk::client::ETeamTrackedStatImpl m_eStatImpl; // 0xc
             // metadata: MPropertyDescription "For k_eTeamTrackedStatImpl_Expression, what is the expression information."
             // metadata: MPropertySuppressExpr "m_eStatImpl != k_ePlayerTrackedStatImpl_Expression"
-            source2sdk::client::TrackedStatExpressionData_t m_expressionData; // 0x10            
+            source2sdk::client::TrackedStatExpressionData_t m_expressionData; // 0x10
             // metadata: MPropertyDescription "For k_eTeamTrackedStatImpl_PlayerAggregate, what is the aggregate information."
             // metadata: MPropertySuppressExpr "m_eStatImpl != k_eTeamTrackedStatImpl_PlayerAggregate"
-            source2sdk::client::TrackedStatAggregateData_t m_aggregateData; // 0x20            
+            source2sdk::client::TrackedStatAggregateData_t m_aggregateData; // 0x20
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::CTeamTrackedStatDefinition, m_unStatID) == 0x8);
         static_assert(offsetof(source2sdk::client::CTeamTrackedStatDefinition, m_eStatImpl) == 0xc);
         static_assert(offsetof(source2sdk::client::CTeamTrackedStatDefinition, m_expressionData) == 0x10);
         static_assert(offsetof(source2sdk::client::CTeamTrackedStatDefinition, m_aggregateData) == 0x20);
-        
+
         static_assert(sizeof(source2sdk::client::CTeamTrackedStatDefinition) == 0x30);
     };
 };

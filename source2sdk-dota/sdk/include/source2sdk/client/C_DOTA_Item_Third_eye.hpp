@@ -28,8 +28,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: C_DOTA_Item_Third_eye has no schema binary (size is a guess)
     };
 };

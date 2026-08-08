@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x40
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MNetworkVarNames "GameTime_t m_tTriggerTime"
         // static metadata: MNetworkVarNames "EPlayOfTheGameReplayTrigger m_eType"
@@ -31,20 +31,20 @@ namespace source2sdk
         public:
             uint8_t _pad0000[0x30]; // 0x0
             // metadata: MNetworkEnable
-            source2sdk::entity2::GameTime_t m_tTriggerTime; // 0x30            
+            source2sdk::entity2::GameTime_t m_tTriggerTime; // 0x30
             // metadata: MNetworkEnable
-            source2sdk::client::EPlayOfTheGameReplayTrigger m_eType; // 0x34            
+            source2sdk::client::EPlayOfTheGameReplayTrigger m_eType; // 0x34
             uint8_t _pad0035[0x3]; // 0x35
             // metadata: MNetworkEnable
-            CPlayerSlot m_nTarget; // 0x38            
+            CPlayerSlot m_nTarget; // 0x38
             uint8_t _pad003c[0x4];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::PlayOfTheGameTrigger_t, m_tTriggerTime) == 0x30);
         static_assert(offsetof(source2sdk::client::PlayOfTheGameTrigger_t, m_eType) == 0x34);
         static_assert(offsetof(source2sdk::client::PlayOfTheGameTrigger_t, m_nTarget) == 0x38);
-        
+
         static_assert(sizeof(source2sdk::client::PlayOfTheGameTrigger_t) == 0x40);
     };
 };

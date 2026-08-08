@@ -22,23 +22,23 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xb0
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CSequenceUpdateNode : public source2sdk::animgraphlib::CSequenceUpdateNodeBase
         {
         public:
-            source2sdk::animationsystem::HSequence m_hSequence; // 0x78            
-            float m_duration; // 0x7c            
-            source2sdk::animgraphlib::CParamSpanUpdater m_paramSpans; // 0x80            
+            source2sdk::animationsystem::HSequence m_hSequence; // 0x78
+            float m_duration; // 0x7c
+            source2sdk::animgraphlib::CParamSpanUpdater m_paramSpans; // 0x80
             // m_tags has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::animgraphlib::TagSpan_t> m_tags;
-            char m_tags[0x18]; // 0x98            
+            char m_tags[0x18]; // 0x98
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSequenceUpdateNode because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::animgraphlib::CSequenceUpdateNode) == 0xb0);
     };
 };

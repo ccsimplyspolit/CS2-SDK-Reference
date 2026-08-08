@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x40
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Grid Origin"
         // static metadata: MPropertyDescription "Specifies where the origin of a child element is placed realative to each grid cell."
@@ -29,13 +29,13 @@ namespace source2sdk
         class CSmartPropVariable_GridOriginMode : public source2sdk::smartprops::CSmartPropVariable
         {
         public:
-            source2sdk::smartprops::SmartPropGridOriginBasis_t m_DefaultValue; // 0x38            
+            source2sdk::smartprops::SmartPropGridOriginBasis_t m_DefaultValue; // 0x38
             uint8_t _pad003c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSmartPropVariable_GridOriginMode because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::smartprops::CSmartPropVariable_GridOriginMode) == 0x40);
     };
 };

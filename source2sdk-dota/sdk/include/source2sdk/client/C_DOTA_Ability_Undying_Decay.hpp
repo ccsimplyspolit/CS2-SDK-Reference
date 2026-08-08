@@ -25,17 +25,17 @@ namespace source2sdk
         class C_DOTA_Ability_Undying_Decay : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            std::int32_t decay_damage; // 0x6a8            
-            float radius; // 0x6ac            
-            float decay_duration; // 0x6b0            
-            std::int32_t str_steal; // 0x6b4            
-            float creep_damage_multiplier; // 0x6b8            
+            std::int32_t decay_damage; // 0x6a8
+            float radius; // 0x6ac
+            float decay_duration; // 0x6b0
+            std::int32_t str_steal; // 0x6b4
+            float creep_damage_multiplier; // 0x6b8
             uint8_t _pad06bc[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_Undying_Decay because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_Undying_Decay) == 0x6c0);
     };
 };

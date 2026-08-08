@@ -19,22 +19,22 @@ namespace source2sdk
         // Size: 0x1c
         // Has Trivial Constructor
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct VMixPlateverbDesc_t
         {
         public:
-            float m_flPrefilter; // 0x0            
-            float m_flInputDiffusion1; // 0x4            
-            float m_flInputDiffusion2; // 0x8            
-            float m_flDecay; // 0xc            
-            float m_flDamp; // 0x10            
-            float m_flFeedbackDiffusion1; // 0x14            
-            float m_flFeedbackDiffusion2; // 0x18            
+            float m_flPrefilter; // 0x0
+            float m_flInputDiffusion1; // 0x4
+            float m_flInputDiffusion2; // 0x8
+            float m_flDecay; // 0xc
+            float m_flDamp; // 0x10
+            float m_flFeedbackDiffusion1; // 0x14
+            float m_flFeedbackDiffusion2; // 0x18
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::VMixPlateverbDesc_t, m_flPrefilter) == 0x0);
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::VMixPlateverbDesc_t, m_flInputDiffusion1) == 0x4);
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::VMixPlateverbDesc_t, m_flInputDiffusion2) == 0x8);
@@ -42,7 +42,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::VMixPlateverbDesc_t, m_flDamp) == 0x10);
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::VMixPlateverbDesc_t, m_flFeedbackDiffusion1) == 0x14);
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::VMixPlateverbDesc_t, m_flFeedbackDiffusion2) == 0x18);
-        
+
         static_assert(sizeof(source2sdk::soundsystem_lowlevel::VMixPlateverbDesc_t) == 0x1c);
     };
 };

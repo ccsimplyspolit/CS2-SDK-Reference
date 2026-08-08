@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xb8
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "TESTBED: FM Synth Container"
         // static metadata: MPropertyDescription "Real time FM Synthesis"
@@ -29,19 +29,19 @@ namespace source2sdk
         public:
             // metadata: MPropertyFriendlyName "Frequency (Hz)"
             // metadata: MPropertyDescription "The frequency of this sine tone."
-            float m_flCarrierFrequency; // 0xa8            
+            float m_flCarrierFrequency; // 0xa8
             // metadata: MPropertyFriendlyName "Mod Frequency (Hz)"
             // metadata: MPropertyDescription "The frequency of the sine tone modulating this sine tone."
-            float m_flModulatorFrequency; // 0xac            
+            float m_flModulatorFrequency; // 0xac
             // metadata: MPropertyFriendlyName "Mod Amount (Hz)"
             // metadata: MPropertyDescription "The amount the modulating sine tone modulates this sine tone."
-            float m_flModulatorAmount; // 0xb0            
+            float m_flModulatorAmount; // 0xb0
             uint8_t _pad00b4[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CVoiceContainerRealtimeFMSineWave because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::soundsystem_voicecontainers::CVoiceContainerRealtimeFMSineWave) == 0xb8);
     };
 };

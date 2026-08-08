@@ -57,7 +57,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x180
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "QAngle m_vecPunchAngle"
         // static metadata: MNetworkVarNames "QAngle m_vecPunchAngleVel"
         // static metadata: MNetworkVarNames "GameTick_t m_nPunchAngleJoltTick"
@@ -75,50 +75,50 @@ namespace source2sdk
             // metadata: MNetworkUserGroup "LocalPlayerExclusive"
             // metadata: MNetworkPriority "32"
             // metadata: MNetworkEncoder "qangle_precise"
-            QAngle m_vecPunchAngle; // 0x48            
+            QAngle m_vecPunchAngle; // 0x48
             // metadata: MNetworkEnable
             // metadata: MNetworkUserGroup "LocalPlayerExclusive"
             // metadata: MNetworkEncoder "qangle_precise"
-            QAngle m_vecPunchAngleVel; // 0x54            
+            QAngle m_vecPunchAngleVel; // 0x54
             // metadata: MNetworkEnable
             // metadata: MNetworkChangeCallback "OnPunchJoltChanged"
-            source2sdk::entity2::GameTick_t m_nPunchAngleJoltTick; // 0x60            
+            source2sdk::entity2::GameTick_t m_nPunchAngleJoltTick; // 0x60
             uint8_t _pad0064[0x4]; // 0x64
             // metadata: MNetworkEnable
-            source2sdk::server::fogplayerparams_t m_PlayerFog; // 0x68            
+            source2sdk::server::fogplayerparams_t m_PlayerFog; // 0x68
             // metadata: MNetworkEnable
             // m_hColorCorrectionCtrl has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CColorCorrection> m_hColorCorrectionCtrl;
-            char m_hColorCorrectionCtrl[0x4]; // 0xa8            
+            char m_hColorCorrectionCtrl[0x4]; // 0xa8
             // metadata: MNetworkEnable
             // m_hViewEntity has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hViewEntity;
-            char m_hViewEntity[0x4]; // 0xac            
+            char m_hViewEntity[0x4]; // 0xac
             // metadata: MNetworkEnable
             // metadata: MNetworkUserGroup "LocalPlayerAndObserversExclusive"
             // m_hTonemapController has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CTonemapController2> m_hTonemapController;
-            char m_hTonemapController[0x4]; // 0xb0            
+            char m_hTonemapController[0x4]; // 0xb0
             uint8_t _pad00b4[0x4]; // 0xb4
             // metadata: MNetworkEnable
             // metadata: MNetworkUserGroup "LocalPlayerAndObserversExclusive"
-            source2sdk::server::audioparams_t m_audio; // 0xb8            
+            source2sdk::server::audioparams_t m_audio; // 0xb8
             // metadata: MNetworkEnable
             // metadata: MNetworkUserGroup "LocalPlayerAndObserversExclusive"
             // m_PostProcessingVolumes has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CNetworkUtlVectorBase<CHandle<source2sdk::server::CPostProcessingVolume>> m_PostProcessingVolumes;
-            char m_PostProcessingVolumes[0x18]; // 0x130            
-            float m_flOldPlayerZ; // 0x148            
-            float m_flOldPlayerViewOffsetZ; // 0x14c            
+            char m_PostProcessingVolumes[0x18]; // 0x130
+            float m_flOldPlayerZ; // 0x148
+            float m_flOldPlayerViewOffsetZ; // 0x14c
             uint8_t _pad0150[0x18]; // 0x150
             // m_hTriggerSoundscapeList has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::server::CEnvSoundscapeTriggerable>> m_hTriggerSoundscapeList;
-            char m_hTriggerSoundscapeList[0x18]; // 0x168            
+            char m_hTriggerSoundscapeList[0x18]; // 0x168
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPlayer_CameraServices because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CPlayer_CameraServices) == 0x180);
     };
 };

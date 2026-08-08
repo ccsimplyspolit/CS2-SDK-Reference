@@ -16,7 +16,7 @@ namespace source2sdk
         // Enumerator count: 8
         // Alignment: 4
         // Size: 0x4
-        // 
+        //
         // metadata: MEnumFlagsWithOverlappingBits
         enum class DOTA_PURGE_FLAGS : std::uint32_t
         {

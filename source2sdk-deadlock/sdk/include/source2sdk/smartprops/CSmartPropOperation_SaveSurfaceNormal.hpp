@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x98
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Save Current Surface Normal"
         // static metadata: MPropertyDescription "Save the current surface normal to a specified variable in the requested coordinate space"
@@ -30,14 +30,14 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyDescription "Specifies the coordinate space of the saved position value."
-            source2sdk::smartprops::CSmartPropAttributeCoordinateSpace m_CoordinateSpace; // 0x50            
+            source2sdk::smartprops::CSmartPropAttributeCoordinateSpace m_CoordinateSpace; // 0x50
             // metadata: MPropertyAttributeEditor "SmartPropItemNameEditor( Variable:Vector3 )"
-            CUtlString m_VariableName; // 0x90            
+            CUtlString m_VariableName; // 0x90
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSmartPropOperation_SaveSurfaceNormal because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::smartprops::CSmartPropOperation_SaveSurfaceNormal) == 0x98);
     };
 };

@@ -23,13 +23,13 @@ namespace source2sdk
         class CCitadel_Modifier_Hero_Clone : public source2sdk::server::CCitadelModifier
         {
         public:
-            bool m_bMimicOwner; // 0xd0            
+            bool m_bMimicOwner; // 0xd0
             uint8_t _pad00d1[0x87];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_Hero_Clone because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_Hero_Clone) == 0x158);
     };
 };

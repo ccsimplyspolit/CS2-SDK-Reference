@@ -31,22 +31,22 @@ namespace source2sdk
         struct COrbSpawner_Bounty_t
         {
         public:
-            std::int32_t m_nGoldToGive; // 0x0            
-            std::int32_t m_nNumOrbs; // 0x4            
-            source2sdk::client::EDenyDistributionType m_eDenyType; // 0x8            
-            source2sdk::client::ECurrencySource m_eSource; // 0xc            
+            std::int32_t m_nGoldToGive; // 0x0
+            std::int32_t m_nNumOrbs; // 0x4
+            source2sdk::client::EDenyDistributionType m_eDenyType; // 0x8
+            source2sdk::client::ECurrencySource m_eSource; // 0xc
             // m_hTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CCitadelPlayerPawn> m_hTarget;
-            char m_hTarget[0x4]; // 0x10            
+            char m_hTarget[0x4]; // 0x10
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::COrbSpawner_Bounty_t, m_nGoldToGive) == 0x0);
         static_assert(offsetof(source2sdk::server::COrbSpawner_Bounty_t, m_nNumOrbs) == 0x4);
         static_assert(offsetof(source2sdk::server::COrbSpawner_Bounty_t, m_eDenyType) == 0x8);
         static_assert(offsetof(source2sdk::server::COrbSpawner_Bounty_t, m_eSource) == 0xc);
         static_assert(offsetof(source2sdk::server::COrbSpawner_Bounty_t, m_hTarget) == 0x10);
-        
+
         static_assert(sizeof(source2sdk::server::COrbSpawner_Bounty_t) == 0x14);
     };
 };

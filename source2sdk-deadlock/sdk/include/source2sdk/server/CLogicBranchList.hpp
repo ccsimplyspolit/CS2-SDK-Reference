@@ -32,25 +32,25 @@ namespace source2sdk
         class CLogicBranchList : public source2sdk::server::CLogicalEntity
         {
         public:
-            CUtlSymbolLarge m_nLogicBranchNames[16]; // 0x4a0            
+            CUtlSymbolLarge m_nLogicBranchNames[16]; // 0x4a0
             // m_LogicBranchList has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::server::CBaseEntity>> m_LogicBranchList;
-            char m_LogicBranchList[0x18]; // 0x520            
-            source2sdk::server::CLogicBranchList_LogicBranchListenerLastState_t m_eLastState; // 0x538            
+            char m_LogicBranchList[0x18]; // 0x520
+            source2sdk::server::CLogicBranchList_LogicBranchListenerLastState_t m_eLastState; // 0x538
             uint8_t _pad053c[0x4]; // 0x53c
-            source2sdk::entity2::CEntityIOOutput m_OnAllTrue; // 0x540            
-            source2sdk::entity2::CEntityIOOutput m_OnAllFalse; // 0x558            
-            source2sdk::entity2::CEntityIOOutput m_OnMixed; // 0x570            
-            
+            source2sdk::entity2::CEntityIOOutput m_OnAllTrue; // 0x540
+            source2sdk::entity2::CEntityIOOutput m_OnAllFalse; // 0x558
+            source2sdk::entity2::CEntityIOOutput m_OnMixed; // 0x570
+
             // Datamap fields:
             // void InputTest; // 0x0
             // void Input_OnLogicBranchChanged; // 0x0
             // void Input_OnLogicBranchRemoved; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CLogicBranchList because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CLogicBranchList) == 0x588);
     };
 };

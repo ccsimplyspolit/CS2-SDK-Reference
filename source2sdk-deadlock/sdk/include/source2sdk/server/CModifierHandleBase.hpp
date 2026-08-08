@@ -19,7 +19,7 @@ namespace source2sdk
         // Size: 0x18
         // Has VTable
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MNetworkVarNames "uint64 m_hStableHandle"
         #pragma pack(push, 1)
         class CModifierHandleBase
@@ -29,16 +29,16 @@ namespace source2sdk
             // metadata: MNetworkEnable
             // metadata: MNetworkSerializer "modifier_handle"
             // metadata: MNotSaved
-            std::uint64_t m_hStableHandle; // 0x8            
+            std::uint64_t m_hStableHandle; // 0x8
             uint8_t _pad0010[0x8];
-            
+
             // Datamap fields:
             // void m_hRuntimeListHandle; // 0x10
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::CModifierHandleBase, m_hStableHandle) == 0x8);
-        
+
         static_assert(sizeof(source2sdk::server::CModifierHandleBase) == 0x18);
     };
 };

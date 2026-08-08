@@ -25,13 +25,13 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0d10[0x8]; // 0xd10
-            bool m_bSetupMaterialProxy; // 0xd18            
+            bool m_bSetupMaterialProxy; // 0xd18
             uint8_t _pad0d19[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DynamicPropClientside because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DynamicPropClientside) == 0xd20);
     };
 };

@@ -24,19 +24,19 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0780[0x8]; // 0x780
-            bool m_bDisabled; // 0x788            
+            bool m_bDisabled; // 0x788
             uint8_t _pad0789[0x3]; // 0x789
-            std::int32_t m_nBlockedTeamNumber; // 0x78c            
+            std::int32_t m_nBlockedTeamNumber; // 0x78c
             uint8_t _pad0790[0x8];
-            
+
             // Datamap fields:
             // void InputBlockNav; // 0x0
             // void InputUnblockNav; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CFuncNavBlocker because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CFuncNavBlocker) == 0x798);
     };
 };

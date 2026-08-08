@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x20
         // Has VTable
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MNetworkVarNames "GameTime_t m_flLatchTime"
         // static metadata: MNetworkVarNames "float m_flLatchValue"
         #pragma pack(push, 1)
@@ -28,23 +28,23 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0000[0x8]; // 0x0
-            float m_flCurrentValue; // 0x8            
-            float m_flPrevRegenRate; // 0xc            
-            float m_flMaxValue; // 0x10            
+            float m_flCurrentValue; // 0x8
+            float m_flPrevRegenRate; // 0xc
+            float m_flMaxValue; // 0x10
             // metadata: MNetworkEnable
-            source2sdk::entity2::GameTime_t m_flLatchTime; // 0x14            
+            source2sdk::entity2::GameTime_t m_flLatchTime; // 0x14
             // metadata: MNetworkEnable
-            float m_flLatchValue; // 0x18            
+            float m_flLatchValue; // 0x18
             uint8_t _pad001c[0x4];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::AbilityResource_t, m_flCurrentValue) == 0x8);
         static_assert(offsetof(source2sdk::server::AbilityResource_t, m_flPrevRegenRate) == 0xc);
         static_assert(offsetof(source2sdk::server::AbilityResource_t, m_flMaxValue) == 0x10);
         static_assert(offsetof(source2sdk::server::AbilityResource_t, m_flLatchTime) == 0x14);
         static_assert(offsetof(source2sdk::server::AbilityResource_t, m_flLatchValue) == 0x18);
-        
+
         static_assert(sizeof(source2sdk::server::AbilityResource_t) == 0x20);
     };
 };

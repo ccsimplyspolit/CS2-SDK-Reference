@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x30
         // Has VTable
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct MantleType_t
@@ -28,23 +28,23 @@ namespace source2sdk
         public:
             uint8_t _pad0000[0x8]; // 0x0
             // metadata: MPropertyDescription "The minimum height difference of the player origin from the ledge for this type to be selected"
-            float m_flMinHeight; // 0x8            
+            float m_flMinHeight; // 0x8
             // metadata: MPropertyDescription "How much vertical distance the anim of this type will appear to travel"
-            float m_flAnimHeight; // 0xc            
+            float m_flAnimHeight; // 0xc
             // metadata: MPropertyDescription "The maximum height difference of the player origin from the ledge for this type to be selected"
-            float m_flMaxHeight; // 0x10            
+            float m_flMaxHeight; // 0x10
             // metadata: MPropertyDescription "How long to apply all of the vertical movement of this mantle"
-            float m_flVerticalTime; // 0x14            
+            float m_flVerticalTime; // 0x14
             // metadata: MPropertyDescription "How long to apply all of the horizontal movement of this mantle.  NOTE: Horizontal applies after the vertical"
-            float m_flHorizontalTime; // 0x18            
-            source2sdk::client::EMantleType m_eMantleType; // 0x1c            
+            float m_flHorizontalTime; // 0x18
+            source2sdk::client::EMantleType m_eMantleType; // 0x1c
             uint8_t _pad0020[0x8]; // 0x20
             // metadata: MPropertyDescription "Sliding out of a mantle gives you this impulse. units/second"
-            float m_flSlideExitBoostOnGround; // 0x28            
+            float m_flSlideExitBoostOnGround; // 0x28
             uint8_t _pad002c[0x4];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::MantleType_t, m_flMinHeight) == 0x8);
         static_assert(offsetof(source2sdk::client::MantleType_t, m_flAnimHeight) == 0xc);
         static_assert(offsetof(source2sdk::client::MantleType_t, m_flMaxHeight) == 0x10);
@@ -52,7 +52,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::client::MantleType_t, m_flHorizontalTime) == 0x18);
         static_assert(offsetof(source2sdk::client::MantleType_t, m_eMantleType) == 0x1c);
         static_assert(offsetof(source2sdk::client::MantleType_t, m_flSlideExitBoostOnGround) == 0x28);
-        
+
         static_assert(sizeof(source2sdk::client::MantleType_t) == 0x30);
     };
 };

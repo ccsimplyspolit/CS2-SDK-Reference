@@ -20,49 +20,49 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x208
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_RemapModelVolumetoCP : public source2sdk::particles::CParticleFunctionPreEmission
         {
         public:
             // metadata: MPropertyFriendlyName "output BBox Type"
-            source2sdk::particles::BBoxVolumeType_t m_nBBoxType; // 0x1e0            
+            source2sdk::particles::BBoxVolumeType_t m_nBBoxType; // 0x1e0
             // metadata: MPropertyFriendlyName "input control point"
-            std::int32_t m_nInControlPointNumber; // 0x1e4            
+            std::int32_t m_nInControlPointNumber; // 0x1e4
             // metadata: MPropertyFriendlyName "output control point"
-            std::int32_t m_nOutControlPointNumber; // 0x1e8            
+            std::int32_t m_nOutControlPointNumber; // 0x1e8
             // metadata: MPropertyFriendlyName "output max control point"
             // metadata: MPropertySuppressExpr "m_nBBoxType != BBOX_MINS_MAXS"
-            std::int32_t m_nOutControlPointMaxNumber; // 0x1ec            
+            std::int32_t m_nOutControlPointMaxNumber; // 0x1ec
             // metadata: MPropertyFriendlyName "output CP component"
             // metadata: MPropertyAttributeChoiceName "vector_component"
             // metadata: MPropertySuppressExpr "m_nBBoxType != BBOX_VOLUME && m_nBBoxType != BBOX_RADIUS"
-            std::int32_t m_nField; // 0x1f0            
+            std::int32_t m_nField; // 0x1f0
             // metadata: MPropertyFriendlyName "input volume minimum"
             // metadata: MPropertySuppressExpr "m_nBBoxType != BBOX_VOLUME && m_nBBoxType != BBOX_RADIUS"
-            float m_flInputMin; // 0x1f4            
+            float m_flInputMin; // 0x1f4
             // metadata: MPropertyFriendlyName "input volume maximum"
             // metadata: MPropertySuppressExpr "m_nBBoxType != BBOX_VOLUME && m_nBBoxType != BBOX_RADIUS"
-            float m_flInputMax; // 0x1f8            
+            float m_flInputMax; // 0x1f8
             // metadata: MPropertyFriendlyName "output minimum"
             // metadata: MPropertySuppressExpr "m_nBBoxType != BBOX_VOLUME && m_nBBoxType != BBOX_RADIUS"
-            float m_flOutputMin; // 0x1fc            
+            float m_flOutputMin; // 0x1fc
             // metadata: MPropertyFriendlyName "output maximum"
             // metadata: MPropertySuppressExpr "m_nBBoxType != BBOX_VOLUME && m_nBBoxType != BBOX_RADIUS"
-            float m_flOutputMax; // 0x200            
+            float m_flOutputMax; // 0x200
             // metadata: MPropertyFriendlyName "check full bbox only"
             // metadata: MPropertySuppressExpr "m_nBBoxType != BBOX_VOLUME"
-            bool m_bBBoxOnly; // 0x204            
+            bool m_bBBoxOnly; // 0x204
             // metadata: MPropertyFriendlyName "cube root of volume"
             // metadata: MPropertySuppressExpr "m_nBBoxType != BBOX_VOLUME"
-            bool m_bCubeRoot; // 0x205            
+            bool m_bCubeRoot; // 0x205
             uint8_t _pad0206[0x2];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_RemapModelVolumetoCP because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_RemapModelVolumetoCP) == 0x208);
     };
 };

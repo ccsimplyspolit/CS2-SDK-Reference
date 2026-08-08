@@ -30,14 +30,14 @@ namespace source2sdk
         class C_Projectile_Airheart_Package : public source2sdk::client::CBaseAnimGraph
         {
         public:
-            source2sdk::client::C_CitadelBaseAbility* m_pAbility; // 0xca8            
-            float m_flStunDuration; // 0xcb0            
-            float m_flStunRadius; // 0xcb4            
+            source2sdk::client::C_CitadelBaseAbility* m_pAbility; // 0xca8
+            float m_flStunDuration; // 0xcb0
+            float m_flStunRadius; // 0xcb4
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_Projectile_Airheart_Package because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_Projectile_Airheart_Package) == 0xcb8);
     };
 };

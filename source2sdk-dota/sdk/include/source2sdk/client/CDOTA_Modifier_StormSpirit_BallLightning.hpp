@@ -17,18 +17,18 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a70
+        // Size: 0x1a90
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_StormSpirit_BallLightning : public source2sdk::client::CDOTA_Buff
         {
         public:
-            uint8_t _pad1a58[0x18];
+            uint8_t _pad1a78[0x18];
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: CDOTA_Modifier_StormSpirit_BallLightning has no schema binary (size is a guess)
     };
 };

@@ -17,21 +17,21 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a78
+        // Size: 0x1a98
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Mirana_MoonlightShadow : public source2sdk::server::CDOTA_Modifier_PersistentInvisibility
         {
         public:
-            float duration; // 0x1a68            
-            std::int32_t bonus_movement_speed; // 0x1a6c            
-            std::int32_t evasion; // 0x1a70            
-            float bonus_outgoing_damage_pct; // 0x1a74            
+            float duration; // 0x1a88
+            std::int32_t bonus_movement_speed; // 0x1a8c
+            std::int32_t evasion; // 0x1a90
+            float bonus_outgoing_damage_pct; // 0x1a94
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Mirana_MoonlightShadow because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Mirana_MoonlightShadow) == 0x1a78);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Mirana_MoonlightShadow) == 0x1a98);
     };
 };

@@ -23,30 +23,30 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x790
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CModifierVData_BaseAura : public source2sdk::server::CCitadelModifierVData
         {
         public:
-            source2sdk::client::AuraShapeType_t m_nAuraShapeType; // 0x750            
-            source2sdk::client::AuraCenterType_t m_nCenterType; // 0x754            
+            source2sdk::client::AuraShapeType_t m_nAuraShapeType; // 0x750
+            source2sdk::client::AuraCenterType_t m_nCenterType; // 0x754
             // metadata: MPropertySuppressExpr "m_nAuraShapeType != eSphere"
-            source2sdk::client::CModifierLevelFloat m_flAuraRadius; // 0x758            
+            source2sdk::client::CModifierLevelFloat m_flAuraRadius; // 0x758
             // metadata: MPropertySuppressExpr "m_nAuraShapeType != eEntityBased"
-            source2sdk::client::CModifierLevelFloat m_flAuraEntityBoundsScale; // 0x768            
-            std::int32_t m_nAmbientParticleRadiusControlPoint; // 0x778            
+            source2sdk::client::CModifierLevelFloat m_flAuraEntityBoundsScale; // 0x768
+            std::int32_t m_nAmbientParticleRadiusControlPoint; // 0x778
             uint8_t _pad077c[0x4]; // 0x77c
             // metadata: MPropertyDescription "Aura - Modifier to Apply"
             // metadata: MPropertyFriendlyName "Modifier Provided By Aura"
             // m_modifierProvidedByAura has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEmbeddedSubclass<source2sdk::server::CBaseModifier> m_modifierProvidedByAura;
-            char m_modifierProvidedByAura[0x10]; // 0x780            
+            char m_modifierProvidedByAura[0x10]; // 0x780
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CModifierVData_BaseAura because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CModifierVData_BaseAura) == 0x790);
     };
 };

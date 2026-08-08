@@ -20,18 +20,18 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xa8
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct RnCompoundDesc_t : public source2sdk::physicslib::RnShapeDesc_t
         {
         public:
-            source2sdk::physicslib::RnCompound_t m_Compound; // 0x18            
+            source2sdk::physicslib::RnCompound_t m_Compound; // 0x18
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in RnCompoundDesc_t because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::physicslib::RnCompoundDesc_t) == 0xa8);
     };
 };

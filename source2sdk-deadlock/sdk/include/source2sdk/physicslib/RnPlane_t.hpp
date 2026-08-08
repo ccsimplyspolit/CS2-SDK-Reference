@@ -19,20 +19,20 @@ namespace source2sdk
         // Size: 0x10
         // Has Trivial Constructor
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct RnPlane_t
         {
         public:
-            Vector m_vNormal; // 0x0            
-            float m_flOffset; // 0xc            
+            Vector m_vNormal; // 0x0
+            float m_flOffset; // 0xc
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::physicslib::RnPlane_t, m_vNormal) == 0x0);
         static_assert(offsetof(source2sdk::physicslib::RnPlane_t, m_flOffset) == 0xc);
-        
+
         static_assert(sizeof(source2sdk::physicslib::RnPlane_t) == 0x10);
     };
 };

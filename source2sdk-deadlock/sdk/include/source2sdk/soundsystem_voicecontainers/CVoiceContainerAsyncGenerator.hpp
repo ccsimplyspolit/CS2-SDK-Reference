@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0xb8
         // Has VTable
         // Is Abstract
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CVoiceContainerAsyncGenerator : public source2sdk::soundsystem_voicecontainers::CVoiceContainerGenerator
@@ -29,8 +29,8 @@ namespace source2sdk
             uint8_t _pad00a8[0x10];
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::soundsystem_voicecontainers::CVoiceContainerAsyncGenerator) == 0xb8);
     };
 };

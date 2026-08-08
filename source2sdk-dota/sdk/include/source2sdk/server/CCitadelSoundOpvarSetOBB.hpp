@@ -24,20 +24,20 @@ namespace source2sdk
         class CCitadelSoundOpvarSetOBB : public source2sdk::server::CBaseEntity
         {
         public:
-            CUtlSymbolLarge m_iszStackName; // 0x498            
-            CUtlSymbolLarge m_iszOperatorName; // 0x4a0            
-            CUtlSymbolLarge m_iszOpvarName; // 0x4a8            
-            Vector m_vDistanceInnerMins; // 0x4b0            
-            Vector m_vDistanceInnerMaxs; // 0x4bc            
-            Vector m_vDistanceOuterMins; // 0x4c8            
-            Vector m_vDistanceOuterMaxs; // 0x4d4            
-            std::int32_t m_nAABBDirection; // 0x4e0            
+            CUtlSymbolLarge m_iszStackName; // 0x498
+            CUtlSymbolLarge m_iszOperatorName; // 0x4a0
+            CUtlSymbolLarge m_iszOpvarName; // 0x4a8
+            Vector m_vDistanceInnerMins; // 0x4b0
+            Vector m_vDistanceInnerMaxs; // 0x4bc
+            Vector m_vDistanceOuterMins; // 0x4c8
+            Vector m_vDistanceOuterMaxs; // 0x4d4
+            std::int32_t m_nAABBDirection; // 0x4e0
             uint8_t _pad04e4[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadelSoundOpvarSetOBB because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadelSoundOpvarSetOBB) == 0x4e8);
     };
 };

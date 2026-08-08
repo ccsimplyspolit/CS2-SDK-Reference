@@ -27,8 +27,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: CCitadel_Modifier_Bebop_Hook_BulletAmp has no schema binary (size is a guess)
     };
 };

@@ -25,19 +25,19 @@ namespace source2sdk
         class CEnvFade : public source2sdk::server::CLogicalEntity
         {
         public:
-            Color m_fadeColor; // 0x498            
-            float m_Duration; // 0x49c            
-            float m_HoldDuration; // 0x4a0            
+            Color m_fadeColor; // 0x498
+            float m_Duration; // 0x49c
+            float m_HoldDuration; // 0x4a0
             uint8_t _pad04a4[0x4]; // 0x4a4
-            source2sdk::entity2::CEntityIOOutput m_OnBeginFade; // 0x4a8            
-            
+            source2sdk::entity2::CEntityIOOutput m_OnBeginFade; // 0x4a8
+
             // Datamap fields:
             // void InputFade; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CEnvFade because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CEnvFade) == 0x4c0);
     };
 };

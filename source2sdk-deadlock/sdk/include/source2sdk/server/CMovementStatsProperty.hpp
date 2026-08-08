@@ -25,14 +25,14 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0000[0x10]; // 0x0
-            std::int32_t m_nUseCounter; // 0x10            
-            source2sdk::client::CVectorExponentialMovingAverage m_emaMovementDirection; // 0x14            
+            std::int32_t m_nUseCounter; // 0x10
+            source2sdk::client::CVectorExponentialMovingAverage m_emaMovementDirection; // 0x14
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::CMovementStatsProperty, m_nUseCounter) == 0x10);
         static_assert(offsetof(source2sdk::server::CMovementStatsProperty, m_emaMovementDirection) == 0x14);
-        
+
         static_assert(sizeof(source2sdk::server::CMovementStatsProperty) == 0x40);
     };
 };

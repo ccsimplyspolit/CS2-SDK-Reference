@@ -26,17 +26,17 @@ namespace source2sdk
         class CDOTA_Ability_Magnataur_ReversePolarity : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x580            
-            VectorWS m_vPullLocation; // 0x584            
-            float push_radius; // 0x590            
-            float max_knockback_distance; // 0x594            
-            float pull_radius; // 0x598            
-            float flEffectRadius; // 0x59c            
+            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x580
+            VectorWS m_vPullLocation; // 0x584
+            float push_radius; // 0x590
+            float max_knockback_distance; // 0x594
+            float pull_radius; // 0x598
+            float flEffectRadius; // 0x59c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Magnataur_ReversePolarity because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Magnataur_ReversePolarity) == 0x5a0);
     };
 };

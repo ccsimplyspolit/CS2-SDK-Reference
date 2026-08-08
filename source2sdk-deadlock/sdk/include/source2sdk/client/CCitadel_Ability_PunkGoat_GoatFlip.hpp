@@ -21,7 +21,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x1c68
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "PG_RisingRamState m_eState"
         // static metadata: MNetworkVarNames "GameTime_t m_tStateStartTime"
         // static metadata: MNetworkVarNames "float m_flGoingUpTargetElevation"
@@ -32,19 +32,19 @@ namespace source2sdk
         public:
             uint8_t _pad11d8[0xa80]; // 0x11d8
             // metadata: MNetworkEnable
-            source2sdk::client::PG_RisingRamState m_eState; // 0x1c58            
+            source2sdk::client::PG_RisingRamState m_eState; // 0x1c58
             uint8_t _pad1c59[0x3]; // 0x1c59
             // metadata: MNetworkEnable
-            source2sdk::entity2::GameTime_t m_tStateStartTime; // 0x1c5c            
+            source2sdk::entity2::GameTime_t m_tStateStartTime; // 0x1c5c
             // metadata: MNetworkEnable
-            float m_flGoingUpTargetElevation; // 0x1c60            
+            float m_flGoingUpTargetElevation; // 0x1c60
             // metadata: MNetworkEnable
-            float m_flGoingUpStartElevation; // 0x1c64            
+            float m_flGoingUpStartElevation; // 0x1c64
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_PunkGoat_GoatFlip because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Ability_PunkGoat_GoatFlip) == 0x1c68);
     };
 };

@@ -34,18 +34,18 @@ namespace source2sdk
         public:
             // hAlreadyHitList has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::client::C_BaseEntity>> hAlreadyHitList;
-            char hAlreadyHitList[0x18]; // 0x6a8            
-            float width; // 0x6c0            
-            float duration; // 0x6c4            
-            float length; // 0x6c8            
-            float speed; // 0x6cc            
-            VectorWS vOriginalCast; // 0x6d0            
+            char hAlreadyHitList[0x18]; // 0x6a8
+            float width; // 0x6c0
+            float duration; // 0x6c4
+            float length; // 0x6c8
+            float speed; // 0x6cc
+            VectorWS vOriginalCast; // 0x6d0
             uint8_t _pad06dc[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_Nyx_Assassin_Impale because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_Nyx_Assassin_Impale) == 0x6e0);
     };
 };

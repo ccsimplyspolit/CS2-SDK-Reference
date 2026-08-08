@@ -18,25 +18,25 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a80
+        // Size: 0x1aa0
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Windrunner_Tailwind_Counter : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float mostRecentBuffTime; // 0x1a58            
-            float initializeTime; // 0x1a5c            
-            float effectSpeedMax; // 0x1a60            
-            float effectSpeedMin; // 0x1a64            
-            float currentEffectSpeed; // 0x1a68            
-            Vector particleLingerInfo; // 0x1a6c            
-            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x1a78            
-            uint8_t _pad1a7c[0x4];
+            float mostRecentBuffTime; // 0x1a78
+            float initializeTime; // 0x1a7c
+            float effectSpeedMax; // 0x1a80
+            float effectSpeedMin; // 0x1a84
+            float currentEffectSpeed; // 0x1a88
+            Vector particleLingerInfo; // 0x1a8c
+            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x1a98
+            uint8_t _pad1a9c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Windrunner_Tailwind_Counter because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Windrunner_Tailwind_Counter) == 0x1a80);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Windrunner_Tailwind_Counter) == 0x1aa0);
     };
 };

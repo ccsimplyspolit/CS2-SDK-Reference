@@ -30,15 +30,15 @@ namespace source2sdk
         class CPointProximitySensor : public source2sdk::server::CPointEntity
         {
         public:
-            bool m_bDisabled; // 0x4a0            
+            bool m_bDisabled; // 0x4a0
             uint8_t _pad04a1[0x3]; // 0x4a1
             // m_hTargetEntity has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hTargetEntity;
-            char m_hTargetEntity[0x4]; // 0x4a4            
+            char m_hTargetEntity[0x4]; // 0x4a4
             // m_Distance has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEntityOutputTemplate<float> m_Distance;
-            char m_Distance[0x20]; // 0x4a8            
-            
+            char m_Distance[0x20]; // 0x4a8
+
             // Datamap fields:
             // void InputEnable; // 0x0
             // void InputDisable; // 0x0
@@ -46,9 +46,9 @@ namespace source2sdk
             // CUtlSymbolLarge InputSetTargetEntity; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPointProximitySensor because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CPointProximitySensor) == 0x4c8);
     };
 };

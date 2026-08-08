@@ -17,23 +17,23 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a70
+        // Size: 0x1a90
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_TangoHeal : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float health_regen; // 0x1a58            
-            bool superheal; // 0x1a5c            
-            uint8_t _pad1a5d[0x3]; // 0x1a5d
-            float m_fHealingDone; // 0x1a60            
-            float m_fUseSpeed; // 0x1a64            
-            CUtlString m_sAbilityClassname; // 0x1a68            
+            float health_regen; // 0x1a78
+            bool superheal; // 0x1a7c
+            uint8_t _pad1a7d[0x3]; // 0x1a7d
+            float m_fHealingDone; // 0x1a80
+            float m_fUseSpeed; // 0x1a84
+            CUtlString m_sAbilityClassname; // 0x1a88
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_TangoHeal because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_TangoHeal) == 0x1a70);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_TangoHeal) == 0x1a90);
     };
 };

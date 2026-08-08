@@ -26,15 +26,15 @@ namespace source2sdk
         class CDOTA_Ability_Tusk_WalrusKick : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            source2sdk::client::ParticleIndex_t m_nTargetFXIndex; // 0x6a8            
-            VectorWS m_vEndpoint; // 0x6ac            
-            float landing_radius; // 0x6b8            
-            float push_length; // 0x6bc            
+            source2sdk::client::ParticleIndex_t m_nTargetFXIndex; // 0x6a8
+            VectorWS m_vEndpoint; // 0x6ac
+            float landing_radius; // 0x6b8
+            float push_length; // 0x6bc
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Tusk_WalrusKick because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CDOTA_Ability_Tusk_WalrusKick) == 0x6c0);
     };
 };

@@ -24,20 +24,20 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0bf0[0x20]; // 0xbf0
-            CUtlString m_strFruitModelName; // 0xc10            
-            VectorWS m_vStartPos; // 0xc18            
-            VectorWS m_vEndPos; // 0xc24            
-            float m_flGrowDuration; // 0xc30            
+            CUtlString m_strFruitModelName; // 0xc10
+            VectorWS m_vStartPos; // 0xc18
+            VectorWS m_vEndPos; // 0xc24
+            float m_flGrowDuration; // 0xc30
             uint8_t _pad0c34[0xc];
-            
+
             // Datamap fields:
             // CHandle< CBaseEntity > ability; // 0x7fffffff
             // CHandle< CBaseEntity > caster; // 0x7fffffff
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadelDruidHealingTree because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadelDruidHealingTree) == 0xc40);
     };
 };

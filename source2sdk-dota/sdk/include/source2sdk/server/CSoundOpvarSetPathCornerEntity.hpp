@@ -25,17 +25,17 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0630[0x18]; // 0x630
-            bool m_bUseParentedPath; // 0x648            
+            bool m_bUseParentedPath; // 0x648
             uint8_t _pad0649[0x3]; // 0x649
-            float m_flDistMinSqr; // 0x64c            
-            float m_flDistMaxSqr; // 0x650            
+            float m_flDistMinSqr; // 0x64c
+            float m_flDistMaxSqr; // 0x650
             uint8_t _pad0654[0x4]; // 0x654
-            CUtlSymbolLarge m_iszPathCornerEntityName; // 0x658            
+            CUtlSymbolLarge m_iszPathCornerEntityName; // 0x658
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSoundOpvarSetPathCornerEntity because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CSoundOpvarSetPathCornerEntity) == 0x660);
     };
 };

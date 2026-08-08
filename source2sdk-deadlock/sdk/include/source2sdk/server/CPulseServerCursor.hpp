@@ -33,15 +33,15 @@ namespace source2sdk
             uint8_t _pad00d0[0x8]; // 0xd0
             // m_hActivator has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hActivator;
-            char m_hActivator[0x4]; // 0xd8            
+            char m_hActivator[0x4]; // 0xd8
             // m_hCaller has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hCaller;
-            char m_hCaller[0x4]; // 0xdc            
+            char m_hCaller[0x4]; // 0xdc
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPulseServerCursor because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CPulseServerCursor) == 0xe0);
     };
 };

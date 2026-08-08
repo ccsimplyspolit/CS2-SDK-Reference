@@ -32,20 +32,20 @@ namespace source2sdk
         class C_DOTA_Ability_Lion_Impale : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            float width; // 0x6a8            
-            float duration; // 0x6ac            
-            std::int32_t speed; // 0x6b0            
-            float length_buffer; // 0x6b4            
-            float range; // 0x6b8            
-            std::int32_t pierces_immunity; // 0x6bc            
+            float width; // 0x6a8
+            float duration; // 0x6ac
+            std::int32_t speed; // 0x6b0
+            float length_buffer; // 0x6b4
+            float range; // 0x6b8
+            std::int32_t pierces_immunity; // 0x6bc
             // m_hHitEntities has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::client::C_BaseEntity>> m_hHitEntities;
-            char m_hHitEntities[0x18]; // 0x6c0            
+            char m_hHitEntities[0x18]; // 0x6c0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_Lion_Impale because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_Lion_Impale) == 0x6d8);
     };
 };

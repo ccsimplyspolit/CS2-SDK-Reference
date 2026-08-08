@@ -23,13 +23,13 @@ namespace source2sdk
         class CModifier_FleetfootBoots_BonusClip : public source2sdk::client::CCitadelModifier
         {
         public:
-            std::int32_t m_nBonusClip; // 0xc0            
+            std::int32_t m_nBonusClip; // 0xc0
             uint8_t _pad00c4[0x84];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CModifier_FleetfootBoots_BonusClip because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CModifier_FleetfootBoots_BonusClip) == 0x148);
     };
 };

@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x48
         // Has VTable
         // Is Abstract
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPulseEditorHeaderIcon "tools/images/pulse_editor/inflow_statecell.png"
         #pragma pack(push, 1)
@@ -29,8 +29,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::pulse_runtime_lib::CPulseCell_BaseState) == 0x48);
     };
 };

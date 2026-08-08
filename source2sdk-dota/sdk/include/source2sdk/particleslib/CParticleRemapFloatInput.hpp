@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x170
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyCustomEditor "RemapFloatInput()"
         #pragma pack(push, 1)
@@ -29,8 +29,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::particleslib::CParticleRemapFloatInput) == 0x170);
     };
 };

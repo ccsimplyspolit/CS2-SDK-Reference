@@ -24,7 +24,7 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a60
+        // Size: 0x1a80
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Huskar_Life_Break_Taunt : public source2sdk::client::CDOTA_Buff
@@ -32,14 +32,14 @@ namespace source2sdk
         public:
             // m_hZombieTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hZombieTarget;
-            char m_hZombieTarget[0x4]; // 0x1a58            
-            bool m_bDidSetAttackTarget; // 0x1a5c            
-            uint8_t _pad1a5d[0x3];
+            char m_hZombieTarget[0x4]; // 0x1a78
+            bool m_bDidSetAttackTarget; // 0x1a7c
+            uint8_t _pad1a7d[0x3];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Huskar_Life_Break_Taunt because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Huskar_Life_Break_Taunt) == 0x1a60);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Huskar_Life_Break_Taunt) == 0x1a80);
     };
 };

@@ -26,21 +26,21 @@ namespace source2sdk
         class C_DOTA_Ability_VengefulSpirit_WaveOfTerror : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            float wave_width; // 0x6a8            
-            float wave_speed; // 0x6ac            
-            std::int32_t m_iProjectile; // 0x6b0            
-            float vision_aoe; // 0x6b4            
-            float vision_duration; // 0x6b8            
-            std::int32_t steal_pct; // 0x6bc            
-            float damage; // 0x6c0            
-            std::int32_t m_nNumHeroesHit; // 0x6c4            
-            source2sdk::client::CountdownTimer m_ViewerTimer; // 0x6c8            
+            float wave_width; // 0x6a8
+            float wave_speed; // 0x6ac
+            std::int32_t m_iProjectile; // 0x6b0
+            float vision_aoe; // 0x6b4
+            float vision_duration; // 0x6b8
+            std::int32_t steal_pct; // 0x6bc
+            float damage; // 0x6c0
+            std::int32_t m_nNumHeroesHit; // 0x6c4
+            source2sdk::client::CountdownTimer m_ViewerTimer; // 0x6c8
             uint8_t _pad06e0[0x18];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_VengefulSpirit_WaveOfTerror because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_VengefulSpirit_WaveOfTerror) == 0x6f8);
     };
 };

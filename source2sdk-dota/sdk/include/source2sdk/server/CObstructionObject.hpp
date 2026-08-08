@@ -25,13 +25,13 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0000[0x10]; // 0x0
-            std::int32_t m_nObstructionProperties; // 0x10            
+            std::int32_t m_nObstructionProperties; // 0x10
             uint8_t _pad0014[0x4];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::CObstructionObject, m_nObstructionProperties) == 0x10);
-        
+
         static_assert(sizeof(source2sdk::server::CObstructionObject) == 0x18);
     };
 };

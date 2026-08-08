@@ -26,8 +26,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: CCitadel_Modifier_T2Boss_Stagger_Watcher has no schema binary (size is a guess)
     };
 };

@@ -19,23 +19,23 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a70
+        // Size: 0x1a90
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Ringmaster_TameTheBeasts : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float m_flPreviousMult; // 0x1a58            
-            float m_fChannelTime; // 0x1a5c            
-            source2sdk::entity2::GameTime_t m_fStartTime; // 0x1a60            
-            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x1a64            
-            std::int32_t has_debuff_immunity; // 0x1a68            
-            std::int32_t magic_resist; // 0x1a6c            
+            float m_flPreviousMult; // 0x1a78
+            float m_fChannelTime; // 0x1a7c
+            source2sdk::entity2::GameTime_t m_fStartTime; // 0x1a80
+            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x1a84
+            std::int32_t has_debuff_immunity; // 0x1a88
+            std::int32_t magic_resist; // 0x1a8c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Ringmaster_TameTheBeasts because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Ringmaster_TameTheBeasts) == 0x1a70);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Ringmaster_TameTheBeasts) == 0x1a90);
     };
 };

@@ -17,23 +17,23 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a88
+        // Size: 0x1aa8
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Item_Prophets_Pendulum : public source2sdk::server::CDOTA_Buff_Item
         {
         public:
-            float delay_pct; // 0x1a58            
-            float delay_time; // 0x1a5c            
-            float damage_interval; // 0x1a60            
-            float m_flDamageMultiplier; // 0x1a64            
-            bool m_bApplyingDelayedDamage; // 0x1a68            
-            uint8_t _pad1a69[0x1f];
+            float delay_pct; // 0x1a78
+            float delay_time; // 0x1a7c
+            float damage_interval; // 0x1a80
+            float m_flDamageMultiplier; // 0x1a84
+            bool m_bApplyingDelayedDamage; // 0x1a88
+            uint8_t _pad1a89[0x1f];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Item_Prophets_Pendulum because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Item_Prophets_Pendulum) == 0x1a88);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Item_Prophets_Pendulum) == 0x1aa8);
     };
 };

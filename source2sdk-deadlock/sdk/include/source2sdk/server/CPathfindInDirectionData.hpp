@@ -22,14 +22,14 @@ namespace source2sdk
         class CPathfindInDirectionData
         {
         public:
-            Vector m_vGoalDir; // 0x0            
-            float m_flMinPathLength; // 0xc            
+            Vector m_vGoalDir; // 0x0
+            float m_flMinPathLength; // 0xc
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::CPathfindInDirectionData, m_vGoalDir) == 0x0);
         static_assert(offsetof(source2sdk::server::CPathfindInDirectionData, m_flMinPathLength) == 0xc);
-        
+
         static_assert(sizeof(source2sdk::server::CPathfindInDirectionData) == 0x10);
     };
 };

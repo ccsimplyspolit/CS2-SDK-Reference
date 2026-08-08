@@ -25,13 +25,13 @@ namespace source2sdk
         class C_DOTA_Ability_Techies_Suicide : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            std::uint32_t m_unSuicideKills; // 0x6a8            
+            std::uint32_t m_unSuicideKills; // 0x6a8
             uint8_t _pad06ac[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_Techies_Suicide because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_Techies_Suicide) == 0x6b0);
     };
 };

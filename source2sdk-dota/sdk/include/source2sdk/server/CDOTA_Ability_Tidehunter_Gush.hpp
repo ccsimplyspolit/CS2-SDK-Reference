@@ -25,13 +25,13 @@ namespace source2sdk
         class CDOTA_Ability_Tidehunter_Gush : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            std::int32_t gush_damage; // 0x580            
+            std::int32_t gush_damage; // 0x580
             uint8_t _pad0584[0x14];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Tidehunter_Gush because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Tidehunter_Gush) == 0x598);
     };
 };

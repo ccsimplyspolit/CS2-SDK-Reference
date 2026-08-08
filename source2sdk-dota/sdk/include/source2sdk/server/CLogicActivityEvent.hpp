@@ -24,19 +24,19 @@ namespace source2sdk
         class CLogicActivityEvent : public source2sdk::server::CLogicalEntity
         {
         public:
-            std::int32_t m_nEventType; // 0x498            
-            float m_flDuration; // 0x49c            
-            CUtlSymbolLarge m_iszSourceEntityName; // 0x4a0            
-            CEntityHandle m_hSource; // 0x4a8            
+            std::int32_t m_nEventType; // 0x498
+            float m_flDuration; // 0x49c
+            CUtlSymbolLarge m_iszSourceEntityName; // 0x4a0
+            CEntityHandle m_hSource; // 0x4a8
             uint8_t _pad04ac[0x4];
-            
+
             // Datamap fields:
             // void InputFireEvent; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CLogicActivityEvent because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CLogicActivityEvent) == 0x4b0);
     };
 };

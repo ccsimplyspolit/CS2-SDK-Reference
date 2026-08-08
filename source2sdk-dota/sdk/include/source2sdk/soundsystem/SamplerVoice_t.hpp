@@ -22,13 +22,13 @@ namespace source2sdk
         struct SamplerVoice_t
         {
         public:
-            std::uint8_t nNoteNum; // 0x0            
+            std::uint8_t nNoteNum; // 0x0
             uint8_t _pad0001[0x7];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::soundsystem::SamplerVoice_t, nNoteNum) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::soundsystem::SamplerVoice_t) == 0x8);
     };
 };

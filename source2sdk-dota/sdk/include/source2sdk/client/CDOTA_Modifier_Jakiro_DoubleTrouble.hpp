@@ -17,19 +17,19 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a60
+        // Size: 0x1a80
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Jakiro_DoubleTrouble : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float second_attack_delay; // 0x1a58            
-            float attack_damage_reduction; // 0x1a5c            
+            float second_attack_delay; // 0x1a78
+            float attack_damage_reduction; // 0x1a7c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Jakiro_DoubleTrouble because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Jakiro_DoubleTrouble) == 0x1a60);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Jakiro_DoubleTrouble) == 0x1a80);
     };
 };

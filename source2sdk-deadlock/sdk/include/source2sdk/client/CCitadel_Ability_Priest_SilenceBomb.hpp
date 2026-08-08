@@ -23,14 +23,14 @@ namespace source2sdk
         class CCitadel_Ability_Priest_SilenceBomb : public source2sdk::client::C_CitadelBaseAbility
         {
         public:
-            VectorWS m_vLaunchPosition; // 0x11d8            
-            QAngle m_qLaunchAngle; // 0x11e4            
+            VectorWS m_vLaunchPosition; // 0x11d8
+            QAngle m_qLaunchAngle; // 0x11e4
             uint8_t _pad11f0[0x100];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_Priest_SilenceBomb because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Ability_Priest_SilenceBomb) == 0x12f0);
     };
 };

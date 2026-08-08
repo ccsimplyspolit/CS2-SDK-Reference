@@ -32,14 +32,14 @@ namespace source2sdk
         public:
             // m_hEntHit has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hEntHit;
-            char m_hEntHit[0x4]; // 0x0            
-            source2sdk::client::ShotID_t m_ShotHit; // 0x4            
+            char m_hEntHit[0x4]; // 0x0
+            source2sdk::client::ShotID_t m_ShotHit; // 0x4
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::CCitadel_Modifier_ExplosiveShots_BulletEntityPair_t, m_hEntHit) == 0x0);
         static_assert(offsetof(source2sdk::server::CCitadel_Modifier_ExplosiveShots_BulletEntityPair_t, m_ShotHit) == 0x4);
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_ExplosiveShots_BulletEntityPair_t) == 0x8);
     };
 };

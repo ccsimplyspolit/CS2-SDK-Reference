@@ -19,21 +19,21 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x848
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CCitadel_Modifier_GarbageAuraTargetModifierVData : public source2sdk::server::CCitadel_Modifier_StunnedVData
         {
         public:
-            float m_flOuterSpeedScale; // 0x830            
-            float m_flSpeedScaleBias; // 0x834            
+            float m_flOuterSpeedScale; // 0x830
+            float m_flSpeedScaleBias; // 0x834
             // metadata: MPropertyGroupName "Sounds"
-            CSoundEventName m_TargetLoopingSound; // 0x838            
+            CSoundEventName m_TargetLoopingSound; // 0x838
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_GarbageAuraTargetModifierVData because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_GarbageAuraTargetModifierVData) == 0x848);
     };
 };

@@ -30,12 +30,12 @@ namespace source2sdk
         class CCitadel_Ability_RiposteTargetSelect : public source2sdk::server::CCitadelBaseTriggerAbility
         {
         public:
-            source2sdk::server::CCitadel_Ability_Fencer_Riposte* pRiposteAbility; // 0xf80            
+            source2sdk::server::CCitadel_Ability_Fencer_Riposte* pRiposteAbility; // 0xf80
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_RiposteTargetSelect because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Ability_RiposteTargetSelect) == 0xf88);
     };
 };

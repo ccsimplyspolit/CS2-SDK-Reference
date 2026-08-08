@@ -24,22 +24,22 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a60
+        // Size: 0x1a80
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_KeeperOfTheLight_Recall : public source2sdk::client::CDOTA_Buff
         {
         public:
-            bool m_bWasAttacked; // 0x1a58            
-            uint8_t _pad1a59[0x3]; // 0x1a59
+            bool m_bWasAttacked; // 0x1a78
+            uint8_t _pad1a79[0x3]; // 0x1a79
             // m_hDestinationTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::C_BaseEntity> m_hDestinationTarget;
-            char m_hDestinationTarget[0x4]; // 0x1a5c            
+            char m_hDestinationTarget[0x4]; // 0x1a7c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_KeeperOfTheLight_Recall because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_KeeperOfTheLight_Recall) == 0x1a60);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_KeeperOfTheLight_Recall) == 0x1a80);
     };
 };

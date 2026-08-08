@@ -18,7 +18,7 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x28
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MVDataRoot
         // static metadata: MVDataNodeType "1"
@@ -31,8 +31,8 @@ namespace source2sdk
             uint8_t _pad0000[0x28];
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::client::CEntitySubclassVDataBase) == 0x28);
     };
 };

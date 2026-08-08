@@ -20,20 +20,20 @@ namespace source2sdk
         // Size: 0xa8
         // Has VTable
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct CitadelCameraDistanceOperationDef_t : public source2sdk::client::CitadelCameraOperationDef_t
         {
         public:
             // metadata: MPropertyHideField
-            std::int32_t m_nCameraParam; // 0xa0            
+            std::int32_t m_nCameraParam; // 0xa0
             uint8_t _pad00a4[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CitadelCameraDistanceOperationDef_t because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CitadelCameraDistanceOperationDef_t) == 0xa8);
     };
 };

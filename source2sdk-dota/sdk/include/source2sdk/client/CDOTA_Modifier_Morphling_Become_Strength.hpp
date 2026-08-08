@@ -17,19 +17,19 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a60
+        // Size: 0x1a80
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Morphling_Become_Strength : public source2sdk::client::CDOTA_Buff
         {
         public:
-            std::int32_t agi_per_one_spell_amp; // 0x1a58            
-            std::int32_t m_nSpellAmp; // 0x1a5c            
+            std::int32_t agi_per_one_spell_amp; // 0x1a78
+            std::int32_t m_nSpellAmp; // 0x1a7c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Morphling_Become_Strength because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Morphling_Become_Strength) == 0x1a60);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Morphling_Become_Strength) == 0x1a80);
     };
 };

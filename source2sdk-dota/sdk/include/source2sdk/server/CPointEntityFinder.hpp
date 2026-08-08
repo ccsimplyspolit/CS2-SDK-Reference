@@ -43,27 +43,27 @@ namespace source2sdk
             // metadata: MNotSaved
             // m_hEntity has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hEntity;
-            char m_hEntity[0x4]; // 0x498            
+            char m_hEntity[0x4]; // 0x498
             uint8_t _pad049c[0x4]; // 0x49c
-            CUtlSymbolLarge m_iFilterName; // 0x4a0            
+            CUtlSymbolLarge m_iFilterName; // 0x4a0
             // m_hFilter has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseFilter> m_hFilter;
-            char m_hFilter[0x4]; // 0x4a8            
+            char m_hFilter[0x4]; // 0x4a8
             uint8_t _pad04ac[0x4]; // 0x4ac
-            CUtlSymbolLarge m_iRefName; // 0x4b0            
+            CUtlSymbolLarge m_iRefName; // 0x4b0
             // m_hReference has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hReference;
-            char m_hReference[0x4]; // 0x4b8            
-            source2sdk::server::EntFinderMethod_t m_FindMethod; // 0x4bc            
-            source2sdk::entity2::CEntityIOOutput m_OnFoundEntity; // 0x4c0            
-            
+            char m_hReference[0x4]; // 0x4b8
+            source2sdk::server::EntFinderMethod_t m_FindMethod; // 0x4bc
+            source2sdk::entity2::CEntityIOOutput m_OnFoundEntity; // 0x4c0
+
             // Datamap fields:
             // void InputFindEntity; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPointEntityFinder because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CPointEntityFinder) == 0x4d8);
     };
 };

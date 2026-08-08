@@ -27,7 +27,7 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x1aa8
+        // Size: 0x1ab0
         // Has VTable
         // Construct allowed
         // MClassHasEntityLimitedDataDesc
@@ -35,20 +35,20 @@ namespace source2sdk
         class C_DOTA_Unit_Scout : public source2sdk::client::C_DOTA_BaseNPC_Additive
         {
         public:
-            bool m_bUnitRespawned; // 0x19b0            
-            uint8_t _pad19b1[0x3]; // 0x19b1
-            source2sdk::client::PlayerID_t m_nSoleControllingPlayer; // 0x19b4            
-            source2sdk::entity2::GameTime_t m_flRespawnTime; // 0x19b8            
-            source2sdk::client::ScoutState_t m_nScoutState; // 0x19bc            
+            bool m_bUnitRespawned; // 0x19b8
+            uint8_t _pad19b9[0x3]; // 0x19b9
+            source2sdk::client::PlayerID_t m_nSoleControllingPlayer; // 0x19bc
+            source2sdk::entity2::GameTime_t m_flRespawnTime; // 0x19c0
+            source2sdk::client::ScoutState_t m_nScoutState; // 0x19c4
             // m_hScoutStateEntity has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::C_BaseEntity> m_hScoutStateEntity;
-            char m_hScoutStateEntity[0x4]; // 0x19c0            
-            uint8_t _pad19c4[0xe4];
+            char m_hScoutStateEntity[0x4]; // 0x19c8
+            uint8_t _pad19cc[0xe4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Unit_Scout because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::C_DOTA_Unit_Scout) == 0x1aa8);
+
+        static_assert(sizeof(source2sdk::client::C_DOTA_Unit_Scout) == 0x1ab0);
     };
 };

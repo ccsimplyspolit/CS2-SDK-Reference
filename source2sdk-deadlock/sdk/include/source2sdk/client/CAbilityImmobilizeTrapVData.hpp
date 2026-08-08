@@ -21,7 +21,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x1c08
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CAbilityImmobilizeTrapVData : public source2sdk::client::CitadelAbilityVData
@@ -30,34 +30,34 @@ namespace source2sdk
             // metadata: MPropertyStartGroup "Visuals"
             // m_ExplodeParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_ExplodeParticle;
-            char m_ExplodeParticle[0xe0]; // 0x1818            
+            char m_ExplodeParticle[0xe0]; // 0x1818
             // m_PreviewRingParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_PreviewRingParticle;
-            char m_PreviewRingParticle[0xe0]; // 0x18f8            
+            char m_PreviewRingParticle[0xe0]; // 0x18f8
             // m_TrapHighlightParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_TrapHighlightParticle;
-            char m_TrapHighlightParticle[0xe0]; // 0x19d8            
+            char m_TrapHighlightParticle[0xe0]; // 0x19d8
             // m_ArmedParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_ArmedParticle;
-            char m_ArmedParticle[0xe0]; // 0x1ab8            
+            char m_ArmedParticle[0xe0]; // 0x1ab8
             // metadata: MPropertyStartGroup "Sounds"
-            CSoundEventName m_strTripSound; // 0x1b98            
-            CSoundEventName m_strExplodeSound; // 0x1ba8            
-            CSoundEventName m_strExpiredSound; // 0x1bb8            
-            CSoundEventName m_strImmobilizeTargetSound; // 0x1bc8            
-            CSoundEventName m_strArmingSound; // 0x1bd8            
+            CSoundEventName m_strTripSound; // 0x1b98
+            CSoundEventName m_strExplodeSound; // 0x1ba8
+            CSoundEventName m_strExpiredSound; // 0x1bb8
+            CSoundEventName m_strImmobilizeTargetSound; // 0x1bc8
+            CSoundEventName m_strArmingSound; // 0x1bd8
             // metadata: MPropertyStartGroup "Modifiers"
             // m_GlitchModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEmbeddedSubclass<source2sdk::client::CCitadelModifier> m_GlitchModifier;
-            char m_GlitchModifier[0x10]; // 0x1be8            
+            char m_GlitchModifier[0x10]; // 0x1be8
             // m_DebuffModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEmbeddedSubclass<source2sdk::client::CCitadelModifier> m_DebuffModifier;
-            char m_DebuffModifier[0x10]; // 0x1bf8            
+            char m_DebuffModifier[0x10]; // 0x1bf8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CAbilityImmobilizeTrapVData because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CAbilityImmobilizeTrapVData) == 0x1c08);
     };
 };

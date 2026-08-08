@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0xb0
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CRenderGroom
@@ -28,33 +28,33 @@ namespace source2sdk
         public:
             // m_hairs has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::modellib::RenderHairStrandInfo_t> m_hairs;
-            char m_hairs[0x18]; // 0x0            
+            char m_hairs[0x18]; // 0x0
             // m_hairPositionOffsets has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<std::uint32_t> m_hairPositionOffsets;
-            char m_hairPositionOffsets[0x18]; // 0x18            
+            char m_hairPositionOffsets[0x18]; // 0x18
             uint8_t _pad0030[0x10]; // 0x30
             // m_hSimParamsMat has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CStrongHandleCopyable<source2sdk::resourcesystem::InfoForResourceTypeIMaterial2> m_hSimParamsMat;
-            char m_hSimParamsMat[0x8]; // 0x40            
+            char m_hSimParamsMat[0x8]; // 0x40
             // m_strandSegmentCountHist has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<std::int32_t> m_strandSegmentCountHist;
-            char m_strandSegmentCountHist[0x18]; // 0x48            
+            char m_strandSegmentCountHist[0x18]; // 0x48
             uint8_t _pad0060[0x18]; // 0x60
-            std::int32_t m_nMaxSegmentsPerHairStrand; // 0x78            
-            std::int32_t m_nGuideHairCount; // 0x7c            
-            std::int32_t m_nHairCount; // 0x80            
-            std::int32_t m_nTotalVertexCount; // 0x84            
-            std::int32_t m_nTotalSegmentCount; // 0x88            
-            std::int32_t m_nGroomGroupID; // 0x8c            
-            std::int32_t m_nAttachBoneIdx; // 0x90            
-            std::int32_t m_nAttachMeshIdx; // 0x94            
-            std::int32_t m_nAttachMeshDrawCallIdx; // 0x98            
+            std::int32_t m_nMaxSegmentsPerHairStrand; // 0x78
+            std::int32_t m_nGuideHairCount; // 0x7c
+            std::int32_t m_nHairCount; // 0x80
+            std::int32_t m_nTotalVertexCount; // 0x84
+            std::int32_t m_nTotalSegmentCount; // 0x88
+            std::int32_t m_nGroomGroupID; // 0x8c
+            std::int32_t m_nAttachBoneIdx; // 0x90
+            std::int32_t m_nAttachMeshIdx; // 0x94
+            std::int32_t m_nAttachMeshDrawCallIdx; // 0x98
             uint8_t _pad009c[0x10]; // 0x9c
-            bool m_bEnableSimulation; // 0xac            
+            bool m_bEnableSimulation; // 0xac
             uint8_t _pad00ad[0x3];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::modellib::CRenderGroom, m_hairs) == 0x0);
         static_assert(offsetof(source2sdk::modellib::CRenderGroom, m_hairPositionOffsets) == 0x18);
         static_assert(offsetof(source2sdk::modellib::CRenderGroom, m_hSimParamsMat) == 0x40);
@@ -69,7 +69,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::modellib::CRenderGroom, m_nAttachMeshIdx) == 0x94);
         static_assert(offsetof(source2sdk::modellib::CRenderGroom, m_nAttachMeshDrawCallIdx) == 0x98);
         static_assert(offsetof(source2sdk::modellib::CRenderGroom, m_bEnableSimulation) == 0xac);
-        
+
         static_assert(sizeof(source2sdk::modellib::CRenderGroom) == 0xb0);
     };
 };

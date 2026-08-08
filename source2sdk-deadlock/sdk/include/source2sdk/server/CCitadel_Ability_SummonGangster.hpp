@@ -32,13 +32,13 @@ namespace source2sdk
         public:
             // m_vecGangsters has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::server::CNPC_YakuzaGangster>> m_vecGangsters;
-            char m_vecGangsters[0x18]; // 0xf70            
+            char m_vecGangsters[0x18]; // 0xf70
             uint8_t _pad0f88[0x80];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_SummonGangster because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Ability_SummonGangster) == 0x1008);
     };
 };

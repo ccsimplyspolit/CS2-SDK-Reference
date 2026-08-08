@@ -21,23 +21,23 @@ namespace source2sdk
         // Size: 0x628
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_ColorAdjustHSL : public source2sdk::particles::CParticleFunctionOperator
         {
         public:
             // metadata: MPropertyFriendlyName "hue adjust"
-            source2sdk::particleslib::CPerParticleFloatInput m_flHueAdjust; // 0x1d8            
+            source2sdk::particleslib::CPerParticleFloatInput m_flHueAdjust; // 0x1d8
             // metadata: MPropertyFriendlyName "saturation adjust"
-            source2sdk::particleslib::CPerParticleFloatInput m_flSaturationAdjust; // 0x348            
+            source2sdk::particleslib::CPerParticleFloatInput m_flSaturationAdjust; // 0x348
             // metadata: MPropertyFriendlyName "lightness adjust"
-            source2sdk::particleslib::CPerParticleFloatInput m_flLightnessAdjust; // 0x4b8            
+            source2sdk::particleslib::CPerParticleFloatInput m_flLightnessAdjust; // 0x4b8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_ColorAdjustHSL because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_ColorAdjustHSL) == 0x628);
     };
 };

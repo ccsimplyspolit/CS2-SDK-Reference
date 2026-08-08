@@ -23,12 +23,12 @@ namespace source2sdk
         class PARTICLE_EHANDLE
         {
         public:
-            std::int32_t unused; // 0x0            
+            std::int32_t unused; // 0x0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::particleslib::PARTICLE_EHANDLE, unused) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::particleslib::PARTICLE_EHANDLE) == 0x4);
     };
 };

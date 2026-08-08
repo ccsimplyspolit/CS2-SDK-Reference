@@ -18,7 +18,7 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x68
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CAudioMorphData
@@ -26,28 +26,28 @@ namespace source2sdk
         public:
             // m_times has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<float> m_times;
-            char m_times[0x18]; // 0x0            
+            char m_times[0x18]; // 0x0
             // m_nameHashCodes has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<std::uint32_t> m_nameHashCodes;
-            char m_nameHashCodes[0x18]; // 0x18            
+            char m_nameHashCodes[0x18]; // 0x18
             // m_nameStrings has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CUtlString> m_nameStrings;
-            char m_nameStrings[0x18]; // 0x30            
+            char m_nameStrings[0x18]; // 0x30
             // m_samples has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CUtlVector<float>> m_samples;
-            char m_samples[0x18]; // 0x48            
-            float m_flEaseIn; // 0x60            
-            float m_flEaseOut; // 0x64            
+            char m_samples[0x18]; // 0x48
+            float m_flEaseIn; // 0x60
+            float m_flEaseOut; // 0x64
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::soundsystem_voicecontainers::CAudioMorphData, m_times) == 0x0);
         static_assert(offsetof(source2sdk::soundsystem_voicecontainers::CAudioMorphData, m_nameHashCodes) == 0x18);
         static_assert(offsetof(source2sdk::soundsystem_voicecontainers::CAudioMorphData, m_nameStrings) == 0x30);
         static_assert(offsetof(source2sdk::soundsystem_voicecontainers::CAudioMorphData, m_samples) == 0x48);
         static_assert(offsetof(source2sdk::soundsystem_voicecontainers::CAudioMorphData, m_flEaseIn) == 0x60);
         static_assert(offsetof(source2sdk::soundsystem_voicecontainers::CAudioMorphData, m_flEaseOut) == 0x64);
-        
+
         static_assert(sizeof(source2sdk::soundsystem_voicecontainers::CAudioMorphData) == 0x68);
     };
 };

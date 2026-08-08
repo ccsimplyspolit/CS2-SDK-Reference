@@ -25,13 +25,13 @@ namespace source2sdk
         class CDOTA_Ability_EnragedWildkin_Hurricane : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            float distance; // 0x6a8            
-            VectorWS m_vEndpoint; // 0x6ac            
+            float distance; // 0x6a8
+            VectorWS m_vEndpoint; // 0x6ac
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_EnragedWildkin_Hurricane because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CDOTA_Ability_EnragedWildkin_Hurricane) == 0x6b8);
     };
 };

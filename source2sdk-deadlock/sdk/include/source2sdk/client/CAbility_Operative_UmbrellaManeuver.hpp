@@ -24,13 +24,13 @@ namespace source2sdk
         class CAbility_Operative_UmbrellaManeuver : public source2sdk::client::C_CitadelBaseAbility
         {
         public:
-            source2sdk::client::ParticleIndex_t m_ChannelParticle; // 0x11d8            
+            source2sdk::client::ParticleIndex_t m_ChannelParticle; // 0x11d8
             uint8_t _pad11dc[0x384];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CAbility_Operative_UmbrellaManeuver because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CAbility_Operative_UmbrellaManeuver) == 0x1560);
     };
 };

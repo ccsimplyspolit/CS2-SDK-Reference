@@ -19,18 +19,18 @@ namespace source2sdk
         // Size: 0x4
         // Has Trivial Destructor
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct PrecipitationFilter_t
         {
         public:
-            float m_flMaxRadius; // 0x0            
+            float m_flMaxRadius; // 0x0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::PrecipitationFilter_t, m_flMaxRadius) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::client::PrecipitationFilter_t) == 0x4);
     };
 };

@@ -32,19 +32,19 @@ namespace source2sdk
         class CDOTA_Ability_Ringmaster_Impalement : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            VectorWS m_vStartPos; // 0x580            
-            std::int32_t dagger_width; // 0x58c            
+            VectorWS m_vStartPos; // 0x580
+            std::int32_t dagger_width; // 0x58c
             // m_ImpactedProjectiles has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<std::int32_t> m_ImpactedProjectiles;
-            char m_ImpactedProjectiles[0x18]; // 0x590            
+            char m_ImpactedProjectiles[0x18]; // 0x590
             // m_vecBoxedUnitHits has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<std_pair<std::int32_t,CHandle<source2sdk::server::CBaseEntity>>> m_vecBoxedUnitHits;
-            char m_vecBoxedUnitHits[0x18]; // 0x5a8            
+            char m_vecBoxedUnitHits[0x18]; // 0x5a8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Ringmaster_Impalement because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Ringmaster_Impalement) == 0x5c0);
     };
 };

@@ -24,18 +24,18 @@ namespace source2sdk
         class CRevertSaved : public source2sdk::server::CModelPointEntity
         {
         public:
-            float m_loadTime; // 0x778            
-            float m_Duration; // 0x77c            
-            float m_HoldTime; // 0x780            
+            float m_loadTime; // 0x778
+            float m_Duration; // 0x77c
+            float m_HoldTime; // 0x780
             uint8_t _pad0784[0x4];
-            
+
             // Datamap fields:
             // void InputReload; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CRevertSaved because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CRevertSaved) == 0x788);
     };
 };

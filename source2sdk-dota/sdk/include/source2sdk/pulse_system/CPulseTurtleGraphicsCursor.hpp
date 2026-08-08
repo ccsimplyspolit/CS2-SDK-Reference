@@ -23,16 +23,16 @@ namespace source2sdk
         class CPulseTurtleGraphicsCursor : public source2sdk::pulse_runtime_lib::CPulseExecCursor
         {
         public:
-            Color m_Color; // 0xd8            
-            Vector2D m_vPos; // 0xdc            
-            float m_flHeadingDeg; // 0xe4            
-            bool m_bPenUp; // 0xe8            
+            Color m_Color; // 0xd8
+            Vector2D m_vPos; // 0xdc
+            float m_flHeadingDeg; // 0xe4
+            bool m_bPenUp; // 0xe8
             uint8_t _pad00e9[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPulseTurtleGraphicsCursor because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::pulse_system::CPulseTurtleGraphicsCursor) == 0xf0);
     };
 };

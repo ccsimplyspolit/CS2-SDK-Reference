@@ -25,13 +25,13 @@ namespace source2sdk
         class C_DOTA_Ability_Venomancer_Latent_Poison : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            Vector projectile_speed; // 0x6a8            
+            Vector projectile_speed; // 0x6a8
             uint8_t _pad06b4[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_Venomancer_Latent_Poison because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_Venomancer_Latent_Poison) == 0x6b8);
     };
 };

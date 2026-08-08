@@ -19,22 +19,22 @@ namespace source2sdk
         // Size: 0x8
         // Has Trivial Destructor
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct FeFitWeight_t
         {
         public:
-            float flWeight; // 0x0            
-            std::uint16_t nNode; // 0x4            
-            std::uint16_t nDummy; // 0x6            
+            float flWeight; // 0x0
+            std::uint16_t nNode; // 0x4
+            std::uint16_t nDummy; // 0x6
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::physicslib::FeFitWeight_t, flWeight) == 0x0);
         static_assert(offsetof(source2sdk::physicslib::FeFitWeight_t, nNode) == 0x4);
         static_assert(offsetof(source2sdk::physicslib::FeFitWeight_t, nDummy) == 0x6);
-        
+
         static_assert(sizeof(source2sdk::physicslib::FeFitWeight_t) == 0x8);
     };
 };

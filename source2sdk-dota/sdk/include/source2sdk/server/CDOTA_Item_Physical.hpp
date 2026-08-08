@@ -33,19 +33,19 @@ namespace source2sdk
         class CDOTA_Item_Physical : public source2sdk::server::CBaseAnimatingActivity
         {
         public:
-            std::int32_t m_nFlags; // 0x798            
-            std::int32_t m_nRevealedInFoWForTeam; // 0x79c            
-            source2sdk::entity2::GameTime_t m_fCreationTime; // 0x7a0            
+            std::int32_t m_nFlags; // 0x798
+            std::int32_t m_nRevealedInFoWForTeam; // 0x79c
+            source2sdk::entity2::GameTime_t m_fCreationTime; // 0x7a0
             // m_hItem has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CDOTA_Item> m_hItem;
-            char m_hItem[0x4]; // 0x7a4            
-            bool m_bIsLowPriorityHoverItem; // 0x7a8            
+            char m_hItem[0x4]; // 0x7a4
+            bool m_bIsLowPriorityHoverItem; // 0x7a8
             uint8_t _pad07a9[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Item_Physical because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Item_Physical) == 0x7b0);
     };
 };

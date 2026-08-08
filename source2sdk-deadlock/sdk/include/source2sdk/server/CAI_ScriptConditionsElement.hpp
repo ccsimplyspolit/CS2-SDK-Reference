@@ -32,14 +32,14 @@ namespace source2sdk
         public:
             // m_hActor has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hActor;
-            char m_hActor[0x4]; // 0x0            
-            source2sdk::client::CSimTimer m_Timer; // 0x4            
-            source2sdk::client::CSimTimer m_Timeout; // 0x10            
+            char m_hActor[0x4]; // 0x0
+            source2sdk::client::CSimTimer m_Timer; // 0x4
+            source2sdk::client::CSimTimer m_Timeout; // 0x10
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CAI_ScriptConditionsElement because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CAI_ScriptConditionsElement) == 0x1c);
     };
 };

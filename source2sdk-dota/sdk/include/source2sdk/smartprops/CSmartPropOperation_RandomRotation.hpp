@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x110
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Transform: Random Rotation"
         // static metadata: MPropertyDescription "Apply a random rotation to the current transform."
@@ -30,16 +30,16 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyDescription "Minimum rotation range"
-            CSmartPropAttributeAngles m_vRandomRotationMin; // 0x50            
+            CSmartPropAttributeAngles m_vRandomRotationMin; // 0x50
             // metadata: MPropertyDescription "Maximum rotation range"
-            CSmartPropAttributeAngles m_vRandomRotationMax; // 0x90            
+            CSmartPropAttributeAngles m_vRandomRotationMax; // 0x90
             // metadata: MPropertyDescription "If non-zero, specifies the angle increment to which the randomly selected value will be snapped. Note that the snap value is absolute, not relative to the min or max, but if the if the min or max are not multiples of the snap value they can still be selected."
-            CSmartPropAttributeAngles m_vSnapIncrement; // 0xd0            
+            CSmartPropAttributeAngles m_vSnapIncrement; // 0xd0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSmartPropOperation_RandomRotation because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::smartprops::CSmartPropOperation_RandomRotation) == 0x110);
     };
 };

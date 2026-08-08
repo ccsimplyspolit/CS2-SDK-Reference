@@ -17,21 +17,21 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a68
+        // Size: 0x1a88
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Necrolyte_ReapersScythe_RespawnTime : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float hp_per_kill; // 0x1a58            
-            float mana_per_kill; // 0x1a5c            
-            float hp_regen; // 0x1a60            
-            float mp_regen; // 0x1a64            
+            float hp_per_kill; // 0x1a78
+            float mana_per_kill; // 0x1a7c
+            float hp_regen; // 0x1a80
+            float mp_regen; // 0x1a84
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Necrolyte_ReapersScythe_RespawnTime because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Necrolyte_ReapersScythe_RespawnTime) == 0x1a68);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Necrolyte_ReapersScythe_RespawnTime) == 0x1a88);
     };
 };

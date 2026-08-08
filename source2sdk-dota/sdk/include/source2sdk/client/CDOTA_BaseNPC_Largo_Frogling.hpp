@@ -24,7 +24,7 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x19b8
+        // Size: 0x19c0
         // Has VTable
         // Construct allowed
         // MClassHasEntityLimitedDataDesc
@@ -34,13 +34,13 @@ namespace source2sdk
         public:
             // m_hHeroHandle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::C_DOTA_BaseNPC_Hero> m_hHeroHandle;
-            char m_hHeroHandle[0x4]; // 0x19b0            
-            uint8_t _pad19b4[0x4];
+            char m_hHeroHandle[0x4]; // 0x19b8
+            uint8_t _pad19bc[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_BaseNPC_Largo_Frogling because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_BaseNPC_Largo_Frogling) == 0x19b8);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_BaseNPC_Largo_Frogling) == 0x19c0);
     };
 };

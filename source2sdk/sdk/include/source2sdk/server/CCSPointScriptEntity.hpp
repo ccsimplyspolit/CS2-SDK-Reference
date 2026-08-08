@@ -25,14 +25,11 @@ namespace source2sdk
         {
         public:
             uint8_t _pad04a8[0x168];
-            // Datamap fields:
-            // CUtlSymbolLarge cs_script; // 0x7fffffff
-            // CUtlSymbolLarge script; // 0x7fffffff
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: CCSPointScriptEntity has no schema binary (size is a guess)
     };
 };

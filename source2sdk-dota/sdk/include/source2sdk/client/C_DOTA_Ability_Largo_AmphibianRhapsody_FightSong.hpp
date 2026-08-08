@@ -25,15 +25,15 @@ namespace source2sdk
         class C_DOTA_Ability_Largo_AmphibianRhapsody_FightSong : public source2sdk::client::C_DOTA_Ability_Largo_AmphibianRhapsody_Song
         {
         public:
-            float radius; // 0x6b8            
-            float battle_burst_duration; // 0x6bc            
-            std::int32_t burst_damage; // 0x6c0            
-            std::int32_t damage_per_stack; // 0x6c4            
+            float radius; // 0x6b8
+            float battle_burst_duration; // 0x6bc
+            std::int32_t burst_damage; // 0x6c0
+            std::int32_t damage_per_stack; // 0x6c4
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_Largo_AmphibianRhapsody_FightSong because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_Largo_AmphibianRhapsody_FightSong) == 0x6c8);
     };
 };

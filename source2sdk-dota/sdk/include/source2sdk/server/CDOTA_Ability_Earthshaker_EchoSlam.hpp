@@ -25,17 +25,17 @@ namespace source2sdk
         class CDOTA_Ability_Earthshaker_EchoSlam : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            float echo_slam_damage_range; // 0x580            
-            float echo_slam_echo_search_range; // 0x584            
-            float echo_slam_echo_range; // 0x588            
-            float echo_slam_echo_damage; // 0x58c            
-            float echo_slam_initial_damage; // 0x590            
+            float echo_slam_damage_range; // 0x580
+            float echo_slam_echo_search_range; // 0x584
+            float echo_slam_echo_range; // 0x588
+            float echo_slam_echo_damage; // 0x58c
+            float echo_slam_initial_damage; // 0x590
             uint8_t _pad0594[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Earthshaker_EchoSlam because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Earthshaker_EchoSlam) == 0x598);
     };
 };

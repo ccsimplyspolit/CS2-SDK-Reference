@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x378
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_INIT_PositionWarpScalar : public source2sdk::particles::CParticleFunctionInitializer
@@ -28,24 +28,24 @@ namespace source2sdk
         public:
             // metadata: MPropertyFriendlyName "warp min"
             // metadata: MVectorIsCoordinate
-            Vector m_vecWarpMin; // 0x1e0            
+            Vector m_vecWarpMin; // 0x1e0
             // metadata: MPropertyFriendlyName "warp max"
             // metadata: MVectorIsCoordinate
-            Vector m_vecWarpMax; // 0x1ec            
+            Vector m_vecWarpMax; // 0x1ec
             // metadata: MPropertyFriendlyName "warp amount"
-            source2sdk::particleslib::CPerParticleFloatInput m_InputValue; // 0x1f8            
+            source2sdk::particleslib::CPerParticleFloatInput m_InputValue; // 0x1f8
             // metadata: MPropertyFriendlyName "previous position scale"
-            float m_flPrevPosScale; // 0x368            
+            float m_flPrevPosScale; // 0x368
             // metadata: MPropertyFriendlyName "warp scale control point number"
-            std::int32_t m_nScaleControlPointNumber; // 0x36c            
+            std::int32_t m_nScaleControlPointNumber; // 0x36c
             // metadata: MPropertyFriendlyName "control point number"
-            std::int32_t m_nControlPointNumber; // 0x370            
+            std::int32_t m_nControlPointNumber; // 0x370
             uint8_t _pad0374[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_INIT_PositionWarpScalar because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_INIT_PositionWarpScalar) == 0x378);
     };
 };

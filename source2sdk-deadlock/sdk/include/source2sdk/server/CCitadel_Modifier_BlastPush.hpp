@@ -23,15 +23,15 @@ namespace source2sdk
         class CCitadel_Modifier_BlastPush : public source2sdk::server::CCitadelModifier
         {
         public:
-            Vector m_vPush; // 0xd0            
-            float m_flPushVelocity; // 0xdc            
-            float m_flMaxPushVelocity; // 0xe0            
-            float m_flMaxPushVelocitySqr; // 0xe4            
+            Vector m_vPush; // 0xd0
+            float m_flPushVelocity; // 0xdc
+            float m_flMaxPushVelocity; // 0xe0
+            float m_flMaxPushVelocitySqr; // 0xe4
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_BlastPush because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_BlastPush) == 0xe8);
     };
 };

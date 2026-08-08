@@ -24,14 +24,14 @@ namespace source2sdk
         class CCitadel_Modifier_Bull_Heal_Aura : public source2sdk::client::CCitadelModifierAura
         {
         public:
-            QAngle m_playerAngles; // 0x110            
-            source2sdk::client::ParticleIndex_t m_AuraParticle; // 0x11c            
+            QAngle m_playerAngles; // 0x110
+            source2sdk::client::ParticleIndex_t m_AuraParticle; // 0x11c
             uint8_t _pad0120[0x80];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_Bull_Heal_Aura because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Modifier_Bull_Heal_Aura) == 0x1a0);
     };
 };

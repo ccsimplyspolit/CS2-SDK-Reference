@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x40
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MModelGameData
         // static metadata: MFgdHelper
@@ -30,31 +30,31 @@ namespace source2sdk
         public:
             // metadata: MPropertyFriendlyName "Name"
             // metadata: MPropertySuppressField
-            CGlobalSymbol m_sName; // 0x0            
+            CGlobalSymbol m_sName; // 0x0
             // metadata: MPropertyFriendlyName "Type"
-            source2sdk::modellib::NPCPhysicsHullType_t m_eType; // 0x8            
+            source2sdk::modellib::NPCPhysicsHullType_t m_eType; // 0x8
             // metadata: MPropertySuppressExpr "m_eType != eGroundCapsule && m_eType != eCenteredCapsule && m_eType != eCenteredCylinder && m_eType != eGroundCylinder"
             // metadata: MPropertyFriendlyName "Height"
-            float m_flCapsuleHeight; // 0xc            
+            float m_flCapsuleHeight; // 0xc
             // metadata: MPropertySuppressExpr "m_eType != eGroundCapsule && m_eType != eGenericCapsule && m_eType != eCenteredCapsule && m_eType != eCenteredCylinder && m_eType != eGroundCylinder"
             // metadata: MPropertyFriendlyName "Radius"
-            float m_flCapsuleRadius; // 0x10            
+            float m_flCapsuleRadius; // 0x10
             // metadata: MPropertySuppressExpr "m_eType != eGenericCapsule"
             // metadata: MPropertyFriendlyName "Center 1"
-            Vector m_vCapsuleCenter1; // 0x14            
+            Vector m_vCapsuleCenter1; // 0x14
             // metadata: MPropertySuppressExpr "m_eType != eGenericCapsule"
             // metadata: MPropertyFriendlyName "Center 2"
-            Vector m_vCapsuleCenter2; // 0x20            
+            Vector m_vCapsuleCenter2; // 0x20
             // metadata: MPropertySuppressExpr "m_eType != eGroundBox"
             // metadata: MPropertyFriendlyName "Height"
-            float m_flGroundBoxHeight; // 0x2c            
+            float m_flGroundBoxHeight; // 0x2c
             // metadata: MPropertySuppressExpr "m_eType != eGroundBox"
             // metadata: MPropertyFriendlyName "Width"
-            float m_flGroundBoxWidth; // 0x30            
+            float m_flGroundBoxWidth; // 0x30
             uint8_t _pad0034[0xc];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::modellib::CNPCPhysicsHull, m_sName) == 0x0);
         static_assert(offsetof(source2sdk::modellib::CNPCPhysicsHull, m_eType) == 0x8);
         static_assert(offsetof(source2sdk::modellib::CNPCPhysicsHull, m_flCapsuleHeight) == 0xc);
@@ -63,7 +63,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::modellib::CNPCPhysicsHull, m_vCapsuleCenter2) == 0x20);
         static_assert(offsetof(source2sdk::modellib::CNPCPhysicsHull, m_flGroundBoxHeight) == 0x2c);
         static_assert(offsetof(source2sdk::modellib::CNPCPhysicsHull, m_flGroundBoxWidth) == 0x30);
-        
+
         static_assert(sizeof(source2sdk::modellib::CNPCPhysicsHull) == 0x40);
     };
 };

@@ -21,19 +21,19 @@ namespace source2sdk
         // Size: 0x240
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_RemapTransformToVelocity : public source2sdk::particles::CParticleFunctionOperator
         {
         public:
             // metadata: MPropertyFriendlyName "transform input"
-            source2sdk::particleslib::CParticleTransformInput m_TransformInput; // 0x1d8            
+            source2sdk::particleslib::CParticleTransformInput m_TransformInput; // 0x1d8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_RemapTransformToVelocity because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_RemapTransformToVelocity) == 0x240);
     };
 };

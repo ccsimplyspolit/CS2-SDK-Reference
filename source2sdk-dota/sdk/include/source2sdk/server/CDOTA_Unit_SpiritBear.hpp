@@ -17,7 +17,7 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x1f08
+        // Size: 0x1f10
         // Has VTable
         // Construct allowed
         // MClassHasEntityLimitedDataDesc
@@ -25,14 +25,14 @@ namespace source2sdk
         class CDOTA_Unit_SpiritBear : public source2sdk::server::CDOTA_BaseNPC_Hero
         {
         public:
-            bool m_bShouldRespawn; // 0x1f00            
-            bool m_bStolen; // 0x1f01            
-            uint8_t _pad1f02[0x6];
+            bool m_bShouldRespawn; // 0x1f08
+            bool m_bStolen; // 0x1f09
+            uint8_t _pad1f0a[0x6];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Unit_SpiritBear because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Unit_SpiritBear) == 0x1f08);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Unit_SpiritBear) == 0x1f10);
     };
 };

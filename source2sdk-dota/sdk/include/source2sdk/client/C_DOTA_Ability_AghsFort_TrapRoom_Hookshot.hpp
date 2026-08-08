@@ -26,15 +26,15 @@ namespace source2sdk
         class C_DOTA_Ability_AghsFort_TrapRoom_Hookshot : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x6a8            
-            Vector m_vProjectileVelocity; // 0x6ac            
-            bool m_bRetract; // 0x6b8            
+            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x6a8
+            Vector m_vProjectileVelocity; // 0x6ac
+            bool m_bRetract; // 0x6b8
             uint8_t _pad06b9[0x17];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_AghsFort_TrapRoom_Hookshot because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_AghsFort_TrapRoom_Hookshot) == 0x6d0);
     };
 };

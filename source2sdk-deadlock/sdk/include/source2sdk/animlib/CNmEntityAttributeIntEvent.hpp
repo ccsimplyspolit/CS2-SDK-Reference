@@ -19,19 +19,19 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x40
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CNmEntityAttributeIntEvent : public source2sdk::animlib::CNmEntityAttributeEventBase
         {
         public:
-            std::int32_t m_nIntValue; // 0x38            
+            std::int32_t m_nIntValue; // 0x38
             uint8_t _pad003c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CNmEntityAttributeIntEvent because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::animlib::CNmEntityAttributeIntEvent) == 0x40);
     };
 };

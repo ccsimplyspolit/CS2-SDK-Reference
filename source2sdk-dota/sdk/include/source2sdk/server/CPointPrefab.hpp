@@ -31,24 +31,24 @@ namespace source2sdk
         class CPointPrefab : public source2sdk::server::CServerOnlyPointEntity
         {
         public:
-            CUtlSymbolLarge m_targetMapName; // 0x498            
-            CUtlSymbolLarge m_forceWorldGroupID; // 0x4a0            
-            CUtlSymbolLarge m_associatedRelayTargetName; // 0x4a8            
-            bool m_fixupNames; // 0x4b0            
-            bool m_bLoadDynamic; // 0x4b1            
+            CUtlSymbolLarge m_targetMapName; // 0x498
+            CUtlSymbolLarge m_forceWorldGroupID; // 0x4a0
+            CUtlSymbolLarge m_associatedRelayTargetName; // 0x4a8
+            bool m_fixupNames; // 0x4b0
+            bool m_bLoadDynamic; // 0x4b1
             uint8_t _pad04b2[0x2]; // 0x4b2
             // m_associatedRelayEntity has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CPointPrefab> m_associatedRelayEntity;
-            char m_associatedRelayEntity[0x4]; // 0x4b4            
+            char m_associatedRelayEntity[0x4]; // 0x4b4
             // m_ProceduralRelaySources has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::server::CBaseEntity>> m_ProceduralRelaySources;
-            char m_ProceduralRelaySources[0x18]; // 0x4b8            
+            char m_ProceduralRelaySources[0x18]; // 0x4b8
             uint8_t _pad04d0[0x50];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPointPrefab because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CPointPrefab) == 0x520);
     };
 };

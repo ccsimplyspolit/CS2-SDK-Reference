@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xd8
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "LoopTrigger"
         // static metadata: MPropertyDescription "Continuously retriggers a sound and optionally fades to the new instance."
@@ -29,17 +29,17 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "Vsnd Reference"
-            source2sdk::soundsystem_voicecontainers::CSoundContainerReference m_sound; // 0xa8            
-            float m_flRetriggerTimeMin; // 0xc8            
-            float m_flRetriggerTimeMax; // 0xcc            
-            float m_flFadeTime; // 0xd0            
-            bool m_bCrossFade; // 0xd4            
+            source2sdk::soundsystem_voicecontainers::CSoundContainerReference m_sound; // 0xa8
+            float m_flRetriggerTimeMin; // 0xc8
+            float m_flRetriggerTimeMax; // 0xcc
+            float m_flFadeTime; // 0xd0
+            bool m_bCrossFade; // 0xd4
             uint8_t _pad00d5[0x3];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CVoiceContainerLoopTrigger because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::soundsystem_voicecontainers::CVoiceContainerLoopTrigger) == 0xd8);
     };
 };

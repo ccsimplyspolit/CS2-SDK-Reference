@@ -32,31 +32,31 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0000[0x8]; // 0x0
-            source2sdk::client::CSoundEnvelope m_pitch; // 0x8            
-            source2sdk::client::CSoundEnvelope m_volume; // 0x18            
+            source2sdk::client::CSoundEnvelope m_pitch; // 0x8
+            source2sdk::client::CSoundEnvelope m_volume; // 0x18
             uint8_t _pad0028[0x14]; // 0x28
-            float m_shutdownTime; // 0x3c            
-            float m_flLastTime; // 0x40            
+            float m_shutdownTime; // 0x3c
+            float m_flLastTime; // 0x40
             uint8_t _pad0044[0x4]; // 0x44
-            CUtlSymbolLarge m_iszSoundScriptName; // 0x48            
+            CUtlSymbolLarge m_iszSoundScriptName; // 0x48
             // m_hEnt has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::C_BaseEntity> m_hEnt;
-            char m_hEnt[0x4]; // 0x50            
+            char m_hEnt[0x4]; // 0x50
             // metadata: MNotSaved
-            CEntityIndex m_soundEntityIndex; // 0x54            
+            CEntityIndex m_soundEntityIndex; // 0x54
             // metadata: MNotSaved
-            VectorWS m_soundOrigin; // 0x58            
-            std::int32_t m_isPlaying; // 0x64            
-            source2sdk::client::CCopyRecipientFilter m_Filter; // 0x68            
-            float m_flCloseCaptionDuration; // 0xa0            
+            VectorWS m_soundOrigin; // 0x58
+            std::int32_t m_isPlaying; // 0x64
+            source2sdk::client::CCopyRecipientFilter m_Filter; // 0x68
+            float m_flCloseCaptionDuration; // 0xa0
             // metadata: MNotSaved
-            bool m_bUpdatedSoundOrigin; // 0xa4            
+            bool m_bUpdatedSoundOrigin; // 0xa4
             uint8_t _pad00a5[0x3]; // 0xa5
             // metadata: MNotSaved
-            CUtlSymbolLarge m_iszClassName; // 0xa8            
+            CUtlSymbolLarge m_iszClassName; // 0xa8
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::CSoundPatch, m_pitch) == 0x8);
         static_assert(offsetof(source2sdk::client::CSoundPatch, m_volume) == 0x18);
         static_assert(offsetof(source2sdk::client::CSoundPatch, m_shutdownTime) == 0x3c);
@@ -70,7 +70,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::client::CSoundPatch, m_flCloseCaptionDuration) == 0xa0);
         static_assert(offsetof(source2sdk::client::CSoundPatch, m_bUpdatedSoundOrigin) == 0xa4);
         static_assert(offsetof(source2sdk::client::CSoundPatch, m_iszClassName) == 0xa8);
-        
+
         static_assert(sizeof(source2sdk::client::CSoundPatch) == 0xb0);
     };
 };

@@ -32,31 +32,31 @@ namespace source2sdk
         public:
             // hAbility has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> hAbility;
-            char hAbility[0x4]; // 0x0            
-            bool bIsDamage; // 0x4            
-            bool bIsDebuff; // 0x5            
-            bool bIsStun; // 0x6            
-            bool bIsAOE; // 0x7            
-            bool bIsLinear; // 0x8            
-            bool bUseOnCreeps; // 0x9            
-            bool bIsHeal; // 0xa            
-            bool bIsBuff; // 0xb            
-            bool bUseSelfishly; // 0xc            
-            bool bCanHelpOthersEscape; // 0xd            
-            bool bUseOnTrees; // 0xe            
-            bool bUseOnStrongestAlly; // 0xf            
-            std::int32_t nUseAtHealthPercent; // 0x10            
-            std::int32_t nRadius; // 0x14            
-            std::int32_t nMinimumTargets; // 0x18            
-            std::int32_t nMaximumTargets; // 0x1c            
-            std::int32_t nMinimumHP; // 0x20            
-            std::int32_t nMinimumRange; // 0x24            
-            float flInitialCooldownMin; // 0x28            
-            float flInitialCooldownMax; // 0x2c            
-            source2sdk::server::CreatureAbilityType nAbilityType; // 0x30            
+            char hAbility[0x4]; // 0x0
+            bool bIsDamage; // 0x4
+            bool bIsDebuff; // 0x5
+            bool bIsStun; // 0x6
+            bool bIsAOE; // 0x7
+            bool bIsLinear; // 0x8
+            bool bUseOnCreeps; // 0x9
+            bool bIsHeal; // 0xa
+            bool bIsBuff; // 0xb
+            bool bUseSelfishly; // 0xc
+            bool bCanHelpOthersEscape; // 0xd
+            bool bUseOnTrees; // 0xe
+            bool bUseOnStrongestAlly; // 0xf
+            std::int32_t nUseAtHealthPercent; // 0x10
+            std::int32_t nRadius; // 0x14
+            std::int32_t nMinimumTargets; // 0x18
+            std::int32_t nMaximumTargets; // 0x1c
+            std::int32_t nMinimumHP; // 0x20
+            std::int32_t nMinimumRange; // 0x24
+            float flInitialCooldownMin; // 0x28
+            float flInitialCooldownMax; // 0x2c
+            source2sdk::server::CreatureAbilityType nAbilityType; // 0x30
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::CreatureAbilityData_t, hAbility) == 0x0);
         static_assert(offsetof(source2sdk::server::CreatureAbilityData_t, bIsDamage) == 0x4);
         static_assert(offsetof(source2sdk::server::CreatureAbilityData_t, bIsDebuff) == 0x5);
@@ -79,7 +79,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::server::CreatureAbilityData_t, flInitialCooldownMin) == 0x28);
         static_assert(offsetof(source2sdk::server::CreatureAbilityData_t, flInitialCooldownMax) == 0x2c);
         static_assert(offsetof(source2sdk::server::CreatureAbilityData_t, nAbilityType) == 0x30);
-        
+
         static_assert(sizeof(source2sdk::server::CreatureAbilityData_t) == 0x34);
     };
 };

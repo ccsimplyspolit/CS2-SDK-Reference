@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0xe0
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CDOTACrateDropPlatformDef : public source2sdk::client::CDOTACrateDropObjectDef
@@ -28,8 +28,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::client::CDOTACrateDropPlatformDef) == 0xe0);
     };
 };

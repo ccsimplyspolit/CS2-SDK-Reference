@@ -17,21 +17,21 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a68
+        // Size: 0x1a88
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Kunkka_Torrent : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float torrent_damage; // 0x1a58            
-            float damage_tick_interval; // 0x1a5c            
-            float percent_instant; // 0x1a60            
-            float flDamagePerTick; // 0x1a64            
+            float torrent_damage; // 0x1a78
+            float damage_tick_interval; // 0x1a7c
+            float percent_instant; // 0x1a80
+            float flDamagePerTick; // 0x1a84
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Kunkka_Torrent because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Kunkka_Torrent) == 0x1a68);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Kunkka_Torrent) == 0x1a88);
     };
 };

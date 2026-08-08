@@ -24,12 +24,12 @@ namespace source2sdk
         class CCitadel_Modifier_Nano_CatForm : public source2sdk::client::CCitadelModifier
         {
         public:
-            source2sdk::client::ModelChange_t m_ModelChange; // 0xc0            
+            source2sdk::client::ModelChange_t m_ModelChange; // 0xc0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_Nano_CatForm because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Modifier_Nano_CatForm) == 0x1a8);
     };
 };

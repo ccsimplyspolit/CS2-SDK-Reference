@@ -22,7 +22,7 @@ namespace source2sdk
         // Has VTable
         // Is Abstract
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MCustomFGDMetadata "{ standard_yielding_flow = true }"
         #pragma pack(push, 1)
@@ -30,14 +30,14 @@ namespace source2sdk
         {
         public:
             // metadata: MPulseFGDSkipField
-            source2sdk::pulse_runtime_lib::CPulse_ResumePoint m_BaseFlow_OnAfterCancel; // 0x48            
+            source2sdk::pulse_runtime_lib::CPulse_ResumePoint m_BaseFlow_OnAfterCancel; // 0x48
             // metadata: MPulseFGDSkipField
-            source2sdk::pulse_runtime_lib::CPulse_ResumePoint m_BaseFlow_WhileActive; // 0x90            
+            source2sdk::pulse_runtime_lib::CPulse_ResumePoint m_BaseFlow_WhileActive; // 0x90
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPulseCell_BaseYieldingInflow because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::pulse_runtime_lib::CPulseCell_BaseYieldingInflow) == 0xd8);
     };
 };

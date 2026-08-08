@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x540
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "sky3dparams_t m_skyboxData"
         // static metadata: MNetworkVarNames "CUtlStringToken m_skyboxSlotToken"
         #pragma pack(push, 1)
@@ -29,14 +29,14 @@ namespace source2sdk
         public:
             // metadata: MNetworkEnable
             // metadata: MNotSaved
-            source2sdk::server::sky3dparams_t m_skyboxData; // 0x4a0            
+            source2sdk::server::sky3dparams_t m_skyboxData; // 0x4a0
             // metadata: MNetworkEnable
-            CUtlStringToken m_skyboxSlotToken; // 0x530            
-            bool m_bUseAngles; // 0x534            
+            CUtlStringToken m_skyboxSlotToken; // 0x530
+            bool m_bUseAngles; // 0x534
             uint8_t _pad0535[0x3]; // 0x535
             // metadata: MNotSaved
-            source2sdk::server::CSkyCamera* m_pNext; // 0x538            
-            
+            source2sdk::server::CSkyCamera* m_pNext; // 0x538
+
             // Datamap fields:
             // int16_t m_skyboxData.scale; // 0x4a8
             // Vector m_skyboxData.origin; // 0x4ac
@@ -53,9 +53,9 @@ namespace source2sdk
             // void InputActivateSkybox; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSkyCamera because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CSkyCamera) == 0x540);
     };
 };

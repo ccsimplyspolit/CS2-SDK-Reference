@@ -19,40 +19,40 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x210
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_TeleportBeam : public source2sdk::particles::CParticleFunctionOperator
         {
         public:
             // metadata: MPropertyFriendlyName "Position Control Point"
-            std::int32_t m_nCPPosition; // 0x1d8            
+            std::int32_t m_nCPPosition; // 0x1d8
             // metadata: MPropertyFriendlyName "Velocity Control Point"
-            std::int32_t m_nCPVelocity; // 0x1dc            
+            std::int32_t m_nCPVelocity; // 0x1dc
             // metadata: MPropertyFriendlyName "Misc Control Point"
-            std::int32_t m_nCPMisc; // 0x1e0            
+            std::int32_t m_nCPMisc; // 0x1e0
             // metadata: MPropertyFriendlyName "Color Control Point"
-            std::int32_t m_nCPColor; // 0x1e4            
+            std::int32_t m_nCPColor; // 0x1e4
             // metadata: MPropertyFriendlyName "Invalid Color Control Point"
-            std::int32_t m_nCPInvalidColor; // 0x1e8            
+            std::int32_t m_nCPInvalidColor; // 0x1e8
             // metadata: MPropertyFriendlyName "Extra Arc Data Point"
-            std::int32_t m_nCPExtraArcData; // 0x1ec            
+            std::int32_t m_nCPExtraArcData; // 0x1ec
             // metadata: MPropertyFriendlyName "Gravity"
-            Vector m_vGravity; // 0x1f0            
+            Vector m_vGravity; // 0x1f0
             // metadata: MPropertyFriendlyName "Arc Duration Maximum"
-            float m_flArcMaxDuration; // 0x1fc            
+            float m_flArcMaxDuration; // 0x1fc
             // metadata: MPropertyFriendlyName "Segment Break"
-            float m_flSegmentBreak; // 0x200            
+            float m_flSegmentBreak; // 0x200
             // metadata: MPropertyFriendlyName "Arc Speed"
-            float m_flArcSpeed; // 0x204            
+            float m_flArcSpeed; // 0x204
             // metadata: MPropertyFriendlyName "Alpha"
-            float m_flAlpha; // 0x208            
+            float m_flAlpha; // 0x208
             uint8_t _pad020c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_TeleportBeam because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_TeleportBeam) == 0x210);
     };
 };

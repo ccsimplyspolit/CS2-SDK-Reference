@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0xd30
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MEntityAllowsPortraitWorldSpawn
         #pragma pack(push, 1)
         class C_EnvDeferredLight : public source2sdk::client::C_ModelPointEntity
@@ -37,8 +37,8 @@ namespace source2sdk
             // float InputSetLightRadius; // 0x0
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::client::C_EnvDeferredLight) == 0xd30);
     };
 };

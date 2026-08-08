@@ -23,14 +23,14 @@ namespace source2sdk
         struct Relationship_t
         {
         public:
-            source2sdk::client::Disposition_t disposition; // 0x0            
-            std::int32_t priority; // 0x4            
+            source2sdk::client::Disposition_t disposition; // 0x0
+            std::int32_t priority; // 0x4
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::Relationship_t, disposition) == 0x0);
         static_assert(offsetof(source2sdk::server::Relationship_t, priority) == 0x4);
-        
+
         static_assert(sizeof(source2sdk::server::Relationship_t) == 0x8);
     };
 };

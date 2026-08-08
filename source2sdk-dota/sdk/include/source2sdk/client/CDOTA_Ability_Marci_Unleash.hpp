@@ -25,17 +25,17 @@ namespace source2sdk
         class CDOTA_Ability_Marci_Unleash : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            float duration; // 0x6a8            
-            float pulse_radius; // 0x6ac            
-            float pulse_debuff_duration; // 0x6b0            
-            float pulse_damage; // 0x6b4            
-            float pulse_silence_duration; // 0x6b8            
+            float duration; // 0x6a8
+            float pulse_radius; // 0x6ac
+            float pulse_debuff_duration; // 0x6b0
+            float pulse_damage; // 0x6b4
+            float pulse_silence_duration; // 0x6b8
             uint8_t _pad06bc[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Marci_Unleash because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CDOTA_Ability_Marci_Unleash) == 0x6c0);
     };
 };

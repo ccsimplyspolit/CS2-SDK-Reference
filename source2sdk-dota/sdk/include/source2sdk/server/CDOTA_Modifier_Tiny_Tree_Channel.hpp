@@ -17,23 +17,23 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a78
+        // Size: 0x1a98
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Tiny_Tree_Channel : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float tree_grab_radius; // 0x1a58            
-            float splash_radius; // 0x1a5c            
-            float speed; // 0x1a60            
-            float interval; // 0x1a64            
-            VectorWS m_vPos; // 0x1a68            
-            uint8_t _pad1a74[0x4];
+            float tree_grab_radius; // 0x1a78
+            float splash_radius; // 0x1a7c
+            float speed; // 0x1a80
+            float interval; // 0x1a84
+            VectorWS m_vPos; // 0x1a88
+            uint8_t _pad1a94[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Tiny_Tree_Channel because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Tiny_Tree_Channel) == 0x1a78);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Tiny_Tree_Channel) == 0x1a98);
     };
 };

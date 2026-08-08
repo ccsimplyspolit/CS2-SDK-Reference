@@ -19,24 +19,24 @@ namespace source2sdk
         // Size: 0x20
         // Has Trivial Destructor
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct RnNode_t
         {
         public:
-            Vector m_vMin; // 0x0            
-            std::uint32_t m_nChildren; // 0xc            
-            Vector m_vMax; // 0x10            
-            std::uint32_t m_nTriangleOffset; // 0x1c            
+            Vector m_vMin; // 0x0
+            std::uint32_t m_nChildren; // 0xc
+            Vector m_vMax; // 0x10
+            std::uint32_t m_nTriangleOffset; // 0x1c
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::physicslib::RnNode_t, m_vMin) == 0x0);
         static_assert(offsetof(source2sdk::physicslib::RnNode_t, m_nChildren) == 0xc);
         static_assert(offsetof(source2sdk::physicslib::RnNode_t, m_vMax) == 0x10);
         static_assert(offsetof(source2sdk::physicslib::RnNode_t, m_nTriangleOffset) == 0x1c);
-        
+
         static_assert(sizeof(source2sdk::physicslib::RnNode_t) == 0x20);
     };
 };

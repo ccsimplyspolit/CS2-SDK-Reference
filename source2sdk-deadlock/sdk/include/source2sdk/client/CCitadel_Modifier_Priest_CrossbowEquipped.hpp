@@ -30,13 +30,13 @@ namespace source2sdk
         class CCitadel_Modifier_Priest_CrossbowEquipped : public source2sdk::client::CCitadelModifier
         {
         public:
-            source2sdk::client::CCitadel_Ability_Priest_CrossbowWeapon* m_pCrossbowWeapon; // 0xc0            
+            source2sdk::client::CCitadel_Ability_Priest_CrossbowWeapon* m_pCrossbowWeapon; // 0xc0
             uint8_t _pad00c8[0x38];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_Priest_CrossbowEquipped because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Modifier_Priest_CrossbowEquipped) == 0x100);
     };
 };

@@ -18,26 +18,26 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x2c
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct GlitchSettings_t
         {
         public:
-            float m_flStrength; // 0x0            
-            std::int32_t m_nQuantizeType; // 0x4            
-            float m_flQuantizeScale; // 0x8            
-            float m_flQuantizeStrength; // 0xc            
-            float m_flFrameRate; // 0x10            
-            float m_flSpeed; // 0x14            
-            float m_flJumpStrength; // 0x18            
-            float m_flDistortStrength; // 0x1c            
-            float m_flWhiteNoiseStrength; // 0x20            
-            float m_flScanlineStrength; // 0x24            
-            float m_flBreakupStrength; // 0x28            
+            float m_flStrength; // 0x0
+            std::int32_t m_nQuantizeType; // 0x4
+            float m_flQuantizeScale; // 0x8
+            float m_flQuantizeStrength; // 0xc
+            float m_flFrameRate; // 0x10
+            float m_flSpeed; // 0x14
+            float m_flJumpStrength; // 0x18
+            float m_flDistortStrength; // 0x1c
+            float m_flWhiteNoiseStrength; // 0x20
+            float m_flScanlineStrength; // 0x24
+            float m_flBreakupStrength; // 0x28
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::GlitchSettings_t, m_flStrength) == 0x0);
         static_assert(offsetof(source2sdk::client::GlitchSettings_t, m_nQuantizeType) == 0x4);
         static_assert(offsetof(source2sdk::client::GlitchSettings_t, m_flQuantizeScale) == 0x8);
@@ -49,7 +49,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::client::GlitchSettings_t, m_flWhiteNoiseStrength) == 0x20);
         static_assert(offsetof(source2sdk::client::GlitchSettings_t, m_flScanlineStrength) == 0x24);
         static_assert(offsetof(source2sdk::client::GlitchSettings_t, m_flBreakupStrength) == 0x28);
-        
+
         static_assert(sizeof(source2sdk::client::GlitchSettings_t) == 0x2c);
     };
 };

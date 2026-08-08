@@ -19,26 +19,26 @@ namespace source2sdk
         // Alignment: 0x8
         // Standard-layout class: false
         // Size: 0x458
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CParticleMassCalculationParameters
         {
         public:
             // metadata: MPropertyFriendlyName "Radius calculation mode"
-            source2sdk::particles::ParticleMassMode_t m_nMassMode; // 0x0            
+            source2sdk::particles::ParticleMassMode_t m_nMassMode; // 0x0
             uint8_t _pad0004[0x4]; // 0x4
             // metadata: MPropertyFriendlyName "Radius input"
-            source2sdk::particleslib::CPerParticleFloatInput m_flRadius; // 0x8            
+            source2sdk::particleslib::CPerParticleFloatInput m_flRadius; // 0x8
             // metadata: MPropertyFriendlyName "Nominal radius value"
-            source2sdk::particleslib::CPerParticleFloatInput m_flNominalRadius; // 0x178            
+            source2sdk::particleslib::CPerParticleFloatInput m_flNominalRadius; // 0x178
             // metadata: MPropertyFriendlyName "Scale to apply to result"
-            source2sdk::particleslib::CPerParticleFloatInput m_flScale; // 0x2e8            
+            source2sdk::particleslib::CPerParticleFloatInput m_flScale; // 0x2e8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CParticleMassCalculationParameters because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::CParticleMassCalculationParameters) == 0x458);
     };
 };

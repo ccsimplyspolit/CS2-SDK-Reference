@@ -34,12 +34,12 @@ namespace source2sdk
         public:
             // m_hDemonSummons has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::client::C_BaseEntity>> m_hDemonSummons;
-            char m_hDemonSummons[0x18]; // 0x758            
+            char m_hDemonSummons[0x18]; // 0x758
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Item_Demonicon because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CDOTA_Item_Demonicon) == 0x770);
     };
 };

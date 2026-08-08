@@ -31,17 +31,17 @@ namespace source2sdk
         {
         public:
             uint8_t _pad00d0[0x100]; // 0xd0
-            QAngle m_qRelativeOffset; // 0x1d0            
-            float m_flRelativeDist; // 0x1dc            
-            Vector m_vecOffsetDir; // 0x1e0            
+            QAngle m_qRelativeOffset; // 0x1d0
+            float m_flRelativeDist; // 0x1dc
+            Vector m_vecOffsetDir; // 0x1e0
             // m_hFollowEnt has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hFollowEnt;
-            char m_hFollowEnt[0x4]; // 0x1ec            
+            char m_hFollowEnt[0x4]; // 0x1ec
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_PerchedPredatorDrag because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_PerchedPredatorDrag) == 0x1f0);
     };
 };

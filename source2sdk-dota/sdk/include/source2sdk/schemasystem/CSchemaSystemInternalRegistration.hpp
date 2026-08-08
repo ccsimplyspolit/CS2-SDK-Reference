@@ -21,37 +21,37 @@ namespace source2sdk
         class CSchemaSystemInternalRegistration
         {
         public:
-            Vector2D m_Vector2D; // 0x0            
-            Vector m_Vector; // 0x8            
-            VectorWS m_VectorWS; // 0x14            
-            VectorAligned m_VectorAligned; // 0x20            
-            Quaternion m_Quaternion; // 0x30            
-            QAngle m_QAngle; // 0x40            
-            RotationVector m_RotationVector; // 0x4c            
-            RadianEuler m_RadianEuler; // 0x58            
-            DegreeEuler m_DegreeEuler; // 0x64            
-            QuaternionStorage m_QuaternionStorage; // 0x70            
-            matrix3x4_t m_matrix3x4_t; // 0x80            
-            matrix3x4a_t m_matrix3x4a_t; // 0xb0            
-            Color m_Color; // 0xe0            
-            Vector4D m_Vector4D; // 0xe4            
+            Vector2D m_Vector2D; // 0x0
+            Vector m_Vector; // 0x8
+            VectorWS m_VectorWS; // 0x14
+            VectorAligned m_VectorAligned; // 0x20
+            Quaternion m_Quaternion; // 0x30
+            QAngle m_QAngle; // 0x40
+            RotationVector m_RotationVector; // 0x4c
+            RadianEuler m_RadianEuler; // 0x58
+            DegreeEuler m_DegreeEuler; // 0x64
+            QuaternionStorage m_QuaternionStorage; // 0x70
+            matrix3x4_t m_matrix3x4_t; // 0x80
+            matrix3x4a_t m_matrix3x4a_t; // 0xb0
+            Color m_Color; // 0xe0
+            Vector4D m_Vector4D; // 0xe4
             uint8_t _pad00f4[0xc]; // 0xf4
-            CTransform m_CTransform; // 0x100            
-            KeyValues* m_pKeyValues; // 0x120            
-            CUtlBinaryBlock m_CUtlBinaryBlock; // 0x128            
-            CUtlString m_CUtlString; // 0x138            
-            CUtlSymbol m_CUtlSymbol; // 0x140            
+            CTransform m_CTransform; // 0x100
+            KeyValues* m_pKeyValues; // 0x120
+            CUtlBinaryBlock m_CUtlBinaryBlock; // 0x128
+            CUtlString m_CUtlString; // 0x138
+            CUtlSymbol m_CUtlSymbol; // 0x140
             uint8_t _pad0142[0x2]; // 0x142
-            CUtlStringToken m_stringToken; // 0x144            
-            CUtlStringTokenWithStorage m_stringTokenWithStorage; // 0x148            
+            CUtlStringToken m_stringToken; // 0x144
+            CUtlStringTokenWithStorage m_stringTokenWithStorage; // 0x148
             // m_ResourceTypes has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceArray<CResourcePointer<CResourceString>> m_ResourceTypes;
-            char m_ResourceTypes[0x8]; // 0x160            
-            KeyValues3 m_KV3; // 0x168            
+            char m_ResourceTypes[0x8]; // 0x160
+            KeyValues3 m_KV3; // 0x168
             uint8_t _pad0178[0x8];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::schemasystem::CSchemaSystemInternalRegistration, m_Vector2D) == 0x0);
         static_assert(offsetof(source2sdk::schemasystem::CSchemaSystemInternalRegistration, m_Vector) == 0x8);
         static_assert(offsetof(source2sdk::schemasystem::CSchemaSystemInternalRegistration, m_VectorWS) == 0x14);
@@ -75,7 +75,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::schemasystem::CSchemaSystemInternalRegistration, m_stringTokenWithStorage) == 0x148);
         static_assert(offsetof(source2sdk::schemasystem::CSchemaSystemInternalRegistration, m_ResourceTypes) == 0x160);
         static_assert(offsetof(source2sdk::schemasystem::CSchemaSystemInternalRegistration, m_KV3) == 0x168);
-        
+
         static_assert(sizeof(source2sdk::schemasystem::CSchemaSystemInternalRegistration) == 0x180);
     };
 };

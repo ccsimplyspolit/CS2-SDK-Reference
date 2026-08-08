@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x48
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Choice Weight"
         // static metadata: MPropertyDescription "Specifies a weighting value which affects that likelyhood of selecting this element which picking a choice."
@@ -30,8 +30,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::smartprops::CSmartPropPulse_SelectionChoiceWeight) == 0x48);
     };
 };

@@ -17,27 +17,27 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a80
+        // Size: 0x1aa0
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Item_HelmOfTheDominator_BonusHealth : public source2sdk::client::CDOTA_Buff
         {
         public:
-            std::int32_t health_min; // 0x1a58            
-            std::int32_t new_max; // 0x1a5c            
-            std::int32_t health_bonus; // 0x1a60            
-            std::int32_t model_scale; // 0x1a64            
-            std::int32_t creep_bonus_damage; // 0x1a68            
-            std::int32_t creep_bonus_hp_regen; // 0x1a6c            
-            std::int32_t creep_bonus_mp_regen; // 0x1a70            
-            std::int32_t creep_bonus_armor; // 0x1a74            
-            float creep_damage_taken_cooldown; // 0x1a78            
-            uint8_t _pad1a7c[0x4];
+            std::int32_t health_min; // 0x1a78
+            std::int32_t new_max; // 0x1a7c
+            std::int32_t health_bonus; // 0x1a80
+            std::int32_t model_scale; // 0x1a84
+            std::int32_t creep_bonus_damage; // 0x1a88
+            std::int32_t creep_bonus_hp_regen; // 0x1a8c
+            std::int32_t creep_bonus_mp_regen; // 0x1a90
+            std::int32_t creep_bonus_armor; // 0x1a94
+            float creep_damage_taken_cooldown; // 0x1a98
+            uint8_t _pad1a9c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Item_HelmOfTheDominator_BonusHealth because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Item_HelmOfTheDominator_BonusHealth) == 0x1a80);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Item_HelmOfTheDominator_BonusHealth) == 0x1aa0);
     };
 };

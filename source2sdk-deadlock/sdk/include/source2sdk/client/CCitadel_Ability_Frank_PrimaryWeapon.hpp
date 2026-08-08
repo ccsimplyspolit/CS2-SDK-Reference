@@ -31,13 +31,13 @@ namespace source2sdk
         {
         public:
             uint8_t _pad1430[0x8]; // 0x1430
-            source2sdk::client::C_CitadelPlayerPawn* m_pNextShooter; // 0x1438            
+            source2sdk::client::C_CitadelPlayerPawn* m_pNextShooter; // 0x1438
             uint8_t _pad1440[0x108];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_Frank_PrimaryWeapon because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Ability_Frank_PrimaryWeapon) == 0x1548);
     };
 };

@@ -20,20 +20,20 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x18
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CNmCachedBoolNode_CDefinition : public source2sdk::animlib::CNmBoolValueNode_CDefinition
         {
         public:
-            std::int16_t m_nInputValueNodeIdx; // 0x10            
+            std::int16_t m_nInputValueNodeIdx; // 0x10
             uint8_t _pad0012[0x2]; // 0x12
-            source2sdk::animlib::NmCachedValueMode_t m_mode; // 0x14            
+            source2sdk::animlib::NmCachedValueMode_t m_mode; // 0x14
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CNmCachedBoolNode::CDefinition because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::animlib::CNmCachedBoolNode_CDefinition) == 0x18);
     };
 };

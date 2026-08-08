@@ -25,13 +25,13 @@ namespace source2sdk
         {
         public:
             // metadata: MNotSaved
-            bool m_bIsUsable; // 0xa88            
+            bool m_bIsUsable; // 0xa88
             uint8_t _pad0a89[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_BaseDoor because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_BaseDoor) == 0xa90);
     };
 };

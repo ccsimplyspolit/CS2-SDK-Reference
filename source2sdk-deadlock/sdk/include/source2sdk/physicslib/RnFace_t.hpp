@@ -19,18 +19,18 @@ namespace source2sdk
         // Size: 0x1
         // Has Trivial Constructor
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct RnFace_t
         {
         public:
-            std::uint8_t m_nEdge; // 0x0            
+            std::uint8_t m_nEdge; // 0x0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::physicslib::RnFace_t, m_nEdge) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::physicslib::RnFace_t) == 0x1);
     };
 };

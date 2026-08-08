@@ -30,16 +30,16 @@ namespace source2sdk
         class sSpiritDef
         {
         public:
-            source2sdk::client::C_DOTA_BaseNPC* pSpirit; // 0x0            
-            source2sdk::client::ParticleIndex_t nSpiritFXIndex; // 0x8            
-            std::int32_t nSpiritState; // 0xc            
+            source2sdk::client::C_DOTA_BaseNPC* pSpirit; // 0x0
+            source2sdk::client::ParticleIndex_t nSpiritFXIndex; // 0x8
+            std::int32_t nSpiritState; // 0xc
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::sSpiritDef, pSpirit) == 0x0);
         static_assert(offsetof(source2sdk::client::sSpiritDef, nSpiritFXIndex) == 0x8);
         static_assert(offsetof(source2sdk::client::sSpiritDef, nSpiritState) == 0xc);
-        
+
         static_assert(sizeof(source2sdk::client::sSpiritDef) == 0x10);
     };
 };

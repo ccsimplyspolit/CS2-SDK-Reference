@@ -21,13 +21,13 @@ namespace source2sdk
         struct CPulseCell_WaitForCursorsWithTagBase_CursorState_t
         {
         public:
-            PulseSymbol_t m_TagName; // 0x0            
+            PulseSymbol_t m_TagName; // 0x0
             uint8_t _pad0010[0x20];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::pulse_runtime_lib::CPulseCell_WaitForCursorsWithTagBase_CursorState_t, m_TagName) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::pulse_runtime_lib::CPulseCell_WaitForCursorsWithTagBase_CursorState_t) == 0x30);
     };
 };

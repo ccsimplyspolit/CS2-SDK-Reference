@@ -23,13 +23,13 @@ namespace source2sdk
         class CCitadel_Modifier_Pillar : public source2sdk::server::CCitadel_Modifier_Stunned
         {
         public:
-            float flAccumulatedDamage; // 0xd8            
+            float flAccumulatedDamage; // 0xd8
             uint8_t _pad00dc[0x84];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_Pillar because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_Pillar) == 0x160);
     };
 };

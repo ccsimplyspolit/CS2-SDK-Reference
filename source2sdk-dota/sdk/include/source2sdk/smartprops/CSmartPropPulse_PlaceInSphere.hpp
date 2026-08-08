@@ -21,7 +21,7 @@ namespace source2sdk
         // Size: 0x90
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Place In Radius"
         // static metadata: MPropertyDescription "An element which places multiple instances of its child elements within a radius."
@@ -29,12 +29,12 @@ namespace source2sdk
         class CSmartPropPulse_PlaceInSphere : public source2sdk::pulse_runtime_lib::CPulseCell_BaseFlow
         {
         public:
-            source2sdk::pulse_runtime_lib::CPulse_OutflowConnection m_Place; // 0x48            
+            source2sdk::pulse_runtime_lib::CPulse_OutflowConnection m_Place; // 0x48
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSmartPropPulse_PlaceInSphere because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::smartprops::CSmartPropPulse_PlaceInSphere) == 0x90);
     };
 };

@@ -19,19 +19,19 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x18
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CNmConstFloatNode_CDefinition : public source2sdk::animlib::CNmFloatValueNode_CDefinition
         {
         public:
-            float m_flValue; // 0x10            
+            float m_flValue; // 0x10
             uint8_t _pad0014[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CNmConstFloatNode::CDefinition because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::animlib::CNmConstFloatNode_CDefinition) == 0x18);
     };
 };

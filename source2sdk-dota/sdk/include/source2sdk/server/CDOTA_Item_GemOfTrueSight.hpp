@@ -32,17 +32,17 @@ namespace source2sdk
         class CDOTA_Item_GemOfTrueSight : public source2sdk::server::CDOTA_Item
         {
         public:
-            std::int32_t m_iTempViewer; // 0x658            
-            std::int32_t m_iTeam; // 0x65c            
-            std::int32_t m_nFXIndex; // 0x660            
+            std::int32_t m_iTempViewer; // 0x658
+            std::int32_t m_iTeam; // 0x65c
+            std::int32_t m_nFXIndex; // 0x660
             // m_hThinker has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hThinker;
-            char m_hThinker[0x4]; // 0x664            
+            char m_hThinker[0x4]; // 0x664
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Item_GemOfTrueSight because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Item_GemOfTrueSight) == 0x668);
     };
 };

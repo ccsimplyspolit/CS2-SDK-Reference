@@ -24,13 +24,13 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0860[0x10]; // 0x860
-            bool m_bBroken; // 0x870            
+            bool m_bBroken; // 0x870
             uint8_t _pad0871[0x87];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Projectile_WreckingBall because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Projectile_WreckingBall) == 0x8f8);
     };
 };

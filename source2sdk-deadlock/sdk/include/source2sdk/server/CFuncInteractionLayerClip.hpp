@@ -23,19 +23,19 @@ namespace source2sdk
         class CFuncInteractionLayerClip : public source2sdk::server::CBaseModelEntity
         {
         public:
-            bool m_bDisabled; // 0x780            
+            bool m_bDisabled; // 0x780
             uint8_t _pad0781[0x7]; // 0x781
-            CUtlSymbolLarge m_iszInteractsAs; // 0x788            
-            CUtlSymbolLarge m_iszInteractsWith; // 0x790            
-            
+            CUtlSymbolLarge m_iszInteractsAs; // 0x788
+            CUtlSymbolLarge m_iszInteractsWith; // 0x790
+
             // Datamap fields:
             // void InputEnable; // 0x0
             // void InputDisable; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CFuncInteractionLayerClip because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CFuncInteractionLayerClip) == 0x798);
     };
 };

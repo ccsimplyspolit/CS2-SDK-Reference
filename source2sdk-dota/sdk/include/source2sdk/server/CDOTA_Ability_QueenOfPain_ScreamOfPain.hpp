@@ -25,13 +25,13 @@ namespace source2sdk
         class CDOTA_Ability_QueenOfPain_ScreamOfPain : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            std::int32_t damage; // 0x580            
-            float damage_reflected_to_self; // 0x584            
+            std::int32_t damage; // 0x580
+            float damage_reflected_to_self; // 0x584
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_QueenOfPain_ScreamOfPain because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_QueenOfPain_ScreamOfPain) == 0x588);
     };
 };

@@ -19,20 +19,20 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x2
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CAnimParamHandle
         {
         public:
-            source2sdk::animgraphlib::AnimParamType_t m_type; // 0x0            
-            std::uint8_t m_index; // 0x1            
+            source2sdk::animgraphlib::AnimParamType_t m_type; // 0x0
+            std::uint8_t m_index; // 0x1
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::animgraphlib::CAnimParamHandle, m_type) == 0x0);
         static_assert(offsetof(source2sdk::animgraphlib::CAnimParamHandle, m_index) == 0x1);
-        
+
         static_assert(sizeof(source2sdk::animgraphlib::CAnimParamHandle) == 0x2);
     };
 };

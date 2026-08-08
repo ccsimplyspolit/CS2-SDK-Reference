@@ -32,14 +32,14 @@ namespace source2sdk
         public:
             // m_hBuffedAbility has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CCitadelBaseAbility> m_hBuffedAbility;
-            char m_hBuffedAbility[0x4]; // 0xd0            
-            bool m_bEnabled; // 0xd4            
+            char m_hBuffedAbility[0x4]; // 0xd0
+            bool m_bEnabled; // 0xd4
             uint8_t _pad00d5[0x203];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CModifier_Upgrade_ArcaneSurge_AbilityWatcher because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CModifier_Upgrade_ArcaneSurge_AbilityWatcher) == 0x2d8);
     };
 };

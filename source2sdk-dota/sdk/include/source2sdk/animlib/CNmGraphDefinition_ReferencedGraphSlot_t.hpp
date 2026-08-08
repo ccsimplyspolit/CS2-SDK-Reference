@@ -19,20 +19,20 @@ namespace source2sdk
         // Size: 0x4
         // Has Trivial Destructor
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct CNmGraphDefinition_ReferencedGraphSlot_t
         {
         public:
-            std::int16_t m_nNodeIdx; // 0x0            
-            std::int16_t m_dataSlotIdx; // 0x2            
+            std::int16_t m_nNodeIdx; // 0x0
+            std::int16_t m_dataSlotIdx; // 0x2
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::animlib::CNmGraphDefinition_ReferencedGraphSlot_t, m_nNodeIdx) == 0x0);
         static_assert(offsetof(source2sdk::animlib::CNmGraphDefinition_ReferencedGraphSlot_t, m_dataSlotIdx) == 0x2);
-        
+
         static_assert(sizeof(source2sdk::animlib::CNmGraphDefinition_ReferencedGraphSlot_t) == 0x4);
     };
 };

@@ -31,21 +31,21 @@ namespace source2sdk
         class CPathNode : public source2sdk::client::C_PointEntity
         {
         public:
-            Vector m_vInTangentLocal; // 0x5f0            
-            Vector m_vOutTangentLocal; // 0x5fc            
-            CUtlString m_strParentPathUniqueID; // 0x608            
-            CUtlString m_strPathNodeParameter; // 0x610            
+            Vector m_vInTangentLocal; // 0x5f0
+            Vector m_vOutTangentLocal; // 0x5fc
+            CUtlString m_strParentPathUniqueID; // 0x608
+            CUtlString m_strPathNodeParameter; // 0x610
             uint8_t _pad0618[0x8]; // 0x618
-            CTransformWS m_xWSPrevParent; // 0x620            
+            CTransformWS m_xWSPrevParent; // 0x620
             // m_hPath has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::CPathWithDynamicNodes> m_hPath;
-            char m_hPath[0x4]; // 0x640            
+            char m_hPath[0x4]; // 0x640
             uint8_t _pad0644[0xc];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPathNode because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CPathNode) == 0x650);
     };
 };

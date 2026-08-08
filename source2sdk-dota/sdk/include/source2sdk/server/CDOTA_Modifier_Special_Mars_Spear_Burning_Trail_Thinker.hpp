@@ -17,21 +17,21 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a70
+        // Size: 0x1a90
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Special_Mars_Spear_Burning_Trail_Thinker : public source2sdk::client::CDOTA_Buff
         {
         public:
-            Vector m_vPathDir; // 0x1a58            
-            float shard_trail_radius; // 0x1a64            
-            float shard_debuff_linger_duration; // 0x1a68            
-            float shard_interval; // 0x1a6c            
+            Vector m_vPathDir; // 0x1a78
+            float shard_trail_radius; // 0x1a84
+            float shard_debuff_linger_duration; // 0x1a88
+            float shard_interval; // 0x1a8c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Special_Mars_Spear_Burning_Trail_Thinker because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Special_Mars_Spear_Burning_Trail_Thinker) == 0x1a70);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Special_Mars_Spear_Burning_Trail_Thinker) == 0x1a90);
     };
 };

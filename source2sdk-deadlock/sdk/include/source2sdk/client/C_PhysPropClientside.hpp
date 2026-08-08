@@ -26,17 +26,17 @@ namespace source2sdk
         {
         public:
             // metadata: MNotSaved
-            source2sdk::entity2::GameTime_t m_flTouchDelta; // 0xe20            
+            source2sdk::entity2::GameTime_t m_flTouchDelta; // 0xe20
             // metadata: MNotSaved
-            source2sdk::entity2::GameTime_t m_fDeathTime; // 0xe24            
+            source2sdk::entity2::GameTime_t m_fDeathTime; // 0xe24
             // metadata: MNotSaved
-            Vector m_vecDamagePosition; // 0xe28            
+            Vector m_vecDamagePosition; // 0xe28
             // metadata: MNotSaved
-            Vector m_vecDamageDirection; // 0xe34            
+            Vector m_vecDamageDirection; // 0xe34
             // metadata: MNotSaved
-            source2sdk::client::DamageTypes_t m_nDamageType; // 0xe40            
+            source2sdk::client::DamageTypes_t m_nDamageType; // 0xe40
             uint8_t _pad0e44[0xc];
-            
+
             // Datamap fields:
             // float m_impactEnergyScale; // 0xd88
             // bool forcemotiondisabled; // 0x7fffffff
@@ -48,9 +48,9 @@ namespace source2sdk
             // const char * skin; // 0x7fffffff
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_PhysPropClientside because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_PhysPropClientside) == 0xe50);
     };
 };

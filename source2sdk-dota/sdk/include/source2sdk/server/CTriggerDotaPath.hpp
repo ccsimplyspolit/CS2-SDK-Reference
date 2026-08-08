@@ -33,13 +33,13 @@ namespace source2sdk
         public:
             // m_path has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CDotaMoveSpeedModifierPath> m_path;
-            char m_path[0x4]; // 0x8f0            
+            char m_path[0x4]; // 0x8f0
             uint8_t _pad08f4[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CTriggerDotaPath because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CTriggerDotaPath) == 0x8f8);
     };
 };

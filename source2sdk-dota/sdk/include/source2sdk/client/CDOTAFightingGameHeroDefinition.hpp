@@ -21,35 +21,35 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x70
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MVDataRoot
         #pragma pack(push, 1)
         class CDOTAFightingGameHeroDefinition
         {
         public:
-            source2sdk::client::HeroID_t m_nHeroID; // 0x0            
-            float m_flHeroWidth; // 0x4            
-            CUtlString m_pszBasicSwingSound; // 0x8            
-            CUtlString m_pszBasicHitSound; // 0x10            
-            std::int32_t m_nVictoryDuration; // 0x18            
+            source2sdk::client::HeroID_t m_nHeroID; // 0x0
+            float m_flHeroWidth; // 0x4
+            CUtlString m_pszBasicSwingSound; // 0x8
+            CUtlString m_pszBasicHitSound; // 0x10
+            std::int32_t m_nVictoryDuration; // 0x18
             uint8_t _pad001c[0x4]; // 0x1c
-            CUtlString m_pszHeroNameVO; // 0x20            
+            CUtlString m_pszHeroNameVO; // 0x20
             // m_vecHeroStyles has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::client::CDOTAFightingGameHeroStyleDefinition> m_vecHeroStyles;
-            char m_vecHeroStyles[0x18]; // 0x28            
+            char m_vecHeroStyles[0x18]; // 0x28
             // m_vecActionDefinitions has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::client::CDOTAFightingGameActionDefinition> m_vecActionDefinitions;
-            char m_vecActionDefinitions[0x18]; // 0x40            
-            float m_HeroPick_HeightOffset; // 0x58            
-            float m_HeroPick_XOffset_Right; // 0x5c            
-            float m_HeroPick_Angle_Right; // 0x60            
-            float m_HeroPick_XOffset_Left; // 0x64            
-            float m_HeroPick_Angle_Left; // 0x68            
-            float m_HeroPick_Scale; // 0x6c            
+            char m_vecActionDefinitions[0x18]; // 0x40
+            float m_HeroPick_HeightOffset; // 0x58
+            float m_HeroPick_XOffset_Right; // 0x5c
+            float m_HeroPick_Angle_Right; // 0x60
+            float m_HeroPick_XOffset_Left; // 0x64
+            float m_HeroPick_Angle_Left; // 0x68
+            float m_HeroPick_Scale; // 0x6c
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::CDOTAFightingGameHeroDefinition, m_nHeroID) == 0x0);
         static_assert(offsetof(source2sdk::client::CDOTAFightingGameHeroDefinition, m_flHeroWidth) == 0x4);
         static_assert(offsetof(source2sdk::client::CDOTAFightingGameHeroDefinition, m_pszBasicSwingSound) == 0x8);
@@ -64,7 +64,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::client::CDOTAFightingGameHeroDefinition, m_HeroPick_XOffset_Left) == 0x64);
         static_assert(offsetof(source2sdk::client::CDOTAFightingGameHeroDefinition, m_HeroPick_Angle_Left) == 0x68);
         static_assert(offsetof(source2sdk::client::CDOTAFightingGameHeroDefinition, m_HeroPick_Scale) == 0x6c);
-        
+
         static_assert(sizeof(source2sdk::client::CDOTAFightingGameHeroDefinition) == 0x70);
     };
 };

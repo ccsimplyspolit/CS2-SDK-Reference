@@ -17,7 +17,7 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a80
+        // Size: 0x1aa0
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Treant_LivingArmorPermanent : public source2sdk::client::CDOTA_Modifier_Treant_LivingArmor
@@ -26,8 +26,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: CDOTA_Modifier_Treant_LivingArmorPermanent has no schema binary (size is a guess)
     };
 };

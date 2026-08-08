@@ -23,28 +23,28 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x4d0
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_INIT_CheckParticleForWater : public source2sdk::particles::CParticleFunctionInitializer
         {
         public:
             // metadata: MPropertyFriendlyName "radius"
-            source2sdk::particleslib::CPerParticleFloatInput m_flRadius; // 0x1e0            
+            source2sdk::particleslib::CPerParticleFloatInput m_flRadius; // 0x1e0
             // metadata: MPropertyFriendlyName "output attribute"
             // metadata: MPropertyAttributeChoiceName "particlefield_scalar"
-            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x350            
+            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x350
             uint8_t _pad0354[0x4]; // 0x354
             // metadata: MPropertyFriendlyName "output"
-            source2sdk::particleslib::CParticleRemapFloatInput m_flOutputRemap; // 0x358            
+            source2sdk::particleslib::CParticleRemapFloatInput m_flOutputRemap; // 0x358
             // metadata: MPropertyFriendlyName "set value method"
-            source2sdk::particles::ParticleSetMethod_t m_nSetMethod; // 0x4c8            
+            source2sdk::particles::ParticleSetMethod_t m_nSetMethod; // 0x4c8
             uint8_t _pad04cc[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_INIT_CheckParticleForWater because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_INIT_CheckParticleForWater) == 0x4d0);
     };
 };

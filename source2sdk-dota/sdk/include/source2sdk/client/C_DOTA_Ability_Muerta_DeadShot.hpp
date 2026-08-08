@@ -25,13 +25,13 @@ namespace source2sdk
         class C_DOTA_Ability_Muerta_DeadShot : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            float radius; // 0x6a8            
-            float speed; // 0x6ac            
+            float radius; // 0x6a8
+            float speed; // 0x6ac
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_Muerta_DeadShot because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_Muerta_DeadShot) == 0x6b0);
     };
 };

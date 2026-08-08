@@ -20,23 +20,23 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x8a8
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_LocalAccelerationForce : public source2sdk::particles::CParticleFunctionForce
         {
         public:
             // metadata: MPropertyFriendlyName "local space control point"
-            std::int32_t m_nCP; // 0x1e8            
+            std::int32_t m_nCP; // 0x1e8
             // metadata: MPropertyFriendlyName "scale control point"
-            std::int32_t m_nScaleCP; // 0x1ec            
+            std::int32_t m_nScaleCP; // 0x1ec
             // metadata: MPropertyFriendlyName "local space acceleration"
-            source2sdk::particleslib::CParticleCollectionVecInput m_vecAccel; // 0x1f0            
+            source2sdk::particleslib::CParticleCollectionVecInput m_vecAccel; // 0x1f0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_LocalAccelerationForce because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_LocalAccelerationForce) == 0x8a8);
     };
 };

@@ -24,14 +24,14 @@ namespace source2sdk
         class CNavLinkMotor_NonZUp_Transition : public source2sdk::server::INavLinkMotor
         {
         public:
-            source2sdk::server::CountdownTimer m_transitionTimer; // 0x18            
-            CTransformWS m_xTransitionOrigin; // 0x30            
-            CTransformWS m_xTransitionTarget; // 0x50            
+            source2sdk::server::CountdownTimer m_transitionTimer; // 0x18
+            CTransformWS m_xTransitionOrigin; // 0x30
+            CTransformWS m_xTransitionTarget; // 0x50
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CNavLinkMotor_NonZUp_Transition because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CNavLinkMotor_NonZUp_Transition) == 0x70);
     };
 };

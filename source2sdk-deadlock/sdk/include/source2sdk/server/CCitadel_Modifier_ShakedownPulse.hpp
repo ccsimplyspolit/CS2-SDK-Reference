@@ -23,13 +23,13 @@ namespace source2sdk
         class CCitadel_Modifier_ShakedownPulse : public source2sdk::server::CCitadelModifier
         {
         public:
-            float m_flSharedDamage; // 0xd0            
+            float m_flSharedDamage; // 0xd0
             uint8_t _pad00d4[0x284];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_ShakedownPulse because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_ShakedownPulse) == 0x358);
     };
 };

@@ -23,13 +23,13 @@ namespace source2sdk
         class CCitadel_Modifier_Apex_Watcher : public source2sdk::server::CCitadel_Modifier_Out_Of_Combat_Health_Regen
         {
         public:
-            bool m_bShouldEnableBuff; // 0x1d8            
+            bool m_bShouldEnableBuff; // 0x1d8
             uint8_t _pad01d9[0x87];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_Apex_Watcher because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_Apex_Watcher) == 0x260);
     };
 };

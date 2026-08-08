@@ -17,22 +17,22 @@ namespace source2sdk
         // Alignment: 0x8
         // Standard-layout class: true
         // Size: 0x18
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct CCitadelTrackedAnimGraphModifierState_t
         {
         public:
-            CGlobalSymbol m_strName; // 0x0            
-            CUtlString m_strSetValue; // 0x8            
-            CUtlString m_strRestoreValue; // 0x10            
+            CGlobalSymbol m_strName; // 0x0
+            CUtlString m_strSetValue; // 0x8
+            CUtlString m_strRestoreValue; // 0x10
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::CCitadelTrackedAnimGraphModifierState_t, m_strName) == 0x0);
         static_assert(offsetof(source2sdk::client::CCitadelTrackedAnimGraphModifierState_t, m_strSetValue) == 0x8);
         static_assert(offsetof(source2sdk::client::CCitadelTrackedAnimGraphModifierState_t, m_strRestoreValue) == 0x10);
-        
+
         static_assert(sizeof(source2sdk::client::CCitadelTrackedAnimGraphModifierState_t) == 0x18);
     };
 };

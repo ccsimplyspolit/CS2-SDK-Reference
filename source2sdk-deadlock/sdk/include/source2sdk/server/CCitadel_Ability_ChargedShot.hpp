@@ -24,13 +24,13 @@ namespace source2sdk
         class CCitadel_Ability_ChargedShot : public source2sdk::server::CCitadelBaseAbility
         {
         public:
-            source2sdk::client::ParticleIndex_t m_ChannelParticle; // 0xf70            
+            source2sdk::client::ParticleIndex_t m_ChannelParticle; // 0xf70
             uint8_t _pad0f74[0x184];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_ChargedShot because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Ability_ChargedShot) == 0x10f8);
     };
 };

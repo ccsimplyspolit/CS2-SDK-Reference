@@ -23,17 +23,17 @@ namespace source2sdk
         class CEnvBeverage : public source2sdk::server::CBaseEntity
         {
         public:
-            bool m_CanInDispenser; // 0x4a0            
+            bool m_CanInDispenser; // 0x4a0
             uint8_t _pad04a1[0x3]; // 0x4a1
-            std::int32_t m_nBeverageType; // 0x4a4            
-            
+            std::int32_t m_nBeverageType; // 0x4a4
+
             // Datamap fields:
             // void InputActivate; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CEnvBeverage because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CEnvBeverage) == 0x4a8);
     };
 };

@@ -27,7 +27,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x15a8
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "bool m_bIsTransformed"
         // static metadata: MNetworkVarNames "GameTime_t m_flWerewolfStartTime"
         #pragma pack(push, 1)
@@ -36,22 +36,22 @@ namespace source2sdk
         public:
             uint8_t _pad0f70[0x600]; // 0xf70
             // metadata: MNetworkEnable
-            bool m_bIsTransformed; // 0x1570            
-            bool m_bIsTransformingBack; // 0x1571            
+            bool m_bIsTransformed; // 0x1570
+            bool m_bIsTransformingBack; // 0x1571
             uint8_t _pad1572[0x2]; // 0x1572
-            source2sdk::entity2::GameTime_t m_tLastRegenComponentThinkTime; // 0x1574            
+            source2sdk::entity2::GameTime_t m_tLastRegenComponentThinkTime; // 0x1574
             uint8_t _pad1578[0x4]; // 0x1578
-            source2sdk::entity2::GameTime_t m_tForceTransformTime; // 0x157c            
+            source2sdk::entity2::GameTime_t m_tForceTransformTime; // 0x157c
             // metadata: MNetworkEnable
-            source2sdk::entity2::GameTime_t m_flWerewolfStartTime; // 0x1580            
+            source2sdk::entity2::GameTime_t m_flWerewolfStartTime; // 0x1580
             uint8_t _pad1584[0x4]; // 0x1584
-            source2sdk::server::CCitadelModifier* m_pWerewolfModifier; // 0x1588            
+            source2sdk::server::CCitadelModifier* m_pWerewolfModifier; // 0x1588
             uint8_t _pad1590[0x18];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Werewolf_Transformation because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Werewolf_Transformation) == 0x15a8);
     };
 };

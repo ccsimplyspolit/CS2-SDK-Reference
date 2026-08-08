@@ -24,14 +24,14 @@ namespace source2sdk
         class CTriggerDetectBulletFire : public source2sdk::server::CBaseTrigger
         {
         public:
-            bool m_bPlayerFireOnly; // 0x8e0            
+            bool m_bPlayerFireOnly; // 0x8e0
             uint8_t _pad08e1[0x7]; // 0x8e1
-            source2sdk::entity2::CEntityIOOutput m_OnDetectedBulletFire; // 0x8e8            
+            source2sdk::entity2::CEntityIOOutput m_OnDetectedBulletFire; // 0x8e8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CTriggerDetectBulletFire because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CTriggerDetectBulletFire) == 0x900);
     };
 };

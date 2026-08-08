@@ -25,17 +25,17 @@ namespace source2sdk
         class CDOTA_Ability_Tinker_DeployTurrets : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            VectorWS m_vDashPosition; // 0x580            
-            VectorWS m_vFacePosition; // 0x58c            
-            VectorWS m_vEndpoint; // 0x598            
-            Vector m_vSlashDir; // 0x5a4            
-            VectorWS m_vDashProjectileLocation; // 0x5b0            
-            float missile_range; // 0x5bc            
+            VectorWS m_vDashPosition; // 0x580
+            VectorWS m_vFacePosition; // 0x58c
+            VectorWS m_vEndpoint; // 0x598
+            Vector m_vSlashDir; // 0x5a4
+            VectorWS m_vDashProjectileLocation; // 0x5b0
+            float missile_range; // 0x5bc
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Tinker_DeployTurrets because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Tinker_DeployTurrets) == 0x5c0);
     };
 };

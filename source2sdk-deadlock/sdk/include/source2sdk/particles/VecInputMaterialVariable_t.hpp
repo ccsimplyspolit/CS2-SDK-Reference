@@ -18,21 +18,21 @@ namespace source2sdk
         // Alignment: 0x8
         // Standard-layout class: false
         // Size: 0x6c0
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct VecInputMaterialVariable_t
         {
         public:
             // metadata: MPropertyFriendlyName "material variable"
-            CUtlString m_strVariable; // 0x0            
+            CUtlString m_strVariable; // 0x0
             // metadata: MPropertyFriendlyName "input"
-            source2sdk::particleslib::CParticleCollectionVecInput m_vecInput; // 0x8            
+            source2sdk::particleslib::CParticleCollectionVecInput m_vecInput; // 0x8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in VecInputMaterialVariable_t because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::VecInputMaterialVariable_t) == 0x6c0);
     };
 };

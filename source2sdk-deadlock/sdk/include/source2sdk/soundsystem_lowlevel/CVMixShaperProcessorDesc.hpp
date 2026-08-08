@@ -20,19 +20,19 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x38
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CVMixShaperProcessorDesc : public source2sdk::soundsystem_lowlevel::CVMixBaseProcessorDesc
         {
         public:
-            source2sdk::soundsystem_lowlevel::VMixShaperDesc_t m_desc; // 0x20            
+            source2sdk::soundsystem_lowlevel::VMixShaperDesc_t m_desc; // 0x20
             uint8_t _pad0034[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CVMixShaperProcessorDesc because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::soundsystem_lowlevel::CVMixShaperProcessorDesc) == 0x38);
     };
 };

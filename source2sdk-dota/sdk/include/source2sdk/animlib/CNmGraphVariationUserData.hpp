@@ -19,7 +19,7 @@ namespace source2sdk
         // Size: 0x8
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CNmGraphVariationUserData
@@ -28,8 +28,8 @@ namespace source2sdk
             uint8_t _pad0000[0x8];
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::animlib::CNmGraphVariationUserData) == 0x8);
     };
 };

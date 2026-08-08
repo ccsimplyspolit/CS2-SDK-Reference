@@ -24,18 +24,18 @@ namespace source2sdk
         class CInfoInteraction : public source2sdk::server::CPointEntity
         {
         public:
-            CUtlSymbolLarge m_strInteractVData; // 0x4a0            
+            CUtlSymbolLarge m_strInteractVData; // 0x4a0
             uint8_t _pad04a8[0x10]; // 0x4a8
-            float m_flInteractRadius; // 0x4b8            
-            source2sdk::client::SceneRequestHandle_t m_hSceneRequest; // 0x4bc            
-            
+            float m_flInteractRadius; // 0x4b8
+            source2sdk::client::SceneRequestHandle_t m_hSceneRequest; // 0x4bc
+
             // Datamap fields:
             // void InputBeginSequence; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CInfoInteraction because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CInfoInteraction) == 0x4c0);
     };
 };

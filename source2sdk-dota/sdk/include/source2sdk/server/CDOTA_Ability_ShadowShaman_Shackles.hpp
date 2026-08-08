@@ -32,16 +32,16 @@ namespace source2sdk
         class CDOTA_Ability_ShadowShaman_Shackles : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            float m_flLongestShackleDuration; // 0x580            
+            float m_flLongestShackleDuration; // 0x580
             uint8_t _pad0584[0x4]; // 0x584
             // m_Victims has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::server::CBaseEntity>> m_Victims;
-            char m_Victims[0x18]; // 0x588            
+            char m_Victims[0x18]; // 0x588
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_ShadowShaman_Shackles because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_ShadowShaman_Shackles) == 0x5a0);
     };
 };

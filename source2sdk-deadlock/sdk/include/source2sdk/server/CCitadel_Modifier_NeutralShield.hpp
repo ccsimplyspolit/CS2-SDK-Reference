@@ -24,13 +24,13 @@ namespace source2sdk
         class CCitadel_Modifier_NeutralShield : public source2sdk::server::CCitadelModifier
         {
         public:
-            float m_flShieldActivateDelay; // 0xd0            
-            source2sdk::entity2::GameTime_t m_timeEnemyDisappeared; // 0xd4            
+            float m_flShieldActivateDelay; // 0xd0
+            source2sdk::entity2::GameTime_t m_timeEnemyDisappeared; // 0xd4
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_NeutralShield because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_NeutralShield) == 0xd8);
     };
 };

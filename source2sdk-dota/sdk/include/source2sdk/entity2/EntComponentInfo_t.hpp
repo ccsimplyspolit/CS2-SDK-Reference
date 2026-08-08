@@ -29,17 +29,17 @@ namespace source2sdk
         struct EntComponentInfo_t
         {
         public:
-            char* m_pName; // 0x0            
-            char* m_pCPPClassname; // 0x8            
-            char* m_pNetworkDataReferencedDescription; // 0x10            
-            char* m_pNetworkDataReferencedPtrPropDescription; // 0x18            
-            std::int32_t m_nRuntimeIndex; // 0x20            
-            std::uint32_t m_nFlags; // 0x24            
+            char* m_pName; // 0x0
+            char* m_pCPPClassname; // 0x8
+            char* m_pNetworkDataReferencedDescription; // 0x10
+            char* m_pNetworkDataReferencedPtrPropDescription; // 0x18
+            std::int32_t m_nRuntimeIndex; // 0x20
+            std::uint32_t m_nFlags; // 0x24
             uint8_t _pad0028[0x38]; // 0x28
-            source2sdk::entity2::CEntityComponentHelper* m_pBaseClassComponentHelper; // 0x60            
+            source2sdk::entity2::CEntityComponentHelper* m_pBaseClassComponentHelper; // 0x60
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::entity2::EntComponentInfo_t, m_pName) == 0x0);
         static_assert(offsetof(source2sdk::entity2::EntComponentInfo_t, m_pCPPClassname) == 0x8);
         static_assert(offsetof(source2sdk::entity2::EntComponentInfo_t, m_pNetworkDataReferencedDescription) == 0x10);
@@ -47,7 +47,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::entity2::EntComponentInfo_t, m_nRuntimeIndex) == 0x20);
         static_assert(offsetof(source2sdk::entity2::EntComponentInfo_t, m_nFlags) == 0x24);
         static_assert(offsetof(source2sdk::entity2::EntComponentInfo_t, m_pBaseClassComponentHelper) == 0x60);
-        
+
         static_assert(sizeof(source2sdk::entity2::EntComponentInfo_t) == 0x68);
     };
 };

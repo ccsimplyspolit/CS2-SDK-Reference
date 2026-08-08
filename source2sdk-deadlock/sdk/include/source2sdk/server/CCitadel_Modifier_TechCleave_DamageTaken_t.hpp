@@ -30,22 +30,22 @@ namespace source2sdk
         struct CCitadel_Modifier_TechCleave_DamageTaken_t
         {
         public:
-            float m_flDamageAmount; // 0x0            
-            source2sdk::entity2::GameTime_t m_flTimeToExpire; // 0x4            
+            float m_flDamageAmount; // 0x0
+            source2sdk::entity2::GameTime_t m_flTimeToExpire; // 0x4
             // m_ProcAbility has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_ProcAbility;
-            char m_ProcAbility[0x4]; // 0x8            
+            char m_ProcAbility[0x4]; // 0x8
             // m_pTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_pTarget;
-            char m_pTarget[0x4]; // 0xc            
+            char m_pTarget[0x4]; // 0xc
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::CCitadel_Modifier_TechCleave_DamageTaken_t, m_flDamageAmount) == 0x0);
         static_assert(offsetof(source2sdk::server::CCitadel_Modifier_TechCleave_DamageTaken_t, m_flTimeToExpire) == 0x4);
         static_assert(offsetof(source2sdk::server::CCitadel_Modifier_TechCleave_DamageTaken_t, m_ProcAbility) == 0x8);
         static_assert(offsetof(source2sdk::server::CCitadel_Modifier_TechCleave_DamageTaken_t, m_pTarget) == 0xc);
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_TechCleave_DamageTaken_t) == 0x10);
     };
 };

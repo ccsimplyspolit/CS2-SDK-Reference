@@ -13,7 +13,7 @@ namespace source2sdk
 {
     namespace client
     {
-        // Enumerator count: 308
+        // Enumerator count: 309
         // Alignment: 2
         // Size: 0x2
         enum class EModifierState : std::uint16_t
@@ -183,7 +183,7 @@ namespace source2sdk
             MODIFIER_STATE_BACKDOOR_PROTECTED = 0xa2,
             MODIFIER_STATE_IN_COMBAT = 0xa3,
             MODIFIER_STATE_IN_COMBAT_BULLET_HIT = 0xa4,
-            MODIFIER_STATE_DASHJUMP_STAMINA_FREE = 0xa5,
+            MODIFIER_STATE_INFINITE_STAMINA = 0xa5,
             MODIFIER_STATE_YAMATO_SHADOW_FORM = 0xa6,
             MODIFIER_STATE_IN_MID_BOSS_PIT = 0xa7,
             MODIFIER_STATE_ALLOW_MELEE_WHEN_CHANNELING = 0xa8,
@@ -324,8 +324,9 @@ namespace source2sdk
             MODIFIER_STATE_DO_NOT_DRAW_PARTICLES = 0x12f,
             MODIFIER_STATE_MOD_NO_CLEANSE = 0x130,
             MODIFIER_STATE_KOTH_TROOPER = 0x131,
+            MODIFIER_STATE_ITEMS_IGNORE_IMMOBILIZE = 0x132,
             // MPropertySuppressEnumerator
-            MODIFIER_STATE_COUNT = 0x132,
+            MODIFIER_STATE_COUNT = 0x133,
             // MPropertySuppressEnumerator
             MODIFIER_STATE_INVALID = 0xffff,
         };

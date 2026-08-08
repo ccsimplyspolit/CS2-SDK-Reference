@@ -23,13 +23,13 @@ namespace source2sdk
         class CCitadel_WeaponUpgrade_InstantReload : public source2sdk::server::CCitadel_Item
         {
         public:
-            bool m_bIsManualReloading; // 0xf78            
+            bool m_bIsManualReloading; // 0xf78
             uint8_t _pad0f79[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_WeaponUpgrade_InstantReload because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_WeaponUpgrade_InstantReload) == 0xf80);
     };
 };

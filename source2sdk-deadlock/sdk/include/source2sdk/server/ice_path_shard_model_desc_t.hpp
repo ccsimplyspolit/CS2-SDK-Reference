@@ -18,7 +18,7 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x38
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "int32 m_nModelID"
         // static metadata: MNetworkVarNames "Vector2D m_vecPanelSize"
         // static metadata: MNetworkVarNames "Vector m_vecPanelVertices"
@@ -30,27 +30,27 @@ namespace source2sdk
         public:
             uint8_t _pad0000[0x8]; // 0x0
             // metadata: MNetworkEnable
-            std::int32_t m_nModelID; // 0x8            
+            std::int32_t m_nModelID; // 0x8
             // metadata: MNetworkEnable
-            Vector2D m_vecPanelSize; // 0xc            
+            Vector2D m_vecPanelSize; // 0xc
             uint8_t _pad0014[0x4]; // 0x14
             // metadata: MNetworkEnable
             // m_vecPanelVertices has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CNetworkUtlVectorBase<Vector> m_vecPanelVertices;
-            char m_vecPanelVertices[0x18]; // 0x18            
+            char m_vecPanelVertices[0x18]; // 0x18
             // metadata: MNetworkEnable
-            float m_flThickness; // 0x30            
+            float m_flThickness; // 0x30
             // metadata: MNetworkEnable
-            CUtlStringToken m_SurfacePropStringToken; // 0x34            
+            CUtlStringToken m_SurfacePropStringToken; // 0x34
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::ice_path_shard_model_desc_t, m_nModelID) == 0x8);
         static_assert(offsetof(source2sdk::server::ice_path_shard_model_desc_t, m_vecPanelSize) == 0xc);
         static_assert(offsetof(source2sdk::server::ice_path_shard_model_desc_t, m_vecPanelVertices) == 0x18);
         static_assert(offsetof(source2sdk::server::ice_path_shard_model_desc_t, m_flThickness) == 0x30);
         static_assert(offsetof(source2sdk::server::ice_path_shard_model_desc_t, m_SurfacePropStringToken) == 0x34);
-        
+
         static_assert(sizeof(source2sdk::server::ice_path_shard_model_desc_t) == 0x38);
     };
 };

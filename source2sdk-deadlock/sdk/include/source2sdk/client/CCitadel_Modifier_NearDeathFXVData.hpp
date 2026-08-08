@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x930
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CCitadel_Modifier_NearDeathFXVData : public source2sdk::client::CCitadelModifierVData
@@ -29,18 +29,18 @@ namespace source2sdk
             // metadata: MPropertyStartGroup "Visuals"
             // m_EnemyNearDeathParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_EnemyNearDeathParticle;
-            char m_EnemyNearDeathParticle[0xe0]; // 0x750            
+            char m_EnemyNearDeathParticle[0xe0]; // 0x750
             // m_FriendlyNearDeathParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_FriendlyNearDeathParticle;
-            char m_FriendlyNearDeathParticle[0xe0]; // 0x830            
+            char m_FriendlyNearDeathParticle[0xe0]; // 0x830
             // metadata: MPropertyStartGroup "Sounds"
-            CSoundEventName m_sSelfDestructStart; // 0x910            
-            CSoundEventName m_sSelfDestructEnd; // 0x920            
+            CSoundEventName m_sSelfDestructStart; // 0x910
+            CSoundEventName m_sSelfDestructEnd; // 0x920
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_NearDeathFXVData because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Modifier_NearDeathFXVData) == 0x930);
     };
 };

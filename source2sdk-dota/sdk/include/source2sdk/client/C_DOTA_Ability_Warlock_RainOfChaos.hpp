@@ -25,14 +25,14 @@ namespace source2sdk
         class C_DOTA_Ability_Warlock_RainOfChaos : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            float aoe; // 0x6a8            
-            bool m_bHasScepter; // 0x6ac            
+            float aoe; // 0x6a8
+            bool m_bHasScepter; // 0x6ac
             uint8_t _pad06ad[0x3];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_Warlock_RainOfChaos because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_Warlock_RainOfChaos) == 0x6b0);
     };
 };

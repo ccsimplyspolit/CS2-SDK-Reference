@@ -34,7 +34,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xc10
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkIncludeByName "m_iMaxHealth"
         // static metadata: MNetworkIncludeByName "m_iHealth"
         // static metadata: MNetworkIncludeByName "m_iTeam"
@@ -53,22 +53,22 @@ namespace source2sdk
             // metadata: MNetworkEnable
             // m_hEnemy has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hEnemy;
-            char m_hEnemy[0x4]; // 0xaa0            
+            char m_hEnemy[0x4]; // 0xaa0
             // metadata: MNetworkEnable
             // m_hAbilityOwner has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CCitadelBaseAbility> m_hAbilityOwner;
-            char m_hAbilityOwner[0x4]; // 0xaa4            
+            char m_hAbilityOwner[0x4]; // 0xaa4
             // metadata: MNetworkEnable
             // metadata: MNetworkUserGroup "CCitadelRegenComponent"
             // metadata: MNetworkAlias "CCitadelRegenComponent"
             // metadata: MNetworkTypeAlias "CCitadelRegenComponent"
-            source2sdk::server::CCitadelRegenComponent m_CCitadelRegenComponent; // 0xaa8            
+            source2sdk::server::CCitadelRegenComponent m_CCitadelRegenComponent; // 0xaa8
             uint8_t _pad0c08[0x8];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CNPC_SimpleAnimatingAI because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CNPC_SimpleAnimatingAI) == 0xc10);
     };
 };

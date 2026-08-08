@@ -17,24 +17,24 @@ namespace source2sdk
         // Alignment: 0x8
         // Standard-layout class: true
         // Size: 0x18
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CFlexController
         {
         public:
-            CUtlString m_szName; // 0x0            
-            CUtlString m_szType; // 0x8            
-            float min; // 0x10            
-            float max; // 0x14            
+            CUtlString m_szName; // 0x0
+            CUtlString m_szType; // 0x8
+            float min; // 0x10
+            float max; // 0x14
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::modellib::CFlexController, m_szName) == 0x0);
         static_assert(offsetof(source2sdk::modellib::CFlexController, m_szType) == 0x8);
         static_assert(offsetof(source2sdk::modellib::CFlexController, min) == 0x10);
         static_assert(offsetof(source2sdk::modellib::CFlexController, max) == 0x14);
-        
+
         static_assert(sizeof(source2sdk::modellib::CFlexController) == 0x18);
     };
 };

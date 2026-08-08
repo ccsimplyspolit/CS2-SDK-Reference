@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x98
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Vector Parameter"
         #pragma pack(push, 1)
@@ -28,18 +28,18 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "Default Value"
-            Vector m_defaultValue; // 0x80            
+            Vector m_defaultValue; // 0x80
             // metadata: MPropertyFriendlyName "Interpolate"
-            bool m_bInterpolate; // 0x8c            
+            bool m_bInterpolate; // 0x8c
             uint8_t _pad008d[0x3]; // 0x8d
             // metadata: MPropertyFriendlyName "Vector Type"
-            source2sdk::animgraphlib::AnimParamVectorType_t m_vectorType; // 0x90            
+            source2sdk::animgraphlib::AnimParamVectorType_t m_vectorType; // 0x90
             uint8_t _pad0094[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CVectorAnimParameter because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::animgraphlib::CVectorAnimParameter) == 0x98);
     };
 };

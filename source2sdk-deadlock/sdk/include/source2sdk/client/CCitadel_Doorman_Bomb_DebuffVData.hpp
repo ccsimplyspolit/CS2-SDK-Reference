@@ -19,18 +19,18 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x790
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CCitadel_Doorman_Bomb_DebuffVData : public source2sdk::client::CCitadelModifierVData
         {
         public:
-            CPiecewiseCurve m_InaccuracyCurveScale; // 0x750            
+            CPiecewiseCurve m_InaccuracyCurveScale; // 0x750
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Doorman_Bomb_DebuffVData because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Doorman_Bomb_DebuffVData) == 0x790);
     };
 };

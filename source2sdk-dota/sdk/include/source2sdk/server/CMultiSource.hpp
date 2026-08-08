@@ -34,17 +34,17 @@ namespace source2sdk
         public:
             // m_rgEntities has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_rgEntities[32];
-            char m_rgEntities[0x80]; // 0x498            
-            std::int32_t m_rgTriggered[32]; // 0x518            
-            source2sdk::entity2::CEntityIOOutput m_OnTrigger; // 0x598            
-            std::int32_t m_iTotal; // 0x5b0            
+            char m_rgEntities[0x80]; // 0x498
+            std::int32_t m_rgTriggered[32]; // 0x518
+            source2sdk::entity2::CEntityIOOutput m_OnTrigger; // 0x598
+            std::int32_t m_iTotal; // 0x5b0
             uint8_t _pad05b4[0x4]; // 0x5b4
-            CUtlSymbolLarge m_globalstate; // 0x5b8            
+            CUtlSymbolLarge m_globalstate; // 0x5b8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CMultiSource because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CMultiSource) == 0x5c0);
     };
 };

@@ -23,12 +23,12 @@ namespace source2sdk
         struct physics_save_sphere_t
         {
         public:
-            float radius; // 0x0            
+            float radius; // 0x0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::physics_save_sphere_t, radius) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::client::physics_save_sphere_t) == 0x4);
     };
 };

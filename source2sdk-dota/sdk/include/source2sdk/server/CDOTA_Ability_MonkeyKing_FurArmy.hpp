@@ -36,23 +36,23 @@ namespace source2sdk
         public:
             // m_hThinker has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hThinker;
-            char m_hThinker[0x4]; // 0x580            
-            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x584            
-            std::int32_t num_first_soldiers; // 0x588            
-            std::int32_t num_second_soldiers; // 0x58c            
-            bool m_bCreateMonkeys; // 0x590            
+            char m_hThinker[0x4]; // 0x580
+            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x584
+            std::int32_t num_first_soldiers; // 0x588
+            std::int32_t num_second_soldiers; // 0x58c
+            bool m_bCreateMonkeys; // 0x590
             uint8_t _pad0591[0x3]; // 0x591
-            source2sdk::entity2::GameTime_t m_flNextCreationTime; // 0x594            
-            source2sdk::entity2::GameTime_t m_flScepterTime; // 0x598            
+            source2sdk::entity2::GameTime_t m_flNextCreationTime; // 0x594
+            source2sdk::entity2::GameTime_t m_flScepterTime; // 0x598
             uint8_t _pad059c[0x4]; // 0x59c
             // m_vecSoldiers has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::server::CBaseEntity>> m_vecSoldiers;
-            char m_vecSoldiers[0x18]; // 0x5a0            
+            char m_vecSoldiers[0x18]; // 0x5a0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_MonkeyKing_FurArmy because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_MonkeyKing_FurArmy) == 0x5b8);
     };
 };

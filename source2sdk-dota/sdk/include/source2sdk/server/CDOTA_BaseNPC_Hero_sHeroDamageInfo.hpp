@@ -24,14 +24,14 @@ namespace source2sdk
         class CDOTA_BaseNPC_Hero_sHeroDamageInfo
         {
         public:
-            source2sdk::client::PlayerID_t nDamagingPlayerID; // 0x0            
-            source2sdk::entity2::GameTime_t fTime; // 0x4            
+            source2sdk::client::PlayerID_t nDamagingPlayerID; // 0x0
+            source2sdk::entity2::GameTime_t fTime; // 0x4
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::CDOTA_BaseNPC_Hero_sHeroDamageInfo, nDamagingPlayerID) == 0x0);
         static_assert(offsetof(source2sdk::server::CDOTA_BaseNPC_Hero_sHeroDamageInfo, fTime) == 0x4);
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_BaseNPC_Hero_sHeroDamageInfo) == 0x8);
     };
 };

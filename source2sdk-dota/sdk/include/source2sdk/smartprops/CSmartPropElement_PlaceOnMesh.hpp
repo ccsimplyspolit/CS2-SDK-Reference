@@ -21,7 +21,7 @@ namespace source2sdk
         // Size: 0xe8
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MVDataExperimentalNodeSet
         // static metadata: MPropertyFriendlyName "Place on Mesh"
@@ -33,14 +33,14 @@ namespace source2sdk
             // metadata: MPropertyStartGroup
             // metadata: MPropertyFriendlyName "Orientation Mode"
             // metadata: MPropertyDescription "Determine how child elements are oriented when mapped to face."
-            source2sdk::smartprops::CSmartPropAttributeOrientationMode m_nPickMode; // 0xa0            
+            source2sdk::smartprops::CSmartPropAttributeOrientationMode m_nPickMode; // 0xa0
             // metadata: MPropertyDescription
-            CUtlString m_MeshName; // 0xe0            
+            CUtlString m_MeshName; // 0xe0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSmartPropElement_PlaceOnMesh because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::smartprops::CSmartPropElement_PlaceOnMesh) == 0xe8);
     };
 };

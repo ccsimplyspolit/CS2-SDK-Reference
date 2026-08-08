@@ -26,15 +26,15 @@ namespace source2sdk
         class CDOTA_Ability_Hoodwink_Sharpshooter : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            float max_charge_time; // 0x580            
-            VectorWS m_vStartPos; // 0x584            
-            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x590            
+            float max_charge_time; // 0x580
+            VectorWS m_vStartPos; // 0x584
+            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x590
             uint8_t _pad0594[0x14];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Hoodwink_Sharpshooter because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Hoodwink_Sharpshooter) == 0x5a8);
     };
 };

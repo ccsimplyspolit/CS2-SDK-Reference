@@ -23,14 +23,14 @@ namespace source2sdk
         struct AutoRoomDoorwayPairs_t
         {
         public:
-            Vector vP1; // 0x0            
-            Vector vP2; // 0xc            
+            Vector vP1; // 0x0
+            Vector vP2; // 0xc
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::AutoRoomDoorwayPairs_t, vP1) == 0x0);
         static_assert(offsetof(source2sdk::server::AutoRoomDoorwayPairs_t, vP2) == 0xc);
-        
+
         static_assert(sizeof(source2sdk::server::AutoRoomDoorwayPairs_t) == 0x18);
     };
 };

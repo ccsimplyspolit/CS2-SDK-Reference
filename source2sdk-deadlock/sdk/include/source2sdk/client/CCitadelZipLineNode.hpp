@@ -26,7 +26,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xaa0
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "CHandle<CCitadelZipLineNode> m_vecConnections"
         // static metadata: MNetworkVarNames "int m_vecConnectionDir"
         // static metadata: MNetworkVarNames "Vector m_vTangentIn"
@@ -54,56 +54,56 @@ namespace source2sdk
             // metadata: MNotSaved
             // m_vecConnections has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // C_NetworkUtlVectorBase<CHandle<source2sdk::client::CCitadelZipLineNode>> m_vecConnections;
-            char m_vecConnections[0x18]; // 0xa18            
+            char m_vecConnections[0x18]; // 0xa18
             // metadata: MNetworkEnable
             // metadata: MNotSaved
             // m_vecConnectionDir has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // C_NetworkUtlVectorBase<std::int32_t> m_vecConnectionDir;
-            char m_vecConnectionDir[0x18]; // 0xa30            
+            char m_vecConnectionDir[0x18]; // 0xa30
             // metadata: MNetworkEnable
-            Vector m_vTangentIn; // 0xa48            
+            Vector m_vTangentIn; // 0xa48
             // metadata: MNetworkEnable
-            Vector m_vTangentOut; // 0xa54            
+            Vector m_vTangentOut; // 0xa54
             // metadata: MNetworkEnable
-            float m_flCumulativeDistance; // 0xa60            
+            float m_flCumulativeDistance; // 0xa60
             // metadata: MNetworkEnable
-            std::int16_t m_iNodeIndex; // 0xa64            
+            std::int16_t m_iNodeIndex; // 0xa64
             // metadata: MNetworkEnable
             // metadata: MNotSaved
-            std::int16_t m_eCaptureState; // 0xa66            
+            std::int16_t m_eCaptureState; // 0xa66
             // metadata: MNetworkEnable
-            std::int16_t m_iPrimaryLane; // 0xa68            
+            std::int16_t m_iPrimaryLane; // 0xa68
             // metadata: MNetworkEnable
-            bool m_bUseBaseLaneColor; // 0xa6a            
+            bool m_bUseBaseLaneColor; // 0xa6a
             uint8_t _pad0a6b[0x1]; // 0xa6b
             // metadata: MNetworkEnable
             // metadata: MNotSaved
-            std::int16_t m_nRopesParity; // 0xa6c            
+            std::int16_t m_nRopesParity; // 0xa6c
             // metadata: MNetworkEnable
-            bool m_bCornerNode; // 0xa6e            
+            bool m_bCornerNode; // 0xa6e
             // metadata: MNetworkEnable
-            bool m_bCapturable; // 0xa6f            
+            bool m_bCapturable; // 0xa6f
             // metadata: MNetworkEnable
-            bool m_bDisableZippingToByPlayers; // 0xa70            
+            bool m_bDisableZippingToByPlayers; // 0xa70
             uint8_t _pad0a71[0x3]; // 0xa71
             // metadata: MNetworkEnable
-            float m_flSpeedMultiplierToBaseBonus; // 0xa74            
+            float m_flSpeedMultiplierToBaseBonus; // 0xa74
             // metadata: MNetworkEnable
-            float m_flSpeedMultiplierFromBaseBonus; // 0xa78            
+            float m_flSpeedMultiplierFromBaseBonus; // 0xa78
             uint8_t _pad0a7c[0x4]; // 0xa7c
             // metadata: MNetworkEnable
             // metadata: MNotSaved
             // m_hGuardingBosses has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // C_NetworkUtlVectorBase<CHandle<source2sdk::client::C_BaseEntity>> m_hGuardingBosses;
-            char m_hGuardingBosses[0x18]; // 0xa80            
+            char m_hGuardingBosses[0x18]; // 0xa80
             // metadata: MNetworkEnable
-            float m_flRopeRadius; // 0xa98            
+            float m_flRopeRadius; // 0xa98
             uint8_t _pad0a9c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadelZipLineNode because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadelZipLineNode) == 0xaa0);
     };
 };

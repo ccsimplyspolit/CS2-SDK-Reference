@@ -28,8 +28,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: CDOTA_Ability_Special_Bonus_Gold_lvl15_l has no schema binary (size is a guess)
     };
 };

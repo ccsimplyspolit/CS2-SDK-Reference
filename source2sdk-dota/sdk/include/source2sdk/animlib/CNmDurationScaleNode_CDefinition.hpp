@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x20
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CNmDurationScaleNode_CDefinition : public source2sdk::animlib::CNmSpeedScaleBaseNode_CDefinition
@@ -28,8 +28,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::animlib::CNmDurationScaleNode_CDefinition) == 0x20);
     };
 };

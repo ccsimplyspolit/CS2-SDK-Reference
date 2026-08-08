@@ -27,17 +27,17 @@ namespace source2sdk
         class C_DOTA_Ability_DeathProphet_CarrionSwarm : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            float start_radius; // 0x6a8            
-            float end_radius; // 0x6ac            
-            source2sdk::entity2::GameTime_t m_fStartTime; // 0x6b0            
-            float m_fTotalTime; // 0x6b4            
-            std::int32_t m_nProjectileHandle; // 0x6b8            
-            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x6bc            
+            float start_radius; // 0x6a8
+            float end_radius; // 0x6ac
+            source2sdk::entity2::GameTime_t m_fStartTime; // 0x6b0
+            float m_fTotalTime; // 0x6b4
+            std::int32_t m_nProjectileHandle; // 0x6b8
+            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x6bc
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_DeathProphet_CarrionSwarm because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_DeathProphet_CarrionSwarm) == 0x6c0);
     };
 };

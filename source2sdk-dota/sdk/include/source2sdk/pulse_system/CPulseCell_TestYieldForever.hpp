@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0xd8
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CPulseCell_TestYieldForever : public source2sdk::pulse_runtime_lib::CPulseCell_BaseYieldingInflow
@@ -28,8 +28,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::pulse_system::CPulseCell_TestYieldForever) == 0xd8);
     };
 };

@@ -25,13 +25,13 @@ namespace source2sdk
         class CDOTA_Ability_AghsFort_Creature_Phoenix_FireSpirits : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            std::int32_t hp_cost_perc; // 0x580            
+            std::int32_t hp_cost_perc; // 0x580
             uint8_t _pad0584[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_AghsFort_Creature_Phoenix_FireSpirits because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_AghsFort_Creature_Phoenix_FireSpirits) == 0x588);
     };
 };

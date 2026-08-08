@@ -25,16 +25,16 @@ namespace source2sdk
         class CDOTA_Ability_Huskar_Berserkers_Blood : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            bool activatable; // 0x580            
+            bool activatable; // 0x580
             uint8_t _pad0581[0x3]; // 0x581
-            std::int32_t m_nHealthCost; // 0x584            
-            std::int32_t m_nDebuffCount; // 0x588            
+            std::int32_t m_nHealthCost; // 0x584
+            std::int32_t m_nDebuffCount; // 0x588
             uint8_t _pad058c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Huskar_Berserkers_Blood because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Huskar_Berserkers_Blood) == 0x590);
     };
 };

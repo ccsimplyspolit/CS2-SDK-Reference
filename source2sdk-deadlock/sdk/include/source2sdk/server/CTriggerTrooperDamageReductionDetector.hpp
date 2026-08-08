@@ -23,13 +23,13 @@ namespace source2sdk
         class CTriggerTrooperDamageReductionDetector : public source2sdk::server::CBaseTrigger
         {
         public:
-            float m_flRadius; // 0x8e0            
+            float m_flRadius; // 0x8e0
             uint8_t _pad08e4[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CTriggerTrooperDamageReductionDetector because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CTriggerTrooperDamageReductionDetector) == 0x8e8);
     };
 };

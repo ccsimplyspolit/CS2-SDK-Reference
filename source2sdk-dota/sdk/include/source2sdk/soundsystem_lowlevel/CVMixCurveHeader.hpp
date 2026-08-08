@@ -20,20 +20,20 @@ namespace source2sdk
         // Has Trivial Constructor
         // Has Trivial Destructor
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CVMixCurveHeader
         {
         public:
-            std::uint32_t m_nControlPointCount; // 0x0            
-            std::uint32_t m_nControlPointStart; // 0x4            
+            std::uint32_t m_nControlPointCount; // 0x0
+            std::uint32_t m_nControlPointStart; // 0x4
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::CVMixCurveHeader, m_nControlPointCount) == 0x0);
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::CVMixCurveHeader, m_nControlPointStart) == 0x4);
-        
+
         static_assert(sizeof(source2sdk::soundsystem_lowlevel::CVMixCurveHeader) == 0x8);
     };
 };

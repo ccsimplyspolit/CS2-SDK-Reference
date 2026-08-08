@@ -17,19 +17,19 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a68
+        // Size: 0x1a88
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Spectre_Haunt_Fear : public source2sdk::client::CDOTA_Buff
         {
         public:
-            std::int32_t fear_movespeed_slow; // 0x1a58            
-            VectorWS m_vOriginal; // 0x1a5c            
+            std::int32_t fear_movespeed_slow; // 0x1a78
+            VectorWS m_vOriginal; // 0x1a7c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Spectre_Haunt_Fear because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Spectre_Haunt_Fear) == 0x1a68);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Spectre_Haunt_Fear) == 0x1a88);
     };
 };

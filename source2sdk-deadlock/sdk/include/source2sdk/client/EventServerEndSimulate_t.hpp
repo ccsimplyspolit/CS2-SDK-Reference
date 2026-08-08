@@ -22,12 +22,12 @@ namespace source2sdk
         struct EventServerEndSimulate_t
         {
         public:
-            bool m_bLastTick; // 0x0            
+            bool m_bLastTick; // 0x0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::EventServerEndSimulate_t, m_bLastTick) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::client::EventServerEndSimulate_t) == 0x1);
     };
 };

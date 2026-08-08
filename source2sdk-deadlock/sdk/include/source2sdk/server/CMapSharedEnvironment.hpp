@@ -23,13 +23,13 @@ namespace source2sdk
         class CMapSharedEnvironment : public source2sdk::server::CLogicalEntity
         {
         public:
-            CUtlSymbolLarge m_targetMapName; // 0x4a0            
+            CUtlSymbolLarge m_targetMapName; // 0x4a0
             uint8_t _pad04a8[0x8];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CMapSharedEnvironment because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CMapSharedEnvironment) == 0x4b0);
     };
 };

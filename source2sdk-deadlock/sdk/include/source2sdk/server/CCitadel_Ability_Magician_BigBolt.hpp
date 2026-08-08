@@ -25,16 +25,16 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0f70[0x488]; // 0xf70
-            source2sdk::entity2::GameTime_t m_flNextShootTime; // 0x13f8            
-            std::int32_t m_iBoltsFired; // 0x13fc            
-            std::int32_t m_iRemainingBolts; // 0x1400            
-            bool m_bPreppingShoot; // 0x1404            
+            source2sdk::entity2::GameTime_t m_flNextShootTime; // 0x13f8
+            std::int32_t m_iBoltsFired; // 0x13fc
+            std::int32_t m_iRemainingBolts; // 0x1400
+            bool m_bPreppingShoot; // 0x1404
             uint8_t _pad1405[0x3];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_Magician_BigBolt because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Ability_Magician_BigBolt) == 0x1408);
     };
 };

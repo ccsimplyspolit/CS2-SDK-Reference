@@ -32,19 +32,19 @@ namespace source2sdk
         class CDOTA_Ability_Broodmother_StickySnare : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            VectorWS m_vEndpoint; // 0x580            
-            float duration; // 0x58c            
-            float width; // 0x590            
-            bool m_bStolenSnareCheck; // 0x594            
+            VectorWS m_vEndpoint; // 0x580
+            float duration; // 0x58c
+            float width; // 0x590
+            bool m_bStolenSnareCheck; // 0x594
             uint8_t _pad0595[0x1b]; // 0x595
             // m_vecSnares has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::server::CBaseEntity>> m_vecSnares;
-            char m_vecSnares[0x18]; // 0x5b0            
+            char m_vecSnares[0x18]; // 0x5b0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Broodmother_StickySnare because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Broodmother_StickySnare) == 0x5c8);
     };
 };

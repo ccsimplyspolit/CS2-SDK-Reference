@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xe8
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Multi Blender"
         // static metadata: MPropertyDescription "Blends any number of containers"
@@ -29,16 +29,16 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyFriendlyName "Sounds To Blend"
-            source2sdk::soundsystem_voicecontainers::CSoundContainerReferenceArray m_soundsToPlay; // 0xa8            
+            source2sdk::soundsystem_voicecontainers::CSoundContainerReferenceArray m_soundsToPlay; // 0xa8
             // metadata: MPropertyFriendlyName "Blend Amount (0.0 = 100% first sound, 1.0 = 100% last sound)"
-            float m_flBlendFactor; // 0xe0            
+            float m_flBlendFactor; // 0xe0
             // metadata: MPropertyFriendlyName "Crossfade Amount (0.0 = no crossfade, 1.0 = constant crossfading)"
-            float m_flCrossover; // 0xe4            
+            float m_flCrossover; // 0xe4
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CVoiceContainerMultiBlender because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::soundsystem_voicecontainers::CVoiceContainerMultiBlender) == 0xe8);
     };
 };

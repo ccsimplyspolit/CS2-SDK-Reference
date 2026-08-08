@@ -24,7 +24,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x1c38
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_GameDecalRenderer : public source2sdk::particles::CParticleFunctionRenderer
@@ -32,48 +32,48 @@ namespace source2sdk
         public:
             // metadata: MPropertyFriendlyName "decal name"
             // metadata: MPropertyAttributeEditor "VDataChoice( scripts/decalgroups.vdata )"
-            CGlobalSymbol m_sDecalGroupName; // 0x228            
+            CGlobalSymbol m_sDecalGroupName; // 0x228
             // metadata: MPropertyFriendlyName "event type"
-            source2sdk::particles::EventTypeSelection_t m_nEventType; // 0x230            
+            source2sdk::particles::EventTypeSelection_t m_nEventType; // 0x230
             uint8_t _pad0234[0x4]; // 0x234
             // metadata: MPropertyFriendlyName "Collision Interaction Mask"
-            source2sdk::particles::ParticleCollisionMask_t m_nInteractionMask; // 0x238            
+            source2sdk::particles::ParticleCollisionMask_t m_nInteractionMask; // 0x238
             // metadata: MPropertyFriendlyName "Collision Group"
-            source2sdk::particles::ParticleCollisionGroup_t m_nCollisionGroup; // 0x240            
+            source2sdk::particles::ParticleCollisionGroup_t m_nCollisionGroup; // 0x240
             uint8_t _pad0244[0x4]; // 0x244
             // metadata: MPropertyFriendlyName "Trace Start Position"
-            source2sdk::particleslib::CPerParticleVecInput m_vecStartPos; // 0x248            
+            source2sdk::particleslib::CPerParticleVecInput m_vecStartPos; // 0x248
             // metadata: MPropertyFriendlyName "Trace End Position"
-            source2sdk::particleslib::CPerParticleVecInput m_vecEndPos; // 0x900            
+            source2sdk::particleslib::CPerParticleVecInput m_vecEndPos; // 0x900
             // metadata: MPropertyFriendlyName "Trace Bloat Radius Scale"
-            source2sdk::particleslib::CPerParticleFloatInput m_flTraceBloat; // 0xfb8            
+            source2sdk::particleslib::CPerParticleFloatInput m_flTraceBloat; // 0xfb8
             // metadata: MPropertyFriendlyName "Decal Size"
             // metadata: MPropertySuppressExpr "m_bUseGameDefaultDecalSize == true"
-            source2sdk::particleslib::CPerParticleFloatInput m_flDecalSize; // 0x1128            
+            source2sdk::particleslib::CPerParticleFloatInput m_flDecalSize; // 0x1128
             // metadata: MPropertyFriendlyName "Decal Group Choice Index"
             // metadata: MPropertySuppressExpr "m_bRandomlySelectDecalInGroup == false"
-            source2sdk::particleslib::CPerParticleFloatInput m_nDecalGroupIndex; // 0x1298            
+            source2sdk::particleslib::CPerParticleFloatInput m_nDecalGroupIndex; // 0x1298
             // metadata: MPropertyFriendlyName "Decal Rotation"
             // metadata: MPropertySuppressExpr "m_bRandomDecalRotation == true"
-            source2sdk::particleslib::CPerParticleFloatInput m_flDecalRotation; // 0x1408            
+            source2sdk::particleslib::CPerParticleFloatInput m_flDecalRotation; // 0x1408
             // metadata: MPropertyFriendlyName "Decal Modulation Color"
-            source2sdk::particleslib::CPerParticleVecInput m_vModulationColor; // 0x1578            
+            source2sdk::particleslib::CPerParticleVecInput m_vModulationColor; // 0x1578
             // metadata: MPropertyFriendlyName "Use Game's Default Decal Size"
-            bool m_bUseGameDefaultDecalSize; // 0x1c30            
+            bool m_bUseGameDefaultDecalSize; // 0x1c30
             // metadata: MPropertyFriendlyName "Randomly Rotate Decal"
-            bool m_bRandomDecalRotation; // 0x1c31            
+            bool m_bRandomDecalRotation; // 0x1c31
             // metadata: MPropertyFriendlyName "Randomly Select Decal in Decal Group"
-            bool m_bRandomlySelectDecalInGroup; // 0x1c32            
+            bool m_bRandomlySelectDecalInGroup; // 0x1c32
             // metadata: MPropertyFriendlyName "Dont Apply Decals to Owner"
-            bool m_bNoDecalsOnOwner; // 0x1c33            
+            bool m_bNoDecalsOnOwner; // 0x1c33
             // metadata: MPropertyFriendlyName "Debug Traces"
-            bool m_bVisualizeTraces; // 0x1c34            
+            bool m_bVisualizeTraces; // 0x1c34
             uint8_t _pad1c35[0x3];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_GameDecalRenderer because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_GameDecalRenderer) == 0x1c38);
     };
 };

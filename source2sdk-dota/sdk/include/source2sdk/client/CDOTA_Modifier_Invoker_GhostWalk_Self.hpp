@@ -18,25 +18,25 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a88
+        // Size: 0x1aa8
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Invoker_GhostWalk_Self : public source2sdk::client::CDOTA_Modifier_Invisible
         {
         public:
-            std::int32_t self_slow; // 0x1a68            
-            std::int32_t apply_ice_wall_debuff; // 0x1a6c            
-            float area_of_effect; // 0x1a70            
-            float aura_fade_time; // 0x1a74            
-            float health_regen; // 0x1a78            
-            float mana_regen; // 0x1a7c            
-            float disable_time; // 0x1a80            
-            source2sdk::entity2::GameTime_t m_timeLastDamage; // 0x1a84            
+            std::int32_t self_slow; // 0x1a88
+            std::int32_t apply_ice_wall_debuff; // 0x1a8c
+            float area_of_effect; // 0x1a90
+            float aura_fade_time; // 0x1a94
+            float health_regen; // 0x1a98
+            float mana_regen; // 0x1a9c
+            float disable_time; // 0x1aa0
+            source2sdk::entity2::GameTime_t m_timeLastDamage; // 0x1aa4
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Invoker_GhostWalk_Self because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Invoker_GhostWalk_Self) == 0x1a88);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Invoker_GhostWalk_Self) == 0x1aa8);
     };
 };

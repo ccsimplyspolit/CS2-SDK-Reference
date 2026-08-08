@@ -27,7 +27,7 @@ namespace source2sdk
         // Size: 0xa0
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Group"
         // static metadata: MPropertyDescription "A group of elements that will all be evaulated."
@@ -40,12 +40,12 @@ namespace source2sdk
             // metadata: MVDataPromoteField
             // m_Children has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::smartprops::CSmartPropElement*> m_Children;
-            char m_Children[0x18]; // 0x88            
+            char m_Children[0x18]; // 0x88
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSmartPropElement_Group because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::smartprops::CSmartPropElement_Group) == 0xa0);
     };
 };

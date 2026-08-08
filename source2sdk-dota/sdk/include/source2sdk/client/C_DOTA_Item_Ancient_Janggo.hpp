@@ -25,13 +25,13 @@ namespace source2sdk
         class C_DOTA_Item_Ancient_Janggo : public source2sdk::client::C_DOTA_Item
         {
         public:
-            float radius; // 0x758            
+            float radius; // 0x758
             uint8_t _pad075c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Item_Ancient_Janggo because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Item_Ancient_Janggo) == 0x760);
     };
 };

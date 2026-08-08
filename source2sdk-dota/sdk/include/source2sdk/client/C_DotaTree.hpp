@@ -24,12 +24,12 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0000[0x2c]; // 0x0
-            std::uint32_t m_unOccluderID; // 0x2c            
+            std::uint32_t m_unOccluderID; // 0x2c
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::C_DotaTree, m_unOccluderID) == 0x2c);
-        
+
         static_assert(sizeof(source2sdk::client::C_DotaTree) == 0x30);
     };
 };

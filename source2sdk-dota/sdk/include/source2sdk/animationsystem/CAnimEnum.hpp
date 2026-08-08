@@ -22,12 +22,12 @@ namespace source2sdk
         class CAnimEnum
         {
         public:
-            std::uint8_t m_value; // 0x0            
+            std::uint8_t m_value; // 0x0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::animationsystem::CAnimEnum, m_value) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::animationsystem::CAnimEnum) == 0x1);
     };
 };

@@ -24,13 +24,13 @@ namespace source2sdk
         class CShower : public source2sdk::server::CModelPointEntity
         {
         public:
-            float m_flSpeed; // 0x778            
+            float m_flSpeed; // 0x778
             uint8_t _pad077c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CShower because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CShower) == 0x780);
     };
 };

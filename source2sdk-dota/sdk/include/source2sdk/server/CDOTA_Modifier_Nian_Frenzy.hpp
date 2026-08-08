@@ -24,30 +24,30 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a98
+        // Size: 0x1ab8
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Nian_Frenzy : public source2sdk::client::CDOTA_Buff
         {
         public:
-            std::int32_t damage; // 0x1a58            
-            std::int32_t damage_radius; // 0x1a5c            
-            std::int32_t stun_radius; // 0x1a60            
-            float dive_distance; // 0x1a64            
-            float initial_rise_time; // 0x1a68            
-            float right_swipe_time; // 0x1a6c            
-            float left_swipe_time; // 0x1a70            
-            float knockdown_duration; // 0x1a74            
-            float stun_duration; // 0x1a78            
-            std::int32_t m_nTickCounter; // 0x1a7c            
+            std::int32_t damage; // 0x1a78
+            std::int32_t damage_radius; // 0x1a7c
+            std::int32_t stun_radius; // 0x1a80
+            float dive_distance; // 0x1a84
+            float initial_rise_time; // 0x1a88
+            float right_swipe_time; // 0x1a8c
+            float left_swipe_time; // 0x1a90
+            float knockdown_duration; // 0x1a94
+            float stun_duration; // 0x1a98
+            std::int32_t m_nTickCounter; // 0x1a9c
             // m_hEnemies has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::server::CBaseEntity>> m_hEnemies;
-            char m_hEnemies[0x18]; // 0x1a80            
+            char m_hEnemies[0x18]; // 0x1aa0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Nian_Frenzy because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Nian_Frenzy) == 0x1a98);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Nian_Frenzy) == 0x1ab8);
     };
 };

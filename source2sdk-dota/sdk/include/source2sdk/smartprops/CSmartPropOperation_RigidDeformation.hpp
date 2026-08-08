@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x50
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Transform: Rigid Deformation"
         // static metadata: MPropertyDescription "Apply the active deformer to the current transform as a rigid deformation and disable the deformer."
@@ -32,8 +32,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::smartprops::CSmartPropOperation_RigidDeformation) == 0x50);
     };
 };

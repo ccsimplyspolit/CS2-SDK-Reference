@@ -26,15 +26,15 @@ namespace source2sdk
         {
         public:
             uint8_t _pad06a8[0x14]; // 0x6a8
-            std::int32_t projectile_speed; // 0x6bc            
-            std::int32_t golden_pie; // 0x6c0            
-            bool bounce; // 0x6c4            
+            std::int32_t projectile_speed; // 0x6bc
+            std::int32_t golden_pie; // 0x6c0
+            bool bounce; // 0x6c4
             uint8_t _pad06c5[0x3];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_DarkCarnival_Pie because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CDOTA_Ability_DarkCarnival_Pie) == 0x6c8);
     };
 };

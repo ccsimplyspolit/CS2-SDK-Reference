@@ -24,15 +24,15 @@ namespace source2sdk
         {
         public:
             uint8_t _pad17b0[0xc]; // 0x17b0
-            float m_flAttackCone; // 0x17bc            
+            float m_flAttackCone; // 0x17bc
             // metadata: MNotSaved
-            float m_flLastAlertSound; // 0x17c0            
-            float m_flTrackingSpeed; // 0x17c4            
-            VectorWS m_vTargetPosition; // 0x17c8            
-            float m_flSearchRadius; // 0x17d4            
-            float m_flLifeTime; // 0x17d8            
+            float m_flLastAlertSound; // 0x17c0
+            float m_flTrackingSpeed; // 0x17c4
+            VectorWS m_vTargetPosition; // 0x17c8
+            float m_flSearchRadius; // 0x17d4
+            float m_flLifeTime; // 0x17d8
             uint8_t _pad17dc[0x34];
-            
+
             // Datamap fields:
             // void m_nCurrentVolley; // 0x17e8
             // void m_nGrenadesPerVolley; // 0x17ec
@@ -42,9 +42,9 @@ namespace source2sdk
             // void m_vLastTargetPos; // 0x17fc
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CNPC_MortarSentry because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CNPC_MortarSentry) == 0x1810);
     };
 };

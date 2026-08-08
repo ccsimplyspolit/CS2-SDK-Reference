@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xe8
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Place Multiple"
         // static metadata: MPropertyDescription "An element which places multiple instances of its child elements."
@@ -28,16 +28,16 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyDescription "Number of instances of this object and its children to be placed."
-            CSmartPropAttributeInt m_nCount; // 0xa0            
+            CSmartPropAttributeInt m_nCount; // 0xa0
             // metadata: MPropertyFriendlyName "Stop When"
             // metadata: MPropertyDescription "Stop placing copies of the children when this expression evaluates to true."
             // metadata: MPropertyAttributeEditor "SmartPropAttributeEditor(expression)"
-            CUtlString m_Expression; // 0xe0            
+            CUtlString m_Expression; // 0xe0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSmartPropElement_PlaceMultiple because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::smartprops::CSmartPropElement_PlaceMultiple) == 0xe8);
     };
 };

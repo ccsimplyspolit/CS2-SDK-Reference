@@ -28,8 +28,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: C_DOTA_Ability_CDOTA_Ability_Special_Bonus_Unique_Bloodseeker_4 has no schema binary (size is a guess)
     };
 };

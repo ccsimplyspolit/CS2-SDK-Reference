@@ -40,22 +40,22 @@ namespace source2sdk
         class CDOTA_Ability_Rubick_SpellSteal : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            char m_ActivityModifier[256]; // 0x580            
-            float m_fStolenCastPoint; // 0x680            
+            char m_ActivityModifier[256]; // 0x580
+            float m_fStolenCastPoint; // 0x680
             // m_hStealTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hStealTarget;
-            char m_hStealTarget[0x4]; // 0x684            
+            char m_hStealTarget[0x4]; // 0x684
             // m_hStealAbility has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CDOTABaseAbility> m_hStealAbility;
-            char m_hStealAbility[0x4]; // 0x688            
-            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x68c            
-            std::int32_t m_hProjectile; // 0x690            
+            char m_hStealAbility[0x4]; // 0x688
+            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x68c
+            std::int32_t m_hProjectile; // 0x690
             uint8_t _pad0694[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Rubick_SpellSteal because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Rubick_SpellSteal) == 0x698);
     };
 };

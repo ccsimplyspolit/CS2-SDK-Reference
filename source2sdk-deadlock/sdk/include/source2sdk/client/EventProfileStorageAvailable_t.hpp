@@ -22,12 +22,12 @@ namespace source2sdk
         struct EventProfileStorageAvailable_t
         {
         public:
-            CSplitScreenSlot m_nSplitScreenSlot; // 0x0            
+            CSplitScreenSlot m_nSplitScreenSlot; // 0x0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::EventProfileStorageAvailable_t, m_nSplitScreenSlot) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::client::EventProfileStorageAvailable_t) == 0x4);
     };
 };

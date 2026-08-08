@@ -18,18 +18,18 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x10
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CAnimMorphDifference
         {
         public:
-            CBufferString m_name; // 0x0            
+            CBufferString m_name; // 0x0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::animationsystem::CAnimMorphDifference, m_name) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::animationsystem::CAnimMorphDifference) == 0x10);
     };
 };

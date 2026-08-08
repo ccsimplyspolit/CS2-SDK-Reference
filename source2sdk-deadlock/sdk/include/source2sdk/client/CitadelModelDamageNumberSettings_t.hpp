@@ -18,7 +18,7 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x10
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MModelGameData
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
@@ -27,24 +27,24 @@ namespace source2sdk
         public:
             // metadata: MPropertyDescription "How far offset to the left and right will damage numbers be when this model takes damage and is near the camera"
             // metadata: MPropertyFriendlyName "Side Offset (near)"
-            float m_flSideOffsetNear; // 0x0            
+            float m_flSideOffsetNear; // 0x0
             // metadata: MPropertyDescription "How far offset to the left and right will damage numbers be when this model takes damage and is far from the camera"
             // metadata: MPropertyFriendlyName "Side Offset (far)"
-            float m_flSideOffsetFar; // 0x4            
+            float m_flSideOffsetFar; // 0x4
             // metadata: MPropertyDescription "How far vertically will damage numbers be when this model takes damage when the model is near"
             // metadata: MPropertyFriendlyName "Height Offset (near)"
-            float m_flHeightOffsetNear; // 0x8            
+            float m_flHeightOffsetNear; // 0x8
             // metadata: MPropertyDescription "How far vertically will damage numbers be when this model takes damage when the model is far"
             // metadata: MPropertyFriendlyName "Height Offset (far)"
-            float m_flHeightOffsetFar; // 0xc            
+            float m_flHeightOffsetFar; // 0xc
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::CitadelModelDamageNumberSettings_t, m_flSideOffsetNear) == 0x0);
         static_assert(offsetof(source2sdk::client::CitadelModelDamageNumberSettings_t, m_flSideOffsetFar) == 0x4);
         static_assert(offsetof(source2sdk::client::CitadelModelDamageNumberSettings_t, m_flHeightOffsetNear) == 0x8);
         static_assert(offsetof(source2sdk::client::CitadelModelDamageNumberSettings_t, m_flHeightOffsetFar) == 0xc);
-        
+
         static_assert(sizeof(source2sdk::client::CitadelModelDamageNumberSettings_t) == 0x10);
     };
 };

@@ -24,12 +24,12 @@ namespace source2sdk
         class CDotaParticleRelay : public source2sdk::server::CBaseEntity
         {
         public:
-            CUtlSymbolLarge m_particleSystemName; // 0x498            
+            CUtlSymbolLarge m_particleSystemName; // 0x498
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDotaParticleRelay because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDotaParticleRelay) == 0x4a0);
     };
 };

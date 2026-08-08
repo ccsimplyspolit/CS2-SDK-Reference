@@ -18,20 +18,20 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a78
+        // Size: 0x1a98
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Miniboss_Radiance : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float aura_radius; // 0x1a58            
-            float attack_timer_duration; // 0x1a5c            
-            source2sdk::client::CountdownTimer m_LastAttackedTimer; // 0x1a60            
+            float aura_radius; // 0x1a78
+            float attack_timer_duration; // 0x1a7c
+            source2sdk::client::CountdownTimer m_LastAttackedTimer; // 0x1a80
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Miniboss_Radiance because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Miniboss_Radiance) == 0x1a78);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Miniboss_Radiance) == 0x1a98);
     };
 };

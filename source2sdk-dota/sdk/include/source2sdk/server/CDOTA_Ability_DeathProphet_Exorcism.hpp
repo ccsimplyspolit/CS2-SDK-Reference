@@ -34,12 +34,12 @@ namespace source2sdk
         public:
             // m_SpiritInfos has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::client::sSpiritInfo*> m_SpiritInfos;
-            char m_SpiritInfos[0x18]; // 0x580            
+            char m_SpiritInfos[0x18]; // 0x580
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_DeathProphet_Exorcism because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_DeathProphet_Exorcism) == 0x598);
     };
 };

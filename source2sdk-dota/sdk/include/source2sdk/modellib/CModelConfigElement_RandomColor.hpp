@@ -20,18 +20,18 @@ namespace source2sdk
         // Size: 0x60
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CModelConfigElement_RandomColor : public source2sdk::modellib::CModelConfigElement
         {
         public:
-            CColorGradient m_Gradient; // 0x48            
+            CColorGradient m_Gradient; // 0x48
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CModelConfigElement_RandomColor because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::modellib::CModelConfigElement_RandomColor) == 0x60);
     };
 };

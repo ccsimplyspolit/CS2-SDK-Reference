@@ -33,25 +33,25 @@ namespace source2sdk
         public:
             // m_hTargetEntity has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hTargetEntity;
-            char m_hTargetEntity[0x4]; // 0x498            
-            Vector m_vecAxis; // 0x49c            
-            bool m_bEnabled; // 0x4a8            
+            char m_hTargetEntity[0x4]; // 0x498
+            Vector m_vecAxis; // 0x49c
+            bool m_bEnabled; // 0x4a8
             uint8_t _pad04a9[0x3]; // 0x4a9
-            float m_fPrevVelocity; // 0x4ac            
-            float m_flAvgInterval; // 0x4b0            
+            float m_fPrevVelocity; // 0x4ac
+            float m_flAvgInterval; // 0x4b0
             uint8_t _pad04b4[0x4]; // 0x4b4
             // m_Velocity has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEntityOutputTemplate<float> m_Velocity;
-            char m_Velocity[0x20]; // 0x4b8            
-            
+            char m_Velocity[0x20]; // 0x4b8
+
             // Datamap fields:
             // void InputEnable; // 0x0
             // void InputDisable; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPointVelocitySensor because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CPointVelocitySensor) == 0x4d8);
     };
 };

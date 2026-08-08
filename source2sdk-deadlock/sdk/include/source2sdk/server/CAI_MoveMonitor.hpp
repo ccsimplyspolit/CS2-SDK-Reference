@@ -22,14 +22,14 @@ namespace source2sdk
         class CAI_MoveMonitor
         {
         public:
-            VectorWS m_vMark; // 0x0            
-            float m_flMarkTolerance; // 0xc            
+            VectorWS m_vMark; // 0x0
+            float m_flMarkTolerance; // 0xc
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::CAI_MoveMonitor, m_vMark) == 0x0);
         static_assert(offsetof(source2sdk::server::CAI_MoveMonitor, m_flMarkTolerance) == 0xc);
-        
+
         static_assert(sizeof(source2sdk::server::CAI_MoveMonitor) == 0x10);
     };
 };

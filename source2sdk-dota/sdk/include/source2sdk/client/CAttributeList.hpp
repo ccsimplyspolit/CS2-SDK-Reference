@@ -33,14 +33,14 @@ namespace source2sdk
             uint8_t _pad0000[0x8]; // 0x0
             // m_Attributes has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // C_UtlVectorEmbeddedNetworkVar<source2sdk::client::C_EconItemAttribute> m_Attributes;
-            char m_Attributes[0x68]; // 0x8            
-            source2sdk::client::CAttributeManager* m_pManager; // 0x70            
+            char m_Attributes[0x68]; // 0x8
+            source2sdk::client::CAttributeManager* m_pManager; // 0x70
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::CAttributeList, m_Attributes) == 0x8);
         static_assert(offsetof(source2sdk::client::CAttributeList, m_pManager) == 0x70);
-        
+
         static_assert(sizeof(source2sdk::client::CAttributeList) == 0x78);
     };
 };

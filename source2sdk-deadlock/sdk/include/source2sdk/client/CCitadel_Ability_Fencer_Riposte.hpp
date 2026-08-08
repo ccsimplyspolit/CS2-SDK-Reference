@@ -26,9 +26,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x19b0
+        // Size: 0x1ab0
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "EHANDLE m_hTarget"
         // static metadata: MNetworkVarNames "Vector m_vRiposteStartPosition"
         // static metadata: MNetworkVarNames "Vector m_vDashDirection"
@@ -43,36 +43,36 @@ namespace source2sdk
             // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
             // m_hTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::C_BaseEntity> m_hTarget;
-            char m_hTarget[0x4]; // 0x11d8            
+            char m_hTarget[0x4]; // 0x11d8
             // metadata: MNetworkEnable
             // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-            Vector m_vRiposteStartPosition; // 0x11dc            
+            Vector m_vRiposteStartPosition; // 0x11dc
             // metadata: MNetworkEnable
             // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-            Vector m_vDashDirection; // 0x11e8            
+            Vector m_vDashDirection; // 0x11e8
             // metadata: MNetworkEnable
             // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-            source2sdk::entity2::GameTime_t m_flStateStartTime; // 0x11f4            
+            source2sdk::entity2::GameTime_t m_flStateStartTime; // 0x11f4
             // metadata: MNetworkEnable
             // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-            std::uint8_t m_nCurrentRiposteState; // 0x11f8            
+            std::uint8_t m_nCurrentRiposteState; // 0x11f8
             uint8_t _pad11f9[0x3]; // 0x11f9
             // metadata: MNetworkEnable
             // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-            source2sdk::entity2::GameTime_t m_flSuccessfulRiposteTime; // 0x11fc            
-            uint8_t _pad1200[0x780]; // 0x1200
+            source2sdk::entity2::GameTime_t m_flSuccessfulRiposteTime; // 0x11fc
+            uint8_t _pad1200[0x880]; // 0x1200
             // m_vecHitEnemies has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::client::C_BaseEntity>> m_vecHitEnemies;
-            char m_vecHitEnemies[0x18]; // 0x1980            
-            Vector m_vecLastPosition; // 0x1998            
-            source2sdk::entity2::GameTime_t m_flStuckTime; // 0x19a4            
-            source2sdk::client::ParticleIndex_t m_nParriedFXIndex; // 0x19a8            
-            uint8_t _pad19ac[0x4];
+            char m_vecHitEnemies[0x18]; // 0x1a80
+            Vector m_vecLastPosition; // 0x1a98
+            source2sdk::entity2::GameTime_t m_flStuckTime; // 0x1aa4
+            source2sdk::client::ParticleIndex_t m_nParriedFXIndex; // 0x1aa8
+            uint8_t _pad1aac[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_Fencer_Riposte because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CCitadel_Ability_Fencer_Riposte) == 0x19b0);
+
+        static_assert(sizeof(source2sdk::client::CCitadel_Ability_Fencer_Riposte) == 0x1ab0);
     };
 };

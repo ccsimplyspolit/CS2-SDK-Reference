@@ -28,8 +28,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: CDOTA_Ability_Primal_Beast_Innate_Slow_Resistance_Per_Time has no schema binary (size is a guess)
     };
 };

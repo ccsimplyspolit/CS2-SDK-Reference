@@ -23,12 +23,12 @@ namespace source2sdk
         class CRuleEntity : public source2sdk::server::CBaseModelEntity
         {
         public:
-            CUtlSymbolLarge m_iszMaster; // 0x780            
+            CUtlSymbolLarge m_iszMaster; // 0x780
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CRuleEntity because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CRuleEntity) == 0x788);
     };
 };

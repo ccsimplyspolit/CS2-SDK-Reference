@@ -26,15 +26,15 @@ namespace source2sdk
         class CDOTA_Item_EmptyBottle : public source2sdk::server::CDOTA_Item
         {
         public:
-            std::int32_t m_iStoredRuneType; // 0x658            
-            source2sdk::entity2::GameTime_t m_fStoredRuneTime; // 0x65c            
-            source2sdk::entity2::GameTime_t m_fStoredRuneSpawnTime; // 0x660            
-            float rune_expire_time; // 0x664            
+            std::int32_t m_iStoredRuneType; // 0x658
+            source2sdk::entity2::GameTime_t m_fStoredRuneTime; // 0x65c
+            source2sdk::entity2::GameTime_t m_fStoredRuneSpawnTime; // 0x660
+            float rune_expire_time; // 0x664
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Item_EmptyBottle because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Item_EmptyBottle) == 0x668);
     };
 };

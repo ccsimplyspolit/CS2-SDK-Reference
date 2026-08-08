@@ -17,21 +17,21 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a68
+        // Size: 0x1a88
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_BotChallenge_SkeletonKing_BoneGuard : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float skeleton_duration; // 0x1a58            
-            std::int32_t max_skeleton_charges; // 0x1a5c            
-            std::int32_t skeleton_charges_per_hero_multiplier; // 0x1a60            
-            std::int32_t m_iKillCounter; // 0x1a64            
+            float skeleton_duration; // 0x1a78
+            std::int32_t max_skeleton_charges; // 0x1a7c
+            std::int32_t skeleton_charges_per_hero_multiplier; // 0x1a80
+            std::int32_t m_iKillCounter; // 0x1a84
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_BotChallenge_SkeletonKing_BoneGuard because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_BotChallenge_SkeletonKing_BoneGuard) == 0x1a68);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_BotChallenge_SkeletonKing_BoneGuard) == 0x1a88);
     };
 };

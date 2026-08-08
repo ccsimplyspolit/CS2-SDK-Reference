@@ -21,28 +21,28 @@ namespace source2sdk
         // Size: 0x7a0
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_RopeSpringConstraint : public source2sdk::particles::CParticleFunctionConstraint
         {
         public:
             // metadata: MPropertyFriendlyName "slack"
-            source2sdk::particleslib::CParticleCollectionFloatInput m_flRestLength; // 0x1d8            
+            source2sdk::particleslib::CParticleCollectionFloatInput m_flRestLength; // 0x1d8
             // metadata: MPropertyFriendlyName "minimum segment length %"
-            source2sdk::particleslib::CParticleCollectionFloatInput m_flMinDistance; // 0x348            
+            source2sdk::particleslib::CParticleCollectionFloatInput m_flMinDistance; // 0x348
             // metadata: MPropertyFriendlyName "maximum segment length %"
-            source2sdk::particleslib::CParticleCollectionFloatInput m_flMaxDistance; // 0x4b8            
+            source2sdk::particleslib::CParticleCollectionFloatInput m_flMaxDistance; // 0x4b8
             // metadata: MPropertyFriendlyName "scale factor for spring correction"
-            float m_flAdjustmentScale; // 0x628            
+            float m_flAdjustmentScale; // 0x628
             uint8_t _pad062c[0x4]; // 0x62c
             // metadata: MPropertyFriendlyName "manual resting spacing"
-            source2sdk::particleslib::CParticleCollectionFloatInput m_flInitialRestingLength; // 0x630            
+            source2sdk::particleslib::CParticleCollectionFloatInput m_flInitialRestingLength; // 0x630
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_RopeSpringConstraint because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_RopeSpringConstraint) == 0x7a0);
     };
 };

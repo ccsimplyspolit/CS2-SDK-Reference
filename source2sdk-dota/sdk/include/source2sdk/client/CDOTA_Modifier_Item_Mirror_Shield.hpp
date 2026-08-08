@@ -18,22 +18,22 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1b58
+        // Size: 0x1b78
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Item_Mirror_Shield : public source2sdk::client::CDOTA_Buff_Item
         {
         public:
-            source2sdk::client::CModifierParams m_LastParams; // 0x1a58            
-            std::int32_t all_stats; // 0x1b48            
-            std::int32_t reflect_chance; // 0x1b4c            
-            bool m_bProcSuccessful; // 0x1b50            
-            uint8_t _pad1b51[0x7];
+            source2sdk::client::CModifierParams m_LastParams; // 0x1a78
+            std::int32_t all_stats; // 0x1b68
+            std::int32_t reflect_chance; // 0x1b6c
+            bool m_bProcSuccessful; // 0x1b70
+            uint8_t _pad1b71[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Item_Mirror_Shield because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Item_Mirror_Shield) == 0x1b58);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Item_Mirror_Shield) == 0x1b78);
     };
 };

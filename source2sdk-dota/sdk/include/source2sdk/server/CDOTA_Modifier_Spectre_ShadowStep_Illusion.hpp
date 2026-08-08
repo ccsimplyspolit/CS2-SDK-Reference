@@ -24,27 +24,27 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a78
+        // Size: 0x1a98
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Spectre_ShadowStep_Illusion : public source2sdk::client::CDOTA_Buff
         {
         public:
-            std::int32_t radius; // 0x1a58            
-            std::int32_t bonus_move_speed_illusion_pct; // 0x1a5c            
-            std::int32_t move_speed; // 0x1a60            
-            float duration; // 0x1a64            
-            float m_flSpeed; // 0x1a68            
+            std::int32_t radius; // 0x1a78
+            std::int32_t bonus_move_speed_illusion_pct; // 0x1a7c
+            std::int32_t move_speed; // 0x1a80
+            float duration; // 0x1a84
+            float m_flSpeed; // 0x1a88
             // m_hTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hTarget;
-            char m_hTarget[0x4]; // 0x1a6c            
-            bool m_bReachedTarget; // 0x1a70            
-            uint8_t _pad1a71[0x7];
+            char m_hTarget[0x4]; // 0x1a8c
+            bool m_bReachedTarget; // 0x1a90
+            uint8_t _pad1a91[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Spectre_ShadowStep_Illusion because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Spectre_ShadowStep_Illusion) == 0x1a78);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Spectre_ShadowStep_Illusion) == 0x1a98);
     };
 };

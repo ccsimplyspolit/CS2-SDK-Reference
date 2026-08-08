@@ -19,20 +19,20 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x1e0
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_EndCapTimedDecay : public source2sdk::particles::CParticleFunctionOperator
         {
         public:
             // metadata: MPropertyFriendlyName "decay time"
-            float m_flDecayTime; // 0x1d8            
+            float m_flDecayTime; // 0x1d8
             uint8_t _pad01dc[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_EndCapTimedDecay because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_EndCapTimedDecay) == 0x1e0);
     };
 };

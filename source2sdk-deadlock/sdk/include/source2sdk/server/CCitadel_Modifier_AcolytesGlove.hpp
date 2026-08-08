@@ -23,13 +23,13 @@ namespace source2sdk
         class CCitadel_Modifier_AcolytesGlove : public source2sdk::server::CCitadel_Modifier_BaseEventProc
         {
         public:
-            float m_flCooldownDuration; // 0x208            
+            float m_flCooldownDuration; // 0x208
             uint8_t _pad020c[0x104];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_AcolytesGlove because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_AcolytesGlove) == 0x310);
     };
 };

@@ -23,13 +23,13 @@ namespace source2sdk
         class CGameModifier_VehicleTopSpeedScale : public source2sdk::server::CCitadelModifier
         {
         public:
-            float m_flTopSpeedScale; // 0xd0            
+            float m_flTopSpeedScale; // 0xd0
             uint8_t _pad00d4[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CGameModifier_VehicleTopSpeedScale because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CGameModifier_VehicleTopSpeedScale) == 0xd8);
     };
 };

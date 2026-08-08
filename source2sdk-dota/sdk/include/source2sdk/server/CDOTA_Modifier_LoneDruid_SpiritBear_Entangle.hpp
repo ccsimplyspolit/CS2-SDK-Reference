@@ -18,20 +18,20 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a60
+        // Size: 0x1a80
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_LoneDruid_SpiritBear_Entangle : public source2sdk::client::CDOTA_Buff
         {
         public:
-            bool m_bSpiritBear; // 0x1a58            
-            uint8_t _pad1a59[0x3]; // 0x1a59
-            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x1a5c            
+            bool m_bSpiritBear; // 0x1a78
+            uint8_t _pad1a79[0x3]; // 0x1a79
+            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x1a7c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_LoneDruid_SpiritBear_Entangle because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_LoneDruid_SpiritBear_Entangle) == 0x1a60);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_LoneDruid_SpiritBear_Entangle) == 0x1a80);
     };
 };

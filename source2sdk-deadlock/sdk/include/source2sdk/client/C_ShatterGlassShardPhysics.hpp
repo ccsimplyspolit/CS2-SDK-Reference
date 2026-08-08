@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xec0
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkExcludeByName "m_hModel"
         // static metadata: MNetworkVarNames "shard_model_desc_t m_ShardDesc"
         #pragma pack(push, 1)
@@ -30,13 +30,13 @@ namespace source2sdk
             uint8_t _pad0e30[0x8]; // 0xe30
             // metadata: MNetworkEnable
             // metadata: MNotSaved
-            source2sdk::client::shard_model_desc_t m_ShardDesc; // 0xe38            
+            source2sdk::client::shard_model_desc_t m_ShardDesc; // 0xe38
             uint8_t _pad0eb8[0x8];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_ShatterGlassShardPhysics because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_ShatterGlassShardPhysics) == 0xec0);
     };
 };

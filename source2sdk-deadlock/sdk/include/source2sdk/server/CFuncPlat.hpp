@@ -23,8 +23,8 @@ namespace source2sdk
         class CFuncPlat : public source2sdk::server::CBasePlatTrain
         {
         public:
-            CUtlSymbolLarge m_sNoise; // 0x828            
-            
+            CUtlSymbolLarge m_sNoise; // 0x828
+
             // Datamap fields:
             // void CFuncPlatPlatUse; // 0x0
             // void CFuncPlatCallGoDown; // 0x0
@@ -35,9 +35,9 @@ namespace source2sdk
             // void InputGoDown; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CFuncPlat because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CFuncPlat) == 0x830);
     };
 };

@@ -20,22 +20,22 @@ namespace source2sdk
         // Size: 0x1e8
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_PlayEndCapWhenFinished : public source2sdk::particles::CParticleFunctionPreEmission
         {
         public:
             // metadata: MPropertyFriendlyName "play when emission ends"
-            bool m_bFireOnEmissionEnd; // 0x1e0            
+            bool m_bFireOnEmissionEnd; // 0x1e0
             // metadata: MPropertyFriendlyName "wait for children to finish"
-            bool m_bIncludeChildren; // 0x1e1            
+            bool m_bIncludeChildren; // 0x1e1
             uint8_t _pad01e2[0x6];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_PlayEndCapWhenFinished because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_PlayEndCapWhenFinished) == 0x1e8);
     };
 };

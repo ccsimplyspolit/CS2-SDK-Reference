@@ -19,7 +19,7 @@ namespace source2sdk
         // Size: 0xc
         // Has Trivial Destructor
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class NetVarConfigIndex
@@ -27,12 +27,12 @@ namespace source2sdk
         public:
             // m_index has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CAnimNetVar<std::uint32_t> m_index;
-            char m_index[0xc]; // 0x0            
+            char m_index[0xc]; // 0x0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::animgraphlib::NetVarConfigIndex, m_index) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::animgraphlib::NetVarConfigIndex) == 0xc);
     };
 };

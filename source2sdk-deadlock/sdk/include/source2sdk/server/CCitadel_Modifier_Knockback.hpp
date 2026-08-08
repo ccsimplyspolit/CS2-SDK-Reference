@@ -23,14 +23,14 @@ namespace source2sdk
         class CCitadel_Modifier_Knockback : public source2sdk::server::CCitadel_Modifier_Stunned
         {
         public:
-            float m_flForce; // 0xd8            
-            bool m_bKnockedBack; // 0xdc            
+            float m_flForce; // 0xd8
+            bool m_bKnockedBack; // 0xdc
             uint8_t _pad00dd[0x3];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_Knockback because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_Knockback) == 0xe0);
     };
 };

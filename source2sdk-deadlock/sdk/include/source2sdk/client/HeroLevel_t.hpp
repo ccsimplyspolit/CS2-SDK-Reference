@@ -19,30 +19,30 @@ namespace source2sdk
         // Alignment: 0x8
         // Standard-layout class: true
         // Size: 0x50
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct HeroLevel_t
         {
         public:
-            std::uint32_t m_unRequiredGold; // 0x0            
+            std::uint32_t m_unRequiredGold; // 0x0
             uint8_t _pad0004[0x4]; // 0x4
             // m_mapBonusCurrencies has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlOrderedMap<source2sdk::client::ECurrencyType,std::int32_t> m_mapBonusCurrencies;
-            char m_mapBonusCurrencies[0x28]; // 0x8            
-            bool m_bUseStandardUpgrade; // 0x30            
+            char m_mapBonusCurrencies[0x28]; // 0x8
+            bool m_bUseStandardUpgrade; // 0x30
             uint8_t _pad0031[0x7]; // 0x31
             // m_vecBonusUpgrades has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::client::BonusUpgrade_t> m_vecBonusUpgrades;
-            char m_vecBonusUpgrades[0x18]; // 0x38            
+            char m_vecBonusUpgrades[0x18]; // 0x38
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::HeroLevel_t, m_unRequiredGold) == 0x0);
         static_assert(offsetof(source2sdk::client::HeroLevel_t, m_mapBonusCurrencies) == 0x8);
         static_assert(offsetof(source2sdk::client::HeroLevel_t, m_bUseStandardUpgrade) == 0x30);
         static_assert(offsetof(source2sdk::client::HeroLevel_t, m_vecBonusUpgrades) == 0x38);
-        
+
         static_assert(sizeof(source2sdk::client::HeroLevel_t) == 0x50);
     };
 };

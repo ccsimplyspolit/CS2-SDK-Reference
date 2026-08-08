@@ -25,30 +25,30 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a80
+        // Size: 0x1aa0
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Kez_FalconRush : public source2sdk::client::CDOTA_Buff
         {
         public:
-            std::int32_t bonus_attack_speed; // 0x1a58            
-            std::int32_t slow_resist; // 0x1a5c            
-            float rush_speed; // 0x1a60            
-            float rush_range; // 0x1a64            
-            float break_range; // 0x1a68            
-            bool m_bInRush; // 0x1a6c            
-            uint8_t _pad1a6d[0x3]; // 0x1a6d
-            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x1a70            
+            std::int32_t bonus_attack_speed; // 0x1a78
+            std::int32_t slow_resist; // 0x1a7c
+            float rush_speed; // 0x1a80
+            float rush_range; // 0x1a84
+            float break_range; // 0x1a88
+            bool m_bInRush; // 0x1a8c
+            uint8_t _pad1a8d[0x3]; // 0x1a8d
+            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x1a90
             // m_hTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::C_BaseEntity> m_hTarget;
-            char m_hTarget[0x4]; // 0x1a74            
-            source2sdk::client::ParticleIndex_t m_nFXStackIndex; // 0x1a78            
-            uint8_t _pad1a7c[0x4];
+            char m_hTarget[0x4]; // 0x1a94
+            source2sdk::client::ParticleIndex_t m_nFXStackIndex; // 0x1a98
+            uint8_t _pad1a9c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Kez_FalconRush because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Kez_FalconRush) == 0x1a80);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Kez_FalconRush) == 0x1aa0);
     };
 };

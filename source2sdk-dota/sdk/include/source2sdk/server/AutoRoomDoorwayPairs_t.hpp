@@ -20,20 +20,20 @@ namespace source2sdk
         // Has Trivial Constructor
         // Has Trivial Destructor
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct AutoRoomDoorwayPairs_t
         {
         public:
-            VectorWS vP1; // 0x0            
-            VectorWS vP2; // 0xc            
+            VectorWS vP1; // 0x0
+            VectorWS vP2; // 0xc
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::AutoRoomDoorwayPairs_t, vP1) == 0x0);
         static_assert(offsetof(source2sdk::server::AutoRoomDoorwayPairs_t, vP2) == 0xc);
-        
+
         static_assert(sizeof(source2sdk::server::AutoRoomDoorwayPairs_t) == 0x18);
     };
 };

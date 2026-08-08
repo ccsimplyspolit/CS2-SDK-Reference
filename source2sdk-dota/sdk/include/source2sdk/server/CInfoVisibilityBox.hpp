@@ -25,19 +25,19 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0498[0x4]; // 0x498
-            std::int32_t m_nMode; // 0x49c            
-            Vector m_vBoxSize; // 0x4a0            
-            bool m_bEnabled; // 0x4ac            
+            std::int32_t m_nMode; // 0x49c
+            Vector m_vBoxSize; // 0x4a0
+            bool m_bEnabled; // 0x4ac
             uint8_t _pad04ad[0x3];
-            
+
             // Datamap fields:
             // void InputEnable; // 0x0
             // void InputDisable; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CInfoVisibilityBox because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CInfoVisibilityBox) == 0x4b0);
     };
 };

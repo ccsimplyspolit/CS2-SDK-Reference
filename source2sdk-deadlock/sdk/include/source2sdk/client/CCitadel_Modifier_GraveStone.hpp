@@ -26,15 +26,15 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0110[0x18]; // 0x110
-            source2sdk::client::ParticleIndex_t m_nParticleIndexAura; // 0x128            
-            source2sdk::client::ParticleIndex_t m_nParticleIndex; // 0x12c            
-            source2sdk::entity2::GameTime_t m_flStartTime; // 0x130            
+            source2sdk::client::ParticleIndex_t m_nParticleIndexAura; // 0x128
+            source2sdk::client::ParticleIndex_t m_nParticleIndex; // 0x12c
+            source2sdk::entity2::GameTime_t m_flStartTime; // 0x130
             uint8_t _pad0134[0x684];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_GraveStone because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Modifier_GraveStone) == 0x7b8);
     };
 };

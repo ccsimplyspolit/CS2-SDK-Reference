@@ -24,13 +24,13 @@ namespace source2sdk
         class CDOTA_ArcanaDataEntity_Razor : public source2sdk::client::CDOTA_ArcanaDataEntity_Base
         {
         public:
-            std::int32_t m_nEmpoweredKills; // 0x30            
+            std::int32_t m_nEmpoweredKills; // 0x30
             uint8_t _pad0034[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_ArcanaDataEntity_Razor because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CDOTA_ArcanaDataEntity_Razor) == 0x38);
     };
 };

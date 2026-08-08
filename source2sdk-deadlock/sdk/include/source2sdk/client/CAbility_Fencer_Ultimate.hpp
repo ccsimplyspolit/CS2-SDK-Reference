@@ -29,7 +29,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x1948
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "Vector m_vStartPosition"
         // static metadata: MNetworkVarNames "Vector m_vDashDirection"
         // static metadata: MNetworkVarNames "Vector m_vecLastPosition"
@@ -41,37 +41,37 @@ namespace source2sdk
         public:
             // metadata: MNetworkEnable
             // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-            Vector m_vStartPosition; // 0x11d8            
+            Vector m_vStartPosition; // 0x11d8
             // metadata: MNetworkEnable
             // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-            Vector m_vDashDirection; // 0x11e4            
+            Vector m_vDashDirection; // 0x11e4
             // metadata: MNetworkEnable
             // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-            Vector m_vecLastPosition; // 0x11f0            
+            Vector m_vecLastPosition; // 0x11f0
             // metadata: MNetworkEnable
             // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-            source2sdk::client::EFencerUltState_t m_eUltState; // 0x11fc            
+            source2sdk::client::EFencerUltState_t m_eUltState; // 0x11fc
             uint8_t _pad11fd[0x3]; // 0x11fd
             // metadata: MNetworkEnable
             // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-            source2sdk::entity2::GameTime_t m_flStateStartTime; // 0x1200            
-            bool m_bHitSomeone; // 0x1204            
+            source2sdk::entity2::GameTime_t m_flStateStartTime; // 0x1200
+            bool m_bHitSomeone; // 0x1204
             uint8_t _pad1205[0x3]; // 0x1205
             // m_vecHitEnemies has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::client::C_BaseEntity>> m_vecHitEnemies;
-            char m_vecHitEnemies[0x18]; // 0x1208            
+            char m_vecHitEnemies[0x18]; // 0x1208
             // m_vecHitHeroes has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::client::C_BaseEntity>> m_vecHitHeroes;
-            char m_vecHitHeroes[0x18]; // 0x1220            
-            source2sdk::entity2::GameTime_t m_flStuckTime; // 0x1238            
-            source2sdk::client::ParticleIndex_t m_UltHoldVFX; // 0x123c            
-            source2sdk::client::ParticleIndex_t m_DirPreviewVFX; // 0x1240            
+            char m_vecHitHeroes[0x18]; // 0x1220
+            source2sdk::entity2::GameTime_t m_flStuckTime; // 0x1238
+            source2sdk::client::ParticleIndex_t m_UltHoldVFX; // 0x123c
+            source2sdk::client::ParticleIndex_t m_DirPreviewVFX; // 0x1240
             uint8_t _pad1244[0x704];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CAbility_Fencer_Ultimate because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CAbility_Fencer_Ultimate) == 0x1948);
     };
 };

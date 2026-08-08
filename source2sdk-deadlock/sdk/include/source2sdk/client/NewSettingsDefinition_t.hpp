@@ -19,7 +19,7 @@ namespace source2sdk
         // Alignment: 0x8
         // Standard-layout class: true
         // Size: 0x40
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MVDataRoot
         #pragma pack(push, 1)
@@ -29,24 +29,24 @@ namespace source2sdk
             // metadata: MPropertyDescription "unique integer ID of this new setting"
             // metadata: MVDataUniqueMonotonicInt "_editor/next_new_setting_id"
             // metadata: MPropertyAttributeEditor "locked_int()"
-            source2sdk::client::NewSettingsID_t m_nID; // 0x0            
+            source2sdk::client::NewSettingsID_t m_nID; // 0x0
             uint8_t _pad0004[0xc]; // 0x4
-            CUtlString m_sTitle; // 0x10            
-            CUtlString m_sDescription; // 0x18            
-            CPanoramaImageName sIcon; // 0x20            
-            CUtlString m_sCreationDate; // 0x30            
+            CUtlString m_sTitle; // 0x10
+            CUtlString m_sDescription; // 0x18
+            CPanoramaImageName sIcon; // 0x20
+            CUtlString m_sCreationDate; // 0x30
             uint8_t _pad0038[0x4]; // 0x38
-            source2sdk::client::ENewSettingsBadge m_eNewSettingsBadge; // 0x3c            
+            source2sdk::client::ENewSettingsBadge m_eNewSettingsBadge; // 0x3c
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::NewSettingsDefinition_t, m_nID) == 0x0);
         static_assert(offsetof(source2sdk::client::NewSettingsDefinition_t, m_sTitle) == 0x10);
         static_assert(offsetof(source2sdk::client::NewSettingsDefinition_t, m_sDescription) == 0x18);
         static_assert(offsetof(source2sdk::client::NewSettingsDefinition_t, sIcon) == 0x20);
         static_assert(offsetof(source2sdk::client::NewSettingsDefinition_t, m_sCreationDate) == 0x30);
         static_assert(offsetof(source2sdk::client::NewSettingsDefinition_t, m_eNewSettingsBadge) == 0x3c);
-        
+
         static_assert(sizeof(source2sdk::client::NewSettingsDefinition_t) == 0x40);
     };
 };

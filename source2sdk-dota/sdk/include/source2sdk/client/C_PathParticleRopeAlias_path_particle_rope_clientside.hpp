@@ -27,8 +27,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: C_PathParticleRopeAlias_path_particle_rope_clientside has no schema binary (size is a guess)
     };
 };

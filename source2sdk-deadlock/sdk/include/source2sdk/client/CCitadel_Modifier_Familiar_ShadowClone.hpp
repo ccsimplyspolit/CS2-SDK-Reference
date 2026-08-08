@@ -23,13 +23,13 @@ namespace source2sdk
         class CCitadel_Modifier_Familiar_ShadowClone : public source2sdk::client::CCitadelModifier
         {
         public:
-            bool m_bCloneIsInvisible; // 0xc0            
+            bool m_bCloneIsInvisible; // 0xc0
             uint8_t _pad00c1[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_Familiar_ShadowClone because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Modifier_Familiar_ShadowClone) == 0xc8);
     };
 };

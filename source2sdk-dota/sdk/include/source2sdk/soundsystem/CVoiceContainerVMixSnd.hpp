@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x1d8
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "VMixSound"
         // static metadata: MPropertyDescription "Plays a vmix graph and its containers."
@@ -31,8 +31,8 @@ namespace source2sdk
             uint8_t _pad0070[0x168];
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::soundsystem::CVoiceContainerVMixSnd) == 0x1d8);
     };
 };

@@ -24,14 +24,14 @@ namespace source2sdk
         class CCitadel_Modifier_Chrono_PulseGrenade_PulseArea : public source2sdk::server::CCitadelModifier
         {
         public:
-            std::int32_t m_iPulseCount; // 0xd0            
-            source2sdk::client::ParticleIndex_t m_hPreviewRingParticle; // 0xd4            
+            std::int32_t m_iPulseCount; // 0xd0
+            source2sdk::client::ParticleIndex_t m_hPreviewRingParticle; // 0xd4
             uint8_t _pad00d8[0x300];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_Chrono_PulseGrenade_PulseArea because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_Chrono_PulseGrenade_PulseArea) == 0x3d8);
     };
 };

@@ -23,16 +23,16 @@ namespace source2sdk
         class CCitadel_Modifier_MysticReverbExplosion : public source2sdk::server::CCitadelModifier
         {
         public:
-            bool m_bNoDeath; // 0xd0            
-            bool m_bDamageInProgress; // 0xd1            
+            bool m_bNoDeath; // 0xd0
+            bool m_bDamageInProgress; // 0xd1
             uint8_t _pad00d2[0x2]; // 0xd2
-            float m_flDamage; // 0xd4            
+            float m_flDamage; // 0xd4
             uint8_t _pad00d8[0x100];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_MysticReverbExplosion because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_MysticReverbExplosion) == 0x1d8);
     };
 };

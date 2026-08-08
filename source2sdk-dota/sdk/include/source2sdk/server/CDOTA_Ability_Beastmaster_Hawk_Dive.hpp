@@ -4,6 +4,13 @@
 #include <cstddef>
 #include <cstdint>
 #include "source2sdk/server/CDOTABaseAbility.hpp"
+namespace source2sdk
+{
+    namespace server
+    {
+        struct CBaseEntity;
+    };
+};
 
 // /////////////////////////////////////////////////////////////
 // Module: server
@@ -17,7 +24,7 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x580
+        // Size: 0x588
         // Has VTable
         // Construct allowed
         // MClassHasEntityLimitedDataDesc
@@ -25,11 +32,15 @@ namespace source2sdk
         class CDOTA_Ability_Beastmaster_Hawk_Dive : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            // No schema binary for binding
+            // m_hSummonRaptorAbility has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+            // CHandle<source2sdk::server::CBaseEntity> m_hSummonRaptorAbility;
+            char m_hSummonRaptorAbility[0x4]; // 0x580
+            uint8_t _pad0584[0x4];
         };
         #pragma pack(pop)
-        
-        
-        // size assertion omitted: CDOTA_Ability_Beastmaster_Hawk_Dive has no schema binary (size is a guess)
+
+        // Cannot assert offsets of fields in CDOTA_Ability_Beastmaster_Hawk_Dive because it is not a standard-layout class
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Ability_Beastmaster_Hawk_Dive) == 0x588);
     };
 };

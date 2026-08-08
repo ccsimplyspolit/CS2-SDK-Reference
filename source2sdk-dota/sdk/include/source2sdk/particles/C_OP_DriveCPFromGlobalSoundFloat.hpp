@@ -20,37 +20,37 @@ namespace source2sdk
         // Size: 0x218
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_DriveCPFromGlobalSoundFloat : public source2sdk::particles::CParticleFunctionPreEmission
         {
         public:
             // metadata: MPropertyFriendlyName "output control point"
-            std::int32_t m_nOutputControlPoint; // 0x1e0            
+            std::int32_t m_nOutputControlPoint; // 0x1e0
             // metadata: MPropertyFriendlyName "output field"
             // metadata: MPropertyAttributeChoiceName "vector_component"
-            std::int32_t m_nOutputField; // 0x1e4            
+            std::int32_t m_nOutputField; // 0x1e4
             // metadata: MPropertyFriendlyName "input minimum"
-            float m_flInputMin; // 0x1e8            
+            float m_flInputMin; // 0x1e8
             // metadata: MPropertyFriendlyName "input maximum"
-            float m_flInputMax; // 0x1ec            
+            float m_flInputMax; // 0x1ec
             // metadata: MPropertyFriendlyName "output minimum"
-            float m_flOutputMin; // 0x1f0            
+            float m_flOutputMin; // 0x1f0
             // metadata: MPropertyFriendlyName "output maximum"
-            float m_flOutputMax; // 0x1f4            
+            float m_flOutputMax; // 0x1f4
             // metadata: MPropertyFriendlyName "sound stack name"
-            CUtlString m_StackName; // 0x1f8            
+            CUtlString m_StackName; // 0x1f8
             // metadata: MPropertyFriendlyName "sound operator name"
-            CUtlString m_OperatorName; // 0x200            
+            CUtlString m_OperatorName; // 0x200
             // metadata: MPropertyFriendlyName "sound field name"
-            CUtlString m_FieldName; // 0x208            
+            CUtlString m_FieldName; // 0x208
             uint8_t _pad0210[0x8];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_DriveCPFromGlobalSoundFloat because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_DriveCPFromGlobalSoundFloat) == 0x218);
     };
 };

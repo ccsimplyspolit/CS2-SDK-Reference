@@ -23,13 +23,13 @@ namespace source2sdk
         class CCitadel_Modifier_CatapultStun : public source2sdk::server::CCitadel_Modifier_Knockdown
         {
         public:
-            bool m_bLanded; // 0xf8            
+            bool m_bLanded; // 0xf8
             uint8_t _pad00f9[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_CatapultStun because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_CatapultStun) == 0x100);
     };
 };

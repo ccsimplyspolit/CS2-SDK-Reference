@@ -21,49 +21,49 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x228
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_RemapCPtoVector : public source2sdk::particles::CParticleFunctionOperator
         {
         public:
             // metadata: MPropertyFriendlyName "input control point number"
-            std::int32_t m_nCPInput; // 0x1d8            
+            std::int32_t m_nCPInput; // 0x1d8
             // metadata: MPropertyFriendlyName "output field"
             // metadata: MPropertyAttributeChoiceName "particlefield_vector"
-            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1dc            
+            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1dc
             // metadata: MPropertyFriendlyName "local space CP"
-            std::int32_t m_nLocalSpaceCP; // 0x1e0            
+            std::int32_t m_nLocalSpaceCP; // 0x1e0
             // metadata: MPropertyFriendlyName "input minimum"
             // metadata: MVectorIsSometimesCoordinate "m_nFieldOutput"
-            Vector m_vInputMin; // 0x1e4            
+            Vector m_vInputMin; // 0x1e4
             // metadata: MPropertyFriendlyName "input maximum"
             // metadata: MVectorIsSometimesCoordinate "m_nFieldOutput"
-            Vector m_vInputMax; // 0x1f0            
+            Vector m_vInputMax; // 0x1f0
             // metadata: MPropertyFriendlyName "output minimum"
             // metadata: MVectorIsSometimesCoordinate "m_nFieldOutput"
-            Vector m_vOutputMin; // 0x1fc            
+            Vector m_vOutputMin; // 0x1fc
             // metadata: MPropertyFriendlyName "output maximum"
             // metadata: MVectorIsSometimesCoordinate "m_nFieldOutput"
-            Vector m_vOutputMax; // 0x208            
+            Vector m_vOutputMax; // 0x208
             // metadata: MPropertyFriendlyName "emitter lifetime start time (seconds)"
-            float m_flStartTime; // 0x214            
+            float m_flStartTime; // 0x214
             // metadata: MPropertyFriendlyName "emitter lifetime end time (seconds)"
-            float m_flEndTime; // 0x218            
+            float m_flEndTime; // 0x218
             // metadata: MPropertyFriendlyName "interpolation scale"
-            float m_flInterpRate; // 0x21c            
+            float m_flInterpRate; // 0x21c
             // metadata: MPropertyFriendlyName "set value method"
-            source2sdk::particles::ParticleSetMethod_t m_nSetMethod; // 0x220            
+            source2sdk::particles::ParticleSetMethod_t m_nSetMethod; // 0x220
             // metadata: MPropertyFriendlyName "offset position"
-            bool m_bOffset; // 0x224            
+            bool m_bOffset; // 0x224
             // metadata: MPropertyFriendlyName "accelerate position"
-            bool m_bAccelerate; // 0x225            
+            bool m_bAccelerate; // 0x225
             uint8_t _pad0226[0x2];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_RemapCPtoVector because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_RemapCPtoVector) == 0x228);
     };
 };

@@ -25,23 +25,23 @@ namespace source2sdk
         class CMathCounter : public source2sdk::server::CLogicalEntity
         {
         public:
-            float m_flMin; // 0x498            
-            float m_flMax; // 0x49c            
-            bool m_bHitMin; // 0x4a0            
-            bool m_bHitMax; // 0x4a1            
-            bool m_bDisabled; // 0x4a2            
+            float m_flMin; // 0x498
+            float m_flMax; // 0x49c
+            bool m_bHitMin; // 0x4a0
+            bool m_bHitMax; // 0x4a1
+            bool m_bDisabled; // 0x4a2
             uint8_t _pad04a3[0x5]; // 0x4a3
             // m_OutValue has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEntityOutputTemplate<float> m_OutValue;
-            char m_OutValue[0x20]; // 0x4a8            
+            char m_OutValue[0x20]; // 0x4a8
             // m_OnGetValue has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEntityOutputTemplate<float> m_OnGetValue;
-            char m_OnGetValue[0x20]; // 0x4c8            
-            source2sdk::entity2::CEntityIOOutput m_OnHitMin; // 0x4e8            
-            source2sdk::entity2::CEntityIOOutput m_OnHitMax; // 0x500            
-            source2sdk::entity2::CEntityIOOutput m_OnChangedFromMin; // 0x518            
-            source2sdk::entity2::CEntityIOOutput m_OnChangedFromMax; // 0x530            
-            
+            char m_OnGetValue[0x20]; // 0x4c8
+            source2sdk::entity2::CEntityIOOutput m_OnHitMin; // 0x4e8
+            source2sdk::entity2::CEntityIOOutput m_OnHitMax; // 0x500
+            source2sdk::entity2::CEntityIOOutput m_OnChangedFromMin; // 0x518
+            source2sdk::entity2::CEntityIOOutput m_OnChangedFromMax; // 0x530
+
             // Datamap fields:
             // float InputAdd; // 0x0
             // float InputDivide; // 0x0
@@ -57,9 +57,9 @@ namespace source2sdk
             // int32_t startvalue; // 0x7fffffff
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CMathCounter because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CMathCounter) == 0x548);
     };
 };

@@ -23,33 +23,33 @@ namespace source2sdk
         class CRR_Response
         {
         public:
-            std::uint8_t m_Type; // 0x0            
-            char m_szResponseName[192]; // 0x1            
+            std::uint8_t m_Type; // 0x0
+            char m_szResponseName[192]; // 0x1
             // metadata: MNotSaved
-            char m_szMatchingRule[128]; // 0xc1            
+            char m_szMatchingRule[128]; // 0xc1
             uint8_t _pad0141[0x1f]; // 0x141
-            source2sdk::client::ResponseParams m_Params; // 0x160            
+            source2sdk::client::ResponseParams m_Params; // 0x160
             // metadata: MNotSaved
-            float m_fMatchScore; // 0x180            
+            float m_fMatchScore; // 0x180
             // metadata: MNotSaved
-            bool m_bAnyMatchingRulesInCooldown; // 0x184            
+            bool m_bAnyMatchingRulesInCooldown; // 0x184
             uint8_t _pad0185[0x3]; // 0x185
             // metadata: MNotSaved
-            char* m_szSpeakerContext; // 0x188            
+            char* m_szSpeakerContext; // 0x188
             // metadata: MNotSaved
-            char* m_szWorldContext; // 0x190            
+            char* m_szWorldContext; // 0x190
             // metadata: MNotSaved
-            source2sdk::client::ResponseFollowup m_Followup; // 0x198            
+            source2sdk::client::ResponseFollowup m_Followup; // 0x198
             uint8_t _pad01c9[0x1]; // 0x1c9
             // metadata: MNotSaved
-            CUtlSymbol m_recipientFilter; // 0x1ca            
+            CUtlSymbol m_recipientFilter; // 0x1ca
             uint8_t _pad01cc[0x4];
-            
+
             // Datamap fields:
             // void m_szMatchingRule; // 0xc1
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::CRR_Response, m_Type) == 0x0);
         static_assert(offsetof(source2sdk::client::CRR_Response, m_szResponseName) == 0x1);
         static_assert(offsetof(source2sdk::client::CRR_Response, m_szMatchingRule) == 0xc1);
@@ -60,7 +60,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::client::CRR_Response, m_szWorldContext) == 0x190);
         static_assert(offsetof(source2sdk::client::CRR_Response, m_Followup) == 0x198);
         static_assert(offsetof(source2sdk::client::CRR_Response, m_recipientFilter) == 0x1ca);
-        
+
         static_assert(sizeof(source2sdk::client::CRR_Response) == 0x1d0);
     };
 };

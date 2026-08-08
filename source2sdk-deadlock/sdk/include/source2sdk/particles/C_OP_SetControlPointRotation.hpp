@@ -21,7 +21,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xa10
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_SetControlPointRotation : public source2sdk::particles::CParticleFunctionPreEmission
@@ -29,18 +29,18 @@ namespace source2sdk
         public:
             // metadata: MPropertyFriendlyName "rotation axis"
             // metadata: MVectorIsCoordinate
-            source2sdk::particleslib::CParticleCollectionVecInput m_vecRotAxis; // 0x1e0            
+            source2sdk::particleslib::CParticleCollectionVecInput m_vecRotAxis; // 0x1e0
             // metadata: MPropertyFriendlyName "rotation rate"
-            source2sdk::particleslib::CParticleCollectionFloatInput m_flRotRate; // 0x898            
+            source2sdk::particleslib::CParticleCollectionFloatInput m_flRotRate; // 0x898
             // metadata: MPropertyFriendlyName "control point"
-            std::int32_t m_nCP; // 0xa08            
+            std::int32_t m_nCP; // 0xa08
             // metadata: MPropertyFriendlyName "local space control point"
-            std::int32_t m_nLocalCP; // 0xa0c            
+            std::int32_t m_nLocalCP; // 0xa0c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_SetControlPointRotation because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_SetControlPointRotation) == 0xa10);
     };
 };

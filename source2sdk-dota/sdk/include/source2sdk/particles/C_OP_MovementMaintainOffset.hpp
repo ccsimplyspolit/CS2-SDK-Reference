@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x1f0
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_MovementMaintainOffset : public source2sdk::particles::CParticleFunctionOperator
@@ -28,17 +28,17 @@ namespace source2sdk
         public:
             // metadata: MPropertyFriendlyName "desired offset"
             // metadata: MVectorIsCoordinate
-            Vector m_vecOffset; // 0x1d8            
+            Vector m_vecOffset; // 0x1d8
             // metadata: MPropertyFriendlyName "local space CP"
-            std::int32_t m_nCP; // 0x1e4            
+            std::int32_t m_nCP; // 0x1e4
             // metadata: MPropertyFriendlyName "scale by radius"
-            bool m_bRadiusScale; // 0x1e8            
+            bool m_bRadiusScale; // 0x1e8
             uint8_t _pad01e9[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_MovementMaintainOffset because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_MovementMaintainOffset) == 0x1f0);
     };
 };

@@ -23,13 +23,13 @@ namespace source2sdk
         class CModifier_Mirage_FireScarabs_HealthLoss : public source2sdk::server::CCitadelModifier
         {
         public:
-            bool m_bCanProc; // 0xd0            
+            bool m_bCanProc; // 0xd0
             uint8_t _pad00d1[0x187];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CModifier_Mirage_FireScarabs_HealthLoss because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CModifier_Mirage_FireScarabs_HealthLoss) == 0x258);
     };
 };

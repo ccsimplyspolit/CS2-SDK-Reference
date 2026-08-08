@@ -25,15 +25,15 @@ namespace source2sdk
         class CDOTA_Ability_Largo_AmphibianRhapsody_FightSong : public source2sdk::server::CDOTA_Ability_Largo_AmphibianRhapsody_Song
         {
         public:
-            float radius; // 0x590            
-            float battle_burst_duration; // 0x594            
-            std::int32_t burst_damage; // 0x598            
-            std::int32_t damage_per_stack; // 0x59c            
+            float radius; // 0x590
+            float battle_burst_duration; // 0x594
+            std::int32_t burst_damage; // 0x598
+            std::int32_t damage_per_stack; // 0x59c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Largo_AmphibianRhapsody_FightSong because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Largo_AmphibianRhapsody_FightSong) == 0x5a0);
     };
 };

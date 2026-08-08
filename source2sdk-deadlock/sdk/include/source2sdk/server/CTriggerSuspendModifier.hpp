@@ -23,12 +23,12 @@ namespace source2sdk
         class CTriggerSuspendModifier : public source2sdk::server::CBaseTrigger
         {
         public:
-            CUtlSymbolLarge m_strModifier; // 0x8e0            
+            CUtlSymbolLarge m_strModifier; // 0x8e0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CTriggerSuspendModifier because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CTriggerSuspendModifier) == 0x8e8);
     };
 };

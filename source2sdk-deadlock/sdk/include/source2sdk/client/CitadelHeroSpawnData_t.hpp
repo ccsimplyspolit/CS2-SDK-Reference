@@ -21,7 +21,7 @@ namespace source2sdk
         // Size: 0x10
         // Has VTable
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MNetworkVarNames "HeroID_t m_nHeroID"
         // static metadata: MNetworkVarNames "HeroBadgeXP_t m_unHeroBadgeXP"
         #pragma pack(push, 1)
@@ -30,15 +30,15 @@ namespace source2sdk
         public:
             uint8_t _pad0000[0x8]; // 0x0
             // metadata: MNetworkEnable
-            source2sdk::client::HeroID_t m_nHeroID; // 0x8            
+            source2sdk::client::HeroID_t m_nHeroID; // 0x8
             // metadata: MNetworkEnable
-            source2sdk::client::HeroBadgeXP_t m_unHeroBadgeXP; // 0xc            
+            source2sdk::client::HeroBadgeXP_t m_unHeroBadgeXP; // 0xc
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::CitadelHeroSpawnData_t, m_nHeroID) == 0x8);
         static_assert(offsetof(source2sdk::client::CitadelHeroSpawnData_t, m_unHeroBadgeXP) == 0xc);
-        
+
         static_assert(sizeof(source2sdk::client::CitadelHeroSpawnData_t) == 0x10);
     };
 };

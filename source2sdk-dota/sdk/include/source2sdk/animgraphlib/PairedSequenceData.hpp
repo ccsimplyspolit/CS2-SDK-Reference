@@ -20,18 +20,18 @@ namespace source2sdk
         // Size: 0x100
         // Has Trivial Destructor
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class PairedSequenceData
         {
         public:
-            source2sdk::animgraphlib::PairedSequence_t m_vecPairedSequences[8]; // 0x0            
+            source2sdk::animgraphlib::PairedSequence_t m_vecPairedSequences[8]; // 0x0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::animgraphlib::PairedSequenceData, m_vecPairedSequences) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::animgraphlib::PairedSequenceData) == 0x100);
     };
 };

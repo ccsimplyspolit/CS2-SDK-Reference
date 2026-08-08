@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x30
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CAnimGraphSettingsManager
@@ -29,12 +29,12 @@ namespace source2sdk
             uint8_t _pad0000[0x18]; // 0x0
             // m_settingsGroups has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CSmartPtr<source2sdk::animgraphlib::CAnimGraphSettingsGroup>> m_settingsGroups;
-            char m_settingsGroups[0x18]; // 0x18            
+            char m_settingsGroups[0x18]; // 0x18
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::animgraphlib::CAnimGraphSettingsManager, m_settingsGroups) == 0x18);
-        
+
         static_assert(sizeof(source2sdk::animgraphlib::CAnimGraphSettingsManager) == 0x30);
     };
 };

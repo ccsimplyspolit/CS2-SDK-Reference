@@ -26,14 +26,14 @@ namespace source2sdk
         class C_DOTA_Item_Orb_Of_Revelations : public source2sdk::client::C_DOTA_Item
         {
         public:
-            source2sdk::client::CountdownTimer m_ViewerTimer; // 0x758            
-            std::int32_t m_iProjectile; // 0x770            
+            source2sdk::client::CountdownTimer m_ViewerTimer; // 0x758
+            std::int32_t m_iProjectile; // 0x770
             uint8_t _pad0774[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Item_Orb_Of_Revelations because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Item_Orb_Of_Revelations) == 0x778);
     };
 };

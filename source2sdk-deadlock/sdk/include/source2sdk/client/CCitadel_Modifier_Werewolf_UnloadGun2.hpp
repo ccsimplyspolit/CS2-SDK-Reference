@@ -17,18 +17,18 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x5a0
+        // Size: 0x620
         // Has VTable
         #pragma pack(push, 1)
         class CCitadel_Modifier_Werewolf_UnloadGun2 : public source2sdk::client::CCitadel_Modifier_BaseBulletPreRollProc
         {
         public:
-            uint8_t _pad0218[0x388];
+            uint8_t _pad0218[0x408];
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: CCitadel_Modifier_Werewolf_UnloadGun2 has no schema binary (size is a guess)
     };
 };

@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x1bd0
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkIncludeByName "m_iHealth"
         // static metadata: MNetworkIncludeByName "m_iMaxHealth"
         #pragma pack(push, 1)
@@ -28,8 +28,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::client::C_NPC_FlyingDrone) == 0x1bd0);
     };
 };

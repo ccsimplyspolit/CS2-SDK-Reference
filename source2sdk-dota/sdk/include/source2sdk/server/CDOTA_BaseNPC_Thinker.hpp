@@ -17,7 +17,7 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x18a8
+        // Size: 0x18b0
         // Has VTable
         // Construct allowed
         // MClassHasEntityLimitedDataDesc
@@ -25,14 +25,14 @@ namespace source2sdk
         class CDOTA_BaseNPC_Thinker : public source2sdk::server::CDOTA_BaseNPC
         {
         public:
-            bool m_bSendToAllPlayers; // 0x18a0            
-            bool m_bSendToClients; // 0x18a1            
-            uint8_t _pad18a2[0x6];
+            bool m_bSendToAllPlayers; // 0x18a8
+            bool m_bSendToClients; // 0x18a9
+            uint8_t _pad18aa[0x6];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_BaseNPC_Thinker because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_BaseNPC_Thinker) == 0x18a8);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_BaseNPC_Thinker) == 0x18b0);
     };
 };

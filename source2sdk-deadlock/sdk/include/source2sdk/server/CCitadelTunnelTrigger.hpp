@@ -24,13 +24,13 @@ namespace source2sdk
         {
         public:
             uint8_t _pad08e8[0x1]; // 0x8e8
-            bool m_bKillWhenNotTiny; // 0x8e9            
+            bool m_bKillWhenNotTiny; // 0x8e9
             uint8_t _pad08ea[0x6];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadelTunnelTrigger because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadelTunnelTrigger) == 0x8f0);
     };
 };

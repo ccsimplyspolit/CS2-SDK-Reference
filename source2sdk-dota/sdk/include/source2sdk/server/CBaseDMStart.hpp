@@ -24,12 +24,12 @@ namespace source2sdk
         class CBaseDMStart : public source2sdk::server::CPointEntity
         {
         public:
-            CUtlSymbolLarge m_Master; // 0x498            
+            CUtlSymbolLarge m_Master; // 0x498
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CBaseDMStart because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CBaseDMStart) == 0x4a0);
     };
 };

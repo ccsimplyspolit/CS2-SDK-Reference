@@ -33,14 +33,14 @@ namespace source2sdk
             uint8_t _pad0f70[0x8]; // 0xf70
             // m_vecDeployedProjectiles has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::server::CCitadelProjectile>> m_vecDeployedProjectiles;
-            char m_vecDeployedProjectiles[0x18]; // 0xf78            
-            std::int32_t m_iCurrentRedirects; // 0xf90            
+            char m_vecDeployedProjectiles[0x18]; // 0xf78
+            std::int32_t m_iCurrentRedirects; // 0xf90
             uint8_t _pad0f94[0x584];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_Magician_MagicBolt because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Ability_Magician_MagicBolt) == 0x1518);
     };
 };

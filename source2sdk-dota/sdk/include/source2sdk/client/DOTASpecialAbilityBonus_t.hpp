@@ -22,17 +22,17 @@ namespace source2sdk
         struct DOTASpecialAbilityBonus_t
         {
         public:
-            char* m_pszName; // 0x0            
-            float m_fValue; // 0x8            
-            source2sdk::client::EDOTASpecialBonusOperation m_eOperation; // 0xc            
+            char* m_pszName; // 0x0
+            float m_fValue; // 0x8
+            source2sdk::client::EDOTASpecialBonusOperation m_eOperation; // 0xc
             uint8_t _pad000d[0x3];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::DOTASpecialAbilityBonus_t, m_pszName) == 0x0);
         static_assert(offsetof(source2sdk::client::DOTASpecialAbilityBonus_t, m_fValue) == 0x8);
         static_assert(offsetof(source2sdk::client::DOTASpecialAbilityBonus_t, m_eOperation) == 0xc);
-        
+
         static_assert(sizeof(source2sdk::client::DOTASpecialAbilityBonus_t) == 0x10);
     };
 };

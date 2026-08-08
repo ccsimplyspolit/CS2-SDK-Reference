@@ -23,14 +23,14 @@ namespace source2sdk
         struct AABBWS_t
         {
         public:
-            VectorWS m_vMinBounds; // 0x0            
-            VectorWS m_vMaxBounds; // 0xc            
+            VectorWS m_vMinBounds; // 0x0
+            VectorWS m_vMaxBounds; // 0xc
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::mathlib_extended::AABBWS_t, m_vMinBounds) == 0x0);
         static_assert(offsetof(source2sdk::mathlib_extended::AABBWS_t, m_vMaxBounds) == 0xc);
-        
+
         static_assert(sizeof(source2sdk::mathlib_extended::AABBWS_t) == 0x18);
     };
 };

@@ -24,16 +24,16 @@ namespace source2sdk
         class CCitadel_Modifier_RocketBarrageVolley : public source2sdk::server::CCitadelModifier
         {
         public:
-            float m_flFiringInterval; // 0xd0            
-            source2sdk::entity2::GameTime_t m_flCastTime; // 0xd4            
-            source2sdk::entity2::GameTime_t m_flNextRocketTime; // 0xd8            
-            std::int32_t m_nGrenadesLeft; // 0xdc            
+            float m_flFiringInterval; // 0xd0
+            source2sdk::entity2::GameTime_t m_flCastTime; // 0xd4
+            source2sdk::entity2::GameTime_t m_flNextRocketTime; // 0xd8
+            std::int32_t m_nGrenadesLeft; // 0xdc
             uint8_t _pad00e0[0x598];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_RocketBarrageVolley because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_RocketBarrageVolley) == 0x678);
     };
 };

@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x58
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Save State"
         // static metadata: MPropertyDescription "Save the current state, allowing it to be restored at a later state."
@@ -32,12 +32,12 @@ namespace source2sdk
         public:
             // metadata: MPropertyAttributeEditor "SmartPropItemNameEditor( SavedState )"
             // metadata: MPropertyDescription "Name to assign to the saved state, the save state can be restored later using this name."
-            CUtlString m_StateName; // 0x50            
+            CUtlString m_StateName; // 0x50
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSmartPropOperation_SaveState because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::smartprops::CSmartPropOperation_SaveState) == 0x58);
     };
 };

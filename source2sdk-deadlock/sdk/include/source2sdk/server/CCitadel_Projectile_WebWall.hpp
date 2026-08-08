@@ -24,20 +24,20 @@ namespace source2sdk
         class CCitadel_Projectile_WebWall : public source2sdk::server::CCitadelProjectile
         {
         public:
-            bool bHasDetonatedOnTarget; // 0x860            
+            bool bHasDetonatedOnTarget; // 0x860
             uint8_t _pad0861[0x3]; // 0x861
-            source2sdk::client::ParticleIndex_t m_nWebWallFxIndex; // 0x864            
+            source2sdk::client::ParticleIndex_t m_nWebWallFxIndex; // 0x864
             uint8_t _pad0868[0x10]; // 0x868
-            Vector m_vecCastPosition; // 0x878            
-            Vector m_vecCastPositionNormal; // 0x884            
-            Vector m_vecEndPosition; // 0x890            
-            Vector m_vecEndPositionNormal; // 0x89c            
+            Vector m_vecCastPosition; // 0x878
+            Vector m_vecCastPositionNormal; // 0x884
+            Vector m_vecEndPosition; // 0x890
+            Vector m_vecEndPositionNormal; // 0x89c
             uint8_t _pad08a8[0x300];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Projectile_WebWall because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Projectile_WebWall) == 0xba8);
     };
 };

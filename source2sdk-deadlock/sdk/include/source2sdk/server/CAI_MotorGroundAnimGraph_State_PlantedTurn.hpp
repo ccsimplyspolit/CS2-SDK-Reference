@@ -24,14 +24,14 @@ namespace source2sdk
         class CAI_MotorGroundAnimGraph_State_PlantedTurn : public source2sdk::server::CAI_MotorGroundAnimGraph_State
         {
         public:
-            bool m_bRepathed; // 0x20            
-            bool m_bPathChanged; // 0x21            
+            bool m_bRepathed; // 0x20
+            bool m_bPathChanged; // 0x21
             uint8_t _pad0022[0x6];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CAI_MotorGroundAnimGraph_State_PlantedTurn because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CAI_MotorGroundAnimGraph_State_PlantedTurn) == 0x28);
     };
 };

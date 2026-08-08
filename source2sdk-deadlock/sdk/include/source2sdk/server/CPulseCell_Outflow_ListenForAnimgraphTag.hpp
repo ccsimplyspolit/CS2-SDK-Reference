@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x128
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Listen for AnimGraph Tag"
         // static metadata: MPropertyDescription "Creates new cursors for when an animgraph tag is handled. Will listen until canceled."
@@ -29,16 +29,16 @@ namespace source2sdk
         class CPulseCell_Outflow_ListenForAnimgraphTag : public source2sdk::pulse_runtime_lib::CPulseCell_BaseYieldingInflow
         {
         public:
-            source2sdk::pulse_runtime_lib::CPulse_ResumePoint m_OnStart; // 0x48            
-            source2sdk::pulse_runtime_lib::CPulse_ResumePoint m_OnEnd; // 0x90            
-            source2sdk::pulse_runtime_lib::CPulse_ResumePoint m_OnCanceled; // 0xd8            
+            source2sdk::pulse_runtime_lib::CPulse_ResumePoint m_OnStart; // 0x48
+            source2sdk::pulse_runtime_lib::CPulse_ResumePoint m_OnEnd; // 0x90
+            source2sdk::pulse_runtime_lib::CPulse_ResumePoint m_OnCanceled; // 0xd8
             // metadata: MPropertyAttributeEditor "AnimGraphTag()"
-            CGlobalSymbol m_TagName; // 0x120            
+            CGlobalSymbol m_TagName; // 0x120
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPulseCell_Outflow_ListenForAnimgraphTag because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CPulseCell_Outflow_ListenForAnimgraphTag) == 0x128);
     };
 };

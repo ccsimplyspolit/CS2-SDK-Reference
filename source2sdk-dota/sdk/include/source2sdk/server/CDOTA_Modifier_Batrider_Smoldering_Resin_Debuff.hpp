@@ -17,24 +17,24 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a80
+        // Size: 0x1aa0
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Batrider_Smoldering_Resin_Debuff : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float damage; // 0x1a58            
-            float tick_rate; // 0x1a5c            
-            std::int32_t tick_attack_damage_pct; // 0x1a60            
-            std::int32_t total_ticks; // 0x1a64            
+            float damage; // 0x1a78
+            float tick_rate; // 0x1a7c
+            std::int32_t tick_attack_damage_pct; // 0x1a80
+            std::int32_t total_ticks; // 0x1a84
             // m_nDamageQueue has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<float> m_nDamageQueue;
-            char m_nDamageQueue[0x18]; // 0x1a68            
+            char m_nDamageQueue[0x18]; // 0x1a88
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Batrider_Smoldering_Resin_Debuff because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Batrider_Smoldering_Resin_Debuff) == 0x1a80);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Batrider_Smoldering_Resin_Debuff) == 0x1aa0);
     };
 };

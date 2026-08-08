@@ -17,7 +17,7 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a60
+        // Size: 0x1a80
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Dazzle_NothlProjection_PhysicalBodyDebuff : public source2sdk::client::CDOTA_Modifier_Muerta_PartingShot_PhysicalBodyDebuff
@@ -26,8 +26,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: CDOTA_Dazzle_NothlProjection_PhysicalBodyDebuff has no schema binary (size is a guess)
     };
 };

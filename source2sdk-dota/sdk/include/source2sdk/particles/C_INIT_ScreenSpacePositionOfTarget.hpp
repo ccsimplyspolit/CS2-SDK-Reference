@@ -23,7 +23,7 @@ namespace source2sdk
         // Size: 0xa10
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_INIT_ScreenSpacePositionOfTarget : public source2sdk::particles::CParticleFunctionInitializer
@@ -31,22 +31,22 @@ namespace source2sdk
         public:
             // metadata: MPropertyFriendlyName "target position"
             // metadata: MVectorIsCoordinate
-            source2sdk::particleslib::CPerParticleVecInput m_vecTargetPosition; // 0x1e0            
+            source2sdk::particleslib::CPerParticleVecInput m_vecTargetPosition; // 0x1e0
             // metadata: MPropertyFriendlyName "output behindness"
-            bool m_bOututBehindness; // 0x898            
+            bool m_bOututBehindness; // 0x898
             uint8_t _pad0899[0x3]; // 0x899
             // metadata: MPropertyFriendlyName "behindness output field"
             // metadata: MPropertyAttributeChoiceName "particlefield_scalar"
             // metadata: MPropertySuppressExpr "m_bOututBehindness == false"
-            source2sdk::particles::ParticleAttributeIndex_t m_nBehindFieldOutput; // 0x89c            
+            source2sdk::particles::ParticleAttributeIndex_t m_nBehindFieldOutput; // 0x89c
             // metadata: MPropertyFriendlyName "behindness output remap"
             // metadata: MPropertySuppressExpr "m_bOututBehindness == false"
-            source2sdk::particleslib::CParticleRemapFloatInput m_flBehindOutputRemap; // 0x8a0            
+            source2sdk::particleslib::CParticleRemapFloatInput m_flBehindOutputRemap; // 0x8a0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_INIT_ScreenSpacePositionOfTarget because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_INIT_ScreenSpacePositionOfTarget) == 0xa10);
     };
 };

@@ -26,7 +26,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xce0
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "CHandle< C_BasePlayerPawn > m_hTouchedPlayeres"
         #pragma pack(push, 1)
         class C_ItemWeaponParts : public source2sdk::client::CBaseAnimGraph
@@ -37,12 +37,12 @@ namespace source2sdk
             // metadata: MNotSaved
             // m_hTouchedPlayeres has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // C_NetworkUtlVectorBase<CHandle<source2sdk::client::C_BasePlayerPawn>> m_hTouchedPlayeres;
-            char m_hTouchedPlayeres[0x18]; // 0xcc8            
+            char m_hTouchedPlayeres[0x18]; // 0xcc8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_ItemWeaponParts because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_ItemWeaponParts) == 0xce0);
     };
 };

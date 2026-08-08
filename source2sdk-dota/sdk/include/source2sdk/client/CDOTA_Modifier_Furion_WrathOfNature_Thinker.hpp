@@ -17,23 +17,23 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a70
+        // Size: 0x1a90
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Furion_WrathOfNature_Thinker : public source2sdk::client::CDOTA_Buff
         {
         public:
-            std::int32_t damage; // 0x1a58            
-            std::int32_t max_targets; // 0x1a5c            
-            std::int32_t damage_percent_add; // 0x1a60            
-            float jump_delay; // 0x1a64            
-            std::int32_t m_iFixedDamage; // 0x1a68            
-            uint8_t _pad1a6c[0x4];
+            std::int32_t damage; // 0x1a78
+            std::int32_t max_targets; // 0x1a7c
+            std::int32_t damage_percent_add; // 0x1a80
+            float jump_delay; // 0x1a84
+            std::int32_t m_iFixedDamage; // 0x1a88
+            uint8_t _pad1a8c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Furion_WrathOfNature_Thinker because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Furion_WrathOfNature_Thinker) == 0x1a70);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Furion_WrathOfNature_Thinker) == 0x1a90);
     };
 };

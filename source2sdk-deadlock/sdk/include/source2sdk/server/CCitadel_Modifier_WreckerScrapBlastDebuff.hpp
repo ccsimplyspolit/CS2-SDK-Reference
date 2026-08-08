@@ -24,13 +24,13 @@ namespace source2sdk
         {
         public:
             uint8_t _pad00d0[0x80]; // 0xd0
-            float m_flEnemyMoveSlow; // 0x150            
+            float m_flEnemyMoveSlow; // 0x150
             uint8_t _pad0154[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_WreckerScrapBlastDebuff because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_WreckerScrapBlastDebuff) == 0x158);
     };
 };

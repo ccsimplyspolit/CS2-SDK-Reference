@@ -28,8 +28,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: C_DOTA_Ability_Special_Bonus_Evasion_75 has no schema binary (size is a guess)
     };
 };

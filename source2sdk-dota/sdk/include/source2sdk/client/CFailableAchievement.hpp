@@ -24,14 +24,14 @@ namespace source2sdk
         class CFailableAchievement : public source2sdk::client::CBaseAchievement
         {
         public:
-            bool m_bActivated; // 0xc0            
-            bool m_bFailed; // 0xc1            
+            bool m_bActivated; // 0xc0
+            bool m_bFailed; // 0xc1
             uint8_t _pad00c2[0x6];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CFailableAchievement because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CFailableAchievement) == 0xc8);
     };
 };

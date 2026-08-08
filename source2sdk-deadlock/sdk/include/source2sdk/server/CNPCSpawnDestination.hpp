@@ -25,17 +25,17 @@ namespace source2sdk
         class CNPCSpawnDestination : public source2sdk::server::CPointEntity
         {
         public:
-            float m_ReuseDelay; // 0x4a0            
+            float m_ReuseDelay; // 0x4a0
             uint8_t _pad04a4[0x4]; // 0x4a4
-            CUtlSymbolLarge m_RenameNPC; // 0x4a8            
-            source2sdk::entity2::GameTime_t m_TimeNextAvailable; // 0x4b0            
+            CUtlSymbolLarge m_RenameNPC; // 0x4a8
+            source2sdk::entity2::GameTime_t m_TimeNextAvailable; // 0x4b0
             uint8_t _pad04b4[0x4]; // 0x4b4
-            source2sdk::entity2::CEntityIOOutput m_OnSpawnNPC; // 0x4b8            
+            source2sdk::entity2::CEntityIOOutput m_OnSpawnNPC; // 0x4b8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CNPCSpawnDestination because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CNPCSpawnDestination) == 0x4d0);
     };
 };

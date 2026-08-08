@@ -35,39 +35,39 @@ namespace source2sdk
             // metadata: MNotSaved
             // m_ragEnabled has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // C_NetworkUtlVectorBase<bool> m_ragEnabled;
-            char m_ragEnabled[0x18]; // 0xc58            
+            char m_ragEnabled[0x18]; // 0xc58
             // metadata: MNotSaved
             // m_ragPos has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // C_NetworkUtlVectorBase<Vector> m_ragPos;
-            char m_ragPos[0x18]; // 0xc70            
+            char m_ragPos[0x18]; // 0xc70
             // metadata: MNotSaved
             // m_ragAngles has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // C_NetworkUtlVectorBase<QAngle> m_ragAngles;
-            char m_ragAngles[0x18]; // 0xc88            
+            char m_ragAngles[0x18]; // 0xc88
             // metadata: MNotSaved
-            float m_flBlendWeight; // 0xca0            
+            float m_flBlendWeight; // 0xca0
             // metadata: MNotSaved
             // m_hRagdollSource has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::C_BaseEntity> m_hRagdollSource;
-            char m_hRagdollSource[0x4]; // 0xca4            
+            char m_hRagdollSource[0x4]; // 0xca4
             // metadata: MNotSaved
-            source2sdk::modellib::AttachmentHandle_t m_iEyeAttachment; // 0xca8            
+            source2sdk::modellib::AttachmentHandle_t m_iEyeAttachment; // 0xca8
             uint8_t _pad0ca9[0x3]; // 0xca9
             // metadata: MNotSaved
-            float m_flBlendWeightCurrent; // 0xcac            
+            float m_flBlendWeightCurrent; // 0xcac
             // metadata: MNotSaved
             // m_parentPhysicsBoneIndices has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<std::int32_t> m_parentPhysicsBoneIndices;
-            char m_parentPhysicsBoneIndices[0x18]; // 0xcb0            
+            char m_parentPhysicsBoneIndices[0x18]; // 0xcb0
             // metadata: MNotSaved
             // m_worldSpaceBoneComputationOrder has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<std::int32_t> m_worldSpaceBoneComputationOrder;
-            char m_worldSpaceBoneComputationOrder[0x18]; // 0xcc8            
+            char m_worldSpaceBoneComputationOrder[0x18]; // 0xcc8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_RagdollProp because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_RagdollProp) == 0xce0);
     };
 };

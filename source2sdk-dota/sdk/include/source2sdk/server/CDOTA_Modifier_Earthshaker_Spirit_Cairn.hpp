@@ -25,7 +25,7 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a68
+        // Size: 0x1a88
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Earthshaker_Spirit_Cairn : public source2sdk::client::CDOTA_Buff
@@ -33,15 +33,15 @@ namespace source2sdk
         public:
             // m_hThinker has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hThinker;
-            char m_hThinker[0x4]; // 0x1a58            
-            source2sdk::client::ParticleIndex_t m_nFissureEffectIndex; // 0x1a5c            
-            std::int32_t m_nViewerID; // 0x1a60            
-            uint8_t _pad1a64[0x4];
+            char m_hThinker[0x4]; // 0x1a78
+            source2sdk::client::ParticleIndex_t m_nFissureEffectIndex; // 0x1a7c
+            std::int32_t m_nViewerID; // 0x1a80
+            uint8_t _pad1a84[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Earthshaker_Spirit_Cairn because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Earthshaker_Spirit_Cairn) == 0x1a68);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Earthshaker_Spirit_Cairn) == 0x1a88);
     };
 };

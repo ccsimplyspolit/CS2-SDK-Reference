@@ -34,13 +34,13 @@ namespace source2sdk
         public:
             // m_hSourceAbility has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CDOTABaseAbility> m_hSourceAbility;
-            char m_hSourceAbility[0x4]; // 0x580            
-            std::int32_t m_iShardCount; // 0x584            
+            char m_hSourceAbility[0x4]; // 0x580
+            std::int32_t m_iShardCount; // 0x584
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Furion_Sprout because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Furion_Sprout) == 0x588);
     };
 };

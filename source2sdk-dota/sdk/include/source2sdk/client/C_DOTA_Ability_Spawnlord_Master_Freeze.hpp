@@ -28,8 +28,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: C_DOTA_Ability_Spawnlord_Master_Freeze has no schema binary (size is a guess)
     };
 };

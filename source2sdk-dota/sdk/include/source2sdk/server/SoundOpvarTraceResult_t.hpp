@@ -19,23 +19,23 @@ namespace source2sdk
         // Size: 0x14
         // Has Trivial Destructor
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct SoundOpvarTraceResult_t
         {
         public:
-            VectorWS vPos; // 0x0            
-            bool bDidHit; // 0xc            
+            VectorWS vPos; // 0x0
+            bool bDidHit; // 0xc
             uint8_t _pad000d[0x3]; // 0xd
-            float flDistSqrToCenter; // 0x10            
+            float flDistSqrToCenter; // 0x10
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::SoundOpvarTraceResult_t, vPos) == 0x0);
         static_assert(offsetof(source2sdk::server::SoundOpvarTraceResult_t, bDidHit) == 0xc);
         static_assert(offsetof(source2sdk::server::SoundOpvarTraceResult_t, flDistSqrToCenter) == 0x10);
-        
+
         static_assert(sizeof(source2sdk::server::SoundOpvarTraceResult_t) == 0x14);
     };
 };

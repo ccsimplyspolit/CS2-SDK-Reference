@@ -19,23 +19,23 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x568
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "float m_flRadius"
         #pragma pack(push, 1)
         class CSoundEventSphereEntity : public source2sdk::server::CSoundEventEntity
         {
         public:
             // metadata: MNetworkEnable
-            float m_flRadius; // 0x560            
+            float m_flRadius; // 0x560
             uint8_t _pad0564[0x4];
-            
+
             // Datamap fields:
             // void CSoundEventSphereEntitySoundEventSphereThink; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSoundEventSphereEntity because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CSoundEventSphereEntity) == 0x568);
     };
 };

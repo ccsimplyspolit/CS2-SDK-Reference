@@ -24,13 +24,13 @@ namespace source2sdk
         class C_Citadel_Projectile_Bebop_Hook : public source2sdk::client::C_CitadelProjectile
         {
         public:
-            source2sdk::client::ParticleIndex_t m_iChainEffect; // 0xad8            
+            source2sdk::client::ParticleIndex_t m_iChainEffect; // 0xad8
             uint8_t _pad0adc[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_Citadel_Projectile_Bebop_Hook because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_Citadel_Projectile_Bebop_Hook) == 0xae0);
     };
 };

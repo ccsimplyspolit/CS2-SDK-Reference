@@ -20,20 +20,20 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x1260
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "GameTime_t m_nFastFireEndTime"
         #pragma pack(push, 1)
         class CCitadel_WeaponUpgrade_BurstFire : public source2sdk::client::CCitadel_Item
         {
         public:
             // metadata: MNetworkEnable
-            source2sdk::entity2::GameTime_t m_nFastFireEndTime; // 0x11d8            
+            source2sdk::entity2::GameTime_t m_nFastFireEndTime; // 0x11d8
             uint8_t _pad11dc[0x84];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_WeaponUpgrade_BurstFire because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_WeaponUpgrade_BurstFire) == 0x1260);
     };
 };

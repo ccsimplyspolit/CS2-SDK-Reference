@@ -24,17 +24,17 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0000[0x30]; // 0x0
-            std::int32_t m_nTier; // 0x30            
+            std::int32_t m_nTier; // 0x30
             uint8_t _pad0034[0x4]; // 0x34
             // m_nAbilityID has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // C_NetworkUtlVectorBase<source2sdk::client::AbilityID_t> m_nAbilityID;
-            char m_nAbilityID[0x18]; // 0x38            
+            char m_nAbilityID[0x18]; // 0x38
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::TierNeutralInfo_t, m_nTier) == 0x30);
         static_assert(offsetof(source2sdk::client::TierNeutralInfo_t, m_nAbilityID) == 0x38);
-        
+
         static_assert(sizeof(source2sdk::client::TierNeutralInfo_t) == 0x50);
     };
 };

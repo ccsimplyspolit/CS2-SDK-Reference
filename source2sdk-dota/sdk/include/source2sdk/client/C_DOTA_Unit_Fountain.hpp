@@ -17,7 +17,7 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x1a20
+        // Size: 0x1a28
         // Has VTable
         // Construct allowed
         // MClassHasEntityLimitedDataDesc
@@ -28,8 +28,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: C_DOTA_Unit_Fountain has no schema binary (size is a guess)
     };
 };

@@ -21,7 +21,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xeb8
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "CCitadelAbilityComponent::Storage_t m_CCitadelAbilityComponent"
         // static metadata: MNetworkVarNames "float m_flAttackRange"
         // static metadata: MNetworkVarNames "float m_flAimPitch"
@@ -36,27 +36,27 @@ namespace source2sdk
             // metadata: MNetworkUserGroup "CCitadelAbilityComponent"
             // metadata: MNetworkAlias "CCitadelAbilityComponent"
             // metadata: MNetworkTypeAlias "CCitadelAbilityComponent"
-            source2sdk::client::CCitadelAbilityComponent m_CCitadelAbilityComponent; // 0xcb8            
+            source2sdk::client::CCitadelAbilityComponent m_CCitadelAbilityComponent; // 0xcb8
             uint8_t _pad0ea0[0x4]; // 0xea0
             // metadata: MNetworkEnable
             // metadata: MNotSaved
-            float m_flAttackRange; // 0xea4            
+            float m_flAttackRange; // 0xea4
             // metadata: MNetworkEnable
             // metadata: MNotSaved
-            float m_flAimPitch; // 0xea8            
+            float m_flAimPitch; // 0xea8
             // metadata: MNetworkEnable
             // metadata: MNotSaved
-            bool m_bHasRecentlyAttacked; // 0xeac            
+            bool m_bHasRecentlyAttacked; // 0xeac
             uint8_t _pad0ead[0x3]; // 0xead
             // metadata: MNetworkEnable
-            float m_flLifeTime; // 0xeb0            
+            float m_flLifeTime; // 0xeb0
             // metadata: MNetworkEnable
-            source2sdk::entity2::GameTime_t m_flSpawnTime; // 0xeb4            
+            source2sdk::entity2::GameTime_t m_flSpawnTime; // 0xeb4
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_NPC_ShieldedSentry because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_NPC_ShieldedSentry) == 0xeb8);
     };
 };

@@ -17,18 +17,18 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x388
+        // Size: 0x398
         // Has VTable
         #pragma pack(push, 1)
         class CCitadel_Modifier_LifestrikeGauntlets : public source2sdk::server::CCitadel_Modifier_BaseEventProc
         {
         public:
-            uint8_t _pad0208[0x180];
+            uint8_t _pad0208[0x190];
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: CCitadel_Modifier_LifestrikeGauntlets has no schema binary (size is a guess)
     };
 };

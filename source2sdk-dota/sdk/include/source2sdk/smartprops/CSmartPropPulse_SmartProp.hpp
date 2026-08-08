@@ -21,7 +21,7 @@ namespace source2sdk
         // Size: 0x50
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Smart Prop Reference"
         #pragma pack(push, 1)
@@ -31,12 +31,12 @@ namespace source2sdk
             // metadata: MPropertyDescription "Name of the target smart prop resource (.vsmart) to evaluate."
             // m_hSmartProp has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CStrongHandle<source2sdk::resourcesystem::InfoForResourceTypeCSmartProp> m_hSmartProp;
-            char m_hSmartProp[0x8]; // 0x48            
+            char m_hSmartProp[0x8]; // 0x48
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSmartPropPulse_SmartProp because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::smartprops::CSmartPropPulse_SmartProp) == 0x50);
     };
 };

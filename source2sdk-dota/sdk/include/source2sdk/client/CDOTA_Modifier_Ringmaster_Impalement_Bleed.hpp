@@ -17,23 +17,23 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a70
+        // Size: 0x1a90
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Ringmaster_Impalement_Bleed : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float bleed_health_pct; // 0x1a58            
-            float tick_interval; // 0x1a5c            
-            float wheel_damage_multiplier; // 0x1a60            
-            float slow_percent; // 0x1a64            
-            float bleed_creep_dps; // 0x1a68            
-            float slow_duration; // 0x1a6c            
+            float bleed_health_pct; // 0x1a78
+            float tick_interval; // 0x1a7c
+            float wheel_damage_multiplier; // 0x1a80
+            float slow_percent; // 0x1a84
+            float bleed_creep_dps; // 0x1a88
+            float slow_duration; // 0x1a8c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Ringmaster_Impalement_Bleed because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Ringmaster_Impalement_Bleed) == 0x1a70);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Ringmaster_Impalement_Bleed) == 0x1a90);
     };
 };

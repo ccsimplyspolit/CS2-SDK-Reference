@@ -30,15 +30,15 @@ namespace source2sdk
         class CCitadel_Modifier_UltCombo_Self : public source2sdk::server::CCitadelModifier
         {
         public:
-            QAngle m_angles; // 0xd0            
+            QAngle m_angles; // 0xd0
             // m_hTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hTarget;
-            char m_hTarget[0x4]; // 0xdc            
+            char m_hTarget[0x4]; // 0xdc
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_UltCombo_Self because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_UltCombo_Self) == 0xe0);
     };
 };

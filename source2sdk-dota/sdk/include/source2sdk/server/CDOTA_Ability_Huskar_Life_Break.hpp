@@ -33,17 +33,18 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0580[0x10]; // 0x580
-            VectorWS m_vProjectileLocation; // 0x590            
+            std::int32_t m_nLifeBreakProjectileHandle; // 0x590
+            VectorWS m_vProjectileLocation; // 0x594
             // m_hTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hTarget;
-            char m_hTarget[0x4]; // 0x59c            
-            bool m_bInterrupted; // 0x5a0            
-            uint8_t _pad05a1[0x7];
+            char m_hTarget[0x4]; // 0x5a0
+            bool m_bInterrupted; // 0x5a4
+            uint8_t _pad05a5[0x3];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Huskar_Life_Break because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Huskar_Life_Break) == 0x5a8);
     };
 };

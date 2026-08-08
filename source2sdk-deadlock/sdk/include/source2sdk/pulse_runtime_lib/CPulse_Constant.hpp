@@ -17,21 +17,21 @@ namespace source2sdk
         // Alignment: 0x8
         // Standard-layout class: true
         // Size: 0x30
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CPulse_Constant
         {
         public:
-            CPulseValueFullType m_Type; // 0x0            
-            KeyValues3 m_Value; // 0x18            
+            CPulseValueFullType m_Type; // 0x0
+            KeyValues3 m_Value; // 0x18
             uint8_t _pad0028[0x8];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::pulse_runtime_lib::CPulse_Constant, m_Type) == 0x0);
         static_assert(offsetof(source2sdk::pulse_runtime_lib::CPulse_Constant, m_Value) == 0x18);
-        
+
         static_assert(sizeof(source2sdk::pulse_runtime_lib::CPulse_Constant) == 0x30);
     };
 };

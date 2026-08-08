@@ -21,25 +21,25 @@ namespace source2sdk
         // Size: 0x1f0
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_INIT_Orient2DRelToCP : public source2sdk::particles::CParticleFunctionInitializer
         {
         public:
             // metadata: MPropertyFriendlyName "control point"
-            std::int32_t m_nCP; // 0x1e0            
+            std::int32_t m_nCP; // 0x1e0
             // metadata: MPropertyFriendlyName "rotation field"
             // metadata: MPropertyAttributeChoiceName "particlefield_rotation"
-            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1e4            
+            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1e4
             // metadata: MPropertyFriendlyName "rotation offset"
-            float m_flRotOffset; // 0x1e8            
+            float m_flRotOffset; // 0x1e8
             uint8_t _pad01ec[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_INIT_Orient2DRelToCP because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_INIT_Orient2DRelToCP) == 0x1f0);
     };
 };

@@ -22,18 +22,18 @@ namespace source2sdk
         // Has VTable
         // Construct allowed
         // Construct disallowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CMarkupSearch_PathCostAreaFilter : public source2sdk::client::INavPathCostAreaFilter
         {
         public:
-            source2sdk::server::CMarkupSearchHelper m_searchHelper; // 0x8            
+            source2sdk::server::CMarkupSearchHelper m_searchHelper; // 0x8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CMarkupSearch_PathCostAreaFilter because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CMarkupSearch_PathCostAreaFilter) == 0x2b8);
     };
 };

@@ -19,7 +19,7 @@ namespace source2sdk
         // Size: 0x1
         // Has Trivial Constructor
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MResourceTypeForInfoType "econitem"
         #pragma pack(push, 1)
         class InfoForResourceTypeCCSGOEconItem
@@ -27,8 +27,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::resourcesystem::InfoForResourceTypeCCSGOEconItem) == 0x1);
     };
 };

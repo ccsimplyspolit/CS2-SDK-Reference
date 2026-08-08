@@ -25,10 +25,10 @@ namespace source2sdk
         {
         public:
             uint8_t _pad04a0[0x8]; // 0x4a0
-            bool m_isOn; // 0x4a8            
+            bool m_isOn; // 0x4a8
             uint8_t _pad04a9[0x3]; // 0x4a9
-            source2sdk::server::navproperties_t m_navProperty; // 0x4ac            
-            
+            source2sdk::server::navproperties_t m_navProperty; // 0x4ac
+
             // Datamap fields:
             // void InputTurnOn; // 0x0
             // void InputTurnOff; // 0x0
@@ -36,9 +36,9 @@ namespace source2sdk
             // CUtlString navprop; // 0x7fffffff
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CLogicNavigation because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CLogicNavigation) == 0x4b0);
     };
 };

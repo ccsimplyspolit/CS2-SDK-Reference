@@ -21,7 +21,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x980
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CCitadel_Modifier_Necro_HauntingSkull_AreaVData : public source2sdk::server::CCitadelModifierVData
@@ -30,32 +30,32 @@ namespace source2sdk
             // metadata: MPropertyStartGroup "Modifiers"
             // m_DebuffModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEmbeddedSubclass<source2sdk::server::CCitadelModifier> m_DebuffModifier;
-            char m_DebuffModifier[0x10]; // 0x750            
+            char m_DebuffModifier[0x10]; // 0x750
             // m_SlowModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEmbeddedSubclass<source2sdk::server::CCitadelModifier> m_SlowModifier;
-            char m_SlowModifier[0x10]; // 0x760            
+            char m_SlowModifier[0x10]; // 0x760
             // metadata: MPropertyStartGroup "Visuals"
             // m_PreviewRingParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_PreviewRingParticle;
-            char m_PreviewRingParticle[0xe0]; // 0x770            
+            char m_PreviewRingParticle[0xe0]; // 0x770
             // m_AreaEffect has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_AreaEffect;
-            char m_AreaEffect[0xe0]; // 0x850            
+            char m_AreaEffect[0xe0]; // 0x850
             // metadata: MPropertyStartGroup "Sounds"
-            CSoundEventName m_strArmingSound; // 0x930            
-            CSoundEventName m_strArmedSound; // 0x940            
-            CSoundEventName m_strLoopingSound; // 0x950            
-            CSoundEventName m_strHitSound; // 0x960            
+            CSoundEventName m_strArmingSound; // 0x930
+            CSoundEventName m_strArmedSound; // 0x940
+            CSoundEventName m_strLoopingSound; // 0x950
+            CSoundEventName m_strHitSound; // 0x960
             // metadata: MPropertyStartGroup "Gameplay"
-            float m_flInitialNormalInfluence; // 0x970            
-            float m_flInitialRandomVariance; // 0x974            
-            float m_flSpawnPositionNavMeshSearchRange; // 0x978            
+            float m_flInitialNormalInfluence; // 0x970
+            float m_flInitialRandomVariance; // 0x974
+            float m_flSpawnPositionNavMeshSearchRange; // 0x978
             uint8_t _pad097c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_Necro_HauntingSkull_AreaVData because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_Necro_HauntingSkull_AreaVData) == 0x980);
     };
 };

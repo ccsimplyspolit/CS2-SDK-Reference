@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x28
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "EStreetBrawlGameState m_eStreetBrawlState"
         // static metadata: MNetworkVarNames "GameTime_t m_flStreetBrawlStateStartTime"
         // static metadata: MNetworkVarNames "GameTime_t m_flNextStateTime"
@@ -36,24 +36,24 @@ namespace source2sdk
             uint8_t _pad0000[0x8]; // 0x0
             // metadata: MNetworkEnable
             // metadata: MNetworkChangeCallback "streetBrawlStateChanged"
-            source2sdk::client::EStreetBrawlGameState m_eStreetBrawlState; // 0x8            
+            source2sdk::client::EStreetBrawlGameState m_eStreetBrawlState; // 0x8
             // metadata: MNetworkEnable
-            source2sdk::entity2::GameTime_t m_flStreetBrawlStateStartTime; // 0xc            
+            source2sdk::entity2::GameTime_t m_flStreetBrawlStateStartTime; // 0xc
             // metadata: MNetworkEnable
-            source2sdk::entity2::GameTime_t m_flNextStateTime; // 0x10            
+            source2sdk::entity2::GameTime_t m_flNextStateTime; // 0x10
             // metadata: MNetworkEnable
-            float m_flStreetBrawlTotalNonCombatTime; // 0x14            
+            float m_flStreetBrawlTotalNonCombatTime; // 0x14
             // metadata: MNetworkEnable
-            std::int32_t m_iRound; // 0x18            
+            std::int32_t m_iRound; // 0x18
             // metadata: MNetworkEnable
-            std::int32_t m_iLastBuyCountDown; // 0x1c            
+            std::int32_t m_iLastBuyCountDown; // 0x1c
             // metadata: MNetworkEnable
-            std::int32_t m_iTeamSapphireScore; // 0x20            
+            std::int32_t m_iTeamSapphireScore; // 0x20
             // metadata: MNetworkEnable
-            std::int32_t m_iTeamAmberScore; // 0x24            
+            std::int32_t m_iTeamAmberScore; // 0x24
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::CStreetBrawlController, m_eStreetBrawlState) == 0x8);
         static_assert(offsetof(source2sdk::client::CStreetBrawlController, m_flStreetBrawlStateStartTime) == 0xc);
         static_assert(offsetof(source2sdk::client::CStreetBrawlController, m_flNextStateTime) == 0x10);
@@ -62,7 +62,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::client::CStreetBrawlController, m_iLastBuyCountDown) == 0x1c);
         static_assert(offsetof(source2sdk::client::CStreetBrawlController, m_iTeamSapphireScore) == 0x20);
         static_assert(offsetof(source2sdk::client::CStreetBrawlController, m_iTeamAmberScore) == 0x24);
-        
+
         static_assert(sizeof(source2sdk::client::CStreetBrawlController) == 0x28);
     };
 };

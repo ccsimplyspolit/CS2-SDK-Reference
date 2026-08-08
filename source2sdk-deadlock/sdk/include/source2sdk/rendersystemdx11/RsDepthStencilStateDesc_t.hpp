@@ -28,18 +28,18 @@ namespace source2sdk
             uint8_t m_bDepthTestEnable: 1;
             uint8_t m_bDepthWriteEnable: 1;
             // end of bitfield block// 2 bits
-            source2sdk::rendersystemdx11::RsComparison_t m_depthFunc; // 0x1            
+            source2sdk::rendersystemdx11::RsComparison_t m_depthFunc; // 0x1
             // Property RsDepthStencilStateDesc_t::m_stencilState appears to be misaligned. Its alignment is unknown and it is not aligned to max_align_t (8).
             char m_stencilState[0x6];
-            // source2sdk::rendersystemdx11::RsStencilStateDesc_t m_stencilState; // 0x2            
+            // source2sdk::rendersystemdx11::RsStencilStateDesc_t m_stencilState; // 0x2
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offset of bitfield RsDepthStencilStateDesc_t::m_bDepthTestEnable
         // Cannot assert offset of bitfield RsDepthStencilStateDesc_t::m_bDepthWriteEnable
         static_assert(offsetof(source2sdk::rendersystemdx11::RsDepthStencilStateDesc_t, m_depthFunc) == 0x1);
         static_assert(offsetof(source2sdk::rendersystemdx11::RsDepthStencilStateDesc_t, m_stencilState) == 0x2);
-        
+
         static_assert(sizeof(source2sdk::rendersystemdx11::RsDepthStencilStateDesc_t) == 0x8);
     };
 };

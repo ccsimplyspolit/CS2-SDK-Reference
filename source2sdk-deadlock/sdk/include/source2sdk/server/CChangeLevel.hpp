@@ -24,25 +24,25 @@ namespace source2sdk
         class CChangeLevel : public source2sdk::server::CBaseTrigger
         {
         public:
-            CUtlString m_sMapName; // 0x8e0            
-            CUtlString m_sLandmarkName; // 0x8e8            
-            source2sdk::entity2::CEntityIOOutput m_OnChangeLevel; // 0x8f0            
-            bool m_bTouched; // 0x908            
-            bool m_bNoTouch; // 0x909            
-            bool m_bNewChapter; // 0x90a            
+            CUtlString m_sMapName; // 0x8e0
+            CUtlString m_sLandmarkName; // 0x8e8
+            source2sdk::entity2::CEntityIOOutput m_OnChangeLevel; // 0x8f0
+            bool m_bTouched; // 0x908
+            bool m_bNoTouch; // 0x909
+            bool m_bNewChapter; // 0x90a
             // metadata: MNotSaved
-            bool m_bOnChangeLevelFired; // 0x90b            
+            bool m_bOnChangeLevelFired; // 0x90b
             uint8_t _pad090c[0x4];
-            
+
             // Datamap fields:
             // void InputChangeLevel; // 0x0
             // CUtlString map; // 0x7fffffff
             // CUtlString landmark; // 0x7fffffff
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CChangeLevel because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CChangeLevel) == 0x910);
     };
 };

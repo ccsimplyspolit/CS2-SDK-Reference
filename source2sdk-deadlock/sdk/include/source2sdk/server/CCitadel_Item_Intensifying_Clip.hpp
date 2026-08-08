@@ -24,13 +24,13 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0f78[0x80]; // 0xf78
-            float m_flSpinUpTime; // 0xff8            
+            float m_flSpinUpTime; // 0xff8
             uint8_t _pad0ffc[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Item_Intensifying_Clip because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Item_Intensifying_Clip) == 0x1000);
     };
 };

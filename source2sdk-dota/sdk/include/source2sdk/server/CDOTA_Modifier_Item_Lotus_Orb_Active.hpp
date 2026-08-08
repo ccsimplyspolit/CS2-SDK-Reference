@@ -18,18 +18,18 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1b48
+        // Size: 0x1b68
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Item_Lotus_Orb_Active : public source2sdk::client::CDOTA_Buff
         {
         public:
-            source2sdk::client::CModifierParams m_LastParams; // 0x1a58            
+            source2sdk::client::CModifierParams m_LastParams; // 0x1a78
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Item_Lotus_Orb_Active because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Item_Lotus_Orb_Active) == 0x1b48);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Item_Lotus_Orb_Active) == 0x1b68);
     };
 };

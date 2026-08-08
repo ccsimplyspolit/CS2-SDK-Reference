@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x8
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CBaseAnimGraphVariationUserData : public source2sdk::animlib::CNmGraphVariationUserData
@@ -28,8 +28,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::client::CBaseAnimGraphVariationUserData) == 0x8);
     };
 };

@@ -24,21 +24,21 @@ namespace source2sdk
         class CCitadel_Modifier_MageWalk : public source2sdk::client::CCitadelModifier
         {
         public:
-            bool m_bIsFakeout; // 0xc0            
-            bool m_bTeleported; // 0xc1            
+            bool m_bIsFakeout; // 0xc0
+            bool m_bTeleported; // 0xc1
             uint8_t _pad00c2[0x2]; // 0xc2
-            source2sdk::client::ParticleIndex_t m_particleStart; // 0xc4            
-            source2sdk::client::ParticleIndex_t m_particleEnd; // 0xc8            
-            source2sdk::client::ParticleIndex_t m_particleTrail; // 0xcc            
-            Vector m_vecEndLocation; // 0xd0            
-            Vector m_vecStartPosition; // 0xdc            
-            Vector m_vecEndLocationCaster; // 0xe8            
+            source2sdk::client::ParticleIndex_t m_particleStart; // 0xc4
+            source2sdk::client::ParticleIndex_t m_particleEnd; // 0xc8
+            source2sdk::client::ParticleIndex_t m_particleTrail; // 0xcc
+            Vector m_vecEndLocation; // 0xd0
+            Vector m_vecStartPosition; // 0xdc
+            Vector m_vecEndLocationCaster; // 0xe8
             uint8_t _pad00f4[0x304];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_MageWalk because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Modifier_MageWalk) == 0x3f8);
     };
 };

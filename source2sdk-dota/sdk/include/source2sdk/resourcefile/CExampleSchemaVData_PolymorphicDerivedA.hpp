@@ -20,19 +20,19 @@ namespace source2sdk
         // Size: 0x18
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CExampleSchemaVData_PolymorphicDerivedA : public source2sdk::resourcefile::CExampleSchemaVData_PolymorphicBase
         {
         public:
-            std::int32_t m_nDerivedA; // 0x10            
+            std::int32_t m_nDerivedA; // 0x10
             uint8_t _pad0014[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CExampleSchemaVData_PolymorphicDerivedA because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::resourcefile::CExampleSchemaVData_PolymorphicDerivedA) == 0x18);
     };
 };

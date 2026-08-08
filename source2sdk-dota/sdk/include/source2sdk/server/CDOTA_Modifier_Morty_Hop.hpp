@@ -17,30 +17,30 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a98
+        // Size: 0x1ab8
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Morty_Hop : public source2sdk::client::CDOTA_Buff
         {
         public:
-            VectorWS m_vStartPosition; // 0x1a58            
-            VectorWS m_vTargetPosition; // 0x1a64            
-            float m_flCurrentTimeHoriz; // 0x1a70            
-            float m_flCurrentTimeVert; // 0x1a74            
-            float m_flZCoefficientA; // 0x1a78            
-            float m_flZCoefficientB; // 0x1a7c            
-            bool m_bInterrupted; // 0x1a80            
-            uint8_t _pad1a81[0x3]; // 0x1a81
-            float duration; // 0x1a84            
-            std::int32_t height; // 0x1a88            
-            std::int32_t damage; // 0x1a8c            
-            std::int32_t damage_radius; // 0x1a90            
-            uint8_t _pad1a94[0x4];
+            VectorWS m_vStartPosition; // 0x1a78
+            VectorWS m_vTargetPosition; // 0x1a84
+            float m_flCurrentTimeHoriz; // 0x1a90
+            float m_flCurrentTimeVert; // 0x1a94
+            float m_flZCoefficientA; // 0x1a98
+            float m_flZCoefficientB; // 0x1a9c
+            bool m_bInterrupted; // 0x1aa0
+            uint8_t _pad1aa1[0x3]; // 0x1aa1
+            float duration; // 0x1aa4
+            std::int32_t height; // 0x1aa8
+            std::int32_t damage; // 0x1aac
+            std::int32_t damage_radius; // 0x1ab0
+            uint8_t _pad1ab4[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Morty_Hop because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Morty_Hop) == 0x1a98);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Morty_Hop) == 0x1ab8);
     };
 };

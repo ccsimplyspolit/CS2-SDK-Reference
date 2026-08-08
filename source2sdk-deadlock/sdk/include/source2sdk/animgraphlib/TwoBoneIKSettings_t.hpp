@@ -22,35 +22,35 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x160
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct TwoBoneIKSettings_t
         {
         public:
-            source2sdk::animgraphlib::IkEndEffectorType m_endEffectorType; // 0x0            
+            source2sdk::animgraphlib::IkEndEffectorType m_endEffectorType; // 0x0
             uint8_t _pad0004[0xc]; // 0x4
-            source2sdk::modellib::CAnimAttachment m_endEffectorAttachment; // 0x10            
-            source2sdk::animgraphlib::IkTargetType m_targetType; // 0x90            
+            source2sdk::modellib::CAnimAttachment m_endEffectorAttachment; // 0x10
+            source2sdk::animgraphlib::IkTargetType m_targetType; // 0x90
             uint8_t _pad0094[0xc]; // 0x94
-            source2sdk::modellib::CAnimAttachment m_targetAttachment; // 0xa0            
-            std::int32_t m_targetBoneIndex; // 0x120            
-            source2sdk::animgraphlib::CAnimParamHandle m_hPositionParam; // 0x124            
-            source2sdk::animgraphlib::CAnimParamHandle m_hRotationParam; // 0x126            
-            bool m_bAlwaysUseFallbackHinge; // 0x128            
+            source2sdk::modellib::CAnimAttachment m_targetAttachment; // 0xa0
+            std::int32_t m_targetBoneIndex; // 0x120
+            source2sdk::animgraphlib::CAnimParamHandle m_hPositionParam; // 0x124
+            source2sdk::animgraphlib::CAnimParamHandle m_hRotationParam; // 0x126
+            bool m_bAlwaysUseFallbackHinge; // 0x128
             uint8_t _pad0129[0x7]; // 0x129
-            VectorAligned m_vLsFallbackHingeAxis; // 0x130            
-            std::int32_t m_nFixedBoneIndex; // 0x140            
-            std::int32_t m_nMiddleBoneIndex; // 0x144            
-            std::int32_t m_nEndBoneIndex; // 0x148            
-            bool m_bMatchTargetOrientation; // 0x14c            
-            bool m_bConstrainTwist; // 0x14d            
+            VectorAligned m_vLsFallbackHingeAxis; // 0x130
+            std::int32_t m_nFixedBoneIndex; // 0x140
+            std::int32_t m_nMiddleBoneIndex; // 0x144
+            std::int32_t m_nEndBoneIndex; // 0x148
+            bool m_bMatchTargetOrientation; // 0x14c
+            bool m_bConstrainTwist; // 0x14d
             uint8_t _pad014e[0x2]; // 0x14e
-            float m_flMaxTwist; // 0x150            
+            float m_flMaxTwist; // 0x150
             uint8_t _pad0154[0xc];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::animgraphlib::TwoBoneIKSettings_t, m_endEffectorType) == 0x0);
         static_assert(offsetof(source2sdk::animgraphlib::TwoBoneIKSettings_t, m_endEffectorAttachment) == 0x10);
         static_assert(offsetof(source2sdk::animgraphlib::TwoBoneIKSettings_t, m_targetType) == 0x90);
@@ -66,7 +66,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::animgraphlib::TwoBoneIKSettings_t, m_bMatchTargetOrientation) == 0x14c);
         static_assert(offsetof(source2sdk::animgraphlib::TwoBoneIKSettings_t, m_bConstrainTwist) == 0x14d);
         static_assert(offsetof(source2sdk::animgraphlib::TwoBoneIKSettings_t, m_flMaxTwist) == 0x150);
-        
+
         static_assert(sizeof(source2sdk::animgraphlib::TwoBoneIKSettings_t) == 0x160);
     };
 };

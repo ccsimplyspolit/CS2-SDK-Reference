@@ -24,23 +24,23 @@ namespace source2sdk
         class CMessageEntity : public source2sdk::server::CPointEntity
         {
         public:
-            std::int32_t m_radius; // 0x498            
+            std::int32_t m_radius; // 0x498
             uint8_t _pad049c[0x4]; // 0x49c
-            CUtlSymbolLarge m_messageText; // 0x4a0            
-            bool m_drawText; // 0x4a8            
-            bool m_bDeveloperOnly; // 0x4a9            
-            bool m_bEnabled; // 0x4aa            
+            CUtlSymbolLarge m_messageText; // 0x4a0
+            bool m_drawText; // 0x4a8
+            bool m_bDeveloperOnly; // 0x4a9
+            bool m_bEnabled; // 0x4aa
             uint8_t _pad04ab[0x5];
-            
+
             // Datamap fields:
             // void InputEnable; // 0x0
             // void InputDisable; // 0x0
             // CUtlSymbolLarge InputSetMessage; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CMessageEntity because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CMessageEntity) == 0x4b0);
     };
 };

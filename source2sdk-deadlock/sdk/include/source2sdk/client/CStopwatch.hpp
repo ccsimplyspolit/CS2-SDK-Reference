@@ -23,12 +23,12 @@ namespace source2sdk
         class CStopwatch : public source2sdk::client::CStopwatchBase
         {
         public:
-            float m_flInterval; // 0xc            
+            float m_flInterval; // 0xc
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CStopwatch because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CStopwatch) == 0x10);
     };
 };

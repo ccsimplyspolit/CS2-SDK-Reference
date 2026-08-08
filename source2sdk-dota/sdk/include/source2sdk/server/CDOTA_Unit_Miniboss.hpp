@@ -26,7 +26,7 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x18d8
+        // Size: 0x18e0
         // Has VTable
         // Construct allowed
         // MClassHasEntityLimitedDataDesc
@@ -34,21 +34,21 @@ namespace source2sdk
         class CDOTA_Unit_Miniboss : public source2sdk::server::CDOTA_BaseNPC_Additive
         {
         public:
-            std::int32_t m_nVisualTeam; // 0x18a0            
-            uint8_t _pad18a4[0x4]; // 0x18a4
-            source2sdk::entity2::GameTime_t m_flTransitionTimestamp; // 0x18a8            
-            std::int32_t m_nTempViewer; // 0x18ac            
+            std::int32_t m_nVisualTeam; // 0x18a8
+            uint8_t _pad18ac[0x4]; // 0x18ac
+            source2sdk::entity2::GameTime_t m_flTransitionTimestamp; // 0x18b0
+            std::int32_t m_nTempViewer; // 0x18b4
             // m_hAttackingHeroes has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::server::CBaseEntity>> m_hAttackingHeroes;
-            char m_hAttackingHeroes[0x18]; // 0x18b0            
-            uint8_t _pad18c8[0x8]; // 0x18c8
-            source2sdk::client::ParticleIndex_t nShieldFX; // 0x18d0            
-            uint8_t _pad18d4[0x4];
+            char m_hAttackingHeroes[0x18]; // 0x18b8
+            uint8_t _pad18d0[0x8]; // 0x18d0
+            source2sdk::client::ParticleIndex_t nShieldFX; // 0x18d8
+            uint8_t _pad18dc[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Unit_Miniboss because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Unit_Miniboss) == 0x18d8);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Unit_Miniboss) == 0x18e0);
     };
 };

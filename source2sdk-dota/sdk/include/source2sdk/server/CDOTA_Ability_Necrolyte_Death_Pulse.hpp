@@ -26,13 +26,13 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0580[0x14]; // 0x580
-            bool m_bIsDeathSeekerCast; // 0x594            
+            bool m_bIsDeathSeekerCast; // 0x594
             uint8_t _pad0595[0x3];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Necrolyte_Death_Pulse because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Necrolyte_Death_Pulse) == 0x598);
     };
 };

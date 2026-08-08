@@ -18,20 +18,20 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a78
+        // Size: 0x1a98
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Special_Bonus_Spell_Block : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float block_cooldown; // 0x1a58            
-            uint8_t _pad1a5c[0x4]; // 0x1a5c
-            source2sdk::client::CountdownTimer m_CooldownTimer; // 0x1a60            
+            float block_cooldown; // 0x1a78
+            uint8_t _pad1a7c[0x4]; // 0x1a7c
+            source2sdk::client::CountdownTimer m_CooldownTimer; // 0x1a80
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Special_Bonus_Spell_Block because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Special_Bonus_Spell_Block) == 0x1a78);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Special_Bonus_Spell_Block) == 0x1a98);
     };
 };

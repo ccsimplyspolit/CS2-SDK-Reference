@@ -27,8 +27,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: CSpriteAlias_env_glow has no schema binary (size is a guess)
     };
 };

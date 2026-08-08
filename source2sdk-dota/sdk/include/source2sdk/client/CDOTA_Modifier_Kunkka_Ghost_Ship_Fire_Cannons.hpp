@@ -17,23 +17,23 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a70
+        // Size: 0x1a90
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Kunkka_Ghost_Ship_Fire_Cannons : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float m_flDistance; // 0x1a58            
-            float m_flSpeed; // 0x1a5c            
-            std::int32_t m_nNumCannons; // 0x1a60            
-            float m_flProjectileRadius; // 0x1a64            
-            std::int32_t m_hGhostShipProjectile; // 0x1a68            
-            std::int32_t m_nVolleyNumber; // 0x1a6c            
+            float m_flDistance; // 0x1a78
+            float m_flSpeed; // 0x1a7c
+            std::int32_t m_nNumCannons; // 0x1a80
+            float m_flProjectileRadius; // 0x1a84
+            std::int32_t m_hGhostShipProjectile; // 0x1a88
+            std::int32_t m_nVolleyNumber; // 0x1a8c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Kunkka_Ghost_Ship_Fire_Cannons because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Kunkka_Ghost_Ship_Fire_Cannons) == 0x1a70);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Kunkka_Ghost_Ship_Fire_Cannons) == 0x1a90);
     };
 };

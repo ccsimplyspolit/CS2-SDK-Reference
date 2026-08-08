@@ -25,16 +25,16 @@ namespace source2sdk
         class CAI_MotorGroundAnimGraph_State_Custom : public source2sdk::server::CAI_MotorGroundAnimGraph_State
         {
         public:
-            bool m_bFromMovement; // 0x20            
-            bool m_bWasMovingOffPath; // 0x21            
-            bool m_bRepathed; // 0x22            
+            bool m_bFromMovement; // 0x20
+            bool m_bWasMovingOffPath; // 0x21
+            bool m_bRepathed; // 0x22
             uint8_t _pad0023[0x5]; // 0x23
-            source2sdk::server::AI_CustomMoveRequest m_request; // 0x28            
+            source2sdk::server::AI_CustomMoveRequest m_request; // 0x28
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CAI_MotorGroundAnimGraph_State_Custom because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CAI_MotorGroundAnimGraph_State_Custom) == 0x78);
     };
 };

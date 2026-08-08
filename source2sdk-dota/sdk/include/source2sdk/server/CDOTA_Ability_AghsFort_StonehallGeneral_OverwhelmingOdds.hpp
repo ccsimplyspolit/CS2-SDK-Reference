@@ -26,17 +26,17 @@ namespace source2sdk
         class CDOTA_Ability_AghsFort_StonehallGeneral_OverwhelmingOdds : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            std::int32_t max_steps; // 0x580            
-            VectorWS m_vTarget; // 0x584            
-            Vector m_vDir; // 0x590            
-            std::int32_t m_nSteps; // 0x59c            
-            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x5a0            
+            std::int32_t max_steps; // 0x580
+            VectorWS m_vTarget; // 0x584
+            Vector m_vDir; // 0x590
+            std::int32_t m_nSteps; // 0x59c
+            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x5a0
             uint8_t _pad05a4[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_AghsFort_StonehallGeneral_OverwhelmingOdds because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_AghsFort_StonehallGeneral_OverwhelmingOdds) == 0x5a8);
     };
 };

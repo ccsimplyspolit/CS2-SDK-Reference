@@ -24,13 +24,13 @@ namespace source2sdk
         class CConstraintAnchor : public source2sdk::server::CBaseAnimatingActivity
         {
         public:
-            float m_massScale; // 0x798            
+            float m_massScale; // 0x798
             uint8_t _pad079c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CConstraintAnchor because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CConstraintAnchor) == 0x7a0);
     };
 };

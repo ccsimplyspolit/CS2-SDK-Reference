@@ -23,21 +23,21 @@ namespace source2sdk
         class CLogicAutosave : public source2sdk::server::CLogicalEntity
         {
         public:
-            bool m_bForceNewLevelUnit; // 0x4a0            
+            bool m_bForceNewLevelUnit; // 0x4a0
             uint8_t _pad04a1[0x3]; // 0x4a1
-            std::int32_t m_minHitPoints; // 0x4a4            
-            std::int32_t m_minHitPointsToCommit; // 0x4a8            
+            std::int32_t m_minHitPoints; // 0x4a4
+            std::int32_t m_minHitPointsToCommit; // 0x4a8
             uint8_t _pad04ac[0x4];
-            
+
             // Datamap fields:
             // void InputSave; // 0x0
             // float InputSaveDangerous; // 0x0
             // int32_t InputSetMinHitpointsThreshold; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CLogicAutosave because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CLogicAutosave) == 0x4b0);
     };
 };

@@ -24,21 +24,21 @@ namespace source2sdk
         {
         public:
             uint8_t _pad04a0[0x8]; // 0x4a0
-            CUtlSymbolLarge m_iszSubject; // 0x4a8            
-            float m_flIdleModifier; // 0x4b0            
-            bool m_bNeverSayHello; // 0x4b4            
-            bool m_bDisabled; // 0x4b5            
+            CUtlSymbolLarge m_iszSubject; // 0x4a8
+            float m_flIdleModifier; // 0x4b0
+            bool m_bNeverSayHello; // 0x4b4
+            bool m_bDisabled; // 0x4b5
             uint8_t _pad04b6[0x2];
-            
+
             // Datamap fields:
             // void InputEnable; // 0x0
             // void InputDisable; // 0x0
             // float InputSetIdleModifier; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CAI_SpeechFilter because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CAI_SpeechFilter) == 0x4b8);
     };
 };

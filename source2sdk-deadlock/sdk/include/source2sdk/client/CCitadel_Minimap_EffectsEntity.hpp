@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x9a8
         // Has VTable
-        // 
+        //
         // static metadata: MEntityAllowsPortraitWorldSpawn
         #pragma pack(push, 1)
         class CCitadel_Minimap_EffectsEntity : public source2sdk::client::C_BaseModelEntity
@@ -27,8 +27,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::client::CCitadel_Minimap_EffectsEntity) == 0x9a8);
     };
 };

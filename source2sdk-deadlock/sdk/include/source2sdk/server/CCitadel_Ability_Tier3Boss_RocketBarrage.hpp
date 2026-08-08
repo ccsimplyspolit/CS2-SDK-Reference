@@ -24,15 +24,15 @@ namespace source2sdk
         class CCitadel_Ability_Tier3Boss_RocketBarrage : public source2sdk::server::CTier3BossAbility
         {
         public:
-            std::int32_t m_nGrenadeIndex; // 0xf70            
-            std::int32_t m_nTotalGrenades; // 0xf74            
-            source2sdk::modellib::AttachmentHandle_t m_hShootPos; // 0xf78            
+            std::int32_t m_nGrenadeIndex; // 0xf70
+            std::int32_t m_nTotalGrenades; // 0xf74
+            source2sdk::modellib::AttachmentHandle_t m_hShootPos; // 0xf78
             uint8_t _pad0f79[0x507];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_Tier3Boss_RocketBarrage because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Ability_Tier3Boss_RocketBarrage) == 0x1480);
     };
 };

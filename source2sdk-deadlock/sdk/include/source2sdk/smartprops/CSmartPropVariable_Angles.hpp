@@ -19,20 +19,20 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x48
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Angles"
         #pragma pack(push, 1)
         class CSmartPropVariable_Angles : public source2sdk::smartprops::CSmartPropVariable
         {
         public:
-            QAngle m_DefaultValue; // 0x38            
+            QAngle m_DefaultValue; // 0x38
             uint8_t _pad0044[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSmartPropVariable_Angles because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::smartprops::CSmartPropVariable_Angles) == 0x48);
     };
 };

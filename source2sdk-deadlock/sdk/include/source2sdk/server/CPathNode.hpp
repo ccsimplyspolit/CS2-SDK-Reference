@@ -26,7 +26,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x500
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "Vector m_vInTangentLocal"
         // static metadata: MNetworkVarNames "Vector m_vOutTangentLocal"
         // static metadata: MNetworkVarNames "CUtlString m_strParentPathUniqueID"
@@ -36,27 +36,27 @@ namespace source2sdk
         {
         public:
             // metadata: MNetworkEnable
-            Vector m_vInTangentLocal; // 0x4a0            
+            Vector m_vInTangentLocal; // 0x4a0
             // metadata: MNetworkEnable
-            Vector m_vOutTangentLocal; // 0x4ac            
+            Vector m_vOutTangentLocal; // 0x4ac
             // metadata: MNetworkEnable
-            CUtlString m_strParentPathUniqueID; // 0x4b8            
+            CUtlString m_strParentPathUniqueID; // 0x4b8
             // metadata: MNetworkEnable
-            CUtlString m_strPathNodeParameter; // 0x4c0            
+            CUtlString m_strPathNodeParameter; // 0x4c0
             uint8_t _pad04c8[0x8]; // 0x4c8
-            CTransform m_xWSPrevParent; // 0x4d0            
+            CTransform m_xWSPrevParent; // 0x4d0
             // m_hPath has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CPathWithDynamicNodes> m_hPath;
-            char m_hPath[0x4]; // 0x4f0            
+            char m_hPath[0x4]; // 0x4f0
             uint8_t _pad04f4[0xc];
-            
+
             // Datamap fields:
             // void CPathNodeParentedMoveThink; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPathNode because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CPathNode) == 0x500);
     };
 };

@@ -26,18 +26,18 @@ namespace source2sdk
         {
         public:
             // metadata: MNotSaved
-            source2sdk::client::ParticleIndex_t m_nAmbientEffect; // 0xa88            
+            source2sdk::client::ParticleIndex_t m_nAmbientEffect; // 0xa88
             uint8_t _pad0a8c[0x4]; // 0xa8c
             // metadata: MNotSaved
-            CUtlSymbolLarge m_EffectName; // 0xa90            
+            CUtlSymbolLarge m_EffectName; // 0xa90
             // metadata: MNotSaved
-            bool m_bState; // 0xa98            
+            bool m_bState; // 0xa98
             uint8_t _pad0a99[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_FuncElectrifiedVolume because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_FuncElectrifiedVolume) == 0xaa0);
     };
 };

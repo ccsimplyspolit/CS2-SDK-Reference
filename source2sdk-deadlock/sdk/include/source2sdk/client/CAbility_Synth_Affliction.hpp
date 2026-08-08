@@ -25,13 +25,13 @@ namespace source2sdk
         {
         public:
             uint8_t _pad11d8[0x200]; // 0x11d8
-            source2sdk::client::ParticleIndex_t m_hAOEParticle; // 0x13d8            
+            source2sdk::client::ParticleIndex_t m_hAOEParticle; // 0x13d8
             uint8_t _pad13dc[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CAbility_Synth_Affliction because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CAbility_Synth_Affliction) == 0x13e0);
     };
 };

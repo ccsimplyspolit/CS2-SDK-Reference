@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x78
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CChoreoUpdateNode : public source2sdk::animgraphlib::CUnaryUpdateNode
@@ -29,8 +29,8 @@ namespace source2sdk
             uint8_t _pad0070[0x8];
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::animgraphlib::CChoreoUpdateNode) == 0x78);
     };
 };

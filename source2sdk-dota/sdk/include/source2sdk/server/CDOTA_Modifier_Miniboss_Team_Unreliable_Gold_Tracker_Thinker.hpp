@@ -18,19 +18,19 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a78
+        // Size: 0x1a98
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Miniboss_Team_Unreliable_Gold_Tracker_Thinker : public source2sdk::client::CDOTA_Buff
         {
         public:
-            source2sdk::client::ParticleIndex_t m_nCounterFxIndex; // 0x1a58            
-            uint8_t _pad1a5c[0x1c];
+            source2sdk::client::ParticleIndex_t m_nCounterFxIndex; // 0x1a78
+            uint8_t _pad1a7c[0x1c];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Miniboss_Team_Unreliable_Gold_Tracker_Thinker because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Miniboss_Team_Unreliable_Gold_Tracker_Thinker) == 0x1a78);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Miniboss_Team_Unreliable_Gold_Tracker_Thinker) == 0x1a98);
     };
 };

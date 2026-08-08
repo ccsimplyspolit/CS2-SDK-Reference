@@ -24,13 +24,13 @@ namespace source2sdk
         class CSoundAreaEntityOrientedBox : public source2sdk::server::CSoundAreaEntityBase
         {
         public:
-            Vector m_vMin; // 0x4b8            
-            Vector m_vMax; // 0x4c4            
+            Vector m_vMin; // 0x4b8
+            Vector m_vMax; // 0x4c4
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSoundAreaEntityOrientedBox because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CSoundAreaEntityOrientedBox) == 0x4d0);
     };
 };

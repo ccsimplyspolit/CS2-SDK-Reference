@@ -17,9 +17,9 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x19b8
+        // Size: 0x19c8
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CCitadel_Item_ContainmentVData : public source2sdk::server::CCitadel_Item_TrackingProjectileApplyModifierVData
@@ -27,8 +27,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
-        static_assert(sizeof(source2sdk::server::CCitadel_Item_ContainmentVData) == 0x19b8);
+
+
+        static_assert(sizeof(source2sdk::server::CCitadel_Item_ContainmentVData) == 0x19c8);
     };
 };

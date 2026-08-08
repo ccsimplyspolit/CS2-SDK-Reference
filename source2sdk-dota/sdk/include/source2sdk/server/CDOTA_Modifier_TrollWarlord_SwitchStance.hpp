@@ -17,19 +17,19 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a60
+        // Size: 0x1a80
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_TrollWarlord_SwitchStance : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float armor_per_interval; // 0x1a58            
-            float attack_speed_interval; // 0x1a5c            
+            float armor_per_interval; // 0x1a78
+            float attack_speed_interval; // 0x1a7c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_TrollWarlord_SwitchStance because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_TrollWarlord_SwitchStance) == 0x1a60);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_TrollWarlord_SwitchStance) == 0x1a80);
     };
 };

@@ -24,13 +24,13 @@ namespace source2sdk
         class CSoundAreaEntitySphere : public source2sdk::server::CSoundAreaEntityBase
         {
         public:
-            float m_flRadius; // 0x4b8            
+            float m_flRadius; // 0x4b8
             uint8_t _pad04bc[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSoundAreaEntitySphere because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CSoundAreaEntitySphere) == 0x4c0);
     };
 };

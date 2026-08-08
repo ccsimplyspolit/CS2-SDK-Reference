@@ -26,15 +26,15 @@ namespace source2sdk
         class C_DOTA_Ability_Visage_SoulAssumption : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            float m_fDamage; // 0x6a8            
-            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x6ac            
-            std::int32_t m_iForcedStacks; // 0x6b0            
-            std::int32_t m_nGold; // 0x6b4            
+            float m_fDamage; // 0x6a8
+            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x6ac
+            std::int32_t m_iForcedStacks; // 0x6b0
+            std::int32_t m_nGold; // 0x6b4
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_Visage_SoulAssumption because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_Visage_SoulAssumption) == 0x6b8);
     };
 };

@@ -26,14 +26,14 @@ namespace source2sdk
         class CRotatorTarget : public source2sdk::server::CPointEntity
         {
         public:
-            source2sdk::entity2::CEntityIOOutput m_OnArrivedAt; // 0x498            
-            source2sdk::server::RotatorTargetSpace_t m_eSpace; // 0x4b0            
+            source2sdk::entity2::CEntityIOOutput m_OnArrivedAt; // 0x498
+            source2sdk::server::RotatorTargetSpace_t m_eSpace; // 0x4b0
             uint8_t _pad04b4[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CRotatorTarget because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CRotatorTarget) == 0x4b8);
     };
 };

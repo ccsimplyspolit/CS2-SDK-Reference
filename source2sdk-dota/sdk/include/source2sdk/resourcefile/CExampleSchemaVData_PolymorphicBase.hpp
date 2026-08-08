@@ -19,20 +19,20 @@ namespace source2sdk
         // Size: 0x10
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CExampleSchemaVData_PolymorphicBase
         {
         public:
             uint8_t _pad0000[0x8]; // 0x0
-            std::int32_t m_nBase; // 0x8            
+            std::int32_t m_nBase; // 0x8
             uint8_t _pad000c[0x4];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::resourcefile::CExampleSchemaVData_PolymorphicBase, m_nBase) == 0x8);
-        
+
         static_assert(sizeof(source2sdk::resourcefile::CExampleSchemaVData_PolymorphicBase) == 0x10);
     };
 };

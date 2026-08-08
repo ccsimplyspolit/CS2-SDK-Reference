@@ -24,7 +24,7 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a70
+        // Size: 0x1a90
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Hurricane_Pike_Range : public source2sdk::client::CDOTA_Buff
@@ -32,18 +32,18 @@ namespace source2sdk
         public:
             // m_hTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::C_BaseEntity> m_hTarget;
-            char m_hTarget[0x4]; // 0x1a58            
-            std::int32_t max_attacks; // 0x1a5c            
-            std::int32_t m_iNumAttacks; // 0x1a60            
-            bool bActive; // 0x1a64            
-            uint8_t _pad1a65[0x3]; // 0x1a65
-            std::int32_t bonus_attack_speed; // 0x1a68            
-            uint8_t _pad1a6c[0x4];
+            char m_hTarget[0x4]; // 0x1a78
+            std::int32_t max_attacks; // 0x1a7c
+            std::int32_t m_iNumAttacks; // 0x1a80
+            bool bActive; // 0x1a84
+            uint8_t _pad1a85[0x3]; // 0x1a85
+            std::int32_t bonus_attack_speed; // 0x1a88
+            uint8_t _pad1a8c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Hurricane_Pike_Range because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Hurricane_Pike_Range) == 0x1a70);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Hurricane_Pike_Range) == 0x1a90);
     };
 };

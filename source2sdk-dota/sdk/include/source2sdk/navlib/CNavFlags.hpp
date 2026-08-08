@@ -22,12 +22,12 @@ namespace source2sdk
         class CNavFlags
         {
         public:
-            std::uint64_t m_Flags; // 0x0            
+            std::uint64_t m_Flags; // 0x0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::navlib::CNavFlags, m_Flags) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::navlib::CNavFlags) == 0x8);
     };
 };

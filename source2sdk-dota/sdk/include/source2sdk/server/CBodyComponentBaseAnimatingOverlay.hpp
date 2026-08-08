@@ -25,13 +25,13 @@ namespace source2sdk
         class CBodyComponentBaseAnimatingOverlay : public source2sdk::server::CBodyComponentSkeletonInstance
         {
         public:
-            source2sdk::server::CBaseAnimatingOverlayController m_animationController; // 0x4e0            
+            source2sdk::server::CBaseAnimatingOverlayController m_animationController; // 0x4e0
             uint8_t _pad0a18[0x8];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CBodyComponentBaseAnimatingOverlay because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CBodyComponentBaseAnimatingOverlay) == 0xa20);
     };
 };

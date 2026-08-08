@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x88
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MVDataComponentValidGrandParents
         // static metadata: MPropertyFriendlyName "Choice Weight"
@@ -30,12 +30,12 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyDescription "Relative weight of this choice, higher weighted choices are more likely to be selected."
-            CSmartPropAttributeFloat m_flWeight; // 0x48            
+            CSmartPropAttributeFloat m_flWeight; // 0x48
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSmartPropSelectionCriteria_ChoiceWeight because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::smartprops::CSmartPropSelectionCriteria_ChoiceWeight) == 0x88);
     };
 };

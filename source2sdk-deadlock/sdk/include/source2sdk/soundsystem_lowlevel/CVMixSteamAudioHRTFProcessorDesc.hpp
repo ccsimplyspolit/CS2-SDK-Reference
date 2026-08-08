@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x20
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CVMixSteamAudioHRTFProcessorDesc : public source2sdk::soundsystem_lowlevel::CVMixBaseProcessorDesc
@@ -27,8 +27,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::soundsystem_lowlevel::CVMixSteamAudioHRTFProcessorDesc) == 0x20);
     };
 };

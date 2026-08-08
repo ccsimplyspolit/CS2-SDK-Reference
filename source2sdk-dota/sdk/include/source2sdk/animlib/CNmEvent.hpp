@@ -21,23 +21,23 @@ namespace source2sdk
         // Has VTable
         // Is Abstract
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CNmEvent
         {
         public:
             uint8_t _pad0000[0x8]; // 0x0
-            source2sdk::animlib::NmPercent_t m_flStartTime; // 0x8            
-            source2sdk::animlib::NmPercent_t m_flDuration; // 0xc            
-            CGlobalSymbol m_syncID; // 0x10            
+            source2sdk::animlib::NmPercent_t m_flStartTime; // 0x8
+            source2sdk::animlib::NmPercent_t m_flDuration; // 0xc
+            CGlobalSymbol m_syncID; // 0x10
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::animlib::CNmEvent, m_flStartTime) == 0x8);
         static_assert(offsetof(source2sdk::animlib::CNmEvent, m_flDuration) == 0xc);
         static_assert(offsetof(source2sdk::animlib::CNmEvent, m_syncID) == 0x10);
-        
+
         static_assert(sizeof(source2sdk::animlib::CNmEvent) == 0x18);
     };
 };

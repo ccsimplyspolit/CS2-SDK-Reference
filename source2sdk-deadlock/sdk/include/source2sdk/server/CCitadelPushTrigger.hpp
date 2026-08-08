@@ -23,13 +23,13 @@ namespace source2sdk
         class CCitadelPushTrigger : public source2sdk::server::CTriggerModifier
         {
         public:
-            Vector m_vPush; // 0x8f0            
-            QAngle m_angPushEntitySpace; // 0x8fc            
+            Vector m_vPush; // 0x8f0
+            QAngle m_angPushEntitySpace; // 0x8fc
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadelPushTrigger because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadelPushTrigger) == 0x908);
     };
 };

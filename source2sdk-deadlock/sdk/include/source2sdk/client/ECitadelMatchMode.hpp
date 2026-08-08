@@ -26,7 +26,7 @@ namespace source2sdk
             k_ECitadelMatchMode_ServerTest = 0x5,
             k_ECitadelMatchMode_Tutorial = 0x6,
             k_ECitadelMatchMode_HeroLabs = 0x7,
-            k_ECitadelMatchMode_Calibration = 0x8,
+            k_ECitadelMatchMode_NewPlayerPlacement = 0x8,
         };
     };
 };

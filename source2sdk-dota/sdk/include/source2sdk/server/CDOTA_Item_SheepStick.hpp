@@ -25,13 +25,13 @@ namespace source2sdk
         class CDOTA_Item_SheepStick : public source2sdk::server::CDOTA_Item
         {
         public:
-            std::int32_t upgrade_radius; // 0x658            
+            std::int32_t upgrade_radius; // 0x658
             uint8_t _pad065c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Item_SheepStick because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Item_SheepStick) == 0x660);
     };
 };

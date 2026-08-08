@@ -26,12 +26,12 @@ namespace source2sdk
         public:
             // m_hRicochetModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CModifierHandleTyped<source2sdk::server::CCitadel_Modifier_Ricochet_Proc> m_hRicochetModifier;
-            char m_hRicochetModifier[0x18]; // 0xf78            
+            char m_hRicochetModifier[0x18]; // 0xf78
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_WeaponUpgrade_Ricochet because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_WeaponUpgrade_Ricochet) == 0xf90);
     };
 };

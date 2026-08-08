@@ -24,19 +24,19 @@ namespace source2sdk
         class CMarkupVolumeTagged_NavGame : public source2sdk::server::CMarkupVolumeWithRef
         {
         public:
-            source2sdk::server::NavScopeFlags_t m_nScopes; // 0x7e8            
-            bool m_bFloodFillAttribute; // 0x7e9            
-            bool m_bSplitNavSpace; // 0x7ea            
+            source2sdk::server::NavScopeFlags_t m_nScopes; // 0x7e8
+            bool m_bFloodFillAttribute; // 0x7e9
+            bool m_bSplitNavSpace; // 0x7ea
             uint8_t _pad07eb[0x5];
-            
+
             // Datamap fields:
             // CUtlSymbolLarge navProperty_NavAttributes; // 0x7fffffff
             // CUtlSymbolLarge navProperty_NavAttributesGame; // 0x7fffffff
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CMarkupVolumeTagged_NavGame because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CMarkupVolumeTagged_NavGame) == 0x7f0);
     };
 };

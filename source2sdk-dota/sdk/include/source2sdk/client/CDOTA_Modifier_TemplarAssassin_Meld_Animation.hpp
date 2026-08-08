@@ -17,19 +17,19 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a60
+        // Size: 0x1a80
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_TemplarAssassin_Meld_Animation : public source2sdk::client::CDOTA_Buff
         {
         public:
-            bool launched_attack; // 0x1a58            
-            uint8_t _pad1a59[0x7];
+            bool launched_attack; // 0x1a78
+            uint8_t _pad1a79[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_TemplarAssassin_Meld_Animation because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_TemplarAssassin_Meld_Animation) == 0x1a60);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_TemplarAssassin_Meld_Animation) == 0x1a80);
     };
 };

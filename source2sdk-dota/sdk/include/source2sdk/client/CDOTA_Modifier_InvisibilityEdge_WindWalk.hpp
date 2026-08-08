@@ -17,19 +17,19 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a70
+        // Size: 0x1a90
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_InvisibilityEdge_WindWalk : public source2sdk::client::CDOTA_Modifier_Invisible
         {
         public:
-            std::int32_t windwalk_bonus_damage; // 0x1a68            
-            std::int32_t windwalk_movement_speed; // 0x1a6c            
+            std::int32_t windwalk_bonus_damage; // 0x1a88
+            std::int32_t windwalk_movement_speed; // 0x1a8c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_InvisibilityEdge_WindWalk because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_InvisibilityEdge_WindWalk) == 0x1a70);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_InvisibilityEdge_WindWalk) == 0x1a90);
     };
 };

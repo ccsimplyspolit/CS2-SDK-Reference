@@ -34,13 +34,13 @@ namespace source2sdk
             // metadata: MNotSaved
             // m_hParentItem has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CItemGeneric> m_hParentItem;
-            char m_hParentItem[0x4]; // 0x778            
+            char m_hParentItem[0x4]; // 0x778
             uint8_t _pad077c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CItemGenericTriggerHelper because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CItemGenericTriggerHelper) == 0x780);
     };
 };

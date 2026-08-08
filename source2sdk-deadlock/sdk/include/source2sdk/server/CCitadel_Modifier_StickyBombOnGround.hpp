@@ -24,13 +24,13 @@ namespace source2sdk
         class CCitadel_Modifier_StickyBombOnGround : public source2sdk::server::CCitadel_Modifier_StickyBombAttached
         {
         public:
-            source2sdk::entity2::GameTime_t m_tLastStopTime; // 0x2e0            
+            source2sdk::entity2::GameTime_t m_tLastStopTime; // 0x2e0
             uint8_t _pad02e4[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_StickyBombOnGround because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_StickyBombOnGround) == 0x2e8);
     };
 };

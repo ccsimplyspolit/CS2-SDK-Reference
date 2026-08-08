@@ -25,13 +25,13 @@ namespace source2sdk
         {
         public:
             uint8_t _pad00c0[0x380]; // 0xc0
-            source2sdk::client::ParticleIndex_t m_nCastParticleIndex; // 0x440            
+            source2sdk::client::ParticleIndex_t m_nCastParticleIndex; // 0x440
             uint8_t _pad0444[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_Bookworm_AOEMagic_AreaModifier because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Modifier_Bookworm_AOEMagic_AreaModifier) == 0x448);
     };
 };

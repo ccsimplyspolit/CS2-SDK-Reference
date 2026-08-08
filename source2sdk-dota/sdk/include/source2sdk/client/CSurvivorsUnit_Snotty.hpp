@@ -24,18 +24,18 @@ namespace source2sdk
         class CSurvivorsUnit_Snotty : public source2sdk::client::CSurvivorsEnemy
         {
         public:
-            float m_flRotationSpeedDeg; // 0x338            
-            float m_flRotationDist; // 0x33c            
-            float m_flDegCur; // 0x340            
-            float m_flLastPickupRadius; // 0x344            
+            float m_flRotationSpeedDeg; // 0x338
+            float m_flRotationDist; // 0x33c
+            float m_flDegCur; // 0x340
+            float m_flLastPickupRadius; // 0x344
             uint8_t _pad0348[0x10]; // 0x348
-            source2sdk::client::SurvivorsPowerUpID_t m_nPowerUpID; // 0x358            
+            source2sdk::client::SurvivorsPowerUpID_t m_nPowerUpID; // 0x358
             uint8_t _pad035c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSurvivorsUnit_Snotty because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CSurvivorsUnit_Snotty) == 0x360);
     };
 };

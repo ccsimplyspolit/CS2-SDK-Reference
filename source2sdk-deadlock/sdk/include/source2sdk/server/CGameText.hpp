@@ -24,10 +24,10 @@ namespace source2sdk
         class CGameText : public source2sdk::server::CRulePointEntity
         {
         public:
-            CUtlSymbolLarge m_iszMessage; // 0x790            
-            source2sdk::client::hudtextparms_t m_textParms; // 0x798            
+            CUtlSymbolLarge m_iszMessage; // 0x790
+            source2sdk::client::hudtextparms_t m_textParms; // 0x798
             uint8_t _pad07ac[0x4];
-            
+
             // Datamap fields:
             // void InputDisplay; // 0x0
             // CUtlSymbolLarge InputSetText; // 0x0
@@ -35,9 +35,9 @@ namespace source2sdk
             // Color color2; // 0x7fffffff
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CGameText because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CGameText) == 0x7b0);
     };
 };

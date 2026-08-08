@@ -22,13 +22,13 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyAttributeChoiceName "Bone"
-            CUtlString m_Name; // 0x0            
+            CUtlString m_Name; // 0x0
             uint8_t _pad0008[0x8];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::animgraphlib::IKBoneNameAndIndex_t, m_Name) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::animgraphlib::IKBoneNameAndIndex_t) == 0x10);
     };
 };

@@ -26,13 +26,13 @@ namespace source2sdk
         class C_DOTA_Aghsfort_AbilityCrystalMaiden_FreezingField : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            source2sdk::client::ParticleIndex_t m_nWarningFX; // 0x6a8            
-            source2sdk::client::ParticleIndex_t m_nRadiusFX; // 0x6ac            
+            source2sdk::client::ParticleIndex_t m_nWarningFX; // 0x6a8
+            source2sdk::client::ParticleIndex_t m_nRadiusFX; // 0x6ac
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Aghsfort_AbilityCrystalMaiden_FreezingField because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Aghsfort_AbilityCrystalMaiden_FreezingField) == 0x6b0);
     };
 };

@@ -25,16 +25,16 @@ namespace source2sdk
         class CDOTA_Ability_Bane_Nightmare : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            std::int32_t m_nNightmareSwapCount; // 0x580            
-            VectorWS m_vEndpoint; // 0x584            
-            Vector m_vWalkDir; // 0x590            
-            bool m_bIsAltCastState; // 0x59c            
+            std::int32_t m_nNightmareSwapCount; // 0x580
+            VectorWS m_vEndpoint; // 0x584
+            Vector m_vWalkDir; // 0x590
+            bool m_bIsAltCastState; // 0x59c
             uint8_t _pad059d[0x3];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Bane_Nightmare because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Bane_Nightmare) == 0x5a0);
     };
 };

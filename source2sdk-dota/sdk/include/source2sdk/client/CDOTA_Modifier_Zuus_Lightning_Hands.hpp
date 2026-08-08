@@ -19,7 +19,7 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a80
+        // Size: 0x1aa0
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Zuus_Lightning_Hands : public source2sdk::client::CDOTA_Buff
@@ -27,16 +27,16 @@ namespace source2sdk
         public:
             // m_InFlightAttackRecords has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::client::AttackRecord_t> m_InFlightAttackRecords;
-            char m_InFlightAttackRecords[0x18]; // 0x1a58            
-            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x1a70            
-            std::int32_t arc_lightning_damage_pct; // 0x1a74            
-            std::int32_t arc_lightning_damage_illusion_pct; // 0x1a78            
-            std::int32_t attack_speed_bonus; // 0x1a7c            
+            char m_InFlightAttackRecords[0x18]; // 0x1a78
+            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x1a90
+            std::int32_t arc_lightning_damage_pct; // 0x1a94
+            std::int32_t arc_lightning_damage_illusion_pct; // 0x1a98
+            std::int32_t attack_speed_bonus; // 0x1a9c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Zuus_Lightning_Hands because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Zuus_Lightning_Hands) == 0x1a80);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Zuus_Lightning_Hands) == 0x1aa0);
     };
 };

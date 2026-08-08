@@ -18,25 +18,25 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a90
+        // Size: 0x1ab0
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_AbyssalUnderlord_DarkRift : public source2sdk::client::CDOTA_Buff
         {
         public:
-            source2sdk::client::ParticleIndex_t m_nfxTargetTp; // 0x1a58            
-            float radius; // 0x1a5c            
-            std::int32_t duration; // 0x1a60            
-            source2sdk::client::ParticleIndex_t m_nfxAmbientFx; // 0x1a64            
-            bool bPointTarget; // 0x1a68            
-            uint8_t _pad1a69[0x3]; // 0x1a69
-            VectorWS vDestination; // 0x1a6c            
-            uint8_t _pad1a78[0x18];
+            source2sdk::client::ParticleIndex_t m_nfxTargetTp; // 0x1a78
+            float radius; // 0x1a7c
+            std::int32_t duration; // 0x1a80
+            source2sdk::client::ParticleIndex_t m_nfxAmbientFx; // 0x1a84
+            bool bPointTarget; // 0x1a88
+            uint8_t _pad1a89[0x3]; // 0x1a89
+            VectorWS vDestination; // 0x1a8c
+            uint8_t _pad1a98[0x18];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_AbyssalUnderlord_DarkRift because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_AbyssalUnderlord_DarkRift) == 0x1a90);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_AbyssalUnderlord_DarkRift) == 0x1ab0);
     };
 };

@@ -17,31 +17,31 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a90
+        // Size: 0x1ab0
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Elder_Titan_AncestralSpirit_Buff : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float move_pct_creeps; // 0x1a58            
-            float move_pct_heroes; // 0x1a5c            
-            std::int32_t damage_creeps; // 0x1a60            
-            std::int32_t damage_heroes; // 0x1a64            
-            float armor_creeps; // 0x1a68            
-            float armor_heroes; // 0x1a6c            
-            float move_pct_cap; // 0x1a70            
-            std::int32_t m_nCreepsHit; // 0x1a74            
-            std::int32_t m_nHeroesHit; // 0x1a78            
-            float m_fSpeedPercentage; // 0x1a7c            
-            std::int32_t m_nDamage; // 0x1a80            
-            std::int32_t m_nArmor; // 0x1a84            
-            bool m_bSpellImmunity; // 0x1a88            
-            uint8_t _pad1a89[0x7];
+            float move_pct_creeps; // 0x1a78
+            float move_pct_heroes; // 0x1a7c
+            std::int32_t damage_creeps; // 0x1a80
+            std::int32_t damage_heroes; // 0x1a84
+            float armor_creeps; // 0x1a88
+            float armor_heroes; // 0x1a8c
+            float move_pct_cap; // 0x1a90
+            std::int32_t m_nCreepsHit; // 0x1a94
+            std::int32_t m_nHeroesHit; // 0x1a98
+            float m_fSpeedPercentage; // 0x1a9c
+            std::int32_t m_nDamage; // 0x1aa0
+            std::int32_t m_nArmor; // 0x1aa4
+            bool m_bSpellImmunity; // 0x1aa8
+            uint8_t _pad1aa9[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Elder_Titan_AncestralSpirit_Buff because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Elder_Titan_AncestralSpirit_Buff) == 0x1a90);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Elder_Titan_AncestralSpirit_Buff) == 0x1ab0);
     };
 };

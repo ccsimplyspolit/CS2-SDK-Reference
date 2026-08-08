@@ -23,12 +23,12 @@ namespace source2sdk
         class CTriggerRemoveModifier : public source2sdk::server::CBaseTrigger
         {
         public:
-            CUtlSymbolLarge m_strModifier; // 0x8e0            
+            CUtlSymbolLarge m_strModifier; // 0x8e0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CTriggerRemoveModifier because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CTriggerRemoveModifier) == 0x8e8);
     };
 };

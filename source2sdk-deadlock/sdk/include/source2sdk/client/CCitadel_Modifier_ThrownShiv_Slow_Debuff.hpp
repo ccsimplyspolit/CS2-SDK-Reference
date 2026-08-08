@@ -27,8 +27,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: CCitadel_Modifier_ThrownShiv_Slow_Debuff has no schema binary (size is a guess)
     };
 };

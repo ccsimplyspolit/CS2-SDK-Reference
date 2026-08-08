@@ -18,18 +18,18 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x4
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MIsBoxedIntegerType
         #pragma pack(push, 1)
         struct PulseRuntimeOutputIndex_t
         {
         public:
-            std::int32_t m_Value; // 0x0            
+            std::int32_t m_Value; // 0x0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::pulse_runtime_lib::PulseRuntimeOutputIndex_t, m_Value) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::pulse_runtime_lib::PulseRuntimeOutputIndex_t) == 0x4);
     };
 };

@@ -19,20 +19,20 @@ namespace source2sdk
         // Size: 0x8
         // Has Trivial Destructor
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CSeqTransition
         {
         public:
-            float m_flFadeInTime; // 0x0            
-            float m_flFadeOutTime; // 0x4            
+            float m_flFadeInTime; // 0x0
+            float m_flFadeOutTime; // 0x4
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::animationsystem::CSeqTransition, m_flFadeInTime) == 0x0);
         static_assert(offsetof(source2sdk::animationsystem::CSeqTransition, m_flFadeOutTime) == 0x4);
-        
+
         static_assert(sizeof(source2sdk::animationsystem::CSeqTransition) == 0x8);
     };
 };

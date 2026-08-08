@@ -27,17 +27,17 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0000[0x8]; // 0x0
-            source2sdk::client::ERoshanSpawnPhase m_eRoshanPhase; // 0x8            
-            source2sdk::entity2::GameTime_t m_flRoshanPhaseStartTime; // 0xc            
-            source2sdk::entity2::GameTime_t m_flRoshanPhaseEndTime; // 0x10            
+            source2sdk::client::ERoshanSpawnPhase m_eRoshanPhase; // 0x8
+            source2sdk::entity2::GameTime_t m_flRoshanPhaseStartTime; // 0xc
+            source2sdk::entity2::GameTime_t m_flRoshanPhaseEndTime; // 0x10
             uint8_t _pad0014[0x4];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::CRoshanPhaseInfo, m_eRoshanPhase) == 0x8);
         static_assert(offsetof(source2sdk::client::CRoshanPhaseInfo, m_flRoshanPhaseStartTime) == 0xc);
         static_assert(offsetof(source2sdk::client::CRoshanPhaseInfo, m_flRoshanPhaseEndTime) == 0x10);
-        
+
         static_assert(sizeof(source2sdk::client::CRoshanPhaseInfo) == 0x18);
     };
 };

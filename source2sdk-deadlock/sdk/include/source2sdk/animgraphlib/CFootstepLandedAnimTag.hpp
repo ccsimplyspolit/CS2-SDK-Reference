@@ -21,7 +21,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x80
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "FootstepLanded Tag"
         #pragma pack(push, 1)
@@ -30,24 +30,24 @@ namespace source2sdk
         public:
             uint8_t _pad0050[0x8]; // 0x50
             // metadata: MPropertyFriendlyName "Footstep Type"
-            source2sdk::animgraphlib::FootstepLandedFootSoundType_t m_FootstepType; // 0x58            
+            source2sdk::animgraphlib::FootstepLandedFootSoundType_t m_FootstepType; // 0x58
             uint8_t _pad005c[0x4]; // 0x5c
             // metadata: MPropertyFriendlyName "Override Sound"
             // metadata: MPropertyAttributeChoiceName "Sound"
-            CUtlString m_OverrideSoundName; // 0x60            
+            CUtlString m_OverrideSoundName; // 0x60
             // metadata: MPropertyFriendlyName "Debug Name"
-            CUtlString m_DebugAnimSourceString; // 0x68            
+            CUtlString m_DebugAnimSourceString; // 0x68
             // metadata: MPropertyFriendlyName "Bone Name"
             // metadata: MPropertyAttributeChoiceName "Bone"
-            CUtlString m_BoneName; // 0x70            
+            CUtlString m_BoneName; // 0x70
             // metadata: MPropertyFriendlyName "Jump Phase"
-            source2sdk::animgraphlib::FootstepJumpPhase_t m_footstepJumpPhase; // 0x78            
+            source2sdk::animgraphlib::FootstepJumpPhase_t m_footstepJumpPhase; // 0x78
             uint8_t _pad0079[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CFootstepLandedAnimTag because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::animgraphlib::CFootstepLandedAnimTag) == 0x80);
     };
 };

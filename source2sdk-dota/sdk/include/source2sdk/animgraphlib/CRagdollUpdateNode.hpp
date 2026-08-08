@@ -21,19 +21,19 @@ namespace source2sdk
         // Size: 0x78
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CRagdollUpdateNode : public source2sdk::animgraphlib::CUnaryUpdateNode
         {
         public:
-            std::int32_t m_nWeightListIndex; // 0x70            
-            source2sdk::animgraphlib::RagdollPoseControl m_poseControlMethod; // 0x74            
+            std::int32_t m_nWeightListIndex; // 0x70
+            source2sdk::animgraphlib::RagdollPoseControl m_poseControlMethod; // 0x74
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CRagdollUpdateNode because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::animgraphlib::CRagdollUpdateNode) == 0x78);
     };
 };

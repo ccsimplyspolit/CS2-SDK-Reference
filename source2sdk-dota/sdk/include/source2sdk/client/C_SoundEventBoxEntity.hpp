@@ -28,12 +28,12 @@ namespace source2sdk
             // metadata: MNotSaved
             // m_vecBoxHelpersNetworked has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // C_NetworkUtlVectorBase<source2sdk::client::SoundeventBoxHelperNetworked_t> m_vecBoxHelpersNetworked;
-            char m_vecBoxHelpersNetworked[0x18]; // 0x6b0            
+            char m_vecBoxHelpersNetworked[0x18]; // 0x6b0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_SoundEventBoxEntity because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_SoundEventBoxEntity) == 0x6c8);
     };
 };

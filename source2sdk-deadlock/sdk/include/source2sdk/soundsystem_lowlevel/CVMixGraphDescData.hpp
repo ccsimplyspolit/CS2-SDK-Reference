@@ -17,24 +17,24 @@ namespace source2sdk
         // Alignment: 0x8
         // Standard-layout class: true
         // Size: 0x10
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CVMixGraphDescData
         {
         public:
             // metadata: MKV3TransferName "Name"
-            CUtlString m_name; // 0x0            
-            std::int32_t m_nGraphOutputChannels; // 0x8            
-            bool m_bIsMainGraph; // 0xc            
+            CUtlString m_name; // 0x0
+            std::int32_t m_nGraphOutputChannels; // 0x8
+            bool m_bIsMainGraph; // 0xc
             uint8_t _pad000d[0x3];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::CVMixGraphDescData, m_name) == 0x0);
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::CVMixGraphDescData, m_nGraphOutputChannels) == 0x8);
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::CVMixGraphDescData, m_bIsMainGraph) == 0xc);
-        
+
         static_assert(sizeof(source2sdk::soundsystem_lowlevel::CVMixGraphDescData) == 0x10);
     };
 };

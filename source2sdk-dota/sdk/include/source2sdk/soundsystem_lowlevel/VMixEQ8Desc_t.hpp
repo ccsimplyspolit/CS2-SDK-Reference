@@ -20,18 +20,18 @@ namespace source2sdk
         // Size: 0x80
         // Has Trivial Destructor
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct VMixEQ8Desc_t
         {
         public:
-            source2sdk::soundsystem_lowlevel::VMixFilterDesc_t m_stages[8]; // 0x0            
+            source2sdk::soundsystem_lowlevel::VMixFilterDesc_t m_stages[8]; // 0x0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::VMixEQ8Desc_t, m_stages) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::soundsystem_lowlevel::VMixEQ8Desc_t) == 0x80);
     };
 };

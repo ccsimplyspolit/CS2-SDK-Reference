@@ -24,13 +24,13 @@ namespace source2sdk
         {
         public:
             uint8_t _pad11d8[0xc9c]; // 0x11d8
-            bool m_bAffectedAnyTargets; // 0x1e74            
+            bool m_bAffectedAnyTargets; // 0x1e74
             uint8_t _pad1e75[0x3];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_Bookworm_KnightCharge because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Ability_Bookworm_KnightCharge) == 0x1e78);
     };
 };

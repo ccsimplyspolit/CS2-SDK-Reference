@@ -26,16 +26,16 @@ namespace source2sdk
         class CDOTA_Ability_Brewmaster_DrunkenBrawler : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            std::int32_t m_iBrawlActive; // 0x580            
-            bool m_bUpdateIcons; // 0x584            
+            std::int32_t m_iBrawlActive; // 0x580
+            bool m_bUpdateIcons; // 0x584
             uint8_t _pad0585[0x3]; // 0x585
-            source2sdk::client::ParticleIndex_t m_nDrunkenBrawlerFX; // 0x588            
+            source2sdk::client::ParticleIndex_t m_nDrunkenBrawlerFX; // 0x588
             uint8_t _pad058c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Brewmaster_DrunkenBrawler because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Brewmaster_DrunkenBrawler) == 0x590);
     };
 };

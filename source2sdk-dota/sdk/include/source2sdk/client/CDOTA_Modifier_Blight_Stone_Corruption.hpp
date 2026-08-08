@@ -17,19 +17,19 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a60
+        // Size: 0x1a80
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Blight_Stone_Corruption : public source2sdk::client::CDOTA_Buff
         {
         public:
-            std::int32_t corruption_armor; // 0x1a58            
-            uint8_t _pad1a5c[0x4];
+            std::int32_t corruption_armor; // 0x1a78
+            uint8_t _pad1a7c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Blight_Stone_Corruption because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Blight_Stone_Corruption) == 0x1a60);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Blight_Stone_Corruption) == 0x1a80);
     };
 };

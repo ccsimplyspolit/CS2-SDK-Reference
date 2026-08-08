@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x40
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Surface Property"
         // static metadata: MPropertyDescription "Surface Property Variable"
@@ -30,12 +30,12 @@ namespace source2sdk
         public:
             // metadata: MPropertyFriendlyName "Default Surface Property"
             // metadata: MPropertyCustomFGDType "surface_properties"
-            CUtlString m_DefaultValue; // 0x38            
+            CUtlString m_DefaultValue; // 0x38
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSmartPropVariable_SurfaceProperty because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::smartprops::CSmartPropVariable_SurfaceProperty) == 0x40);
     };
 };

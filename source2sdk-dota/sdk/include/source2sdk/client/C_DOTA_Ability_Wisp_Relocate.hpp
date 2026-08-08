@@ -26,15 +26,15 @@ namespace source2sdk
         class C_DOTA_Ability_Wisp_Relocate : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            source2sdk::client::ParticleIndex_t m_nFXIndexEndTeam; // 0x6a8            
-            source2sdk::client::ParticleIndex_t m_nFXIndexChannel; // 0x6ac            
-            float cast_delay; // 0x6b0            
-            float return_time; // 0x6b4            
+            source2sdk::client::ParticleIndex_t m_nFXIndexEndTeam; // 0x6a8
+            source2sdk::client::ParticleIndex_t m_nFXIndexChannel; // 0x6ac
+            float cast_delay; // 0x6b0
+            float return_time; // 0x6b4
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_Wisp_Relocate because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_Wisp_Relocate) == 0x6b8);
     };
 };

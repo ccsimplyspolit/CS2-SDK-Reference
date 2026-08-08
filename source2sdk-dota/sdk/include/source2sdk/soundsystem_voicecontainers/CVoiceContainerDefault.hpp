@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x70
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Default Container"
         // static metadata: MPropertyDescription "Voice Container Default"
@@ -30,8 +30,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::soundsystem_voicecontainers::CVoiceContainerDefault) == 0x70);
     };
 };

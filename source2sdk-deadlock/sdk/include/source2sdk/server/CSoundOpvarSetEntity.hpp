@@ -24,17 +24,17 @@ namespace source2sdk
         {
         public:
             uint8_t _pad04a0[0x18]; // 0x4a0
-            CUtlSymbolLarge m_iszStackName; // 0x4b8            
-            CUtlSymbolLarge m_iszOperatorName; // 0x4c0            
-            CUtlSymbolLarge m_iszOpvarName; // 0x4c8            
-            std::int32_t m_nOpvarType; // 0x4d0            
-            std::int32_t m_nOpvarIndex; // 0x4d4            
-            float m_flOpvarValue; // 0x4d8            
+            CUtlSymbolLarge m_iszStackName; // 0x4b8
+            CUtlSymbolLarge m_iszOperatorName; // 0x4c0
+            CUtlSymbolLarge m_iszOpvarName; // 0x4c8
+            std::int32_t m_nOpvarType; // 0x4d0
+            std::int32_t m_nOpvarIndex; // 0x4d4
+            float m_flOpvarValue; // 0x4d8
             uint8_t _pad04dc[0x4]; // 0x4dc
-            CUtlSymbolLarge m_OpvarValueString; // 0x4e0            
-            bool m_bSetOnSpawn; // 0x4e8            
+            CUtlSymbolLarge m_OpvarValueString; // 0x4e0
+            bool m_bSetOnSpawn; // 0x4e8
             uint8_t _pad04e9[0xf];
-            
+
             // Datamap fields:
             // uint64_t InputSetEventGuid; // 0x0
             // CUtlSymbolLarge InputSetStackName; // 0x0
@@ -48,9 +48,9 @@ namespace source2sdk
             // void m_LastOpvarValueString; // 0x4f0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSoundOpvarSetEntity because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CSoundOpvarSetEntity) == 0x4f8);
     };
 };

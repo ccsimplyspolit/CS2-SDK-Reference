@@ -22,36 +22,36 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x1248
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_INIT_VelocityRandom : public source2sdk::particles::CParticleFunctionInitializer
         {
         public:
             // metadata: MPropertyFriendlyName "control point number"
-            std::int32_t m_nControlPointNumber; // 0x1e0            
+            std::int32_t m_nControlPointNumber; // 0x1e0
             uint8_t _pad01e4[0x4]; // 0x1e4
             // metadata: MPropertyFriendlyName "random speed min"
-            source2sdk::particleslib::CPerParticleFloatInput m_fSpeedMin; // 0x1e8            
+            source2sdk::particleslib::CPerParticleFloatInput m_fSpeedMin; // 0x1e8
             // metadata: MPropertyFriendlyName "random speed max"
-            source2sdk::particleslib::CPerParticleFloatInput m_fSpeedMax; // 0x358            
+            source2sdk::particleslib::CPerParticleFloatInput m_fSpeedMax; // 0x358
             // metadata: MPropertyFriendlyName "speed in local coordinate system min"
             // metadata: MVectorIsCoordinate
-            source2sdk::particleslib::CPerParticleVecInput m_LocalCoordinateSystemSpeedMin; // 0x4c8            
+            source2sdk::particleslib::CPerParticleVecInput m_LocalCoordinateSystemSpeedMin; // 0x4c8
             // metadata: MPropertyFriendlyName "speed in local coordinate system max"
             // metadata: MVectorIsCoordinate
-            source2sdk::particleslib::CPerParticleVecInput m_LocalCoordinateSystemSpeedMax; // 0xb80            
+            source2sdk::particleslib::CPerParticleVecInput m_LocalCoordinateSystemSpeedMax; // 0xb80
             // metadata: MPropertyFriendlyName "Ignore delta time (RenderTrails)"
-            bool m_bIgnoreDT; // 0x1238            
+            bool m_bIgnoreDT; // 0x1238
             uint8_t _pad1239[0x3]; // 0x1239
             // metadata: MPropertyFriendlyName "Random number generator controls"
-            source2sdk::particles::CRandomNumberGeneratorParameters m_randomnessParameters; // 0x123c            
+            source2sdk::particles::CRandomNumberGeneratorParameters m_randomnessParameters; // 0x123c
             uint8_t _pad1244[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_INIT_VelocityRandom because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_INIT_VelocityRandom) == 0x1248);
     };
 };

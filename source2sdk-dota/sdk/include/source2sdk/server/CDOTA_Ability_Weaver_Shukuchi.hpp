@@ -25,15 +25,15 @@ namespace source2sdk
         class CDOTA_Ability_Weaver_Shukuchi : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            float duration; // 0x580            
-            float radius; // 0x584            
-            std::int32_t damage; // 0x588            
-            float fade_time; // 0x58c            
+            float duration; // 0x580
+            float radius; // 0x584
+            std::int32_t damage; // 0x588
+            float fade_time; // 0x58c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Weaver_Shukuchi because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Weaver_Shukuchi) == 0x590);
     };
 };

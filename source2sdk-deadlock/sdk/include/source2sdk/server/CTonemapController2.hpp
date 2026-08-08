@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x4b8
         // Has VTable
-        // 
+        //
         // static metadata: MEntityAllowsPortraitWorldSpawn
         // static metadata: MNetworkVarNames "float m_flAutoExposureMin"
         // static metadata: MNetworkVarNames "float m_flAutoExposureMax"
@@ -31,17 +31,17 @@ namespace source2sdk
         {
         public:
             // metadata: MNetworkEnable
-            float m_flAutoExposureMin; // 0x4a0            
+            float m_flAutoExposureMin; // 0x4a0
             // metadata: MNetworkEnable
-            float m_flAutoExposureMax; // 0x4a4            
+            float m_flAutoExposureMax; // 0x4a4
             // metadata: MNetworkEnable
-            float m_flExposureAdaptationSpeedUp; // 0x4a8            
+            float m_flExposureAdaptationSpeedUp; // 0x4a8
             // metadata: MNetworkEnable
-            float m_flExposureAdaptationSpeedDown; // 0x4ac            
+            float m_flExposureAdaptationSpeedDown; // 0x4ac
             // metadata: MNetworkEnable
-            float m_flTonemapEVSmoothingRange; // 0x4b0            
+            float m_flTonemapEVSmoothingRange; // 0x4b0
             uint8_t _pad04b4[0x4];
-            
+
             // Datamap fields:
             // void InputEnable; // 0x0
             // void InputDisable; // 0x0
@@ -51,9 +51,9 @@ namespace source2sdk
             // float InputSetExposureAdaptationSpeedDown; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CTonemapController2 because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CTonemapController2) == 0x4b8);
     };
 };

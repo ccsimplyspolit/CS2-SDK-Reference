@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x200
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_RemapDistanceToLineSegmentToScalar : public source2sdk::particles::C_OP_RemapDistanceToLineSegmentBase
@@ -28,17 +28,17 @@ namespace source2sdk
         public:
             // metadata: MPropertyFriendlyName "output field"
             // metadata: MPropertyAttributeChoiceName "particlefield_scalar"
-            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1f0            
+            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1f0
             // metadata: MPropertyFriendlyName "output value at min distance"
-            float m_flMinOutputValue; // 0x1f4            
+            float m_flMinOutputValue; // 0x1f4
             // metadata: MPropertyFriendlyName "output value at max distance"
-            float m_flMaxOutputValue; // 0x1f8            
+            float m_flMaxOutputValue; // 0x1f8
             uint8_t _pad01fc[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_RemapDistanceToLineSegmentToScalar because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_RemapDistanceToLineSegmentToScalar) == 0x200);
     };
 };

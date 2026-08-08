@@ -17,18 +17,18 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0xd8
+        // Size: 0xe0
         // Has VTable
         #pragma pack(push, 1)
         class CCitadel_Modifier_KothTrooperBuff : public source2sdk::server::CCitadelModifier
         {
         public:
-            uint8_t _pad00d0[0x8];
+            uint8_t _pad00d0[0x10];
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: CCitadel_Modifier_KothTrooperBuff has no schema binary (size is a guess)
     };
 };

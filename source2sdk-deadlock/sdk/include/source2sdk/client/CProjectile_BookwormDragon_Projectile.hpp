@@ -32,13 +32,13 @@ namespace source2sdk
         public:
             // m_vecHitUnits has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::client::C_BaseEntity>> m_vecHitUnits;
-            char m_vecHitUnits[0x18]; // 0xad8            
+            char m_vecHitUnits[0x18]; // 0xad8
             uint8_t _pad0af0[0x448];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CProjectile_BookwormDragon_Projectile because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CProjectile_BookwormDragon_Projectile) == 0xf38);
     };
 };

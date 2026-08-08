@@ -27,15 +27,15 @@ namespace source2sdk
             // metadata: MNetworkEnable
             // metadata: MNetworkEncoder "qangle"
             // metadata: MNetworkChangeCallback "OnGrabBeamAnglesChanged"
-            QAngle m_angBeamAngles; // 0x11f8            
+            QAngle m_angBeamAngles; // 0x11f8
             uint8_t _pad1204[0x84]; // 0x1204
-            bool m_bNeedsBeamReset; // 0x1288            
+            bool m_bNeedsBeamReset; // 0x1288
             uint8_t _pad1289[0x207];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_Wrecker_Ultimate because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Ability_Wrecker_Ultimate) == 0x1490);
     };
 };

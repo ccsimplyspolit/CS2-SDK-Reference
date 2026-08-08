@@ -17,23 +17,23 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a70
+        // Size: 0x1a90
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Item_Wind_Waker : public source2sdk::server::CDOTA_Buff_Item
         {
         public:
-            std::int32_t bonus_intellect; // 0x1a58            
-            float bonus_mana_regen; // 0x1a5c            
-            std::int32_t bonus_movement_speed; // 0x1a60            
-            std::int32_t bonus_mana; // 0x1a64            
-            std::int32_t cast_range_bonus; // 0x1a68            
-            uint8_t _pad1a6c[0x4];
+            std::int32_t bonus_intellect; // 0x1a78
+            float bonus_mana_regen; // 0x1a7c
+            std::int32_t bonus_movement_speed; // 0x1a80
+            std::int32_t bonus_mana; // 0x1a84
+            std::int32_t cast_range_bonus; // 0x1a88
+            uint8_t _pad1a8c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Item_Wind_Waker because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Item_Wind_Waker) == 0x1a70);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Item_Wind_Waker) == 0x1a90);
     };
 };

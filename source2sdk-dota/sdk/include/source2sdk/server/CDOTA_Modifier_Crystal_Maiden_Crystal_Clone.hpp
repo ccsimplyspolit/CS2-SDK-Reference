@@ -17,25 +17,25 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a80
+        // Size: 0x1aa0
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Crystal_Maiden_Crystal_Clone : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float hop_duration; // 0x1a58            
-            std::int32_t hop_distance; // 0x1a5c            
-            float m_flCurTime; // 0x1a60            
-            float m_flEndTime; // 0x1a64            
-            float target_x; // 0x1a68            
-            float target_y; // 0x1a6c            
-            Vector m_vTargetHorizontalDirection; // 0x1a70            
-            uint8_t _pad1a7c[0x4];
+            float hop_duration; // 0x1a78
+            std::int32_t hop_distance; // 0x1a7c
+            float m_flCurTime; // 0x1a80
+            float m_flEndTime; // 0x1a84
+            float target_x; // 0x1a88
+            float target_y; // 0x1a8c
+            Vector m_vTargetHorizontalDirection; // 0x1a90
+            uint8_t _pad1a9c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Crystal_Maiden_Crystal_Clone because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Crystal_Maiden_Crystal_Clone) == 0x1a80);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Crystal_Maiden_Crystal_Clone) == 0x1aa0);
     };
 };

@@ -28,7 +28,7 @@ namespace source2sdk
         // Size: 0x130
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CEnvWindShared
@@ -36,35 +36,35 @@ namespace source2sdk
         public:
             uint8_t _pad0000[0x8]; // 0x0
             // metadata: MNotSaved
-            source2sdk::entity2::GameTime_t m_flStartTime; // 0x8            
+            source2sdk::entity2::GameTime_t m_flStartTime; // 0x8
             // metadata: MNotSaved
-            std::uint32_t m_iWindSeed; // 0xc            
-            std::uint16_t m_iMinWind; // 0x10            
-            std::uint16_t m_iMaxWind; // 0x12            
-            std::int32_t m_windRadius; // 0x14            
-            std::uint16_t m_iMinGust; // 0x18            
-            std::uint16_t m_iMaxGust; // 0x1a            
-            float m_flMinGustDelay; // 0x1c            
-            float m_flMaxGustDelay; // 0x20            
-            float m_flGustDuration; // 0x24            
-            std::uint16_t m_iGustDirChange; // 0x28            
+            std::uint32_t m_iWindSeed; // 0xc
+            std::uint16_t m_iMinWind; // 0x10
+            std::uint16_t m_iMaxWind; // 0x12
+            std::int32_t m_windRadius; // 0x14
+            std::uint16_t m_iMinGust; // 0x18
+            std::uint16_t m_iMaxGust; // 0x1a
+            float m_flMinGustDelay; // 0x1c
+            float m_flMaxGustDelay; // 0x20
+            float m_flGustDuration; // 0x24
+            std::uint16_t m_iGustDirChange; // 0x28
             // metadata: MNotSaved
-            std::uint16_t m_iInitialWindDir; // 0x2a            
+            std::uint16_t m_iInitialWindDir; // 0x2a
             // metadata: MNotSaved
-            float m_flInitialWindSpeed; // 0x2c            
+            float m_flInitialWindSpeed; // 0x2c
             // metadata: MNotSaved
-            VectorWS m_location; // 0x30            
+            VectorWS m_location; // 0x30
             uint8_t _pad003c[0x4]; // 0x3c
-            source2sdk::entity2::CEntityIOOutput m_OnGustStart; // 0x40            
-            source2sdk::entity2::CEntityIOOutput m_OnGustEnd; // 0x58            
+            source2sdk::entity2::CEntityIOOutput m_OnGustStart; // 0x40
+            source2sdk::entity2::CEntityIOOutput m_OnGustEnd; // 0x58
             // metadata: MNotSaved
             // m_hEntOwner has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hEntOwner;
-            char m_hEntOwner[0x4]; // 0x70            
+            char m_hEntOwner[0x4]; // 0x70
             uint8_t _pad0074[0xbc];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::CEnvWindShared, m_flStartTime) == 0x8);
         static_assert(offsetof(source2sdk::server::CEnvWindShared, m_iWindSeed) == 0xc);
         static_assert(offsetof(source2sdk::server::CEnvWindShared, m_iMinWind) == 0x10);
@@ -82,7 +82,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::server::CEnvWindShared, m_OnGustStart) == 0x40);
         static_assert(offsetof(source2sdk::server::CEnvWindShared, m_OnGustEnd) == 0x58);
         static_assert(offsetof(source2sdk::server::CEnvWindShared, m_hEntOwner) == 0x70);
-        
+
         static_assert(sizeof(source2sdk::server::CEnvWindShared) == 0x130);
     };
 };

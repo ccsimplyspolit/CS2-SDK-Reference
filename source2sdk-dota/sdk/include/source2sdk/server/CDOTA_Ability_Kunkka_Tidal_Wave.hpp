@@ -34,14 +34,14 @@ namespace source2sdk
         public:
             // hAlreadyHitList has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::server::CBaseEntity>> hAlreadyHitList;
-            char hAlreadyHitList[0x18]; // 0x580            
-            VectorWS m_vStart; // 0x598            
+            char hAlreadyHitList[0x18]; // 0x580
+            VectorWS m_vStart; // 0x598
             uint8_t _pad05a4[0x14];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Kunkka_Tidal_Wave because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Kunkka_Tidal_Wave) == 0x5b8);
     };
 };

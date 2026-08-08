@@ -24,15 +24,15 @@ namespace source2sdk
         class CCitadel_Modifier_Bubble : public source2sdk::server::CCitadel_Modifier_Silenced
         {
         public:
-            float m_flDampingFactor; // 0xe8            
+            float m_flDampingFactor; // 0xe8
             uint8_t _pad00ec[0x104]; // 0xec
-            source2sdk::client::ParticleIndex_t m_ParticleIndex; // 0x1f0            
+            source2sdk::client::ParticleIndex_t m_ParticleIndex; // 0x1f0
             uint8_t _pad01f4[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_Bubble because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_Bubble) == 0x1f8);
     };
 };

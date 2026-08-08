@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x4e8
         // Has VTable
-        // 
+        //
         // static metadata: MEntityAllowsPortraitWorldSpawn
         // static metadata: MNetworkVarNames "bool m_bActive"
         // static metadata: MNetworkVarNames "Vector m_vBoxMins"
@@ -44,52 +44,52 @@ namespace source2sdk
         {
         public:
             // metadata: MNetworkEnable
-            bool m_bActive; // 0x4a0            
+            bool m_bActive; // 0x4a0
             uint8_t _pad04a1[0x3]; // 0x4a1
             // metadata: MNetworkEnable
-            Vector m_vBoxMins; // 0x4a4            
+            Vector m_vBoxMins; // 0x4a4
             // metadata: MNetworkEnable
-            Vector m_vBoxMaxs; // 0x4b0            
+            Vector m_vBoxMaxs; // 0x4b0
             // metadata: MNetworkEnable
-            bool m_bStartDisabled; // 0x4bc            
+            bool m_bStartDisabled; // 0x4bc
             // metadata: MNetworkEnable
-            bool m_bIndirectUseLPVs; // 0x4bd            
+            bool m_bIndirectUseLPVs; // 0x4bd
             uint8_t _pad04be[0x2]; // 0x4be
             // metadata: MNetworkEnable
-            float m_flStrength; // 0x4c0            
+            float m_flStrength; // 0x4c0
             // metadata: MNetworkEnable
-            std::int32_t m_nFalloffShape; // 0x4c4            
+            std::int32_t m_nFalloffShape; // 0x4c4
             // metadata: MNetworkEnable
-            float m_flFalloffExponent; // 0x4c8            
+            float m_flFalloffExponent; // 0x4c8
             // metadata: MNetworkEnable
-            float m_flHeightFogDepth; // 0x4cc            
+            float m_flHeightFogDepth; // 0x4cc
             // metadata: MNetworkEnable
-            float m_fHeightFogEdgeWidth; // 0x4d0            
+            float m_fHeightFogEdgeWidth; // 0x4d0
             // metadata: MNetworkEnable
-            float m_fIndirectLightStrength; // 0x4d4            
+            float m_fIndirectLightStrength; // 0x4d4
             // metadata: MNetworkEnable
-            float m_fSunLightStrength; // 0x4d8            
+            float m_fSunLightStrength; // 0x4d8
             // metadata: MNetworkEnable
-            float m_fNoiseStrength; // 0x4dc            
+            float m_fNoiseStrength; // 0x4dc
             // metadata: MNetworkEnable
-            Color m_TintColor; // 0x4e0            
+            Color m_TintColor; // 0x4e0
             // metadata: MNetworkEnable
-            bool m_bOverrideTintColor; // 0x4e4            
+            bool m_bOverrideTintColor; // 0x4e4
             // metadata: MNetworkEnable
-            bool m_bOverrideIndirectLightStrength; // 0x4e5            
+            bool m_bOverrideIndirectLightStrength; // 0x4e5
             // metadata: MNetworkEnable
-            bool m_bOverrideSunLightStrength; // 0x4e6            
+            bool m_bOverrideSunLightStrength; // 0x4e6
             // metadata: MNetworkEnable
-            bool m_bOverrideNoiseStrength; // 0x4e7            
-            
+            bool m_bOverrideNoiseStrength; // 0x4e7
+
             // Datamap fields:
             // bool InputEnable; // 0x0
             // bool InputDisable; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CEnvVolumetricFogVolume because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CEnvVolumetricFogVolume) == 0x4e8);
     };
 };

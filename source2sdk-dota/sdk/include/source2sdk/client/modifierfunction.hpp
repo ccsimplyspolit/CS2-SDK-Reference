@@ -13,7 +13,7 @@ namespace source2sdk
 {
     namespace client
     {
-        // Enumerator count: 409
+        // Enumerator count: 411
         // Alignment: 4
         // Size: 0x4
         enum class modifierfunction : std::uint32_t
@@ -116,723 +116,727 @@ namespace source2sdk
             MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE = 0x2f,
             // MScriptDescription "GetModifierSpellAmplify_PercentageUnique"
             MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE_UNIQUE = 0x30,
+            // MScriptDescription "GetModifierSpellAmplify_PercentageUnique_2"
+            MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE_UNIQUE_2 = 0x31,
             // MScriptDescription "GetModifierSpellAmplify_PercentageTarget"
-            MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE_TARGET = 0x31,
+            MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE_TARGET = 0x32,
             // MScriptDescription "GetModifierHealAmplify_PercentageSource"
-            MODIFIER_PROPERTY_HEAL_AMPLIFY_PERCENTAGE_SOURCE = 0x32,
+            MODIFIER_PROPERTY_HEAL_AMPLIFY_PERCENTAGE_SOURCE = 0x33,
             // MScriptDescription "GetModifierHealAmplify_PercentageTarget"
-            MODIFIER_PROPERTY_HEAL_AMPLIFY_PERCENTAGE_TARGET = 0x33,
+            MODIFIER_PROPERTY_HEAL_AMPLIFY_PERCENTAGE_TARGET = 0x34,
             // MScriptDescription "GetModifierHPRegenAmplify_Percentage"
-            MODIFIER_PROPERTY_HP_REGEN_AMPLIFY_PERCENTAGE = 0x34,
+            MODIFIER_PROPERTY_HP_REGEN_AMPLIFY_PERCENTAGE = 0x35,
             // MScriptDescription "GetModifierLifestealRegenAmplify_Percentage"
-            MODIFIER_PROPERTY_LIFESTEAL_AMPLIFY_PERCENTAGE = 0x35,
+            MODIFIER_PROPERTY_LIFESTEAL_AMPLIFY_PERCENTAGE = 0x36,
             // MScriptDescription "GetModifierSpellLifestealRegenAmplify_Percentage"
-            MODIFIER_PROPERTY_SPELL_LIFESTEAL_AMPLIFY_PERCENTAGE = 0x36,
+            MODIFIER_PROPERTY_SPELL_LIFESTEAL_AMPLIFY_PERCENTAGE = 0x37,
             // MScriptDescription "GetModifierSpellLifestealRegenAmplify_Percentage_Unique"
-            MODIFIER_PROPERTY_SPELL_LIFESTEAL_AMPLIFY_PERCENTAGE_UNIQUE = 0x37,
+            MODIFIER_PROPERTY_SPELL_LIFESTEAL_AMPLIFY_PERCENTAGE_UNIQUE = 0x38,
             // MScriptDescription "GetModifierMPRegenAmplify_Percentage"
-            MODIFIER_PROPERTY_MP_REGEN_AMPLIFY_PERCENTAGE = 0x38,
+            MODIFIER_PROPERTY_MP_REGEN_AMPLIFY_PERCENTAGE = 0x39,
             // MScriptDescription "GetModifierMPRegenAmplify_Percentage_Unique"
-            MODIFIER_PROPERTY_MP_REGEN_AMPLIFY_PERCENTAGE_UNIQUE = 0x39,
+            MODIFIER_PROPERTY_MP_REGEN_AMPLIFY_PERCENTAGE_UNIQUE = 0x3a,
             // MScriptDescription "GetModifierManaDrainAmplify_Percentage"
-            MODIFIER_PROPERTY_MANA_DRAIN_AMPLIFY_PERCENTAGE = 0x3a,
+            MODIFIER_PROPERTY_MANA_DRAIN_AMPLIFY_PERCENTAGE = 0x3b,
             // MScriptDescription "GetModifierMPRestoreAmplify_Percentage"
-            MODIFIER_PROPERTY_MP_RESTORE_AMPLIFY_PERCENTAGE = 0x3b,
+            MODIFIER_PROPERTY_MP_RESTORE_AMPLIFY_PERCENTAGE = 0x3c,
             // MScriptDescription "GetModifierBaseDamageOutgoing_Percentage"
-            MODIFIER_PROPERTY_BASEDAMAGEOUTGOING_PERCENTAGE = 0x3c,
+            MODIFIER_PROPERTY_BASEDAMAGEOUTGOING_PERCENTAGE = 0x3d,
             // MScriptDescription "GetModifierBaseDamageOutgoing_PercentageUnique"
-            MODIFIER_PROPERTY_BASEDAMAGEOUTGOING_PERCENTAGE_UNIQUE = 0x3d,
+            MODIFIER_PROPERTY_BASEDAMAGEOUTGOING_PERCENTAGE_UNIQUE = 0x3e,
             // MScriptDescription "GetModifierIncomingDamage_Percentage"
-            MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE = 0x3e,
+            MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE = 0x3f,
             // MScriptDescription "GetModifierIncomingPhysicalDamage_Percentage"
-            MODIFIER_PROPERTY_INCOMING_PHYSICAL_DAMAGE_PERCENTAGE = 0x3f,
+            MODIFIER_PROPERTY_INCOMING_PHYSICAL_DAMAGE_PERCENTAGE = 0x40,
             // MScriptDescription "GetModifierIncomingPhysicalDamageConstant"
-            MODIFIER_PROPERTY_INCOMING_PHYSICAL_DAMAGE_CONSTANT = 0x40,
+            MODIFIER_PROPERTY_INCOMING_PHYSICAL_DAMAGE_CONSTANT = 0x41,
             // MScriptDescription "GetModifierIncomingSpellDamageConstant"
-            MODIFIER_PROPERTY_INCOMING_SPELL_DAMAGE_CONSTANT = 0x41,
+            MODIFIER_PROPERTY_INCOMING_SPELL_DAMAGE_CONSTANT = 0x42,
             // MScriptDescription "GetModifierEvasion_Constant"
-            MODIFIER_PROPERTY_EVASION_CONSTANT = 0x42,
+            MODIFIER_PROPERTY_EVASION_CONSTANT = 0x43,
             // MScriptDescription "GetModifierNegativeEvasion_Constant"
-            MODIFIER_PROPERTY_NEGATIVE_EVASION_CONSTANT = 0x43,
+            MODIFIER_PROPERTY_NEGATIVE_EVASION_CONSTANT = 0x44,
             // MScriptDescription "GetModifierStatusResistance"
-            MODIFIER_PROPERTY_STATUS_RESISTANCE = 0x44,
+            MODIFIER_PROPERTY_STATUS_RESISTANCE = 0x45,
             // MScriptDescription "GetModifierStatusResistanceStacking"
-            MODIFIER_PROPERTY_STATUS_RESISTANCE_STACKING = 0x45,
+            MODIFIER_PROPERTY_STATUS_RESISTANCE_STACKING = 0x46,
             // MScriptDescription "GetModifierStatusResistanceCaster"
-            MODIFIER_PROPERTY_STATUS_RESISTANCE_CASTER = 0x46,
+            MODIFIER_PROPERTY_STATUS_RESISTANCE_CASTER = 0x47,
             // MScriptDescription "GetModifierAvoidDamage"
-            MODIFIER_PROPERTY_AVOID_DAMAGE = 0x47,
+            MODIFIER_PROPERTY_AVOID_DAMAGE = 0x48,
             // MScriptDescription "GetModifierAvoidSpell"
-            MODIFIER_PROPERTY_AVOID_SPELL = 0x48,
+            MODIFIER_PROPERTY_AVOID_SPELL = 0x49,
             // MScriptDescription "GetModifierMiss_Percentage"
-            MODIFIER_PROPERTY_MISS_PERCENTAGE = 0x49,
+            MODIFIER_PROPERTY_MISS_PERCENTAGE = 0x4a,
             // MScriptDescription "GetModifierPhysicalArmorBase_Percentage"
-            MODIFIER_PROPERTY_PHYSICAL_ARMOR_BASE_PERCENTAGE = 0x4a,
+            MODIFIER_PROPERTY_PHYSICAL_ARMOR_BASE_PERCENTAGE = 0x4b,
             // MScriptDescription "GetModifierPhysicalArmorTotal_Percentage"
-            MODIFIER_PROPERTY_PHYSICAL_ARMOR_TOTAL_PERCENTAGE = 0x4b,
+            MODIFIER_PROPERTY_PHYSICAL_ARMOR_TOTAL_PERCENTAGE = 0x4c,
             // MScriptDescription "GetModifierPhysicalArmorBonus"
-            MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS = 0x4c,
+            MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS = 0x4d,
             // MScriptDescription "GetModifierPhysicalArmorBonusUnique"
-            MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS_UNIQUE = 0x4d,
+            MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS_UNIQUE = 0x4e,
             // MScriptDescription "GetModifierPhysicalArmorBonusUniqueActive"
-            MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS_UNIQUE_ACTIVE = 0x4e,
+            MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS_UNIQUE_ACTIVE = 0x4f,
             // MScriptDescription "GetModifierPhysicalArmorBonusPost"
-            MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS_POST = 0x4f,
+            MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS_POST = 0x50,
             // MScriptDescription "GetModifierMinPhysicalArmor"
-            MODIFIER_PROPERTY_MIN_PHYSICAL_ARMOR = 0x50,
+            MODIFIER_PROPERTY_MIN_PHYSICAL_ARMOR = 0x51,
             // MScriptDescription "GetModifierIgnorePhysicalArmor"
-            MODIFIER_PROPERTY_IGNORE_PHYSICAL_ARMOR = 0x51,
+            MODIFIER_PROPERTY_IGNORE_PHYSICAL_ARMOR = 0x52,
             // MScriptDescription "GetModifierMagicalResistanceBaseReduction"
-            MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BASE_REDUCTION = 0x52,
+            MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BASE_REDUCTION = 0x53,
             // MScriptDescription "GetModifierMagicalResistanceDirectModification"
-            MODIFIER_PROPERTY_MAGICAL_RESISTANCE_DIRECT_MODIFICATION = 0x53,
+            MODIFIER_PROPERTY_MAGICAL_RESISTANCE_DIRECT_MODIFICATION = 0x54,
             // MScriptDescription "GetModifierMagicalResistanceBonus"
-            MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS = 0x54,
+            MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS = 0x55,
             // MScriptDescription "GetModifierMagicalResistanceBonusIllusions"
-            MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS_ILLUSIONS = 0x55,
+            MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS_ILLUSIONS = 0x56,
             // MScriptDescription "GetModifierMagicalResistanceBonusUnique"
-            MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS_UNIQUE = 0x56,
+            MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS_UNIQUE = 0x57,
             // MScriptDescription "GetModifierMagicalResistanceDecrepifyUnique"
-            MODIFIER_PROPERTY_MAGICAL_RESISTANCE_DECREPIFY_UNIQUE = 0x57,
+            MODIFIER_PROPERTY_MAGICAL_RESISTANCE_DECREPIFY_UNIQUE = 0x58,
             // MScriptDescription "GetModifierBaseRegen"
-            MODIFIER_PROPERTY_BASE_MANA_REGEN = 0x58,
+            MODIFIER_PROPERTY_BASE_MANA_REGEN = 0x59,
             // MScriptDescription "GetModifierConstantManaRegen"
-            MODIFIER_PROPERTY_MANA_REGEN_CONSTANT = 0x59,
+            MODIFIER_PROPERTY_MANA_REGEN_CONSTANT = 0x5a,
             // MScriptDescription "GetModifierConstantManaRegenUnique"
-            MODIFIER_PROPERTY_MANA_REGEN_CONSTANT_UNIQUE = 0x5a,
+            MODIFIER_PROPERTY_MANA_REGEN_CONSTANT_UNIQUE = 0x5b,
             // MScriptDescription "GetModifierTotalPercentageManaRegen"
-            MODIFIER_PROPERTY_MANA_REGEN_TOTAL_PERCENTAGE = 0x5b,
+            MODIFIER_PROPERTY_MANA_REGEN_TOTAL_PERCENTAGE = 0x5c,
             // MScriptDescription "GetModifierConstantHealthRegen"
-            MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT = 0x5c,
+            MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT = 0x5d,
             // MScriptDescription "GetModifierHealthRegenPercentage"
-            MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE = 0x5d,
+            MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE = 0x5e,
             // MScriptDescription "GetModifierHealthRegenPercentageUnique"
-            MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE_UNIQUE = 0x5e,
+            MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE_UNIQUE = 0x5f,
             // MScriptDescription "GetModifierHealthBonus"
-            MODIFIER_PROPERTY_HEALTH_BONUS = 0x5f,
+            MODIFIER_PROPERTY_HEALTH_BONUS = 0x60,
             // MScriptDescription "GetModifierManaBonus"
-            MODIFIER_PROPERTY_MANA_BONUS = 0x60,
+            MODIFIER_PROPERTY_MANA_BONUS = 0x61,
             // MScriptDescription "GetModifierExtraStrengthBonus"
-            MODIFIER_PROPERTY_EXTRA_STRENGTH_BONUS = 0x61,
+            MODIFIER_PROPERTY_EXTRA_STRENGTH_BONUS = 0x62,
             // MScriptDescription "GetModifierExtraHealthBonus"
-            MODIFIER_PROPERTY_EXTRA_HEALTH_BONUS = 0x62,
+            MODIFIER_PROPERTY_EXTRA_HEALTH_BONUS = 0x63,
             // MScriptDescription "GetModifierExtraManaBonus"
-            MODIFIER_PROPERTY_EXTRA_MANA_BONUS = 0x63,
+            MODIFIER_PROPERTY_EXTRA_MANA_BONUS = 0x64,
             // MScriptDescription "GetModifierExtraManaBonusPercentage"
-            MODIFIER_PROPERTY_EXTRA_MANA_BONUS_PERCENTAGE = 0x64,
+            MODIFIER_PROPERTY_EXTRA_MANA_BONUS_PERCENTAGE = 0x65,
             // MScriptDescription "GetModifierExtraHealthPercentage"
-            MODIFIER_PROPERTY_EXTRA_HEALTH_PERCENTAGE = 0x65,
+            MODIFIER_PROPERTY_EXTRA_HEALTH_PERCENTAGE = 0x66,
             // MScriptDescription "GetModifierExtraManaPercentage"
-            MODIFIER_PROPERTY_EXTRA_MANA_PERCENTAGE = 0x66,
+            MODIFIER_PROPERTY_EXTRA_MANA_PERCENTAGE = 0x67,
             // MScriptDescription "GetModifierBonusStats_Strength"
-            MODIFIER_PROPERTY_STATS_STRENGTH_BONUS = 0x67,
+            MODIFIER_PROPERTY_STATS_STRENGTH_BONUS = 0x68,
             // MScriptDescription "GetModifierBonusStats_Agility"
-            MODIFIER_PROPERTY_STATS_AGILITY_BONUS = 0x68,
+            MODIFIER_PROPERTY_STATS_AGILITY_BONUS = 0x69,
             // MScriptDescription "GetModifierBonusStats_Intellect"
-            MODIFIER_PROPERTY_STATS_INTELLECT_BONUS = 0x69,
+            MODIFIER_PROPERTY_STATS_INTELLECT_BONUS = 0x6a,
             // MScriptDescription "GetModifierBonusStats_Strength_Percentage"
-            MODIFIER_PROPERTY_STATS_STRENGTH_BONUS_PERCENTAGE = 0x6a,
+            MODIFIER_PROPERTY_STATS_STRENGTH_BONUS_PERCENTAGE = 0x6b,
             // MScriptDescription "GetModifierBonusStats_Agility_Percentage"
-            MODIFIER_PROPERTY_STATS_AGILITY_BONUS_PERCENTAGE = 0x6b,
+            MODIFIER_PROPERTY_STATS_AGILITY_BONUS_PERCENTAGE = 0x6c,
             // MScriptDescription "GetModifierBonusStats_Intellect_Percentage"
-            MODIFIER_PROPERTY_STATS_INTELLECT_BONUS_PERCENTAGE = 0x6c,
+            MODIFIER_PROPERTY_STATS_INTELLECT_BONUS_PERCENTAGE = 0x6d,
             // MScriptDescription "GetModifierIntellectNone"
-            MODIFIER_PROPERTY_STATS_INTELLECT_NONE = 0x6d,
+            MODIFIER_PROPERTY_STATS_INTELLECT_NONE = 0x6e,
             // MScriptDescription "GetModifierCastRangeBonus"
-            MODIFIER_PROPERTY_CAST_RANGE_BONUS = 0x6e,
+            MODIFIER_PROPERTY_CAST_RANGE_BONUS = 0x6f,
             // MScriptDescription "GetModifierCastRangeBonusPercentage"
-            MODIFIER_PROPERTY_CAST_RANGE_BONUS_PERCENTAGE = 0x6f,
+            MODIFIER_PROPERTY_CAST_RANGE_BONUS_PERCENTAGE = 0x70,
             // MScriptDescription "GetModifierCastRangeBonusTarget"
-            MODIFIER_PROPERTY_CAST_RANGE_BONUS_TARGET = 0x70,
+            MODIFIER_PROPERTY_CAST_RANGE_BONUS_TARGET = 0x71,
             // MScriptDescription "GetModifierCastRangeBonusStacking"
-            MODIFIER_PROPERTY_CAST_RANGE_BONUS_STACKING = 0x71,
+            MODIFIER_PROPERTY_CAST_RANGE_BONUS_STACKING = 0x72,
             // MScriptDescription "GetModifierAttackRangeOverride"
-            MODIFIER_PROPERTY_ATTACK_RANGE_BASE_OVERRIDE = 0x72,
+            MODIFIER_PROPERTY_ATTACK_RANGE_BASE_OVERRIDE = 0x73,
             // MScriptDescription "GetModifierAttackRangeBonus"
-            MODIFIER_PROPERTY_ATTACK_RANGE_BONUS = 0x73,
+            MODIFIER_PROPERTY_ATTACK_RANGE_BONUS = 0x74,
             // MScriptDescription "GetModifierAttackRangeBonusUnique"
-            MODIFIER_PROPERTY_ATTACK_RANGE_BONUS_UNIQUE = 0x74,
+            MODIFIER_PROPERTY_ATTACK_RANGE_BONUS_UNIQUE = 0x75,
             // MScriptDescription "GetModifierAttackRangeBonusPercentage"
-            MODIFIER_PROPERTY_ATTACK_RANGE_BONUS_PERCENTAGE = 0x75,
+            MODIFIER_PROPERTY_ATTACK_RANGE_BONUS_PERCENTAGE = 0x76,
             // MScriptDescription "GetModifierMaxAttackRange"
-            MODIFIER_PROPERTY_MAX_ATTACK_RANGE = 0x76,
+            MODIFIER_PROPERTY_MAX_ATTACK_RANGE = 0x77,
             // MScriptDescription "GetModifierProjectileSpeedBonus"
-            MODIFIER_PROPERTY_PROJECTILE_SPEED_BONUS = 0x77,
+            MODIFIER_PROPERTY_PROJECTILE_SPEED_BONUS = 0x78,
             // MScriptDescription "GetModifierProjectileSpeedBonusPercentage"
-            MODIFIER_PROPERTY_PROJECTILE_SPEED_BONUS_PERCENTAGE = 0x78,
+            MODIFIER_PROPERTY_PROJECTILE_SPEED_BONUS_PERCENTAGE = 0x79,
             // MScriptDescription "GetModifierProjectileName"
-            MODIFIER_PROPERTY_PROJECTILE_NAME = 0x79,
+            MODIFIER_PROPERTY_PROJECTILE_NAME = 0x7a,
             // MScriptDescription "ReincarnateTime"
-            MODIFIER_PROPERTY_REINCARNATION = 0x7a,
+            MODIFIER_PROPERTY_REINCARNATION = 0x7b,
             // MScriptDescription "ReincarnateSuppressFX"
-            MODIFIER_PROPERTY_REINCARNATION_SUPPRESS_FX = 0x7b,
+            MODIFIER_PROPERTY_REINCARNATION_SUPPRESS_FX = 0x7c,
             // MScriptDescription "GetModifierConstantRespawnTime"
-            MODIFIER_PROPERTY_RESPAWNTIME = 0x7c,
+            MODIFIER_PROPERTY_RESPAWNTIME = 0x7d,
             // MScriptDescription "GetModifierPercentageRespawnTime"
-            MODIFIER_PROPERTY_RESPAWNTIME_PERCENTAGE = 0x7d,
+            MODIFIER_PROPERTY_RESPAWNTIME_PERCENTAGE = 0x7e,
             // MScriptDescription "GetModifierStackingRespawnTime"
-            MODIFIER_PROPERTY_RESPAWNTIME_STACKING = 0x7e,
+            MODIFIER_PROPERTY_RESPAWNTIME_STACKING = 0x7f,
             // MScriptDescription "GetModifierPercentageCooldown"
-            MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE = 0x7f,
+            MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE = 0x80,
             // MScriptDescription "GetModifierPercentageCooldownOngoing"
-            MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE_ONGOING = 0x80,
+            MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE_ONGOING = 0x81,
             // MScriptDescription "GetModifierPercentageCasttime"
-            MODIFIER_PROPERTY_CASTTIME_PERCENTAGE = 0x81,
+            MODIFIER_PROPERTY_CASTTIME_PERCENTAGE = 0x82,
             // MScriptDescription "GetModifierConstantCasttime"
-            MODIFIER_PROPERTY_CASTTIME_CONSTANT = 0x82,
+            MODIFIER_PROPERTY_CASTTIME_CONSTANT = 0x83,
             // MScriptDescription "GetModifierPercentageAttackAnimTime"
-            MODIFIER_PROPERTY_ATTACK_ANIM_TIME_PERCENTAGE = 0x83,
+            MODIFIER_PROPERTY_ATTACK_ANIM_TIME_PERCENTAGE = 0x84,
             // MScriptDescription "GetModifierPercentageManacost"
-            MODIFIER_PROPERTY_MANACOST_PERCENTAGE = 0x84,
+            MODIFIER_PROPERTY_MANACOST_PERCENTAGE = 0x85,
             // MScriptDescription "GetModifierPercentageManacostStacking"
-            MODIFIER_PROPERTY_MANACOST_PERCENTAGE_STACKING = 0x85,
+            MODIFIER_PROPERTY_MANACOST_PERCENTAGE_STACKING = 0x86,
             // MScriptDescription "GetModifierPercentageHealthcost"
-            MODIFIER_PROPERTY_HEALTHCOST_PERCENTAGE = 0x86,
+            MODIFIER_PROPERTY_HEALTHCOST_PERCENTAGE = 0x87,
             // MScriptDescription "GetModifierPercentageHealthcostStacking"
-            MODIFIER_PROPERTY_HEALTHCOST_PERCENTAGE_STACKING = 0x87,
+            MODIFIER_PROPERTY_HEALTHCOST_PERCENTAGE_STACKING = 0x88,
             // MScriptDescription "GetModifierConstantDeathGoldCost"
-            MODIFIER_PROPERTY_DEATHGOLDCOST = 0x88,
+            MODIFIER_PROPERTY_DEATHGOLDCOST = 0x89,
             // MScriptDescription "GetModifierPercentageDeathGoldCost"
-            MODIFIER_PROPERTY_PERCENTAGE_DEATHGOLDCOST = 0x89,
+            MODIFIER_PROPERTY_PERCENTAGE_DEATHGOLDCOST = 0x8a,
             // MScriptDescription "GetModifierPercentageExpRateBoost"
-            MODIFIER_PROPERTY_EXP_RATE_BOOST = 0x8a,
+            MODIFIER_PROPERTY_EXP_RATE_BOOST = 0x8b,
             // MScriptDescription "GetModifierPercentageGoldRateBoost"
-            MODIFIER_PROPERTY_GOLD_RATE_BOOST = 0x8b,
+            MODIFIER_PROPERTY_GOLD_RATE_BOOST = 0x8c,
             // MScriptDescription "GetModifierPercentageKillAssistGoldBoost"
-            MODIFIER_PROPERTY_KILL_ASSIST_GOLD_BOOST = 0x8c,
+            MODIFIER_PROPERTY_KILL_ASSIST_GOLD_BOOST = 0x8d,
             // MScriptDescription "GetModifierPercentageConvertExpToGold"
-            MODIFIER_PROPERTY_CONVERT_EXP_TO_GOLD_PCT = 0x8d,
+            MODIFIER_PROPERTY_CONVERT_EXP_TO_GOLD_PCT = 0x8e,
             // MScriptDescription "GetModifierPreAttack_CriticalStrike"
-            MODIFIER_PROPERTY_PREATTACK_CRITICALSTRIKE = 0x8e,
+            MODIFIER_PROPERTY_PREATTACK_CRITICALSTRIKE = 0x8f,
             // MScriptDescription "GetModifierPreAttack_Target_CriticalStrike"
-            MODIFIER_PROPERTY_PREATTACK_TARGET_CRITICALSTRIKE = 0x8f,
+            MODIFIER_PROPERTY_PREATTACK_TARGET_CRITICALSTRIKE = 0x90,
             // MScriptDescription "GetModifierMagical_ConstantBlock"
-            MODIFIER_PROPERTY_MAGICAL_CONSTANT_BLOCK = 0x90,
+            MODIFIER_PROPERTY_MAGICAL_CONSTANT_BLOCK = 0x91,
             // MScriptDescription "GetModifierPhysical_ConstantBlock"
-            MODIFIER_PROPERTY_PHYSICAL_CONSTANT_BLOCK = 0x91,
+            MODIFIER_PROPERTY_PHYSICAL_CONSTANT_BLOCK = 0x92,
             // MScriptDescription "GetModifierPhysical_ConstantBlockSpecial"
-            MODIFIER_PROPERTY_PHYSICAL_CONSTANT_BLOCK_SPECIAL = 0x92,
+            MODIFIER_PROPERTY_PHYSICAL_CONSTANT_BLOCK_SPECIAL = 0x93,
             // MScriptDescription "GetModifierPhysical_ConstantBlockBonus"
-            MODIFIER_PROPERTY_PHYSICAL_CONSTANT_BLOCK_BONUS = 0x93,
+            MODIFIER_PROPERTY_PHYSICAL_CONSTANT_BLOCK_BONUS = 0x94,
             // MScriptDescription "GetModifierInnateDamageBlockPctOverride"
-            MODIFIER_PROPERTY_INNATE_DAMAGE_BLOCK_PCT_OVERRIDE = 0x94,
+            MODIFIER_PROPERTY_INNATE_DAMAGE_BLOCK_PCT_OVERRIDE = 0x95,
             // MScriptDescription "GetModifierPhysical_ConstantBlockUnavoidablePreArmor"
-            MODIFIER_PROPERTY_TOTAL_CONSTANT_BLOCK_UNAVOIDABLE_PRE_ARMOR = 0x95,
+            MODIFIER_PROPERTY_TOTAL_CONSTANT_BLOCK_UNAVOIDABLE_PRE_ARMOR = 0x96,
             // MScriptDescription "GetModifierTotal_ConstantBlock"
-            MODIFIER_PROPERTY_TOTAL_CONSTANT_BLOCK = 0x96,
+            MODIFIER_PROPERTY_TOTAL_CONSTANT_BLOCK = 0x97,
             // MScriptDescription "GetOverrideAnimation"
-            MODIFIER_PROPERTY_OVERRIDE_ANIMATION = 0x97,
+            MODIFIER_PROPERTY_OVERRIDE_ANIMATION = 0x98,
             // MScriptDescription "GetOverrideAnimationRate"
-            MODIFIER_PROPERTY_OVERRIDE_ANIMATION_RATE = 0x98,
+            MODIFIER_PROPERTY_OVERRIDE_ANIMATION_RATE = 0x99,
             // MScriptDescription "GetAbsorbSpell"
-            MODIFIER_PROPERTY_ABSORB_SPELL = 0x99,
+            MODIFIER_PROPERTY_ABSORB_SPELL = 0x9a,
             // MScriptDescription "GetReflectSpell"
-            MODIFIER_PROPERTY_REFLECT_SPELL = 0x9a,
+            MODIFIER_PROPERTY_REFLECT_SPELL = 0x9b,
             // MScriptDescription "GetDisableAutoAttack"
-            MODIFIER_PROPERTY_DISABLE_AUTOATTACK = 0x9b,
+            MODIFIER_PROPERTY_DISABLE_AUTOATTACK = 0x9c,
             // MScriptDescription "GetBonusDayVision"
-            MODIFIER_PROPERTY_BONUS_DAY_VISION = 0x9c,
+            MODIFIER_PROPERTY_BONUS_DAY_VISION = 0x9d,
             // MScriptDescription "GetBonusDayVisionPercentage"
-            MODIFIER_PROPERTY_BONUS_DAY_VISION_PERCENTAGE = 0x9d,
+            MODIFIER_PROPERTY_BONUS_DAY_VISION_PERCENTAGE = 0x9e,
             // MScriptDescription "GetBonusNightVision"
-            MODIFIER_PROPERTY_BONUS_NIGHT_VISION = 0x9e,
+            MODIFIER_PROPERTY_BONUS_NIGHT_VISION = 0x9f,
             // MScriptDescription "GetBonusNightVisionUnique"
-            MODIFIER_PROPERTY_BONUS_NIGHT_VISION_UNIQUE = 0x9f,
+            MODIFIER_PROPERTY_BONUS_NIGHT_VISION_UNIQUE = 0xa0,
             // MScriptDescription "GetBonusVisionPercentage"
-            MODIFIER_PROPERTY_BONUS_VISION_PERCENTAGE = 0xa0,
+            MODIFIER_PROPERTY_BONUS_VISION_PERCENTAGE = 0xa1,
             // MScriptDescription "GetFixedDayVision"
-            MODIFIER_PROPERTY_FIXED_DAY_VISION = 0xa1,
+            MODIFIER_PROPERTY_FIXED_DAY_VISION = 0xa2,
             // MScriptDescription "GetFixedNightVision"
-            MODIFIER_PROPERTY_FIXED_NIGHT_VISION = 0xa2,
+            MODIFIER_PROPERTY_FIXED_NIGHT_VISION = 0xa3,
             // MScriptDescription "GetMinHealth"
-            MODIFIER_PROPERTY_MIN_HEALTH = 0xa3,
+            MODIFIER_PROPERTY_MIN_HEALTH = 0xa4,
             // MScriptDescription "GetMinMana"
-            MODIFIER_PROPERTY_MIN_MANA = 0xa4,
+            MODIFIER_PROPERTY_MIN_MANA = 0xa5,
             // MScriptDescription "GetAbsoluteNoDamagePhysical"
-            MODIFIER_PROPERTY_ABSOLUTE_NO_DAMAGE_PHYSICAL = 0xa5,
+            MODIFIER_PROPERTY_ABSOLUTE_NO_DAMAGE_PHYSICAL = 0xa6,
             // MScriptDescription "GetAbsoluteNoDamageMagical"
-            MODIFIER_PROPERTY_ABSOLUTE_NO_DAMAGE_MAGICAL = 0xa6,
+            MODIFIER_PROPERTY_ABSOLUTE_NO_DAMAGE_MAGICAL = 0xa7,
             // MScriptDescription "GetAbsoluteNoDamagePure"
-            MODIFIER_PROPERTY_ABSOLUTE_NO_DAMAGE_PURE = 0xa7,
+            MODIFIER_PROPERTY_ABSOLUTE_NO_DAMAGE_PURE = 0xa8,
             // MScriptDescription "GetIsIllusion"
-            MODIFIER_PROPERTY_IS_ILLUSION = 0xa8,
+            MODIFIER_PROPERTY_IS_ILLUSION = 0xa9,
             // MScriptDescription "GetModifierIllusionLabel"
-            MODIFIER_PROPERTY_ILLUSION_LABEL = 0xa9,
+            MODIFIER_PROPERTY_ILLUSION_LABEL = 0xaa,
             // MScriptDescription "GetModifierStrongIllusion"
-            MODIFIER_PROPERTY_STRONG_ILLUSION = 0xaa,
+            MODIFIER_PROPERTY_STRONG_ILLUSION = 0xab,
             // MScriptDescription "GetModifierSuperIllusion"
-            MODIFIER_PROPERTY_SUPER_ILLUSION = 0xab,
+            MODIFIER_PROPERTY_SUPER_ILLUSION = 0xac,
             // MScriptDescription "GetModifierSuperIllusionWithUltimate"
-            MODIFIER_PROPERTY_SUPER_ILLUSION_WITH_ULTIMATE = 0xac,
+            MODIFIER_PROPERTY_SUPER_ILLUSION_WITH_ULTIMATE = 0xad,
             // MScriptDescription "GetModifierXPDuringDeath"
-            MODIFIER_PROPERTY_XP_DURING_DEATH = 0xad,
+            MODIFIER_PROPERTY_XP_DURING_DEATH = 0xae,
             // MScriptDescription "GetModifierTurnRate_Percentage"
-            MODIFIER_PROPERTY_TURN_RATE_PERCENTAGE = 0xae,
+            MODIFIER_PROPERTY_TURN_RATE_PERCENTAGE = 0xaf,
             // MScriptDescription "GetModifierTurnRate_Override"
-            MODIFIER_PROPERTY_TURN_RATE_OVERRIDE = 0xaf,
+            MODIFIER_PROPERTY_TURN_RATE_OVERRIDE = 0xb0,
             // MScriptDescription "GetDisableHealing"
-            MODIFIER_PROPERTY_DISABLE_HEALING = 0xb0,
+            MODIFIER_PROPERTY_DISABLE_HEALING = 0xb1,
             // MScriptDescription "GetDisableManaGain"
-            MODIFIER_PROPERTY_DISABLE_MANA_GAIN = 0xb1,
+            MODIFIER_PROPERTY_DISABLE_MANA_GAIN = 0xb2,
             // MScriptDescription "GetAlwaysAllowAttack"
-            MODIFIER_PROPERTY_ALWAYS_ALLOW_ATTACK = 0xb2,
+            MODIFIER_PROPERTY_ALWAYS_ALLOW_ATTACK = 0xb3,
             // MScriptDescription "GetAllowEtherealAttack"
-            MODIFIER_PROPERTY_ALWAYS_ETHEREAL_ATTACK = 0xb3,
+            MODIFIER_PROPERTY_ALWAYS_ETHEREAL_ATTACK = 0xb4,
             // MScriptDescription "GetOverrideAttackMagical"
-            MODIFIER_PROPERTY_OVERRIDE_ATTACK_MAGICAL = 0xb4,
+            MODIFIER_PROPERTY_OVERRIDE_ATTACK_MAGICAL = 0xb5,
             // MScriptDescription "GetModifierUnitStatsNeedsRefresh"
-            MODIFIER_PROPERTY_UNIT_STATS_NEEDS_REFRESH = 0xb5,
+            MODIFIER_PROPERTY_UNIT_STATS_NEEDS_REFRESH = 0xb6,
             // MScriptDescription "Unused"
-            MODIFIER_PROPERTY_BOUNTY_CREEP_MULTIPLIER = 0xb6,
+            MODIFIER_PROPERTY_BOUNTY_CREEP_MULTIPLIER = 0xb7,
             // MScriptDescription "Unused"
-            MODIFIER_PROPERTY_BOUNTY_OTHER_MULTIPLIER = 0xb7,
+            MODIFIER_PROPERTY_BOUNTY_OTHER_MULTIPLIER = 0xb8,
             // MScriptDescription "GetModifierUnitDisllowUpgrading"
-            MODIFIER_PROPERTY_UNIT_DISALLOW_UPGRADING = 0xb8,
+            MODIFIER_PROPERTY_UNIT_DISALLOW_UPGRADING = 0xb9,
             // MScriptDescription "GetModifierDodgeProjectile"
-            MODIFIER_PROPERTY_DODGE_PROJECTILE = 0xb9,
+            MODIFIER_PROPERTY_DODGE_PROJECTILE = 0xba,
             // MScriptDescription "GetTriggerCosmeticAndEndAttack"
-            MODIFIER_PROPERTY_TRIGGER_COSMETIC_AND_END_ATTACK = 0xba,
+            MODIFIER_PROPERTY_TRIGGER_COSMETIC_AND_END_ATTACK = 0xbb,
             // MScriptDescription "GetPrimaryStatDamageMultiplier"
-            MODIFIER_PROPERTY_PRIMARY_STAT_DAMAGE_MULTIPLIER = 0xbb,
+            MODIFIER_PROPERTY_PRIMARY_STAT_DAMAGE_MULTIPLIER = 0xbc,
             // MScriptDescription "GetModifierPreAttack_DeadlyBlow"
-            MODIFIER_PROPERTY_PREATTACK_DEADLY_BLOW = 0xbc,
+            MODIFIER_PROPERTY_PREATTACK_DEADLY_BLOW = 0xbd,
             // MScriptDescription "GetAlwaysAutoAttackWhileHoldPosition"
-            MODIFIER_PROPERTY_ALWAYS_AUTOATTACK_WHILE_HOLD_POSITION = 0xbd,
+            MODIFIER_PROPERTY_ALWAYS_AUTOATTACK_WHILE_HOLD_POSITION = 0xbe,
             // MScriptDescription "GetPhysicalArmorPiercingPercentageTarget"
-            MODIFIER_PROPERTY_PHYSICAL_ARMOR_PIERCING_PERCENTAGE_TARGET = 0xbe,
+            MODIFIER_PROPERTY_PHYSICAL_ARMOR_PIERCING_PERCENTAGE_TARGET = 0xbf,
             // MScriptDescription "GetMagicalArmorPiercingPercentageTarget"
-            MODIFIER_PROPERTY_MAGICAL_ARMOR_PIERCING_PERCENTAGE_TARGET = 0xbf,
+            MODIFIER_PROPERTY_MAGICAL_ARMOR_PIERCING_PERCENTAGE_TARGET = 0xc0,
             // MScriptDescription "GetCriticalStrikeBonus"
-            MODIFIER_PROPERTY_CRITICAL_STRIKE_BONUS = 0xc0,
+            MODIFIER_PROPERTY_CRITICAL_STRIKE_BONUS = 0xc1,
             // MScriptDescription "GetConvertAttackPhysicalToPure"
-            MODIFIER_PROPERTY_CONVERT_ATTACK_PHYSICAL_TO_PURE = 0xc1,
+            MODIFIER_PROPERTY_CONVERT_ATTACK_PHYSICAL_TO_PURE = 0xc2,
             // MScriptDescription "GetBuffAmplification"
-            MODIFIER_PROPERTY_BUFF_AMPLIFICATION = 0xc2,
+            MODIFIER_PROPERTY_BUFF_AMPLIFICATION = 0xc3,
             // MScriptDescription "OnSpellTargetReady"
-            MODIFIER_EVENT_ON_SPELL_TARGET_READY = 0xc3,
+            MODIFIER_EVENT_ON_SPELL_TARGET_READY = 0xc4,
             // MScriptDescription "OnAttackRecord"
-            MODIFIER_EVENT_ON_ATTACK_RECORD = 0xc4,
+            MODIFIER_EVENT_ON_ATTACK_RECORD = 0xc5,
             // MScriptDescription "OnAttackStart"
-            MODIFIER_EVENT_ON_ATTACK_START = 0xc5,
+            MODIFIER_EVENT_ON_ATTACK_START = 0xc6,
             // MScriptDescription "OnAttack"
-            MODIFIER_EVENT_ON_ATTACK = 0xc6,
+            MODIFIER_EVENT_ON_ATTACK = 0xc7,
             // MScriptDescription "OnAttackLanded"
-            MODIFIER_EVENT_ON_ATTACK_LANDED = 0xc7,
+            MODIFIER_EVENT_ON_ATTACK_LANDED = 0xc8,
             // MScriptDescription "OnAttackFail"
-            MODIFIER_EVENT_ON_ATTACK_FAIL = 0xc8,
+            MODIFIER_EVENT_ON_ATTACK_FAIL = 0xc9,
             // MScriptDescription "OnAttackAllied"
-            MODIFIER_EVENT_ON_ATTACK_ALLIED = 0xc9,
+            MODIFIER_EVENT_ON_ATTACK_ALLIED = 0xca,
             // MScriptDescription "OnProjectileDodge"
-            MODIFIER_EVENT_ON_PROJECTILE_DODGE = 0xca,
+            MODIFIER_EVENT_ON_PROJECTILE_DODGE = 0xcb,
             // MScriptDescription "OnOrder"
-            MODIFIER_EVENT_ON_ORDER = 0xcb,
+            MODIFIER_EVENT_ON_ORDER = 0xcc,
             // MScriptDescription "OnOrderReceived"
-            MODIFIER_EVENT_ON_ORDER_RECEIVED = 0xcc,
+            MODIFIER_EVENT_ON_ORDER_RECEIVED = 0xcd,
             // MScriptDescription "OnUnitMoved"
-            MODIFIER_EVENT_ON_UNIT_MOVED = 0xcd,
+            MODIFIER_EVENT_ON_UNIT_MOVED = 0xce,
             // MScriptDescription "OnAbilityStart"
-            MODIFIER_EVENT_ON_ABILITY_START = 0xce,
+            MODIFIER_EVENT_ON_ABILITY_START = 0xcf,
             // MScriptDescription "OnAbilityExecuted"
-            MODIFIER_EVENT_ON_ABILITY_EXECUTED = 0xcf,
+            MODIFIER_EVENT_ON_ABILITY_EXECUTED = 0xd0,
             // MScriptDescription "OnAbilityFullyCast"
-            MODIFIER_EVENT_ON_ABILITY_FULLY_CAST = 0xd0,
+            MODIFIER_EVENT_ON_ABILITY_FULLY_CAST = 0xd1,
             // MScriptDescription "OnBreakInvisibility"
-            MODIFIER_EVENT_ON_BREAK_INVISIBILITY = 0xd1,
+            MODIFIER_EVENT_ON_BREAK_INVISIBILITY = 0xd2,
             // MScriptDescription "OnAbilityEndChannel"
-            MODIFIER_EVENT_ON_ABILITY_END_CHANNEL = 0xd2,
+            MODIFIER_EVENT_ON_ABILITY_END_CHANNEL = 0xd3,
             // MScriptDescription "Unused"
-            MODIFIER_EVENT_ON_PROCESS_UPGRADE = 0xd3,
+            MODIFIER_EVENT_ON_PROCESS_UPGRADE = 0xd4,
             // MScriptDescription "Unused"
-            MODIFIER_EVENT_ON_REFRESH = 0xd4,
+            MODIFIER_EVENT_ON_REFRESH = 0xd5,
             // MScriptDescription "OnTakeDamage"
-            MODIFIER_EVENT_ON_TAKEDAMAGE = 0xd5,
+            MODIFIER_EVENT_ON_TAKEDAMAGE = 0xd6,
             // MScriptDescription "OnDamagePrevented"
-            MODIFIER_EVENT_ON_DEATH_PREVENTED = 0xd6,
+            MODIFIER_EVENT_ON_DEATH_PREVENTED = 0xd7,
             // MScriptDescription "OnStateChanged"
-            MODIFIER_EVENT_ON_STATE_CHANGED = 0xd7,
+            MODIFIER_EVENT_ON_STATE_CHANGED = 0xd8,
             // MScriptDescription "Unused"
-            MODIFIER_EVENT_ON_ORB_EFFECT = 0xd8,
+            MODIFIER_EVENT_ON_ORB_EFFECT = 0xd9,
             // MScriptDescription "OnProcessCleave"
-            MODIFIER_EVENT_ON_PROCESS_CLEAVE = 0xd9,
+            MODIFIER_EVENT_ON_PROCESS_CLEAVE = 0xda,
             // MScriptDescription "OnDamageCalculated"
-            MODIFIER_EVENT_ON_DAMAGE_CALCULATED = 0xda,
+            MODIFIER_EVENT_ON_DAMAGE_CALCULATED = 0xdb,
             // MScriptDescription "OnMagicDamageCalculated"
-            MODIFIER_EVENT_ON_MAGIC_DAMAGE_CALCULATED = 0xdb,
+            MODIFIER_EVENT_ON_MAGIC_DAMAGE_CALCULATED = 0xdc,
             // MScriptDescription "OnAttacked"
-            MODIFIER_EVENT_ON_ATTACKED = 0xdc,
+            MODIFIER_EVENT_ON_ATTACKED = 0xdd,
             // MScriptDescription "OnDeath"
-            MODIFIER_EVENT_ON_DEATH = 0xdd,
+            MODIFIER_EVENT_ON_DEATH = 0xde,
             // MScriptDescription "OnDeathCompleted"
-            MODIFIER_EVENT_ON_DEATH_COMPLETED = 0xde,
+            MODIFIER_EVENT_ON_DEATH_COMPLETED = 0xdf,
             // MScriptDescription "OnRespawn"
-            MODIFIER_EVENT_ON_RESPAWN = 0xdf,
+            MODIFIER_EVENT_ON_RESPAWN = 0xe0,
             // MScriptDescription "OnSpentMana"
-            MODIFIER_EVENT_ON_SPENT_MANA = 0xe0,
+            MODIFIER_EVENT_ON_SPENT_MANA = 0xe1,
             // MScriptDescription "OnSpentHealth"
-            MODIFIER_EVENT_ON_SPENT_HEALTH = 0xe1,
+            MODIFIER_EVENT_ON_SPENT_HEALTH = 0xe2,
             // MScriptDescription "OnSpentItemCharge"
-            MODIFIER_EVENT_ON_SPENT_ITEM_CHARGE = 0xe2,
+            MODIFIER_EVENT_ON_SPENT_ITEM_CHARGE = 0xe3,
             // MScriptDescription "OnTeleporting"
-            MODIFIER_EVENT_ON_TELEPORTING = 0xe3,
+            MODIFIER_EVENT_ON_TELEPORTING = 0xe4,
             // MScriptDescription "OnTeleported"
-            MODIFIER_EVENT_ON_TELEPORTED = 0xe4,
+            MODIFIER_EVENT_ON_TELEPORTED = 0xe5,
             // MScriptDescription "OnSetLocation"
-            MODIFIER_EVENT_ON_SET_LOCATION = 0xe5,
+            MODIFIER_EVENT_ON_SET_LOCATION = 0xe6,
             // MScriptDescription "OnHealthGained"
-            MODIFIER_EVENT_ON_HEALTH_GAINED = 0xe6,
+            MODIFIER_EVENT_ON_HEALTH_GAINED = 0xe7,
             // MScriptDescription "OnManaGained"
-            MODIFIER_EVENT_ON_MANA_GAINED = 0xe7,
+            MODIFIER_EVENT_ON_MANA_GAINED = 0xe8,
             // MScriptDescription "OnTakeDamageKillCredit"
-            MODIFIER_EVENT_ON_TAKEDAMAGE_KILLCREDIT = 0xe8,
+            MODIFIER_EVENT_ON_TAKEDAMAGE_KILLCREDIT = 0xe9,
             // MScriptDescription "OnHeroKilled"
-            MODIFIER_EVENT_ON_HERO_KILLED = 0xe9,
+            MODIFIER_EVENT_ON_HERO_KILLED = 0xea,
             // MScriptDescription "OnHealReceived"
-            MODIFIER_EVENT_ON_HEAL_RECEIVED = 0xea,
+            MODIFIER_EVENT_ON_HEAL_RECEIVED = 0xeb,
             // MScriptDescription "OnRedirectHealthGain"
-            MODIFIER_EVENT_ON_REDIRECT_HEALTH_GAIN = 0xeb,
+            MODIFIER_EVENT_ON_REDIRECT_HEALTH_GAIN = 0xec,
             // MScriptDescription "OnBuildingKilled"
-            MODIFIER_EVENT_ON_BUILDING_KILLED = 0xec,
+            MODIFIER_EVENT_ON_BUILDING_KILLED = 0xed,
             // MScriptDescription "OnModelChanged"
-            MODIFIER_EVENT_ON_MODEL_CHANGED = 0xed,
+            MODIFIER_EVENT_ON_MODEL_CHANGED = 0xee,
             // MScriptDescription "OnModifierAdded"
-            MODIFIER_EVENT_ON_MODIFIER_ADDED = 0xee,
+            MODIFIER_EVENT_ON_MODIFIER_ADDED = 0xef,
             // MScriptDescription "OnModifierRemoved"
-            MODIFIER_EVENT_ON_MODIFIER_REMOVED = 0xef,
+            MODIFIER_EVENT_ON_MODIFIER_REMOVED = 0xf0,
             // MScriptDescription "OnScepterUpgradeSelected"
-            MODIFIER_EVENT_ON_SCEPTER_UPGRADE_SELECTED = 0xf0,
+            MODIFIER_EVENT_ON_SCEPTER_UPGRADE_SELECTED = 0xf1,
             // MScriptDescription "OnShardUpgradeSelected"
-            MODIFIER_EVENT_ON_SHARD_UPGRADE_SELECTED = 0xf1,
+            MODIFIER_EVENT_ON_SHARD_UPGRADE_SELECTED = 0xf2,
             // MScriptDescription "OnTooltip"
-            MODIFIER_PROPERTY_TOOLTIP = 0xf2,
+            MODIFIER_PROPERTY_TOOLTIP = 0xf3,
             // MScriptDescription "GetModifierModelChange"
-            MODIFIER_PROPERTY_MODEL_CHANGE = 0xf3,
+            MODIFIER_PROPERTY_MODEL_CHANGE = 0xf4,
             // MScriptDescription "GetModifierModelScale"
-            MODIFIER_PROPERTY_MODEL_SCALE = 0xf4,
+            MODIFIER_PROPERTY_MODEL_SCALE = 0xf5,
             // MScriptDescription "GetModifierModelScaleAnimateTime"
-            MODIFIER_PROPERTY_MODEL_SCALE_ANIMATE_TIME = 0xf5,
+            MODIFIER_PROPERTY_MODEL_SCALE_ANIMATE_TIME = 0xf6,
             // MScriptDescription "GetModifierModelScaleUseInOutEase"
-            MODIFIER_PROPERTY_MODEL_SCALE_USE_IN_OUT_EASE = 0xf6,
+            MODIFIER_PROPERTY_MODEL_SCALE_USE_IN_OUT_EASE = 0xf7,
             // MScriptDescription "GetModifierModelScaleConstant"
-            MODIFIER_PROPERTY_MODEL_SCALE_CONSTANT = 0xf7,
+            MODIFIER_PROPERTY_MODEL_SCALE_CONSTANT = 0xf8,
             // MScriptDescription "GetModifierScepter"
-            MODIFIER_PROPERTY_IS_SCEPTER = 0xf8,
+            MODIFIER_PROPERTY_IS_SCEPTER = 0xf9,
             // MScriptDescription "GetModifierShard"
-            MODIFIER_PROPERTY_IS_SHARD = 0xf9,
+            MODIFIER_PROPERTY_IS_SHARD = 0xfa,
             // MScriptDescription "GetModifierRadarCooldownReduction"
-            MODIFIER_PROPERTY_RADAR_COOLDOWN_REDUCTION = 0xfa,
+            MODIFIER_PROPERTY_RADAR_COOLDOWN_REDUCTION = 0xfb,
             // MScriptDescription "GetActivityTranslationModifiers"
-            MODIFIER_PROPERTY_TRANSLATE_ACTIVITY_MODIFIERS = 0xfb,
+            MODIFIER_PROPERTY_TRANSLATE_ACTIVITY_MODIFIERS = 0xfc,
             // MScriptDescription "GetAttackSound"
-            MODIFIER_PROPERTY_TRANSLATE_ATTACK_SOUND = 0xfc,
+            MODIFIER_PROPERTY_TRANSLATE_ATTACK_SOUND = 0xfd,
             // MScriptDescription "GetUnitLifetimeFraction"
-            MODIFIER_PROPERTY_LIFETIME_FRACTION = 0xfd,
+            MODIFIER_PROPERTY_LIFETIME_FRACTION = 0xfe,
             // MScriptDescription "GetModifierProvidesFOWVision"
-            MODIFIER_PROPERTY_PROVIDES_FOW_POSITION = 0xfe,
+            MODIFIER_PROPERTY_PROVIDES_FOW_POSITION = 0xff,
             // MScriptDescription "GetModifierSpellsRequireHP"
-            MODIFIER_PROPERTY_SPELLS_REQUIRE_HP = 0xff,
+            MODIFIER_PROPERTY_SPELLS_REQUIRE_HP = 0x100,
             // MScriptDescription "GetModifierConvertManaCostToHealthCost"
-            MODIFIER_PROPERTY_CONVERT_MANA_COST_TO_HEALTH_COST = 0x100,
+            MODIFIER_PROPERTY_CONVERT_MANA_COST_TO_HEALTH_COST = 0x101,
             // MScriptDescription "GetForceDrawOnMinimap"
-            MODIFIER_PROPERTY_FORCE_DRAW_MINIMAP = 0x101,
+            MODIFIER_PROPERTY_FORCE_DRAW_MINIMAP = 0x102,
             // MScriptDescription "GetModifierDisableTurning"
-            MODIFIER_PROPERTY_DISABLE_TURNING = 0x102,
+            MODIFIER_PROPERTY_DISABLE_TURNING = 0x103,
             // MScriptDescription "GetModifierIgnoreCastAngle"
-            MODIFIER_PROPERTY_IGNORE_CAST_ANGLE = 0x103,
+            MODIFIER_PROPERTY_IGNORE_CAST_ANGLE = 0x104,
             // MScriptDescription "GetModifierChangeAbilityValue"
-            MODIFIER_PROPERTY_CHANGE_ABILITY_VALUE = 0x104,
+            MODIFIER_PROPERTY_CHANGE_ABILITY_VALUE = 0x105,
             // MScriptDescription "GetModifierOverrideAbilitySpecial"
-            MODIFIER_PROPERTY_OVERRIDE_ABILITY_SPECIAL = 0x105,
+            MODIFIER_PROPERTY_OVERRIDE_ABILITY_SPECIAL = 0x106,
             // MScriptDescription "GetModifierOverrideAbilitySpecialValue"
-            MODIFIER_PROPERTY_OVERRIDE_ABILITY_SPECIAL_VALUE = 0x106,
+            MODIFIER_PROPERTY_OVERRIDE_ABILITY_SPECIAL_VALUE = 0x107,
             // MScriptDescription "GetModifierAbilityLayout"
-            MODIFIER_PROPERTY_ABILITY_LAYOUT = 0x107,
+            MODIFIER_PROPERTY_ABILITY_LAYOUT = 0x108,
             // MScriptDescription "OnDominated"
-            MODIFIER_EVENT_ON_DOMINATED = 0x108,
+            MODIFIER_EVENT_ON_DOMINATED = 0x109,
             // MScriptDescription "OnKill"
-            MODIFIER_EVENT_ON_KILL = 0x109,
+            MODIFIER_EVENT_ON_KILL = 0x10a,
             // MScriptDescription "OnAssist"
-            MODIFIER_EVENT_ON_ASSIST = 0x10a,
+            MODIFIER_EVENT_ON_ASSIST = 0x10b,
             // MScriptDescription "GetModifierTempestDouble"
-            MODIFIER_PROPERTY_TEMPEST_DOUBLE = 0x10b,
+            MODIFIER_PROPERTY_TEMPEST_DOUBLE = 0x10c,
             // MScriptDescription "PreserveParticlesOnModelChanged"
-            MODIFIER_PROPERTY_PRESERVE_PARTICLES_ON_MODEL_CHANGE = 0x10c,
+            MODIFIER_PROPERTY_PRESERVE_PARTICLES_ON_MODEL_CHANGE = 0x10d,
             // MScriptDescription "OnAttackFinished"
-            MODIFIER_EVENT_ON_ATTACK_FINISHED = 0x10d,
+            MODIFIER_EVENT_ON_ATTACK_FINISHED = 0x10e,
             // MScriptDescription "GetModifierIgnoreCooldown"
-            MODIFIER_PROPERTY_IGNORE_COOLDOWN = 0x10e,
+            MODIFIER_PROPERTY_IGNORE_COOLDOWN = 0x10f,
             // MScriptDescription "GetModifierCanAttackTrees"
-            MODIFIER_PROPERTY_CAN_ATTACK_TREES = 0x10f,
+            MODIFIER_PROPERTY_CAN_ATTACK_TREES = 0x110,
             // MScriptDescription "GetVisualZDelta"
-            MODIFIER_PROPERTY_VISUAL_Z_DELTA = 0x110,
+            MODIFIER_PROPERTY_VISUAL_Z_DELTA = 0x111,
             // MScriptDescription "GetVisualZSpeedBaseOverride"
-            MODIFIER_PROPERTY_VISUAL_Z_SPEED_BASE_OVERRIDE = 0x111,
+            MODIFIER_PROPERTY_VISUAL_Z_SPEED_BASE_OVERRIDE = 0x112,
             // MScriptDescription
-            MODIFIER_PROPERTY_INCOMING_DAMAGE_ILLUSION = 0x112,
+            MODIFIER_PROPERTY_INCOMING_DAMAGE_ILLUSION = 0x113,
             // MScriptDescription "GetModifierNoVisionOfAttacker"
-            MODIFIER_PROPERTY_DONT_GIVE_VISION_OF_ATTACKER = 0x113,
+            MODIFIER_PROPERTY_DONT_GIVE_VISION_OF_ATTACKER = 0x114,
             // MScriptDescription "OnTooltip2"
-            MODIFIER_PROPERTY_TOOLTIP2 = 0x114,
+            MODIFIER_PROPERTY_TOOLTIP2 = 0x115,
             // MScriptDescription "OnAttackRecordDestroy"
-            MODIFIER_EVENT_ON_ATTACK_RECORD_DESTROY = 0x115,
+            MODIFIER_EVENT_ON_ATTACK_RECORD_DESTROY = 0x116,
             // MScriptDescription "OnProjectileObstructionHit"
-            MODIFIER_EVENT_ON_PROJECTILE_OBSTRUCTION_HIT = 0x116,
+            MODIFIER_EVENT_ON_PROJECTILE_OBSTRUCTION_HIT = 0x117,
             // MScriptDescription "GetSuppressTeleport"
-            MODIFIER_PROPERTY_SUPPRESS_TELEPORT = 0x117,
+            MODIFIER_PROPERTY_SUPPRESS_TELEPORT = 0x118,
             // MScriptDescription "OnAttackCancelled"
-            MODIFIER_EVENT_ON_ATTACK_CANCELLED = 0x118,
+            MODIFIER_EVENT_ON_ATTACK_CANCELLED = 0x119,
             // MScriptDescription "GetSuppressCleave"
-            MODIFIER_PROPERTY_SUPPRESS_CLEAVE = 0x119,
+            MODIFIER_PROPERTY_SUPPRESS_CLEAVE = 0x11a,
             // MScriptDescription "BotAttackScoreBonus"
-            MODIFIER_PROPERTY_BOT_ATTACK_SCORE_BONUS = 0x11a,
+            MODIFIER_PROPERTY_BOT_ATTACK_SCORE_BONUS = 0x11b,
             // MScriptDescription "GetModifierAttackSpeedReductionPercentage"
-            MODIFIER_PROPERTY_ATTACKSPEED_REDUCTION_PERCENTAGE = 0x11b,
+            MODIFIER_PROPERTY_ATTACKSPEED_REDUCTION_PERCENTAGE = 0x11c,
             // MScriptDescription "GetModifierMoveSpeedReductionPercentage"
-            MODIFIER_PROPERTY_MOVESPEED_REDUCTION_PERCENTAGE = 0x11c,
+            MODIFIER_PROPERTY_MOVESPEED_REDUCTION_PERCENTAGE = 0x11d,
             // MScriptDescription
-            MODIFIER_PROPERTY_ATTACK_WHILE_MOVING_TARGET = 0x11d,
+            MODIFIER_PROPERTY_ATTACK_WHILE_MOVING_TARGET = 0x11e,
             // MScriptDescription "GetModifierAttackSpeedPercentage"
-            MODIFIER_PROPERTY_ATTACKSPEED_PERCENTAGE = 0x11e,
+            MODIFIER_PROPERTY_ATTACKSPEED_PERCENTAGE = 0x11f,
             // MScriptDescription "OnAttemptProjectileDodge"
-            MODIFIER_EVENT_ON_ATTEMPT_PROJECTILE_DODGE = 0x11f,
+            MODIFIER_EVENT_ON_ATTEMPT_PROJECTILE_DODGE = 0x120,
             // MScriptDescription "GetModifierPercentageCooldownStacking"
-            MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE_STACKING = 0x120,
+            MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE_STACKING = 0x121,
             // MScriptDescription "GetModifierSpellRedirectTarget"
-            MODIFIER_PROPERTY_SPELL_REDIRECT_TARGET = 0x121,
+            MODIFIER_PROPERTY_SPELL_REDIRECT_TARGET = 0x122,
             // MScriptDescription "GetModifierTurnRateConstant"
-            MODIFIER_PROPERTY_TURN_RATE_CONSTANT = 0x122,
+            MODIFIER_PROPERTY_TURN_RATE_CONSTANT = 0x123,
             // MScriptDescription "GetModifierIsPackRat"
-            MODIFIER_PROPERTY_PACK_RAT = 0x123,
+            MODIFIER_PROPERTY_PACK_RAT = 0x124,
             // MScriptDescription "GetModifierPhysicalDamageOutgoing_Percentage"
-            MODIFIER_PROPERTY_PHYSICALDAMAGEOUTGOING_PERCENTAGE = 0x124,
+            MODIFIER_PROPERTY_PHYSICALDAMAGEOUTGOING_PERCENTAGE = 0x125,
             // MScriptDescription "GetModifierKnockbackAmplification_Percentage"
-            MODIFIER_PROPERTY_KNOCKBACK_AMPLIFICATION_PERCENTAGE = 0x125,
+            MODIFIER_PROPERTY_KNOCKBACK_AMPLIFICATION_PERCENTAGE = 0x126,
             // MScriptDescription "GetModifierHealthBarPips"
-            MODIFIER_PROPERTY_HEALTHBAR_PIPS = 0x126,
+            MODIFIER_PROPERTY_HEALTHBAR_PIPS = 0x127,
             // MScriptDescription "GetModifierIncomingDamageConstant"
-            MODIFIER_PROPERTY_INCOMING_DAMAGE_CONSTANT = 0x127,
+            MODIFIER_PROPERTY_INCOMING_DAMAGE_CONSTANT = 0x128,
             // MScriptDescription "OnSpellAppliedSuccessfully"
-            MODIFIER_EVENT_SPELL_APPLIED_SUCCESSFULLY = 0x128,
+            MODIFIER_EVENT_SPELL_APPLIED_SUCCESSFULLY = 0x129,
             // MScriptDescription "GetModifierAvoidDamageAfterReductions"
-            MODIFIER_PROPERTY_AVOID_DAMAGE_AFTER_REDUCTIONS = 0x129,
+            MODIFIER_PROPERTY_AVOID_DAMAGE_AFTER_REDUCTIONS = 0x12a,
             // MScriptDescription "GetModifierPropetyFailAttack"
-            MODIFIER_PROPERTY_FAIL_ATTACK = 0x12a,
+            MODIFIER_PROPERTY_FAIL_ATTACK = 0x12b,
             // MScriptDescription "GetModifierPrereduceIncomingDamage_Mult"
-            MODIFIER_PROPERTY_PREREDUCE_INCOMING_DAMAGE_MULT = 0x12b,
+            MODIFIER_PROPERTY_PREREDUCE_INCOMING_DAMAGE_MULT = 0x12c,
             // MScriptDescription "GetModifierSuppressFullscreenDeathFX"
-            MODIFIER_PROPERTY_SUPPRESS_FULLSCREEN_DEATH_FX = 0x12c,
+            MODIFIER_PROPERTY_SUPPRESS_FULLSCREEN_DEATH_FX = 0x12d,
             // MScriptDescription "MODIFIER_PROPERTY_INCOMING_DAMAGE_CONSTANT_POST"
-            MODIFIER_PROPERTY_INCOMING_DAMAGE_CONSTANT_POST = 0x12d,
+            MODIFIER_PROPERTY_INCOMING_DAMAGE_CONSTANT_POST = 0x12e,
             // MScriptDescription "GetModifierDamageOutgoing_PercentageMultiplicative"
-            MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE_MULTIPLICATIVE = 0x12e,
+            MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE_MULTIPLICATIVE = 0x12f,
             // MScriptDescription "GetModifierTickGold_Multiplier"
-            MODIFIER_PROPERTY_TICK_GOLD_MULTIPLIER = 0x12f,
+            MODIFIER_PROPERTY_TICK_GOLD_MULTIPLIER = 0x130,
             // MScriptDescription "GEtModifierSlowResistance_Unique"
-            MODIFIER_PROPERTY_SLOW_RESISTANCE_UNIQUE = 0x130,
+            MODIFIER_PROPERTY_SLOW_RESISTANCE_UNIQUE = 0x131,
             // MScriptDescription "GetModifierSlowResistance_Stacking"
-            MODIFIER_PROPERTY_SLOW_RESISTANCE_STACKING = 0x131,
+            MODIFIER_PROPERTY_SLOW_RESISTANCE_STACKING = 0x132,
             // MScriptDescription "GetModifierSlowResistanceAppliesToAttacks"
-            MODIFIER_PROPERTY_SLOW_RESISTANCE_APPLIES_TO_ATTACKS = 0x132,
+            MODIFIER_PROPERTY_SLOW_RESISTANCE_APPLIES_TO_ATTACKS = 0x133,
             // MScriptDescription "GetModifierAoEBonusPercentage"
-            MODIFIER_PROPERTY_AOE_BONUS_PERCENTAGE = 0x133,
+            MODIFIER_PROPERTY_AOE_BONUS_PERCENTAGE = 0x134,
             // MScriptDescription "GetModifierProjectileSpeed"
-            MODIFIER_PROPERTY_PROJECTILE_SPEED = 0x134,
+            MODIFIER_PROPERTY_PROJECTILE_SPEED = 0x135,
             // MScriptDescription "GetModifierProjectileSpeedTarget"
-            MODIFIER_PROPERTY_PROJECTILE_SPEED_TARGET = 0x135,
+            MODIFIER_PROPERTY_PROJECTILE_SPEED_TARGET = 0x136,
             // MScriptDescription "GetModifierBecomeStrength"
-            MODIFIER_PROPERTY_BECOME_STRENGTH = 0x136,
+            MODIFIER_PROPERTY_BECOME_STRENGTH = 0x137,
             // MScriptDescription "GetModifierBecomeAgility"
-            MODIFIER_PROPERTY_BECOME_AGILITY = 0x137,
+            MODIFIER_PROPERTY_BECOME_AGILITY = 0x138,
             // MScriptDescription "GetModifierBecomeIntelligence"
-            MODIFIER_PROPERTY_BECOME_INTELLIGENCE = 0x138,
+            MODIFIER_PROPERTY_BECOME_INTELLIGENCE = 0x139,
             // MScriptDescription "GetModifierBecomeUniversal"
-            MODIFIER_PROPERTY_BECOME_UNIVERSAL = 0x139,
+            MODIFIER_PROPERTY_BECOME_UNIVERSAL = 0x13a,
             // MScriptDescription "OnForceProcMagicStick"
-            MODIFIER_EVENT_ON_FORCE_PROC_MAGIC_STICK = 0x13a,
+            MODIFIER_EVENT_ON_FORCE_PROC_MAGIC_STICK = 0x13b,
             // MScriptDescription "OnDamageHPLoss"
-            MODIFIER_EVENT_ON_DAMAGE_HPLOSS = 0x13b,
+            MODIFIER_EVENT_ON_DAMAGE_HPLOSS = 0x13c,
             // MScriptDescription "GetModifierShareXPRune"
-            MODIFIER_PROPERTY_SHARE_XPRUNE = 0x13c,
+            MODIFIER_PROPERTY_SHARE_XPRUNE = 0x13d,
             // MScriptDescription "GetModifierXPFountainCountdownTimeOverride"
-            MODIFIER_PROPERTY_XP_FOUNTAIN_COUNTDOWN_TIME_OVERRIDE = 0x13d,
+            MODIFIER_PROPERTY_XP_FOUNTAIN_COUNTDOWN_TIME_OVERRIDE = 0x13e,
             // MScriptDescription "GetModifierNoFreeTPScrollOnDeath"
-            MODIFIER_PROPERTY_NO_FREE_TP_SCROLL_ON_DEATH = 0x13e,
+            MODIFIER_PROPERTY_NO_FREE_TP_SCROLL_ON_DEATH = 0x13f,
             // MScriptDescription "GetModifierHasBonusNeutralItemChoice"
-            MODIFIER_PROPERTY_HAS_BONUS_NEUTRAL_ITEM_CHOICE = 0x13f,
+            MODIFIER_PROPERTY_HAS_BONUS_NEUTRAL_ITEM_CHOICE = 0x140,
             // MScriptDescription "HasBonusNeutralItemPassive"
-            MODIFIER_PROPERTY_HAS_BONUS_NEUTRAL_ITEM_PASSIVE = 0x140,
+            MODIFIER_PROPERTY_HAS_BONUS_NEUTRAL_ITEM_PASSIVE = 0x141,
             // MScriptDescription "GetModifierPreserveNeutralItemPassives"
-            MODIFIER_PROPERTY_PRESERVE_NEUTRAL_ITEM_PASSIVES = 0x141,
+            MODIFIER_PROPERTY_PRESERVE_NEUTRAL_ITEM_PASSIVES = 0x142,
             // MScriptDescription "GetModifierForceMaxHealth"
-            MODIFIER_PROPERTY_FORCE_MAX_HEALTH = 0x142,
+            MODIFIER_PROPERTY_FORCE_MAX_HEALTH = 0x143,
             // MScriptDescription "GetModifierForceMaxMana"
-            MODIFIER_PROPERTY_FORCE_MAX_MANA = 0x143,
+            MODIFIER_PROPERTY_FORCE_MAX_MANA = 0x144,
             // MScriptDescription "GetModifierAoEBonusConstant"
-            MODIFIER_PROPERTY_AOE_BONUS_CONSTANT = 0x144,
+            MODIFIER_PROPERTY_AOE_BONUS_CONSTANT = 0x145,
             // MScriptDescription "GetModifierAoEBonusConstantStacking"
-            MODIFIER_PROPERTY_AOE_BONUS_CONSTANT_STACKING = 0x145,
+            MODIFIER_PROPERTY_AOE_BONUS_CONSTANT_STACKING = 0x146,
             // MScriptDescription "OnTakeDamagePostUnavoidableBlock"
-            MODIFIER_EVENT_ON_TAKEDAMAGE_POST_UNAVOIDABLE_BLOCK = 0x146,
+            MODIFIER_EVENT_ON_TAKEDAMAGE_POST_UNAVOIDABLE_BLOCK = 0x147,
             // MScriptDescription "OnMuteDamageAbilities"
-            MODIFIER_EVENT_ON_MUTE_DAMAGE_ABILITIES = 0x147,
+            MODIFIER_EVENT_ON_MUTE_DAMAGE_ABILITIES = 0x148,
             // MScriptDescription "GetSuppressCrit"
-            MODIFIER_PROPERTY_SUPPRESS_CRIT = 0x148,
+            MODIFIER_PROPERTY_SUPPRESS_CRIT = 0x149,
             // MScriptDescription "GetModifierAbilityPoints"
-            MODIFIER_PROPERTY_ABILITY_POINTS = 0x149,
+            MODIFIER_PROPERTY_ABILITY_POINTS = 0x14a,
             // MScriptDescription "GetModifierBuybackPenaltyPercent"
-            MODIFIER_PROPERTY_BUYBACK_PENALTY_PERCENT = 0x14a,
+            MODIFIER_PROPERTY_BUYBACK_PENALTY_PERCENT = 0x14b,
             // MScriptDescription "GetModifierItemSellbackCost"
-            MODIFIER_PROPERTY_ITEM_SELLBACK_COST = 0x14b,
+            MODIFIER_PROPERTY_ITEM_SELLBACK_COST = 0x14c,
             // MScriptDescription "GetModifierDisassembleAnything"
-            MODIFIER_PROPERTY_DISASSEMBLE_ANYTHING = 0x14c,
+            MODIFIER_PROPERTY_DISASSEMBLE_ANYTHING = 0x14d,
             // MScriptDescription "GetModifierFixedManaRegen"
-            MODIFIER_PROPERTY_FIXED_MANA_REGEN = 0x14d,
+            MODIFIER_PROPERTY_FIXED_MANA_REGEN = 0x14e,
             // MScriptDescription "GetModifierBonusUphillMissChance"
-            MODIFIER_PROPERTY_BONUS_UPHILL_MISS_CHANCE = 0x14e,
+            MODIFIER_PROPERTY_BONUS_UPHILL_MISS_CHANCE = 0x14f,
             // MScriptDescription "GetModifierCreepDenyPercent"
-            MODIFIER_PROPERTY_CREEP_DENY_PERCENT = 0x14f,
+            MODIFIER_PROPERTY_CREEP_DENY_PERCENT = 0x150,
             // MScriptDescription "GetModifierAttackSpeedAbsoluteMax"
-            MODIFIER_PROPERTY_ATTACKSPEED_ABSOLUTE_MAX = 0x150,
+            MODIFIER_PROPERTY_ATTACKSPEED_ABSOLUTE_MAX = 0x151,
             // MScriptDescription "GetModifierFoWTeam"
-            MODIFIER_PROPERTY_FOW_TEAM = 0x151,
+            MODIFIER_PROPERTY_FOW_TEAM = 0x152,
             // MScriptDescription "OnHeroBeginDying"
-            MODIFIER_EVENT_ON_HERO_BEGIN_DYING = 0x152,
+            MODIFIER_EVENT_ON_HERO_BEGIN_DYING = 0x153,
             // MScriptDescription "GetModifierBonusLotusHeal"
-            MODIFIER_PROPERTY_BONUS_LOTUS_HEAL = 0x153,
+            MODIFIER_PROPERTY_BONUS_LOTUS_HEAL = 0x154,
             // MScriptDescription "GetModifierBaseHpRegenPerStrBonusPercentage"
-            MODIFIER_PROPERTY_BASE_HP_REGEN_PER_STR_BONUS_PERCENTAGE = 0x154,
+            MODIFIER_PROPERTY_BASE_HP_REGEN_PER_STR_BONUS_PERCENTAGE = 0x155,
             // MScriptDescription "GetModifierBaseArmorPerAgiBonusPercentage"
-            MODIFIER_PROPERTY_BASE_ARMOR_PER_AGI_BONUS_PERCENTAGE = 0x155,
+            MODIFIER_PROPERTY_BASE_ARMOR_PER_AGI_BONUS_PERCENTAGE = 0x156,
             // MScriptDescription "GetModifierBaseAttackSpeedPerAgiBonusPercentage"
-            MODIFIER_PROPERTY_BASE_ATTACKSPEED_PER_AGI_BONUS_PERCENTAGE = 0x156,
+            MODIFIER_PROPERTY_BASE_ATTACKSPEED_PER_AGI_BONUS_PERCENTAGE = 0x157,
             // MScriptDescription "GetModifierBaseManaRegenPerIntBonusPercentage"
-            MODIFIER_PROPERTY_BASE_MP_REGEN_PER_INT_BONUS_PERCENTAGE = 0x157,
+            MODIFIER_PROPERTY_BASE_MP_REGEN_PER_INT_BONUS_PERCENTAGE = 0x158,
             // MScriptDescription "GetModifierBaseMagicResistPerIntBonusPercentage"
-            MODIFIER_PROPERTY_BASE_MRES_PER_INT_BONUS_PERCENTAGE = 0x158,
+            MODIFIER_PROPERTY_BASE_MRES_PER_INT_BONUS_PERCENTAGE = 0x159,
             // MScriptDescription "OnDayStarted"
-            MODIFIER_EVENT_ON_DAY_STARTED = 0x159,
+            MODIFIER_EVENT_ON_DAY_STARTED = 0x15a,
             // MScriptDescription "OnNightStarted"
-            MODIFIER_EVENT_ON_NIGHT_STARTED = 0x15a,
+            MODIFIER_EVENT_ON_NIGHT_STARTED = 0x15b,
             // MScriptDescription "GetModifierCreateBonusIllusionChance"
-            MODIFIER_PROPERTY_CREATE_BONUS_ILLUSION_CHANCE = 0x15b,
+            MODIFIER_PROPERTY_CREATE_BONUS_ILLUSION_CHANCE = 0x15c,
             // MScriptDescription "GetModifierCreateBonusIllusionCount"
-            MODIFIER_PROPERTY_CREATE_BONUS_ILLUSION_COUNT = 0x15c,
+            MODIFIER_PROPERTY_CREATE_BONUS_ILLUSION_COUNT = 0x15d,
             // MScriptDescription "GetModofierPropertyPseudoRandomBonus"
-            MODIFIER_PROPERTY_PSEUDORANDOM_BONUS = 0x15d,
+            MODIFIER_PROPERTY_PSEUDORANDOM_BONUS = 0x15e,
             // MScriptDescription "GetModifierAttackHeightBonus"
-            MODIFIER_PROPERTY_ATTACK_HEIGHT_BONUS = 0x15e,
+            MODIFIER_PROPERTY_ATTACK_HEIGHT_BONUS = 0x15f,
             // MScriptDescription "GetSkipAttackRegulator"
-            MODIFIER_PROPERTY_SKIP_ATTACK_REGULATOR = 0x15f,
+            MODIFIER_PROPERTY_SKIP_ATTACK_REGULATOR = 0x160,
             // MScriptDescription "GetModifierMiss_Percentage_Target"
-            MODIFIER_PROPERTY_MISS_PERCENTAGE_TARGET = 0x160,
+            MODIFIER_PROPERTY_MISS_PERCENTAGE_TARGET = 0x161,
             // MScriptDescription "GetModifierAdditionalNutralItemDrops"
-            MODIFIER_PROPERTY_ADDITIONAL_NEUTRAL_ITEM_DROPS = 0x161,
+            MODIFIER_PROPERTY_ADDITIONAL_NEUTRAL_ITEM_DROPS = 0x162,
             // MScriptDescription "GetModifierKillStreakBonusGoldPercentage"
-            MODIFIER_PROPERTY_KILL_STREAK_BONUS_GOLD_PERCENTAGE = 0x162,
+            MODIFIER_PROPERTY_KILL_STREAK_BONUS_GOLD_PERCENTAGE = 0x163,
             // MScriptDescription "GetModifierHPRegenMultiplierPreAmplification"
-            MODIFIER_PROPERTY_HP_REGEN_MULTIPLIER_PRE_AMPLIFICATION = 0x163,
+            MODIFIER_PROPERTY_HP_REGEN_MULTIPLIER_PRE_AMPLIFICATION = 0x164,
             // MScriptDescription "GetModifierHeroFacetOverride"
-            MODIFIER_PROPERTY_HEROFACET_OVERRIDE = 0x164,
+            MODIFIER_PROPERTY_HEROFACET_OVERRIDE = 0x165,
             // MScriptDescription "OnTreeCutDown"
-            MODIFIER_EVENT_ON_TREE_CUT_DOWN = 0x165,
+            MODIFIER_EVENT_ON_TREE_CUT_DOWN = 0x166,
             // MScriptDescription "OnCleaveAttackLanded"
-            MODIFIER_EVENT_ON_CLEAVE_ATTACK_LANDED = 0x166,
+            MODIFIER_EVENT_ON_CLEAVE_ATTACK_LANDED = 0x167,
             // MScriptDescription "MinAttributeLevel"
-            MODIFIER_PROPERTY_MIN_ATTRIBUTE_LEVEL = 0x167,
+            MODIFIER_PROPERTY_MIN_ATTRIBUTE_LEVEL = 0x168,
             // MScriptDescription "GetTierTokenReroll"
-            MODIFIER_PROPERTY_TIER_TOKEN_REROLL = 0x168,
+            MODIFIER_PROPERTY_TIER_TOKEN_REROLL = 0x169,
             // MScriptDescription "GetVisionDegreeRestriction"
-            MODIFIER_PROPERTY_VISION_DEGREES_RESTRICTION = 0x169,
+            MODIFIER_PROPERTY_VISION_DEGREES_RESTRICTION = 0x16a,
             // MScriptDescription "GetModifierTotal_ConstantBlockStacking"
-            MODIFIER_PROPERTY_TOTAL_CONSTANT_BLOCK_STACKING = 0x16a,
+            MODIFIER_PROPERTY_TOTAL_CONSTANT_BLOCK_STACKING = 0x16b,
             // MScriptDescription "GetModifierInventorySlotRestricted"
-            MODIFIER_PROPERTY_INVENTORY_SLOT_RESTRICTED = 0x16b,
+            MODIFIER_PROPERTY_INVENTORY_SLOT_RESTRICTED = 0x16c,
             // MScriptDescription "OnTierTokenRerolled"
-            MODIFIER_EVENT_ON_TIER_TOKEN_REROLLED = 0x16c,
+            MODIFIER_EVENT_ON_TIER_TOKEN_REROLLED = 0x16d,
             // MScriptDescription "GetRedirectSpell"
-            MODIFIER_PROPERTY_REDIRECT_SPELL = 0x16d,
+            MODIFIER_PROPERTY_REDIRECT_SPELL = 0x16e,
             // MScriptDescription "GetBaseAttackPostBonus"
-            MODIFIER_PROPERTY_BASEATTACK_POSTBONUS = 0x16e,
+            MODIFIER_PROPERTY_BASEATTACK_POSTBONUS = 0x16f,
             // MScriptDescription "OnFoWTeamChanged"
-            MODIFIER_EVENT_ON_FOW_TEAM_CHANGED = 0x16f,
+            MODIFIER_EVENT_ON_FOW_TEAM_CHANGED = 0x170,
             // MScriptDescription "GetSuppressAttackProcs"
-            MODIFIER_PROPERTY_SUPPRESS_ATTACK_PROCS = 0x170,
+            MODIFIER_PROPERTY_SUPPRESS_ATTACK_PROCS = 0x171,
             // MScriptDescription "OnAbilityToggled"
-            MODIFIER_EVENT_ON_ABILITY_TOGGLED = 0x171,
+            MODIFIER_EVENT_ON_ABILITY_TOGGLED = 0x172,
             // MScriptDescription "GetModifierAvoidAttackProcs"
-            MODIFIER_PROPERTY_AVOID_ATTACK_PROCS = 0x172,
+            MODIFIER_PROPERTY_AVOID_ATTACK_PROCS = 0x173,
             // MScriptDescription "OnRuneSpawn"
-            MODIFIER_EVENT_ON_RUNE_SPAWN = 0x173,
+            MODIFIER_EVENT_ON_RUNE_SPAWN = 0x174,
             // MScriptDescription "GetModifierProperty_PhysicalLifesteal"
-            MODIFIER_PROPERTY_PHYSICAL_LIFESTEAL = 0x174,
+            MODIFIER_PROPERTY_PHYSICAL_LIFESTEAL = 0x175,
             // MScriptDescription "GetModifierProperty_MagicalLifesteal"
-            MODIFIER_PROPERTY_MAGICAL_LIFESTEAL = 0x175,
+            MODIFIER_PROPERTY_MAGICAL_LIFESTEAL = 0x176,
             // MScriptDescription "OnPureDamageCalculated"
-            MODIFIER_EVENT_ON_PURE_DAMAGE_CALCULATED = 0x176,
+            MODIFIER_EVENT_ON_PURE_DAMAGE_CALCULATED = 0x177,
             // MScriptDescription "GetModifierNeutralTrinketOptions"
-            MODIFIER_EVENT_NEUTRAL_TRINKET_OPTIONS = 0x177,
+            MODIFIER_EVENT_NEUTRAL_TRINKET_OPTIONS = 0x178,
             // MScriptDescription "GetModifierNeutralEnhancementOptions"
-            MODIFIER_EVENT_NEUTRAL_ENHANCEMENT_OPTIONS = 0x178,
+            MODIFIER_EVENT_NEUTRAL_ENHANCEMENT_OPTIONS = 0x179,
             // MScriptDescription "GetModifierMoveSpeedMax_BonusConstant"
-            MODIFIER_PROPERTY_MOVESPEED_MAX_BONUS_CONSTANT = 0x179,
+            MODIFIER_PROPERTY_MOVESPEED_MAX_BONUS_CONSTANT = 0x17a,
             // MScriptDescription "GetModifierMoveSpeedPostMultiplierBonus_Constant"
-            MODIFIER_PROPERTY_MOVESPEED_POST_MULTIPLIER_BONUS_CONSTANT = 0x17a,
+            MODIFIER_PROPERTY_MOVESPEED_POST_MULTIPLIER_BONUS_CONSTANT = 0x17b,
             // MScriptDescription "GetModifierPropertyForbidIllusions"
-            MODIFIER_PROPERTY_FORBID_ILLUSIONS = 0x17b,
+            MODIFIER_PROPERTY_FORBID_ILLUSIONS = 0x17c,
             // MScriptDescription "GetModifierPropertyManacostOverride"
-            MODIFIER_PROPERTY_MANACOST_OVERRIDE = 0x17c,
+            MODIFIER_PROPERTY_MANACOST_OVERRIDE = 0x17d,
             // MScriptDescription "GetModifierPropertyRestorationAmplification"
-            MODIFIER_PROPERTY_RESTORATION_AMPLIFICATION = 0x17d,
+            MODIFIER_PROPERTY_RESTORATION_AMPLIFICATION = 0x17e,
             // MScriptDescription "GetModifierPropertyRestorationAmplificationUnique"
-            MODIFIER_PROPERTY_RESTORATION_AMPLIFICATION_UNIQUE = 0x17e,
+            MODIFIER_PROPERTY_RESTORATION_AMPLIFICATION_UNIQUE = 0x17f,
             // MScriptDescription "GetModifierPropertyHealingAmplificationUnique"
-            MODIFIER_PROPERTY_HEAL_AMPLIFY_PERCENTAGE_SOURCE_UNIQUE = 0x17f,
+            MODIFIER_PROPERTY_HEAL_AMPLIFY_PERCENTAGE_SOURCE_UNIQUE = 0x180,
             // MScriptDescription "GetModifierPropertyRedirectHealthGain"
-            MODIFIER_PROPERTY_REDIRECT_HEALTH_GAIN = 0x180,
+            MODIFIER_PROPERTY_REDIRECT_HEALTH_GAIN = 0x181,
             // MScriptDescription "GetSuppressIncomingCrit"
-            MODIFIER_PROPERTY_SUPPRESS_INCOMING_CRIT = 0x181,
+            MODIFIER_PROPERTY_SUPPRESS_INCOMING_CRIT = 0x182,
             // MScriptDescription "GetModifierPropertyUpgradeNeutralArtifacts"
-            MODIFIER_PROPERTY_UPGRADE_NEUTRAL_ARTIFACTS = 0x182,
+            MODIFIER_PROPERTY_UPGRADE_NEUTRAL_ARTIFACTS = 0x183,
             // MScriptDescription "GetModifierPropertySuppressInvalidMoveAttackOrders"
-            MODIFIER_PROPERTY_SUPPRESS_INVALID_MOVE_ATTACK_ORDERS = 0x183,
+            MODIFIER_PROPERTY_SUPPRESS_INVALID_MOVE_ATTACK_ORDERS = 0x184,
             // MScriptDescription "GetModifierPropertyConsumableUseSpeed"
-            MODIFIER_PROPERTY_CONSUMABLE_USE_SPEED = 0x184,
+            MODIFIER_PROPERTY_CONSUMABLE_USE_SPEED = 0x185,
             // MScriptDescription "GetRequiredLevel"
-            MODIFIER_PROPERTY_REQUIRED_LEVEL = 0x185,
+            MODIFIER_PROPERTY_REQUIRED_LEVEL = 0x186,
             // MScriptDescription "OnModifierRefreshed"
-            MODIFIER_EVENT_ON_MODIFIER_REFRESHED = 0x186,
+            MODIFIER_EVENT_ON_MODIFIER_REFRESHED = 0x187,
             // MScriptDescription "OnAbilitySwapped"
-            MODIFIER_EVENT_ON_ABILITY_SWAPPED = 0x187,
+            MODIFIER_EVENT_ON_ABILITY_SWAPPED = 0x188,
             // MScriptDescription "GetModifierOverrideCreepBounty"
-            MODIFIER_PROPERTY_OVERRIDE_CREEP_BOUNTY = 0x188,
+            MODIFIER_PROPERTY_OVERRIDE_CREEP_BOUNTY = 0x189,
             // MScriptDescription "GetModifierOverrideBaseDamage"
-            MODIFIER_PROPERTY_OVERRIDE_BASE_DAMAGE = 0x189,
+            MODIFIER_PROPERTY_OVERRIDE_BASE_DAMAGE = 0x18a,
             // MScriptDescription "GetModifierOverrideUntargetableFrom"
-            MODIFIER_PROPERTY_UNTARGETABLE_FROM = 0x18a,
+            MODIFIER_PROPERTY_UNTARGETABLE_FROM = 0x18b,
             // MScriptDescription "GetModifierOverrideUntargetableTo"
-            MODIFIER_PROPERTY_UNTARGETABLE_TO = 0x18b,
+            MODIFIER_PROPERTY_UNTARGETABLE_TO = 0x18c,
             // MScriptDescription "GetModifierSuperIllusionWithItems"
-            MODIFIER_PROPERTY_SUPER_ILLUSION_WITH_ITEMS = 0x18c,
+            MODIFIER_PROPERTY_SUPER_ILLUSION_WITH_ITEMS = 0x18d,
             // MScriptDescription "OnPurged"
-            MODIFIER_EVENT_ON_PURGE = 0x18d,
+            MODIFIER_EVENT_ON_PURGE = 0x18e,
             // MScriptDescription "OnIllusionCreated"
-            MODIFIER_EVENT_ON_ILLUSION_CREATED = 0x18e,
+            MODIFIER_EVENT_ON_ILLUSION_CREATED = 0x18f,
             // MScriptDescription "GetModifierHeroLevelScale"
-            MODIFIER_PROPERTY_HEROLEVELSCALE = 0x18f,
+            MODIFIER_PROPERTY_HEROLEVELSCALE = 0x190,
             // MScriptDescription "GetModifierReplaceAttack"
-            MODIFIER_PROPERTY_REPLACE_ATTACK = 0x190,
+            MODIFIER_PROPERTY_REPLACE_ATTACK = 0x191,
             // MScriptDescription "GetModifierPropertyCustom1"
-            MODIFIER_PROPERTY_CUSTOM1 = 0x191,
+            MODIFIER_PROPERTY_CUSTOM1 = 0x192,
             // MScriptDescription "GetModifierPropertyCustom2"
-            MODIFIER_PROPERTY_CUSTOM2 = 0x192,
+            MODIFIER_PROPERTY_CUSTOM2 = 0x193,
             // MScriptDescription "GetModifierPropertyCustom3"
-            MODIFIER_PROPERTY_CUSTOM3 = 0x193,
+            MODIFIER_PROPERTY_CUSTOM3 = 0x194,
             // MScriptDescription "OnCustom1"
-            MODIFIER_EVENT_ON_CUSTOM1 = 0x194,
+            MODIFIER_EVENT_ON_CUSTOM1 = 0x195,
             // MScriptDescription "OnCustom2"
-            MODIFIER_EVENT_ON_CUSTOM2 = 0x195,
+            MODIFIER_EVENT_ON_CUSTOM2 = 0x196,
             // MScriptDescription "OnCustom3"
-            MODIFIER_EVENT_ON_CUSTOM3 = 0x196,
-            MODIFIER_FUNCTION_LAST = 0x197,
+            MODIFIER_EVENT_ON_CUSTOM3 = 0x197,
+            // MScriptDescription "GetModifierPropertyIgnoreForceTarget"
+            MODIFIER_PROPERTY_IGNORE_FORCE_ATTACK_TARGET = 0x198,
+            MODIFIER_FUNCTION_LAST = 0x199,
             MODIFIER_FUNCTION_INVALID = 0xffff,
         };
     };

@@ -40,17 +40,17 @@ namespace source2sdk
         public:
             // m_hSoundscape has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CEnvSoundscapeTriggerable> m_hSoundscape;
-            char m_hSoundscape[0x4]; // 0x8f0            
+            char m_hSoundscape[0x4]; // 0x8f0
             uint8_t _pad08f4[0x4]; // 0x8f4
-            CUtlSymbolLarge m_SoundscapeName; // 0x8f8            
+            CUtlSymbolLarge m_SoundscapeName; // 0x8f8
             // m_spectators has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::server::CBasePlayerPawn>> m_spectators;
-            char m_spectators[0x18]; // 0x900            
+            char m_spectators[0x18]; // 0x900
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CTriggerSoundscape because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CTriggerSoundscape) == 0x918);
     };
 };

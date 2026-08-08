@@ -20,26 +20,26 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x258
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_INIT_RemapTransformOrientationToRotations : public source2sdk::particles::CParticleFunctionInitializer
         {
         public:
             // metadata: MPropertyFriendlyName "transform input"
-            source2sdk::particleslib::CParticleTransformInput m_TransformInput; // 0x1e0            
+            source2sdk::particleslib::CParticleTransformInput m_TransformInput; // 0x1e0
             // metadata: MPropertyFriendlyName "offset pitch/yaw/roll"
-            Vector m_vecRotation; // 0x248            
+            Vector m_vecRotation; // 0x248
             // metadata: MPropertyFriendlyName "Use Quaternians Internally"
-            bool m_bUseQuat; // 0x254            
+            bool m_bUseQuat; // 0x254
             // metadata: MPropertyFriendlyName "Write normal instead of rotation"
-            bool m_bWriteNormal; // 0x255            
+            bool m_bWriteNormal; // 0x255
             uint8_t _pad0256[0x2];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_INIT_RemapTransformOrientationToRotations because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_INIT_RemapTransformOrientationToRotations) == 0x258);
     };
 };

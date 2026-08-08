@@ -21,7 +21,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x1b00
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CAbility_Synth_Barrage_VData : public source2sdk::client::CitadelAbilityVData
@@ -30,33 +30,33 @@ namespace source2sdk
             // metadata: MPropertyStartGroup "Modifiers"
             // m_BarrageCasterModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEmbeddedSubclass<source2sdk::client::CCitadelModifier> m_BarrageCasterModifier;
-            char m_BarrageCasterModifier[0x10]; // 0x1818            
+            char m_BarrageCasterModifier[0x10]; // 0x1818
             // m_AmpModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEmbeddedSubclass<source2sdk::client::CCitadelModifier> m_AmpModifier;
-            char m_AmpModifier[0x10]; // 0x1828            
+            char m_AmpModifier[0x10]; // 0x1828
             // m_DebuffModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEmbeddedSubclass<source2sdk::client::CCitadelModifier> m_DebuffModifier;
-            char m_DebuffModifier[0x10]; // 0x1838            
+            char m_DebuffModifier[0x10]; // 0x1838
             // metadata: MPropertyStartGroup "Visuals"
             // m_ShootParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_ShootParticle;
-            char m_ShootParticle[0xe0]; // 0x1848            
+            char m_ShootParticle[0xe0]; // 0x1848
             // m_ImpactParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_ImpactParticle;
-            char m_ImpactParticle[0xe0]; // 0x1928            
+            char m_ImpactParticle[0xe0]; // 0x1928
             // m_ChannelParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_ChannelParticle;
-            char m_ChannelParticle[0xe0]; // 0x1a08            
+            char m_ChannelParticle[0xe0]; // 0x1a08
             // metadata: MPropertyStartGroup "Sounds"
-            CSoundEventName m_strProjectileLaunchSound; // 0x1ae8            
+            CSoundEventName m_strProjectileLaunchSound; // 0x1ae8
             // metadata: MPropertyStartGroup "Gameplay"
-            float m_flAttackInterval; // 0x1af8            
+            float m_flAttackInterval; // 0x1af8
             uint8_t _pad1afc[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CAbility_Synth_Barrage_VData because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CAbility_Synth_Barrage_VData) == 0x1b00);
     };
 };

@@ -20,18 +20,18 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x40
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CNmConstTargetNode_CDefinition : public source2sdk::animlib::CNmTargetValueNode_CDefinition
         {
         public:
-            source2sdk::animlib::CNmTarget m_value; // 0x10            
+            source2sdk::animlib::CNmTarget m_value; // 0x10
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CNmConstTargetNode::CDefinition because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::animlib::CNmConstTargetNode_CDefinition) == 0x40);
     };
 };

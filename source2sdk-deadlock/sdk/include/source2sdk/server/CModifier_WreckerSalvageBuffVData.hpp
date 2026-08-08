@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x830
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CModifier_WreckerSalvageBuffVData : public source2sdk::server::CCitadelModifierVData
@@ -29,12 +29,12 @@ namespace source2sdk
             // metadata: MPropertyStartGroup "Visuals"
             // m_WeaponBuffParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_WeaponBuffParticle;
-            char m_WeaponBuffParticle[0xe0]; // 0x750            
+            char m_WeaponBuffParticle[0xe0]; // 0x750
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CModifier_WreckerSalvageBuffVData because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CModifier_WreckerSalvageBuffVData) == 0x830);
     };
 };

@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x840
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CModifierThumper_3VData : public source2sdk::client::CCitadelModifierVData
@@ -29,14 +29,14 @@ namespace source2sdk
             // metadata: MPropertyStartGroup "Visuals"
             // m_DroneParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_DroneParticle;
-            char m_DroneParticle[0xe0]; // 0x750            
+            char m_DroneParticle[0xe0]; // 0x750
             // metadata: MPropertyStartGroup "Sounds"
-            CSoundEventName m_LoopSound; // 0x830            
+            CSoundEventName m_LoopSound; // 0x830
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CModifierThumper_3VData because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CModifierThumper_3VData) == 0x840);
     };
 };

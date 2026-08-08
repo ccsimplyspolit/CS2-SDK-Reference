@@ -22,7 +22,7 @@ namespace source2sdk
         // Size: 0x140
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CPulseCell_FireCursors : public source2sdk::pulse_runtime_lib::CPulseCell_BaseYieldingInflow
@@ -30,15 +30,15 @@ namespace source2sdk
         public:
             // m_Outflows has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::pulse_runtime_lib::CPulse_OutflowConnection> m_Outflows;
-            char m_Outflows[0x18]; // 0xd8            
-            bool m_bWaitForChildOutflows; // 0xf0            
+            char m_Outflows[0x18]; // 0xd8
+            bool m_bWaitForChildOutflows; // 0xf0
             uint8_t _pad00f1[0x7]; // 0xf1
-            source2sdk::pulse_runtime_lib::CPulse_ResumePoint m_OnFinished; // 0xf8            
+            source2sdk::pulse_runtime_lib::CPulse_ResumePoint m_OnFinished; // 0xf8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPulseCell_FireCursors because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::pulse_runtime_lib::CPulseCell_FireCursors) == 0x140);
     };
 };

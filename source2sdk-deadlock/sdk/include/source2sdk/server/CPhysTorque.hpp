@@ -23,13 +23,13 @@ namespace source2sdk
         class CPhysTorque : public source2sdk::server::CPhysForce
         {
         public:
-            VectorWS m_axis; // 0x500            
+            VectorWS m_axis; // 0x500
             uint8_t _pad050c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPhysTorque because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CPhysTorque) == 0x510);
     };
 };

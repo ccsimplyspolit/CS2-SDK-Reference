@@ -26,13 +26,13 @@ namespace source2sdk
         public:
             // m_outCounter has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEntityOutputTemplate<std::int32_t> m_outCounter;
-            char m_outCounter[0x20]; // 0x498            
-            CUtlSymbolLarge m_globalstate; // 0x4b8            
-            std::int32_t m_triggermode; // 0x4c0            
-            std::int32_t m_initialstate; // 0x4c4            
-            std::int32_t m_counter; // 0x4c8            
+            char m_outCounter[0x20]; // 0x498
+            CUtlSymbolLarge m_globalstate; // 0x4b8
+            std::int32_t m_triggermode; // 0x4c0
+            std::int32_t m_initialstate; // 0x4c4
+            std::int32_t m_counter; // 0x4c8
             uint8_t _pad04cc[0x4];
-            
+
             // Datamap fields:
             // void InputTurnOn; // 0x0
             // void InputTurnOff; // 0x0
@@ -43,9 +43,9 @@ namespace source2sdk
             // void InputGetCounter; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CEnvGlobal because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CEnvGlobal) == 0x4d0);
     };
 };

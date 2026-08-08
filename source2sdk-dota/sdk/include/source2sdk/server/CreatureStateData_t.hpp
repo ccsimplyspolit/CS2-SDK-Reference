@@ -23,20 +23,20 @@ namespace source2sdk
         struct CreatureStateData_t
         {
         public:
-            char* pszName; // 0x0            
-            float flAggression; // 0x8            
-            float flAvoidance; // 0xc            
-            float flSupport; // 0x10            
-            float flRoamDistance; // 0x14            
+            char* pszName; // 0x0
+            float flAggression; // 0x8
+            float flAvoidance; // 0xc
+            float flSupport; // 0x10
+            float flRoamDistance; // 0x14
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::CreatureStateData_t, pszName) == 0x0);
         static_assert(offsetof(source2sdk::server::CreatureStateData_t, flAggression) == 0x8);
         static_assert(offsetof(source2sdk::server::CreatureStateData_t, flAvoidance) == 0xc);
         static_assert(offsetof(source2sdk::server::CreatureStateData_t, flSupport) == 0x10);
         static_assert(offsetof(source2sdk::server::CreatureStateData_t, flRoamDistance) == 0x14);
-        
+
         static_assert(sizeof(source2sdk::server::CreatureStateData_t) == 0x18);
     };
 };

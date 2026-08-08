@@ -31,19 +31,19 @@ namespace source2sdk
         {
         public:
             // metadata: MPhysPtr
-            source2sdk::vphysics2::IPhysicsJoint* m_pSpringJoint; // 0x4a0            
-            float m_flFrequency; // 0x4a8            
-            float m_flDampingRatio; // 0x4ac            
-            float m_flRestLength; // 0x4b0            
+            source2sdk::vphysics2::IPhysicsJoint* m_pSpringJoint; // 0x4a0
+            float m_flFrequency; // 0x4a8
+            float m_flDampingRatio; // 0x4ac
+            float m_flRestLength; // 0x4b0
             uint8_t _pad04b4[0x4]; // 0x4b4
-            CUtlSymbolLarge m_nameAttachStart; // 0x4b8            
-            CUtlSymbolLarge m_nameAttachEnd; // 0x4c0            
-            VectorWS m_start; // 0x4c8            
-            VectorWS m_end; // 0x4d4            
+            CUtlSymbolLarge m_nameAttachStart; // 0x4b8
+            CUtlSymbolLarge m_nameAttachEnd; // 0x4c0
+            VectorWS m_start; // 0x4c8
+            VectorWS m_end; // 0x4d4
             // metadata: MNotSaved
-            std::uint32_t m_teleportTick; // 0x4e0            
+            std::uint32_t m_teleportTick; // 0x4e0
             uint8_t _pad04e4[0x4];
-            
+
             // Datamap fields:
             // float lengthscale; // 0x7fffffff
             // float InputSetFrequency; // 0x0
@@ -53,9 +53,9 @@ namespace source2sdk
             // float InputRemoveRestLength; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPhysicsSpring because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CPhysicsSpring) == 0x4e8);
     };
 };

@@ -23,13 +23,13 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0000[0x20]; // 0x0
-            source2sdk::networksystem::ChangeAccessorFieldPathIndex_t m_PathIndex; // 0x20            
+            source2sdk::networksystem::ChangeAccessorFieldPathIndex_t m_PathIndex; // 0x20
             uint8_t _pad0024[0x4];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::entity2::CNetworkVarChainer, m_PathIndex) == 0x20);
-        
+
         static_assert(sizeof(source2sdk::entity2::CNetworkVarChainer) == 0x28);
     };
 };

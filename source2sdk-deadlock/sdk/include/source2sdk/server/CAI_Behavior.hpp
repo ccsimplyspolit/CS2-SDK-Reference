@@ -23,15 +23,15 @@ namespace source2sdk
         class CAI_Behavior : public source2sdk::client::CAI_Component
         {
         public:
-            bool m_bActive; // 0x50            
+            bool m_bActive; // 0x50
             // metadata: MNotSaved
-            bool m_bOverrode; // 0x51            
+            bool m_bOverrode; // 0x51
             uint8_t _pad0052[0x6];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CAI_Behavior because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CAI_Behavior) == 0x58);
     };
 };

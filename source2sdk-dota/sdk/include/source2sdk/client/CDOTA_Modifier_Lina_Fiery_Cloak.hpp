@@ -17,21 +17,21 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a78
+        // Size: 0x1a98
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Lina_Fiery_Cloak : public source2sdk::client::CDOTA_Buff
         {
         public:
-            std::int32_t magic_resistance; // 0x1a58            
-            std::int32_t spell_amp; // 0x1a5c            
-            float visualzdelta; // 0x1a60            
-            uint8_t _pad1a64[0x14];
+            std::int32_t magic_resistance; // 0x1a78
+            std::int32_t spell_amp; // 0x1a7c
+            float visualzdelta; // 0x1a80
+            uint8_t _pad1a84[0x14];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Lina_Fiery_Cloak because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Lina_Fiery_Cloak) == 0x1a78);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Lina_Fiery_Cloak) == 0x1a98);
     };
 };

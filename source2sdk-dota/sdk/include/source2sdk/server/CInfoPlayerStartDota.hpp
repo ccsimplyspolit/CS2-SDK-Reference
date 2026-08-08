@@ -25,15 +25,15 @@ namespace source2sdk
         class CInfoPlayerStartDota : public source2sdk::server::CPointEntity
         {
         public:
-            bool m_bDisabled; // 0x498            
+            bool m_bDisabled; // 0x498
             uint8_t _pad0499[0x7]; // 0x499
-            source2sdk::entity2::CEntityIOOutput m_OnEnabled; // 0x4a0            
-            source2sdk::entity2::CEntityIOOutput m_OnDisabled; // 0x4b8            
+            source2sdk::entity2::CEntityIOOutput m_OnEnabled; // 0x4a0
+            source2sdk::entity2::CEntityIOOutput m_OnDisabled; // 0x4b8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CInfoPlayerStartDota because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CInfoPlayerStartDota) == 0x4d0);
     };
 };

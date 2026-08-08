@@ -25,14 +25,14 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0000[0x30]; // 0x0
-            source2sdk::client::PlayerID_t m_iPlayerIDLiker; // 0x30            
-            source2sdk::client::PlayerID_t m_iPlayerIDLiked; // 0x34            
+            source2sdk::client::PlayerID_t m_iPlayerIDLiker; // 0x30
+            source2sdk::client::PlayerID_t m_iPlayerIDLiked; // 0x34
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::CHeroStatueLiked, m_iPlayerIDLiker) == 0x30);
         static_assert(offsetof(source2sdk::server::CHeroStatueLiked, m_iPlayerIDLiked) == 0x34);
-        
+
         static_assert(sizeof(source2sdk::server::CHeroStatueLiked) == 0x38);
     };
 };

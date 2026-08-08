@@ -27,7 +27,7 @@ namespace source2sdk
         // Size: 0xa0
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CAI_Expresser
@@ -36,27 +36,27 @@ namespace source2sdk
             uint8_t _pad0000[0x10]; // 0x0
             // m_conceptCooldowns has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlDict<source2sdk::entity2::GameTime_t> m_conceptCooldowns;
-            char m_conceptCooldowns[0x28]; // 0x10            
+            char m_conceptCooldowns[0x28]; // 0x10
             // m_ruleCooldowns has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlDict<source2sdk::entity2::GameTime_t> m_ruleCooldowns;
-            char m_ruleCooldowns[0x28]; // 0x38            
-            source2sdk::entity2::GameTime_t m_flStopTalkTime; // 0x60            
-            source2sdk::entity2::GameTime_t m_flStopTalkTimeWithoutDelay; // 0x64            
-            source2sdk::entity2::GameTime_t m_flQueuedSpeechTime; // 0x68            
-            source2sdk::entity2::GameTime_t m_flBlockedTalkTime; // 0x6c            
-            std::int32_t m_voicePitch; // 0x70            
-            source2sdk::entity2::GameTime_t m_flLastTimeAcceptedSpeak; // 0x74            
-            bool m_bAllowSpeakingInterrupts; // 0x78            
-            bool m_bConsiderSceneInvolvementAsSpeech; // 0x79            
-            bool m_bSceneEntityDisabled; // 0x7a            
+            char m_ruleCooldowns[0x28]; // 0x38
+            source2sdk::entity2::GameTime_t m_flStopTalkTime; // 0x60
+            source2sdk::entity2::GameTime_t m_flStopTalkTimeWithoutDelay; // 0x64
+            source2sdk::entity2::GameTime_t m_flQueuedSpeechTime; // 0x68
+            source2sdk::entity2::GameTime_t m_flBlockedTalkTime; // 0x6c
+            std::int32_t m_voicePitch; // 0x70
+            source2sdk::entity2::GameTime_t m_flLastTimeAcceptedSpeak; // 0x74
+            bool m_bAllowSpeakingInterrupts; // 0x78
+            bool m_bConsiderSceneInvolvementAsSpeech; // 0x79
+            bool m_bSceneEntityDisabled; // 0x7a
             uint8_t _pad007b[0x1]; // 0x7b
-            std::int32_t m_nLastSpokenPriority; // 0x7c            
+            std::int32_t m_nLastSpokenPriority; // 0x7c
             uint8_t _pad0080[0x18]; // 0x80
             // metadata: MNotSaved
-            source2sdk::server::CBaseModelEntity* m_pOuter; // 0x98            
+            source2sdk::server::CBaseModelEntity* m_pOuter; // 0x98
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::CAI_Expresser, m_conceptCooldowns) == 0x10);
         static_assert(offsetof(source2sdk::server::CAI_Expresser, m_ruleCooldowns) == 0x38);
         static_assert(offsetof(source2sdk::server::CAI_Expresser, m_flStopTalkTime) == 0x60);
@@ -70,7 +70,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::server::CAI_Expresser, m_bSceneEntityDisabled) == 0x7a);
         static_assert(offsetof(source2sdk::server::CAI_Expresser, m_nLastSpokenPriority) == 0x7c);
         static_assert(offsetof(source2sdk::server::CAI_Expresser, m_pOuter) == 0x98);
-        
+
         static_assert(sizeof(source2sdk::server::CAI_Expresser) == 0xa0);
     };
 };

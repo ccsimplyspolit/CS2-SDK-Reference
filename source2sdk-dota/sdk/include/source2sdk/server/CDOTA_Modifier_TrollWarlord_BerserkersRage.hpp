@@ -17,25 +17,25 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a78
+        // Size: 0x1a98
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_TrollWarlord_BerserkersRage : public source2sdk::client::CDOTA_Buff
         {
         public:
-            std::int32_t bonus_move_speed; // 0x1a58            
-            std::int32_t bonus_hp_pct; // 0x1a5c            
-            std::int32_t bonus_armor; // 0x1a60            
-            std::int32_t ensnare_chance; // 0x1a64            
-            float ensnare_duration; // 0x1a68            
-            std::int32_t maim_chance; // 0x1a6c            
-            std::int32_t maim_damage; // 0x1a70            
-            float maim_duration; // 0x1a74            
+            std::int32_t bonus_move_speed; // 0x1a78
+            std::int32_t bonus_hp_pct; // 0x1a7c
+            std::int32_t bonus_armor; // 0x1a80
+            std::int32_t ensnare_chance; // 0x1a84
+            float ensnare_duration; // 0x1a88
+            std::int32_t maim_chance; // 0x1a8c
+            std::int32_t maim_damage; // 0x1a90
+            float maim_duration; // 0x1a94
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_TrollWarlord_BerserkersRage because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_TrollWarlord_BerserkersRage) == 0x1a78);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_TrollWarlord_BerserkersRage) == 0x1a98);
     };
 };

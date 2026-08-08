@@ -23,18 +23,18 @@ namespace source2sdk
         struct PlayerSeatAssignment_t
         {
         public:
-            std::uint32_t unAccountID; // 0x0            
-            std::uint32_t unSeat; // 0x4            
-            std::uint32_t unReversedSeat; // 0x8            
-            std::uint32_t unTeamID; // 0xc            
+            std::uint32_t unAccountID; // 0x0
+            std::uint32_t unSeat; // 0x4
+            std::uint32_t unReversedSeat; // 0x8
+            std::uint32_t unTeamID; // 0xc
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::PlayerSeatAssignment_t, unAccountID) == 0x0);
         static_assert(offsetof(source2sdk::client::PlayerSeatAssignment_t, unSeat) == 0x4);
         static_assert(offsetof(source2sdk::client::PlayerSeatAssignment_t, unReversedSeat) == 0x8);
         static_assert(offsetof(source2sdk::client::PlayerSeatAssignment_t, unTeamID) == 0xc);
-        
+
         static_assert(sizeof(source2sdk::client::PlayerSeatAssignment_t) == 0x10);
     };
 };

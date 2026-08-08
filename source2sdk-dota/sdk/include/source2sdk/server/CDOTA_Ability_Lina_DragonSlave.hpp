@@ -26,14 +26,14 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0580[0x14]; // 0x580
-            std::int32_t dragon_slave_distance; // 0x594            
-            float dragon_slave_burn_duration; // 0x598            
-            float m_flDamage; // 0x59c            
+            std::int32_t dragon_slave_distance; // 0x594
+            float dragon_slave_burn_duration; // 0x598
+            float m_flDamage; // 0x59c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Lina_DragonSlave because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Lina_DragonSlave) == 0x5a0);
     };
 };

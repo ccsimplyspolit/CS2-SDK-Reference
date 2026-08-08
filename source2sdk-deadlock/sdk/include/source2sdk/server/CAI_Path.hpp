@@ -36,49 +36,49 @@ namespace source2sdk
         public:
             uint8_t _pad0000[0x8]; // 0x0
             // metadata: MSaveOpsForField
-            source2sdk::server::CAI_WaypointList m_Waypoints; // 0x8            
-            VectorWS m_vPrevWaypoint; // 0x10            
-            VectorWS m_vPrevWaypointBase; // 0x1c            
+            source2sdk::server::CAI_WaypointList m_Waypoints; // 0x8
+            VectorWS m_vPrevWaypoint; // 0x10
+            VectorWS m_vPrevWaypointBase; // 0x1c
             // metadata: MSaveOpsForField
-            source2sdk::server::CAI_WaypointList m_WaypointsLocal; // 0x28            
+            source2sdk::server::CAI_WaypointList m_WaypointsLocal; // 0x28
             uint8_t _pad0030[0x8]; // 0x30
-            std::uint32_t m_nLocalPathHash; // 0x38            
+            std::uint32_t m_nLocalPathHash; // 0x38
             // m_hTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hTarget;
-            char m_hTarget[0x4]; // 0x3c            
-            Vector m_vTargetOffset; // 0x40            
-            bool m_bGoalPosSet; // 0x4c            
+            char m_hTarget[0x4]; // 0x3c
+            Vector m_vTargetOffset; // 0x40
+            bool m_bGoalPosSet; // 0x4c
             uint8_t _pad004d[0x3]; // 0x4d
-            VectorWS m_vGoalActualPos; // 0x50            
-            VectorWS m_vGoalBasePos; // 0x5c            
-            VectorWS m_vGoalActualPos_Initial; // 0x68            
-            VectorWS m_vGoalBasePos_Initial; // 0x74            
-            VectorWS m_vGoalPosBlocked; // 0x80            
-            source2sdk::navlib::NavGravity_t m_GravityAtGoalPos; // 0x8c            
-            bool m_bGoalTypeSet; // 0x9c            
+            VectorWS m_vGoalActualPos; // 0x50
+            VectorWS m_vGoalBasePos; // 0x5c
+            VectorWS m_vGoalActualPos_Initial; // 0x68
+            VectorWS m_vGoalBasePos_Initial; // 0x74
+            VectorWS m_vGoalPosBlocked; // 0x80
+            source2sdk::navlib::NavGravity_t m_GravityAtGoalPos; // 0x8c
+            bool m_bGoalTypeSet; // 0x9c
             uint8_t _pad009d[0x3]; // 0x9d
-            source2sdk::server::NavGoalType_t m_goalType; // 0xa0            
-            source2sdk::server::AI_NavGoalFlags_t m_goalFlags; // 0xa4            
-            source2sdk::entity2::GameTime_t m_flGoalChangeTime; // 0xa8            
-            source2sdk::entity2::GameTime_t m_flPathChangeTime; // 0xac            
-            float m_flDistAdvancedToCurWaypoint; // 0xb0            
+            source2sdk::server::NavGoalType_t m_goalType; // 0xa0
+            source2sdk::server::AI_NavGoalFlags_t m_goalFlags; // 0xa4
+            source2sdk::entity2::GameTime_t m_flGoalChangeTime; // 0xa8
+            source2sdk::entity2::GameTime_t m_flPathChangeTime; // 0xac
+            float m_flDistAdvancedToCurWaypoint; // 0xb0
             uint8_t _pad00b4[0x10]; // 0xb4
-            bool m_bOnMovableNavMesh; // 0xc4            
+            bool m_bOnMovableNavMesh; // 0xc4
             uint8_t _pad00c5[0x3]; // 0xc5
-            std::uint32_t m_unGoalActualMovableMeshId; // 0xc8            
-            std::uint32_t m_unGoalBaseMovableMeshId; // 0xcc            
-            std::uint32_t m_unPrevWaypointMovableMeshId; // 0xd0            
-            std::uint32_t m_unPrevWaypointBaseMovableMeshId; // 0xd4            
-            std::uint32_t m_unGoalActualMovableMeshId_Initial; // 0xd8            
-            std::uint32_t m_unGoalBaseMovableMeshId_Initial; // 0xdc            
-            std::uint32_t m_unGoalPosBlockedMovableMeshId; // 0xe0            
+            std::uint32_t m_unGoalActualMovableMeshId; // 0xc8
+            std::uint32_t m_unGoalBaseMovableMeshId; // 0xcc
+            std::uint32_t m_unPrevWaypointMovableMeshId; // 0xd0
+            std::uint32_t m_unPrevWaypointBaseMovableMeshId; // 0xd4
+            std::uint32_t m_unGoalActualMovableMeshId_Initial; // 0xd8
+            std::uint32_t m_unGoalBaseMovableMeshId_Initial; // 0xdc
+            std::uint32_t m_unGoalPosBlockedMovableMeshId; // 0xe0
             uint8_t _pad00e4[0x4];
-            
+
             // Datamap fields:
             // int32_t m_nNavHullIdx; // 0xc0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::CAI_Path, m_Waypoints) == 0x8);
         static_assert(offsetof(source2sdk::server::CAI_Path, m_vPrevWaypoint) == 0x10);
         static_assert(offsetof(source2sdk::server::CAI_Path, m_vPrevWaypointBase) == 0x1c);
@@ -107,7 +107,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::server::CAI_Path, m_unGoalActualMovableMeshId_Initial) == 0xd8);
         static_assert(offsetof(source2sdk::server::CAI_Path, m_unGoalBaseMovableMeshId_Initial) == 0xdc);
         static_assert(offsetof(source2sdk::server::CAI_Path, m_unGoalPosBlockedMovableMeshId) == 0xe0);
-        
+
         static_assert(sizeof(source2sdk::server::CAI_Path) == 0xe8);
     };
 };

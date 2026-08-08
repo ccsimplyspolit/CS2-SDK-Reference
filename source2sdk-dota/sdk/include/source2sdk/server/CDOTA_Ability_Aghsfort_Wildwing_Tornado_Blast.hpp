@@ -26,15 +26,15 @@ namespace source2sdk
         class CDOTA_Ability_Aghsfort_Wildwing_Tornado_Blast : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            float disable_duration; // 0x580            
-            float damage; // 0x584            
-            source2sdk::client::ParticleIndex_t m_nPreviewFX; // 0x588            
+            float disable_duration; // 0x580
+            float damage; // 0x584
+            source2sdk::client::ParticleIndex_t m_nPreviewFX; // 0x588
             uint8_t _pad058c[0x14];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Aghsfort_Wildwing_Tornado_Blast because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Aghsfort_Wildwing_Tornado_Blast) == 0x5a0);
     };
 };

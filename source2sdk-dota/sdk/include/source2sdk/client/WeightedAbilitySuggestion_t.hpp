@@ -23,14 +23,14 @@ namespace source2sdk
         struct WeightedAbilitySuggestion_t
         {
         public:
-            source2sdk::client::AbilityID_t nSuggestion; // 0x0            
-            float fWeight; // 0x4            
+            source2sdk::client::AbilityID_t nSuggestion; // 0x0
+            float fWeight; // 0x4
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::WeightedAbilitySuggestion_t, nSuggestion) == 0x0);
         static_assert(offsetof(source2sdk::client::WeightedAbilitySuggestion_t, fWeight) == 0x4);
-        
+
         static_assert(sizeof(source2sdk::client::WeightedAbilitySuggestion_t) == 0x8);
     };
 };

@@ -26,7 +26,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x11f8
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "EHANDLE m_hActiveProjectile"
         #pragma pack(push, 1)
         class CCitadel_Ability_Perched_Predator : public source2sdk::server::CCitadelBaseAbility
@@ -37,13 +37,13 @@ namespace source2sdk
             // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
             // m_hActiveProjectile has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hActiveProjectile;
-            char m_hActiveProjectile[0x4]; // 0x11f0            
+            char m_hActiveProjectile[0x4]; // 0x11f0
             uint8_t _pad11f4[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_Perched_Predator because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Ability_Perched_Predator) == 0x11f8);
     };
 };

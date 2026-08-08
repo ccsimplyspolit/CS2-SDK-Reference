@@ -19,18 +19,18 @@ namespace source2sdk
         // Size: 0x4
         // Has Trivial Constructor
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct RnSoftbodyParticle_t
         {
         public:
-            float m_flMassInv; // 0x0            
+            float m_flMassInv; // 0x0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::physicslib::RnSoftbodyParticle_t, m_flMassInv) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::physicslib::RnSoftbodyParticle_t) == 0x4);
     };
 };

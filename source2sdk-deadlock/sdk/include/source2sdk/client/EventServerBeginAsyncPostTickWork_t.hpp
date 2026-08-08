@@ -22,12 +22,12 @@ namespace source2sdk
         struct EventServerBeginAsyncPostTickWork_t
         {
         public:
-            bool m_bIsOncePerFrameAsyncWorkPhase; // 0x0            
+            bool m_bIsOncePerFrameAsyncWorkPhase; // 0x0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::EventServerBeginAsyncPostTickWork_t, m_bIsOncePerFrameAsyncWorkPhase) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::client::EventServerBeginAsyncPostTickWork_t) == 0x1);
     };
 };

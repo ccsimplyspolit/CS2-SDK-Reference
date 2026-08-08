@@ -23,16 +23,16 @@ namespace source2sdk
         class FilterHealth : public source2sdk::server::CBaseFilter
         {
         public:
-            bool m_bAdrenalineActive; // 0x4d8            
+            bool m_bAdrenalineActive; // 0x4d8
             uint8_t _pad04d9[0x3]; // 0x4d9
-            std::int32_t m_iHealthMin; // 0x4dc            
-            std::int32_t m_iHealthMax; // 0x4e0            
+            std::int32_t m_iHealthMin; // 0x4dc
+            std::int32_t m_iHealthMax; // 0x4e0
             uint8_t _pad04e4[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in FilterHealth because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::FilterHealth) == 0x4e8);
     };
 };

@@ -19,23 +19,23 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a78
+        // Size: 0x1a98
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Invoker_EMP_Pull : public source2sdk::client::CDOTA_Buff
         {
         public:
-            std::int32_t drag_speed; // 0x1a58            
-            float aura_origin_x; // 0x1a5c            
-            float aura_origin_y; // 0x1a60            
-            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x1a64            
-            VectorWS m_vCenter; // 0x1a68            
-            source2sdk::entity2::GameTime_t m_flLastThinkTime; // 0x1a74            
+            std::int32_t drag_speed; // 0x1a78
+            float aura_origin_x; // 0x1a7c
+            float aura_origin_y; // 0x1a80
+            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x1a84
+            VectorWS m_vCenter; // 0x1a88
+            source2sdk::entity2::GameTime_t m_flLastThinkTime; // 0x1a94
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Invoker_EMP_Pull because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Invoker_EMP_Pull) == 0x1a78);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Invoker_EMP_Pull) == 0x1a98);
     };
 };

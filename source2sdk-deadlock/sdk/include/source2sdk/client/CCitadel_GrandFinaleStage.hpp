@@ -24,17 +24,17 @@ namespace source2sdk
         class CCitadel_GrandFinaleStage : public source2sdk::client::CBaseAnimGraph
         {
         public:
-            Vector m_vStartPos; // 0xca8            
-            Vector m_vEndPos; // 0xcb4            
-            source2sdk::entity2::GameTime_t m_flStartEmitTime; // 0xcc0            
-            source2sdk::entity2::GameTime_t m_flEndEmitTime; // 0xcc4            
-            std::int32_t m_nTouchCount; // 0xcc8            
+            Vector m_vStartPos; // 0xca8
+            Vector m_vEndPos; // 0xcb4
+            source2sdk::entity2::GameTime_t m_flStartEmitTime; // 0xcc0
+            source2sdk::entity2::GameTime_t m_flEndEmitTime; // 0xcc4
+            std::int32_t m_nTouchCount; // 0xcc8
             uint8_t _pad0ccc[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_GrandFinaleStage because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_GrandFinaleStage) == 0xcd0);
     };
 };

@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x7a0
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "float32 m_flLightScale"
         // static metadata: MNetworkVarNames "float32 m_Radius"
         #pragma pack(push, 1)
@@ -27,16 +27,16 @@ namespace source2sdk
         {
         public:
             // metadata: MNetworkEnable
-            float m_flLightScale; // 0x780            
+            float m_flLightScale; // 0x780
             // metadata: MNetworkEnable
-            float m_Radius; // 0x784            
-            Vector m_vSpotlightDir; // 0x788            
-            VectorWS m_vSpotlightOrg; // 0x794            
+            float m_Radius; // 0x784
+            Vector m_vSpotlightDir; // 0x788
+            VectorWS m_vSpotlightOrg; // 0x794
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSpotlightEnd because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CSpotlightEnd) == 0x7a0);
     };
 };

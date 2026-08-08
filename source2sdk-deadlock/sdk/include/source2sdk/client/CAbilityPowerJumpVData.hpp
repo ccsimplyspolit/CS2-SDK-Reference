@@ -21,7 +21,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x1918
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CAbilityPowerJumpVData : public source2sdk::client::CitadelAbilityVData
@@ -30,19 +30,19 @@ namespace source2sdk
             // metadata: MPropertyGroupName "Visuals"
             // m_JumpParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_JumpParticle;
-            char m_JumpParticle[0xe0]; // 0x1818            
+            char m_JumpParticle[0xe0]; // 0x1818
             // metadata: MPropertyStartGroup "Modifiers"
             // m_InAirModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEmbeddedSubclass<source2sdk::client::CCitadelModifier> m_InAirModifier;
-            char m_InAirModifier[0x10]; // 0x18f8            
+            char m_InAirModifier[0x10]; // 0x18f8
             // m_PowerJumpModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEmbeddedSubclass<source2sdk::client::CCitadelModifier> m_PowerJumpModifier;
-            char m_PowerJumpModifier[0x10]; // 0x1908            
+            char m_PowerJumpModifier[0x10]; // 0x1908
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CAbilityPowerJumpVData because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CAbilityPowerJumpVData) == 0x1918);
     };
 };

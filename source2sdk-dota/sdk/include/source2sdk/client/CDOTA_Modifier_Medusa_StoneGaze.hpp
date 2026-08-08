@@ -24,24 +24,24 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a80
+        // Size: 0x1aa0
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Medusa_StoneGaze : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float radius; // 0x1a58            
-            float vision_cone; // 0x1a5c            
-            float duration; // 0x1a60            
-            std::int32_t speed_boost; // 0x1a64            
+            float radius; // 0x1a78
+            float vision_cone; // 0x1a7c
+            float duration; // 0x1a80
+            std::int32_t speed_boost; // 0x1a84
             // m_hHitEntities has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::client::C_BaseEntity>> m_hHitEntities;
-            char m_hHitEntities[0x18]; // 0x1a68            
+            char m_hHitEntities[0x18]; // 0x1a88
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Medusa_StoneGaze because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Medusa_StoneGaze) == 0x1a80);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Medusa_StoneGaze) == 0x1aa0);
     };
 };

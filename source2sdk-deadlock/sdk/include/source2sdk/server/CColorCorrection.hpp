@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x6d8
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkIncludeByUserGroup "Origin"
         // static metadata: MNetworkVarNames "float32 m_flFadeInDuration"
         // static metadata: MNetworkVarNames "float32 m_flFadeOutDuration"
@@ -38,38 +38,38 @@ namespace source2sdk
         {
         public:
             // metadata: MNetworkEnable
-            float m_flFadeInDuration; // 0x4a0            
+            float m_flFadeInDuration; // 0x4a0
             // metadata: MNetworkEnable
-            float m_flFadeOutDuration; // 0x4a4            
-            float m_flStartFadeInWeight; // 0x4a8            
-            float m_flStartFadeOutWeight; // 0x4ac            
-            source2sdk::entity2::GameTime_t m_flTimeStartFadeIn; // 0x4b0            
-            source2sdk::entity2::GameTime_t m_flTimeStartFadeOut; // 0x4b4            
+            float m_flFadeOutDuration; // 0x4a4
+            float m_flStartFadeInWeight; // 0x4a8
+            float m_flStartFadeOutWeight; // 0x4ac
+            source2sdk::entity2::GameTime_t m_flTimeStartFadeIn; // 0x4b0
+            source2sdk::entity2::GameTime_t m_flTimeStartFadeOut; // 0x4b4
             // metadata: MNetworkEnable
-            float m_flMaxWeight; // 0x4b8            
-            bool m_bStartDisabled; // 0x4bc            
+            float m_flMaxWeight; // 0x4b8
+            bool m_bStartDisabled; // 0x4bc
             // metadata: MNetworkEnable
-            bool m_bEnabled; // 0x4bd            
-            // metadata: MNetworkEnable
-            // metadata: MNotSaved
-            bool m_bMaster; // 0x4be            
+            bool m_bEnabled; // 0x4bd
             // metadata: MNetworkEnable
             // metadata: MNotSaved
-            bool m_bClientSide; // 0x4bf            
+            bool m_bMaster; // 0x4be
             // metadata: MNetworkEnable
-            bool m_bExclusive; // 0x4c0            
+            // metadata: MNotSaved
+            bool m_bClientSide; // 0x4bf
+            // metadata: MNetworkEnable
+            bool m_bExclusive; // 0x4c0
             uint8_t _pad04c1[0x3]; // 0x4c1
             // metadata: MNetworkEnable
-            float m_MinFalloff; // 0x4c4            
+            float m_MinFalloff; // 0x4c4
             // metadata: MNetworkEnable
-            float m_MaxFalloff; // 0x4c8            
+            float m_MaxFalloff; // 0x4c8
             // metadata: MNetworkEnable
-            float m_flCurWeight; // 0x4cc            
+            float m_flCurWeight; // 0x4cc
             // metadata: MNetworkEnable
             // metadata: MNotSaved
-            char m_netlookupFilename[512]; // 0x4d0            
-            CUtlSymbolLarge m_lookupFilename; // 0x6d0            
-            
+            char m_netlookupFilename[512]; // 0x4d0
+            CUtlSymbolLarge m_lookupFilename; // 0x6d0
+
             // Datamap fields:
             // void CColorCorrectionFadeInThink; // 0x0
             // void CColorCorrectionFadeOutThink; // 0x0
@@ -80,9 +80,9 @@ namespace source2sdk
             // float InputSetFadeOutDuration; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CColorCorrection because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CColorCorrection) == 0x6d8);
     };
 };

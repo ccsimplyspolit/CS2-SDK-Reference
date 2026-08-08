@@ -24,18 +24,18 @@ namespace source2sdk
         class C_PointCameraVFOV : public source2sdk::client::C_PointCamera
         {
         public:
-            float m_flVerticalFOV; // 0x658            
+            float m_flVerticalFOV; // 0x658
             uint8_t _pad065c[0x4];
-            
+
             // Datamap fields:
             // float m_flDofFarCrisp; // 0x638
             // float m_flDofFarBlurry; // 0x63c
             // float m_flDofTiltToGround; // 0x640
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_PointCameraVFOV because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_PointCameraVFOV) == 0x660);
     };
 };

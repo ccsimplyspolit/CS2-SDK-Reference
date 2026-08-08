@@ -17,22 +17,22 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a68
+        // Size: 0x1a88
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Brewmaster_CinderBrew : public source2sdk::client::CDOTA_Buff
         {
         public:
-            std::int32_t movement_slow; // 0x1a58            
-            bool m_bIgniteActive; // 0x1a5c            
-            uint8_t _pad1a5d[0x3]; // 0x1a5d
-            float m_flDamagePerTick; // 0x1a60            
-            uint8_t _pad1a64[0x4];
+            std::int32_t movement_slow; // 0x1a78
+            bool m_bIgniteActive; // 0x1a7c
+            uint8_t _pad1a7d[0x3]; // 0x1a7d
+            float m_flDamagePerTick; // 0x1a80
+            uint8_t _pad1a84[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Brewmaster_CinderBrew because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Brewmaster_CinderBrew) == 0x1a68);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Brewmaster_CinderBrew) == 0x1a88);
     };
 };

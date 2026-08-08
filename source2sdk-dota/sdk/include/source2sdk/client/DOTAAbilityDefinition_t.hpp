@@ -43,91 +43,91 @@ namespace source2sdk
         struct DOTAAbilityDefinition_t
         {
         public:
-            CUtlString m_sAbilityName; // 0x0            
-            CUtlString m_sBaseAbilityName; // 0x8            
-            CUtlString m_sTextureName; // 0x10            
-            CUtlString m_sSharedCooldownName; // 0x18            
-            CUtlString m_sKeyOverride; // 0x20            
-            CUtlString m_sItemRecipeName; // 0x28            
-            CUtlString m_sLinkedAbility; // 0x30            
-            CUtlString m_sTooltipSummaryProperties; // 0x38            
-            std::int32_t m_castActivity; // 0x40            
-            source2sdk::client::DotaGestureSlot_t m_castActivityGestureSlot; // 0x44            
-            KeyValues* m_pKVData; // 0x48            
-            source2sdk::client::AbilityID_t m_iAbilityID; // 0x50            
-            source2sdk::client::ABILITY_TYPES m_iAbilityType; // 0x54            
-            source2sdk::client::DOTA_ABILITY_BEHAVIOR m_iAbilityBehavior; // 0x58            
-            source2sdk::client::DOTA_UNIT_TARGET_TEAM m_iAbilityTargetTeam; // 0x60            
-            source2sdk::client::DOTA_UNIT_TARGET_TYPE m_iAbilityTargetType; // 0x64            
-            source2sdk::client::DOTA_UNIT_TARGET_FLAGS m_iAbilityTargetFlags; // 0x68            
-            source2sdk::client::DAMAGE_TYPES m_iAbilityDamageType; // 0x6c            
-            source2sdk::client::SPELL_IMMUNITY_TYPES m_iAbilityImmunityType; // 0x70            
-            source2sdk::client::SPELL_DISPELLABLE_TYPES m_iAbilityDispellableType; // 0x74            
-            std::int32_t m_iFightRecapLevel; // 0x78            
-            std::int32_t m_iTokenTier; // 0x7c            
-            source2sdk::client::item_definition_index_t m_iAssociatedConsumableItemDef; // 0x80            
-            source2sdk::client::item_definition_index_t m_iAssociatedLevelItemDef; // 0x84            
-            std::uint32_t m_nRequiredEffectsMask; // 0x88            
-            std::int32_t m_iAssociatedEventID; // 0x8c            
-            std::int32_t m_iMaxLevel; // 0x90            
-            std::int32_t m_iItemBaseLevel; // 0x94            
-            float m_flItemLevelByGameTime; // 0x98            
-            std::int32_t m_iItemCost; // 0x9c            
-            std::int32_t m_iItemInitialCharges; // 0xa0            
-            std::int32_t m_iItemNeutralTierIndex; // 0xa4            
-            std::int32_t m_iItemStockMax; // 0xa8            
-            float m_fItemStockTime; // 0xac            
-            std::uint32_t* m_pItemShopTagKeys; // 0xb0            
-            std::int32_t m_nNumShopTagKeys; // 0xb8            
-            source2sdk::client::AbilityID_t m_nRecipeResultAbilityID; // 0xbc            
+            CUtlString m_sAbilityName; // 0x0
+            CUtlString m_sBaseAbilityName; // 0x8
+            CUtlString m_sTextureName; // 0x10
+            CUtlString m_sSharedCooldownName; // 0x18
+            CUtlString m_sKeyOverride; // 0x20
+            CUtlString m_sItemRecipeName; // 0x28
+            CUtlString m_sLinkedAbility; // 0x30
+            CUtlString m_sTooltipSummaryProperties; // 0x38
+            std::int32_t m_castActivity; // 0x40
+            source2sdk::client::DotaGestureSlot_t m_castActivityGestureSlot; // 0x44
+            KeyValues* m_pKVData; // 0x48
+            source2sdk::client::AbilityID_t m_iAbilityID; // 0x50
+            source2sdk::client::ABILITY_TYPES m_iAbilityType; // 0x54
+            source2sdk::client::DOTA_ABILITY_BEHAVIOR m_iAbilityBehavior; // 0x58
+            source2sdk::client::DOTA_UNIT_TARGET_TEAM m_iAbilityTargetTeam; // 0x60
+            source2sdk::client::DOTA_UNIT_TARGET_TYPE m_iAbilityTargetType; // 0x64
+            source2sdk::client::DOTA_UNIT_TARGET_FLAGS m_iAbilityTargetFlags; // 0x68
+            source2sdk::client::DAMAGE_TYPES m_iAbilityDamageType; // 0x6c
+            source2sdk::client::SPELL_IMMUNITY_TYPES m_iAbilityImmunityType; // 0x70
+            source2sdk::client::SPELL_DISPELLABLE_TYPES m_iAbilityDispellableType; // 0x74
+            std::int32_t m_iFightRecapLevel; // 0x78
+            std::int32_t m_iTokenTier; // 0x7c
+            source2sdk::client::item_definition_index_t m_iAssociatedConsumableItemDef; // 0x80
+            source2sdk::client::item_definition_index_t m_iAssociatedLevelItemDef; // 0x84
+            std::uint32_t m_nRequiredEffectsMask; // 0x88
+            std::int32_t m_iAssociatedEventID; // 0x8c
+            std::int32_t m_iMaxLevel; // 0x90
+            std::int32_t m_iItemBaseLevel; // 0x94
+            float m_flItemLevelByGameTime; // 0x98
+            std::int32_t m_iItemCost; // 0x9c
+            std::int32_t m_iItemInitialCharges; // 0xa0
+            std::int32_t m_iItemNeutralTierIndex; // 0xa4
+            std::int32_t m_iItemStockMax; // 0xa8
+            float m_fItemStockTime; // 0xac
+            std::uint32_t* m_pItemShopTagKeys; // 0xb0
+            std::int32_t m_nNumShopTagKeys; // 0xb8
+            source2sdk::client::AbilityID_t m_nRecipeResultAbilityID; // 0xbc
             // m_vecItemCombinesInto has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::client::AbilityID_t> m_vecItemCombinesInto;
-            char m_vecItemCombinesInto[0x18]; // 0xc0            
+            char m_vecItemCombinesInto[0x18]; // 0xc0
             // m_vecItemRecipes has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::client::ItemRecipe_t> m_vecItemRecipes;
-            char m_vecItemRecipes[0x18]; // 0xd8            
-            float m_flBackpackCooldownOverride; // 0xf0            
-            std::int32_t m_nUpgradeGoal; // 0xf4            
-            source2sdk::client::ItemQuality_t m_ItemQuality; // 0xf8            
-            float m_flModifierValue; // 0xfc            
-            float m_flModifierValueBonus; // 0x100            
+            char m_vecItemRecipes[0x18]; // 0xd8
+            float m_flBackpackCooldownOverride; // 0xf0
+            std::int32_t m_nUpgradeGoal; // 0xf4
+            source2sdk::client::ItemQuality_t m_ItemQuality; // 0xf8
+            float m_flModifierValue; // 0xfc
+            float m_flModifierValueBonus; // 0x100
             uint8_t _pad0104[0xd0]; // 0x104
-            bool m_bHasScepterUpgrade; // 0x1d4            
-            bool m_bHasShardUpgrade; // 0x1d5            
+            bool m_bHasScepterUpgrade; // 0x1d4
+            bool m_bHasShardUpgrade; // 0x1d5
             uint8_t _pad01d6[0x2]; // 0x1d6
-            std::int32_t m_nScepterUpgradeID; // 0x1d8            
-            std::int32_t m_nShardUpgradeID; // 0x1dc            
-            CUtlStringToken m_strScepterRequiredFacet; // 0x1e0            
-            CUtlStringToken m_strShardRequiredFacet; // 0x1e4            
-            CUtlStringToken m_strForbiddenTomeRequiredFacet; // 0x1e8            
+            std::int32_t m_nScepterUpgradeID; // 0x1d8
+            std::int32_t m_nShardUpgradeID; // 0x1dc
+            CUtlStringToken m_strScepterRequiredFacet; // 0x1e0
+            CUtlStringToken m_strShardRequiredFacet; // 0x1e4
+            CUtlStringToken m_strForbiddenTomeRequiredFacet; // 0x1e8
             uint8_t _pad01ec[0x4]; // 0x1ec
-            CUtlString m_strSubAbilityNames; // 0x1f0            
-            CUtlString m_strFakeSubAbilityNames; // 0x1f8            
-            bool m_bShowCooldownInTooltips; // 0x200            
-            bool m_bSharedWithTeammates; // 0x201            
+            CUtlString m_strSubAbilityNames; // 0x1f0
+            CUtlString m_strFakeSubAbilityNames; // 0x1f8
+            bool m_bShowCooldownInTooltips; // 0x200
+            bool m_bSharedWithTeammates; // 0x201
             uint8_t _pad0202[0x2]; // 0x202
-            std::int32_t m_nCastRangeBuffer; // 0x204            
-            std::int32_t m_nSpecialAbilities; // 0x208            
+            std::int32_t m_nCastRangeBuffer; // 0x204
+            std::int32_t m_nSpecialAbilities; // 0x208
             uint8_t _pad020c[0x4]; // 0x20c
-            source2sdk::client::DOTASpecialAbility_t* m_pSpecialAbilities; // 0x210            
+            source2sdk::client::DOTASpecialAbility_t* m_pSpecialAbilities; // 0x210
             // m_OutgoingBonuses has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::client::DOTAOutgoingBonus_t> m_OutgoingBonuses;
-            char m_OutgoingBonuses[0x18]; // 0x218            
+            char m_OutgoingBonuses[0x18]; // 0x218
             // m_mapRelationships has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlOrderedMap<CUtlStringToken,source2sdk::client::DotaAbilityRelationship_t> m_mapRelationships;
-            char m_mapRelationships[0x28]; // 0x230            
-            CUtlString m_sModelName; // 0x258            
-            CUtlString m_sModelAlternateName; // 0x260            
-            CUtlString m_sEffectName; // 0x268            
-            CUtlString m_sPingOverrideText; // 0x270            
-            CUtlString m_sRequiredCustomShopName; // 0x278            
-            CUtlString m_sLinkedScepterAbility; // 0x280            
-            CUtlString m_sLinkedShardAbility; // 0x288            
-            CUtlString m_sLinkedForbiddenTomeAbility; // 0x290            
-            CUtlString m_sDependentOnAbility; // 0x298            
-            std::int32_t m_nKillToastOverride; // 0x2a0            
-            std::int32_t m_iLevelsBetweenUpgrades; // 0x2a4            
-            std::int32_t m_iRequiredLevel; // 0x2a8            
+            char m_mapRelationships[0x28]; // 0x230
+            CUtlString m_sModelName; // 0x258
+            CUtlString m_sModelAlternateName; // 0x260
+            CUtlString m_sEffectName; // 0x268
+            CUtlString m_sPingOverrideText; // 0x270
+            CUtlString m_sRequiredCustomShopName; // 0x278
+            CUtlString m_sLinkedScepterAbility; // 0x280
+            CUtlString m_sLinkedShardAbility; // 0x288
+            CUtlString m_sLinkedForbiddenTomeAbility; // 0x290
+            CUtlString m_sDependentOnAbility; // 0x298
+            std::int32_t m_nKillToastOverride; // 0x2a0
+            std::int32_t m_iLevelsBetweenUpgrades; // 0x2a4
+            std::int32_t m_iRequiredLevel; // 0x2a8
             // start of bitfield block
             uint64_t m_bIsItem: 1;
             uint64_t m_bItemIsRecipe: 1;
@@ -179,7 +179,7 @@ namespace source2sdk
             uint8_t _pad02b4[0x4];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::DOTAAbilityDefinition_t, m_sAbilityName) == 0x0);
         static_assert(offsetof(source2sdk::client::DOTAAbilityDefinition_t, m_sBaseAbilityName) == 0x8);
         static_assert(offsetof(source2sdk::client::DOTAAbilityDefinition_t, m_sTextureName) == 0x10);
@@ -298,7 +298,7 @@ namespace source2sdk
         // Cannot assert offset of bitfield DOTAAbilityDefinition_t::m_bShowGiveIndicatorOnTargetCast
         // Cannot assert offset of bitfield DOTAAbilityDefinition_t::m_bImbueRequiresAOE
         // Cannot assert offset of bitfield DOTAAbilityDefinition_t::m_bEnableChargeDisplayOverride
-        
+
         static_assert(sizeof(source2sdk::client::DOTAAbilityDefinition_t) == 0x2b8);
     };
 };

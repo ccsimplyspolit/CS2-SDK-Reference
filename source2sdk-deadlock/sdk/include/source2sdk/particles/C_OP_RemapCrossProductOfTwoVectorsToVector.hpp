@@ -21,27 +21,27 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xf50
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_RemapCrossProductOfTwoVectorsToVector : public source2sdk::particles::CParticleFunctionOperator
         {
         public:
             // metadata: MPropertyFriendlyName "input vector 1"
-            source2sdk::particleslib::CPerParticleVecInput m_InputVec1; // 0x1d8            
+            source2sdk::particleslib::CPerParticleVecInput m_InputVec1; // 0x1d8
             // metadata: MPropertyFriendlyName "input vector 2"
-            source2sdk::particleslib::CPerParticleVecInput m_InputVec2; // 0x890            
+            source2sdk::particleslib::CPerParticleVecInput m_InputVec2; // 0x890
             // metadata: MPropertyFriendlyName "output field"
             // metadata: MPropertyAttributeChoiceName "particlefield_vector"
-            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0xf48            
+            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0xf48
             // metadata: MPropertyFriendlyName "normalize output"
-            bool m_bNormalize; // 0xf4c            
+            bool m_bNormalize; // 0xf4c
             uint8_t _pad0f4d[0x3];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_RemapCrossProductOfTwoVectorsToVector because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_RemapCrossProductOfTwoVectorsToVector) == 0xf50);
     };
 };

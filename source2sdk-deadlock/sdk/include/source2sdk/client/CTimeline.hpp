@@ -21,7 +21,7 @@ namespace source2sdk
         // Size: 0x228
         // Has VTable
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MNetworkVarNames "float m_flValues"
         // static metadata: MNetworkVarNames "int m_nValueCounts"
         // static metadata: MNetworkVarNames "int m_nBucketCount"
@@ -34,25 +34,25 @@ namespace source2sdk
         {
         public:
             // metadata: MNetworkEnable
-            float m_flValues[64]; // 0x10            
+            float m_flValues[64]; // 0x10
             // metadata: MNetworkEnable
-            std::int32_t m_nValueCounts[64]; // 0x110            
+            std::int32_t m_nValueCounts[64]; // 0x110
             // metadata: MNetworkEnable
-            std::int32_t m_nBucketCount; // 0x210            
+            std::int32_t m_nBucketCount; // 0x210
             // metadata: MNetworkEnable
-            float m_flInterval; // 0x214            
+            float m_flInterval; // 0x214
             // metadata: MNetworkEnable
-            float m_flFinalValue; // 0x218            
+            float m_flFinalValue; // 0x218
             // metadata: MNetworkEnable
-            source2sdk::client::TimelineCompression_t m_nCompressionType; // 0x21c            
+            source2sdk::client::TimelineCompression_t m_nCompressionType; // 0x21c
             // metadata: MNetworkEnable
-            bool m_bStopped; // 0x220            
+            bool m_bStopped; // 0x220
             uint8_t _pad0221[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CTimeline because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CTimeline) == 0x228);
     };
 };

@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x1e70
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MEntityAllowsPortraitWorldSpawn
         #pragma pack(push, 1)
         class C_CrownfallShmupEnemy : public source2sdk::client::C_PortraitWorldUnit
@@ -29,8 +29,8 @@ namespace source2sdk
             uint8_t _pad1df0[0x80];
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::client::C_CrownfallShmupEnemy) == 0x1e70);
     };
 };

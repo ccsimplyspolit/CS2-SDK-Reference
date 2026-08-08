@@ -26,13 +26,13 @@ namespace source2sdk
         class CDOTA_Ability_AghsFort_Creature_Phoenix_Supernova : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            source2sdk::client::ParticleIndex_t m_nPreviewFX; // 0x6a8            
+            source2sdk::client::ParticleIndex_t m_nPreviewFX; // 0x6a8
             uint8_t _pad06ac[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_AghsFort_Creature_Phoenix_Supernova because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CDOTA_Ability_AghsFort_Creature_Phoenix_Supernova) == 0x6b0);
     };
 };

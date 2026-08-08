@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x1ab8
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CAbilityChargedShotVData : public source2sdk::client::CitadelAbilityVData
@@ -29,18 +29,18 @@ namespace source2sdk
             // metadata: MPropertyStartGroup "Visuals"
             // m_ChannelParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_ChannelParticle;
-            char m_ChannelParticle[0xe0]; // 0x1818            
+            char m_ChannelParticle[0xe0]; // 0x1818
             // m_ChannelStartParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_ChannelStartParticle;
-            char m_ChannelStartParticle[0xe0]; // 0x18f8            
+            char m_ChannelStartParticle[0xe0]; // 0x18f8
             // m_ShootParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_ShootParticle;
-            char m_ShootParticle[0xe0]; // 0x19d8            
+            char m_ShootParticle[0xe0]; // 0x19d8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CAbilityChargedShotVData because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CAbilityChargedShotVData) == 0x1ab8);
     };
 };

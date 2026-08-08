@@ -19,23 +19,23 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x28
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct VMixDelayDesc_t
         {
         public:
-            source2sdk::soundsystem_lowlevel::VMixFilterDesc_t m_feedbackFilter; // 0x0            
-            bool m_bEnableFilter; // 0x10            
+            source2sdk::soundsystem_lowlevel::VMixFilterDesc_t m_feedbackFilter; // 0x0
+            bool m_bEnableFilter; // 0x10
             uint8_t _pad0011[0x3]; // 0x11
-            float m_flDelay; // 0x14            
-            float m_flDirectGain; // 0x18            
-            float m_flDelayGain; // 0x1c            
-            float m_flFeedbackGain; // 0x20            
-            float m_flWidth; // 0x24            
+            float m_flDelay; // 0x14
+            float m_flDirectGain; // 0x18
+            float m_flDelayGain; // 0x1c
+            float m_flFeedbackGain; // 0x20
+            float m_flWidth; // 0x24
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::VMixDelayDesc_t, m_feedbackFilter) == 0x0);
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::VMixDelayDesc_t, m_bEnableFilter) == 0x10);
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::VMixDelayDesc_t, m_flDelay) == 0x14);
@@ -43,7 +43,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::VMixDelayDesc_t, m_flDelayGain) == 0x1c);
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::VMixDelayDesc_t, m_flFeedbackGain) == 0x20);
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::VMixDelayDesc_t, m_flWidth) == 0x24);
-        
+
         static_assert(sizeof(source2sdk::soundsystem_lowlevel::VMixDelayDesc_t) == 0x28);
     };
 };

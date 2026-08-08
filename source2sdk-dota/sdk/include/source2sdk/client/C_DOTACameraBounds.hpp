@@ -25,13 +25,13 @@ namespace source2sdk
         class C_DOTACameraBounds : public source2sdk::client::C_BaseEntity
         {
         public:
-            Vector m_vecBoundsMin; // 0x5f0            
-            Vector m_vecBoundsMax; // 0x5fc            
+            Vector m_vecBoundsMin; // 0x5f0
+            Vector m_vecBoundsMax; // 0x5fc
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTACameraBounds because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTACameraBounds) == 0x608);
     };
 };

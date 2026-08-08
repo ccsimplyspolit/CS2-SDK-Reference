@@ -17,21 +17,21 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a68
+        // Size: 0x1a88
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Item_UnrelentingEye : public source2sdk::server::CDOTA_Buff_Item
         {
         public:
-            float max_slow_res; // 0x1a58            
-            float hero_reduction; // 0x1a5c            
-            float status_res_pct_increase_per_hero; // 0x1a60            
-            std::int32_t m_nNearbyEnemyHeroes; // 0x1a64            
+            float max_slow_res; // 0x1a78
+            float hero_reduction; // 0x1a7c
+            float status_res_pct_increase_per_hero; // 0x1a80
+            std::int32_t m_nNearbyEnemyHeroes; // 0x1a84
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Item_UnrelentingEye because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Item_UnrelentingEye) == 0x1a68);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Item_UnrelentingEye) == 0x1a88);
     };
 };

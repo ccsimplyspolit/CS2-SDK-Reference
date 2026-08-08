@@ -23,17 +23,17 @@ namespace source2sdk
         struct EventSimulate_t
         {
         public:
-            source2sdk::client::EngineLoopState_t m_LoopState; // 0x0            
-            bool m_bFirstTick; // 0x28            
-            bool m_bLastTick; // 0x29            
+            source2sdk::client::EngineLoopState_t m_LoopState; // 0x0
+            bool m_bFirstTick; // 0x28
+            bool m_bLastTick; // 0x29
             uint8_t _pad002a[0x6];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::EventSimulate_t, m_LoopState) == 0x0);
         static_assert(offsetof(source2sdk::client::EventSimulate_t, m_bFirstTick) == 0x28);
         static_assert(offsetof(source2sdk::client::EventSimulate_t, m_bLastTick) == 0x29);
-        
+
         static_assert(sizeof(source2sdk::client::EventSimulate_t) == 0x30);
     };
 };

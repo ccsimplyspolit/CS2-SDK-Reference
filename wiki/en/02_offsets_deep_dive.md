@@ -2,7 +2,7 @@
 
 Every `dw*` symbol CS2 exposes, what it points at, and how to walk from it to
 something useful. Values below are from `offsets/latest/offsets.json` at the
-time of writing (build 14170, 2026-07-15) — always cross-check the JSON.
+time of writing (build 14174, 2026-08-04) — always cross-check the JSON.
 
 ## The JSON
 
@@ -12,11 +12,11 @@ values are dictionaries of `symbol → integer_offset` (decimal). Example:
 ```json
 {
   "client.dll": {
-    "dwLocalPlayerController": 37219232,
-    "dwGameRules":             37370328,
-    "dwLocalPlayerPawn":       37372472,
-    "dwCSGOInput":             37459440,
-    "dwGlobalVars":            34143584
+  "dwLocalPlayerController": 37223296,
+  "dwGameRules":             37374424,
+  "dwLocalPlayerPawn":       37376568,
+  "dwCSGOInput":             37463952,
+  "dwGlobalVars":            34147680
   },
   "engine2.dll": {
     "dwNetworkGameClient":     9491632,
@@ -25,11 +25,11 @@ values are dictionaries of `symbol → integer_offset` (decimal). Example:
 }
 ```
 
-To convert to hex for reading: `hex(37219232) == '0x237FB70'`.
+To convert to hex for reading: `hex(37223296) == '0x237FB80'`.
 
 ## What each global points at
 
-### `client.dll.dwLocalPlayerController` — `0x237FB70`
+### `client.dll.dwLocalPlayerController` — `0x237FB80`
 
 `[client.dll + dwLocalPlayerController]` is a **pointer** to the local
 `CCSPlayerController*`. Read `qword` at that address; if non-zero, you have
@@ -62,7 +62,7 @@ The `CCSGOInput` global. This is where the user-command build pipeline lives.
 `CGlobalVarsBase*` — game time, frame time, tick count. Every entity
 tick-based logic reads these.
 
-### `client.dll.dwEntityList` / `dwGameEntitySystem` — `0x254FE70`
+### `client.dll.dwEntityList` / `dwGameEntitySystem` — `0x254FE80`
 
 The entity list root. From here you can walk every networked entity in the
 world. Same offset for both symbols in current builds — they alias.

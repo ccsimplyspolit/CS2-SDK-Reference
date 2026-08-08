@@ -25,12 +25,12 @@ namespace source2sdk
         class CDOTA_Ability_FacelessVoid_Innate_DistortionField : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            CUtlString m_strCachedDependencyAbility; // 0x580            
+            CUtlString m_strCachedDependencyAbility; // 0x580
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_FacelessVoid_Innate_DistortionField because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_FacelessVoid_Innate_DistortionField) == 0x588);
     };
 };

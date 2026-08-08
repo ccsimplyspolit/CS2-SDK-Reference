@@ -17,21 +17,21 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a78
+        // Size: 0x1a98
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Smoke_Of_Deceit : public source2sdk::server::CDOTA_Modifier_Invisible
         {
         public:
-            std::int32_t bonus_movement_speed; // 0x1a68            
-            std::int32_t visibility_radius; // 0x1a6c            
-            std::int32_t secondary_application_radius; // 0x1a70            
-            uint8_t _pad1a74[0x4];
+            std::int32_t bonus_movement_speed; // 0x1a88
+            std::int32_t visibility_radius; // 0x1a8c
+            std::int32_t secondary_application_radius; // 0x1a90
+            uint8_t _pad1a94[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Smoke_Of_Deceit because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Smoke_Of_Deceit) == 0x1a78);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Smoke_Of_Deceit) == 0x1a98);
     };
 };

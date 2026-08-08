@@ -32,13 +32,13 @@ namespace source2sdk
         public:
             // m_hPrevPostProcessingVolume has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::C_PostProcessingVolume> m_hPrevPostProcessingVolume;
-            char m_hPrevPostProcessingVolume[0x4]; // 0x3a0            
+            char m_hPrevPostProcessingVolume[0x4]; // 0x3a0
             uint8_t _pad03a4[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadelPlayer_CameraServices because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadelPlayer_CameraServices) == 0x3a8);
     };
 };

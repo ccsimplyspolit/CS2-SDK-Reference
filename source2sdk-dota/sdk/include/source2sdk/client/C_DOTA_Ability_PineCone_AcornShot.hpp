@@ -25,17 +25,17 @@ namespace source2sdk
         class C_DOTA_Ability_PineCone_AcornShot : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            std::uint32_t m_nAcornTree; // 0x6a8            
-            float projectile_speed; // 0x6ac            
-            float bounce_delay; // 0x6b0            
-            std::int32_t bounce_range; // 0x6b4            
-            std::int32_t bounce_count; // 0x6b8            
+            std::uint32_t m_nAcornTree; // 0x6a8
+            float projectile_speed; // 0x6ac
+            float bounce_delay; // 0x6b0
+            std::int32_t bounce_range; // 0x6b4
+            std::int32_t bounce_count; // 0x6b8
             uint8_t _pad06bc[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_PineCone_AcornShot because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_PineCone_AcornShot) == 0x6c0);
     };
 };

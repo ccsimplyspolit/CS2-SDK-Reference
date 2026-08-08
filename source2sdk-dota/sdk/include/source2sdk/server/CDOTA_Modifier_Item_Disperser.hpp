@@ -17,27 +17,27 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a80
+        // Size: 0x1aa0
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Item_Disperser : public source2sdk::server::CDOTA_Buff_Item
         {
         public:
-            std::int32_t bonus_agility; // 0x1a58            
-            std::int32_t bonus_intellect; // 0x1a5c            
-            std::int32_t bonus_attack_speed; // 0x1a60            
-            std::int32_t bonus_damage; // 0x1a64            
-            float bonus_mana_regen; // 0x1a68            
-            float damage_per_burn; // 0x1a6c            
-            std::int32_t feedback_mana_burn; // 0x1a70            
-            std::int32_t feedback_mana_burn_illusion_melee; // 0x1a74            
-            std::int32_t feedback_mana_burn_illusion_ranged; // 0x1a78            
-            uint8_t _pad1a7c[0x4];
+            std::int32_t bonus_agility; // 0x1a78
+            std::int32_t bonus_intellect; // 0x1a7c
+            std::int32_t bonus_attack_speed; // 0x1a80
+            std::int32_t bonus_damage; // 0x1a84
+            float bonus_mana_regen; // 0x1a88
+            float damage_per_burn; // 0x1a8c
+            std::int32_t feedback_mana_burn; // 0x1a90
+            std::int32_t feedback_mana_burn_illusion_melee; // 0x1a94
+            std::int32_t feedback_mana_burn_illusion_ranged; // 0x1a98
+            uint8_t _pad1a9c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Item_Disperser because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Item_Disperser) == 0x1a80);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Item_Disperser) == 0x1aa0);
     };
 };

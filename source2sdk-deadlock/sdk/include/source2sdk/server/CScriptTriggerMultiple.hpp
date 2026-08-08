@@ -23,13 +23,13 @@ namespace source2sdk
         class CScriptTriggerMultiple : public source2sdk::server::CTriggerMultiple
         {
         public:
-            Vector m_vExtent; // 0x8f8            
+            Vector m_vExtent; // 0x8f8
             uint8_t _pad0904[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CScriptTriggerMultiple because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CScriptTriggerMultiple) == 0x908);
     };
 };

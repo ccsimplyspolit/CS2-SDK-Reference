@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x40
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Placement Shape"
         // static metadata: MPropertyDescription "Specifies the shape (circle, or sphere) to use with elements that place children within a radius."
@@ -29,13 +29,13 @@ namespace source2sdk
         class CSmartPropVariable_RadiusPlacementMode : public source2sdk::smartprops::CSmartPropVariable
         {
         public:
-            source2sdk::smartprops::SmartPropRadiusPlacementMode_t m_DefaultValue; // 0x38            
+            source2sdk::smartprops::SmartPropRadiusPlacementMode_t m_DefaultValue; // 0x38
             uint8_t _pad003c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSmartPropVariable_RadiusPlacementMode because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::smartprops::CSmartPropVariable_RadiusPlacementMode) == 0x40);
     };
 };

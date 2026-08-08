@@ -18,24 +18,24 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a70
+        // Size: 0x1a90
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Watcher_State : public source2sdk::client::CDOTA_Buff
         {
         public:
-            uint8_t _pad1a58[0x4]; // 0x1a58
-            std::int32_t m_nOwningTeamNumber; // 0x1a5c            
-            bool m_bHasSentFirstReady; // 0x1a60            
-            uint8_t _pad1a61[0x3]; // 0x1a61
-            source2sdk::entity2::GameTime_t m_flNextReadyTime; // 0x1a64            
-            std::uint32_t m_uFoWVisibilityMask; // 0x1a68            
-            std::int32_t m_nCapturingUnitCount; // 0x1a6c            
+            uint8_t _pad1a78[0x4]; // 0x1a78
+            std::int32_t m_nOwningTeamNumber; // 0x1a7c
+            bool m_bHasSentFirstReady; // 0x1a80
+            uint8_t _pad1a81[0x3]; // 0x1a81
+            source2sdk::entity2::GameTime_t m_flNextReadyTime; // 0x1a84
+            std::uint32_t m_uFoWVisibilityMask; // 0x1a88
+            std::int32_t m_nCapturingUnitCount; // 0x1a8c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Watcher_State because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Watcher_State) == 0x1a70);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Watcher_State) == 0x1a90);
     };
 };

@@ -26,7 +26,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xdf0
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "AbilityID_t m_unItemID"
         #pragma pack(push, 1)
         class C_Citadel_Pickup_Item : public source2sdk::client::C_Citadel_Pickup
@@ -34,14 +34,14 @@ namespace source2sdk
         public:
             // metadata: MNetworkEnable
             // metadata: MNetworkChangeCallback "ItemChanged"
-            CUtlStringToken m_unItemID; // 0xde0            
+            CUtlStringToken m_unItemID; // 0xde0
             uint8_t _pad0de4[0x4]; // 0xde4
-            source2sdk::client::CitadelItemVData* m_pItemData; // 0xde8            
+            source2sdk::client::CitadelItemVData* m_pItemData; // 0xde8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_Citadel_Pickup_Item because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_Citadel_Pickup_Item) == 0xdf0);
     };
 };

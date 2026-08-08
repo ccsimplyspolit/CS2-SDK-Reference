@@ -19,7 +19,7 @@ namespace source2sdk
         // Size: 0x4
         // Has Trivial Destructor
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyAutoExpandSelf
         #pragma pack(push, 1)
@@ -27,12 +27,12 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyDescription "the kill eater id"
-            std::uint32_t unKillEaterEvent; // 0x0            
+            std::uint32_t unKillEaterEvent; // 0x0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::TrackedStatKillEaterData_t, unKillEaterEvent) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::client::TrackedStatKillEaterData_t) == 0x4);
     };
 };

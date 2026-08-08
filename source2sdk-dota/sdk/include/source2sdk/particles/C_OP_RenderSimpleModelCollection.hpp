@@ -25,7 +25,7 @@ namespace source2sdk
         // Size: 0x598
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_RenderSimpleModelCollection : public source2sdk::particles::CParticleFunctionRenderer
@@ -34,36 +34,36 @@ namespace source2sdk
             // metadata: MPropertyStartGroup "Orientation"
             // metadata: MPropertyFriendlyName "center mesh"
             // metadata: MPropertySortPriority "750"
-            bool m_bCenterOffset; // 0x228            
+            bool m_bCenterOffset; // 0x228
             uint8_t _pad0229[0x7]; // 0x229
             // metadata: MPropertyStartGroup "Model"
             // metadata: MPropertyFriendlyName "model"
             // m_hModel has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CStrongHandle<source2sdk::resourcesystem::InfoForResourceTypeCModel> m_hModel;
-            char m_hModel[0x8]; // 0x230            
+            char m_hModel[0x8]; // 0x230
             // metadata: MPropertyFriendlyName "input model override"
-            source2sdk::particleslib::CParticleModelInput m_modelInput; // 0x238            
+            source2sdk::particleslib::CParticleModelInput m_modelInput; // 0x238
             // metadata: MPropertyStartGroup "Rendering"
             // metadata: MPropertyFriendlyName "size cull scale"
-            source2sdk::particleslib::CParticleCollectionFloatInput m_fSizeCullScale; // 0x298            
+            source2sdk::particleslib::CParticleCollectionFloatInput m_fSizeCullScale; // 0x298
             // metadata: MPropertyFriendlyName "disable shadows"
-            bool m_bDisableShadows; // 0x408            
+            bool m_bDisableShadows; // 0x408
             // metadata: MPropertyFriendlyName "disable motion blur"
-            bool m_bDisableMotionBlur; // 0x409            
+            bool m_bDisableMotionBlur; // 0x409
             // metadata: MPropertyFriendlyName "accept decals"
-            bool m_bAcceptsDecals; // 0x40a            
+            bool m_bAcceptsDecals; // 0x40a
             uint8_t _pad040b[0x5]; // 0x40b
             // metadata: MPropertyFriendlyName "render filter"
-            source2sdk::particleslib::CPerParticleFloatInput m_fDrawFilter; // 0x410            
+            source2sdk::particleslib::CPerParticleFloatInput m_fDrawFilter; // 0x410
             // metadata: MPropertyFriendlyName "angular velocity attribute (improves motion blur)"
             // metadata: MPropertyAttributeChoiceName "particlefield_vector"
-            source2sdk::particles::ParticleAttributeIndex_t m_nAngularVelocityField; // 0x580            
+            source2sdk::particles::ParticleAttributeIndex_t m_nAngularVelocityField; // 0x580
             uint8_t _pad0584[0x14];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_RenderSimpleModelCollection because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_RenderSimpleModelCollection) == 0x598);
     };
 };

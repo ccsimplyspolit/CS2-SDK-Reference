@@ -25,13 +25,13 @@ namespace source2sdk
         class CDOTAPropConsumableBanner : public source2sdk::server::CDynamicProp
         {
         public:
-            bool m_bUseAvatar; // 0x9f0            
+            bool m_bUseAvatar; // 0x9f0
             uint8_t _pad09f1[0xf];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTAPropConsumableBanner because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTAPropConsumableBanner) == 0xa00);
     };
 };

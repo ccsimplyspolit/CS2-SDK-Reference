@@ -22,21 +22,21 @@ namespace source2sdk
         struct NeutralSpawnBoxes_t
         {
         public:
-            source2sdk::mathlib_extended::AABB_t neutralSpawnBoxes; // 0x0            
-            VectorWS vSpawnBoxOrigin; // 0x18            
+            source2sdk::mathlib_extended::AABB_t neutralSpawnBoxes; // 0x0
+            VectorWS vSpawnBoxOrigin; // 0x18
             uint8_t _pad0024[0x4]; // 0x24
-            CUtlString strCampName; // 0x28            
-            CEntityIndex iSpawnerEntIndex; // 0x30            
-            std::int32_t nCampType; // 0x34            
+            CUtlString strCampName; // 0x28
+            CEntityIndex iSpawnerEntIndex; // 0x30
+            std::int32_t nCampType; // 0x34
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::NeutralSpawnBoxes_t, neutralSpawnBoxes) == 0x0);
         static_assert(offsetof(source2sdk::client::NeutralSpawnBoxes_t, vSpawnBoxOrigin) == 0x18);
         static_assert(offsetof(source2sdk::client::NeutralSpawnBoxes_t, strCampName) == 0x28);
         static_assert(offsetof(source2sdk::client::NeutralSpawnBoxes_t, iSpawnerEntIndex) == 0x30);
         static_assert(offsetof(source2sdk::client::NeutralSpawnBoxes_t, nCampType) == 0x34);
-        
+
         static_assert(sizeof(source2sdk::client::NeutralSpawnBoxes_t) == 0x38);
     };
 };

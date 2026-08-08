@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x40
         // Has Trivial Destructor
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CLightRigPointLight : public source2sdk::toolscene::CLightRigLight
@@ -28,8 +28,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::toolscene::CLightRigPointLight) == 0x40);
     };
 };

@@ -34,17 +34,17 @@ namespace source2sdk
         public:
             // hAlreadyHitList has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::client::C_BaseEntity>> hAlreadyHitList;
-            char hAlreadyHitList[0x18]; // 0x6a8            
-            float duration; // 0x6c0            
-            std::int32_t speed; // 0x6c4            
-            float damage; // 0x6c8            
-            float range; // 0x6cc            
+            char hAlreadyHitList[0x18]; // 0x6a8
+            float duration; // 0x6c0
+            std::int32_t speed; // 0x6c4
+            float damage; // 0x6c8
+            float range; // 0x6cc
             uint8_t _pad06d0[0x18];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_Tidehunter_ArmOfTheDeep because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_Tidehunter_ArmOfTheDeep) == 0x6e8);
     };
 };

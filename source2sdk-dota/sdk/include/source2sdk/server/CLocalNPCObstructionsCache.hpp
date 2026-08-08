@@ -29,18 +29,18 @@ namespace source2sdk
         class CLocalNPCObstructionsCache
         {
         public:
-            source2sdk::entity2::GameTick_t m_nLastUpdatedTick; // 0x0            
-            float m_flRadius; // 0x4            
+            source2sdk::entity2::GameTick_t m_nLastUpdatedTick; // 0x0
+            float m_flRadius; // 0x4
             // m_hCachedNPCs has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::server::CDOTA_BaseNPC>> m_hCachedNPCs;
-            char m_hCachedNPCs[0x18]; // 0x8            
+            char m_hCachedNPCs[0x18]; // 0x8
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::CLocalNPCObstructionsCache, m_nLastUpdatedTick) == 0x0);
         static_assert(offsetof(source2sdk::server::CLocalNPCObstructionsCache, m_flRadius) == 0x4);
         static_assert(offsetof(source2sdk::server::CLocalNPCObstructionsCache, m_hCachedNPCs) == 0x8);
-        
+
         static_assert(sizeof(source2sdk::server::CLocalNPCObstructionsCache) == 0x20);
     };
 };

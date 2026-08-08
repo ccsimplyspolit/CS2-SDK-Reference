@@ -24,13 +24,13 @@ namespace source2sdk
         class CSoundEventSphereEntity : public source2sdk::server::CSoundEventEntity
         {
         public:
-            float m_flRadius; // 0x558            
+            float m_flRadius; // 0x558
             uint8_t _pad055c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSoundEventSphereEntity because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CSoundEventSphereEntity) == 0x560);
     };
 };

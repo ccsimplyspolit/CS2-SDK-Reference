@@ -23,14 +23,14 @@ namespace source2sdk
         struct DestructibleHitGroupToDestroy_t
         {
         public:
-            source2sdk::client::HitGroup_t m_nHitGroup; // 0x0            
-            std::int32_t m_nMaxDamageLevel; // 0x4            
+            source2sdk::client::HitGroup_t m_nHitGroup; // 0x0
+            std::int32_t m_nMaxDamageLevel; // 0x4
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::DestructibleHitGroupToDestroy_t, m_nHitGroup) == 0x0);
         static_assert(offsetof(source2sdk::client::DestructibleHitGroupToDestroy_t, m_nMaxDamageLevel) == 0x4);
-        
+
         static_assert(sizeof(source2sdk::client::DestructibleHitGroupToDestroy_t) == 0x8);
     };
 };

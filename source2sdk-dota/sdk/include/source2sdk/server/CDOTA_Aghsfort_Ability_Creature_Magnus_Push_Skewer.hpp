@@ -25,17 +25,17 @@ namespace source2sdk
         class CDOTA_Aghsfort_Ability_Creature_Magnus_Push_Skewer : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            float skewer_radius; // 0x580            
-            float skewer_speed; // 0x584            
-            float range; // 0x588            
-            std::int32_t tree_radius; // 0x58c            
-            std::int32_t m_nProjectileID; // 0x590            
+            float skewer_radius; // 0x580
+            float skewer_speed; // 0x584
+            float range; // 0x588
+            std::int32_t tree_radius; // 0x58c
+            std::int32_t m_nProjectileID; // 0x590
             uint8_t _pad0594[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Aghsfort_Ability_Creature_Magnus_Push_Skewer because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Aghsfort_Ability_Creature_Magnus_Push_Skewer) == 0x598);
     };
 };

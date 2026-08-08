@@ -25,26 +25,26 @@ namespace source2sdk
         {
         public:
             // metadata: MNotSaved
-            std::uint8_t m_Flags; // 0xa88            
+            std::uint8_t m_Flags; // 0xa88
             // metadata: MNotSaved
-            std::uint8_t m_LightStyle; // 0xa89            
+            std::uint8_t m_LightStyle; // 0xa89
             uint8_t _pad0a8a[0x2]; // 0xa8a
             // metadata: MNotSaved
-            float m_Radius; // 0xa8c            
+            float m_Radius; // 0xa8c
             // metadata: MNotSaved
-            std::int32_t m_Exponent; // 0xa90            
+            std::int32_t m_Exponent; // 0xa90
             // metadata: MNotSaved
-            float m_InnerAngle; // 0xa94            
+            float m_InnerAngle; // 0xa94
             // metadata: MNotSaved
-            float m_OuterAngle; // 0xa98            
+            float m_OuterAngle; // 0xa98
             // metadata: MNotSaved
-            float m_SpotRadius; // 0xa9c            
+            float m_SpotRadius; // 0xa9c
             uint8_t _pad0aa0[0x10];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DynamicLight because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DynamicLight) == 0xab0);
     };
 };

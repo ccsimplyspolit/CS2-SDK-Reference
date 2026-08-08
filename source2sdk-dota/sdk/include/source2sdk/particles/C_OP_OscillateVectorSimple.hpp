@@ -21,7 +21,7 @@ namespace source2sdk
         // Size: 0x200
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_OscillateVectorSimple : public source2sdk::particles::CParticleFunctionOperator
@@ -29,24 +29,24 @@ namespace source2sdk
         public:
             // metadata: MPropertyFriendlyName "oscillation rate"
             // metadata: MVectorIsSometimesCoordinate "m_nField"
-            Vector m_Rate; // 0x1d8            
+            Vector m_Rate; // 0x1d8
             // metadata: MPropertyFriendlyName "oscillation frequency"
-            Vector m_Frequency; // 0x1e4            
+            Vector m_Frequency; // 0x1e4
             // metadata: MPropertyFriendlyName "oscillation field"
             // metadata: MPropertyAttributeChoiceName "particlefield_vector"
-            source2sdk::particles::ParticleAttributeIndex_t m_nField; // 0x1f0            
+            source2sdk::particles::ParticleAttributeIndex_t m_nField; // 0x1f0
             // metadata: MPropertyFriendlyName "oscillation multiplier"
-            float m_flOscMult; // 0x1f4            
+            float m_flOscMult; // 0x1f4
             // metadata: MPropertyFriendlyName "oscillation start phase"
-            float m_flOscAdd; // 0x1f8            
+            float m_flOscAdd; // 0x1f8
             // metadata: MPropertyFriendlyName "offset instead of accelerate position"
-            bool m_bOffset; // 0x1fc            
+            bool m_bOffset; // 0x1fc
             uint8_t _pad01fd[0x3];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_OscillateVectorSimple because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_OscillateVectorSimple) == 0x200);
     };
 };

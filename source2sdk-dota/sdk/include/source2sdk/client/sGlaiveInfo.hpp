@@ -28,18 +28,18 @@ namespace source2sdk
         class sGlaiveInfo
         {
         public:
-            std::int32_t iAttackIndex; // 0x0            
-            std::int32_t iBounceCount; // 0x4            
+            std::int32_t iAttackIndex; // 0x0
+            std::int32_t iBounceCount; // 0x4
             // hAlreadyHitList has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::client::C_BaseEntity>> hAlreadyHitList;
-            char hAlreadyHitList[0x18]; // 0x8            
+            char hAlreadyHitList[0x18]; // 0x8
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::sGlaiveInfo, iAttackIndex) == 0x0);
         static_assert(offsetof(source2sdk::client::sGlaiveInfo, iBounceCount) == 0x4);
         static_assert(offsetof(source2sdk::client::sGlaiveInfo, hAlreadyHitList) == 0x8);
-        
+
         static_assert(sizeof(source2sdk::client::sGlaiveInfo) == 0x20);
     };
 };

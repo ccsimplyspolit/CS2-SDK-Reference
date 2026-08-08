@@ -17,7 +17,7 @@ namespace source2sdk
         // Alignment: 0x8
         // Standard-layout class: true
         // Size: 0x180
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct GoldChangeSounds_t
@@ -25,56 +25,56 @@ namespace source2sdk
         public:
             // metadata: MPropertyStartGroup "Sounds"
             // metadata: MPropertyDescription "When you sell an item."
-            CSoundEventName m_strItemSale; // 0x0            
+            CSoundEventName m_strItemSale; // 0x0
             // metadata: MPropertyDescription "When you get gold from a treasure (probably idol?)."
-            CSoundEventName m_strTreasureChest; // 0x10            
+            CSoundEventName m_strTreasureChest; // 0x10
             // metadata: MPropertyDescription "When you get gold from a player kill."
-            CSoundEventName m_strPlayerKill; // 0x20            
+            CSoundEventName m_strPlayerKill; // 0x20
             // metadata: MPropertyDescription "When you get gold from a player kill assist."
-            CSoundEventName m_strPlayerKillAssist; // 0x30            
+            CSoundEventName m_strPlayerKillAssist; // 0x30
             // metadata: MPropertyDescription "When you get gold from a boss kill."
-            CSoundEventName m_strBossKill; // 0x40            
+            CSoundEventName m_strBossKill; // 0x40
             // metadata: MPropertyDescription "When you get gold from a lane trooper kill."
-            CSoundEventName m_strLaneTrooperKill; // 0x50            
+            CSoundEventName m_strLaneTrooperKill; // 0x50
             // metadata: MPropertyDescription "When you get gold from a neutral trooper kill."
-            CSoundEventName m_strNeutralTrooperKill; // 0x60            
+            CSoundEventName m_strNeutralTrooperKill; // 0x60
             // metadata: MPropertyDescription "When you get gold from a base sentry kill."
-            CSoundEventName m_strBaseSentryKill; // 0x70            
+            CSoundEventName m_strBaseSentryKill; // 0x70
             // metadata: MPropertyDescription "When you get gold from a player orb."
-            CSoundEventName m_strPlayerOrb; // 0x80            
+            CSoundEventName m_strPlayerOrb; // 0x80
             // metadata: MPropertyDescription "When you get gold from denying an orb."
-            CSoundEventName m_strOrbDeny; // 0x90            
+            CSoundEventName m_strOrbDeny; // 0x90
             // metadata: MPropertyDescription "When you get gold from a lane trooper orb."
-            CSoundEventName m_strLaneTrooperOrb; // 0xa0            
+            CSoundEventName m_strLaneTrooperOrb; // 0xa0
             // metadata: MPropertyDescription "When you get gold from a neutral trooper orb."
-            CSoundEventName m_strNeutralTrooperOrb; // 0xb0            
+            CSoundEventName m_strNeutralTrooperOrb; // 0xb0
             // metadata: MPropertyDescription "When you get gold from a tier1 boss orb."
-            CSoundEventName m_strTier1BossOrb; // 0xc0            
+            CSoundEventName m_strTier1BossOrb; // 0xc0
             // metadata: MPropertyDescription "When you get gold from a tier2 boss orb."
-            CSoundEventName m_strTier2BossOrb; // 0xd0            
+            CSoundEventName m_strTier2BossOrb; // 0xd0
             // metadata: MPropertyDescription "When you get gold from a tier3 boss orb."
-            CSoundEventName m_strTier3BossOrb; // 0xe0            
+            CSoundEventName m_strTier3BossOrb; // 0xe0
             // metadata: MPropertyDescription "When you get gold from a base sentry orb."
-            CSoundEventName m_strBaseSentryOrb; // 0xf0            
+            CSoundEventName m_strBaseSentryOrb; // 0xf0
             // metadata: MPropertyDescription "When you get gold from a orb from a deployable."
-            CSoundEventName m_strOrbDeployable; // 0x100            
+            CSoundEventName m_strOrbDeployable; // 0x100
             // metadata: MPropertyDescription "When you get gold from a neutral boss kill."
-            CSoundEventName m_strNeutralBossKill; // 0x110            
+            CSoundEventName m_strNeutralBossKill; // 0x110
             // metadata: MPropertyDescription "When you get gold from a trophy kill orb."
-            CSoundEventName m_strTrophyKillOrb; // 0x120            
+            CSoundEventName m_strTrophyKillOrb; // 0x120
             // metadata: MPropertyDescription "When you get gold from neutral world pickup."
-            CSoundEventName m_strNeutralWorldPickup; // 0x130            
+            CSoundEventName m_strNeutralWorldPickup; // 0x130
             // metadata: MPropertyDescription "When you spend gold from item purchase."
-            CSoundEventName m_strItemPurchase; // 0x140            
+            CSoundEventName m_strItemPurchase; // 0x140
             // metadata: MPropertyDescription "When you spend gold from item upgrade."
-            CSoundEventName m_strItemUpgrade; // 0x150            
+            CSoundEventName m_strItemUpgrade; // 0x150
             // metadata: MPropertyDescription "When you get gold from starting amount."
-            CSoundEventName m_strStartingAmount; // 0x160            
+            CSoundEventName m_strStartingAmount; // 0x160
             // metadata: MPropertyDescription "When you get gold from cheats."
-            CSoundEventName m_strCheats; // 0x170            
+            CSoundEventName m_strCheats; // 0x170
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::GoldChangeSounds_t, m_strItemSale) == 0x0);
         static_assert(offsetof(source2sdk::client::GoldChangeSounds_t, m_strTreasureChest) == 0x10);
         static_assert(offsetof(source2sdk::client::GoldChangeSounds_t, m_strPlayerKill) == 0x20);
@@ -99,7 +99,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::client::GoldChangeSounds_t, m_strItemUpgrade) == 0x150);
         static_assert(offsetof(source2sdk::client::GoldChangeSounds_t, m_strStartingAmount) == 0x160);
         static_assert(offsetof(source2sdk::client::GoldChangeSounds_t, m_strCheats) == 0x170);
-        
+
         static_assert(sizeof(source2sdk::client::GoldChangeSounds_t) == 0x180);
     };
 };

@@ -24,13 +24,13 @@ namespace source2sdk
         class CInfoDynamicShadowHintBox : public source2sdk::client::CInfoDynamicShadowHint
         {
         public:
-            Vector m_vBoxMins; // 0x608            
-            Vector m_vBoxMaxs; // 0x614            
+            Vector m_vBoxMins; // 0x608
+            Vector m_vBoxMaxs; // 0x614
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CInfoDynamicShadowHintBox because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CInfoDynamicShadowHintBox) == 0x620);
     };
 };

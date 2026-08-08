@@ -24,13 +24,13 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0078[0x8]; // 0x78
-            bool m_bHasBeenPreFiltered; // 0x80            
+            bool m_bHasBeenPreFiltered; // 0x80
             uint8_t _pad0081[0x1f];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CNavVolumeVector because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::navlib::CNavVolumeVector) == 0xa0);
     };
 };

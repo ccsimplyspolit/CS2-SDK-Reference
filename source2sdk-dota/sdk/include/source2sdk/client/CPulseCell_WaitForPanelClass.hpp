@@ -21,19 +21,19 @@ namespace source2sdk
         // Size: 0x120
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Wait For Panel Class"
         #pragma pack(push, 1)
         class CPulseCell_WaitForPanelClass : public source2sdk::pulse_runtime_lib::CPulseCell_BaseYieldingInflow
         {
         public:
-            source2sdk::pulse_runtime_lib::CPulse_ResumePoint m_WakeResume; // 0xd8            
+            source2sdk::pulse_runtime_lib::CPulse_ResumePoint m_WakeResume; // 0xd8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPulseCell_WaitForPanelClass because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CPulseCell_WaitForPanelClass) == 0x120);
     };
 };

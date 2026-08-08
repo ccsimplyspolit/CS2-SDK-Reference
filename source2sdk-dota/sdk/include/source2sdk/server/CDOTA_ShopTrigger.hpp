@@ -25,14 +25,14 @@ namespace source2sdk
         class CDOTA_ShopTrigger : public source2sdk::server::CBaseTrigger
         {
         public:
-            std::int32_t m_ShopType; // 0x8f0            
+            std::int32_t m_ShopType; // 0x8f0
             uint8_t _pad08f4[0x4]; // 0x8f4
-            source2sdk::entity2::CEntityIOOutput m_OnTrigger; // 0x8f8            
+            source2sdk::entity2::CEntityIOOutput m_OnTrigger; // 0x8f8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_ShopTrigger because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_ShopTrigger) == 0x910);
     };
 };

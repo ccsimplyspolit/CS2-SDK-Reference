@@ -21,25 +21,25 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x18
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Limiter"
         #pragma pack(push, 1)
         class CSosGroupActionLimitSchema : public source2sdk::soundsystem::CSosGroupActionSchema
         {
         public:
-            std::int32_t m_nMaxCount; // 0x8            
-            source2sdk::soundsystem::SosActionStopType_t m_nStopType; // 0xc            
-            source2sdk::soundsystem::SosActionLimitSortType_t m_nSortType; // 0x10            
-            bool m_bStopImmediate; // 0x14            
+            std::int32_t m_nMaxCount; // 0x8
+            source2sdk::soundsystem::SosActionStopType_t m_nStopType; // 0xc
+            source2sdk::soundsystem::SosActionLimitSortType_t m_nSortType; // 0x10
+            bool m_bStopImmediate; // 0x14
             // metadata: MPropertyFriendlyName "Count Stopped Events"
-            bool m_bCountStopped; // 0x15            
+            bool m_bCountStopped; // 0x15
             uint8_t _pad0016[0x2];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSosGroupActionLimitSchema because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::soundsystem::CSosGroupActionLimitSchema) == 0x18);
     };
 };

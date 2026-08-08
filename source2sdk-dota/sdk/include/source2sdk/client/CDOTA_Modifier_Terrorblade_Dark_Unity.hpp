@@ -17,22 +17,22 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a68
+        // Size: 0x1a88
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Terrorblade_Dark_Unity : public source2sdk::client::CDOTA_Buff
         {
         public:
-            bool m_bInsideRadius; // 0x1a58            
-            uint8_t _pad1a59[0x3]; // 0x1a59
-            float radius; // 0x1a5c            
-            std::int32_t inside_radius_bonus_damage_pct; // 0x1a60            
-            uint8_t _pad1a64[0x4];
+            bool m_bInsideRadius; // 0x1a78
+            uint8_t _pad1a79[0x3]; // 0x1a79
+            float radius; // 0x1a7c
+            std::int32_t inside_radius_bonus_damage_pct; // 0x1a80
+            uint8_t _pad1a84[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Terrorblade_Dark_Unity because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Terrorblade_Dark_Unity) == 0x1a68);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Terrorblade_Dark_Unity) == 0x1a88);
     };
 };

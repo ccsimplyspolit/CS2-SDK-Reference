@@ -17,7 +17,7 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x19c8
+        // Size: 0x19d0
         // Has VTable
         // Construct allowed
         // MClassHasEntityLimitedDataDesc
@@ -25,16 +25,16 @@ namespace source2sdk
         class C_DOTA_BaseNPC_Venomancer_PlagueWard : public source2sdk::client::C_DOTA_BaseNPC_Additive
         {
         public:
-            bool m_bIsMovable; // 0x19b0            
-            uint8_t _pad19b1[0x3]; // 0x19b1
-            QAngle m_angle; // 0x19b4            
-            std::int32_t m_iPoseParameterAim; // 0x19c0            
-            uint8_t _pad19c4[0x4];
+            bool m_bIsMovable; // 0x19b8
+            uint8_t _pad19b9[0x3]; // 0x19b9
+            QAngle m_angle; // 0x19bc
+            std::int32_t m_iPoseParameterAim; // 0x19c8
+            uint8_t _pad19cc[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_BaseNPC_Venomancer_PlagueWard because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::C_DOTA_BaseNPC_Venomancer_PlagueWard) == 0x19c8);
+
+        static_assert(sizeof(source2sdk::client::C_DOTA_BaseNPC_Venomancer_PlagueWard) == 0x19d0);
     };
 };

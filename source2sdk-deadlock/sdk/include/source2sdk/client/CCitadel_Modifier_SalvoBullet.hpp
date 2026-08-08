@@ -25,13 +25,13 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0218[0x100]; // 0x218
-            source2sdk::client::ShotID_t m_BuffedShotId; // 0x318            
+            source2sdk::client::ShotID_t m_BuffedShotId; // 0x318
             uint8_t _pad031c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_SalvoBullet because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Modifier_SalvoBullet) == 0x320);
     };
 };

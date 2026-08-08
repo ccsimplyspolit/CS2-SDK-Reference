@@ -21,19 +21,19 @@ namespace source2sdk
         // Has Trivial Destructor
         // Construct allowed
         // Construct disallowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CRandSimTimer : public source2sdk::client::CSimpleSimTimer
         {
         public:
-            float m_flMinInterval; // 0x8            
-            float m_flMaxInterval; // 0xc            
+            float m_flMinInterval; // 0x8
+            float m_flMaxInterval; // 0xc
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CRandSimTimer because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CRandSimTimer) == 0x10);
     };
 };

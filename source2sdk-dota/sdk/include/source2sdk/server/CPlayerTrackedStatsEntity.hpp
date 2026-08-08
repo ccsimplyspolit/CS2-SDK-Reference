@@ -26,13 +26,13 @@ namespace source2sdk
         class CPlayerTrackedStatsEntity : public source2sdk::server::CBaseTrackedStatsEntity
         {
         public:
-            source2sdk::client::PlayerID_t m_nPlayerID; // 0x500            
-            std::int32_t m_nTeam; // 0x504            
+            source2sdk::client::PlayerID_t m_nPlayerID; // 0x500
+            std::int32_t m_nTeam; // 0x504
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPlayerTrackedStatsEntity because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CPlayerTrackedStatsEntity) == 0x508);
     };
 };

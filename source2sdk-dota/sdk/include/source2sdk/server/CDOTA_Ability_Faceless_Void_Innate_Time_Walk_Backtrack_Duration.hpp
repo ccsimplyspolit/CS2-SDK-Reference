@@ -28,8 +28,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: CDOTA_Ability_Faceless_Void_Innate_Time_Walk_Backtrack_Duration has no schema binary (size is a guess)
     };
 };

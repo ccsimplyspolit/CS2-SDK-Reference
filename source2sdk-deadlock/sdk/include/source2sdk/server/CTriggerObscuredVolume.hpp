@@ -23,14 +23,14 @@ namespace source2sdk
         class CTriggerObscuredVolume : public source2sdk::server::CBaseTrigger
         {
         public:
-            CUtlSymbolLarge m_iszModifierName; // 0x8e0            
-            CUtlStringToken m_tModifier; // 0x8e8            
+            CUtlSymbolLarge m_iszModifierName; // 0x8e0
+            CUtlStringToken m_tModifier; // 0x8e8
             uint8_t _pad08ec[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CTriggerObscuredVolume because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CTriggerObscuredVolume) == 0x8f0);
     };
 };

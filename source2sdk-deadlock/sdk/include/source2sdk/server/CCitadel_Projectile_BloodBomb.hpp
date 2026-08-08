@@ -23,21 +23,21 @@ namespace source2sdk
         class CCitadel_Projectile_BloodBomb : public source2sdk::server::CCitadelProjectile
         {
         public:
-            bool m_bSecondBomb; // 0x860            
+            bool m_bSecondBomb; // 0x860
             uint8_t _pad0861[0x3]; // 0x861
-            std::int32_t m_nBeepSoundBuildupCount; // 0x864            
-            float m_flBeepSoundIntervalBias; // 0x868            
-            float m_flBeepSoundMaxFrequency; // 0x86c            
-            float m_flArmingDuration; // 0x870            
+            std::int32_t m_nBeepSoundBuildupCount; // 0x864
+            float m_flBeepSoundIntervalBias; // 0x868
+            float m_flBeepSoundMaxFrequency; // 0x86c
+            float m_flArmingDuration; // 0x870
             uint8_t _pad0874[0x4]; // 0x874
             // m_vecBeepIntervals has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<float> m_vecBeepIntervals;
-            char m_vecBeepIntervals[0x18]; // 0x878            
+            char m_vecBeepIntervals[0x18]; // 0x878
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Projectile_BloodBomb because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Projectile_BloodBomb) == 0x890);
     };
 };

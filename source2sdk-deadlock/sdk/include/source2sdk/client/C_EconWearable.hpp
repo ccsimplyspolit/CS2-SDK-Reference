@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x1020
         // Has VTable
-        // 
+        //
         // static metadata: MEntityAllowsPortraitWorldSpawn
         #pragma pack(push, 1)
         class C_EconWearable : public source2sdk::client::C_EconEntity
@@ -28,8 +28,8 @@ namespace source2sdk
             uint8_t _pad1018[0x8];
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::client::C_EconWearable) == 0x1020);
     };
 };

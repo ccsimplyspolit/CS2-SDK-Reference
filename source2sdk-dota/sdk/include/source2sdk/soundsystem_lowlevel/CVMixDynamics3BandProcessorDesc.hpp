@@ -21,18 +21,18 @@ namespace source2sdk
         // Size: 0xb0
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CVMixDynamics3BandProcessorDesc : public source2sdk::soundsystem_lowlevel::CVMixBaseProcessorDesc
         {
         public:
-            source2sdk::soundsystem_lowlevel::VMixDynamics3BandDesc_t m_desc; // 0x20            
+            source2sdk::soundsystem_lowlevel::VMixDynamics3BandDesc_t m_desc; // 0x20
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CVMixDynamics3BandProcessorDesc because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::soundsystem_lowlevel::CVMixDynamics3BandProcessorDesc) == 0xb0);
     };
 };

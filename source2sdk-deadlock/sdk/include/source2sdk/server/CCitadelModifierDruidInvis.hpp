@@ -23,13 +23,13 @@ namespace source2sdk
         class CCitadelModifierDruidInvis : public source2sdk::server::CCitadelModifier
         {
         public:
-            float m_flCurrentObscureLevel; // 0xd0            
-            std::int32_t m_nInvisModifierID; // 0xd4            
+            float m_flCurrentObscureLevel; // 0xd0
+            std::int32_t m_nInvisModifierID; // 0xd4
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadelModifierDruidInvis because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadelModifierDruidInvis) == 0xd8);
     };
 };

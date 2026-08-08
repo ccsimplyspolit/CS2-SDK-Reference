@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x90
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CBaseAnimGraphDestructibleParts_GraphController : public source2sdk::client::CAnimGraphControllerBase
@@ -27,8 +27,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::client::CBaseAnimGraphDestructibleParts_GraphController) == 0x90);
     };
 };

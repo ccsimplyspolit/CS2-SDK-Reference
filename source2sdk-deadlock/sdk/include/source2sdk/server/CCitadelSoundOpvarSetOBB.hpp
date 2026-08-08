@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x4f0
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "string_t m_iszStackName"
         // static metadata: MNetworkVarNames "string_t m_iszOperatorName"
         // static metadata: MNetworkVarNames "string_t m_iszOpvarName"
@@ -33,27 +33,27 @@ namespace source2sdk
         {
         public:
             // metadata: MNetworkEnable
-            CUtlSymbolLarge m_iszStackName; // 0x4a0            
+            CUtlSymbolLarge m_iszStackName; // 0x4a0
             // metadata: MNetworkEnable
-            CUtlSymbolLarge m_iszOperatorName; // 0x4a8            
+            CUtlSymbolLarge m_iszOperatorName; // 0x4a8
             // metadata: MNetworkEnable
-            CUtlSymbolLarge m_iszOpvarName; // 0x4b0            
+            CUtlSymbolLarge m_iszOpvarName; // 0x4b0
             // metadata: MNetworkEnable
-            Vector m_vDistanceInnerMins; // 0x4b8            
+            Vector m_vDistanceInnerMins; // 0x4b8
             // metadata: MNetworkEnable
-            Vector m_vDistanceInnerMaxs; // 0x4c4            
+            Vector m_vDistanceInnerMaxs; // 0x4c4
             // metadata: MNetworkEnable
-            Vector m_vDistanceOuterMins; // 0x4d0            
+            Vector m_vDistanceOuterMins; // 0x4d0
             // metadata: MNetworkEnable
-            Vector m_vDistanceOuterMaxs; // 0x4dc            
+            Vector m_vDistanceOuterMaxs; // 0x4dc
             // metadata: MNetworkEnable
-            std::int32_t m_nAABBDirection; // 0x4e8            
+            std::int32_t m_nAABBDirection; // 0x4e8
             uint8_t _pad04ec[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadelSoundOpvarSetOBB because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadelSoundOpvarSetOBB) == 0x4f0);
     };
 };

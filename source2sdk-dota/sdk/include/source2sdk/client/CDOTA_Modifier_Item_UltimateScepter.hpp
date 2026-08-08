@@ -18,21 +18,21 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a68
+        // Size: 0x1a88
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Item_UltimateScepter : public source2sdk::client::CDOTA_Buff_Item
         {
         public:
-            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x1a58            
-            std::int32_t bonus_all_stats; // 0x1a5c            
-            std::int32_t bonus_health; // 0x1a60            
-            std::int32_t bonus_mana; // 0x1a64            
+            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x1a78
+            std::int32_t bonus_all_stats; // 0x1a7c
+            std::int32_t bonus_health; // 0x1a80
+            std::int32_t bonus_mana; // 0x1a84
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Item_UltimateScepter because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Item_UltimateScepter) == 0x1a68);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Item_UltimateScepter) == 0x1a88);
     };
 };

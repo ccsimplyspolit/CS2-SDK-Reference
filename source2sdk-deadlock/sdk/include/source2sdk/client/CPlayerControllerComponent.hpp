@@ -25,13 +25,13 @@ namespace source2sdk
         public:
             uint8_t _pad0000[0x8]; // 0x0
             // metadata: MNotSaved
-            source2sdk::entity2::CNetworkVarChainer __m_pChainEntity; // 0x8            
+            source2sdk::entity2::CNetworkVarChainer __m_pChainEntity; // 0x8
             uint8_t _pad0030[0x10];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::CPlayerControllerComponent, __m_pChainEntity) == 0x8);
-        
+
         static_assert(sizeof(source2sdk::client::CPlayerControllerComponent) == 0x40);
     };
 };

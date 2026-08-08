@@ -25,18 +25,18 @@ namespace source2sdk
         class C_DOTA_Ability_SandKing_BurrowStrike : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            float burrow_width; // 0x6a8            
-            std::int32_t burrow_speed; // 0x6ac            
-            float burrow_anim_time; // 0x6b0            
-            bool m_bIsVectorTargeted; // 0x6b4            
+            float burrow_width; // 0x6a8
+            std::int32_t burrow_speed; // 0x6ac
+            float burrow_anim_time; // 0x6b0
+            bool m_bIsVectorTargeted; // 0x6b4
             uint8_t _pad06b5[0x3]; // 0x6b5
-            VectorWS m_vEndpoint; // 0x6b8            
+            VectorWS m_vEndpoint; // 0x6b8
             uint8_t _pad06c4[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_SandKing_BurrowStrike because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_SandKing_BurrowStrike) == 0x6c8);
     };
 };

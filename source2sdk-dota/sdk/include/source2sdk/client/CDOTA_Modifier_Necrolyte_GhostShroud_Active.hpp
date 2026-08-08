@@ -17,23 +17,23 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a70
+        // Size: 0x1a90
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Necrolyte_GhostShroud_Active : public source2sdk::client::CDOTA_Buff
         {
         public:
-            std::int32_t heal_bonus; // 0x1a58            
-            std::int32_t bonus_damage; // 0x1a5c            
-            float slow_aoe; // 0x1a60            
-            float movement_transfer; // 0x1a64            
-            float movement_speed; // 0x1a68            
-            float m_flMovementSpeedAmp; // 0x1a6c            
+            std::int32_t heal_bonus; // 0x1a78
+            std::int32_t bonus_damage; // 0x1a7c
+            float slow_aoe; // 0x1a80
+            float movement_transfer; // 0x1a84
+            float movement_speed; // 0x1a88
+            float m_flMovementSpeedAmp; // 0x1a8c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Necrolyte_GhostShroud_Active because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Necrolyte_GhostShroud_Active) == 0x1a70);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Necrolyte_GhostShroud_Active) == 0x1a90);
     };
 };

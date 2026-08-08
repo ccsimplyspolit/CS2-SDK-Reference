@@ -24,13 +24,13 @@ namespace source2sdk
         {
         public:
             uint8_t _pad00d0[0x200]; // 0xd0
-            Vector m_vecInitialVelocity; // 0x2d0            
-            Vector m_vecKickOffVelocity; // 0x2dc            
+            Vector m_vecInitialVelocity; // 0x2d0
+            Vector m_vecKickOffVelocity; // 0x2dc
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_Werewolf_Kickflip_SucessSelf because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_Werewolf_Kickflip_SucessSelf) == 0x2e8);
     };
 };

@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x1828
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CAbilityCadenceLullabyVData : public source2sdk::server::CitadelAbilityVData
@@ -29,12 +29,12 @@ namespace source2sdk
             // metadata: MPropertyStartGroup "Modifiers"
             // m_SleepAOEModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEmbeddedSubclass<source2sdk::server::CCitadelModifier> m_SleepAOEModifier;
-            char m_SleepAOEModifier[0x10]; // 0x1818            
+            char m_SleepAOEModifier[0x10]; // 0x1818
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CAbilityCadenceLullabyVData because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CAbilityCadenceLullabyVData) == 0x1828);
     };
 };

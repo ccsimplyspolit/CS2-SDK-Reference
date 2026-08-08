@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x38
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "EAbilitySlots_t m_ItemSlotType"
         // static metadata: MNetworkVarNames "AbilityID_t m_StolenAbilityID"
         #pragma pack(push, 1)
@@ -28,16 +28,16 @@ namespace source2sdk
         public:
             uint8_t _pad0000[0x30]; // 0x0
             // metadata: MNetworkEnable
-            source2sdk::client::EAbilitySlots_t m_ItemSlotType; // 0x30            
+            source2sdk::client::EAbilitySlots_t m_ItemSlotType; // 0x30
             uint8_t _pad0032[0x2]; // 0x32
             // metadata: MNetworkEnable
-            CUtlStringToken m_StolenAbilityID; // 0x34            
+            CUtlStringToken m_StolenAbilityID; // 0x34
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::StolenAbilityPair_t, m_ItemSlotType) == 0x30);
         static_assert(offsetof(source2sdk::server::StolenAbilityPair_t, m_StolenAbilityID) == 0x34);
-        
+
         static_assert(sizeof(source2sdk::server::StolenAbilityPair_t) == 0x38);
     };
 };

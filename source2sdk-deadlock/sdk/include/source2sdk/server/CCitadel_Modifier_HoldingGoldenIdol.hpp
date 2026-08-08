@@ -25,16 +25,16 @@ namespace source2sdk
         {
         public:
             uint8_t _pad00d0[0x400]; // 0xd0
-            source2sdk::client::ParticleIndex_t m_iIdolParticle; // 0x4d0            
-            std::int32_t m_nGoldValue; // 0x4d4            
-            std::int32_t m_nTeamBias; // 0x4d8            
-            bool m_bRevealed; // 0x4dc            
+            source2sdk::client::ParticleIndex_t m_iIdolParticle; // 0x4d0
+            std::int32_t m_nGoldValue; // 0x4d4
+            std::int32_t m_nTeamBias; // 0x4d8
+            bool m_bRevealed; // 0x4dc
             uint8_t _pad04dd[0x3];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_HoldingGoldenIdol because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_HoldingGoldenIdol) == 0x4e0);
     };
 };

@@ -24,12 +24,12 @@ namespace source2sdk
         class CDOTA_ItemSpawner : public source2sdk::server::CPointEntity
         {
         public:
-            CUtlSymbolLarge m_szItemName; // 0x498            
+            CUtlSymbolLarge m_szItemName; // 0x498
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_ItemSpawner because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_ItemSpawner) == 0x4a0);
     };
 };

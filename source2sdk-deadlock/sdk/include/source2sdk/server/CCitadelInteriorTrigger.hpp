@@ -23,13 +23,13 @@ namespace source2sdk
         class CCitadelInteriorTrigger : public source2sdk::server::CTriggerModifier
         {
         public:
-            std::int32_t m_nInteriorType; // 0x8f0            
-            CUtlStringToken m_tInteriorModifier; // 0x8f4            
+            std::int32_t m_nInteriorType; // 0x8f0
+            CUtlStringToken m_tInteriorModifier; // 0x8f4
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadelInteriorTrigger because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadelInteriorTrigger) == 0x8f8);
     };
 };

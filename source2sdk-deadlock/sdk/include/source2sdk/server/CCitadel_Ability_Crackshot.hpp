@@ -25,13 +25,13 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0f70[0x4]; // 0xf70
-            source2sdk::client::ParticleIndex_t m_ReadyParticleIndex; // 0xf74            
+            source2sdk::client::ParticleIndex_t m_ReadyParticleIndex; // 0xf74
             uint8_t _pad0f78[0x380];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_Crackshot because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Ability_Crackshot) == 0x12f8);
     };
 };

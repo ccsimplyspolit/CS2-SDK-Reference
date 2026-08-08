@@ -17,23 +17,23 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a70
+        // Size: 0x1a90
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Elder_Titan_NaturalOrder_MagicResistance : public source2sdk::client::CDOTA_Buff
         {
         public:
-            std::int32_t magic_resistance_pct; // 0x1a58            
-            float magic_resistance_per_tick; // 0x1a5c            
-            std::int32_t max_stacks; // 0x1a60            
-            float tick_rate; // 0x1a64            
-            std::int32_t m_nTickCount; // 0x1a68            
-            uint8_t _pad1a6c[0x4];
+            std::int32_t magic_resistance_pct; // 0x1a78
+            float magic_resistance_per_tick; // 0x1a7c
+            std::int32_t max_stacks; // 0x1a80
+            float tick_rate; // 0x1a84
+            std::int32_t m_nTickCount; // 0x1a88
+            uint8_t _pad1a8c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Elder_Titan_NaturalOrder_MagicResistance because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Elder_Titan_NaturalOrder_MagicResistance) == 0x1a70);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Elder_Titan_NaturalOrder_MagicResistance) == 0x1a90);
     };
 };

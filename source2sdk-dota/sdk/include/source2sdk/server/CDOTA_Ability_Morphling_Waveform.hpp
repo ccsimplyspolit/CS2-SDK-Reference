@@ -33,18 +33,18 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0580[0x10]; // 0x580
-            std::int32_t m_nProjectileID; // 0x590            
-            VectorWS m_vProjectileLocation; // 0x594            
+            std::int32_t m_nProjectileID; // 0x590
+            VectorWS m_vProjectileLocation; // 0x594
             // m_hHitHero has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hHitHero;
-            char m_hHitHero[0x4]; // 0x5a0            
-            bool m_bGrantedGem; // 0x5a4            
+            char m_hHitHero[0x4]; // 0x5a0
+            bool m_bGrantedGem; // 0x5a4
             uint8_t _pad05a5[0x3];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Morphling_Waveform because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Morphling_Waveform) == 0x5a8);
     };
 };

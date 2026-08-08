@@ -17,7 +17,7 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x18a0
+        // Size: 0x18a8
         // Has VTable
         // Construct allowed
         #pragma pack(push, 1)
@@ -27,8 +27,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: CDOTA_BaseNPC_Additive has no schema binary (size is a guess)
     };
 };

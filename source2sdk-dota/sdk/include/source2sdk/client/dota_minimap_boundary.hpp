@@ -29,8 +29,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: dota_minimap_boundary has no schema binary (size is a guess)
     };
 };

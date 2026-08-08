@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xb8
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "TESTBED: Amped Decaying Sine Wave Container"
         // static metadata: MPropertyDescription "Bytecode instruction"
@@ -29,13 +29,13 @@ namespace source2sdk
         public:
             // metadata: MPropertyFriendlyName "Attenuation Amount (dB)"
             // metadata: MPropertyDescription "The amount of attenuation ."
-            float m_flGainAmount; // 0xb0            
+            float m_flGainAmount; // 0xb0
             uint8_t _pad00b4[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CVoiceContainerAmpedDecayingSineWave because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::soundsystem_voicecontainers::CVoiceContainerAmpedDecayingSineWave) == 0xb8);
     };
 };

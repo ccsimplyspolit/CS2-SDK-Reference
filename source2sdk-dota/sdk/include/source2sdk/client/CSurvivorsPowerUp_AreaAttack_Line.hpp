@@ -23,14 +23,14 @@ namespace source2sdk
         class CSurvivorsPowerUp_AreaAttack_Line : public source2sdk::client::CSurvivorsPowerUp_AreaAttack
         {
         public:
-            Vector m_vCachedFacingDirection; // 0x800            
-            bool m_bUseFacingDirection; // 0x80c            
+            Vector m_vCachedFacingDirection; // 0x800
+            bool m_bUseFacingDirection; // 0x80c
             uint8_t _pad080d[0x3];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSurvivorsPowerUp_AreaAttack_Line because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CSurvivorsPowerUp_AreaAttack_Line) == 0x810);
     };
 };

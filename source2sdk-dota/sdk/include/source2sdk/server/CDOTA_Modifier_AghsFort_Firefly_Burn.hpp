@@ -18,21 +18,21 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a68
+        // Size: 0x1a88
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_AghsFort_Firefly_Burn : public source2sdk::client::CDOTA_Buff
         {
         public:
-            std::int32_t damage_pct_per_second; // 0x1a58            
-            std::int32_t movement_speed; // 0x1a5c            
-            float tick_interval; // 0x1a60            
-            source2sdk::entity2::GameTime_t m_fNextDamageTick; // 0x1a64            
+            std::int32_t damage_pct_per_second; // 0x1a78
+            std::int32_t movement_speed; // 0x1a7c
+            float tick_interval; // 0x1a80
+            source2sdk::entity2::GameTime_t m_fNextDamageTick; // 0x1a84
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_AghsFort_Firefly_Burn because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_AghsFort_Firefly_Burn) == 0x1a68);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_AghsFort_Firefly_Burn) == 0x1a88);
     };
 };

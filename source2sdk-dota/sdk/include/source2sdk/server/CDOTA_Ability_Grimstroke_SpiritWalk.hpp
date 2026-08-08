@@ -32,17 +32,17 @@ namespace source2sdk
         class CDOTA_Ability_Grimstroke_SpiritWalk : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            float buff_duration; // 0x580            
+            float buff_duration; // 0x580
             // m_hTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hTarget;
-            char m_hTarget[0x4]; // 0x584            
-            std::int32_t can_end_early; // 0x588            
+            char m_hTarget[0x4]; // 0x584
+            std::int32_t can_end_early; // 0x588
             uint8_t _pad058c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Grimstroke_SpiritWalk because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Grimstroke_SpiritWalk) == 0x590);
     };
 };

@@ -21,7 +21,7 @@ namespace source2sdk
         // Has VTable
         // Is Abstract
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CParticleFunctionForce : public source2sdk::particles::CParticleFunction
@@ -30,8 +30,8 @@ namespace source2sdk
             uint8_t _pad01d8[0x10];
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::particles::CParticleFunctionForce) == 0x1e8);
     };
 };

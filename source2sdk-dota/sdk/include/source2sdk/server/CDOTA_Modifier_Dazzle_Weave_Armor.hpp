@@ -18,19 +18,19 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a60
+        // Size: 0x1a80
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Dazzle_Weave_Armor : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float armor_per_second; // 0x1a58            
-            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x1a5c            
+            float armor_per_second; // 0x1a78
+            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x1a7c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Dazzle_Weave_Armor because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Dazzle_Weave_Armor) == 0x1a60);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Dazzle_Weave_Armor) == 0x1a80);
     };
 };

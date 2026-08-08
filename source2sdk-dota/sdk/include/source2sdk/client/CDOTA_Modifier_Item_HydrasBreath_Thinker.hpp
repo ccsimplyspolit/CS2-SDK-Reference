@@ -18,24 +18,24 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a70
+        // Size: 0x1a90
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Item_HydrasBreath_Thinker : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float ground_duration; // 0x1a58            
-            float poison_duration; // 0x1a5c            
-            float damage; // 0x1a60            
-            float radius; // 0x1a64            
-            bool m_bAttackLanded; // 0x1a68            
-            uint8_t _pad1a69[0x3]; // 0x1a69
-            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x1a6c            
+            float ground_duration; // 0x1a78
+            float poison_duration; // 0x1a7c
+            float damage; // 0x1a80
+            float radius; // 0x1a84
+            bool m_bAttackLanded; // 0x1a88
+            uint8_t _pad1a89[0x3]; // 0x1a89
+            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x1a8c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Item_HydrasBreath_Thinker because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Item_HydrasBreath_Thinker) == 0x1a70);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Item_HydrasBreath_Thinker) == 0x1a90);
     };
 };

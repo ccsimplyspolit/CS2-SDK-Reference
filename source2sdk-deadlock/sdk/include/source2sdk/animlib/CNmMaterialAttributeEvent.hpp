@@ -19,24 +19,24 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x130
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CNmMaterialAttributeEvent : public source2sdk::animlib::CNmEvent
         {
         public:
-            CUtlString m_attributeName; // 0x20            
-            CUtlStringToken m_attributeNameToken; // 0x28            
+            CUtlString m_attributeName; // 0x20
+            CUtlStringToken m_attributeNameToken; // 0x28
             uint8_t _pad002c[0x4]; // 0x2c
-            CPiecewiseCurve m_x; // 0x30            
-            CPiecewiseCurve m_y; // 0x70            
-            CPiecewiseCurve m_z; // 0xb0            
-            CPiecewiseCurve m_w; // 0xf0            
+            CPiecewiseCurve m_x; // 0x30
+            CPiecewiseCurve m_y; // 0x70
+            CPiecewiseCurve m_z; // 0xb0
+            CPiecewiseCurve m_w; // 0xf0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CNmMaterialAttributeEvent because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::animlib::CNmMaterialAttributeEvent) == 0x130);
     };
 };

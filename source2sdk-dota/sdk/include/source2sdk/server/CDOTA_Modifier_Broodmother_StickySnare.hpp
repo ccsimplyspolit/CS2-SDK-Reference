@@ -26,38 +26,38 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1ac0
+        // Size: 0x1ae0
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Broodmother_StickySnare : public source2sdk::client::CDOTA_Buff
         {
         public:
-            VectorWS m_vOrigin; // 0x1a58            
-            VectorWS m_vWallDirection; // 0x1a64            
-            Vector m_vWallRight; // 0x1a70            
-            float width; // 0x1a7c            
-            float root_duration; // 0x1a80            
-            float formation_delay; // 0x1a84            
-            bool m_bTouching; // 0x1a88            
-            uint8_t _pad1a89[0x3]; // 0x1a89
+            VectorWS m_vOrigin; // 0x1a78
+            VectorWS m_vWallDirection; // 0x1a84
+            Vector m_vWallRight; // 0x1a90
+            float width; // 0x1a9c
+            float root_duration; // 0x1aa0
+            float formation_delay; // 0x1aa4
+            bool m_bTouching; // 0x1aa8
+            uint8_t _pad1aa9[0x3]; // 0x1aa9
             // m_hRight has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hRight;
-            char m_hRight[0x4]; // 0x1a8c            
-            bool m_bParticle; // 0x1a90            
-            uint8_t _pad1a91[0x3]; // 0x1a91
-            source2sdk::entity2::GameTime_t m_flStartingTime; // 0x1a94            
-            std::int32_t m_nFoWID; // 0x1a98            
-            std::int32_t m_nTeamID; // 0x1a9c            
+            char m_hRight[0x4]; // 0x1aac
+            bool m_bParticle; // 0x1ab0
+            uint8_t _pad1ab1[0x3]; // 0x1ab1
+            source2sdk::entity2::GameTime_t m_flStartingTime; // 0x1ab4
+            std::int32_t m_nFoWID; // 0x1ab8
+            std::int32_t m_nTeamID; // 0x1abc
             // m_vecAffectedHeroes has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::server::CBaseEntity>> m_vecAffectedHeroes;
-            char m_vecAffectedHeroes[0x18]; // 0x1aa0            
-            source2sdk::client::ParticleIndex_t m_nWarmupFXIndex; // 0x1ab8            
-            uint8_t _pad1abc[0x4];
+            char m_vecAffectedHeroes[0x18]; // 0x1ac0
+            source2sdk::client::ParticleIndex_t m_nWarmupFXIndex; // 0x1ad8
+            uint8_t _pad1adc[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Broodmother_StickySnare because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Broodmother_StickySnare) == 0x1ac0);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Broodmother_StickySnare) == 0x1ae0);
     };
 };

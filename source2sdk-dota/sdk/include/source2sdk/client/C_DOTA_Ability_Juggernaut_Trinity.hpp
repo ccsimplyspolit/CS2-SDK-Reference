@@ -25,15 +25,15 @@ namespace source2sdk
         class C_DOTA_Ability_Juggernaut_Trinity : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            std::int32_t max_jumps; // 0x6a8            
-            float jump_speed; // 0x6ac            
-            std::int32_t jump_attack_radius; // 0x6b0            
-            std::int32_t attack_count; // 0x6b4            
+            std::int32_t max_jumps; // 0x6a8
+            float jump_speed; // 0x6ac
+            std::int32_t jump_attack_radius; // 0x6b0
+            std::int32_t attack_count; // 0x6b4
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_Juggernaut_Trinity because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_Juggernaut_Trinity) == 0x6b8);
     };
 };

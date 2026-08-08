@@ -17,19 +17,19 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a80
+        // Size: 0x1aa0
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Tenderizer_Weaken : public source2sdk::server::CDOTA_Modifier_Stacking_Base
         {
         public:
-            std::int32_t weaken_per_hit; // 0x1a78            
-            uint8_t _pad1a7c[0x4];
+            std::int32_t weaken_per_hit; // 0x1a98
+            uint8_t _pad1a9c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Tenderizer_Weaken because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Tenderizer_Weaken) == 0x1a80);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Tenderizer_Weaken) == 0x1aa0);
     };
 };

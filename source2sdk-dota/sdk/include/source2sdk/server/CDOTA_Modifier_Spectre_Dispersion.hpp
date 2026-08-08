@@ -18,25 +18,25 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a78
+        // Size: 0x1a98
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Spectre_Dispersion : public source2sdk::client::CDOTA_Buff
         {
         public:
-            std::int32_t damage_reflection_pct; // 0x1a58            
-            float min_radius; // 0x1a5c            
-            float max_radius; // 0x1a60            
-            std::int32_t activation_bonus_pct; // 0x1a64            
-            source2sdk::entity2::GameTime_t m_flLastDispersionPulseEffectTime; // 0x1a68            
-            float m_fDamageCounter; // 0x1a6c            
-            float m_fLastTime; // 0x1a70            
-            uint8_t _pad1a74[0x4];
+            std::int32_t damage_reflection_pct; // 0x1a78
+            float min_radius; // 0x1a7c
+            float max_radius; // 0x1a80
+            std::int32_t activation_bonus_pct; // 0x1a84
+            source2sdk::entity2::GameTime_t m_flLastDispersionPulseEffectTime; // 0x1a88
+            float m_fDamageCounter; // 0x1a8c
+            float m_fLastTime; // 0x1a90
+            uint8_t _pad1a94[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Spectre_Dispersion because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Spectre_Dispersion) == 0x1a78);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Spectre_Dispersion) == 0x1a98);
     };
 };

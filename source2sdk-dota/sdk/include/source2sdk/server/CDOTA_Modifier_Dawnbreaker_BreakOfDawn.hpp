@@ -17,27 +17,27 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a78
+        // Size: 0x1a98
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Dawnbreaker_BreakOfDawn : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float max_dmg_pct; // 0x1a58            
-            float max_vision_pct; // 0x1a5c            
-            bool heal_amp; // 0x1a60            
-            uint8_t _pad1a61[0x3]; // 0x1a61
-            float m_flDaytimeStart; // 0x1a64            
-            float m_flNighttimeStart; // 0x1a68            
-            bool m_bDaytimeNormal; // 0x1a6c            
-            uint8_t _pad1a6d[0x3]; // 0x1a6d
-            float day_threshold; // 0x1a70            
-            uint8_t _pad1a74[0x4];
+            float max_dmg_pct; // 0x1a78
+            float max_vision_pct; // 0x1a7c
+            bool heal_amp; // 0x1a80
+            uint8_t _pad1a81[0x3]; // 0x1a81
+            float m_flDaytimeStart; // 0x1a84
+            float m_flNighttimeStart; // 0x1a88
+            bool m_bDaytimeNormal; // 0x1a8c
+            uint8_t _pad1a8d[0x3]; // 0x1a8d
+            float day_threshold; // 0x1a90
+            uint8_t _pad1a94[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Dawnbreaker_BreakOfDawn because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Dawnbreaker_BreakOfDawn) == 0x1a78);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Dawnbreaker_BreakOfDawn) == 0x1a98);
     };
 };

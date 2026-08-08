@@ -34,17 +34,17 @@ namespace source2sdk
             // metadata: MNotSaved
             // m_hAuraUnits has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::server::CBaseEntity>> m_hAuraUnits;
-            char m_hAuraUnits[0x18]; // 0xd0            
+            char m_hAuraUnits[0x18]; // 0xd0
             // m_hOldAuraUnits has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::server::CBaseEntity>> m_hOldAuraUnits;
-            char m_hOldAuraUnits[0x18]; // 0xe8            
-            float m_flOverrideRadius; // 0x100            
+            char m_hOldAuraUnits[0x18]; // 0xe8
+            float m_flOverrideRadius; // 0x100
             uint8_t _pad0104[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CBaseModifierAura because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CBaseModifierAura) == 0x108);
     };
 };

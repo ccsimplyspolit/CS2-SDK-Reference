@@ -23,20 +23,20 @@ namespace source2sdk
         class CCitadelEnergyTower : public source2sdk::server::CServerOnlyEntity
         {
         public:
-            bool m_bEnabled; // 0x4a0            
+            bool m_bEnabled; // 0x4a0
             uint8_t _pad04a1[0x3]; // 0x4a1
-            float m_flDamage; // 0x4a4            
-            float m_flRadius; // 0x4a8            
+            float m_flDamage; // 0x4a4
+            float m_flRadius; // 0x4a8
             uint8_t _pad04ac[0xc];
-            
+
             // Datamap fields:
             //  InputEnable; // 0x0
             //  InputDisable; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadelEnergyTower because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadelEnergyTower) == 0x4b8);
     };
 };

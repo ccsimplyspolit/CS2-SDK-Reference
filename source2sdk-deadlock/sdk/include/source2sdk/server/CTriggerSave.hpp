@@ -23,16 +23,16 @@ namespace source2sdk
         class CTriggerSave : public source2sdk::server::CBaseTrigger
         {
         public:
-            bool m_bForceNewLevelUnit; // 0x8e0            
+            bool m_bForceNewLevelUnit; // 0x8e0
             uint8_t _pad08e1[0x3]; // 0x8e1
-            float m_fDangerousTimer; // 0x8e4            
-            std::int32_t m_minHitPoints; // 0x8e8            
+            float m_fDangerousTimer; // 0x8e4
+            std::int32_t m_minHitPoints; // 0x8e8
             uint8_t _pad08ec[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CTriggerSave because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CTriggerSave) == 0x8f0);
     };
 };

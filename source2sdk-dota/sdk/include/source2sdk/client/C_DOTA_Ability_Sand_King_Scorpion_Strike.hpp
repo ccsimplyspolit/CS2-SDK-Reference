@@ -34,12 +34,12 @@ namespace source2sdk
         public:
             // hEntitiesToIgnore has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::client::C_BaseEntity>> hEntitiesToIgnore;
-            char hEntitiesToIgnore[0x18]; // 0x6a8            
+            char hEntitiesToIgnore[0x18]; // 0x6a8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_Sand_King_Scorpion_Strike because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_Sand_King_Scorpion_Strike) == 0x6c0);
     };
 };

@@ -25,15 +25,15 @@ namespace source2sdk
         class C_DOTA_Ability_Largo_AmphibianRhapsody_DoubleTime : public source2sdk::client::C_DOTA_Ability_Largo_AmphibianRhapsody_Song
         {
         public:
-            float radius; // 0x6b8            
-            float movement_burst_duration; // 0x6bc            
-            float slow_resistance_burst_duration; // 0x6c0            
+            float radius; // 0x6b8
+            float movement_burst_duration; // 0x6bc
+            float slow_resistance_burst_duration; // 0x6c0
             uint8_t _pad06c4[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_Largo_AmphibianRhapsody_DoubleTime because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_Largo_AmphibianRhapsody_DoubleTime) == 0x6c8);
     };
 };

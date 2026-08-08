@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x40
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CScaleFunctionAbilityProperty_HealingBoonScaleVData : public source2sdk::server::CScaleFunctionVData
@@ -27,8 +27,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::server::CScaleFunctionAbilityProperty_HealingBoonScaleVData) == 0x40);
     };
 };

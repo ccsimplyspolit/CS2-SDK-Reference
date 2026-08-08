@@ -34,19 +34,19 @@ namespace source2sdk
         class CDOTA_Ability_MonkeyKing_Spring : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            VectorWS m_vPos; // 0x580            
-            source2sdk::entity2::GameTime_t m_fStartChannelTime; // 0x58c            
+            VectorWS m_vPos; // 0x580
+            source2sdk::entity2::GameTime_t m_fStartChannelTime; // 0x58c
             // m_hThinker has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hThinker;
-            char m_hThinker[0x4]; // 0x590            
-            source2sdk::client::ParticleIndex_t m_nFxIndex; // 0x594            
-            std::int32_t m_nRefCount; // 0x598            
+            char m_hThinker[0x4]; // 0x590
+            source2sdk::client::ParticleIndex_t m_nFxIndex; // 0x594
+            std::int32_t m_nRefCount; // 0x598
             uint8_t _pad059c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_MonkeyKing_Spring because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_MonkeyKing_Spring) == 0x5a0);
     };
 };

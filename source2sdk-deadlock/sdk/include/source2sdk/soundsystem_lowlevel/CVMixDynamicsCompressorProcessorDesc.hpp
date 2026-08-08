@@ -20,19 +20,19 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x48
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CVMixDynamicsCompressorProcessorDesc : public source2sdk::soundsystem_lowlevel::CVMixBaseProcessorDesc
         {
         public:
-            source2sdk::soundsystem_lowlevel::VMixDynamicsCompressorDesc_t m_desc; // 0x20            
+            source2sdk::soundsystem_lowlevel::VMixDynamicsCompressorDesc_t m_desc; // 0x20
             uint8_t _pad0044[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CVMixDynamicsCompressorProcessorDesc because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::soundsystem_lowlevel::CVMixDynamicsCompressorProcessorDesc) == 0x48);
     };
 };

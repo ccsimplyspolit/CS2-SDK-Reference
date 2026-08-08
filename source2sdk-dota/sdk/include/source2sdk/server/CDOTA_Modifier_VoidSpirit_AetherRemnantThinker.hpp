@@ -24,31 +24,31 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a80
+        // Size: 0x1aa0
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_VoidSpirit_AetherRemnantThinker : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float radius; // 0x1a58            
-            Vector m_vFacingDir; // 0x1a5c            
-            std::int32_t pierces_creeps; // 0x1a68            
+            float radius; // 0x1a78
+            Vector m_vFacingDir; // 0x1a7c
+            std::int32_t pierces_creeps; // 0x1a88
             // m_hRemnant has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hRemnant;
-            char m_hRemnant[0x4]; // 0x1a6c            
+            char m_hRemnant[0x4]; // 0x1a8c
             // m_hPartnerRemnant has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hPartnerRemnant;
-            char m_hPartnerRemnant[0x4]; // 0x1a70            
-            bool m_bTriggered; // 0x1a74            
-            uint8_t _pad1a75[0x3]; // 0x1a75
-            float m_flCurThink; // 0x1a78            
-            bool bIsArtifice; // 0x1a7c            
-            uint8_t _pad1a7d[0x3];
+            char m_hPartnerRemnant[0x4]; // 0x1a90
+            bool m_bTriggered; // 0x1a94
+            uint8_t _pad1a95[0x3]; // 0x1a95
+            float m_flCurThink; // 0x1a98
+            bool bIsArtifice; // 0x1a9c
+            uint8_t _pad1a9d[0x3];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_VoidSpirit_AetherRemnantThinker because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_VoidSpirit_AetherRemnantThinker) == 0x1a80);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_VoidSpirit_AetherRemnantThinker) == 0x1aa0);
     };
 };

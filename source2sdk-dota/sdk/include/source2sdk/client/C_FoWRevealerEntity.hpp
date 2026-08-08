@@ -24,13 +24,13 @@ namespace source2sdk
         class C_FoWRevealerEntity : public source2sdk::client::C_BaseEntity
         {
         public:
-            std::uint32_t m_unViewerTeam; // 0x5f0            
-            std::int32_t m_nVisionRange; // 0x5f4            
+            std::uint32_t m_unViewerTeam; // 0x5f0
+            std::int32_t m_nVisionRange; // 0x5f4
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_FoWRevealerEntity because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_FoWRevealerEntity) == 0x5f8);
     };
 };

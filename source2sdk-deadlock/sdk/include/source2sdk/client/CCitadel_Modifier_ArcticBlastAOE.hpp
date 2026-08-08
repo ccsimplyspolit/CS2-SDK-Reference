@@ -25,13 +25,13 @@ namespace source2sdk
         {
         public:
             uint8_t _pad00c0[0x400]; // 0xc0
-            source2sdk::client::ParticleIndex_t m_hAOEEffect; // 0x4c0            
+            source2sdk::client::ParticleIndex_t m_hAOEEffect; // 0x4c0
             uint8_t _pad04c4[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_ArcticBlastAOE because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Modifier_ArcticBlastAOE) == 0x4c8);
     };
 };

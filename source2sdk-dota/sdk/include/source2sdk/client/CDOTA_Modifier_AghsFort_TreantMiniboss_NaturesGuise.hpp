@@ -18,20 +18,20 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1aa0
+        // Size: 0x1ac0
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_AghsFort_TreantMiniboss_NaturesGuise : public source2sdk::client::CDOTA_Buff
         {
         public:
-            source2sdk::client::CountdownTimer m_RevealTimer; // 0x1a58            
-            source2sdk::client::CountdownTimer m_InvisAttackTimer; // 0x1a70            
-            source2sdk::client::CountdownTimer m_CooldownTimer; // 0x1a88            
+            source2sdk::client::CountdownTimer m_RevealTimer; // 0x1a78
+            source2sdk::client::CountdownTimer m_InvisAttackTimer; // 0x1a90
+            source2sdk::client::CountdownTimer m_CooldownTimer; // 0x1aa8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_AghsFort_TreantMiniboss_NaturesGuise because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_AghsFort_TreantMiniboss_NaturesGuise) == 0x1aa0);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_AghsFort_TreantMiniboss_NaturesGuise) == 0x1ac0);
     };
 };

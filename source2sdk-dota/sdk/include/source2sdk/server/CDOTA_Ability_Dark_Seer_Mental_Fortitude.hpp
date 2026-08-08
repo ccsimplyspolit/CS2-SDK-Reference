@@ -28,8 +28,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: CDOTA_Ability_Dark_Seer_Mental_Fortitude has no schema binary (size is a guess)
     };
 };

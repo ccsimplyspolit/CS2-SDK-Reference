@@ -33,29 +33,29 @@ namespace source2sdk
         public:
             // m_hEnemy has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hEnemy;
-            char m_hEnemy[0x4]; // 0x50            
+            char m_hEnemy[0x4]; // 0x50
             // m_hLastEnemy has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hLastEnemy;
-            char m_hLastEnemy[0x4]; // 0x54            
-            source2sdk::entity2::GameTime_t m_flTimeEnemyAcquired; // 0x58            
-            bool m_bHasEnemyAcquired; // 0x5c            
+            char m_hLastEnemy[0x4]; // 0x54
+            source2sdk::entity2::GameTime_t m_flTimeEnemyAcquired; // 0x58
+            bool m_bHasEnemyAcquired; // 0x5c
             uint8_t _pad005d[0x3]; // 0x5d
-            source2sdk::entity2::GameTime_t m_flTimeLastHadEnemy; // 0x60            
-            bool m_bHasLastHadEnemy; // 0x64            
+            source2sdk::entity2::GameTime_t m_flTimeLastHadEnemy; // 0x60
+            bool m_bHasLastHadEnemy; // 0x64
             uint8_t _pad0065[0x3]; // 0x65
-            std::int32_t m_nEnemiesSerialNumber; // 0x68            
+            std::int32_t m_nEnemiesSerialNumber; // 0x68
             // m_hEnemyOccluder has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hEnemyOccluder;
-            char m_hEnemyOccluder[0x4]; // 0x6c            
+            char m_hEnemyOccluder[0x4]; // 0x6c
             uint8_t _pad0070[0x8];
-            
+
             // Datamap fields:
             // void m_pEnemies; // 0x70
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CAI_EnemyServices because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CAI_EnemyServices) == 0x78);
     };
 };

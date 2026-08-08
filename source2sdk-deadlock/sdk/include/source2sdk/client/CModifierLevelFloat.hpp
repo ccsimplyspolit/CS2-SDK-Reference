@@ -18,18 +18,18 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x10
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MPropertyCustomEditor "multi_float( 4 )"
         #pragma pack(push, 1)
         class CModifierLevelFloat
         {
         public:
-            float m_pValue[4]; // 0x0            
+            float m_pValue[4]; // 0x0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::CModifierLevelFloat, m_pValue) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::client::CModifierLevelFloat) == 0x10);
     };
 };

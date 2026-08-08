@@ -23,16 +23,16 @@ namespace source2sdk
         class CCitadel_Modifier_Wrecker_Ultimate_GrabEnemy : public source2sdk::server::CCitadelModifier
         {
         public:
-            bool m_bAddedStasisParticle; // 0xd0            
+            bool m_bAddedStasisParticle; // 0xd0
             uint8_t _pad00d1[0x3]; // 0xd1
-            Vector m_vHoldOffset; // 0xd4            
-            float m_flLastTouchTime; // 0xe0            
+            Vector m_vHoldOffset; // 0xd4
+            float m_flLastTouchTime; // 0xe0
             uint8_t _pad00e4[0x304];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_Wrecker_Ultimate_GrabEnemy because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_Wrecker_Ultimate_GrabEnemy) == 0x3e8);
     };
 };

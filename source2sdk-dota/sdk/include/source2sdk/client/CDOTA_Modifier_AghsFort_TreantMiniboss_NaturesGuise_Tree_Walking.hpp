@@ -17,19 +17,19 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a60
+        // Size: 0x1a80
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_AghsFort_TreantMiniboss_NaturesGuise_Tree_Walking : public source2sdk::client::CDOTA_Buff
         {
         public:
-            std::int32_t movement_bonus; // 0x1a58            
-            std::int32_t regen_amp; // 0x1a5c            
+            std::int32_t movement_bonus; // 0x1a78
+            std::int32_t regen_amp; // 0x1a7c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_AghsFort_TreantMiniboss_NaturesGuise_Tree_Walking because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_AghsFort_TreantMiniboss_NaturesGuise_Tree_Walking) == 0x1a60);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_AghsFort_TreantMiniboss_NaturesGuise_Tree_Walking) == 0x1a80);
     };
 };

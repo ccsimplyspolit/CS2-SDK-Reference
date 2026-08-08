@@ -18,7 +18,7 @@ namespace source2sdk
         // Alignment: 0x8
         // Standard-layout class: false
         // Size: 0xc0
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CAI_OptionalMovementGaitSettings : public source2sdk::client::CAI_MovementGaitSettings
@@ -26,8 +26,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::client::CAI_OptionalMovementGaitSettings) == 0xc0);
     };
 };

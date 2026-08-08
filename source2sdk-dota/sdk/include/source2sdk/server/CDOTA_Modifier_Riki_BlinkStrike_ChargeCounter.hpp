@@ -17,7 +17,7 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a58
+        // Size: 0x1a78
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Riki_BlinkStrike_ChargeCounter : public source2sdk::server::CDOTA_Modifier_LegacyChargeCounter
@@ -26,8 +26,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: CDOTA_Modifier_Riki_BlinkStrike_ChargeCounter has no schema binary (size is a guess)
     };
 };

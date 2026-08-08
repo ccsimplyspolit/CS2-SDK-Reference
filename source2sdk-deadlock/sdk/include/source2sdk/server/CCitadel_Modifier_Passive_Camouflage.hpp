@@ -23,13 +23,13 @@ namespace source2sdk
         class CCitadel_Modifier_Passive_Camouflage : public source2sdk::server::CCitadelModifier
         {
         public:
-            float m_flRate; // 0xd0            
-            Vector m_vLastPosition; // 0xd4            
+            float m_flRate; // 0xd0
+            Vector m_vLastPosition; // 0xd4
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_Passive_Camouflage because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_Passive_Camouflage) == 0xe0);
     };
 };

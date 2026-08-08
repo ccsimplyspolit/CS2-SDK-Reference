@@ -24,13 +24,13 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0f78[0x80]; // 0xf78
-            float fl_StoredDamage; // 0xff8            
+            float fl_StoredDamage; // 0xff8
             uint8_t _pad0ffc[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_TechUpgrade_SuperAcolyteGloves because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_TechUpgrade_SuperAcolyteGloves) == 0x1000);
     };
 };

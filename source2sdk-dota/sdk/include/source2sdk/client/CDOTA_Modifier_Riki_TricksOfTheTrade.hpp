@@ -17,19 +17,19 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a60
+        // Size: 0x1a80
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Riki_TricksOfTheTrade : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float cd_per_kill; // 0x1a58            
-            float speed_per_attack; // 0x1a5c            
+            float cd_per_kill; // 0x1a78
+            float speed_per_attack; // 0x1a7c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Riki_TricksOfTheTrade because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Riki_TricksOfTheTrade) == 0x1a60);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Riki_TricksOfTheTrade) == 0x1a80);
     };
 };

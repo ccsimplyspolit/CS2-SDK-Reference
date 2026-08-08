@@ -30,24 +30,24 @@ namespace source2sdk
         class CInfoDynamicShadowHint : public source2sdk::server::CPointEntity
         {
         public:
-            bool m_bDisabled; // 0x4a0            
+            bool m_bDisabled; // 0x4a0
             uint8_t _pad04a1[0x3]; // 0x4a1
-            float m_flRange; // 0x4a4            
-            std::int32_t m_nImportance; // 0x4a8            
-            std::int32_t m_nLightChoice; // 0x4ac            
+            float m_flRange; // 0x4a4
+            std::int32_t m_nImportance; // 0x4a8
+            std::int32_t m_nLightChoice; // 0x4ac
             // m_hLight has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hLight;
-            char m_hLight[0x4]; // 0x4b0            
+            char m_hLight[0x4]; // 0x4b0
             uint8_t _pad04b4[0x4];
-            
+
             // Datamap fields:
             // void InputEnable; // 0x0
             // void InputDisable; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CInfoDynamicShadowHint because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CInfoDynamicShadowHint) == 0x4b8);
     };
 };

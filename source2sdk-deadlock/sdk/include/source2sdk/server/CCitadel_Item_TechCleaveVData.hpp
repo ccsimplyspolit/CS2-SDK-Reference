@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x18d8
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CCitadel_Item_TechCleaveVData : public source2sdk::server::CitadelItemVData
@@ -29,14 +29,14 @@ namespace source2sdk
             // metadata: MPropertyGroupName "Modifiers"
             // m_TechCleaveModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEmbeddedSubclass<source2sdk::server::CCitadelModifier> m_TechCleaveModifier;
-            char m_TechCleaveModifier[0x10]; // 0x18b8            
+            char m_TechCleaveModifier[0x10]; // 0x18b8
             // metadata: MPropertyStartGroup "Sounds"
-            CSoundEventName m_sCleaveProcSound; // 0x18c8            
+            CSoundEventName m_sCleaveProcSound; // 0x18c8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Item_TechCleaveVData because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Item_TechCleaveVData) == 0x18d8);
     };
 };

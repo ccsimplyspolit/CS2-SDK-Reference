@@ -20,23 +20,23 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x18
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CNmOrientationWarpNode_CDefinition : public source2sdk::animlib::CNmPoseNode_CDefinition
         {
         public:
-            std::int16_t m_nClipReferenceNodeIdx; // 0x10            
-            std::int16_t m_nTargetValueNodeIdx; // 0x12            
-            bool m_bIsOffsetNode; // 0x14            
-            bool m_bIsOffsetRelativeToCharacter; // 0x15            
-            bool m_bWarpTranslation; // 0x16            
-            source2sdk::animlib::CNmRootMotionData_SamplingMode_t m_samplingMode; // 0x17            
+            std::int16_t m_nClipReferenceNodeIdx; // 0x10
+            std::int16_t m_nTargetValueNodeIdx; // 0x12
+            bool m_bIsOffsetNode; // 0x14
+            bool m_bIsOffsetRelativeToCharacter; // 0x15
+            bool m_bWarpTranslation; // 0x16
+            source2sdk::animlib::CNmRootMotionData_SamplingMode_t m_samplingMode; // 0x17
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CNmOrientationWarpNode::CDefinition because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::animlib::CNmOrientationWarpNode_CDefinition) == 0x18);
     };
 };

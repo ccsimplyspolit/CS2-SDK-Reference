@@ -32,25 +32,25 @@ namespace source2sdk
         class CTriggerFan : public source2sdk::client::C_BaseTrigger
         {
         public:
-            Vector m_vFanOriginOffset; // 0xb70            
-            Vector m_vDirection; // 0xb7c            
-            bool m_bPushTowardsInfoTarget; // 0xb88            
-            bool m_bPushAwayFromInfoTarget; // 0xb89            
+            Vector m_vFanOriginOffset; // 0xb70
+            Vector m_vDirection; // 0xb7c
+            bool m_bPushTowardsInfoTarget; // 0xb88
+            bool m_bPushAwayFromInfoTarget; // 0xb89
             uint8_t _pad0b8a[0x6]; // 0xb8a
-            Quaternion m_qNoiseDelta; // 0xb90            
+            Quaternion m_qNoiseDelta; // 0xb90
             // m_hInfoFan has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::CInfoFan> m_hInfoFan;
-            char m_hInfoFan[0x4]; // 0xba0            
-            float m_flForce; // 0xba4            
-            bool m_bFalloff; // 0xba8            
+            char m_hInfoFan[0x4]; // 0xba0
+            float m_flForce; // 0xba4
+            bool m_bFalloff; // 0xba8
             uint8_t _pad0ba9[0x7]; // 0xba9
-            source2sdk::client::CountdownTimer m_RampTimer; // 0xbb0            
+            source2sdk::client::CountdownTimer m_RampTimer; // 0xbb0
             uint8_t _pad0bc8[0x8];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CTriggerFan because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CTriggerFan) == 0xbd0);
     };
 };

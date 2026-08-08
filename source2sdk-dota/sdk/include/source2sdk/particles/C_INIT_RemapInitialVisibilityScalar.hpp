@@ -21,7 +21,7 @@ namespace source2sdk
         // Size: 0x1f8
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_INIT_RemapInitialVisibilityScalar : public source2sdk::particles::CParticleFunctionInitializer
@@ -30,20 +30,20 @@ namespace source2sdk
             uint8_t _pad01e0[0x4]; // 0x1e0
             // metadata: MPropertyFriendlyName "output field"
             // metadata: MPropertyAttributeChoiceName "particlefield_scalar"
-            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1e4            
+            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1e4
             // metadata: MPropertyFriendlyName "visibility minimum"
-            float m_flInputMin; // 0x1e8            
+            float m_flInputMin; // 0x1e8
             // metadata: MPropertyFriendlyName "visibility maximum"
-            float m_flInputMax; // 0x1ec            
+            float m_flInputMax; // 0x1ec
             // metadata: MPropertyFriendlyName "output minimum"
-            float m_flOutputMin; // 0x1f0            
+            float m_flOutputMin; // 0x1f0
             // metadata: MPropertyFriendlyName "output maximum"
-            float m_flOutputMax; // 0x1f4            
+            float m_flOutputMax; // 0x1f4
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_INIT_RemapInitialVisibilityScalar because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_INIT_RemapInitialVisibilityScalar) == 0x1f8);
     };
 };

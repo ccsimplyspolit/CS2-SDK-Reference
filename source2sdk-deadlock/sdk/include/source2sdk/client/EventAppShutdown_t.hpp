@@ -22,12 +22,12 @@ namespace source2sdk
         struct EventAppShutdown_t
         {
         public:
-            std::int32_t m_nDummy0; // 0x0            
+            std::int32_t m_nDummy0; // 0x0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::EventAppShutdown_t, m_nDummy0) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::client::EventAppShutdown_t) == 0x4);
     };
 };

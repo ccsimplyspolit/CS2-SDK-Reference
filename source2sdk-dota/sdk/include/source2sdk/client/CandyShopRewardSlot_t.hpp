@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x20
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyAutoExpandSelf
         #pragma pack(push, 1)
@@ -27,16 +27,16 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyDescription "A CSS class to assign to this slot"
-            CUtlString m_sSlotClass; // 0x0            
+            CUtlString m_sSlotClass; // 0x0
             // m_vecSlotRewardOptions has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::client::CandyShopRewardOption_t> m_vecSlotRewardOptions;
-            char m_vecSlotRewardOptions[0x18]; // 0x8            
+            char m_vecSlotRewardOptions[0x18]; // 0x8
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::CandyShopRewardSlot_t, m_sSlotClass) == 0x0);
         static_assert(offsetof(source2sdk::client::CandyShopRewardSlot_t, m_vecSlotRewardOptions) == 0x8);
-        
+
         static_assert(sizeof(source2sdk::client::CandyShopRewardSlot_t) == 0x20);
     };
 };

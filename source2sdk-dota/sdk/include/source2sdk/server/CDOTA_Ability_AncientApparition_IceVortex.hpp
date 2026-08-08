@@ -25,13 +25,13 @@ namespace source2sdk
         class CDOTA_Ability_AncientApparition_IceVortex : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            float vision_aoe; // 0x580            
-            float vortex_duration; // 0x584            
+            float vision_aoe; // 0x580
+            float vortex_duration; // 0x584
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_AncientApparition_IceVortex because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_AncientApparition_IceVortex) == 0x588);
     };
 };

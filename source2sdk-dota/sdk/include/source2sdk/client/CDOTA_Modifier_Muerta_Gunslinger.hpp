@@ -17,21 +17,21 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a68
+        // Size: 0x1a88
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Muerta_Gunslinger : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float double_shot_chance; // 0x1a58            
-            float target_search_bonus_range; // 0x1a5c            
-            std::int32_t bonus_damage; // 0x1a60            
-            float dead_shot_cooldown_reduction_on_proc; // 0x1a64            
+            float double_shot_chance; // 0x1a78
+            float target_search_bonus_range; // 0x1a7c
+            std::int32_t bonus_damage; // 0x1a80
+            float dead_shot_cooldown_reduction_on_proc; // 0x1a84
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Muerta_Gunslinger because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Muerta_Gunslinger) == 0x1a68);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Muerta_Gunslinger) == 0x1a88);
     };
 };

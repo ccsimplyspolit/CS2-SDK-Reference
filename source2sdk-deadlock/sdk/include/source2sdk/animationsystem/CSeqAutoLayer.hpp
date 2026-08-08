@@ -19,22 +19,22 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x1c
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CSeqAutoLayer
         {
         public:
-            std::int16_t m_nLocalReference; // 0x0            
-            std::int16_t m_nLocalPose; // 0x2            
-            source2sdk::animationsystem::CSeqAutoLayerFlag m_flags; // 0x4            
-            float m_start; // 0xc            
-            float m_peak; // 0x10            
-            float m_tail; // 0x14            
-            float m_end; // 0x18            
+            std::int16_t m_nLocalReference; // 0x0
+            std::int16_t m_nLocalPose; // 0x2
+            source2sdk::animationsystem::CSeqAutoLayerFlag m_flags; // 0x4
+            float m_start; // 0xc
+            float m_peak; // 0x10
+            float m_tail; // 0x14
+            float m_end; // 0x18
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::animationsystem::CSeqAutoLayer, m_nLocalReference) == 0x0);
         static_assert(offsetof(source2sdk::animationsystem::CSeqAutoLayer, m_nLocalPose) == 0x2);
         static_assert(offsetof(source2sdk::animationsystem::CSeqAutoLayer, m_flags) == 0x4);
@@ -42,7 +42,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::animationsystem::CSeqAutoLayer, m_peak) == 0x10);
         static_assert(offsetof(source2sdk::animationsystem::CSeqAutoLayer, m_tail) == 0x14);
         static_assert(offsetof(source2sdk::animationsystem::CSeqAutoLayer, m_end) == 0x18);
-        
+
         static_assert(sizeof(source2sdk::animationsystem::CSeqAutoLayer) == 0x1c);
     };
 };

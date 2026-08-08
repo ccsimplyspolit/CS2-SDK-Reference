@@ -26,20 +26,20 @@ namespace source2sdk
         {
         public:
             // metadata: MNotSaved
-            source2sdk::server::sky3dparams_t m_skyboxData; // 0x498            
-            CUtlStringToken m_skyboxSlotToken; // 0x528            
-            bool m_bUseAngles; // 0x52c            
+            source2sdk::server::sky3dparams_t m_skyboxData; // 0x498
+            CUtlStringToken m_skyboxSlotToken; // 0x528
+            bool m_bUseAngles; // 0x52c
             uint8_t _pad052d[0x3]; // 0x52d
             // metadata: MNotSaved
-            source2sdk::server::CSkyCamera* m_pNext; // 0x530            
-            
+            source2sdk::server::CSkyCamera* m_pNext; // 0x530
+
             // Datamap fields:
             // void InputActivateSkybox; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSkyCamera because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CSkyCamera) == 0x538);
     };
 };

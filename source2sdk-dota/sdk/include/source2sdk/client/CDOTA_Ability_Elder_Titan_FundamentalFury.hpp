@@ -25,13 +25,13 @@ namespace source2sdk
         class CDOTA_Ability_Elder_Titan_FundamentalFury : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            float radius; // 0x6a8            
-            float buff_duration; // 0x6ac            
+            float radius; // 0x6a8
+            float buff_duration; // 0x6ac
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Elder_Titan_FundamentalFury because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CDOTA_Ability_Elder_Titan_FundamentalFury) == 0x6b0);
     };
 };

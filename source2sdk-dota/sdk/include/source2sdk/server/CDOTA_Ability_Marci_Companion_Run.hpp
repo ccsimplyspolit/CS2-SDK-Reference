@@ -26,30 +26,30 @@ namespace source2sdk
         class CDOTA_Ability_Marci_Companion_Run : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            std::int32_t m_nTrackingProjectileID; // 0x580            
-            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x584            
-            std::int32_t m_nMaxJumpDistance; // 0x588            
-            float landing_radius; // 0x58c            
-            std::int32_t move_speed; // 0x590            
-            float ally_buff_duration; // 0x594            
-            std::int32_t min_jump_distance; // 0x598            
-            std::int32_t max_jump_distance; // 0x59c            
-            std::int32_t impact_position_offset; // 0x5a0            
-            std::int32_t vector_preview_radius; // 0x5a4            
-            VectorWS m_vEndpoint; // 0x5a8            
-            source2sdk::client::ParticleIndex_t m_nToBounceFXIndex; // 0x5b4            
-            source2sdk::client::ParticleIndex_t m_nToTargetFXIndex; // 0x5b8            
-            bool m_bIsAltCastState; // 0x5bc            
+            std::int32_t m_nTrackingProjectileID; // 0x580
+            source2sdk::client::ParticleIndex_t m_nFXIndex; // 0x584
+            std::int32_t m_nMaxJumpDistance; // 0x588
+            float landing_radius; // 0x58c
+            std::int32_t move_speed; // 0x590
+            float ally_buff_duration; // 0x594
+            std::int32_t min_jump_distance; // 0x598
+            std::int32_t max_jump_distance; // 0x59c
+            std::int32_t impact_position_offset; // 0x5a0
+            std::int32_t vector_preview_radius; // 0x5a4
+            VectorWS m_vEndpoint; // 0x5a8
+            source2sdk::client::ParticleIndex_t m_nToBounceFXIndex; // 0x5b4
+            source2sdk::client::ParticleIndex_t m_nToTargetFXIndex; // 0x5b8
+            bool m_bIsAltCastState; // 0x5bc
             uint8_t _pad05bd[0x3]; // 0x5bd
-            VectorWS m_vDashPosition; // 0x5c0            
-            VectorWS m_vFacePosition; // 0x5cc            
-            Vector m_vTravelDir; // 0x5d8            
-            float m_fTravelDistance; // 0x5e4            
+            VectorWS m_vDashPosition; // 0x5c0
+            VectorWS m_vFacePosition; // 0x5cc
+            Vector m_vTravelDir; // 0x5d8
+            float m_fTravelDistance; // 0x5e4
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Marci_Companion_Run because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Marci_Companion_Run) == 0x5e8);
     };
 };

@@ -27,8 +27,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: CAbility_Operative_Revelation has no schema binary (size is a guess)
     };
 };

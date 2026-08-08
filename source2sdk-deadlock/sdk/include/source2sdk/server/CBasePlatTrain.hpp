@@ -23,22 +23,22 @@ namespace source2sdk
         class CBasePlatTrain : public source2sdk::server::CBaseToggle
         {
         public:
-            CUtlSymbolLarge m_NoiseMoving; // 0x800            
-            CUtlSymbolLarge m_NoiseArrived; // 0x808            
+            CUtlSymbolLarge m_NoiseMoving; // 0x800
+            CUtlSymbolLarge m_NoiseArrived; // 0x808
             uint8_t _pad0810[0x8]; // 0x810
-            float m_volume; // 0x818            
-            float m_flTWidth; // 0x81c            
-            float m_flTLength; // 0x820            
+            float m_volume; // 0x818
+            float m_flTWidth; // 0x81c
+            float m_flTLength; // 0x820
             uint8_t _pad0824[0x4];
-            
+
             // Datamap fields:
             // void m_pMovementSound; // 0x810
             // float rotation; // 0x7fffffff
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CBasePlatTrain because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CBasePlatTrain) == 0x828);
     };
 };

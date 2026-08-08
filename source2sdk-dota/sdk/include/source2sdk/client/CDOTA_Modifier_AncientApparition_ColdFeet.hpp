@@ -17,23 +17,23 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a78
+        // Size: 0x1a98
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_AncientApparition_ColdFeet : public source2sdk::client::CDOTA_Buff
         {
         public:
-            VectorWS m_vecStartPosition; // 0x1a58            
-            std::int32_t m_nCurrentTick; // 0x1a64            
-            float break_distance; // 0x1a68            
-            float stun_duration; // 0x1a6c            
-            std::int32_t damage_per_second; // 0x1a70            
-            float aoe; // 0x1a74            
+            VectorWS m_vecStartPosition; // 0x1a78
+            std::int32_t m_nCurrentTick; // 0x1a84
+            float break_distance; // 0x1a88
+            float stun_duration; // 0x1a8c
+            std::int32_t damage_per_second; // 0x1a90
+            float aoe; // 0x1a94
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_AncientApparition_ColdFeet because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_AncientApparition_ColdFeet) == 0x1a78);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_AncientApparition_ColdFeet) == 0x1a98);
     };
 };

@@ -24,13 +24,13 @@ namespace source2sdk
         {
         public:
             uint8_t _pad00c0[0x200]; // 0xc0
-            Vector m_vAuraCenter; // 0x2c0            
+            Vector m_vAuraCenter; // 0x2c0
             uint8_t _pad02cc[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_Rutger_Pulse_Target because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Modifier_Rutger_Pulse_Target) == 0x2d0);
     };
 };

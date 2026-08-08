@@ -21,7 +21,7 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x118
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MVDataRoot
         // static metadata: MVDataNodeType "1"
@@ -35,23 +35,23 @@ namespace source2sdk
             // metadata: MPropertyProvidesEditContextString
             // m_sToolsOnlyOwnerModelName has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeCModel>> m_sToolsOnlyOwnerModelName;
-            char m_sToolsOnlyOwnerModelName[0xe0]; // 0x8            
+            char m_sToolsOnlyOwnerModelName[0xe0]; // 0x8
             // metadata: MPropertyFriendlyName "Animgraph Variables"
             // metadata: MPropertyDescription "List of animgraph variables to use when moving through this navlink. Can include multiple, with different amounts of angular slack. The most permissive animgraph variable that exists on the entity's animgraph will be used,"
             // metadata: MPropertyAutoExpandSelf
             // m_vecAnimgraphVars has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::server::CNavLinkAnimgraphVar> m_vecAnimgraphVars;
-            char m_vecAnimgraphVars[0x18]; // 0xe8            
+            char m_vecAnimgraphVars[0x18]; // 0xe8
             // m_vecVariants has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::server::CNavLinkMovementVariantDefinition> m_vecVariants;
-            char m_vecVariants[0x18]; // 0x100            
+            char m_vecVariants[0x18]; // 0x100
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::server::CNavLinkMovementVData, m_sToolsOnlyOwnerModelName) == 0x8);
         static_assert(offsetof(source2sdk::server::CNavLinkMovementVData, m_vecAnimgraphVars) == 0xe8);
         static_assert(offsetof(source2sdk::server::CNavLinkMovementVData, m_vecVariants) == 0x100);
-        
+
         static_assert(sizeof(source2sdk::server::CNavLinkMovementVData) == 0x118);
     };
 };

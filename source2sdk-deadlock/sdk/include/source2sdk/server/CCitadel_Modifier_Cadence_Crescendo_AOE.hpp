@@ -24,13 +24,13 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0108[0x8]; // 0x108
-            std::int32_t m_nTicks; // 0x110            
+            std::int32_t m_nTicks; // 0x110
             uint8_t _pad0114[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_Cadence_Crescendo_AOE because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_Cadence_Crescendo_AOE) == 0x118);
     };
 };

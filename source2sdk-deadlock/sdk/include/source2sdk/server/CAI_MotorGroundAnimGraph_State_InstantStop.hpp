@@ -27,8 +27,8 @@ namespace source2sdk
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: CAI_MotorGroundAnimGraph_State_InstantStop has no schema binary (size is a guess)
     };
 };

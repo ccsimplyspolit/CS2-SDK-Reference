@@ -23,13 +23,13 @@ namespace source2sdk
         class CNavVolumeSphere : public source2sdk::navlib::CNavVolume
         {
         public:
-            VectorWS m_vCenter; // 0x78            
-            float m_flRadius; // 0x84            
+            VectorWS m_vCenter; // 0x78
+            float m_flRadius; // 0x84
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CNavVolumeSphere because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::navlib::CNavVolumeSphere) == 0x88);
     };
 };

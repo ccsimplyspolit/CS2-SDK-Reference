@@ -18,27 +18,27 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a90
+        // Size: 0x1ab0
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Primalbeast_Trample : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float effect_radius; // 0x1a58            
-            VectorWS vLastPos; // 0x1a5c            
-            float flCurrentDistance; // 0x1a68            
-            std::int32_t step_distance; // 0x1a6c            
-            std::int32_t bonus_magic_resistance; // 0x1a70            
-            bool m_bIsUnslowable; // 0x1a74            
-            uint8_t _pad1a75[0x3]; // 0x1a75
+            float effect_radius; // 0x1a78
+            VectorWS vLastPos; // 0x1a7c
+            float flCurrentDistance; // 0x1a88
+            std::int32_t step_distance; // 0x1a8c
+            std::int32_t bonus_magic_resistance; // 0x1a90
+            bool m_bIsUnslowable; // 0x1a94
+            uint8_t _pad1a95[0x3]; // 0x1a95
             // m_InFlightAttackRecords has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::client::AttackRecord_t> m_InFlightAttackRecords;
-            char m_InFlightAttackRecords[0x18]; // 0x1a78            
+            char m_InFlightAttackRecords[0x18]; // 0x1a98
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Primalbeast_Trample because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Primalbeast_Trample) == 0x1a90);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Primalbeast_Trample) == 0x1ab0);
     };
 };

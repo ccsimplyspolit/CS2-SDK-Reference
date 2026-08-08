@@ -27,19 +27,19 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0f70[0x80]; // 0xf70
-            source2sdk::modellib::AttachmentHandle_t m_hAttackPosHigh; // 0xff0            
-            source2sdk::modellib::AttachmentHandle_t m_hAttackPosLow; // 0xff1            
-            source2sdk::modellib::AttachmentHandle_t m_hAttackPosLeft; // 0xff2            
-            source2sdk::modellib::AttachmentHandle_t m_hAttackPosRight; // 0xff3            
-            source2sdk::entity2::GameTime_t m_tCastCompleteTime; // 0xff4            
+            source2sdk::modellib::AttachmentHandle_t m_hAttackPosHigh; // 0xff0
+            source2sdk::modellib::AttachmentHandle_t m_hAttackPosLow; // 0xff1
+            source2sdk::modellib::AttachmentHandle_t m_hAttackPosLeft; // 0xff2
+            source2sdk::modellib::AttachmentHandle_t m_hAttackPosRight; // 0xff3
+            source2sdk::entity2::GameTime_t m_tCastCompleteTime; // 0xff4
             // m_pBeamModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CModifierHandleTyped<source2sdk::server::CCitadelModifier> m_pBeamModifier;
-            char m_pBeamModifier[0x18]; // 0xff8            
+            char m_pBeamModifier[0x18]; // 0xff8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_Tier2Boss_LaserBeam because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Ability_Tier2Boss_LaserBeam) == 0x1010);
     };
 };

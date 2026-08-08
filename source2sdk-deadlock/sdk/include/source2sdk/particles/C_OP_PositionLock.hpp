@@ -23,51 +23,51 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xaa0
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_PositionLock : public source2sdk::particles::CParticleFunctionOperator
         {
         public:
             // metadata: MPropertyFriendlyName "transform input"
-            source2sdk::particleslib::CParticleTransformInput m_TransformInput; // 0x1d8            
+            source2sdk::particleslib::CParticleTransformInput m_TransformInput; // 0x1d8
             // metadata: MPropertyFriendlyName "start fadeout min"
-            float m_flStartTime_min; // 0x240            
+            float m_flStartTime_min; // 0x240
             // metadata: MPropertyFriendlyName "start fadeout max"
-            float m_flStartTime_max; // 0x244            
+            float m_flStartTime_max; // 0x244
             // metadata: MPropertyFriendlyName "start fadeout exponent"
-            float m_flStartTime_exp; // 0x248            
+            float m_flStartTime_exp; // 0x248
             // metadata: MPropertyFriendlyName "end fadeout min"
-            float m_flEndTime_min; // 0x24c            
+            float m_flEndTime_min; // 0x24c
             // metadata: MPropertyFriendlyName "end fadeout max"
-            float m_flEndTime_max; // 0x250            
+            float m_flEndTime_max; // 0x250
             // metadata: MPropertyFriendlyName "end fadeout exponent"
-            float m_flEndTime_exp; // 0x254            
+            float m_flEndTime_exp; // 0x254
             // metadata: MPropertyFriendlyName "distance fade range"
-            float m_flRange; // 0x258            
+            float m_flRange; // 0x258
             uint8_t _pad025c[0x4]; // 0x25c
             // metadata: MPropertyFriendlyName "distance fade bias"
-            source2sdk::particleslib::CParticleCollectionFloatInput m_flRangeBias; // 0x260            
+            source2sdk::particleslib::CParticleCollectionFloatInput m_flRangeBias; // 0x260
             // metadata: MPropertyFriendlyName "instant jump threshold"
-            float m_flJumpThreshold; // 0x3d0            
+            float m_flJumpThreshold; // 0x3d0
             // metadata: MPropertyFriendlyName "previous position scale"
-            float m_flPrevPosScale; // 0x3d4            
+            float m_flPrevPosScale; // 0x3d4
             // metadata: MPropertyFriendlyName "lock rotation"
-            bool m_bLockRot; // 0x3d8            
+            bool m_bLockRot; // 0x3d8
             uint8_t _pad03d9[0x7]; // 0x3d9
             // metadata: MPropertyFriendlyName "component scale"
-            source2sdk::particleslib::CParticleCollectionVecInput m_vecScale; // 0x3e0            
+            source2sdk::particleslib::CParticleCollectionVecInput m_vecScale; // 0x3e0
             // metadata: MPropertyFriendlyName "output field"
             // metadata: MPropertyAttributeChoiceName "particlefield_vector"
-            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0xa98            
+            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutput; // 0xa98
             // metadata: MPropertyFriendlyName "output field prev"
             // metadata: MPropertyAttributeChoiceName "particlefield_vector"
-            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutputPrev; // 0xa9c            
+            source2sdk::particles::ParticleAttributeIndex_t m_nFieldOutputPrev; // 0xa9c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_PositionLock because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_PositionLock) == 0xaa0);
     };
 };

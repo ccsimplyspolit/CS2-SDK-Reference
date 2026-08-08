@@ -24,13 +24,13 @@ namespace source2sdk
         class CScriptTriggerHurt : public source2sdk::server::CTriggerHurt
         {
         public:
-            Vector m_vExtent; // 0x978            
+            Vector m_vExtent; // 0x978
             uint8_t _pad0984[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CScriptTriggerHurt because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CScriptTriggerHurt) == 0x988);
     };
 };

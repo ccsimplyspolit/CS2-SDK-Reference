@@ -21,7 +21,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x1928
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CCitadel_Ability_SmokeBombVData : public source2sdk::client::CitadelAbilityVData
@@ -30,22 +30,22 @@ namespace source2sdk
             // metadata: MPropertyStartGroup "Modifiers"
             // m_InvisModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEmbeddedSubclass<source2sdk::client::CCitadelModifier> m_InvisModifier;
-            char m_InvisModifier[0x10]; // 0x1818            
+            char m_InvisModifier[0x10]; // 0x1818
             // m_BuffModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEmbeddedSubclass<source2sdk::client::CCitadelModifier> m_BuffModifier;
-            char m_BuffModifier[0x10]; // 0x1828            
+            char m_BuffModifier[0x10]; // 0x1828
             // m_PhaseOutModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEmbeddedSubclass<source2sdk::client::CCitadelModifier> m_PhaseOutModifier;
-            char m_PhaseOutModifier[0x10]; // 0x1838            
+            char m_PhaseOutModifier[0x10]; // 0x1838
             // metadata: MPropertyStartGroup "Visuals"
             // m_PurgeParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_PurgeParticle;
-            char m_PurgeParticle[0xe0]; // 0x1848            
+            char m_PurgeParticle[0xe0]; // 0x1848
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_SmokeBombVData because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Ability_SmokeBombVData) == 0x1928);
     };
 };

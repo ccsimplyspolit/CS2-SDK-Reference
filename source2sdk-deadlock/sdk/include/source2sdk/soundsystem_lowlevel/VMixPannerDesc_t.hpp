@@ -20,20 +20,20 @@ namespace source2sdk
         // Size: 0x8
         // Has Trivial Constructor
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct VMixPannerDesc_t
         {
         public:
-            source2sdk::soundsystem_lowlevel::VMixPannerType_t m_type; // 0x0            
-            float m_flStrength; // 0x4            
+            source2sdk::soundsystem_lowlevel::VMixPannerType_t m_type; // 0x0
+            float m_flStrength; // 0x4
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::VMixPannerDesc_t, m_type) == 0x0);
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::VMixPannerDesc_t, m_flStrength) == 0x4);
-        
+
         static_assert(sizeof(source2sdk::soundsystem_lowlevel::VMixPannerDesc_t) == 0x8);
     };
 };

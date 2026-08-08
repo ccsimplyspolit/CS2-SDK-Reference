@@ -17,21 +17,21 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a70
+        // Size: 0x1a90
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Visage_GravekeepersCloak_Stack : public source2sdk::client::CDOTA_Buff
         {
         public:
-            bool m_bIsRecovering; // 0x1a58            
-            uint8_t _pad1a59[0x3]; // 0x1a59
-            std::int32_t m_nFXIndex[4]; // 0x1a5c            
-            uint8_t _pad1a6c[0x4];
+            bool m_bIsRecovering; // 0x1a78
+            uint8_t _pad1a79[0x3]; // 0x1a79
+            std::int32_t m_nFXIndex[4]; // 0x1a7c
+            uint8_t _pad1a8c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Visage_GravekeepersCloak_Stack because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Visage_GravekeepersCloak_Stack) == 0x1a70);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Visage_GravekeepersCloak_Stack) == 0x1a90);
     };
 };

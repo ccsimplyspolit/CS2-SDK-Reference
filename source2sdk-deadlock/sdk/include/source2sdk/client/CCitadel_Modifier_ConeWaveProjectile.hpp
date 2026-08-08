@@ -25,15 +25,15 @@ namespace source2sdk
         {
         public:
             uint8_t _pad00c0[0x180]; // 0xc0
-            Vector m_vInitialCastPosition; // 0x240            
-            float m_flProjectileSpeed; // 0x24c            
-            source2sdk::client::ParticleIndex_t m_iParticleEffect; // 0x250            
+            Vector m_vInitialCastPosition; // 0x240
+            float m_flProjectileSpeed; // 0x24c
+            source2sdk::client::ParticleIndex_t m_iParticleEffect; // 0x250
             uint8_t _pad0254[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_ConeWaveProjectile because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Modifier_ConeWaveProjectile) == 0x258);
     };
 };

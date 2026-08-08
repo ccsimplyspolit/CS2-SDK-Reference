@@ -46,14 +46,14 @@ namespace source2sdk
         class CDOTA_ArcanaDataEntity : public source2sdk::server::CBaseEntity
         {
         public:
-            source2sdk::server::CDOTA_ArcanaDataEntity_DrowRanger* m_pArcanaData_CDOTA_ArcanaDataEntity_DrowRanger; // 0x498            
-            source2sdk::server::CDOTA_ArcanaDataEntity_FacelessVoid* m_pArcanaData_CDOTA_ArcanaDataEntity_FacelessVoid; // 0x4a0            
-            source2sdk::server::CDOTA_ArcanaDataEntity_Razor* m_pArcanaData_CDOTA_ArcanaDataEntity_Razor; // 0x4a8            
+            source2sdk::server::CDOTA_ArcanaDataEntity_DrowRanger* m_pArcanaData_CDOTA_ArcanaDataEntity_DrowRanger; // 0x498
+            source2sdk::server::CDOTA_ArcanaDataEntity_FacelessVoid* m_pArcanaData_CDOTA_ArcanaDataEntity_FacelessVoid; // 0x4a0
+            source2sdk::server::CDOTA_ArcanaDataEntity_Razor* m_pArcanaData_CDOTA_ArcanaDataEntity_Razor; // 0x4a8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_ArcanaDataEntity because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_ArcanaDataEntity) == 0x4b0);
     };
 };

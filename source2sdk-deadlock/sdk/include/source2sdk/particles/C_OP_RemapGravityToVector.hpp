@@ -22,27 +22,27 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x900
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class C_OP_RemapGravityToVector : public source2sdk::particles::CParticleFunctionOperator
         {
         public:
             // metadata: MPropertyFriendlyName "position input"
-            source2sdk::particleslib::CPerParticleVecInput m_vInput1; // 0x1d8            
+            source2sdk::particleslib::CPerParticleVecInput m_vInput1; // 0x1d8
             // metadata: MPropertyFriendlyName "output field"
             // metadata: MPropertyAttributeChoiceName "particlefield_vector"
-            source2sdk::particles::ParticleAttributeIndex_t m_nOutputField; // 0x890            
+            source2sdk::particles::ParticleAttributeIndex_t m_nOutputField; // 0x890
             // metadata: MPropertyFriendlyName "set value method"
-            source2sdk::particles::ParticleSetMethod_t m_nSetMethod; // 0x894            
+            source2sdk::particles::ParticleSetMethod_t m_nSetMethod; // 0x894
             // metadata: MPropertyFriendlyName "normalize result"
-            bool m_bNormalizedOutput; // 0x898            
+            bool m_bNormalizedOutput; // 0x898
             uint8_t _pad0899[0x67];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_OP_RemapGravityToVector because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::particles::C_OP_RemapGravityToVector) == 0x900);
     };
 };

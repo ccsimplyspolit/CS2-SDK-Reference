@@ -31,24 +31,24 @@ namespace source2sdk
         class CLogicMeasureMovement : public source2sdk::server::CLogicalEntity
         {
         public:
-            CUtlSymbolLarge m_strMeasureTarget; // 0x498            
-            CUtlSymbolLarge m_strMeasureReference; // 0x4a0            
-            CUtlSymbolLarge m_strTargetReference; // 0x4a8            
+            CUtlSymbolLarge m_strMeasureTarget; // 0x498
+            CUtlSymbolLarge m_strMeasureReference; // 0x4a0
+            CUtlSymbolLarge m_strTargetReference; // 0x4a8
             // m_hMeasureTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hMeasureTarget;
-            char m_hMeasureTarget[0x4]; // 0x4b0            
+            char m_hMeasureTarget[0x4]; // 0x4b0
             // m_hMeasureReference has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hMeasureReference;
-            char m_hMeasureReference[0x4]; // 0x4b4            
+            char m_hMeasureReference[0x4]; // 0x4b4
             // m_hTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hTarget;
-            char m_hTarget[0x4]; // 0x4b8            
+            char m_hTarget[0x4]; // 0x4b8
             // m_hTargetReference has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hTargetReference;
-            char m_hTargetReference[0x4]; // 0x4bc            
-            float m_flScale; // 0x4c0            
-            std::int32_t m_nMeasureType; // 0x4c4            
-            
+            char m_hTargetReference[0x4]; // 0x4bc
+            float m_flScale; // 0x4c0
+            std::int32_t m_nMeasureType; // 0x4c4
+
             // Datamap fields:
             // CUtlSymbolLarge InputSetMeasureTarget; // 0x0
             // CUtlSymbolLarge InputSetMeasureReference; // 0x0
@@ -59,9 +59,9 @@ namespace source2sdk
             // void InputDisable; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CLogicMeasureMovement because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CLogicMeasureMovement) == 0x4c8);
     };
 };

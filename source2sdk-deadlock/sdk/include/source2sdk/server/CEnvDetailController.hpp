@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x4a8
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkVarNames "float32 m_flFadeStartDist"
         // static metadata: MNetworkVarNames "float32 m_flFadeEndDist"
         #pragma pack(push, 1)
@@ -27,14 +27,14 @@ namespace source2sdk
         {
         public:
             // metadata: MNetworkEnable
-            float m_flFadeStartDist; // 0x4a0            
+            float m_flFadeStartDist; // 0x4a0
             // metadata: MNetworkEnable
-            float m_flFadeEndDist; // 0x4a4            
+            float m_flFadeEndDist; // 0x4a4
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CEnvDetailController because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CEnvDetailController) == 0x4a8);
     };
 };

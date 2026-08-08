@@ -18,21 +18,21 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a68
+        // Size: 0x1a88
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_VengefulSpirit_Nether_Swap_DamageReduction : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float damage_reduction; // 0x1a58            
-            source2sdk::client::ParticleIndex_t nFXIndex; // 0x1a5c            
-            float damage; // 0x1a60            
-            std::int32_t m_nDamageAbsorbed; // 0x1a64            
+            float damage_reduction; // 0x1a78
+            source2sdk::client::ParticleIndex_t nFXIndex; // 0x1a7c
+            float damage; // 0x1a80
+            std::int32_t m_nDamageAbsorbed; // 0x1a84
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_VengefulSpirit_Nether_Swap_DamageReduction because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_VengefulSpirit_Nether_Swap_DamageReduction) == 0x1a68);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_VengefulSpirit_Nether_Swap_DamageReduction) == 0x1a88);
     };
 };

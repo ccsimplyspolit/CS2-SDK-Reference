@@ -17,22 +17,22 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a68
+        // Size: 0x1a88
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Hoodwink_Sharpshooter_VisionThinker : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float arrow_width; // 0x1a58            
-            bool vision_along_indicator; // 0x1a5c            
-            uint8_t _pad1a5d[0x3]; // 0x1a5d
-            float vision_radius_buffer; // 0x1a60            
-            uint8_t _pad1a64[0x4];
+            float arrow_width; // 0x1a78
+            bool vision_along_indicator; // 0x1a7c
+            uint8_t _pad1a7d[0x3]; // 0x1a7d
+            float vision_radius_buffer; // 0x1a80
+            uint8_t _pad1a84[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Hoodwink_Sharpshooter_VisionThinker because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Hoodwink_Sharpshooter_VisionThinker) == 0x1a68);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Hoodwink_Sharpshooter_VisionThinker) == 0x1a88);
     };
 };

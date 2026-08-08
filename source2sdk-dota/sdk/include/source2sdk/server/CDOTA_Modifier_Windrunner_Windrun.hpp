@@ -17,24 +17,24 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a70
+        // Size: 0x1a90
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Windrunner_Windrun : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float radius; // 0x1a58            
-            std::int32_t scepter_radius; // 0x1a5c            
-            std::int32_t movespeed_bonus_pct; // 0x1a60            
-            bool m_bDispellable; // 0x1a64            
-            uint8_t _pad1a65[0x3]; // 0x1a65
-            std::int32_t physical_damage_pct; // 0x1a68            
-            uint8_t _pad1a6c[0x4];
+            float radius; // 0x1a78
+            std::int32_t scepter_radius; // 0x1a7c
+            std::int32_t movespeed_bonus_pct; // 0x1a80
+            bool m_bDispellable; // 0x1a84
+            uint8_t _pad1a85[0x3]; // 0x1a85
+            std::int32_t physical_damage_pct; // 0x1a88
+            uint8_t _pad1a8c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Windrunner_Windrun because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Windrunner_Windrun) == 0x1a70);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Windrunner_Windrun) == 0x1a90);
     };
 };

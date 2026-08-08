@@ -26,21 +26,21 @@ namespace source2sdk
         class CCitadel_Modifier_Knockdown : public source2sdk::client::CCitadel_Modifier_Stunned
         {
         public:
-            QAngle m_angStunAngles; // 0xc8            
-            source2sdk::client::EKnockDownTypes m_ePreferredKnockdownType; // 0xd4            
-            bool m_bForceTakePreferred; // 0xd8            
+            QAngle m_angStunAngles; // 0xc8
+            source2sdk::client::EKnockDownTypes m_ePreferredKnockdownType; // 0xd4
+            bool m_bForceTakePreferred; // 0xd8
             uint8_t _pad00d9[0x3]; // 0xd9
-            source2sdk::entity2::GameTime_t m_flGetUpAnimTime; // 0xdc            
-            bool m_bGetUpCamSeqStarted; // 0xe0            
+            source2sdk::entity2::GameTime_t m_flGetUpAnimTime; // 0xdc
+            bool m_bGetUpCamSeqStarted; // 0xe0
             uint8_t _pad00e1[0x3]; // 0xe1
-            float m_flOnGroundDuration; // 0xe4            
-            source2sdk::client::SatVolumeIndex_t m_satIndex; // 0xe8            
+            float m_flOnGroundDuration; // 0xe4
+            source2sdk::client::SatVolumeIndex_t m_satIndex; // 0xe8
             uint8_t _pad00ec[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_Knockdown because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Modifier_Knockdown) == 0xf0);
     };
 };

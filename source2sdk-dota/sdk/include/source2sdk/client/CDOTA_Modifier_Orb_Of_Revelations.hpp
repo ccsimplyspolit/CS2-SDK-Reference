@@ -17,23 +17,23 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a70
+        // Size: 0x1a90
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Orb_Of_Revelations : public source2sdk::client::CDOTA_Buff_Item
         {
         public:
-            std::int32_t bonus_health; // 0x1a58            
-            std::int32_t bonus_mana; // 0x1a5c            
-            float bonus_mana_regen; // 0x1a60            
-            std::int32_t cast_range_bonus; // 0x1a64            
-            std::int32_t bonus_magical_armor; // 0x1a68            
-            uint8_t _pad1a6c[0x4];
+            std::int32_t bonus_health; // 0x1a78
+            std::int32_t bonus_mana; // 0x1a7c
+            float bonus_mana_regen; // 0x1a80
+            std::int32_t cast_range_bonus; // 0x1a84
+            std::int32_t bonus_magical_armor; // 0x1a88
+            uint8_t _pad1a8c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Orb_Of_Revelations because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Orb_Of_Revelations) == 0x1a70);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Orb_Of_Revelations) == 0x1a90);
     };
 };

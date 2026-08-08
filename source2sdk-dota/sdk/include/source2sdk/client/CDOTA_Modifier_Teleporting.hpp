@@ -17,21 +17,21 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a78
+        // Size: 0x1a98
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Teleporting : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float m_fChannelTime; // 0x1a58            
-            VectorWS m_vStart; // 0x1a5c            
-            VectorWS m_vEnd; // 0x1a68            
-            uint8_t _pad1a74[0x4];
+            float m_fChannelTime; // 0x1a78
+            VectorWS m_vStart; // 0x1a7c
+            VectorWS m_vEnd; // 0x1a88
+            uint8_t _pad1a94[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Teleporting because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Teleporting) == 0x1a78);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Teleporting) == 0x1a98);
     };
 };

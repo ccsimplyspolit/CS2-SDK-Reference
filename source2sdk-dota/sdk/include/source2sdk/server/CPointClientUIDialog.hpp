@@ -33,14 +33,14 @@ namespace source2sdk
         public:
             // m_hActivator has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hActivator;
-            char m_hActivator[0x4]; // 0x8d8            
-            bool m_bStartEnabled; // 0x8dc            
+            char m_hActivator[0x4]; // 0x8d8
+            bool m_bStartEnabled; // 0x8dc
             uint8_t _pad08dd[0x3];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPointClientUIDialog because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CPointClientUIDialog) == 0x8e0);
     };
 };

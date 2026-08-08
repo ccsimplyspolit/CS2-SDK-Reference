@@ -24,19 +24,19 @@ namespace source2sdk
         class CCitadel_Modifier_ProjectMind : public source2sdk::server::CCitadelModifier
         {
         public:
-            source2sdk::client::ParticleIndex_t m_particleStart; // 0xd0            
-            source2sdk::client::ParticleIndex_t m_particleEnd; // 0xd4            
-            source2sdk::client::ParticleIndex_t m_particleTrail; // 0xd8            
-            VectorWS m_vecEndLocation; // 0xdc            
-            VectorWS m_vecStartPosition; // 0xe8            
-            float m_flStartDelay; // 0xf4            
-            Vector m_vecApplyOffset; // 0xf8            
+            source2sdk::client::ParticleIndex_t m_particleStart; // 0xd0
+            source2sdk::client::ParticleIndex_t m_particleEnd; // 0xd4
+            source2sdk::client::ParticleIndex_t m_particleTrail; // 0xd8
+            VectorWS m_vecEndLocation; // 0xdc
+            VectorWS m_vecStartPosition; // 0xe8
+            float m_flStartDelay; // 0xf4
+            Vector m_vecApplyOffset; // 0xf8
             uint8_t _pad0104[0x184];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_ProjectMind because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_ProjectMind) == 0x288);
     };
 };

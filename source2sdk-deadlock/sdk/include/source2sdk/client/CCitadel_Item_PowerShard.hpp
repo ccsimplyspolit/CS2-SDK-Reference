@@ -17,17 +17,18 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x11d8
+        // Size: 0x1258
         // Has VTable
         #pragma pack(push, 1)
         class CCitadel_Item_PowerShard : public source2sdk::client::CCitadel_Item
         {
         public:
+            uint8_t _pad11d8[0x80];
             // No schema binary for binding
         };
         #pragma pack(pop)
-        
-        
+
+
         // size assertion omitted: CCitadel_Item_PowerShard has no schema binary (size is a guess)
     };
 };

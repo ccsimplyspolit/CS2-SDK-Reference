@@ -21,7 +21,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x850
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CCitadel_Modifier_Shivas_Bracelet_WatcherVData : public source2sdk::client::CCitadelModifierVData
@@ -30,19 +30,19 @@ namespace source2sdk
             // metadata: MPropertyStartGroup "Modifiers"
             // m_FreezeModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEmbeddedSubclass<source2sdk::client::CCitadelModifier> m_FreezeModifier;
-            char m_FreezeModifier[0x10]; // 0x750            
+            char m_FreezeModifier[0x10]; // 0x750
             // m_ImmuneModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEmbeddedSubclass<source2sdk::client::CCitadelModifier> m_ImmuneModifier;
-            char m_ImmuneModifier[0x10]; // 0x760            
+            char m_ImmuneModifier[0x10]; // 0x760
             // metadata: MPropertyStartGroup "Visuals"
             // m_ProcParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_ProcParticle;
-            char m_ProcParticle[0xe0]; // 0x770            
+            char m_ProcParticle[0xe0]; // 0x770
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_Shivas_Bracelet_WatcherVData because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Modifier_Shivas_Bracelet_WatcherVData) == 0x850);
     };
 };

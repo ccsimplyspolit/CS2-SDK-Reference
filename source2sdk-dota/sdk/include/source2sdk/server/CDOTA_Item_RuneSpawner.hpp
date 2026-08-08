@@ -25,13 +25,13 @@ namespace source2sdk
         class CDOTA_Item_RuneSpawner : public source2sdk::server::CBaseAnimatingActivity
         {
         public:
-            float m_flLastSpawnTime; // 0x798            
-            float m_flNextSpawnTime; // 0x79c            
+            float m_flLastSpawnTime; // 0x798
+            float m_flNextSpawnTime; // 0x79c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Item_RuneSpawner because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Item_RuneSpawner) == 0x7a0);
     };
 };

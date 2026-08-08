@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x19c0
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CCitadel_Ability_BookWorm_PrimaryWeaponVData : public source2sdk::client::CCitadel_Ability_PrimaryWeaponVData
@@ -27,8 +27,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::client::CCitadel_Ability_BookWorm_PrimaryWeaponVData) == 0x19c0);
     };
 };

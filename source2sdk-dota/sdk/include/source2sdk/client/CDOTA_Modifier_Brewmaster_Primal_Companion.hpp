@@ -18,28 +18,28 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a80
+        // Size: 0x1aa0
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Brewmaster_Primal_Companion : public source2sdk::client::CDOTA_Buff
         {
         public:
-            float cooldown_on_death; // 0x1a58            
-            float cooldown_on_take_damage; // 0x1a5c            
-            std::int32_t disable_distance; // 0x1a60            
-            std::int32_t movement_slow_when_out_of_range; // 0x1a64            
-            bool m_bCanAttack; // 0x1a68            
-            uint8_t _pad1a69[0x3]; // 0x1a69
-            source2sdk::client::ParticleIndex_t m_nFxIndex; // 0x1a6c            
-            std::int32_t cooldown_penalty_pct; // 0x1a70            
-            std::int32_t bonus_brewling_hp; // 0x1a74            
-            std::int32_t bonus_damage; // 0x1a78            
-            uint8_t _pad1a7c[0x4];
+            float cooldown_on_death; // 0x1a78
+            float cooldown_on_take_damage; // 0x1a7c
+            std::int32_t disable_distance; // 0x1a80
+            std::int32_t movement_slow_when_out_of_range; // 0x1a84
+            bool m_bCanAttack; // 0x1a88
+            uint8_t _pad1a89[0x3]; // 0x1a89
+            source2sdk::client::ParticleIndex_t m_nFxIndex; // 0x1a8c
+            std::int32_t cooldown_penalty_pct; // 0x1a90
+            std::int32_t bonus_brewling_hp; // 0x1a94
+            std::int32_t bonus_damage; // 0x1a98
+            uint8_t _pad1a9c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Brewmaster_Primal_Companion because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Brewmaster_Primal_Companion) == 0x1a80);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Brewmaster_Primal_Companion) == 0x1aa0);
     };
 };

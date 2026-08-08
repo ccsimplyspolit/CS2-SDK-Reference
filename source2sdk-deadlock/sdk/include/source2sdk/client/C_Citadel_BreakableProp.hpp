@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xce0
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkIncludeByName "m_lifeState"
         // static metadata: MNetworkIncludeByName "m_iMaxHealth"
         // static metadata: MNetworkIncludeByName "m_iHealth"
@@ -30,13 +30,13 @@ namespace source2sdk
         public:
             // metadata: MNetworkEnable
             // metadata: MNotSaved
-            std::int32_t m_nHitIndex; // 0xca8            
+            std::int32_t m_nHitIndex; // 0xca8
             uint8_t _pad0cac[0x34];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_Citadel_BreakableProp because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_Citadel_BreakableProp) == 0xce0);
     };
 };

@@ -26,13 +26,13 @@ namespace source2sdk
         class CDOTA_Ability_SatyrTrickster_Purge : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            source2sdk::entity2::GameTime_t m_flTargetTime; // 0x580            
+            source2sdk::entity2::GameTime_t m_flTargetTime; // 0x580
             uint8_t _pad0584[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_SatyrTrickster_Purge because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_SatyrTrickster_Purge) == 0x588);
     };
 };

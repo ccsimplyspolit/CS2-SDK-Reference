@@ -24,13 +24,13 @@ namespace source2sdk
         {
         public:
             uint8_t _pad00c0[0x380]; // 0xc0
-            Vector m_vDashDirection; // 0x440            
+            Vector m_vDashDirection; // 0x440
             uint8_t _pad044c[0x1c];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CModifier_Fencer_Ultimate_Target because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CModifier_Fencer_Ultimate_Target) == 0x468);
     };
 };

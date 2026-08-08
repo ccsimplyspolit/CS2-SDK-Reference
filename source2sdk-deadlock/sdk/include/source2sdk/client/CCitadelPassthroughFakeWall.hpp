@@ -31,22 +31,22 @@ namespace source2sdk
         class CCitadelPassthroughFakeWall : public source2sdk::client::C_BaseModelEntity
         {
         public:
-            bool m_bAllowAnyone; // 0x9a8            
-            bool m_bAllowTinyCharacters; // 0x9a9            
+            bool m_bAllowAnyone; // 0x9a8
+            bool m_bAllowTinyCharacters; // 0x9a9
             uint8_t _pad09aa[0x2]; // 0x9aa
-            float m_flTriggerDistanceMeters; // 0x9ac            
+            float m_flTriggerDistanceMeters; // 0x9ac
             // m_hTrigger has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::C_BaseEntity> m_hTrigger;
-            char m_hTrigger[0x4]; // 0x9b0            
+            char m_hTrigger[0x4]; // 0x9b0
             uint8_t _pad09b4[0x4]; // 0x9b4
-            source2sdk::entity2::CEntityIOOutput m_eventOnOpen; // 0x9b8            
-            source2sdk::entity2::CEntityIOOutput m_eventOnClose; // 0x9d0            
+            source2sdk::entity2::CEntityIOOutput m_eventOnOpen; // 0x9b8
+            source2sdk::entity2::CEntityIOOutput m_eventOnClose; // 0x9d0
             uint8_t _pad09e8[0x8];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadelPassthroughFakeWall because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadelPassthroughFakeWall) == 0x9f0);
     };
 };

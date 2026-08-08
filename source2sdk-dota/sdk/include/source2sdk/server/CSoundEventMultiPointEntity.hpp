@@ -25,17 +25,17 @@ namespace source2sdk
         class CSoundEventMultiPointEntity : public source2sdk::server::CSoundEventEntity
         {
         public:
-            std::int32_t m_iCountMax; // 0x558            
-            float m_flDistanceMax; // 0x55c            
-            float m_flDistMaxSqr; // 0x560            
-            float m_flDotProductMax; // 0x564            
-            bool m_bPlaying; // 0x568            
+            std::int32_t m_iCountMax; // 0x558
+            float m_flDistanceMax; // 0x55c
+            float m_flDistMaxSqr; // 0x560
+            float m_flDotProductMax; // 0x564
+            bool m_bPlaying; // 0x568
             uint8_t _pad0569[0x27];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSoundEventMultiPointEntity because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CSoundEventMultiPointEntity) == 0x590);
     };
 };

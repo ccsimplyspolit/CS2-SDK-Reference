@@ -20,24 +20,24 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x90
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct ParticleControlPointConfiguration_t
         {
         public:
-            CUtlString m_name; // 0x0            
+            CUtlString m_name; // 0x0
             // m_drivers has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::particles::ParticleControlPointDriver_t> m_drivers;
-            char m_drivers[0x18]; // 0x8            
-            source2sdk::particles::ParticlePreviewState_t m_previewState; // 0x20            
+            char m_drivers[0x18]; // 0x8
+            source2sdk::particles::ParticlePreviewState_t m_previewState; // 0x20
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::particles::ParticleControlPointConfiguration_t, m_name) == 0x0);
         static_assert(offsetof(source2sdk::particles::ParticleControlPointConfiguration_t, m_drivers) == 0x8);
         static_assert(offsetof(source2sdk::particles::ParticleControlPointConfiguration_t, m_previewState) == 0x20);
-        
+
         static_assert(sizeof(source2sdk::particles::ParticleControlPointConfiguration_t) == 0x90);
     };
 };

@@ -18,18 +18,18 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x8
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MIsBoxedIntegerType
         #pragma pack(push, 1)
         struct MatchID_t
         {
         public:
-            std::uint64_t m_Value; // 0x0            
+            std::uint64_t m_Value; // 0x0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::MatchID_t, m_Value) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::client::MatchID_t) == 0x8);
     };
 };

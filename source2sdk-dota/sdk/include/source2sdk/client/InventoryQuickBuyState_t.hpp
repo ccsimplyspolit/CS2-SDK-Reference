@@ -27,20 +27,20 @@ namespace source2sdk
             uint8_t _pad0000[0x8]; // 0x0
             // m_vecItemSlots has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // C_UtlVectorEmbeddedNetworkVar<source2sdk::client::QuickBuySlot_t> m_vecItemSlots;
-            char m_vecItemSlots[0x68]; // 0x8            
-            std::int32_t m_nTotalSlotCountIncludingOverflow; // 0x70            
+            char m_vecItemSlots[0x68]; // 0x8
+            std::int32_t m_nTotalSlotCountIncludingOverflow; // 0x70
             uint8_t _pad0074[0x4]; // 0x74
-            source2sdk::client::QuickBuySlot_t m_stickyItemSlot; // 0x78            
-            std::int32_t m_nPrevPurchasable; // 0xd0            
+            source2sdk::client::QuickBuySlot_t m_stickyItemSlot; // 0x78
+            std::int32_t m_nPrevPurchasable; // 0xd0
             uint8_t _pad00d4[0x4];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::InventoryQuickBuyState_t, m_vecItemSlots) == 0x8);
         static_assert(offsetof(source2sdk::client::InventoryQuickBuyState_t, m_nTotalSlotCountIncludingOverflow) == 0x70);
         static_assert(offsetof(source2sdk::client::InventoryQuickBuyState_t, m_stickyItemSlot) == 0x78);
         static_assert(offsetof(source2sdk::client::InventoryQuickBuyState_t, m_nPrevPurchasable) == 0xd0);
-        
+
         static_assert(sizeof(source2sdk::client::InventoryQuickBuyState_t) == 0xd8);
     };
 };

@@ -24,13 +24,13 @@ namespace source2sdk
         {
         public:
             uint8_t _pad0c00[0x48]; // 0xc00
-            float m_flUIScale; // 0xc48            
+            float m_flUIScale; // 0xc48
             uint8_t _pad0c4c[0x24];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CUnitStatusOverlayNew because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CUnitStatusOverlayNew) == 0xc70);
     };
 };

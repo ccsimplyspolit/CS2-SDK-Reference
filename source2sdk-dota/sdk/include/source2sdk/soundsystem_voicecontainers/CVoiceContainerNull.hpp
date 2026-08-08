@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x70
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Null Container"
         // static metadata: MPropertyDescription "Plays a single channel of silence."
@@ -30,8 +30,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::soundsystem_voicecontainers::CVoiceContainerNull) == 0x70);
     };
 };

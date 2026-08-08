@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xcb0
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkIncludeByName "m_vecViewOffset"
         // static metadata: MNetworkIncludeByName "m_iHealth"
         // static metadata: MNetworkIncludeByName "m_iMaxHealth"
@@ -30,8 +30,8 @@ namespace source2sdk
             uint8_t _pad0ca8[0x8];
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::client::CCitadelAnimatingModelEntity) == 0xcb0);
     };
 };

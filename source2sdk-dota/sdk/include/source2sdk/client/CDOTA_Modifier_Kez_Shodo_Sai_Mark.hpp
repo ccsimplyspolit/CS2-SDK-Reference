@@ -19,33 +19,33 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a98
+        // Size: 0x1ab8
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Kez_Shodo_Sai_Mark : public source2sdk::client::CDOTA_Buff
         {
         public:
-            std::int32_t vuln_slow; // 0x1a58            
-            std::int32_t base_crit_pct; // 0x1a5c            
-            std::int32_t parry_bonus_crit; // 0x1a60            
-            std::int32_t invis_bonus_crit; // 0x1a64            
-            float stun_duration; // 0x1a68            
-            float parry_stun_duration; // 0x1a6c            
-            float parry_bonus_stun_duration; // 0x1a70            
-            uint8_t _pad1a74[0x4]; // 0x1a74
+            std::int32_t vuln_slow; // 0x1a78
+            std::int32_t base_crit_pct; // 0x1a7c
+            std::int32_t parry_bonus_crit; // 0x1a80
+            std::int32_t invis_bonus_crit; // 0x1a84
+            float stun_duration; // 0x1a88
+            float parry_stun_duration; // 0x1a8c
+            float parry_bonus_stun_duration; // 0x1a90
+            uint8_t _pad1a94[0x4]; // 0x1a94
             // m_vecAttackRecords has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<source2sdk::client::AttackRecord_t> m_vecAttackRecords;
-            char m_vecAttackRecords[0x18]; // 0x1a78            
-            bool m_bFromParry; // 0x1a90            
-            bool m_bParryBonus; // 0x1a91            
-            bool m_bConsumed; // 0x1a92            
-            bool m_bForceInvisBonus; // 0x1a93            
-            source2sdk::client::ParticleIndex_t m_nOverheadFXIndex; // 0x1a94            
+            char m_vecAttackRecords[0x18]; // 0x1a98
+            bool m_bFromParry; // 0x1ab0
+            bool m_bParryBonus; // 0x1ab1
+            bool m_bConsumed; // 0x1ab2
+            bool m_bForceInvisBonus; // 0x1ab3
+            source2sdk::client::ParticleIndex_t m_nOverheadFXIndex; // 0x1ab4
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Kez_Shodo_Sai_Mark because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Kez_Shodo_Sai_Mark) == 0x1a98);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Kez_Shodo_Sai_Mark) == 0x1ab8);
     };
 };

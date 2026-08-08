@@ -26,15 +26,15 @@ namespace source2sdk
         class C_DOTA_Item_RuneSpawner_XP : public source2sdk::client::CBaseAnimatingActivity
         {
         public:
-            source2sdk::client::DOTA_RUNES m_nRuneType; // 0xac0            
-            float m_flLastSpawnTime; // 0xac4            
-            float m_flNextSpawnTime; // 0xac8            
+            source2sdk::client::DOTA_RUNES m_nRuneType; // 0xac0
+            float m_flLastSpawnTime; // 0xac4
+            float m_flNextSpawnTime; // 0xac8
             uint8_t _pad0acc[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Item_RuneSpawner_XP because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Item_RuneSpawner_XP) == 0xad0);
     };
 };

@@ -24,26 +24,26 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a98
+        // Size: 0x1ab8
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Weaver_Shukuchi : public source2sdk::client::CDOTA_Modifier_Invisible
         {
         public:
-            float radius; // 0x1a68            
-            std::int32_t damage; // 0x1a6c            
-            std::int32_t speed; // 0x1a70            
-            std::int32_t min_movespeed_override; // 0x1a74            
-            float geminate_attack_mark_duration; // 0x1a78            
-            float slow_duration; // 0x1a7c            
+            float radius; // 0x1a88
+            std::int32_t damage; // 0x1a8c
+            std::int32_t speed; // 0x1a90
+            std::int32_t min_movespeed_override; // 0x1a94
+            float geminate_attack_mark_duration; // 0x1a98
+            float slow_duration; // 0x1a9c
             // m_hEntitiesAffected has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::client::C_BaseEntity>> m_hEntitiesAffected;
-            char m_hEntitiesAffected[0x18]; // 0x1a80            
+            char m_hEntitiesAffected[0x18]; // 0x1aa0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Weaver_Shukuchi because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Weaver_Shukuchi) == 0x1a98);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Weaver_Shukuchi) == 0x1ab8);
     };
 };

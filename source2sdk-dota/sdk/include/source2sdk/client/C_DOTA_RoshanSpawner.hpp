@@ -32,17 +32,17 @@ namespace source2sdk
         class C_DOTA_RoshanSpawner : public source2sdk::client::C_PointEntity
         {
         public:
-            std::int32_t m_iLastKillerTeam; // 0x5f0            
-            std::int32_t m_iKillCount; // 0x5f4            
-            Vector m_vRoshanAltLocation; // 0x5f8            
+            std::int32_t m_iLastKillerTeam; // 0x5f0
+            std::int32_t m_iKillCount; // 0x5f4
+            Vector m_vRoshanAltLocation; // 0x5f8
             // m_hRoshan has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::C_BaseEntity> m_hRoshan;
-            char m_hRoshan[0x4]; // 0x604            
+            char m_hRoshan[0x4]; // 0x604
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_RoshanSpawner because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_RoshanSpawner) == 0x608);
     };
 };

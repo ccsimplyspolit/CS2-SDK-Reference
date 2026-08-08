@@ -24,14 +24,14 @@ namespace source2sdk
         class CCitadel_Modifier_MysticalPianoAura : public source2sdk::client::CCitadelModifierAura
         {
         public:
-            source2sdk::client::ParticleIndex_t m_hRingEffect; // 0x110            
-            source2sdk::client::ParticleIndex_t m_hGroundEffect; // 0x114            
+            source2sdk::client::ParticleIndex_t m_hRingEffect; // 0x110
+            source2sdk::client::ParticleIndex_t m_hGroundEffect; // 0x114
             uint8_t _pad0118[0x200];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_MysticalPianoAura because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Modifier_MysticalPianoAura) == 0x318);
     };
 };

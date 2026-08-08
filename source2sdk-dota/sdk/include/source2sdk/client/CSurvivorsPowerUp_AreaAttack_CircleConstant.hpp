@@ -33,16 +33,16 @@ namespace source2sdk
         public:
             // m_mapEnemyDamagedTimers has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlOrderedMap<source2sdk::client::SurvivorsUnitID_t,float> m_mapEnemyDamagedTimers;
-            char m_mapEnemyDamagedTimers[0x28]; // 0x800            
-            source2sdk::particleslib::CNewParticleEffect* m_pParticleEffect; // 0x828            
+            char m_mapEnemyDamagedTimers[0x28]; // 0x800
+            source2sdk::particleslib::CNewParticleEffect* m_pParticleEffect; // 0x828
             uint8_t _pad0830[0x18]; // 0x830
-            float m_flNextTrailCreationTimer; // 0x848            
+            float m_flNextTrailCreationTimer; // 0x848
             uint8_t _pad084c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSurvivorsPowerUp_AreaAttack_CircleConstant because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CSurvivorsPowerUp_AreaAttack_CircleConstant) == 0x850);
     };
 };

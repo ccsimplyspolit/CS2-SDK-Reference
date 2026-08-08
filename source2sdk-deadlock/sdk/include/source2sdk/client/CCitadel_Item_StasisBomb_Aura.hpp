@@ -23,13 +23,13 @@ namespace source2sdk
         class CCitadel_Item_StasisBomb_Aura : public source2sdk::client::CCitadelModifierAura
         {
         public:
-            float m_AuraRadius; // 0x110            
+            float m_AuraRadius; // 0x110
             uint8_t _pad0114[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Item_StasisBomb_Aura because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CCitadel_Item_StasisBomb_Aura) == 0x118);
     };
 };

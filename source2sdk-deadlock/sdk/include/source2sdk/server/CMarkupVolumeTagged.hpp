@@ -25,23 +25,23 @@ namespace source2sdk
         public:
             // m_GroupNames has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CGlobalSymbol> m_GroupNames;
-            char m_GroupNames[0x18]; // 0x788            
+            char m_GroupNames[0x18]; // 0x788
             // m_Tags has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CGlobalSymbol> m_Tags;
-            char m_Tags[0x18]; // 0x7a0            
+            char m_Tags[0x18]; // 0x7a0
             // metadata: MNotSaved
-            bool m_bIsGroup; // 0x7b8            
-            bool m_bGroupByPrefab; // 0x7b9            
-            bool m_bGroupByVolume; // 0x7ba            
-            bool m_bGroupOtherGroups; // 0x7bb            
+            bool m_bIsGroup; // 0x7b8
+            bool m_bGroupByPrefab; // 0x7b9
+            bool m_bGroupByVolume; // 0x7ba
+            bool m_bGroupOtherGroups; // 0x7bb
             // metadata: MNotSaved
-            bool m_bIsInGroup; // 0x7bc            
+            bool m_bIsInGroup; // 0x7bc
             uint8_t _pad07bd[0x3];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CMarkupVolumeTagged because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CMarkupVolumeTagged) == 0x7c0);
     };
 };

@@ -17,7 +17,7 @@ namespace source2sdk
         // Alignment: 0x8
         // Standard-layout class: true
         // Size: 0x80
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct MaterialGroupChoice_t
@@ -26,15 +26,15 @@ namespace source2sdk
             // metadata: MPropertyAttributeEditor "SmartPropAttributeEditor( MaterialGroupFromVariable )"
             // metadata: MPropertyFriendlyName "Material Group"
             // metadata: MPropertyDescription "Specifies the name of the material group (skin) to use when displaying the specified model."
-            CSmartPropAttributeMaterialGroup m_MaterialGroupName; // 0x0            
+            CSmartPropAttributeMaterialGroup m_MaterialGroupName; // 0x0
             // metadata: MPropertyDescription "Relative weight of this choice, higher weighted choices are more likely to be selected."
-            CSmartPropAttributeFloat m_flWeight; // 0x40            
+            CSmartPropAttributeFloat m_flWeight; // 0x40
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::smartprops::MaterialGroupChoice_t, m_MaterialGroupName) == 0x0);
         static_assert(offsetof(source2sdk::smartprops::MaterialGroupChoice_t, m_flWeight) == 0x40);
-        
+
         static_assert(sizeof(source2sdk::smartprops::MaterialGroupChoice_t) == 0x80);
     };
 };

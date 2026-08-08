@@ -18,18 +18,18 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x8
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MPropertyCustomEditor "multi_float(2)"
         #pragma pack(push, 1)
         class CRangeFloat
         {
         public:
-            float m_pValue[2]; // 0x0            
+            float m_pValue[2]; // 0x0
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::tier2::CRangeFloat, m_pValue) == 0x0);
-        
+
         static_assert(sizeof(source2sdk::tier2::CRangeFloat) == 0x8);
     };
 };

@@ -19,19 +19,19 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x18
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CVMixControlMeter : public source2sdk::soundsystem_lowlevel::CVMixInputBase
         {
         public:
-            std::int32_t m_nValueIndex; // 0x10            
+            std::int32_t m_nValueIndex; // 0x10
             uint8_t _pad0014[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CVMixControlMeter because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::soundsystem_lowlevel::CVMixControlMeter) == 0x18);
     };
 };

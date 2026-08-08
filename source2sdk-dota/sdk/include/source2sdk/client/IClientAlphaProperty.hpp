@@ -21,7 +21,7 @@ namespace source2sdk
         // Is Abstract
         // Has Trivial Destructor
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class IClientAlphaProperty
@@ -30,8 +30,8 @@ namespace source2sdk
             uint8_t _pad0000[0x8];
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::client::IClientAlphaProperty) == 0x8);
     };
 };

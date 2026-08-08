@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0xa0
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Quaternion Parameter"
         #pragma pack(push, 1)
@@ -28,15 +28,15 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertySuppressField
-            Quaternion m_defaultValue; // 0x80            
+            Quaternion m_defaultValue; // 0x80
             // metadata: MPropertyFriendlyName "Interpolate"
-            bool m_bInterpolate; // 0x90            
+            bool m_bInterpolate; // 0x90
             uint8_t _pad0091[0xf];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CQuaternionAnimParameter because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::animgraphlib::CQuaternionAnimParameter) == 0xa0);
     };
 };

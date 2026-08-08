@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x58
         // Has VTable
         // Is Abstract
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CLeafUpdateNode : public source2sdk::animgraphlib::CAnimUpdateNodeBase
@@ -28,8 +28,8 @@ namespace source2sdk
         public:
         };
         #pragma pack(pop)
-        
-        
+
+
         static_assert(sizeof(source2sdk::animgraphlib::CLeafUpdateNode) == 0x58);
     };
 };

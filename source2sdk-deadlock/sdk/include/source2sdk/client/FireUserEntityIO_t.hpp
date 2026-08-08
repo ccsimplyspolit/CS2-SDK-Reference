@@ -18,24 +18,24 @@ namespace source2sdk
         // Standard-layout class: true
         // Size: 0x4
         // Has Trivial Destructor
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct FireUserEntityIO_t
         {
         public:
-            bool m_bFireUser1; // 0x0            
-            bool m_bFireUser2; // 0x1            
-            bool m_bFireUser3; // 0x2            
-            bool m_bFireUser4; // 0x3            
+            bool m_bFireUser1; // 0x0
+            bool m_bFireUser2; // 0x1
+            bool m_bFireUser3; // 0x2
+            bool m_bFireUser4; // 0x3
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::FireUserEntityIO_t, m_bFireUser1) == 0x0);
         static_assert(offsetof(source2sdk::client::FireUserEntityIO_t, m_bFireUser2) == 0x1);
         static_assert(offsetof(source2sdk::client::FireUserEntityIO_t, m_bFireUser3) == 0x2);
         static_assert(offsetof(source2sdk::client::FireUserEntityIO_t, m_bFireUser4) == 0x3);
-        
+
         static_assert(sizeof(source2sdk::client::FireUserEntityIO_t) == 0x4);
     };
 };

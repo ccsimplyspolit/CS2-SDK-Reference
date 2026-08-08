@@ -22,7 +22,7 @@ namespace source2sdk
         // Size: 0x168
         // Has VTable
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Interval Timer"
         // static metadata: MPropertyDescription "Wait for a duration, firing a child cursor at regular (or randomized) intervals"
@@ -33,14 +33,14 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyDescription "Called when timer reaches the duration OR is stopped. NOTE: This will run a little while AFTER the last interval fires unless they line up perfectly."
-            source2sdk::pulse_runtime_lib::CPulse_ResumePoint m_Completed; // 0xd8            
+            source2sdk::pulse_runtime_lib::CPulse_ResumePoint m_Completed; // 0xd8
             // metadata: MPropertyDescription "New child cursor starts here every time the wait interval elapses"
-            source2sdk::pulse_runtime_lib::SignatureOutflow_Continue m_OnInterval; // 0x120            
+            source2sdk::pulse_runtime_lib::SignatureOutflow_Continue m_OnInterval; // 0x120
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPulseCell_IntervalTimer because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::pulse_runtime_lib::CPulseCell_IntervalTimer) == 0x168);
     };
 };

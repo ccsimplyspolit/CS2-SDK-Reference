@@ -17,21 +17,21 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a80
+        // Size: 0x1aa0
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Invoker_Tornado : public source2sdk::server::CDOTA_Modifier_Cyclone
         {
         public:
-            float m_flLandDamage; // 0x1a70            
-            float spell_lifesteal; // 0x1a74            
-            float spell_amp; // 0x1a78            
-            uint8_t _pad1a7c[0x4];
+            float m_flLandDamage; // 0x1a90
+            float spell_lifesteal; // 0x1a94
+            float spell_amp; // 0x1a98
+            uint8_t _pad1a9c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Invoker_Tornado because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Invoker_Tornado) == 0x1a80);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Modifier_Invoker_Tornado) == 0x1aa0);
     };
 };

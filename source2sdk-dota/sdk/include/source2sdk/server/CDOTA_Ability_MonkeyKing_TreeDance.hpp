@@ -25,13 +25,13 @@ namespace source2sdk
         class CDOTA_Ability_MonkeyKing_TreeDance : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            std::int32_t perched_jump_distance; // 0x580            
-            std::int32_t ground_jump_distance; // 0x584            
+            std::int32_t perched_jump_distance; // 0x580
+            std::int32_t ground_jump_distance; // 0x584
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_MonkeyKing_TreeDance because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_MonkeyKing_TreeDance) == 0x588);
     };
 };

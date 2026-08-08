@@ -26,19 +26,19 @@ namespace source2sdk
         class CDOTA_Ability_PrimalBeast_Rock_Throw : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            std::int32_t base_damage; // 0x6a8            
-            float impact_radius; // 0x6ac            
-            float fragment_impact_radius; // 0x6b0            
-            std::int32_t fragment_impact_distance; // 0x6b4            
-            std::int32_t min_range; // 0x6b8            
-            float stun_duration; // 0x6bc            
-            source2sdk::client::ParticleIndex_t m_nFXPreview; // 0x6c0            
+            std::int32_t base_damage; // 0x6a8
+            float impact_radius; // 0x6ac
+            float fragment_impact_radius; // 0x6b0
+            std::int32_t fragment_impact_distance; // 0x6b4
+            std::int32_t min_range; // 0x6b8
+            float stun_duration; // 0x6bc
+            source2sdk::client::ParticleIndex_t m_nFXPreview; // 0x6c0
             uint8_t _pad06c4[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_PrimalBeast_Rock_Throw because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CDOTA_Ability_PrimalBeast_Rock_Throw) == 0x6c8);
     };
 };

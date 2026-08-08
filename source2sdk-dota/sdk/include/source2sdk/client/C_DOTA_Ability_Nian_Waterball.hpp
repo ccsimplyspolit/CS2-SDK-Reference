@@ -33,15 +33,15 @@ namespace source2sdk
         class C_DOTA_Ability_Nian_Waterball : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            source2sdk::client::CountdownTimer m_ctTimer; // 0x6a8            
+            source2sdk::client::CountdownTimer m_ctTimer; // 0x6a8
             // m_hEntities has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::client::C_BaseEntity>> m_hEntities;
-            char m_hEntities[0x18]; // 0x6c0            
+            char m_hEntities[0x18]; // 0x6c0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_Nian_Waterball because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_Nian_Waterball) == 0x6d8);
     };
 };

@@ -18,7 +18,7 @@ namespace source2sdk
         // Registered alignment: 0x8
         // Alignment: 0x8
         // Standard-layout class: false
-        // Size: 0x1f08
+        // Size: 0x1f10
         // Has VTable
         // Construct allowed
         // MClassHasEntityLimitedDataDesc
@@ -26,13 +26,13 @@ namespace source2sdk
         class CDOTA_Unit_Hero_Nevermore : public source2sdk::server::CDOTA_BaseNPC_Hero
         {
         public:
-            source2sdk::client::ParticleIndex_t m_nFXDeath; // 0x1f00            
-            uint8_t _pad1f04[0x4];
+            source2sdk::client::ParticleIndex_t m_nFXDeath; // 0x1f08
+            uint8_t _pad1f0c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Unit_Hero_Nevermore because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::server::CDOTA_Unit_Hero_Nevermore) == 0x1f08);
+
+        static_assert(sizeof(source2sdk::server::CDOTA_Unit_Hero_Nevermore) == 0x1f10);
     };
 };

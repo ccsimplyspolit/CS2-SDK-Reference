@@ -19,19 +19,19 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x88
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Curve"
         #pragma pack(push, 1)
         class CPulseCell_Value_Curve : public source2sdk::pulse_runtime_lib::CPulseCell_BaseValue
         {
         public:
-            CPiecewiseCurve m_Curve; // 0x48            
+            CPiecewiseCurve m_Curve; // 0x48
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPulseCell_Value_Curve because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::pulse_runtime_lib::CPulseCell_Value_Curve) == 0x88);
     };
 };

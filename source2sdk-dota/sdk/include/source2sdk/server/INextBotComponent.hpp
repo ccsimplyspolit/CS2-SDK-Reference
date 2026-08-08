@@ -25,14 +25,14 @@ namespace source2sdk
         class INextBotComponent : public source2sdk::server::INextBotEventResponder
         {
         public:
-            source2sdk::entity2::GameTime_t m_lastUpdateTime; // 0x8            
-            float m_curInterval; // 0xc            
+            source2sdk::entity2::GameTime_t m_lastUpdateTime; // 0x8
+            float m_curInterval; // 0xc
             uint8_t _pad0010[0x10];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in INextBotComponent because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::INextBotComponent) == 0x20);
     };
 };

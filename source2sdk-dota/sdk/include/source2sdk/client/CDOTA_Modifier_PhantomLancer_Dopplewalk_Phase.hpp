@@ -17,19 +17,19 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a68
+        // Size: 0x1a88
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_PhantomLancer_Dopplewalk_Phase : public source2sdk::client::CDOTA_Buff
         {
         public:
-            VectorWS vTargetPosition; // 0x1a58            
-            uint8_t _pad1a64[0x4];
+            VectorWS vTargetPosition; // 0x1a78
+            uint8_t _pad1a84[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_PhantomLancer_Dopplewalk_Phase because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_PhantomLancer_Dopplewalk_Phase) == 0x1a68);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_PhantomLancer_Dopplewalk_Phase) == 0x1a88);
     };
 };

@@ -19,22 +19,22 @@ namespace source2sdk
         // Size: 0xc
         // Has Trivial Destructor
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CTurnHelperInstanceData
         {
         public:
-            float m_turnAmount; // 0x0            
-            float m_turnStartTime; // 0x4            
-            float m_duration; // 0x8            
+            float m_turnAmount; // 0x0
+            float m_turnStartTime; // 0x4
+            float m_duration; // 0x8
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::animgraphlib::CTurnHelperInstanceData, m_turnAmount) == 0x0);
         static_assert(offsetof(source2sdk::animgraphlib::CTurnHelperInstanceData, m_turnStartTime) == 0x4);
         static_assert(offsetof(source2sdk::animgraphlib::CTurnHelperInstanceData, m_duration) == 0x8);
-        
+
         static_assert(sizeof(source2sdk::animgraphlib::CTurnHelperInstanceData) == 0xc);
     };
 };

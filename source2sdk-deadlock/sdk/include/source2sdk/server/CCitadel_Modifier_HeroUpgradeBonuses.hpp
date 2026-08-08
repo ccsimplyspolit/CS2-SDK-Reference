@@ -30,16 +30,16 @@ namespace source2sdk
         class CCitadel_Modifier_HeroUpgradeBonuses : public source2sdk::server::CCitadelModifier
         {
         public:
-            source2sdk::server::CCitadelPlayerPawn* m_pOwningPlayer; // 0xd0            
-            float m_flWeaponPower; // 0xd8            
-            float m_flArmorPower; // 0xdc            
-            float m_flTechPower; // 0xe0            
+            source2sdk::server::CCitadelPlayerPawn* m_pOwningPlayer; // 0xd0
+            float m_flWeaponPower; // 0xd8
+            float m_flArmorPower; // 0xdc
+            float m_flTechPower; // 0xe0
             uint8_t _pad00e4[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Modifier_HeroUpgradeBonuses because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Modifier_HeroUpgradeBonuses) == 0xe8);
     };
 };

@@ -20,7 +20,7 @@ namespace source2sdk
         // Size: 0x8
         // Has Trivial Destructor
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MVDataRoot
         #pragma pack(push, 1)
@@ -28,15 +28,15 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyDescription
-            source2sdk::client::EOverworldFortuneReward m_eReward; // 0x0            
+            source2sdk::client::EOverworldFortuneReward m_eReward; // 0x0
             // metadata: MPropertyDescription
-            std::int32_t m_nFortuneRequestCount; // 0x4            
+            std::int32_t m_nFortuneRequestCount; // 0x4
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::client::CDOTAOverworldFortuneTellerFixedReward, m_eReward) == 0x0);
         static_assert(offsetof(source2sdk::client::CDOTAOverworldFortuneTellerFixedReward, m_nFortuneRequestCount) == 0x4);
-        
+
         static_assert(sizeof(source2sdk::client::CDOTAOverworldFortuneTellerFixedReward) == 0x8);
     };
 };

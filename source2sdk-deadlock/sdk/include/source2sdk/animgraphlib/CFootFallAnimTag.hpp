@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x60
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "FootFall Tag"
         #pragma pack(push, 1)
@@ -29,13 +29,13 @@ namespace source2sdk
         public:
             uint8_t _pad0050[0x8]; // 0x50
             // metadata: MPropertyFriendlyName "Foot"
-            source2sdk::animgraphlib::FootFallTagFoot_t m_foot; // 0x58            
+            source2sdk::animgraphlib::FootFallTagFoot_t m_foot; // 0x58
             uint8_t _pad005c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CFootFallAnimTag because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::animgraphlib::CFootFallAnimTag) == 0x60);
     };
 };

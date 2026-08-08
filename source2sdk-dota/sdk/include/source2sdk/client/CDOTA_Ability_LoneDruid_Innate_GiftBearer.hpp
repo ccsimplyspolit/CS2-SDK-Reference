@@ -25,13 +25,13 @@ namespace source2sdk
         class CDOTA_Ability_LoneDruid_Innate_GiftBearer : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            std::int32_t m_tierReroll[5]; // 0x6a8            
+            std::int32_t m_tierReroll[5]; // 0x6a8
             uint8_t _pad06bc[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_LoneDruid_Innate_GiftBearer because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CDOTA_Ability_LoneDruid_Innate_GiftBearer) == 0x6c0);
     };
 };

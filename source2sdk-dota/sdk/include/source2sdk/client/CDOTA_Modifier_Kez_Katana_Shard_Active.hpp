@@ -25,23 +25,23 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a68
+        // Size: 0x1a88
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_Kez_Katana_Shard_Active : public source2sdk::client::CDOTA_Buff
         {
         public:
-            source2sdk::entity2::GameTime_t m_StunTime; // 0x1a58            
+            source2sdk::entity2::GameTime_t m_StunTime; // 0x1a78
             // m_hTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::client::C_BaseEntity> m_hTarget;
-            char m_hTarget[0x4]; // 0x1a5c            
-            bool m_bStunned; // 0x1a60            
-            uint8_t _pad1a61[0x7];
+            char m_hTarget[0x4]; // 0x1a7c
+            bool m_bStunned; // 0x1a80
+            uint8_t _pad1a81[0x7];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_Kez_Katana_Shard_Active because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Kez_Katana_Shard_Active) == 0x1a68);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_Kez_Katana_Shard_Active) == 0x1a88);
     };
 };

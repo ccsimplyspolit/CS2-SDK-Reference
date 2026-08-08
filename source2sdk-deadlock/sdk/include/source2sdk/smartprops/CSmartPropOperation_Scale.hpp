@@ -19,7 +19,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0x90
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         // static metadata: MPropertyFriendlyName "Transform: Scale"
         // static metadata: MPropertyDescription "Apply a scale to the current transform."
@@ -29,12 +29,12 @@ namespace source2sdk
         {
         public:
             // metadata: MPropertyDescription "Scale to apply to the current transform"
-            CSmartPropAttributeFloat m_flScale; // 0x50            
+            CSmartPropAttributeFloat m_flScale; // 0x50
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CSmartPropOperation_Scale because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::smartprops::CSmartPropOperation_Scale) == 0x90);
     };
 };

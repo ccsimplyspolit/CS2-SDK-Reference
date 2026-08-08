@@ -21,7 +21,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xbd0
         // Has VTable
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         class CModifierLashGrappleEnemyDebuffVData : public source2sdk::client::CCitadel_Modifier_StunnedVData
@@ -30,27 +30,27 @@ namespace source2sdk
             // metadata: MPropertyStartGroup "Visuals"
             // m_GrappleParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_GrappleParticle;
-            char m_GrappleParticle[0xe0]; // 0x830            
+            char m_GrappleParticle[0xe0]; // 0x830
             // m_LaunchParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_LaunchParticle;
-            char m_LaunchParticle[0xe0]; // 0x910            
+            char m_LaunchParticle[0xe0]; // 0x910
             // m_ImpactParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_ImpactParticle;
-            char m_ImpactParticle[0xe0]; // 0x9f0            
+            char m_ImpactParticle[0xe0]; // 0x9f0
             // m_RopeParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CResourceNameTyped<CWeakHandle<source2sdk::resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_RopeParticle;
-            char m_RopeParticle[0xe0]; // 0xad0            
+            char m_RopeParticle[0xe0]; // 0xad0
             // metadata: MPropertyStartGroup "Sounds"
-            CSoundEventName m_ImpactSound; // 0xbb0            
+            CSoundEventName m_ImpactSound; // 0xbb0
             // metadata: MPropertyStartGroup "Modifiers"
             // m_DebuffModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CEmbeddedSubclass<source2sdk::client::CCitadelModifier> m_DebuffModifier;
-            char m_DebuffModifier[0x10]; // 0xbc0            
+            char m_DebuffModifier[0x10]; // 0xbc0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CModifierLashGrappleEnemyDebuffVData because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::CModifierLashGrappleEnemyDebuffVData) == 0xbd0);
     };
 };

@@ -23,13 +23,13 @@ namespace source2sdk
         class C_CitadelProjectile_ImmobilizeTrap : public source2sdk::client::C_CitadelProjectile
         {
         public:
-            bool m_bShouldDraw; // 0xad8            
+            bool m_bShouldDraw; // 0xad8
             uint8_t _pad0ad9[0x707];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_CitadelProjectile_ImmobilizeTrap because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_CitadelProjectile_ImmobilizeTrap) == 0x11e0);
     };
 };

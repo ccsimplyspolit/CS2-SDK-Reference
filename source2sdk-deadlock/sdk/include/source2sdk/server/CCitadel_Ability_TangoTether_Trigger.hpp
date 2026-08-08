@@ -33,12 +33,12 @@ namespace source2sdk
             uint8_t _pad0f80[0x4]; // 0xf80
             // m_hBaseAbility has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CCitadelBaseAbility> m_hBaseAbility;
-            char m_hBaseAbility[0x4]; // 0xf84            
+            char m_hBaseAbility[0x4]; // 0xf84
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadel_Ability_TangoTether_Trigger because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadel_Ability_TangoTether_Trigger) == 0xf88);
     };
 };

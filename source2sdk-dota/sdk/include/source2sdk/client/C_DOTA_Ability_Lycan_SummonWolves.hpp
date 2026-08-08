@@ -32,18 +32,18 @@ namespace source2sdk
         class C_DOTA_Ability_Lycan_SummonWolves : public source2sdk::client::C_DOTABaseAbility
         {
         public:
-            char szUnitName[260]; // 0x6a8            
-            std::int32_t wolf_index; // 0x7ac            
-            float wolf_duration; // 0x7b0            
+            char szUnitName[260]; // 0x6a8
+            std::int32_t wolf_index; // 0x7ac
+            float wolf_duration; // 0x7b0
             uint8_t _pad07b4[0x4]; // 0x7b4
             // m_hExistingUnits has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CUtlVector<CHandle<source2sdk::client::C_BaseEntity>> m_hExistingUnits;
-            char m_hExistingUnits[0x18]; // 0x7b8            
+            char m_hExistingUnits[0x18]; // 0x7b8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in C_DOTA_Ability_Lycan_SummonWolves because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::client::C_DOTA_Ability_Lycan_SummonWolves) == 0x7d0);
     };
 };

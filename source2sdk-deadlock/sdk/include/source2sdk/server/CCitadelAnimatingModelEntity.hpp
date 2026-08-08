@@ -20,7 +20,7 @@ namespace source2sdk
         // Standard-layout class: false
         // Size: 0xbf0
         // Has VTable
-        // 
+        //
         // static metadata: MNetworkIncludeByName "m_vecViewOffset"
         // static metadata: MNetworkIncludeByName "m_iHealth"
         // static metadata: MNetworkIncludeByName "m_iMaxHealth"
@@ -33,12 +33,12 @@ namespace source2sdk
             // metadata: MNetworkUserGroup "CCitadelRegenComponent"
             // metadata: MNetworkAlias "CCitadelRegenComponent"
             // metadata: MNetworkTypeAlias "CCitadelRegenComponent"
-            source2sdk::server::CCitadelRegenComponent m_CCitadelRegenComponent; // 0xa90            
+            source2sdk::server::CCitadelRegenComponent m_CCitadelRegenComponent; // 0xa90
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CCitadelAnimatingModelEntity because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CCitadelAnimatingModelEntity) == 0xbf0);
     };
 };

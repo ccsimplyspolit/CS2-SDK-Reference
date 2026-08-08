@@ -32,17 +32,17 @@ namespace source2sdk
         class CDOTA_Ability_Windrunner_GaleForce : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            VectorWS m_vEndpoint; // 0x580            
-            VectorWS m_vFlowPosition; // 0x58c            
-            float duration; // 0x598            
+            VectorWS m_vEndpoint; // 0x580
+            VectorWS m_vFlowPosition; // 0x58c
+            float duration; // 0x598
             // m_hThinker has a template type with potentially unknown template parameters. You can try uncommenting the field below.
             // CHandle<source2sdk::server::CBaseEntity> m_hThinker;
-            char m_hThinker[0x4]; // 0x59c            
+            char m_hThinker[0x4]; // 0x59c
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Windrunner_GaleForce because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Windrunner_GaleForce) == 0x5a0);
     };
 };

@@ -18,27 +18,27 @@ namespace source2sdk
         // Alignment: 0x8
         // Standard-layout class: true
         // Size: 0x60
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct ParticleNamedValueSource_t
         {
         public:
-            CUtlString m_Name; // 0x0            
-            bool m_IsPublic; // 0x8            
+            CUtlString m_Name; // 0x0
+            bool m_IsPublic; // 0x8
             uint8_t _pad0009[0x7]; // 0x9
             // metadata: MFgdFromSchemaCompletelySkipField
-            CPulseValueFullType m_ValueType; // 0x10            
+            CPulseValueFullType m_ValueType; // 0x10
             // metadata: MFgdFromSchemaCompletelySkipField
-            source2sdk::particleslib::ParticleNamedValueConfiguration_t m_DefaultConfig; // 0x28            
+            source2sdk::particleslib::ParticleNamedValueConfiguration_t m_DefaultConfig; // 0x28
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::particleslib::ParticleNamedValueSource_t, m_Name) == 0x0);
         static_assert(offsetof(source2sdk::particleslib::ParticleNamedValueSource_t, m_IsPublic) == 0x8);
         static_assert(offsetof(source2sdk::particleslib::ParticleNamedValueSource_t, m_ValueType) == 0x10);
         static_assert(offsetof(source2sdk::particleslib::ParticleNamedValueSource_t, m_DefaultConfig) == 0x28);
-        
+
         static_assert(sizeof(source2sdk::particleslib::ParticleNamedValueSource_t) == 0x60);
     };
 };

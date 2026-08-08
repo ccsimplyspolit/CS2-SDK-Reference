@@ -17,23 +17,23 @@ namespace source2sdk
         // Registered alignment: unknown
         // Alignment: unknown
         // Standard-layout class: false
-        // Size: 0x1a70
+        // Size: 0x1a90
         // Has VTable
         #pragma pack(push, 1)
         class CDOTA_Modifier_MonkeyKing_BoundlessStrike_ShardMovement : public source2sdk::client::CDOTA_Buff
         {
         public:
-            std::int32_t acceleration_z; // 0x1a58            
-            std::int32_t min_height_above_lowest; // 0x1a5c            
-            std::int32_t min_height_above_highest; // 0x1a60            
-            std::int32_t max_horizontal_acceleration; // 0x1a64            
-            std::int32_t spring_channel_pct; // 0x1a68            
-            uint8_t _pad1a6c[0x4];
+            std::int32_t acceleration_z; // 0x1a78
+            std::int32_t min_height_above_lowest; // 0x1a7c
+            std::int32_t min_height_above_highest; // 0x1a80
+            std::int32_t max_horizontal_acceleration; // 0x1a84
+            std::int32_t spring_channel_pct; // 0x1a88
+            uint8_t _pad1a8c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Modifier_MonkeyKing_BoundlessStrike_ShardMovement because it is not a standard-layout class
-        
-        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_MonkeyKing_BoundlessStrike_ShardMovement) == 0x1a70);
+
+        static_assert(sizeof(source2sdk::client::CDOTA_Modifier_MonkeyKing_BoundlessStrike_ShardMovement) == 0x1a90);
     };
 };

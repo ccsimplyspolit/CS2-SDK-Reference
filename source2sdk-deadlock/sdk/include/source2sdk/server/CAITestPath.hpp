@@ -24,12 +24,12 @@ namespace source2sdk
         {
         public:
             uint8_t _pad04a0[0x8]; // 0x4a0
-            CUtlSymbolLarge m_strNextPath; // 0x4a8            
+            CUtlSymbolLarge m_strNextPath; // 0x4a8
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CAITestPath because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CAITestPath) == 0x4b0);
     };
 };

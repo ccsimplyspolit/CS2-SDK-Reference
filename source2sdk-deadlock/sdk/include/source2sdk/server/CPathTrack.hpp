@@ -26,19 +26,19 @@ namespace source2sdk
         {
         public:
             // metadata: MClassPtr
-            source2sdk::server::CPathTrack* m_pnext; // 0x4a0            
+            source2sdk::server::CPathTrack* m_pnext; // 0x4a0
             // metadata: MClassPtr
-            source2sdk::server::CPathTrack* m_pprevious; // 0x4a8            
+            source2sdk::server::CPathTrack* m_pprevious; // 0x4a8
             // metadata: MClassPtr
-            source2sdk::server::CPathTrack* m_paltpath; // 0x4b0            
-            float m_flRadius; // 0x4b8            
-            float m_length; // 0x4bc            
-            CUtlSymbolLarge m_altName; // 0x4c0            
+            source2sdk::server::CPathTrack* m_paltpath; // 0x4b0
+            float m_flRadius; // 0x4b8
+            float m_length; // 0x4bc
+            CUtlSymbolLarge m_altName; // 0x4c0
             // metadata: MNotSaved
-            std::int32_t m_nIterVal; // 0x4c8            
-            source2sdk::server::TrackOrientationType_t m_eOrientationType; // 0x4cc            
-            source2sdk::entity2::CEntityIOOutput m_OnPass; // 0x4d0            
-            
+            std::int32_t m_nIterVal; // 0x4c8
+            source2sdk::server::TrackOrientationType_t m_eOrientationType; // 0x4cc
+            source2sdk::entity2::CEntityIOOutput m_OnPass; // 0x4d0
+
             // Datamap fields:
             // void InputPass; // 0x0
             // void InputEnableAlternatePath; // 0x0
@@ -49,9 +49,9 @@ namespace source2sdk
             // void InputTogglePath; // 0x0
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CPathTrack because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CPathTrack) == 0x4e8);
     };
 };

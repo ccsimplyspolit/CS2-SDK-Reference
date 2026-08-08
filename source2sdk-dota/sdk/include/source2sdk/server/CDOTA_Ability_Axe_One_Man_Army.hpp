@@ -26,15 +26,15 @@ namespace source2sdk
         class CDOTA_Ability_Axe_One_Man_Army : public source2sdk::server::CDOTABaseAbility
         {
         public:
-            float radius; // 0x580            
-            float bonus_linger_duration; // 0x584            
-            source2sdk::entity2::GameTime_t m_startDecayTime; // 0x588            
+            float radius; // 0x580
+            float bonus_linger_duration; // 0x584
+            source2sdk::entity2::GameTime_t m_startDecayTime; // 0x588
             uint8_t _pad058c[0x4];
         };
         #pragma pack(pop)
-        
+
         // Cannot assert offsets of fields in CDOTA_Ability_Axe_One_Man_Army because it is not a standard-layout class
-        
+
         static_assert(sizeof(source2sdk::server::CDOTA_Ability_Axe_One_Man_Army) == 0x590);
     };
 };

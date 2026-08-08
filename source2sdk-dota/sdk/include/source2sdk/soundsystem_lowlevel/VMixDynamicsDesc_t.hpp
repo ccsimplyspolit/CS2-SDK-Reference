@@ -20,28 +20,28 @@ namespace source2sdk
         // Has Trivial Constructor
         // Has Trivial Destructor
         // Construct allowed
-        // 
+        //
         // static metadata: MGetKV3ClassDefaults
         #pragma pack(push, 1)
         struct VMixDynamicsDesc_t
         {
         public:
-            float m_fldbGain; // 0x0            
-            float m_fldbNoiseGateThreshold; // 0x4            
-            float m_fldbCompressionThreshold; // 0x8            
-            float m_fldbLimiterThreshold; // 0xc            
-            float m_fldbKneeWidth; // 0x10            
-            float m_flRatio; // 0x14            
-            float m_flLimiterRatio; // 0x18            
-            float m_flAttackTimeMS; // 0x1c            
-            float m_flReleaseTimeMS; // 0x20            
-            float m_flRMSTimeMS; // 0x24            
-            float m_flWetMix; // 0x28            
-            bool m_bPeakMode; // 0x2c            
+            float m_fldbGain; // 0x0
+            float m_fldbNoiseGateThreshold; // 0x4
+            float m_fldbCompressionThreshold; // 0x8
+            float m_fldbLimiterThreshold; // 0xc
+            float m_fldbKneeWidth; // 0x10
+            float m_flRatio; // 0x14
+            float m_flLimiterRatio; // 0x18
+            float m_flAttackTimeMS; // 0x1c
+            float m_flReleaseTimeMS; // 0x20
+            float m_flRMSTimeMS; // 0x24
+            float m_flWetMix; // 0x28
+            bool m_bPeakMode; // 0x2c
             uint8_t _pad002d[0x3];
         };
         #pragma pack(pop)
-        
+
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::VMixDynamicsDesc_t, m_fldbGain) == 0x0);
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::VMixDynamicsDesc_t, m_fldbNoiseGateThreshold) == 0x4);
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::VMixDynamicsDesc_t, m_fldbCompressionThreshold) == 0x8);
@@ -54,7 +54,7 @@ namespace source2sdk
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::VMixDynamicsDesc_t, m_flRMSTimeMS) == 0x24);
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::VMixDynamicsDesc_t, m_flWetMix) == 0x28);
         static_assert(offsetof(source2sdk::soundsystem_lowlevel::VMixDynamicsDesc_t, m_bPeakMode) == 0x2c);
-        
+
         static_assert(sizeof(source2sdk::soundsystem_lowlevel::VMixDynamicsDesc_t) == 0x30);
     };
 };
